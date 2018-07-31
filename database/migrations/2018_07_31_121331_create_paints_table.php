@@ -17,9 +17,10 @@ class CreatePaintsTable extends Migration
             $table->increments('id');
             $table->string('def');
             $table->string('alias');
+            $table->string('look');
             $table->string('chassis');
-            $table->string('game')->default('ets');
-            $table->integer('dlc')->nullable();
+            $table->string('game')->default('ets2');
+            $table->string('dlc', 5)->nullable();
             $table->timestamps();
         });
     }

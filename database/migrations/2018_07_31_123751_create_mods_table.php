@@ -20,7 +20,7 @@ class CreateModsTable extends Migration
             $table->integer('file_name');
             $table->string('params');
             $table->string('type');
-            $table->string('game')->default('ets');
+            $table->string('game')->default('ets2');
             $table->timestamps();
         });
     }

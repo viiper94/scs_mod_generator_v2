@@ -25,7 +25,7 @@ class CreateChassisTable extends Migration
             $table->boolean('with_paint_job')->default(false);
             $table->string('default_paint_job')->nullable();
             $table->boolean('can_random')->default(false);
-            $table->string('game')->default('ets');
+            $table->string('game')->default('ets2');
             $table->integer('dlc')->nullable();
             $table->timestamps();
         });

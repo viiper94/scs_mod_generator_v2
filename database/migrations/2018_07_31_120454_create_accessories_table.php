@@ -18,8 +18,8 @@ class CreateAccessoriesTable extends Migration
             $table->string('def');
             $table->string('alias');
             $table->string('chassis');
-            $table->string('game')->default('ets');
-            $table->integer('dlc')->nullable();
+            $table->string('game')->default('ets2');
+            $table->string('dlc')->nullable();
             $table->timestamps();
         });
     }
