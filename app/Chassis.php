@@ -76,5 +76,28 @@ class Chassis extends Model{
         }
         return $list;
     }
+
+    public static function getAllCompanies($lang, $game){
+        $companies = Company::where('game', $game)->get();
+        $list[] = [
+            'name' => I18n::t('choose_paint'),
+            'value' => '',
+            'selected' => true
+        ];
+        $list[] = [
+            'name' => I18n::t('default', $lang),
+            'value' => 'default'];
+        foreach($companies as $company){
+            $name = I18n::t($company->name, $lang);
+            if($company->isDLCContent()){
+                $name .= ' - '. I18n::t($company->dlc->name);
+            };
+            $list[] = [
+                'name' => $name,
+                'value' => $company->name
+            ];
+        }
+        return $list;
+    }
     
 }

@@ -116,7 +116,7 @@ $(document).ready(function(){
 					dataType : 'json',
 					type : 'POST',
 					data : {
-						'ajax' : true,
+						'_token' : $('input[name=_token]').val(),
 						'target' : $('input[name=target]').val(),
 						'chassis' : value,
 						'lang' : getCookie('lang')
@@ -179,7 +179,7 @@ $(document).ready(function(){
 			dataType : 'json',
 			type : 'POST',
 			data : {
-				'ajax' : true,
+                '_token' : $('input[name=_token]').val(),
 				'target' : $('input[name=target]').val(),
 				'all' : $(this)[0].checked,
 				'select' : target,
@@ -335,7 +335,7 @@ function getDLCList(value) {
         dataType : 'json',
         type : 'POST',
         data : {
-            'ajax' : true,
+            '_token' : $('input[name=_token]').val(),
             'target' : $('input[name=target]').val(),
 			'accessory' : value,
             'chassis' : $('select[name=chassis]').val(),
