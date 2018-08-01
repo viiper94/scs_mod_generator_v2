@@ -5,16 +5,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @yield('header')
-    <title>Document</title>
+    @include('layout.header')
+    <title>{{ I18n::t('title') }}</title>
 </head>
 <body>
+    <header>
+        @include('layout.navbar')
+    </header>
 
-    @yield('navbar')
+    <main>
+        @yield('content')
+    </main>
 
-    @yield('content')
-
-    @yield('footer')
-
+    <footer>
+        @include('layout.footer')
+    </footer>
 </body>
 </html>
