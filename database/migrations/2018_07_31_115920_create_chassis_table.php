@@ -17,8 +17,9 @@ class CreateChassisTable extends Migration
             $table->increments('id');
             $table->string('def');
             $table->string('alias');
+            $table->string('alias_short');
             $table->string('axles');
-            $table->integer('wheels');
+            $table->integer('wheels_id');
             $table->boolean('supports_wheels')->default(true);
             $table->boolean('coupled')->default(false);
             $table->boolean('with_accessory')->default(false);
@@ -26,7 +27,7 @@ class CreateChassisTable extends Migration
             $table->string('default_paint_job')->nullable();
             $table->boolean('can_random')->default(false);
             $table->string('game')->default('ets2');
-            $table->integer('dlc')->nullable();
+            $table->integer('dlc_id')->nullable();
             $table->timestamps();
         });
     }
