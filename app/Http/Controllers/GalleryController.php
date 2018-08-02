@@ -9,7 +9,7 @@ class GalleryController extends Controller{
 
     public function index(){
         $chassis = Chassis::all();
-        return view('gallery', [
+        return view('gallery.index', [
             'chassis_list' => $chassis->groupBy('game')
         ]);
     }

@@ -68,4 +68,8 @@ class I18n{
         return $get_first ? array_shift($user_langs) : array_unique($user_langs);
     }
 
+    public static function getLanguages(){
+        return Language::where('active', 1)->get()->keyBy('locale')->toArray();
+    }
+
 }

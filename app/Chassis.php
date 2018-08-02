@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Chassis extends Model{
 
-    public $common_name;
+    public $weight;
+    public $wheels;
+    public $customWheels = false;
+
     protected $table = 'chassis';
     protected $casts = [
         'supports_wheels' => 'boolean',
@@ -21,12 +24,25 @@ class Chassis extends Model{
         return $this->belongsTo('App\Dlc');
     }
 
-    public function wheels(){
-        return $this->belongsTo('App\Wheel');
+    public function defaultWheels(){
+        return $this->belongsTo('App\Wheel', 'wheels_id');
     }
 
     public function isDLCContent(){
         return $this->dlc_id !== null;
+    }
+
+    public function setWheels($wheels_def){
+        if($this->supports_wheels){
+            $wheel = Wheel::where(['def' => $wheels_def, 'active' => 1])->first();
+            if($wheel){
+                $this->wheels = $wheel;
+                $this->customWheels = true;
+                return true;
+            }
+        }
+        $this->wheels = $this->defaultWheels;
+        return false;
     }
 
     public function getAvailablePaints($lang){

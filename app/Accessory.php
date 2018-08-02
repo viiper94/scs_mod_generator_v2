@@ -2,6 +2,7 @@
 
 namespace App;
 
+use I18n;
 use Illuminate\Database\Eloquent\Model;
 
 class Accessory extends Model{
@@ -16,6 +17,22 @@ class Accessory extends Model{
         $dlc_ids = explode(',', $this->dlc);
         $dlc = Dlc::where('active', 1)->find($dlc_ids);
         return $onlyNames ? $dlc = array_keys($dlc->keyBy('name')->toArray()) : $dlc;
+    }
+
+    public static function getAllAccessoriesDefs($game){
+        $accessories = Accessory::where('game', $game)->get();
+        $list[] = [
+            'name' => I18n::t('choose_accessory'),
+            'value' => '',
+            'selected' => true
+        ];
+        foreach($accessories as $item){
+            $list[] = [
+                'name' => $item->def,
+                'value' => $item->def
+            ];
+        }
+        return $list;
     }
 
 }

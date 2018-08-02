@@ -8,15 +8,17 @@ use App\Company;
 use App\Dlc;
 use App\Language;
 use App\Paint;
+use App\TrailerGenerator;
 use App\Wheel;
 use I18n;
 use Illuminate\Http\Request;
+use App\Logger;
 
 class TrailerGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
         $errors = array();
-        return view('generator', [
+        return view('generator.index', [
             'game' => $game,
             'chassis_list' => Chassis::where('game', $game)->get(),
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
@@ -89,6 +91,48 @@ class TrailerGeneratorController extends Controller{
             return response()->json(['result' => $data, 'status' => 'OK', 'dlc' => $chassis->dlc]);
         }
         return false;
+    }
+
+    public function generate(Request $request){
+        $accessory = null;
+        $paint_job = null;
+
+        if($request->input('chassis') !== 'paintable'){
+            $chassis = Chassis::where('alias', $request->input('chassis'))->first();
+            $chassis->weight = $request->input('weight');
+            $chassis->setWheels($request->input('wheels'));
+        }else{
+            $chassis = new Chassis();
+            $chassis->weight = $request->input('weight');
+            $chassis->alias = 'paintable';
+            $chassis->supports_wheels = true;
+            $chassis->wheels = $request->input('wheels');
+
+            $paint_job = new Paint();
+            $paint_job->look = $request->input('paint');
+            $paint_job->setPaintColor($request->input('color'));
+        }
+
+        if($chassis->with_accessory) $accessory = Accessory::where('def', $request->input('accessory'))->first();
+        if($chassis->with_paint_job && $request->input('paint') !== 'all'){
+            $paint_job = Paint::where('def', $request->input('paint'))->first();
+            $paint_job->setPaintColor($request->input('color'));
+        }
+        if($chassis->alias == 'aero_dynamic' || $request->input('paint') === 'all'){
+            $paint_job = new Paint();
+            $paint_job->def = $chassis->default_paint_job;
+            $paint_job->allCompanies = true;
+            $paint_job->look = 'default';
+        }
+
+        $generator = new TrailerGenerator();
+        $generator->load($chassis, $accessory, $paint_job);
+        $generator->run();
+
+//        $logger = new Logger();
+//        $logger->writeLog($generator->fileName);
+
+        return redirect()->action('TrailerGeneratorController@index');
     }
 
 }
