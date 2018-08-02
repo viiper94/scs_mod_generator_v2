@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cm_min_plnt
+{
+	name: "Coastline Mining"
+	sort_name: "coastline mining"
+	trailer_look: coastline
+}

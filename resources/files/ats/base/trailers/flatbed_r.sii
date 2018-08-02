@@ -1,0 +1,26 @@
+trailer : trailer.flatbed_r 
+{
+	accessories[]: .flatbed_r.tchassis
+	accessories[]: .flatbed_r.trwheel0
+	accessories[]: .flatbed_r.trwheel1
+
+}
+
+vehicle_accessory: .flatbed_r.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flatbed/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+

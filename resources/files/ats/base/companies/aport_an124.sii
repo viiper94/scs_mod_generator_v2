@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aport_an124
+{
+	name: "AN-124"
+	sort_name: "an-124"
+	trailer_look: aport_an124
+}

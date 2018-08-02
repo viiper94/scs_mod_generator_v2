@@ -1,0 +1,6 @@
+company_permanent: company.permanent.stokes
+{
+	name: "Stokes"
+	sort_name: "stokes"
+	trailer_look: stokes
+}

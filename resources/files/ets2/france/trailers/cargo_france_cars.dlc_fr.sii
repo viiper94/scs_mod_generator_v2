@@ -1,0 +1,28 @@
+trailer : trailer.car_fr
+{
+	accessories[]: .car_fr.tchassis
+	accessories[]: .car_fr.trwheel0
+	accessories[]: .car_fr.trwheel1
+	accessories[]: .car_fr.france.cargo
+}
+
+vehicle_accessory: .car_fr.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .car_fr.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_fr.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_fr.france.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_france_cars.dlc_fr.sii"
+}

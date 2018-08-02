@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nucleon
+{
+	name: "Nucléon"
+	sort_name: "nucleon"
+	trailer_look: nucleon
+}

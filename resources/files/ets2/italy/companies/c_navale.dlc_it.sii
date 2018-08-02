@@ -1,0 +1,6 @@
+company_permanent: company.permanent.c_navale
+{
+	name: "Cantiere Navale"
+	sort_name: "cantiere navale"
+	trailer_look: c_navale
+}

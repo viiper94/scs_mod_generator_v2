@@ -1,0 +1,6 @@
+company_permanent: company.permanent.vpc
+{
+	name: "VPC"
+	sort_name: "vpc"
+	trailer_look: vpc
+}

@@ -1,0 +1,35 @@
+trailer : trailer.gooseneck.cistern.alualk 
+{
+	accessories[]: .gooseneck.cistern.alualk.tchassis
+	accessories[]: .gooseneck.cistern.alualk.trwheel0
+	accessories[]: .gooseneck.cistern.alualk.trwheel1
+	accessories[]: .gooseneck.cistern.alualk.trwheel2
+	accessories[]: .gooseneck.cistern.alualk.cargo
+}
+
+vehicle_accessory: .gooseneck.cistern.alualk.tchassis
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/chassis.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cistern.alualk.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cistern.alualk.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cistern.alualk.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .gooseneck.cistern.alualk.cargo
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/cistern_alualk.sii"
+}

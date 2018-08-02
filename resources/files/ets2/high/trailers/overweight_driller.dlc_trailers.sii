@@ -1,0 +1,36 @@
+trailer : trailer.overweight.driller 
+{
+	accessories[]: .overweight.driller.tchassis
+	accessories[]: .overweight.driller.trwheel0
+	accessories[]: .overweight.driller.trwheel1
+	accessories[]: .overweight.driller.trwheel2
+	accessories[]: .overweight.driller.cargo
+}
+
+vehicle_accessory: .overweight.driller.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis.sii"
+}
+
+vehicle_wheel_accessory: .overweight.driller.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.driller.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.driller.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.driller.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/driller.dlc_trailers.sii"
+}
+

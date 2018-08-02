@@ -1,0 +1,6 @@
+company_permanent: company.permanent.scania_dlr
+{
+	name: "Scania dealer"
+	sort_name: "scania dealer"
+	trailer_look: scania_dlr
+}

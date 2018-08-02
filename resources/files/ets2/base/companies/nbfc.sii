@@ -1,0 +1,10 @@
+company_permanent: company.permanent.nbfc
+{
+	name: "NBFC"
+	sort_name: "nbfc"
+	trailer_look: nbfc
+	sound[]: "1|/sound/environment/chemical_factory_1.ogg"
+	sound[]: "1|/sound/environment/chemical_factory_2.ogg"
+	sound[]: "1|/sound/environment/chemical_factory_3.ogg"
+	sound[]: "1|/sound/environment/factory_1.ogg"
+}

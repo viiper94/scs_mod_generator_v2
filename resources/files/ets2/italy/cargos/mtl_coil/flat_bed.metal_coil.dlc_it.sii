@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flat_bed.metal_coil
+{
+	trailer: trailer.flat_bed.metal_coil
+	mass: 24520
+	cog_offset: 1
+	cog_offset[]: (0.0, 1.0, 0.0)
+}
+}

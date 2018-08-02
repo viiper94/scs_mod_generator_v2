@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .s_ki_solid.cover
+{
+	trailer: trailer.s_ki_solid.cover
+	mass: 15730
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.79, 0.0)
+}
+}

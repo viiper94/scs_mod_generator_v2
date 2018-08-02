@@ -1,0 +1,6 @@
+company_permanent: company.permanent.drekkar
+{
+	name: "Drekkar Trans"
+	sort_name: "drekkar trans"
+	trailer_look: drekkar
+}

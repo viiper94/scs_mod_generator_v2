@@ -1,0 +1,31 @@
+trailer : trailer.flatbed_r.cargo_planks
+{
+	accessories[]: .flatbed_r.planks.tchassis
+	accessories[]: .flatbed_r.planks.trwheel0
+	accessories[]: .flatbed_r.planks.trwheel1
+	accessories[]: .flatbed_r.planks.cargo
+
+}
+
+vehicle_accessory: .flatbed_r.planks.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flatbed/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.planks.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.planks.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .flatbed_r.planks.cargo
+{
+    	data_path: "/def/vehicle/trailer/flatbed/cargo_planks.sii"
+}
+

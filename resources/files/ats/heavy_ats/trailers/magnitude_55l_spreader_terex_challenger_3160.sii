@@ -1,0 +1,115 @@
+trailer : trailer.mag_55l_t2s.t_c_3160
+{
+	accessories[]: .mag_55l_t2s.t_c_3160.tchassis
+	accessories[]: .mag_55l_t2s.t_c_3160.trwheel0
+	accessories[]: .mag_55l_t2s.t_c_3160.trwheel1
+	
+	slave_trailer: trailer.mag_55_t2s_t.t_c_3160
+
+}
+
+vehicle_accessory: .mag_55l_t2s.t_c_3160.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t2s.t_c_3160.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t2s.t_c_3160.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+
+
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.mag_55_t2s_t.t_c_3160
+{
+	accessories[]: .mag_55_t2s_t.t_c_3160.tchassis
+	accessories[]: .mag_55_t2s_t.t_c_3160.trwheel0
+	accessories[]: .mag_55_t2s_t.t_c_3160.trwheel1
+
+	accessories[]: .mag_55_t2s_t.t_c_3160.cargo
+	
+	slave_trailer: trailer.mag_55_s2.t_c_3160
+
+}
+
+vehicle_accessory: .mag_55_t2s_t.t_c_3160.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_t2s_t.t_c_3160.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_t2s_t.t_c_3160.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .mag_55_t2s_t.t_c_3160.cargo
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_terex_challenger_3160.sii"
+}
+
+
+#########################################
+#
+#	SPREDER
+#
+#########################################
+
+trailer : trailer.mag_55_s2.t_c_3160
+{
+	accessories[]: .mag_55_s2.t_c_3160.tchassis
+	accessories[]: .mag_55_s2.t_c_3160.trwheel0
+	accessories[]: .mag_55_s2.t_c_3160.trwheel1
+    
+    accessories[]: .mag_55_s2.t_c_3160.flag_r_r
+    accessories[]: .mag_55_s2.t_c_3160.flag_r_l
+
+
+
+}
+
+vehicle_accessory: .mag_55_s2.t_c_3160.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_s2.t_c_3160.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_s2.t_c_3160.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_55_s2.t_c_3160.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .mag_55_s2.t_c_3160.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}

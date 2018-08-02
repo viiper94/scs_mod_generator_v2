@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .schw_slidep.logs
+{
+	trailer: trailer.schw_slidep.logs
+	mass: 22740
+	cog_offset: 1
+	cog_offset[]: (0.0, 1, 0.0)
+}
+}

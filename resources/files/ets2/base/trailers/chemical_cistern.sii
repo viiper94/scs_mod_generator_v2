@@ -1,0 +1,36 @@
+trailer : trailer.chcistern 
+{
+	accessories[]: .chcistern.tchassis
+	accessories[]: .chcistern.paint_job
+	accessories[]: .chcistern.trwheel0
+	accessories[]: .chcistern.trwheel1
+	accessories[]: .chcistern.trwheel2
+}
+
+vehicle_accessory: .chcistern.tchassis
+{
+    	data_path: "/def/vehicle/trailer/chemical_cistern/chassis.sii"
+}
+
+vehicle_wheel_accessory: .chcistern.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .chcistern.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .chcistern.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .chcistern.paint_job
+{
+    	data_path: "/def/vehicle/trailer/chemical_cistern/company_paint_job/default.sii"
+}
+ 

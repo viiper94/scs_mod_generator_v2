@@ -1,0 +1,31 @@
+trailer : trailer.dump_g.cargo_wshavs
+{
+	accessories[]: .dump_g.wshavs.tchassis
+	accessories[]: .dump_g.wshavs.trwheel0
+	accessories[]: .dump_g.wshavs.trwheel1
+	accessories[]: .dump_g.wshavs.cargo
+
+}
+
+vehicle_accessory: .dump_g.wshavs.tchassis
+{
+    	data_path: "/def/vehicle/trailer/dump/chassis_g.sii"
+}
+
+vehicle_wheel_accessory: .dump_g.wshavs.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .dump_g.wshavs.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .dump_g.wshavs.cargo
+{
+    	data_path: "/def/vehicle/trailer/dump/cargo_wshavs.sii"
+}
+

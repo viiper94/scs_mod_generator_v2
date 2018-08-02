@@ -1,0 +1,36 @@
+trailer : trailer.overweight.helicopter 
+{
+	accessories[]: .overweight.heli.tchassis
+	accessories[]: .overweight.heli.trwheel0
+	accessories[]: .overweight.heli.trwheel1
+	accessories[]: .overweight.heli.trwheel2
+	accessories[]: .overweight.heli.cargo
+}
+
+vehicle_accessory: .overweight.heli.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis_y.sii"
+}
+
+vehicle_wheel_accessory: .overweight.heli.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.heli.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.heli.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.heli.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/helicopter.dlc_trailers.sii"
+}
+

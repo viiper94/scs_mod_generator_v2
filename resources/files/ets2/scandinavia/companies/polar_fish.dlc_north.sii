@@ -1,0 +1,6 @@
+company_permanent: company.permanent.polar_fish
+{
+	name: "Polar Fish"
+	sort_name: "polar fish"
+	trailer_look: polar_fish
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.vm_car_dlr
+{
+	name: "Voltison"
+	sort_name: "voltison"
+	trailer_look: voltison
+}

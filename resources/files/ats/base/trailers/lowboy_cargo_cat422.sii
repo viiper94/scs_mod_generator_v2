@@ -1,0 +1,31 @@
+trailer : trailer.lowboy_y.cargo_cat422
+{
+	accessories[]: .lowboy_y.cat422.tchassis
+	accessories[]: .lowboy_y.cat422.trwheel0
+	accessories[]: .lowboy_y.cat422.trwheel1
+	accessories[]: .lowboy_y.cat422.cargo
+
+}
+
+vehicle_accessory: .lowboy_y.cat422.tchassis
+{
+    	data_path: "/def/vehicle/trailer/lowboy/chassis_y.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_y.cat422.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_y.cat422.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .lowboy_y.cat422.cargo
+{
+    	data_path: "/def/vehicle/trailer/lowboy/cargo_cat422.sii"
+}
+

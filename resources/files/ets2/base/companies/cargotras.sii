@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cargotras
+{
+	name: "Cargotras"
+	sort_name: "cargotras"
+	trailer_look: cargotras
+}

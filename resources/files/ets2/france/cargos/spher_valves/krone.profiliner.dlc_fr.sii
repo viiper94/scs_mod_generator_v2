@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .krone.profiliner
+{
+	trailer: trailer.krone.profiliner
+	mass: 22220
+	cog_offset: 1
+	cog_offset[]: (0.0, 1, 0.0)
+}
+}

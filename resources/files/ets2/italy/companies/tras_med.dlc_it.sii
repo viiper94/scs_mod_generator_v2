@@ -1,0 +1,6 @@
+company_permanent: company.permanent.tras_med
+{
+	name: "Trasporti Mediterraneo"
+	sort_name: "trasporti mediterraneo"
+	trailer_look: tras_med
+}

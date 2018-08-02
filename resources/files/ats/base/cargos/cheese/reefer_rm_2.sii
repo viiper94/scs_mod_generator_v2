@@ -1,0 +1,18 @@
+SiiNunit
+{
+trailer_def : .reefer_rm_2
+{
+	trailer: trailer.reefer_rm_2
+	mass: 16102.6
+	volume_factor: 1.25
+	length: 23
+	cargo_mass_ratio[]: 0.55
+	cargo_mass_ratio[]: 0.1
+	cargo_mass_ratio[]: 0.35
+	cog_offset: 3
+	cog_offset[]: (0, 0.81, 0)
+	cog_offset[]: (0, 0, 0)
+	cog_offset[]: (0, 0.81, 0)
+	country[]: nevada
+}
+}

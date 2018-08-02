@@ -1,0 +1,36 @@
+trailer : trailer.schw_food 
+{
+	accessories[]: .schw_food.tchassis
+	accessories[]: .schw_food.paint_job
+	accessories[]: .schw_food.trwheel0
+	accessories[]: .schw_food.trwheel1
+	accessories[]: .schw_food.trwheel2
+}
+
+vehicle_accessory: .schw_food.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_cistern_food/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_food.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .schw_food.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .schw_food.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .schw_food.paint_job
+{
+    	data_path: "/def/vehicle/trailer/schw_cistern_food/company_paint_job/default.sii"
+}
+

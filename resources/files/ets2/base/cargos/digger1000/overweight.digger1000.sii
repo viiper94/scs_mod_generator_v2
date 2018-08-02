@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .overweight.digger1000
+{
+	trailer: trailer.overweight.digger1000
+	mass: 15400
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.77, 0.0)
+}
+}

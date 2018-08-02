@@ -1,0 +1,6 @@
+company_permanent: company.permanent.posped
+{
+	name: "Posped"
+	sort_name: "posped"
+	trailer_look: posped
+}

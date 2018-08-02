@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .car_r.cargo_mustng
+{
+	trailer: trailer.car_r.cargo_mustng
+	mass: 9298.7
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.46, 0.0)
+}
+}

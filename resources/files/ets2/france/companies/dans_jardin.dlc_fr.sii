@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dans_jardin
+{
+	name: "Dans le Jardin"
+	sort_name: "dans le jardin"
+	trailer_look: dans_jardin
+}

@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .schw_ovrwght.cat422
+{
+	trailer: trailer.schw_ovrwght.cat422
+	mass: 8380
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.42, 0.0)
+}
+}

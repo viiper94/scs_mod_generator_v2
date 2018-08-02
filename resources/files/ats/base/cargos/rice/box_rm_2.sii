@@ -1,0 +1,18 @@
+SiiNunit
+{
+trailer_def : .box_rm_2
+{
+	trailer: trailer.box_rm_2
+	mass: 23360.1
+	volume_factor: 1.25
+	length: 23
+	cargo_mass_ratio[]: 0.55
+	cargo_mass_ratio[]: 0.1
+	cargo_mass_ratio[]: 0.35
+	cog_offset: 3
+	cog_offset[]: (0, 1, 0)
+	cog_offset[]: (0, 0, 0)
+	cog_offset[]: (0, 1, 0)
+	country[]: nevada
+}
+}

@@ -1,0 +1,7 @@
+company_permanent: company.permanent.tree_et
+{
+	name: "Tree-ET"
+	sort_name: "tree-et"
+	trailer_look: tree_et
+	sound[]: "1|/sound/environment/sawmill.ogg"
+}

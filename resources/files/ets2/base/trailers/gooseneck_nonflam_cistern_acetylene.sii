@@ -1,0 +1,35 @@
+trailer : trailer.gooseneck.nonflam.cistern.acetylene
+{
+	accessories[]: .gooseneck.nonflam.cistern.acetylene.tchassis
+	accessories[]: .gooseneck.nonflam.cistern.acetylene.trwheel0
+	accessories[]: .gooseneck.nonflam.cistern.acetylene.trwheel1
+	accessories[]: .gooseneck.nonflam.cistern.acetylene.trwheel2
+	accessories[]: .gooseneck.nonflam.cistern.acetylene.cargo
+}
+
+vehicle_accessory: .gooseneck.nonflam.cistern.acetylene.tchassis
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/chassis.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.nonflam.cistern.acetylene.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.nonflam.cistern.acetylene.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.nonflam.cistern.acetylene.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .gooseneck.nonflam.cistern.acetylene.cargo
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/nonflam_cistern_acetylene.sii"
+}

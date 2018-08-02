@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aport_phx
+{
+	name: "Phoenix Freight"
+	sort_name: "phoenix freight"
+	trailer_look: plain
+}

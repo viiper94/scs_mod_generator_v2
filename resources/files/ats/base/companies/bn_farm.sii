@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bn_farm
+{
+	name: "Bushnell Farms"
+	sort_name: "bushnell farms"
+	trailer_look: bushnell
+}

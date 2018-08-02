@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .s_ki_solid.sand
+{
+	trailer: trailer.s_ki_solid.sand
+	mass: 16850
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.84, 0.0)
+}
+}

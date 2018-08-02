@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ini
+{
+	name: "Ini"
+	sort_name: "ini"
+	trailer_look: ini
+}

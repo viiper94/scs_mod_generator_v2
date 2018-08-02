@@ -1,0 +1,6 @@
+company_permanent: company.permanent.vitas_pwr
+{
+	name: "Vitas Power"
+	sort_name: "vitas power"
+	trailer_look: vitas_pwr
+}

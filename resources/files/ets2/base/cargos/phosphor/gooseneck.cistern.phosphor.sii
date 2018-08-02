@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .gooseneck.cistern.phosphor
+{
+	trailer: trailer.gooseneck.cistern.phosphor
+	mass: 13000
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.65, 0.0)
+}
+}

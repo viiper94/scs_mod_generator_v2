@@ -1,0 +1,31 @@
+trailer : trailer.reefer 
+{
+	accessories[]: .reefer.tchassis
+	accessories[]: .reefer.paint_job
+	accessories[]: .reefer.trwheel0
+	accessories[]: .reefer.trwheel1
+
+}
+
+vehicle_accessory: .reefer.tchassis
+{
+    	data_path: "/def/vehicle/trailer/reefer/chassis.sii"
+}
+
+vehicle_wheel_accessory: .reefer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .reefer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .reefer.paint_job
+{
+    	data_path: "/def/vehicle/trailer/reefer/company_paint_job/default.sii"
+}
+
+

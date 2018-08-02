@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .schmitz.universal
+{
+	trailer: trailer.schmitz.universal
+	mass: 22160
+	cog_offset: 1
+	cog_offset[]: (0.0, 1.0, 0.0)
+}
+}

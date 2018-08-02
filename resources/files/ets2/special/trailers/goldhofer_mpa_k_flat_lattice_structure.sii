@@ -1,0 +1,77 @@
+trailer : trailer.goldhofer.mpa_k_flat.lattice
+{
+	accessories[]: .goldhofer.mpa_k_flat.lattice.tchassis
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel0
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel1
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel2
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel3
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel4
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel5
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel6
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel7
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel8
+	accessories[]: .goldhofer.mpa_k_flat.lattice.trwheel9
+	accessories[]: .goldhofer.mpa_k_flat.lattice.cargo
+}
+
+vehicle_accessory: .goldhofer.mpa_k_flat.lattice.tchassis
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat/chassis.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel3
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel4
+{
+	offset: 8
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel5
+{
+	offset: 10
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel6
+{
+	offset: 12
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel7
+{
+	offset: 14
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel8
+{
+	offset: 16
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat.lattice.trwheel9
+{
+	offset: 18
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_accessory: .goldhofer.mpa_k_flat.lattice.cargo
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat/lattice_structure.sii"
+}

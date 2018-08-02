@@ -1,0 +1,6 @@
+company_permanent: company.permanent.wal_food_mkt
+{
+	name: "Wallbert"
+	sort_name: "wallbert"
+	trailer_look: wallbert
+}

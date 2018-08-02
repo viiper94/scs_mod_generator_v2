@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .livestock
+{
+	trailer: trailer.livestock
+	mass: 14230
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.71, 0.0)
+}
+}

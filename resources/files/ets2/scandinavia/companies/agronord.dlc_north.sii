@@ -1,0 +1,6 @@
+company_permanent: company.permanent.agronord
+{
+	name: "Agronord"
+	sort_name: "agronord"
+	trailer_look: agronord
+}

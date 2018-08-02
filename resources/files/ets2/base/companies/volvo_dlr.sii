@@ -1,0 +1,6 @@
+company_permanent: company.permanent.volvo_dlr
+{
+	name: "Volvo dealer"
+	sort_name: "volvo dealer"
+	trailer_look: volvo_dlr
+}

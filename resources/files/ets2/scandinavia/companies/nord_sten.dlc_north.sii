@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nord_sten
+{
+	name: "Nordic Stenbrott"
+	sort_name: "nordic stenbrott"
+	trailer_look: nord_sten
+}

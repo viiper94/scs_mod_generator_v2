@@ -1,0 +1,31 @@
+trailer : trailer.flatbed_b.cargo_tubes
+{
+	accessories[]: .flatbed_b.tubes.tchassis
+	accessories[]: .flatbed_b.tubes.trwheel0
+	accessories[]: .flatbed_b.tubes.trwheel1
+	accessories[]: .flatbed_b.tubes.cargo
+
+}
+
+vehicle_accessory: .flatbed_b.tubes.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flatbed/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_b.tubes.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_b.tubes.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .flatbed_b.tubes.cargo
+{
+    	data_path: "/def/vehicle/trailer/flatbed/cargo_tubes.sii"
+}
+

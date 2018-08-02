@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .s_ki_solid.ore
+{
+	trailer: trailer.s_ki_solid.ore
+	mass: 18580
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.93, 0.0)
+}
+}

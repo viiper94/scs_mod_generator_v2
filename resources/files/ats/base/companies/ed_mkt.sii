@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ed_mkt
+{
+	name: "Eddy's"
+	sort_name: "eddys"
+	trailer_look: eddys
+}

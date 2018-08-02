@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .schw_ovrwght.forklifts
+{
+	trailer: trailer.schw_ovrwght.forklifts
+	mass: 11230
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.56, 0.0)
+}
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cnp
+{
+	name: "CNP"
+	sort_name: "cnp"
+	trailer_look: cnp
+}

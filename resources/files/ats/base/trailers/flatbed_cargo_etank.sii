@@ -1,0 +1,31 @@
+trailer : trailer.flatbed_r.cargo_etank
+{
+	accessories[]: .flatbed_r.etank.tchassis
+	accessories[]: .flatbed_r.etank.trwheel0
+	accessories[]: .flatbed_r.etank.trwheel1
+	accessories[]: .flatbed_r.etank.cargo
+
+}
+
+vehicle_accessory: .flatbed_r.etank.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flatbed/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.etank.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.etank.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .flatbed_r.etank.cargo
+{
+    	data_path: "/def/vehicle/trailer/flatbed/cargo_etank.sii"
+}
+

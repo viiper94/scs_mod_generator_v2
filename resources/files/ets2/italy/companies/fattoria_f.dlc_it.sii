@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fattoria_f
+{
+	name: "Fattoria Felice"
+	sort_name: "fattoria felice"
+	trailer_look: fattoria_f
+}

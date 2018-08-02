@@ -1,0 +1,31 @@
+trailer : trailer.lowboy_r.cargo_excv
+{
+	accessories[]: .lowboy_r.excavator.tchassis
+	accessories[]: .lowboy_r.excavator.trwheel0
+	accessories[]: .lowboy_r.excavator.trwheel1
+	accessories[]: .lowboy_r.excavator.cargo
+
+}
+
+vehicle_accessory: .lowboy_r.excavator.tchassis
+{
+    	data_path: "/def/vehicle/trailer/lowboy/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_r.excavator.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_r.excavator.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .lowboy_r.excavator.cargo
+{
+    	data_path: "/def/vehicle/trailer/lowboy/cargo_excavator.sii"
+}
+

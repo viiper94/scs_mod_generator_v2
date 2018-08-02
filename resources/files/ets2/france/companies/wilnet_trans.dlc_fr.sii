@@ -1,0 +1,6 @@
+company_permanent: company.permanent.wilnet_trans
+{
+	name: "Wilnet Transport"
+	sort_name: "wilnet transport"
+	trailer_look: wilnet_trans
+}

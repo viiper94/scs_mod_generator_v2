@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fui
+{
+	name: "FUI SpA"
+	sort_name: "fui"
+	trailer_look: fui
+}

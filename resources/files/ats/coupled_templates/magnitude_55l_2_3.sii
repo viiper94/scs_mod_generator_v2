@@ -1,0 +1,86 @@
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.%trailer%
+{
+	accessories[]: .%trailer%.tchassis
+	accessories[]: .%trailer%.trwheel0
+	accessories[]: .%trailer%.trwheel1
+	accessories[]: .%trailer%.cargo
+	accessories[]: .%trailer%.trlr_cables
+	
+	slave_trailer: trailer.%trailer%.s
+}
+
+vehicle_accessory: .%trailer%.tchassis
+{
+		data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.trwheel0
+{
+	offset: 0
+		data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.trwheel1
+{
+	offset: 2
+		data_path: "%wheel%"
+}
+
+vehicle_accessory: .%trailer%.cargo
+{
+		data_path: "%cargo%"
+}
+
+vehicle_addon_accessory: .%trailer%.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
+}
+
+
+#########################################
+#
+#	SPREDER
+#
+#########################################
+
+trailer : trailer.%trailer%.s
+{
+	accessories[]: .%trailer%.s.tchassis
+	accessories[]: .%trailer%.s.trwheel0
+	accessories[]: .%trailer%.s.trwheel1
+	accessories[]: .%trailer%.s.flag_r_r
+	accessories[]: .%trailer%.s.flag_r_l
+}
+
+vehicle_accessory: .%trailer%.s.tchassis
+{
+		data_path: "/def/vehicle/trailer/magnitude_55l/chassis_spreader.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.s.trwheel0
+{
+	offset: 0
+		data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.s.trwheel1
+{
+	offset: 2
+		data_path: "%wheel%"
+}
+
+vehicle_addon_accessory: .%trailer%.s.flag_r_r
+{
+		data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .%trailer%.s.flag_r_l
+{
+		data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}

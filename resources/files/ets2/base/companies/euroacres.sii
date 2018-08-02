@@ -1,0 +1,7 @@
+company_permanent: company.permanent.euroacres
+{
+	name: "EuroAcres"
+	sort_name: "euroacres"
+	trailer_look: euroacres
+	sound[]: "1|/sound/environment/farm.ogg"
+}

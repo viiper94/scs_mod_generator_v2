@@ -1,0 +1,11 @@
+SiiNunit
+{
+trailer_def : .fuel
+{
+	trailer: trailer.fuel
+	mass: 13607.8
+	volume_factor: 0.9
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.68, 0.0)
+}
+}

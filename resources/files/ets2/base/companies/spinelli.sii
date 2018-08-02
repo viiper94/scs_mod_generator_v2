@@ -1,0 +1,6 @@
+company_permanent: company.permanent.spinelli
+{
+	name: "Spinelli"
+	sort_name: "spinelli"
+	trailer_look: spinelli
+}

@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flat_bed.ventilator
+{
+	trailer: trailer.flat_bed.ventilator
+	mass: 4830
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.24, 0.0)
+}
+}

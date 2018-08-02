@@ -1,0 +1,15 @@
+SiiNunit
+{
+trailer_def : .mag_55l_t2s.transformer
+{
+	trailer: trailer.mag_55l_t2s.transformer
+	mass: 55792
+	cargo_mass_ratio[]: 0.3
+	cargo_mass_ratio[]: 0.35
+	cargo_mass_ratio[]: 0.35
+	cog_offset: 3
+	cog_offset[]: (0, 1, 0.5)
+	cog_offset[]: (0, 1, 0)
+	cog_offset[]: (0, 1, 0)
+}
+}

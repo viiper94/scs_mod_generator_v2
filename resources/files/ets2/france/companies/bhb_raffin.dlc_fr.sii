@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bhb_raffin
+{
+	name: "BHB - La Raffinerie"
+	sort_name: "bhb - la raffinerie"
+	trailer_look: bhb_raffin
+}

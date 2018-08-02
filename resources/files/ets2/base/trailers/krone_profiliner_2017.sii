@@ -1,0 +1,37 @@
+trailer : trailer.krone.profiliner17
+{
+	accessories[]: .krone.profiliner17.tchassis
+	accessories[]: .krone.profiliner17.paint_job
+	accessories[]: .krone.profiliner17.trwheel0
+	accessories[]: .krone.profiliner17.trwheel1
+	accessories[]: .krone.profiliner17.trwheel2
+}
+
+vehicle_accessory: .krone.profiliner17.tchassis
+{
+    	data_path: "/def/vehicle/trailer/krone/profiliner_2017/chassis_2017.sii"
+}
+
+vehicle_wheel_accessory: .krone.profiliner17.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/385_65.sii"
+}
+
+vehicle_wheel_accessory: .krone.profiliner17.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/385_65.sii"
+}
+
+vehicle_wheel_accessory: .krone.profiliner17.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/385_65.sii"
+}
+vehicle_paint_job_accessory: .krone.profiliner17.paint_job
+{
+    	data_path: "/def/vehicle/trailer/krone/profiliner_2017/company_paint_job/default_2017.sii"
+}
+
+

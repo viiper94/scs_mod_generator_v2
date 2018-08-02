@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nord_crown
+{
+	name: "Nordic Crown"
+	sort_name: "nordic crown"
+	trailer_look: nord_crown
+}

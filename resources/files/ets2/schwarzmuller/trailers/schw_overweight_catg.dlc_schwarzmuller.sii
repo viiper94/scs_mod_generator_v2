@@ -1,0 +1,36 @@
+trailer : trailer.schw_ovrwght.catg
+{
+	accessories[]: .schw_ovrwght.catg.tchassis
+	accessories[]: .schw_ovrwght.catg.trwheel0
+	accessories[]: .schw_ovrwght.catg.trwheel1
+	accessories[]: .schw_ovrwght.catg.trwheel2
+	accessories[]: .schw_ovrwght.catg.cargo
+}
+
+vehicle_accessory: .schw_ovrwght.catg.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.catg.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.catg.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.catg.trwheel2
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_accessory: .schw_ovrwght.catg.cargo
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/catg.dlc_schwarzmuller.sii"
+}
+

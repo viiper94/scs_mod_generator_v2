@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bit_rd_grg
+{
+	name: "Bitumen"
+	sort_name: "bitumen"
+	trailer_look: bitumen
+}

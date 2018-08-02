@@ -1,0 +1,28 @@
+trailer : trailer.car_volvo 
+{
+	accessories[]: .car_volvo.tchassis
+	accessories[]: .car_volvo.trwheel0
+	accessories[]: .car_volvo.trwheel1
+	accessories[]: .car_volvo.volvo.cargo
+}
+
+vehicle_accessory: .car_volvo.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .car_volvo.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_volvo.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_volvo.volvo.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_volvo.dlc_north.sii"
+}

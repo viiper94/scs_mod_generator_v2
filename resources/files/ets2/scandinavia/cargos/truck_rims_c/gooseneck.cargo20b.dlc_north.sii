@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .gooseneck.cargo20b
+{
+	trailer: trailer.gooseneck.cargo20b
+	mass: 11950
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.6, 0.0)
+}
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bjork
+{
+	name: "Bjork"
+	sort_name: "bjork"
+	trailer_look: bjork
+}

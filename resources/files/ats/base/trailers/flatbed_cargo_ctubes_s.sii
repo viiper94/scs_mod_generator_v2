@@ -1,0 +1,31 @@
+trailer : trailer.flatbed_r.ctubes_s
+{
+	accessories[]: .flatbed_r.ctubes_s.tchassis
+	accessories[]: .flatbed_r.ctubes_s.trwheel0
+	accessories[]: .flatbed_r.ctubes_s.trwheel1
+	accessories[]: .flatbed_r.ctubes_s.cargo
+
+}
+
+vehicle_accessory: .flatbed_r.ctubes_s.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flatbed/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.ctubes_s.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_r.ctubes_s.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .flatbed_r.ctubes_s.cargo
+{
+    	data_path: "/def/vehicle/trailer/flatbed/cargo_ctubes_s.sii"
+}
+

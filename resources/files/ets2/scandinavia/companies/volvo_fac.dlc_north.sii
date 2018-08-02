@@ -1,0 +1,6 @@
+company_permanent: company.permanent.volvo_fac
+{
+	name: "Volvo Truck Factory"
+	sort_name: "volvo truck factory"
+	trailer_look: volvo_fac
+}

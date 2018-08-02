@@ -1,0 +1,6 @@
+company_permanent: company.permanent.polarislines
+{
+	name: "Polarislines"
+	sort_name: "polarislines"
+	trailer_look: polarislines
+}

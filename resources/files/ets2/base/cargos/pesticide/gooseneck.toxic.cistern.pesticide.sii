@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .gooseneck.toxic.cistern.pesticide
+{
+	trailer: trailer.gooseneck.toxic.cistern.pesticide
+	mass: 18000
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.9, 0.0)
+}
+}

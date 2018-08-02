@@ -1,0 +1,31 @@
+trailer : trailer.log.cargo_wood
+{
+	accessories[]: .log.wood.tchassis
+	accessories[]: .log.wood.trwheel0
+	accessories[]: .log.wood.trwheel1
+	accessories[]: .log.wood.cargo
+
+}
+
+vehicle_accessory: .log.wood.tchassis
+{
+    	data_path: "/def/vehicle/trailer/log/chassis.sii"
+}
+
+vehicle_wheel_accessory: .log.wood.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .log.wood.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .log.wood.cargo
+{
+    	data_path: "/def/vehicle/trailer/log/cargo_wood.sii"
+}
+

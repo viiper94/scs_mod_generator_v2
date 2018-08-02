@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aci
+{
+	name: "ACI SRL"
+	sort_name: "aci srl"
+	trailer_look: aci
+}

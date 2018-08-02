@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .goldhofer.stz_vl.conc_beam
+{
+	trailer: trailer.goldhofer.stz_vl.conc_beam
+	mass: 51030
+	cog_offset: 1
+	cog_offset[]: (0, 1, 1)
+}
+}

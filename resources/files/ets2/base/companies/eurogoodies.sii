@@ -1,0 +1,6 @@
+company_permanent: company.permanent.eurogoodies
+{
+	name: "EuroGoodies"
+	sort_name: "eurogoodies"
+	trailer_look: eurogoodies
+}

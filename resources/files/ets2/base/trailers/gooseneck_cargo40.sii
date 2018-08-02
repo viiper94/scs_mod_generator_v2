@@ -1,0 +1,36 @@
+trailer : trailer.gooseneck.cargo40 
+{
+	accessories[]: .gooseneck.cargo40.tchassis
+	accessories[]: .gooseneck.cargo40.trwheel0
+	accessories[]: .gooseneck.cargo40.trwheel1
+	accessories[]: .gooseneck.cargo40.trwheel2
+	accessories[]: .gooseneck.cargo40.cargo
+}
+
+vehicle_accessory: .gooseneck.cargo40.tchassis
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/chassis.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cargo40.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cargo40.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cargo40.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .gooseneck.cargo40.cargo
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/cargo40.sii"
+}
+

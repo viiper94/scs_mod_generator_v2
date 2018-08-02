@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .goldhofer.mpa_k_flat14.vossloh_g6
+{
+	trailer: trailer.goldhofer.mpa_k_flat14.vossloh_g6
+	mass: 61750
+	cog_offset: 1
+	cog_offset[]: (0, 1, 1.5)
+}
+}

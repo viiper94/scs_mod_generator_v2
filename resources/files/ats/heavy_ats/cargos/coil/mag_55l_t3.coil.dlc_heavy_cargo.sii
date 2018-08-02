@@ -1,0 +1,13 @@
+SiiNunit
+{
+trailer_def : .mag_55l_t3.coil
+{
+	trailer: trailer.mag_55l_t3.coil
+	mass: 29937.2
+	cargo_mass_ratio[]: 0.3
+	cargo_mass_ratio[]: 0.7
+	cog_offset: 2
+	cog_offset[]: (0, 1, 0.5)
+	cog_offset[]: (0, 1, 0)
+}
+}

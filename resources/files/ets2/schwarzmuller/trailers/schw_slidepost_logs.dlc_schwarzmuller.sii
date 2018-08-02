@@ -1,0 +1,35 @@
+trailer : trailer.schw_slidep.logs
+{
+	accessories[]: .schw_slidep.tchassis
+	accessories[]: .schw_slidep.trwheel0
+	accessories[]: .schw_slidep.trwheel1
+	accessories[]: .schw_slidep.trwheel2
+	accessories[]: .schw_slidep.logs.cargo
+}
+
+vehicle_accessory: .schw_slidep.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_slidepost/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_slidep.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .schw_slidep.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .schw_slidep.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .schw_slidep.logs.cargo
+{
+    	data_path: "/def/vehicle/trailer/schw_slidepost/logs.dlc_schwarzmuller.sii"
+}

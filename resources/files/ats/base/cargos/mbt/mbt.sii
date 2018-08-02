@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .mbt
+{
+	trailer: trailer.mbt
+	mass: 226.8
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.0, 0.0)
+}
+}

@@ -1,0 +1,36 @@
+trailer : trailer.schw_ovrwght.aircond 
+{
+	accessories[]: .schw_ovrwght.aircond.tchassis
+	accessories[]: .schw_ovrwght.aircond.trwheel0
+	accessories[]: .schw_ovrwght.aircond.trwheel1
+	accessories[]: .schw_ovrwght.aircond.trwheel2
+	accessories[]: .schw_ovrwght.aircond.cargo
+}
+
+vehicle_accessory: .schw_ovrwght.aircond.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.aircond.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.aircond.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.aircond.trwheel2
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_accessory: .schw_ovrwght.aircond.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/aircond_schw.dlc_trailers.sii"
+}
+

@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .chcistern
+{
+	trailer: trailer.chcistern
+	mass: 19000
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.95, 0.0)
+}
+}

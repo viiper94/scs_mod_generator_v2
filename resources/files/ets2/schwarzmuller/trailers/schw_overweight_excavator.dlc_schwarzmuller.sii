@@ -1,0 +1,35 @@
+trailer : trailer.schw_ovrwght.excavator
+{
+	accessories[]: .schw_ovrwght.excavator.tchassis
+	accessories[]: .schw_ovrwght.excavator.trwheel0
+	accessories[]: .schw_ovrwght.excavator.trwheel1
+	accessories[]: .schw_ovrwght.excavator.trwheel2
+	accessories[]: .schw_ovrwght.excavator.cargo
+}
+
+vehicle_accessory: .schw_ovrwght.excavator.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.excavator.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.excavator.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.excavator.trwheel2
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_accessory: .schw_ovrwght.excavator.cargo
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/excavator.dlc_schwarzmuller.sii"
+}

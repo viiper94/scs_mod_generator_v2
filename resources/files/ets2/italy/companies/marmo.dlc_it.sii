@@ -1,0 +1,6 @@
+company_permanent: company.permanent.marmo
+{
+	name: "Marmo SpA"
+	sort_name: "marmo"
+	trailer_look: marmo
+}

@@ -1,0 +1,28 @@
+trailer : trailer.car_trans3 
+{
+	accessories[]: .car_trans3.tchassis
+	accessories[]: .car_trans3.trwheel0
+	accessories[]: .car_trans3.trwheel1
+	accessories[]: .car_trans3.octavia.cargo
+}
+
+vehicle_accessory: .car_trans3.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_black.sii"
+}
+
+vehicle_wheel_accessory: .car_trans3.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans3.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_trans3.octavia.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_octavia_3.sii"
+}

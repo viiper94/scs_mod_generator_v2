@@ -1,0 +1,48 @@
+trailer : trailer.goldhofer.mpa_k_flat14.wirtgenw250i
+{
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.tchassis
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel0
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel1
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel2
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel3
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel4
+	accessories[]: .goldhofer.mpa_k_flat14.wirtgenw250i.cargo
+}
+
+vehicle_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.tchassis
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat_1x4/chassis_y.dlc_heavy_cargo.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel3
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.trwheel4
+{
+	offset: 8
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_accessory: .goldhofer.mpa_k_flat14.wirtgenw250i.cargo
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat_1x4/wirtgen_w250i.sii"
+}

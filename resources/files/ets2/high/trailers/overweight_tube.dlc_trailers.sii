@@ -1,0 +1,36 @@
+trailer : trailer.overweight.tube 
+{
+	accessories[]: .overweight.tube.tchassis
+	accessories[]: .overweight.tube.trwheel0
+	accessories[]: .overweight.tube.trwheel1
+	accessories[]: .overweight.tube.trwheel2
+	accessories[]: .overweight.tube.cargo
+}
+
+vehicle_accessory: .overweight.tube.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis_Y.sii"
+}
+
+vehicle_wheel_accessory: .overweight.tube.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.tube.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.tube.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.tube.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/tube.dlc_trailers.sii"
+}
+

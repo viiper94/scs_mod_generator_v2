@@ -1,0 +1,6 @@
+company_permanent: company.permanent.huilant
+{
+	name: "Huilant"
+	sort_name: "huilant"
+	trailer_look: huilant
+}

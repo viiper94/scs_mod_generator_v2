@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .schw_curtain
+{
+	trailer: trailer.schw_curtain
+	mass: 16660
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.83, 0.0)
+}
+}

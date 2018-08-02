@@ -1,0 +1,28 @@
+trailer : trailer.mbt 
+{
+	accessories[]: .mbt.tchassis
+	accessories[]: .mbt.trwheel0
+	accessories[]: .mbt.trwheel1
+
+}
+
+vehicle_accessory: .mbt.tchassis
+{
+    	data_path: "/def/vehicle/trailer/mbt1_barrier/chassis.sii"
+}
+
+vehicle_wheel_accessory: .mbt.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mbt.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+
+
+

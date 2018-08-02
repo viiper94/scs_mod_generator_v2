@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bhv
+{
+	name: "BHV"
+	sort_name: "bhv"
+	trailer_look: bhv
+}

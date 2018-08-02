@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .lowboy_r.cargo_excv
+{
+	trailer: trailer.lowboy_r.cargo_excv
+	mass: 19958.1
+	cog_offset: 1
+	cog_offset[]: (0.0, 1, 0.0)
+}
+}

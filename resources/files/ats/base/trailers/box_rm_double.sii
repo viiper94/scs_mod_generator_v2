@@ -1,0 +1,85 @@
+trailer : trailer.box_rm_2
+{
+	accessories[]: .box_rm_2.tchassis
+	accessories[]: .box_rm_2.trwheel0
+	accessories[]: .box_rm_2.trwheel1
+	accessories[]: .box_rm_2.paint_job
+	
+	slave_trailer: .box_rm_2.dolly
+}
+
+vehicle_accessory: .box_rm_2.tchassis
+{
+    	data_path: "/def/vehicle/trailer/box_wabash/chassis_45.sii"
+}
+
+vehicle_wheel_accessory: .box_rm_2.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .box_rm_2.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .box_rm_2.paint_job
+{
+    	data_path: "/def/vehicle/trailer/box_wabash/company_paint_job/default.sii"
+}
+
+#########################################
+#
+#	dolly
+#
+#########################################
+
+trailer : .box_rm_2.dolly
+{
+	accessories[]: .box_rm_2.dolly.tchassis
+	accessories[]: .box_rm_2.dolly.trwheel0
+	
+	slave_trailer: .box_rm_2.second
+}
+
+vehicle_accessory: .box_rm_2.dolly.tchassis
+{
+    	data_path: "/def/vehicle/trailer/convertor_dolly/chassis.sii"
+}
+
+vehicle_wheel_accessory: .box_rm_2.dolly.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+#########################################
+#
+#	trailer
+#
+#########################################
+
+trailer : .box_rm_2.second
+{
+	accessories[]: .box_rm_2.second.tchassis
+	accessories[]: .box_rm_2.second.trwheel0
+	accessories[]: .box_rm_2.second.paint_job
+}
+
+vehicle_accessory: .box_rm_2.second.tchassis
+{
+    	data_path: "/def/vehicle/trailer/box_wabash/chassis.sii"
+}
+
+vehicle_wheel_accessory: .box_rm_2.second.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .box_rm_2.second.paint_job
+{
+    	data_path: "/def/vehicle/trailer/box_wabash/company_paint_job/default.sii"
+}

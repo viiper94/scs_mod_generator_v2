@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cha_el_mkt
+{
+	name: "Charged"
+	sort_name: "charged"
+	trailer_look: charged
+}

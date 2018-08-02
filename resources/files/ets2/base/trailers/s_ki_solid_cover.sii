@@ -1,0 +1,38 @@
+trailer : trailer.s_ki_solid.cover
+{
+	accessories[]: .s_ki_solid.cover.tchassis
+	accessories[]: .s_ki_solid.cover.trwheel0
+	accessories[]: .s_ki_solid.cover.trwheel1
+	accessories[]: .s_ki_solid.cover.trwheel2
+	accessories[]: .s_ki_solid.cover.cargo
+}
+
+vehicle_accessory: .s_ki_solid.cover.tchassis
+{
+    	data_path: "/def/vehicle/trailer/s_ki_solid/chassis.sii"
+}
+
+vehicle_wheel_accessory: .s_ki_solid.cover.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .s_ki_solid.cover.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .s_ki_solid.cover.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .s_ki_solid.cover.cargo
+{
+    	data_path: "/def/vehicle/trailer/s_ki_solid/cover.sii"
+}
+ 
+
+

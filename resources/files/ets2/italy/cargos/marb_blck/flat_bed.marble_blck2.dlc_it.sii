@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flat_bed.marble_blck2
+{
+	trailer: trailer.flat_bed.marble_blck2
+	mass: 23000
+	cog_offset: 1
+	cog_offset[]: (0.0, 1.0, 0.0)
+}
+}

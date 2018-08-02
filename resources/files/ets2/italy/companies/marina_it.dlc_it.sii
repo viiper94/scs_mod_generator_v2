@@ -1,0 +1,6 @@
+company_permanent: company.permanent.marina_it
+{
+	name: "Marina"
+	sort_name: "marina"
+	trailer_look: marina
+}

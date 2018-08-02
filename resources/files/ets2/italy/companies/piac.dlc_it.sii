@@ -1,0 +1,6 @@
+company_permanent: company.permanent.piac
+{
+	name: "PIAC"
+	sort_name: "piac"
+	trailer_look: piac
+}

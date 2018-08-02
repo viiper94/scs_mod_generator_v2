@@ -1,0 +1,6 @@
+company_permanent: company.permanent.costruzi_fla
+{
+	name: "Costruzione di Edifici"
+	sort_name: "costruzione di edifici"
+	trailer_look: costruzi
+}

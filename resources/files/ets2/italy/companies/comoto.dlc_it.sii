@@ -1,0 +1,6 @@
+company_permanent: company.permanent.comoto
+{
+	name: "Comoto"
+	sort_name: "comoto"
+	trailer_look: comoto
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.gm_chs_plnt
+{
+	name: "Global Mills"
+	sort_name: "global mills"
+	trailer_look: gm_chs_plnt
+}

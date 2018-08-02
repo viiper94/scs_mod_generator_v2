@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .overweight.tubeair
+{
+	trailer: trailer.overweight.tubeair
+	mass: 19620
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.98, 0.0)
+}
+}

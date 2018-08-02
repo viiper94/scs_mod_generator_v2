@@ -1,0 +1,26 @@
+trailer : trailer.log 
+{
+	accessories[]: .log.tchassis
+	accessories[]: .log.trwheel0
+	accessories[]: .log.trwheel1
+
+}
+
+vehicle_accessory: .log.tchassis
+{
+    	data_path: "/def/vehicle/trailer/log/chassis.sii"
+}
+
+vehicle_wheel_accessory: .log.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .log.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+

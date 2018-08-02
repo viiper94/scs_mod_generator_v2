@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .overweight.windplant
+{
+	trailer: trailer.overweight.windplant
+	mass: 21300
+	cog_offset: 1
+	cog_offset[]: (0.0, 1, 0.0)
+}
+}

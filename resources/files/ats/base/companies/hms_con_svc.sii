@@ -1,0 +1,6 @@
+company_permanent: company.permanent.hms_con_svc
+{
+	name: "HMS Machinery"
+	sort_name: "hms machinery"
+	trailer_look: hms
+}

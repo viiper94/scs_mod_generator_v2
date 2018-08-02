@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sc_frm
+{
+	name: "Sunshine Crops"
+	sort_name: "sunshine crops"
+	trailer_look: sunshine
+}

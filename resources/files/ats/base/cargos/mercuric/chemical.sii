@@ -1,0 +1,11 @@
+SiiNunit
+{
+trailer_def : .chemical
+{
+	trailer: trailer.chemical
+	mass: 15422.2
+	volume_factor: 0.9
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.77, 0.0)
+}
+}

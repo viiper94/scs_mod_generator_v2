@@ -1,0 +1,38 @@
+trailer : trailer.cement_mix 
+{
+	accessories[]: .cement_mix.tchassis
+	accessories[]: .cement_mix.trwheel0
+	accessories[]: .cement_mix.trwheel1
+	accessories[]: .cement_mix.trwheel2
+	accessories[]: .cement_mix.cargo
+}
+
+vehicle_accessory: .cement_mix.tchassis
+{
+    	data_path: "/def/vehicle/trailer/cement_mixer/chassis.sii"
+}
+
+vehicle_wheel_accessory: .cement_mix.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .cement_mix.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .cement_mix.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+} 
+
+vehicle_accessory: .cement_mix.cargo
+{
+    	data_path: "/def/vehicle/trailer/cement_mixer/mixer.sii"
+}
+ 
+

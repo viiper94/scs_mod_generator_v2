@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .schw_food
+{
+	trailer: trailer.schw_food
+	mass: 14350
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.72, 0.0)
+}
+}

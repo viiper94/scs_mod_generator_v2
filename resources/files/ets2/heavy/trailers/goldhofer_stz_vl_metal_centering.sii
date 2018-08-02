@@ -1,0 +1,42 @@
+trailer : trailer.goldhofer.stz_vl.m_centering
+{
+	accessories[]: .goldhofer.stz_vl.m_centering.tchassis
+	accessories[]: .goldhofer.stz_vl.m_centering.trwheel0
+	accessories[]: .goldhofer.stz_vl.m_centering.trwheel1
+	accessories[]: .goldhofer.stz_vl.m_centering.trwheel2
+	accessories[]: .goldhofer.stz_vl.m_centering.trwheel3
+	accessories[]: .goldhofer.stz_vl.m_centering.cargo
+}
+
+vehicle_accessory: .goldhofer.stz_vl.m_centering.tchassis
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_stz_vl/chassis_short.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.stz_vl.m_centering.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.stz_vl.m_centering.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.stz_vl.m_centering.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.stz_vl.m_centering.trwheel3
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_accessory: .goldhofer.stz_vl.m_centering.cargo
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_stz_vl/metal_centering.sii"
+}

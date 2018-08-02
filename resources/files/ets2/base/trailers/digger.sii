@@ -1,0 +1,37 @@
+trailer : trailer.overweight.digger 
+{
+	accessories[]: .overweight.digger.tchassis
+	accessories[]: .overweight.digger.trwheel0
+	accessories[]: .overweight.digger.trwheel1
+	accessories[]: .overweight.digger.trwheel2
+	accessories[]: .overweight.digger.cargo
+}
+
+vehicle_accessory: .overweight.digger.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis.sii"
+}
+
+vehicle_wheel_accessory: .overweight.digger.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.digger.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.digger.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.digger.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/twocats.sii"
+}
+ 
+

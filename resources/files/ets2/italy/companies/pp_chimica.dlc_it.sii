@@ -1,0 +1,10 @@
+company_permanent: company.permanent.pp_chimica
+{
+	name: "PP Chimica Italia"
+	sort_name: "pp chimica italia"
+	trailer_look: pp_chimica
+	sound[]: "1|/sound/environment/chemical_factory_1.ogg"
+	sound[]: "1|/sound/environment/chemical_factory_2.ogg"
+	sound[]: "1|/sound/environment/chemical_factory_3.ogg"
+	sound[]: "1|/sound/environment/factory_1.ogg"
+}

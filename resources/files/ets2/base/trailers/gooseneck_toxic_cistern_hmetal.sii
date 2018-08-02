@@ -1,0 +1,35 @@
+trailer : trailer.gooseneck.toxic.cistern.hmetal
+{
+	accessories[]: .gooseneck.toxic.cistern.hmetal.tchassis
+	accessories[]: .gooseneck.toxic.cistern.hmetal.trwheel0
+	accessories[]: .gooseneck.toxic.cistern.hmetal.trwheel1
+	accessories[]: .gooseneck.toxic.cistern.hmetal.trwheel2
+	accessories[]: .gooseneck.toxic.cistern.hmetal.cargo
+}
+
+vehicle_accessory: .gooseneck.toxic.cistern.hmetal.tchassis
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/chassis.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.toxic.cistern.hmetal.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.toxic.cistern.hmetal.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.toxic.cistern.hmetal.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .gooseneck.toxic.cistern.hmetal.cargo
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/toxic_cistern_hmetal.sii"
+}

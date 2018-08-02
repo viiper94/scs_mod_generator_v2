@@ -1,0 +1,26 @@
+trailer : trailer.car_r 
+{
+	accessories[]: .car_r.tchassis
+	accessories[]: .car_r.trwheel0
+	accessories[]: .car_r.trwheel1
+
+}
+
+vehicle_accessory: .car_r.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .car_r.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .car_r.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+

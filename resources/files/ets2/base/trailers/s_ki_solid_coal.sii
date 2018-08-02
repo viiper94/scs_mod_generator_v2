@@ -1,0 +1,38 @@
+trailer : trailer.s_ki_solid.coal 
+{
+	accessories[]: .s_ki_solid.coal.tchassis
+	accessories[]: .s_ki_solid.coal.trwheel0
+	accessories[]: .s_ki_solid.coal.trwheel1
+	accessories[]: .s_ki_solid.coal.trwheel2
+	accessories[]: .s_ki_solid.coal.cargo
+}
+
+vehicle_accessory: .s_ki_solid.coal.tchassis
+{
+    	data_path: "/def/vehicle/trailer/s_ki_solid/chassis.sii"
+}
+
+vehicle_wheel_accessory: .s_ki_solid.coal.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .s_ki_solid.coal.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .s_ki_solid.coal.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .s_ki_solid.coal.cargo
+{
+    	data_path: "/def/vehicle/trailer/s_ki_solid/coal.sii"
+}
+ 
+
+

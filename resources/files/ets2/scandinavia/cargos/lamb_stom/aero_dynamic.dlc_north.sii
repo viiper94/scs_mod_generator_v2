@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .aero_dynamic
+{
+	trailer: trailer.aero_dynamic
+	mass: 13230
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.66, 0.0)
+}
+}

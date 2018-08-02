@@ -1,0 +1,33 @@
+trailer : trailer.box_l
+{
+	accessories[]: .box_l.tchassis
+	accessories[]: .box_l.paint_job
+	accessories[]: .box_l.trwheel0
+	accessories[]: .box_l.trwheel1
+
+
+}
+
+vehicle_accessory: .box_l.tchassis
+{
+    	data_path: "/def/vehicle/trailer/box_long/chassis.sii"
+}
+
+vehicle_wheel_accessory: .box_l.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_wheel_accessory: .box_l.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .box_l.paint_job
+{
+    	data_path: "/def/vehicle/trailer/box_long/company_paint_job/default.sii"
+}
+
+
+
+

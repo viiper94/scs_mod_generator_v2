@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .curtain_l.hazard1_4
+{
+	trailer: trailer.curtain_l.hazard1_4
+	mass: 6123.5
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.31, 0.0)
+}
+}

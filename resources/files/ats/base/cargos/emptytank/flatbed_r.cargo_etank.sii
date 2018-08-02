@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flatbed_r.cargo_etank
+{
+	trailer: trailer.flatbed_r.cargo_etank
+	mass: 10205.9
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.51, 0.0)
+}
+}

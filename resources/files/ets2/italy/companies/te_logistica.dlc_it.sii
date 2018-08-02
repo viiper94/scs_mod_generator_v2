@@ -1,0 +1,6 @@
+company_permanent: company.permanent.te_logistica
+{
+	name: "TE Logistica"
+	sort_name: "te logistica"
+	trailer_look: te_logistica
+}

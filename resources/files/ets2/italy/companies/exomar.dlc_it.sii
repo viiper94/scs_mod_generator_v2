@@ -1,0 +1,6 @@
+company_permanent: company.permanent.exomar
+{
+	name: "Exomar"
+	sort_name: "exomar"
+	trailer_look: exomar
+}

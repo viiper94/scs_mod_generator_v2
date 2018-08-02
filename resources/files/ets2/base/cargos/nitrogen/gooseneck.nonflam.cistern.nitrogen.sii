@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .gooseneck.nonflam.cistern.nitrogen
+{
+	trailer: trailer.gooseneck.nonflam.cistern.nitrogen
+	mass: 9000
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.45, 0.0)
+}
+}

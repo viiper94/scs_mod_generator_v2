@@ -1,0 +1,6 @@
+company_permanent: company.permanent.quadrelli
+{
+	name: "Quadrelli SpA"
+	sort_name: "quadrelli"
+	trailer_look: quadrelli
+}

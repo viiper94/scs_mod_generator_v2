@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .goldhofer.mpa_k_flat14.t_c_3160
+{
+	trailer: trailer.goldhofer.mpa_k_flat14.t_c_3160
+	mass: 36150
+	cog_offset: 1
+	cog_offset[]: (0, 1, 1)
+}
+}

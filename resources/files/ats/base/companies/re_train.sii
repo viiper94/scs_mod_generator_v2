@@ -1,0 +1,6 @@
+company_permanent: company.permanent.re_train
+{
+	name: "Rail Export"
+	sort_name: "rail export"
+	trailer_look: plain
+}

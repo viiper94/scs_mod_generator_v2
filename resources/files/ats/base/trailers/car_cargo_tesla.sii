@@ -1,0 +1,31 @@
+trailer : trailer.car_r.cargo_tesla 
+{
+	accessories[]: .car_r.tesla.tchassis
+	accessories[]: .car_r.tesla.trwheel0
+	accessories[]: .car_r.tesla.trwheel1
+	accessories[]: .car_r.tesla.cargo
+
+}
+
+vehicle_accessory: .car_r.tesla.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .car_r.tesla.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .car_r.tesla.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_accessory: .car_r.tesla.cargo
+{
+    	data_path: "/def/vehicle/trailer/car/cargo_tesla.sii"
+}
+

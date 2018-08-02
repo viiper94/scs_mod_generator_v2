@@ -1,0 +1,6 @@
+company_permanent: company.permanent.konstnr_wind
+{
+	name: "Konstnorr"
+	sort_name: "konstnorr"
+	trailer_look: konstnr
+}

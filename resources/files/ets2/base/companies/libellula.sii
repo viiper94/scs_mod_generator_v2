@@ -1,0 +1,6 @@
+company_permanent: company.permanent.libellula
+{
+	name: "Libellula"
+	sort_name: "libellula"
+	trailer_look: libellula
+}

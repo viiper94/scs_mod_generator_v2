@@ -1,0 +1,9 @@
+SiiNunit
+{
+trailer_def : .goldhofer.mpa_k_flat14.mystery_cyl
+{
+	trailer: trailer.goldhofer.mpa_k_flat14.mystery_cyl
+	mass: 45000
+	cog_offset[]: (0, 1, 0)
+}
+}

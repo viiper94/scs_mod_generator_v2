@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .s_ki_solid.coal
+{
+	trailer: trailer.s_ki_solid.coal
+	mass: 14580
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.73, 0.0)
+}
+}

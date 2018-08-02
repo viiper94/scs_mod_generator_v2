@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .willig.fuel_cistern
+{
+	trailer: trailer.willig.fuel_cistern
+	mass: 19230
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.96, 0.0)
+}
+}

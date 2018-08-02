@@ -1,0 +1,9 @@
+SiiNunit
+{
+trailer_def : .goldhofer.mpa_k.mystery_box
+{
+	trailer: trailer.goldhofer.mpa_k.mystery_box
+	mass: 44000
+	cog_offset[]: (0, 0.6, 0)
+}
+}

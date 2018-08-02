@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .cement_mix
+{
+	trailer: trailer.cement_mix
+	mass: 8760
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.44, 0.0)
+}
+}

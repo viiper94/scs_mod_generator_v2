@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .truck_trans.scania
+{
+	trailer: trailer.truck_trans.scania
+	mass: 14590
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.73, 0.0)
+}
+}

@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .goldhofer.mpa_k.boiler_parts
+{
+	trailer: trailer.goldhofer.mpa_k.boiler_parts
+	mass: 45000
+
+	cog_offset[]: (0, 0.6, 0)
+}
+}

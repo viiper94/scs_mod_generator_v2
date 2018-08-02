@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flat_bed.over_cargo
+{
+	trailer: trailer.flat_bed.over_cargo
+	mass: 11720
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.59, 0.0)
+}
+}

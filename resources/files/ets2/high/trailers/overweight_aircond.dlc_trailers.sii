@@ -1,0 +1,36 @@
+trailer : trailer.overweight.aircond 
+{
+	accessories[]: .overweight.aircond.tchassis
+	accessories[]: .overweight.aircond.trwheel0
+	accessories[]: .overweight.aircond.trwheel1
+	accessories[]: .overweight.aircond.trwheel2
+	accessories[]: .overweight.aircond.cargo
+}
+
+vehicle_accessory: .overweight.aircond.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis.sii"
+}
+
+vehicle_wheel_accessory: .overweight.aircond.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.aircond.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.aircond.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.aircond.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/aircond.dlc_trailers.sii"
+}
+

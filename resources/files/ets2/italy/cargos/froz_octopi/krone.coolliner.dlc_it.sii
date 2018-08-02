@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .krone.coolliner
+{
+	trailer: trailer.krone.coolliner
+	mass: 14400
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.72, 0.0)
+}
+}

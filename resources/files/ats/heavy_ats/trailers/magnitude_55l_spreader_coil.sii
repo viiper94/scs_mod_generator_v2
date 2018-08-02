@@ -1,0 +1,115 @@
+trailer : trailer.mag_55l_t2s.coil
+{
+	accessories[]: .mag_55l_t2s.coil.tchassis
+	accessories[]: .mag_55l_t2s.coil.trwheel0
+	accessories[]: .mag_55l_t2s.coil.trwheel1
+	
+	slave_trailer: trailer.mag_55_t2s_t.coil
+
+}
+
+vehicle_accessory: .mag_55l_t2s.coil.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t2s.coil.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t2s.coil.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+
+
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.mag_55_t2s_t.coil
+{
+	accessories[]: .mag_55_t2s_t.coil.tchassis
+	accessories[]: .mag_55_t2s_t.coil.trwheel0
+	accessories[]: .mag_55_t2s_t.coil.trwheel1
+
+	accessories[]: .mag_55_t2s_t.coil.cargo
+	
+	slave_trailer: trailer.mag_55_s2.coil
+
+}
+
+vehicle_accessory: .mag_55_t2s_t.coil.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_t2s_t.coil.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_t2s_t.coil.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .mag_55_t2s_t.coil.cargo
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_coil.sii"
+}
+
+
+#########################################
+#
+#	SPREDER
+#
+#########################################
+
+trailer : trailer.mag_55_s2.coil
+{
+	accessories[]: .mag_55_s2.coil.tchassis
+	accessories[]: .mag_55_s2.coil.trwheel0
+	accessories[]: .mag_55_s2.coil.trwheel1
+    
+    accessories[]: .mag_55_s2.coil.flag_r_r
+    accessories[]: .mag_55_s2.coil.flag_r_l
+
+
+
+}
+
+vehicle_accessory: .mag_55_s2.coil.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_s2.coil.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_s2.coil.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_55_s2.coil.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .mag_55_s2.coil.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}

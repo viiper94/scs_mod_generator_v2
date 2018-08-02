@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .brick.explo.trailer
+{
+	trailer: trailer.brick.explo.trailer
+	mass: 11000
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.55, 0.0)
+}
+}

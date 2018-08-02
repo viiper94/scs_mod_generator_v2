@@ -1,0 +1,6 @@
+company_permanent: company.permanent.tid_mkt
+{
+	name: "Tidbit"
+	sort_name: "tidbit"
+	trailer_look: plain
+}

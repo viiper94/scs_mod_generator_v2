@@ -1,0 +1,35 @@
+trailer : trailer.gooseneck.cistern.potassium 
+{
+	accessories[]: .gooseneck.cistern.potassium.tchassis
+	accessories[]: .gooseneck.cistern.potassium.trwheel0
+	accessories[]: .gooseneck.cistern.potassium.trwheel1
+	accessories[]: .gooseneck.cistern.potassium.trwheel2
+	accessories[]: .gooseneck.cistern.potassium.cargo
+}
+
+vehicle_accessory: .gooseneck.cistern.potassium.tchassis
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/chassis.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cistern.potassium.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cistern.potassium.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck.cistern.potassium.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .gooseneck.cistern.potassium.cargo
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/cistern_potassium.sii"
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sanbuilders
+{
+	name: "Sanbuilders"
+	sort_name: "sanbuilders"
+	trailer_look: sanbuilders
+}

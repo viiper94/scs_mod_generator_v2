@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sg_whs
+{
+	name: "SellGoods"
+	sort_name: "sellgoods"
+	trailer_look: sellgoods
+}

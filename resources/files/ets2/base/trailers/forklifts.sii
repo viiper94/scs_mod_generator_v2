@@ -1,0 +1,37 @@
+trailer : trailer.overweight.forklifts 
+{
+	accessories[]: .overweight.forklifts.tchassis
+	accessories[]: .overweight.forklifts.trwheel0
+	accessories[]: .overweight.forklifts.trwheel1
+	accessories[]: .overweight.forklifts.trwheel2
+	accessories[]: .overweight.forklifts.cargo
+}
+
+vehicle_accessory: .overweight.forklifts.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .overweight.forklifts.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.forklifts.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.forklifts.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.forklifts.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/forklifts.sii"
+}
+ 
+

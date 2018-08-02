@@ -1,0 +1,6 @@
+company_permanent: company.permanent.chimi
+{
+	name: "Chimi"
+	sort_name: "chimi"
+	trailer_look: chimi
+}

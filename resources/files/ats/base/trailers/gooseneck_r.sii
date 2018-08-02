@@ -1,0 +1,26 @@
+trailer : trailer.gooseneck_r 
+{
+	accessories[]: .gooseneck_r.tchassis
+	accessories[]: .gooseneck_r.trwheel0
+	accessories[]: .gooseneck_r.trwheel1
+
+}
+
+vehicle_accessory: .gooseneck_r.tchassis
+{
+    	data_path: "/def/vehicle/trailer/gooseneck/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck_r.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gooseneck_r.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.42p_print
+{
+	name: "42 Print"
+	sort_name: "42 print"
+	trailer_look: print
+}

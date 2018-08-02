@@ -1,0 +1,48 @@
+trailer : trailer.goldhofer.mpa_k_flat14.vossloh_g6
+{
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.tchassis
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel0
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel1
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel2
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel3
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel4
+	accessories[]: .goldhofer.mpa_k_flat14.vossloh_g6.cargo
+}
+
+vehicle_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.tchassis
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat_1x4/chassis.dlc_heavy_cargo.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel3
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.trwheel4
+{
+	offset: 8
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+
+vehicle_accessory: .goldhofer.mpa_k_flat14.vossloh_g6.cargo
+{
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat_1x4/vossloh_g6.sii"
+}

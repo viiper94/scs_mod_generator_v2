@@ -1,0 +1,31 @@
+trailer : trailer.flatbed_b.cargo_hptank
+{
+	accessories[]: .flatbed_b.hptank.tchassis
+	accessories[]: .flatbed_b.hptank.trwheel0
+	accessories[]: .flatbed_b.hptank.trwheel1
+	accessories[]: .flatbed_b.hptank.cargo
+
+}
+
+vehicle_accessory: .flatbed_b.hptank.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flatbed/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_b.hptank.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flatbed_b.hptank.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .flatbed_b.hptank.cargo
+{
+    	data_path: "/def/vehicle/trailer/flatbed/cargo_hptank.sii"
+}
+

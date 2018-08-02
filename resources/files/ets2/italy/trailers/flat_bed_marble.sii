@@ -1,0 +1,39 @@
+trailer : trailer.flat_bed.marble_blck 
+{
+	accessories[]: .flat_bed.marble_blck.tchassis
+	accessories[]: .flat_bed.marble_blck.trwheel0
+	accessories[]: .flat_bed.marble_blck.trwheel1
+	accessories[]: .flat_bed.marble_blck.trwheel2
+	accessories[]: .flat_bed.marble_blck.cargo
+}
+
+vehicle_accessory: .flat_bed.marble_blck.tchassis
+{
+    	data_path: "/def/vehicle/trailer/flat_bed/chassis.sii"
+}
+
+vehicle_wheel_accessory: .flat_bed.marble_blck.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flat_bed.marble_blck.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .flat_bed.marble_blck.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .flat_bed.marble_blck.cargo
+{
+    	data_path: "/def/vehicle/trailer/flat_bed/marble_blocks.sii"
+}
+ 
+ 
+
+

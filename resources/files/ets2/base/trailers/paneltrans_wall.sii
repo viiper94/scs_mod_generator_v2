@@ -1,0 +1,25 @@
+trailer : trailer.panel_trans.wall 
+{
+	accessories[]: .panel_trans.wall.tchassis
+	accessories[]: .panel_trans.wall.trwheel0
+	accessories[]: .panel_trans.wall.trwheel1
+}
+
+vehicle_accessory: .panel_trans.wall.tchassis
+{
+    	data_path: "/def/vehicle/trailer/panel_transporter/chassis_wall.sii"
+}
+
+vehicle_wheel_accessory: .panel_trans.wall.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .panel_trans.wall.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+

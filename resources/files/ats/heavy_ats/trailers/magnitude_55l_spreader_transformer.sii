@@ -1,0 +1,115 @@
+trailer : trailer.mag_55l_t2s.transformer
+{
+	accessories[]: .mag_55l_t2s.transformer.tchassis
+	accessories[]: .mag_55l_t2s.transformer.trwheel0
+	accessories[]: .mag_55l_t2s.transformer.trwheel1
+	
+	slave_trailer: trailer.mag_55_t2s_t.transformer
+
+}
+
+vehicle_accessory: .mag_55l_t2s.transformer.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t2s.transformer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t2s.transformer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+
+
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.mag_55_t2s_t.transformer
+{
+	accessories[]: .mag_55_t2s_t.transformer.tchassis
+	accessories[]: .mag_55_t2s_t.transformer.trwheel0
+	accessories[]: .mag_55_t2s_t.transformer.trwheel1
+
+	accessories[]: .mag_55_t2s_t.transformer.cargo
+	
+	slave_trailer: trailer.mag_55_s2.transformer
+
+}
+
+vehicle_accessory: .mag_55_t2s_t.transformer.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_t2s_t.transformer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_t2s_t.transformer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .mag_55_t2s_t.transformer.cargo
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_transformer.sii"
+}
+
+
+#########################################
+#
+#	SPREDER
+#
+#########################################
+
+trailer : trailer.mag_55_s2.transformer
+{
+	accessories[]: .mag_55_s2.transformer.tchassis
+	accessories[]: .mag_55_s2.transformer.trwheel0
+	accessories[]: .mag_55_s2.transformer.trwheel1
+    
+    accessories[]: .mag_55_s2.transformer.flag_r_r
+    accessories[]: .mag_55_s2.transformer.flag_r_l
+
+
+
+}
+
+vehicle_accessory: .mag_55_s2.transformer.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_s2.transformer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55_s2.transformer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_55_s2.transformer.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .mag_55_s2.transformer.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}

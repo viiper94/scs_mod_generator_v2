@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .s_ki_solid.gravel
+{
+	trailer: trailer.s_ki_solid.gravel
+	mass: 16930
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.85, 0.0)
+}
+}

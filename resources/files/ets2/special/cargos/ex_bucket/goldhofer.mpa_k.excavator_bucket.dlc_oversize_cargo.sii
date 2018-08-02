@@ -1,0 +1,9 @@
+SiiNunit
+{
+trailer_def : .goldhofer.mpa_k.ex_bucket
+{
+	trailer: trailer.goldhofer.mpa_k.ex_bucket
+	mass: 25000
+	cog_offset[]: (0, 0.8, 0)
+}
+}

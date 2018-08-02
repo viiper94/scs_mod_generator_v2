@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ika_bohag
+{
+	name: "Ika Bohag"
+	sort_name: "ika bohag"
+	trailer_look: ika_bohag
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.wgcc
+{
+	name: "WGCC"
+	sort_name: "wgcc"
+	trailer_look: wgcc
+}

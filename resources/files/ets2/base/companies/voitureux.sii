@@ -1,0 +1,6 @@
+company_permanent: company.permanent.voitureux
+{
+	name: "Voitureux"
+	sort_name: "voitureux"
+	trailer_look: voitureux
+}

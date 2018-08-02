@@ -1,0 +1,40 @@
+trailer : trailer.fridge
+{
+	accessories[]: .fridge.tchassis
+	accessories[]: .fridge.paint_job
+	accessories[]: .fridge.trwheel0
+	accessories[]: .fridge.trwheel1
+	accessories[]: .fridge.trwheel2
+}
+
+vehicle_accessory: .fridge.tchassis
+{
+    	data_path: "/def/vehicle/trailer/krone/fridge/chassis.sii"
+}
+
+vehicle_wheel_accessory: .fridge.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+
+}
+
+vehicle_wheel_accessory: .fridge.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+
+}
+
+vehicle_wheel_accessory: .fridge.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+
+}
+
+vehicle_paint_job_accessory: .fridge.paint_job
+{
+    	data_path: "/def/vehicle/trailer/krone/fridge/company_paint_job/default.sii"
+}
+

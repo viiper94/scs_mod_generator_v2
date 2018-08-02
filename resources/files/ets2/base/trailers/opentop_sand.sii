@@ -1,0 +1,38 @@
+trailer : trailer.opentop.sand 
+{
+	accessories[]: .opentop.sand.tchassis
+	accessories[]: .opentop.sand.trwheel0
+	accessories[]: .opentop.sand.trwheel1
+	accessories[]: .opentop.sand.trwheel2
+	accessories[]: .opentop.sand.cargo
+}
+
+vehicle_accessory: .opentop.sand.tchassis
+{
+    	data_path: "/def/vehicle/trailer/opentop/chassis.sii"
+}
+
+vehicle_wheel_accessory: .opentop.sand.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .opentop.sand.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .opentop.sand.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_accessory: .opentop.sand.cargo
+{
+    	data_path: "/def/vehicle/trailer/opentop/sand.sii"
+}
+ 
+
+

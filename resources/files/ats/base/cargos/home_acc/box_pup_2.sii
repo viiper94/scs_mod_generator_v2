@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : .box_pup_2
+{
+	trailer: trailer.box_pup_2
+	mass: 18143.7
+	volume_factor: 1.1
+	cargo_mass_ratio[]: 0.45
+	cargo_mass_ratio[]: 0.1
+	cargo_mass_ratio[]: 0.45
+	cog_offset: 3
+	cog_offset[]: (0, 0.98, 0)
+	cog_offset[]: (0, 0, 0)
+	cog_offset[]: (0, 0.98, 0)
+}
+}

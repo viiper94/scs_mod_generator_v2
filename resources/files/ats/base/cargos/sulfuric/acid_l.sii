@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .acid_l
+{
+	trailer: trailer.acid_l
+	mass: 19277.7
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.96, 0.0)
+}
+}

@@ -1,0 +1,35 @@
+trailer : trailer.pipes 
+{
+	accessories[]: .pipestrailer.tchassis
+	accessories[]: .pipestrailer.trwheel0
+	accessories[]: .pipestrailer.trwheel1
+	accessories[]: .pipestrailer.trwheel2
+	accessories[]: .pipestrailer.cargo	
+}
+
+vehicle_accessory: .pipestrailer.tchassis
+{
+	data_path: "/def/vehicle/trailer/log_trailer/chassis.sii"
+}
+
+vehicle_wheel_accessory: .pipestrailer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .pipestrailer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .pipestrailer.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+} 
+vehicle_accessory: .pipestrailer.cargo
+{
+    	data_path: "/def/vehicle/trailer/log_trailer/pipes.sii"
+}

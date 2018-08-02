@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .panel_trans.wall
+{
+	trailer: trailer.panel_trans.wall
+	mass: 22580
+	cog_offset: 1
+	cog_offset[]: (0.0, 1, 0.0)
+}
+}

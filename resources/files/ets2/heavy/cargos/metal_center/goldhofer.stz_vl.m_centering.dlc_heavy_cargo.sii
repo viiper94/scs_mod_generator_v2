@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .goldhofer.stz_vl.m_centering
+{
+	trailer: trailer.goldhofer.stz_vl.m_centering
+	mass: 28200
+	cog_offset: 1
+	cog_offset[]: (0, 1, 1)
+}
+}

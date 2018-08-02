@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aria_fd_jnpg
+{
+	name: "ARIA Food"
+	sort_name: "aria food"
+	trailer_look: aria_food
+}

@@ -1,0 +1,31 @@
+trailer : trailer.lowboy_r.cargo_roller
+{
+	accessories[]: .lowboy_r.roller.tchassis
+	accessories[]: .lowboy_r.roller.trwheel0
+	accessories[]: .lowboy_r.roller.trwheel1
+	accessories[]: .lowboy_r.roller.cargo
+
+}
+
+vehicle_accessory: .lowboy_r.roller.tchassis
+{
+    	data_path: "/def/vehicle/trailer/lowboy/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_r.roller.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_r.roller.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .lowboy_r.roller.cargo
+{
+    	data_path: "/def/vehicle/trailer/lowboy/cargo_roller.sii"
+}
+

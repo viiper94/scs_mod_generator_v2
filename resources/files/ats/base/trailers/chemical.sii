@@ -1,0 +1,30 @@
+trailer : trailer.chemical 
+{
+	accessories[]: .chemical.tchassis
+	accessories[]: .chemical.paint_job
+	accessories[]: .chemical.trwheel0
+	accessories[]: .chemical.trwheel1
+
+}
+
+vehicle_accessory: .chemical.tchassis
+{
+    	data_path: "/def/vehicle/trailer/chemical/chassis.sii"
+}
+
+vehicle_wheel_accessory: .chemical.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .chemical.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .chemical.paint_job
+{
+    	data_path: "/def/vehicle/trailer/chemical/company_paint_job/default.sii"
+}

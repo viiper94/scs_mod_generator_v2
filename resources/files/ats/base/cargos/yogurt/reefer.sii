@@ -1,0 +1,11 @@
+SiiNunit
+{
+trailer_def : .reefer
+{
+	trailer: trailer.reefer
+	mass: 17690.2
+	volume_factor: 0.9
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.88, 0.0)
+}
+}

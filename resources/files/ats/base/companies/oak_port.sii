@@ -1,0 +1,6 @@
+company_permanent: company.permanent.oak_port
+{
+	name: "Oakland Shippers"
+	sort_name: "oakland shippers"
+	trailer_look: plain
+}

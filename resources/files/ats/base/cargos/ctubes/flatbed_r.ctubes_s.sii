@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flatbed_r.ctubes_s
+{
+	trailer: trailer.flatbed_r.ctubes_s
+	mass: 19958.1
+	cog_offset: 1
+	cog_offset[]: (0.0, 1, 0.0)
+}
+}

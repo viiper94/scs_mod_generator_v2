@@ -1,0 +1,37 @@
+trailer : trailer.overweight.digger1000 
+{
+	accessories[]: .overweight.digger1000.tchassis
+	accessories[]: .overweight.digger1000.trwheel0
+	accessories[]: .overweight.digger1000.trwheel1
+	accessories[]: .overweight.digger1000.trwheel2
+	accessories[]: .overweight.digger1000.cargo
+}
+
+vehicle_accessory: .overweight.digger1000.tchassis
+{
+    	data_path: "/def/vehicle/trailer/overweight/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .overweight.digger1000.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.digger1000.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .overweight.digger1000.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+vehicle_accessory: .overweight.digger1000.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/catg.sii"
+}
+ 
+

@@ -1,0 +1,31 @@
+trailer : trailer.dump_b.cargo_cover
+{
+	accessories[]: .dump_b.cover.tchassis
+	accessories[]: .dump_b.cover.trwheel0
+	accessories[]: .dump_b.cover.trwheel1
+	accessories[]: .dump_b.cover.cargo
+
+}
+
+vehicle_accessory: .dump_b.cover.tchassis
+{
+    	data_path: "/def/vehicle/trailer/dump/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .dump_b.cover.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .dump_b.cover.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .dump_b.cover.cargo
+{
+    	data_path: "/def/vehicle/trailer/dump/cargo_cover.sii"
+}
+

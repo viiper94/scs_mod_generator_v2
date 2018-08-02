@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .flat_bed.hipress_tank
+{
+	trailer: trailer.flat_bed.hipress_tank
+	mass: 12370
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.62, 0.0)
+}
+}

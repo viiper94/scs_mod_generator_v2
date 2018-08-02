@@ -1,0 +1,38 @@
+trailer : trailer.opentop.ore 
+{
+	accessories[]: .opentop.ore.tchassis
+	accessories[]: .opentop.ore.trwheel0
+	accessories[]: .opentop.ore.trwheel1
+	accessories[]: .opentop.ore.trwheel2
+	accessories[]: .opentop.ore.cargo
+}
+
+vehicle_accessory: .opentop.ore.tchassis
+{
+    	data_path: "/def/vehicle/trailer/opentop/chassis.sii"
+}
+
+vehicle_wheel_accessory: .opentop.ore.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .opentop.ore.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .opentop.ore.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_accessory: .opentop.ore.cargo
+{
+    	data_path: "/def/vehicle/trailer/opentop/ore.sii"
+}
+ 
+
+

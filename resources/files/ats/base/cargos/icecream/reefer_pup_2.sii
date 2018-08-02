@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : .reefer_pup_2
+{
+	trailer: trailer.reefer_pup_2
+	mass: 17690.2
+	volume_factor: 1.1
+	cargo_mass_ratio[]: 0.45
+	cargo_mass_ratio[]: 0.1
+	cargo_mass_ratio[]: 0.45
+	cog_offset: 3
+	cog_offset[]: (0, 0.88, 0)
+	cog_offset[]: (0, 0, 0)
+	cog_offset[]: (0, 0.88, 0)
+}
+}

@@ -1,0 +1,31 @@
+trailer : trailer.dump_b.cargo_gravel
+{
+	accessories[]: .dump_b.gravel.tchassis
+	accessories[]: .dump_b.gravel.trwheel0
+	accessories[]: .dump_b.gravel.trwheel1
+	accessories[]: .dump_b.gravel.cargo
+
+}
+
+vehicle_accessory: .dump_b.gravel.tchassis
+{
+    	data_path: "/def/vehicle/trailer/dump/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .dump_b.gravel.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .dump_b.gravel.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .dump_b.gravel.cargo
+{
+    	data_path: "/def/vehicle/trailer/dump/cargo_gravel.sii"
+}
+

@@ -1,0 +1,10 @@
+SiiNunit
+{
+trailer_def : .dump_b.cargo_cover
+{
+	trailer: trailer.dump_b.cargo_cover
+	mass: 16556.2
+	cog_offset: 1
+	cog_offset[]: (0.0, 0.83, 0.0)
+}
+}

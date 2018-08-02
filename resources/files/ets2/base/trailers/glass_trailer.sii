@@ -1,0 +1,31 @@
+trailer : trailer.gls_trailer 
+{
+	accessories[]: .gls_trailer.tchassis
+	accessories[]: .gls_trailer.trwheel0
+	accessories[]: .gls_trailer.trwheel1
+	accessories[]: .gls_trailer.trwheel2
+}
+
+vehicle_accessory: .gls_trailer.tchassis
+{
+    	data_path: "/def/vehicle/trailer/glass_trailer/chassis.sii"
+}                                                                  
+
+vehicle_wheel_accessory: .gls_trailer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gls_trailer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .gls_trailer.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+

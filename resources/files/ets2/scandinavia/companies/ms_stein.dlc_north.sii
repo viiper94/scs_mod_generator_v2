@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ms_stein
+{
+	name: "MS Stein"
+	sort_name: "ms stein"
+	trailer_look: ms_stein
+}

@@ -1,0 +1,31 @@
+trailer : trailer.car_r.cargo_mustng
+{
+	accessories[]: .car_r.mustang.tchassis
+	accessories[]: .car_r.mustang.trwheel0
+	accessories[]: .car_r.mustang.trwheel1
+	accessories[]: .car_r.mustang.cargo
+
+}
+
+vehicle_accessory: .car_r.mustang.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .car_r.mustang.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .car_r.mustang.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_accessory: .car_r.mustang.cargo
+{
+    	data_path: "/def/vehicle/trailer/car/cargo_mustang.sii"
+}
+

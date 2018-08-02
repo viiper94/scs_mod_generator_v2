@@ -1,0 +1,6 @@
+company_permanent: company.permanent.batisse_road
+{
+	name: "Bâtisse"
+	sort_name: "batisse"
+	trailer_look: batisse
+}

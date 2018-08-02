@@ -1,0 +1,9 @@
+SiiNunit
+{
+trailer_def : .goldhofer.stz_vl.pilot_boat
+{
+	trailer: trailer.goldhofer.stz_vl.pilot_boat
+	mass: 25000
+	cog_offset[]: (0, 0.3, 0)
+}
+}

@@ -1,0 +1,31 @@
+trailer : trailer.lowboy_y.cargo_bull
+{
+	accessories[]: .lowboy_y.bulldozer.tchassis
+	accessories[]: .lowboy_y.bulldozer.trwheel0
+	accessories[]: .lowboy_y.bulldozer.trwheel1
+	accessories[]: .lowboy_y.bulldozer.cargo
+
+}
+
+vehicle_accessory: .lowboy_y.bulldozer.tchassis
+{
+    	data_path: "/def/vehicle/trailer/lowboy/chassis_y.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_y.bulldozer.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .lowboy_y.bulldozer.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .lowboy_y.bulldozer.cargo
+{
+    	data_path: "/def/vehicle/trailer/lowboy/cargo_bulldozer.sii"
+}
+

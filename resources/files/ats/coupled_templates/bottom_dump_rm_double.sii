@@ -1,0 +1,80 @@
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx trailer 45 with rear hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : trailer.%trailer%
+{
+	accessories[]: .%trailer%.tchassis
+	accessories[]: .%trailer%.trwheel0
+	accessories[]: .%trailer%.trwheel1
+	accessories[]: .%trailer%.trwheel2
+	accessories[]: .%trailer%.trlr_cables
+	
+	slave_trailer: .%trailer%.dolly
+}
+
+vehicle_accessory: .%trailer%.tchassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/hook.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.trwheel0
+{
+	offset: 0
+    	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.trwheel1
+{
+	offset: 2
+    	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.trwheel2
+{
+	offset: 4
+    	data_path: "%wheel%"
+}
+vehicle_addon_accessory: .%trailer%.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/bottom_dump/accessory/trlr_cables/stock.sii"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dolly xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .%trailer%.dolly
+{
+	accessories[]: .%trailer%.dolly.tchassis
+	accessories[]: .%trailer%.dolly.trwheel0
+
+	
+	slave_trailer: .%trailer%.second
+}
+
+vehicle_accessory: .%trailer%.dolly.tchassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/dolly.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.trwheel0
+{
+	offset: 0
+    	data_path: "%wheel%"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx trailer 28 with rear bumper xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .%trailer%.second
+{
+	accessories[]: .%trailer%.second.tchassis
+	accessories[]: .%trailer%.second.trwheel0
+}
+
+vehicle_accessory: .%trailer%.second.tchassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/short_bumper_double.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.second.trwheel0
+{
+	offset: 0
+    	data_path: "%wheel%"
+}

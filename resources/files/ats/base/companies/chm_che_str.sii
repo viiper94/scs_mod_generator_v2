@@ -1,0 +1,6 @@
+company_permanent: company.permanent.chm_che_str
+{
+	name: "Chemso Ltd."
+	sort_name: "chemso"
+	trailer_look: chemso
+}
