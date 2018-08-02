@@ -166,7 +166,7 @@ $(document).ready(function(){
 
 	$('form').submit(function(){
 		if($('input[name=title]').val() === ''){
-			$('input[name=title]').val($('select[name=chassis] option:selected').text().replace(/(\(.+|\s-\s.+)/, ''));
+			$('input[name=title]').val($('select[name=chassis] option:selected').text().replace(/(\s\s.+)/, '').trim());
 		}
 	});
 
