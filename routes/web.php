@@ -18,7 +18,7 @@ use App\Dlc;
 //    return $dlc;
 //});
 
-Route::get('/generator', 'TrailerGeneratorController@generate');
+Route::post('/generator', 'TrailerGeneratorController@generate');
 
 Route::get('/gallery', 'GalleryController@index');
 
