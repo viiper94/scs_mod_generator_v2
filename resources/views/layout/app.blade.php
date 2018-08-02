@@ -8,7 +8,7 @@
     @include('layout.header')
     <title>{{ I18n::t('title') }}</title>
 </head>
-<body>
+<body @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')class="mdc-theme--dark" @endif>
     <header>
         @include('layout.navbar')
     </header>
@@ -16,6 +16,8 @@
     <main>
         @yield('content')
     </main>
+
+        @include('layout.languages')
 
     <footer>
         @include('layout.footer')

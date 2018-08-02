@@ -10,7 +10,7 @@
 </div>
 <div class="theme center">
     <div class="mdc-switch">
-        <input type="checkbox" id="toggle-dark" class="mdc-switch__native-control" @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')checked @endif>
+        <input type="checkbox" id="toggle-dark" class="mdc-switch__native-control" @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true') checked @endif>
         <div class="mdc-switch__background">
             <div class="mdc-switch__knob"></div>
         </div>

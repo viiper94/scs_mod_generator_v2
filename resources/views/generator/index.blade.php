@@ -4,28 +4,12 @@
 
     <div class="container">
         @if(isset($_GET['d']))
-            <section class="row">
-                <div class="download-row">
-                    <a href="/download{{$_GET['d']}}.scs" class="mdc-button mdc-button--raised mdc-ripple large-btn left">
-                        <i class="material-icons notranslate mdc-button__icon">file_download</i>
-                        {{I18n::t('download_mod')}}
-                    </a>
-                    <h6>{{$_GET['d']}}.scs</h6>
-                </div>
-            </section>
+            @include('generator.download')
         @endif
         @if($errors)
-            <section class="row">
-                <div class="card-panel">
-                    <h5 class="card-title light"><i class="material-icons left notranslate">warning</i>{{I18n::t('error')}})</h5>
-                </div>
-            </section>
+            @include('generator.warning')
         @endif
-	    <!--[if gt IE 6]>
-            <section class="card-panel yellow lighten-3">
-                <h5 class="card-title"><i class="material-icons left notranslate">warning</i>{{I18n::t('ie_notification')}}</h5>
-            </section>
-        <![endif]-->
+        @include('generator.ie')
         <section class="card">
             <form action="/generator" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
@@ -47,9 +31,7 @@
                                 <option value="paintable">{{I18n::t('paintable_chassis')}}</option>
                                 @foreach($chassis_list as $chassis)
                                     <option value="{{$chassis->alias}}">{{I18n::t($chassis->alias)}}
-                                        @if($chassis->isDLCContent())
-                                            - {{I18n::t($chassis->dlc->name)}}
-                                        @endif
+                                        @if($chassis->isDLCContent()) - {{I18n::t($chassis->dlc->name)}} @endif
                                     </option>
                                @endforeach
                             </select>
@@ -199,16 +181,8 @@
                 </div>
             </form>
         </section>
-        @if(!key_exists(I18n::getUserAcceptLanguage(true), $langs))
-            <section class="card-panel grey-text">
-                <span class="card-title">
-                    <i class="material-icons left notranslate">info</i>
-                    {{I18n::t('help_translate')}}
-                    <a href="http://mods-generator.oneskyapp.com"
-                       target="_blank"
-                       class="grey-text text-darken-1" style="text-decoration: underline; white-space: nowrap;">http://mods-generator.oneskyapp.com</a>
-                </span>
-            </section>
+        @if(!key_exists(I18n::getUserAcceptLanguage(true), I18n::getLanguages()))
+            @include('generator.translate')
         @endif
     </div>
     <div class="fixed-action-btn tooltipped" data-tooltip="{{I18n::t('how_to')}}">
@@ -217,39 +191,6 @@
         </a>
     </div>
 
-    <aside id="mdc-dialog-how-to" class="mdc-dialog" role="alertdialog" aria-labelledby="my-mdc-dialog-label" aria-describedby="my-mdc-dialog-description">
-        <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-                <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">{{I18n::t('how_to_modal')}}</h2>
-            </header>
-            <section id="my-mdc-dialog-description" class="mdc-dialog__body">
-                <ol>
-                    <li>{{I18n::t('instruction_modal_1')}}</li>
-                    <li>{{I18n::t('instruction_modal_2')}}</li>
-                    <li>{{I18n::t('instruction_modal_3')}}</li>
-                    <li>{{I18n::t('instruction_modal_4')}}</li>
-                    <li>{{I18n::t('instruction_modal_5')}}</li>
-                    <li>{{I18n::t('instruction_modal_6')}}</li>
-                </ol>
-            </section>
-            <header class="mdc-dialog__header">
-                <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">{{I18n::t('how_to_install_mod')}}</h2>
-            </header>
-            <section id="my-mdc-dialog-description" class="mdc-dialog__body">
-                <ol>
-                    <li>{{I18n::t('instruction_modal_7')}}</li>
-                    <li>{{I18n::t('instruction_modal_8')}}</li>
-                    <li>{{I18n::t('instruction_modal_9')}}</li>
-                    <li>{{I18n::t('instruction_modal_10')}}</li>
-                    <li>{{I18n::t('instruction_modal_11')}}</li>
-                </ol>
-            </section>
-            <footer class="mdc-dialog__footer">
-                <button type="button" class="mdc-button mdc-ripple mdc-dialog__footer__button mdc-dialog__footer__button--accept">{{I18n::t('close_modal')}}</button>
-            </footer>
-        </div>
-        <div class="mdc-dialog__backdrop"></div>
-    </aside>
-
+    @include('generator.modal')
 
 @endsection
