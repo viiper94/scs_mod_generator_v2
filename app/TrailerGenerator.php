@@ -148,11 +148,11 @@ class TrailerGenerator{
 	}
 
 	private function copyImage(){
-		if(is_uploaded_file($_FILES['img']['tmp_name'])){
-			$file = $_FILES['img'];
-			if($file->size <= 5500000){
+		if(Request::hasFile('img')){
+		    $file = Request::file('img');
+			if($file->getSize() <= 5500000){
 				$img = new Image();
-				$img->load($_FILES['img']['tmp_name']);
+				$img->load($file->getPathName());
 				$img->resize(276, 162);
 				$img->save($this->outDir.'/mod_icon.jpg');
 			}
