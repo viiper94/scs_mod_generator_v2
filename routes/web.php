@@ -11,18 +11,18 @@
 |
 */
 
-use App\Dlc;
-
 //Route::get('/db', function(){
 //    $dlc = Dlc::where('active', 1)->find([1, 3]);
 //    return $dlc;
 //});
 
-Route::post('/generator', 'TrailerGeneratorController@generate');
+Auth::routes();
+
+Route::post('/generator', 'TrailerGeneratorController@generate')->name('generator');
 
 Route::get('/gallery', 'GalleryController@index');
 
-Route::post('/gallery', 'GalleryController@getInfo');
+Route::post('/gallery', 'GalleryController@getInfo')->name('gallery');
 
 Route::get('/{game?}', 'TrailerGeneratorController@index');
 
