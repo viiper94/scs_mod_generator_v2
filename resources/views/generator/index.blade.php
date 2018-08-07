@@ -11,27 +11,27 @@
         @endif
         @include('generator.ie')
         <section class="card">
-            <form action="/generator" method="post" enctype="multipart/form-data">
+            <form action="{{route('generator')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <div class="card-content">
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
                                 <input type="text" id="title" class="browser-default mdc-text-field__input" name="title">
-                                <label for="title" class="mdc-text-field__label">{{I18n::t('mod_title')}}</label>
+                                <label for="title" class="mdc-text-field__label">@lang('general.mod_title')</label>
                                 <div class="mdc-text-field__bottom-line"></div>
                             </div>
                         </div>
                     </div>
                     <div class="row" id="chassis">
                         <div class="col s12">
-                            <label for="select-chassis">{{I18n::t('pick_chassis')}}</label>
+                            <label for="select-chassis">@lang('general.pick_chassis')</label>
                             <select class="browser-default ui search dropdown chassis" id="select-chassis" name="chassis" required>
-                                <option selected value="">{{I18n::t('choose_chassis')}}</option>
-                                <option value="paintable">{{I18n::t('paintable_chassis')}}</option>
+                                <option selected value="">@lang('general.choose_chassis')</option>
+                                <option value="paintable">@lang('general.paintable_chassis')</option>
                                 @foreach($chassis_list as $chassis)
-                                    <option value="{{$chassis->alias}}">{{I18n::t($chassis->alias)}}
-                                        @if($chassis->isDLCContent()) - {{I18n::t($chassis->dlc->name)}} @endif
+                                    <option value="{{$chassis->alias}}">@lang($game.'_trailers.'.$chassis->alias)
+                                        @if($chassis->isDLCContent()) - @lang('dlc_list.'.$chassis->dlc->name) @endif
                                     </option>
                                @endforeach
                             </select>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="row" id="accessory" style="display: none">
                         <div class="col s12">
-                            <label class="for-select">{{I18n::t('pick_accessory')}}</label>
+                            <label class="for-select">@lang('general.pick_accessory')</label>
                         </div>
                         <div class="col s12">
                             <div class="mdc-switch">
@@ -48,19 +48,19 @@
                                     <div class="mdc-switch__knob"></div>
                                 </div>
                             </div>
-                            <label for="all_accessories" class="mdc-switch-label">{{I18n::t('show_all_accessories')}}</label>
+                            <label for="all_accessories" class="mdc-switch-label">@lang('general.show_all_accessories')</label>
                         </div>
                     </div>
                     <div class="row" id="paint" style="display: none">
                         <div class="col s12">
-                            <label class="for-select">{{I18n::t('pick_paint')}}</label>
+                            <label class="for-select">@lang('general.pick_paint')</label>
                         </div>
                         <div class="colors" style="display: none;">
                             <div class="col s12 palette">
                                 <div class="input-field inline" style="height: 26px; min-width: 170px;">
                                     <input type="color" name="color" value="#ffffff" style="cursor: pointer; width: 170px;" id="color_palette">
                                 </div>
-                                <span class="offset-m3">{{I18n::t('pick_color')}}</span>
+                                <span class="offset-m3">@lang('general.pick_color')</span>
                             </div>
                             <div class="col s12 hex">
                                 <div class="mdc-text-field">
@@ -68,7 +68,7 @@
                                     <label for="color_hex" class="mdc-text-field__label">HEX</label>
                                     <div class="mdc-text-field__bottom-line"></div>
                                 </div>
-                                <span>{{I18n::t('type_color_hex')}}</span>
+                                <span>@lang('general.type_color_hex')</span>
                             </div>
                             <div class="col s12 rgb">
                                 <div class="mdc-text-field inline">
@@ -86,7 +86,7 @@
                                     <label for="color_rgb_b" class="mdc-text-field__label">B</label>
                                     <div class="mdc-text-field__bottom-line"></div>
                                 </div>
-                                <span class="offset-m3">{{I18n::t('type_color_rgb')}}</span>
+                                <span class="offset-m3">@lang('general.type_color_rgb')</span>
                             </div>
                             <div class="col s12 scs">
                                 <div class="mdc-text-field inline">
@@ -104,7 +104,7 @@
                                     <label for="color_scs_b" class="mdc-text-field__label">B</label>
                                     <div class="mdc-text-field__bottom-line"></div>
                                 </div>
-                                <span class="offset-m3">{{I18n::t('type_color_scs')}}</span>
+                                <span class="offset-m3">@lang('general.type_color_scs')</span>
                             </div>
                         </div>
                         <div class="col s12">
@@ -114,42 +114,42 @@
                                     <div class="mdc-switch__knob"></div>
                                 </div>
                             </div>
-                            <label for="all_paints" class="mdc-switch-label">{{I18n::t('show_all_paints')}}</label>
+                            <label for="all_paints" class="mdc-switch-label">@lang('general.show_all_paints')</label>
                         </div>
                     </div>
                     <section class="advanced row" style="margin-bottom: 0;">
                         <ul class="collapsible z-depth-0 col s12">
                             <li>
-                                <div class="collapsible-header grey-text"><i class="material-icons notranslate">arrow_drop_down</i>{{I18n::t('advanced')}}</div>
+                                <div class="collapsible-header grey-text"><i class="material-icons notranslate">arrow_drop_down</i>@lang('general.advanced')</div>
                                 <div class="collapsible-body">
-                                    <label>{{I18n::t('image_upload')}}</label>
+                                    <label>@lang('general.image_upload')</label>
                                     <div class="file-field input-field mdc-button mdc-button--raised">
                                         <div class="input-wrapper">
                                             <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">file_upload</i>
                                             <input type="file" name="img" id="image" accept="image/jpeg, image/png"
-                                                   data-size="{{I18n::t('max_file_size_5')}}"
-                                                   data-dimensions="{{I18n::t('max_dimensions_3000')}}">
+                                                   data-size="@lang('general.max_file_size_5')"
+                                                   data-dimensions="@lang('general.max_dimensions_3000')">
                                         </div>
                                         <div class="file-path-wrapper">
-                                            <input class="file-path right" type="text" id="image-path" placeholder="{{I18n::t('upload_image')}}" readonly>
+                                            <input class="file-path right" type="text" id="image-path" placeholder="@lang('general.upload_image')" readonly>
                                         </div>
                                     </div>
                                     <div class="mdc-text-field weight">
                                         <input type="text" id="weight" class="browser-default mdc-text-field__input" name="weight">
-                                        <label for="weight" class="mdc-text-field__label">{{I18n::t('trailer_weight')}}</label>
+                                        <label for="weight" class="mdc-text-field__label">@lang('general.trailer_weight')</label>
                                         <div class="mdc-text-field__bottom-line"></div>
                                     </div>
                                     <div class="wheels input-field" style="display: none;">
                                         <select class="icons" name="wheels">
-                                            <option value="" selected>{{I18n::t('w_default')}}</option>
+                                            <option value="" selected>@lang('general.w_default')</option>
                                             @foreach($wheels as $wheel)
-                                                <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">{{I18n::t($wheel->alias)}}</option>
+                                                <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">@lang($game.'_wheels.'.$wheel->alias)</option>
                                             @endforeach
                                         </select>
-                                        <label>{{I18n::t('select_wheels')}}</label>
+                                        <label>@lang('general.select_wheels')</label>
                                     </div>
                                     <div class="dlc">
-                                        <label>{{I18n::t('include_dlc')}}:</label>
+                                        <label>@lang('general.include_dlc'):</label>
                                         @foreach($dlc_list as $dlc)
                                             <div class="{{$dlc->name}}">
                                                 <div class="mdc-switch">
@@ -159,7 +159,7 @@
                                                         <div class="mdc-switch__knob"></div>
                                                     </div>
                                                 </div>
-                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">{{I18n::t($dlc->name)}}</label>
+                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">@lang('dlc_list.'.$dlc->name)</label>
                                             </div>
                                         @endforeach
                                     </div>
@@ -171,21 +171,17 @@
                 <div class="card-action row center-on-small-only">
                     <input type="hidden" name="target" value="{{$game}}">
                     <button class="mdc-button mdc-button--raised mdc-ripple left-med-and-up" id="generate-btn" type="submit"
-                            onclick="return confirm('{{I18n::t('are_you_sure')}}')" disabled>
-                        <i class="material-icons mdc-button__icon notranslate">send</i>{{I18n::t('proceed')}}
+                            onclick="return confirm('@lang('general.are_you_sure')')" disabled>
+                        <i class="material-icons mdc-button__icon notranslate">send</i>@lang('general.proceed')
                     </button>
-                    <a href="/gallery{{($game == 'ats') ? '#ats' : ''}}"
-                       class="gallery-btn right-med-and-up mdc-button mdc-ripple">
-                        <i class="material-icons mdc-button__icon notranslate">photo_library</i>{{I18n::t('trailers_gallery')}}
-                    </a>
                 </div>
             </form>
         </section>
-        @if(!key_exists(I18n::getUserAcceptLanguage(true), I18n::getLanguages()))
+        @if(!$hasUserAcceptLanguage)
             @include('generator.translate')
         @endif
     </div>
-    <div class="fixed-action-btn tooltipped" data-tooltip="{{I18n::t('how_to')}}">
+    <div class="fixed-action-btn tooltipped" data-tooltip="@lang('general.how_to')">
         <a class="mdc-fab mdc-ripple orange darken-3 modal-trigger" href="#how" id="how-to">
             <span class="mdc-fab__icon">?</span>
         </a>

@@ -32,22 +32,8 @@
         "how_to": "How to use?",
         "beta_notification": "Works in beta-mode, there may be some bugs.",
         "ie_notification": "You are using old browser, service may works unstable.",
-        "how_to_modal": "How to use this tool?",
-        "how_to_install_mod": "How to install mod?",
-        "close_modal": "I got it",
-        "instruction_modal_1": "Choose name for future mod (not required, otherwise generated from the chassis name).",
-        "instruction_modal_2": "Pick a chassis from dropdown list (required). You can use search.",
-        "instruction_modal_3": "Depending on the chosen chassis, you will be asked to additionally choose a cargo or the skin for the trailer.",
-        "instruction_modal_4": "Also, if you select colored skin, you can specify exact color you want.",
-        "instruction_modal_5": "In advanced setting you can change mod image (for Modification Manager) and cargo weight (optional).",
-        "instruction_modal_6": "Click the \"Generate\" button. The mod will be generated and you will see the button for downloading.",
-        "instruction_modal_7": "Download mod and save it to \"Documents\\Euro Truck Simulator 2\\mod\" folder.",
-        "instruction_modal_8": "Start the game. Before selecting profile go to Modification Manager.",
-        "instruction_modal_9": "Select downloaded mod, make sure it appears in the right column.",
-        "instruction_modal_10": "Save changes and exit from Modification Manager.",
-        "instruction_modal_11": "Choose your profile and enjoy!",
         "ats_trailer_guide": "American Truck Simulator Trailers Gallery",
-        "ets_trailer_guide": "Euro Truck Simulator 2 Trailers Gallery",
+        "ets2_trailer_guide": "Euro Truck Simulator 2 Trailers Gallery",
         "see_paints": "Available paints",
         "see_cargo": "Available cargoes",
         "trailers_gallery": "Trailers gallery",
@@ -64,7 +50,37 @@
         "w_default": "Default",
         "dark_theme": "Dark theme",
         "upload_image": "Upload image",
-        "include_dlc": "Also, include DLC content"
+        "include_dlc": "Also, include DLC content",
+        "ets2_trailer_generator": "ETS2 trailer generator",
+        "ats_trailer_generator": "ATS trailer generator",
+        "languages": "Languages"
+    },
+    "instructions": {
+        "generate_title": "How to use this tool?",
+        "install_title": "How to install mod?",
+        "mp_use": "How to use mod in TruckersMP?",
+        "close_modal": "I got it",
+        "generate_mod_1": "Choose name for future mod (not required, otherwise generated from the chassis name).",
+        "generate_mod_2": "Pick a chassis from dropdown list (required). You can use search.",
+        "generate_mod_3": "Depending on the chosen chassis, you will be asked to additionally choose a cargo or the skin for the trailer.",
+        "generate_mod_4": "Also, if you select colored skin, you can specify exact color you want.",
+        "generate_mod_5": "In advanced setting you can change mod image (for Modification Manager) and cargo weight (optional).",
+        "generate_mod_6": "Click the \"Generate\" button. The mod will be generated and you will see the button for downloading.",
+        "install_mod_1": "Download mod and save it to \"Documents\\Euro Truck Simulator 2\\mod\" folder.",
+        "install_mod_2": "Start the game. Before selecting profile go to Modification Manager.",
+        "install_mod_3": "Select downloaded mod, make sure it appears in the right column.",
+        "install_mod_4": "Save changes and exit from Modification Manager.",
+        "install_mod_5": "Choose your profile and enjoy!",
+        "mp_use_1": "Generate and download mod with instructions above.",
+        "mp_use_2": "Start Single Player game and apply mod. Save the game (don't forget about backup!). Quit Single Player game.",
+        "mp_use_3": "Start Multiplayer, load save ignoring game warnings. Enjoy it!",
+        "mp_use_4": "Make sure your mod is permitted by TruckersMP rules - "
+    },
+    "user": {
+        "profile": "Profile",
+        "login": "Sign In",
+        "register": "Sign Up",
+        "logout": "Log Out"
     },
     "dlc list": {
         "scandinavia": "DLC Scandinavia",
@@ -438,8 +454,10 @@
         "global_mills": "Global Mills"
     },
     "ats wheels": {
+        "w_single": "Single",
         "w_single_small": "Single Small",
         "w_front": "Front",
-        "w_chrome": "Chrome - Auto kick in MP"
+        "w_chrome": "Chrome - Auto kick in MP",
+        "w_steel": "Steel - Auto kick in MP"
     }
 }

@@ -6,24 +6,22 @@ use App\Accessory;
 use App\Chassis;
 use App\Company;
 use App\Dlc;
-use App\Language;
 use App\Paint;
 use App\TrailerGenerator;
 use App\Wheel;
 use I18n;
 use Illuminate\Http\Request;
-use App\Logger;
 
 class TrailerGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
+        if($game !== 'ats' && $game !== 'ets2') return redirect('/');
         $errors = array();
         return view('generator.index', [
             'game' => $game,
             'chassis_list' => Chassis::where('game', $game)->get(),
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
             'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get(),
-            'langs' => Language::where('active', 1)->get()->keyBy('locale'),
             'errors' => $errors
         ]);
     }
@@ -37,14 +35,14 @@ class TrailerGeneratorController extends Controller{
                     $chassis = null;
                     $data['accessory'] = [
                         'echo' => Accessory::getAllAccessoriesDefs($game),
-                        'first' => I18n::t('choose_accessory')
+                        'first' => trans('choose_accessory')
                     ];
                 }
                 if($request->input('select') == 'paint'){
                     $chassis = null;
                     $data['paint'] = [
                         'echo' => Paint::getAllPaintsDefs($game),
-                        'first' => I18n::t('all_companies')
+                        'first' => trans('all_companies')
                     ];
                 }
                 return response()->json(['result' => $data, 'status' => 'OK']);
@@ -80,7 +78,7 @@ class TrailerGeneratorController extends Controller{
             if($chassis->with_accessory){
                 $data['accessory'] = [
                     'echo' => $chassis->getAvailableAccessories($lang),
-                    'first' => I18n::t('choose_accessory', $lang)
+                    'first' => trans('choose_accessory', $lang)
                 ];
             }
             if($chassis->with_paint_job){
