@@ -1,17 +1,35 @@
-@php
-    $game = $_GET['game'] ?? 'ets2';
-    $_SERVER['SCRIPT_NAME'] !== '/gallery' ? : $game = null;
-@endphp
-
-<div class="navbar-fixed">
-    <nav class="blue-grey darken-3">
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo left" style="font-weight: 500; text-transform: uppercase; margin-left: 35px;">{{ I18n::t('head_title') }}</a>
-            <ul id="nav-mobile" class="right">
-                <li @if($game == 'ets2')class="active"@endif><a href="/"><?= I18n::t('ets2') ?></a></li>
-                <li @if($game == 'ats') class="active"@endif><a href="/ats"><?= I18n::t('ats') ?></a></li>
-                <li><a href="#lang" id="lang-sw"><i class="material-icons notranslate">language</i></a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<nav class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
+    <ul class="top-menu">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assets/img/bg.jpg" style="width: 100%;">
+                </div>
+                <a href="#user"><img class="circle" src="assets/img/logo.png"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+            </div>
+        </li>
+        <li><a class="waves-effect" href="{{url('/')}}">@lang('general.ets2_trailer_generator')</a></li>
+        <li><a class="waves-effect" href="{{url('/', 'ats')}}">@lang('general.ats_trailer_generator')</a></li>
+        <li><a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a></li>
+    </ul>
+    <ul class="bottom-menu">
+        @guest
+            <li><a class="waves-effect" href="{{route('login')}}"><i class="material-icons notranslate">how_to_reg</i>@lang('user.login')</a></li>
+            <li><a class="waves-effect" href="{{route('register')}}"><i class="material-icons notranslate">person_add</i>@lang('user.register')</a></li>
+        @else
+            <li><a class="waves-effect" href="{{route('profile')}}"><i class="material-icons notranslate">person</i>@lang('user.profile')</a></li>
+            <li><a class="waves-effect" href="{{route('logout')}}"><i class="material-icons notranslate">exit_to_app</i>@lang('user.logout')</a></li>
+        @endguest
+        <li><a class="waves-effect" href="#lang" id="lang-sw"><i class="material-icons notranslate">language</i>@lang('general.languages')</a></li>
+        <li style="padding: 0 32px;">
+            <div class="mdc-switch" style="margin-right: 18px;">
+                <input type="checkbox" id="toggle-dark" class="mdc-switch__native-control" @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true') checked @endif>
+                <div class="mdc-switch__background">
+                    <div class="mdc-switch__knob"></div>
+                </div>
+            </div>
+            <label for="toggle-dark" class="mdc-switch-label" style="font-weight: 500;">@lang('general.dark_theme')</label>
+        </li>
+    </ul>
+</nav>
