@@ -22,6 +22,8 @@ Route::post('/generator', 'TrailerGeneratorController@generate')->name('generato
 
 Route::get('/gallery', 'GalleryController@index');
 
+Route::get('/profile', 'ProfileController@index')->name('profile');
+
 Route::post('/gallery', 'GalleryController@getInfo')->name('gallery');
 
 Route::get('/{game?}', 'TrailerGeneratorController@index');
