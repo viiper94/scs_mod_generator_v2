@@ -124,11 +124,13 @@ return [
     |
     */
 
-    'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
-    ],
+    'custom' => json_decode(file_get_contents(resource_path('lang/json/'.basename(__DIR__).'.json')), true)['validators'],
+
+//    'custom' => [
+//        'attribute-name' => [
+//            'rule-name' => 'custom-message',
+//        ],
+//    ],
 
     /*
     |--------------------------------------------------------------------------
