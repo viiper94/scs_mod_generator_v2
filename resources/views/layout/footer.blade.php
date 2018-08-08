@@ -1,18 +1,16 @@
-<div class="row">
-    <div class="col m6 s12 center">
-        <h4 class="light">1.31.*</h4>
-        <p class="">@lang('general.supported_ets_version')</p>
+<div class="container">
+    <div class="row">
+        <div class="col m6 s12">
+            <p class="fs20">@lang('general.supported_ets_version') - <b>1.31.*</b></p>
+            <p class="fs20">@lang('general.supported_ats_version') - <b>1.31.*</b></p>
+        </div>
+        <div class="col m6 s12 right-align">
+            <div class="version">
+                <p>@lang('general.current_version') - 2.0</p>
+            </div>
+            <p>&copy; <a href="http://steamcommunity.com/id/viiper94/" target="_blank">[Mayday]</a> - {{date('Y')}}</p>
+        </div>
     </div>
-    <div class="col m6 s12 center">
-        <h4 class="light">1.31.*</h4>
-        <p class="">@lang('general.supported_ats_version')</p>
-    </div>
-</div>
-<div class="version center">
-    <p>@lang('general.current_version') - 2.0</p>
-</div>
-<div class="row center">
-    <span class="footer-copyright">&copy; <a href="http://steamcommunity.com/id/viiper94/" target="_blank">[Mayday]</a> - {{date('Y')}}</span>
 </div>
 <script type="text/javascript" src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/mdc/js/material-components-web.min.js') }}"></script>
