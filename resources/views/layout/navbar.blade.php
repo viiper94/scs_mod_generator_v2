@@ -1,16 +1,18 @@
 <nav class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
     <ul class="top-menu">
         <li>
-            <div class="user-view">
+            <div class="user-view" style="min-height: 200px;">
                 <div class="background">
                     <img src="assets/img/bg.jpg" style="width: 100%;">
                 </div>
-                <a href="#user"><img class="circle" src="assets/img/logo.png"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
+                @unless (!Auth::check())
+                    <a href="#user"><img class="circle" src="assets/img/logo.png"></a>
+                    <a href="#name"><span class="white-text name">{{ Auth::user()->name }}</span></a>
+                @endunless
             </div>
         </li>
-        <li><a class="waves-effect" href="{{url('/')}}">@lang('general.ets2_trailer_generator')</a></li>
-        <li><a class="waves-effect" href="{{url('/', 'ats')}}">@lang('general.ats_trailer_generator')</a></li>
+        <li><a class="waves-effect" href="{{url('/')}}"><i class="truck-icons truck-eu"></i>@lang('general.ets2_trailer_generator')</a></li>
+        <li><a class="waves-effect" href="{{url('/', 'ats')}}"><i class="truck-icons truck-us"></i>@lang('general.ats_trailer_generator')</a></li>
         <li><a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a></li>
     </ul>
     <ul class="bottom-menu">
@@ -19,7 +21,14 @@
             <li><a class="waves-effect" href="{{route('register')}}"><i class="material-icons notranslate">person_add</i>@lang('user.register')</a></li>
         @else
             <li><a class="waves-effect" href="{{route('profile')}}"><i class="material-icons notranslate">person</i>@lang('user.profile')</a></li>
-            <li><a class="waves-effect" href="{{route('logout')}}"><i class="material-icons notranslate">exit_to_app</i>@lang('user.logout')</a></li>
+            <li>
+                <a class="waves-effect" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="material-icons notranslate">exit_to_app</i>@lang('user.logout')
+                </a>
+                <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </li>
         @endguest
         <li><a class="waves-effect" href="#lang" id="lang-sw"><i class="material-icons notranslate">language</i>@lang('general.languages')</a></li>
         <li style="padding: 0 32px;">
