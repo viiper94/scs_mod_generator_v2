@@ -9,19 +9,21 @@
     @include('layout.header')
     <title>@lang('general.title')</title>
 </head>
-<body @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')class="mdc-theme--dark" @endif>
+<body @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')class="mdc-theme--dark " @endif>
     <header>
         @include('layout.navbar')
     </header>
-
-    <main style="padding-left: 350px;">
-        @yield('content')
-    </main>
+    <div class="wrapper flex">
+        <main style="display: flex; flex-direction: column; flex: 1">
+            @yield('content')
+        </main>
 
         @include('layout.languages')
 
-    <footer style="padding-left: 300px;">
-        @include('layout.footer')
-    </footer>
+        <footer>
+            @include('layout.footer')
+        </footer>
+    </div>
+
 </body>
 </html>
