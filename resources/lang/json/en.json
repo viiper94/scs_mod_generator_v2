@@ -78,9 +78,32 @@
     },
     "user": {
         "profile": "Profile",
-        "login": "Sign In",
-        "register": "Sign Up",
+        "login": "Log In",
+        "register": "Register",
+        "register_now": "Register now",
+        "name": "Name",
+        "email": "E-Mail",
+        "password": "Password",
+        "confirm_password": "Password again",
+        "already_have_account": "Already have an account?",
+        "dont_have_account": "Don't have an account?",
+        "forgot_password": "Forgot Your Password?",
+        "remember_me": "Remember Me",
         "logout": "Log Out"
+    },
+    "validators": {
+        "email": {
+            "required": "E-Mail address is required",
+            "unique": "This E-Mail address has already been taken",
+            "email": "This field must be a valid email address"
+        },
+        "name": {
+            "required": "This field is required"
+        },
+        "password": {
+            "required": "Password is required",
+            "min": "The password must be at least 6 characters"
+        }
     },
     "dlc list": {
         "scandinavia": "DLC Scandinavia",

@@ -57,7 +57,7 @@
 }
 
 body{
-	min-height: 97vh;
+	min-height: 100vh;
 	background-color: var(--mdc-theme-background);
 }
 body.mdc-theme--dark{
@@ -69,6 +69,11 @@ body.mdc-theme--dark{
 .mdc-theme--dark .card-panel{
 	background-color: var(--mdc-theme-dark-background-darker-2);
 	color: var(--mdc-theme-text-primary-on-primary-dark);
+}
+.wrapper{
+	flex-direction: column;
+	padding-left: 350px;
+	min-height: 100vh;
 }
 
 .material-icons {
@@ -89,7 +94,44 @@ body.mdc-theme--dark{
 .material-icons.mdc-button__icon{
 	line-height: inherit;
 }
+select{
+	border: 0;
+	color: #eee;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+	pointer-events: auto;
+}
+ol{
+	margin-left: 15px;
+}
+label, a{
+	color: var(--mdc-theme-text-primary-on-primary-light);
+}
 
+
+/* Helpers */
+@media (min-width: 601px){
+	.left-med-and-up{
+		float: left !important;
+	}
+	.right-med-and-up{
+		float: right !important;
+	}
+}
+.no-margin{
+	margin: 0 !important;
+}
+.flex, .flex-wrapper{
+	display: flex;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Nav Bar */
 nav ul a{
 	font-size: 1.2em;
 	font-weight: 500;
@@ -124,6 +166,17 @@ nav .tabs .indicator{
 nav .tabs .tab a:focus, nav .tabs .tab a:focus.active{
 	background: none;
 }
+i.truck-icons{
+	background: url(../img/truck_icons.png) no-repeat;
+	background-position-y: center;
+	background-size: 48px;
+}
+i.truck-us{
+	background-position-x: -26px;
+}
+i.truck-eu{
+	background-position-x: 1px;
+}
 
 nav.sidenav{
 	display: flex;
@@ -146,6 +199,8 @@ nav .brand-logo::before{
 	background-size: contain;
 	background-position-y: 82%;
 }
+
+/* Language modal */
 .lang-btn{
 	white-space: nowrap;
 	font-size: 17px;
@@ -175,18 +230,12 @@ nav .brand-logo::before{
 		justify-content: center;
 	}
 }
-
 .mdc-theme--dark .lang-btn{
 	color: var(--mdc-theme-text-primary-on-primary);
 }
-select{
-	border: 0;
-	color: #eee;
-}
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-	pointer-events: auto;
-}
+
+
+/* Index Page */
 .download-row{
 	margin-top: 15px;
 	display: flex;
@@ -240,15 +289,6 @@ select{
 }
 .text-shadow{
 	text-shadow: 0 0 8px rgba(0, 0, 0, 1);
-}
-.trailer .card-title{
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	font-size: 22px;
-}
-.trailer .card-content{
-	padding: 0;
 }
 .collapsible{
 	margin: 0;
@@ -334,9 +374,6 @@ input[type=text]:not(.browser-default):hover{
 		margin-left: 24px;
 	}
 }
-ol{
-	margin-left: 15px;
-}
 .mdc-theme--dark .select-wrapper input.select-dropdown{
 	color: var(--mdc-theme-text-primary-on-primary);
 }
@@ -390,21 +427,31 @@ ol{
 	display: block;
 	margin-top: 10px;
 }
-
 .mdc-fab span{
 	font-size: 20px;
 	font-weight: bold;
 }
-.footer-copyright{
-	font-size: 12px;
+
+
+/* Gallery Page */
+.trailer .card-title{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 22px;
 }
-.footer-copyright{
-	text-decoration: none;
-	display: block;
+.trailer .card-content{
+	padding: 0;
 }
 
-label, a{
-	color: var(--mdc-theme-text-primary-on-primary-light);
+
+/* Register Page */
+
+
+
+/* Footer */
+.fs20{
+	font-size: 20px;
 }
 .mdc-theme--dark footer h4,
 .mdc-theme--dark footer h5,
@@ -416,26 +463,8 @@ label, a{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
 }
 
-@media (max-width: 730px){
-	nav .brand-logo.left{
-		font-size: 1.5rem;
-	}
-}
-@media (max-width: 610px){
-	nav .brand-logo.left{
-		display: none;
-	}
-}
-@media (min-width: 601px){
-	.left-med-and-up{
-		float: left !important;
-	}
-	.right-med-and-up{
-		float: right !important;
-	}
-}
 
-/* scrollbar */
+/* Scrollbar */
 *::-webkit-scrollbar {
 	width: 5px;
 }
