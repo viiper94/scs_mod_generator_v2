@@ -3,7 +3,7 @@
         <li>
             <div class="user-view" style="min-height: 200px;">
                 <div class="background">
-                    <img src="assets/img/bg.jpg" style="width: 100%;">
+                    <img src="{{ asset('assets/img/bg.jpg') }}" style="width: 100%;">
                 </div>
                 @if(Auth::check())
                     <a href="#user"><img class="circle" src="assets/img/logo.png"></a>

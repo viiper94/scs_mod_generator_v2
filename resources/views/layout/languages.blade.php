@@ -10,7 +10,7 @@
                         <a href="{{!$_SERVER['QUERY_STRING'] ? '' : '?'.$_SERVER['QUERY_STRING']}}"
                            class="valign-wrapper lang-btn @if(\Illuminate\Support\Facades\App::isLocale($locale))active @endif"
                            data-lang="{{$locale}}">
-                            <img src="./assets/img/langs/{{$locale}}.png" alt="{{$lang['title']}}>">
+                            <img src="{{ asset('assets/img/langs/'.$locale.'.png') }}./" alt="{{$lang['title']}}>">
                             {{$lang['title']}}
                         </a>
                     @endforeach
