@@ -5,22 +5,34 @@
                 <div class="background">
                     <img src="assets/img/bg.jpg" style="width: 100%;">
                 </div>
-                @unless (!Auth::check())
+                @if(Auth::check())
                     <a href="#user"><img class="circle" src="assets/img/logo.png"></a>
                     <a href="#name"><span class="white-text name">{{ Auth::user()->name }}</span></a>
-                @endunless
+                @endif
             </div>
         </li>
-        <li><a class="waves-effect" href="{{url('/')}}"><i class="truck-icons truck-eu"></i>@lang('general.ets2_trailer_generator')</a></li>
-        <li><a class="waves-effect" href="{{url('/', 'ats')}}"><i class="truck-icons truck-us"></i>@lang('general.ats_trailer_generator')</a></li>
-        <li><a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a></li>
+        <li @if(Request::is('/'))class="active"@endif>
+            <a class="waves-effect" href="{{url('/')}}"><i class="truck-icons truck-eu"></i>@lang('general.ets2_trailer_generator')</a>
+        </li>
+        <li @if(Request::is('ats'))class="active"@endif>
+            <a class="waves-effect" href="{{url('/', 'ats')}}"><i class="truck-icons truck-us"></i>@lang('general.ats_trailer_generator')</a>
+        </li>
+        <li @if(Request::is('gallery'))class="active"@endif>
+            <a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a>
+        </li>
     </ul>
     <ul class="bottom-menu">
         @guest
-            <li><a class="waves-effect" href="{{route('login')}}"><i class="material-icons notranslate">how_to_reg</i>@lang('user.login')</a></li>
-            <li><a class="waves-effect" href="{{route('register')}}"><i class="material-icons notranslate">person_add</i>@lang('user.register')</a></li>
+            <li @if(Request::is('login'))class="active"@endif>
+                <a class="waves-effect" href="{{route('login')}}"><i class="material-icons notranslate">how_to_reg</i>@lang('user.login')</a>
+            </li>
+            <li @if(Request::is('register'))class="active"@endif>
+                <a class="waves-effect" href="{{route('register')}}"><i class="material-icons notranslate">person_add</i>@lang('user.register')</a>
+            </li>
         @else
-            <li><a class="waves-effect" href="{{route('profile')}}"><i class="material-icons notranslate">person</i>@lang('user.profile')</a></li>
+            <li @if(Request::is('profile'))class="active"@endif>
+                <a class="waves-effect" href="{{route('profile')}}"><i class="material-icons notranslate">person</i>@lang('user.profile')</a>
+            </li>
             <li>
                 <a class="waves-effect" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="material-icons notranslate">exit_to_app</i>@lang('user.logout')
