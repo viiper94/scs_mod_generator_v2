@@ -90,6 +90,7 @@
         "forgot_password": "Forgot Your Password?",
         "remember_me": "Remember Me",
         "reset_password": "Reset Password",
+        "submit_password_reset": "Send Password Reset Link",
         "logout": "Log Out"
     },
     "auth": {
