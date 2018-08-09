@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
+    'failed' => json_decode(file_get_contents(resource_path('lang/json/'.basename(__DIR__).'.json')), true)['auth']['failed'],
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

@@ -89,7 +89,11 @@
         "dont_have_account": "Don't have an account?",
         "forgot_password": "Forgot Your Password?",
         "remember_me": "Remember Me",
+        "reset_password": "Reset Password",
         "logout": "Log Out"
+    },
+    "auth": {
+        "failed": "Incorrect E-Mail or password."
     },
     "validators": {
         "email": {
