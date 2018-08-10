@@ -15,9 +15,9 @@ class CreateModsTable extends Migration
     {
         Schema::create('mods', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('title');
-            $table->integer('file_name');
+            $table->integer('user_id')->nullable();
+            $table->string('title', 512);
+            $table->string('file_name', 512);
             $table->string('params');
             $table->string('type');
             $table->string('game')->default('ets2');
