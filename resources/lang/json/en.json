@@ -10,6 +10,12 @@
         "ats": "ATS",
         "download_mod": "Download mod",
         "mod_title": "Mod title",
+        "chassis": "Chassis",
+        "accessory": "Accessory",
+        "paint_job": "Paint Job",
+        "color": "Color",
+        "wheels": "Wheels",
+        "dlc": "DLC",
         "pick_chassis": "Pick a chassis from list below (required)",
         "choose_chassis": "Choose chassis",
         "paintable_chassis": "All paintable chassis",
@@ -91,7 +97,16 @@
         "remember_me": "Remember Me",
         "reset_password": "Reset Password",
         "submit_password_reset": "Send Password Reset Link",
+        "profile_edit": "Edit Profile",
+        "generated_mods": "Generated Mods",
         "logout": "Log Out"
+    },
+    "mods": {
+        "mods_history": "Mods History",
+        "mod_params": "Mods Params",
+        "mod_for_version": "Mods Version",
+        "no_mods": "No mods generated",
+        "regenerate_mod": "Regenerate mod"
     },
     "auth": {
         "failed": "Incorrect E-Mail or password."
