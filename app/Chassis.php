@@ -47,16 +47,16 @@ class Chassis extends Model{
 
     public function getAvailablePaints($lang){
         $list[] = [
-            'name' => I18n::t('all_companies'),
+            'name' => trans('general.all_companies'),
             'value' => 'all',
             'selected' => true
         ];
         $chassis = str_replace(['_1_4', '_1', '_4_3', '_4', 'rm_double', 'rm53_double', 'pup_double', 'pup_triple'], '', $this->alias);
         $paints = Paint::where(['game' => $this->game, 'chassis' => $chassis])->get();
         foreach($paints as $key => $paint){
-            $name = I18n::t($paint->look, $lang);
+            $name = trans($this->game.'_companies_paints.'.$paint->look);
             if($paint->isDLCContent()){
-                $name .= ' - '. I18n::t($paint->dlc->name, $lang);
+                $name .= ' - '. trans('dlc_list.'.$paint->dlc->name);
             };
             $list[] = [
                 'name' => $name,
@@ -68,7 +68,7 @@ class Chassis extends Model{
 
     public function getAvailableAccessories($lang){
         $list[] = [
-            'name' => I18n::t('choose_accessory'),
+            'name' => trans('general.choose_accessory'),
             'value' => '',
             'selected' => true
         ];
@@ -76,12 +76,12 @@ class Chassis extends Model{
         $accessories = Accessory::where(['game' => $this->game, 'chassis' => $chassis])->get();
         $dlc_list = Dlc::where('game', $this->game)->get()->keyBy('id');
         foreach($accessories as $key => $accessory){
-            $name = I18n::t($accessory->alias, $lang);
+            $name = trans($this->game.'_accessories.'.$accessory->alias);
             if($accessory->isDLCContent()){
                 $name .= ' - ';
                 $dlc = array();
                 foreach(explode(',', $accessory->dlc) as $item){
-                    $dlc[] = I18n::t($dlc_list[$item]->name, $lang);
+                    $dlc[] = trans('dlc_list.'.$dlc_list[$item]->name);
                 }
                 $name .= implode(', ', $dlc);
             };
@@ -96,17 +96,17 @@ class Chassis extends Model{
     public static function getAllCompanies($lang, $game){
         $companies = Company::where('game', $game)->get();
         $list[] = [
-            'name' => I18n::t('choose_paint'),
+            'name' => trans('general.choose_paint'),
             'value' => '',
             'selected' => true
         ];
         $list[] = [
-            'name' => I18n::t('default', $lang),
+            'name' => trans($game.'_companies_paints.default'),
             'value' => 'default'];
         foreach($companies as $company){
-            $name = I18n::t($company->name, $lang);
+            $name = trans($game.'_companies_paints.'.$company->name);
             if($company->isDLCContent()){
-                $name .= ' - '. I18n::t($company->dlc->name);
+                $name .= ' - '. trans('dlc_list.'.$company->dlc->name);
             };
             $list[] = [
                 'name' => $name,
