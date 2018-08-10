@@ -11,15 +11,14 @@
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="row">
-            @foreach($chassis_list as $game => $collection)
-                <div id="{{$game}}" class="game">
-                    <h4 class="light">@lang('general.'.$game.'_trailer_guide')</h4>
-                    @php $i = 0; @endphp
-                    @foreach($collection->groupBy('alias_short') as $alias => $aliases_collection)
+    @foreach($chassis_list as $game => $collection)
+        <div id="{{$game}}" class="game">
+            <h4 class="light">@lang('general.'.$game.'_trailer_guide')</h4>
+            @php $i = 0; @endphp
+            <div class="row">
+                @foreach($collection->groupBy('alias_short') as $alias => $aliases_collection)
                         <div class="col m6 s12">
-                            <div class="card trailer {{$alias}} ?>">
+                            <div class="card trailer {{$alias}}">
                                 <div class="card-image">
                                     <img src="/assets/img/trailers/{{$alias}}/{{$alias}}.jpg">
                                     <h5 class="card-title trailer-name text-shadow" title="@lang($game.'_trailers.'.$alias)" style="width: 100%;">
@@ -48,12 +47,11 @@
                                 @endif
                             </div>
                         </div>
-                        @if($i++ % 2 != 0)
-                            <div class="clearfix"></div>
-                        @endif
-                    @endforeach
-                </div>
-            @endforeach
+                    @if($i++ % 2 != 0)
+                        <div class="clearfix"></div>
+                    @endif
+                @endforeach
+            </div>
         </div>
-    </div>
+    @endforeach
 @endsection
