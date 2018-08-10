@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /resources/files/mod/manifest.sii
+/public/download/*
+/public/images/*
 /public/storage
 /storage/*.key
 /.idea
