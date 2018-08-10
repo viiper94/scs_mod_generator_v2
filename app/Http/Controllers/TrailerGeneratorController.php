@@ -6,11 +6,13 @@ use App\Accessory;
 use App\Chassis;
 use App\Company;
 use App\Dlc;
+use App\Mods;
 use App\Paint;
 use App\TrailerGenerator;
 use App\Wheel;
 use I18n;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TrailerGeneratorController extends Controller{
 
@@ -53,7 +55,7 @@ class TrailerGeneratorController extends Controller{
                 }
                 if($request->input('chassis') !== 'paintable' && $chassis->with_accessory){
                     $accessory = Accessory::where('def', $request->input('accessory'))->first();
-                    $dlc = $accessory->getDLCs(true);
+                    if($accessory) $dlc = $accessory->getDLCs(true);
                 }
                 if($request->input('chassis') === 'paintable' || $chassis->with_paint_job){
                     if($request->input('chassis') === 'paintable'){
@@ -61,9 +63,9 @@ class TrailerGeneratorController extends Controller{
                     }else{
                         $paint = Paint::where('def', $request->input('accessory'))->first();
                     }
-                    $dlc = $paint->dlc ? array($paint->dlc->name) : [];
+                    if($paint) $dlc = $paint->dlc ? array($paint->dlc->name) : [];
                 }
-                !isset($chassis) ? : array_push($dlc, $chassis->dlc);
+                !isset($chassis->dlc) ? : array_push($dlc, $chassis->dlc->name);
                 return response()->json(['status' => 'OK', 'dlc' => array_unique($dlc)]);
             }
             if($request->input('chassis') == 'paintable'){
@@ -78,7 +80,6 @@ class TrailerGeneratorController extends Controller{
             if($chassis->with_accessory){
                 $data['accessory'] = [
                     'echo' => $chassis->getAvailableAccessories($lang),
-                    'first' => trans('choose_accessory', $lang)
                 ];
             }
             if($chassis->with_paint_job){
@@ -92,6 +93,7 @@ class TrailerGeneratorController extends Controller{
     }
 
     public function generate(Request $request){
+
         $accessory = null;
         $paint_job = null;
 
@@ -127,10 +129,33 @@ class TrailerGeneratorController extends Controller{
         $generator->load($chassis, $accessory, $paint_job);
         $generator->run();
 
-//        $logger = new Logger();
-//        $logger->writeLog($generator->fileName);
+        $mod = new Mods();
+        Auth::check() ? $mod->user_id = Auth::id() : null;
+        $mod->title = $generator->title;
+        $mod->file_name = $generator->fileName;
+        $mod->params = $this->getInputParams($request, $generator);
+        $mod->type = 'trailer';
+        $mod->save();
 
-        return redirect()->action('TrailerGeneratorController@index');
+        return redirect(($request->input('target') !== 'ats' ? '/' : '/ats/').'?d='.$generator->fileName);
+    }
+
+    public function getInputParams($request, $generator){
+        $params = array();
+        $params['chassis'] = $request->post('chassis');
+        $params['game'] = $request->post('target');
+        if($request->post('accessory')) $params['accessory'] = $generator->accessory->alias;
+        if($request->post('paint')){
+            $params['paint'] = $generator->paintJob->alias;
+            if(stripos($request->post('paint'), 'default.sii')){
+                $color = $request->post('color');
+                $params['color'] = $color;
+            }
+        }
+        if($request->post('weight')) $params['weight'] = $generator->chassis->weight;
+        if($request->post('wheels')) $params['wheels'] = $generator->chassis->wheels->alias;
+        if($request->post('dlc')) $params['dlc'] = $request->post('dlc');
+        return serialize($params);
     }
 
 }
