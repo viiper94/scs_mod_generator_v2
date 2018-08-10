@@ -24,8 +24,10 @@ Route::get('/gallery', 'GalleryController@index');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
+Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
+
 Route::post('/gallery', 'GalleryController@getInfo')->name('gallery');
 
-Route::get('/{game?}', 'TrailerGeneratorController@index');
+Route::get('/{game?}/{d?}', 'TrailerGeneratorController@index');
 
 Route::post('/{game?}', 'TrailerGeneratorController@getChassisData');
