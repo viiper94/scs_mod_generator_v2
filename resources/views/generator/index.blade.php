@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        @if(isset($_GET['d']))
+        @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs'))
             @include('generator.download')
         @endif
         @if($errors)
@@ -171,8 +171,8 @@
                 <div class="card-action row center-on-small-only">
                     <input type="hidden" name="target" value="{{$game}}">
                     <button class="mdc-button mdc-button--raised mdc-ripple left-med-and-up" id="generate-btn" type="submit"
-                            onclick="return confirm('@lang('general.are_you_sure')')" disabled>
-                        <i class="material-icons mdc-button__icon notranslate">send</i>@lang('general.proceed')
+                            onclick="return confirm('@lang('general.are_you_sure')')" disabled style="min-width: 200px">
+                        <i class="material-icons mdc-button__icon notranslate">send</i><b>@lang('general.proceed')</b>
                     </button>
                 </div>
             </form>
