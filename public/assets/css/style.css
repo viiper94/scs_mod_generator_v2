@@ -32,7 +32,7 @@
 }
 :root{
 	--mdc-theme-primary-light: #fff176;
-	--mdc-theme-primary-dark: #fbc02d;
+	--mdc-theme-primary-dark: #fdd835;
 	--mdc-theme-secondary: #ef6c00;
 	--mdc-theme-secondary-light: #fff;
 	--mdc-theme-secondary-dark: #fff;
@@ -107,6 +107,12 @@ ol{
 }
 label, a{
 	color: var(--mdc-theme-text-primary-on-primary-light);
+}
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled),
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating),
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover{
+	background-color: var(--mdc-theme-primary-dark);
+	color: var(--mdc-theme-light-text)
 }
 
 
@@ -306,10 +312,17 @@ nav .brand-logo::before{
 .advanced .collapsible-header{
 	padding: 1rem 0;
 }
+.collapsible-header{
+	line-height: 36px;
+}
 .collapsible-header i{
 	transition: .3s ease;
 }
-li.active > .collapsible-header i{
+li > .collapsible-header i,
+li > .collapsible-header .material-icons.mdc-button__icon{
+	line-height: 36px;
+}
+li.active > .collapsible-header i:not(.mdc-button__icon){
 	transform: rotate(180deg);
 }
 .mdc-theme--dark input{
@@ -360,9 +373,12 @@ input[type=text]:not(.browser-default):hover{
 	border: none !important;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: var(--mdc-theme-text-primary-on-primary,#fff);
+	color: var(--mdc-theme-light-text,#000);
 	font-size: .875rem;
 	text-overflow: ellipsis;
+}
+.file-field input.file-path::placeholder{
+	color: var(--mdc-theme-light-text,#000);
 }
 .gallery-btn{
 	margin: 0 !important;
