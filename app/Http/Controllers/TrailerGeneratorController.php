@@ -79,12 +79,12 @@ class TrailerGeneratorController extends Controller{
             $data = null;
             if($chassis->with_accessory){
                 $data['accessory'] = [
-                    'echo' => $chassis->getAvailableAccessories($lang),
+                    'echo' => $chassis->getAvailableAccessories(),
                 ];
             }
             if($chassis->with_paint_job){
                 $data['paint'] = [
-                    'echo' => $chassis->getAvailablePaints($lang)
+                    'echo' => $chassis->getAvailablePaints()
                 ];
             }
             return response()->json(['result' => $data, 'status' => 'OK', 'dlc' => $chassis->dlc]);
@@ -118,7 +118,7 @@ class TrailerGeneratorController extends Controller{
             $paint_job = Paint::where('def', $request->input('paint'))->first();
             $paint_job->setPaintColor($request->input('color'));
         }
-        if($chassis->alias == 'aero_dynamic' || $request->input('paint') === 'all'){
+        if($request->input('paint') === 'all'){
             $paint_job = new Paint();
             $paint_job->def = $chassis->default_paint_job;
             $paint_job->allCompanies = true;

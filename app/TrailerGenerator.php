@@ -35,7 +35,7 @@ class TrailerGenerator{
 		$this->makeOutDirectory();
         $this->copyTrailerFiles();
         $this->replaceTrailerFiles();
-		if($this->paintJob && !$this->paintJob->allCompanies && $this->chassis->alias !== 'aero_dynamic'){
+		if($this->paintJob && !$this->paintJob->allCompanies){
 			$this->copyCompanyFiles();
 			$this->replaceCompanyFiles();
 		}
@@ -173,10 +173,11 @@ class TrailerGenerator{
 				if(is_file($dirname."/".$file)){
 					$rows = file($dirname."/".$file, FILE_IGNORE_NEW_LINES);
 					$trailer_name = trim(preg_split('/trailer\./', $rows[0])[1]);
-					$accessory_name = trim(preg_replace('/\.[a-z0-9]+$/', '', explode(':', $rows[2])[1]));
+					$row_with_accessory_name = stripos($rows[2], 'trailer_definition') !== false ? $rows[4] : $rows[2];
+					$accessory_name = trim(preg_replace('/\.[a-z0-9]+$/', '', explode(':', $row_with_accessory_name)[1]));
 					if($this->chassis->alias == 'paintable'){
 						$content = $this->generatePaintableTrailersContent($rows);
-						if(stripos($content,'base_color') === false || $trailer_name == 'aero_dynamic'){
+						if(stripos($content,'base_color') === false){
 							$content = $this->generateRandomTrailerContent($trailer_name, $accessory_name);
 						}
 					}else{
@@ -258,7 +259,7 @@ class TrailerGenerator{
 			}
 			if(isset($this->paintJob->def) && $this->paintJob->def !== ''){
 				$output_string .= "\nvehicle_paint_job_accessory: ".$accessory_name.".paint_job\n{\n";
-				if(stripos($this->paintJob->def ,'default.sii') && $this->chassis->alias != 'aero_dynamic'){
+				if(stripos($this->paintJob->def ,'default.sii')){
 					$output_string .= "\tbase_color: (".$this->paintJob->color.")\n";
 				}
 				$output_string .= "\t\tdata_path: \"".$this->paintJob->def."\"\n}\n";
