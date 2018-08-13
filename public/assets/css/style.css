@@ -108,9 +108,9 @@ ol{
 label, a{
 	color: var(--mdc-theme-text-primary-on-primary-light);
 }
-.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled),
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled)/*,
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating),
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover{
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover*/{
 	background-color: var(--mdc-theme-primary-dark);
 	color: var(--mdc-theme-light-text)
 }

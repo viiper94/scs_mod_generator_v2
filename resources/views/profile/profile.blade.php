@@ -13,7 +13,7 @@
                 <p>@lang('user.generated_mods'): <b>{{ count($mods) }}</b></p>
             </div>
             <div class="card-action">
-                <a href="{{ route('profile_edit') }}" class="mdc-button mdc-button--raised mdc-ripple" style="min-width: 200px">
+                <a href="{{ route('profile_edit') }}" class="mdc-button mdc-button--raised mdc-ripple" style="min-width: 200px; color: #000;">
                     <i class="material-icons notranslate mdc-button__icon no-margin">edit</i>
                     <b>@lang('user.profile_edit')</b>
                 </a>

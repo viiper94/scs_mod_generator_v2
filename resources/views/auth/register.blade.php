@@ -48,7 +48,7 @@
             </div>
             <div class="card-action">
                 <div class="row no-margin">
-                    <button type="submit" class="btn waves-effect col s12 yellow darken-1 black-text"><b>@lang('user.register_now')</b></button>
+                    <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12"><b>@lang('user.register_now')</b></button>
                     <div class="input-field col s12">
                         <p class="center">@lang('user.already_have_account') <a href="{{ route('login') }}">@lang('user.login')</a></p>
                     </div>

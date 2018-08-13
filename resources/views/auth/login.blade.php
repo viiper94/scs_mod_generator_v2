@@ -39,7 +39,7 @@
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">
-                        <button type="submit" class="btn waves-effect col s12 yellow darken-1 black-text"><b>@lang('user.login')</b></button>
+                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12"><b>@lang('user.login')</b></button>
                         <div class="input-field col s12 center">
                             <a href="{{ route('password.request') }}" class="no-margin">@lang('user.forgot_password')</a>
                         </div>
