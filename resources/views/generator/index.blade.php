@@ -180,6 +180,12 @@
         @if(!$hasUserAcceptLanguage)
             @include('generator.translate')
         @endif
+        <section class="card-panel grey-text">
+            <span class="card-title">
+                <i class="material-icons left notranslate">warning</i>
+                @lang('general.beta_notification')
+            </span>
+        </section>
     </div>
     <div class="fixed-action-btn tooltipped" data-tooltip="@lang('general.how_to')">
         <a class="mdc-fab mdc-ripple orange darken-3 modal-trigger" href="#how" id="how-to">
