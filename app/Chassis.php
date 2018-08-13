@@ -45,13 +45,16 @@ class Chassis extends Model{
         return false;
     }
 
-    public function getAvailablePaints($lang){
+    public function getAvailablePaints(){
+        $to_replace = ['_1_4', '_1', '_4_3', '_4',
+            'rm_double', 'rm53_double', 'pup_double', 'pup_triple',
+            '_aero', '_double', '_bdouble', '_steer'];
         $list[] = [
             'name' => trans('general.all_companies'),
             'value' => 'all',
             'selected' => true
         ];
-        $chassis = str_replace(['_1_4', '_1', '_4_3', '_4', 'rm_double', 'rm53_double', 'pup_double', 'pup_triple'], '', $this->alias);
+        $chassis = str_replace($to_replace, '', $this->alias);
         $paints = Paint::where(['game' => $this->game, 'chassis' => $chassis])->get();
         foreach($paints as $key => $paint){
             $name = trans($this->game.'_companies_paints.'.$paint->look);
@@ -66,7 +69,7 @@ class Chassis extends Model{
         return $list;
     }
 
-    public function getAvailableAccessories($lang){
+    public function getAvailableAccessories(){
         $list[] = [
             'name' => trans('general.choose_accessory'),
             'value' => '',

@@ -1,0 +1,38 @@
+trailer : trailer.scs_curt_s
+{
+	trailer_definition: trailer_def.scs.box.single_3.curtain
+
+	accessories[]: .scs_curt_s.chassis
+	accessories[]: .scs_curt_s.rwheel
+	accessories[]: .scs_curt_s.rwheel2
+	accessories[]: .scs_curt_s.rwheel3
+	accessories[]: .scs_curt_s.paint_job
+}
+
+vehicle_accessory: .scs_curt_s.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_stw.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt_s.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt_s.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt_s.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_curt_s.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii"
+}

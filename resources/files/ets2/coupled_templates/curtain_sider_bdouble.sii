@@ -1,0 +1,83 @@
+trailer : trailer.%trailer%
+{
+	trailer_definition: trailer_def.scs.box.bdouble_3_3.curtain
+
+	accessories[]: .%trailer%.chassis
+	accessories[]: .%trailer%.rwheel
+	accessories[]: .%trailer%.rwheel2
+	accessories[]: .%trailer%.rwheel3
+	accessories[]: .%trailer%.paint_job
+	accessories[]: .%trailer%.trlr_cables
+
+	slave_trailer: .%trailer%.second
+}
+
+vehicle_accessory: .%trailer%.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_bd.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.rwheel
+{
+	offset: 0
+    	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.rwheel2
+{
+	offset: 2
+    	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.rwheel3
+{
+	offset: 4
+    	data_path: "%wheel%"
+}
+vehicle_paint_job_accessory: .%trailer%.paint_job
+{
+    	data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory: .%trailer%.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/accessory/trlr_cables.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXX second trailer - 13,6m XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .%trailer%.second
+{
+	accessories[]: .%trailer%.second.chassis
+	accessories[]: .%trailer%.second.rwheel
+	accessories[]: .%trailer%.second.rwheel2
+	accessories[]: .%trailer%.second.rwheel3
+	accessories[]: .%trailer%.second.paint_job
+}
+
+vehicle_accessory: .%trailer%.second.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/chassis.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.second.rwheel
+{
+	offset: 0
+    	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.second.rwheel2
+{
+	offset: 2
+    	data_path: "%wheel%"
+}
+vehicle_wheel_accessory: .%trailer%.second.rwheel3
+{
+	offset: 4
+    	data_path: "%wheel%"
+}
+
+vehicle_paint_job_accessory: .%trailer%.second.paint_job
+{
+    	data_path: "%paint_job%"
+}
