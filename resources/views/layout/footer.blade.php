@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col m6 s12">
-            <p class="fs20">@lang('general.supported_ets_version') - <b>1.31.*</b></p>
+            <p class="fs20">@lang('general.supported_ets_version') - <b>1.32.*</b></p>
             <p class="fs20">@lang('general.supported_ats_version') - <b>1.31.*</b></p>
         </div>
         <div class="col m6 s12 right-align">
