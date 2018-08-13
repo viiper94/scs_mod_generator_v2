@@ -57,7 +57,7 @@ class Chassis extends Model{
         $chassis = str_replace($to_replace, '', $this->alias);
         $paints = Paint::where(['game' => $this->game, 'chassis' => $chassis])->get();
         foreach($paints as $key => $paint){
-            $name = trans($this->game.'_companies_paints.'.$paint->look);
+            $name = trans($this->game.'_companies_paints.'.$paint->alias);
             if($paint->isDLCContent()){
                 $name .= ' - '. trans('dlc_list.'.$paint->dlc->name);
             };
