@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container flex-center" style="flex: 1; align-items: center; justify-content: space-around;">
+    <div class="flex-center" style="flex: 1; align-items: center; justify-content: space-around;">
         <div class="card" style="max-width: 500px;">
             <form action="{{route('save_profile')}}" method="post" enctype="multipart/form-data">
                 @csrf
