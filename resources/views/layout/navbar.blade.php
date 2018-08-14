@@ -3,11 +3,11 @@
         <li>
             <div class="user-view" style="min-height: 200px;">
                 <div class="background">
-                    <img src="{{ asset('assets/img/bg.jpg') }}" style="width: 100%;">
+                    <img src="{{ '/assets/img/bg.jpg' }}" style="width: 100%;">
                 </div>
                 @if(Auth::check())
-                    <a href="#user"><img class="circle" src="assets/img/logo.png"></a>
-                    <a href="#name"><span class="white-text name">{{ Auth::user()->name }}</span></a>
+                    <a href="{{ route('profile') }}"><img class="circle" src="{{ '/images/users/'.Auth::user()->image }}"></a>
+                    <a href="{{ route('profile') }}"><span class="white-text name">{{ Auth::user()->name }}</span></a>
                 @endif
             </div>
         </li>
