@@ -101,7 +101,13 @@ ol{
 label, a{
     color: var(--mdc-theme-text-primary-on-primary-light);
 }
-.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled), .mdc-fab{
+.mdc-theme--dark a{
+    color: #000;
+}
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled), .mdc-fab,
+.mdc-switch .mdc-switch__native-control:enabled:checked~.mdc-switch__background .mdc-switch__knob,
+.mdc-switch .mdc-switch__native-control:enabled:checked~.mdc-switch__background .mdc-switch__knob:before,
+.mdc-switch .mdc-switch__native-control:enabled:checked~.mdc-switch__background:before{
     background-color: var(--mdc-theme-primary-dark);
     color: var(--mdc-theme-light-text)
 }
@@ -115,6 +121,9 @@ select{
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
 	pointer-events: auto;
+}
+.mdc-theme--dark .mdc-text-field__bottom-line{
+    background-color: var(--mdc-theme-primary-dark);
 }
 input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
 	border-bottom: 1px solid var(--mdc-theme-primary-dark);
@@ -181,13 +190,13 @@ nav .tabs .tab a:hover{
 }
 .mdc-theme--dark nav .tabs .tab a.active,
 .mdc-theme--dark nav .tabs .tab a:hover{
-	color: var(--mdc-theme-primary);
+	color: var(--mdc-theme-primary-dark);
 }
 nav .tabs .indicator{
 	background-color: var(--mdc-theme-primary);
 }
 .mdc-theme--dark nav .tabs .indicator{
-	background-color: var(--mdc-theme-primary);
+	background-color: var(--mdc-theme-primary-dark);
 }
 nav .tabs .tab a:focus, nav .tabs .tab a:focus.active{
 	background: none;
