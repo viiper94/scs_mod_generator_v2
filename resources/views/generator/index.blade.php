@@ -143,7 +143,9 @@
                                         <select class="icons" name="wheels">
                                             <option value="" selected>@lang('general.w_default')</option>
                                             @foreach($wheels as $wheel)
-                                                <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">@lang($game.'_wheels.'.$wheel->alias)</option>
+                                                <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">
+                                                    @lang($game.'_wheels.'.$wheel->alias)
+                                                </option>
                                             @endforeach
                                         </select>
                                         <label>@lang('general.select_wheels')</label>
@@ -188,7 +190,7 @@
         </section>
     </div>
     <div class="fixed-action-btn tooltipped" data-tooltip="@lang('general.how_to')">
-        <a class="mdc-fab mdc-ripple orange darken-3 modal-trigger" href="#how" id="how-to">
+        <a class="mdc-fab mdc-ripple modal-trigger" href="#how" id="how-to">
             <span class="mdc-fab__icon">?</span>
         </a>
     </div>
