@@ -94,6 +94,8 @@ body.mdc-theme--dark{
 .material-icons.mdc-button__icon{
 	line-height: inherit;
 }
+
+/* Forms */
 select{
 	border: 0;
 	color: #eee;
@@ -102,15 +104,33 @@ select{
 [type="checkbox"]:checked {
 	pointer-events: auto;
 }
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid var(--mdc-theme-primary-dark);
+	box-shadow: 0 1px 0 0 var(--mdc-theme-primary-dark);
+}
+input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+	color: var(--mdc-theme-light-text);
+}
+.input-field .prefix.active{
+	color: var(--mdc-theme-primary-dark);
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):after{
+    border: 2px solid var(--mdc-theme-primary-dark);
+    background-color: var(--mdc-theme-primary-dark);
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):before{
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+
 ol{
 	margin-left: 15px;
 }
 label, a{
 	color: var(--mdc-theme-text-primary-on-primary-light);
 }
-.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled)/*,
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating),
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover*/{
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled){
 	background-color: var(--mdc-theme-primary-dark);
 	color: var(--mdc-theme-light-text)
 }
