@@ -1,5 +1,5 @@
 <aside id="mdc-dialog-lang" class="mdc-dialog" aria-labelledby="my-mdc-dialog-label" aria-describedby="my-mdc-dialog-description" style="padding-left: 350px;">
-    <div class="mdc-dialog__surface">
+    <div class="mdc-dialog__surface" style="max-width: 430px; min-width: 430px">
         <header class="mdc-dialog__header">
             <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title center">@lang('general.choose_language')</h2>
         </header>
@@ -16,15 +16,16 @@
                     @endforeach
                 </div>
             @endforeach
-            <div class="clearfix"></div>
+        </section>
+        <div class="row">
             <h6 class="center" style="font-size: 14px">@lang('general.help_translate')<br>
                 <a href="http://mods-generator.oneskyapp.com"
                    target="_blank"
                    class="grey-text text-darken-1" style="text-decoration: underline;">http://mods-generator.oneskyapp.com</a>
             </h6>
-        </section>
+        </div>
         <footer class="mdc-dialog__footer">
-            <button type="button" class="mdc-button mdc-ripple mdc-dialog__footer__button mdc-dialog__footer__button--accept">
+            <button type="button" class="mdc-button mdc-ripple mdc-button--raised mdc-dialog__footer__button--accept">
                 @lang('general.close')
             </button>
         </footer>
