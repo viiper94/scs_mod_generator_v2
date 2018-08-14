@@ -6,7 +6,7 @@
         </div>
         <div class="col m6 s12 right-align">
             <div class="version">
-                <p>@lang('general.current_version') - 2.0</p>
+                <p>@lang('general.current_version') - 2.1</p>
             </div>
             <p>&copy; <a href="http://steamcommunity.com/id/viiper94/" target="_blank">[Mayday]</a> - {{date('Y')}}</p>
         </div>
