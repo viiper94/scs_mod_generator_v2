@@ -21,13 +21,12 @@ Auth::routes();
 Route::post('/generator', 'TrailerGeneratorController@generate')->name('generator');
 
 Route::get('/gallery', 'GalleryController@index');
-
-Route::get('/profile', 'ProfileController@index')->name('profile');
-
-Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
-
 Route::post('/gallery', 'GalleryController@getInfo')->name('gallery');
 
-Route::get('/{game?}/{d?}', 'TrailerGeneratorController@index');
+Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
+Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
+Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
 
+Route::get('/{game?}/{d?}', 'TrailerGeneratorController@index');
 Route::post('/{game?}', 'TrailerGeneratorController@getChassisData');

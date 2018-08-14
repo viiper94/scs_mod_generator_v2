@@ -97,6 +97,13 @@
         "reset_password": "Reset Password",
         "submit_password_reset": "Send Password Reset Link",
         "profile_edit": "Edit Profile",
+        "save_profile": "Save Profile",
+        "password_edit": "Change password",
+        "old_password": "Old Password",
+        "new_password": "New Password",
+        "new_password_confirmation": "New Password again",
+        "save_password": "Save new password",
+        "old_pass_fail": "Old password is wrong",
         "generated_mods": "Generated Mods",
         "logout": "Log Out"
     },
@@ -104,7 +111,7 @@
         "mods_history": "Mods History",
         "mod_params": "Mods Params",
         "mod_for_version": "Mods Version",
-        "no_mods": "No mods generated",
+        "no_mods": "Mods history is empty.",
         "regenerate_mod": "Regenerate mod"
     },
     "auth": {
@@ -122,6 +129,10 @@
         "password": {
             "required": "Password is required",
             "min": "The password must be at least 6 characters"
+        },
+        "img": {
+            "max": "Max image size 5Mb",
+            "dimensions" : "Max image dimensions 3000x3000px"
         }
     },
     "dlc list": {
