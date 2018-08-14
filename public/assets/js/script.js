@@ -91,6 +91,22 @@ $(document).ready(function(){
 		})
 	});
 
+    $('#color-select-chassis').uidropdown({
+        fullTextSearch : true,
+        duration : 300,
+        placeholder : false,
+        forceSelection : false
+    });
+
+    $('#advanced_color').change(function () {
+        if(this.checked){
+            $('.color-advanced').show();
+        }else{
+
+            $('.color-advanced').hide();
+        }
+    });
+
 	$('#select-chassis').uidropdown({
 		fullTextSearch : true,
 		duration : 300,

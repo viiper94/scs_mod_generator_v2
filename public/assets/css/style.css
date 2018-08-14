@@ -164,6 +164,9 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=p
 	display: flex;
 	justify-content: center;
 }
+.text-shadow{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
 
 
 /* Nav Bar */
@@ -332,9 +335,6 @@ nav .brand-logo::before{
 .mdc-theme--dark .game h4{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
 }
-.text-shadow{
-	text-shadow: 0 0 8px rgba(0, 0, 0, 1);
-}
 .collapsible{
 	margin: 0;
 }
@@ -386,6 +386,12 @@ input[type=text]:not(.browser-default):hover{
 }
 .mdc-theme--dark input.select-dropdown:hover{
 	border-bottom-color: #fff;
+}
+.colors .palette input[type=color]{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
 }
 .mdc-text-field.inline{
 	max-width: 57px;

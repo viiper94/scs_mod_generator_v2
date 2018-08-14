@@ -58,7 +58,7 @@
                         <div class="colors" style="display: none;">
                             <div class="col s12 palette">
                                 <div class="input-field inline" style="height: 26px; min-width: 170px;">
-                                    <input type="color" name="color" value="#ffffff" style="cursor: pointer; width: 170px;" id="color_palette">
+                                    <input type="color" name="color" value="#ffffff" id="color_palette">
                                 </div>
                                 <span class="offset-m3">@lang('general.pick_color')</span>
                             </div>

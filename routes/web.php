@@ -23,6 +23,10 @@ Route::post('/generator', 'TrailerGeneratorController@generate')->name('generato
 Route::get('/gallery', 'GalleryController@index');
 Route::post('/gallery', 'GalleryController@getInfo')->name('gallery');
 
+Route::get('/color', 'TruckPaintGeneratorController@index');
+Route::get('/color/generate', 'TruckPaintGeneratorController@generate')->name('color_generator');
+Route::post('/color', 'TruckPaintGeneratorController@getInfo')->name('color');
+
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
 Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
