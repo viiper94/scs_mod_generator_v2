@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container flex-center" style="flex: 1; align-items: center; flex-direction: column;">
+    <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
         <div class="card" style="width: 450px;">
             <form method="POST" action="{{route('password.email')}}">
                 @csrf
