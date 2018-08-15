@@ -5,18 +5,11 @@ namespace App;
 use Request;
 use ZipArchive;
 
-class TrailerGenerator{
+class TrailerGenerator extends ModGenerator{
 
-	public $title;
-	public $chassis;
 	public $accessory;
-	public $paintJob;
-	public $outDir = 'resources/out_';
-	public $filesDir = 'resources/files';
-	public $downloadDir = 'public/download';
+	public $filesDir = 'resources/files/trailers';
 	public $dlc = ['base'];
-	public $game;
-	public $fileName;
 
 	public function load($chassis, $accessory, $paintJob){
 		$this->title = strlen(trim($_POST['title'])) == 0 ? 'Mod' : trim($_POST['title']);
@@ -44,8 +37,13 @@ class TrailerGenerator{
 			$this->replaceCargoFiles();
 		}
 		$this->copyImage();
-		$this->fileName = $this->zipFiles();
-		$this->removeOutDirectory();
+		if($this->zip){
+            $this->fileName = $this->zipFiles();
+            $this->removeOutDirectory();
+        }else{
+		    return $this->outDir;
+        }
+        return true;
 	}
 
 	private function getDLCArray(){
@@ -59,33 +57,6 @@ class TrailerGenerator{
             }
         }
 		return array_unique($array);
-	}
-
-	private function makeOutDirectory(){
-		mkdir($this->outDir);
-	}
-
-	private function removeOutDirectory(){
-		!is_dir($this->outDir) ? : $this->rrmdir($this->outDir);
-	}
-
-	private function rrmdir($src) {
-		if(is_dir($src)){
-			$dir = opendir($src);
-			while(false !== ( $file = readdir($dir)) ) {
-				if (( $file != '.' ) && ( $file != '..' )) {
-					$full = $src . '/' . $file;
-					if ( is_dir($full) ) {
-						$this->rrmdir($full);
-					}
-					else {
-						unlink($full);
-					}
-				}
-			}
-			closedir($dir);
-			rmdir($src);
-		}
 	}
 
 	private function copyTrailerFiles(){
@@ -143,22 +114,6 @@ class TrailerGenerator{
 					}
 
 				}
-			}
-		}
-	}
-
-	private function copyImage(){
-		if(Request::hasFile('img')){
-		    $file = Request::file('img');
-			if($file->getSize() <= 5500000){
-				$img = new Image();
-				$img->load($file->getPathName());
-				$img->resize(276, 162);
-				$img->save($this->outDir.'/mod_icon.jpg');
-			}
-		}else{
-			if(file_exists($this->filesDir.'/mod/mod_icon.jpg')){
-				copy($this->filesDir.'/mod/mod_icon.jpg', $this->outDir.'/mod_icon.jpg');
 			}
 		}
 	}
@@ -381,38 +336,6 @@ class TrailerGenerator{
 		$zip->close();
 
 		return $filename;
-	}
-
-	private function transliterate($str){
-		$ru = ['а' => 'a',   'б' => 'b',   'в' => 'v',
-			'г' => 'g',   'д' => 'd',   'е' => 'e',
-			'ё' => 'e',   'ж' => 'zh',  'з' => 'z',
-			'и' => 'i',   'й' => 'y',   'к' => 'k',
-			'л' => 'l',   'м' => 'm',   'н' => 'n',
-			'о' => 'o',   'п' => 'p',   'р' => 'r',
-			'с' => 's',   'т' => 't',   'у' => 'u',
-			'ф' => 'f',   'х' => 'h',   'ц' => 'c',
-			'ч' => 'ch',  'ш' => 'sh',  'щ' => 'sch',
-			'ь' => '',  'ы' => 'y',   'ъ' => '',
-			'э' => 'e',   'ю' => 'yu',  'я' => 'ya',
-			'ü' => 'u',
-
-			'А' => 'A',   'Б' => 'B',   'В' => 'V',
-			'Г' => 'G',   'Д' => 'D',   'Е' => 'E',
-			'Ё' => 'E',   'Ж' => 'Zh',  'З' => 'Z',
-			'И' => 'I',   'Й' => 'Y',   'К' => 'K',
-			'Л' => 'L',   'М' => 'M',   'Н' => 'N',
-			'О' => 'O',   'П' => 'P',   'Р' => 'R',
-			'С' => 'S',   'Т' => 'T',   'У' => 'U',
-			'Ф' => 'F',   'Х' => 'H',   'Ц' => 'C',
-			'Ч' => 'Ch',  'Ш' => 'Sh',  'Щ' => 'Sch',
-			'Ь' => '',  'Ы' => 'Y',   'Ъ' => '',
-			'Э' => 'E',   'Ю' => 'Yu',  'Я' => 'Ya',
-			'Ü' => 'u',
-
-			' ' => '_', '&' => ''];
-
-		return strtr($str, $ru);
 	}
 
 }
