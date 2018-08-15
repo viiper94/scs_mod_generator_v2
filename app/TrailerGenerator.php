@@ -52,7 +52,7 @@ class TrailerGenerator{
 		$array = $this->dlc;
         if($this->chassis && $this->chassis->dlc) array_push($array, $this->chassis->dlc->name);
 		if($this->accessory && $this->accessory->dlc) $array = array_merge($array, $this->accessory->getDLCs(true));
-		if($this->paintJob && $this->paintJob->dlc) array_push($array, $this->paintJob->dlc);
+		if($this->paintJob && $this->paintJob->dlc) array_push($array, $this->paintJob->dlc->name);
 		if(Request::input('dlc') && is_array(Request::input('dlc'))){
 		    foreach(Request::input('dlc') as $key => $value){
 		        array_push($array, $key);
