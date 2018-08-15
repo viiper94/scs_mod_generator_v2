@@ -3,11 +3,21 @@
 @section('content')
 
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
+        @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs'))
+            @include('generator.download')
+        @endif
+        @if($errors)
+            @include('generator.warning')
+        @endif
+        @include('generator.ie')
         <div class="card" style="width: 600px;">
-            <form method="POST" action="{{route('color_generator')}}">
+            <form method="POST" action="{{route('color_generator')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="card-content">
                     <div class="row"><h5 class="card-title center">@lang('general.truck_paint_job_generator')</h5></div>
+                    <div class="row">
+                        <p class="center">@lang('general.truck_paint_description')</p>
+                    </div>
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
@@ -94,11 +104,63 @@
                             <span class="offset-m3">@lang('general.type_color_scs')</span>
                         </div>
                     </div>
+                    <section class="advanced row" style="margin-bottom: 0;">
+                        <ul class="collapsible z-depth-0 col s12">
+                            <li>
+                                <div class="collapsible-header grey-text"><i class="material-icons notranslate">arrow_drop_down</i>@lang('general.advanced')</div>
+                                <div class="collapsible-body">
+                                    <label>@lang('general.image_upload')</label>
+                                    <div class="file-field input-field mdc-button mdc-button--raised">
+                                        <div class="input-wrapper">
+                                            <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">file_upload</i>
+                                            <input type="file" name="img" id="image" accept="image/jpeg, image/png"
+                                                   data-size="@lang('general.max_file_size_5')"
+                                                   data-dimensions="@lang('general.max_dimensions_3000')">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path right" type="text" id="image-path" placeholder="@lang('general.upload_image')" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-text-field weight">
+                                        <input type="text" id="weight" class="browser-default mdc-text-field__input" name="weight">
+                                        <label for="weight" class="mdc-text-field__label">@lang('general.trailer_weight')</label>
+                                        <div class="mdc-text-field__bottom-line"></div>
+                                    </div>
+                                    <div class="wheels input-field" style="display: none;">
+                                        <select class="icons" name="wheels">
+                                            <option value="" selected>@lang('general.w_default')</option>
+                                            @foreach($wheels as $wheel)
+                                                <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">
+                                                    @lang($game.'_wheels.'.$wheel->alias)
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        <label>@lang('general.select_wheels')</label>
+                                    </div>
+                                    <div class="dlc">
+                                        <label>@lang('general.include_dlc'):</label>
+                                        @foreach($dlc_list as $dlc)
+                                            <div class="{{$dlc->name}}">
+                                                <div class="mdc-switch">
+                                                    <input type="checkbox" id="dlc_{{$dlc->name}}" data-target="paint"
+                                                           class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]">
+                                                    <div class="mdc-switch__background">
+                                                        <div class="mdc-switch__knob"></div>
+                                                    </div>
+                                                </div>
+                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">@lang('dlc_list.'.$dlc->name)</label>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">
                         <input type="hidden" name="target" value="ets2">
-                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12">
+                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12" disabled id="generate-color-btn">
                             <i class="material-icons mdc-button__icon notranslate">send</i>
                             <b>@lang('general.proceed')</b>
                         </button>
@@ -106,6 +168,12 @@
                 </div>
             </form>
         </div>
+        <section class="card-panel grey-text" style="width: 600px;">
+            <span class="card-title">
+                <i class="material-icons left notranslate">warning</i>
+                @lang('general.beta_notification')
+            </span>
+        </section>
     </div>
 
 @endsection

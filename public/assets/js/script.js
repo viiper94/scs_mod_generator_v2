@@ -95,7 +95,30 @@ $(document).ready(function(){
         fullTextSearch : true,
         duration : 300,
         placeholder : false,
-        forceSelection : false
+        forceSelection : false,
+        onChange : function(value, text, $choice){
+            $('#generate-color-btn').attr('disabled', (value === ''));
+            $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            if (value !== ''){
+                $.ajax({
+                    cache: false,
+                    dataType : 'json',
+                    type : 'POST',
+                    data : {
+                        '_token' : $('input[name=_token]').val(),
+                        'target' : $('input[name=target]').val(),
+                        'chassis' : value
+                    },
+                    success : function(response){
+                        if(response.status === 'OK'){
+                            $.each(response.dlc, function(index, dlc){
+                                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
+                            });
+                        }
+                    }
+                });
+            }
+        }
     });
 
     $('#advanced_color').change(function () {
@@ -166,10 +189,10 @@ $(document).ready(function(){
 										}
 									}
 								});
-                                $.each(response.dlc, function(index, dlc){
-									$('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
-                                });
 							});
+                            $.each(response.dlc, function(index, dlc){
+                                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
+                            });
 						}
 					},
 					complete : function(){
