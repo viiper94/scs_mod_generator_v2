@@ -16,7 +16,7 @@
         "color": "Color",
         "wheels": "Wheels",
         "dlc": "DLC",
-        "pick_chassis": "Pick a trailer chassis from list below (required)",
+        "pick_chassis": "Pick a chassis from list below (required)",
         "choose_chassis": "Choose chassis",
         "paintable_chassis": "All paintable chassis",
         "pick_accessory": "Pick an accessory from list below",
@@ -60,7 +60,6 @@
         "ets2_trailer_generator": "ETS2 trailer generator",
         "ats_trailer_generator": "ATS trailer generator",
         "truck_paint_job_generator": "Truck Paint Job Generator",
-        "truck_paint_description": "Sync truck paint and trailer paint by generating a mod!",
         "languages": "Languages"
     },
     "instructions": {
