@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.vinegar_c.gooseneck.cargo30
+{
+	trailer: trailer.gooseneck.cargo30
+	gross_trailer_weight_limit: 21680
+	chassis_mass: 5700
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _gooso30vi_c
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.79,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.79,0.0)
+}
+}

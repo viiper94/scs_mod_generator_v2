@@ -1,0 +1,16 @@
+SiiNunit
+{
+cargo_model_match : .scs_curt
+{
+	compatible_body[]: "/def/vehicle/trailer_owned/scs.box/body/curtain_136.sii"
+	compatible_body[]: "/def/vehicle/trailer_owned/scs.box/body/curtain_78.sii"
+	compatible_body[]: "/def/vehicle/trailer_owned/scs.box/body/curtain_78bd.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/curtain_sider/chassis.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_aero.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_bd.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_ca.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_hook.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_stw.sii"
+	data_path: "/def/vehicle/trailer_cargo/scs_box/hazard_1.5.sii"
+}
+}

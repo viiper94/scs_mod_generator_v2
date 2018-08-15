@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.diggers.overweight.digger
+{
+	trailer: trailer.overweight.digger
+	gross_trailer_weight_limit: 30480
+	chassis_mass: 6600
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _overgerdirs
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,1,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,1,0.0)
+}
+}

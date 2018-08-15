@@ -1,0 +1,17 @@
+SiiNunit
+{
+accessory_paint_job_data : color0.volvo.fh16_2012.paint_job
+{
+	name: "@@custom_color@@"
+	price: 1
+	unlock: 0
+	icon: "color_custom_icon"
+	base_color: (%color%)
+	base_color_locked: false
+	stock: false
+	suitable_for[]: "l2h1.volvo.fh16_2012.cabin"
+	suitable_for[]: "l2h2.volvo.fh16_2012.cabin"
+	suitable_for[]: "l2h3.volvo.fh16_2012.cabin"
+	suitable_for[]: "l2h3_8x4.volvo.fh16_2012.cabin"
+}
+}

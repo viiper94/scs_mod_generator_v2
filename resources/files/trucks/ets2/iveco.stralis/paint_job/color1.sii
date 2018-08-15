@@ -1,0 +1,12 @@
+SiiNunit
+{
+accessory_paint_job_data : color1.iveco.stralis.paint_job
+{
+	name: "%name%"
+	price: 1
+	unlock: 0
+	base_color: (%color%)
+	base_color_locked: true
+	stock: true
+}
+}

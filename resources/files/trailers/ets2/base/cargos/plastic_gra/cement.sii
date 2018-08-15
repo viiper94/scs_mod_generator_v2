@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.plastic_gra.cement
+{
+	trailer: trailer.cement
+	gross_trailer_weight_limit: 25940
+	chassis_mass: 6500
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _cementplra
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.97,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.97,0.0)
+}
+}

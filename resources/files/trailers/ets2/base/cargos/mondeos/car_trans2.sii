@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.mondeos.car_trans2
+{
+	trailer: trailer.car_trans2
+	gross_trailer_weight_limit: 14860
+	chassis_mass: 7500
+	body_mass: 0
+	axles: 3
+	volume: 100.1
+	body_type: _car_ns2moos
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.36,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.36,0.0)
+}
+}

@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.hmetal.gooseneck.toxic.cistern.hmetal
+{
+	trailer: trailer.gooseneck.toxic.cistern.hmetal
+	gross_trailer_weight_limit: 30800
+	chassis_mass: 5700
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _goostalhmal
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,1,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,1,0.0)
+}
+}

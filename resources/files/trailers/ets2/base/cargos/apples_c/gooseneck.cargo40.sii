@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.apples_c.gooseneck.cargo40
+{
+	trailer: trailer.gooseneck.cargo40
+	gross_trailer_weight_limit: 21030
+	chassis_mass: 5700
+	body_mass: 0
+	axles: 3
+	volume: 101.1
+	body_type: _gooso40ap_c
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.76,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.76,0.0)
+}
+}

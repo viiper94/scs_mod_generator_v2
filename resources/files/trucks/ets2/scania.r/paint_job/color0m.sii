@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_paint_job_data: color0m.scania.r.paint_job
+{
+	name: "@@custom_metallic@@"
+	price: 1
+	unlock: 0
+	icon: "color_custom_metallic_icon"
+	base_color: (%color%)
+	stock: false
+
+	flipflake: true
+
+	flip_color: (%color%)
+	flake_color: (%color%)
+
+	flip_strength: 1.3
+	flake_uvscale: 48.0
+	flake_density: 0.6
+	flake_shininess: 20.0
+	flake_clearcoat_rolloff: 4.5
+	flake_noise: "/material/custom/flake_noise.tobj"
+
+	base_color_locked: false
+	flip_color_locked: false
+	flake_color_locked: false
+
+	alternate_uvset: true
+	suitable_for[]: "highline.scania.r.cabin"
+	suitable_for[]: "normal.scania.r.cabin"
+	suitable_for[]: "topline.scania.r.cabin"
+	suitable_for[]: "tl_8x4.scania.r.cabin"
+}
+}

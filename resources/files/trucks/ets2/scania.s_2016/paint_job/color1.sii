@@ -1,0 +1,11 @@
+SiiNunit
+{
+accessory_paint_job_data : color1.scania.s_2016.paint_job
+{
+	name: "%name%"
+	price: 1
+	unlock: 0
+	base_color : (0.8148, 0.7991, 0.7379)
+	base_color_locked: true
+}
+}

@@ -1,0 +1,16 @@
+SiiNunit
+{
+accessory_paint_job_data : color1.mercedes.actros2014.paint_job
+{
+	name: "White Cloud"
+	price: 2470
+	unlock: 0
+	base_color: (0.6488, 0.7142, 0.7522)
+	base_color_locked: true
+	stock: true
+	suitable_for[]: "bigspace.mercedes.actros2014.cabin"
+	suitable_for[]: "gigaspace.mercedes.actros2014.cabin"
+	suitable_for[]: "streamspace.mercedes.actros2014.cabin"
+	suitable_for[]: "gs_8x4.mercedes.actros2014.cabin"
+}
+}

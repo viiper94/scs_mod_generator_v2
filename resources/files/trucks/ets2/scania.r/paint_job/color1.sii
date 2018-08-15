@@ -1,0 +1,16 @@
+SiiNunit
+{
+accessory_paint_job_data : color1.scania.r.paint_job
+{
+	name: "%name%"
+	price: 1
+	unlock: 0
+	base_color: (%color%)
+	base_color_locked: true
+	stock: true
+	suitable_for[]: "highline.scania.r.cabin"
+	suitable_for[]: "normal.scania.r.cabin"
+	suitable_for[]: "topline.scania.r.cabin"
+	suitable_for[]: "tl_8x4.scania.r.cabin"
+}
+}

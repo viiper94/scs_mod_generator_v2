@@ -1,0 +1,12 @@
+SiiNunit
+{
+accessory_paint_job_data : color1.renault.magnum.paint_job
+{
+	name: "%name%"
+	price: 1
+	unlock: 0
+	base_color :  (0.0948, 0.101, 0.1102)
+	base_color_locked: true
+	stock: true
+}
+}

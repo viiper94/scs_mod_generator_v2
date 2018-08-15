@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.sodium.gooseneck.cistern.sodium
+{
+	trailer: trailer.gooseneck.cistern.sodium
+	gross_trailer_weight_limit: 24800
+	chassis_mass: 5700
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _goosiumsoum
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.95,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.95,0.0)
+}
+}

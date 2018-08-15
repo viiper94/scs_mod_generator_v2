@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.vinegar_c.gooseneck.cargo20b
+{
+	trailer: trailer.gooseneck.cargo20b
+	gross_trailer_weight_limit: 20780
+	chassis_mass: 5700
+	body_mass: 0
+	axles: 3
+	volume: 94.1
+	body_type: _goos20bvi_c
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.75,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.75,0.0)
+}
+}
