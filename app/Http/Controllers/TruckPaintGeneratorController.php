@@ -53,13 +53,13 @@ class TruckPaintGeneratorController extends Controller{
         $p_generator->load($chassis, $paint_job, $outDir);
         $p_generator->run();
 
-//        $mod = new Mods();
-//        Auth::check() ? $mod->user_id = Auth::id() : null;
-//        $mod->title = $t_generator->title;
-//        $mod->file_name = $t_generator->fileName;
+        $mod = new Mods();
+        Auth::check() ? $mod->user_id = Auth::id() : null;
+        $mod->title = $t_generator->title;
+        $mod->file_name = $t_generator->fileName;
 //        $mod->params = $this->getInputParams($request, $t_generator);
-//        $mod->type = 'trailer';
-//        $mod->save();
+        $mod->type = 'paint';
+        $mod->save();
 
         return redirect(($request->input('target') !== 'ats' ? '/color' : '/color/ats/').'?d='.$p_generator->fileName);
     }
