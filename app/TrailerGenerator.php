@@ -3,7 +3,6 @@
 namespace App;
 
 use Request;
-use ZipArchive;
 
 class TrailerGenerator extends ModGenerator{
 
@@ -34,9 +33,10 @@ class TrailerGenerator extends ModGenerator{
 		}
 		if($this->chassis->weight !== false && is_numeric($this->chassis->weight)){
 			$this->copyCargoFiles();
+			$this->copyCountryFiles();
+			$this->copyTrailerDefsFiles();
 			$this->replaceCargoFiles();
 		}
-		$this->copyImage();
 		if($this->zip){
             $this->fileName = $this->zipFiles();
             $this->removeOutDirectory();
@@ -60,62 +60,38 @@ class TrailerGenerator extends ModGenerator{
 	}
 
 	private function copyTrailerFiles(){
-		mkdir($this->outDir.'/vehicle/');
-		mkdir($this->outDir.'/vehicle/trailer');
+		mkdir($this->outDir.'/vehicle/trailer', '0777', true);
 		foreach($this->dlc as $dlc){
-			$dir = $this->filesDir.'/'.$this->game.'/'.$dlc.'/trailers';
-			if($dir_files = scandir($dir)){
-				foreach($dir_files as $file){
-					if(is_file($dir .'/'. $file)){
-						copy($dir .'/'. $file, $this->outDir.'/vehicle/trailer/'. $file);
-					}elseif($file != '.' && $file != '..' && in_array($file, $this->dlc)){
-						$new_dir = $this->filesDir.'/'.$_POST['target'].'/'.$dlc.'/trailers/'.$file;
-						if($new_dir_files = scandir($new_dir)){
-							foreach($new_dir_files as $new_file){
-								if(is_file($new_dir .'/'. $new_file)){
-									copy($new_dir .'/'. $new_file, $this->outDir.'/vehicle/trailer/'. $new_file);
-								}
-							}
-						}
-					}
-				}
-			}
+			$this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/trailers', $this->outDir.'/vehicle/trailer');
 		}
 	}
 
 	private function copyCompanyFiles(){
 		mkdir($this->outDir.'/company');
 		foreach($this->dlc as $dlc){
-			$dir = $this->filesDir.'/'.$this->game.'/'.$dlc.'/companies';
-			if(is_dir($dir) && $dir_files = scandir($dir)){
-				foreach($dir_files as $file){
-					if(is_file($dir . '/' . $file)){
-						copy($dir . '/' . $file, $this->outDir.'/company/' . $file);
-					}
-				}
-			}
+            $this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/companies', $this->outDir.'/company');
 		}
 	}
 
 	private function copyCargoFiles(){
 		mkdir($this->outDir.'/cargo');
 		foreach($this->dlc as $dlc){
-			$dir = $this->filesDir.'/'.$this->game.'/'.$dlc.'/cargos';
-			if($inner_dirs = scandir($dir)){
-				foreach($inner_dirs as $inner_dir){
-					if($inner_dir !== '.' && $inner_dir !== '..'){
-						$out_dir = $this->outDir.'/cargo/'.$inner_dir;
-						is_dir($out_dir) ? : mkdir($out_dir);
-						foreach(scandir($dir.'/'.$inner_dir) as $file){
-							if($file !== '.' && $file !== '..'){
-								copy($dir . '/' . $inner_dir .'/'. $file, $out_dir .'/'. $file);
-							}
-						}
-					}
-
-				}
-			}
+            $this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/cargos', $this->outDir.'/cargo');
 		}
+	}
+
+    private function copyTrailerDefsFiles(){
+        @mkdir($this->outDir.'/vehicle/trailer_defs');
+        foreach($this->dlc as $dlc){
+            if(is_dir($this->filesDir.'/'.$this->game.'/'.$dlc.'/trailer_defs')){
+                $this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/trailer_defs', $this->outDir.'/vehicle/trailer_defs');
+            }
+        }
+	}
+
+    private function copyCountryFiles(){
+        mkdir($this->outDir.'/vehicle/trailer_defs');
+        $this->rcopy($this->filesDir.'/'.$this->game.'/base/country', $this->outDir.'/country');
 	}
 
 	private function replaceTrailerFiles(){
@@ -166,16 +142,14 @@ class TrailerGenerator extends ModGenerator{
 
 	private function replaceCargoFiles(){
 		$dirname = $this->outDir.'/cargo';
-		foreach(scandir($dirname) as $inner_dir){
-			if($inner_dir !== '.' && $inner_dir !== '..'){
-				foreach(scandir($dirname.'/'.$inner_dir) as $file){
-					if($file !== '.' && $file !== '..'){
-						$content = file_get_contents($dirname.'/'.$inner_dir.'/'.$file);
-						$content = preg_replace('/mass: [0-9]*/', 'mass: '.$this->chassis->weight.'000', $content);
-						file_put_contents($dirname.'/'.$inner_dir.'/'.$file, $content);
-					}
-				}
-			}
+		foreach(scandir($dirname) as $file){
+		    if($file !== '.' && $file !== '..'){
+                if(is_file($dirname.'/'.$file)){
+                    $content = file_get_contents($dirname.'/'.$file);
+                    $content = str_replace('%weight%', $this->chassis->weight.'000', $content);
+                    file_put_contents($dirname.'/'.$file, $content);
+                }
+            }
 		}
 	}
 
@@ -280,62 +254,6 @@ class TrailerGenerator extends ModGenerator{
 		$this->paintJob = $original_paint_job;
 
 		return $content;
-	}
-
-	private function zipFiles(){
-		$zip = new ZipArchive();
-		$filename = time().'_'.$this->transliterate($this->title);
-
-		if($zip->open($this->downloadDir.'/'.$filename.'.scs', ZipArchive::CREATE) !== true){
-			return false;
-		}
-
-		$content = file_get_contents($this->filesDir.'/mod/manifest_template.sii');
-		$content = str_replace('%%', $this->title, $content);
-		file_put_contents($this->filesDir.'/mod/manifest.sii', $content);
-
-		$zip->addFile($this->filesDir.'/mod/manifest.sii', 'manifest.sii');
-		$zip->addFile($this->outDir.'/mod_icon.jpg', 'mod_icon.jpg');
-
-		if(is_dir($this->outDir.'/vehicle')){
-			$zip->addEmptyDir('def/vehicle/trailer');
-			$dir = scandir($this->outDir . '/vehicle/trailer');
-			foreach($dir as $item){
-				if($item != '.' && $item != '..'){
-					$zip->addFile($this->outDir . '/vehicle/trailer/' . $item, 'def/vehicle/trailer/' . $item);
-				}
-			}
-		}
-
-		if(is_dir($this->outDir.'/company')){
-			$zip->addEmptyDir('def/company');
-			$dir = scandir($this->outDir.'/company');
-			foreach($dir as $item){
-				if($item != '.' && $item != '..'){
-					$zip->addFile($this->outDir.'/company/'.$item, 'def/company/'.$item);
-				}
-			}
-		};
-
-		if(is_dir($this->outDir.'/cargo')){
-			$zip->addEmptyDir('def/cargo');
-			$dir = scandir($this->outDir.'/cargo');
-			foreach($dir as $inner_dir){
-				if($inner_dir != '.' && $inner_dir != '..'){
-					$zip->addEmptyDir('def/cargo/'.$inner_dir);
-					foreach(scandir($this->outDir.'/cargo/'.$inner_dir) as $file){
-						if($file != '.' && $file != '..'){
-							$zip->addFile($this->outDir.'/cargo/'.$inner_dir.'/'.$file, 'def/cargo/'.$inner_dir.'/'.$file);
-						}
-					}
-
-				}
-			}
-		};
-
-		$zip->close();
-
-		return $filename;
 	}
 
 }
