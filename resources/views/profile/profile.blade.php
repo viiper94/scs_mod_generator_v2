@@ -27,16 +27,18 @@
                 <li>
                     <div class="collapsible-header" style="border-bottom: 1px solid #ddd;">
                         <i class="material-icons notranslate">arrow_downward</i>
-                        <p style="line-height: 36px; flex: 1;">{{ $mod->title }} (@lang('general.'.$mod->game))</p>
-                        <div>
-                            @if(file_exists(public_path().'/download/'.$mod->file_name.'.scs'))
+                        <p class="mod-info">
+                            <b>{{ $mod->title }}</b> (@lang('general.'.$mod->game); @lang('mods.'.$mod->type); {{ date('j F, Y H:i', strtotime($mod->created_at)) }})
+                        </p>
+                        @if(file_exists(public_path().'/download/'.$mod->file_name.'.scs'))
+                            <div>
                                 <a href="{{ url('/download/'.$mod->file_name.'.scs') }}"
                                    class="mdc-button mdc-button--raised mdc-ripple large-btn"
                                    title="@lang('general.download_mod')">
                                     <i class="material-icons notranslate mdc-button__icon no-margin">file_download</i>
                                 </a>
-                            @endif
-                        </div>
+                            </div>
+                        @endif
                     </div>
                     <div class="collapsible-body">
                         @php $params = unserialize($mod->params); @endphp
@@ -60,7 +62,7 @@
             @endforeach
         </ul>
     @else
-        <p>@lang('mods.no_mods')</p>
+        <h4 class="no-mods">@lang('mods.no_mods')</h4>
     @endif
 </div>
 

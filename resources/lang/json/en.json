@@ -115,7 +115,9 @@
         "mod_params": "Mods Params",
         "mod_for_version": "Mods Version",
         "no_mods": "Mods history is empty.",
-        "regenerate_mod": "Regenerate mod"
+        "regenerate_mod": "Regenerate mod",
+        "trailer": "Trailer Mod",
+        "paint": "Truck Paint Mod"
     },
     "auth": {
         "failed": "Incorrect E-Mail or password."
