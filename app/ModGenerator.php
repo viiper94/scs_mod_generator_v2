@@ -3,6 +3,7 @@
 namespace App;
 
 use Request;
+use ZipArchive;
 
 class ModGenerator{
 
@@ -42,6 +43,38 @@ class ModGenerator{
         }
     }
 
+    protected function rcopy($src, $dst){
+        $dir = opendir($src);
+        @mkdir($dst);
+        while(( $file = readdir($dir)) ) {
+            if (( $file != '.' ) && ( $file != '..' )) {
+                if ( is_dir($src . '/' . $file) ) {
+                    $this->rcopy($src .'/'. $file, $dst .'/'. $file);
+                }
+                else {
+                    copy($src .'/'. $file,$dst .'/'. $file);
+                }
+            }
+        }
+        closedir($dir);
+    }
+
+    protected function rZipCopy(ZipArchive $zip, $src, $dst){
+        $dir = opendir($src);
+        @$zip->addEmptyDir($dst);
+        while(( $file = readdir($dir)) ) {
+            if (( $file != '.' ) && ( $file != '..' )) {
+                if ( is_dir($src . '/' . $file) ) {
+                    $this->rZipCopy($zip, $src .'/'. $file, $dst .'/'. $file);
+                }
+                else {
+                    $zip->addFile($src .'/'. $file,$dst .'/'. $file);
+                }
+            }
+        }
+        closedir($dir);
+    }
+
     protected function copyImage(){
         if(Request::hasFile('img')){
             $file = Request::file('img');
@@ -56,6 +89,30 @@ class ModGenerator{
                 copy($this->filesDir.'/mod/mod_icon.jpg', $this->outDir.'/mod_icon.jpg');
             }
         }
+    }
+
+    protected function zipFiles(){
+        $zip = new ZipArchive();
+        $filename = time().'_'.$this->transliterate($this->title);
+
+        if($zip->open($this->downloadDir.'/'.$filename.'.scs', ZipArchive::CREATE) !== true){
+            return false;
+        }
+
+        $content = file_get_contents($this->filesDir.'/mod/manifest_template.sii');
+        $content = str_replace('%%', $this->title, $content);
+        file_put_contents($this->filesDir.'/mod/manifest.sii', $content);
+
+        $zip->addFile($this->filesDir.'/mod/manifest.sii', 'manifest.sii');
+        $zip->addEmptyDir('def');
+        $this->rZipCopy($zip, $this->outDir, 'def');
+
+        $this->copyImage();
+        $zip->addFile($this->outDir.'/mod_icon.jpg', 'mod_icon.jpg');
+
+        $zip->close();
+
+        return $filename;
     }
 
     protected function transliterate($str){
