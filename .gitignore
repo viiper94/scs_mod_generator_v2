@@ -1,6 +1,7 @@
 /node_modules
 /public/hot
-/resources/files/mod/manifest.sii
+/resources/files/trailers/mod/manifest.sii
+/resources/files/trucks/mod/manifest.sii
 /public/download/*
 /public/images/*
 /public/storage
