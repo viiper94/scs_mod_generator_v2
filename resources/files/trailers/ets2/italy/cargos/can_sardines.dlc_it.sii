@@ -1,0 +1,12 @@
+cargo_data: cargo.can_sardines
+{
+	name: "@@cn_canned_sardines@@"
+	fragility: 0.4
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.598
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

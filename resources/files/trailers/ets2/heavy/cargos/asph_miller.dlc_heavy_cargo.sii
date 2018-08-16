@@ -1,0 +1,13 @@
+cargo_data: cargo.asph_miller
+{
+	name: "@@cn_asph_miller@@"
+	fragility: 0.6
+	valuable: true
+	group[]: machinery
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.2511
+	unit_load_time: 30
+	body_types[]: _gold50iaser
+	overweight: true
+}

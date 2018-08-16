@@ -1,0 +1,13 @@
+cargo_data: cargo.peas
+{
+	name: "@@cn_peas@@"
+	fragility: 0.3
+	group[]: containers
+	group[]: refrigerated
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.599
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

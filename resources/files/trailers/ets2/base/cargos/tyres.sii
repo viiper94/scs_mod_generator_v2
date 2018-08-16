@@ -1,0 +1,12 @@
+cargo_data: cargo.tyres
+{
+	name: "@@cn_tyres@@"
+	fragility: 0
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.643
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

@@ -1,0 +1,13 @@
+cargo_data: cargo.post_packag
+{
+	name: "@@cn_post_packages@@"
+	fragility: 0.2
+	group[]: containers
+	prob_coef: 2
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.733
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

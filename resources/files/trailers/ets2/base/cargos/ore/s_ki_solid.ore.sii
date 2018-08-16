@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.ore.s_ki_solid.ore
 {
 	trailer: trailer.s_ki_solid.ore
-	gross_trailer_weight_limit: 25280
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6600
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _s_kioreorre
 
 	mass_ratio[]: 1

@@ -1,0 +1,16 @@
+cargo_data: cargo.med_equip
+{
+	name: "@@cn_medical_equipment@@"
+	fragility: 0.8
+	valuable: true
+	group[]: containers
+	prob_coef: 2
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.798
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

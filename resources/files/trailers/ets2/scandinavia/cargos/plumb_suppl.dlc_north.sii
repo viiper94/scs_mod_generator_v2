@@ -1,0 +1,12 @@
+cargo_data: cargo.plumb_suppl
+{
+	name: "@@cn_plumbing_supplies@@"
+	fragility: 0.2
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.611
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

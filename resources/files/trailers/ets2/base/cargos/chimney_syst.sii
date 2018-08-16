@@ -1,0 +1,12 @@
+cargo_data: cargo.chimney_syst
+{
+	name: "@@cn_chimney_systems@@"
+	fragility: 0.3
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.623
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

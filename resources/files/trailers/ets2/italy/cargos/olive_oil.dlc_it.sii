@@ -1,0 +1,13 @@
+cargo_data: cargo.olive_oil
+{
+	name: "@@cn_olive_oil@@"
+	fragility: 0.6
+	group[]: containers
+	group[]: liquid
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.597
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

@@ -1,0 +1,14 @@
+cargo_data: cargo.dozer
+{
+	name: "@@cn_dozer@@"
+	fragility: 0.6
+	valuable: true
+	group[]: machinery
+	prob_coef: 0.9
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.2493
+	unit_load_time: 30
+	body_types[]: _goldx_5doer
+	overweight: true
+}

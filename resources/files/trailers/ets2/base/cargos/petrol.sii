@@ -1,0 +1,13 @@
+cargo_data: cargo.petrol
+{
+	name: "@@cn_petrol@@"
+	fragility: 0.4
+	adr_class: 3
+	group[]: liquid
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.27225
+	unit_load_time: 30
+	body_types[]: _fuelernpeol
+	body_types[]: _willernpeol
+}

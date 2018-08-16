@@ -1,0 +1,11 @@
+cargo_data: cargo.bricks
+{
+	name: "@@cn_red_bricks@@"
+	fragility: 0.1
+	group[]: construction
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.20115
+	unit_load_time: 30
+	body_types[]: _brk_lerbrks
+}

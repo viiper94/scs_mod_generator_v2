@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.motor_oil_c.gooseneck.cargo20b
 {
 	trailer: trailer.gooseneck.cargo20b
-	gross_trailer_weight_limit: 23910
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5700
 	body_mass: 0
 	axles: 3
-	volume: 100.1
+	volume: 87
 	body_type: _goos20bmo_c
 
 	mass_ratio[]: 1

@@ -1,0 +1,12 @@
+cargo_data: cargo.carrots_c
+{
+	name: "@@cn_carrots@@"
+	fragility: 0.4
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.19815
+	unit_load_time: 30
+	body_types[]: _gooso40ca_c
+	body_types[]: _gooso30ca_c
+}

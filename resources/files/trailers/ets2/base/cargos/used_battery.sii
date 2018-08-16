@@ -1,0 +1,12 @@
+cargo_data: cargo.used_battery
+{
+	name: "@@cn_used_car_batteries@@"
+	fragility: 0.4
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.574
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

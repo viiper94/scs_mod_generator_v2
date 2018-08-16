@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.fluorine.gooseneck.nonflam.cistern.fluorine
 {
 	trailer: trailer.gooseneck.nonflam.cistern.fluorine
-	gross_trailer_weight_limit: 23800
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5700
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _goosineflne
 
 	mass_ratio[]: 1

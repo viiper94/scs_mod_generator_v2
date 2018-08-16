@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .fuel_cistern
+trailer_def : trailer_def.fuel_oil.fuel_cistern
 {
 	trailer: trailer.fuel_cistern
-	mass: 19260
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.96, 0.0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 6500
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _fuelernfuil
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.96,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.96,0.0)
 }
 }

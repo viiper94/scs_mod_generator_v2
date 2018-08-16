@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.digger1000.overweight.digger1000
 {
 	trailer: trailer.overweight.digger1000
-	gross_trailer_weight_limit: 22100
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6600
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _over000di00
 
 	mass_ratio[]: 1

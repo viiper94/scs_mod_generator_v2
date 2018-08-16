@@ -1,0 +1,12 @@
+cargo_data: cargo.salt_spice_c
+{
+	name: "@@cn_salt_spices@@"
+	fragility: 0.1
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.18525
+	unit_load_time: 30
+	body_types[]: _gooso40sa_c
+	body_types[]: _gooso30sa_c
+}

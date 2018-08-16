@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.princess.overweight.boat
 {
 	trailer: trailer.overweight.boat
-	gross_trailer_weight_limit: 16599.7
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6600
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _overoatprss
 
 	mass_ratio[]: 1

@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .schw_ovrwght.tube
+trailer_def : trailer_def.tube.schw_ovrwght.tube
 {
 	trailer: trailer.schw_ovrwght.tube
-	mass: 24800
-	cog_offset: 1
-	cog_offset[]: (0.0, 1, 0.0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 7000
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _schwubetube
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,1,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,1,0.0)
 }
 }

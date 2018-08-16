@@ -1,0 +1,12 @@
+cargo_data: cargo.carrots
+{
+	name: "@@cn_carrots@@"
+	fragility: 0.4
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.6
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

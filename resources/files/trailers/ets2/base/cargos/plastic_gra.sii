@@ -1,0 +1,11 @@
+cargo_data: cargo.plastic_gra
+{
+	name: "@@cn_plastic@@"
+	fragility: 0
+	group[]: liquid
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.19035
+	unit_load_time: 30
+	body_types[]: _cementplra
+}

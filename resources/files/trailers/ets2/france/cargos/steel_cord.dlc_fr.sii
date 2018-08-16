@@ -1,0 +1,12 @@
+cargo_data: cargo.steel_cord
+{
+	name: "@@cn_steel_cord@@"
+	fragility: 0.1
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.543
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

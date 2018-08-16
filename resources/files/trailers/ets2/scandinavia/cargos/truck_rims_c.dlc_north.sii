@@ -1,0 +1,12 @@
+cargo_data: cargo.truck_rims_c
+{
+	name: "@@cn_truck_rims@@"
+	fragility: 0.1
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.19485
+	unit_load_time: 30
+	body_types[]: _gooso40tr_1
+	body_types[]: _goos20btr_1
+}

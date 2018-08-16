@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.phosphor.gooseneck.cistern.phosphor
 {
 	trailer: trailer.gooseneck.cistern.phosphor
-	gross_trailer_weight_limit: 18800
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5700
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _gooshorphor
 
 	mass_ratio[]: 1

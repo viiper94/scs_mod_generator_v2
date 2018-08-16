@@ -1,0 +1,24 @@
+
+country_data: country.data.uk
+{
+	country_id: 10
+
+	name: "@@uk@@"
+	country_code: "GB"
+
+	pos:(-42290, 0, -14150)
+
+	fuel_price: 1.354
+
+	lights_mandatory: false
+	imperial_units: true
+	leftside_traffic: true
+	trailer_standalone: false
+	driving_tired_offence: true
+
+	time_zone: 60		# +1 hours in minutes
+	time_zone_name: "@@tz_bst@@"
+
+	mass_limit_per_axle_count[]: 350000
+}
+

@@ -1,0 +1,13 @@
+cargo_data: cargo.carbn_pwdr_c
+{
+	name: "@@cn_carbon_black_powder@@"
+	fragility: 0.2
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.21675
+	unit_load_time: 30
+	body_types[]: _gooso20ca_c
+	body_types[]: _gooso40ca_1
+	body_types[]: _gooso30ca_1
+}

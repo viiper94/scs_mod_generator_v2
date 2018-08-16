@@ -1,0 +1,11 @@
+cargo_data: cargo.pot_flowers
+{
+	name: "@@cn_potted_flowers@@"
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.651
+	unit_load_time: 78
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

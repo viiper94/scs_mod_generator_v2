@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.potassium.gooseneck.cistern.potassium
 {
 	trailer: trailer.gooseneck.cistern.potassium
-	gross_trailer_weight_limit: 25800
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5700
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _goosiumpoum
 
 	mass_ratio[]: 1

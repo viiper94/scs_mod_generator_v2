@@ -1,0 +1,12 @@
+cargo_data: cargo.fish_chips
+{
+	name: "@@cn_fish_chips@@"
+	fragility: 0.3
+	group[]: containers
+	group[]: refrigerated
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.625
+	unit_load_time: 78
+	body_types[]: refrigerated
+}

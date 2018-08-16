@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .goldhofer.mpa_k_flat14.wirtgenw250i
+trailer_def : trailer_def.asph_miller.goldhofer.mpa_k_flat14.wirtgenw250i
 {
 	trailer: trailer.goldhofer.mpa_k_flat14.wirtgenw250i
-	mass: 44050
-	cog_offset: 1
-	cog_offset[]: (0, 1, 1)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 10000
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _gold50iaser
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,1)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,1)
 }
 }

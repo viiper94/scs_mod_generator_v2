@@ -1,0 +1,12 @@
+cargo_data: cargo.brake_fluid
+{
+	name: "@@cn_brake_fluid@@"
+	fragility: 0.3
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.19965
+	unit_load_time: 30
+	body_types[]: _gooso30brid
+	body_types[]: _gooso20brid
+}

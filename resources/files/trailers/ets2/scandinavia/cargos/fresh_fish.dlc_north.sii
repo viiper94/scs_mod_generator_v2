@@ -1,0 +1,12 @@
+cargo_data: cargo.fresh_fish
+{
+	name: "@@cn_fresh_fish@@"
+	fragility: 0.4
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.633
+	unit_load_time: 78
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

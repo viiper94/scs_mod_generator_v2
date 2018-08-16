@@ -1,0 +1,13 @@
+cargo_data: cargo.m_59_80_r63
+{
+	name: "@@cn_m_59_80_r63@@"
+	fragility: 0.3
+	valuable: true
+	group[]: oversize
+	overweight: true
+
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 31.5
+	body_types[]: _oversize
+}

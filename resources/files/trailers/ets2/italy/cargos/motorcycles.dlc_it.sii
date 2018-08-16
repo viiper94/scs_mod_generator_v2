@@ -1,0 +1,13 @@
+cargo_data: cargo.motorcycles
+{
+	name: "@@cn_motorcycles@@"
+	fragility: 0.9
+	valuable: true
+	group[]: machinery
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.725
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

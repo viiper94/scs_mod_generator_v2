@@ -1,0 +1,12 @@
+cargo_data: cargo.radiators
+{
+	name: "@@cn_radiators@@"
+	fragility: 0.69
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.743
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

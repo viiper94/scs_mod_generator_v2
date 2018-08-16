@@ -1,0 +1,12 @@
+cargo_data: cargo.roof_tiles
+{
+	name: "@@cn_roof_tiles@@"
+	fragility: 0.3
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.601
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

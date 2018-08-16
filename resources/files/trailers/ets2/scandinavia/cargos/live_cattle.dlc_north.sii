@@ -1,0 +1,10 @@
+cargo_data: cargo.live_cattle
+{
+	name: "@@cn_live_cattle@@"
+	group[]: livestock
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.2463
+	unit_load_time: 30
+	body_types[]: _liveocklile
+}

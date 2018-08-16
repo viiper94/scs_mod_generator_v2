@@ -1,0 +1,12 @@
+cargo_data: cargo.nylon_cord
+{
+	name: "@@cn_nylon_cord@@"
+	fragility: 0.1
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.576
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

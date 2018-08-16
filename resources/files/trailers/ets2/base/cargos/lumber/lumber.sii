@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.lumber.lumber
 {
 	trailer: trailer.lumber
-	gross_trailer_weight_limit: 29000
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 7000
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _lumberluer
 
 	mass_ratio[]: 1

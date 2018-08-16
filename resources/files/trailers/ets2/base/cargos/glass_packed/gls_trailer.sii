@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.glass_packed.gls_trailer
 {
 	trailer: trailer.gls_trailer
-	gross_trailer_weight_limit: 28900
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6500
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _gls_lergled
 
 	mass_ratio[]: 1

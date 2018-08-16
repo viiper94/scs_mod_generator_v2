@@ -1,0 +1,14 @@
+cargo_data: cargo.transformat
+{
+	name: "@@cn_transformator@@"
+	fragility: 0.3
+	valuable: true
+	group[]: machinery
+	prob_coef: 1.1
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.19995
+	unit_load_time: 30
+	body_types[]: _goldmertrat
+	overweight: true
+}

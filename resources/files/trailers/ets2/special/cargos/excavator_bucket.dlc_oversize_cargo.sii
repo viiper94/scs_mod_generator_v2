@@ -1,0 +1,13 @@
+cargo_data: cargo.ex_bucket
+{
+	name: "@@cn_ex_bucket@@"
+	fragility: 0.3
+	valuable: true
+	group[]: oversize
+	overweight: true
+
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 31.5
+	body_types[]: _oversize
+}

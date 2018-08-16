@@ -1,0 +1,11 @@
+cargo_data: cargo.iron_pipes
+{
+	name: "@@cn_pipes@@"
+	fragility: 0.1
+	group[]: construction
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.1905
+	unit_load_time: 30
+	body_types[]: _pipesires
+}

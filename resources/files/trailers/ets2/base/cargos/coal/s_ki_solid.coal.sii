@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.coal.s_ki_solid.coal
 {
 	trailer: trailer.s_ki_solid.coal
-	gross_trailer_weight_limit: 21280
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6600
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _s_kioalcoal
 
 	mass_ratio[]: 1

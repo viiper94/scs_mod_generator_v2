@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .schw_ovrwght.cat422
+trailer_def : trailer_def.digger500.schw_ovrwght.cat422
 {
 	trailer: trailer.schw_ovrwght.cat422
-	mass: 8380
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.42, 0.0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 7000
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _schw422di00
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.42,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.42,0.0)
 }
 }

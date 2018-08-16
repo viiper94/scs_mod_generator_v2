@@ -1,0 +1,12 @@
+cargo_data: cargo.fluorine
+{
+	name: "@@cn_fluorine@@"
+	adr_class: 2
+	group[]: liquid
+	group[]: gooseneck
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.279
+	unit_load_time: 30
+	body_types[]: _goosineflne
+}

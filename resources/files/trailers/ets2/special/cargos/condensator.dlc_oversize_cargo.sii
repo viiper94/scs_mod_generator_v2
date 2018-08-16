@@ -1,0 +1,13 @@
+cargo_data: cargo.condensator
+{
+	name: "@@cn_condensator@@"
+	fragility: 0.3
+	valuable: true
+	group[]: oversize
+	overweight: true
+
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 39
+	body_types[]: _oversize
+}

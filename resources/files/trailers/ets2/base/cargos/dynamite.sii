@@ -1,0 +1,10 @@
+cargo_data: cargo.dynamite
+{
+	name: "@@cn_dynamite@@"
+	adr_class: 1
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.8476
+	unit_load_time: 78
+	body_types[]: curtainside
+}

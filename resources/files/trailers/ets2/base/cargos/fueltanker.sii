@@ -1,0 +1,13 @@
+cargo_data: cargo.fueltanker
+{
+	name: "@@cn_tanker@@"
+	fragility: 0.5
+	adr_class: 3
+	group[]: liquid
+	group[]: gooseneck
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.2835
+	unit_load_time: 30
+	body_types[]: _goosernfuer
+}

@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.bricks.brk_trailer
 {
 	trailer: trailer.brk_trailer
-	gross_trailer_weight_limit: 29210
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5500
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _brk_lerbrks
 
 	mass_ratio[]: 1

@@ -1,0 +1,11 @@
+cargo_data: cargo.emptytank
+{
+	name: "@@cn_tank@@"
+	fragility: 0.3
+	group[]: liquid
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 21.72
+	unit_load_time: 2400
+	body_types[]: flatbed
+}

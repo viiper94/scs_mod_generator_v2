@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .schw_ovrwght.forklifts
+trailer_def : trailer_def.forklifts.schw_ovrwght.forklifts
 {
 	trailer: trailer.schw_ovrwght.forklifts
-	mass: 11230
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.56, 0.0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 7000
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _schwftsfots
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.56,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.56,0.0)
 }
 }

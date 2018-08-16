@@ -1,0 +1,13 @@
+cargo_data: cargo.tube
+{
+	name: "@@cn_tube@@"
+	fragility: 0.15
+	valuable: true
+	group[]: construction
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.20325
+	unit_load_time: 30
+	body_types[]: _overubetube
+	body_types[]: _schwubetube
+}

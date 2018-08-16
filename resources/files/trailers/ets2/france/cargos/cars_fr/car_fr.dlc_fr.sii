@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .car_fr
+trailer_def : trailer_def.cars_fr.car_fr
 {
 	trailer: trailer.car_fr
-	mass: 9010
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.45, 0.0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 7500
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _car_frcafr
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.45,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.45,0.0)
 }
 }

@@ -1,0 +1,13 @@
+cargo_data: cargo.concrete
+{
+	name: "@@cn_concrete@@"
+	fragility: 0
+	maximum_distance: 600
+	group[]: construction
+	prob_coef: 0
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.1989
+	unit_load_time: 30
+	body_types[]: _cememixcote
+}

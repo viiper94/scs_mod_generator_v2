@@ -1,0 +1,12 @@
+cargo_data: cargo.tracks
+{
+	name: "@@cn_tracks@@"
+	fragility: 0.1
+	group[]: machinery
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.23265
+	unit_load_time: 30
+	body_types[]: _overckstrks
+	body_types[]: _schwckstrks
+}

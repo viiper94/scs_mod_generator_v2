@@ -1,0 +1,13 @@
+cargo_data: cargo.chicken_meat
+{
+	name: "@@cn_chicken_meat@@"
+	fragility: 0.4
+	group[]: containers
+	group[]: refrigerated
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.57
+	unit_load_time: 78
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

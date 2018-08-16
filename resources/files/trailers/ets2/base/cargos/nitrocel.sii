@@ -1,0 +1,12 @@
+cargo_data: cargo.nitrocel
+{
+	name: "@@cn_nitrocel@@"
+	adr_class: 4
+	group[]: liquid
+	group[]: gooseneck
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.27825
+	unit_load_time: 30
+	body_types[]: _gooscelniel
+}

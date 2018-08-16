@@ -1,0 +1,30 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.bdouble_3_3.curtain
+{
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 12320
+	body_mass: 0
+	length: 22.7
+	axles: 6
+	volume: 140
+	body_type: curtainside
+	chain_type: b_double
+
+	country_validity[]: denmark
+	country_validity[]: norway
+	country_validity[]: sweden
+
+	mass_ratio[]: 0.33
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 30000
+	max_cog[]: (0,1,0)
+
+	mass_ratio[]: 0.67
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 30000
+	max_cog[]: (0,1,0)
+}
+}

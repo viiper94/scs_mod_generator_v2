@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .goldhofer.stz_vl.m_centering
+trailer_def : trailer_def.metal_center.goldhofer.stz_vl.m_centering
 {
 	trailer: trailer.goldhofer.stz_vl.m_centering
-	mass: 28200
-	cog_offset: 1
-	cog_offset[]: (0, 1, 1)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 7000
+	body_mass: 0
+	axles: 3
+	volume: 87
+	body_type: _goldingmeer
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,1)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,1)
 }
 }

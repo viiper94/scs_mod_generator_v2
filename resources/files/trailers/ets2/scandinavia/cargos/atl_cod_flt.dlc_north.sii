@@ -1,0 +1,13 @@
+cargo_data: cargo.atl_cod_flt
+{
+	name: "@@cn_atlantic_cod_fillet@@"
+	fragility: 0.4
+	group[]: containers
+	group[]: refrigerated
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.608
+	unit_load_time: 78
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

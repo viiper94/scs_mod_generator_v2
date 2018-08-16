@@ -1,0 +1,14 @@
+cargo_data: cargo.comp_process
+{
+	name: "@@cn_computer_processors@@"
+	fragility: 0.9
+	valuable: true
+	group[]: containers
+	prob_coef: 2
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.764
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

@@ -1,0 +1,20 @@
+
+country_data: country.data.belgium
+{
+	country_id: 2
+	name: "@@belgium@@"
+	country_code: "B"
+
+	pos:(-21133, 0, -1133)
+
+	fuel_price: 1.27
+
+	lights_mandatory: false
+	driving_tired_offence: true
+
+	time_zone: 120		# +2 hours in minutes
+	time_zone_name: "@@tz_cest@@"
+
+	mass_limit_per_axle_count[]: 350000
+}
+

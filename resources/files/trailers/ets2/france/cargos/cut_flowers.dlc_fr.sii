@@ -1,0 +1,11 @@
+cargo_data: cargo.cut_flowers
+{
+	name: "@@cn_cut_flowers@@"
+	fragility: 0.6
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.652
+	unit_load_time: 78
+	body_types[]: refrigerated
+}

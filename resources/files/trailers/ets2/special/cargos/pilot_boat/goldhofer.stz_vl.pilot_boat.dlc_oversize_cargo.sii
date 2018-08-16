@@ -1,9 +1,23 @@
 SiiNunit
 {
-trailer_def : .goldhofer.stz_vl.pilot_boat
+trailer_def : trailer_def.goldhofer.stz_vl.pilot_boat
 {
 	trailer: trailer.goldhofer.stz_vl.pilot_boat
-	mass: 25000
-	cog_offset[]: (0, 0.3, 0)
+#	mass: 25000
+#	cog_offset[]: (0, 0.3, 0)
+
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 7000
+	body_mass: 0
+	axles: 4
+	volume: 87
+	body_type: _oversize
+
+	mass_ratio[]: 0.5
+
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.3,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.3,0.0)
 }
 }

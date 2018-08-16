@@ -1,0 +1,14 @@
+cargo_data: cargo.cauliflower
+{
+	name: "@@cn_cauliflower@@"
+	fragility: 0.5
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.61
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

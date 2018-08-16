@@ -1,0 +1,13 @@
+cargo_data: cargo.driller
+{
+	name: "@@cn_driller@@"
+	fragility: 0.5
+	valuable: true
+	group[]: machinery
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.24975
+	unit_load_time: 30
+	body_types[]: _overlerdrer
+	body_types[]: _schwlerdrer
+}

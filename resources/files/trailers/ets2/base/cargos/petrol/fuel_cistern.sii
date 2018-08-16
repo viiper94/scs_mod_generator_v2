@@ -3,11 +3,11 @@ SiiNunit
 trailer_def : trailer_def.petrol.fuel_cistern
 {
 	trailer: trailer.fuel_cistern
-	gross_trailer_weight_limit: 27600
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6500
 	body_mass: 0
 	axles: 3
-	volume: 100
+	volume: 87
 	body_type: _fuelernpeol
 
 	mass_ratio[]: 1

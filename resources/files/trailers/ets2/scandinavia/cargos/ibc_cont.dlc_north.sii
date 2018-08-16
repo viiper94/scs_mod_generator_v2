@@ -1,0 +1,12 @@
+cargo_data: cargo.ibc_cont
+{
+	name: "@@cn_ibc_containers@@"
+	fragility: 0.3
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.575
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

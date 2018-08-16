@@ -1,0 +1,13 @@
+cargo_data: cargo.princess
+{
+	name: "@@cn_princess_v39@@"
+	fragility: 0.99
+	valuable: true
+	group[]: machinery
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.2628
+	unit_load_time: 30
+	body_types[]: _overoatprss
+	body_types[]: _schwoatprss
+}

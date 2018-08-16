@@ -1,0 +1,12 @@
+cargo_data: cargo.milk
+{
+	name: "@@cn_milk@@"
+	fragility: 0.2
+	group[]: liquid
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.20775
+	unit_load_time: 30
+	body_types[]: _foodernmilk
+	body_types[]: _schwoodmilk
+}

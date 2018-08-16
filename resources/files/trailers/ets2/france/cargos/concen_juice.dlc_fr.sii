@@ -1,0 +1,12 @@
+cargo_data: cargo.concen_juice
+{
+	name: "@@cn_concentrate_juices@@"
+	fragility: 0.5
+	group[]: containers
+	volume: 87
+	mass: %weight%
+	unit_reward_per_km: 0.61
+	unit_load_time: 78
+	body_types[]: curtainside
+	body_types[]: dryvan
+}
