@@ -56,8 +56,8 @@ class TruckPaintGeneratorController extends Controller{
         $mod = new Mods();
         Auth::check() ? $mod->user_id = Auth::id() : null;
         $mod->title = $t_generator->title;
-        $mod->file_name = $t_generator->fileName;
-//        $mod->params = $this->getInputParams($request, $t_generator);
+        $mod->file_name = $p_generator->fileName;
+        $mod->params = $this->getInputParams($request, $t_generator);
         $mod->type = 'paint';
         $mod->save();
 
@@ -75,6 +75,17 @@ class TruckPaintGeneratorController extends Controller{
             return response()->json(['status' => 'OK', 'dlc' => $dlc]);
         }
         return false;
+    }
+
+    public function getInputParams($request, $generator){
+        $params = array();
+        $params['chassis'] = $request->post('chassis');
+        $params['game'] = $request->post('target');
+        $params['color'] = $request->post('color');
+        if($request->post('weight')) $params['weight'] = $generator->chassis->weight;
+        if($request->post('wheels')) $params['wheels'] = $generator->chassis->wheels->alias;
+        if($request->post('dlc')) $params['dlc'] = $request->post('dlc');
+        return serialize($params);
     }
 
 }
