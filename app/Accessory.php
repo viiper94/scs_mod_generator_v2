@@ -22,7 +22,7 @@ class Accessory extends Model{
     public static function getAllAccessoriesDefs($game){
         $accessories = Accessory::where('game', $game)->get();
         $list[] = [
-            'name' => I18n::t('choose_accessory'),
+            'name' => trans('general.choose_accessory'),
             'value' => '',
             'selected' => true
         ];
