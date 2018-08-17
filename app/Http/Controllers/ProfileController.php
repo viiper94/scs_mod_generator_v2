@@ -39,7 +39,7 @@ class ProfileController extends Controller{
                 $img->load($file->getPathName());
                 $img->resizeToHeight(200);
                 $img->save(public_path().'/images/users/'.time().'.'.$file->getClientOriginalExtension());
-                if(file_exists(public_path().'/images/users/'.$user->image)){
+                if($user->image && file_exists(public_path().'/images/users/'.$user->image)){
                     unlink(public_path().'/images/users/'.$user->image);
                 }
                 $user->image = time().'.'.$file->getClientOriginalExtension();
