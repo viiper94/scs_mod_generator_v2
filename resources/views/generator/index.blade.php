@@ -6,7 +6,8 @@
         @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs'))
             @include('generator.download')
         @endif
-        @if($errors)
+        @if($errors->isNotEmpty())
+            {{ dump($errors) }}
             @include('generator.warning')
         @endif
         @include('generator.ie')

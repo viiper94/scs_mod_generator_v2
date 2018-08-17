@@ -18,13 +18,11 @@ class TrailerGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
         if($game !== 'ats' && $game !== 'ets2') return redirect('/');
-        $errors = array();
         return view('generator.index', [
             'game' => $game,
             'chassis_list' => Chassis::where('game', $game)->get(),
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
-            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get(),
-            'errors' => $errors
+            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get()
         ]);
     }
 
@@ -93,6 +91,19 @@ class TrailerGeneratorController extends Controller{
     }
 
     public function generate(Request $request){
+
+        $this->validate($request, [
+            'chassis' => 'required|string',
+            'target' => 'required|string',
+            'title' => 'string',
+            'accessory' => 'string',
+            'paint' => 'string',
+            'wheels' => 'string|nullable',
+            'color' => 'array',
+            'weight' => 'numeric|max:300|min:0|nullable',
+            'dlc' => 'array',
+            'img' => 'file|image|dimensions:max_width=3000,max_height=3000|max:5500'
+        ]);
 
         $accessory = null;
         $paint_job = null;
