@@ -43,19 +43,35 @@
                     <div class="collapsible-body">
                         @php $params = unserialize($mod->params); @endphp
                         @if(is_array($params))
-                            <p>@lang('general.chassis'): <b>@lang($mod->game.'_trailers.'.$params['chassis'])</b></p>
-                            @if(key_exists('accessory', $params))<p>@lang('general.accessory'): <b>@lang($mod->game.'_accessories.'.$params['accessory'])</b></p>@endif
-                            @if(key_exists('paint', $params))<p>@lang('general.paint_job'): <b>@lang($mod->game.'_companies_paints.'.$params['paint'])</b></p>@endif
-                            @if(key_exists('color', $params))<p>@lang('general.color'): <b>{{ $params['color']['hex'] }}</b></p>@endif
-                            @if(key_exists('weight', $params))<p>@lang('general.trailer_weight'): <b>{{ $params['weight'] }}</b></p>@endif
-                            @if(key_exists('wheels', $params))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['wheels'])</b></p>@endif
+                            <p>@lang('general.chassis'): <b>@lang($mod->game.'_trailers.'.$params['view']['chassis'])</b></p>
+                            @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'): <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>@endif
+                            @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>@lang($mod->game.'_companies_paints.'.$params['view']['paint'])</b></p>@endif
+                            @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
+                            @if(key_exists('weight', $params['view']))<p>@lang('general.trailer_weight'): <b>{{ $params['view']['weight'] }}</b></p>@endif
+                            @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
                         @endif
                         @if($mod->canRegenerate())
-                            <a href="#" class="mdc-button mdc-button--raised mdc-ripple large-btn"
-                               title="@lang('mods.regenerate_mod')">
-                                <i class="material-icons notranslate mdc-button__icon">refresh</i>
-                                @lang('mods.regenerate_mod')
-                            </a>
+                            <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post">
+                                @csrf
+                                <input type="hidden" name="target" value="{{ $mod->game }}">
+                                <input type="hidden" name="title" value="{{ $mod->title }}">
+                                @foreach($params['form'] as $key => $value)
+                                    @if($key === 'color')
+                                        <input type="hidden" name="color[scs][r]" value="{{ $value['scs']['r'] }}">
+                                        <input type="hidden" name="color[scs][g]" value="{{ $value['scs']['g'] }}">
+                                        <input type="hidden" name="color[scs][b]" value="{{ $value['scs']['b'] }}">
+                                        <input type="hidden" name="color[hex]" value="{{ $value['hex'] }}">
+                                    @else
+                                        <input type="hidden" name="{{ $key }}" value="{{ $value }}">
+                                    @endif
+                                @endforeach
+                                <button type="submit" class="mdc-button mdc-button--raised mdc-ripple large-btn"
+                                   title="@lang('mods.regenerate_mod')">
+                                    <i class="material-icons notranslate mdc-button__icon">refresh</i>
+                                    @lang('mods.regenerate_mod')
+                                </button>
+                            </form>
+
                         @endif
                     </div>
                 </li>

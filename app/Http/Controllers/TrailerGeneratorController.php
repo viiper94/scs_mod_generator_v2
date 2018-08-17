@@ -146,27 +146,10 @@ class TrailerGeneratorController extends Controller{
         $mod->file_name = $generator->fileName;
         $mod->params = $this->getInputParams($request, $generator);
         $mod->type = 'trailer';
+        $mod->game = $request->input('target');
         $mod->save();
 
         return redirect(($request->input('target') !== 'ats' ? '/' : '/ats/').'?d='.$generator->fileName);
-    }
-
-    public function getInputParams($request, $generator){
-        $params = array();
-        $params['chassis'] = $request->post('chassis');
-        $params['game'] = $request->post('target');
-        if($request->post('accessory')) $params['accessory'] = $generator->accessory->alias;
-        if($request->post('paint')){
-            $params['paint'] = $generator->paintJob->alias;
-            if(stripos($request->post('paint'), 'default.sii')){
-                $color = $request->post('color');
-                $params['color'] = $color;
-            }
-        }
-        if($request->post('weight')) $params['weight'] = $generator->chassis->weight;
-        if($request->post('wheels')) $params['wheels'] = $generator->chassis->wheels->alias;
-        if($request->post('dlc')) $params['dlc'] = $request->post('dlc');
-        return serialize($params);
     }
 
 }

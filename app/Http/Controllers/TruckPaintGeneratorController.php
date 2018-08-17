@@ -79,13 +79,30 @@ class TruckPaintGeneratorController extends Controller{
 
     public function getInputParams($request, $generator){
         $params = array();
-        $params['chassis'] = $request->post('chassis');
-        $params['game'] = $request->post('target');
-        $params['color'] = $request->post('color');
-        if($request->post('weight')) $params['weight'] = $generator->chassis->weight;
-        if($request->post('wheels')) $params['wheels'] = $generator->chassis->wheels->alias;
-        if($request->post('dlc')) $params['dlc'] = $request->post('dlc');
+
+        $params['form']['chassis'] = $request->post('chassis');
+        $params['view']['chassis'] = $request->post('chassis');
+
+        $color = $request->post('color');
+        $params['form']['color'] = $color;
+        $params['view']['color'] = $color['hex'];
+
+        if($request->post('weight')){
+            $params['form']['weight'] = $generator->chassis->weight;
+            $params['view']['weight'] = $generator->chassis->weight;
+        }
+
+        if($request->post('wheels')){
+            $params['form']['wheels'] = $generator->chassis->wheels->def;
+            $params['view']['wheels'] = $generator->chassis->wheels->alias;
+        }
+
+        if($request->post('dlc')){
+            $params['view']['dlc'] = $request->post('dlc');
+            $params['form']['dlc'] = $request->post('dlc');
+        }
         return serialize($params);
     }
+
 
 }
