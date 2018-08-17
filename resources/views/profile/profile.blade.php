@@ -43,12 +43,19 @@
                     <div class="collapsible-body">
                         @php $params = unserialize($mod->params); @endphp
                         @if(is_array($params))
-                            <p>@lang('general.chassis'): <b>@lang($mod->game.'_trailers.'.$params['view']['chassis'])</b></p>
+                            <p>@lang('general.chassis'): <b>@lang($mod->game.'_trailers.'.$params['form']['chassis'])</b></p>
                             @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'): <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>@endif
                             @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>@lang($mod->game.'_companies_paints.'.$params['view']['paint'])</b></p>@endif
                             @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
-                            @if(key_exists('weight', $params['view']))<p>@lang('general.trailer_weight'): <b>{{ $params['view']['weight'] }}</b></p>@endif
+                            @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['view']['weight'] }}</b></p>@endif
                             @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
+                            @if(key_exists('dlc', $params['form']))
+                                <ul>
+                                    @foreach($params['form']['dlc'] as $dlc => $on)
+                                        <li><b>@lang('dlc_list.'.$dlc)</b></li>
+                                    @endforeach
+                                </ul>
+                            @endif
                         @endif
                         @if($mod->canRegenerate())
                             <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post">
@@ -61,6 +68,10 @@
                                         <input type="hidden" name="color[scs][g]" value="{{ $value['scs']['g'] }}">
                                         <input type="hidden" name="color[scs][b]" value="{{ $value['scs']['b'] }}">
                                         <input type="hidden" name="color[hex]" value="{{ $value['hex'] }}">
+                                    @elseif($key === 'dlc')
+                                        @foreach($value as $dlc => $on)
+                                            <input type="hidden" name="dlc[{{ $dlc }}]" value="on">
+                                        @endforeach
                                     @else
                                         <input type="hidden" name="{{ $key }}" value="{{ $value }}">
                                     @endif

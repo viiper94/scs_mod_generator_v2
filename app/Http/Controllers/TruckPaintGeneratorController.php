@@ -81,7 +81,6 @@ class TruckPaintGeneratorController extends Controller{
         $params = array();
 
         $params['form']['chassis'] = $request->post('chassis');
-        $params['view']['chassis'] = $request->post('chassis');
 
         $color = $request->post('color');
         $params['form']['color'] = $color;
@@ -89,7 +88,6 @@ class TruckPaintGeneratorController extends Controller{
 
         if($request->post('weight')){
             $params['form']['weight'] = $generator->chassis->weight;
-            $params['view']['weight'] = $generator->chassis->weight;
         }
 
         if($request->post('wheels')){
@@ -98,11 +96,9 @@ class TruckPaintGeneratorController extends Controller{
         }
 
         if($request->post('dlc')){
-            $params['view']['dlc'] = $request->post('dlc');
             $params['form']['dlc'] = $request->post('dlc');
         }
         return serialize($params);
     }
-
 
 }

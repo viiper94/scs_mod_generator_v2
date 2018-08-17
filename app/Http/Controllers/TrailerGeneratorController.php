@@ -96,8 +96,8 @@ class TrailerGeneratorController extends Controller{
             'chassis' => 'required|string',
             'target' => 'required|string',
             'title' => 'string',
-            'accessory' => 'string',
-            'paint' => 'string',
+            'accessory' => 'string|nullable',
+            'paint' => 'string|nullable',
             'wheels' => 'string|nullable',
             'color' => 'array',
             'weight' => 'numeric|max:300|min:0|nullable',
@@ -150,6 +150,41 @@ class TrailerGeneratorController extends Controller{
         $mod->save();
 
         return redirect(($request->input('target') !== 'ats' ? '/' : '/ats/').'?d='.$generator->fileName);
+    }
+
+    public function getInputParams($request, $generator){
+        $params = array();
+
+        $params['form']['chassis'] = $request->post('chassis');
+
+        if($request->post('accessory')){
+            $params['form']['accessory'] = $generator->accessory->def;
+            $params['view']['accessory'] = $generator->accessory->alias;
+        }
+
+        if($request->post('paint')) {
+            $params['form']['paint'] = $generator->paintJob->def;
+            $params['view']['paint'] = $generator->paintJob->alias;
+            if(stripos($request->post('paint'), 'default.sii')) {
+                $color = $request->post('color');
+                $params['form']['color'] = $color;
+                $params['view']['color'] = $color['hex'];
+            }
+        }
+
+        if($request->post('weight')){
+            $params['form']['weight'] = $generator->chassis->weight;
+        }
+
+        if($request->post('wheels')){
+            $params['form']['wheels'] = $generator->chassis->wheels->def;
+            $params['view']['wheels'] = $generator->chassis->wheels->alias;
+        }
+
+        if($request->post('dlc')){
+            $params['form']['dlc'] = $request->post('dlc');
+        }
+        return serialize($params);
     }
 
 }

@@ -69,7 +69,9 @@ class TrailerGenerator extends ModGenerator{
 	private function copyCompanyFiles(){
 		mkdir($this->outDir.'/company');
 		foreach($this->dlc as $dlc){
-            $this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/companies', $this->outDir.'/company');
+            if(is_dir($this->filesDir.'/'.$this->game.'/'.$dlc.'/companies')) {
+                $this->rcopy($this->filesDir . '/' . $this->game . '/' . $dlc . '/companies', $this->outDir . '/company');
+            }
 		}
 	}
 
