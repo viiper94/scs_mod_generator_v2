@@ -129,6 +129,14 @@ input[type=text]:not(.browser-default):focus:not([readonly]), input[type=passwor
 	border-bottom: 1px solid var(--mdc-theme-primary-dark);
 	box-shadow: 0 1px 0 0 var(--mdc-theme-primary-dark);
 }
+.mdc-theme--dark input[type=text]:not(.browser-default):focus:not([readonly])+label,
+.mdc-theme--dark input[type=password]:not(.browser-default):focus:not([readonly])+label,
+.mdc-theme--dark input[type=email]:not(.browser-default):focus:not([readonly])+label,
+.mdc-theme--dark input[type=number]:not(.browser-default):focus:not([readonly])+label,
+.mdc-theme--dark input[type=search]:not(.browser-default):focus:not([readonly])+label,
+.mdc-theme--dark textarea.materialize-textarea:focus:not([readonly])+label{
+	color: var(--mdc-theme-text-primary-on-primary-dark);
+}
 input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
 	color: var(--mdc-theme-light-text);
 }
@@ -215,6 +223,17 @@ i.truck-icons{
 }
 .mdc-theme--dark i.truck-icons{
     background-image: url(../img/truck_icons_dark.png);
+}
+.sidenav .user-view .circle{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.sidenav .user-view .name{
+    color: var(--mdc-theme-light-text);
+}
+.mdc-theme--dark .sidenav .user-view .name{
+    color: var(--mdc-theme-text-primary-on-primary-dark);
 }
 i.truck-us{
 	background-position-x: -26px;
@@ -314,13 +333,16 @@ nav .brand-logo::before{
 .mdc-text-field:not(.mdc-text-field--upgraded) .mdc-text-field__input {
 	padding-top: 23px;
 }
-.mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__label,
-.mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder{
-	color: var(--mdc-theme-primary) !important;
-}
+/*.mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__label,*/
+/*.mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder{*/
+	/*color: var(--mdc-theme-primary) !important;*/
+/*}*/
 .mdc-theme--dark .mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__label,
 .mdc-theme--dark .mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder{
 	color: var(--mdc-theme-primary-light) !important;
+}
+.mdc-text-field__bottom-line{
+    background-color: var(--mdc-theme-primary-dark);
 }
 .mdc-text-field__label{
 	font-size: 15px;
@@ -374,12 +396,6 @@ li.active > .collapsible-header i:not(.mdc-button__icon){
 input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 	transition: border-bottom-color .3s ease;
 	font-family: Montserrat, sans-serif;
-}
-input[type=text]:not(.browser-default){
-	border-bottom: 1px solid rgba(0,0,0,.5);
-}
-input[type=text]:not(.browser-default):hover{
-	border-bottom: 1px solid #000;
 }
 .mdc-theme--dark .mdc-text-field--upgraded:not(.mdc-text-field--fullwidth):not(.mdc-text-field--box) .mdc-text-field__label{
 	color: var(--mdc-theme-text-primary-on-primary);

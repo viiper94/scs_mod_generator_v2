@@ -1,16 +1,13 @@
 <nav class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
     <ul class="top-menu">
-        <li>
-            <div class="user-view" style="min-height: 200px;">
-                <div class="background">
-                    <img src="{{ '/assets/img/bg.jpg' }}" style="width: 100%;">
-                </div>
-                @if(Auth::check())
+        @if(Auth::check())
+            <li>
+                <div class="user-view" style="min-height: 200px;">
                     <a href="{{ route('profile') }}"><img class="circle" src="{{ '/images/users/'.Auth::user()->image }}"></a>
-                    <a href="{{ route('profile') }}"><span class="white-text name">{{ Auth::user()->name }}</span></a>
-                @endif
-            </div>
-        </li>
+                    <a href="{{ route('profile') }}"><span class="name center">{{ Auth::user()->name }}</span></a>
+                </div>
+            </li>
+        @endif
         <li @if(Request::is('/'))class="active"@endif>
             <a class="waves-effect" href="{{url('/')}}"><i class="truck-icons truck-eu"></i>@lang('general.ets2_trailer_generator')</a>
         </li>
