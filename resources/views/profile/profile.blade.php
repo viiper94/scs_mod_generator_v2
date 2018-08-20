@@ -21,11 +21,11 @@
         </div>
     </div>
     @if(count($mods) > 0)
-        <h4 class="card-title">@lang('mods.mods_history')</h4>
+        <h4 class="card-title no-mods">@lang('mods.mods_history')</h4>
         <ul class="collapsible">
             @foreach($mods as $mod)
                 <li>
-                    <div class="collapsible-header" style="border-bottom: 1px solid #ddd;">
+                    <div class="collapsible-header">
                         <i class="material-icons notranslate">arrow_downward</i>
                         <p class="mod-info">
                             <b>{{ $mod->title }}</b> (@lang('general.'.$mod->game); @lang('mods.'.$mod->type); {{ date('j F, Y H:i', strtotime($mod->created_at)) }})
@@ -44,18 +44,21 @@
                         @php $params = unserialize($mod->params); @endphp
                         @if(is_array($params))
                             <p>@lang('general.chassis'): <b>@lang($mod->game.'_trailers.'.$params['form']['chassis'])</b></p>
-                            @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'): <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>@endif
-                            @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>@lang($mod->game.'_companies_paints.'.$params['view']['paint'])</b></p>@endif
-                            @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
-                            @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['view']['weight'] }}</b></p>@endif
-                            @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
-                            @if(key_exists('dlc', $params['form']))
-                                <ul>
-                                    @foreach($params['form']['dlc'] as $dlc => $on)
-                                        <li><b>@lang('dlc_list.'.$dlc)</b></li>
-                                    @endforeach
-                                </ul>
+                            @if(isset($params['view']))
+                                @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'): <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>@endif
+                                @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>@lang($mod->game.'_companies_paints.'.$params['view']['paint'])</b></p>@endif
+                                @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
+                                @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['view']['weight'] }}</b></p>@endif
+                                @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
+                                @if(key_exists('dlc', $params['form']))
+                                    <ul>
+                                        @foreach($params['form']['dlc'] as $dlc => $on)
+                                            <li><b>@lang('dlc_list.'.$dlc)</b></li>
+                                        @endforeach
+                                    </ul>
+                                @endif
                             @endif
+
                         @endif
                         @if($mod->canRegenerate())
                             <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post">
