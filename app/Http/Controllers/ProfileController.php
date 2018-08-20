@@ -15,7 +15,7 @@ class ProfileController extends Controller{
         if(!Auth::check()) return redirect('/login');
         return view('profile.profile', [
             'user' => Auth::user(),
-            'mods' => Mods::where('user_id', Auth::id())->get()
+            'mods' => Mods::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get()
         ]);
     }
 

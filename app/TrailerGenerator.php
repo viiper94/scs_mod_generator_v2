@@ -106,7 +106,9 @@ class TrailerGenerator extends ModGenerator{
 				if(is_file($dirname."/".$file)){
 					$rows = file($dirname."/".$file, FILE_IGNORE_NEW_LINES);
 					$trailer_name = trim(preg_split('/trailer\./', $rows[0])[1]);
-					$row_with_accessory_name = stripos($rows[2], 'trailer_definition') !== false ? $rows[4] : $rows[2];
+					$row_with_accessory_name = array_first($rows, function($value, $key){
+                        return stripos($value, 'accessories') !== false;
+                    });
 					$accessory_name = trim(preg_replace('/\.[a-z0-9]+$/', '', explode(':', $row_with_accessory_name)[1]));
 					if($this->chassis->alias == 'paintable'){
 						$content = $this->generatePaintableTrailersContent($rows);

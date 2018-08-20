@@ -46,16 +46,12 @@ class Chassis extends Model{
     }
 
     public function getAvailablePaints(){
-        $to_replace = ['_1_4', '_1', '_4_3', '_4',
-            'rm_double', 'rm53_double', 'pup_double', 'pup_triple',
-            '_aero', '_double', '_bdouble', '_steer'];
         $list[] = [
             'name' => trans('general.all_companies'),
             'value' => 'all',
             'selected' => true
         ];
-        $chassis = str_replace($to_replace, '', $this->alias);
-        $paints = Paint::where(['game' => $this->game, 'chassis' => $chassis])->get();
+        $paints = Paint::where(['game' => $this->game, 'chassis' => $this->alias_short_paint])->get();
         foreach($paints as $key => $paint){
             $name = trans($this->game.'_companies_paints.'.$paint->alias);
             if($paint->isDLCContent()){
@@ -75,8 +71,7 @@ class Chassis extends Model{
             'value' => '',
             'selected' => true
         ];
-        $chassis = str_replace(['_default', '_black', '_yellow', '_red', '_blue', '_grey'], '', $this->alias);
-        $accessories = Accessory::where(['game' => $this->game, 'chassis' => $chassis])->get();
+        $accessories = Accessory::where(['game' => $this->game, 'chassis' => $this->alias_short_paint])->get();
         $dlc_list = Dlc::where('game', $this->game)->get()->keyBy('id');
         foreach($accessories as $key => $accessory){
             $name = trans($this->game.'_accessories.'.$accessory->alias);
@@ -96,7 +91,7 @@ class Chassis extends Model{
         return $list;
     }
 
-    public static function getAllCompanies($lang, $game){
+    public static function getAllCompanies($game){
         $companies = Company::where('game', $game)->get();
         $list[] = [
             'name' => trans('general.choose_paint'),
