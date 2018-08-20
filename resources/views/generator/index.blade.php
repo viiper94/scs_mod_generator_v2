@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
         @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs'))
             @include('generator.download')
         @endif
@@ -11,10 +11,11 @@
             @include('generator.warning')
         @endif
         @include('generator.ie')
-        <section class="card">
+        <section class="card" style="width: 700px;">
             <form action="{{route('generator')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <div class="card-content">
+                    <div class="row"><h5 class="card-title center">@lang('general.head_title')</h5></div>
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
@@ -126,7 +127,7 @@
                                     <label>@lang('general.image_upload')</label>
                                     <div class="file-field input-field mdc-button mdc-button--raised">
                                         <div class="input-wrapper">
-                                            <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">file_upload</i>
+                                            <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">add_photo_alternate</i>
                                             <input type="file" name="img" id="image" accept="image/jpeg, image/png"
                                                    data-size="@lang('general.max_file_size_5')"
                                                    data-dimensions="@lang('general.max_dimensions_3000')">
@@ -171,19 +172,21 @@
                         </ul>
                     </section>
                 </div>
-                <div class="card-action row center-on-small-only">
-                    <input type="hidden" name="target" value="{{$game}}">
-                    <button class="mdc-button mdc-button--raised mdc-ripple left-med-and-up" id="generate-btn" type="submit"
-                            onclick="return confirm('@lang('general.are_you_sure')')" disabled style="min-width: 200px">
-                        <i class="material-icons mdc-button__icon notranslate">send</i><b>@lang('general.proceed')</b>
-                    </button>
+                <div class="card-action">
+                    <div class="row no-margin">
+                        <input type="hidden" name="target" value="{{$game}}">
+                        <button class="mdc-button mdc-button--raised mdc-ripple left-med-and-up col s12" id="generate-btn" type="submit"
+                                onclick="return confirm('@lang('general.are_you_sure')')" disabled style="min-width: 200px">
+                            <i class="material-icons mdc-button__icon notranslate">send</i><b>@lang('general.proceed')</b>
+                        </button>
+                    </div>
                 </div>
             </form>
         </section>
         @if(!$hasUserAcceptLanguage)
             @include('generator.translate')
         @endif
-        <section class="card-panel grey-text">
+        <section class="card-panel grey-text" style="width: 700px;">
             <span class="card-title">
                 <i class="material-icons left notranslate">warning</i>
                 @lang('general.beta_notification')
