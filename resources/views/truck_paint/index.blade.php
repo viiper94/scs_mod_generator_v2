@@ -16,9 +16,6 @@
                 <div class="card-content">
                     <div class="row"><h5 class="card-title center">@lang('general.truck_paint_job_generator')</h5></div>
                     <div class="row">
-                        <p class="center">@lang('general.truck_paint_description')</p>
-                    </div>
-                    <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
                                 <input type="text" id="title" class="browser-default mdc-text-field__input" name="title">
@@ -112,7 +109,7 @@
                                     <label>@lang('general.image_upload')</label>
                                     <div class="file-field input-field mdc-button mdc-button--raised">
                                         <div class="input-wrapper">
-                                            <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">file_upload</i>
+                                            <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">add_photo_alternate</i>
                                             <input type="file" name="img" id="image" accept="image/jpeg, image/png"
                                                    data-size="@lang('general.max_file_size_5')"
                                                    data-dimensions="@lang('general.max_dimensions_3000')">
