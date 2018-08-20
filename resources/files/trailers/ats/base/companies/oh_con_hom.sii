@@ -1,0 +1,6 @@
+company_permanent: company.permanent.oh_con_hom
+{
+	name: "Olthon Homes"
+	sort_name: "olthon homes"
+	trailer_look: olthon
+}

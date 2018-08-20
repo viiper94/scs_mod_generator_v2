@@ -1,0 +1,11 @@
+cargo_data: cargo.icecream
+{
+	name: "@@cn_icecream@@"
+	fragility: 0.4
+	group[]: refrigerated
+	volume: 3.9
+	mass: 745.4
+	unit_reward_per_km: 0.773
+	unit_load_time: 117
+	body_types[]: refrigerated
+}

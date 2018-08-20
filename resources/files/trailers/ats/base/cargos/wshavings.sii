@@ -1,0 +1,14 @@
+cargo_data: cargo.wshavings
+{
+	name: "@@cn_wshavings@@"
+	fragility: 0.1
+	group[]: bulk
+	volume: 1
+	mass: 165.562
+	unit_reward_per_km: 0.19005
+	unit_load_time: 30
+	body_types[]: _dumpverwsgs
+	body_types[]: _bottumpwsgs
+	body_types[]: _bdump_2wsgs
+	body_types[]: _bdumm_2wsgs
+}

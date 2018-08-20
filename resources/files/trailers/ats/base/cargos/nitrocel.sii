@@ -1,0 +1,11 @@
+cargo_data: cargo.nitrocel
+{
+	name: "@@cn_nitrocel@@"
+	adr_class: 4
+	group[]: containers
+	volume: 3.9
+	mass: 806.9
+	unit_reward_per_km: 1.07
+	unit_load_time: 117
+	body_types[]: dryvan
+}

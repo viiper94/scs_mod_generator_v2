@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aport_pcc
+{
+	name: "Portland Cargo Central"
+	sort_name: "portland cargo central"
+	trailer_look: portlandcc
+}

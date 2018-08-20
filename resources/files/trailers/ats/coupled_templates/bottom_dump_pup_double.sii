@@ -1,5 +1,3 @@
-# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx trailer 28 with rear hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 trailer : trailer.%trailer%
 {
 	accessories[]: .%trailer%.tchassis

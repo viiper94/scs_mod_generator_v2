@@ -1,0 +1,24 @@
+trailer : trailer.scs_curt28
+{
+	trailer_definition: trailer_def.scs.flatbed.single_28.curtain
+
+	accessories[]: .scs_curt28.chassis
+	accessories[]: .scs_curt28.rwheel
+	accessories[]: .scs_curt28.paint_job
+}
+
+vehicle_accessory: .scs_curt28.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/curtain28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt28.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_curt28.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/company_paint_job/black.sii"
+}

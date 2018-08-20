@@ -1,11 +1,19 @@
 SiiNunit
 {
-trailer_def : .acid
+trailer_def : trailer_def.lye.acid
 {
 	trailer: trailer.acid
-	mass: 14741.8
-	volume_factor: 0.9
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.74, 0.0)
+	gross_trailer_weight_limit: 20941.8
+	chassis_mass: 6100
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _acidlyye
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.74,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.74,0.0)
 }
 }

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.avs_met_scr
+{
+	name: "Avalanche Steel"
+	sort_name: "avalanche steel"
+	trailer_look: avalanche
+}

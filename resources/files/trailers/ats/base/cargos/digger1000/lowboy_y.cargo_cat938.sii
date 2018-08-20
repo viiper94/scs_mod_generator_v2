@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .lowboy_y.cargo_cat938
+trailer_def : trailer_def.digger1000.lowboy_y.cargo_cat938
 {
 	trailer: trailer.lowboy_y.cargo_cat938
-	mass: 15422.2
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.77, 0.0)
+	gross_trailer_weight_limit: 21422.2
+	chassis_mass: 5900
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _lowb938di00
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.77,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.77,0.0)
 }
 }

@@ -1,0 +1,18 @@
+trailer : trailer.scs_flat28
+{
+	trailer_definition: trailer_def.scs.flatbed.single_28.flatbed
+
+	accessories[]: .scs_flat28.chassis
+	accessories[]: .scs_flat28.rwheel
+}
+
+vehicle_accessory: .scs_flat28.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat28.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}

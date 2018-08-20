@@ -1,0 +1,11 @@
+cargo_data: cargo.hay
+{
+	name: "@@cn_hay@@"
+	fragility: 0.1
+	group[]: bulk
+	volume: 4
+	mass: 381.02
+	unit_reward_per_km: 0.615
+	unit_load_time: 120
+	body_types[]: flatbed
+}

@@ -1,0 +1,31 @@
+trailer : trailer.scs_ins45f
+{
+	trailer_definition: trailer_def.scs.box.single_45f.insulated
+
+	accessories[]: .scs_ins45f.chassis
+	accessories[]: .scs_ins45f.rwheel
+	accessories[]: .scs_ins45f.rwheel2
+	accessories[]: .scs_ins45f.paint_job
+}
+
+vehicle_accessory: .scs_ins45f.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ins_45_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_ins45f.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_ins45f.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ins45f.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

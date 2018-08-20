@@ -1,0 +1,6 @@
+company_permanent: company.permanent.hds_met_shp
+{
+	name: "Haddock Shipyard"
+	sort_name: "haddock shipyard"
+	trailer_look: haddock
+}

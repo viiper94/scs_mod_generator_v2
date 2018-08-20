@@ -1,0 +1,11 @@
+cargo_data: cargo.tableware
+{
+	name: "@@cn_tableware@@"
+	fragility: 0.85
+	group[]: bulk
+	volume: 3.9
+	mass: 699.7
+	unit_reward_per_km: 0.828
+	unit_load_time: 117
+	body_types[]: dryvan
+}

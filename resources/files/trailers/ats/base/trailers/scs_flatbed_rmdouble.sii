@@ -1,0 +1,84 @@
+trailer : trailer.scs_flat_rm2
+{
+	trailer_definition: trailer_def.scs.flatbed.rm_double.flatbed
+
+	accessories[]: .scs_flat_rm2.chassis
+	accessories[]: .scs_flat_rm2.rwheel
+	accessories[]: .scs_flat_rm2.rwheel2
+	accessories[]: .scs_flat_rm2.trlr_cables
+
+	slave_trailer: .scs_flat_rm2.dolly
+}
+
+vehicle_accessory: .scs_flat_rm2.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed45_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat_rm2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat_rm2.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .scs_flat_rm2.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+trailer : .scs_flat_rm2.dolly
+{
+	accessories[]: .scs_flat_rm2.dolly.chassis
+	accessories[]: .scs_flat_rm2.dolly.rwheel
+	accessories[]: .scs_flat_rm2.dolly.trlr_cables
+	
+	slave_trailer: .scs_flat_rm2.second
+}
+
+vehicle_accessory: .scs_flat_rm2.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/dolly_c.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat_rm2.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .scs_flat_rm2.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX trailer 28 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .scs_flat_rm2.second
+{
+	accessories[]: .scs_flat_rm2.second.chassis
+	accessories[]: .scs_flat_rm2.second.r_banner
+	accessories[]: .scs_flat_rm2.second.rwheel
+}
+
+vehicle_accessory: .scs_flat_rm2.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed28_hook.sii"
+}
+
+vehicle_addon_accessory: .scs_flat_rm2.second.r_banner
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/r_banner_long.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat_rm2.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}

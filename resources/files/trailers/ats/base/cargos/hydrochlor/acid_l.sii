@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .acid_l
+trailer_def : trailer_def.hydrochlor.acid_l
 {
 	trailer: trailer.acid_l
-	mass: 18143.7
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.91, 0.0)
+	gross_trailer_weight_limit: 25843.7
+	chassis_mass: 7600
+	body_mass: 0
+	axles: 3
+	volume: 143.1
+	body_type: _acid_lhyor
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.91,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.91,0.0)
 }
 }

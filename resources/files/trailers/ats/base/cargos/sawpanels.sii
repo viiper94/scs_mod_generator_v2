@@ -1,0 +1,10 @@
+cargo_data: cargo.sawpanels
+{
+	name: "@@cn_sawpanels@@"
+	fragility: 0.3
+	volume: 3.9
+	mass: 689.1
+	unit_reward_per_km: 0.815
+	unit_load_time: 117
+	body_types[]: curtainside
+}

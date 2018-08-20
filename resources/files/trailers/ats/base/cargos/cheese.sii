@@ -1,0 +1,12 @@
+cargo_data: cargo.cheese
+{
+	name: "@@cn_cheese@@"
+	fragility: 0.3
+	group[]: refrigerated
+	volume: 3.9
+	mass: 608.2
+	unit_reward_per_km: 0.79
+	unit_load_time: 117
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

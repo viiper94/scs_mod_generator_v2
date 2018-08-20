@@ -1,0 +1,11 @@
+cargo_data: cargo.tvs
+{
+	name: "@@cn_tv@@"
+	fragility: 0.8
+	group[]: bulk
+	volume: 3.9
+	mass: 586.9
+	unit_reward_per_km: 0.923
+	unit_load_time: 117
+	body_types[]: dryvan
+}

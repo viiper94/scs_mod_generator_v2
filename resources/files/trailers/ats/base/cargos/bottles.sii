@@ -1,0 +1,11 @@
+cargo_data: cargo.bottles
+{
+	name: "@@cn_bottles@@"
+	fragility: 0.9
+	group[]: containers
+	volume: 3.9
+	mass: 715.3
+	unit_reward_per_km: 0.635
+	unit_load_time: 117
+	body_types[]: dryvan
+}

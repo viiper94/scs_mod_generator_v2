@@ -1,0 +1,6 @@
+company_permanent: company.permanent.st_met_wrk
+{
+	name: "Steeler"
+	sort_name: "steeler"
+	trailer_look: steeler
+}

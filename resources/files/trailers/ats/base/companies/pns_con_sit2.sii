@@ -1,5 +1,6 @@
 company_permanent: company.permanent.pns_con_sit2
 {
 	name: "Plaster & Sons"
-	sort_name: "plaster sons"
+	sort_name: "plaster & sons"
+	trailer_look: plaster
 }

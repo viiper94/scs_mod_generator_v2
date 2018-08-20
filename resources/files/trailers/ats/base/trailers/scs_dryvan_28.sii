@@ -1,0 +1,24 @@
+trailer : trailer.scs_dry28
+{
+	trailer_definition: trailer_def.scs.box.single_28.dryvan
+
+	accessories[]: .scs_dry28.chassis
+	accessories[]: .scs_dry28.rwheel
+	accessories[]: .scs_dry28.paint_job
+}
+
+vehicle_accessory: .scs_dry28.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry28.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dry28.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

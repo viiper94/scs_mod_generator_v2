@@ -1,0 +1,11 @@
+cargo_data: cargo.empty_palet
+{
+	name: "@@cn_empty_palettes@@"
+	fragility: 0.1
+	volume: 3.9
+	mass: 758.9
+	unit_reward_per_km: 0.606
+	unit_load_time: 117
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

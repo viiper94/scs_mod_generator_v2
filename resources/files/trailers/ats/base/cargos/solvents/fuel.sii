@@ -1,11 +1,19 @@
 SiiNunit
 {
-trailer_def : .fuel
+trailer_def : trailer_def.solvents.fuel
 {
 	trailer: trailer.fuel
-	mass: 13607.8
-	volume_factor: 0.9
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.68, 0.0)
+	gross_trailer_weight_limit: 19807.8
+	chassis_mass: 6100
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _fuelsots
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.68,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.68,0.0)
 }
 }

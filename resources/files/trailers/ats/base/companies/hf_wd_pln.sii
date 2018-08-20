@@ -1,0 +1,6 @@
+company_permanent: company.permanent.hf_wd_pln
+{
+	name: "Heartwood Furniture"
+	sort_name: "heartwood furniture"
+	trailer_look: heartwood
+}

@@ -1,0 +1,10 @@
+cargo_data: cargo.colors
+{
+	name: "@@cn_colors@@"
+	fragility: 0.7
+	volume: 3.9
+	mass: 767.6
+	unit_reward_per_km: 0.635
+	unit_load_time: 117
+	body_types[]: curtainside
+}

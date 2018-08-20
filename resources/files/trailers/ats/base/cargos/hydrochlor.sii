@@ -1,0 +1,13 @@
+cargo_data: cargo.hydrochlor
+{
+	name: "@@cn_hydrochlor@@"
+	fragility: 0.5
+	adr_class: 8
+	group[]: liquid
+	volume: 1
+	mass: 127.006
+	unit_reward_per_km: 0.240975
+	unit_load_time: 30
+	body_types[]: _acidhyor
+	body_types[]: _acid_lhyor
+}

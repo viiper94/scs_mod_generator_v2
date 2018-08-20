@@ -1,0 +1,12 @@
+cargo_data: cargo.meat
+{
+	name: "@@cn_meat@@"
+	fragility: 0.2
+	group[]: refrigerated
+	volume: 3.9
+	mass: 655.4
+	unit_reward_per_km: 0.728
+	unit_load_time: 117
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

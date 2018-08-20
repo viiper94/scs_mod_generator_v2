@@ -1,0 +1,31 @@
+trailer : trailer.scs_ref53f
+{
+	trailer_definition: trailer_def.scs.box.single_53f.reefer
+
+	accessories[]: .scs_ref53f.chassis
+	accessories[]: .scs_ref53f.rwheel
+	accessories[]: .scs_ref53f.rwheel2
+	accessories[]: .scs_ref53f.paint_job
+}
+
+vehicle_accessory: .scs_ref53f.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_53_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref53f.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref53f.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ref53f.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

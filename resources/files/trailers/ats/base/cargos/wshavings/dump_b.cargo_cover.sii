@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .dump_b.cargo_cover
+trailer_def : trailer_def.wshavings.dump_b.cargo_cover
 {
 	trailer: trailer.dump_b.cargo_cover
-	mass: 16556.2
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.83, 0.0)
+	gross_trailer_weight_limit: 22556.2
+	chassis_mass: 5900
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _dumpverwsgs
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.83,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.83,0.0)
 }
 }

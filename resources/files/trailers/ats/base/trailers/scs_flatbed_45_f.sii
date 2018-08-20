@@ -1,0 +1,25 @@
+trailer : trailer.scs_flat45f
+{
+	trailer_definition: trailer_def.scs.flatbed.single_45f.flatbed
+
+	accessories[]: .scs_flat45f.chassis
+	accessories[]: .scs_flat45f.rwheel
+	accessories[]: .scs_flat45f.rwheel2
+}
+
+vehicle_accessory: .scs_flat45f.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed45_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat45f.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat45f.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}

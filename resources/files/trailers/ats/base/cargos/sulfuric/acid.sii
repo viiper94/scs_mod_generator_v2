@@ -1,11 +1,19 @@
 SiiNunit
 {
-trailer_def : .acid
+trailer_def : trailer_def.sulfuric.acid
 {
 	trailer: trailer.acid
-	mass: 13834.6
-	volume_factor: 0.9
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.7, 0.0)
+	gross_trailer_weight_limit: 20034.6
+	chassis_mass: 6100
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _acidsuic
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.7,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.7,0.0)
 }
 }

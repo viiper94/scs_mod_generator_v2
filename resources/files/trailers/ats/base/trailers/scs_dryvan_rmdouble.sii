@@ -1,0 +1,97 @@
+trailer : trailer.scs_dry_rm
+{
+
+	trailer_definition: trailer_def.scs.box.rm_double_p.dryvan
+
+	accessories[]: .scs_dry_rm.chassis
+	accessories[]: .scs_dry_rm.rwheel
+	accessories[]: .scs_dry_rm.rwheel2
+	accessories[]: .scs_dry_rm.paint_job
+	accessories[]: .scs_dry_rm.trlr_cables
+	
+	slave_trailer: .scs_dry_rm.dolly
+}
+
+vehicle_accessory: .scs_dry_rm.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_45_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_rm.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_rm.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dry_rm.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .scs_dry_rm.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .scs_dry_rm.dolly
+{
+	accessories[]: .scs_dry_rm.dolly.chassis
+	accessories[]: .scs_dry_rm.dolly.rwheel
+	accessories[]: .scs_dry_rm.dolly.trlr_cables
+
+	slave_trailer: .scs_dry_rm.second
+}
+
+vehicle_accessory: .scs_dry_rm.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dolly_c.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_rm.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .scs_dry_rm.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .scs_dry_rm.second
+{
+	accessories[]: .scs_dry_rm.second.chassis
+	accessories[]: .scs_dry_rm.second.r_banner
+	accessories[]: .scs_dry_rm.second.rwheel
+	accessories[]: .scs_dry_rm.second.paint_job
+}
+
+vehicle_accessory: .scs_dry_rm.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_28_hook.sii"
+}
+
+vehicle_addon_accessory: .scs_dry_rm.second.r_banner
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/long_load.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_rm.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dry_rm.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

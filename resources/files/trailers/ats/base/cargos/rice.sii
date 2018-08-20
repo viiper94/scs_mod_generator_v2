@@ -1,0 +1,13 @@
+cargo_data: cargo.rice
+{
+	name: "@@cn_rice@@"
+	fragility: 0.3
+	group[]: bulk
+	volume: 3.9
+	mass: 844.3
+	unit_reward_per_km: 0.761
+	unit_load_time: 117
+	body_types[]: curtainside
+	body_types[]: dryvan
+	body_types[]: insulated
+}

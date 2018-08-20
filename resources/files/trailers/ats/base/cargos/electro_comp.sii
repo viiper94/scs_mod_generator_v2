@@ -1,0 +1,12 @@
+cargo_data: cargo.electro_comp
+{
+	name: "@@cn_electro_comp@@"
+	fragility: 0.8
+	group[]: gooseneck
+	volume: 1
+	mass: 63.503
+	unit_reward_per_km: 0.219
+	unit_load_time: 30
+	body_types[]: _goosr_delmp
+	body_types[]: _goosr_selmp
+}

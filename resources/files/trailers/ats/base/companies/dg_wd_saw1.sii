@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dg_wd_saw1
+{
+	name: "Deepgrove"
+	sort_name: "deepgrove"
+	trailer_look: deepgrove
+}

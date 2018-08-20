@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .chemical_l
+trailer_def : trailer_def.pesticide.chemical_l
 {
 	trailer: trailer.chemical_l
-	mass: 17690.2
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.88, 0.0)
+	gross_trailer_weight_limit: 25390.2
+	chassis_mass: 7600
+	body_mass: 0
+	axles: 3
+	volume: 124.1
+	body_type: _cheml_lpede
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.88,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.88,0.0)
 }
 }

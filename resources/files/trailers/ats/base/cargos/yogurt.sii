@@ -1,0 +1,12 @@
+cargo_data: cargo.yogurt
+{
+	name: "@@cn_yogurt@@"
+	fragility: 0.6
+	group[]: refrigerated
+	volume: 3.9
+	mass: 804.1
+	unit_reward_per_km: 0.796
+	unit_load_time: 117
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

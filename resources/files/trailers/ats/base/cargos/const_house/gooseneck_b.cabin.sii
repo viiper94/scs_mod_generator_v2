@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .gooseneck_b.cabin
+trailer_def : trailer_def.const_house.gooseneck_b.cabin
 {
 	trailer: trailer.gooseneck_b.cabin
-	mass: 7030.7
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.35, 0.0)
+	gross_trailer_weight_limit: 12630.7
+	chassis_mass: 5500
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _goosbincose
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.35,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.35,0.0)
 }
 }

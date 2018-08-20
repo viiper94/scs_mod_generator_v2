@@ -1,0 +1,14 @@
+cargo_data: cargo.limestone
+{
+	name: "@@cn_limestone@@"
+	fragility: 0.1
+	group[]: bulk
+	volume: 1
+	mass: 170.098
+	unit_reward_per_km: 0.1899
+	unit_load_time: 30
+	body_types[]: _dumpimeline
+	body_types[]: _bottumpline
+	body_types[]: _bdump_2line
+	body_types[]: _bdumm_2line
+}

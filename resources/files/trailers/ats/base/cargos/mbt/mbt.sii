@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .mbt
+trailer_def : trailer_def.mbt.mbt
 {
 	trailer: trailer.mbt
-	mass: 226.8
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.0, 0.0)
+	gross_trailer_weight_limit: 8426.8
+	chassis_mass: 8100
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _mbtmbbt
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.0,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.0,0.0)
 }
 }

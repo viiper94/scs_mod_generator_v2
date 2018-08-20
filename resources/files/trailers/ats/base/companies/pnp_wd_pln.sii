@@ -1,0 +1,6 @@
+company_permanent: company.permanent.pnp_wd_pln
+{
+	name: "Page & Price Paper"
+	sort_name: "page & price paper"
+	trailer_look: pnp_paper
+}

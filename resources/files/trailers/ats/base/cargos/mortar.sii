@@ -1,0 +1,10 @@
+cargo_data: cargo.mortar
+{
+	name: "@@cn_mortar@@"
+	fragility: 0.1
+	volume: 3.9
+	mass: 758.9
+	unit_reward_per_km: 0.692
+	unit_load_time: 117
+	body_types[]: curtainside
+}

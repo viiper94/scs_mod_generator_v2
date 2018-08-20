@@ -1,0 +1,43 @@
+trailer : trailer.scs_curt53_4
+{
+	accessories[]: .scs_curt53_4.chassis
+	accessories[]: .scs_curt53_4.rwheel
+	accessories[]: .scs_curt53_4.rwheel2
+	accessories[]: .scs_curt53_4.rwheel3
+	accessories[]: .scs_curt53_4.rwheel4
+	accessories[]: .scs_curt53_4.paint_job
+}
+
+vehicle_accessory: .scs_curt53_4.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/curtain53_4ax.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt53_4.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt53_4.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt53_4.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt53_4.rwheel4
+{
+	offset: 6
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_curt53_4.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/company_paint_job/black.sii"
+}

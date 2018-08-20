@@ -1,0 +1,15 @@
+cargo_data: cargo.soil
+{
+	name: "@@cn_excavated_soil@@"
+	fragility: 0.1
+	maximum_distance: 400
+	group[]: bulk
+	volume: 1
+	mass: 176.902
+	unit_reward_per_km: 0.1575
+	unit_load_time: 30
+	body_types[]: _dumpvelsoil
+	body_types[]: _bdump_2soil
+	body_types[]: _bottumpsoil
+	body_types[]: _bdumm_2soil
+}

@@ -1,0 +1,14 @@
+cargo_data: cargo.gravel
+{
+	name: "@@cn_gravel@@"
+	fragility: 0.1
+	group[]: bulk
+	volume: 1
+	mass: 176.902
+	unit_reward_per_km: 0.1902
+	unit_load_time: 30
+	body_types[]: _dumpvelgrel
+	body_types[]: _bdump_2grel
+	body_types[]: _bottumpgrel
+	body_types[]: _bdumm_2grel
+}

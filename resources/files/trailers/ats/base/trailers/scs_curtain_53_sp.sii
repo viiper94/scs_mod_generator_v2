@@ -1,0 +1,31 @@
+trailer : trailer.scs_curt53s
+{
+	trailer_definition: trailer_def.scs.flatbed.single_53sp.curtain
+
+	accessories[]: .scs_curt53s.chassis
+	accessories[]: .scs_curt53s.rwheel
+	accessories[]: .scs_curt53s.rwheel2
+	accessories[]: .scs_curt53s.paint_job
+}
+
+vehicle_accessory: .scs_curt53s.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/curtain53_sp.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt53s.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_curt53s.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_curt53s.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/company_paint_job/red.sii"
+}

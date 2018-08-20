@@ -1,0 +1,12 @@
+cargo_data: cargo.butter
+{
+	name: "@@cn_butter@@"
+	fragility: 0.3
+	group[]: refrigerated
+	volume: 3.9
+	mass: 711.3
+	unit_reward_per_km: 0.773
+	unit_load_time: 117
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

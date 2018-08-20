@@ -1,10 +1,19 @@
 SiiNunit
 {
-trailer_def : .car_r.cargo_tesla
+trailer_def : trailer_def.cars_small.car_r.cargo_tesla
 {
 	trailer: trailer.car_r.cargo_tesla
-	mass: 10886.3
-	cog_offset: 1
-	cog_offset[]: (0.0, 0.54, 0.0)
+	gross_trailer_weight_limit: 16886.3
+	chassis_mass: 5900
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _car_slacall
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.54,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.54,0.0)
 }
 }

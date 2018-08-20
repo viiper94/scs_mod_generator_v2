@@ -1,0 +1,6 @@
+company_permanent: company.permanent.mcs_con_sit
+{
+	name: "Mud Creek slide"
+	sort_name: "mud creek slide"
+	trailer_look: plain
+}

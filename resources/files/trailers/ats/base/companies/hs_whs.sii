@@ -1,0 +1,6 @@
+company_permanent: company.permanent.hs_whs
+{
+	name: "Home Store"
+	sort_name: "home store"
+	trailer_look: homestore
+}

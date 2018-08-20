@@ -1,0 +1,76 @@
+trailer : trailer.drybulk_ls
+{
+	accessories[]: .drybulk_ls.tchassis
+	accessories[]: .drybulk_ls.trwheel0
+	accessories[]: .drybulk_ls.trwheel1
+	accessories[]: .drybulk_ls.trlr_cables	
+	slave_trailer: .drybulk_ls.dolly
+}
+
+vehicle_accessory: .drybulk_ls.tchassis
+{
+	data_path: "/def/vehicle/trailer/dry_bulk/chassis.sii"
+}
+
+vehicle_wheel_accessory: .drybulk_ls.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .drybulk_ls.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .drybulk_ls.trlr_cables		
+{
+    	data_path: "/def/vehicle/trailer/dry_bulk/accessory/trlr_cables/stock.sii"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dolly xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .drybulk_ls.dolly
+{
+	accessories[]: .drybulk_ls.dolly.tchassis
+	accessories[]: .drybulk_ls.dolly.trwheel0
+	accessories[]: .drybulk_ls.dolly.trlr_cables
+	
+	slave_trailer: .drybulk_ls.second
+}
+
+vehicle_accessory: .drybulk_ls.dolly.tchassis
+{
+	data_path: "/def/vehicle/trailer/dry_bulk/dolly.sii"
+}
+
+vehicle_wheel_accessory: .drybulk_ls.dolly.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .drybulk_ls.dolly.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/dry_bulk/accessory/trlr_cables/stock.sii"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx default long trailer with hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .drybulk_ls.second
+{
+	accessories[]: .drybulk_ls.second.tchassis
+	accessories[]: .drybulk_ls.second.trwheel0
+}
+
+vehicle_accessory: .drybulk_ls.second.tchassis
+{
+	data_path: "/def/vehicle/trailer/dry_bulk/chassis_pup2.sii"
+}
+
+vehicle_wheel_accessory: .drybulk_ls.second.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}

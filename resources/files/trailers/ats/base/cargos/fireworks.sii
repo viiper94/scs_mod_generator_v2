@@ -1,0 +1,12 @@
+cargo_data: cargo.fireworks
+{
+	name: "@@cn_fireworks@@"
+	fragility: 0.55
+	adr_class: 1
+	group[]: containers
+	volume: 3.9
+	mass: 435.5
+	unit_reward_per_km: 1.053
+	unit_load_time: 117
+	body_types[]: dryvan
+}

@@ -1,0 +1,11 @@
+cargo_data: cargo.hipresstank
+{
+	name: "@@cn_presstank@@"
+	fragility: 0.6
+	group[]: construction
+	volume: 4
+	mass: 948.01
+	unit_reward_per_km: 1.092
+	unit_load_time: 120
+	body_types[]: flatbed
+}

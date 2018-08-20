@@ -1,0 +1,12 @@
+cargo_data: cargo.flour
+{
+	name: "@@cn_flour@@"
+	fragility: 0.3
+	group[]: bulk
+	volume: 3.9
+	mass: 881.6
+	unit_reward_per_km: 0.766
+	unit_load_time: 117
+	body_types[]: curtainside
+	body_types[]: dryvan
+}

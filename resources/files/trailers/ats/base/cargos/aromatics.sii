@@ -1,0 +1,13 @@
+cargo_data: cargo.aromatics
+{
+	name: "@@cn_aromatics@@"
+	fragility: 0.5
+	adr_class: 3
+	group[]: liquid
+	volume: 1
+	mass: 129.274
+	unit_reward_per_km: 0.23205
+	unit_load_time: 30
+	body_types[]: _fuelarcs
+	body_types[]: _fuel_larcs
+}

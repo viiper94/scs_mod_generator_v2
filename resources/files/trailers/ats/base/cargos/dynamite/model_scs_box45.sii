@@ -1,0 +1,19 @@
+SiiNunit
+{
+cargo_model_match : .scs_box45
+{
+	compatible_body[]: "/def/vehicle/trailer_owned/scs.box/body/dryvan_45.sii"
+	compatible_body[]: "/def/vehicle/trailer_owned/scs.box/body/insulated_45.sii"
+	compatible_body[]: "/def/vehicle/trailer_owned/scs.box/body/reefer_45.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/dry_45_f.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/dry_45_hook.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/dry_45_r.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/ins_45_f.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/ins_45_hook.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/ins_45_r.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/ref_45_f.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/ref_45_hook.sii"
+	compatible_body[]: "/def/vehicle/trailer/scs_box/ref_45_r.sii"
+	data_path: "/def/vehicle/trailer_cargo/scs_box/hazard_1_45.sii"
+}
+}

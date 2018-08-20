@@ -1,0 +1,82 @@
+trailer : trailer.scs_ins2
+{
+	trailer_definition: trailer_def.scs.box.double_p.insulated
+
+	accessories[]: .scs_ins2.chassis
+	accessories[]: .scs_ins2.rwheel
+	accessories[]: .scs_ins2.paint_job
+	accessories[]: .scs_ins2.trlr_cables
+
+	slave_trailer: .scs_ins2.dolly
+}
+
+vehicle_accessory: .scs_ins2.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ins_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_ins2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ins2.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+vehicle_addon_accessory: .scs_ins2.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .scs_ins2.dolly
+{
+	accessories[]: .scs_ins2.dolly.chassis
+	accessories[]: .scs_ins2.dolly.rwheel
+	accessories[]: .scs_ins2.dolly.trlr_cables
+
+	slave_trailer: .scs_ins2.second
+}
+
+vehicle_accessory: .scs_ins2.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dolly_c.sii"
+}
+
+vehicle_wheel_accessory: .scs_ins2.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .scs_ins2.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .scs_ins2.second
+{
+	accessories[]: .scs_ins2.second.chassis
+	accessories[]: .scs_ins2.second.rwheel
+	accessories[]: .scs_ins2.second.paint_job
+
+}
+
+vehicle_accessory: .scs_ins2.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ins_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_ins2.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ins2.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
