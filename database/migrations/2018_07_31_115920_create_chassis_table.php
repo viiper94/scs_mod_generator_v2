@@ -18,6 +18,7 @@ class CreateChassisTable extends Migration
             $table->string('def');
             $table->string('alias');
             $table->string('alias_short');
+            $table->string('alias_short_paint');
             $table->string('axles');
             $table->integer('wheels_id');
             $table->boolean('supports_wheels')->default(true);
