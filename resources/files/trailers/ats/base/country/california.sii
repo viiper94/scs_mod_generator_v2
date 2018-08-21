@@ -1,0 +1,22 @@
+
+country_data: country.data.california
+{
+	country_id: 1
+
+	name: "California"
+	country_code: "CA"
+
+	pos:(-100000, 0, 4000)
+
+	fuel_price: 1.04057	# $3.939/gallon = $1.04057/litre
+
+	lights_mandatory: false
+	imperial_units: true
+	driving_tired_offence: false
+
+	time_zone: -420		# -7 hours in minutes
+	time_zone_name: "@@tz_pdt@@"
+
+	mass_limit_per_axle_count[]: 350000
+}
+

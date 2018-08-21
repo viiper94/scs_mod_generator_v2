@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.sand.bdump_rm_2
 {
 	trailer: trailer.bdump_rm_2
-	gross_trailer_weight_limit: 28379.7
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5600
 	body_mass: 0
 	length: 24

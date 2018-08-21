@@ -4,8 +4,8 @@ cargo_data: cargo.tractors
 	fragility: 0.69
 	valuable: true
 	group[]: machinery
-	volume: 1
-	mass: 131.542
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.21915
 	unit_load_time: 30
 	body_types[]: _lowbacttrrs

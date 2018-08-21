@@ -3,8 +3,8 @@ cargo_data: cargo.food
 	name: "@@cn_food@@"
 	fragility: 0.4
 	group[]: bulk
-	volume: 3.9
-	mass: 749.6
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.767
 	unit_load_time: 117
 	body_types[]: curtainside

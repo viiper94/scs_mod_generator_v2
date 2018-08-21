@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.scrap_metals.dump_b.cargo_gravel
 {
 	trailer: trailer.dump_b.cargo_gravel
-	gross_trailer_weight_limit: 17111.1
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

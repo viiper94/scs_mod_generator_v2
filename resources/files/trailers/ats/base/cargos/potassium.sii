@@ -4,8 +4,8 @@ cargo_data: cargo.potassium
 	fragility: 0.95
 	adr_class: 4
 	group[]: containers
-	volume: 3.9
-	mass: 769.2
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 1.08
 	unit_load_time: 117
 	body_types[]: dryvan

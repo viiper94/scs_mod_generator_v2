@@ -4,8 +4,8 @@ cargo_data: cargo.excavator
 	fragility: 0.5
 	valuable: true
 	group[]: machinery
-	volume: 1
-	mass: 199.581
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.2208
 	unit_load_time: 30
 	body_types[]: _lowbxcvexor

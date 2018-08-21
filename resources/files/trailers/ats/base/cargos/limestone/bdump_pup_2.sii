@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.limestone.bdump_pup_2
 {
 	trailer: trailer.bdump_pup_2
-	gross_trailer_weight_limit: 23524.1
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 4600
 	body_mass: 0
 	axles: 3

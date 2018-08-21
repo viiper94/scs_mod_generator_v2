@@ -3,8 +3,8 @@ cargo_data: cargo.frozen_food
 	name: "@@cn_frozen_food@@"
 	fragility: 0.4
 	group[]: refrigerated
-	volume: 3.9
-	mass: 725.6
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.756
 	unit_load_time: 117
 	body_types[]: refrigerated

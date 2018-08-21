@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.ethane.gas_l
 {
 	trailer: trailer.gas_l
-	gross_trailer_weight_limit: 24936.6
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 7600
 	body_mass: 0
 	axles: 3

@@ -4,8 +4,8 @@ cargo_data: cargo.bulldozer
 	fragility: 0.6
 	valuable: true
 	group[]: machinery
-	volume: 1
-	mass: 201.849
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.22125
 	unit_load_time: 30
 	body_types[]: _lowbullbuer

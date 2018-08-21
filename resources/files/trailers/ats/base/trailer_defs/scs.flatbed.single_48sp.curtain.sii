@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.flatbed.single_48sp.curtain
+{
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 5805.9
+	body_mass: 898.2
+	length: 14.6304
+	axles: 2
+	volume: 102
+	body_type: curtainside
+	chain_type: single
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,1,0)
+}
+}

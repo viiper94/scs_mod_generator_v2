@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.lye.acid_l
 {
 	trailer: trailer.acid_l
-	gross_trailer_weight_limit: 26070.5
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 7600
 	body_mass: 0
 	axles: 3

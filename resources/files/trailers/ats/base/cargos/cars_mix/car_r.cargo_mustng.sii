@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.cars_mix.car_r.cargo_mustng
 {
 	trailer: trailer.car_r.cargo_mustng
-	gross_trailer_weight_limit: 15298.7
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

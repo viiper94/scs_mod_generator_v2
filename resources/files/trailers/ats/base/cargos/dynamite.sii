@@ -4,8 +4,8 @@ cargo_data: cargo.dynamite
 	fragility: 0.5
 	adr_class: 1
 	group[]: containers
-	volume: 3.9
-	mass: 615.3
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 1.25
 	unit_load_time: 117
 	body_types[]: dryvan

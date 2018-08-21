@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.aromatics.fuel
 {
 	trailer: trailer.fuel
-	gross_trailer_weight_limit: 19127.4
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6100
 	body_mass: 0
 	axles: 3

@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.roadroller.lowboy_r.cargo_roller
 {
 	trailer: trailer.lowboy_r.cargo_roller
-	gross_trailer_weight_limit: 15979.1
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

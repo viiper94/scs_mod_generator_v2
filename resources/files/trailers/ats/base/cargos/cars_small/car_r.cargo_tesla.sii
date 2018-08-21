@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.cars_small.car_r.cargo_tesla
 {
 	trailer: trailer.car_r.cargo_tesla
-	gross_trailer_weight_limit: 16886.3
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

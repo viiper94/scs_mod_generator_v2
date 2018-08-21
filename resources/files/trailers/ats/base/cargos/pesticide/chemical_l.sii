@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.pesticide.chemical_l
 {
 	trailer: trailer.chemical_l
-	gross_trailer_weight_limit: 25390.2
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 7600
 	body_mass: 0
 	axles: 3

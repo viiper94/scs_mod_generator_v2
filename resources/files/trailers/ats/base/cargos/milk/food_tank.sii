@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.milk.food_tank
 {
 	trailer: trailer.food_tank
-	gross_trailer_weight_limit: 25843.7
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 7600
 	body_mass: 0
 	axles: 3

@@ -4,8 +4,8 @@ cargo_data: cargo.diesel
 	fragility: 0.5
 	adr_class: 3
 	group[]: liquid
-	volume: 1
-	mass: 163.294
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.23205
 	unit_load_time: 30
 	body_types[]: _fueldiel

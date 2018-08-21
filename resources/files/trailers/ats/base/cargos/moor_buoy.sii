@@ -3,8 +3,8 @@ cargo_data: cargo.moor_buoy
 	name: "@@cn_moor_buoy@@"
 	fragility: 0.2
 	group[]: construction
-	volume: 45
-	mass: 798.33
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 8.96
 	unit_load_time: 1350
 	body_types[]: flatbed

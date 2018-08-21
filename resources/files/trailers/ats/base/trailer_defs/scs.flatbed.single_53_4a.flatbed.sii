@@ -1,0 +1,25 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.flatbed.single_53_4a.flatbed
+{
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 6726.8
+	body_mass: 0
+	length: 16.1544
+	axles: 4
+	volume: 112.56
+	body_type: flatbed
+	chain_type: single
+
+	country_validity[]: arizona
+	country_validity[]: nevada
+	country_validity[]: new_mexico
+	country_validity[]: oregon
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,1,0)
+}
+}

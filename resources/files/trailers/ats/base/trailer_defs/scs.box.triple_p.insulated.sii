@@ -1,0 +1,47 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.triple_p.insulated
+{
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 13426.42
+	body_mass: 299.4
+	length: 28.6512
+	axles: 5
+	volume: 157.8
+	body_type: insulated
+	chain_type: triple
+
+	country_validity[]: nevada
+	country_validity[]: oregon
+
+	mass_ratio[]: 0.3
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,1,0)
+
+	mass_ratio[]: 0.05
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,0,0)
+
+	mass_ratio[]: 0.3
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,1,0)
+
+	mass_ratio[]: 0.05
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,0,0)
+
+	mass_ratio[]: 0.3
+	min_cog_mass[]: 0
+	min_cog[]: (0,0,0)
+	max_cog_mass[]: 350000
+	max_cog[]: (0,1,0)
+}
+}

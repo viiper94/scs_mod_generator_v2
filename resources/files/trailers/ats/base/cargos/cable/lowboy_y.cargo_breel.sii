@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.cable.lowboy_y.cargo_breel
 {
 	trailer: trailer.lowboy_y.cargo_breel
-	gross_trailer_weight_limit: 25731.3
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

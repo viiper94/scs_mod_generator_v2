@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.machine_pts.gooseneck_b.container_d
 {
 	trailer: trailer.gooseneck_b.container_d
-	gross_trailer_weight_limit: 13764.7
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5500
 	body_mass: 0
 	axles: 3

@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.mbt.mbt
 {
 	trailer: trailer.mbt
-	gross_trailer_weight_limit: 8426.8
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 8100
 	body_mass: 0
 	axles: 3

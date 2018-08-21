@@ -4,8 +4,8 @@ cargo_data: cargo.stones
 	fragility: 0.1
 	maximum_distance: 400
 	group[]: bulk
-	volume: 1
-	mass: 176.902
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.1929
 	unit_load_time: 30
 	body_types[]: _dumpvelstes

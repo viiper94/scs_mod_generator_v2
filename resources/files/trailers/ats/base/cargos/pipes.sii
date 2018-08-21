@@ -3,8 +3,8 @@ cargo_data: cargo.pipes
 	name: "@@cn_pipes@@"
 	fragility: 0.1
 	group[]: construction
-	volume: 4
-	mass: 929.87
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.762
 	unit_load_time: 120
 	body_types[]: flatbed

@@ -3,8 +3,8 @@ cargo_data: cargo.rawmilk
 	name: "@@cn_rawmilk@@"
 	fragility: 0.4
 	group[]: liquid
-	volume: 1
-	mass: 149.686
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.165
 	unit_load_time: 30
 	body_types[]: _foodankralk

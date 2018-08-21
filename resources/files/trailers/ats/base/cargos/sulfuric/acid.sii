@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.sulfuric.acid
 {
 	trailer: trailer.acid
-	gross_trailer_weight_limit: 20034.6
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 6100
 	body_mass: 0
 	axles: 3

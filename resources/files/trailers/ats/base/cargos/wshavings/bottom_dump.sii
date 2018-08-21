@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.wshavings.bottom_dump
 {
 	trailer: trailer.bottom_dump
-	gross_trailer_weight_limit: 22256.2
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5600
 	body_mass: 0
 	axles: 3

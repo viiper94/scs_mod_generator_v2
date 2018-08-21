@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.logs.log.cargo_wood
 {
 	trailer: trailer.log.cargo_wood
-	gross_trailer_weight_limit: 16911.1
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5700
 	body_mass: 0
 	axles: 3

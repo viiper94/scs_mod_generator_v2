@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.sand.dump_b.cargo_cover
 {
 	trailer: trailer.dump_b.cargo_cover
-	gross_trailer_weight_limit: 24824.1
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

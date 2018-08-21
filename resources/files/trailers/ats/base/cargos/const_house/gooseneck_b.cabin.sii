@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.const_house.gooseneck_b.cabin
 {
 	trailer: trailer.gooseneck_b.cabin
-	gross_trailer_weight_limit: 12630.7
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5500
 	body_mass: 0
 	axles: 3

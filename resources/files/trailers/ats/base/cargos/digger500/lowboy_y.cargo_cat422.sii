@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.digger500.lowboy_y.cargo_cat422
 {
 	trailer: trailer.lowboy_y.cargo_cat422
-	gross_trailer_weight_limit: 13484.3
+	gross_trailer_weight_limit: 350000
 	chassis_mass: 5900
 	body_mass: 0
 	axles: 3

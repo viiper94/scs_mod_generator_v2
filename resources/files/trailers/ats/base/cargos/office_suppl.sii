@@ -3,8 +3,8 @@ cargo_data: cargo.office_suppl
 	name: "@@cn_office_supplies@@"
 	fragility: 0.3
 	group[]: bulk
-	volume: 3.9
-	mass: 671
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.71
 	unit_load_time: 117
 	body_types[]: curtainside

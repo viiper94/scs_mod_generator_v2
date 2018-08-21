@@ -3,8 +3,8 @@ cargo_data: cargo.cement
 	name: "@@cn_cement@@"
 	fragility: 0.1
 	group[]: bulk
-	volume: 1
-	mass: 172.366
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.19695
 	unit_load_time: 30
 	body_types[]: _cementcent

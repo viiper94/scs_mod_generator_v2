@@ -4,8 +4,8 @@ cargo_data: cargo.digger500
 	fragility: 0.6
 	valuable: true
 	group[]: machinery
-	volume: 1
-	mass: 74.843
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.2193
 	unit_load_time: 30
 	body_types[]: _lowb422di00

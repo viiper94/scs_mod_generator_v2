@@ -4,8 +4,8 @@ cargo_data: cargo.mercuric
 	fragility: 0.5
 	adr_class: 6
 	group[]: liquid
-	volume: 1
-	mass: 154.222
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.2492625
 	unit_load_time: 30
 	body_types[]: _chemcalmeic

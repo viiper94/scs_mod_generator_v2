@@ -3,8 +3,8 @@ cargo_data: cargo.plows
 	name: "@@cn_plows@@"
 	fragility: 0.3
 	group[]: machinery
-	volume: 47
-	mass: 1500
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 9.165
 	unit_load_time: 1410
 	body_types[]: flatbed

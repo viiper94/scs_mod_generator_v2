@@ -3,8 +3,8 @@ cargo_data: cargo.logs
 	name: "@@cn_logs@@"
 	fragility: 0.2
 	group[]: construction
-	volume: 1
-	mass: 111.111
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.165
 	unit_load_time: 30
 	body_types[]: _logcoodlogs

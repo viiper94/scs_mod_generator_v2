@@ -3,8 +3,8 @@ cargo_data: cargo.largetubes
 	name: "@@cn_largetubes@@"
 	fragility: 0.1
 	group[]: construction
-	volume: 4
-	mass: 943.48
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.8022
 	unit_load_time: 120
 	body_types[]: flatbed

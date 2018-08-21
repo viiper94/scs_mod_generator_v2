@@ -3,8 +3,8 @@ cargo_data: cargo.cable
 	name: "@@cn_cable@@"
 	fragility: 0.1
 	group[]: construction
-	volume: 1
-	mass: 197.313
+	volume: 100
+	mass: %weight%
 	unit_reward_per_km: 0.1905
 	unit_load_time: 30
 	body_types[]: _lowbeelcale
