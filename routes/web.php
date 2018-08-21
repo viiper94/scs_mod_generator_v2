@@ -11,10 +11,21 @@
 |
 */
 
-//Route::get('/db', function(){
-//    $dlc = Dlc::where('active', 1)->find([1, 3]);
-//    return $dlc;
-//});
+Route::get('/db', function(){
+    $dir = resource_path().'/files/trailers/ats/base/cargos/';
+    foreach(scandir($dir) as $cargo){
+        if($cargo !== '.' && $cargo !== '..' && !is_file($dir.$cargo)){
+            foreach(scandir($dir.$cargo) as $file){
+                if($file !== '.' && $file !== '..'){
+                    $content = file_get_contents($dir.$cargo.'/'.$file);
+                    $content = preg_replace('/gross_trailer_weight_limit:\s[0-9.]+/', 'gross_trailer_weight_limit: 350000', $content);
+                    file_put_contents($dir.$cargo.'/'.$file, $content);
+                }
+            }
+        }
+    }
+    return 'Done';
+});
 
 Auth::routes();
 
