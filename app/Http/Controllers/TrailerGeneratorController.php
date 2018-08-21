@@ -20,7 +20,7 @@ class TrailerGeneratorController extends Controller{
         if($game !== 'ats' && $game !== 'ets2') return redirect('/');
         return view('generator.index', [
             'game' => $game,
-            'chassis_list' => Chassis::where('game', $game)->get(),
+            'chassis_list' => Chassis::where('game', $game)->with('dlc')->get(),
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
             'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get()
         ]);

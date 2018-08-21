@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class GalleryController extends Controller{
 
     public function index(){
-        $chassis = Chassis::all();
+        $chassis = Chassis::with('dlc')->get();
         return view('gallery.index', [
             'chassis_list' => $chassis->groupBy('game')
         ]);
