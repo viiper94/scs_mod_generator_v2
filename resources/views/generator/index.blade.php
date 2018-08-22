@@ -4,7 +4,7 @@
 
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
         <section class="trailer-generator">
-            @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && !$errors)
+            @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && $errors->isEmpty())
                 @include('generator.download')
             @endif
             @if($errors->isNotEmpty())
