@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Сер 21 2018 р., 22:45
+-- Час створення: Сер 22 2018 р., 22:05
 -- Версія сервера: 10.1.34-MariaDB
 -- Версія PHP: 7.2.8
 
@@ -731,13 +731,6 @@ CREATE TABLE `mods` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Дамп даних таблиці `mods`
---
-
-INSERT INTO `mods` (`id`, `user_id`, `title`, `file_name`, `params`, `type`, `game`, `created_at`, `updated_at`) VALUES
-(24, 2, 'Brick trailer', '1534883297_Brick_trailer', 'a:1:{s:4:\"form\";a:1:{s:7:\"chassis\";s:13:\"brick_trailer\";}}', 'trailer', 'ets2', '2018-08-21 17:28:17', '2018-08-21 17:28:17');
 
 -- --------------------------------------------------------
 
@@ -1537,13 +1530,6 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Дамп даних таблиці `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `language`, `theme`, `admin`, `remember_token`, `created_at`, `updated_at`) VALUES
-(2, 'Євгеній Зайчук', 'viiper94@gmail.com', '$2y$10$hmIaYHMdsPgWS1qF2tEvQe.soAIUo9FmxqvphjZSywYaEjucTN5K.', '1534883258.jpg', NULL, NULL, 0, 'HivWPJfEKmGj7YvCv1hMT9OW5YdwQmaQIfuo62VI6U3mOVUSIW05OlHesluc', '2018-08-08 07:49:04', '2018-08-21 17:27:38');
-
 -- --------------------------------------------------------
 
 --
@@ -1717,7 +1703,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `mods`
 --
 ALTER TABLE `mods`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT для таблиці `paints`
@@ -1735,7 +1721,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT для таблиці `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT для таблиці `wheels`
