@@ -60,7 +60,8 @@ class TrailerGenerator extends ModGenerator{
 	}
 
 	private function copyTrailerFiles(){
-		mkdir($this->outDir.'/vehicle/trailer', '0777', true);
+		mkdir($this->outDir.'/vehicle');
+		mkdir($this->outDir.'/vehicle/trailer');
 		foreach($this->dlc as $dlc){
 			$this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/trailers', $this->outDir.'/vehicle/trailer');
 		}
