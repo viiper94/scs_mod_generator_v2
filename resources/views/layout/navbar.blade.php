@@ -3,7 +3,7 @@
         @if(Auth::check())
             <li>
                 <div class="user-view" style="min-height: 200px;">
-                    <a href="{{ route('profile') }}"><img class="circle" src="{{ '/images/users/'.Auth::user()->image }}"></a>
+                    <a href="{{ route('profile') }}"><img class="circle" src="{{ '/images/users/'.(Auth::user()->image ?? 'default.jpg') }}"></a>
                     <a href="{{ route('profile') }}"><span class="name center">{{ Auth::user()->name }}</span></a>
                 </div>
             </li>
