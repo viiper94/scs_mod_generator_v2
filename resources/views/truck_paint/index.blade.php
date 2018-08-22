@@ -3,18 +3,20 @@
 @section('content')
 
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
-        @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs'))
-            @include('generator.download')
-        @endif
-        @if($errors)
-            @include('generator.warning')
-        @endif
-        @include('generator.ie')
-        <div class="card" style="width: 600px;">
+        <section class="paint-generator">
+            @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && !$errors)
+                @include('generator.download')
+            @endif
+            @if($errors)
+                @include('generator.warning')
+            @endif
+            @include('generator.ie')
+        </section>
+        <div class="card paint-generator">
             <form method="POST" action="{{route('color_generator')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="card-content">
-                    <div class="row"><h5 class="card-title center">@lang('general.truck_paint_job_generator')</h5></div>
+                    <div class="row"><h5 class="card-title center">ETS2 @lang('general.truck_paint_job_generator')</h5></div>
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
@@ -165,12 +167,19 @@
                 </div>
             </form>
         </div>
-        <section class="card-panel grey-text" style="width: 600px;">
+        <section class="card-panel grey-text paint-generator">
             <span class="card-title">
                 <i class="material-icons left notranslate">warning</i>
                 @lang('general.beta_notification')
             </span>
         </section>
     </div>
+    <div class="fixed-action-btn tooltipped" data-tooltip="@lang('general.how_to')">
+        <a class="mdc-fab mdc-ripple modal-trigger" href="#how" id="how-to">
+            <span class="mdc-fab__icon">?</span>
+        </a>
+    </div>
+
+    @include('truck_paint.how_to')
 
 @endsection
