@@ -37,7 +37,7 @@
             </ol>
         </section>
         <footer class="mdc-dialog__footer">
-            <button type="button" class="mdc-button mdc-ripple mdc-dialog__footer__button mdc-dialog__footer__button--accept">@lang('instructions.close_modal')</button>
+            <button type="button" class="mdc-button mdc-button--raised mdc-ripple mdc-dialog__footer__button mdc-dialog__footer__button--accept">@lang('instructions.close_modal')</button>
         </footer>
     </div>
     <div class="mdc-dialog__backdrop"></div>
