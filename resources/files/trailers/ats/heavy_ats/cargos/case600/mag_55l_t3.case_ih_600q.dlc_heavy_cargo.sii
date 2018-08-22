@@ -1,13 +1,25 @@
 SiiNunit
 {
-trailer_def : .mag_55l_t3.case_ih_600q
+trailer_def : trailer_def.case600.mag_55l_t3.case_ih_600q
 {
 	trailer: trailer.mag_55l_t3.case_ih_600q
-	mass: 25174.4
-	cargo_mass_ratio[]: 0.3
-	cargo_mass_ratio[]: 0.7
-	cog_offset: 2
-	cog_offset[]: (0, 1, 0.5)
-	cog_offset[]: (0, 1, 0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 1900
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _mag_00qca00
+
+	mass_ratio[]: 0.3
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,0.5)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,0.5)
+
+	mass_ratio[]: 0.7
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,0)
 }
 }

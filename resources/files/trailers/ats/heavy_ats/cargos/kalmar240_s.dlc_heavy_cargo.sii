@@ -1,0 +1,13 @@
+cargo_data: cargo.kalmar240_s
+{
+	name: "@@cn_lift_truck_chassis@@"
+	fragility: 0.6
+	valuable: true
+	group[]: machinery
+	volume: 100
+	mass: %weight%
+	unit_reward_per_km: 0.3075
+	unit_load_time: 30
+	body_types[]: _mag_240ka_s
+	overweight: true
+}

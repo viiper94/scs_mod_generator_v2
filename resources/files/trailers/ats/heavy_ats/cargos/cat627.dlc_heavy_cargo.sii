@@ -1,0 +1,13 @@
+cargo_data: cargo.cat627
+{
+	name: "@@cn_scraper@@"
+	fragility: 0.6
+	valuable: true
+	group[]: machinery
+	volume: 100
+	mass: %weight%
+	unit_reward_per_km: 0.3
+	unit_load_time: 30
+	body_types[]: _mag_27hca27
+	overweight: true
+}

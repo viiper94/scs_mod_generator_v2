@@ -1,15 +1,31 @@
 SiiNunit
 {
-trailer_def : .mag_55l_t2s.transformer
+trailer_def : trailer_def.transformer.mag_55l_t2s.transformer
 {
 	trailer: trailer.mag_55l_t2s.transformer
-	mass: 55792
-	cargo_mass_ratio[]: 0.3
-	cargo_mass_ratio[]: 0.35
-	cargo_mass_ratio[]: 0.35
-	cog_offset: 3
-	cog_offset[]: (0, 1, 0.5)
-	cog_offset[]: (0, 1, 0)
-	cog_offset[]: (0, 1, 0)
+	gross_trailer_weight_limit: 350000
+	chassis_mass: 1900
+	body_mass: 0
+	axles: 3
+	volume: 100
+	body_type: _mag_mertrer
+
+	mass_ratio[]: 0.3
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,0.5)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,0.5)
+
+	mass_ratio[]: 0.35
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,0)
+
+	mass_ratio[]: 0.35
+	min_cog_mass[]: 10000
+	min_cog[]: (0,1,0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0,1,0)
 }
 }
