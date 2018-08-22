@@ -20,9 +20,7 @@
 
         @include('layout.languages')
 
-        <footer>
-            @include('layout.footer')
-        </footer>
+        @include('layout.footer')
     </div>
 
 </body>
