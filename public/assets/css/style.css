@@ -95,6 +95,11 @@ body.mdc-theme--dark{
 	padding-left: 350px;
 	min-height: 100vh;
 }
+@media only screen and (max-width : 992px) {
+    .wrapper {
+        padding-left: 0;
+    }
+}
 ol{
     margin-left: 15px;
 }
@@ -185,6 +190,15 @@ nav ul a{
 nav.nav-extended, .tabs{
 	background: var(--mdc-theme-light-background-lighten-1);
 }
+nav.nav-extended{
+    width: calc(100vw - 350px);
+}
+@media only screen and (max-width : 992px) {
+    nav.nav-extended {
+        width: 100%;
+        padding-left: 64px;
+    }
+}
 .mdc-theme--dark nav.nav-extended,
 .mdc-theme--dark .tabs{
 	background: var(--mdc-theme-dark-background-darker-2);
@@ -266,6 +280,15 @@ nav .brand-logo::before{
 	background-size: contain;
 	background-position-y: 82%;
 }
+.sidenav-trigger{
+    position: fixed;
+    left: 20px;
+    top: 11px;
+    z-index: 998;
+}
+.mdc-theme--dark .sidenav-trigger{
+    color: var(--mdc-theme-dark-text);
+}
 
 /* Language modal */
 .lang-btn{
@@ -303,6 +326,22 @@ nav .brand-logo::before{
 
 
 /* Index Page */
+.trailer-generator{
+    width: 700px;
+}
+.paint-generator{
+    width: 600px;
+}
+@media (max-width: 1100px){
+    .trailer-generator{
+        width: 630px;
+    }
+}
+@media (max-width: 992px){
+    .trailer-generator, .paint-generator{
+        width: 95%;
+    }
+}
 .download-row{
 	margin-top: 15px;
 	display: flex;
@@ -333,10 +372,6 @@ nav .brand-logo::before{
 .mdc-text-field:not(.mdc-text-field--upgraded) .mdc-text-field__input {
 	padding-top: 23px;
 }
-/*.mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__label,*/
-/*.mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder{*/
-	/*color: var(--mdc-theme-primary) !important;*/
-/*}*/
 .mdc-theme--dark .mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__label,
 .mdc-theme--dark .mdc-text-field--focused:not(.mdc-text-field--invalid):not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder{
 	color: var(--mdc-theme-primary-light) !important;
@@ -514,6 +549,10 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 }
 
 
+/* Paint Page */
+
+
+
 /* Gallery Page */
 .trailer .card-title{
 	white-space: nowrap;
@@ -540,6 +579,25 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 
 
 /* Footer */
+.page-footer a:hover{
+    text-decoration: underline;
+}
+.page-footer li > a{
+    font-size: 12px;
+}
+.page-footer{
+    background-color: var(--mdc-theme-light-background);
+}
+.mdc-theme--dark .page-footer{
+    background-color: var(--mdc-theme-dark-background);
+}
+.mdc-theme--dark .page-footer .footer-copyright{
+    background-color: var(--mdc-theme-dark-background-darker-2);
+}
+.page-footer, .page-footer .footer-copyright{
+    color: var(--mdc-theme-light-text);
+
+}
 .fs20{
 	font-size: 20px;
 }
@@ -551,6 +609,19 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark label,
 .mdc-theme--dark footer a{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
+}
+
+
+/* Modals */
+.mdc-dialog{
+    z-index: 1000;
+}
+.mdc-dialog a{
+    color: #000;
+}
+.mdc-theme--dark .mdc-dialog a{
+    color: #fff;
+    text-decoration: underline;
 }
 
 

@@ -1,4 +1,4 @@
-<nav class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
+<nav id="slide-out" class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
     <ul class="top-menu">
         @if(Auth::check())
             <li>
@@ -9,10 +9,10 @@
             </li>
         @endif
         <li @if(Request::is('/'))class="active"@endif>
-            <a class="waves-effect" href="{{url('/')}}"><i class="truck-icons truck-eu"></i>@lang('general.ets2_trailer_generator')</a>
+            <a class="waves-effect" href="{{url('/')}}"><i class="truck-icons truck-eu"></i>@lang('general.ets2') @lang('general.trailer_generator')</a>
         </li>
         <li @if(Request::is('ats'))class="active"@endif>
-            <a class="waves-effect" href="{{url('/', 'ats')}}"><i class="truck-icons truck-us"></i>@lang('general.ats_trailer_generator')</a>
+            <a class="waves-effect" href="{{url('/', 'ats')}}"><i class="truck-icons truck-us"></i>@lang('general.ats') @lang('general.trailer_generator')</a>
         </li>
         <li @if(Request::is('color'))class="active"@endif>
             <a class="waves-effect" href="{{route('color')}}"><i class="material-icons notranslate">format_paint</i>@lang('general.truck_paint_job_generator')</a>
@@ -54,3 +54,4 @@
         </li>
     </ul>
 </nav>
+<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons notranslate">menu</i></a>

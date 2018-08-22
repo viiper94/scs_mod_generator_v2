@@ -47,6 +47,7 @@ $(document).ready(function(){
 	$('.wheels select').formSelect();
 	$('.tabs').tabs();
 	$('.collapsible').collapsible();
+	$('.sidenav').sidenav();
 
 	$('.show-skin').collapsible({
 		onOpenStart : function(){

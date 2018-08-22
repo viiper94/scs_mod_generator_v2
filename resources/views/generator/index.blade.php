@@ -3,19 +3,20 @@
 @section('content')
 
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
-        @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs'))
-            @include('generator.download')
-        @endif
-        @if($errors->isNotEmpty())
-            {{ dump($errors) }}
-            @include('generator.warning')
-        @endif
-        @include('generator.ie')
-        <section class="card" style="width: 700px;">
+        <section class="trailer-generator">
+            @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && !$errors)
+                @include('generator.download')
+            @endif
+            @if($errors->isNotEmpty())
+                @include('generator.warning')
+            @endif
+            @include('generator.ie')
+        </section>
+        <section class="card trailer-generator">
             <form action="{{route('generator')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <div class="card-content">
-                    <div class="row"><h5 class="card-title center">@lang('general.head_title')</h5></div>
+                    <div class="row"><h5 class="card-title center">@lang('general.'.$game) @lang('general.trailer_generator')</h5></div>
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
@@ -186,7 +187,7 @@
         @if(!$hasUserAcceptLanguage)
             @include('generator.translate')
         @endif
-        <section class="card-panel grey-text" style="width: 700px;">
+        <section class="card-panel grey-text trailer-generator">
             <span class="card-title">
                 <i class="material-icons left notranslate">warning</i>
                 @lang('general.beta_notification')
