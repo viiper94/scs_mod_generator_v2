@@ -1,5 +1,8 @@
 <?php
 
+
+$return = json_decode(file_get_contents(resource_path('lang/json/'.basename(__DIR__).'.json')), true);
+
 return [
 
     /*
@@ -13,7 +16,7 @@ return [
     |
     */
 
-    'failed' => json_decode(file_get_contents(resource_path('lang/json/'.basename(__DIR__).'.json')), true)['auth']['failed'],
+    'failed' => key_exists('auth', $return) ? $return['auth']['failed'] : false,
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

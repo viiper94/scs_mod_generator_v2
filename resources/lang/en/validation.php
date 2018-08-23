@@ -1,5 +1,7 @@
 <?php
 
+$return = json_decode(file_get_contents(resource_path('lang/json/'.basename(__DIR__).'.json')), true);
+
 return [
 
     /*
@@ -124,7 +126,7 @@ return [
     |
     */
 
-    'custom' => json_decode(file_get_contents(resource_path('lang/json/'.basename(__DIR__).'.json')), true)['validators'],
+    'custom' => key_exists('validators', $return) ? $return['validators'] : false,
 
 //    'custom' => [
 //        'attribute-name' => [
