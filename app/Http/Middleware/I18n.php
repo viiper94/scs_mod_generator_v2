@@ -31,7 +31,7 @@ class I18n{
     public function handle($request, Closure $next){
 
         $this->userAcceptLangs = $this->getUserAcceptLanguage();
-        $this->languages = Language::where('active', '1')->get()->keyBy('locale')->toArray();
+        $this->languages = Language::where('active', '1')->orderBy('locale')->get()->keyBy('locale')->toArray();
 
         App::setLocale($request->cookie('lang') ?? $this->getUserLanguage());
         view()->share([
