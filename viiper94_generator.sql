@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Сер 22 2018 р., 22:05
+-- Час створення: Сер 23 2018 р., 11:03
 -- Версія сервера: 10.1.34-MariaDB
 -- Версія PHP: 7.2.8
 
@@ -421,27 +421,27 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `alias_short_paint`,
 (94, '/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii', 'magnitude_55l_2_3', 'magnitude_55l_2_3', 'magnitude_55l_2_3', '2', 1, 1, 1, 1, 0, NULL, 0, 'ats', 8, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (95, '/def/vehicle/trailer/mbt1_barrier/chassis.sii', 'mbt', 'mbt', 'mbt', '2', 1, 1, 0, 0, 0, NULL, 0, 'ats', NULL, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (103, '/def/vehicle/trailer/scs_box/curtain_sider/chassis.sii', 'curtain_sider', 'curtain_sider', 'curtain_sider', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
-(104, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_aero.sii', 'curtain_sider_aero', 'curtain_sider', 'curtain_sider', '3', 1, 1, 0, 0, 1, '/def/vehicle/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
-(105, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_hook.sii', 'curtain_sider_double', 'curtain_sider', 'curtain_sider', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
-(106, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_bd.sii', 'curtain_sider_bdouble', 'curtain_sider', 'curtain_sider', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
-(107, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_stw.sii', 'curtain_sider_steer', 'curtain_sider', 'curtain_sider', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
+(104, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_aero.sii', 'curtain_sider_aero', 'curtain_sider_aero', 'curtain_sider', '3', 1, 1, 0, 0, 1, '/def/vehicle/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
+(105, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_hook.sii', 'curtain_sider_double', 'curtain_sider_double', 'curtain_sider', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
+(106, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_bd.sii', 'curtain_sider_bdouble', 'curtain_sider_bdouble', 'curtain_sider', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
+(107, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_stw.sii', 'curtain_sider_steer', 'curtain_sider_steer', 'curtain_sider', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
 (108, '/def/vehicle/trailer/scs_box/reefer/chassis.sii', 'refrigerated', 'refrigerated', 'refrigerated', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
-(109, '/def/vehicle/trailer/scs_box/reefer/chassis_hook.sii', 'refrigerated_double', 'refrigerated', 'refrigerated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(110, '/def/vehicle/trailer/scs_box/reefer/chassis_bd.sii', 'refrigerated_bdouble', 'refrigerated', 'refrigerated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(111, '/def/vehicle/trailer/scs_box/reefer/chassis_stw.sii', 'refrigerated_steer', 'refrigerated', 'refrigerated', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(112, '/def/vehicle/trailer/scs_box/reefer/chassis_aero.sii', 'refrigerated_aero', 'refrigerated', 'refrigerated', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(109, '/def/vehicle/trailer/scs_box/reefer/chassis_hook.sii', 'refrigerated_double', 'refrigerated_double', 'refrigerated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(110, '/def/vehicle/trailer/scs_box/reefer/chassis_bd.sii', 'refrigerated_bdouble', 'refrigerated_bdouble', 'refrigerated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(111, '/def/vehicle/trailer/scs_box/reefer/chassis_stw.sii', 'refrigerated_steer', 'refrigerated_steer', 'refrigerated', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(112, '/def/vehicle/trailer/scs_box/reefer/chassis_aero.sii', 'refrigerated_aero', 'refrigerated_aero', 'refrigerated', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (113, '/def/vehicle/trailer/scs_box/insulated/chassis.sii', 'insulated', 'insulated', 'insulated', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(114, '/def/vehicle/trailer/scs_box/insulated/chassis_aero.sii', 'insulated_aero', 'insulated', 'insulated', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(115, '/def/vehicle/trailer/scs_box/insulated/chassis_hook.sii', 'insulated_double', 'insulated', 'insulated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(116, '/def/vehicle/trailer/scs_box/insulated/chassis_bd.sii', 'insulated_bdouble', 'insulated', 'insulated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(117, '/def/vehicle/trailer/scs_box/insulated/chassis_stw.sii', 'insulated_steer', 'insulated', 'insulated', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(114, '/def/vehicle/trailer/scs_box/insulated/chassis_aero.sii', 'insulated_aero', 'insulated_aero', 'insulated', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(115, '/def/vehicle/trailer/scs_box/insulated/chassis_hook.sii', 'insulated_double', 'insulated_double', 'insulated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(116, '/def/vehicle/trailer/scs_box/insulated/chassis_bd.sii', 'insulated_bdouble', 'insulated_bdouble', 'insulated', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(117, '/def/vehicle/trailer/scs_box/insulated/chassis_stw.sii', 'insulated_steer', 'insulated_steer', 'insulated', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (118, '/def/vehicle/trailer/scs_box/dry_van/chassis.sii', 'dry_van', 'dry_van', 'dry_van', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(119, '/def/vehicle/trailer/scs_box/dry_van/chassis_aero.sii', 'dry_van_aero', 'dry_van', 'dry_van', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(120, '/def/vehicle/trailer/scs_box/dry_van/chassis_hook.sii', 'dry_van_double', 'dry_van', 'dry_van', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(121, '/def/vehicle/trailer/scs_box/dry_van/chassis_bd.sii', 'dry_van_bdouble', 'dry_van', 'dry_van', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(122, '/def/vehicle/trailer/scs_box/dry_van/chassis_stw.sii', 'dry_van_steer', 'dry_van', 'dry_van', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(119, '/def/vehicle/trailer/scs_box/dry_van/chassis_aero.sii', 'dry_van_aero', 'dry_van_aero', 'dry_van', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(120, '/def/vehicle/trailer/scs_box/dry_van/chassis_hook.sii', 'dry_van_double', 'dry_van_double', 'dry_van', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(121, '/def/vehicle/trailer/scs_box/dry_van/chassis_bd.sii', 'dry_van_bdouble', 'dry_van_bdouble', 'dry_van', '3', 1, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 0, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(122, '/def/vehicle/trailer/scs_box/dry_van/chassis_stw.sii', 'dry_van_steer', 'dry_van_steer', 'dry_van', '3', 1, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (123, '/def/vehicle/trailer/scs_box/moving_floor/chassis.sii', 'moving_floor', 'moving_floor', 'moving_floor', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(124, '/def/vehicle/trailer/scs_box/moving_floor/chassis_stw.sii', 'moving_floor_steer', 'moving_floor', 'moving_floor', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
+(124, '/def/vehicle/trailer/scs_box/moving_floor/chassis_stw.sii', 'moving_floor_steer', 'moving_floor_steer', 'moving_floor', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/default.sii', 1, 'ets2', NULL, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (125, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'dry_bulk', 'dry_bulk', 'dry_bulk', '2', 1, 1, 0, 0, 0, NULL, 0, 'ats', NULL, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
 (126, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'drybulk_long', 'drybulk_long', 'drybulk_long', '2', 1, 1, 1, 0, 0, NULL, 0, 'ats', NULL, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
 (127, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'drybulk_ls', 'drybulk_ls', 'drybulk_ls', '2', 1, 1, 1, 0, 0, NULL, 0, 'ats', NULL, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
@@ -676,13 +676,14 @@ INSERT INTO `languages` (`id`, `locale`, `title`, `active`, `created_at`, `updat
 (11, 'nl', 'Nederlands', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (12, 'nn', 'Nynorsk', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (13, 'pl', 'Polski', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
-(14, 'pt', 'Português', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
+(14, 'pt', 'Português', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (15, 'ro', 'Română', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (16, 'ru', 'Русский', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (17, 'sv', 'Svenska', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (18, 'tr', 'Türkçe', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (19, 'uk', 'Українська', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
-(20, 'zh', '简体中文', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45');
+(20, 'zh', '简体中文', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
+(21, 'hr', 'Hrvatski', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1691,7 +1692,7 @@ ALTER TABLE `error_codes`
 -- AUTO_INCREMENT для таблиці `languages`
 --
 ALTER TABLE `languages`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT для таблиці `migrations`
@@ -1703,7 +1704,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `mods`
 --
 ALTER TABLE `mods`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT для таблиці `paints`
@@ -1721,7 +1722,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT для таблиці `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблиці `wheels`
