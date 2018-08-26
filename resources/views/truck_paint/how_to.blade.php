@@ -6,11 +6,11 @@
         <section id="my-mdc-dialog-description" class="mdc-dialog__body">
             <h6>@lang('instructions.paint_description')</h6>
             <ol>
-                <li>@lang('instructions.paint_mod_1')</li>
-                <li>@lang('instructions.paint_mod_2')</li>
+                <li>@lang('instructions.generate_mod_1')</li>
+                <li>@lang('instructions.generate_mod_2')</li>
                 <li>@lang('instructions.paint_mod_3')</li>
                 <li>@lang('instructions.paint_mod_4')</li>
-                <li>@lang('instructions.paint_mod_5')</li>
+                <li>@lang('instructions.generate_mod_6')</li>
             </ol>
         </section>
         <header class="mdc-dialog__header">
