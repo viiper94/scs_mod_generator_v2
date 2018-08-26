@@ -130,8 +130,8 @@
                                         <div class="input-wrapper">
                                             <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">add_photo_alternate</i>
                                             <input type="file" name="img" id="image" accept="image/jpeg, image/png"
-                                                   data-size="@lang('general.max_file_size_5')"
-                                                   data-dimensions="@lang('general.max_dimensions_3000')">
+                                                   data-size="@lang('validation.custom.img.max')"
+                                                   data-dimensions="@lang('validation.custom.img.dimensions')">
                                         </div>
                                         <div class="file-path-wrapper">
                                             <input class="file-path right" type="text" id="image-path" placeholder="@lang('general.upload_image')" readonly>
