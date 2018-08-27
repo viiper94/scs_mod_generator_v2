@@ -20,6 +20,13 @@
         <li @if(Request::is('gallery'))class="active"@endif>
             <a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a>
         </li>
+        @if(Auth::user()->admin === 1)
+            <li>
+                <a class="waves-effect" href="{{route('admin')}}">
+                    <i class="material-icons notranslate">developer_mode</i>@lang('admin.admin_title')
+                </a>
+            </li>
+        @endif
     </ul>
     <ul class="bottom-menu">
         @guest

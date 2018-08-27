@@ -27,5 +27,13 @@ Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
 Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
 Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
 
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin/trailers', 'AdminController@index')->name('trailers');
+Route::get('/admin/accessories', 'AdminController@index')->name('accessories');
+Route::get('/admin/paint_jobs', 'AdminController@index')->name('paint_jobs');
+Route::get('/admin/wheels', 'AdminController@index')->name('wheels');
+Route::get('/admin/dlc', 'AdminController@index')->name('dlc');
+Route::get('/admin/mods', 'AdminController@index')->name('mods');
+
 Route::get('/{game?}/{d?}', 'TrailerGeneratorController@index');
 Route::post('/{game?}', 'TrailerGeneratorController@getChassisData');
