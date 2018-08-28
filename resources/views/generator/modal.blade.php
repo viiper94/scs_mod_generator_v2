@@ -33,7 +33,7 @@
                 <li>@lang('instructions.mp_use_1')</li>
                 <li>@lang('instructions.mp_use_2')</li>
                 <li>@lang('instructions.mp_use_3')</li>
-                <li>@lang('instructions.mp_use_4') <a href="https://truckersmp.com/rules">https://truckersmp.com/rules</a></li>
+                <li>@lang('instructions.mp_use_4') <a href="https://truckersmp.com/rules" target="_blank">https://truckersmp.com/rules</a></li>
             </ol>
         </section>
         <footer class="mdc-dialog__footer">
