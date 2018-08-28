@@ -20,5 +20,7 @@
         </main>
     </div>
 
+    @include('layout.scripts')
+
 </body>
 </html>

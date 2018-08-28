@@ -21,6 +21,8 @@
         @include('layout.languages')
 
         @include('layout.footer')
+
+        @include('layout.scripts')
     </div>
 
 </body>
