@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 class TrailerGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
-        if($game !== 'ats' && $game !== 'ets2') return redirect('/');
+        if($game !== 'ats' && $game !== 'ets2') abort(404);
         return view('generator.index', [
             'game' => $game,
             'chassis_list' => Chassis::where('game', $game)->with('dlc')->get(),
