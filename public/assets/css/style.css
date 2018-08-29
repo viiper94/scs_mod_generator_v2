@@ -596,7 +596,6 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 }
 .page-footer, .page-footer .footer-copyright{
     color: var(--mdc-theme-light-text);
-
 }
 .fs20{
 	font-size: 20px;
@@ -609,6 +608,16 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark label,
 .mdc-theme--dark footer a{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
+}
+
+
+/* Errors pages */
+.not-found h1{
+    font-size: 10rem;
+}
+.mdc-theme--dark .not-found h1,
+.mdc-theme--dark .not-found h3{
+    color: var(--mdc-theme-text-primary-on-primary-dark);
 }
 
 
