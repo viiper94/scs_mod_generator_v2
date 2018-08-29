@@ -20,10 +20,12 @@ class ProfileController extends Controller{
     }
 
     public function edit(){
+        if(!Auth::check()) return redirect('/login');
         return view('profile.edit', ['user' => Auth::user()]);
     }
 
     public function editProfile(Request $request){
+        if(!Auth::check()) return redirect('/login');
         $this->validate($request, [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email,'.Auth::id(),
