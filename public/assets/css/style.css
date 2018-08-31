@@ -127,6 +127,14 @@ select{
 [type="checkbox"]:checked {
 	pointer-events: auto;
 }
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after{
+    background-color: var(--mdc-theme-primary-dark);
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before,
+[type="radio"].with-gap:checked+span:after{
+    border-color: var(--mdc-theme-primary-dark);
+}
 .mdc-theme--dark .mdc-text-field__bottom-line{
     background-color: var(--mdc-theme-primary-dark);
 }
@@ -461,6 +469,9 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 	margin-top: 35px;
 	max-width: 430px;
 }
+.admin-panel .input-field.wheels{
+	max-width: 100%;
+}
 .file-field{
 	margin-top: 0;
 	display: flex;
@@ -494,7 +505,7 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 	color: var(--mdc-theme-text-primary-on-primary);
 }
 .select-wrapper input.select-dropdown:focus{
-	border-bottom: #546e7a solid 1px;
+	border-bottom: var(--mdc-theme-primary-dark) solid 1px;
 }
 .wheels .select-wrapper li{
 	display: flex;
@@ -609,6 +620,10 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark footer a{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
 }
+
+
+/* Admin Page */
+
 
 
 /* Errors pages */

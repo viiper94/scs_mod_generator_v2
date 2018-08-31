@@ -29,6 +29,7 @@ class CreateChassisTable extends Migration
             $table->boolean('can_random')->default(false);
             $table->string('game')->default('ets2');
             $table->integer('dlc_id')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

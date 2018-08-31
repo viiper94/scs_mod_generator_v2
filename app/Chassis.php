@@ -12,12 +12,14 @@ class Chassis extends Model{
     public $customWheels = false;
 
     protected $table = 'chassis';
+    protected $guarded = [];
     protected $casts = [
         'supports_wheels' => 'boolean',
         'coupled' => 'boolean',
         'with_accessory' => 'boolean',
         'with_paint_job' => 'boolean',
         'can_random' => 'boolean',
+        'active' => 'boolean',
     ];
 
     public function dlc(){

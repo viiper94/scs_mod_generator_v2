@@ -28,15 +28,22 @@ Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profil
 Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
 
 Route::group(['middleware' => 'admin'], function () {
+
+    Route::any('/admin/{controller}/{action}/{id?}', function($controller, $action, $id){
+        $app = app();
+        $controller = $app->make('\App\Http\Controllers\\Admin'.ucfirst($controller).'Controller');
+        return $controller->callAction($action, $parameters = array(Request::instance(), $id));
+    });
+
     Route::get('/admin', 'AdminController@index')->name('admin');
-    Route::get('/admin/trailers', 'AdminController@index')->name('trailers');
-    Route::get('/admin/accessories', 'AdminController@index')->name('accessories');
-    Route::get('/admin/paint_jobs', 'AdminController@index')->name('paint_jobs');
-    Route::get('/admin/wheels', 'AdminController@index')->name('wheels');
-    Route::get('/admin/dlc', 'AdminController@index')->name('dlc');
-    Route::get('/admin/mods', 'AdminController@index')->name('mods');
-    Route::get('/admin/languages', 'AdminController@index')->name('languages');
-    Route::get('/admin/users', 'AdminController@index')->name('users');
+    Route::get('/admin/trailers', 'AdminTrailersController@index')->name('trailers');
+    Route::get('/admin/accessories', 'AdminController@accessories')->name('accessories');
+    Route::get('/admin/paint_jobs', 'AdminController@paintJobs')->name('paint_jobs');
+    Route::get('/admin/wheels', 'AdminController@wheels')->name('wheels');
+    Route::get('/admin/dlc', 'AdminController@dlc')->name('dlc');
+    Route::get('/admin/mods', 'AdminController@mods')->name('mods');
+    Route::get('/admin/languages', 'AdminController@languages')->name('languages');
+    Route::get('/admin/users', 'AdminController@users')->name('users');
 });
 
 Route::get('/{game?}/{d?}', 'TrailerGeneratorController@index');

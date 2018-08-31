@@ -9,7 +9,7 @@
     @include('layout.header')
     <title>@lang('admin.admin_title') @lang('general.title')</title>
 </head>
-<body @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')class="mdc-theme--dark " @endif>>
+<body class="admin-panel @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')mdc-theme--dark @endif">
 
     <header>
         @include('admin.layout.navbar')
