@@ -27,11 +27,11 @@ Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
 Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
 Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
 
-Route::group(['middleware' => 'admin'], function () {
+Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
 
-    Route::any('/admin/{controller}/{action}/{id?}', function($controller, $action, $id){
+    Route::any('/admin/{controller}/{action}/{id?}', function($controller, $action, $id = null){
         $app = app();
-        $controller = $app->make('\App\Http\Controllers\\Admin'.ucfirst($controller).'Controller');
+        $controller = $app->make('\App\Http\Controllers\Admin\Admin'.ucfirst($controller).'Controller');
         return $controller->callAction($action, $parameters = array(Request::instance(), $id));
     });
 
