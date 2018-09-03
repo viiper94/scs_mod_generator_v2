@@ -30,7 +30,8 @@ $(document).ready(function(){
 		if(this.checked){
 			$('body').addClass('mdc-theme--dark');
 			setCookie('dark_theme', 'true', {
-				expires : 3600 * 24 * 365
+				expires : 3600 * 24 * 365,
+                path : '/'
 			});
 		}else{
 			$('body').removeClass('mdc-theme--dark');
