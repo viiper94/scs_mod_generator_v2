@@ -188,7 +188,16 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=p
 .text-shadow{
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
-
+.card-image.no-img_horizontal{
+	width: 300px;
+	max-width: 33%;
+	background-position: center center;
+	background-size: cover;
+}
+a.mdc-fab span.mdc-fab__icon{
+	line-height: 56px;
+	text-align: center;
+}
 
 /* Nav Bar */
 nav ul a{
@@ -623,7 +632,17 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 
 
 /* Admin Page */
-
+.search{
+	padding: 0;
+}
+.search [name=q]{
+	margin-bottom: 0;
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+.search .input-field .prefix{
+	text-align: center;
+}
 
 
 /* Errors pages */
