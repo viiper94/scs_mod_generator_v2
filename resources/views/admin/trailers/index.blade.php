@@ -17,13 +17,25 @@
         </div>
     @endif
 
+    <div class="row" style="width: 100%;">
+        <div class="col s12 m10 offset-m1">
+            <div class="card-panel search">
+                <form method="get">
+                    <div class="input-field no-margin">
+                        <i class="material-icons prefix">search</i>
+                        <input type="search" name="q" placeholder="Шукати шассі">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="row">
         @foreach($chassis_list as $chassis)
             <div class="col s12 m10 offset-m1">
                 <div class="card horizontal hoverable">
-                    <div class="card-image" @if(!$chassis->active)style="opacity: .2;" @endif>
-                        <img src="/assets/img/trailers/{{$chassis->alias_short}}/{{$chassis->alias_short}}.jpg" style="max-height: 200px;">
-                    </div>
+                    <div class="card-image no-img_horizontal"
+                         style="background-image: url(/assets/img/trailers/{{ $chassis->alias_short }}/{{$chassis->alias_short}}.jpg );
+                         @if(!$chassis->active)opacity: .2; @endif"></div>
                     <div class="card-stacked">
                         <div class="card-content">
                             <h5 class="card-title">
