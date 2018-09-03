@@ -31,18 +31,23 @@ Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
 
     Route::any('/admin/{controller}/{action}/{id?}', function($controller, $action, $id = null){
         $app = app();
-        $controller = $app->make('\App\Http\Controllers\Admin\Admin'.ucfirst($controller).'Controller');
-        return $controller->callAction($action, $parameters = array(Request::instance(), $id));
+        try{
+            $controller = $app->make('\App\Http\Controllers\Admin\Admin'.ucfirst($controller).'Controller');
+            if(!method_exists($controller, $action)) throw new ReflectionException();;
+            return $controller->callAction($action, $parameters = array(Request::instance(), $id));
+        }catch(ReflectionException $e){
+            abort(404);
+        }
     });
 
     Route::get('/admin', 'AdminController@index')->name('admin');
     Route::get('/admin/trailers', 'AdminTrailersController@index')->name('trailers');
-    Route::get('/admin/accessories', 'AdminController@accessories')->name('accessories');
+    Route::get('/admin/accessories', 'AdminAccessoriesController@index')->name('accessories');
     Route::get('/admin/paint_jobs', 'AdminController@paintJobs')->name('paint_jobs');
     Route::get('/admin/wheels', 'AdminController@wheels')->name('wheels');
-    Route::get('/admin/dlc', 'AdminController@dlc')->name('dlc');
+    Route::get('/admin/dlc', 'AdminDlcController@index')->name('dlc');
     Route::get('/admin/mods', 'AdminController@mods')->name('mods');
-    Route::get('/admin/languages', 'AdminController@languages')->name('languages');
+    Route::get('/admin/languages', 'AdminLanguagesController@index')->name('languages');
     Route::get('/admin/users', 'AdminController@users')->name('users');
 });
 
