@@ -643,6 +643,15 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .search .input-field .prefix{
 	text-align: center;
 }
+.mdc-theme--dark table{
+    color: var(--mdc-theme-text-primary-on-primary-dark);
+}
+.mdc-theme--dark table tr{
+    border-bottom-color: var(--mdc-theme-background-dark-3);
+}
+.mdc-theme--dark table.highlight>tbody>tr:hover{
+    background-color: var(--mdc-theme-background-dark-3);
+}
 
 
 /* Errors pages */
