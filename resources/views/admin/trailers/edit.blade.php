@@ -15,7 +15,15 @@
             <form method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="card-content">
-                    <div class="row"><h5 class="card-title center">@lang($chassis->game.'_trailers.'.$chassis->alias)</h5></div>
+                    <div class="row">
+                        <h5 class="card-title center">
+                            @if($chassis->game && $chassis->alias)
+                                @lang($chassis->game.'_trailers.'.$chassis->alias)
+                            @else
+                                Додати нове шассі
+                            @endif
+                        </h5>
+                    </div>
                     <div class="row" style="margin-left: 1rem;">
                         <p class="col s6 center">
                             <label>
@@ -33,13 +41,13 @@
                     <div class="row">
                         <div class="input-field col s12 no-margin">
                             <input id="def" type="text" name="def" value="{{ $chassis->def }}" required>
-                            <label for="def">Def</label>
+                            <label for="def">Def*</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin">
                             <input id="alias" type="text" name="alias" value="{{ $chassis->alias }}" required>
-                            <label for="alias">Alias</label>
+                            <label for="alias">Alias*</label>
                         </div>
                     </div>
                     <div class="row">
@@ -57,7 +65,7 @@
                     <div class="row">
                         <div class="input-field col s12 no-margin">
                             <input id="axles" type="number" name="axles" value="{{ $chassis->axles }}" required>
-                            <label for="axles">Кількість осей</label>
+                            <label for="axles">Кількість осей*</label>
                         </div>
                     </div>
                     <div class="row">
@@ -71,11 +79,11 @@
                             <select name="wheels_id" required>
                                 @foreach($wheels as $wheel)
                                     <option value="{{ $wheel->id }}"
-                                        @if($chassis->wheels_id == $wheel->id) selected @endif>@lang($chassis->game.'_wheels.'.$wheel->alias)
+                                        @if($chassis->wheels_id == $wheel->id) selected @endif>@lang($wheel->game.'_wheels.'.$wheel->alias)
                                     </option>
                                 @endforeach
                             </select>
-                            <label>Колеса</label>
+                            <label>Колеса*</label>
                         </div>
                     </div>
                     <div class="row">

@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Chassis;
 use App\Dlc;
+use App\Http\Controllers\Controller;
 use App\Wheel;
 use Illuminate\Http\Request;
 
@@ -43,7 +44,7 @@ class AdminTrailersController extends Controller{
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
             ]);
-            if($chassis->save()) return redirect()->route('trailers');
+            if($chassis->save()) return redirect()->route('trailers')->with(['success' => 'Причіп успішно відредаговано!']);;
         }
 
         $chassis = Chassis::where('id', $id)->first();
@@ -93,6 +94,45 @@ class AdminTrailersController extends Controller{
         return $chassis->save() ?
             redirect()->route('trailers')->with(['success' => 'Виконано!']) :
             redirect()->route('trailers')->withErrors(['Виникла помилка!']);
+    }
+
+    public function add(Request $request){
+        $chassis = new Chassis();
+
+        if($request->method() === 'POST'){
+            $this->validate($request, [
+                'game' => 'required|string',
+                'def' => 'required|string',
+                'alias' => 'required|string',
+                'axles' => 'required|numeric|max:50',
+                'wheels_id' => 'required|numeric',
+                'default_paint_job' => 'required_if:with_paint_job,on',
+            ]);
+            $chassis->fill([
+                'game' => $request->input('game', 'ets2'),
+                'def' => $request->input('def'),
+                'alias' => $request->input('alias'),
+                'alias_short' => $request->input('alias_short', $request->input('alias')),
+                'alias_short_paint' => $request->input('alias_short_paint', $request->input('alias')),
+                'axles' => $request->input('axles'),
+                'default_paint_job' => $request->input('default_paint_job', null),
+                'wheels_id' => $request->input('wheels_id'),
+                'dlc_id' => $request->input('dlc_id', null),
+                'supports_wheels' => $request->input('supports_wheels') == 'on',
+                'active' => $request->input('active') == 'on',
+                'coupled' => $request->input('coupled') == 'on',
+                'with_accessory' => $request->input('with_accessory') == 'on',
+                'with_paint_job' => $request->input('with_paint_job') == 'on',
+                'can_random' => $request->input('can_random') == 'on',
+            ]);
+            if($chassis->save()) return redirect()->route('trailers')->with(['success' => 'Причіп успішно додано!']);
+        }
+
+        return view('admin.trailers.edit', [
+            'chassis' => $chassis,
+            'wheels' => Wheel::where(['active' =>  1])->get(),
+            'dlc' => Dlc::where(['active' => 1])->get()
+        ]);
     }
 
 }
