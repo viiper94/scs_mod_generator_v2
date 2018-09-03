@@ -44,7 +44,9 @@ class AdminTrailersController extends Controller{
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
             ]);
-            if($chassis->save()) return redirect()->route('trailers')->with(['success' => 'Причіп успішно відредаговано!']);;
+            return $chassis->save() ?
+                redirect()->route('trailers')->with(['success' => 'Причіп успішно відредаговано!']) :
+                redirect()->back()->withErrors(['Виникла помилка']);
         }
 
         $chassis = Chassis::where('id', $id)->first();
