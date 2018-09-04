@@ -17,16 +17,15 @@
         </div>
     @endif
 
-    <div class="row" style="width: 100%;">
+    @include('admin.search')
+
+    <div class="row no-margin">
         <div class="col s12 m10 offset-m1">
-            <div class="card-panel search">
-                <form method="get">
-                    <div class="input-field no-margin">
-                        <i class="material-icons prefix">search</i>
-                        <input type="search" name="q" placeholder="Шукати шассі">
-                    </div>
-                </form>
-            </div>
+            @if(count($chassis_list) > 0)
+                <h5 class="light">Показано {{ count($chassis_list) }} шассі</h5>
+            @else
+                <h5 class="light">Немає жодного шассі</h5>
+            @endif
         </div>
     </div>
     <div class="row">

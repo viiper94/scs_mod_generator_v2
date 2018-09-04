@@ -10,9 +10,12 @@ use Illuminate\Http\Request;
 
 class AdminTrailersController extends Controller{
 
-    public function index(){
+    public function index(Request $request){
+        $chassis = Chassis::select(['*']);
+        if($request->input('q')) $chassis->where('def', 'like', '%'.$request->input('q').'%')
+            ->orWhere('alias', 'like', $request->input('q').'%');
         return view('admin.trailers.index', [
-            'chassis_list' => Chassis::all()
+            'chassis_list' => $chassis->get()
         ]);
     }
 
