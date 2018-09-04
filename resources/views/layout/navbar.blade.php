@@ -1,4 +1,4 @@
-<nav id="slide-out" class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
+<nav id="slide-out" class="sidenav sidenav-fixed">
     <ul class="top-menu">
         @if(Auth::check())
             <li>
