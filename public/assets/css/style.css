@@ -700,6 +700,16 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark input[type=search]:focus:not(.browser-default){
     color: #fff;
 }
+@media (max-width: 584px){
+    .card.horizontal{
+        flex-direction: column;
+    }
+    .card.horizontal .card-image{
+        width: 100%;
+        height: 150px;
+        max-width: 100%;
+    }
+}
 
 
     /* Errors pages */
