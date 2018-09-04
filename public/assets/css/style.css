@@ -82,6 +82,14 @@ body{
 body.mdc-theme--dark{
 	background-color: var(--mdc-theme-dark-background);
 }
+p, h1, h2, h3, h4, h5, h6, span{
+    color: var(--mdc-theme-light-text);
+}
+.mdc-theme--dark p, .mdc-theme--dark h1, .mdc-theme--dark h2,
+.mdc-theme--dark h3, .mdc-theme--dark h4, .mdc-theme--dark h5,
+.mdc-theme--dark h6, .mdc-theme--dark span{
+    color: var(--mdc-theme-text-primary-on-primary-dark);
+}
 .mdc-theme--dark .card,
 .mdc-theme--dark .collapsible,
 .mdc-theme--dark .collapsible-header,
@@ -164,6 +172,9 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=p
     border-right: 2px solid #000;
     border-bottom: 2px solid #000;
 }
+.mdc-theme--dark span.mdc-fab__icon{
+    color: var(--mdc-theme-light-text);
+}
 
 
 /* Helpers */
@@ -200,6 +211,11 @@ a.mdc-fab span.mdc-fab__icon{
 }
 
 /* Nav Bar */
+nav.sidenav{
+    text-transform: uppercase;
+    width: 350px;
+    max-width: 75%;
+}
 nav ul a{
 	font-size: 1.2em;
 	font-weight: 500;
@@ -596,6 +612,11 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark .no-mods{
     color: var(--mdc-theme-text-primary-on-primary-dark);
 }
+@media (max-width: 667px){
+    .flex-center{
+        flex-direction: column;
+    }
+}
 
 
 /* Footer */
@@ -629,9 +650,19 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark footer a{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
 }
+@media (max-width: 601px){
+    .page-footer .col{
+        text-align: center;
+    }
+    .footer-copyright .left,
+    .footer-copyright .right{
+        width: 100%;
+        text-align: center;
+    }
+}
 
 
-/* Admin Page */
+/* Admin Pages */
 .search{
 	padding: 0;
 }
@@ -652,9 +683,26 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark table.highlight>tbody>tr:hover{
     background-color: var(--mdc-theme-background-dark-3);
 }
+.input-field input[type=search] ~ .mdc-icon-button,
+.input-field input[type=search]:focus:not(.browser-default) ~ .material-icons{
+    background-color: transparent;
+    color: var(--mdc-theme-light-text);
+    height: 45px;
+    width: 45px;
+}
+.mdc-theme--dark .input-field input[type=search] ~ .mdc-icon-button,
+.mdc-theme--dark .input-field input[type=search]:focus:not(.browser-default) ~ .material-icons{
+    color: var(--mdc-theme-text-primary-on-primary-dark);
+}
+.input-field input[type=search]:focus:not(.browser-default){
+    background-color: transparent;
+}
+.mdc-theme--dark input[type=search]:focus:not(.browser-default){
+    color: #fff;
+}
 
 
-/* Errors pages */
+    /* Errors pages */
 .not-found h1{
     font-size: 10rem;
 }
