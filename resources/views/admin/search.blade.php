@@ -1,4 +1,4 @@
-<div class="row" style="width: 100%;">
+<div class="row no-margin">
     <div class="col s12 m10 offset-m1">
         <div class="card-panel search">
             <form method="get">
