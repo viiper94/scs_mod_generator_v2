@@ -124,6 +124,16 @@ label, a{
     background-color: var(--mdc-theme-primary-dark);
     color: var(--mdc-theme-light-text)
 }
+.mdc-theme--dark .toast{
+    background-color: var(--mdc-theme-background-dark-3);
+}
+span.badge.new{
+    background-color: var(--mdc-theme-primary-dark);
+    padding: 1px 6px;
+}
+span.badge.no-float{
+    float: none;
+}
 
 
 /* Forms */
