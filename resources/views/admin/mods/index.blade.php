@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    {{ $mods->links('layout.pagination') }}
+    {{ $mods->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
     <div class="fixed-action-btn tooltipped" data-tooltip="Додати нове шассі">
         <a class="mdc-fab mdc-ripple" href="{{ route('trailers') }}/add">

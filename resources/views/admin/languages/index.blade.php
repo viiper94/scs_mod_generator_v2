@@ -12,7 +12,7 @@
             </thead>
             <tbody>
             @foreach($languages as $item)
-                <tr @if(!$item->active)class="yellow black-text" @endif>
+                <tr @if(!$item->active)class="grey darken-2 black-text" @endif>
                     <td><img src="{{ asset('assets/img/langs/'.$item->locale.'.png') }}" style="width: 32px; height: 32px;"></td>
                     <td>{{ $item->title }}</td>
                     <td>{{ $item->locale }}</td>
