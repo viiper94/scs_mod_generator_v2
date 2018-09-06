@@ -20,6 +20,7 @@ class CreateAccessoriesTable extends Migration
             $table->string('chassis');
             $table->string('game')->default('ets2');
             $table->string('dlc')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

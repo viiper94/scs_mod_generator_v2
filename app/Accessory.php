@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Accessory extends Model{
 
     protected $table = 'accessories';
+    protected $guarded = [];
+    protected $casts = [
+        'active' => 'boolean',
+    ];
+
+    public function dlc(){
+        return $this->belongsTo('App\Dlc');
+    }
 
     public function isDLCContent(){
         return $this->dlc !== null;
