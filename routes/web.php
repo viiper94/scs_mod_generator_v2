@@ -23,6 +23,7 @@ Route::get('/color/{game?}/{d?}', 'TruckPaintGeneratorController@index');
 Route::post('/color/{game?}', 'TruckPaintGeneratorController@getDLC')->name('color');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::get('/profile/mod_broken/{id?}', 'ProfileController@modBroken')->name('mod_broken');
 Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
 Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
 Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
@@ -46,7 +47,7 @@ Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/admin/paint_jobs', 'AdminController@paintJobs')->name('paint_jobs');
     Route::get('/admin/wheels', 'AdminController@wheels')->name('wheels');
     Route::get('/admin/dlc', 'AdminDlcController@index')->name('dlc');
-    Route::get('/admin/mods', 'AdminController@mods')->name('mods');
+    Route::get('/admin/mods', 'AdminModsController@index')->name('mods');
     Route::get('/admin/languages', 'AdminLanguagesController@index')->name('languages');
     Route::get('/admin/users', 'AdminController@users')->name('users');
 });
