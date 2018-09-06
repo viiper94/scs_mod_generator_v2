@@ -23,6 +23,8 @@
         @include('layout.footer')
 
         @include('layout.scripts')
+
+        @include('layout.alert')
     </div>
 
 </body>

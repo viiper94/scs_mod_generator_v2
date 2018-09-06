@@ -22,5 +22,7 @@
 
     @include('layout.scripts')
 
+    @include('admin.layout.alert')
+
 </body>
 </html>

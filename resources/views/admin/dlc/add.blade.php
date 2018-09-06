@@ -5,12 +5,6 @@
     
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
 
-        <div class="row" style="width: 600px;">
-            @if($errors->any())
-                @include('admin.warning')
-            @endif
-        </div>
-
         <div class="card" style="width: 600px;">
             <form method="post">
                 @csrf

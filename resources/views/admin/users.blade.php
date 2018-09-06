@@ -2,21 +2,6 @@
 
 @section('content')
 
-    @if($errors->any())
-        <div class="row" style="width: 100%;">
-            <div class="col s12 m10 offset-m1">
-                @include('admin.warning')
-            </div>
-        </div>
-    @endif
-    @if(session()->get('success'))
-        <div class="row" style="width: 100%;">
-            <div class="col s12 m10 offset-m1">
-                @include('admin.success')
-            </div>
-        </div>
-    @endif
-
     <div class="row" style="width: 100%;">
         <div class="col s12 m10 offset-m1">
             <div class="card-panel search">
