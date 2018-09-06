@@ -30,7 +30,15 @@
                         <td>@lang($accessory->game.'_accessories.'.$accessory->alias)</td>
                         <td>{{ $accessory->def }}</td>
                         <td>@lang($accessory->game.'_trailers.'.$accessory->chassis)</td>
-                        <td>{{ $accessory->dlc_id ? trans('dlc_list.'.$accessory->dlc->name) : '—' }}</td>
+                        <td>
+                            @if($accessory->isDLCContent())
+                                @foreach($accessory->getDLCs(true) as $dlc)
+                                    @lang('dlc_list.'.$dlc)<br>
+                                @endforeach
+                            @else
+                                —
+                            @endif
+                        </td>
                         <td>@lang('general.'.$accessory->game)</td>
                         <td style="white-space: nowrap" class="right-align">
                             <a href="{{ route('accessories') }}/edit/{{ $accessory->id }}" class="mdc-button mdc-button--raised mdc-ripple">

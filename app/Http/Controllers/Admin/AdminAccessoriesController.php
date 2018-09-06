@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 class AdminAccessoriesController extends Controller{
 
     public function index(Request $request){
-        $accessories = Accessory::with('dlc');
+        $accessories = Accessory::select(['*']);
         if($request->input('q')) $accessories->where('def', 'like', '%'.$request->input('q').'%')
             ->orWhere('alias', 'like', $request->input('q').'%')
             ->orWhere('chassis', 'like', $request->input('q').'%');
@@ -70,7 +70,7 @@ class AdminAccessoriesController extends Controller{
     public function delete(Request $request, $id = null){
         $accessory = Accessory::find($id);
         return $accessory->delete() ?
-            redirect()->route('accessories')->with(['success' => 'Аксесуар успішно видалено!']) :
+            redirect()->back()->with(['success' => 'Аксесуар успішно видалено!']) :
             redirect()->back()->withErrors(['Не вдалось видалити аксесуар']);
     }
 
@@ -78,7 +78,7 @@ class AdminAccessoriesController extends Controller{
         $accessory = Accessory::find($id);
         $accessory->active = $accessory->active == '1' ? '0' : '1';
         return $accessory->save() ?
-            redirect()->route('accessories')->with(['success' => 'Виконано!']) :
+            redirect()->back()->with(['success' => 'Виконано!']) :
             redirect()->route('accessories')->withErrors(['Виникла помилка!']);
     }
 

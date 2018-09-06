@@ -13,10 +13,6 @@ class Accessory extends Model{
         'active' => 'boolean',
     ];
 
-    public function dlc(){
-        return $this->belongsTo('App\Dlc');
-    }
-
     public function isDLCContent(){
         return $this->dlc !== null;
     }
