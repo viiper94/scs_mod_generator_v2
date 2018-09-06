@@ -12,7 +12,7 @@
             </thead>
             <tbody>
             @foreach($dlc as $item)
-                <tr @if(!$item->active)class="yellow black-text" @endif>
+                <tr @if(!$item->active)class="grey darken-2 black-text" @endif>
                     <td>@lang('dlc_list.'.$item->name)</td>
                     <td>{{ $item->name }}</td>
                     <td>@lang('general.'.$item->game)</td>

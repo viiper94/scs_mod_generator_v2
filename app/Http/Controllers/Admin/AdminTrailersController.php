@@ -82,7 +82,7 @@ class AdminTrailersController extends Controller{
         ]);
 
         return $new_chassis->save() ?
-            redirect()->route('trailers')->with(['success' => 'Причіп успішно скопійовано!']) :
+            redirect(route('trailers').'/edit/'.$new_chassis->id)->with(['success' => 'Причіп успішно скопійовано!']) :
             redirect()->route('trailers')->withErrors(['Не вдалось скопіювати причіп']);
     }
 
