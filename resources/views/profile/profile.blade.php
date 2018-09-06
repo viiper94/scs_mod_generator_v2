@@ -28,17 +28,29 @@
                     <div class="collapsible-header">
                         <i class="material-icons notranslate">arrow_downward</i>
                         <p class="mod-info">
+                            @if($mod->broken)
+                                <i class="material-icons notranslate left" title="@lang('mods.broken')">broken_image</i>
+                            @endif
                             <b>{{ $mod->title }}</b> (@lang('general.'.$mod->game); @lang('mods.'.$mod->type); {{ date('j F, Y H:i', strtotime($mod->created_at)) }})
                         </p>
-                        @if(file_exists(public_path().'/download/'.$mod->file_name.'.scs'))
-                            <div>
+                        <div>
+                            @if(file_exists(public_path().'/download/'.$mod->file_name.'.scs'))
                                 <a href="{{ url('/download/'.$mod->file_name.'.scs') }}"
                                    class="mdc-button mdc-button--raised mdc-ripple large-btn"
                                    title="@lang('general.download_mod')">
                                     <i class="material-icons notranslate mdc-button__icon no-margin">file_download</i>
                                 </a>
-                            </div>
-                        @endif
+                            @endif
+                            <a href="{{ route('mod_broken') }}/{{ $mod->id }}"
+                               class="mdc-button mdc-button--raised mdc-ripple large-btn"
+                               @if($mod->broken)
+                                    title="@lang('mods.working')" onclick="return confirm('@lang('mods.mark_as_working')')"
+                                @else
+                                    title="@lang('mods.broken')" onclick="return confirm('@lang('mods.mark_as_broken')')"
+                                @endif >
+                                <i class="material-icons notranslate mdc-button__icon no-margin">report{{ $mod->broken ? '_off' : '' }}</i>
+                            </a>
+                        </div>
                     </div>
                     <div class="collapsible-body">
                         @php $params = unserialize($mod->params); @endphp

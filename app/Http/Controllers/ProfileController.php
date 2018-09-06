@@ -47,8 +47,9 @@ class ProfileController extends Controller{
                 $user->image = time().'.'.$file->getClientOriginalExtension();
             }
         }
-        $user->save();
-        return redirect('profile');
+        return $user->save() ?
+            redirect()->route('profile')->with(['success' => '!']) :
+            redirect()->route('profile')->withErrors(['!']);
     }
 
     public function editPassword(Request $request){
@@ -60,13 +61,23 @@ class ProfileController extends Controller{
             ]);
             $user = User::find(Auth::id());
             $user->password = Hash::make($request->input('new_password'));
-            $user->save();
-            return redirect('profile');
+            return $user->save() ?
+                redirect()->route('profile')->with(['success' => '!']) :
+                redirect()->route('profile')->withErrors(['!']);
         }else{
             return redirect()->back()->withErrors([
                 'old_password' => trans('user.old_pass_fail')
             ]);
         }
+    }
+
+    public function modBroken(Request $request, $id){
+        $mod = Mods::findOrFail($id);
+        $this->authorize('mark', $mod);
+
+        return $mod->markMod() ?
+            redirect()->route('profile')->with(['success' => '!']) :
+            redirect()->route('profile')->withErrors(['!']);
     }
 
 }

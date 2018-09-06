@@ -21,6 +21,7 @@ class CreateModsTable extends Migration
             $table->string('params');
             $table->string('type');
             $table->string('game')->default('ets2');
+            $table->boolean('broken')->default(false);
             $table->timestamps();
         });
     }
