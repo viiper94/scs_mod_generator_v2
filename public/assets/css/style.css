@@ -722,6 +722,18 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 }
 
 
+/* Pagination */
+.pagination{
+    margin-top: 20px;
+}
+.pagination li.disabled span{
+    opacity: .3;
+}
+.mdc-theme--dark .pagination li:not(.mdc-button--raised):not(.disabled) a{
+    color: var(--mdc-theme-dark-text);
+}
+
+
     /* Errors pages */
 .not-found h1{
     font-size: 10rem;

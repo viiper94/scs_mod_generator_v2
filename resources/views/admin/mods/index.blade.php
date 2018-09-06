@@ -109,6 +109,8 @@
         </div>
     </div>
 
+    {{ $mods->links('layout.pagination') }}
+
     <div class="fixed-action-btn tooltipped" data-tooltip="Додати нове шассі">
         <a class="mdc-fab mdc-ripple" href="{{ route('trailers') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>

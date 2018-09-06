@@ -11,7 +11,7 @@ class AdminModsController extends Controller{
 
     public function index(){
         return view('admin.mods.index', [
-            'mods' => Mods::with('user')->get()
+            'mods' => Mods::with('user')->paginate(1)
         ]);
     }
 
