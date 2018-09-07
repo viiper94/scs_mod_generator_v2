@@ -2,8 +2,6 @@
 
 @section('content')
 
-    @include('admin.search')
-
     <div class="row no-margin">
         <div class="col s12 m10 offset-m1">
             @if(count($wheels) > 0)
