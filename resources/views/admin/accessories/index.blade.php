@@ -13,6 +13,7 @@
             @endif
         </div>
     </div>
+
     <div class="row no-margin">
         <div class="col m12">
             <table class="highlight responsive-table">
@@ -29,7 +30,7 @@
                     <tr @if(!$accessory->active)class="grey darken-2 black-text" @endif>
                         <td>@lang($accessory->game.'_accessories.'.$accessory->alias)</td>
                         <td>{{ $accessory->def }}</td>
-                        <td>@lang($accessory->game.'_trailers.'.$accessory->chassis)</td>
+                        <td>@lang($accessory->game.'_trailers.'.$accessory->chassisObj->alias)</td>
                         <td>
                             @if($accessory->isDLCContent())
                                 @foreach($accessory->getDLCs(true) as $dlc)

@@ -13,6 +13,10 @@ class Accessory extends Model{
         'active' => 'boolean',
     ];
 
+    public function chassisObj(){
+        return $this->belongsTo('App\Chassis', 'chassis', 'alias_short_paint');
+    }
+
     public function isDLCContent(){
         return $this->dlc !== null;
     }

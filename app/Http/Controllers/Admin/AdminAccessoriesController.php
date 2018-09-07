@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 class AdminAccessoriesController extends Controller{
 
     public function index(Request $request){
-        $accessories = Accessory::select(['*']);
+        $accessories = Accessory::with('chassisObj');
         if($request->input('q')) $accessories->where('def', 'like', '%'.$request->input('q').'%')
             ->orWhere('alias', 'like', $request->input('q').'%')
             ->orWhere('chassis', 'like', $request->input('q').'%');
