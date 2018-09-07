@@ -52,11 +52,11 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin wheels">
-                            <select name="dlc_id">
-                                <option value="">Без DLC</option>
+                            <select name="dlc[]" multiple>
                                 @foreach($dlc as $item)
+                                    @php $acc_dlcs = $accessory->getDLCs(true); @endphp
                                     <option value="{{ $item->id }}"
-                                        @if($accessory->dlc_id == $item->id) selected @endif>@lang('dlc_list.'.$item->name)
+                                        @if(in_array($item->name, $acc_dlcs)) selected @endif>@lang('dlc_list.'.$item->name)
                                     </option>
                                 @endforeach
                             </select>

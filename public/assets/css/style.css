@@ -178,6 +178,10 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=p
     border: 2px solid var(--mdc-theme-primary-dark);
     background-color: var(--mdc-theme-primary-dark);
 }
+[type="checkbox"]:checked+span:not(.lever):before{
+    border-right: 2px solid var(--mdc-theme-primary-dark);
+    border-bottom: 2px solid var(--mdc-theme-primary-dark);
+}
 [type="checkbox"].filled-in:checked+span:not(.lever):before{
     border-right: 2px solid #000;
     border-bottom: 2px solid #000;
@@ -579,7 +583,7 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 }
 .wheels .dropdown-content li.active span,
 .wheels .dropdown-content li.selected span{
-	color: #ffab40;
+	color: var(--mdc-theme-primary-dark);
 }
 .select-wrapper .caret{
 	z-index: 0;

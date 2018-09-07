@@ -34,7 +34,7 @@ class AdminAccessoriesController extends Controller{
                 'game' => $request->input('game', 'ets2'),
                 'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
-                'dlc_id' => $request->input('dlc_id', null),
+                'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'chassis' => $request->input('chassis'),
                 'active' => $request->input('active') == 'on',
             ]);
@@ -58,7 +58,7 @@ class AdminAccessoriesController extends Controller{
             'def' => $accessory->def,
             'chassis' => $accessory->chassis,
             'alias' => $accessory->alias.'_copy',
-            'dlc_id' => $accessory->dlc_id,
+            'dlc' => $accessory->dlc,
             'active' => false,
         ]);
 
@@ -97,7 +97,7 @@ class AdminAccessoriesController extends Controller{
                 'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
                 'chassis' => $request->input('chassis'),
-                'dlc_id' => $request->input('dlc_id', null),
+                'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'active' => $request->input('active') == 'on',
             ]);
             if($accessory->save()) return redirect()->route('accessories')->with(['success' => 'Аксесуар успішно додано!']);
