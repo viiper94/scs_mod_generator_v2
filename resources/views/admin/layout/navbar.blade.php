@@ -1,8 +1,8 @@
 <nav id="slide-out" class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
     <ul class="top-menu">
-        <li @if(Request::is('admin'))class="active"@endif>
-            <a class="waves-effect" href="{{route('admin')}}"><i class="material-icons notranslate">home</i>Головна</a>
-        </li>
+        {{--<li @if(Request::is('admin'))class="active"@endif>--}}
+            {{--<a class="waves-effect" href="{{route('admin')}}"><i class="material-icons notranslate">home</i>Головна</a>--}}
+        {{--</li>--}}
         <li @if(Request::is('admin/trailers'))class="active"@endif>
             <a class="waves-effect" href="{{route('trailers')}}"><i class="material-icons notranslate">local_shipping</i>Шассі</a>
         </li>

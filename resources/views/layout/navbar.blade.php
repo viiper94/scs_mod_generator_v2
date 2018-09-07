@@ -22,7 +22,7 @@
         </li>
         @can('admin')
             <li>
-                <a class="waves-effect" href="{{route('admin')}}">
+                <a class="waves-effect" href="{{route('trailers')}}">
                     <i class="material-icons notranslate">developer_mode</i>@lang('admin.admin_title')
                 </a>
             </li>
