@@ -8,6 +8,11 @@ class Paint extends Model{
 
     public $allCompanies = false;
     public $color = '1, 1, 1';
+    protected $guarded = [];
+
+    public function chassisObj(){
+        return $this->belongsTo('App\Chassis', 'chassis', 'alias_short_paint');
+    }
 
     public function dlc(){
         return $this->belongsTo('App\Dlc');

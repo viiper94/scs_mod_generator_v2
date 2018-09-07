@@ -44,7 +44,7 @@ Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/admin', 'AdminController@index')->name('admin');
     Route::get('/admin/trailers', 'AdminTrailersController@index')->name('trailers');
     Route::get('/admin/accessories', 'AdminAccessoriesController@index')->name('accessories');
-    Route::get('/admin/paint_jobs', 'AdminController@paintJobs')->name('paint_jobs');
+    Route::get('/admin/paints', 'AdminPaintsController@index')->name('paints');
     Route::get('/admin/wheels', 'AdminController@wheels')->name('wheels');
     Route::get('/admin/dlc', 'AdminDlcController@index')->name('dlc');
     Route::get('/admin/mods', 'AdminModsController@index')->name('mods');
