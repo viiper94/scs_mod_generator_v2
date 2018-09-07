@@ -15,13 +15,11 @@ use Illuminate\Support\Facades\Auth;
 class TruckPaintGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
-        $errors = array();
         return view('truck_paint.index', [
             'chassis_list' => Chassis::where(['with_paint_job' => '1', 'game' => 'ets2'])->with('dlc')->get(),
             'game' => $game,
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
-            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get(),
-            'errors' => $errors
+            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get()
         ]);
     }
 
