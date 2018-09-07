@@ -9,8 +9,8 @@
         <li @if(Request::is('admin/accessories'))class="active"@endif>
             <a class="waves-effect" href="{{route('accessories')}}"><i class="material-icons notranslate">category</i>Аксесуари</a>
         </li>
-        <li @if(Request::is('admin/paint_jobs'))class="active"@endif>
-            <a class="waves-effect" href="{{route('paint_jobs')}}"><i class="material-icons notranslate">texture</i>Скіни</a>
+        <li @if(Request::is('admin/paints'))class="active"@endif>
+            <a class="waves-effect" href="{{route('paints')}}"><i class="material-icons notranslate">texture</i>Скіни</a>
         </li>
         <li @if(Request::is('admin/wheels'))class="active"@endif>
             <a class="waves-effect" href="{{route('wheels')}}"><i class="material-icons notranslate">adjust</i>Колеса</a>
