@@ -7,7 +7,9 @@
             @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && $errors->isEmpty())
                 @include('generator.download')
             @endif
-
+            @if($errors->isNotEmpty())
+                @include('generator.warning')
+            @endif
             @include('generator.ie')
         </section>
         <section class="card trailer-generator">
