@@ -23,4 +23,3 @@ vehicle_wheel_accessory: .trailer.drybulk.trwheel1
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-
