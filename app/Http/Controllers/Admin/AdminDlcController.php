@@ -39,6 +39,7 @@ class AdminDlcController extends Controller{
             $dlc->fill([
                 'game' => $request->input('game', 'ets2'),
                 'name' => $request->input('name'),
+                'mp_support' => $request->input('mp_support') == 'on',
                 'active' => $request->input('active') == 'on',
             ]);
             return $dlc->save() ?

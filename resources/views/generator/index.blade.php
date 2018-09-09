@@ -34,7 +34,12 @@
                                 <option value="paintable">@lang('general.paintable_chassis')</option>
                                 @foreach($chassis_list as $chassis)
                                     <option value="{{$chassis->alias}}">@lang($game.'_trailers.'.$chassis->alias)
-                                        @if($chassis->isDLCContent()) - @lang('dlc_list.'.$chassis->dlc->name) @endif
+                                        @if($chassis->isDLCContent())
+                                            - @lang('dlc_list.'.$chassis->dlc->name)
+                                            @if(!$chassis->dlc->mp_support)
+                                                (@lang('general.mp_no_support'))
+                                            @endif
+                                        @endif
                                     </option>
                                @endforeach
                             </select>
@@ -148,6 +153,9 @@
                                             @foreach($wheels as $wheel)
                                                 <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">
                                                     @lang($game.'_wheels.'.$wheel->alias)
+                                                    @if(!$wheel->mp_support)
+                                                        (@lang('general.mp_no_support'))
+                                                    @endif
                                                 </option>
                                             @endforeach
                                         </select>
@@ -164,7 +172,12 @@
                                                         <div class="mdc-switch__knob"></div>
                                                     </div>
                                                 </div>
-                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">@lang('dlc_list.'.$dlc->name)</label>
+                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">
+                                                    @lang('dlc_list.'.$dlc->name)
+                                                    @if(!$dlc->mp_support)
+                                                        (@lang('general.mp_no_support'))
+                                                    @endif
+                                                </label>
                                             </div>
                                         @endforeach
                                     </div>

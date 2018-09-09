@@ -17,6 +17,7 @@ class CreateWheelsTable extends Migration
             $table->increments('id');
             $table->string('def');
             $table->string('alias');
+            $table->boolean('mp_support')->default(true);
             $table->boolean('active')->default(true);
             $table->string('game')->default('ets2');
             $table->integer('dlc')->nullable();

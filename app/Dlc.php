@@ -8,5 +8,9 @@ class Dlc extends Model{
 
     protected $table = 'dlc';
     protected $guarded = [];
+    protected $casts = [
+        'mp_support' => 'boolean',
+        'active' => 'boolean',
+    ];
 
 }

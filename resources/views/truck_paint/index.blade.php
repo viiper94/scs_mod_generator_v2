@@ -7,7 +7,7 @@
             @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && $errors->isEmpty())
                 @include('generator.download')
             @endif
-            @if($errors)
+            @if(!$errors->isEmpty())
                 @include('generator.warning')
             @endif
             @include('generator.ie')
@@ -34,7 +34,12 @@
                                 <option value="paintable">@lang('general.paintable_chassis')</option>
                                 @foreach($chassis_list as $chassis)
                                     <option value="{{$chassis->alias}}">@lang('ets2_trailers.'.$chassis->alias)
-                                        @if($chassis->isDLCContent()) - @lang('dlc_list.'.$chassis->dlc->name) @endif
+                                        @if($chassis->isDLCContent())
+                                            - @lang('dlc_list.'.$chassis->dlc->name)
+                                            @if(!$chassis->dlc->mp_support)
+                                                (@lang('general.mp_no_support'))
+                                            @endif
+                                        @endif
                                     </option>
                                 @endforeach
                             </select>
@@ -147,7 +152,12 @@
                                                         <div class="mdc-switch__knob"></div>
                                                     </div>
                                                 </div>
-                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">@lang('dlc_list.'.$dlc->name)</label>
+                                                <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">
+                                                    @lang('dlc_list.'.$dlc->name)
+                                                    @if(!$dlc->mp_support)
+                                                        (@lang('general.mp_no_support'))
+                                                    @endif
+                                                </label>
                                             </div>
                                         @endforeach
                                     </div>

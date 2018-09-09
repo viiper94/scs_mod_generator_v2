@@ -17,6 +17,7 @@ class CreateDlcTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('game')->default('ets2');
+            $table->boolean('mp_support')->default(true);
             $table->boolean('active')->default(true);
             $table->timestamps();
         });

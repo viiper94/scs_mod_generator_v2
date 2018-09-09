@@ -30,6 +30,7 @@ class AdminWheelsController extends Controller{
                 'alias' => $request->input('alias'),
                 'dlc' => $request->input('dlc', null),
                 'active' => $request->input('active') == 'on',
+                'mp_support' => $request->input('mp_support') == 'on',
             ]);
             return $wheel->save() ?
                 redirect()->route('wheels')->with(['success' => 'Колесо успішно відредаговано!']) :
@@ -51,6 +52,7 @@ class AdminWheelsController extends Controller{
             'alias' => $wheel->alias.'_copy',
             'dlc' => $wheel->dlc,
             'active' => false,
+            'mp_support' => false,
         ]);
 
         return $new_wheel->save() ?
@@ -87,7 +89,8 @@ class AdminWheelsController extends Controller{
                 'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
                 'dlc' => $request->input('dlc', null),
-                'active' => $request->input('active') == 'on'
+                'active' => $request->input('active') == 'on',
+                'mp_support' => $request->input('mp_support') == 'on'
             ]);
             if($wheel->save()) return redirect()->route('wheels')->with(['success' => 'Колесо успішно додано!']);
         }

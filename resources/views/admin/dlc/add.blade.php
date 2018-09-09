@@ -36,6 +36,12 @@
                     <div class="row" style="margin-left: 1rem;">
                         <p>
                             <label>
+                                <input type="checkbox" class="filled-in" name="mp_support">
+                                <span>Підтримується в МП</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
                                 <input type="checkbox" class="filled-in" name="active">
                                 <span>Активне</span>
                             </label>
