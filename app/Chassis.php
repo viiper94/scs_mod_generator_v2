@@ -53,7 +53,7 @@ class Chassis extends Model{
             'value' => 'all',
             'selected' => true
         ];
-        $paints = Paint::where(['game' => $this->game, 'chassis' => $this->alias_short_paint])->get();
+        $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint])->get();
         foreach($paints as $key => $paint){
             $name = trans($this->game.'_companies_paints.'.$paint->alias);
             if($paint->isDLCContent()){
