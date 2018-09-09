@@ -6,7 +6,7 @@ SiiNunit{
 		display_name: "%%"
 
 		# Author can be any string with any length.
-		author: "[Mayday]"
+		author: "Mayday"
 
 		# Categories is an array of strings. 
 		category[]: "trailer"
