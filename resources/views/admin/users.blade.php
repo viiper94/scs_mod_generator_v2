@@ -26,6 +26,13 @@
                             <h5 class="card-title">{{ $user->name }}</h5>
                             <p>E-Mail: {{ $user->email }}</p>
                             <p>Зареестрований: {{ $user->created_at }}</p>
+                            @if($user->steamid64)
+                                <p>Steam ID:
+                                    <a href="http://steamcommunity.com/profiles/{{ $user->steamid64 }}" target="_blank" class="yellow-text text-darken-3">
+                                        {{ $user->steamid64 }}
+                                    </a>
+                                </p>
+                            @endif
                         </div>
                     </div>
                 </div>
