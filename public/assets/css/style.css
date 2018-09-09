@@ -599,8 +599,25 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 }
 
 
-/* Paint Page */
-
+/* Login Page */
+.social-login-btn.social-login-btn_steam{
+    background: url(../img/steam-icon.png) no-repeat center center;
+    background-size: 55px;
+}
+.mdc-theme--dark .social-login-btn.social-login-btn_steam{
+    background: url(../img/steam-icon-dark.png) no-repeat center center;
+    background-size: 55px;
+}
+.social-login-btn.social-login-btn_google{
+    background: url(../img/google-icon.png) no-repeat center center;
+    background-size: 40px;
+}
+.social-login-btn.mdc-button--raised:not(:disabled){
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff1a;
+}
 
 
 /* Gallery Page */

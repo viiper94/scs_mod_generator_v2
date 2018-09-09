@@ -48,6 +48,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="card-action center">
+                    <a href="{{ route('auth.steam') }}" class="mdc-button mdc-button--raised mdc-ripple social-login-btn social-login-btn_steam"></a>
+                    <a href="#" class="mdc-button mdc-button--raised mdc-ripple social-login-btn social-login-btn_google"></a>
+                </div>
             </form>
         </div>
     </div>
