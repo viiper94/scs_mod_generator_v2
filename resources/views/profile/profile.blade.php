@@ -60,7 +60,7 @@
                                 @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'): <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>@endif
                                 @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>@lang($mod->game.'_companies_paints.'.$params['view']['paint'])</b></p>@endif
                                 @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
-                                @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['view']['weight'] }}</b></p>@endif
+                                @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['form']['weight'] }}</b></p>@endif
                                 @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
                                 @if(key_exists('dlc', $params['form']))
                                     <ul>
