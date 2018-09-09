@@ -15,19 +15,19 @@ vehicle_accessory: .schw_food.tchassis
 vehicle_wheel_accessory: .schw_food.trwheel0
 {
 	offset: 0
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
 }
 
 vehicle_wheel_accessory: .schw_food.trwheel1
 {
 	offset: 2
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
 }
 
 vehicle_wheel_accessory: .schw_food.trwheel2
 {
 	offset: 4
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
 }
 vehicle_paint_job_accessory: .schw_food.paint_job
 {

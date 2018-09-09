@@ -1,0 +1,36 @@
+trailer : trailer.schw_ovrwght.helicopter 
+{
+	accessories[]: .schw_ovrwght.heli.tchassis
+	accessories[]: .schw_ovrwght.heli.trwheel0
+	accessories[]: .schw_ovrwght.heli.trwheel1
+	accessories[]: .schw_ovrwght.heli.trwheel2
+	accessories[]: .schw_ovrwght.heli.cargo
+}
+
+vehicle_accessory: .schw_ovrwght.heli.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.heli.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.heli.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.heli.trwheel2
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_accessory: .schw_ovrwght.heli.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/helicopter_schw.dlc_trailers.sii"
+}
+

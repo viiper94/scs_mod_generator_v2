@@ -31,5 +31,5 @@ vehicle_wheel_accessory: .truck_trans.scania.trwheel2
 }
 vehicle_accessory: .truck_trans.scania.cargo
 {
-    	data_path: "/def/vehicle/trailer/truck_transporter/scaniacargo.sii"
+    	data_path: "/def/vehicle/trailer/truck_transporter/scania2016cargo.sii"
 }

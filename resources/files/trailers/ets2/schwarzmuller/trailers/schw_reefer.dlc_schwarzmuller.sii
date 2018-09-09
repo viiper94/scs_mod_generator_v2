@@ -1,37 +1,40 @@
 trailer : trailer.schw_reefer 
 {
-	accessories[]: .schw_reefer.tchassis
+	# link to any existing curtain definition (preferably similar)
+	# necessary to use trailer in cargo-based economy
+	trailer_definition: trailer_def.scs.box.single_3.reefer
+
+	accessories[]: .schw_reefer.chassis
 	accessories[]: .schw_reefer.paint_job
-	accessories[]: .schw_reefer.trwheel0
-	accessories[]: .schw_reefer.trwheel1
-	accessories[]: .schw_reefer.trwheel2
+	accessories[]: .schw_reefer.rwheel
+	accessories[]: .schw_reefer.rwheel2
+	accessories[]: .schw_reefer.rwheel3
 }
 
-vehicle_accessory: .schw_reefer.tchassis
+vehicle_accessory: .schw_reefer.chassis
 {
-    	data_path: "/def/vehicle/trailer/schw_reefer/chassis.dlc_schwarzmuller.sii"
+	data_path: "/def/vehicle/trailer/schw_reefer/chassis.dlc_schwarzmuller.sii"
 }
 
-vehicle_wheel_accessory: .schw_reefer.trwheel0
+vehicle_wheel_accessory: .schw_reefer.rwheel
 {
 	offset: 0
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
 }
 
-vehicle_wheel_accessory: .schw_reefer.trwheel1
+vehicle_wheel_accessory: .schw_reefer.rwheel2
 {
 	offset: 2
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
 }
 
-vehicle_wheel_accessory: .schw_reefer.trwheel2
+vehicle_wheel_accessory: .schw_reefer.rwheel3
 {
 	offset: 4
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
 }
+
 vehicle_paint_job_accessory: .schw_reefer.paint_job
 {
-    	data_path: "/def/vehicle/trailer/schw_reefer/company_paint_job/default.sii"
+	data_path: "/def/vehicle/trailer/schw_reefer/company_paint_job/default.sii"
 }
-
-

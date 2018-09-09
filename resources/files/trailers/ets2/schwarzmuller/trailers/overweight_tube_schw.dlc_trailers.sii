@@ -1,0 +1,36 @@
+trailer : trailer.schw_ovrwght.tube 
+{
+	accessories[]: .schw_ovrwght.tube.tchassis
+	accessories[]: .schw_ovrwght.tube.trwheel0
+	accessories[]: .schw_ovrwght.tube.trwheel1
+	accessories[]: .schw_ovrwght.tube.trwheel2
+	accessories[]: .schw_ovrwght.tube.cargo
+}
+
+vehicle_accessory: .schw_ovrwght.tube.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.tube.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.tube.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_ovrwght.tube.trwheel2
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
+}
+vehicle_accessory: .schw_ovrwght.tube.cargo
+{
+    	data_path: "/def/vehicle/trailer/overweight/tube_schw.dlc_trailers.sii"
+}
+
