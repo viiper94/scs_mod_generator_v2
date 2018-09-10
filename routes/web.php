@@ -12,8 +12,10 @@
 */
 
 Auth::routes();
-Route::get('auth/steam', 'AuthController@redirectToSteam')->name('auth.steam');
-Route::get('auth/steam/handle', 'AuthController@handle')->name('auth.steam.handle');
+Route::get('auth/steam', 'Auth\SteamAuthController@redirectToSteam')->name('auth.steam');
+Route::get('auth/steam/handle', 'Auth\SteamAuthController@handle')->name('auth.steam.handle');
+Route::get('auth/google', 'Auth\LoginController@redirectToGoogle')->name('auth.google');
+Route::get('auth/google/handle', 'Auth\LoginController@handleGoogleCallback');
 
 Route::post('/generator', 'TrailerGeneratorController@generate')->name('generator');
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use Invisnik\LaravelSteamAuth\SteamAuth;
 use App\User;
 use Auth;
 
-class AuthController{
+class SteamAuthController{
 
     /**
      * The SteamAuth instance.
