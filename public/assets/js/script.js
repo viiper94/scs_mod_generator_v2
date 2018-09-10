@@ -60,8 +60,7 @@ $(document).ready(function(){
 				data : {
 					'_token' : ul.data('token'),
 					'target' : ul.data('game'),
-					'chassis' : ul.data('trailer'),
-					'lang' : getCookie('lang')
+					'chassis' : ul.data('trailer')
 				},
 				beforeSend : function(){
 					ul.find('.collapsible-header').append(getPreloaderHtml('tiny'));
@@ -159,8 +158,7 @@ $(document).ready(function(){
 					data : {
 						'_token' : $('input[name=_token]').val(),
 						'target' : $('input[name=target]').val(),
-						'chassis' : value,
-						'lang' : getCookie('lang')
+						'chassis' : value
 					},
 					beforeSend : function(){
 						$('#chassis').after(getPreloaderHtml('small'));
@@ -224,8 +222,7 @@ $(document).ready(function(){
 				'target' : $('input[name=target]').val(),
 				'all' : $(this)[0].checked,
 				'select' : target,
-				'chassis' : $('select[name=chassis]').val(),
-				'lang' : getCookie('lang')
+				'chassis' : $('select[name=chassis]').val()
 			},
 			beforeSend : function(){
 				$('#'+$(this).data('target')+' h5').append(getPreloaderHtml('tiny'));

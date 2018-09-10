@@ -16,13 +16,12 @@ class GalleryController extends Controller{
 
     public function getInfo(Request $request){
         if($request->ajax() && $request->input('chassis')){
-            $lang = $request->input('lang', null);
             $result = null;
             $chassis = Chassis::where('alias_short', $request->input('chassis'))->first();
             if($chassis->with_paint_job){
-                $data = $chassis->getAvailablePaints($lang);
+                $data = $chassis->getAvailablePaints();
             }elseif($chassis->with_accessory){
-                $data = $chassis->getAvailableAccessories($lang);
+                $data = $chassis->getAvailableAccessories();
             }
             return response()->json([
                 'result' => $data,

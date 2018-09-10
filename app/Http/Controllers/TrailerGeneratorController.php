@@ -28,7 +28,6 @@ class TrailerGeneratorController extends Controller{
 
     public function getChassisData(Request $request, $game = 'ets2'){
         if($request->ajax() && $request->input('chassis')){
-            $lang = $request->input('lang', null);
 
             if($request->input('all') == 'true'){
                 if($request->input('select') == 'accessory'){
@@ -68,7 +67,7 @@ class TrailerGeneratorController extends Controller{
             }
             if($request->input('chassis') == 'paintable'){
                 $data['paint'] = [
-                    'echo' => Chassis::getAllCompanies($lang, $game)
+                    'echo' => Chassis::getAllCompanies($game)
                 ];
                 return response()->json(['result' => $data, 'status' => 'OK', 'dlc' => []]);
             }
