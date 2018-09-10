@@ -50,7 +50,7 @@
                 </div>
                 <div class="card-action center">
                     <a href="{{ route('auth.steam') }}" class="mdc-button mdc-button--raised mdc-ripple social-login-btn social-login-btn_steam"></a>
-                    <a href="#" class="mdc-button mdc-button--raised mdc-ripple social-login-btn social-login-btn_google no-margin"></a>
+                    <a href="{{ route('auth.google') }}" class="mdc-button mdc-button--raised mdc-ripple social-login-btn social-login-btn_google no-margin"></a>
                 </div>
             </form>
         </div>
