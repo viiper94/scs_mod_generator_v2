@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.brake_fluid.krone.boxliner20
+{
+	trailer: trailer.krone.boxliner20
+	gross_trailer_weight_limit: 11740
+	chassis_mass: 6700
+	body_mass: 0
+	axles: 3
+	volume: 80.1
+	body_type: _kronr20brid
+
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.25,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.25,0.0)
+}
+}

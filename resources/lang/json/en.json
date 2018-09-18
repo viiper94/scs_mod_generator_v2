@@ -222,7 +222,12 @@
         "goldhofer_stz_yellow": "Semi Lowloader with Drop Deck (Yellow)",
         "goldhofer_stz_long": "Semi Lowloader with Drop Deck (Long)",
         "willig_cistern": "Willig Fuel cistern",
-        "van_transporter": "Van transporter"
+        "van_transporter": "Van transporter",
+        "krone_profiliner": "Krone Profi Liner (Curtainsider)",
+        "krone_coolliner": "Krone Cool Liner (Refrigerated)",
+        "krone_dryliner": "Krone Dry Liner (Dry Freighter)",
+        "krone_boxliner": "Krone Box Liner (Gooseneck)",
+        "krone_profiliner_hd": "Krone Profi Liner HD (Flat bed)"
     },
     "ets2 accessories": {
         "cargo_cars_it": "Cars",

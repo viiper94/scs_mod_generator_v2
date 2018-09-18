@@ -1,0 +1,36 @@
+trailer : trailer.krone.boxliner40
+{
+	accessories[]: .krone.boxliner40.tchassis
+	accessories[]: .krone.boxliner40.trwheel0
+	accessories[]: .krone.boxliner40.trwheel1
+	accessories[]: .krone.boxliner40.trwheel2
+	accessories[]: .krone.boxliner40.cargo
+}
+
+vehicle_accessory: .krone.boxliner40.tchassis
+{
+    	data_path: "/def/vehicle/trailer/krone/boxliner/chassis_40.sii"
+}
+
+vehicle_wheel_accessory: .krone.boxliner40.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .krone.boxliner40.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .krone.boxliner40.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+vehicle_accessory: .krone.boxliner40.cargo
+{
+    	data_path: "/def/vehicle/trailer/krone/boxliner/container_40.sii"
+}
+
