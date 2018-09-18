@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Вер 09 2018 р., 14:45
--- Версія сервера: 10.1.34-MariaDB
--- Версія PHP: 7.2.8
+-- Час створення: Вер 18 2018 р., 10:04
+-- Версія сервера: 10.1.22-MariaDB
+-- Версія PHP: 7.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -422,8 +422,8 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `alias_short_paint`,
 (93, '/def/vehicle/trailer/magnitude_55l/chassis_trailer_3.sii', 'magnitude_55l_2', 'magnitude_55l_2', 'magnitude_55l_2', '3', 1, 1, 0, 1, 0, NULL, 0, 'ats', 8, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (94, '/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii', 'magnitude_55l_2_3', 'magnitude_55l_2_3', 'magnitude_55l_2_3', '2', 1, 1, 1, 1, 0, NULL, 0, 'ats', 8, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (95, '/def/vehicle/trailer/mbt1_barrier/chassis.sii', 'mbt', 'mbt', 'mbt', '2', 1, 1, 0, 0, 0, NULL, 0, 'ats', NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
-(103, '/def/vehicle/trailer/scs_box/curtain_sider/chassis.sii', 'curtain_sider', 'curtain_sider', 'curtain_sider', '3', 2, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-09-09 09:32:48'),
-(104, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_aero.sii', 'curtain_sider_aero', 'curtain_sider_aero', 'curtain_sider', '3', 2, 1, 0, 0, 1, '/def/vehicle/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-09-09 09:32:59'),
+(103, '/def/vehicle/trailer/scs_box/curtain_sider/chassis.sii', 'curtain_sider', 'curtain_sider', 'curtain_sider', '3', 7, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-09-09 09:32:48'),
+(104, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_aero.sii', 'curtain_sider_aero', 'curtain_sider_aero', 'curtain_sider', '3', 7, 1, 0, 0, 1, '/def/vehicle/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-09-09 09:32:59'),
 (105, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_hook.sii', 'curtain_sider_double', 'curtain_sider_double', 'curtain_sider', '3', 7, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
 (106, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_bd.sii', 'curtain_sider_bdouble', 'curtain_sider_bdouble', 'curtain_sider', '3', 7, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
 (107, '/def/vehicle/trailer/scs_box/curtain_sider/chassis_stw.sii', 'curtain_sider_steer', 'curtain_sider_steer', 'curtain_sider', '3', 7, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:36'),
@@ -438,13 +438,13 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `alias_short_paint`,
 (116, '/def/vehicle/trailer/scs_box/insulated/chassis_bd.sii', 'insulated_bdouble', 'insulated_bdouble', 'insulated', '3', 6, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (117, '/def/vehicle/trailer/scs_box/insulated/chassis_stw.sii', 'insulated_steer', 'insulated_steer', 'insulated', '3', 6, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (118, '/def/vehicle/trailer/scs_box/dry_van/chassis.sii', 'dry_van', 'dry_van', 'dry_van', '3', 6, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(119, '/def/vehicle/trailer/scs_box/dry_van/chassis_aero.sii', 'dry_van_aero', 'dry_van_aero', 'dry_van', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-09-09 09:32:33'),
+(119, '/def/vehicle/trailer/scs_box/dry_van/chassis_aero.sii', 'dry_van_aero', 'dry_van_aero', 'dry_van', '3', 6, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-09-09 09:32:33'),
 (120, '/def/vehicle/trailer/scs_box/dry_van/chassis_hook.sii', 'dry_van_double', 'dry_van_double', 'dry_van', '3', 6, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (121, '/def/vehicle/trailer/scs_box/dry_van/chassis_bd.sii', 'dry_van_bdouble', 'dry_van_bdouble', 'dry_van', '3', 6, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 0, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (122, '/def/vehicle/trailer/scs_box/dry_van/chassis_stw.sii', 'dry_van_steer', 'dry_van_steer', 'dry_van', '3', 6, 0, 0, 0, 1, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (123, '/def/vehicle/trailer/scs_box/moving_floor/chassis.sii', 'moving_floor', 'moving_floor', 'moving_floor', '3', 6, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
 (124, '/def/vehicle/trailer/scs_box/moving_floor/chassis_stw.sii', 'moving_floor_steer', 'moving_floor_steer', 'moving_floor', '3', 6, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:50', '2018-08-20 10:16:37'),
-(125, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'dry_bulk', 'dry_bulk', 'dry_bulk', '2', 6, 1, 0, 0, 0, NULL, 0, 'ats', NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
+(125, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'dry_bulk', 'dry_bulk', 'dry_bulk', '2', 1, 1, 0, 0, 0, NULL, 0, 'ats', NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
 (126, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'drybulk_long', 'drybulk_long', 'drybulk_long', '2', 1, 1, 1, 0, 0, NULL, 0, 'ats', NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
 (127, '/def/vehicle/trailer/dry_bulk/chassis.sii', 'drybulk_ls', 'drybulk_ls', 'drybulk_ls', '2', 1, 1, 1, 0, 0, NULL, 0, 'ats', NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
 (128, '/def/vehicle/trailer/dry_bulk/chassis_pup1.sii', 'drybulk_shrt', 'drybulk_shrt', 'drybulk_shrt', '1', 1, 1, 1, 0, 0, NULL, 0, 'ats', NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:37'),
@@ -481,7 +481,11 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `alias_short_paint`,
 (159, '/def/vehicle/trailer/scs_flatbed/flatbed.sii', 'flat_bed', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38'),
 (160, '/def/vehicle/trailer/scs_flatbed/flatbed_g.sii', 'flat_bed_g', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38'),
 (161, '/def/vehicle/trailer/scs_flatbed/flatbed_r.sii', 'flat_bed_r', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38'),
-(162, '/def/vehicle/trailer/scs_flatbed/flatbed_y.sii', 'flat_bed_y', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38');
+(162, '/def/vehicle/trailer/scs_flatbed/flatbed_y.sii', 'flat_bed_y', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38'),
+(163, '/def/vehicle/trailer/krone/profiliner/chassis.sii', 'krone_profiliner', 'krone_profiliner', 'krone_profiliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-17 13:08:04', '2018-09-17 13:11:08'),
+(164, '/def/vehicle/trailer/krone/profiliner_hd/chassis.sii', 'krone_profiliner_hd', 'krone_profiliner_hd', 'krone_profiliner_hd', '3', 21, 1, 0, 1, 0, NULL, 0, 'ets2', 12, 0, '2018-09-17 13:22:02', '2018-09-17 13:25:42'),
+(165, '/def/vehicle/trailer/krone/coolliner/chassis.sii', 'krone_coolliner', 'krone_coolliner', 'krone_coolliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/coolliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-18 04:27:09', '2018-09-18 04:27:46'),
+(166, '/def/vehicle/trailer/krone/dryliner/chassis.sii', 'krone_dryliner', 'krone_dryliner', 'krone_dryliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/dryliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-18 04:28:57', '2018-09-18 04:29:35');
 
 -- --------------------------------------------------------
 
@@ -620,7 +624,8 @@ INSERT INTO `dlc` (`id`, `name`, `game`, `mp_support`, `active`, `created_at`, `
 (6, 'heavy', 'ets2', 1, 1, '2018-07-31 11:17:46', '2018-07-31 11:17:46'),
 (7, 'special', 'ets2', 0, 1, '2018-07-31 11:17:46', '2018-07-31 11:17:46'),
 (8, 'heavy_ats', 'ats', 1, 1, '2018-07-31 11:17:46', '2018-07-31 11:17:46'),
-(9, 'raven', 'ets2', 1, 0, '2018-07-31 14:18:25', '2018-07-31 14:18:25');
+(9, 'raven', 'ets2', 1, 0, '2018-07-31 14:18:25', '2018-07-31 14:18:25'),
+(12, 'krone', 'ets2', 0, 1, '2018-09-17 13:02:04', '2018-09-17 13:02:04');
 
 -- --------------------------------------------------------
 
@@ -1469,7 +1474,212 @@ INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`,
 (1096, '/def/vehicle/trailer/livestock/company_paint_job/default.sii', 'default', 'default', 'livestock', 'ets2', NULL, 1, '2018-08-20 07:51:18', '2018-08-20 07:51:18'),
 (1097, '/def/vehicle/trailer/livestock/company_paint_job/aria_food.sii', 'aria_food', 'aria_food', 'livestock', 'ets2', 1, 1, '2018-08-20 07:51:18', '2018-08-20 07:51:18'),
 (1098, '/def/vehicle/trailer/livestock/company_paint_job/fattoria_f.sii', 'fattoria_f', 'fattoria_f', 'livestock', 'ets2', 3, 1, '2018-08-20 07:51:18', '2018-08-20 07:51:18'),
-(1099, '/def/vehicle/trailer/livestock/company_paint_job/nos_pat.sii', 'nos_pat', 'nos_pat', 'livestock', 'ets2', 2, 1, '2018-08-20 07:51:18', '2018-08-20 07:51:18');
+(1099, '/def/vehicle/trailer/livestock/company_paint_job/nos_pat.sii', 'nos_pat', 'nos_pat', 'livestock', 'ets2', 2, 1, '2018-08-20 07:51:18', '2018-08-20 07:51:18'),
+(1100, '/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii', 'default', 'default', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1101, '/def/vehicle/trailer/krone/profiliner/company_paint_job/acc.sii', 'acc', 'acc', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1102, '/def/vehicle/trailer/krone/profiliner/company_paint_job/aci.sii', 'aci', 'aci', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1103, '/def/vehicle/trailer/krone/profiliner/company_paint_job/agronord.sii', 'agronord', 'agronord', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1104, '/def/vehicle/trailer/krone/profiliner/company_paint_job/aria_food.sii', 'aria_food', 'aria_food', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1105, '/def/vehicle/trailer/krone/profiliner/company_paint_job/batisse.sii', 'batisse', 'batisse', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1106, '/def/vehicle/trailer/krone/profiliner/company_paint_job/bcp.sii', 'bcp', 'bcp', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1107, '/def/vehicle/trailer/krone/profiliner/company_paint_job/bhb_raffin.sii', 'bhb_raffin', 'bhb_raffin', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1108, '/def/vehicle/trailer/krone/profiliner/company_paint_job/bhv.sii', 'bhv', 'bhv', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1109, '/def/vehicle/trailer/krone/profiliner/company_paint_job/bjork.sii', 'bjork', 'bjork', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1110, '/def/vehicle/trailer/krone/profiliner/company_paint_job/boisserie.sii', 'boisserie', 'boisserie', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1111, '/def/vehicle/trailer/krone/profiliner/company_paint_job/c_navale.sii', 'c_navale', 'c_navale', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1112, '/def/vehicle/trailer/krone/profiliner/company_paint_job/cargotras.sii', 'cargotras', 'cargotras', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1113, '/def/vehicle/trailer/krone/profiliner/company_paint_job/cesare_smar.sii', 'cesare_smar', 'cesare_smar', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1114, '/def/vehicle/trailer/krone/profiliner/company_paint_job/chimi.sii', 'chimi', 'chimi', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1115, '/def/vehicle/trailer/krone/profiliner/company_paint_job/cnp.sii', 'cnp', 'cnp', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1116, '/def/vehicle/trailer/krone/profiliner/company_paint_job/comoto.sii', 'comoto', 'comoto', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1117, '/def/vehicle/trailer/krone/profiliner/company_paint_job/costruzi.sii', 'costruzi', 'costruzi', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1118, '/def/vehicle/trailer/krone/profiliner/company_paint_job/costruzi_2.sii', 'costruzi_2', 'costruzi_2', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1119, '/def/vehicle/trailer/krone/profiliner/company_paint_job/dans_jardin.sii', 'dans_jardin', 'dans_jardin', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1120, '/def/vehicle/trailer/krone/profiliner/company_paint_job/aaa.sii', 'aaa', 'aaa', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1121, '/def/vehicle/trailer/krone/profiliner/company_paint_job/drekkar.sii', 'drekkar', 'drekkar', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1122, '/def/vehicle/trailer/krone/profiliner/company_paint_job/eolo_lines.sii', 'eolo_lines', 'eolo_lines', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1123, '/def/vehicle/trailer/krone/profiliner/company_paint_job/euroacres.sii', 'euroacres', 'euroacres', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1124, '/def/vehicle/trailer/krone/profiliner/company_paint_job/eurogoodies.sii', 'eurogoodies', 'eurogoodies', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1125, '/def/vehicle/trailer/krone/profiliner/company_paint_job/exomar.sii', 'exomar', 'exomar', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1126, '/def/vehicle/trailer/krone/profiliner/company_paint_job/fattoria_f.sii', 'fattoria_f', 'fattoria_f', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1127, '/def/vehicle/trailer/krone/profiliner/company_paint_job/fcp.sii', 'fcp', 'fcp', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1128, '/def/vehicle/trailer/krone/profiliner/company_paint_job/fle.sii', 'fle', 'fle', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1129, '/def/vehicle/trailer/krone/profiliner/company_paint_job/fui.sii', 'fui', 'fui', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1130, '/def/vehicle/trailer/krone/profiliner/company_paint_job/globeur.sii', 'globeur', 'globeur', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1131, '/def/vehicle/trailer/krone/profiliner/company_paint_job/gnt.sii', 'gnt', 'gnt', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1132, '/def/vehicle/trailer/krone/profiliner/company_paint_job/gomme_monde.sii', 'gomme_monde', 'gomme_monde', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1133, '/def/vehicle/trailer/krone/profiliner/company_paint_job/huilant.sii', 'huilant', 'huilant', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1134, '/def/vehicle/trailer/krone/profiliner/company_paint_job/ika_bohag.sii', 'ika_bohag', 'ika_bohag', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1135, '/def/vehicle/trailer/krone/profiliner/company_paint_job/itcc.sii', 'itcc', 'itcc', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1136, '/def/vehicle/trailer/krone/profiliner/company_paint_job/kaarfor.sii', 'kaarfor', 'kaarfor', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1137, '/def/vehicle/trailer/krone/profiliner/company_paint_job/konstnr.sii', 'konstnr', 'konstnr', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1138, '/def/vehicle/trailer/krone/profiliner/company_paint_job/libellula.sii', 'libellula', 'libellula', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1139, '/def/vehicle/trailer/krone/profiliner/company_paint_job/lisette_log.sii', 'lisette_log', 'lisette_log', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1140, '/def/vehicle/trailer/krone/profiliner/company_paint_job/lkwlog.sii', 'lkwlog', 'lkwlog', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1141, '/def/vehicle/trailer/krone/profiliner/company_paint_job/nbfc.sii', 'nbfc', 'nbfc', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1142, '/def/vehicle/trailer/krone/profiliner/company_paint_job/nord_crown.sii', 'nord_crown', 'nord_crown', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1143, '/def/vehicle/trailer/krone/profiliner/company_paint_job/norr_food.sii', 'norr_food', 'norr_food', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:32', '2018-09-18 04:16:32'),
+(1144, '/def/vehicle/trailer/krone/profiliner/company_paint_job/norrsken.sii', 'norrsken', 'norrsken', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1145, '/def/vehicle/trailer/krone/profiliner/company_paint_job/nos_pat.sii', 'nos_pat', 'nos_pat', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1146, '/def/vehicle/trailer/krone/profiliner/company_paint_job/ns_chem.sii', 'ns_chem', 'ns_chem', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1147, '/def/vehicle/trailer/krone/profiliner/company_paint_job/ns_oil.sii', 'ns_oil', 'ns_oil', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1148, '/def/vehicle/trailer/krone/profiliner/company_paint_job/nucleon.sii', 'nucleon', 'nucleon', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1149, '/def/vehicle/trailer/krone/profiliner/company_paint_job/piac.sii', 'piac', 'piac', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1150, '/def/vehicle/trailer/krone/profiliner/company_paint_job/polar_fish.sii', 'polar_fish', 'polar_fish', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1151, '/def/vehicle/trailer/krone/profiliner/company_paint_job/polarislines.sii', 'polarislines', 'polarislines', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1152, '/def/vehicle/trailer/krone/profiliner/company_paint_job/posped.sii', 'posped', 'posped', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1153, '/def/vehicle/trailer/krone/profiliner/company_paint_job/pp_chimica.sii', 'pp_chimica', 'pp_chimica', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1154, '/def/vehicle/trailer/krone/profiliner/company_paint_job/renar.sii', 'renar', 'renar', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1155, '/def/vehicle/trailer/krone/profiliner/company_paint_job/sag_tre.sii', 'sag_tre', 'sag_tre', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1156, '/def/vehicle/trailer/krone/profiliner/company_paint_job/sal.sii', 'sal', 'sal', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1157, '/def/vehicle/trailer/krone/profiliner/company_paint_job/sanbuilders.sii', 'sanbuilders', 'sanbuilders', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1158, '/def/vehicle/trailer/krone/profiliner/company_paint_job/scania_fac.sii', 'scania_fac', 'scania_fac', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1159, '/def/vehicle/trailer/krone/profiliner/company_paint_job/sellplan.sii', 'sellplan', 'sellplan', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1160, '/def/vehicle/trailer/krone/profiliner/company_paint_job/skoda.sii', 'skoda', 'skoda', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1161, '/def/vehicle/trailer/krone/profiliner/company_paint_job/spinelli.sii', 'spinelli', 'spinelli', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1162, '/def/vehicle/trailer/krone/profiliner/company_paint_job/stokes.sii', 'stokes', 'stokes', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1163, '/def/vehicle/trailer/krone/profiliner/company_paint_job/subse.sii', 'subse', 'subse', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1164, '/def/vehicle/trailer/krone/profiliner/company_paint_job/te_logistica.sii', 'te_logistica', 'te_logistica', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1165, '/def/vehicle/trailer/krone/profiliner/company_paint_job/tesore_gust.sii', 'tesore_gust', 'tesore_gust', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1166, '/def/vehicle/trailer/krone/profiliner/company_paint_job/tradeaux.sii', 'tradeaux', 'tradeaux', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1167, '/def/vehicle/trailer/krone/profiliner/company_paint_job/trameri.sii', 'trameri', 'trameri', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1168, '/def/vehicle/trailer/krone/profiliner/company_paint_job/transinet.sii', 'transinet', 'transinet', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1169, '/def/vehicle/trailer/krone/profiliner/company_paint_job/tras_med.sii', 'tras_med', 'tras_med', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1170, '/def/vehicle/trailer/krone/profiliner/company_paint_job/tree_et.sii', 'tree_et', 'tree_et', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1171, '/def/vehicle/trailer/krone/profiliner/company_paint_job/vitas_pwr.sii', 'vitas_pwr', 'vitas_pwr', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1172, '/def/vehicle/trailer/krone/profiliner/company_paint_job/voitureux.sii', 'voitureux', 'voitureux', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1173, '/def/vehicle/trailer/krone/profiliner/company_paint_job/volvo_fac.sii', 'volvo_fac', 'volvo_fac', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1174, '/def/vehicle/trailer/krone/profiliner/company_paint_job/vpc.sii', 'vpc', 'vpc', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1175, '/def/vehicle/trailer/krone/profiliner/company_paint_job/wgcc.sii', 'wgcc', 'wgcc', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1176, '/def/vehicle/trailer/krone/profiliner/company_paint_job/wilnet_trans.sii', 'wilnet_trans', 'wilnet_trans', 'krone_profiliner', 'ets2', 12, 1, '2018-09-18 04:16:33', '2018-09-18 04:16:33'),
+(1177, '/def/vehicle/trailer/krone/coolliner/company_paint_job/acc.sii', 'acc', 'acc', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1178, '/def/vehicle/trailer/krone/coolliner/company_paint_job/aci.sii', 'aci', 'aci', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1179, '/def/vehicle/trailer/krone/coolliner/company_paint_job/aria_food.sii', 'aria_food', 'aria_food', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1180, '/def/vehicle/trailer/krone/coolliner/company_paint_job/bcp.sii', 'bcp', 'bcp', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1181, '/def/vehicle/trailer/krone/coolliner/company_paint_job/bhb_raffin.sii', 'bhb_raffin', 'bhb_raffin', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1182, '/def/vehicle/trailer/krone/coolliner/company_paint_job/c_navale.sii', 'c_navale', 'c_navale', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1183, '/def/vehicle/trailer/krone/coolliner/company_paint_job/cargotras.sii', 'cargotras', 'cargotras', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1184, '/def/vehicle/trailer/krone/coolliner/company_paint_job/cesare_smar.sii', 'cesare_smar', 'cesare_smar', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1185, '/def/vehicle/trailer/krone/coolliner/company_paint_job/cnp.sii', 'cnp', 'cnp', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1186, '/def/vehicle/trailer/krone/coolliner/company_paint_job/comoto.sii', 'comoto', 'comoto', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1187, '/def/vehicle/trailer/krone/coolliner/company_paint_job/costruzi.sii', 'costruzi', 'costruzi', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1188, '/def/vehicle/trailer/krone/coolliner/company_paint_job/costruzi_2.sii', 'costruzi_2', 'costruzi_2', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1189, '/def/vehicle/trailer/krone/coolliner/company_paint_job/dans_jardin.sii', 'dans_jardin', 'dans_jardin', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1190, '/def/vehicle/trailer/krone/coolliner/company_paint_job/default.sii', 'default', 'default', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1191, '/def/vehicle/trailer/krone/coolliner/company_paint_job/drekkar.sii', 'drekkar', 'drekkar', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1192, '/def/vehicle/trailer/krone/coolliner/company_paint_job/eolo_lines.sii', 'eolo_lines', 'eolo_lines', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1193, '/def/vehicle/trailer/krone/coolliner/company_paint_job/euroacres.sii', 'euroacres', 'euroacres', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1194, '/def/vehicle/trailer/krone/coolliner/company_paint_job/eurogoodies.sii', 'eurogoodies', 'eurogoodies', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1195, '/def/vehicle/trailer/krone/coolliner/company_paint_job/exomar.sii', 'exomar', 'exomar', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1196, '/def/vehicle/trailer/krone/coolliner/company_paint_job/fattoria_f.sii', 'fattoria_f', 'fattoria_f', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1197, '/def/vehicle/trailer/krone/coolliner/company_paint_job/fle.sii', 'fle', 'fle', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1198, '/def/vehicle/trailer/krone/coolliner/company_paint_job/fui.sii', 'fui', 'fui', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1199, '/def/vehicle/trailer/krone/coolliner/company_paint_job/globeur.sii', 'globeur', 'globeur', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1200, '/def/vehicle/trailer/krone/coolliner/company_paint_job/gnt.sii', 'gnt', 'gnt', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1201, '/def/vehicle/trailer/krone/coolliner/company_paint_job/kaarfor.sii', 'kaarfor', 'kaarfor', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1202, '/def/vehicle/trailer/krone/coolliner/company_paint_job/libellula.sii', 'libellula', 'libellula', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1203, '/def/vehicle/trailer/krone/coolliner/company_paint_job/lisette_log.sii', 'lisette_log', 'lisette_log', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1204, '/def/vehicle/trailer/krone/coolliner/company_paint_job/lkwlog.sii', 'lkwlog', 'lkwlog', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1205, '/def/vehicle/trailer/krone/coolliner/company_paint_job/nord_crown.sii', 'nord_crown', 'nord_crown', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1206, '/def/vehicle/trailer/krone/coolliner/company_paint_job/norr_food.sii', 'norr_food', 'norr_food', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1207, '/def/vehicle/trailer/krone/coolliner/company_paint_job/norrsken.sii', 'norrsken', 'norrsken', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1208, '/def/vehicle/trailer/krone/coolliner/company_paint_job/nos_pat.sii', 'nos_pat', 'nos_pat', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1209, '/def/vehicle/trailer/krone/coolliner/company_paint_job/piac.sii', 'piac', 'piac', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1210, '/def/vehicle/trailer/krone/coolliner/company_paint_job/polar_fish.sii', 'polar_fish', 'polar_fish', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1211, '/def/vehicle/trailer/krone/coolliner/company_paint_job/polarislines.sii', 'polarislines', 'polarislines', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1212, '/def/vehicle/trailer/krone/coolliner/company_paint_job/posped.sii', 'posped', 'posped', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1213, '/def/vehicle/trailer/krone/coolliner/company_paint_job/pp_chimica.sii', 'pp_chimica', 'pp_chimica', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:08', '2018-09-18 04:28:08'),
+(1214, '/def/vehicle/trailer/krone/coolliner/company_paint_job/renar.sii', 'renar', 'renar', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1215, '/def/vehicle/trailer/krone/coolliner/company_paint_job/sal.sii', 'sal', 'sal', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1216, '/def/vehicle/trailer/krone/coolliner/company_paint_job/sellplan.sii', 'sellplan', 'sellplan', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1217, '/def/vehicle/trailer/krone/coolliner/company_paint_job/spinelli.sii', 'spinelli', 'spinelli', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1218, '/def/vehicle/trailer/krone/coolliner/company_paint_job/stokes.sii', 'stokes', 'stokes', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1219, '/def/vehicle/trailer/krone/coolliner/company_paint_job/subse.sii', 'subse', 'subse', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1220, '/def/vehicle/trailer/krone/coolliner/company_paint_job/te_logistica.sii', 'te_logistica', 'te_logistica', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1221, '/def/vehicle/trailer/krone/coolliner/company_paint_job/tesore_gust.sii', 'tesore_gust', 'tesore_gust', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1222, '/def/vehicle/trailer/krone/coolliner/company_paint_job/tradeaux.sii', 'tradeaux', 'tradeaux', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1223, '/def/vehicle/trailer/krone/coolliner/company_paint_job/trameri.sii', 'trameri', 'trameri', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1224, '/def/vehicle/trailer/krone/coolliner/company_paint_job/transinet.sii', 'transinet', 'transinet', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1225, '/def/vehicle/trailer/krone/coolliner/company_paint_job/tras_med.sii', 'tras_med', 'tras_med', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1226, '/def/vehicle/trailer/krone/coolliner/company_paint_job/wilnet_trans.sii', 'wilnet_trans', 'wilnet_trans', 'krone_coolliner', 'ets2', 12, 1, '2018-09-18 04:28:09', '2018-09-18 04:28:09'),
+(1227, '/def/vehicle/trailer/krone/dryliner/company_paint_job/aaa.sii', 'aaa', 'aaa', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1228, '/def/vehicle/trailer/krone/dryliner/company_paint_job/acc.sii', 'acc', 'acc', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54');
+INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`, `active`, `created_at`, `updated_at`) VALUES
+(1229, '/def/vehicle/trailer/krone/dryliner/company_paint_job/aci.sii', 'aci', 'aci', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1230, '/def/vehicle/trailer/krone/dryliner/company_paint_job/agronord.sii', 'agronord', 'agronord', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1231, '/def/vehicle/trailer/krone/dryliner/company_paint_job/aria_food.sii', 'aria_food', 'aria_food', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1232, '/def/vehicle/trailer/krone/dryliner/company_paint_job/batisse.sii', 'batisse', 'batisse', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1233, '/def/vehicle/trailer/krone/dryliner/company_paint_job/bcp.sii', 'bcp', 'bcp', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1234, '/def/vehicle/trailer/krone/dryliner/company_paint_job/bhb_raffin.sii', 'bhb_raffin', 'bhb_raffin', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1235, '/def/vehicle/trailer/krone/dryliner/company_paint_job/bhv.sii', 'bhv', 'bhv', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1236, '/def/vehicle/trailer/krone/dryliner/company_paint_job/bjork.sii', 'bjork', 'bjork', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1237, '/def/vehicle/trailer/krone/dryliner/company_paint_job/boisserie.sii', 'boisserie', 'boisserie', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1238, '/def/vehicle/trailer/krone/dryliner/company_paint_job/c_navale.sii', 'c_navale', 'c_navale', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1239, '/def/vehicle/trailer/krone/dryliner/company_paint_job/cargotras.sii', 'cargotras', 'cargotras', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1240, '/def/vehicle/trailer/krone/dryliner/company_paint_job/cesare_smar.sii', 'cesare_smar', 'cesare_smar', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1241, '/def/vehicle/trailer/krone/dryliner/company_paint_job/chimi.sii', 'chimi', 'chimi', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1242, '/def/vehicle/trailer/krone/dryliner/company_paint_job/cnp.sii', 'cnp', 'cnp', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1243, '/def/vehicle/trailer/krone/dryliner/company_paint_job/comoto.sii', 'comoto', 'comoto', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1244, '/def/vehicle/trailer/krone/dryliner/company_paint_job/costruzi.sii', 'costruzi', 'costruzi', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1245, '/def/vehicle/trailer/krone/dryliner/company_paint_job/costruzi_2.sii', 'costruzi_2', 'costruzi_2', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1246, '/def/vehicle/trailer/krone/dryliner/company_paint_job/dans_jardin.sii', 'dans_jardin', 'dans_jardin', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1247, '/def/vehicle/trailer/krone/dryliner/company_paint_job/default.sii', 'default', 'default', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1248, '/def/vehicle/trailer/krone/dryliner/company_paint_job/drekkar.sii', 'drekkar', 'drekkar', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1249, '/def/vehicle/trailer/krone/dryliner/company_paint_job/eolo_lines.sii', 'eolo_lines', 'eolo_lines', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1250, '/def/vehicle/trailer/krone/dryliner/company_paint_job/euroacres.sii', 'euroacres', 'euroacres', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1251, '/def/vehicle/trailer/krone/dryliner/company_paint_job/eurogoodies.sii', 'eurogoodies', 'eurogoodies', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1252, '/def/vehicle/trailer/krone/dryliner/company_paint_job/exomar.sii', 'exomar', 'exomar', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:54', '2018-09-18 04:29:54'),
+(1253, '/def/vehicle/trailer/krone/dryliner/company_paint_job/fattoria_f.sii', 'fattoria_f', 'fattoria_f', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1254, '/def/vehicle/trailer/krone/dryliner/company_paint_job/fcp.sii', 'fcp', 'fcp', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1255, '/def/vehicle/trailer/krone/dryliner/company_paint_job/fle.sii', 'fle', 'fle', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1256, '/def/vehicle/trailer/krone/dryliner/company_paint_job/fui.sii', 'fui', 'fui', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1257, '/def/vehicle/trailer/krone/dryliner/company_paint_job/globeur.sii', 'globeur', 'globeur', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1258, '/def/vehicle/trailer/krone/dryliner/company_paint_job/gnt.sii', 'gnt', 'gnt', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1259, '/def/vehicle/trailer/krone/dryliner/company_paint_job/gomme_monde.sii', 'gomme_monde', 'gomme_monde', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1260, '/def/vehicle/trailer/krone/dryliner/company_paint_job/huilant.sii', 'huilant', 'huilant', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1261, '/def/vehicle/trailer/krone/dryliner/company_paint_job/ika_bohag.sii', 'ika_bohag', 'ika_bohag', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1262, '/def/vehicle/trailer/krone/dryliner/company_paint_job/itcc.sii', 'itcc', 'itcc', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1263, '/def/vehicle/trailer/krone/dryliner/company_paint_job/kaarfor.sii', 'kaarfor', 'kaarfor', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1264, '/def/vehicle/trailer/krone/dryliner/company_paint_job/konstnr.sii', 'konstnr', 'konstnr', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1265, '/def/vehicle/trailer/krone/dryliner/company_paint_job/libellula.sii', 'libellula', 'libellula', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1266, '/def/vehicle/trailer/krone/dryliner/company_paint_job/lisette_log.sii', 'lisette_log', 'lisette_log', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1267, '/def/vehicle/trailer/krone/dryliner/company_paint_job/lkwlog.sii', 'lkwlog', 'lkwlog', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1268, '/def/vehicle/trailer/krone/dryliner/company_paint_job/nbfc.sii', 'nbfc', 'nbfc', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1269, '/def/vehicle/trailer/krone/dryliner/company_paint_job/nord_crown.sii', 'nord_crown', 'nord_crown', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1270, '/def/vehicle/trailer/krone/dryliner/company_paint_job/norr_food.sii', 'norr_food', 'norr_food', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1271, '/def/vehicle/trailer/krone/dryliner/company_paint_job/norrsken.sii', 'norrsken', 'norrsken', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1272, '/def/vehicle/trailer/krone/dryliner/company_paint_job/nos_pat.sii', 'nos_pat', 'nos_pat', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1273, '/def/vehicle/trailer/krone/dryliner/company_paint_job/ns_chem.sii', 'ns_chem', 'ns_chem', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1274, '/def/vehicle/trailer/krone/dryliner/company_paint_job/ns_oil.sii', 'ns_oil', 'ns_oil', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1275, '/def/vehicle/trailer/krone/dryliner/company_paint_job/nucleon.sii', 'nucleon', 'nucleon', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1276, '/def/vehicle/trailer/krone/dryliner/company_paint_job/piac.sii', 'piac', 'piac', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1277, '/def/vehicle/trailer/krone/dryliner/company_paint_job/polar_fish.sii', 'polar_fish', 'polar_fish', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1278, '/def/vehicle/trailer/krone/dryliner/company_paint_job/polarislines.sii', 'polarislines', 'polarislines', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1279, '/def/vehicle/trailer/krone/dryliner/company_paint_job/posped.sii', 'posped', 'posped', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1280, '/def/vehicle/trailer/krone/dryliner/company_paint_job/pp_chimica.sii', 'pp_chimica', 'pp_chimica', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1281, '/def/vehicle/trailer/krone/dryliner/company_paint_job/renar.sii', 'renar', 'renar', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1282, '/def/vehicle/trailer/krone/dryliner/company_paint_job/sag_tre.sii', 'sag_tre', 'sag_tre', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1283, '/def/vehicle/trailer/krone/dryliner/company_paint_job/sal.sii', 'sal', 'sal', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1284, '/def/vehicle/trailer/krone/dryliner/company_paint_job/sanbuilders.sii', 'sanbuilders', 'sanbuilders', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1285, '/def/vehicle/trailer/krone/dryliner/company_paint_job/scania_fac.sii', 'scania_fac', 'scania_fac', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1286, '/def/vehicle/trailer/krone/dryliner/company_paint_job/sellplan.sii', 'sellplan', 'sellplan', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1287, '/def/vehicle/trailer/krone/dryliner/company_paint_job/skoda.sii', 'skoda', 'skoda', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1288, '/def/vehicle/trailer/krone/dryliner/company_paint_job/spinelli.sii', 'spinelli', 'spinelli', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1289, '/def/vehicle/trailer/krone/dryliner/company_paint_job/stokes.sii', 'stokes', 'stokes', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1290, '/def/vehicle/trailer/krone/dryliner/company_paint_job/subse.sii', 'subse', 'subse', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1291, '/def/vehicle/trailer/krone/dryliner/company_paint_job/te_logistica.sii', 'te_logistica', 'te_logistica', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1292, '/def/vehicle/trailer/krone/dryliner/company_paint_job/tesore_gust.sii', 'tesore_gust', 'tesore_gust', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1293, '/def/vehicle/trailer/krone/dryliner/company_paint_job/tradeaux.sii', 'tradeaux', 'tradeaux', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1294, '/def/vehicle/trailer/krone/dryliner/company_paint_job/trameri.sii', 'trameri', 'trameri', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1295, '/def/vehicle/trailer/krone/dryliner/company_paint_job/transinet.sii', 'transinet', 'transinet', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1296, '/def/vehicle/trailer/krone/dryliner/company_paint_job/tras_med.sii', 'tras_med', 'tras_med', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1297, '/def/vehicle/trailer/krone/dryliner/company_paint_job/tree_et.sii', 'tree_et', 'tree_et', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1298, '/def/vehicle/trailer/krone/dryliner/company_paint_job/vitas_pwr.sii', 'vitas_pwr', 'vitas_pwr', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1299, '/def/vehicle/trailer/krone/dryliner/company_paint_job/voitureux.sii', 'voitureux', 'voitureux', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1300, '/def/vehicle/trailer/krone/dryliner/company_paint_job/volvo_fac.sii', 'volvo_fac', 'volvo_fac', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1301, '/def/vehicle/trailer/krone/dryliner/company_paint_job/vpc.sii', 'vpc', 'vpc', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1302, '/def/vehicle/trailer/krone/dryliner/company_paint_job/wgcc.sii', 'wgcc', 'wgcc', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55'),
+(1303, '/def/vehicle/trailer/krone/dryliner/company_paint_job/wilnet_trans.sii', 'wilnet_trans', 'wilnet_trans', 'krone_dryliner', 'ets2', 12, 1, '2018-09-18 04:29:55', '2018-09-18 04:29:55');
 
 -- --------------------------------------------------------
 
@@ -1524,7 +1734,8 @@ INSERT INTO `wheels` (`id`, `def`, `alias`, `mp_support`, `active`, `game`, `dlc
 (14, '/def/vehicle/t_wheel/single_small.sii', 'w_single_small', 1, 1, 'ats', NULL, '2018-07-31 11:17:11', '2018-07-31 11:17:11'),
 (15, '/def/vehicle/t_wheel/front.sii', 'w_front', 1, 1, 'ats', NULL, '2018-07-31 11:17:11', '2018-07-31 11:17:11'),
 (16, '/def/vehicle/r_wheel/chrome.sii', 'w_chrome', 0, 1, 'ats', NULL, '2018-07-31 11:17:11', '2018-07-31 11:17:11'),
-(17, '/def/vehicle/r_wheel/steel.sii', 'w_steel', 0, 1, 'ats', NULL, '2018-07-31 11:17:11', '2018-07-31 11:17:11');
+(17, '/def/vehicle/r_wheel/steel.sii', 'w_steel', 0, 1, 'ats', NULL, '2018-07-31 11:17:11', '2018-07-31 11:17:11'),
+(21, '/def/vehicle/t_wheel/krone_385_65_r22_5.sii', 'w_krone_385_65_r22_5', 0, 1, 'ets2', 12, '2018-09-17 13:02:36', '2018-09-17 13:05:26');
 
 --
 -- Індекси збережених таблиць
@@ -1599,61 +1810,51 @@ ALTER TABLE `wheels`
 --
 ALTER TABLE `accessories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=299;
-
 --
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
-
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
 --
 -- AUTO_INCREMENT для таблиці `companies`
 --
 ALTER TABLE `companies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
-
 --
 -- AUTO_INCREMENT для таблиці `dlc`
 --
 ALTER TABLE `dlc`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT для таблиці `error_codes`
 --
 ALTER TABLE `error_codes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT для таблиці `languages`
 --
 ALTER TABLE `languages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
 --
 -- AUTO_INCREMENT для таблиці `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
 --
 -- AUTO_INCREMENT для таблиці `paints`
 --
 ALTER TABLE `paints`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1100;
-
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1304;
 --
 -- AUTO_INCREMENT для таблиці `settings`
 --
 ALTER TABLE `settings`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблиці `wheels`
 --
 ALTER TABLE `wheels`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
