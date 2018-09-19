@@ -4,6 +4,8 @@
 
     @include('admin.search')
 
+    {{ $chassis_list->appends(['q' => Request::input('q')])->links('layout.pagination') }}
+
     <div class="row no-margin">
         <div class="col s12 m10 offset-m1">
             @if(count($chassis_list) > 0)
@@ -54,6 +56,8 @@
             </div>
         @endforeach
     </div>
+
+    {{ $chassis_list->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
     <div class="fixed-action-btn tooltipped" data-tooltip="Додати нове шассі">
         <a class="mdc-fab mdc-ripple" href="{{ route('trailers') }}/add">

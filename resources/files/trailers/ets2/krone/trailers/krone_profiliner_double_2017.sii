@@ -1,0 +1,76 @@
+trailer : trailer.profiline17d
+{
+	trailer_definition: trailer_def.krone.profiliner.double_3_2.curtain
+
+	accessories[]: .profiline17d.chassis
+	accessories[]: .profiline17d.paint_job
+	accessories[]: .profiline17d.rwheel
+	accessories[]: .profiline17d.rwheel2
+	accessories[]: .profiline17d.rwheel3
+	accessories[]: .profiline17d.trlr_cables
+
+	slave_trailer: .profiline17d.second
+}
+
+vehicle_accessory: .profiline17d.chassis
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/chassis_double.sii"
+}
+
+vehicle_wheel_accessory: .profiline17d.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .profiline17d.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .profiline17d.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_paint_job_accessory: .profiline17d.paint_job
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .profiline17d.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/accessory/trlr_cables.sii"
+}
+
+trailer : .profiline17d.second
+{
+	accessories[]: .profiline17d.second.chassis
+	accessories[]: .profiline17d.second.rwheel
+	accessories[]: .profiline17d.second.rwheel2
+	accessories[]: .profiline17d.second.paint_job
+}
+
+vehicle_accessory: .profiline17d.second.chassis
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/chassis_loadcarrier.sii"
+}
+
+vehicle_wheel_accessory: .profiline17d.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .profiline17d.second.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+}
+
+vehicle_paint_job_accessory: .profiline17d.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii"
+}

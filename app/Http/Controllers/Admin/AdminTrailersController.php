@@ -15,7 +15,7 @@ class AdminTrailersController extends Controller{
         if($request->input('q')) $chassis->where('def', 'like', '%'.$request->input('q').'%')
             ->orWhere('alias', 'like', $request->input('q').'%');
         return view('admin.trailers.index', [
-            'chassis_list' => $chassis->get()
+            'chassis_list' => $chassis->paginate(20)
         ]);
     }
 
