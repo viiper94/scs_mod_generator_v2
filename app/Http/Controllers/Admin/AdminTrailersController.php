@@ -97,8 +97,8 @@ class AdminTrailersController extends Controller{
         $chassis = Chassis::find($id);
         $chassis->active = $chassis->active == '1' ? '0' : '1';
         return $chassis->save() ?
-            redirect()->route('trailers')->with(['success' => 'Виконано!']) :
-            redirect()->route('trailers')->withErrors(['Виникла помилка!']);
+            redirect()->back()->with(['success' => 'Виконано!']) :
+            redirect()->back()->withErrors(['Виникла помилка!']);
     }
 
     public function add(Request $request){
