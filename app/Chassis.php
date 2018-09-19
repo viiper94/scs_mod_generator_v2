@@ -53,7 +53,7 @@ class Chassis extends Model{
             'value' => 'all',
             'selected' => true
         ];
-        $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint])->get();
+        $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])->get();
         foreach($paints as $key => $paint){
             $name = trans($this->game.'_companies_paints.'.$paint->alias);
             if($paint->isDLCContent()){
@@ -73,7 +73,7 @@ class Chassis extends Model{
             'value' => '',
             'selected' => true
         ];
-        $accessories = Accessory::where(['game' => $this->game, 'chassis' => $this->alias_short_paint])->get();
+        $accessories = Accessory::where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])->get();
         $dlc_list = Dlc::where('game', $this->game)->get()->keyBy('id');
         foreach($accessories as $key => $accessory){
             $name = trans($this->game.'_accessories.'.$accessory->alias);
