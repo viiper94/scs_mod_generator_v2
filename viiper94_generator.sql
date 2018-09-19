@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Вер 18 2018 р., 10:04
--- Версія сервера: 10.1.22-MariaDB
--- Версія PHP: 7.1.4
+-- Час створення: Вер 19 2018 р., 21:39
+-- Версія сервера: 10.1.34-MariaDB
+-- Версія PHP: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -63,31 +63,6 @@ INSERT INTO `accessories` (`id`, `def`, `alias`, `chassis`, `game`, `dlc`, `acti
 (16, '/def/vehicle/trailer_cargo/scs_flatbed/square_tubing.sii', 'square_tubing', 'flat_bed', 'ets2', '3', 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
 (17, '/def/vehicle/trailer_cargo/scs_flatbed/tubes.sii', 'tubes', 'flat_bed', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
 (18, '/def/vehicle/trailer_cargo/scs_flatbed/ventilator.sii', 'ventilator', 'flat_bed', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(19, '/def/vehicle/trailer/gooseneck/cargo20.sii', 'cargo20', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(20, '/def/vehicle/trailer/gooseneck/cargo20b.sii', 'cargo20b', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(21, '/def/vehicle/trailer/gooseneck/cargo30.sii', 'cargo30', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(22, '/def/vehicle/trailer/gooseneck/cargo40.sii', 'cargo40', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(23, '/def/vehicle/trailer/gooseneck/cistern.sii', 'cistern', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(24, '/def/vehicle/trailer/gooseneck/cistern_alualk.sii', 'cistern_alualk', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(25, '/def/vehicle/trailer/gooseneck/cistern_calcium.sii', 'cistern_calcium', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(26, '/def/vehicle/trailer/gooseneck/cistern_magnesium.sii', 'cistern_magnesium', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(27, '/def/vehicle/trailer/gooseneck/cistern_nitrocel.sii', 'cistern_nitrocel', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(28, '/def/vehicle/trailer/gooseneck/cistern_phosphor.sii', 'cistern_phosphor', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(29, '/def/vehicle/trailer/gooseneck/cistern_potassium.sii', 'cistern_potassium', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(30, '/def/vehicle/trailer/gooseneck/cistern_sodium.sii', 'cistern_sodium', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(31, '/def/vehicle/trailer/gooseneck/nonflam_cistern_acetylene.sii', 'nonflam_cistern_acetylene', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(32, '/def/vehicle/trailer/gooseneck/nonflam_cistern_chlorine.sii', 'nonflam_cistern_chlorine', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(33, '/def/vehicle/trailer/gooseneck/nonflam_cistern_fluorine.sii', 'nonflam_cistern_fluorine', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(34, '/def/vehicle/trailer/gooseneck/nonflam_cistern_neon.sii', 'nonflam_cistern_neon', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:50', '2018-07-31 11:57:50'),
-(35, '/def/vehicle/trailer/gooseneck/nonflam_cistern_nitrogen.sii', 'nonflam_cistern_nitrogen', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(36, '/def/vehicle/trailer/gooseneck/toxic_cistern_arsenic.sii', 'toxic_cistern_arsenic', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(37, '/def/vehicle/trailer/gooseneck/toxic_cistern_contamin.sii', 'toxic_cistern_contamin', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(38, '/def/vehicle/trailer/gooseneck/toxic_cistern_cyanide.sii', 'toxic_cistern_cyanide', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(39, '/def/vehicle/trailer/gooseneck/toxic_cistern_hmetal.sii', 'toxic_cistern_hmetal', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(40, '/def/vehicle/trailer/gooseneck/toxic_cistern_hwaste.sii', 'toxic_cistern_hwaste', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(41, '/def/vehicle/trailer/gooseneck/toxic_cistern_lead.sii', 'toxic_cistern_lead', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(42, '/def/vehicle/trailer/gooseneck/toxic_cistern_mercuric.sii', 'toxic_cistern_mercuric', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
-(43, '/def/vehicle/trailer/gooseneck/toxic_cistern_pesticide.sii', 'toxic_cistern_pesticide', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
 (44, '/def/vehicle/trailer/gooseneck/empty.sii', 'empty', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
 (45, '/def/vehicle/trailer/livestock/cows.sii', 'cows', 'livestock', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
 (46, '/def/vehicle/trailer/log_trailer/logs.sii', 'logs', 'log_trailer', 'ets2', NULL, 1, '2018-07-31 11:57:51', '2018-07-31 11:57:51'),
@@ -150,7 +125,6 @@ INSERT INTO `accessories` (`id`, `def`, `alias`, `chassis`, `game`, `dlc`, `acti
 (115, '/def/vehicle/trailer/gooseneck/toxic_cistern_lead.sii', 'toxic_cistern_lead', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
 (116, '/def/vehicle/trailer/gooseneck/toxic_cistern_mercuric.sii', 'toxic_cistern_mercuric', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
 (117, '/def/vehicle/trailer/gooseneck/toxic_cistern_pesticide.sii', 'toxic_cistern_pesticide', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
-(118, '/def/vehicle/trailer/gooseneck/empty.sii', 'empty', 'gooseneck', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
 (120, '/def/vehicle/trailer/log_trailer/logs.sii', 'logs', 'log_trailer', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
 (121, '/def/vehicle/trailer/log_trailer/lumber.sii', 'lumber', 'log_trailer', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
 (122, '/def/vehicle/trailer/log_trailer/pipes.sii', 'pipes', 'log_trailer', 'ets2', NULL, 1, '2018-07-31 11:59:24', '2018-07-31 11:59:24'),
@@ -318,7 +292,44 @@ INSERT INTO `accessories` (`id`, `def`, `alias`, `chassis`, `game`, `dlc`, `acti
 (295, '/def/vehicle/trailer_cargo/scs_flatbed/vent_53.sii', 'vent', 'flatbed53', 'ats', NULL, 1, '2018-08-20 09:58:18', '2018-08-20 09:58:18'),
 (296, '/def/vehicle/trailer_cargo/scs_flatbed/etank.sii', 'etank', 'flatbed53', 'ats', NULL, 1, '2018-08-20 09:58:18', '2018-08-20 09:58:18'),
 (297, '/def/vehicle/trailer_cargo/scs_flatbed/etank.sii', 'etank', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:18', '2018-08-20 09:58:18'),
-(298, '/def/vehicle/trailer_cargo/scs_flatbed/etank.sii', 'etank', 'flatbed45', 'ats', NULL, 1, '2018-08-20 09:58:18', '2018-08-20 09:58:18');
+(298, '/def/vehicle/trailer_cargo/scs_flatbed/etank.sii', 'etank', 'flatbed45', 'ats', NULL, 1, '2018-08-20 09:58:18', '2018-08-20 09:58:18'),
+(299, '/def/vehicle/trailer/krone/boxliner/container_2x20.sii', 'cargo20b', 'krone_boxliner_2x20', 'ets2', '12', 1, '2018-09-19 15:39:06', '2018-09-19 16:18:00'),
+(300, '/def/vehicle/trailer/krone/boxliner/container_20.sii', 'cargo20', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:44:26', '2018-09-19 16:18:03'),
+(301, '/def/vehicle/trailer/krone/boxliner/container_40.sii', 'cargo40', 'krone_boxliner_40', 'ets2', '12', 1, '2018-09-19 15:44:59', '2018-09-19 16:18:05'),
+(302, '/def/vehicle/trailer/krone/boxliner/container_40r.sii', 'container_40r', 'krone_boxliner_40', 'ets2', '12', 1, '2018-09-19 15:45:22', '2018-09-19 16:18:07'),
+(303, '/def/vehicle/trailer/krone/boxliner/container_t14.sii', 'container_t14', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:46:21', '2018-09-19 16:18:09'),
+(304, '/def/vehicle/trailer/krone/boxliner/container_t14_diesel.sii', 'cistern', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:46:42', '2018-09-19 16:18:11'),
+(305, '/def/vehicle/trailer/krone/boxliner/container_t14_hospital.sii', 'toxic_cistern_hwaste', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:47:24', '2018-09-19 16:18:15'),
+(306, '/def/vehicle/trailer/krone/boxliner/container_t14_magnesium.sii', 'cistern_magnesium', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:47:50', '2018-09-19 16:18:17'),
+(307, '/def/vehicle/trailer/krone/boxliner/container_t14_pesticides.sii', 'toxic_cistern_pesticide', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:48:05', '2018-09-19 16:18:18'),
+(308, '/def/vehicle/trailer/krone/boxliner/container_t14_potassium.sii', 'cistern_potassium', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:48:21', '2018-09-19 16:18:19'),
+(309, '/def/vehicle/trailer/krone/boxliner/container_t14_s_hydroxide.sii', 'cistern_sodium', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:48:53', '2018-09-19 16:18:21'),
+(310, '/def/vehicle/trailer/krone/boxliner/container_t14_sodium.sii', 'cistern_sodium', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:50:47', '2018-09-19 16:18:22'),
+(311, '/def/vehicle/trailer/krone/boxliner/container_t14_sulfuric.sii', 'sulfuric', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:51:40', '2018-09-19 16:18:24'),
+(312, '/def/vehicle/trailer/krone/boxliner/container_t22.sii', 'container_t22', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:55:42', '2018-09-19 16:18:25'),
+(313, '/def/vehicle/trailer/krone/boxliner/container_t22_arsenic.sii', 'toxic_cistern_arsenic', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:56:08', '2018-09-19 16:18:27'),
+(314, '/def/vehicle/trailer/krone/boxliner/container_t22_cyanide.sii', 'toxic_cistern_cyanide', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:59:26', '2018-09-19 16:18:28'),
+(315, '/def/vehicle/trailer/krone/boxliner/container_t22_m_chlorine.sii', 'nonflam_cistern_chlorine', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 15:59:47', '2018-09-19 16:18:30'),
+(316, '/def/vehicle/trailer/krone/boxliner/container_t22_m_nitrocel.sii', 'cistern_nitrocel', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:01:48', '2018-09-19 16:18:32'),
+(317, '/def/vehicle/trailer/krone/boxliner/container_t22_w_phosp.sii', 'cistern_phosphor', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:02:09', '2018-09-19 16:18:35'),
+(318, '/def/vehicle/trailer/krone/boxliner/container_t50.sii', 'container_t50', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:02:44', '2018-09-19 16:18:37'),
+(319, '/def/vehicle/trailer/krone/boxliner/container_t50_acetylene.sii', 'nonflam_cistern_acetylene', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:03:32', '2018-09-19 16:18:39'),
+(320, '/def/vehicle/trailer/krone/boxliner/container_t50_acetylene.sii', 'nonflam_cistern_chlorine', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:04:09', '2018-09-19 16:18:41'),
+(321, '/def/vehicle/trailer/krone/boxliner/container_t50_fluorine.sii', 'nonflam_cistern_fluorine', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:04:35', '2018-09-19 16:18:43'),
+(322, '/def/vehicle/trailer/krone/boxliner/container_t75.sii', 'container_t75', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:04:58', '2018-09-19 16:18:45'),
+(323, '/def/vehicle/trailer/krone/boxliner/container_t75_neon.sii', 'nonflam_cistern_neon', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:06:26', '2018-09-19 16:18:47'),
+(324, '/def/vehicle/trailer/krone/boxliner/container_t75_nitrogen.sii', 'nonflam_cistern_nitrogen', 'krone_boxliner_20', 'ets2', '12', 1, '2018-09-19 16:06:44', '2018-09-19 16:18:49'),
+(325, '/def/vehicle/trailer_cargo/krone_profilinerhd/empty_tank.sii', 'empty_tank', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:15:10', '2018-09-19 16:15:29'),
+(326, '/def/vehicle/trailer_cargo/krone_profilinerhd/hi_pressure_tank.sii', 'hi_pressure_tank', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:15:40', '2018-09-19 16:15:52'),
+(327, '/def/vehicle/trailer_cargo/krone_profilinerhd/marble_blocks.sii', 'marble_blocks', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:15:59', '2018-09-19 16:16:07'),
+(328, '/def/vehicle/trailer_cargo/krone_profilinerhd/marble_blocks_2.sii', 'marble_blocks_2', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:16:17', '2018-09-19 16:16:22'),
+(329, '/def/vehicle/trailer_cargo/krone_profilinerhd/marble_slabs.sii', 'marble_slabs', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:16:27', '2018-09-19 16:16:33'),
+(330, '/def/vehicle/trailer_cargo/krone_profilinerhd/metal_coil.sii', 'metal_coil', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:16:38', '2018-09-19 16:16:44'),
+(331, '/def/vehicle/trailer_cargo/krone_profilinerhd/metal_pipes.sii', 'metal_pipes', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:16:51', '2018-09-19 16:16:57'),
+(332, '/def/vehicle/trailer_cargo/krone_profilinerhd/over_cargo.sii', 'over_cargo', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:17:03', '2018-09-19 16:17:09'),
+(333, '/def/vehicle/trailer_cargo/krone_profilinerhd/square_tubing.sii', 'square_tubing', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:17:15', '2018-09-19 16:17:27'),
+(334, '/def/vehicle/trailer_cargo/krone_profilinerhd/tubes.sii', 'tubes', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:17:29', '2018-09-19 16:17:39'),
+(335, '/def/vehicle/trailer_cargo/krone_profilinerhd/ventilator.sii', 'ventilator', 'krone_profiliner_hd', 'ets2', '12', 1, '2018-09-19 16:17:45', '2018-09-19 16:17:51');
 
 -- --------------------------------------------------------
 
@@ -483,9 +494,13 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `alias_short_paint`,
 (161, '/def/vehicle/trailer/scs_flatbed/flatbed_r.sii', 'flat_bed_r', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38'),
 (162, '/def/vehicle/trailer/scs_flatbed/flatbed_y.sii', 'flat_bed_y', 'flat_bed', 'flat_bed', '3', 7, 1, 0, 1, 0, NULL, 0, 'ets2', NULL, 1, NULL, '2018-08-20 10:16:38'),
 (163, '/def/vehicle/trailer/krone/profiliner/chassis.sii', 'krone_profiliner', 'krone_profiliner', 'krone_profiliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-17 13:08:04', '2018-09-17 13:11:08'),
-(164, '/def/vehicle/trailer/krone/profiliner_hd/chassis.sii', 'krone_profiliner_hd', 'krone_profiliner_hd', 'krone_profiliner_hd', '3', 21, 1, 0, 1, 0, NULL, 0, 'ets2', 12, 0, '2018-09-17 13:22:02', '2018-09-17 13:25:42'),
+(164, '/def/vehicle/trailer/krone/profiliner_hd/chassis.sii', 'krone_profiliner_hd', 'krone_profiliner_hd', 'krone_profiliner_hd', '3', 21, 1, 0, 1, 0, NULL, 0, 'ets2', 12, 1, '2018-09-17 13:22:02', '2018-09-19 15:31:48'),
 (165, '/def/vehicle/trailer/krone/coolliner/chassis.sii', 'krone_coolliner', 'krone_coolliner', 'krone_coolliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/coolliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-18 04:27:09', '2018-09-18 04:27:46'),
-(166, '/def/vehicle/trailer/krone/dryliner/chassis.sii', 'krone_dryliner', 'krone_dryliner', 'krone_dryliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/dryliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-18 04:28:57', '2018-09-18 04:29:35');
+(166, '/def/vehicle/trailer/krone/dryliner/chassis.sii', 'krone_dryliner', 'krone_dryliner', 'krone_dryliner', '3', 21, 1, 0, 0, 1, '/def/vehicle/trailer/krone/dryliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-18 04:28:57', '2018-09-18 04:29:35'),
+(167, '/def/vehicle/trailer/krone/boxliner/chassis_20.sii', 'krone_boxliner_20', 'krone_boxliner', 'krone_boxliner_20', '3', 21, 1, 0, 1, 0, NULL, 0, 'ets2', 12, 1, '2018-09-19 15:03:11', '2018-09-19 15:43:33'),
+(168, '/def/vehicle/trailer/krone/boxliner/chassis_2x20.sii', 'krone_boxliner_2x20', 'krone_boxliner', 'krone_boxliner_2x20', '3', 21, 1, 0, 1, 0, NULL, 0, 'ets2', 12, 1, '2018-09-19 15:29:54', '2018-09-19 15:43:43'),
+(169, '/def/vehicle/trailer/krone/boxliner/chassis_40.sii', 'krone_boxliner_40', 'krone_boxliner', 'krone_boxliner_40', '3', 21, 1, 0, 1, 0, NULL, 0, 'ets2', 12, 1, '2018-09-19 15:30:54', '2018-09-19 15:43:52'),
+(170, '/def/vehicle/trailer/krone/profiliner/chassis_double.sii', 'krone_profiliner_double', 'krone_profiliner_double', 'krone_profiliner', '3', 21, 1, 1, 0, 1, '/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii', 0, 'ets2', 12, 1, '2018-09-19 16:30:48', '2018-09-19 16:31:59');
 
 -- --------------------------------------------------------
 
@@ -1809,52 +1824,62 @@ ALTER TABLE `wheels`
 -- AUTO_INCREMENT для таблиці `accessories`
 --
 ALTER TABLE `accessories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=299;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=336;
+
 --
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
+
 --
 -- AUTO_INCREMENT для таблиці `companies`
 --
 ALTER TABLE `companies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+
 --
 -- AUTO_INCREMENT для таблиці `dlc`
 --
 ALTER TABLE `dlc`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
 -- AUTO_INCREMENT для таблиці `error_codes`
 --
 ALTER TABLE `error_codes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT для таблиці `languages`
 --
 ALTER TABLE `languages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
 --
 -- AUTO_INCREMENT для таблиці `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- AUTO_INCREMENT для таблиці `paints`
 --
 ALTER TABLE `paints`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1304;
+
 --
 -- AUTO_INCREMENT для таблиці `settings`
 --
 ALTER TABLE `settings`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблиці `wheels`
 --
 ALTER TABLE `wheels`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
