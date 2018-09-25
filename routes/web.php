@@ -11,26 +11,6 @@
 |
 */
 
-//Route::get('db', function(){
-//
-//    $dir = resource_path('tmp'.DIRECTORY_SEPARATOR.'dryliner'.DIRECTORY_SEPARATOR.'company_paint_job');
-//    foreach (scandir($dir) as $paint){
-//        if ($paint !== '.' && $paint !== '..'){
-//            $paint_job = new \App\Paint();
-//            $paint_job->def = '/def/vehicle/trailer/krone/dryliner/company_paint_job/'.$paint;
-//            $paint_job->alias = str_replace('.sii', '', $paint);
-//            $paint_job->look = $paint_job->alias;
-//            $paint_job->chassis = 'krone_dryliner';
-//            $paint_job->game = 'ets2';
-//            $paint_job->dlc_id = 12;
-//            $paint_job->active = true;
-//
-//            $paint_job->save();
-//        }
-//    }
-//
-//});
-
 Auth::routes();
 Route::get('auth/steam', 'Auth\SteamAuthController@redirectToSteam')->name('auth.steam');
 Route::get('auth/steam/handle', 'Auth\SteamAuthController@handle')->name('auth.steam.handle');
