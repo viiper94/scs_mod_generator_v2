@@ -3,7 +3,7 @@
 <link type="text/css" rel="stylesheet" href="{{ asset('assets/semanticui/semanticui.min.css') }}" media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="{{ asset('assets/semanticui/semantic-custom.min.css') }}" media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="{{ asset('assets/materialize/css/materialize.min.css?1009') }}" media="screen,projection"/>
-<link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style.css') }}" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-2.0.5.min.css') }}" media="screen,projection"/>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99570317-2"></script>
