@@ -57,13 +57,15 @@
         "links": "Links",
         "forums_topic": "Forums Topic",
         "scs_blog": "SCS Blog",
-        "mp_no_support": "NOT SUPPORTED BY MP"
+        "mp_no_support": "NOT SUPPORTED BY MP",
+        "weight_apply": "Cargo weight will apply after job list refresh. Read instruction for more information."
     },
     "instructions": {
         "generate_title": "How to use this tool?",
         "install_title": "How to install mod?",
         "mp_use": "How to use mod in TruckersMP?",
         "paint_title": "What is it and how to use it?",
+        "weight_title": "How to deal with cargo weight?",
         "close_modal": "I got it",
         "generate_mod_1": "Choose name for future mod (not required, otherwise generated from the chassis name).",
         "generate_mod_2": "Pick a chassis from dropdown list (required). You can use search.",
@@ -86,7 +88,8 @@
         "install_paint_mod_6": "Visit truck service. Go to Truck Configurator -> Paint Job.",
         "install_paint_mod_7": "Apply \"Custom Color\", \"Custom Metallic Color\" (will work with MP). You can save a color as template.",
         "install_paint_mod_8": "Or you can apply paint job with name of your mod (wont work with MP).",
-        "install_paint_mod_9": "By a trailer or choose one from Freight Market. Enjoy it!"
+        "weight_1": "Since amount of cargo for each job offer stores in your save, to apply cargo weight correctly you have to refresh job list (sleep, move to another garage, F7+Enter, g_set_time in console, etc.).",
+        "weight_2": "More info"
     },
     "user": {
         "profile": "Profile",

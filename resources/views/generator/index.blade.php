@@ -147,6 +147,8 @@
                                         <label for="weight" class="mdc-text-field__label">@lang('general.trailer_weight')</label>
                                         <div class="mdc-text-field__bottom-line"></div>
                                     </div>
+                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent red-text"
+                                       aria-hidden="false" id="weight-helper-text">@lang('general.weight_apply')</p>
                                     <div class="wheels input-field" style="display: none;">
                                         <select class="icons" name="wheels">
                                             <option value="" selected>@lang('general.w_default')</option>
