@@ -23,7 +23,7 @@
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <h5 class="card-title">{{ $user->name }}</h5>
+                            <a href="{{ route('profile') .'/'. $user->id }}"><h5 class="card-title">{{ $user->name }}</h5></a>
                             <p>E-Mail: {{ $user->email }}</p>
                             <p>Зареестрований: {{ $user->created_at }}</p>
                             @if($user->steamid64)
