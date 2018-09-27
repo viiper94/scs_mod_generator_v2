@@ -26,6 +26,7 @@ Route::post('/color/generate', 'TruckPaintGeneratorController@generate')->name('
 Route::get('/color/{game?}/{d?}', 'TruckPaintGeneratorController@index');
 Route::post('/color/{game?}', 'TruckPaintGeneratorController@getDLC')->name('color');
 
+Route::get('/profile/{id?}', 'ProfileController@index')->name('profile');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::get('/profile/mod_broken/{id?}', 'ProfileController@modBroken')->name('mod_broken');
 Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');

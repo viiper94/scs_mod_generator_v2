@@ -7,15 +7,18 @@ use App\Mods;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller{
 
-    public function index(){
+    public function index(Request $request, $id = null){
         if(!Auth::check()) return redirect('/login');
+        if(isset($id) && Gate::denies('admin')) return redirect()->route('profile');
+        $user = isset($id) ? User::find($id) : Auth::user();
         return view('profile.profile', [
-            'user' => Auth::user(),
-            'mods' => Mods::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get()
+            'user' => $user,
+            'mods' => Mods::where('user_id', $user->id)->orderBy('created_at', 'desc')->get()
         ]);
     }
 
