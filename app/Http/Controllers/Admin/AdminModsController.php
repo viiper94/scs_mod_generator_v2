@@ -11,7 +11,7 @@ class AdminModsController extends Controller{
 
     public function index(){
         return view('admin.mods.index', [
-            'mods' => Mods::with('user')->paginate(15)
+            'mods' => Mods::with('user')->orderBy('created_at', 'desc')->paginate(15)
         ]);
     }
 
