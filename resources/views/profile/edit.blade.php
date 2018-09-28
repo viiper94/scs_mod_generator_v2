@@ -56,9 +56,9 @@
                         <div class="col s12 center">
                             @if($user->steamid64)
                                 <a href="https://steamcommunity.com/profiles/{{ $user->steamid64 }}"
-                                   class="no-margin" target="_blank">My Steam profile</a>
+                                   class="no-margin" target="_blank">@lang('user.my_steam')</a>
                             @else
-                                <a href="{{ route('profile.steam') }}" class="no-margin">Link Steam account</a>
+                                <a href="{{ route('profile.steam') }}" class="no-margin">@lang('user.link_steam')</a>
                             @endif
                         </div>
                     </div>
