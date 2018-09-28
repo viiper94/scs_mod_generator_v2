@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use Invisnik\LaravelSteamAuth\SteamAuth;
 use App\User;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class SteamAuthController{
 
@@ -52,11 +52,18 @@ class SteamAuthController{
             $info = $this->steam->getUserInfo();
 
             if (!is_null($info)) {
-                $user = $this->findOrNewUser($info);
 
-                Auth::login($user, true);
+                if(Auth::check()){
+                    User::linkSteamAccount($info);
+                    return redirect()->route('profile');
+                }else{
+                    $user = $this->findOrNewUser($info);
 
-                return redirect($this->redirectURL); // redirect to site
+                    Auth::login($user, true);
+
+                    return redirect($this->redirectURL); // redirect to site
+                }
+
             }
         }
         return $this->redirectToSteam();

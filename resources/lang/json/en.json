@@ -115,7 +115,9 @@
         "save_password": "Save new password",
         "old_pass_fail": "Old password is wrong",
         "generated_mods": "Generated Mods",
-        "logout": "Log Out"
+        "logout": "Log Out",
+        "link_steam": "Link Steam account",
+        "my_steam": "My Steam profile"
     },
     "mods": {
         "mods_history": "Mods History",

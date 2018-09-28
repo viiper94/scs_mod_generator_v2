@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 class User extends Authenticatable
 {
@@ -29,6 +30,22 @@ class User extends Authenticatable
 
     public function isAdmin(){
         return $this->admin === 1;
+    }
+
+    public static function linkSteamAccount($info){
+        $user = User::find(Auth::id());
+        if(!$user->steamid64){
+            $user->steamid64 = $info->steamID64;
+            if(!$user->image){
+                $file_name = time().'.jpg';
+                $img = public_path().'/images/users/'.$file_name;
+                file_put_contents($img, file_get_contents($info->avatarfull));
+                $user->image = $file_name;
+            }
+            $user->save();
+            return true;
+        }
+        return false;
     }
 
 }

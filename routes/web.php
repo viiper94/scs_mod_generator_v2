@@ -26,12 +26,13 @@ Route::post('/color/generate', 'TruckPaintGeneratorController@generate')->name('
 Route::get('/color/{game?}/{d?}', 'TruckPaintGeneratorController@index');
 Route::post('/color/{game?}', 'TruckPaintGeneratorController@getDLC')->name('color');
 
+Route::get('/profile/steam', 'Auth\SteamAuthController@redirectToSteam')->name('profile.steam');
 Route::get('/profile/mod_broken/{id?}', 'ProfileController@modBroken')->name('mod_broken');
+Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
 Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
 Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
 Route::get('/profile/{id?}', 'ProfileController@index')->name('profile');
 Route::get('/profile', 'ProfileController@index')->name('profile');
-Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
 
 Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
 
