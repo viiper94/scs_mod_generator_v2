@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Language;
+use App\OneSky;
 use Illuminate\Http\Request;
 
 class AdminLanguagesController extends Controller{
@@ -47,6 +48,21 @@ class AdminLanguagesController extends Controller{
         }
 
         return view('admin.languages.add');
+    }
+
+    public function upload(){
+        $oneSky = new OneSky();
+        return $oneSky->uploadFile() ?
+            redirect()->route('languages')->with(['success' => 'Виконано!']) :
+            redirect()->route('languages')->withErrors(['Виникла помилка!']);
+    }
+
+    public function download(Request $request, $locale){
+        if(!isset($locale)) return redirect()->back()->withErrors(['Виникла помилка!']);
+        $oneSky = new OneSky();
+        return $oneSky->exportTranslations($locale) ?
+            redirect()->route('languages')->with(['success' => 'Виконано!']) :
+            redirect()->route('languages')->withErrors(['Виникла помилка!']);
     }
 
 }

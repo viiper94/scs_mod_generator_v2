@@ -17,6 +17,19 @@
                     <td>{{ $item->title }}</td>
                     <td>{{ $item->locale }}</td>
                     <td style="white-space: nowrap" class="right-align">
+                        @if($item->locale == 'en')
+                            <a href="{{ route('languages') }}/upload"
+                               class="mdc-button mdc-ripple mdc-button--raised green white-text"
+                               onclick="return confirm('Вивантажити файл en.json на платформу OneSky?')">
+                                <i class="material-icons mdc-button__icon notranslate">file_upload</i>
+                            </a>
+                        @else
+                            <a href="{{ route('languages') }}/download/{{ $item->locale }}"
+                               class="mdc-button mdc-ripple mdc-button--raised yellow black-text"
+                               onclick="return confirm('Завантажити переклади з платформи OneSky?')">
+                                <i class="material-icons mdc-button__icon notranslate">file_download</i>
+                            </a>
+                        @endif
                         <a href="{{ route('languages') }}/delete/{{ $item->id }}" class="mdc-button mdc-ripple mdc-button--raised red white-text"
                            onclick="return confirm('Видалити мову?')">
                             <i class="material-icons mdc-button__icon notranslate">delete</i>
