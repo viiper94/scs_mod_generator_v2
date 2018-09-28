@@ -71,6 +71,10 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
+        'O' => 
+        array (
+            'Onesky\\Api\\' => 11,
+        ),
         'N' => 
         array (
             'NunoMaduro\\Collision\\' => 21,
@@ -239,6 +243,10 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Onesky\\Api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api',
         ),
         'NunoMaduro\\Collision\\' => 
         array (
@@ -2272,6 +2280,12 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'NunoMaduro\\Collision\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Highlighter.php',
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
         'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
+        'Onesky\\Api\\Client' => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api/Client.php',
+        'Onesky\\Api\\FileFormat' => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api/FileFormat.php',
+        'Onesky\\Api\\Tests\\ApiTest' => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api/Tests/ApiTest.php',
+        'Onesky\\Api\\Tests\\FilesApiTest' => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api/Tests/FilesApiTest.php',
+        'Onesky\\Api\\Tests\\ProjectsApiTest' => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api/Tests/ProjectsApiTest.php',
+        'Onesky\\Api\\Tests\\TranslationsApiTest' => __DIR__ . '/..' . '/onesky/api-library-php5/src/Onesky/Api/Tests/TranslationsApiTest.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',
@@ -2716,6 +2730,8 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'PhpParser\\Builder\\Namespace_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/Namespace_.php',
         'PhpParser\\Builder\\Param' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/Param.php',
         'PhpParser\\Builder\\Property' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/Property.php',
+        'PhpParser\\Builder\\TraitUse' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/TraitUse.php',
+        'PhpParser\\Builder\\TraitUseAdaptation' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/TraitUseAdaptation.php',
         'PhpParser\\Builder\\Trait_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/Trait_.php',
         'PhpParser\\Builder\\Use_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder/Use_.php',
         'PhpParser\\Comment' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Comment.php',
