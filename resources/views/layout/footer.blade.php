@@ -18,7 +18,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            <span class="left">@lang('general.current_version'): 2.0.6</span>
+            <span class="left">@lang('general.current_version'): 2.0.7</span>
             <span class="right">&copy; <a href="http://steamcommunity.com/id/viiper94/" target="_blank">Mayday</a> - {{date('Y')}}</span>
         </div>
     </div>
