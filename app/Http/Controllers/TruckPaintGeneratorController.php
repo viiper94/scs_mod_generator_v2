@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 class TruckPaintGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
-        return view('truck_paint.index', [
+        return view('generator.generator_paint', [
             'chassis_list' => Chassis::where(['with_paint_job' => '1', 'game' => 'ets2'])->with('dlc')->get(),
             'game' => $game,
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
@@ -66,11 +66,13 @@ class TruckPaintGeneratorController extends Controller{
         if($request->ajax() && $request->input('chassis')){
             if($request->input('chassis') == 'paintable'){
                 $dlc = [];
+                $wheels = true;
             }else{
                 $chassis = Chassis::where('alias', $request->input('chassis'))->first();
                 $dlc = $chassis->dlc;
+                $wheels = $chassis->supports_wheels;
             }
-            return response()->json(['status' => 'OK', 'dlc' => $dlc]);
+            return response()->json(['status' => 'OK', 'dlc' => $dlc, 'wheels' => $wheels]);
         }
         return false;
     }

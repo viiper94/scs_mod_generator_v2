@@ -115,6 +115,12 @@ $(document).ready(function(){
                             $.each(response.dlc, function(index, dlc){
                                 $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
                             });
+                            if(response.wheels){
+                                $('.wheels.input-field').show();
+                            }else{
+                                $('.wheels.input-field').hide();
+                                $('.wheels.input-field select').val('');
+                            }
                         }
                     }
                 });
@@ -193,6 +199,12 @@ $(document).ready(function(){
                             $.each(response.dlc, function(index, dlc){
                                 $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
                             });
+                            if(response.wheels){
+                                $('.wheels.input-field').show();
+                            }else{
+                                $('.wheels.input-field').hide();
+                                $('.wheels.input-field select').val('');
+                            }
 						}
 					},
 					complete : function(){

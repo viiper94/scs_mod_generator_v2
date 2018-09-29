@@ -18,7 +18,7 @@ class TrailerGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
         if($game !== 'ats' && $game !== 'ets2') abort(404);
-        return view('generator.index', [
+        return view('generator.generator_trailer', [
             'game' => $game,
             'chassis_list' => Chassis::where(['game' => $game, 'active' => 1])->with('dlc')->get(),
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
@@ -69,7 +69,7 @@ class TrailerGeneratorController extends Controller{
                 $data['paint'] = [
                     'echo' => Chassis::getAllCompanies($game)
                 ];
-                return response()->json(['result' => $data, 'status' => 'OK', 'dlc' => []]);
+                return response()->json(['result' => $data, 'status' => 'OK', 'dlc' => [], 'wheels' => true]);
             }
             $chassis = Chassis::where('alias', $request->input('chassis'))->first();
             $target = null;
@@ -84,7 +84,12 @@ class TrailerGeneratorController extends Controller{
                     'echo' => $chassis->getAvailablePaints()
                 ];
             }
-            return response()->json(['result' => $data, 'status' => 'OK', 'dlc' => $chassis->dlc]);
+            return response()->json([
+                'result' => $data,
+                'status' => 'OK',
+                'dlc' => $chassis->dlc,
+                'wheels' => $chassis->supports_wheels
+            ]);
         }
         return false;
     }
