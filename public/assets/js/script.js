@@ -350,8 +350,10 @@ $(document).ready(function(){
 			newVal = val.replace(/\D/, '');
 			$(this).val(newVal);
 		}
-		if(newVal.length > 10){
-			$(this).val(newVal.substr(0, 10));
+		if(newVal.length > 3){
+			$(this).val(newVal.substr(0, 3));
+		}else if(parseInt(newVal) > 300){
+			$(this).val(newVal.substr(0, 2));
 		}
 	});
 
