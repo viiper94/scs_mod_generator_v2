@@ -12,12 +12,14 @@
                 <h4 class="card-title">{{ $user->name }}</h4>
                 <p>@lang('user.generated_mods'): <b>{{ count($mods) }}</b></p>
             </div>
-            <div class="card-action">
-                <a href="{{ route('profile_edit') }}" class="mdc-button mdc-button--raised mdc-ripple" style="min-width: 200px; color: #000;">
-                    <i class="material-icons notranslate mdc-button__icon no-margin">edit</i>
-                    <b>@lang('user.profile_edit')</b>
-                </a>
-            </div>
+            @if(Auth::id() == $user->id)
+                <div class="card-action">
+                    <a href="{{ route('profile_edit') }}" class="mdc-button mdc-button--raised mdc-ripple" style="min-width: 200px; color: #000;">
+                        <i class="material-icons notranslate mdc-button__icon no-margin">edit</i>
+                        <b>@lang('user.profile_edit')</b>
+                    </a>
+                </div>
+            @endif
         </div>
     </div>
     @if(count($mods) > 0)
