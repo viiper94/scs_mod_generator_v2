@@ -4,6 +4,8 @@
 
     @include('admin.search')
 
+    {{ $mods->appends(['q' => Request::input('q')])->links('layout.pagination') }}
+
     <div class="row no-margin">
         <div class="col s12 m10 offset-m1">
             @if(count($mods) > 0)
