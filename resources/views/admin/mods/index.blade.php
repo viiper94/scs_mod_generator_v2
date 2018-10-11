@@ -7,12 +7,28 @@
     <div class="row no-margin">
         <div class="col s12 m10 offset-m1">
             @if(count($mods) > 0)
-                <h5 class="light">Показано {{ count($mods) }} модифікацій</h5>
+                <div class="col m6 s12">
+                    <h5 class="light">Показано {{ count($mods) }} модифікацій</h5>
+                </div>
+                <div class="col m6 s12 right-align">
+                    <h5>
+                        @if(Request::input('marked'))
+                            <a href="{{ route('mods') }}" class="mdc-button mdc-button--raised mdc-ripple">
+                                Показати спершу останні
+                            </a>
+                        @else
+                            <a href="{{ route('mods', ['marked' => 'desc']) }}" class="mdc-button mdc-button--raised mdc-ripple">
+                                Показати спершу проблемні
+                            </a>
+                        @endif
+                    </h5>
+                </div>
             @else
                 <h5 class="light">Немає жодної модифікації</h5>
             @endif
         </div>
     </div>
+
     <div class="row no-margin">
         <div class="col s12 m10 offset-m1">
             <ul class="collapsible ">

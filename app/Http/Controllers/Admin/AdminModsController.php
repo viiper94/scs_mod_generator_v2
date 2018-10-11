@@ -9,9 +9,12 @@ use Illuminate\Http\Request;
 
 class AdminModsController extends Controller{
 
-    public function index(){
+    public function index(Request $request){
+        $mods = Mods::with('user');
+        if($request->get('marked') == 'desc') $mods = $mods->orderBy('broken', 'desc');
+        $mods = $mods->orderBy('created_at', 'desc')->paginate(15);
         return view('admin.mods.index', [
-            'mods' => Mods::with('user')->orderBy('created_at', 'desc')->paginate(15)
+            'mods' => $mods
         ]);
     }
 
