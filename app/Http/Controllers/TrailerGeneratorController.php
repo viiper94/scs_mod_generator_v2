@@ -21,8 +21,8 @@ class TrailerGeneratorController extends Controller{
         return view('generator.generator_trailer', [
             'game' => $game,
             'chassis_list' => Chassis::where(['game' => $game, 'active' => 1])->with('dlc')->get(),
-            'wheels' => Wheel::where(['active' => 1, 'game' => $game])->get(),
-            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->get()
+            'wheels' => Wheel::where(['active' => 1, 'game' => $game])->with('dlc')->orderBy('sort', 'desc')->get(),
+            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->orderBy('sort', 'asc')->get()
         ]);
     }
 
