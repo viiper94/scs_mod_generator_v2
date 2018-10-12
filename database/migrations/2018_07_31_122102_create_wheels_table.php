@@ -20,7 +20,7 @@ class CreateWheelsTable extends Migration
             $table->boolean('mp_support')->default(true);
             $table->boolean('active')->default(true);
             $table->string('game')->default('ets2');
-            $table->integer('dlc')->nullable();
+            $table->integer('dlc_id')->nullable();
             $table->timestamps();
         });
     }

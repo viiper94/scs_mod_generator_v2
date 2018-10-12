@@ -28,7 +28,7 @@ class AdminWheelsController extends Controller{
                 'game' => $request->input('game', 'ets2'),
                 'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
-                'dlc' => $request->input('dlc', null),
+                'dlc_id' => $request->input('dlc', null),
                 'active' => $request->input('active') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
             ]);
@@ -88,7 +88,7 @@ class AdminWheelsController extends Controller{
                 'game' => $request->input('game', 'ets2'),
                 'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
-                'dlc' => $request->input('dlc', null),
+                'dlc_id' => $request->input('dlc', null),
                 'active' => $request->input('active') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on'
             ]);
