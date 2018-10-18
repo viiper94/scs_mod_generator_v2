@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Mods;
 use Closure;
 use Gate;
 
@@ -16,6 +17,8 @@ class Admin
      */
     public function handle($request, Closure $next){
         if(Gate::denies('admin')) abort(403);
+
+        Mods::cleanUp();
 
         return $next($request);
     }
