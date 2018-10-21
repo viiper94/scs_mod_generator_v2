@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Mods;
 use Closure;
 use Gate;
+use App;
 
 class Admin
 {
@@ -17,7 +18,7 @@ class Admin
      */
     public function handle($request, Closure $next){
         if(Gate::denies('admin')) abort(403);
-
+        App::setLocale('uk');
         Mods::cleanUp();
 
         return $next($request);
