@@ -5,7 +5,7 @@
 <div class="container">
     <div class="card horizontal">
         <div class="card-image">
-            @if($user->image && file_exists(asset('images/users/'.$user->image)))
+            @if($user->image && file_exists(public_path('images/users/'.$user->image)))
                 <img src="{{ asset('images/users/'.$user->image ) }}" style="max-height: 200px;">
             @else
                 <img src="{{ asset('images/users/default.jpg') }}" style="max-height: 200px;">

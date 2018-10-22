@@ -10,7 +10,7 @@
                     <div class="row"><h5 class="card-title center">@lang('user.profile_edit')</h5></div>
                     <div class="row center">
                         <div class="img-wrapper col s12">
-                            @if($user->image && file_exists(asset('images/users/'.$user->image)))
+                            @if($user->image && file_exists(public_path('images/users/'.$user->image)))
                                 <img src="{{ asset('images/users/'.$user->image) }}" class="img-responsive circle" style="height: 200px; width: 200px; object-fit: cover;">
                             @else
                                 <img src="{{ asset('images/users/default.jpg') }}" class="img-responsive circle" style="height: 200px; width: 200px; object-fit: cover;">
