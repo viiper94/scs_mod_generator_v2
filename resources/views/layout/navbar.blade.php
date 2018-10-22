@@ -3,7 +3,13 @@
         @if(Auth::check())
             <li>
                 <div class="user-view" style="min-height: 200px;">
-                    <a href="{{ route('profile') }}"><img class="circle" src="{{ '/images/users/'.(Auth::user()->image ?? 'default.jpg') }}"></a>
+                    <a href="{{ route('profile') }}">
+                        @if(Auth::user()->image && file_exists(asset('images/users/'.$user->image)))
+                            <img class="circle" src="{{ '/images/users/'.Auth::user()->image }}">
+                        @else
+                            <img class="circle" src="{{ '/images/users/default.jpg' }}">
+                        @endif
+                    </a>
                     <a href="{{ route('profile') }}"><span class="name center">{{ Auth::user()->name }}</span></a>
                 </div>
             </li>
