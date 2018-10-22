@@ -24,6 +24,10 @@ class ModGenerator{
         !is_dir($this->outDir) ? : $this->rrmdir($this->outDir);
     }
 
+    protected function copyCaravanFix(){
+        $this->rcopy($this->filesDir.'/'.$this->game.'/trmp_fix', $this->outDir);
+    }
+
     protected function rrmdir($src) {
         if(is_dir($src)){
             $dir = opendir($src);
@@ -143,7 +147,7 @@ class ModGenerator{
             'Ü' => 'u',
 
             ' ' => '_', '&' => '', '/' => '_',
-            '\'' => '', ',' => ''];
+            '\'' => '', ',' => '', '+' => ''];
 
         return strtr($str, $ru);
     }
