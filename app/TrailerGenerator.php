@@ -37,6 +37,9 @@ class TrailerGenerator extends ModGenerator{
 			$this->copyTrailerDefsFiles();
 			$this->replaceCargoFiles();
 		}
+        if(Request::input('fix') == 'on'){
+            $this->copyCaravanFix();
+        }
 		if($this->zip){
             $this->fileName = $this->zipFiles();
             $this->removeOutDirectory();

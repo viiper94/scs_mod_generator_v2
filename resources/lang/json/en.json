@@ -58,7 +58,8 @@
         "forums_topic": "Forum Topic",
         "scs_blog": "SCS Blog",
         "mp_no_support": "NOT SUPPORTED BY MP",
-        "weight_apply": "Cargo weight will apply after job list refresh. Read instruction for more information."
+        "weight_apply": "Cargo weight will apply after job list refresh. Read instruction for more information.",
+        "include_fix": "Include Caravan cargo fix (for TruckersMP usage)"
     },
     "instructions": {
         "generate_title": "How to use this tool?",

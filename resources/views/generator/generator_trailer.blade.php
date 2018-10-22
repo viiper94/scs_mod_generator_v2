@@ -82,7 +82,10 @@
                             <label for="all_paints" class="mdc-switch-label">@lang('general.show_all_paints')</label>
                         </div>
                     </div>
+
+                    @include('generator.trmp_fix')
                     @include('generator.advanced')
+
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">

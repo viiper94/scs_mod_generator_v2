@@ -1,0 +1,19 @@
+SiiNunit
+{
+trailer_def : trailer_def.caravan.scout
+{
+	trailer: trailer.caravan.scout
+	gross_trailer_weight_limit: 15080
+	chassis_mass: 1000
+	body_mass: 0
+	axles: 1
+	volume: 100
+	body_type: _caravan
+	mass_ratio[]: 1
+	min_cog_mass[]: 10000
+	min_cog[]: (0.0,0.42,0.0)
+	max_cog_mass[]: 10000
+	max_cog[]: (0.0,0.42,0.0)
+
+}
+}

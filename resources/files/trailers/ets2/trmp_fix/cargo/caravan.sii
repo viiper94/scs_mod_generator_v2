@@ -1,0 +1,10 @@
+cargo_data: cargo.caravan
+{
+	name: "Caravan"
+	fragility: 0
+	group[]: containers
+	body_types[]: _caravan
+	price_coef: 1
+	volume: 1
+	mass: 1
+}

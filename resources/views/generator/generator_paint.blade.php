@@ -65,7 +65,10 @@
                     <div class="colors color-advanced row" style="display: none;">
                         @include('generator.colors_hex_rgb_scs')
                     </div>
+
+                    @include('generator.trmp_fix')
                     @include('generator.advanced')
+
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">

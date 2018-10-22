@@ -1,0 +1,19 @@
+trailer : trailer.caravan.scout
+{
+	accessories[]: .caravan.tchassis
+	accessories[]: .caravan.wheel
+
+}
+
+vehicle_accessory: .caravan.tchassis
+{
+    	data_path: "/def/vehicle/trailer/caravan/chassis.sii"
+}
+
+vehicle_wheel_accessory: .caravan.wheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/ai_wheel/trailer.sii"
+}
+
+

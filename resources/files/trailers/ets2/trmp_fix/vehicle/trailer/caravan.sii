@@ -1,0 +1,23 @@
+trailer : trailer.caravan.scout
+{
+	accessories[]: .caravan.tchassis
+	accessories[]: .caravan.wheel
+	accessories[]: .caravan.paint_job
+}
+
+vehicle_accessory: .caravan.tchassis
+{
+    	data_path: "/def/vehicle/trailer/caravan/chassis.sii"
+}
+
+vehicle_wheel_accessory: .caravan.wheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/ai_wheel/caravan_wheel.sii"
+}
+
+vehicle_paint_job_accessory: .caravan.paint_job
+{
+    	data_path: "/def/vehicle/trailer/fuel_cistern/company_paint_job/default.sii"
+}
+
