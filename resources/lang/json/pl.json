@@ -1,5 +1,6 @@
 {
     "general": {
+        "include_fix": "Zawiera naprawe na Caravan (for u\u017cycia na TruckersMP)",
         "choose_language": "Wybierz j\u0119zyk",
         "help_translate": "Mo\u017cesz pom\u00f3c t\u0142umaczy\u0107 stron\u0119",
         "close": "Zamknij",
