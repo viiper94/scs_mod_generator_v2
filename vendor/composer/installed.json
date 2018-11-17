@@ -396,6 +396,44 @@
         ]
     },
     {
+        "name": "elforastero/transliterate",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ElForastero/Transliterate.git",
+            "reference": "da1e4df2e658e5d0b0adc7a35de3c0e5136b48f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ElForastero/Transliterate/zipball/da1e4df2e658e5d0b0adc7a35de3c0e5136b48f0",
+            "reference": "da1e4df2e658e5d0b0adc7a35de3c0e5136b48f0",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~5"
+        },
+        "time": "2017-06-10T16:57:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ElForastero\\Transliterate\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Eugene Dzhumak",
+                "email": "elforastero@ya.ru"
+            }
+        ],
+        "description": "Transliteration package for laravel 5"
+    },
+    {
         "name": "erusev/parsedown",
         "version": "1.7.1",
         "version_normalized": "1.7.1.0",

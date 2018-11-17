@@ -112,6 +112,7 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         ),
         'E' => 
         array (
+            'ElForastero\\Transliterate\\' => 26,
             'Egulias\\EmailValidator\\' => 23,
         ),
         'D' => 
@@ -308,6 +309,10 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
+        'ElForastero\\Transliterate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elforastero/transliterate/src',
+        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
@@ -400,6 +405,7 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'App\\Http\\Controllers\\Admin\\AdminLanguagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminLanguagesController.php',
         'App\\Http\\Controllers\\Admin\\AdminModsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminModsController.php',
         'App\\Http\\Controllers\\Admin\\AdminPaintsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminPaintsController.php',
+        'App\\Http\\Controllers\\Admin\\AdminStaticModsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminStaticModsController.php',
         'App\\Http\\Controllers\\Admin\\AdminTrailersController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminTrailersController.php',
         'App\\Http\\Controllers\\Admin\\AdminWheelsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminWheelsController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -410,6 +416,7 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\GalleryController' => __DIR__ . '/../..' . '/app/Http/Controllers/GalleryController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
+        'App\\Http\\Controllers\\StaticModsController' => __DIR__ . '/../..' . '/app/Http/Controllers/StaticModsController.php',
         'App\\Http\\Controllers\\TrailerGeneratorController' => __DIR__ . '/../..' . '/app/Http/Controllers/TrailerGeneratorController.php',
         'App\\Http\\Controllers\\TruckPaintGeneratorController' => __DIR__ . '/../..' . '/app/Http/Controllers/TruckPaintGeneratorController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -433,6 +440,7 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\StaticMod' => __DIR__ . '/../..' . '/app/StaticMod.php',
         'App\\TrailerGenerator' => __DIR__ . '/../..' . '/app/TrailerGenerator.php',
         'App\\TruckPaintGenerator' => __DIR__ . '/../..' . '/app/TruckPaintGenerator.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
@@ -637,6 +645,9 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/Warning.php',
+        'ElForastero\\Transliterate\\Transliteration' => __DIR__ . '/..' . '/elforastero/transliterate/src/Transliteration.php',
+        'ElForastero\\Transliterate\\TransliterationFacade' => __DIR__ . '/..' . '/elforastero/transliterate/src/TransliterationFacade.php',
+        'ElForastero\\Transliterate\\TransliterationServiceProvider' => __DIR__ . '/..' . '/elforastero/transliterate/src/TransliterationServiceProvider.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Inn.php',
         'Faker\\Calculator\\Luhn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Luhn.php',
