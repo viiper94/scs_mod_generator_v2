@@ -11,7 +11,7 @@
         "mod_title": "Mod titel",
         "chassis": "Chassis",
         "accessory": "Accessoire",
-        "paint_job": "Paint Job",
+        "paint_job": "Lakwerk",
         "color": "Kleur",
         "wheels": "Wielen",
         "dlc": "DLC",
@@ -60,7 +60,7 @@
         "forums_topic": "Forum Topic",
         "scs_blog": "SCS Blog",
         "mp_no_support": "NIET ONDERSTEUND DOOR MP",
-        "weight_apply": "Cargo weight will apply after job list refresh. Read instruction for more information.",
+        "weight_apply": "Vrachtgewicht wordt toegepast na het vernieuwen van de werk lijst. Lees de instructies voor meer informatie.",
         "truckersmp": "TruckersMP"
     },
     "validation": {
@@ -76,7 +76,7 @@
         "install_title": "Hoe de mod installeren?",
         "mp_use": "Hoe deze mod gebruiken in TruckersMP?",
         "paint_title": "Wat is het en hoe te gebruiken?",
-        "weight_title": "How to deal with cargo weight?",
+        "weight_title": "Hoe om te gaan met vrachtgewicht?",
         "close_modal": "Ik snap het",
         "generate_mod_1": "Kies naam voor de mod (is niet verplicht, anders gegenereerd van de chassis naam)",
         "generate_mod_2": "Selecteer een chassis van de dropdown lijst (verplicht). Je kan zoeken.",
@@ -89,8 +89,8 @@
         "install_mod_3": "Selecteer de gedownloade mod, zorg ervoor dat deze in de rechterkolom verschijnt.",
         "install_mod_4": "Sla de wijzigingen op en sluit de Modificatie Beheer.",
         "install_mod_5": "Kies jouw profiel en geniet ervan!",
-        "mp_use_1": "Generate and download mod with instructions above.",
-        "mp_use_2": "Start Single Player game and apply mod. Save the game (don't forget about backup!). Quit Single Player game.",
+        "mp_use_1": "Genereer en download de mod met de instructies hierboven.",
+        "mp_use_2": "Start Single Speler spel en pas de mod toe. Sla de game op (Vergeet de backu-up niet!). Verlaat de Single Speler spel.",
         "mp_use_3": "Start Multiplayer, load save ignoring game warnings. Enjoy it!",
         "mp_use_4": "Make sure your mod is permitted by TruckersMP rules - ",
         "paint_description": "Truck Paint Mod - simple way to get truck + trailer with same color!",
@@ -139,30 +139,30 @@
         "regenerate_mod": "Regenerate mod",
         "trailer": "Trailer Mod",
         "paint": "Truck Paint Mod",
-        "broken": "This mod is broken!",
-        "working": "This mod is working!",
+        "broken": "Deze mod is gebroken!",
+        "working": "Deze mod werkt!",
         "mark_as_broken": "Are you sure mark this mod as broken?",
         "mark_as_working": "Mark this mod as working?"
     },
     "auth": {
-        "failed": "Incorrect E-Mail or password."
+        "failed": "Incorrecte E-Mail of wachtwoord"
     },
     "validators": {
         "email": {
-            "required": "E-Mail address is required",
-            "unique": "This E-Mail address has already been taken",
-            "email": "This field must be a valid email address"
+            "required": "E-Mail is verplicht",
+            "unique": "Deze E-Mail adres is al in gebruik",
+            "email": "Je moet een geldige email adres invullen"
         },
         "name": {
-            "required": "This field is required"
+            "required": "Dit veld is verplicht"
         },
         "password": {
-            "required": "Password is required",
-            "min": "The password must be at least 6 characters"
+            "required": "Wachtwoord is verplicht",
+            "min": "Het wachtwoord moet minimaal 6 tekens bevatten"
         },
         "img": {
-            "max": "Max image size 5Mb",
-            "dimensions": "Max image dimensions 3000x3000px"
+            "max": "Max afbeelding format 5MB",
+            "dimensions": "Max afbeelding afmeting 3000x3000px"
         }
     },
     "ets2 trailers": {
@@ -486,8 +486,8 @@
         "cargo_wirtgen_w250i": "Milling machine"
     },
     "ats companies\/paints": {
-        "default": "Colored",
-        "black": "Black",
-        "red": "Red"
+        "default": "Gekleurde",
+        "black": "Zwart",
+        "red": "Rood"
     }
 }
