@@ -4,6 +4,7 @@
 /resources/files/trucks/mod/manifest.sii
 /public/download/*
 /public/images/*
+/public/modifications/*
 /public/storage
 /storage/*.key
 /.idea

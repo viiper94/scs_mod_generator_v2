@@ -34,11 +34,20 @@ Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profil
 Route::get('/profile/{id?}', 'ProfileController@index')->name('profile');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
+Route::get('/mods', 'StaticModsController@index')->name('static_mods');
+
 Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
 
     Route::any('/admin/{controller}/{action}/{id?}', function($controller, $action, $id = null){
         $app = app();
         try{
+            $controller_name = explode('_', $controller);
+            $fixed_name = array();
+            foreach($controller_name as $name){
+                $fixed_name[] = ucfirst($name);
+            }
+            $controller = implode('', $fixed_name);
+
             $controller = $app->make('\App\Http\Controllers\Admin\Admin'.ucfirst($controller).'Controller');
             if(!method_exists($controller, $action)) throw new ReflectionException();;
             return $controller->callAction($action, $parameters = array(Request::instance(), $id));
@@ -54,6 +63,7 @@ Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/admin/wheels', 'AdminWheelsController@index')->name('wheels');
     Route::get('/admin/dlc', 'AdminDlcController@index')->name('dlc');
     Route::get('/admin/mods', 'AdminModsController@index')->name('mods');
+    Route::get('/admin/static_mods', 'AdminStaticModsController@index')->name('admin_static_mods');
     Route::get('/admin/languages', 'AdminLanguagesController@index')->name('languages');
     Route::get('/admin/users', 'AdminController@users')->name('users');
 });

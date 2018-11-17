@@ -26,6 +26,9 @@
         <li @if(Request::is('gallery'))class="active"@endif>
             <a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a>
         </li>
+        <li @if(Request::is('mods'))class="active"@endif>
+            <a class="waves-effect" href="{{route('static_mods')}}"><i class="material-icons notranslate">build</i>@lang('general.static_mods')</a>
+        </li>
         @can('admin')
             <li>
                 <a class="waves-effect" href="{{route('trailers')}}">

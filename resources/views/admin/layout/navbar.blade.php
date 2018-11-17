@@ -21,6 +21,9 @@
         <li @if(Request::is('admin/mods'))class="active"@endif>
             <a class="waves-effect" href="{{route('mods')}}"><i class="material-icons notranslate">build</i>Модифікації</a>
         </li>
+        <li @if(Request::is('admin/static_mods'))class="active"@endif>
+            <a class="waves-effect" href="{{route('admin_static_mods')}}"><i class="material-icons notranslate">build</i>Статичні модифікації</a>
+        </li>
         <li @if(Request::is('admin/languages'))class="active"@endif>
             <a class="waves-effect" href="{{route('languages')}}"><i class="material-icons notranslate">language</i>Мови</a>
         </li>
