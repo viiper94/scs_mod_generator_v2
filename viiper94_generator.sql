@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: viiper94.mysql.ukraine.com.ua
--- Час створення: Жов 12 2018 р., 13:19
+-- Час створення: Лис 17 2018 р., 09:20
 -- Версія сервера: 5.7.16-10-log
--- Версія PHP: 7.0.30
+-- Версія PHP: 7.0.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -368,7 +368,7 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `alias_short_paint`,
 (45, '/def/vehicle/trailer/goldhofer_stz_vl/chassis_short_r.sii', 'goldhofer_stz_red', 'goldhofer_stz', 'goldhofer_stz', '4', 22, 0, 0, 1, 0, NULL, 0, 'ets2', 6, 1, '2018-07-31 11:37:51', '2018-10-08 05:10:21'),
 (46, '/def/vehicle/trailer/goldhofer_stz_vl/chassis_short_y.sii', 'goldhofer_stz_yellow', 'goldhofer_stz', 'goldhofer_stz', '4', 22, 0, 0, 1, 0, NULL, 0, 'ets2', 6, 1, '2018-07-31 11:37:51', '2018-10-08 05:10:29'),
 (47, '/def/vehicle/trailer/goldhofer_stz_vl/chassis.sii', 'goldhofer_stz_long', 'goldhofer_stz_long', 'goldhofer_stz_long', '4', 22, 0, 0, 1, 0, NULL, 0, 'ets2', 7, 1, '2018-07-31 11:37:51', '2018-10-08 05:10:36'),
-(48, '/def/vehicle/trailer/willig/fuel_cistern/chassis.sii', 'willig_cistern', 'willig_cistern', 'willig_cistern', '3', 1, 1, 0, 0, 1, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:51', '2018-08-20 10:16:36'),
+(48, '/def/vehicle/trailer/willig/fuel_cistern/chassis.sii', 'willig_cistern', 'willig_cistern', 'willig_cistern', '3', 7, 1, 0, 0, 1, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/default.sii', 1, 'ets2', NULL, 1, '2018-07-31 11:37:51', '2018-10-22 05:26:41'),
 (49, '/def/vehicle/trailer/van_transporter/chassis.sii', 'van_transporter', 'van_transporter', 'van_transporter', '3', 4, 1, 0, 1, 0, NULL, 0, 'ets2', 3, 1, '2018-07-31 11:37:51', '2018-08-20 10:16:36'),
 (50, '/def/vehicle/trailer/acid/chassis.sii', 'acid', 'acid', 'acid', '2', 1, 1, 0, 0, 1, '/def/vehicle/trailer/acid/company_paint_job/default.sii', 1, 'ats', NULL, 1, '2018-07-31 11:37:51', '2018-08-20 10:16:36'),
 (51, '/def/vehicle/trailer/acid_long/chassis.sii', 'acid_long', 'acid_long', 'acid_long', '4', 1, 1, 0, 0, 1, '/def/vehicle/trailer/acid_long/company_paint_job/default.sii', 0, 'ats', NULL, 1, '2018-07-31 11:37:51', '2018-08-20 10:16:36'),
@@ -671,7 +671,7 @@ INSERT INTO `languages` (`id`, `locale`, `title`, `active`, `created_at`, `updat
 (17, 'sv', 'Svenska', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (18, 'tr', 'Türkçe', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (19, 'uk', 'Українська', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
-(20, 'zh', '简体中文', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
+(20, 'zh', '简体中文', 1, '2018-07-31 12:26:45', '2018-10-18 12:21:03'),
 (21, 'hr', 'Hrvatski', 1, NULL, NULL);
 
 -- --------------------------------------------------------
