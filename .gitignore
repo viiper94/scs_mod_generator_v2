@@ -4,6 +4,8 @@
 /resources/files/trucks/mod/manifest.sii
 /public/download/*
 /public/images/*
+!/public/images/users/default.jpg
+!/public/images/mods/default.jpg
 /public/modifications/*
 /public/storage
 /storage/*.key
