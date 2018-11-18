@@ -156,7 +156,12 @@ select{
 .mdc-theme--dark .mdc-text-field__bottom-line{
     background-color: var(--mdc-theme-primary-dark);
 }
-input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
 	border-bottom: 1px solid var(--mdc-theme-primary-dark);
 	box-shadow: 0 1px 0 0 var(--mdc-theme-primary-dark);
 }
@@ -168,7 +173,12 @@ input[type=text]:not(.browser-default):focus:not([readonly]), input[type=passwor
 .mdc-theme--dark textarea.materialize-textarea:focus:not([readonly])+label{
 	color: var(--mdc-theme-text-primary-on-primary-dark);
 }
-input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label{
 	color: var(--mdc-theme-light-text);
 }
 .input-field .prefix.active{
@@ -336,6 +346,16 @@ nav .brand-logo::before{
 .mdc-theme--dark .sidenav-trigger{
     color: var(--mdc-theme-dark-text);
 }
+.sidenav .collapsible-header, .sidenav.fixed .collapsible-header{
+	padding: 0 32px;
+}
+.sidenav .collapsible-body li a, .sidenav.fixed .collapsible-body li a{
+	padding: 0 0 0 100px;
+}
+.mdc-theme--dark .sidenav .collapsible-body, .mdc-theme--dark .sidenav.fixed .collapsible-body{
+	background-color: var(--mdc-theme-dark-background-darker-2);
+}
+
 
 /* Language modal */
 .lang-btn{
@@ -472,7 +492,7 @@ li > .collapsible-header .material-icons.mdc-button__icon{
 li.active > .collapsible-header i:not(.mdc-button__icon){
 	transform: rotate(180deg);
 }
-.mdc-theme--dark input{
+.mdc-theme--dark input, .mdc-theme--dark textarea.materialize-textarea{
 	color: #eee;
 }
 input, .mdc-text-field__input, input[type=text]:not(.browser-default){
