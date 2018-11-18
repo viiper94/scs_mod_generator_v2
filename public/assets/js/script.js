@@ -49,6 +49,7 @@ $(document).ready(function(){
 	$('.tabs').tabs();
 	$('.collapsible').collapsible();
 	$('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
 
 	$('.show-skin').collapsible({
 		onOpenStart : function(){
