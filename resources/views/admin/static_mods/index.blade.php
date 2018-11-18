@@ -23,22 +23,29 @@
             <div class="col s12 m10 offset-m1">
                 <div class="card horizontal hoverable">
                     <div class="card-image no-img_horizontal"
-                         style="background-image: url(/{{ $mod->image_path }}/{{ $mod->image }});
+                         style="background-image: url(/{{ $mod->image_path }}/{{ $mod->image ?? 'default.jpg' }});
                          @if(!$mod->active)opacity: .2; @endif"></div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <h5 class="card-title">
-                                @if(!$mod->active) <i class="material-icons mdc-button__icon notranslate">visibility_off</i> @endif
-                                {{ $mod->title }}
-                            </h5>
-                            <p style="line-height: 24px;">
-                                {{ $mod->description }}
-                            </p>
-                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--raised mdc-ripple black-text">
-                                <i class="material-icons mdc-button__icon notranslate">cloud_download</i>Завантажити
-                            </a>
+                            @if(!$mod->active) <i class="material-icons mdc-button__icon notranslate">visibility_off</i> @endif
+                            <p style="line-height: 24px;">Назва EN: <b>{{ $mod->title_en }}</b></p>
+                            <p style="line-height: 24px;">Назва РУС: <b>{{ $mod->title_ru }}</b></p>
+                            <p style="line-height: 24px;">Гра: <b>@lang('general.'.$mod->game)</b></p>
+                            <p style="line-height: 24px;">Опис EN: <b>{{ $mod->description_en }}</b></p>
+                            <p style="line-height: 24px;">Опис РУС: <b>{{ $mod->description_ru }}</b></p>
+                            <p style="line-height: 24px;">Протестовано на версії: <b>{{ $mod->tested_ver }}</b></p>
+                            @if($mod->isDLCContent())
+                                <p style="line-height: 24px;" class="grey-text"><b>
+                                    @foreach($mod->getDLCs(true) as $dlc)
+                                        @lang('dlc_list.'.$dlc)<br>
+                                    @endforeach
+                                </b></p>
+                            @endif
                         </div>
                         <div class="card-action">
+                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--raised mdc-ripple black-text green">
+                                <i class="material-icons mdc-button__icon notranslate">file_download</i>Завантажити
+                            </a>
                             <a href="{{ route('admin_static_mods') }}/edit/{{ $mod->id }}" class="mdc-button mdc-button--raised mdc-ripple black-text">
                                 <i class="material-icons mdc-button__icon notranslate">edit</i>Редагувати
                             </a>
@@ -49,10 +56,6 @@
                             <a href="{{ route('admin_static_mods') }}/toggle/{{ $mod->id }}" class="mdc-button mdc-ripple">
                                 <i class="material-icons mdc-button__icon notranslate">visibility_{{ $mod->active ? 'off' : 'on' }}</i>
                                 {{ $mod->active ? 'Сховати' : 'Показати' }}
-                            </a>
-                            <a href="{{ route('admin_static_mods') }}/copy/{{ $mod->id }}" class="mdc-button mdc-ripple"
-                               onclick="return confirm('Створити копію?')">
-                                <i class="material-icons mdc-button__icon notranslate">file_copy</i>Копіювати
                             </a>
                         </div>
                     </div>

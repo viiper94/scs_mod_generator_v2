@@ -132,7 +132,9 @@
         "broken": "This mod is broken!",
         "working": "This mod is working!",
         "mark_as_broken": "Are you sure mark this mod as broken?",
-        "mark_as_working": "Mark this mod as working?"
+        "mark_as_working": "Mark this mod as working?",
+        "mod_required_dlc": "Required",
+        "tested_on_ver": "Tested on version"
     },
     "auth": {
         "failed": "Incorrect E-Mail or password."

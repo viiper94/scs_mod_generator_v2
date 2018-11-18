@@ -16,8 +16,10 @@ class CreateStaticModsTable extends Migration
         Schema::create('static_mods', function (Blueprint $table) {
             $table->increments('id');
             $table->string('image')->nullable();
-            $table->string('title');
-            $table->text('description')->nullable();
+            $table->string('title_en');
+            $table->string('title_ru');
+            $table->text('description_en')->nullable();
+            $table->text('description_ru')->nullable();
             $table->string('file_name');
             $table->string('tested_ver');
             $table->string('dlc')->nullable();

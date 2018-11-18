@@ -34,7 +34,7 @@
                     </div>
                     <div class="row">
                         <div class="col m12">
-                            <label>Завантажте файл (.scs)</label>
+                            <label>Завантажте файл (.scs)*</label>
                             <div class="file-field input-field mdc-button mdc-button--raised">
                                 <div class="input-wrapper">
                                     <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">add_file</i>
@@ -65,20 +65,34 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin">
-                            <input id="title" type="text" name="title" value="{{ $mod->title }}" required>
-                            <label for="title">Назва</label>
+                            <input id="title_en" type="text" name="title_en" value="{{ $mod->title_en }}" required>
+                            <label for="title_en">Назва EN*</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin">
-                            <textarea id="description" name="description" value="{{ $mod->description }}"  class="materialize-textarea"></textarea>
-                            <label for="description">Опис</label>
+                            <input id="title_ru" type="text" name="title_ru" value="{{ $mod->title_ru }}">
+                            <label for="title_ru">Назва РУС</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin">
-                            <input id="tested_ver" type="text" name="tested_ver" value="{{ $mod->tested_ver }}">
-                            <label for="tested_ver">Протестовано на версії гри</label>
+                            <textarea id="description_en" name="description_en"
+                                      class="materialize-textarea">{{ $mod->description_en }}</textarea>
+                            <label for="description_en">Опис EN</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 no-margin">
+                            <textarea id="description_ru" name="description_ru"
+                                      class="materialize-textarea">{{ $mod->description_ru }}</textarea>
+                            <label for="description_ru">Опис РУС</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 no-margin">
+                            <input id="tested_ver" type="text" name="tested_ver" value="{{ $mod->tested_ver }}" required>
+                            <label for="tested_ver">Протестовано на версії гри*</label>
                         </div>
                     </div>
                     <div class="row">

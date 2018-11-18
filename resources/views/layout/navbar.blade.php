@@ -26,8 +26,18 @@
         <li @if(Request::is('gallery'))class="active"@endif>
             <a class="waves-effect" href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a>
         </li>
-        <li @if(Request::is('mods'))class="active"@endif>
-            <a class="waves-effect" href="{{route('static_mods')}}"><i class="material-icons notranslate">build</i>@lang('general.static_mods')</a>
+        <li @if(Request::is('mods/ets2') || Request::is('mods/ats'))class="active"@endif>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header waves-effect"><i class="material-icons notranslate">build</i>@lang('general.static_mods')</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="{{route('static_mods', ['game' => 'ets2'])}}">@lang('general.ets2')</a></li>
+                            <li><a href="{{route('static_mods', ['game' => 'ats'])}}">@lang('general.ats')</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </li>
         @can('admin')
             <li>

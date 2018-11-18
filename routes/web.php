@@ -34,7 +34,7 @@ Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profil
 Route::get('/profile/{id?}', 'ProfileController@index')->name('profile');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
-Route::get('/mods', 'StaticModsController@index')->name('static_mods');
+Route::get('/mods/{game?}', 'StaticModsController@index')->name('static_mods');
 
 Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function () {
 
