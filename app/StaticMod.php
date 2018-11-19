@@ -32,7 +32,7 @@ class StaticMod extends Model{
             if($this->file_name && file_exists(public_path($this->path).'/'.$this->file_name)){
                 unlink(public_path($this->path) . '/' . $this->file_name);
             }
-            $this->file_name = $file_name.'.'.$file->getClientOriginalExtension();
+            $this->file_name = time().'_'.$file_name.'.'.$file->getClientOriginalExtension();
             return $file->move(public_path($this->path), $this->file_name);
         }
         return false;
@@ -41,7 +41,7 @@ class StaticMod extends Model{
     public function saveImage(){
         if(Request::hasFile('img')){
             $file = Request::file('img');
-            $img_name = $file->getClientOriginalName();
+            $img_name = time().'_'.$file->getClientOriginalName();
             if($file->getSize() <= 5500000){
                 $img = new Image();
                 $img->load($file->getPathName());
