@@ -5,6 +5,8 @@
         "close": "Close",
         "feature_disabled": "This feature is temporary disabled",
         "title": "Trailer Mod Generator for ETS2 and ATS",
+        "mods_title": "Mods for ETS2MP and ATSMP, Modifications for multiplayer.",
+        "mods_description": "Mods for Euro Truck Simulator 2 and American Truck Simulator. Mods for TruckersMP.",
         "head_title": "Trailer Mod Generator",
         "download_mod": "Download mod",
         "mod_title": "Mod title",

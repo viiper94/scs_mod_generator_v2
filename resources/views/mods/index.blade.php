@@ -1,12 +1,24 @@
 @extends('layout.app')
 
+@section('title', trans('general.mods_title').' | '.trans('general.title'))
+
+@section('meta-description')
+    <meta name="description" content="@lang('general.mods_description')">
+@endsection
+
+@section('meta-keywords')
+    <meta name="keywords" content="моды для мп, ets2, ats, truckersmp, моды для ets2mp, моды для atsmp, как найти прицеп на конвой, как взять груз на конвой,
+                                    mods for mp, mods for multiplayer, find a trailer, scsoftware, convoy trailer, 750hp, All Truck 750HP for Multiplayer,
+                                    sounds mods, engine mods, paint mods, ets2mp, atsmp">
+@endsection
+
 @section('content')
 
     @include('admin.search')
 
     <div class="row no-margin">
         @foreach($mods as $mod)
-            <div class="col l4 m6 s12">
+            <div class="col xl4 l6 s12">
                 <div class="card hoverable">
                     <div class="card-image">
                         <img class="materialboxed" width="100%"

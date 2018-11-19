@@ -6,8 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @yield('meta-description', '')
+    @yield('meta-keywords', '')
     @include('layout.header')
-    <title>@lang('general.title')</title>
+    <title>@yield('title', trans('general.title'))</title>
 </head>
 <body @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')class="mdc-theme--dark " @endif>
     <header>
