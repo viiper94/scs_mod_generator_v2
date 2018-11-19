@@ -54,14 +54,15 @@ class AdminStaticModsController extends Controller{
         ]);
     }
 
-    public function edit(Request $request, $id = null){
+    public function edit(Request $request, $id){
+        if($id === null) return redirect()->back()->withErrors(['Виникла помилка']);
         if($request->method() === 'POST' && $id){
             $this->validate($request, [
                 'title_en' => 'required|string',
                 'tested_ver' => 'required|string',
                 'game' => 'required|string',
             ]);
-            $mod = StaticMod::find($id);
+            $mod = StaticMod::findOrFail($id);
             $mod->fill([
                 'game' => $request->input('game', 'ets2'),
                 'title_en' => $request->input('title_en'),
@@ -80,7 +81,7 @@ class AdminStaticModsController extends Controller{
                 redirect()->back()->withErrors(['Виникла помилка']);
         }
 
-        $mod = StaticMod::where('id', $id)->first();
+        $mod = StaticMod::findOrFail($id);
         return view('admin.static_mods.edit', [
             'mod' => $mod,
             'dlc' => Dlc::where(['active' => 1, 'game' => $mod->game])->get()
@@ -88,14 +89,14 @@ class AdminStaticModsController extends Controller{
     }
 
     public function delete(Request $request, $id){
-        $mod = StaticMod::find($id);
+        $mod = StaticMod::findOrFail($id);
         return $mod->delete() ?
             redirect()->back()->with(['success' => 'Мод успішно видалено!']) :
             redirect()->back()->withErrors(['Не вдалось видалити мод']);
     }
 
     public function toggle(Request $request, $id){
-        $mod = StaticMod::find($id);
+        $mod = StaticMod::findOrFail($id);
         $mod->active = !$mod->active;
         return $mod->save() ?
             redirect()->back()->with(['success' => 'Виконано!']) :
