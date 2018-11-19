@@ -355,6 +355,14 @@ nav .brand-logo::before{
 .mdc-theme--dark .sidenav .collapsible-body, .mdc-theme--dark .sidenav.fixed .collapsible-body{
 	background-color: var(--mdc-theme-dark-background-darker-2);
 }
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active a,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active a{
+    color: var(--mdc-theme-text-primary-on-primary-dark);
+}
 
 
 /* Language modal */
@@ -392,7 +400,7 @@ nav .brand-logo::before{
 }
 
 
-/* Index Page */
+/* Generator Page */
 .trailer-generator{
     width: 700px;
 }
@@ -792,7 +800,7 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-dialog a{
     color: #000;
 }
-.mdc-theme--dark .mdc-dialog a{
+.mdc-theme--dark .mdc-dialog a:not(.lang-btn){
     color: #fff;
     text-decoration: underline;
 }
