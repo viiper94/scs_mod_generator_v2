@@ -1,6 +1,6 @@
 company_permanent: company.permanent.tesore_gust
 {
-	name: "Tesore Gustoso"
-	sort_name: "tesore gustoso"
+	name: "Tesoro Gustoso"
+	sort_name: "tesoro gustoso"
 	trailer_look: tesore_gust
 }

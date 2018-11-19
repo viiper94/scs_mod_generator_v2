@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ns_oil
+{
+	name: "NS Oil"
+	sort_name: "ns oil"
+	trailer_look: ns_oil
+}
