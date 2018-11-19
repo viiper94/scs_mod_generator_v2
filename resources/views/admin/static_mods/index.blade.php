@@ -34,6 +34,8 @@
                             <p style="line-height: 24px;">Опис EN: <b>{{ $mod->description_en }}</b></p>
                             <p style="line-height: 24px;">Опис РУС: <b>{{ $mod->description_ru }}</b></p>
                             <p style="line-height: 24px;">Протестовано на версії: <b>{{ $mod->tested_ver }}</b></p>
+                            <p style="line-height: 24px;">Створено: <b>{{ $mod->created_at }}</b></p>
+                            <p style="line-height: 24px;">Оновлено: <b>{{ $mod->updated_at }}</b></p>
                             @if($mod->isDLCContent())
                                 <p style="line-height: 24px;" class="grey-text"><b>
                                     @foreach($mod->getDLCs(true) as $dlc)
