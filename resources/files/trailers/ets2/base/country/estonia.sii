@@ -1,0 +1,21 @@
+
+country_data: country.data.estonia
+{
+	country_id: 22
+
+	name: "Eesti"
+	name_localized: "@@estonia@@"
+	country_code: "EST"
+
+	pos: (45000, 0, -47500)
+
+	fuel_price: 1.38
+
+	lights_mandatory: true
+	driving_tired_offence: true
+
+	time_zone: 180		# +3 hours in minutes
+	time_zone_name: "@@tz_eest@@"
+
+	mass_limit_per_axle_count[]: 350000
+}

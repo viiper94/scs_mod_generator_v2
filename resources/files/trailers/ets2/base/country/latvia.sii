@@ -1,0 +1,22 @@
+
+country_data: country.data.latvia
+{
+	country_id: 28
+
+	name: "Latvija"
+	name_localized: "@@latvia@@"
+	country_code: "LV"
+
+	pos: (49500, 0, -39000)
+
+	fuel_price: 1.23
+
+	lights_mandatory: true
+	driving_tired_offence: true
+
+	time_zone: 180		# +3 hours in minutes
+	time_zone_name: "@@tz_eest@@"
+
+	mass_limit_per_axle_count[]: 350000
+}
+

@@ -1,0 +1,22 @@
+
+country_data: country.data.finland
+{
+	country_id: 23
+
+	name: "Suomi"
+	name_localized: "@@finland@@"
+	country_code: "FI"
+
+	pos: (42000, 0, -65000)
+
+	fuel_price: 1.47
+
+	lights_mandatory: true
+	driving_tired_offence: true
+
+	time_zone: 180		# +3 hours in minutes
+	time_zone_name: "@@tz_eest@@"
+
+	mass_limit_per_axle_count[]: 350000
+
+}
