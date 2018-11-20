@@ -28,6 +28,9 @@
     </div>
     @if(count($mods) > 0)
         <h4 class="card-title no-mods">@lang('mods.mods_history')</h4>
+
+        {{ $mods->links('layout.pagination') }}
+
         <ul class="collapsible">
             @foreach($mods as $mod)
                 <li>
@@ -123,6 +126,9 @@
                 </li>
             @endforeach
         </ul>
+
+        {{ $mods->links('layout.pagination') }}
+
     @else
         <h4 class="no-mods">@lang('mods.no_mods')</h4>
     @endif
