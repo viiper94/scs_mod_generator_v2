@@ -15,6 +15,7 @@
             <div class="card-content">
                 <h4 class="card-title">{{ $user->name }}</h4>
                 <p>@lang('user.generated_mods'): <b>{{ count($mods) }}</b></p>
+                <p>@lang('user.registered'): <b>{{ date('j F, Y H:i', strtotime($user->created_at)) }}</b></p>
             </div>
             @if(Auth::id() == $user->id)
                 <div class="card-action">
