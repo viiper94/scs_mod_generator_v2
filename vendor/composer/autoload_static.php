@@ -112,7 +112,6 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         ),
         'E' => 
         array (
-            'ElForastero\\Transliterate\\' => 26,
             'Egulias\\EmailValidator\\' => 23,
         ),
         'D' => 
@@ -309,10 +308,6 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
-        'ElForastero\\Transliterate\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/elforastero/transliterate/src',
-        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
@@ -356,6 +351,13 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
     );
 
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'URLify' => 
+            array (
+                0 => __DIR__ . '/..' . '/jbroadway/urlify',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -645,9 +647,6 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/Warning.php',
-        'ElForastero\\Transliterate\\Transliteration' => __DIR__ . '/..' . '/elforastero/transliterate/src/Transliteration.php',
-        'ElForastero\\Transliterate\\TransliterationFacade' => __DIR__ . '/..' . '/elforastero/transliterate/src/TransliterationFacade.php',
-        'ElForastero\\Transliterate\\TransliterationServiceProvider' => __DIR__ . '/..' . '/elforastero/transliterate/src/TransliterationServiceProvider.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Inn.php',
         'Faker\\Calculator\\Luhn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Luhn.php',
@@ -3948,6 +3947,8 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'URLify' => __DIR__ . '/..' . '/jbroadway/urlify/URLify.php',
+        'URLifyTest' => __DIR__ . '/..' . '/jbroadway/urlify/tests/URLifyTest.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',

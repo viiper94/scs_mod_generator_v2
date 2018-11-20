@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1596ccbe865730ed47aa20d2688e889",
+    "content-hash": "b74f0c24a6a681dad55c44fc5da7ea5d",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -333,42 +333,6 @@
                 "validator"
             ],
             "time": "2018-09-25T20:47:26+00:00"
-        },
-        {
-            "name": "elforastero/transliterate",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ElForastero/Transliterate.git",
-                "reference": "da1e4df2e658e5d0b0adc7a35de3c0e5136b48f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ElForastero/Transliterate/zipball/da1e4df2e658e5d0b0adc7a35de3c0e5136b48f0",
-                "reference": "da1e4df2e658e5d0b0adc7a35de3c0e5136b48f0",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ElForastero\\Transliterate\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eugene Dzhumak",
-                    "email": "elforastero@ya.ru"
-                }
-            ],
-            "description": "Transliteration package for laravel 5",
-            "time": "2017-06-10T16:57:18+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -791,6 +755,60 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "jbroadway/urlify",
+            "version": "1.1.1-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jbroadway/urlify.git",
+                "reference": "e8d6950edc484c29f1a499ca6710e928e219ea43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jbroadway/urlify/zipball/e8d6950edc484c29f1a499ca6710e928e219ea43",
+                "reference": "e8d6950edc484c29f1a499ca6710e928e219ea43",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "URLify": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause-Clear"
+            ],
+            "authors": [
+                {
+                    "name": "Johnny Broadway",
+                    "email": "johnny@johnnybroadway.com",
+                    "homepage": "http://www.johnnybroadway.com/"
+                }
+            ],
+            "description": "PHP port of URLify.js from the Django project. Transliterates non-ascii characters for use in URLs.",
+            "homepage": "https://github.com/jbroadway/urlify",
+            "keywords": [
+                "encode",
+                "iconv",
+                "link",
+                "slug",
+                "translit",
+                "transliterate",
+                "transliteration",
+                "url",
+                "urlify"
+            ],
+            "time": "2018-08-28T14:21:56+00:00"
         },
         {
             "name": "laravel/framework",
