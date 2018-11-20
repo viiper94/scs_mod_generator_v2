@@ -298,6 +298,9 @@ i.truck-icons{
 .sidenav .user-view{
     margin: 20px 32px 0 32px;
     padding: 0 0 20px 0;
+    border-bottom: 1px solid var(--mdc-theme-light-text);
+}
+.mdc-theme--dark .sidenav .user-view{
     border-bottom: 1px solid;
 }
 .sidenav .user-view a{
