@@ -161,7 +161,6 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Invisnik\LaravelSteamAuth\SteamServiceProvider::class,
-        ElForastero\Transliterate\TransliterationServiceProvider::class,
 
     ],
 
@@ -211,8 +210,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
-        'Transliterate' => ElForastero\Transliterate\TransliterationFacade::class,
 
     ],
 
