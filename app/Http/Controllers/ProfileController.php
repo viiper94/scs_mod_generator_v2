@@ -18,7 +18,7 @@ class ProfileController extends Controller{
         $user = isset($id) ? User::find($id) : Auth::user();
         return view('profile.profile', [
             'user' => $user,
-            'mods' => Mods::where('user_id', $user->id)->orderBy('created_at', 'desc')->get()
+            'mods' => Mods::where('user_id', $user->id)->orderBy('created_at', 'desc')->paginate(20)
         ]);
     }
 
