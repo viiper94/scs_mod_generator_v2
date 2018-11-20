@@ -42,7 +42,7 @@ class ProfileController extends Controller{
             if($file->getSize() <= 5500000){
                 $img = new Image();
                 $img->load($file->getPathName());
-                $img->resizeToHeight(200);
+                $img->resizeToHeight(250);
                 $img->save(public_path().'/images/users/'.time().'.'.$file->getClientOriginalExtension());
                 if($user->image && file_exists(public_path().'/images/users/'.$user->image)){
                     unlink(public_path().'/images/users/'.$user->image);
