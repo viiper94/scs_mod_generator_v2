@@ -295,13 +295,28 @@ i.truck-icons{
 .mdc-theme--dark i.truck-icons{
     background-image: url(../img/truck_icons_dark.png);
 }
+.sidenav .user-view{
+    margin: 20px 32px 0 32px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid;
+}
+.sidenav .user-view a{
+    display: flex;
+    align-items: center;
+    line-height: 90px
+}
 .sidenav .user-view .circle{
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
+    width: 90px;
+    height: 90px;
 }
 .sidenav .user-view .name{
     color: var(--mdc-theme-light-text);
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .mdc-theme--dark .sidenav .user-view .name{
     color: var(--mdc-theme-text-primary-on-primary-dark);
