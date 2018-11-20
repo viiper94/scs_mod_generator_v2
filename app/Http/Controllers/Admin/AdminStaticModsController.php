@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Dlc;
 use App\StaticMod;
+use App\Transliterator;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Transliterate;
 
 class AdminStaticModsController extends Controller{
 
@@ -31,7 +31,7 @@ class AdminStaticModsController extends Controller{
                 'game' => 'required|string',
                 'file' => 'required|file|mimes:scs,zip',
             ]);
-            $file_name = Transliterate::make(trim($request->input('title_en')), ['type' => 'filename', 'lowercase' => true]);
+            $file_name = Transliterator::run($request->input('title_en'));
             $last_mod = StaticMod::orderBy('sort', SORT_DESC)->first();
             $mod->fill([
                 'game' => $request->input('game', 'ets2'),
@@ -74,7 +74,7 @@ class AdminStaticModsController extends Controller{
                 'active' => $request->input('active') == 'on',
                 'image' => $request->hasFile('img') ? $mod->saveImage() : $mod->image,
             ]);
-            $file_name = Transliterate::make(trim($request->input('title_en')), ['type' => 'filename', 'lowercase' => true]);
+            $file_name = Transliterator::run($request->input('title_en'));
             $file = $request->hasFile('file') ? $mod->saveFile($file_name) : true;
             return $file && $mod->save() ?
                 redirect()->route('admin_static_mods')->with(['success' => 'Мод успішно відредаговано!']) :
