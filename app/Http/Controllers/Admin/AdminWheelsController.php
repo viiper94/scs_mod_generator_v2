@@ -50,7 +50,7 @@ class AdminWheelsController extends Controller{
             'game' => $wheel->game,
             'def' => $wheel->def,
             'alias' => $wheel->alias.'_copy',
-            'dlc' => $wheel->dlc,
+            'dlc_id' => $wheel->dlc,
             'active' => false,
             'mp_support' => false,
         ]);
