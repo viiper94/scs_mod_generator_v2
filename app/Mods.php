@@ -4,6 +4,7 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class Mods extends Model{
 
@@ -17,6 +18,19 @@ class Mods extends Model{
     }
 
     public function canRegenerate(){
+        $params = unserialize($this->params);
+        try{
+            if($params['form']['chassis'] !== 'paintable'){
+                Chassis::where(['alias' => $params['form']['chassis'], 'active' => '1'])->firstOrFail();
+                $paint = 'def';
+            }else{
+                $paint = 'look';
+            }
+            if(key_exists('accessory', $params['form'])) Accessory::where(['def' => $params['form']['accessory'], 'active' => '1'])->firstOrFail();
+            if(key_exists('paint', $params['form'])) Paint::where([$paint => $params['form']['paint'], 'active' => '1'])->firstOrFail();
+        }catch(ModelNotFoundException $e){
+            return false;
+        }
         return true;
     }
 

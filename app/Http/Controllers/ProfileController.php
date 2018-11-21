@@ -83,4 +83,15 @@ class ProfileController extends Controller{
             redirect()->route('profile')->withErrors(['!']);
     }
 
+    public function getModInfo(Request $request){
+        if($request->ajax() && $request->input('id')){
+            $mod = Mods::find($request->input('id'));
+            return response()->json([
+                'result' => $mod->canRegenerate(),
+                'status' => 'OK',
+            ]);
+        }
+        return false;
+    }
+
 }

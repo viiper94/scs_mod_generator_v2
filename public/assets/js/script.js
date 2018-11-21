@@ -380,6 +380,33 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.user-mods').collapsible({
+        onOpenStart: function(mod){
+            $.ajax({
+                cache: false,
+                dataType : 'json',
+                type : 'POST',
+                data : {
+                    '_token' : $('input[name=_token]').val(),
+                    'id' : $(mod).data('id'),
+                },
+                success : function(response){
+                    if(response.result){
+                        $(mod).find('.regenerate button[type=submit]').show()
+                    }else{
+                        $(mod).find('.regenerate button[type=submit]').show().attr('disabled', true)
+                    }
+                },
+                beforeSend : function(){
+                    $(mod).find('.regenerate').append(getPreloaderHtml('tiny'));
+                },
+                complete : function(){
+                    $('.preloader-wrapper').remove();
+                }
+            });
+        }
+    });
+
 });
 
 function getDLCList(value) {

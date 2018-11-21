@@ -33,6 +33,7 @@ Route::get('/profile/edit', 'ProfileController@edit')->name('profile_edit');
 Route::post('/profile/edit', 'ProfileController@editProfile')->name('save_profile');
 Route::get('/profile/{id?}', 'ProfileController@index')->name('profile');
 Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::post('/profile', 'ProfileController@getModInfo');
 
 Route::get('/mods/{game?}', 'StaticModsController@index')->name('static_mods');
 

@@ -6,9 +6,9 @@
     <div class="card horizontal">
         <div class="card-image">
             @if($user->image && file_exists(public_path('images/users/'.$user->image)))
-                <img src="{{ asset('images/users/'.$user->image ) }}" style="max-height: 200px;">
+                <img src="{{ asset('images/users/'.$user->image ) }}">
             @else
-                <img src="{{ asset('images/users/default.jpg') }}" style="max-height: 200px;">
+                <img src="{{ asset('images/users/default.jpg') }}">
             @endif
         </div>
         <div class="card-stacked">
@@ -32,9 +32,9 @@
 
         {{ $mods->links('layout.pagination') }}
 
-        <ul class="collapsible">
+        <ul class="collapsible user-mods">
             @foreach($mods as $mod)
-                <li>
+                <li data-id="{{ $mod->id }}">
                     <div class="collapsible-header">
                         <i class="material-icons notranslate">arrow_downward</i>
                         <p class="mod-info">
@@ -84,45 +84,42 @@
                                         </b></p>
                                 @endif
                                 @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
-                                @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['form']['weight'] }}</b></p>@endif
                                 @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
-                                @if(key_exists('dlc', $params['form']))
-                                    <ul>
-                                        @foreach($params['form']['dlc'] as $dlc => $on)
-                                            <li><b>@lang('dlc_list.'.$dlc)</b></li>
-                                        @endforeach
-                                    </ul>
-                                @endif
+                            @endif
+                            @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['form']['weight'] }}</b></p>@endif
+                            @if(key_exists('dlc', $params['form']))
+                                <ul>
+                                    @foreach($params['form']['dlc'] as $dlc => $on)
+                                        <li><b>@lang('dlc_list.'.$dlc)</b></li>
+                                    @endforeach
+                                </ul>
                             @endif
 
                         @endif
-                        @if($mod->canRegenerate())
-                            <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post">
-                                @csrf
-                                <input type="hidden" name="target" value="{{ $mod->game }}">
-                                <input type="hidden" name="title" value="{{ $mod->title }}">
-                                @foreach($params['form'] as $key => $value)
-                                    @if($key === 'color')
-                                        <input type="hidden" name="color[scs][r]" value="{{ $value['scs']['r'] }}">
-                                        <input type="hidden" name="color[scs][g]" value="{{ $value['scs']['g'] }}">
-                                        <input type="hidden" name="color[scs][b]" value="{{ $value['scs']['b'] }}">
-                                        <input type="hidden" name="color[hex]" value="{{ $value['hex'] }}">
-                                    @elseif($key === 'dlc')
-                                        @foreach($value as $dlc => $on)
-                                            <input type="hidden" name="dlc[{{ $dlc }}]" value="on">
-                                        @endforeach
-                                    @else
-                                        <input type="hidden" name="{{ $key }}" value="{{ $value }}">
-                                    @endif
-                                @endforeach
-                                <button type="submit" class="mdc-button mdc-button--raised mdc-ripple large-btn"
-                                   title="@lang('mods.regenerate_mod')">
-                                    <i class="material-icons notranslate mdc-button__icon">refresh</i>
-                                    @lang('mods.regenerate_mod')
-                                </button>
-                            </form>
-
-                        @endif
+                        <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post" class="regenerate">
+                            @csrf
+                            <input type="hidden" name="target" value="{{ $mod->game }}">
+                            <input type="hidden" name="title" value="{{ $mod->title }}">
+                            @foreach($params['form'] as $key => $value)
+                                @if($key === 'color')
+                                    <input type="hidden" name="color[scs][r]" value="{{ $value['scs']['r'] }}">
+                                    <input type="hidden" name="color[scs][g]" value="{{ $value['scs']['g'] }}">
+                                    <input type="hidden" name="color[scs][b]" value="{{ $value['scs']['b'] }}">
+                                    <input type="hidden" name="color[hex]" value="{{ $value['hex'] }}">
+                                @elseif($key === 'dlc')
+                                    @foreach($value as $dlc => $on)
+                                        <input type="hidden" name="dlc[{{ $dlc }}]" value="on">
+                                    @endforeach
+                                @else
+                                    <input type="hidden" name="{{ $key }}" value="{{ $value }}">
+                                @endif
+                            @endforeach
+                            <button type="submit" class="mdc-button mdc-button--raised mdc-ripple large-btn" style="display: none;"
+                               title="@lang('mods.regenerate_mod')">
+                                <i class="material-icons notranslate mdc-button__icon">refresh</i>
+                                @lang('mods.regenerate_mod')
+                            </button>
+                        </form>
                     </div>
                 </li>
             @endforeach
