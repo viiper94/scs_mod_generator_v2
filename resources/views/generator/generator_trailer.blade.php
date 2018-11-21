@@ -16,7 +16,7 @@
             <form action="{{route('generator')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <div class="card-content">
-                    <div class="row"><h5 class="card-title center">@lang('general.'.$game) @lang('general.trailer_generator')</h5></div>
+                    <div class="row"><h5 class="card-title center" style="text-transform: uppercase; font-weight: bold;">@lang('general.'.$game) @lang('general.trailer_generator')</h5></div>
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
