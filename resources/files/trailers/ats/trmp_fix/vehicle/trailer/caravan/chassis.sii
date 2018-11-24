@@ -1,0 +1,27 @@
+SiiNunit
+{
+accessory_chassis_data : .chassis.caravan
+{
+	model: "/vehicle/ai/trailers/camper.pmd"
+	lods[]: "/vehicle/ai/trailers/camper_lod01.pmd"	
+	lods[]: "/vehicle/ai/trailers/camper_lod02.pmd"	
+	
+	collision: "/vehicle/ai/trailers/camper.pmc"
+                         
+	variant: default
+	look: default
+	
+	residual_travel[]: 0.12
+
+	trailer_mass: 2350
+
+	extended_shadow_texture: "/vehicle/ai/share/shadow_occlusion.tobj"
+	extended_shadow_intensity: 1.8
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+
+	ui_shadow: "/vehicle/trailer_owned/scs_box/ui_shadow_doll.pmd"
+
+}
+}
+

@@ -1,0 +1,27 @@
+SiiNunit
+{
+accessory_chassis_data : .chassis.caravan
+{
+	model: "/vehicle/ai/caravan_ontour470ul/trailer.pmd"
+	lods[]: "/vehicle/ai/caravan_ontour470ul/lod.pmd"	
+	lods[]: "/vehicle/ai/caravan_ontour470ul/lod_2.pmd"	
+	
+	collision: "/vehicle/ai/caravan_ontour470ul/trailer.pmc"
+                         
+	variant: default
+	look: default
+	
+	residual_travel[]: 0.12
+
+	trailer_mass: 2350
+
+	extended_shadow_texture: "/vehicle/ai/share/shadow_occlusion.tobj"
+	extended_shadow_intensity: 1.8
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+
+	ui_shadow: "/vehicle/trailer_eu/schmitz/s_ki_solid/ui_shadow.pmd" 
+
+}
+}
+
