@@ -392,6 +392,7 @@
         "flatbed28": "Flatbed (28')",
         "flatbed45_r": "Flatbed (45', Rear Axles)",
         "flatbed53_f": "Flatbed (53', Front Axles)",
+        "flatbed53_4ax": "Flatbed (53', 4 Axles)",
         "flatbed28_double": "Double Flatbed (28')",
         "flatbed45_rm_double": "R.M. Double Flatbed (45' + 28')",
         "flatbed28_triple": "Triple Flatbed (28')",
@@ -433,10 +434,15 @@
         "lowboy_red": "Lowboy (Red)",
         "lowboy_yellow": "Lowboy (Yellow)",
         "mbt": "Mobile Barrier",
+        "home_transporter": "Home Transporter",
         "magnitude_55l_1_2": "Lowboy 55L (Jeep + Trailer)",
         "magnitude_55l_1_2_3": "Lowboy 55L (Jeep + Trailer + Spreader)",
         "magnitude_55l_2_3": "Lowboy 55L (Trailer + Spreader)",
-        "magnitude_55l_2": "Lowboy 55L (Trailer Only)"
+        "magnitude_55l_2": "Lowboy 55L (Trailer Only)",
+        "magnitude_55l_13_2l3_33": "Lowboy 55L (3 + 3 long + 3)",
+        "magnitude_55l_13_2l3": "Lowboy 55L (3 + 3 long)",
+        "magnitude_55l_13_2sh3_33": "Lowboy 55L (3 + 3 short + 3)",
+        "magnitude_55l_13_2sh3": "Lowboy 55L (3 + 3 short)"
     },
     "ats accessories": {
         "cargo_magnum": "Cars (Dodges)",
@@ -483,7 +489,18 @@
         "cargo_komatsu_d155ax_5": "Bulldozer",
         "cargo_terex_challenger_3160": "All terrain crane",
         "cargo_transformer": "Transformer",
-        "cargo_wirtgen_w250i": "Milling machine"
+        "cargo_wirtgen_w250i": "Milling machine",
+        "cargo_house": "Turnkey house construction",
+        "cargo_tire": "Huge tires",
+        "cargo_lattice": "Huge construction",
+        "cargo_silo": "Giant silo",
+        "cargo_aircon": "Air conditioner",
+        "cargo_heavy_helicopter": "Transport helicopter",
+        "cargo_pilot_boat": "Service boat",
+        "cargo_box": "Massive tech part",
+        "cargo_mutt": "Haul truck chassis",
+        "cargo_mutt_hull": "Haul truck hull",
+        "cargo_tank": "Large reservoir tank"
     },
     "ats companies\/paints": {
         "default": "Colored",

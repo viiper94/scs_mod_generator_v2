@@ -184,7 +184,7 @@ class TrailerGenerator extends ModGenerator{
 				$output_string .= "\n\toffset: 0\n\t\tdata_path: \"/def/vehicle/t_wheel/overweight_f.sii\"";
 			}elseif((!$this->chassis->customWheels) &&
 				($this->chassis->alias == 'chemical_long' ||
-				$this->chassis->alias == 'acid_long') && $i == 0){
+				$this->chassis->alias == 'acid_long' || $this->chassis->alias == 'flatbed53_4ax') && $i == 0){
 				$output_string .= "\n\toffset: 0\n\t\tdata_path: \"/def/vehicle/t_wheel/front.sii\"";
 			}else{
 				$output_string .= "\n\toffset: ".($i*2)."\n\t\tdata_path: \"".$this->chassis->wheels->def."\"";
