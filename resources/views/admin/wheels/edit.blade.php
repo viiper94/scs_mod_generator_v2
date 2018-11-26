@@ -50,7 +50,7 @@
                                 <option value="">Без DLC</option>
                                 @foreach($dlc as $item)
                                     <option value="{{ $item->id }}"
-                                        @if($wheel->dlc_id == $item->id) selected @endif>@lang('dlc_list.'.$item->name)
+                                        @if($wheel->dlc_id == $item->id) selected @endif>@lang('dlc_list.'.$item->name) (@lang('general.'.$item->game))
                                     </option>
                                 @endforeach
                             </select>

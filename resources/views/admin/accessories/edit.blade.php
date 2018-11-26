@@ -57,7 +57,7 @@
                                 @foreach($dlc as $item)
                                     @php $acc_dlcs = $accessory->getDLCs(true); @endphp
                                     <option value="{{ $item->id }}"
-                                            @if(in_array($item->name, $acc_dlcs)) selected @endif>@lang('dlc_list.'.$item->name)</option>
+                                            @if(in_array($item->name, $acc_dlcs)) selected @endif>@lang('dlc_list.'.$item->name) (@lang('general.'.$item->game))</option>
                                 @endforeach
                             </select>
                             <label>DLC</label>
