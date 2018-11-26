@@ -73,7 +73,7 @@
                             <select name="wheels_id" required>
                                 @foreach($wheels as $wheel)
                                     <option value="{{ $wheel->id }}"
-                                        @if($chassis->wheels_id == $wheel->id) selected @endif>@lang($wheel->game.'_wheels.'.$wheel->alias)
+                                        @if($chassis->wheels_id == $wheel->id) selected @endif>@lang($wheel->game.'_wheels.'.$wheel->alias) (@lang('general.'.$wheel->game))
                                     </option>
                                 @endforeach
                             </select>
