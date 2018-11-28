@@ -28,7 +28,7 @@
                 <tbody>
                 @foreach($paints as $paint)
                     <tr @if(!$paint->active)class="grey darken-2 black-text" @endif>
-                        <td>@lang($paint->game.'_companies_paints.'.$paint->look)</td>
+                        <td>@lang($paint->game.'_companies_paints.'.$paint->alias)</td>
                         <td>{{ $paint->def }}</td>
                         <td>
                             @if($paint->chassisObj)
