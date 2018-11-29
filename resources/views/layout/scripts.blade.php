@@ -2,4 +2,4 @@
 <script type="text/javascript" src="{{ asset('assets/mdc/js/material-components-web.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/semanticui/semanticui.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/materialize/js/materialize.min.js?1009') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/script.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/script-2.2.0.min.js') }}"></script>
