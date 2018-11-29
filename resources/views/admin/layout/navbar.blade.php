@@ -12,11 +12,14 @@
         <li @if(Request::is('admin/paints'))class="active"@endif>
             <a class="waves-effect" href="{{route('paints')}}"><i class="material-icons notranslate">texture</i>Скіни</a>
         </li>
+        <li @if(Request::is('admin/companies'))class="active"@endif>
+            <a class="waves-effect" href="{{route('companies')}}"><i class="material-icons notranslate">account_balance</i>Компанії</a>
+        </li>
         <li @if(Request::is('admin/wheels'))class="active"@endif>
             <a class="waves-effect" href="{{route('wheels')}}"><i class="material-icons notranslate">adjust</i>Колеса</a>
         </li>
         <li @if(Request::is('admin/dlc'))class="active"@endif>
-            <a class="waves-effect" href="{{route('dlc')}}"><i class="material-icons notranslate">add_shopping_cart</i>DLC</a>
+            <a class="waves-effect" href="{{route('dlc')}}"><i class="material-icons notranslate">extension</i>DLC</a>
         </li>
         <li @if(Request::is('admin/mods'))class="active"@endif>
             <a class="waves-effect" href="{{route('mods')}}"><i class="material-icons notranslate">build</i>Модифікації</a>

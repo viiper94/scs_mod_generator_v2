@@ -18,6 +18,7 @@ class CreateCompaniesTable extends Migration
             $table->string('name');
             $table->string('game')->default('ets2');
             $table->integer('dlc')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }
