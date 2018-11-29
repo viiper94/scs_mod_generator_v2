@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Accessory;
-use App\Chassis;
 use App\Dlc;
 use App\Http\Controllers\Controller;
 use App\Paint;
-use App\Wheel;
 use Illuminate\Http\Request;
 
 class AdminPaintsController extends Controller{
@@ -23,6 +20,8 @@ class AdminPaintsController extends Controller{
     }
 
     public function edit(Request $request, $id = null){
+        $paint = Paint::find($id);
+
         if($request->method() === 'POST' && $id){
             $this->validate($request, [
                 'game' => 'required|string',
@@ -31,7 +30,6 @@ class AdminPaintsController extends Controller{
                 'look' => 'required|string',
                 'chassis' => 'required|string',
             ]);
-            $paint = Paint::find($id);
             $paint->fill([
                 'game' => $request->input('game', 'ets2'),
                 'def' => $request->input('def'),
@@ -46,7 +44,6 @@ class AdminPaintsController extends Controller{
                 redirect()->back()->withErrors(['Виникла помилка']);
         }
 
-        $paint = Paint::where('id', $id)->first();
         return view('admin.paints.edit', [
             'paint' => $paint,
             'dlc' => Dlc::where(['active' => 1, 'game' => $paint->game])->get()
@@ -113,6 +110,75 @@ class AdminPaintsController extends Controller{
             'paint' => $paint,
             'dlc' => Dlc::where(['active' => 1])->get()
         ]);
+    }
+
+    public function import(){
+        $asoc_names = [
+            'cement_cistern' => 'cement',
+            'curtain_sider' => 'scs_box/curtain_sider',
+            'dry_van' => 'scs_box/dry_van',
+            'insulated' => 'scs_box/insulated',
+            'moving_floor' => 'scs_box/moving_floor',
+            'refrigerated' => 'scs_box/reefer',
+            'willig_cistern' => 'willig/fuel_cistern',
+
+            'krone_coolliner' => 'krone/coolliner',
+            'krone_dryliner' => 'krone/dryliner',
+            'krone_profiliner' => 'krone/profiliner',
+        ];
+        $path = resource_path('files/def');
+        if(!is_dir($path)) return abort(404);
+        $dlcs = Dlc::all()->keyBy('name')->toArray();
+
+        // цикл по длс-кам
+        foreach(scandir($path) as $dlc){
+            if($dlc !== '.' && $dlc !== '..'){
+                $dlc_params = $dlcs[$dlc] ?? null;
+                $dlc_trailer_path = $path.'/'.$dlc.'/trailer/';
+
+                // цикл по прицепам
+                foreach(scandir($dlc_trailer_path) as $chassis){
+                    if($chassis !== '.' && $chassis !== '..' && is_dir($dlc_trailer_path . '/' . $chassis . '/company_paint_job/')){
+                        $chassis_paint_jobs_path = $dlc_trailer_path . '/' . $chassis . '/company_paint_job/';
+
+                        // цикл по скинам
+                        foreach(scandir($chassis_paint_jobs_path) as $paint_job){
+                            if($paint_job !== '.' && $paint_job !== '..'){
+                                $paint = new Paint();
+                                $paint->fill([
+                                    'game' => $dlc_params['game'] ?? 'ets2',
+                                    'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
+                                    'alias' => str_replace('.sii', '', $paint_job),
+                                    'look' => str_replace('.sii', '', $paint_job),
+                                    'chassis' => $chassis,
+                                    'dlc_id' => $dlc_params['id'],
+                                    'active' => true,
+                                ]);
+                                if($paint_job === 'default.sii') $paint->sort = '1';
+                                $paint->save();
+//                                dump($paint);
+                            }
+                        }
+                        if($chassis === 'schw_curtain' || $chassis === 'schw_reefer'){
+                            $paint = new Paint();
+                            $paint->fill([
+                                'game' => 'ets2',
+                                'def' => '/def/trailer/'.$chassis.'/custom_paint_job/schw_logo.sii',
+                                'alias' => 'schw_logo',
+                                'look' => 'empty',
+                                'chassis' => $chassis,
+                                'dlc_id' => $dlcs['schwarzmuller']['id'],
+                                'active' => true,
+                                'sort' => 1
+                            ]);
+                            $paint->save();
+//                            dump($paint);
+                        }
+                    }
+                }
+            }
+        }
+        return redirect()->route('paints')->with(['success' => 'Скіни додано!']);
     }
 
 }

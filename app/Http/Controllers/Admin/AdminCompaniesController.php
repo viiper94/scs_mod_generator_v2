@@ -96,7 +96,33 @@ class AdminCompaniesController extends Controller{
     }
 
     public function import(){
+        $path = resource_path('files/def');
+        if(!is_dir($path)) return abort(404);
+        $dlcs = Dlc::all()->keyBy('name')->toArray();
 
+        // цикл по длс-кам
+        foreach(scandir($path) as $dlc){
+            if($dlc !== '.' && $dlc !== '..' && is_dir($path.'/'.$dlc.'/company/')){
+                $dlc_params = $dlcs[$dlc] ?? null;
+                $dlc_company_path = $path.'/'.$dlc.'/company/';
+
+                // цикл по компаниям
+                foreach(scandir($dlc_company_path) as $item){
+                    if($item !== '.' && $item !== '..'){
+                        $company = new Company();
+                        $company->fill([
+                            'game' => $dlc_params['game'] ?? 'ets2',
+                            'name' => preg_replace('%(\.[a-z_]+)?.sii%', '', $item),
+                            'dlc_id' => $dlc_params['id'],
+                            'active' => true,
+                        ]);
+                        $company->save();
+//                        dump($company);
+                    }
+                }
+            }
+        }
+        return redirect()->route('companies')->with(['success' => 'Компанії додано!']);
     }
 
 }

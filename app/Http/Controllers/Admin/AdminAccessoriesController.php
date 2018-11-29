@@ -109,4 +109,55 @@ class AdminAccessoriesController extends Controller{
         ]);
     }
 
+    public function import(){
+        $asoc_names = [
+            'brick_blue' => 'scs_brick',
+            'flat_cont_g' => 'scs_container',
+            'scs_flatbed' => 'flat_bed',
+
+            'krone_boxliner_2x20' => 'krone_boxliner',
+            'krone_boxliner_20' => 'krone_boxliner',
+            'krone_boxliner_40' => 'krone_boxliner',
+            'krone_profiliner_hd' => 'krone_profilinerhd',
+        ];
+        $path = resource_path('files/def');
+        if(!is_dir($path)) return abort(404);
+        $dlcs = Dlc::all()->keyBy('name')->toArray();
+
+        //цикл по длс-кам
+        foreach(scandir($path) as $dlc){
+            if($dlc !== '.' && $dlc !== '..'){
+                $dlc_params = $dlcs[$dlc] ?? null;
+                $dlc_trailer_cargo_path = $path.'/'.$dlc.'/trailer_cargo/';
+                if(!is_dir($dlc_trailer_cargo_path)) continue;
+
+                // цикл по прицепам
+                foreach(scandir($dlc_trailer_cargo_path) as $chassis){
+                    if($chassis !== '.' && $chassis !== '..'){
+                        $chassis_accessory_path = $dlc_trailer_cargo_path . '/' . $chassis;
+
+                        // цикл по аксессуарам
+                        foreach(scandir($chassis_accessory_path) as $acc){
+                            if($acc !== '.' && $acc !== '..'){
+                                $accessory = new Accessory();
+                                $accessory->fill([
+                                    'game' => $dlc_params['game'] ?? 'ets2',
+                                    'def' => '/def/vehicle/trailer_cargo/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/'.$acc,
+                                    'alias' => str_replace(['.sii', '_13'], '', $acc),
+                                    'chassis' => $chassis,
+                                    'dlc' =>  $dlc_params['id'],
+                                    'active' => true,
+                                ]);
+//                                dump($accessory);
+                                $accessory->save();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+//        die();
+        return redirect()->route('accessories')->with(['success' => 'Аксесуари додано!']);
+    }
+
 }
