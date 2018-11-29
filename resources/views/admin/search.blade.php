@@ -4,7 +4,7 @@
             <form method="get">
                 <div class="input-field no-margin">
                     <i class="material-icons prefix">search</i>
-                    <input type="search" name="q" placeholder="Пошук" value="{{ Request::input('q') }}">
+                    <input type="search" name="q" placeholder="@lang('general.search')" value="{{ Request::input('q') }}">
                     @if(Request::input('q'))
                         <a href="{{ route(Route::currentRouteName()) }}"
                             class="mdc-icon-button material-icons"
