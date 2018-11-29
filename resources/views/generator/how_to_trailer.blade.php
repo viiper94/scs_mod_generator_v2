@@ -36,14 +36,14 @@
                 <li>@lang('instructions.mp_use_4') <a href="https://truckersmp.com/rules" target="_blank">https://truckersmp.com/rules</a></li>
             </ol>
         </section>
-        <header class="mdc-dialog__header">
+        <!--header class="mdc-dialog__header">
             <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">@lang('instructions.weight_title')</h2>
         </header>
         <section id="my-mdc-dialog-description" class="mdc-dialog__body">
             <p>@lang('instructions.weight_1')
                 <a href="https://forum.truckersmp.com/index.php?/topic/31156-how-to-repair-your-economy-and-get-new-jobs/" target="_blank">@lang('instructions.weight_2')</a>
             </p>
-        </section>
+        </section-->
         <footer class="mdc-dialog__footer">
             <button type="button" class="mdc-button mdc-button--raised mdc-ripple mdc-dialog__footer__button mdc-dialog__footer__button--accept">@lang('instructions.close_modal')</button>
         </footer>
