@@ -96,7 +96,7 @@ class Chassis extends Model{
     }
 
     public static function getAllCompanies($game){
-        $companies = Company::where('game', $game)->get();
+        $companies = Company::where('game', $game)->orderBy('name', 'asc')->get();
         $list[] = [
             'name' => trans('general.choose_paint'),
             'value' => '',

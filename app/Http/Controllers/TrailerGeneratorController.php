@@ -56,7 +56,7 @@ class TrailerGeneratorController extends Controller{
                 }
                 if($request->input('chassis') === 'paintable' || $chassis->with_paint_job){
                     if($request->input('chassis') === 'paintable'){
-                        $paint = Company::where('name', $request->input('accessory'))->first();
+                        $paint = Company::where('name', $request->input('accessory'))->orderBy('name', 'asc')->first();
                     }else{
                         $paint = Paint::where('def', $request->input('accessory'))->first();
                     }
