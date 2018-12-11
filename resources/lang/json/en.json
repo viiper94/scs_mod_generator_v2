@@ -63,7 +63,8 @@
         "weight_apply": "Cargo weight will apply after job list refresh. Read instruction for more information.",
         "include_fix": "Include Caravan cargo fix (for TruckersMP usage)",
         "search": "Search",
-        "static_mods": "More Mods for MP"
+        "static_mods": "More Mods for MP",
+        "no_results": "No results"
     },
     "instructions": {
         "generate_title": "How to use this tool?",
