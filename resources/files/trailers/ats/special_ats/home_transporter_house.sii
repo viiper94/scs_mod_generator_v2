@@ -1,0 +1,57 @@
+trailer : trailer.home_trans.cargo_house
+{
+	accessories[]: .home_trans.cargo_house.tchassis
+	accessories[]: .home_trans.cargo_house.trwheel0
+	accessories[]: .home_trans.cargo_house.trwheel1
+	accessories[]: .home_trans.cargo_house.trwheel2
+	accessories[]: .home_trans.cargo_house.trwheel3
+
+ 	accessories[]: .home_trans.cargo_house.flag_r_r
+   	accessories[]: .home_trans.cargo_house.flag_r_l
+
+	accessories[]: .home_trans.cargo_house.cargo
+}
+
+vehicle_accessory: .home_trans.cargo_house.tchassis
+{
+    	data_path: "/def/vehicle/trailer/home_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .home_trans.cargo_house.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .home_trans.cargo_house.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .home_trans.cargo_house.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+vehicle_wheel_accessory: .home_trans.cargo_house.trwheel3
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_addon_accessory: .home_trans.cargo_house.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/home_transporter/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .home_trans.cargo_house.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/home_transporter/accessory/flag_r_l/warning.sii"
+}
+
+vehicle_accessory: .home_trans.cargo_house.cargo
+{
+    	data_path: "/def/vehicle/trailer/home_transporter/cargo_house.sii"
+}
+

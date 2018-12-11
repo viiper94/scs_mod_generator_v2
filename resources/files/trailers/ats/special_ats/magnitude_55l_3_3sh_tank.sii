@@ -1,0 +1,96 @@
+trailer : trailer.mag_3l.tank
+{
+	accessories[]: .mag_3l.tank.tchassis
+	accessories[]: .mag_3l.tank.trwheel0
+	accessories[]: .mag_3l.tank.trwheel1
+	accessories[]: .mag_3l.tank.trwheel2
+	accessories[]: .mag_3l.tank.trlr_cables
+	
+	slave_trailer: trailer.mag_3_t.tank
+
+}
+
+vehicle_accessory: .mag_3l.tank.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep_3.sii"
+}
+
+vehicle_wheel_accessory: .mag_3l.tank.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3l.tank.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3l.tank.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_3l.tank.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
+}
+
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.mag_3_t.tank
+{
+	accessories[]: .mag_3_t.tank.tchassis
+	accessories[]: .mag_3_t.tank.trwheel0
+	accessories[]: .mag_3_t.tank.trwheel1
+	accessories[]: .mag_3_t.tank.trwheel2
+
+	accessories[]: .mag_3_t.tank.cargo
+	accessories[]: .mag_3_t.tank.flag_r_r
+    	accessories[]: .mag_3_t.tank.flag_r_l
+
+}
+
+vehicle_accessory: .mag_3_t.tank.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_sh_3.sii"
+}
+
+vehicle_wheel_accessory: .mag_3_t.tank.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3_t.tank.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3_t.tank.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .mag_3_t.tank.cargo
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_tank.sii"
+}
+
+vehicle_addon_accessory: .mag_3_t.tank.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .mag_3_t.tank.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}

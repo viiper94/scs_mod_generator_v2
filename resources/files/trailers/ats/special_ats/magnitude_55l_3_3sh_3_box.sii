@@ -1,0 +1,147 @@
+trailer : trailer.mag_3shs.box
+{
+	accessories[]: .mag_3shs.box.tchassis
+	accessories[]: .mag_3shs.box.trwheel0
+	accessories[]: .mag_3shs.box.trwheel1
+	accessories[]: .mag_3shs.box.trwheel2
+	accessories[]: .mag_3shs.box.trlr_cables
+	
+	slave_trailer: trailer.mag_3shs_t.box
+
+}
+
+vehicle_accessory: .mag_3shs.box.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep_3.sii"
+}
+
+vehicle_wheel_accessory: .mag_3shs.box.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3shs.box.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3shs.box.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_3shs.box.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
+}
+
+
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.mag_3shs_t.box
+{
+	accessories[]: .mag_3shs_t.box.tchassis
+	accessories[]: .mag_3shs_t.box.trwheel0
+	accessories[]: .mag_3shs_t.box.trwheel1
+	accessories[]: .mag_3shs_t.box.trwheel2
+	accessories[]: .mag_3shs_t.box.trlr_cables
+
+	accessories[]: .mag_3shs_t.box.cargo
+	
+	slave_trailer: trailer.mag_3_s.box
+
+}
+
+vehicle_accessory: .mag_3shs_t.box.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_sh_3_spreader.sii"
+}
+
+vehicle_wheel_accessory: .mag_3shs_t.box.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3shs_t.box.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3shs_t.box.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .mag_3shs_t.box.cargo
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_box.sii"
+}
+
+vehicle_addon_accessory: .mag_3shs_t.box.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
+}
+
+
+#########################################
+#
+#	SPREDER
+#
+#########################################
+
+trailer : trailer.mag_3_s.box
+{
+	accessories[]: .mag_3_s.box.tchassis
+	accessories[]: .mag_3_s.box.trwheel0
+	accessories[]: .mag_3_s.box.trwheel1
+	accessories[]: .mag_3_s.box.trwheel2
+    
+    accessories[]: .mag_3_s.box.flag_r_r
+    accessories[]: .mag_3_s.box.flag_r_l
+
+
+
+}
+
+vehicle_accessory: .mag_3_s.box.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_spreader_3.sii"
+}
+
+vehicle_wheel_accessory: .mag_3_s.box.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3_s.box.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_3_s.box.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_3_s.box.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .mag_3_s.box.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}
