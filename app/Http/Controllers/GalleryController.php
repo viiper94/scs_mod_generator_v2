@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 
 class GalleryController extends Controller{
 
-    public function index(){
-        $chassis = Chassis::with('dlc')->get();
+    public function index(Request $request){
+        $chassis = Chassis::with('dlc');
+        if($request->input('q')) $chassis->orWhere('alias', 'like', '%'.$request->input('q').'%')
+            ->orWhere('def', 'like', '%'.$request->input('q').'%');
         return view('gallery.index', [
-            'chassis_list' => $chassis->groupBy('game')
+            'chassis_list' => $chassis->orderBy('alias', 'asc')->get()->groupBy('game')
         ]);
     }
 

@@ -19,8 +19,8 @@ Route::get('auth/google/handle', 'Auth\LoginController@handleGoogleCallback');
 
 Route::post('/generator', 'TrailerGeneratorController@generate')->name('generator');
 
-Route::get('/gallery', 'GalleryController@index');
-Route::post('/gallery', 'GalleryController@getInfo')->name('gallery');
+Route::get('/gallery', 'GalleryController@index')->name('gallery');
+Route::post('/gallery', 'GalleryController@getInfo');
 
 Route::post('/color/generate', 'TruckPaintGeneratorController@generate')->name('color_generator');
 Route::get('/color/{game?}/{d?}', 'TruckPaintGeneratorController@index');

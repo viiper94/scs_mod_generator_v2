@@ -1,5 +1,5 @@
 <div class="row no-margin">
-    <div class="col s12 m10 offset-m1">
+    <div class="col s12 l10 offset-l1">
         <div class="card-panel search">
             <form method="get">
                 <div class="input-field no-margin">
