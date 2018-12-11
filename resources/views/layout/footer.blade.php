@@ -4,7 +4,7 @@
             <div class="col m8 s12">
                 <h6>@lang('general.supported_versions')</h6>
                 <p class="fs20">@lang('general.ets2') - <b>1.33.*</b></p>
-                <p class="fs20">@lang('general.ats') - <b>1.32.*</b></p>
+                <p class="fs20">@lang('general.ats') - <b>1.33.*</b></p>
             </div>
             <div class="col m4 s12 right-align">
                 <h6>@lang('general.links')</h6>
@@ -18,7 +18,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            <span class="left">@lang('general.current_version'): 2.2.1</span>
+            <span class="left">@lang('general.current_version'): 2.2.2</span>
             <span class="right">&copy; <a href="http://steamcommunity.com/id/viiper94/" target="_blank">Mayday</a> - {{date('Y')}}</span>
         </div>
     </div>
