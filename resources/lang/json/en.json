@@ -64,6 +64,7 @@
         "include_fix": "Include Caravan cargo fix (for TruckersMP usage)",
         "search": "Search",
         "static_mods": "More Mods for MP",
+        "join_discord": "Visit our Discord server and join discussion: ",
         "no_results": "No results"
     },
     "instructions": {
