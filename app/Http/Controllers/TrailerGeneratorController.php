@@ -129,7 +129,7 @@ class TrailerGeneratorController extends Controller{
         }
 
         if($chassis->with_accessory) $accessory = Accessory::where('def', $request->input('accessory'))->first();
-        if($chassis->with_paint_job && $request->input('paint') !== 'all'){
+        if(($chassis->with_paint_job || $chassis->alias == 'paintable') && $request->input('paint') !== 'all'){
             $paint_job = Paint::where('def', $request->input('paint'))->first();
             $paint_job->setPaintColor($request->input('color'));
         }
@@ -169,6 +169,7 @@ class TrailerGeneratorController extends Controller{
         if($request->post('paint')) {
             $params['form']['paint'] = $generator->paintJob->def ?? $generator->paintJob->look;
             $params['view']['paint'] = $generator->paintJob->alias ?? $generator->paintJob->look;
+            dd($params['view']['paint']);
             if(stripos($request->post('paint'), 'default.sii')) {
                 $color = $request->post('color');
                 $params['form']['color'] = $color;

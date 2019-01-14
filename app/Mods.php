@@ -22,12 +22,13 @@ class Mods extends Model{
         try{
             if($params['form']['chassis'] !== 'paintable'){
                 Chassis::where(['alias' => $params['form']['chassis'], 'active' => '1'])->firstOrFail();
-                $paint = 'def';
-            }else{
-                $paint = 'look';
             }
             if(key_exists('accessory', $params['form'])) Accessory::where(['def' => $params['form']['accessory'], 'active' => '1'])->firstOrFail();
-            if(key_exists('paint', $params['form'])) Paint::where([$paint => $params['form']['paint'], 'active' => '1'])->firstOrFail();
+            if(key_exists('paint', $params['form']))
+                Paint::where('active', '1')
+                ->where('def', $params['form']['paint'])
+                ->orWhere('look', $params['form']['paint'])
+                ->firstOrFail();
         }catch(ModelNotFoundException $e){
             return false;
         }
