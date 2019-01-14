@@ -1,6 +1,8 @@
 {
     "general": {
         "search": "Search",
+        "join_discord": "Visit our Discord server and join discussion: ",
+        "no_results": "No results",
         "choose_language": "W\u00e4hle eine Sprache",
         "help_translate": "Du kannst uns helfen, die Webseite in andere Sprachen zu \u00fcbersetzen.",
         "close": "Schlie\u00dfen",

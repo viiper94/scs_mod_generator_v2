@@ -1,6 +1,8 @@
 {
     "general": {
         "search": "Search",
+        "join_discord": "Visit our Discord server and join discussion: ",
+        "no_results": "No results",
         "choose_language": "\u0395\u03c0\u03b9\u03bb\u03ad\u03be\u03c4\u03b5 \u03b3\u03bb\u03ce\u03c3\u03c3\u03b1",
         "help_translate": "\u039c\u03c0\u03bf\u03c1\u03b5\u03af\u03c4\u03b5 \u03bd\u03b1 \u03b2\u03bf\u03b7\u03b8\u03ae\u03c3\u03b5\u03c4\u03b5 \u03c4\u03b7 \u03bc\u03b5\u03c4\u03ac\u03c6\u03c1\u03b1\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03b9\u03c3\u03c4\u03cc\u03c4\u03bf\u03c0\u03bf\u03c5 \u03c3\u03c4\u03b7 \u03b3\u03bb\u03ce\u03c3\u03c3\u03b1 \u03c3\u03b1\u03c2",
         "close": "\u03ba\u03bb\u03b5\u03af\u03c3\u03b5",
@@ -175,9 +177,10 @@
         "outdoor_floor_tile": "Outdoor floor tile",
         "fertilizer": "Fertilizer",
         "plant_substrate": "Plant substrate",
-        "roof_tiles": "Roof tiles",
+        "roof_tiles": "Reef tiles",
         "container_t14_diesel": "Diesel",
         "container_t14_sodium": "Sodium",
+        "scania2016cargo": "Next Gen Scania trucks",
         "cargo_cars_it": "Cars",
         "cargo_france_cars": "Cars",
         "cargo_octavia": "Cars",

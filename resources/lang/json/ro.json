@@ -1,6 +1,8 @@
 {
     "general": {
         "search": "Search",
+        "join_discord": "Visit our Discord server and join discussion: ",
+        "no_results": "No results",
         "choose_language": "Alege limba",
         "help_translate": "Poti ajuta la traducerea web-site-ului in limba ta",
         "close": "Inchide",
@@ -175,9 +177,10 @@
         "outdoor_floor_tile": "Outdoor floor tile",
         "fertilizer": "Fertilizer",
         "plant_substrate": "Plant substrate",
-        "roof_tiles": "Roof tiles",
+        "roof_tiles": "Reef tiles",
         "container_t14_diesel": "Diesel",
         "container_t14_sodium": "Sodium",
+        "scania2016cargo": "Next Gen Scania trucks",
         "cargo_cars_it": "Masini",
         "cargo_france_cars": "Masini",
         "cargo_octavia": "Masini",

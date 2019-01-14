@@ -1,6 +1,8 @@
 {
     "general": {
         "search": "Search",
+        "join_discord": "Visit our Discord server and join discussion: ",
+        "no_results": "No results",
         "choose_language": "Izaberite Jezik",
         "help_translate": "Mo\u017eete pomo\u0107i u prijevodu stranice na va\u0161 jezik",
         "close": "Zatvori",
@@ -175,9 +177,10 @@
         "outdoor_floor_tile": "Outdoor floor tile",
         "fertilizer": "Fertilizer",
         "plant_substrate": "Plant substrate",
-        "roof_tiles": "Roof tiles",
+        "roof_tiles": "Reef tiles",
         "container_t14_diesel": "Diesel",
         "container_t14_sodium": "Sodium",
+        "scania2016cargo": "Next Gen Scania trucks",
         "cargo_cars_it": "Automobili",
         "cargo_france_cars": "Automobili",
         "cargo_octavia": "Automobili",

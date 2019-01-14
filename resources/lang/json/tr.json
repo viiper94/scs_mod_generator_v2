@@ -1,6 +1,8 @@
 {
     "general": {
         "search": "Search",
+        "join_discord": "Visit our Discord server and join discussion: ",
+        "no_results": "No results",
         "choose_language": "Dil se\u00e7in",
         "help_translate": "Web sitesini dilinize \u00e7evirerek yard\u0131mc\u0131 olabilirsiniz",
         "close": "Kapat",
@@ -27,7 +29,7 @@
         "all_companies": "T\u00fcm \u015firketler",
         "are_you_sure": "Onayl\u0131yor musunuz?",
         "proceed": "Olu\u015ftur",
-        "supported_versions": "Supported games versions",
+        "supported_versions": "Desteklenen oyun s\u00fcr\u00fcm\u00fc",
         "not_supported": "Hen\u00fcz desteklenmiyor",
         "show_all_accessories": "T\u00fcm aksesuarlar\u0131 g\u00f6ster (geli\u015fmi\u015f)",
         "show_all_paints": "T\u00fcm boyamalar\u0131 g\u00f6ster (geli\u015fmi\u015f)",
@@ -61,10 +63,10 @@
         "links": "Links",
         "forums_topic": "Forum Topic",
         "scs_blog": "SCS Blog",
-        "mp_no_support": "NOT SUPPORTED BY MP",
+        "mp_no_support": "\u00c7OK OYUNCULU TARAFINDAN DESTEKLENM\u0130YOR",
         "weight_apply": "Cargo weight will apply after job list refresh. Read instruction for more information.",
         "include_fix": "Include Caravan cargo fix (for TruckersMP usage)",
-        "static_mods": "More Mods for MP",
+        "static_mods": "\u00c7ok Oyunculu i\u00e7in daha fazla Eklenti",
         "truckersmp": "TruckersMP"
     },
     "ets2 trailers": {
@@ -175,9 +177,10 @@
         "outdoor_floor_tile": "Outdoor floor tile",
         "fertilizer": "Fertilizer",
         "plant_substrate": "Plant substrate",
-        "roof_tiles": "Roof tiles",
+        "roof_tiles": "Reef tiles",
         "container_t14_diesel": "Diesel",
         "container_t14_sodium": "Sodium",
+        "scania2016cargo": "Next Gen Scania trucks",
         "cargo_cars_it": "Arabalar",
         "cargo_france_cars": "Arabalar",
         "cargo_octavia": "Arabalar",
@@ -297,8 +300,8 @@
     },
     "instructions": {
         "generate_title": "Bu sistem nas\u0131l kullan\u0131l\u0131r?",
-        "install_title": "How to install mod?",
-        "mp_use": "How to use mod in TruckersMP?",
+        "install_title": "Eklenti nas\u0131l kurulur?",
+        "mp_use": "TruckersMP'de mod nas\u0131l kullan\u0131l\u0131r?",
         "paint_title": "What is it and how to use it?",
         "weight_title": "How to deal with cargo weight?",
         "close_modal": "Tamam",

@@ -1,6 +1,8 @@
 {
     "general": {
         "search": "Search",
+        "join_discord": "Visit our Discord server and join discussion: ",
+        "no_results": "No results",
         "choose_language": "Kies taal",
         "help_translate": "Jij kan ook helpen met het vertalen van de site!",
         "close": "Sluit",
@@ -175,9 +177,10 @@
         "outdoor_floor_tile": "Outdoor floor tile",
         "fertilizer": "Fertilizer",
         "plant_substrate": "Plant substrate",
-        "roof_tiles": "Roof tiles",
+        "roof_tiles": "Reef tiles",
         "container_t14_diesel": "Diesel",
         "container_t14_sodium": "Sodium",
+        "scania2016cargo": "Next Gen Scania trucks",
         "cargo_cars_it": "Auto's",
         "cargo_france_cars": "Auto's",
         "cargo_octavia": "Auto's",
