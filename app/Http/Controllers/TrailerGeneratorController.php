@@ -169,7 +169,6 @@ class TrailerGeneratorController extends Controller{
         if($request->post('paint')) {
             $params['form']['paint'] = $generator->paintJob->def ?? $generator->paintJob->look;
             $params['view']['paint'] = $generator->paintJob->alias ?? $generator->paintJob->look;
-            dd($params['view']['paint']);
             if(stripos($request->post('paint'), 'default.sii')) {
                 $color = $request->post('color');
                 $params['form']['color'] = $color;
