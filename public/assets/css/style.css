@@ -423,7 +423,7 @@ nav .brand-logo::before{
     width: 700px;
 }
 .paint-generator{
-    width: 600px;
+    width: 700px;
 }
 @media (max-width: 1100px){
     .trailer-generator{
@@ -642,6 +642,14 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-fab span{
 	font-size: 25px;
 	font-weight: bold;
+}
+#check_all{
+	background: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.mdc-theme--dark #check_all{
+	color: #fff;
 }
 
 

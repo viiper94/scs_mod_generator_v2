@@ -407,6 +407,17 @@ $(document).ready(function(){
         }
     });
 
+	$('#check_all').click(function(){
+		if($(this).data('check') === 0){
+            $('.dlc').find('input[id^=dlc_]').prop('checked', true);
+            $(this).data('check', 1);
+		}else{
+            $('.dlc').find('input[id^=dlc_]').prop('checked', false);
+            $(this).data('check', 0);
+		}
+
+    });
+
 });
 
 function getDLCList(value) {
