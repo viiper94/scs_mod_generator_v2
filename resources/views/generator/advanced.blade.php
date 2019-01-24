@@ -49,23 +49,29 @@
                 </div>
 
                 {{--DLC section--}}
-                <div class="dlc">
-                    <label>@lang('general.include_dlc'):</label>
-                    @foreach($dlc_list as $dlc)
-                        <div class="{{$dlc->name}}">
-                            <div class="mdc-switch">
-                                <input type="checkbox" id="dlc_{{$dlc->name}}" data-target="paint"
-                                       class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]">
-                                <div class="mdc-switch__background">
-                                    <div class="mdc-switch__knob"></div>
+                <div class="dlc row">
+                    <label>@lang('general.include_dlc')
+                        <button id="check_all" data-check="0">(@lang('general.check_all'))</button>:
+                    </label>
+                    @foreach($dlc_list as $dlc_group)
+                        <div class="col s12 m6">
+                            @foreach($dlc_group as $dlc)
+                                <div class="{{$dlc->name}}">
+                                    <div class="mdc-switch">
+                                        <input type="checkbox" id="dlc_{{$dlc->name}}" data-target="paint"
+                                               class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]">
+                                        <div class="mdc-switch__background">
+                                            <div class="mdc-switch__knob"></div>
+                                        </div>
+                                    </div>
+                                    <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">
+                                        @lang('dlc_list.'.$dlc->name)
+                                        @if(!$dlc->mp_support)
+                                            (@lang('general.mp_no_support'))
+                                        @endif
+                                    </label>
                                 </div>
-                            </div>
-                            <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">
-                                @lang('dlc_list.'.$dlc->name)
-                                @if(!$dlc->mp_support)
-                                    (@lang('general.mp_no_support'))
-                                @endif
-                            </label>
+                            @endforeach
                         </div>
                     @endforeach
                 </div>
