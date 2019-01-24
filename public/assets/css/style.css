@@ -311,6 +311,7 @@ i.truck-icons{
 .sidenav .user-view .circle{
     width: 90px;
     height: 90px;
+	object-fit: cover;
 }
 .sidenav .user-view .name{
     color: var(--mdc-theme-light-text);

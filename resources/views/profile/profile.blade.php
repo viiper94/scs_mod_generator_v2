@@ -5,11 +5,13 @@
 <div class="container">
     <div class="card horizontal">
         <div class="card-image">
-            @if($user->image && file_exists(public_path('images/users/'.$user->image)))
-                <img src="{{ asset('images/users/'.$user->image ) }}">
-            @else
-                <img src="{{ asset('images/users/default.jpg') }}">
-            @endif
+            <img
+                @if($user->image && file_exists(public_path('images/users/'.$user->image)))
+                    src="{{ asset('images/users/'.$user->image) }}"
+                @else
+                    src="{{ asset('images/users/default.jpg') }}"
+                @endif
+            style="max-height: 222px">
         </div>
         <div class="card-stacked">
             <div class="card-content">
