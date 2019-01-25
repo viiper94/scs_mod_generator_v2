@@ -51,7 +51,7 @@
                 {{--DLC section--}}
                 <div class="dlc row">
                     <label>@lang('general.include_dlc')
-                        <button id="check_all" data-check="0">(@lang('general.check_all'))</button>:
+                        <button id="check_all" data-check="0" type="button">(@lang('general.check_all'))</button>:
                     </label>
                     @foreach($dlc_list as $dlc_group)
                         <div class="col s12 m6">
