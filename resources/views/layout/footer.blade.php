@@ -10,7 +10,7 @@
                 <h6>@lang('general.links')</h6>
                 <ul>
                     <li><a href="https://forum.truckersmp.com/index.php?/topic/59888-trailer-mod-web-generator" target="_blank">@lang('general.forums_topic')</a></li>
-                    <li><a href="https://discord.gg/EjaN9j" target="_blank">@lang('general.discord')</a></li>
+                    <li><a href="{{ env('DISCORD_INVITE') }}" target="_blank">@lang('general.discord')</a></li>
                     <li><a href="https://truckersmp.com" target="_blank">@lang('general.truckersmp')</a></li>
                     <li><a href="http://blog.scssoft.com" target="_blank">@lang('general.scs_blog')</a></li>
                 </ul>
@@ -19,7 +19,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            <span class="left">@lang('general.current_version'): 2.2.13</span>
+            <span class="left">@lang('general.current_version'): 2.2.14</span>
             <span class="right">&copy; <a href="http://steamcommunity.com/id/viiper94/" target="_blank">Mayday</a> - {{date('Y')}}</span>
         </div>
     </div>
