@@ -34,15 +34,8 @@
                     <select class="icons" name="wheels">
                         <option value="" selected>@lang('general.w_default')</option>
                         @foreach($wheels as $wheel)
-                            <option value="{{$wheel->def}}" data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg">
-                                @lang($game.'_wheels.'.$wheel->alias)
-                                @if($wheel->isDLCContent())
-                                    - @lang('dlc_list.'.$wheel->dlc->name)
-                                @endif
-                                @if(!$wheel->mp_support)
-                                    (@lang('general.mp_no_support'))
-                                @endif
-                            </option>
+                            <option data-icon="assets/img/wheels/{{$game}}/{{$wheel->alias}}.jpg"
+                                    value="{{$wheel->def}}">{{ $wheel->getWheelName() }}</option>
                         @endforeach
                     </select>
                     <label>@lang('general.select_wheels')</label>

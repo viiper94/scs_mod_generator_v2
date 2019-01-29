@@ -20,4 +20,11 @@ class Wheel extends Model{
         return $this->dlc_id !== null;
     }
 
+    public function getWheelName(){
+        $name = trans($this->game.'_wheels.'.$this->alias);
+        if($this->isDLCContent()) $name .= ' - '.trans('dlc_list.'.$this->dlc->name);
+        if(!$this->mp_support) $name .= '('.trans('general.mp_no_support').')';
+        return $name;
+    }
+
 }
