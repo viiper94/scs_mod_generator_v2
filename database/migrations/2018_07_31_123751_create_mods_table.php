@@ -18,7 +18,7 @@ class CreateModsTable extends Migration
             $table->integer('user_id')->nullable();
             $table->string('title', 512);
             $table->string('file_name', 512);
-            $table->string('params');
+            $table->text('params');
             $table->string('type');
             $table->string('game')->default('ets2');
             $table->boolean('broken')->default(false);
