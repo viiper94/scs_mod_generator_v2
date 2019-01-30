@@ -16,6 +16,7 @@ class CreateDlcTable extends Migration
         Schema::create('dlc', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('short_name');
             $table->string('game')->default('ets2');
             $table->boolean('mp_support')->default(true);
             $table->boolean('type')->default('other');
