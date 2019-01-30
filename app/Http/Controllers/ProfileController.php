@@ -61,13 +61,18 @@ class ProfileController extends Controller{
 
     public function editPassword(Request $request){
         if(!Auth::check()) return redirect('/login');
-        if(Hash::check($request->input('old_password'), Auth::user()->password)) {
-            $this->validate($request, [
-                'old_password' => 'required|string|max:255',
-                'new_password' => 'required|string|max:255|confirmed|different:old_password',
+        $user = User::find(Auth::id());
+        if(!$user->hasOldPassword() || $user->hasOldPassword()
+            && Hash::check($request->input('old_password'), $user->password)){
+            $validate = [
+                'new_password' => 'required|string|max:255|confirmed',
                 'new_password_confirmation' => 'required|string|max:255'
-            ]);
-            $user = User::find(Auth::id());
+            ];
+            if($user->hasOldPassword()){
+                $validate['old_password'] = 'required|string|max:255';
+                $validate['new_password'] .= '|different:old_password';
+            }
+            $this->validate($request, $validate);
             $user->password = Hash::make($request->input('new_password'));
             return $user->save() ?
                 redirect()->route('profile')->with(['success' => '!']) :

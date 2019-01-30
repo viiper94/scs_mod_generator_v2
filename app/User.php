@@ -48,4 +48,8 @@ class User extends Authenticatable
         return false;
     }
 
+    public function hasOldPassword(){
+        return $this->password || (!$this->steamid64 && !stripos($this->email, '@gmail.com'));
+    }
+
 }

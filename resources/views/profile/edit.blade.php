@@ -78,16 +78,18 @@
                 @csrf
                 <div class="card-content">
                     <div class="row"><h5 class="card-title center">@lang('user.password_edit')</h5></div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">lock_outline</i>
-                            <input id="old_password" type="password" name="old_password" @if($errors->has('old_password'))class="invalid" @endif required>
-                            <label for="old_password">@lang('user.old_password')</label>
-                            @if($errors->has('old_password'))
-                                <span class="helper-text" data-error="{{ $errors->first('old_password') }}" data-success=""></span>
-                            @endif
+                    @if($user->hasOldPassword())
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input id="old_password" type="password" name="old_password" @if($errors->has('old_password'))class="invalid" @endif required>
+                                <label for="old_password">@lang('user.old_password')</label>
+                                @if($errors->has('old_password'))
+                                    <span class="helper-text" data-error="{{ $errors->first('old_password') }}" data-success=""></span>
+                                @endif
+                            </div>
                         </div>
-                    </div>
+                    @endif
                     <div class="row">
                         <div class="input-field col s12 no-margin">
                             <i class="material-icons prefix">lock</i>
