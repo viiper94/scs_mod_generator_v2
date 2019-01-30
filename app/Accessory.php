@@ -28,7 +28,7 @@ class Accessory extends Model{
     }
 
     public static function getAllAccessoriesDefs($game){
-        $accessories = Accessory::where('game', $game)->get();
+        $accessories = Accessory::where(['game' => $game, 'active' => 1])->orderBy('chassis', 'asc')->get();
         $list[] = [
             'name' => trans('general.choose_accessory'),
             'value' => '',

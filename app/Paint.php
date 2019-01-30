@@ -44,7 +44,7 @@ class Paint extends Model{
     }
 
     public static function getAllPaintsDefs($game){
-        $paints = Paint::where('game', $game)->get();
+        $paints = Paint::where(['game' => $game, 'active' => 1])->orderBy('chassis', 'asc')->get();
         $list = array();
         foreach($paints as $item){
             $list[] = [
