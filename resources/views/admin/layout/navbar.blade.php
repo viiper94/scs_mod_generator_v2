@@ -1,5 +1,6 @@
 <nav id="slide-out" class="sidenav sidenav-fixed" style="text-transform: uppercase; width: 350px;">
     <ul class="top-menu">
+        <li><a class="waves-effect" href="{{url('/')}}"><i class="material-icons notranslate">settings_backup_restore</i>До генератора</a></li>
         {{--<li @if(Request::is('admin'))class="active"@endif>--}}
             {{--<a class="waves-effect" href="{{route('admin')}}"><i class="material-icons notranslate">home</i>Головна</a>--}}
         {{--</li>--}}
@@ -33,9 +34,9 @@
         <li @if(Request::is('admin/users'))class="active"@endif>
             <a class="waves-effect" href="{{route('users')}}"><i class="material-icons notranslate">people</i>Користувачі</a>
         </li>
-        <li><a class="waves-effect" href="{{url('/')}}"><i class="material-icons notranslate">settings_backup_restore</i>До генератора</a></li>
     </ul>
     <ul class="bottom-menu">
+        <li class="divider" style="margin: 0 32px; background-color: #9b9b9b;"></li>
         <li @if(Request::is('profile'))class="active"@endif>
             <a class="waves-effect" href="{{route('profile')}}"><i class="material-icons notranslate">person</i>@lang('user.profile')</a>
         </li>

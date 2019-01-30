@@ -51,6 +51,7 @@
         @endcan
     </ul>
     <ul class="bottom-menu">
+        <li class="divider" style="margin: 0 32px; background-color: #9b9b9b;"></li>
         @guest
             <li @if(Request::is('login'))class="active"@endif>
                 <a class="waves-effect" href="{{route('login')}}"><i class="material-icons notranslate">how_to_reg</i>@lang('user.login')</a>
