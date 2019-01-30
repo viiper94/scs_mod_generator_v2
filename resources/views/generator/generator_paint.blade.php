@@ -81,6 +81,12 @@
                 </div>
             </form>
         </div>
+        @if(!$hasUserAcceptLanguage)
+            @include('generator.translate')
+        @endif
+        <section class="trailer-generator">
+            @include('layout.discord')
+        </section>
     </div>
     <div class="fixed-action-btn tooltipped" data-tooltip="@lang('general.how_to')">
         <a class="mdc-fab mdc-ripple modal-trigger" href="#how" id="how-to">
