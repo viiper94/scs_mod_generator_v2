@@ -46,6 +46,7 @@ $(document).ready(function(){
 		exitDelay : 200
 	});
 	$('.wheels select').formSelect();
+	$('select#lang').formSelect();
 	$('.tabs').tabs();
 	$('.collapsible').collapsible();
 	$('.sidenav').sidenav();

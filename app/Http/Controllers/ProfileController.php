@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Dlc;
 use App\Image;
 use App\Mods;
 use App\User;
@@ -24,7 +25,10 @@ class ProfileController extends Controller{
 
     public function edit(){
         if(!Auth::check()) return redirect('/login');
-        return view('profile.edit', ['user' => Auth::user()]);
+        return view('profile.edit', [
+            'user' => Auth::user(),
+            'dlc_list' => Dlc::where('active', 1)->orderBy('sort', 'asc')->get()->groupBy(['game', 'type'])
+        ]);
     }
 
     public function editProfile(Request $request){
@@ -56,7 +60,8 @@ class ProfileController extends Controller{
     }
 
     public function editPassword(Request $request){
-        if (Hash::check($request->input('old_password'), Auth::user()->password)) {
+        if(!Auth::check()) return redirect('/login');
+        if(Hash::check($request->input('old_password'), Auth::user()->password)) {
             $this->validate($request, [
                 'old_password' => 'required|string|max:255',
                 'new_password' => 'required|string|max:255|confirmed|different:old_password',
@@ -72,6 +77,18 @@ class ProfileController extends Controller{
                 'old_password' => trans('user.old_pass_fail')
             ]);
         }
+    }
+
+    public function editSettings(Request $request){
+        if(!Auth::check()) return redirect('/login');
+        $user = User::find(Auth::id());
+        $user->language = $request->input('lang');
+        $user->owned_dlc =$request->input('dlc') ?
+            implode(',', array_keys($request->input('dlc'))):
+            null;
+        return $user->save() ?
+            redirect()->route('profile')->with(['success' => '!']) :
+            redirect()->route('profile')->withErrors(['!']);
     }
 
     public function modBroken(Request $request, $id){

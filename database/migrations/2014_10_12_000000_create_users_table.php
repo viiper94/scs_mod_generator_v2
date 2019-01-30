@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('language')->nullable();
             $table->string('image')->nullable();
             $table->string('theme')->nullable();
+            $table->string('social_logged_in')->nullable();
+            $table->string('owned_dlc')->nullable();
             $table->boolean('admin')->default(false);
             $table->string('steamid64')->nullable();
             $table->rememberToken();

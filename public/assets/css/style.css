@@ -600,10 +600,10 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 	align-items: center;
 	height: 70px;
 }
-.mdc-theme--dark .wheels .dropdown-content{
+.mdc-theme--dark .dropdown-content{
 	background-color: #424242;
 }
-.mdc-theme--dark .wheels .select-dropdown.dropdown-content li:hover{
+.mdc-theme--dark .select-dropdown.dropdown-content li:hover{
 	background-color: #515151;
 }
 .wheels .dropdown-content li>a, .dropdown-content li>span{
@@ -628,8 +628,8 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .select-dropdown.dropdown-content li:hover {
 	background-color: rgba(0,0,0,0.08);
 }
-.wheels .dropdown-content li.active span,
-.wheels .dropdown-content li.selected span{
+.dropdown-content li.active span,
+.dropdown-content li.selected span{
 	color: var(--mdc-theme-primary-dark);
 }
 .select-wrapper .caret{
@@ -698,6 +698,16 @@ input, .mdc-text-field__input, input[type=text]:not(.browser-default){
 .mdc-theme--dark .no-mods{
     color: var(--mdc-theme-text-primary-on-primary-dark);
 }
+.profile-container{
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.profile-container .profile{min-width: 300px; max-width: 500px;}
+.profile-container .settings{min-width: 650px;}
+.profile-container .password{min-width: 300px;}
+.profile-container .settings button{width: 400px;}
 @media (max-width: 667px){
     .flex-center{
         flex-direction: column;

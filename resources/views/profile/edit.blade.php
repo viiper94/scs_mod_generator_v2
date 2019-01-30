@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <div class="flex-center" style="flex: 1; align-items: center; justify-content: space-around;">
-        <div class="card" style="max-width: 500px;">
+    <div class="flex-center profile-container">
+        <div class="card profile">
             <form action="{{route('save_profile')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="card-content">
@@ -73,7 +73,7 @@
                 </div>
             </form>
         </div>
-        <div class="card">
+        <div class="card password">
             <form action="{{route('save_password')}}" method="post">
                 @csrf
                 <div class="card-content">
@@ -109,6 +109,61 @@
                 <div class="card-action">
                     <div class="row no-margin">
                         <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12"><b>@lang('user.save_password')</b></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card settings">
+            <form action="{{ route('save_settings') }}" method="post">
+                @csrf
+                <div class="card-content">
+                    <div class="row"><h5 class="card-title center">@lang('user.profile_settings')</h5></div>
+                    @php $user_dlc = explode(',', $user->owned_dlc) @endphp
+                    @foreach($dlc_list as $game => $types)
+                        <div class="row">
+                            <label class="col s12">@lang('user.choose_owned_dlc') - {{ $game == 'ets2' ? 'Euro Truck Simulator 2' : 'American Truck Simulator' }}</label>
+                            @foreach($types as $type)
+                                <div class="col s12 @if($game == 'ets2')m6 @endif">
+                                    @foreach($type as $dlc)
+                                        <div class="{{$dlc->name}}">
+                                            <div class="mdc-switch">
+                                                <input type="checkbox" id="{{$dlc->name}}"
+                                                       class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]"
+                                                    @if(in_array($dlc->name, $user_dlc)) checked @endif>
+                                                <div class="mdc-switch__background">
+                                                    <div class="mdc-switch__knob"></div>
+                                                </div>
+                                            </div>
+                                            <label for="{{$dlc->name}}" class="mdc-switch-label">
+                                                @lang('dlc_list.'.$dlc->name)
+                                                @if(!$dlc->mp_support)
+                                                    (@lang('general.mp_no_support'))
+                                                @endif
+                                            </label>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            @endforeach
+                        </div>
+                    @endforeach
+                    <div class="row">
+                        <div class="input-field col s12 m4">
+                            <i class="material-icons prefix">language</i>
+                            <select name="lang" id="lang" class="icons">
+                                @foreach($languages as $locale => $data)
+                                    <option value="{{ $locale }}" data-icon="/assets/img/langs/{{ $locale }}.png"
+                                            @if($user->language == $locale ||
+                                            !$user->language && \Illuminate\Support\Facades\App::isLocale($locale))selected @endif
+                                    >{{ $data['title'] }}</option>
+                                @endforeach
+                            </select>
+                            <label>@lang('user.choose_lang')</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <div class="row no-margin center">
+                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple"><b>@lang('user.save_settings')</b></button>
                     </div>
                 </div>
             </form>
