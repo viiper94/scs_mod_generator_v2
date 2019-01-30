@@ -46,13 +46,15 @@
                     <label>@lang('general.include_dlc')
                         <button id="check_all" data-check="0" type="button">(@lang('general.check_all'))</button>:
                     </label>
+                    @php $user_dlc = explode(',', Auth::user()->owned_dlc) @endphp
                     @foreach($dlc_list as $dlc_group)
                         <div class="col s12 m6">
                             @foreach($dlc_group as $dlc)
                                 <div class="{{$dlc->name}}">
                                     <div class="mdc-switch">
                                         <input type="checkbox" id="dlc_{{$dlc->name}}" data-target="paint"
-                                               class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]">
+                                               class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]"
+                                                @if(in_array($dlc->name, $user_dlc)) checked @endif>
                                         <div class="mdc-switch__background">
                                             <div class="mdc-switch__knob"></div>
                                         </div>
