@@ -11,5 +11,12 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.sass('resources/assets/sass/app.scss', 'public/css').version()
+    .combine([
+        'resources/assets/js/jquery-3.2.1.min.js',
+        'resources/assets/js/mdc/material-components-web.js',
+        'resources/assets/js/semanticui/semanticui.min.js',
+        'resources/assets/js/materialize/materialize.js',
+        'resources/assets/js/script.js',
+    ], 'public/js/app.js')
+    .version();
