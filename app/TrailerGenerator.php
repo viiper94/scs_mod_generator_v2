@@ -12,11 +12,11 @@ class TrailerGenerator extends ModGenerator{
 
 	public function load($chassis, $accessory, $paintJob){
         $this->game = Request::input('target');
-		$this->title = strlen(trim($_POST['title'])) == 0 ? 'Mod' : trim($_POST['title']);
 		$this->chassis = $chassis;
 		$this->accessory = $accessory;
 		$this->paintJob = $paintJob;
 		$this->dlc = $this->getDLCArray();
+        $this->title = $this->getTitle();
 		
 		$this->outDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->outDir . time();
 		$this->filesDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->filesDir;
@@ -47,6 +47,14 @@ class TrailerGenerator extends ModGenerator{
 		    return $this->outDir;
         }
         return true;
+	}
+
+    private function getTitle(){
+        $title = trim(htmlentities(Request::post('title')));
+        if(strlen($title) == 0){
+            $title = trans($this->game.'_trailers.'.$this->chassis->alias);
+        }
+        return $title;
 	}
 
 	private function getDLCArray(){

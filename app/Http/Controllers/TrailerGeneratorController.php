@@ -99,7 +99,7 @@ class TrailerGeneratorController extends Controller{
         $this->validate($request, [
             'chassis' => 'required|string',
             'target' => 'required|string',
-            'title' => 'string',
+            'title' => 'string|nullable',
             'accessory' => 'string|nullable',
             'paint' => 'string|nullable',
             'wheels' => 'string|nullable',
