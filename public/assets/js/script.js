@@ -174,15 +174,13 @@ $(document).ready(function(){
 					success : function(response){
 						if(response.status === 'OK'){
 							$.each(response.result, function(target, data){
-								var select = $('<select class="browser-default ui search dropdown '+target+'" name="'+target+'"></select>');
-								$.each(data.echo, function(index, item){
-									var option = '<option value="'+item.value+'"';
-									if(item.selected) option += ' selected';
-									option += '>'+item.name+'</option>';
-									select.append(option);
-								});
-								$('#'+target).show().find('label.for-select').after(select);
+								var select = $('<div class="ui search dropdown '+target+'">'+
+                                        '<input type="hidden" name="'+target+'">' +
+                                        '<div class="text"></div>' +
+                                        '<i class="dropdown icon right"></i>'+
+                                    '</div>');
 								select.uidropdown({
+                                    values: data.echo,
 									fullTextSearch : true,
 									duration : 300,
 									placeholder : false,
@@ -197,6 +195,8 @@ $(document).ready(function(){
 										}
 									}
 								});
+                                $('#'+target).show().find('label.for-select').after(select);
+                                $('.dropdown .tooltipped').tooltip({position : 'left'});
 							});
                             $.each(response.dlc, function(index, dlc){
                                 $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
@@ -219,7 +219,7 @@ $(document).ready(function(){
 
 	$('form').submit(function(){
 		if($('input[name=title]').val() === ''){
-			$('input[name=title]').val($('select[name=chassis] option:selected').text().replace(/(\s\s.+)/, '').trim());
+			$('input[name=title]').val($('.dropdown.chassis .text').text().replace(/(\s\s.+)/, '').trim());
 		}
 	});
 
@@ -236,7 +236,7 @@ $(document).ready(function(){
 				'target' : $('input[name=target]').val(),
 				'all' : $(this)[0].checked,
 				'select' : target,
-				'chassis' : $('select[name=chassis]').val()
+				'chassis' : $('[name=chassis]').val()
 			},
 			beforeSend : function(){
 				$('#'+$(this).data('target')+' h5').append(getPreloaderHtml('tiny'));
@@ -246,15 +246,13 @@ $(document).ready(function(){
 					$.each(response.result, function(key, data){
 						if(key === target){
 							$('#'+key).find('.ui.search').remove();
-							var select = $('<select class="browser-default ui search dropdown '+target+'" name="'+target+'"></select>');
-							$.each(data.echo, function(index, item){
-								var option = '<option value="'+item.value+'"';
-								if(item.selected) option += ' selected';
-								option += '>'+item.name+'</option>';
-								select.append(option);
-							});
-							$('#'+key).show().find('label.for-select').after(select);
+                            var select = $('<div class="ui search dropdown '+target+'">'+
+                                '<input type="hidden" name="'+target+'">' +
+                                '<div class="text"></div>' +
+                                '<i class="dropdown icon right"></i>'+
+                                '</div>');
 							select.uidropdown({
+                                values: data.echo,
 								fullTextSearch : true,
 								duration : 300,
 								placeholder : false,
@@ -264,6 +262,7 @@ $(document).ready(function(){
 									showColors(value);
 								}
 							});
+                            $('#'+key).show().find('label.for-select').after(select);
 						}
 					});
 					showColors($('#paint').find('select').val());
@@ -430,7 +429,7 @@ function getDLCList(value) {
             '_token' : $('input[name=_token]').val(),
             'target' : $('input[name=target]').val(),
 			'accessory' : value,
-            'chassis' : $('select[name=chassis]').val(),
+            'chassis' : $('[name=chassis]').val(),
         },
 		success : function(response){
             $('[id^=dlc_]').prop('checked', false).prop('disabled', false);

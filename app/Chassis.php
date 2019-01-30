@@ -56,9 +56,19 @@ class Chassis extends Model{
         $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])
             ->orderBy('sort', 'desc')->orderBy('alias', 'asc')->get();
         foreach($paints as $key => $paint){
-            $name = trans($this->game.'_companies_paints.'.$paint->alias);
+            $name = '';
+            if($paint->isDLCContent() && !$paint->dlc->mp_support){
+                $name .= '<s class="left hint tooltipped" 
+                    data-tooltip="'.trans('general.mp_no_support').'" 
+                    data-position="left">MP</s>';
+            }
+            $name .= trans($this->game.'_companies_paints.'.$paint->alias);
             if($paint->isDLCContent()){
-                $name .= ' - '. trans('dlc_list.'.$paint->dlc->name);
+                $name .= '<span class="right tooltipped hint" 
+                    data-tooltip="'.trans('dlc_list.'.$paint->dlc->name).'" 
+                    data-position="right">';
+                $name .= '['.$paint->dlc->short_name.']';
+                $name .= '</span>';
             };
             $list[] = [
                 'name' => $name,
@@ -78,14 +88,28 @@ class Chassis extends Model{
             ->orderBy('alias', 'asc')->get();
         $dlc_list = Dlc::where('game', $this->game)->get()->keyBy('id');
         foreach($accessories as $key => $accessory){
-            $name = trans($this->game.'_accessories.'.$accessory->alias);
+            $name = '';
             if($accessory->isDLCContent()){
-                $name .= ' - ';
+                foreach(explode(',', $accessory->dlc) as $item){
+                    if(!$dlc_list[$item]->mp_support) $name .= '<s class="left hint tooltipped" 
+                        data-tooltip="'.trans('general.mp_no_support').'" 
+                        data-position="left">MP</s>';
+                    break;
+                }
+            }
+            $name .= trans($this->game.'_accessories.'.$accessory->alias);
+            if($accessory->isDLCContent()){
                 $dlc = array();
+                $dlc_short = array();
                 foreach(explode(',', $accessory->dlc) as $item){
                     $dlc[] = trans('dlc_list.'.$dlc_list[$item]->name);
+                    $dlc_short[] = '['.$dlc_list[$item]->short_name.']';
                 }
-                $name .= implode(', ', $dlc);
+                $name .= '<span class="right tooltipped hint" 
+                    data-tooltip="'.implode(', ', $dlc).'" 
+                    data-position="right">';
+                $name .= implode(' ', $dlc_short);
+                $name .= '</span>';
             };
             $list[] = [
                 'name' => $name,
