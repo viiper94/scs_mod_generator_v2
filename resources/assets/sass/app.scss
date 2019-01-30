@@ -1,14 +1,17 @@
-
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import 'fonts';
+
+// MDC
+@import 'mdc/material-components-web.css';
+
+// SemanticUI
+@import 'semanticui/semanticui.min.css';
+@import 'semanticui/semantic-custom.css';
+
+// Materializecss
+@import 'materialize/materialize.css';
 
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+@import 'style.css';
