@@ -46,7 +46,8 @@
                     <label>@lang('general.include_dlc')
                         <button id="check_all" data-check="0" type="button">(@lang('general.check_all'))</button>:
                     </label>
-                    @php $user_dlc = explode(',', Auth::user()->owned_dlc) @endphp
+                    @php $user_dlc = [];
+                    if(Auth::check()) $user_dlc = explode(',', Auth::user()->owned_dlc); @endphp
                     @foreach($dlc_list as $dlc_group)
                         <div class="col s12 m6">
                             @foreach($dlc_group as $dlc)
