@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Language;
 use Closure;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 
 class I18n{
     /**
@@ -29,11 +30,10 @@ class I18n{
     ];
 
     public function handle($request, Closure $next){
-
         $this->userAcceptLangs = $this->getUserAcceptLanguage();
         $this->languages = Language::where('active', '1')->orderBy('locale')->get()->keyBy('locale')->toArray();
 
-        App::setLocale($request->cookie('lang') ?? $this->getUserLanguage());
+        App::setLocale($_COOKIE['lang'] ?? $this->getUserLanguage());
         view()->share([
             'hasUserAcceptLanguage' => $this->hasUserAcceptLanguage(),
             'languages' => $this->languages
@@ -43,6 +43,10 @@ class I18n{
     }
 
     public function getUserLanguage(){
+        if(Auth::check()){
+            $user = Auth::user();
+            if($user->language) return $user->language;
+        }
         foreach($this->userAcceptLangs as $lang){
             if(key_exists($lang, $this->languages)) return $lang;
         }
