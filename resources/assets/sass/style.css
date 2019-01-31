@@ -264,12 +264,12 @@ nav .tabs .tab a:focus, nav .tabs .tab a:focus.active{
     color: var(--mdc-theme-text-primary-on-primary-dark);
 }
 i.truck-icons{
-	background: url(../../../public/assets/img/truck_icons_light.png) no-repeat;
+	background: url(/assets/img/truck_icons_light.png) no-repeat;
 	background-position-y: center;
 	background-size: 48px;
 }
 .mdc-theme--dark i.truck-icons{
-    background-image: url(../../../public/assets/img/truck_icons_dark.png);
+    background-image: url(/assets/img/truck_icons_dark.png);
 }
 .sidenav .user-view{
     margin: 20px 32px 0 32px;
