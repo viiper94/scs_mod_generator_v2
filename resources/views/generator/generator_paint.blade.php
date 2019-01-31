@@ -28,21 +28,32 @@
                     </div>
                     <div class="row" id="chassis">
                         <div class="col s12">
-                            <label for="select-chassis">@lang('general.pick_chassis')</label>
-                            <select class="browser-default ui search dropdown chassis" id="color-select-chassis" name="chassis" required>
-                                <option selected value="">@lang('general.choose_chassis')</option>
-                                <option value="paintable">@lang('general.paintable_chassis')</option>
-                                @foreach($chassis_list as $chassis)
-                                    <option value="{{$chassis->alias}}">@lang('ets2_trailers.'.$chassis->alias)
-                                        @if($chassis->isDLCContent())
-                                            - @lang('dlc_list.'.$chassis->dlc->name)
-                                            @if(!$chassis->dlc->mp_support)
-                                                (@lang('general.mp_no_support'))
+                            <label for="color-select-chassis">@lang('general.pick_chassis')</label>
+                            <div class="ui search dropdown chassis" id="color-select-chassis">
+                                <input type="hidden" name="chassis" required>
+                                <div class="default text">@lang('general.choose_chassis')</div>
+                                <i class="dropdown icon right"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="paintable">@lang('general.paintable_chassis')</div>
+                                    @foreach($chassis_list as $chassis)
+                                        <div class="item @if(!$chassis->mp_support)
+                                                tooltipped" data-tooltip="@lang('general.mp_no_support')@endif"
+                                             data-value="{{$chassis->alias}}" data-position="left">
+                                            @lang($game.'_trailers.'.$chassis->alias)
+                                            @if($chassis->isDLCContent())
+                                                <span class="right tooltipped hint"
+                                                      data-tooltip="@lang('dlc_list.'.$chassis->dlc->name)"
+                                                      data-position="right">
+                                                    [{{ $chassis->dlc->short_name }}]
+                                                </span>
                                             @endif
-                                        @endif
-                                    </option>
-                                @endforeach
-                            </select>
+                                            @if(!$chassis->mp_support)
+                                                <s class="left hint">MP</s>
+                                            @endif
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="colors row">
