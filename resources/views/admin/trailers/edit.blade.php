@@ -126,6 +126,12 @@
                         </p>
                         <p>
                             <label>
+                                <input type="checkbox" class="filled-in" name="mp_support" {{ $chassis->mp_support ? 'checked' : '' }}>
+                                <span>Підтримується в МП</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
                                 <input type="checkbox" class="filled-in" name="active" {{ $chassis->active ? 'checked' : '' }}>
                                 <span>Активний</span>
                             </label>

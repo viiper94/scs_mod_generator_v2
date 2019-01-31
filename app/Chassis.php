@@ -19,6 +19,7 @@ class Chassis extends Model{
         'with_accessory' => 'boolean',
         'with_paint_job' => 'boolean',
         'can_random' => 'boolean',
+        'mp_support' => 'boolean',
         'active' => 'boolean',
     ];
 

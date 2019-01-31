@@ -46,6 +46,7 @@ class AdminTrailersController extends Controller{
                 'with_accessory' => $request->input('with_accessory') == 'on',
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
+                'mp_support' => $request->input('mp_support') == 'on',
             ]);
             return $chassis->save() ?
                 redirect()->route('trailers')->with(['success' => 'Причіп успішно відредаговано!']) :
@@ -79,6 +80,7 @@ class AdminTrailersController extends Controller{
             'with_accessory' => $chassis->with_accessory,
             'with_paint_job' => $chassis->with_paint_job,
             'can_random' => $chassis->can_random,
+            'mp_support' => $chassis->mp_support,
         ]);
 
         return $new_chassis->save() ?
@@ -129,6 +131,7 @@ class AdminTrailersController extends Controller{
                 'with_accessory' => $request->input('with_accessory') == 'on',
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
+                'mp_support' => $request->input('mp_support') == 'on',
             ]);
             if($chassis->save()) return redirect()->route('trailers')->with(['success' => 'Причіп успішно додано!']);
         }
