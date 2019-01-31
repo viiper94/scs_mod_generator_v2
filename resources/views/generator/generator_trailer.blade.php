@@ -36,7 +36,7 @@
                                 <div class="menu">
                                     <div class="item" data-value="paintable">@lang('general.paintable_chassis')</div>
                                     @foreach($chassis_list as $chassis)
-                                        <div class="item @if($chassis->isDLCContent() && !$chassis->dlc->mp_support)
+                                        <div class="item @if(!$chassis->mp_support)
                                                 tooltipped" data-tooltip="@lang('general.mp_no_support')@endif"
                                              data-value="{{$chassis->alias}}" data-position="left">
                                             @lang($game.'_trailers.'.$chassis->alias)
@@ -46,9 +46,9 @@
                                                       data-position="right">
                                                     [{{ $chassis->dlc->short_name }}]
                                                 </span>
-                                                @if(!$chassis->dlc->mp_support)
-                                                    <s class="left hint">MP</s>
-                                                @endif
+                                            @endif
+                                            @if(!$chassis->mp_support)
+                                                <s class="left hint">MP</s>
                                             @endif
                                         </div>
                                    @endforeach
