@@ -35,10 +35,12 @@ class AdminDlcController extends Controller{
             $this->validate($request, [
                 'game' => 'required|string',
                 'name' => 'required|string',
+                'short_name' => 'required|string',
             ]);
             $dlc->fill([
                 'game' => $request->input('game', 'ets2'),
                 'name' => $request->input('name'),
+                'short_name' => $request->input('short_name'),
                 'mp_support' => $request->input('mp_support') == 'on',
                 'active' => $request->input('active') == 'on',
             ]);

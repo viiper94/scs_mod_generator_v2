@@ -7,6 +7,7 @@
             <thead>
                 <th>Назва</th>
                 <th>Name</th>
+                <th>Short Name</th>
                 <th>Гра</th>
                 <th></th>
             </thead>
@@ -15,6 +16,7 @@
                 <tr @if(!$item->active)class="grey darken-2 black-text" @endif>
                     <td>@lang('dlc_list.'.$item->name)</td>
                     <td>{{ $item->name }}</td>
+                    <td>{{ $item->short_name }}</td>
                     <td>@lang('general.'.$item->game)</td>
                     <td style="white-space: nowrap" class="right-align">
                         <a href="{{ route('dlc') }}/delete/{{ $item->id }}" class="mdc-button mdc-ripple mdc-button--raised red white-text"

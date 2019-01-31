@@ -33,6 +33,13 @@
                             <label for="name">Name*</label>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="input-field col s12 no-margin">
+                            <i class="material-icons prefix">title</i>
+                            <input id="short_name" type="text" name="short_name" required>
+                            <label for="short_name">Short Name*</label>
+                        </div>
+                    </div>
                     <div class="row" style="margin-left: 1rem;">
                         <p>
                             <label>
