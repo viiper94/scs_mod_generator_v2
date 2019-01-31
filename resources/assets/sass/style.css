@@ -214,6 +214,7 @@ nav.sidenav{
     text-transform: uppercase;
     width: 350px;
     max-width: 75%;
+    padding-bottom: 0;
 }
 nav ul a{
 	font-size: 1.2em;
