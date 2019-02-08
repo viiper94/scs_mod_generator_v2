@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_paint_job_data : color0m.man.tgx_euro6.paint_job
+{
+	name: "@@custom_metallic@@"
+	price: 1
+	unlock: 0
+	icon: "color_custom_metallic_icon"
+
+	base_color: (%color%)
+	base_color_locked: false
+
+	flake_clearcoat_rolloff: 4.500000
+	flake_color: (1.000000, 1.000000, 1.000000)
+	flake_color_locked: false
+	flake_density: 0.800000
+	flake_shininess: 30.000000
+	flip_color: (0.045186, 0.102242, 0.407240)
+	flip_color_locked: false
+	flip_strength: 1.300000
+	flipflake: true
+}
+}
