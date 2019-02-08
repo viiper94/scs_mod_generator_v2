@@ -63,7 +63,7 @@
                                     <label for="dlc_{{$dlc->name}}" class="mdc-switch-label">
                                         @lang('dlc_list.'.$dlc->name)
                                         @if(!$dlc->mp_support)
-                                            (@lang('general.mp_no_support'))
+                                           <s class="hint tooltipped" data-tooltip="@lang('general.mp_no_support')" data-position="bottom"><b>MP</b></s>
                                         @endif
                                     </label>
                                 </div>
