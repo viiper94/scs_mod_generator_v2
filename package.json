@@ -20,6 +20,8 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "@material/button": "^0.44.0",
+        "@material/ripple": "^0.44.0",
         "material-components-web": "^0.40.1"
     }
 }
