@@ -208,6 +208,19 @@ a.mdc-fab span.mdc-fab__icon{
 	line-height: 56px;
 	text-align: center;
 }
+.hint{
+    color: #bbb;
+    cursor: pointer;
+}
+.mdc-theme--dark .hint{
+    color: #888;
+}
+.hint.right{
+    margin-left: 3px;
+}
+.hint.left{
+    margin-right: 3px;
+}
 
 /* Nav Bar */
 nav.sidenav{

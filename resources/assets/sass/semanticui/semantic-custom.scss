@@ -155,15 +155,3 @@ select.browser-default {
     max-height: 52vh;
     width: 100%;
 }
-.ui.dropdown .hint{
-    color: #bbb;
-}
-.mdc-theme--dark .ui.dropdown .hint{
-    color: #888;
-}
-.ui.dropdown .hint.right{
-    margin-left: 3px;
-}
-.ui.dropdown .hint.left{
-    margin-right: 3px;
-}

@@ -76,6 +76,7 @@ $(document).ready(function(){
 						html += '</ul>';
 						ul.find('.collapsible-body').append(html);
 					}
+                    $('.tooltipped').tooltip();
 				},
 				complete : function(){
 					$('.preloader-wrapper').remove();
