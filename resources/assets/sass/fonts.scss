@@ -5,6 +5,46 @@
   font-weight: 400;
   src: url('../fonts/material-icons.woff2') format('woff2');
 }
+
+// Google Font
+@font-face {
+  font-family: 'Google Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/GoogleSans-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/GoogleSans-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GoogleSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/GoogleSans-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/GoogleSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/GoogleSans-BoldItalic.ttf') format('truetype');
+}
+
+// Montserrat
 /* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';
