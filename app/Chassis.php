@@ -59,13 +59,13 @@ class Chassis extends Model{
         foreach($paints as $key => $paint){
             $name = '';
             if($paint->isDLCContent() && !$paint->dlc->mp_support){
-                $name .= '<s class="left hint tooltipped" 
+                $name .= '<s class="left hint dlc-tooltipped" 
                     data-tooltip="'.trans('general.mp_no_support').'" 
                     data-position="left">MP</s>';
             }
             $name .= trans($this->game.'_companies_paints.'.$paint->alias);
             if($paint->isDLCContent()){
-                $name .= '<span class="right tooltipped hint" 
+                $name .= '<span class="right dlc-tooltipped hint" 
                     data-tooltip="'.trans('dlc_list.'.$paint->dlc->name).'" 
                     data-position="right">';
                 $name .= '['.$paint->dlc->short_name.']';
@@ -92,7 +92,7 @@ class Chassis extends Model{
             $name = '';
             if($accessory->isDLCContent()){
                 foreach(explode(',', $accessory->dlc) as $item){
-                    if(!$dlc_list[$item]->mp_support) $name .= '<s class="left hint tooltipped" 
+                    if(!$dlc_list[$item]->mp_support) $name .= '<s class="left hint dlc-tooltipped" 
                         data-tooltip="'.trans('general.mp_no_support').'" 
                         data-position="left">MP</s>';
                     break;
@@ -106,7 +106,7 @@ class Chassis extends Model{
                     $dlc[] = trans('dlc_list.'.$dlc_list[$item]->name);
                     $dlc_short[] = '['.$dlc_list[$item]->short_name.']';
                 }
-                $name .= '<span class="right tooltipped hint" 
+                $name .= '<span class="right dlc-tooltipped hint" 
                     data-tooltip="'.implode(', ', $dlc).'" 
                     data-position="right">';
                 $name .= implode(' ', $dlc_short);
