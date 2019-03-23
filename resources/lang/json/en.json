@@ -134,6 +134,8 @@
     },
     "mods": {
         "mods_history": "Mods History",
+        "last_mods": "Recently Generated Mods",
+        "see_all": "All Generated Mods",
         "mod_params": "Mods Params",
         "mod_for_version": "Mods Version",
         "no_mods": "Mods history is empty.",
@@ -256,9 +258,22 @@
         "krone_boxliner_20": "Krone Box Liner (Gooseneck, 20')",
         "krone_boxliner_2x20": "Krone Box Liner (Gooseneck, 2x20')",
         "krone_boxliner_40": "Krone Box Liner (Gooseneck, 40')",
-        "krone_profiliner_hd": "Krone Profi Liner HD (Flat bed)"
+        "krone_profiliner_hd": "Krone Profi Liner HD (Flat bed)",
+        "etrc_trailer_1": "ETRC Event 1-truck transporter",
+        "etrc_trailer_2": "ETRC Event 2-trucks transporter"
     },
     "ets2 accessories": {
+        "container_scs": "SCS Container",
+        "cargo_iveco_donttouch": "Iveco Don't Touch Racing",
+        "cargo_iveco_hahn": "Iveco HAHN",
+        "cargo_iveco_halm": "Iveco HALM",
+        "cargo_man_lenz": "MAN LENZ",
+        "cargo_man_lutz": "MAN LUTZ",
+        "cargo_man_rebo": "MAN REBO",
+        "cargo_man_rein": "MAN REIN",
+        "cargo_mercedes": "Mercedes",
+        "cargo_scania_ek": "Scania EK",
+        "cargo_buggyra": "Buggyra",
         "cargo_cars_it": "Cars",
         "cargo_france_cars": "Cars",
         "cargo_balt1": "Cars",
