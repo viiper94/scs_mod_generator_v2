@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class GalleryController extends Controller{
 
     public function index(Request $request){
-        $chassis = Chassis::with('dlc');
+        $chassis = Chassis::with('dlc')->where(['active' => 1]);
         if($request->input('q')) $chassis->orWhere('alias', 'like', '%'.$request->input('q').'%')
             ->orWhere('def', 'like', '%'.$request->input('q').'%');
         return view('gallery.index', [
