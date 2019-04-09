@@ -22,7 +22,7 @@ class TrailerGeneratorController extends Controller{
             'game' => $game,
             'chassis_list' => Chassis::where(['game' => $game, 'active' => 1])->with('dlc')->orderBy('dlc_id', 'asc')->orderBy('alias_short', 'asc')->get(),
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->with('dlc')->orderBy('sort', 'desc')->get(),
-            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->orderBy('sort', 'asc')->get()->groupBy('type')
+            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->whereIn('type', ['map', 'trailer'])->orderBy('sort', 'asc')->get()->groupBy('type')
         ]);
     }
 
@@ -47,6 +47,7 @@ class TrailerGeneratorController extends Controller{
                 return response()->json(['result' => $data, 'status' => 'OK']);
             }
             if($request->input('accessory')){
+                $dlc = [];
                 if($request->input('chassis') !== 'paintable'){
                     $chassis = Chassis::where('alias', $request->input('chassis'))->first();
                 }

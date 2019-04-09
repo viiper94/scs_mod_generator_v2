@@ -19,7 +19,7 @@ class TruckPaintGeneratorController extends Controller{
             'chassis_list' => Chassis::where(['with_paint_job' => '1', 'game' => 'ets2'])->with('dlc')->get(),
             'game' => $game,
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->with('dlc')->orderBy('sort', 'desc')->get(),
-            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->orderBy('sort', 'asc')->get()->groupBy('type')
+            'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->whereIn('type', ['map', 'trailer'])->orderBy('sort', 'asc')->get()->groupBy('type')
         ]);
     }
 
