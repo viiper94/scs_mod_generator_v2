@@ -1,56 +1,60 @@
+import {MDCTextField} from '@material/textfield';
+import {MDCTextFieldIcon} from '@material/textfield/icon';
+import {MDCLineRipple} from '@material/line-ripple';
+import {MDCSwitch} from '@material/switch';
+import {MDCDialog} from '@material/dialog';
+import {MDCList} from '@material/list';
+
 $(document).ready(function(){
 
-	var btns = document.querySelectorAll('.mdc-ripple:not([data-no-js])');
-	for (var i = 0, btn; btn = btns[i]; i++) {
-		mdc.ripple.MDCRipple.attachTo(btn);
-	}
+    var textFields = [];
+    var textFieldIcons = [];
+    var lineRipples = [];
+    var switches = [];
+    $.each($('.mdc-text-field'), function(i, item){
+        textFields[i] = new MDCTextField(item);
+    });
+    $.each($('.mdc-text-field__icon'), function(i, item){
+        textFieldIcons[i] = new MDCTextFieldIcon(item);
+    });
+    $.each($('.mdc-line-ripple'), function(i, item){
+        lineRipples[i] = new MDCLineRipple(item);
+    });
+    $.each($('.mdc-switch'), function(i, item){
+        switches[i] = new MDCSwitch(item);
+    });
 
-	var how_to_modal = document.querySelector('#mdc-dialog-how-to');
-	if(how_to_modal !== null){
-		var how_to_dialog = new mdc.dialog.MDCDialog(how_to_modal);
-		$('#how-to').click(function(){
-            how_to_dialog.show();
-		});
-	}
+    if(document.querySelector('#mdc-dialog-edit-chassis') !== null){
+        const editChassis = new MDCDialog(document.querySelector('#mdc-dialog-edit-chassis'));
+        $('.edit-chassis').click(function(){
+            editChassis.open();
+        });
+    }
+    if(document.querySelector('#mdc-dialog-lang') !== null){
+        const langDialog = new MDCDialog(document.querySelector('#mdc-dialog-lang'));
+        $('#lang-sw').click(function(){
+            langDialog.open();
+        });
+    }
+    if(document.querySelector('#mdc-dialog-how-to') !== null){
+        const howToDialog = new MDCDialog(document.querySelector('#mdc-dialog-how-to'));
+        $('#how-to').click(function(){
+            howToDialog.open();
+        });
+    }
+    if(document.querySelector('.mdc-list') !== null) {
+        const list = new MDCList(document.querySelector('.mdc-list'));
+    }
 
-	var lang_modal = document.querySelector('#mdc-dialog-lang');
-	if(lang_modal !== null){
-		var lang_dialog = new mdc.dialog.MDCDialog(lang_modal);
-		$('#lang-sw').click(function(){
-            lang_dialog.show();
-		});
-	}
-
-	var tfs = document.querySelectorAll('.mdc-text-field:not([data-demo-no-auto-js])');
-	for (var i = 0, tf; tf = tfs[i]; i++) {
-		mdc.textField.MDCTextField.attachTo(tf);
-	}
-
-	$('#toggle-dark').change(function(){
-		if(this.checked){
-			$('body').addClass('mdc-theme--dark');
-			setCookie('dark_theme', 'true', {
-				expires : 3600 * 24 * 365,
-                path : '/'
-			});
-		}else{
-			$('body').removeClass('mdc-theme--dark');
-			setCookie('dark_theme', 'true', {
-				expires : -1
-			});
-		}
-	});
-
-	$('.tooltipped').tooltip({
-		position : 'left',
-		exitDelay : 200
-	});
-	$('.wheels select').formSelect();
-	$('select#lang').formSelect();
-	$('.tabs').tabs();
-	$('.collapsible').collapsible();
-	$('.sidenav').sidenav();
+	$('.tooltipped').tooltip({position: 'left', exitDelay: 0});
+    $('.user-view').dropdown({alignment: 'right', constrainWidth: false, coverTrigger: false, closeOnClick: false, inDuration: 30, outDuration: 0});
+    $('.tabs').tabs();
+    $('.sidenav').sidenav();
+    $('.collapsible').collapsible();
+    $('.wheels select').formSelect();
     $('.materialboxed').materialbox();
+    $('select#lang').formSelect();
+    $('.fixed-action-btn').floatingActionButton();
 
 	$('.show-skin').collapsible({
 		onOpenStart : function(){
@@ -76,7 +80,7 @@ $(document).ready(function(){
 						html += '</ul>';
 						ul.find('.collapsible-body').append(html);
 					}
-                    $('.tooltipped').tooltip();
+                    $('.dlc-tooltipped').tooltip();
 				},
 				complete : function(){
 					$('.preloader-wrapper').remove();
@@ -84,9 +88,10 @@ $(document).ready(function(){
 			});
 		},
 		onCloseEnd : function(){
-			var ul = $(this)[0].$el;
-			ul.find('.ac-list').remove();
-		}
+            var ul = $(this)[0].$el;
+            $(ul).find('.dlc-tooltipped').tooltip('destroy');
+            ul.find('.ac-list').remove();
+        }
 	});
 
 	$('.lang-btn').click(function(){
@@ -140,6 +145,12 @@ $(document).ready(function(){
         }
     });
 
+    $('#select-lang, #select-wheels').uidropdown({
+        duration : 300,
+        placeholder : false,
+        forceSelection : false
+    });
+
 	$('#select-chassis').uidropdown({
 		fullTextSearch : true,
 		duration : 300,
@@ -155,10 +166,10 @@ $(document).ready(function(){
 			if(value !== ''){
 				$('#generate-btn').attr('disabled', false);
 				if(value !== 'schw_overweight' && value.indexOf('goldhofer') === -1){
-					$('.wheels.input-field').show();
+					$('.wheels').show();
 				}else{
-					$('.wheels.input-field').hide();
-					$('.wheels.input-field select').val('');
+					$('.wheels').hide();
+					$('.wheels select').val('');
 				}
 				$.ajax({
 					cache: false,
@@ -197,7 +208,7 @@ $(document).ready(function(){
 									}
 								});
                                 $('#'+target).show().find('label.for-select').after(select);
-                                $('.dropdown .tooltipped').tooltip({position : 'left'});
+                                $('.dropdown .dlc-tooltipped').tooltip({position : 'left'});
 							});
                             $.each(response.dlc, function(index, dlc){
                                 $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
@@ -225,7 +236,7 @@ $(document).ready(function(){
 	});
 
 	$('#all_accessories, #all_paints').change(function(){
-        getDLCList('');
+        // getDLCList('');
 		$('.colors').hide();
 		var target = $(this).data('target');
 		$.ajax({
@@ -417,6 +428,30 @@ $(document).ready(function(){
             $(this).data('check', 0);
 		}
 
+    });
+
+	$('.nav-search input[type=search]').on('focus', function(){
+        $('.nav-search').addClass('focused');
+    });
+	$('.nav-search input[type=search]').on('blur', function(){
+        $('.nav-search').removeClass('focused');
+    });
+
+    $('#toggle-dark').click(function(){
+        if(!$('body').hasClass('mdc-theme--dark')){
+            $('body').addClass('mdc-theme--dark');
+            setCookie('dark_theme', 'true', {
+                expires : 3600 * 24 * 365,
+                path : '/'
+            });
+            $(this).text('brightness_high');
+        }else{
+            $('body').removeClass('mdc-theme--dark');
+            setCookie('dark_theme', 'false', {
+                expires : -1
+            });
+            $(this).text('brightness_low');
+        }
     });
 
 });
