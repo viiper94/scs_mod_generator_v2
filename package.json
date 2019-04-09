@@ -11,17 +11,26 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "bootstrap": "^4.0.0",
-        "popper.js": "^1.12",
+        "bootstrap": "^4.3.1",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
-        "vue": "^2.5.7"
+        "popper.js": "^1.14.7",
+        "vue": "^2.6.10"
     },
     "dependencies": {
-        "@material/button": "^0.44.0",
-        "@material/ripple": "^0.44.0",
-        "material-components-web": "^0.40.1"
+        "@material/auto-init": "^1.0.0",
+        "@material/checkbox": "^1.1.0",
+        "@material/dialog": "^1.1.0",
+        "@material/line-ripple": "^1.1.0",
+        "@material/list": "^1.1.0",
+        "@material/radio": "^1.1.0",
+        "@material/ripple": "^1.1.0",
+        "@material/switch": "^1.1.0",
+        "@material/textfield": "^1.1.0",
+        "material-components-web": "^1.1.0",
+        "materialize-css": "^1.0.0",
+        "semantic-ui-sass": "^2.3.1"
     }
 }
