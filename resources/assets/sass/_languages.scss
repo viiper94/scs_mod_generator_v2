@@ -1,0 +1,33 @@
+// Languages modal
+.lang-col:nth-child(even) a{
+  flex-flow: row-reverse;
+}
+@media (max-width: 600px){
+  .lang-col a,
+  .lang-col:nth-child(even) a{
+    flex-flow: row;
+    justify-content: center;
+  }
+}
+.lang-btn{
+  white-space: nowrap;
+  font-size: 17px;
+  &.active{
+    font-weight: bold;
+    img{
+      opacity: 1;
+    }
+  }
+  img{
+    max-width: 30px;
+    margin: 0 10px;
+    opacity: .6;
+    transition: opacity .3s ease;
+  }
+  &:hover img{
+    opacity: 1;
+  }
+  .mdc-theme--dark &{
+    color: $dark-text;
+  }
+}

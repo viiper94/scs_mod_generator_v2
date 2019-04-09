@@ -19,24 +19,18 @@
                     <td style="white-space: nowrap" class="right-align">
                         @if($item->locale == 'en')
                             <a href="{{ route('languages') }}/upload"
-                               class="mdc-button mdc-ripple mdc-button--raised green white-text"
-                               onclick="return confirm('Вивантажити файл en.json на платформу OneSky?')">
-                                <i class="material-icons mdc-button__icon notranslate">file_upload</i>
-                            </a>
+                               class="mdc-icon-button material-icons notranslate green-text"
+                               onclick="return confirm('Вивантажити файл en.json на платформу OneSky?')">file_upload</a>
                         @else
                             <a href="{{ route('languages') }}/download/{{ $item->locale }}"
-                               class="mdc-button mdc-ripple mdc-button--raised yellow black-text"
-                               onclick="return confirm('Завантажити переклади з платформи OneSky?')">
-                                <i class="material-icons mdc-button__icon notranslate">file_download</i>
-                            </a>
+                               class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Завантажити переклади з платформи OneSky?')">file_download</a>
                         @endif
-                        <a href="{{ route('languages') }}/delete/{{ $item->id }}" class="mdc-button mdc-ripple mdc-button--raised red white-text"
-                           onclick="return confirm('Видалити мову?')">
-                            <i class="material-icons mdc-button__icon notranslate">delete</i>
+                        <a href="{{ route('languages') }}/toggle/{{ $item->id }}" class="mdc-icon-button material-icons notranslate">
+                            visibility_{{ $item->active ? 'off' : 'on' }}
                         </a>
-                        <a href="{{ route('languages') }}/toggle/{{ $item->id }}" class="mdc-button mdc-ripple mdc-button--raised blue">
-                            <i class="material-icons mdc-button__icon notranslate">visibility_{{ $item->active ? 'off' : 'on' }}</i>
-                        </a>
+                        <a href="{{ route('languages') }}/delete/{{ $item->id }}" class="mdc-icon-button material-icons notranslate"
+                           onclick="return confirm('Видалити мову?')">delete</a>
                     </td>
                 </tr>
             @endforeach
@@ -44,8 +38,8 @@
         </table>
     </div>
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати мову">
-        <a class="mdc-fab mdc-ripple" href="{{ route('languages') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати мову" href="{{ route('languages') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

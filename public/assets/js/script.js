@@ -1,3 +1,5 @@
+// import {MDCTextField} from '@material/textfield';
+
 $(document).ready(function(){
 
 	var btns = document.querySelectorAll('.mdc-ripple:not([data-no-js])');
@@ -21,23 +23,24 @@ $(document).ready(function(){
 		});
 	}
 
-	var tfs = document.querySelectorAll('.mdc-text-field:not([data-demo-no-auto-js])');
-	for (var i = 0, tf; tf = tfs[i]; i++) {
-		mdc.textField.MDCTextField.attachTo(tf);
-	}
+    const tfs = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
+        return new MDCTextField(el);
+    });
 
-	$('#toggle-dark').change(function(){
-		if(this.checked){
+	$('#toggle-dark').click(function(){
+		if(!$('body').hasClass('mdc-theme--dark')){
 			$('body').addClass('mdc-theme--dark');
 			setCookie('dark_theme', 'true', {
 				expires : 3600 * 24 * 365,
                 path : '/'
 			});
+            $(this).text('brightness_high');
 		}else{
 			$('body').removeClass('mdc-theme--dark');
 			setCookie('dark_theme', 'true', {
 				expires : -1
 			});
+            $(this).text('brightness_low');
 		}
 	});
 
@@ -76,6 +79,7 @@ $(document).ready(function(){
 						html += '</ul>';
 						ul.find('.collapsible-body').append(html);
 					}
+                    $('.tooltipped').tooltip();
 				},
 				complete : function(){
 					$('.preloader-wrapper').remove();
@@ -85,6 +89,7 @@ $(document).ready(function(){
 		onCloseEnd : function(){
 			var ul = $(this)[0].$el;
 			ul.find('.ac-list').remove();
+            $('.trailer .tooltipped').tooltip('destroy');
 		}
 	});
 
@@ -416,6 +421,13 @@ $(document).ready(function(){
             $(this).data('check', 0);
 		}
 
+    });
+
+	$('.search input[type=search]').on('focus', function(){
+        $('.search').removeClass('no-shadow');
+    });
+	$('.search input[type=search]').on('blur', function(){
+        $('.search').addClass('no-shadow');
     });
 
 });

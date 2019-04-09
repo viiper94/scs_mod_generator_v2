@@ -1,8 +1,10 @@
 @extends('admin.layout.admin')
 
-@section('content')
-
+@section('navbar-content')
     @include('admin.search')
+@endsection
+
+@section('content')
 
     {{ $chassis_list->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
@@ -29,25 +31,25 @@
                                 @lang($chassis->game.'_trailers.'.$chassis->alias)
                             </h5>
                             <p style="line-height: 24px;">
-                                @if($chassis->with_accessory)<i class="material-icons mdc-button__icon notranslate">category</i>@endif
-                                @if($chassis->with_paint_job)<i class="material-icons mdc-button__icon notranslate">texture</i>@endif
+                                @if($chassis->with_accessory)<i class="material-icons mdc-button__icon notranslate left">category</i>@endif
+                                @if($chassis->with_paint_job)<i class="material-icons mdc-button__icon notranslate left">texture</i>@endif
                                 @if(!$chassis->mp_support)<s><b>MP</b></s>@endif
                                 {{ $chassis->alias }}
                             </p>
                         </div>
                         <div class="card-action">
-                            <a href="{{ route('trailers') }}/edit/{{ $chassis->id }}" class="mdc-button mdc-button--raised mdc-ripple black-text">
+                            <a href="{{ route('trailers') }}/edit/{{ $chassis->id }}" class="mdc-button mdc-button--unelevated btn edit-chassis">
                                 <i class="material-icons mdc-button__icon notranslate">edit</i>Редагувати
                             </a>
-                            <a href="{{ route('trailers') }}/delete/{{ $chassis->id }}" class="mdc-button mdc-ripple mdc-button--raised red white-text"
+                            <a href="{{ route('trailers') }}/delete/{{ $chassis->id }}" class="mdc-button mdc-button--unelevated red btn white-text"
                                 onclick="return confirm('Видалити причіп?')">
                                 <i class="material-icons mdc-button__icon notranslate">delete</i>Видалити
                             </a>
-                            <a href="{{ route('trailers') }}/toggle/{{ $chassis->id }}" class="mdc-button mdc-ripple">
+                            <a href="{{ route('trailers') }}/toggle/{{ $chassis->id }}" class="mdc-button mdc-button--outlined btn">
                                 <i class="material-icons mdc-button__icon notranslate">visibility_{{ $chassis->active ? 'off' : 'on' }}</i>
                                 {{ $chassis->active ? 'Сховати' : 'Показати' }}
                             </a>
-                            <a href="{{ route('trailers') }}/copy/{{ $chassis->id }}" class="mdc-button mdc-ripple"
+                            <a href="{{ route('trailers') }}/copy/{{ $chassis->id }}" class="mdc-button mdc-button--outlined  btn"
                                onclick="return confirm('Створити копію причіпа?')">
                                 <i class="material-icons mdc-button__icon notranslate">file_copy</i>Копіювати
                             </a>
@@ -60,8 +62,8 @@
 
     {{ $chassis_list->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати нове шассі">
-        <a class="mdc-fab mdc-ripple" href="{{ route('trailers') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати нове шассі" href="{{ route('trailers') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

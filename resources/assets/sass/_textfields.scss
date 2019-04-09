@@ -1,0 +1,82 @@
+.mdc-text-field:not(.mdc-text-field--disabled){
+  background-color: transparent;
+  &:hover::before, &:focus::before{
+    opacity: 0;
+  }
+  .mdc-floating-label{
+    font-family: $font-family-sans-serif;
+    color: $light-text;
+    .mdc-theme--dark &{
+      color: $dark-text;
+    }
+  }
+  &.mdc-text-field--focused .mdc-floating-label{
+    color: $primary-dark;
+  }
+  &:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mdc-text-field__input{
+    border-bottom-color: $light-text;
+    &:hover{
+      border-bottom-color: $light-text-active;
+    }
+    transition: .3s ease border-bottom-color;
+    .mdc-theme--dark &{
+      border-bottom-color: $placeholder-text-dark;
+      &:hover{
+        border-bottom-color: $placeholder-text;
+      }
+    }
+  }
+  & .mdc-text-field__input{
+    color: $light-text-active;
+    caret-color: auto;
+    .mdc-theme--dark &{
+      color: $dark-text-active;
+    }
+  }
+  .mdc-theme--dark & .mdc-text-field__icon{
+    color: $placeholder-text-dark;
+  }
+}
+.mdc-text-field .mdc-line-ripple{
+  background-color: $primary-dark;
+}
+.mdc-text-field.mdc-ripple-upgraded--background-focused::before{
+  opacity: 0;
+}
+.mdc-text-field__input{
+  font-family: $font-family-sans-serif;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+.mdc-text-field .mdc-floating-label{
+  bottom: 12px;
+  &--float-above{
+    transform: translateY(-90%) scale(0.75);
+  }
+}
+.mdc-text-field{
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  &:not(.mdc-text-field--outlined){
+    height: 48px;
+  }
+  &.mdc-text-field--with-leading-icon{
+    .mdc-text-field__input{
+      padding-left: 48px;
+      padding-right: 16px;
+    }
+    .mdc-floating-label{
+      right: auto;
+    }
+  }
+}
+.mdc-theme--dark{
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing{
+    border-color: $placeholder-text-dark;
+  }
+}
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing{
+  border-color: $primary-dark;
+}

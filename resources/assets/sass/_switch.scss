@@ -1,0 +1,20 @@
+// Switches
+.mdc-switch{
+  margin-top: 15px;
+  & + label{
+    font-size: 13px;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+}
+.mdc-switch__thumb-underlay::before,
+.mdc-switch__thumb-underlay::after{
+  background-color: $primary-dark;
+}
+.mdc-switch.mdc-switch--checked .mdc-switch__thumb{
+  border-color: $primary-dark;
+}
+.mdc-switch.mdc-switch--checked .mdc-switch__track{
+  border-color: $primary-dark;
+  background-color: $primary-dark;
+}

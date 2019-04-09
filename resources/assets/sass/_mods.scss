@@ -1,0 +1,19 @@
+// Mods
+ul.collapsible.mods{
+  border: 1px solid $placeholder-text;
+  border-radius: 6px;
+  overflow: hidden;
+  li:not(:last-child){
+    border-bottom: 1px solid $placeholder-text;
+  }
+  .collapsible-header{
+    align-items: center;
+  }
+}
+.mod-info{
+  flex: 1;
+  white-space: nowrap;
+  b{
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,64 @@
+// Buttons
+.mdc-button{
+  font-family: $font-family-sans-serif;
+  letter-spacing: 0.25px;
+  font-size: 14px;
+  text-transform: none;
+  &:not(.mdc-ripple-upgraded){
+    &:after, &:before{
+      transition: none;
+    }
+  }
+  &:before, &:after{
+    background-color: $primary-dark;
+  }
+  &:not(:disabled):not(.mdc-button--outlined):not(.mdc-button--unelevated){
+    color: $primary-text;
+  }
+}
+.mdc-button  .material-icons.mdc-button__icon{
+  line-height: 18px;
+}
+.mdc-button--outlined{
+  border-width: 1px;
+  &:not(:disabled){
+    border-color: $placeholder-text;
+    color: $light-text;
+    &:hover, &:focus, &:active{
+      border-color: $primary-dark;
+    }
+    .mdc-theme--dark &{
+      border-color: $placeholder-text-dark;
+      color: $dark-text;
+    }
+  }
+}
+.mdc-button.mdc-button--unelevated{
+  &:focus, &:active, :hover{
+    opacity: .7;
+  }
+  &:hover:not(:focus):not(:active){
+    opacity: .9;
+  }
+}
+
+// Fixed Action Button
+.fixed-action-btn {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+  .fab-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: $button-floating-size;
+    height: $button-floating-size;
+    background-color: $button-floating-background;
+    border-radius: $button-floating-radius;
+    transform: scale(0);
+  }
+}

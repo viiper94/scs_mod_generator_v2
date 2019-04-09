@@ -1,0 +1,276 @@
+nav ul a{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+nav ul li, nav ul a{
+  transition: none;
+}
+
+// Top app bar
+nav{
+  background-color: $light-background-lighten-1;
+  a{
+    vertical-align: middle;
+    &, &.mdc-icon-button{
+      color: $light-text;
+      .mdc-theme--dark &{
+        color: $dark-text;
+      }
+    }
+  }
+}
+.navbar-fixed{
+  z-index: 1000;
+}
+nav.nav-extended{
+  @extend %flex;
+  height: $nav-height;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  .nav-left, .nav-right{
+    height: $nav-height;
+    line-height: $nav-height;
+  }
+  .logo{
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url(/assets/img/logo-light.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 55px;
+    margin-left: 13px;
+    .mdc-theme--dark &{
+      background-image: url(/assets/img/logo-dark.png);
+    }
+  }
+  .tabs{
+    display: flex;
+    height: $nav-height;
+    background: $light-background-lighten-1;
+    .mdc-theme--dark &{
+      background: $dark-background-darker-1;
+    }
+    & .tab a{
+      color: $light-text;
+      transition: none;
+      .mdc-theme--dark &{
+        color: $dark-text;
+      }
+      &.active, &:hover{
+        color: $primary-text-dark;
+        .mdc-theme--dark &{
+          color: $primary-text-dark;
+        }
+      }
+      &:focus, &:focus.active{
+        background: none;
+      }
+    }
+    & .indicator{
+      background-color: $primary-text-dark;
+      .mdc-theme--dark &{
+        background-color: $primary-dark;
+      }
+    }
+    .tab{
+      line-height: $nav-height;
+      height: $nav-height;
+    }
+  }
+  &, & .nav-content{
+    border-bottom: 1px solid #dadce0;
+    .mdc-theme--dark &{
+      border-bottom: 1px solid $placeholder-text-dark;
+    }
+  }
+  @media only screen and (max-width : 992px) {
+    width: 100%;
+    padding-left: 64px;
+  }
+  .user-view{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px;
+    margin: 0 10px;
+    height: 48px;
+    border-radius: 50%;
+    img{
+      width: 40px;
+      height: 40px;
+    }
+    &:hover, &.active{
+      background-color: rgba(60,64,67,0.08);
+    }
+  }
+  #profile-actions{
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    border-radius: 2px;
+    .mdc-theme--dark &{
+      background-color: $dark-background-darker-2;
+      border-color: $placeholder-text-dark;
+    }
+    .user-info{
+      margin: 20px;
+      white-space: nowrap;
+      & > a{
+        width: 96px;
+        height: 96px;
+        margin-right: 20px;
+        .user-image{
+          width: 100%;
+        }
+      }
+      .menu-right{
+        span{
+          line-height: normal;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+        }
+        .user-name{
+          font-weight: bold;
+        }
+      }
+    }
+    .user-actions{
+      background: #f5f5f5;
+      border-top: 1px solid #ccc;
+      border-color: rgba(0,0,0,.2);
+      padding: 10px 0;
+      white-space: nowrap;
+      line-height: normal;
+      display: flex;
+      justify-content: space-between;
+      .mdc-theme--dark &{
+        background-color: $dark-background;
+      }
+      a{
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+/* Side Nav Bar */
+nav.sidenav{
+  @extend %flex-column;
+  margin-top: $nav-height;
+  padding-top: 8px;
+  padding-right: 5px;
+  width: $sidenav-width;
+  max-width: 75%;
+  height: 100%;
+  li{
+    border-radius: 0 25px 25px 0;
+    letter-spacing: .01785714em;
+    font-family: $font-family-sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    overflow: hidden;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    &.active{
+      background-color: $primary-dark-alpha;
+      .mdc-theme--dark &{
+        background-color: $primary-dark-alpha-dark;
+      }
+    }
+  }
+  ul.collapsible > li.active{
+    background-color: #fff;
+  }
+  .collapsible-body > ul:not(.collapsible) > li.active,
+  &.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active{
+    background-color: $primary-dark-alpha;
+    a{
+      color: $light-text-active;
+    }
+  }
+  .nav-footer{
+    @extend %flex-column;
+    margin: 10px;
+    span{
+      text-align: center;
+      line-height: normal;
+      font-size: 12px;
+    }
+  }
+}
+nav.sidenav li{
+  &>a{
+    color: $light-text;
+    .mdc-theme--dark & {
+      color: $dark-text;
+    }
+  }
+  &>a>i.material-icons{
+    color: $light-icon;
+    .mdc-theme--dark & {
+      color: $dark-text;
+    }
+  }
+  &.active>a{
+    &>i{
+      color: $light-icon-active;
+      .mdc-theme--dark &{
+        color: $light-text;
+      }
+    }
+    .mdc-theme--dark &{
+      color: $light-text;
+    }
+  }
+  .collapsible-header{
+    line-height: 48px;
+  }
+}
+i.truck-icons{
+  background: url(/assets/img/truck_icons_light.png) no-repeat;
+  background-position-y: center;
+  background-size: 48px;
+  opacity: .7;
+  .mdc-theme--dark &{
+    background-image: url(/assets/img/truck_icons_dark.png);
+  }
+  li.active &{
+    opacity: 1;
+    background-image: url(/assets/img/truck_icons_light.png);
+  }
+  &.truck-us{
+     background-position-x: -26px;
+   }
+  &.truck-eu{
+    background-position-x: 1px;
+  }
+}
+.sidenav-trigger{
+  position: fixed;
+  left: 20px;
+  top: 11px;
+  z-index: 998;
+  .mdc-theme--dark &{
+    color: $dark-text;
+  }
+}
+nav.sidenav .collapsible{
+  .collapsible-header{
+    padding: 0 32px;
+  }
+  .collapsible-body{
+    .mdc-theme--dark &{
+      background-color: $dark-background-darker-1;
+    }
+    li a{
+      padding: 0 0 0 100px;
+    }
+  }
+  ul:not(.collapsible) > li.active{
+    background-color: transparent;
+  }
+}

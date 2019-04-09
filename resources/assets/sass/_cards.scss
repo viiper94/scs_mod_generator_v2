@@ -1,0 +1,20 @@
+// Cards
+.card, .card-panel{
+  border: 1px solid $placeholder-text;
+  border-radius: 6px;
+  &:not(.overflow-visible){
+    overflow: hidden;
+  }
+}
+
+
+/* Gallery Page */
+.trailer .card-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 22px;
+}
+.trailer .card-content{
+  padding: 0;
+}

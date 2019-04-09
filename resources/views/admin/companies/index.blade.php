@@ -1,8 +1,14 @@
 @extends('admin.layout.admin')
 
-@section('content')
+@section('navbar-content')
 
     @include('admin.search')
+
+@endsection
+
+@section('content')
+
+    {{ $companies->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
     <div class="row no-margin">
         <div class="col m10 offset-m1 s12">
@@ -38,20 +44,14 @@
                         </td>
                         <td>@lang('general.'.$company->game)</td>
                         <td style="white-space: nowrap" class="right-align">
-                            <a href="{{ route('companies') }}/edit/{{ $company->id }}" class="mdc-button mdc-button--raised mdc-ripple">
-                                <i class="material-icons mdc-button__icon notranslate">edit</i>
+                            <a href="{{ route('companies') }}/edit/{{ $company->id }}" class="mdc-icon-button material-icons notranslate">edit</a>
+                            <a href="{{ route('companies') }}/toggle/{{ $company->id }}" class="mdc-icon-button material-icons notranslate">
+                                visibility_{{ $company->active ? 'off' : 'on' }}
                             </a>
-                            <a href="{{ route('companies') }}/delete/{{ $company->id }}" class="mdc-button mdc-ripple mdc-button--raised red"
-                               onclick="return confirm('Видалити компанію?')">
-                                <i class="material-icons mdc-button__icon notranslate">delete</i>
-                            </a>
-                            <a href="{{ route('companies') }}/toggle/{{ $company->id }}" class="mdc-button mdc-ripple mdc-button--raised blue">
-                                <i class="material-icons mdc-button__icon notranslate">visibility_{{ $company->active ? 'off' : 'on' }}</i>
-                            </a>
-                            <a href="{{ route('companies') }}/copy/{{ $company->id }}" class="mdc-button mdc-ripple mdc-button--raised green"
-                               onclick="return confirm('Створити копію компанії?')">
-                                <i class="material-icons mdc-button__icon notranslate">file_copy</i>
-                            </a>
+                            <a href="{{ route('companies') }}/copy/{{ $company->id }}" class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Створити копію компанії?')">file_copy</a>
+                            <a href="{{ route('companies') }}/delete/{{ $company->id }}" class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Видалити компанію?')">delete</a>
                         </td>
                     </tr>
                 @endforeach
@@ -62,8 +62,8 @@
 
     {{ $companies->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати нову компанію">
-        <a class="mdc-fab mdc-ripple" href="{{ route('companies') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати нову компанію" href="{{ route('companies') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

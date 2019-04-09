@@ -1,0 +1,30 @@
+// Footer
+footer.page-footer{
+  background-color: $light-background-lighten-1;
+  border-top: 1px solid $placeholder-text;
+  .mdc-theme--dark &{
+    background-color: var(--mdc-theme-dark-background);
+    border-top: 1px solid $placeholder-text-dark;
+  }
+  li > a{
+    font-size: 12px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .mdc-theme--dark &{
+    h4, h5, h6, p, span, label, a{
+      color: $dark-text;
+    }
+  }
+}
+@media (max-width: 601px){
+  .page-footer .col{
+    text-align: center;
+  }
+  .footer-copyright .left,
+  .footer-copyright .right{
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,8 +1,12 @@
 @extends('admin.layout.admin')
 
-@section('content')
+@section('navbar-content')
 
     @include('admin.search')
+
+@endsection
+
+@section('content')
 
     {{ $mods->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
@@ -45,17 +49,17 @@
                             @endif
                         </div>
                         <div class="card-action">
-                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--raised mdc-ripple black-text green">
+                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--unelevated btn green">
                                 <i class="material-icons mdc-button__icon notranslate">file_download</i>Завантажити
                             </a>
-                            <a href="{{ route('admin_static_mods') }}/edit/{{ $mod->id }}" class="mdc-button mdc-button--raised mdc-ripple black-text">
+                            <a href="{{ route('admin_static_mods') }}/edit/{{ $mod->id }}" class="mdc-button mdc-button--unelevated btn">
                                 <i class="material-icons mdc-button__icon notranslate">edit</i>Редагувати
                             </a>
-                            <a href="{{ route('admin_static_mods') }}/delete/{{ $mod->id }}" class="mdc-button mdc-ripple mdc-button--raised red white-text"
+                            <a href="{{ route('admin_static_mods') }}/delete/{{ $mod->id }}" class="mdc-button mdc-button--unelevated btn red white-text"
                                onclick="return confirm('Видалити причіп?')">
                                 <i class="material-icons mdc-button__icon notranslate">delete</i>Видалити
                             </a>
-                            <a href="{{ route('admin_static_mods') }}/toggle/{{ $mod->id }}" class="mdc-button mdc-ripple">
+                            <a href="{{ route('admin_static_mods') }}/toggle/{{ $mod->id }}" class="mdc-button mdc-button--outlined btn">
                                 <i class="material-icons mdc-button__icon notranslate">visibility_{{ $mod->active ? 'off' : 'on' }}</i>
                                 {{ $mod->active ? 'Сховати' : 'Показати' }}
                             </a>
@@ -68,8 +72,8 @@
 
     {{ $mods->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати новий мод">
-        <a class="mdc-fab mdc-ripple" href="{{ route('admin_static_mods') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати новий мод" href="{{ route('admin_static_mods') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

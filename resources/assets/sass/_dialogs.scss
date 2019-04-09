@@ -1,0 +1,21 @@
+// Dialogs
+.mdc-dialog{
+  z-index: 9999;
+  .mdc-dialog__surface{
+    border-radius: 8px;
+    .mdc-theme--dark &{
+      background-color: $dark-background;
+    }
+  }
+  .mdc-dialog__title, .mdc-dialog__content{
+    font-family: $font-family-sans-serif;
+    .mdc-theme--dark &{
+      color: $dark-text;
+    }
+  }
+  .mdc-theme--dark &.mdc-dialog--scrollable{
+    .mdc-dialog__title, .mdc-dialog__actions{
+      border-color: $placeholder-text-dark;
+    }
+  }
+}

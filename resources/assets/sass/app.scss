@@ -1,17 +1,52 @@
-// Fonts
-@import 'fonts';
-
-// MDC
-@import 'mdc/material-components-web.css';
-
-// SemanticUI
-@import 'semanticui/semanticui.min.css';
-@import 'semanticui/semantic-custom.css';
-
-// Materializecss
-@import 'materialize/materialize.css';
-
 // Variables
 @import 'variables';
 
-@import 'style.css';
+// Fonts
+@import 'fonts';
+
+// Materializecss
+@import '~materialize-css/sass/materialize-custom.scss';
+
+// MDC
+@import '~material-components-web/material-components-web.scss';
+
+// SemanticUI
+@import '~semantic-ui-sass/semantic-ui';
+@import 'semanticui/semantic-custom';
+
+// reset
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-family: $font-family-sans-serif;
+}
+
+//@import 'style.css';
+
+@import "defaults";
+@import "typography";
+@import "helpers";
+@import "cards";
+@import "buttons";
+@import "navbar";
+@import "select";
+@import "collapsible";
+@import "search";
+@import 'forms';
+@import "textfields";
+@import "switch";
+@import "checkboxes";
+@import "checkboxes";
+@import "radio";
+@import "dialogs";
+@import "footer";
+
+@import "languages";
+@import "generator";
+@import "login";
+@import "gallery";
+@import "mods";
+@import "profile";
+@import "admin";

@@ -1,0 +1,101 @@
+// Profile
+.profile-container{
+  @extend %flex-center-v;
+  justify-content: space-around;
+}
+.card.last_mods{
+  .card-content{
+    padding: 24px 0 0;
+    h4.card-title{
+      padding: 0 16px;
+    }
+    .mdc-list.user-mods{
+      padding-bottom: 0;
+      li{
+        .mdc-list-item__meta a.mdc-icon-button{
+          visibility: hidden;
+          &:hover{
+            color: #f00;
+          }
+        }
+        &:hover .mdc-list-item__meta a.mdc-icon-button{
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+.mdc-list--avatar-list .mdc-list-item__graphic a{
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+ul.user-mods.collapsible{
+  border: 1px solid $placeholder-text;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  .mdc-theme--dark &{
+    border-color: $placeholder-text-dark;
+  }
+  & > li{
+    .collapsible-header{
+      height: 72px;
+      @extend %flex-center-v;
+      .mdc-list-item__primary-text::before{
+        height: 0;
+      }
+    }
+    p{
+      margin: 0;
+    }
+    &:last-child, .collapsible-body{
+      border-bottom: none;
+    }
+    .mdc-list-item__meta a.mdc-icon-button:not(.download){
+      visibility: hidden;
+    }
+    .mdc-list-item__meta a.mdc-icon-button.broken{
+      visibility: visible;
+      color: #f00;
+    }
+    .mdc-list-item__meta a.mdc-icon-button.download:hover{
+      color: $primary-dark;
+    }
+    &:hover .mdc-list-item__meta a.mdc-icon-button:not(.download) {
+      visibility: visible;
+      &:hover {
+        color: #f00;
+      }
+    }
+    border-bottom: 1px solid $placeholder-text;
+    .mdc-theme--dark &{
+      border-color: $placeholder-text-dark;
+    }
+  }
+}
+.no-mods{
+  margin: 10px;
+}
+
+// Profile edit
+.profile-container{
+  flex-wrap: wrap;
+  .profile{
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .settings{
+    min-width: 650px;
+  }
+  .password{
+    min-width: 300px;
+  }
+  .settings button{
+    width: 400px;
+  }
+  @media (max-width: 667px){
+    .flex-center{
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Search bar
+.card-panel.nav-search{
+  height: 48px;
+  flex: 0.9;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: .3s ease background-color;
+  background-color: rgba(0,0,0,0.04);
+  .mdc-theme--dark &{
+    background-color: #424242;
+  }
+  &.focused{
+    border: 1px solid rgba(0,0,0,0.12);
+    background-color: transparent;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.24);
+  }
+  .input-field{
+    display: flex;
+  }
+  .input-field input[type=search]:not(.browser-default){
+    background-color: transparent;
+    border: none;
+    height: 48px;
+    outline: none;
+    padding: 15px 16px 11px 16px;
+    box-sizing: border-box;
+    flex: 1;
+    color: $light-text;
+    &:not(.browser-default):focus:not([readonly]){
+      border: none;
+      box-shadow: none;
+    }
+  }
+  button[type=submit].prefix, .input-field input[type=search] ~ .material-icons.clear{
+    top: 5px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 8px;
+    color: $light-text;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    .mdc-theme--dark &{
+      color: $dark-text;
+    }
+    &:focus{
+      background-color: transparent;
+    }
+  }
+  .input-field input[type=search]{
+    & ~ .material-icons.clear{
+      display: none;
+    }
+    &:focus ~ .material-icons.clear, & ~ .material-icons.clear:focus{
+      display: block;
+    }
+  }
+}

@@ -9,37 +9,59 @@
                 <input type="hidden" name="token" value="{{ $token }}">
                 <div class="card-content">
                     <div class="row"><h5 class="card-title center">@lang('user.reset_password')</h5></div>
-                    <div class="row">
-                        <div class="input-field col s12 no-margin">
-                            <i class="material-icons prefix">mail_outline</i>
-                            <input id="email" type="email" name="email" @if($errors->has('email'))class="invalid" @endif value="{{ old('email') }}" required>
-                            <label for="email">@lang('user.email')</label>
-                            @if($errors->has('email'))
-                                <span class="helper-text" data-error="{{ $errors->first('email') }}" data-success=""></span>
-                            @endif
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">mail_outline</i>
+                            <input type="email" id="email" class="mdc-text-field__input" name="email" value="{{ old('email') }}" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="email" class="mdc-floating-label">@lang('user.email')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
+                        @if($errors->has('email'))
+                            <div class="mdc-text-field-helper-line">
+                                <div class="mdc-text-field-helper-text">{{ $errors->first('email') }}</div>
+                            </div>
+                        @endif
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12 no-margin">
-                            <i class="material-icons prefix">lock_outline</i>
-                            <input id="password" type="password" name="password" @if($errors->has('password'))class="invalid" @endif required>
-                            <label for="password">@lang('user.password')</label>
-                            @if($errors->has('password'))
-                                <span class="helper-text" data-error="{{ $errors->first('password') }}" data-success=""></span>
-                            @endif
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">lock_outline</i>
+                            <input type="password" id="password" class="mdc-text-field__input" name="password" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="password" class="mdc-floating-label">@lang('user.password')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
+                        @if($errors->has('password'))
+                            <div class="mdc-text-field-helper-line">
+                                <div class="mdc-text-field-helper-text">{{ $errors->first('password') }}</div>
+                            </div>
+                        @endif
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12 no-margin">
-                            <i class="material-icons prefix">lock_outline</i>
-                            <input id="password_confirmation" type="password" name="password_confirmation" required>
-                            <label for="password_confirmation">@lang('user.confirm_password')</label>
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">lock_outline</i>
+                            <input type="password" id="password_confirmation" class="mdc-text-field__input" name="password_confirmation" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="password_confirmation" class="mdc-floating-label">@lang('user.confirm_password')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">
-                        <button type="submit" class="btn waves-effect col s12 yellow darken-1 black-text"><b>@lang('user.reset_password')</b></button>
+                        <button type="submit" class="mdc-button mdc-button--unelevated col s12"><b>@lang('user.reset_password')</b></button>
                     </div>
                 </div>
             </form>

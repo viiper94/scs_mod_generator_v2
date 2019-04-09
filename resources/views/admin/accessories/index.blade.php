@@ -1,8 +1,14 @@
 @extends('admin.layout.admin')
 
-@section('content')
+@section('navbar-content')
 
     @include('admin.search')
+
+@endsection
+
+@section('content')
+
+    {{ $accessories->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
     <div class="row no-margin">
         <div class="col m12">
@@ -42,20 +48,14 @@
                         </td>
                         <td>@lang('general.'.$accessory->game)</td>
                         <td style="white-space: nowrap" class="right-align">
-                            <a href="{{ route('accessories') }}/edit/{{ $accessory->id }}" class="mdc-button mdc-button--raised mdc-ripple">
-                                <i class="material-icons mdc-button__icon notranslate">edit</i>
+                            <a href="{{ route('accessories') }}/edit/{{ $accessory->id }}" class="mdc-icon-button material-icons notranslate">edit</a>
+                            <a href="{{ route('accessories') }}/toggle/{{ $accessory->id }}" class="mdc-icon-button material-icons notranslate">
+                                visibility_{{ $accessory->active ? 'off' : 'on' }}
                             </a>
-                            <a href="{{ route('accessories') }}/delete/{{ $accessory->id }}" class="mdc-button mdc-ripple mdc-button--raised red"
-                               onclick="return confirm('Видалити аксесуар?')">
-                                <i class="material-icons mdc-button__icon notranslate">delete</i>
-                            </a>
-                            <a href="{{ route('accessories') }}/toggle/{{ $accessory->id }}" class="mdc-button mdc-ripple mdc-button--raised blue">
-                                <i class="material-icons mdc-button__icon notranslate">visibility_{{ $accessory->active ? 'off' : 'on' }}</i>
-                            </a>
-                            <a href="{{ route('accessories') }}/copy/{{ $accessory->id }}" class="mdc-button mdc-ripple mdc-button--raised green"
-                               onclick="return confirm('Створити копію аксесуару?')">
-                                <i class="material-icons mdc-button__icon notranslate">file_copy</i>
-                            </a>
+                            <a href="{{ route('accessories') }}/copy/{{ $accessory->id }}" class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Створити копію аксесуару?')">file_copy</a>
+                            <a href="{{ route('accessories') }}/delete/{{ $accessory->id }}" class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Видалити аксесуар?')">delete</a>
                         </td>
                     </tr>
                 @endforeach
@@ -66,8 +66,8 @@
 
     {{ $accessories->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати новий аксесуар">
-        <a class="mdc-fab mdc-ripple" href="{{ route('accessories') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати новий аксесуар" href="{{ route('accessories') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

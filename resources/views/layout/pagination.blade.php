@@ -1,15 +1,15 @@
 @if ($paginator->hasPages())
-    <div class="row center">
+    <div class="row no-margin center">
         <ul class="pagination" role="navigation">
             {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())
-                <li class="disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">
+                <li>
                     <span aria-hidden="true"><i class="material-icons notranslate">chevron_left</i></span>
                 </li>
             @else
-                <li>
+                <li class="mdc-button">
                     <a href="{{ $paginator->previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')">
-                        <i class="material-icons notranslate">chevron_left</i>
+                        <span aria-hidden="true"><i class="material-icons notranslate">chevron_left</i></span>
                     </a>
                 </li>
             @endif
@@ -24,7 +24,7 @@
                 {{-- Array Of Links --}}
                 @if (is_array($element))
                     @foreach ($element as $page => $url)
-                        <li class="mdc-button @if($page == $paginator->currentPage())mdc-button--raised @endif mdc-ripple"><a href="{{ $url }}">{{ $page }}</a></li>
+                        <li class="mdc-button @if($page == $paginator->currentPage())mdc-button--unelevated current @endif"><a href="{{ $url }}">{{ $page }}</a></li>
                     @endforeach
                 @endif
             @endforeach

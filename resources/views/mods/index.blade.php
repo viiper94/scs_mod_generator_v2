@@ -12,9 +12,13 @@
                                     sounds mods, engine mods, paint mods, ets2mp, atsmp">
 @endsection
 
-@section('content')
+@section('navbar-content')
 
     @include('admin.search')
+
+@endsection
+
+@section('content')
 
     <div class="row no-margin">
         @if(count($mods) > 0)
@@ -42,7 +46,7 @@
                             <p class="grey-text">@lang('mods.tested_on_ver'): <b>{{ $mod->tested_ver }}</b></p>
                         </div>
                         <div class="card-action">
-                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--raised mdc-ripple black-text">
+                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--unelevated btn">
                                 <i class="material-icons mdc-button__icon notranslate">file_download</i>
                                 @lang('general.download_mod')
                             </a>

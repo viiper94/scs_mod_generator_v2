@@ -1,0 +1,18 @@
+// Collapsible
+.collapsible, .collapsible-header{
+  border: none;
+  border-radius: 0 0 2px 2px;
+}
+.collapsible-header{
+  line-height: 36px;
+}
+.collapsible-header i{
+  transition: .3s ease;
+}
+li > .collapsible-header i,
+li > .collapsible-header .material-icons.mdc-button__icon{
+  line-height: 36px;
+}
+li.active > .collapsible-header i:not(.mdc-button__icon){
+  transform: rotate(180deg);
+}

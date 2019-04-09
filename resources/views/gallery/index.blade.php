@@ -1,24 +1,25 @@
 @extends('layout.app')
 
-@section('content')
-    <div class="navbar-fixed">
-        <nav class="nav-extended">
-            <div class="nav-content">
-                <ul class="tabs">
-                    <li class="tab"><a class="active" href="#ets2">Euro Truck Simulator 2</a></li>
-                    <li class="tab"><a href="#ats">American Truck Simulator</a></li>
-                </ul>
-            </div>
-        </nav>
+@section('navbar-content')
+    <div class="nav-content">
+        <ul class="tabs">
+            <li class="tab"><a class="active" href="#ets2">Euro Truck Simulator 2</a></li>
+            <li class="tab"><a href="#ats">American Truck Simulator</a></li>
+        </ul>
     </div>
 
     @include('admin.search')
+@endsection
+
+@section('content')
 
     <div class="row">
         @if(count($chassis_list) > 0)
             @foreach($chassis_list as $game => $collection)
                 <div id="{{$game}}" class="game">
-                    <h4 class="light">@lang('general.'.$game) @lang('general.trailers_gallery')</h4>
+                    <div class="row">
+                        <h1 class="light col m12">@lang('general.'.$game) @lang('general.trailers_gallery')</h1>
+                    </div>
                     @php $i = 0; @endphp
                     <div class="row">
                         @foreach($collection->groupBy('alias_short') as $alias => $aliases_collection)

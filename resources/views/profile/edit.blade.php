@@ -1,8 +1,12 @@
 @extends('layout.app')
 
+@section('title')
+    @lang('user.profile_edit') -
+@endsection
+
 @section('content')
 
-    <div class="flex-center profile-container">
+    <div class="flex-center profile-container overflow-visible">
         <div class="card profile">
             <form action="{{route('save_profile')}}" method="post" enctype="multipart/form-data">
                 @csrf
@@ -18,7 +22,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="file-field input-field mdc-button mdc-button--raised" style="margin: 0 auto;">
+                        <div class="file-field input-field mdc-button mdc-button--outlined" style="margin: 0 auto;">
                             <div class="input-wrapper">
                                 <i class="material-icons mdc-button__icon notranslate" style="font-size: 2em; padding-top: 2px;">file_upload</i>
                                 <input type="file" name="img" id="image" accept="image/jpeg, image/png"
@@ -33,42 +37,56 @@
                             <p class="invalid-text center" style="color: #f00; font-size: 12px">{{ $errors->first('img') }}</p>
                         @endif
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">person_outline</i>
-                            <input id="name" type="text" name="name" @if($errors->has('name'))class="invalid" @endif value="{{ $user->name }}" required>
-                            <label for="name">@lang('user.name')</label>
-                            @if($errors->has('name'))
-                                <span class="helper-text" data-error="{{ $errors->first('name') }}" data-success=""></span>
-                            @endif
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">person_outline</i>
+                            <input type="text" id="name" class="mdc-text-field__input" name="name" value="{{ $user->name }}" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="name" class="mdc-floating-label">@lang('user.name')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
+                        @if($errors->has('name'))
+                            <div class="mdc-text-field-helper-line">
+                                <div class="mdc-text-field-helper-text">{{ $errors->first('name') }}</div>
+                            </div>
+                        @endif
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12 no-margin">
-                            <i class="material-icons prefix">mail_outline</i>
-                            <input id="email" type="email" name="email" @if($errors->has('email'))class="invalid" @endif value="{{ $user->email }}" required>
-                            <label for="email">@lang('user.email')</label>
-                            @if($errors->has('email'))
-                                <span class="helper-text" data-error="{{ $errors->first('email') }}" data-success=""></span>
-                            @endif
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">mail_outline</i>
+                            <input id="email" type="email" name="email" class="mdc-text-field__input" value="{{ $user->email }}" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="email" class="mdc-floating-label">@lang('user.email')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
+                        @if($errors->has('email'))
+                            <div class="mdc-text-field-helper-line">
+                                <div class="mdc-text-field-helper-text">{{ $errors->first('email') }}</div>
+                            </div>
+                        @endif
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center" style="font-weight: bold; ">
+                        @if($user->steamid64)
+                            <a href="https://steamcommunity.com/profiles/{{ $user->steamid64 }}"
+                               class="mdc-button" target="_blank">@lang('user.my_steam')</a>
+                        @else
+                            <a href="{{ route('profile.steam') }}" class="mdc-button">@lang('user.link_steam')</a>
+                        @endif
                     </div>
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">
-                        <div class="col s12 center">
-                            @if($user->steamid64)
-                                <a href="https://steamcommunity.com/profiles/{{ $user->steamid64 }}"
-                                   class="no-margin" target="_blank">@lang('user.my_steam')</a>
-                            @else
-                                <a href="{{ route('profile.steam') }}" class="no-margin">@lang('user.link_steam')</a>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="card-action">
-                    <div class="row no-margin">
-                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12"><b>@lang('user.save_profile')</b></button>
+                        <button type="submit" class="mdc-button mdc-button--unelevated col s12"><b>@lang('user.save_profile')</b></button>
                     </div>
                 </div>
             </form>
@@ -79,38 +97,61 @@
                 <div class="card-content">
                     <div class="row"><h5 class="card-title center">@lang('user.password_edit')</h5></div>
                     @if($user->hasOldPassword())
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">lock_outline</i>
-                                <input id="old_password" type="password" name="old_password" @if($errors->has('old_password'))class="invalid" @endif required>
-                                <label for="old_password">@lang('user.old_password')</label>
-                                @if($errors->has('old_password'))
-                                    <span class="helper-text" data-error="{{ $errors->first('old_password') }}" data-success=""></span>
-                                @endif
+                        <div class="row no-margin">
+                            <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">lock_outline</i>
+                                <input id="old_password" type="password" name="old_password" class="mdc-text-field__input" required>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="old_password" class="mdc-floating-label">@lang('user.old_password')</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
                             </div>
-                        </div>
-                    @endif
-                    <div class="row">
-                        <div class="input-field col s12 no-margin">
-                            <i class="material-icons prefix">lock</i>
-                            <input id="new_password" type="password" name="new_password" required>
-                            <label for="new_password">@lang('user.new_password')</label>
-                            @if($errors->has('new_password'))
-                                <span class="helper-text" data-error="{{ $errors->first('new_password') }}" data-success=""></span>
+                            @if($errors->has('old_password'))
+                                <div class="mdc-text-field-helper-line">
+                                    <div class="mdc-text-field-helper-text">{{ $errors->first('old_password') }}</div>
+                                </div>
                             @endif
                         </div>
+                    @endif
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">lock</i>
+                            <input id="new_password" type="password" name="new_password" class="mdc-text-field__input" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="new_password" class="mdc-floating-label">@lang('user.new_password')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
+                        </div>
+                        @if($errors->has('new_password'))
+                            <div class="mdc-text-field-helper-line">
+                                <div class="mdc-text-field-helper-text">{{ $errors->first('new_password') }}</div>
+                            </div>
+                        @endif
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12 no-margin">
-                            <i class="material-icons prefix">lock</i>
-                            <input id="new_password_confirmation" type="password" name="new_password_confirmation" required>
-                            <label for="new_password_confirmation">@lang('user.new_password_confirmation')</label>
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--outlined">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">lock</i>
+                            <input id="new_password_confirmation" type="password" name="new_password_confirmation"
+                                   class="mdc-text-field__input" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="new_password_confirmation" class="mdc-floating-label">@lang('user.new_password_confirmation')</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">
-                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple col s12"><b>@lang('user.save_password')</b></button>
+                        <button type="submit" class="mdc-button mdc-button--unelevated col s12"><b>@lang('user.save_password')</b></button>
                     </div>
                 </div>
             </form>
@@ -128,20 +169,27 @@
                                 <div class="col s12 @if($game == 'ets2')m6 @endif">
                                     @foreach($type as $dlc)
                                         <div class="{{$dlc->name}}">
-                                            <div class="mdc-switch">
-                                                <input type="checkbox" id="{{$dlc->name}}"
-                                                       class="mdc-switch__native-control" name="dlc[{{$dlc->name}}]"
-                                                    @if(in_array($dlc->name, $user_dlc)) checked @endif>
-                                                <div class="mdc-switch__background">
-                                                    <div class="mdc-switch__knob"></div>
+                                            <div class="mdc-form-field">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox"
+                                                           class="mdc-checkbox__native-control"
+                                                           id="dlc_{{$dlc->name}}"
+                                                           @if(in_array($dlc->name, $user_dlc)) checked @endif>
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
                                                 </div>
+                                                <label for="dlc_{{$dlc->name}}">
+                                                    @lang('dlc_list.'.$dlc->name)
+                                                    @if(!$dlc->mp_support)
+                                                        <s class="hint tooltipped" data-tooltip="@lang('general.mp_no_support')" data-position="bottom"><b>MP</b></s>
+                                                    @endif
+                                                </label>
                                             </div>
-                                            <label for="{{$dlc->name}}" class="mdc-switch-label">
-                                                @lang('dlc_list.'.$dlc->name)
-                                                @if(!$dlc->mp_support)
-                                                    (@lang('general.mp_no_support'))
-                                                @endif
-                                            </label>
                                         </div>
                                     @endforeach
                                 </div>
@@ -149,23 +197,29 @@
                         </div>
                     @endforeach
                     <div class="row">
-                        <div class="input-field col s12 m4">
-                            <i class="material-icons prefix">language</i>
-                            <select name="lang" id="lang" class="icons">
-                                @foreach($languages as $locale => $data)
-                                    <option value="{{ $locale }}" data-icon="/assets/img/langs/{{ $locale }}.png"
-                                            @if($user->language == $locale ||
-                                            !$user->language && \Illuminate\Support\Facades\App::isLocale($locale))selected @endif
-                                    >{{ $data['title'] }}</option>
-                                @endforeach
-                            </select>
-                            <label>@lang('user.choose_lang')</label>
+                        <div class="input-field col s12 m4 inline">
+                            <div class="ui dropdown" id="select-lang">
+                                <input type="hidden" name="wheels">
+                                <div class="default text">@lang('user.choose_lang')</div>
+                                <i class="dropdown icon right"></i>
+                                <div class="menu">
+                                    @foreach($languages as $locale => $data)
+                                        <div data-value="{{ $locale }}"
+                                                @if($user->language == $locale ||
+                                                !$user->language && \Illuminate\Support\Facades\App::isLocale($locale))selected @endif
+                                            class="item">
+                                            <img src="/assets/img/langs/{{ $locale }}.png" class="lang-ico">
+                                            <span>{{ $data['title'] }}</span>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-action">
                     <div class="row no-margin center">
-                        <button type="submit" class="mdc-button mdc-button--raised mdc-ripple"><b>@lang('user.save_settings')</b></button>
+                        <button type="submit" class="mdc-button mdc-button--unelevated"><b>@lang('user.save_settings')</b></button>
                     </div>
                 </div>
             </form>

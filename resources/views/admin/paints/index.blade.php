@@ -1,8 +1,14 @@
 @extends('admin.layout.admin')
 
-@section('content')
+@section('navbar-content')
 
     @include('admin.search')
+
+@endsection
+
+@section('content')
+
+    {{ $paints->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
     <div class="row no-margin">
         <div class="col m12">
@@ -46,20 +52,14 @@
                         </td>
                         <td>@lang('general.'.$paint->game)</td>
                         <td style="white-space: nowrap" class="right-align">
-                            <a href="{{ route('paints') }}/edit/{{ $paint->id }}" class="mdc-button mdc-button--raised mdc-ripple">
-                                <i class="material-icons mdc-button__icon notranslate">edit</i>
+                            <a href="{{ route('paints') }}/edit/{{ $paint->id }}" class="mdc-icon-button material-icons notranslate">edit</a>
+                            <a href="{{ route('paints') }}/toggle/{{ $paint->id }}" class="mdc-icon-button material-icons notranslate">
+                                visibility_{{ $paint->active ? 'off' : 'on' }}
                             </a>
-                            <a href="{{ route('paints') }}/delete/{{ $paint->id }}" class="mdc-button mdc-ripple mdc-button--raised red"
-                               onclick="return confirm('Видалити скін?')">
-                                <i class="material-icons mdc-button__icon notranslate">delete</i>
-                            </a>
-                            <a href="{{ route('paints') }}/toggle/{{ $paint->id }}" class="mdc-button mdc-ripple mdc-button--raised blue">
-                                <i class="material-icons mdc-button__icon notranslate">visibility_{{ $paint->active ? 'off' : 'on' }}</i>
-                            </a>
-                            <a href="{{ route('paints') }}/copy/{{ $paint->id }}" class="mdc-button mdc-ripple mdc-button--raised green"
-                               onclick="return confirm('Створити копію скіна?')">
-                                <i class="material-icons mdc-button__icon notranslate">file_copy</i>
-                            </a>
+                            <a href="{{ route('paints') }}/copy/{{ $paint->id }}" class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Створити копію скіна?')">file_copy</a>
+                            <a href="{{ route('paints') }}/delete/{{ $paint->id }}" class="mdc-icon-button material-icons notranslate"
+                               onclick="return confirm('Видалити скін?')">delete</a>
                         </td>
                     </tr>
                 @endforeach
@@ -70,8 +70,8 @@
 
     {{ $paints->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати новий скін">
-        <a class="mdc-fab mdc-ripple" href="{{ route('paints') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати новий скін" href="{{ route('paints') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

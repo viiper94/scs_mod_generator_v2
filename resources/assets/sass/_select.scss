@@ -1,0 +1,18 @@
+// Selects
+.dropdown-content li{
+  & > a, & > span{
+    color: $light-text;
+  }
+  &.selected{
+    & > a, & > span{
+      font-weight: bold;
+    }
+  }
+}
+.select-wrapper input.select-dropdown:focus{
+  border-bottom: 1px solid $primary-dark;
+}
+.select-wrapper ul.dropdown-content{
+  border: 1px solid $placeholder-text;
+  border-radius: 6px;
+}

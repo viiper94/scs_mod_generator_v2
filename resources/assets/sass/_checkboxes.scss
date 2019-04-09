@@ -1,0 +1,22 @@
+// Checkboxes
+.mdc-checkbox{
+  & + label{
+    font-size: 13px;
+    cursor: pointer;
+  }
+}
+.mdc-checkbox::before, .mdc-checkbox::after, .mdc-checkbox__background::before{
+  background-color: $primary-dark;
+}
+.mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+.mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background{
+  border-color: $primary-dark;
+  background-color: $primary-dark;
+}
+.mdc-checkbox__native-control:checked ~ .mdc-checkbox__background .mdc-checkbox__checkmark-path,
+.mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background .mdc-checkbox__checkmark-path{
+  color: $light-text;
+}
+.mdc-theme--dark .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background{
+  border-color: $placeholder-text-dark;
+}

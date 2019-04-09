@@ -12,17 +12,17 @@
             @endif
             @include('generator.ie')
         </section>
-        <section class="card trailer-generator">
+        <section class="card trailer-generator overflow-visible">
             <form action="{{route('generator')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <div class="card-content">
-                    <div class="row"><h5 class="card-title center" style="text-transform: uppercase; font-weight: bold;">@lang('general.'.$game) @lang('general.trailer_generator')</h5></div>
+                    <div class="row"><h5 class="card-title center bold">@lang('general.'.$game) @lang('general.trailer_generator')</h5></div>
                     <div class="row">
                         <div class="col s12">
                             <div class="mdc-text-field">
                                 <input type="text" id="title" class="browser-default mdc-text-field__input" name="title">
-                                <label for="title" class="mdc-text-field__label">@lang('general.mod_title')</label>
-                                <div class="mdc-text-field__bottom-line"></div>
+                                <div class="mdc-line-ripple"></div>
+                                <label for="title" class="mdc-floating-label">@lang('general.mod_title')</label>
                             </div>
                         </div>
                     </div>
@@ -61,47 +61,48 @@
                             <label class="for-select">@lang('general.pick_accessory')</label>
                         </div>
                         <div class="col s12">
-                            <div class="mdc-switch">
-                                <input type="checkbox" id="all_accessories" data-target="accessory" class="mdc-switch__native-control" />
-                                <div class="mdc-switch__background">
-                                    <div class="mdc-switch__knob"></div>
+                            <div class="mdc-switch" id="accessories_switch">
+                                <div class="mdc-switch__track"></div>
+                                <div class="mdc-switch__thumb-underlay">
+                                    <div class="mdc-switch__thumb">
+                                        <input type="checkbox" id="all_accessories" data-target="accessory" class="mdc-switch__native-control" />
+                                    </div>
                                 </div>
                             </div>
-                            <label for="all_accessories" class="mdc-switch-label">@lang('general.show_all_accessories')</label>
+                            <label for="all_accessories">@lang('general.show_all_accessories')</label>
                         </div>
                     </div>
                     <div class="row" id="paint" style="display: none">
                         <div class="col s12">
                             <label class="for-select">@lang('general.pick_paint')</label>
                         </div>
-                        <div class="colors" style="display: none;">
-                            <div class="col s12 palette">
-                                <div class="input-field inline" style="height: 26px; min-width: 170px;">
-                                    <input type="color" name="color" value="#ffffff" id="color_palette">
-                                </div>
-                                <span class="offset-m3">@lang('general.pick_color')</span>
-                            </div>
-                            @include('generator.colors_hex_rgb_scs')
-                        </div>
                         <div class="col s12">
-                            <div class="mdc-switch">
-                                <input type="checkbox" id="all_paints" data-target="paint" class="mdc-switch__native-control" />
-                                <div class="mdc-switch__background">
-                                    <div class="mdc-switch__knob"></div>
+                            <div class="mdc-switch" id="paint_switch">
+                                <div class="mdc-switch__track"></div>
+                                <div class="mdc-switch__thumb-underlay">
+                                    <div class="mdc-switch__thumb">
+                                        <input type="checkbox" id="all_paints" data-target="paint" class="mdc-switch__native-control" />
+                                    </div>
                                 </div>
                             </div>
-                            <label for="all_paints" class="mdc-switch-label">@lang('general.show_all_paints')</label>
+                            <label for="all_paints">@lang('general.show_all_paints')</label>
                         </div>
                     </div>
+                    <div class="colors row" style="display: none;">
+                        <div class="col s12 palette">
+                            <input type="color" name="color" value="#ffffff" id="color_palette">
+                            <span class="offset-m3">@lang('general.pick_color')</span>
+                        </div>
+                        @include('generator.colors_hex_rgb_scs')
+                    </div>
 
-                    @include('generator.trmp_fix')
                     @include('generator.advanced')
 
                 </div>
                 <div class="card-action">
                     <div class="row no-margin">
                         <input type="hidden" name="target" value="{{$game}}">
-                        <button class="mdc-button mdc-button--raised mdc-ripple left-med-and-up col s12" id="generate-btn" type="submit"
+                        <button class="mdc-button mdc-button--unelevated col s12" id="generate-btn" type="submit"
                                 onclick="return confirm('@lang('general.are_you_sure')')" disabled style="min-width: 200px">
                             <i class="material-icons mdc-button__icon notranslate">send</i><b>@lang('general.proceed')</b>
                         </button>
@@ -116,8 +117,8 @@
             @include('layout.discord')
         </section>
     </div>
-    <div class="fixed-action-btn tooltipped" data-tooltip="@lang('general.how_to')">
-        <a class="mdc-fab mdc-ripple modal-trigger" href="#how" id="how-to">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab modal-trigger tooltipped" data-tooltip="@lang('general.how_to')" href="#how" id="how-to">
             <span class="mdc-fab__icon">?</span>
         </a>
     </div>

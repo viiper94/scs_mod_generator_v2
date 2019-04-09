@@ -19,12 +19,10 @@
                     <td>{{ $item->short_name }}</td>
                     <td>@lang('general.'.$item->game)</td>
                     <td style="white-space: nowrap" class="right-align">
-                        <a href="{{ route('dlc') }}/delete/{{ $item->id }}" class="mdc-button mdc-ripple mdc-button--raised red white-text"
-                           onclick="return confirm('Видалити DLC?')">
-                            <i class="material-icons mdc-button__icon notranslate">delete</i>
-                        </a>
-                        <a href="{{ route('dlc') }}/toggle/{{ $item->id }}" class="mdc-button mdc-ripple mdc-button--raised blue">
-                            <i class="material-icons mdc-button__icon notranslate">visibility_{{ $item->active ? 'off' : 'on' }}</i>
+                        <a href="{{ route('dlc') }}/delete/{{ $item->id }}" class="mdc-icon-button material-icons notranslate"
+                           onclick="return confirm('Видалити DLC?')">delete</a>
+                        <a href="{{ route('dlc') }}/toggle/{{ $item->id }}" class="mdc-icon-button material-icons notranslate">
+                            visibility_{{ $item->active ? 'off' : 'on' }}
                         </a>
                     </td>
                 </tr>
@@ -33,8 +31,8 @@
         </table>
     </div>
 
-    <div class="fixed-action-btn tooltipped" data-tooltip="Додати нове DLC">
-        <a class="mdc-fab mdc-ripple" href="{{ route('dlc') }}/add">
+    <div class="fixed-action-btn">
+        <a class="mdc-fab tooltipped" data-tooltip="Додати нове DLC" href="{{ route('dlc') }}/add">
             <span class="material-icons mdc-fab__icon">add</span>
         </a>
     </div>

@@ -1,0 +1,107 @@
+//Defaults
+body{
+  min-height: 100vh;
+  background-color: $light-background-lighten-1;
+  &.mdc-theme--dark{
+    background-color: $dark-background;
+  }
+}
+
+.mdc-theme--dark .card,
+.mdc-theme--dark .collapsible,
+.mdc-theme--dark .collapsible-header,
+.mdc-theme--dark .card-panel,
+.mdc-theme--dark nav{
+  background-color: $dark-background;
+  color: $dark-text;
+  border-color: $placeholder-text-dark;
+}
+.wrapper{
+  flex-direction: column;
+  padding-left: 350px;
+  min-height: 100vh;
+  @media only screen and (max-width : 992px){
+    padding-left: 0;
+  }
+}
+ol{
+  margin-left: 15px;
+}
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled), .mdc-fab,
+.mdc-switch .mdc-switch__native-control:enabled:checked~.mdc-switch__background .mdc-switch__knob,
+.mdc-switch .mdc-switch__native-control:enabled:checked~.mdc-switch__background .mdc-switch__knob:before,
+.mdc-switch .mdc-switch__native-control:enabled:checked~.mdc-switch__background:before{
+  background-color: $primary-dark;
+  color: $light-text;
+}
+.mdc-theme--dark .toast{
+  background-color: $dark-background-darker-2;
+}
+span.badge.new{
+  background-color: $primary-dark;
+  padding: 1px 6px;
+}
+span.badge.no-float{
+  float: none;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  &.mdc-button__icon{
+    line-height: inherit;
+  }
+}
+.card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible{
+  &:not(.z-depth-1), &:not(.z-depth-2){
+    box-shadow: none;
+  }
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+  text-transform: none;
+  transition: none;
+  font-weight: bold;
+}
+nav.sidenav li.divider{
+  margin: 8px 0;
+}
+.preloader-wrapper.tiny{
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+[data-tooltip]:before, [data-tooltip]:after{
+  content: none;
+}
+button, input, optgroup, select, textarea{
+  font-family: $font-family-sans-serif;
+}
+ul.pagination{
+  margin: 20px;
+  li{
+    padding: 0;
+    a{
+      width: 100%;
+    }
+    .mdc-theme--dark &:not(.current) a{
+      color: $dark-text;
+    }
+  }
+}
+.material-tooltip{
+  z-index: 9999;
+}
+.mdc-theme--dark li.divider{
+  background-color: $placeholder-text-dark;
+}

@@ -1,0 +1,24 @@
+// Login page
+.login.card{
+  .card-action a{
+    margin-top: 10px;
+  }
+  .social-login-btn.social-login-btn_steam{
+    background: url(../../../public/assets/img/steam-icon.png) no-repeat center center;
+    background-size: 55px;
+  }
+  .mdc-theme--dark .social-login-btn.social-login-btn_steam{
+    background: url(../../../public/assets/img/steam-icon-dark.png) no-repeat center center;
+    background-size: 55px;
+  }
+  .social-login-btn.social-login-btn_google{
+    background: url(../../../public/assets/img/google-icon.png) no-repeat center center;
+    background-size: 40px;
+  }
+  .social-login-btn.mdc-button{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff1a;
+  }
+}

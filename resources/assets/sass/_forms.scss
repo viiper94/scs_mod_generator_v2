@@ -1,0 +1,36 @@
+/* Forms */
+select{
+  border: 0;
+  color: #eee;
+}
+[type=checkbox]:not(:checked),
+[type=checkbox]:checked{
+  pointer-events: auto;
+}
+[type=radio]:checked+span:after,
+[type=radio].with-gap:checked+span:after{
+  background-color: $primary-dark;
+}
+[type=radio]:checked+span:after,
+[type=radio].with-gap:checked+span:before,
+[type=radio].with-gap:checked+span:after{
+  border-color: $primary-dark;
+}
+.mdc-theme--dark .mdc-text-field__bottom-line{
+  background-color: $primary-dark;
+}
+[type=checkbox].filled-in:checked+span:not(.lever):after{
+  border: 2px solid $primary-dark;
+  background-color: $primary-dark;
+}
+[type=checkbox]:checked+span:not(.lever):before{
+  border-right: 2px solid $primary-dark;
+  border-bottom: 2px solid $primary-dark;
+}
+[type=checkbox].filled-in:checked+span:not(.lever):before{
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.mdc-theme--dark span.mdc-fab__icon{
+  color: $light-text;
+}
