@@ -22,8 +22,8 @@ class Wheel extends Model{
 
     public function getWheelName(){
         $name = trans($this->game.'_wheels.'.$this->alias);
-        if($this->isDLCContent()) $name .= ' - '.trans('dlc_list.'.$this->dlc->name);
-        if(!$this->mp_support) $name .= ' ('.trans('general.mp_no_support').')';
+        if(!$this->mp_support) $name .= '<span class="hint left">'.trans('general.mp_no_support').'</span>';
+        if($this->isDLCContent()) $name .= '<span class="hint right">'.trans('dlc_list.'.$this->dlc->name).'</span>';
         return $name;
     }
 
