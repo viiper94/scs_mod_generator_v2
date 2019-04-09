@@ -9,7 +9,7 @@
     @yield('meta-description', '')
     @yield('meta-keywords', '')
     @include('layout.header')
-    <title>@yield('title', trans('general.title'))</title>
+    <title>@yield('title') @lang('general.title')</title>
 </head>
 <body @if(isset($_COOKIE['dark_theme']) && $_COOKIE['dark_theme'] == 'true')class="mdc-theme--dark " @endif>
     <header>
