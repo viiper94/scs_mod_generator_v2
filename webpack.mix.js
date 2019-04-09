@@ -11,6 +11,6 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/assets/sass/app.scss', 'public/css')
+mix.sass('resources/assets/sass/app.scss', 'public/css', {includePaths: ['node_modules']})
     .js('resources/assets/js/script.js', 'public/js/app.js')
     .version();
