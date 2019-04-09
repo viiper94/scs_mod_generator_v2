@@ -17,9 +17,11 @@ class ProfileController extends Controller{
         if(!Auth::check()) return redirect('/login');
         if(isset($id) && Gate::denies('admin')) return redirect()->route('profile');
         $user = isset($id) ? User::find($id) : Auth::user();
+        $mods = Mods::where('user_id', $user->id)->orderBy('created_at', 'desc');
         return view('profile.profile', [
             'user' => $user,
-            'mods' => Mods::where('user_id', $user->id)->orderBy('created_at', 'desc')->paginate(20)
+            'mods_count' => $mods->count(),
+            'mods' => $mods->limit(5)->get()
         ]);
     }
 
@@ -101,8 +103,8 @@ class ProfileController extends Controller{
         $this->authorize('mark', $mod);
 
         return $mod->markMod() ?
-            redirect()->route('profile')->with(['success' => '!']) :
-            redirect()->route('profile')->withErrors(['!']);
+            redirect()->route('profile_mods')->with(['success' => '!']) :
+            redirect()->route('profile_mods')->withErrors(['!']);
     }
 
     public function getModInfo(Request $request){
@@ -114,6 +116,15 @@ class ProfileController extends Controller{
             ]);
         }
         return false;
+    }
+
+    public function mods(Request $request, $id = null){
+        if(!Auth::check()) return redirect('/login');
+        if(isset($id) && Gate::denies('admin')) return redirect()->route('profile');
+        $user = isset($id) ? User::find($id) : Auth::user();
+        return view('profile.mods', [
+            'mods' => Mods::where('user_id', $user->id)->orderBy('created_at', 'desc')->paginate(20)
+        ]);
     }
 
 }

@@ -1,9 +1,13 @@
 @extends('layout.app')
 
+@section('title')
+    @lang('user.profile') -
+@endsection
+
 @section('content')
 
-<div class="container">
-    <div class="card horizontal">
+<div class="flex-center profile-container">
+    <div class="card">
         <div class="card-image">
             <img
                 @if($user->image && file_exists(public_path('images/users/'.$user->image)))
@@ -11,124 +15,73 @@
                 @else
                     src="{{ asset('images/users/default.jpg') }}"
                 @endif
-            style="max-height: 222px">
+            >
         </div>
-        <div class="card-stacked">
-            <div class="card-content">
-                <h4 class="card-title">{{ $user->name }}</h4>
-                <p>@lang('user.generated_mods'): <b>{{ count($mods) }}</b></p>
-                <p>@lang('user.registered'): <b>{{ $user->created_at->format('j-m-Y H:i') }}</b></p>
-            </div>
-            @if(Auth::id() == $user->id)
-                <div class="card-action">
-                    <a href="{{ route('profile_edit') }}" class="mdc-button mdc-button--raised mdc-ripple" style="min-width: 200px; color: #000;">
-                        <i class="material-icons notranslate mdc-button__icon no-margin">edit</i>
+        <div class="card-content">
+            <h4 class="card-title">{{ $user->name }}</h4>
+            <p>@lang('user.generated_mods'): <b>{{ $mods_count }}</b></p>
+            <p>@lang('user.registered'): <b>{{ $user->created_at->format('j-m-Y H:i') }}</b></p>
+        </div>
+        @if(Auth::id() == $user->id)
+            <div class="card-action">
+                <div class="row no-margin">
+                    <a href="{{ route('profile_edit') }}" class="mdc-button mdc-button--unelevated col s12 btn">
+                        <i class="material-icons notranslate mdc-button__icon">edit</i>
                         <b>@lang('user.profile_edit')</b>
+                    </a>
+                </div>
+
+            </div>
+        @endif
+    </div>
+    @if($mods_count > 0)
+        <div class="last_mods card">
+            <div class="card-content">
+                <h4 class="card-title no-mods">@lang('mods.last_mods')</h4>
+                <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list user-mods" style="max-width: 650px">
+                    @foreach($mods as $mod)
+                        <li role="separator" class="mdc-list-divider"></li>
+                        <li data-id="{{ $mod->id }}" class="mdc-list-item" tabindex="0">
+                            @if(file_exists(public_path().'/download/'.$mod->file_name.'.scs'))
+                                <span class="mdc-list-item__graphic material-icons">
+                                    <a href="{{ url('/download/'.$mod->file_name.'.scs') }}"
+                                       class="mdc-icon-button material-icons notranslate white-text"
+                                       title="@lang('general.download_mod')">file_download</a>
+                                </span>
+                            @endif
+                            <span class="mdc-list-item__text">
+                                <span class="mdc-list-item__primary-text"><b>{{ $mod->title }}</b></span>
+                                <span class="mdc-list-item__secondary-text">
+                                    @lang('general.'.$mod->game); @lang('mods.'.$mod->type); {{ $mod->created_at->format('j-m-Y H:i') }}
+                                </span>
+                            </span>
+                            <span class="mdc-list-item__meta" aria-hidden="true">
+                                @if($mod->broken)
+                                    <a href="{{ route('mod_broken') }}/{{ $mod->id }}"
+                                       class="mdc-icon-button material-icons notranslate red-text"
+                                       title="@lang('mods.working')"
+                                       onclick="return confirm('@lang('mods.mark_as_working')')">report
+                                    </a>
+                                @else
+                                    <a href="{{ route('mod_broken') }}/{{ $mod->id }}"
+                                       class="mdc-icon-button material-icons notranslate"
+                                       title="@lang('mods.broken')"
+                                       onclick="return confirm('@lang('mods.mark_as_broken')')">report
+                                    </a>
+                                @endif
+                            </span>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+            @if($mods_count > 10)
+                <div class="card-action">
+                    <a href="{{ route('profile_mods') }}" class="mdc-button mdc-button--unelevated btn no-margin" style="margin-top: 10px;">
+                        <i class="material-icons notranslate mdc-button__icon">list</i>@lang('mods.see_all')
                     </a>
                 </div>
             @endif
         </div>
-    </div>
-    @if(count($mods) > 0)
-        <h4 class="card-title no-mods">@lang('mods.mods_history')</h4>
-
-        {{ $mods->links('layout.pagination') }}
-
-        <ul class="collapsible user-mods">
-            @foreach($mods as $mod)
-                <li data-id="{{ $mod->id }}">
-                    <div class="collapsible-header">
-                        <i class="material-icons notranslate">arrow_downward</i>
-                        <p class="mod-info">
-                            @if($mod->broken)
-                                <i class="material-icons notranslate left" title="@lang('mods.broken')">broken_image</i>
-                            @endif
-                            <b>{{ $mod->title }}</b> (@lang('general.'.$mod->game); @lang('mods.'.$mod->type); {{ date('j F, Y H:i', strtotime($mod->created_at)) }})
-                        </p>
-                        <div>
-                            @if(file_exists(public_path().'/download/'.$mod->file_name.'.scs'))
-                                <a href="{{ url('/download/'.$mod->file_name.'.scs') }}"
-                                   class="mdc-button mdc-button--raised mdc-ripple large-btn"
-                                   title="@lang('general.download_mod')">
-                                    <i class="material-icons notranslate mdc-button__icon no-margin">file_download</i>
-                                </a>
-                            @endif
-                            <a href="{{ route('mod_broken') }}/{{ $mod->id }}"
-                               class="mdc-button mdc-button--raised mdc-ripple large-btn"
-                               @if($mod->broken)
-                                    title="@lang('mods.working')" onclick="return confirm('@lang('mods.mark_as_working')')"
-                                @else
-                                    title="@lang('mods.broken')" onclick="return confirm('@lang('mods.mark_as_broken')')"
-                                @endif >
-                                <i class="material-icons notranslate mdc-button__icon no-margin">report{{ $mod->broken ? '_off' : '' }}</i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="collapsible-body">
-                        @php $params = unserialize($mod->params); @endphp
-                        @if(is_array($params))
-                            <p>
-                                @lang('general.chassis'):
-                                <b>
-                                    @if($params['form']['chassis'] == 'paintable') @lang('general.paintable_chassis')
-                                    @else @lang($mod->game.'_trailers.'.$params['form']['chassis'])
-                                    @endif
-                                </b>
-                            </p>
-                            @if(isset($params['view']))
-                                @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'):
-                                    <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>
-                                @endif
-                                @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>
-                                        @if($params['view']['paint'] === null) @lang($mod->game.'_companies_paints.default')
-                                        @else @lang($mod->game.'_companies_paints.'.$params['view']['paint'])
-                                        @endif
-                                        </b></p>
-                                @endif
-                                @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
-                                @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
-                            @endif
-                            @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['form']['weight'] }}</b></p>@endif
-                            @if(key_exists('dlc', $params['form']))
-                                <ul>
-                                    @foreach($params['form']['dlc'] as $dlc => $on)
-                                        <li><b>@lang('dlc_list.'.$dlc)</b></li>
-                                    @endforeach
-                                </ul>
-                            @endif
-
-                        @endif
-                        <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post" class="regenerate">
-                            @csrf
-                            <input type="hidden" name="target" value="{{ $mod->game }}">
-                            <input type="hidden" name="title" value="{{ $mod->title }}">
-                            @foreach($params['form'] as $key => $value)
-                                @if($key === 'color')
-                                    <input type="hidden" name="color[scs][r]" value="{{ $value['scs']['r'] }}">
-                                    <input type="hidden" name="color[scs][g]" value="{{ $value['scs']['g'] }}">
-                                    <input type="hidden" name="color[scs][b]" value="{{ $value['scs']['b'] }}">
-                                    <input type="hidden" name="color[hex]" value="{{ $value['hex'] }}">
-                                @elseif($key === 'dlc')
-                                    @foreach($value as $dlc => $on)
-                                        <input type="hidden" name="dlc[{{ $dlc }}]" value="on">
-                                    @endforeach
-                                @else
-                                    <input type="hidden" name="{{ $key }}" value="{{ $value }}">
-                                @endif
-                            @endforeach
-                            <button type="submit" class="mdc-button mdc-button--raised mdc-ripple large-btn" style="display: none;"
-                               title="@lang('mods.regenerate_mod')">
-                                <i class="material-icons notranslate mdc-button__icon">refresh</i>
-                                @lang('mods.regenerate_mod')
-                            </button>
-                        </form>
-                    </div>
-                </li>
-            @endforeach
-        </ul>
-
-        {{ $mods->links('layout.pagination') }}
-
     @else
         <h4 class="no-mods">@lang('mods.no_mods')</h4>
     @endif

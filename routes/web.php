@@ -27,6 +27,10 @@ Route::group(['middleware' => 'i18n'], function(){
     Route::get('/color/{game?}/{d?}', 'TruckPaintGeneratorController@index');
     Route::post('/color/{game?}', 'TruckPaintGeneratorController@getDLC')->name('color');
 
+    Route::get('/profile/{id}/mods', 'ProfileController@mods')->name('profile_mods_admin');
+    Route::get('/profile/mods', 'ProfileController@mods')->name('profile_mods');
+    Route::post('/profile/mods', 'ProfileController@getModInfo');
+    Route::post('/admin/mods', 'ProfileController@getModInfo');
     Route::get('/profile/steam', 'Auth\SteamAuthController@redirectToSteam')->name('profile.steam');
     Route::get('/profile/mod_broken/{id?}', 'ProfileController@modBroken')->name('mod_broken');
     Route::post('/profile/edit/password', 'ProfileController@editPassword')->name('save_password');
