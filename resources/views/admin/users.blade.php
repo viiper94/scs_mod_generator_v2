@@ -1,19 +1,15 @@
 @extends('admin.layout.admin')
 
+@section('navbar-content')
+
+    @include('admin.search')
+
+@endsection
+
 @section('content')
 
-    <div class="row" style="width: 100%;">
-        <div class="col s12 m10 offset-m1">
-            <div class="card-panel search">
-                <form method="get">
-                    <div class="input-field no-margin">
-                        <i class="material-icons prefix">search</i>
-                        <input type="search" name="q" placeholder="Шукати користувача">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    {{ $users->appends(['q' => Request::input('q')])->links('layout.pagination') }}
+
     <div class="row" style="width: 100%;">
         @foreach($users as $user)
             <div class="col s12 m10 offset-m1">
@@ -39,5 +35,7 @@
             </div>
         @endforeach
     </div>
+
+    {{ $users->appends(['q' => Request::input('q')])->links('layout.pagination') }}
 
 @endsection
