@@ -49,9 +49,17 @@
                             @endif
                         </div>
                         <div class="card-action">
-                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--unelevated btn green">
-                                <i class="material-icons mdc-button__icon notranslate">file_download</i>Завантажити
-                            </a>
+                            @if($mod->external_link)
+                                <a href="{{ $mod->external_link }}" target="_blank" class="mdc-button mdc-button--unelevated btn green">
+                                    <i class="material-icons mdc-button__icon notranslate">file_download</i>
+                                    @lang('general.download_mod')
+                                </a>
+                            @else
+                                <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--unelevated btn green">
+                                    <i class="material-icons mdc-button__icon notranslate">file_download</i>
+                                    @lang('general.download_mod')
+                                </a>
+                            @endif
                             <a href="{{ route('admin_static_mods') }}/edit/{{ $mod->id }}" class="mdc-button mdc-button--unelevated btn">
                                 <i class="material-icons mdc-button__icon notranslate">edit</i>Редагувати
                             </a>

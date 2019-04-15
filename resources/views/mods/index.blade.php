@@ -22,7 +22,13 @@
 
     <div class="row no-margin">
         @if(count($mods) > 0)
-            @foreach($mods as $mod)
+            @foreach($mods as $i => $mod)
+                @if($i%3 == 0)
+                    <div class="clearfix hide-on-large-only show-on-extra-large"></div>
+                @endif
+                @if($i%2 == 0)
+                    <div class="clearfix hide-on-extra-large-only"></div>
+                @endif
                 <div class="col xl4 l6 s12">
                     <div class="card hoverable">
                         <div class="card-image">
@@ -46,10 +52,17 @@
                             <p class="grey-text">@lang('mods.tested_on_ver'): <b>{{ $mod->tested_ver }}</b></p>
                         </div>
                         <div class="card-action">
-                            <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--unelevated btn">
-                                <i class="material-icons mdc-button__icon notranslate">file_download</i>
-                                @lang('general.download_mod')
-                            </a>
+                            @if($mod->external_link)
+                                <a href="{{ $mod->external_link }}" target="_blank" class="mdc-button mdc-button--unelevated btn">
+                                    <i class="material-icons mdc-button__icon notranslate">launch</i>
+                                    @lang('general.download_mod')
+                                </a>
+                            @else
+                                <a href="/{{ $mod->path }}/{{ $mod->file_name }}" class="mdc-button mdc-button--unelevated btn">
+                                    <i class="material-icons mdc-button__icon notranslate">file_download</i>
+                                    @lang('general.download_mod')
+                                </a>
+                            @endif
                         </div>
                     </div>
                 </div>

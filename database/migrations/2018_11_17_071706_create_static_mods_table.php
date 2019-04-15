@@ -20,6 +20,7 @@ class CreateStaticModsTable extends Migration
             $table->string('title_ru');
             $table->text('description_en')->nullable();
             $table->text('description_ru')->nullable();
+            $table->text('external_link')->nullable();
             $table->string('file_name');
             $table->string('tested_ver');
             $table->string('dlc')->nullable();

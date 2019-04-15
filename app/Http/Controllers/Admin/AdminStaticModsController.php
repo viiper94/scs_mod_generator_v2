@@ -29,7 +29,8 @@ class AdminStaticModsController extends Controller{
                 'title_en' => 'required|string',
                 'tested_ver' => 'required|string',
                 'game' => 'required|string',
-                'file' => 'required|file|mimes:scs,zip',
+                'file' => 'required_without:external_link|file|mimes:scs,zip',
+                'external_link' => 'required_without:file',
             ]);
             $file_name = Transliterator::run($request->input('title_en'));
             $last_mod = StaticMod::orderBy('sort', SORT_DESC)->first();
@@ -40,12 +41,14 @@ class AdminStaticModsController extends Controller{
                 'description_en' => $request->input('description_en'),
                 'description_ru' => $request->input('description_ru') ?? $request->input('description_en'),
                 'tested_ver' => $request->input('tested_ver'),
+                'external_link' => $request->input('external_link'),
                 'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'active' => $request->input('active') == 'on',
                 'image' => $mod->saveImage(),
                 'sort' => ($last_mod ? intval($last_mod->sort) : 0)+1
             ]);
-            if($mod->saveFile($file_name) && $mod->save()) return redirect()->route('admin_static_mods')->with(['success' => 'Мод успішно додано!']);
+            if(($request->hasFile('file') && $mod->saveFile($file_name) || !$request->hasFile('file')) && $mod->save())
+                return redirect()->route('admin_static_mods')->with(['success' => 'Мод успішно додано!']);
         }
 
         return view('admin.static_mods.edit', [
@@ -70,6 +73,7 @@ class AdminStaticModsController extends Controller{
                 'description_en' => $request->input('description_en'),
                 'description_ru' => $request->input('description_ru') ?? $request->input('description_en'),
                 'tested_ver' => $request->input('tested_ver'),
+                'external_link' => $request->input('external_link'),
                 'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'active' => $request->input('active') == 'on',
                 'image' => $request->hasFile('img') ? $mod->saveImage() : $mod->image,
