@@ -37,10 +37,10 @@
                         </div>
                         <div class="card-content">
                             @if($mod->isDlcContent())
-                                <p class="grey-text">
+                                <p style="line-height: 1.7em">
                                     <i class="material-icons notranslate left">add</i>@lang('mods.mod_required_dlc')
                                     @foreach(explode(',', $mod->dlc) as $key)
-                                        @if(key_exists($key, $dlc)) <b>@lang('dlc_list.'.$dlc[$key]['name'])</b>, @endif
+                                        @if(key_exists($key, $dlc)) <b>@lang('dlc_list.'.$dlc[$key]['name'])</b> @endif
                                     @endforeach
                                 </p>
                             @endif
