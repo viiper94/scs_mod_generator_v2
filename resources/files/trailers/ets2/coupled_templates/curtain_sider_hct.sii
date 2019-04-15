@@ -55,7 +55,7 @@ trailer : .%trailer%.dolly
 
 vehicle_accessory: .%trailer%.dolly.chassis
 {
-    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_dolly_conv.sii"
+    	data_path: "/def/vehicle/trailer_owned/scs.box/chassis/dolly_conv_long.sii"
 }
 
 vehicle_wheel_accessory: .%trailer%.dolly.rwheel
