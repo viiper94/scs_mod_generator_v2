@@ -51,7 +51,7 @@ $(document).ready(function(){
     $('.tabs').tabs();
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
-    $('.wheels select').formSelect();
+    $('.wheels select, #select-lang').formSelect();
     $('.materialboxed').materialbox();
     $('select#lang').formSelect();
     $('.fixed-action-btn').floatingActionButton();
@@ -145,7 +145,7 @@ $(document).ready(function(){
         }
     });
 
-    $('#select-lang, #select-wheels').uidropdown({
+    $('#select-wheels').uidropdown({
         duration : 300,
         placeholder : false,
         forceSelection : false

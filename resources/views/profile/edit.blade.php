@@ -156,7 +156,7 @@
                 </div>
             </form>
         </div>
-        <div class="card settings">
+        <div class="card settings overflow-visible">
             <form action="{{ route('save_settings') }}" method="post">
                 @csrf
                 <div class="card-content">
@@ -197,23 +197,15 @@
                         </div>
                     @endforeach
                     <div class="row">
-                        <div class="input-field col s12 m4 inline">
-                            <div class="ui dropdown" id="select-lang">
-                                <input type="hidden" name="wheels">
-                                <div class="default text">@lang('user.choose_lang')</div>
-                                <i class="dropdown icon right"></i>
-                                <div class="menu">
-                                    @foreach($languages as $locale => $data)
-                                        <div data-value="{{ $locale }}"
-                                                @if($user->language == $locale ||
-                                                !$user->language && \Illuminate\Support\Facades\App::isLocale($locale))selected @endif
-                                            class="item">
-                                            <img src="/assets/img/langs/{{ $locale }}.png" class="lang-ico">
-                                            <span>{{ $data['title'] }}</span>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
+                        <div class="input-field col s12 m5 inline">
+                            <label for="select-lang">@lang('user.choose_lang')</label>
+                            <select name="lang" id="select-lang" class="icons">
+                                <option value="">@lang('user.choose_lang')</option>
+                                @foreach($languages as $locale => $data)
+                                    <option value="{{ $locale }}" data-icon="/assets/img/langs/{{ $locale }}.png" @if($user->language == $locale ||
+                                         !$user->language && \Illuminate\Support\Facades\App::isLocale($locale))selected @endif>{{ $data['title'] }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                 </div>
