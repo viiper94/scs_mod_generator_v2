@@ -200,7 +200,6 @@
                         <div class="input-field col s12 m5 inline">
                             <label for="select-lang">@lang('user.choose_lang')</label>
                             <select name="lang" id="select-lang" class="icons">
-                                <option value="">@lang('user.choose_lang')</option>
                                 @foreach($languages as $locale => $data)
                                     <option value="{{ $locale }}" data-icon="/assets/img/langs/{{ $locale }}.png" @if($user->language == $locale ||
                                          !$user->language && \Illuminate\Support\Facades\App::isLocale($locale))selected @endif>{{ $data['title'] }}</option>
