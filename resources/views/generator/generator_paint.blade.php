@@ -39,7 +39,9 @@
                                         <div class="item @if(!$chassis->mp_support)
                                                 tooltipped" data-tooltip="@lang('general.mp_no_support')@endif"
                                              data-value="{{$chassis->alias}}" data-position="left">
-                                            @lang($game.'_trailers.'.$chassis->alias)
+                                            <span class="name">
+                                                @lang($game.'_trailers.'.$chassis->alias)
+                                            </span>
                                             @if($chassis->isDLCContent())
                                                 <span class="right tooltipped hint"
                                                       data-tooltip="@lang('dlc_list.'.$chassis->dlc->name)"

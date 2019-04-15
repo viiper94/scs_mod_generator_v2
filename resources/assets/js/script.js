@@ -231,7 +231,7 @@ $(document).ready(function(){
 
 	$('form').submit(function(){
 		if($('input[name=title]').val() === ''){
-			$('input[name=title]').val($('.dropdown.chassis .text').text().replace(/(\s\s.+)/, '').trim());
+			$('input[name=title]').val($('.dropdown.chassis .text .name').text().replace(/(\s\s.+)/, '').trim());
 		}
 	});
 
