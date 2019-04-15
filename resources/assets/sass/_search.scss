@@ -27,6 +27,9 @@
     box-sizing: border-box;
     flex: 1;
     color: $light-text;
+    .mdc-theme--dark &{
+      color: $dark-text;
+    }
     &:not(.browser-default):focus:not([readonly]){
       border: none;
       box-shadow: none;
