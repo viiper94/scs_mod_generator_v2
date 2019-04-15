@@ -12,6 +12,10 @@ class Paint extends Model{
     protected $casts = [
         'active' => 'boolean',
     ];
+    public static $defaultOwnablePaintJob = [
+        'ets2' => '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii',
+        'ats' => '/def/vehicle/trailer_owned/scs.box/paint_job/color.sii',
+    ];
 
     public function chassisObj(){
         return $this->belongsTo('App\Chassis', 'chassis', 'alias_short_paint');

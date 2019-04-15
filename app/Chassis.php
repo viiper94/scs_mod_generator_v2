@@ -10,6 +10,10 @@ class Chassis extends Model{
     public $weight;
     public $wheels;
     public $customWheels = false;
+    public static $defaultOwnableDef = [
+        'ets2' => 'trailer_def.scs.box.single_3.curtain',
+        'ats' => 'trailer_def.scs.box.single_45r.insulated',
+    ];
 
     protected $table = 'chassis';
     protected $guarded = [];

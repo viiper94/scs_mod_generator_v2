@@ -12,6 +12,20 @@ class Wheel extends Model{
         'active' => 'boolean',
     ];
 
+    public static $defaultOwnableWheels = [
+        'ets2' => [
+            'tire' => '/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii',
+            'disk' => '/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii',
+            'hub' => '/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii',
+            'nuts' => '/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii',
+        ],
+        'ats' => [
+            'tire' => '/def/vehicle/trailer_wheel/r_tire/1.sii',
+            'disk' => '/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii',
+            'hub' => '/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii',
+            'nuts' => '/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii',
+        ],
+    ];
     public static $rules = [
         0 => [
             'chemical_long' => [
@@ -19,7 +33,6 @@ class Wheel extends Model{
             ],
             'acid_long' => [
                 'def' => '/def/vehicle/t_wheel/front.sii',
-                'required' => true
             ],
             'flatbed53_4ax' => [
                 'def' => '/def/vehicle/t_wheel/front.sii',

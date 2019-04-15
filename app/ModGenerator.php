@@ -112,6 +112,10 @@ class ModGenerator{
         $zip->addFile($this->filesDir.'/mod/manifest.sii', 'manifest.sii');
         $zip->addEmptyDir('def');
         $this->rZipCopy($zip, $this->outDir, 'def');
+        if(is_dir($this->filesDir.'/mod/material')){
+            $zip->addEmptyDir('material');
+            $this->rZipCopy($zip, $this->filesDir.'/mod/material', 'material');
+        }
 
         $this->copyImage();
         $zip->addFile($this->outDir.'/mod_icon.jpg', 'mod_icon.jpg');
