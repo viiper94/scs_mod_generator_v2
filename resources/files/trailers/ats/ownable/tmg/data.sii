@@ -1,0 +1,8 @@
+SiiNunit
+{
+accessory_trailer_data : vehicle.tmg.main
+{
+	info[]: ""
+	info[]: "%title%"
+}
+}

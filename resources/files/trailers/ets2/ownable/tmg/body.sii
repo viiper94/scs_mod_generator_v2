@@ -1,0 +1,19 @@
+SiiNunit
+{
+accessory_trailer_body_data : default.tmg.body
+{
+	name: "%title%"
+	price: 1
+	unlock: 1
+	icon: "tmg"
+	size: (1, 1, 1)	# width, height, length (internal size of the body)
+	total_size: (1, 1, 1)	# width, height, length (size of the body + chassis)
+
+	volume: 87
+	body_type: curtainside
+
+	mass: 0
+
+	model: "/vehicle/wheel/empty/empty_10cm.pmd" #Just an invisible model
+}
+}
