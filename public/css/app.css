@@ -60227,6 +60227,15 @@ nav.sidenav ul.collapsible > li.active {
   background-color: #fff;
 }
 
+.mdc-theme--dark nav.sidenav ul.collapsible > li.active {
+  background-color: transparent;
+}
+
+.mdc-theme--dark nav.sidenav ul.collapsible > li.active > a,
+.mdc-theme--dark nav.sidenav ul.collapsible > li.active > a > i {
+  color: #bbbbbb;
+}
+
 nav.sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 nav.sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
   background-color: rgba(253, 216, 53, 0.49);
