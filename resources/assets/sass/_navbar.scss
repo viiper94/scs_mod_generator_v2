@@ -184,6 +184,12 @@ nav.sidenav{
   }
   ul.collapsible > li.active{
     background-color: #fff;
+    .mdc-theme--dark &{
+      background-color: transparent;
+      &>a, &>a>i{
+        color: $dark-text;
+      }
+    }
   }
   .collapsible-body > ul:not(.collapsible) > li.active,
   &.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active{
