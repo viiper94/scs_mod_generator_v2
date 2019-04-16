@@ -48,7 +48,7 @@
                                 {{ $mod->getTitle() }}
                                 <span class="new badge black-text" data-badge-caption="">@lang('general.'.$mod->game)</span>
                             </h5>
-                            <p>{{ $mod->getDescription() }}</p>
+                            <p>{!! nl2br($mod->getDescription()) !!}</p>
                             <p class="grey-text">@lang('mods.tested_on_ver'): <b>{{ $mod->tested_ver }}</b></p>
                         </div>
                         <div class="card-action">
