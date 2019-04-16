@@ -108,6 +108,7 @@ $(document).ready(function(){
         onChange : function(value, text, $choice){
             $('#generate-color-btn').attr('disabled', (value === ''));
             $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            $('[id^=dlc_] + input[type=hidden]').remove();
             if (value !== ''){
                 $.ajax({
                     cache: false,
@@ -162,6 +163,7 @@ $(document).ready(function(){
 			$('.colors').hide();
 			$('#all_accessories, #all_paints').prop('checked', false);
             $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            $('[id^=dlc_] + input[type=hidden]').remove();
 			$('#generate-btn').attr('disabled', true);
 			if(value !== ''){
 				$('#generate-btn').attr('disabled', false);
@@ -211,7 +213,8 @@ $(document).ready(function(){
                                 $('.dropdown .dlc-tooltipped').tooltip({position : 'left'});
 							});
                             $.each(response.dlc, function(index, dlc){
-                                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
+                                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                                    .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
                             });
                             if(response.wheels){
                                 $('.wheels.input-field').show();
@@ -470,7 +473,8 @@ function getDLCList(value) {
 		success : function(response){
             $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
             $.each(response.dlc, function(index, dlc){
-                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true);
+                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                    .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');;
             });
         }
 	});
