@@ -1,0 +1,352 @@
+SiiNunit
+{
+trailer : .scs.box.hct_3_2_3.reefer
+{
+	trailer_definition: trailer_def.scs.box.hct_3_2_3.reefer
+
+	accessories[]: .data
+
+	accessories[]: .chassis
+	accessories[]: .body
+	accessories[]: .paint_job
+	accessories[]: .trlr_cables
+
+	accessories[]: .tire
+	accessories[]: .disc
+	accessories[]: .hub
+	accessories[]: .nuts
+
+	accessories[]: .tire2
+	accessories[]: .disc2
+	accessories[]: .hub2
+	accessories[]: .nuts2
+
+	accessories[]: .tire3
+	accessories[]: .disc3
+	accessories[]: .hub3
+	accessories[]: .nuts3
+
+	slave_trailer: .dolly.trailer
+}
+
+vehicle_accessory: .data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/reefer/chassis_hook.sii"
+}
+
+vehicle_accessory: .body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_paint_job_accessory: .paint_job
+{
+	%color%
+	data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory: .trlr_cables
+{
+	data_path: "/def/vehicle/trailer_owned/scs.box/accessory/trlr_cables/d_cables.sii"
+}
+
+vehicle_wheel_accessory: .tire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .disc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .hub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .nuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory: .tire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .disc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .hub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .nuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory: .tire3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .disc3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .hub3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .nuts3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+
+#
+# trailer dolly
+#
+
+trailer : .dolly.trailer
+{
+	accessories[]: .dolly.data
+
+	accessories[]: .dolly.chassis
+	accessories[]: .dolly.r_bumper
+	accessories[]: .dolly.trlr_cables
+	accessories[]: .dolly.body
+
+	accessories[]: .dolly.tire
+	accessories[]: .dolly.disc
+	accessories[]: .dolly.hub
+	accessories[]: .dolly.nuts
+
+	accessories[]: .dolly.tire2
+	accessories[]: .dolly.disc2
+	accessories[]: .dolly.hub2
+	accessories[]: .dolly.nuts2
+
+	slave_trailer: .second.trailer
+}
+
+vehicle_accessory: .dolly.data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .dolly.chassis
+{
+    	data_path: "/def/vehicle/trailer_owned/scs.box/chassis/dolly_conv_long.sii"
+}
+
+vehicle_addon_accessory : .dolly.r_bumper 
+{
+		data_path: "/def/vehicle/trailer_owned/scs.box/accessory/r_bumper/euro_3_bd.sii"
+}
+
+vehicle_addon_accessory : .dolly.trlr_cables 
+{
+		data_path: "/def/vehicle/trailer_owned/scs.box/accessory/trlr_cables/dolly_cables.sii"
+}
+
+vehicle_accessory: .dolly.body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_wheel_accessory: .dolly.tire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .dolly.disc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .dolly.hub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .dolly.nuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory: .dolly.tire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .dolly.disc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .dolly.hub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .dolly.nuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+
+#
+#	second trailer
+#
+
+trailer : .second.trailer
+{
+	accessories[]: .second.data
+
+	accessories[]: .second.chassis
+	accessories[]: .second.body
+	accessories[]: .second.paint_job
+
+	accessories[]: .second.tire
+	accessories[]: .second.disc
+	accessories[]: .second.hub
+	accessories[]: .second.nuts
+
+	accessories[]: .second.tire2
+	accessories[]: .second.disc2
+	accessories[]: .second.hub2
+	accessories[]: .second.nuts2
+
+	accessories[]: .second.tire3
+	accessories[]: .second.disc3
+	accessories[]: .second.hub3
+	accessories[]: .second.nuts3
+}
+
+vehicle_accessory: .second.data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/reefer/chassis.sii"
+}
+
+vehicle_accessory: .second.body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_paint_job_accessory: .second.paint_job
+{
+	%color%
+	data_path: "%paint_job%"
+}
+
+vehicle_wheel_accessory: .second.tire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .second.disc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.hub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.nuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.tire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .second.disc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.hub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.nuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.tire3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .second.disc3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.hub3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .second.nuts3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+}

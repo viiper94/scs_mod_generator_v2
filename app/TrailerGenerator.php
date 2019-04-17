@@ -151,7 +151,7 @@ class TrailerGenerator extends ModGenerator{
 
     private function replaceDealerFile(){
         $file = $this->outDir .'/vehicle/trailer_dealer/tmg/tmg_trailer.sii';
-        $content = $this->generateDealerFileContent();
+        $content = $this->chassis->coupled ? $this->generateCoupledDealerFileContent() : $this->generateDealerFileContent();
         file_put_contents($file, $content);
         $dirname = $this->outDir .'/vehicle/tmg';
         $dir = opendir($dirname);
@@ -383,6 +383,19 @@ class TrailerGenerator extends ModGenerator{
             $content .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n\n";
         }
         $content .= "}";
+        return $content;
+	}
+
+    private function generateCoupledDealerFileContent(){
+        $content = null;
+        $content = file_get_contents($this->filesDir.'/'.$this->game.'/coupled_templates/ownable/'.$this->chassis->alias.'.sii');
+        if($this->paintJob){
+            $content = str_replace(['%color%'], $this->paintJob->color ? "base_color: (".$this->paintJob->color.")" : '', $content);
+            $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
+        }
+        if($this->accessory && $this->accessory->def !== '') $content = str_replace(['%cargo%'], $this->accessory->def, $content);
+//        $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
+
         return $content;
 	}
 
