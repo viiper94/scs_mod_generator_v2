@@ -33,12 +33,6 @@ class TrailerGenerator extends ModGenerator{
 		}
 		$this->copyDealerFiles();
 		$this->replaceDealerFile();
-		if($this->chassis->weight !== false && is_numeric($this->chassis->weight)){
-			$this->copyCargoFiles();
-			$this->copyCountryFiles();
-			$this->copyTrailerDefsFiles();
-			$this->replaceCargoFiles();
-		}
         if(Request::input('fix') == 'on'){
             $this->copyCaravanFix();
         }
@@ -97,13 +91,6 @@ class TrailerGenerator extends ModGenerator{
 		}
 	}
 
-	private function copyCargoFiles(){
-		mkdir($this->outDir.'/cargo');
-		foreach($this->dlc as $dlc){
-            $this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/cargos', $this->outDir.'/cargo');
-		}
-	}
-
     private function copyTrailerDefsFiles(){
         @mkdir($this->outDir.'/vehicle/trailer_defs');
         foreach($this->dlc as $dlc){
@@ -111,11 +98,6 @@ class TrailerGenerator extends ModGenerator{
                 $this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/trailer_defs', $this->outDir.'/vehicle/trailer_defs');
             }
         }
-	}
-
-    private function copyCountryFiles(){
-        mkdir($this->outDir.'/vehicle/trailer_defs');
-        $this->rcopy($this->filesDir.'/'.$this->game.'/base/country', $this->outDir.'/country');
 	}
 
 	private function replaceTrailerFiles(){
@@ -151,7 +133,12 @@ class TrailerGenerator extends ModGenerator{
 
     private function replaceDealerFile(){
         $file = $this->outDir .'/vehicle/trailer_dealer/tmg/tmg_trailer.sii';
-        $content = $this->chassis->coupled ? $this->generateCoupledDealerFileContent() : $this->generateDealerFileContent();
+        if($this->chassis->coupled){
+            $content = $this->generateCoupledDealerFileContent();
+            $this->copyTrailerDefsFiles();
+        }else{
+            $content = $this->generateDealerFileContent();
+        }
         file_put_contents($file, $content);
         $dirname = $this->outDir .'/vehicle/tmg';
         $dir = opendir($dirname);
@@ -182,19 +169,6 @@ class TrailerGenerator extends ModGenerator{
 			}
 		}
 		closedir($dir);
-	}
-
-	private function replaceCargoFiles(){
-		$dirname = $this->outDir.'/cargo';
-		foreach(scandir($dirname) as $file){
-		    if($file !== '.' && $file !== '..'){
-                if(is_file($dirname.'/'.$file)){
-                    $content = file_get_contents($dirname.'/'.$file);
-                    $content = str_replace('%weight%', $this->chassis->weight.'000', $content);
-                    file_put_contents($dirname.'/'.$file, $content);
-                }
-            }
-		}
 	}
 
 	private function generateTrailerContent($trailer_name, $accessory_name){
