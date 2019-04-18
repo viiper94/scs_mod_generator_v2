@@ -1,5 +1,6 @@
 {
     "general": {
+        "removed_feature": "This feature will be removed soon! Use in game trailer ownership instead.",
         "choose_language": "Kies taal",
         "help_translate": "Jij kan ook helpen met het vertalen van de site!",
         "close": "Sluit",
@@ -70,80 +71,9 @@
         "no_results": "Geen resultaten",
         "truckersmp": "TruckersMP"
     },
-    "validation": {
-        "custom": {
-            "img": {
-                "max": "Maximale fotogrootte 5Mb",
-                "dimensions": "Maximale fotodimensies 3000 x 3000"
-            }
-        }
-    },
-    "instructions": {
-        "generate_title": "Hoe deze optie te gebruiken?",
-        "install_title": "Hoe de mod installeren?",
-        "mp_use": "Hoe deze mod gebruiken in TruckersMP?",
-        "paint_title": "Wat is het en hoe te gebruiken?",
-        "weight_title": "Hoe om te gaan met vrachtgewicht?",
-        "close_modal": "Ik snap het",
-        "generate_mod_1": "Kies naam voor de mod (is niet verplicht, anders gegenereerd van de chassis naam)",
-        "generate_mod_2": "Selecteer een chassis van de dropdown lijst (verplicht). Je kan zoeken.",
-        "generate_mod_3": "Afhankelijk van het gekozen chassis, wordt er bovendien gevraagd om een lading of skin voor de trailer te selecteren.",
-        "generate_mod_4": "En ook als je een gekleurde trailer hebt geselecteerd, kan je de kleur heel precies selecteren.",
-        "generate_mod_5": "In geavanceerde instellingen kan je een foto voor je trailer selecteren (voor Modificatie Manager)  en het trailergewicht instellen. Beide opties zijn niet verplicht.",
-        "generate_mod_6": "Klik op de \"Genereer\"-knop. De mod zal dan gegenereerd worden en je zal de knop voor het downloaden te zien krijgen.",
-        "install_mod_1": "Download mod en sla hem op in \"Documents\\Euro Truck Simulator 2\\mod\" map",
-        "install_mod_2": "Start de game. Voordat u een profiel selecteert, gaat u naar Modificatie Beheer.",
-        "install_mod_3": "Selecteer de gedownloade mod, zorg ervoor dat deze in de rechterkolom verschijnt.",
-        "install_mod_4": "Sla de wijzigingen op en sluit de Modificatie Beheer.",
-        "install_mod_5": "Kies jouw profiel en geniet ervan!",
-        "mp_use_1": "Genereer en download de mod met de instructies hierboven.",
-        "mp_use_2": "Start Single Speler spel en pas de mod toe. Sla de game op (Vergeet de backu-up niet!). Verlaat de Single Speler spel.",
-        "mp_use_3": "Start Multiplayer op, laad een savegame en negeer de waarschuwingen.",
-        "mp_use_4": "Zorg ervoor dat de mod is toegestaan in TruckersMP.",
-        "paint_description": "Vrachtwagen kleur mod - simpele manier om de trailer en vrachtwagen in dezelfde kleur te krijgen!",
-        "paint_mod_3": "Kies kleur van kleurenpalet of vul de code in van de kleur bij geavanceerde kleur instellingen.",
-        "paint_mod_4": "In Advanced settings you can upload mod image and specify trailer params: weight, wheels and DLCs",
-        "install_paint_mod_6": "Bezoek vrachtwagen service. Ga naar Vrachtwagen Configurator -> Lakwerk",
-        "install_paint_mod_7": "Apply \"Custom Color\", \"Custom Metallic Color\" (will work with MP). You can save a color as template.",
-        "install_paint_mod_8": "Or you can apply paint job with name of your mod (wont work with MP).",
-        "weight_1": "Since amount of cargo for each job offer stores in your save, to apply cargo weight correctly you have to refresh job list (sleep, move to another garage, F7+Enter, g_set_time in console, etc.).",
-        "weight_2": "Meer info",
-        "install_paint_mod_9": "Koop een trailer of zoek er een van de Vrachten Markt. Geniet ervan!"
-    },
-    "user": {
-        "profile": "Profiel",
-        "login": "Log in",
-        "register": "Registeren",
-        "registered": "Geregistreerd",
-        "register_now": "Registreer nu",
-        "name": "Naam",
-        "email": "E-Mail",
-        "password": "Wachtwoord",
-        "confirm_password": "Herhaal wachtwoord",
-        "already_have_account": "Heb je al een account?",
-        "dont_have_account": "Heb je nog geen account?",
-        "forgot_password": "Wachtwoord Vergeten?",
-        "remember_me": "Onthoud Mij",
-        "reset_password": "Reset wachtwoord",
-        "submit_password_reset": "Stuur Wachtwoord Reset Link",
-        "profile_edit": "Wijzig Profiel",
-        "profile_settings": "Profile Settings",
-        "save_profile": "Profiel Opslaan",
-        "save_settings": "Save Profile Settings",
-        "choose_owned_dlc": "Choose owned DLCs",
-        "choose_lang": "Choose preferred language",
-        "password_edit": "Verander wachtwoord",
-        "old_password": "Oud Wachtwoord",
-        "new_password": "Nieuw Wachtwoord",
-        "new_password_confirmation": "Herhaal Nieuw Wachtwoord",
-        "save_password": "Nieuw wachtwoord opslaan",
-        "old_pass_fail": "Oud wachtwoord is fout",
-        "generated_mods": "Gegenereerde mods",
-        "logout": "Log uit",
-        "link_steam": "Verbind Steam account",
-        "my_steam": "Mijn Steam profiel"
-    },
     "mods": {
+        "last_mods": "Recently Generated Mods",
+        "see_all": "All Generated Mods",
         "mods_history": "Mods Geschiedenis",
         "mod_params": "Mods Params",
         "mod_for_version": "Mods Versie",
@@ -158,28 +88,16 @@
         "mod_required_dlc": "Verplicht",
         "tested_on_ver": "Getest op versie"
     },
-    "auth": {
-        "failed": "Incorrecte E-Mail of wachtwoord"
-    },
-    "validators": {
-        "email": {
-            "required": "E-Mail is verplicht",
-            "unique": "Deze E-Mail adres is al in gebruik",
-            "email": "Je moet een geldige email adres invullen"
-        },
-        "name": {
-            "required": "Dit veld is verplicht"
-        },
-        "password": {
-            "required": "Wachtwoord is verplicht",
-            "min": "Het wachtwoord moet minimaal 6 tekens bevatten"
-        },
-        "img": {
-            "max": "Max afbeelding format 5MB",
-            "dimensions": "Max afbeelding afmeting 3000x3000px"
-        }
-    },
     "ets2 trailers": {
+        "flat_bed_double": "Flat bed Double",
+        "flat_bed_hct": "Flat bed HCT",
+        "brick_double": "Brick Double",
+        "brick_hct": "Brick HCT",
+        "refrigerated_hct": "Refrigerated HCT",
+        "insulated_hct": "Insulated HCT",
+        "dry_van_hct": "Dry Freighter HCT",
+        "etrc_trailer_1": "ETRC Event 1-truck transporter",
+        "etrc_trailer_2": "ETRC Event 2-trucks transporter",
         "brick_trailer": "Stenentrailer",
         "explo_brick_trailer": "Explo Stenentrailer",
         "car_transporter": "Autotransporter",
@@ -270,6 +188,17 @@
         "krone_profiliner_hd": "Krone Profi Liner HD (Flat bed)"
     },
     "ets2 accessories": {
+        "container_scs": "SCS Container",
+        "cargo_iveco_donttouch": "Iveco Don't Touch Racing",
+        "cargo_iveco_hahn": "Iveco HAHN",
+        "cargo_iveco_halm": "Iveco HALM",
+        "cargo_man_lenz": "MAN LENZ",
+        "cargo_man_lutz": "MAN LUTZ",
+        "cargo_man_rebo": "MAN REBO",
+        "cargo_man_rein": "MAN REIN",
+        "cargo_mercedes": "Mercedes",
+        "cargo_scania_ek": "Scania EK",
+        "cargo_buggyra": "Buggyra",
         "cargo_cars_it": "Auto's",
         "cargo_france_cars": "Auto's",
         "cargo_balt1": "Auto's",
@@ -401,8 +330,106 @@
         "iveco_daily": "Vans"
     },
     "ets2 companies\/paints": {
+        "red": "Red",
+        "green": "Green",
+        "yellow": "Yellow",
+        "blue": "Blue",
         "schw_logo": "Schwarzm\u00fcller Logo",
         "default": "Gekleurde"
+    },
+    "validation": {
+        "custom": {
+            "img": {
+                "max": "Maximale fotogrootte 5Mb",
+                "dimensions": "Maximale fotodimensies 3000 x 3000"
+            }
+        }
+    },
+    "instructions": {
+        "generate_title": "Hoe deze optie te gebruiken?",
+        "install_title": "Hoe de mod installeren?",
+        "mp_use": "Hoe deze mod gebruiken in TruckersMP?",
+        "paint_title": "Wat is het en hoe te gebruiken?",
+        "weight_title": "Hoe om te gaan met vrachtgewicht?",
+        "close_modal": "Ik snap het",
+        "generate_mod_1": "Kies naam voor de mod (is niet verplicht, anders gegenereerd van de chassis naam)",
+        "generate_mod_2": "Selecteer een chassis van de dropdown lijst (verplicht). Je kan zoeken.",
+        "generate_mod_3": "Afhankelijk van het gekozen chassis, wordt er bovendien gevraagd om een lading of skin voor de trailer te selecteren.",
+        "generate_mod_4": "En ook als je een gekleurde trailer hebt geselecteerd, kan je de kleur heel precies selecteren.",
+        "generate_mod_5": "In geavanceerde instellingen kan je een foto voor je trailer selecteren (voor Modificatie Manager)  en het trailergewicht instellen. Beide opties zijn niet verplicht.",
+        "generate_mod_6": "Klik op de \"Genereer\"-knop. De mod zal dan gegenereerd worden en je zal de knop voor het downloaden te zien krijgen.",
+        "install_mod_1": "Download mod en sla hem op in \"Documents\\Euro Truck Simulator 2\\mod\" map",
+        "install_mod_2": "Start de game. Voordat u een profiel selecteert, gaat u naar Modificatie Beheer.",
+        "install_mod_3": "Selecteer de gedownloade mod, zorg ervoor dat deze in de rechterkolom verschijnt.",
+        "install_mod_4": "Sla de wijzigingen op en sluit de Modificatie Beheer.",
+        "install_mod_5": "Kies jouw profiel en geniet ervan!",
+        "mp_use_1": "Genereer en download de mod met de instructies hierboven.",
+        "mp_use_2": "Start Single Speler spel en pas de mod toe. Sla de game op (Vergeet de backu-up niet!). Verlaat de Single Speler spel.",
+        "mp_use_3": "Start Multiplayer op, laad een savegame en negeer de waarschuwingen.",
+        "mp_use_4": "Zorg ervoor dat de mod is toegestaan in TruckersMP.",
+        "paint_description": "Vrachtwagen kleur mod - simpele manier om de trailer en vrachtwagen in dezelfde kleur te krijgen!",
+        "paint_mod_3": "Kies kleur van kleurenpalet of vul de code in van de kleur bij geavanceerde kleur instellingen.",
+        "paint_mod_4": "In Advanced settings you can upload mod image and specify trailer params: weight, wheels and DLCs",
+        "install_paint_mod_6": "Bezoek vrachtwagen service. Ga naar Vrachtwagen Configurator -> Lakwerk",
+        "install_paint_mod_7": "Apply \"Custom Color\", \"Custom Metallic Color\" (will work with MP). You can save a color as template.",
+        "install_paint_mod_8": "Or you can apply paint job with name of your mod (wont work with MP).",
+        "weight_1": "Since amount of cargo for each job offer stores in your save, to apply cargo weight correctly you have to refresh job list (sleep, move to another garage, F7+Enter, g_set_time in console, etc.).",
+        "weight_2": "Meer info",
+        "install_paint_mod_9": "Koop een trailer of zoek er een van de Vrachten Markt. Geniet ervan!"
+    },
+    "user": {
+        "profile": "Profiel",
+        "login": "Log in",
+        "register": "Registeren",
+        "registered": "Geregistreerd",
+        "register_now": "Registreer nu",
+        "name": "Naam",
+        "email": "E-Mail",
+        "password": "Wachtwoord",
+        "confirm_password": "Herhaal wachtwoord",
+        "already_have_account": "Heb je al een account?",
+        "dont_have_account": "Heb je nog geen account?",
+        "forgot_password": "Wachtwoord Vergeten?",
+        "remember_me": "Onthoud Mij",
+        "reset_password": "Reset wachtwoord",
+        "submit_password_reset": "Stuur Wachtwoord Reset Link",
+        "profile_edit": "Wijzig Profiel",
+        "profile_settings": "Profile Settings",
+        "save_profile": "Profiel Opslaan",
+        "save_settings": "Save Profile Settings",
+        "choose_owned_dlc": "Choose owned DLCs",
+        "choose_lang": "Choose preferred language",
+        "password_edit": "Verander wachtwoord",
+        "old_password": "Oud Wachtwoord",
+        "new_password": "Nieuw Wachtwoord",
+        "new_password_confirmation": "Herhaal Nieuw Wachtwoord",
+        "save_password": "Nieuw wachtwoord opslaan",
+        "old_pass_fail": "Oud wachtwoord is fout",
+        "generated_mods": "Gegenereerde mods",
+        "logout": "Log uit",
+        "link_steam": "Verbind Steam account",
+        "my_steam": "Mijn Steam profiel"
+    },
+    "auth": {
+        "failed": "Incorrecte E-Mail of wachtwoord"
+    },
+    "validators": {
+        "email": {
+            "required": "E-Mail is verplicht",
+            "unique": "Deze E-Mail adres is al in gebruik",
+            "email": "Je moet een geldige email adres invullen"
+        },
+        "name": {
+            "required": "Dit veld is verplicht"
+        },
+        "password": {
+            "required": "Wachtwoord is verplicht",
+            "min": "Het wachtwoord moet minimaal 6 tekens bevatten"
+        },
+        "img": {
+            "max": "Max afbeelding format 5MB",
+            "dimensions": "Max afbeelding afmeting 3000x3000px"
+        }
     },
     "ats trailers": {
         "acid": "Zuur tank",
@@ -464,6 +491,9 @@
         "gooseneck_ats_blue": "Zwanenhals (Blauw)",
         "gooseneck_ats_red": "Zwanenhals (Rood)",
         "log": "Boomstammen trailer",
+        "log_black": "Log trailer (rear axles)",
+        "log_blue": "Log trailer (Blue, rear axles)",
+        "log_red": "Log trailer (Red, rear axles)",
         "lowboy": "Lowboy",
         "lowboy_red": "Lowboy (Red)",
         "lowboy_yellow": "Lowboy (Yellow)",
@@ -506,6 +536,7 @@
         "container_d": "Double container ",
         "container_s": "Single container",
         "logs": "Logs",
+        "logs_short_2x4": "Logs short",
         "cat442": "Digger 500",
         "catg": "Digger 1000",
         "excavator": "Excavator",
