@@ -253,18 +253,25 @@ class TrailerGenerator extends ModGenerator{
 
 	private function generateCoupledTrailerContent($trailer_name){
 		$content = null;
-		$file = $this->chassis->alias .
-            ($this->accessory && $this->accessory->def === '' ? '_empty' : '') .
-            '.sii';
+		$file = $this->chassis->alias .'.sii';
         $content = file_get_contents($this->filesDir.'/'.$this->game.'/coupled_templates/'.$file);
 		if($this->paintJob){
 			$content = str_replace(['%color%'], $this->paintJob->color ? "base_color: (".$this->paintJob->color.")" : '', $content);
 			$content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
-			$content = str_replace(['%paint_job_s%'], str_replace('profiliner', 'proficarrier', $this->paintJob->def), $content);
 		}
-		$to_replace = ['box_pup_2', 'box_pup_3', 'box_rm_2', 'reefer_pup_2', 'reefer_pup_3', 'reefer_rm_2', '%trailer%'];
-		$content = str_replace($to_replace, $trailer_name, $content);
-        if($this->accessory && $this->accessory->def !== '') $content = str_replace(['%cargo%'], $this->accessory->def, $content);
+        $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .$trailer_name.cargo" : '', $content);
+        $content = str_replace(['%cargo_def_s%'], $this->accessory ? "accessories[]: .$trailer_name.slave.cargo" : '', $content);
+        $content = str_replace(['%cargo%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .$trailer_name.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+            : '', $content);
+        $content = str_replace(['%cargo_s%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .$trailer_name.slave.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+            : '', $content);
+        $content = str_replace(['%cargo_8_s%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .$trailer_name.slave.cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix('8')."\"\n}\n"
+            : '', $content);
+//		$to_replace = ['box_pup_2', 'box_pup_3', 'box_rm_2', 'reefer_pup_2', 'reefer_pup_3', 'reefer_rm_2', '%trailer%'];
+		$content = str_replace('%trailer%', $trailer_name, $content);
 		$content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
 
 		return $content;
@@ -374,10 +381,12 @@ class TrailerGenerator extends ModGenerator{
         }
         if(isset($this->paintJob->def) && $this->paintJob->def !== ''){
             $content .= "vehicle_paint_job_accessory: .paint_job\n{\n";
-            if(stripos($this->paintJob->def ,'default.sii')){
+            if($this->paintJob->with_color){
                 $content .= "\tbase_color: (".$this->paintJob->color.")\n";
+                $content .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n\n";
+            }else{
+                $content .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n\n";
             }
-            $content .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n\n";
         }elseif($this->chassis->supports_wheels && !$this->chassis->custemWheels){
             $content .= "vehicle_paint_job_accessory: .paint_job\n{\n";
             $content .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n\n";
@@ -393,7 +402,17 @@ class TrailerGenerator extends ModGenerator{
             $content = str_replace(['%color%'], $this->paintJob->color ? "base_color: (".$this->paintJob->color.")" : '', $content);
             $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
         }
-        if($this->accessory && $this->accessory->def !== '') $content = str_replace(['%cargo%'], $this->accessory->def, $content);
+        $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .cargo" : '', $content);
+        $content = str_replace(['%cargo_def_s%'], $this->accessory ? "accessories[]: .slave.cargo" : '', $content);
+        $content = str_replace(['%cargo%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+            : '', $content);
+        $content = str_replace(['%cargo_s%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .slave.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+            : '', $content);
+        $content = str_replace(['%cargo_8_s%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .slave.cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix('8')."\"\n}\n"
+            : '', $content);
 //        $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
 
         return $content;

@@ -43,4 +43,14 @@ class Accessory extends Model{
         return $list;
     }
 
+    public function getDefBySuffix($suffix){
+        $suffix_list = explode(',', $this->suffixes);
+        if(in_array($suffix, $suffix_list)){
+            $new_def = str_replace('_13', '', $this->def);
+            return str_replace('.sii', '_'.$suffix.'.sii', $new_def);
+        }else{
+            return $this->def;
+        }
+    }
+
 }

@@ -40,6 +40,12 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin">
+                            <input id="suffixes" type="text" name="suffixes" value="{{ $accessory->suffixes }}">
+                            <label for="suffixes">Перелік суфіксів (через кому, без пробілів)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 no-margin">
                             <input id="alias" type="text" name="alias" value="{{ $accessory->alias }}" required>
                             <label for="alias">Alias*</label>
                         </div>
