@@ -12,6 +12,9 @@
             @endif
             @include('generator.ie')
         </section>
+        <section class="trailer-generator">
+            @include('generator.removed')
+        </section>
         <div class="card paint-generator overflow-visible">
             <form method="POST" action="{{route('color_generator')}}" enctype="multipart/form-data">
                 @csrf
