@@ -171,6 +171,11 @@ vehicle_addon_accessory : .%trailer%.slave.markers
 	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/simple.sii"
 }
 
+vehicle_addon_accessory : .%trailer%.slave.r_bumper 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/euro_3.sii"
+}
+
 vehicle_wheel_accessory : .%trailer%.slave.wheel1 
 {
 	offset: 0

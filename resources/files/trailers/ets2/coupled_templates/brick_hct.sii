@@ -116,7 +116,7 @@ vehicle_wheel_accessory: .%trailer%.dolly.wheel1
 	data_path: "%wheel%"
 }
 
-vehicle_wheel_accessory: .%trailer%.wheel2
+vehicle_wheel_accessory: .%trailer%.dolly.wheel2
 {
 	offset: 2
 	data_path: "%wheel%"
@@ -169,6 +169,11 @@ vehicle_addon_accessory : .%trailer%.slave.chs_r_r
 vehicle_addon_accessory : .%trailer%.slave.markers 
 {
 	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/simple_brick.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.slave.r_bumper 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/euro_3.sii"
 }
 
 vehicle_wheel_accessory : .%trailer%.slave.wheel1 

@@ -77,8 +77,8 @@ class TrailerGenerator extends ModGenerator{
 	}
 
     private function copyDealerFiles(){
-        if(is_dir($this->filesDir.'/'.$this->game.'/ownable')) {
-            $this->rcopy($this->filesDir . '/' . $this->game . '/ownable', $this->outDir . '/vehicle');
+        if(is_dir($this->filesDir.'/'.$this->game.'/dealer')) {
+            $this->rcopy($this->filesDir . '/' . $this->game . '/dealer', $this->outDir . '/vehicle');
         }
     }
 
@@ -371,7 +371,7 @@ class TrailerGenerator extends ModGenerator{
 
     private function generateCoupledDealerFileContent(){
         $content = null;
-        $content = file_get_contents($this->filesDir.'/'.$this->game.'/coupled_templates/ownable/'.$this->chassis->alias.'.sii');
+        $content = file_get_contents($this->filesDir.'/'.$this->game.'/coupled_templates/dealer/'.$this->chassis->alias.'.sii');
         if($this->paintJob){
             $content = str_replace(['%color%'], $this->paintJob->color ? "base_color: (".$this->paintJob->color.")" : '', $content);
             $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
