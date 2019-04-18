@@ -53,13 +53,15 @@ class Chassis extends Model{
     }
 
     public function getAvailablePaints(){
-        $list[] = [
-            'name' => trans('general.all_companies'),
-            'value' => 'all',
-            'selected' => true
-        ];
         $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])
             ->orderBy('sort', 'desc')->orderBy('alias', 'asc')->get();
+        if(count($paints) > 1){
+            $list[] = [
+                'name' => trans('general.all_companies'),
+                'value' => 'all',
+                'selected' => true
+            ];
+        }
         foreach($paints as $key => $paint){
             $name = '';
             if($paint->isDLCContent() && !$paint->dlc->mp_support){
@@ -77,7 +79,8 @@ class Chassis extends Model{
             };
             $list[] = [
                 'name' => $name,
-                'value' => $paint->def
+                'value' => $paint->def,
+                'selected' => count($paints) == 1
             ];
         }
         return $list;
