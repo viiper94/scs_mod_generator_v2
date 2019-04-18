@@ -2,8 +2,10 @@
 body{
   min-height: 100vh;
   background-color: $light-background-lighten-1;
+  color: $light-text;
   &.mdc-theme--dark{
     background-color: $dark-background;
+    color: $dark-text;
   }
 }
 
@@ -104,4 +106,7 @@ ul.pagination{
 }
 .mdc-theme--dark li.divider{
   background-color: $placeholder-text-dark;
+}
+.mdc-theme--dark table.highlight > tbody > tr:hover{
+  background-color: rgba(242, 242, 242, 0.1);
 }
