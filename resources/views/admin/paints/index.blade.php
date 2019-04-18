@@ -27,7 +27,8 @@
                 <th>Alias</th>
                 <th>Def</th>
                 <th>Chassis</th>
-                <th>DLC</th>
+                <th>Фарбується</th>
+                <th class="center">DLC</th>
                 <th>Гра</th>
                 <th></th>
                 </thead>
@@ -43,7 +44,8 @@
                                 {{ $paint->chassis }}
                             @endif
                         </td>
-                        <td>
+                        <td class="center">{{ $paint->with_color ? '+' : '—' }}</td>
+                        <td class="center">
                             @if($paint->isDLCContent())
                                 @lang('dlc_list.'.$paint->dlc->name)
                             @else
