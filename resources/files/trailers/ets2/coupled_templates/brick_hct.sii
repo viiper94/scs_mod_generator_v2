@@ -1,0 +1,320 @@
+trailer : trailer.%trailer%
+{
+	accessories[]: .%trailer%.chassis
+	accessories[]: .%trailer%.body
+	accessories[]: .%trailer%.paint_job
+	
+	accessories[]: .%trailer%.chs_f_l
+	accessories[]: .%trailer%.chs_f_r
+	accessories[]: .%trailer%.markers
+	accessories[]: .%trailer%.trlr_cables
+	accessories[]: .%trailer%.r_bumper
+	
+	accessories[]: .%trailer%.wheel1
+	accessories[]: .%trailer%.wheel2
+	accessories[]: .%trailer%.wheel3
+	%cargo_def%
+	
+	slave_trailer: .%trailer%.dolly.trailer
+}
+
+vehicle_addon_accessory : .%trailer%.chs_f_l 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/chs_f_l/cage_136.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.chs_f_r 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/chs_f_r/cage_136.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.markers 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/simple_brick.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.trlr_cables 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/trlr_cables/d_cables.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.r_bumper 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/euro_3_d.sii"
+}
+
+vehicle_accessory : .%trailer%.chassis 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_3_hook.sii"
+}
+
+vehicle_accessory : .%trailer%.body 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/body/brick.sii"
+}
+
+vehicle_paint_job_accessory : .%trailer%.paint_job 
+{
+	%color%
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color4.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.wheel1 
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.wheel2 
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.wheel3 
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+%cargo%
+
+
+#
+# trailer dolly
+#
+
+trailer : .%trailer%.dolly.trailer
+{
+	accessories[]: .%trailer%.dolly.chassis
+	accessories[]: .%trailer%.dolly.r_bumper
+	accessories[]: .%trailer%.dolly.trlr_cables
+
+	accessories[]: .%trailer%.dolly.tire
+	accessories[]: .%trailer%.dolly.disc
+	accessories[]: .%trailer%.dolly.hub
+	accessories[]: .%trailer%.dolly.nuts
+
+	accessories[]: .%trailer%.dolly.tire2
+	accessories[]: .%trailer%.dolly.disc2
+	accessories[]: .%trailer%.dolly.hub2
+	accessories[]: .%trailer%.dolly.nuts2
+
+	slave_trailer: .%trailer%.slave.trailer
+}
+
+vehicle_accessory: .%trailer%.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/dolly_conv_long.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.dolly.r_bumper 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/euro_3_dolly.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.dolly.trlr_cables 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/trlr_cables/dolly_cables.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.tire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.disc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.hub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.nuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.tire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.disc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.hub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory: .%trailer%.dolly.nuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+
+#
+#	slave trailer
+#
+
+trailer : .%trailer%.slave.trailer
+{
+	accessories[]: .%trailer%.slave.chassis
+	accessories[]: .%trailer%.slave.body
+	accessories[]: .%trailer%.slave.paint_job
+	
+	accessories[]: .%trailer%.slave.chs_f_l
+	accessories[]: .%trailer%.slave.chs_f_r
+	accessories[]: .%trailer%.slave.chs_r_l
+	accessories[]: .%trailer%.slave.chs_r_r
+	accessories[]: .%trailer%.slave.markers
+	accessories[]: .%trailer%.slave.r_bumper
+	
+	accessories[]: .%trailer%.slave.tire1
+	accessories[]: .%trailer%.slave.disk1
+	accessories[]: .%trailer%.slave.hub1
+	accessories[]: .%trailer%.slave.nuts1
+	
+	accessories[]: .%trailer%.slave.tire2
+	accessories[]: .%trailer%.slave.disk2
+	accessories[]: .%trailer%.slave.hub2
+	accessories[]: .%trailer%.slave.nuts2
+	
+	accessories[]: .%trailer%.slave.tire3
+	accessories[]: .%trailer%.slave.disk3
+	accessories[]: .%trailer%.slave.hub3
+	accessories[]: .%trailer%.slave.nuts3
+	%cargo_def_s%
+}
+
+vehicle_addon_accessory : .%trailer%.slave.chs_f_l 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/chs_f_l/cage_136.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.slave.chs_f_r 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/chs_f_r/cage_136.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.slave.chs_r_l 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/chs_r_l/plastic_box_d.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.slave.chs_r_r 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/chs_r_r/water_tank_d.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.slave.markers 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/simple_brick.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.tire2 
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.disk2 
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.hub2 
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.nuts2 
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.tire1 
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.disk1 
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.hub1 
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.nuts1 
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.slave.r_bumper 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/euro_3.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.tire3 
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.disk3 
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .%trailer%.slave.hub3 
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}	
+
+vehicle_wheel_accessory : .%trailer%.slave.nuts3 
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_accessory : .%trailer%.slave.chassis 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_3.sii"
+}
+
+vehicle_accessory : .%trailer%.slave.body 
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/body/brick.sii"
+}
+
+vehicle_paint_job_accessory : .%trailer%.slave.paint_job 
+{
+	%color%
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color4.sii"
+}
+%cargo_s%
