@@ -37,17 +37,24 @@
                                     @if($aliases_collection[0]->with_paint_job || $aliases_collection[0]->with_accessory)
                                         <div class="card-content">
                                             <ul class="collapsible show-skin z-depth-0" data-trailer="{{$alias}}" data-game="ets2" data-token="{{csrf_token()}}">
-                                                <li>
+                                            @if($aliases_collection[0]->with_paint_job)
+                                                <li class="paints">
                                                     <div class="collapsible-header">
                                                         <i class="material-icons notranslate">arrow_downward</i>
-                                                        @if($aliases_collection[0]->with_paint_job)
-                                                            <span style="flex: 1;">@lang('general.see_paints')</span>
-                                                        @elseif($aliases_collection[0]->with_accessory)
-                                                            <span style="flex: 1;">@lang('general.see_cargo')</span>
-                                                        @endif
+                                                        <span style="flex: 1;">@lang('general.see_paints')</span>
                                                     </div>
                                                     <div class="collapsible-body"></div>
                                                 </li>
+                                            @endif
+                                            @if($aliases_collection[0]->with_accessory)
+                                                <li class="accessories">
+                                                    <div class="collapsible-header">
+                                                        <i class="material-icons notranslate">arrow_downward</i>
+                                                        <span style="flex: 1;">@lang('general.see_cargo')</span>
+                                                    </div>
+                                                    <div class="collapsible-body"></div>
+                                                </li>
+                                            @endif
                                             </ul>
                                         </div>
                                     @endif

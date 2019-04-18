@@ -20,10 +20,12 @@ class GalleryController extends Controller{
         if($request->ajax() && $request->input('chassis')){
             $result = null;
             $chassis = Chassis::where('alias_short', $request->input('chassis'))->first();
+            $data = array();
             if($chassis->with_paint_job){
-                $data = $chassis->getAvailablePaints();
-            }elseif($chassis->with_accessory){
-                $data = $chassis->getAvailableAccessories();
+                $data['paints'] = $chassis->getAvailablePaints();
+            }
+            if($chassis->with_accessory){
+                $data['accessories'] = $chassis->getAvailableAccessories();
             }
             return response()->json([
                 'result' => $data,

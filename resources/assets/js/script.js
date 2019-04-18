@@ -69,16 +69,18 @@ $(document).ready(function(){
 					'chassis' : ul.data('trailer')
 				},
 				beforeSend : function(){
-					ul.find('.collapsible-header').append(getPreloaderHtml('tiny'));
+					ul.find('.collapsible-header').first().append(getPreloaderHtml('tiny'));
 				},
 				success : function(response){
 					if(response.status === 'OK'){
-						var html ='<ul class="ac-list browser-default">';
-						$.each(response.result, function(key, value){
-							if(key !== 0) html += '<li>'+value.name+'</li>';
+						$.each(response.result, function(target, data){
+                            var html ='<ul class="ac-list browser-default">';
+						    $.each(data, function(key, value){
+                                if(value.value !== 'all' && value.value !== '') html += '<li>'+value.name+'</li>';
+                            });
+                            html += '</ul>';
+                            ul.find('li.'+target+' .collapsible-body').append(html);
 						});
-						html += '</ul>';
-						ul.find('.collapsible-body').append(html);
 					}
                     $('.dlc-tooltipped').tooltip();
 				},
