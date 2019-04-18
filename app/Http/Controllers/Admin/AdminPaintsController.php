@@ -15,7 +15,7 @@ class AdminPaintsController extends Controller{
             ->orWhere('alias', 'like', $request->input('q').'%')
             ->orWhere('chassis', 'like', $request->input('q').'%');
         return view('admin.paints.index', [
-            'paints' => $paints->paginate(20)
+            'paints' => $paints->orderBy('id', 'desc')->paginate(20)
         ]);
     }
 

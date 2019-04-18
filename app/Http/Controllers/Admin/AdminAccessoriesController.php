@@ -17,7 +17,7 @@ class AdminAccessoriesController extends Controller{
             ->orWhere('alias', 'like', $request->input('q').'%')
             ->orWhere('chassis', 'like', $request->input('q').'%');
         return view('admin.accessories.index', [
-            'accessories' => $accessories->paginate(20)
+            'accessories' => $accessories->orderBy('id', 'desc')->paginate(20)
         ]);
     }
 
