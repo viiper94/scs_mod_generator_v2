@@ -215,7 +215,7 @@ vehicle_wheel_accessory: .dolly.tire
 vehicle_wheel_accessory: .dolly.disc
 {
 	offset: 0
-	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
 }
 
 vehicle_wheel_accessory: .dolly.hub
@@ -239,7 +239,7 @@ vehicle_wheel_accessory: .dolly.tire2
 vehicle_wheel_accessory: .dolly.disc2
 {
 	offset: 2
-	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01.sii"
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
 }
 
 vehicle_wheel_accessory: .dolly.hub2
