@@ -59527,7 +59527,7 @@ select.browser-default {
 .ui.selection.active.dropdown .menu {
   padding: 8px 0;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px !important;
           box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px !important;
 }
@@ -60354,7 +60354,7 @@ nav.sidenav .collapsible ul:not(.collapsible) > li.active {
 .select-wrapper ul.dropdown-content {
   padding: 8px 0;
   border: 1px solid rgba(191, 191, 191, 0.87);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .mdc-theme--dark .select-wrapper ul.dropdown-content {
@@ -60455,6 +60455,10 @@ li.active > .collapsible-header i:not(.mdc-button__icon) {
       -ms-flex: 1;
           flex: 1;
   color: #202124;
+}
+
+.mdc-theme--dark .card-panel.nav-search .input-field input[type=search]:not(.browser-default) {
+  color: #bbbbbb;
 }
 
 .card-panel.nav-search .input-field input[type=search]:not(.browser-default):not(.browser-default):focus:not([readonly]) {
