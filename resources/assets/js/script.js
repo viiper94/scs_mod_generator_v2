@@ -201,8 +201,7 @@ $(document).ready(function(){
 									forceSelection : false,
 									onChange : function(value, text, $choice){
 										getDLCList(value);
-										value = value.split('/');
-										if(value[value.length - 1] === 'default.sii' || value[value.length - 1] === 'default'){
+										if($choice.children('span').data('with-color') === 1){
 											$('.colors').show();
 										}else{
 											$('.colors').hide();
