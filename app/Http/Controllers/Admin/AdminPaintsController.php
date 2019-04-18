@@ -37,6 +37,7 @@ class AdminPaintsController extends Controller{
                 'look' => $request->input('look'),
                 'dlc_id' => $request->input('dlc_id', null),
                 'chassis' => $request->input('chassis'),
+                'with_color' => $request->input('with_color') == 'on',
                 'active' => $request->input('active') == 'on',
             ]);
             return $paint->save() ?
@@ -60,6 +61,7 @@ class AdminPaintsController extends Controller{
             'alias' => $paint->alias.'_copy',
             'look' => $paint->look.'_copy',
             'dlc_id' => $paint->dlc_id,
+            'with_color' => $paint->with_color,
             'active' => false,
         ]);
 
@@ -101,6 +103,7 @@ class AdminPaintsController extends Controller{
                 'look' => $request->input('look'),
                 'chassis' => $request->input('chassis'),
                 'dlc_id' => $request->input('dlc_id', null),
+                'with_color' => $request->input('with_color') == 'on',
                 'active' => $request->input('active') == 'on',
             ]);
             if($paint->save()) return redirect()->route('paints')->with(['success' => 'Скін успішно додано!']);
