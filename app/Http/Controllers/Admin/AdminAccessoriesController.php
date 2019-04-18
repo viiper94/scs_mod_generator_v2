@@ -33,6 +33,7 @@ class AdminAccessoriesController extends Controller{
             $accessory->fill([
                 'game' => $request->input('game', 'ets2'),
                 'def' => $request->input('def'),
+                'suffixes' => $request->input('suffixes'),
                 'alias' => $request->input('alias'),
                 'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'chassis' => $request->input('chassis'),
@@ -56,6 +57,7 @@ class AdminAccessoriesController extends Controller{
         $new_accessory->fill([
             'game' => $accessory->game,
             'def' => $accessory->def,
+            'suffixes' => $accessory->suffixes,
             'chassis' => $accessory->chassis,
             'alias' => $accessory->alias.'_copy',
             'dlc' => $accessory->dlc,
@@ -95,6 +97,7 @@ class AdminAccessoriesController extends Controller{
             $accessory->fill([
                 'game' => $request->input('game', 'ets2'),
                 'def' => $request->input('def'),
+                'suffixes' => $request->input('suffixes'),
                 'alias' => $request->input('alias'),
                 'chassis' => $request->input('chassis'),
                 'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
