@@ -415,7 +415,11 @@
     },
     "ets2 companies\/paints": {
         "schw_logo": "Schwarzm\u00fcller Logo",
-        "default": "Colored"
+        "default": "Colored",
+        "green": "Green",
+        "red": "Red",
+        "yellow": "Yellow",
+        "blue": "Blue"
     },
     "ets2 wheels": {},
     "ats trailers": {
