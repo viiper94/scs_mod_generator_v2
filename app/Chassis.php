@@ -69,7 +69,7 @@ class Chassis extends Model{
                     data-tooltip="'.trans('general.mp_no_support').'" 
                     data-position="left">MP</s>';
             }
-            $name .= trans($this->game.'_companies_paints.'.$paint->alias);
+            $name .= '<span data-with-color="'.$paint->with_color.'">'.trans($this->game.'_companies_paints.'.$paint->alias).'</span>';
             if($paint->isDLCContent()){
                 $name .= '<span class="right dlc-tooltipped hint" 
                     data-tooltip="'.trans('dlc_list.'.$paint->dlc->name).'" 
