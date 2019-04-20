@@ -101,7 +101,6 @@ class TrailerGenerator extends ModGenerator{
 	}
 
 	private function replaceTrailerFiles(){
-		$coupled_trailers = Chassis::where('coupled', 1)->get()->keyBy('alias')->toArray();
 		$dirname = $this->outDir.'/vehicle/trailer';
 		if(!is_dir($dirname)) mkdir($dirname);
 		$dir = opendir($dirname);
@@ -118,13 +117,17 @@ class TrailerGenerator extends ModGenerator{
 						$content = $this->generatePaintableTrailersContent($rows);
 						if(stripos($content,'base_color') === false){
 							$content = $this->generateRandomTrailerContent($trailer_name, $accessory_name);
-						}
-					}else{
-						key_exists($this->chassis->alias, $coupled_trailers) ?
-							$content = $this->generateCoupledTrailerContent($trailer_name) :
-							$content = $this->generateTrailerContent($trailer_name, $accessory_name);
+                        }
+                    }else{
+                        if($content = $this->chassis->coupled){
+                            $content = $this->generateCoupledTrailerContent($trailer_name);
+                        }else if($this->chassis->trailer_owned){
+                            $content = $this->generateOwnedTrailerContent($trailer_name);
+                        }else{
+                            $content = $this->generateTrailerContent($trailer_name, $accessory_name);
+                        }
 					}
-					file_put_contents($dirname."/".$file, $content);
+                    file_put_contents($dirname."/".$file, $content);
 				}
 			}
 		}
@@ -133,8 +136,8 @@ class TrailerGenerator extends ModGenerator{
 
     private function replaceDealerFile(){
         $file = $this->outDir .'/vehicle/trailer_dealer/tmg/tmg_trailer.sii';
-        if($this->chassis->coupled){
-            $content = $this->generateCoupledDealerFileContent();
+        if($this->chassis->coupled || $this->chassis->trailer_owned){
+            $content = $this->generateDealerFileContentByTemplate();
             $this->copyTrailerDefsFiles();
         }else{
             $content = $this->generateDealerFileContent();
@@ -228,7 +231,7 @@ class TrailerGenerator extends ModGenerator{
 	private function generateCoupledTrailerContent($trailer_name){
 		$content = null;
 		$file = $this->chassis->alias .'.sii';
-        $content = file_get_contents($this->filesDir.'/'.$this->game.'/coupled_templates/'.$file);
+        $content = file_get_contents($this->filesDir.'/'.$this->game.'/templates/coupled/'.$file);
 		if($this->paintJob){
 			$content = str_replace(['%color%'], $this->paintJob->color ? "base_color: (".$this->paintJob->color.")" : '', $content);
 			$content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
@@ -369,11 +372,11 @@ class TrailerGenerator extends ModGenerator{
         return $content;
 	}
 
-    private function generateCoupledDealerFileContent(){
+    private function generateDealerFileContentByTemplate(){
         $content = null;
-        $content = file_get_contents($this->filesDir.'/'.$this->game.'/coupled_templates/dealer/'.$this->chassis->alias.'.sii');
+        $content = file_get_contents($this->filesDir.'/'.$this->game.'/templates/dealer/'.$this->chassis->alias.'.sii');
         if($this->paintJob){
-            $content = str_replace(['%color%'], $this->paintJob->color ? "base_color: (".$this->paintJob->color.")" : '', $content);
+            $content = str_replace(['%color%'], $this->paintJob->color ? $this->paintJob->color : '1, 1, 1', $content);
             $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
         }
         $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .cargo" : '', $content);
@@ -387,7 +390,25 @@ class TrailerGenerator extends ModGenerator{
         $content = str_replace(['%cargo_8_s%'], $this->accessory && $this->accessory->def !== '' ?
             "\nvehicle_accessory: .slave.cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix('8')."\"\n}\n"
             : '', $content);
-//        $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
+        $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
+
+        return $content;
+	}
+
+    private function generateOwnedTrailerContent($trailer_name){
+        $content = null;
+        $content = file_get_contents($this->filesDir.'/'.$this->game.'/templates/owned/'.$this->chassis->alias.'.sii');
+        if($this->paintJob){
+            $content = str_replace(['%color%'], $this->paintJob->color ?
+                $this->paintJob->color : '1, 1, 1', $content);
+            $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
+        }
+        $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .$trailer_name.cargo" : '', $content);
+        $content = str_replace(['%cargo%'], $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .$trailer_name.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+            : '', $content);
+        $content = str_replace(['%trailer%'], $trailer_name, $content);
+        $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
 
         return $content;
 	}
