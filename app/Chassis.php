@@ -22,6 +22,7 @@ class Chassis extends Model{
         'coupled' => 'boolean',
         'with_accessory' => 'boolean',
         'with_paint_job' => 'boolean',
+        'trailer_owned' => 'boolean',
         'can_random' => 'boolean',
         'mp_support' => 'boolean',
         'active' => 'boolean',

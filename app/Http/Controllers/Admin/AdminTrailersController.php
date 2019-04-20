@@ -45,6 +45,7 @@ class AdminTrailersController extends Controller{
                 'coupled' => $request->input('coupled') == 'on',
                 'with_accessory' => $request->input('with_accessory') == 'on',
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
+                'trailer_owned' => $request->input('trailer_owned') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
             ]);
@@ -79,6 +80,7 @@ class AdminTrailersController extends Controller{
             'coupled' => $chassis->coupled,
             'with_accessory' => $chassis->with_accessory,
             'with_paint_job' => $chassis->with_paint_job,
+            'trailer_owned' => $chassis->trailer_owned,
             'can_random' => $chassis->can_random,
             'mp_support' => $chassis->mp_support,
         ]);
@@ -130,6 +132,7 @@ class AdminTrailersController extends Controller{
                 'coupled' => $request->input('coupled') == 'on',
                 'with_accessory' => $request->input('with_accessory') == 'on',
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
+                'trailer_owned' => $request->input('trailer_owned') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
             ]);

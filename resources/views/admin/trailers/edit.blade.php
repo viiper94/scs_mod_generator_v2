@@ -210,6 +210,23 @@
                             <div class="mdc-checkbox">
                                 <input type="checkbox"
                                        class="mdc-checkbox__native-control"
+                                       id="trailer_owned" name="trailer_owned" {{ $chassis->trailer_owned ? 'checked' : '' }}>
+                                <div class="mdc-checkbox__background">
+                                    <svg class="mdc-checkbox__checkmark"
+                                         viewBox="0 0 24 24">
+                                        <path class="mdc-checkbox__checkmark-path"
+                                              fill="none"
+                                              d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                    </svg>
+                                    <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                            </div>
+                            <label for="trailer_owned">trailer_owned</label>
+                        </div>
+                        <div class="mdc-form-field col s12">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                       class="mdc-checkbox__native-control"
                                        id="can_random" name="can_random" {{ $chassis->can_random ? 'checked' : '' }}>
                                 <div class="mdc-checkbox__background">
                                     <svg class="mdc-checkbox__checkmark"
