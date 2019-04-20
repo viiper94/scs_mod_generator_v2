@@ -22,17 +22,6 @@
                     </div>
                 </div>
 
-                {{--Weight section--}}
-                <!--div class="mdc-text-field weight">
-                    <input type="text" id="weight" class="browser-default mdc-text-field__input" name="weight">
-                    <label for="weight" class="mdc-text-field__label">@lang('general.trailer_weight')</label>
-                    <div class="mdc-text-field__bottom-line"></div>
-                </div>
-                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent yellow-text text-darken-3"
-                   aria-hidden="false" id="weight-helper-text">@lang('general.weight_apply')</p>
-                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent red-text"
-                   aria-hidden="false" id="weight-helper-text">@lang('general.mp_no_support')</p-->
-
                 {{--Wheels section--}}
                 <div class="wheels row" style="display: none;">
                     <label>@lang('general.select_wheels')</label>
