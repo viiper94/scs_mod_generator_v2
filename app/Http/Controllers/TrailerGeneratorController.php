@@ -174,10 +174,6 @@ class TrailerGeneratorController extends Controller{
             }
         }
 
-        if($request->post('weight')){
-            $params['form']['weight'] = $generator->chassis->weight;
-        }
-
         if($request->post('wheels')){
             $params['form']['wheels'] = $generator->chassis->wheels->def;
             $params['view']['wheels'] = $generator->chassis->wheels->alias;
