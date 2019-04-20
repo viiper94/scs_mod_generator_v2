@@ -105,7 +105,6 @@ class TrailerGeneratorController extends Controller{
             'paint' => 'string|nullable',
             'wheels' => 'string|nullable',
             'color' => 'array',
-            'weight' => 'numeric|max:300|min:0|nullable',
             'dlc' => 'array',
             'img' => 'file|image|dimensions:max_width=3000,max_height=3000|max:5500'
         ]);
@@ -115,11 +114,9 @@ class TrailerGeneratorController extends Controller{
 
         if($request->input('chassis') !== 'paintable'){
             $chassis = Chassis::where('alias', $request->input('chassis'))->first();
-            $chassis->weight = $request->input('weight');
             $chassis->setWheels($request->input('wheels'));
         }else{
             $chassis = new Chassis();
-            $chassis->weight = $request->input('weight');
             $chassis->alias = 'paintable';
             $chassis->supports_wheels = true;
             $chassis->wheels = $request->input('wheels');

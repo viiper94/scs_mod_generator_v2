@@ -26,14 +26,12 @@ class TruckPaintGeneratorController extends Controller{
     public function generate(Request $request){
         if($request->input('chassis') !== 'paintable'){
             $chassis = Chassis::where('alias', $request->input('chassis'))->first();
-            $chassis->weight = $request->input('weight');
             $chassis->setWheels($request->input('wheels'));
 
             $paint_job = Paint::where('def', $chassis->default_paint_job)->first();
             $paint_job->setPaintColor($request->input('color'));
         }else{
             $chassis = new Chassis();
-            $chassis->weight = $request->input('weight');
             $chassis->alias = 'paintable';
             $chassis->supports_wheels = true;
             $chassis->wheels = $request->input('wheels');
