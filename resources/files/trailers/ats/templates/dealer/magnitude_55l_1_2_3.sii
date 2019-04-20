@@ -1,0 +1,138 @@
+SiiNunit
+{
+trailer : trailer.magnitude55l.123
+{
+	trailer_definition: trailer_def.scs.box.triple_p.insulated
+
+	accessories[]: .data
+	accessories[]: .body
+	accessories[]: .tchassis
+	accessories[]: .paint_job
+	accessories[]: .trwheel0
+	accessories[]: .trwheel1
+
+	accessories[]: .trlr_cables
+	
+	slave_trailer: .slave.trailer
+}
+
+vehicle_accessory: .data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_accessory: .tchassis
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep.sii"
+}
+
+vehicle_accessory: .paint_job
+{
+	data_path: "/def/vehicle/trailer_owned/scs.box/paint_job/color.sii"
+}
+
+vehicle_wheel_accessory: .trwheel0
+{
+	offset: 0
+	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .trwheel1
+{
+	offset: 2
+	data_path: "%wheel%"
+}
+
+vehicle_addon_accessory: .trlr_cables
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
+}
+
+
+#
+#	TRAILER
+#
+
+trailer : .slave.trailer
+{
+	accessories[]: .slave.tchassis
+	accessories[]: .slave.trwheel0
+	accessories[]: .slave.trwheel1
+	accessories[]: .slave.trlr_cables
+	%cargo_def_s%
+	
+	slave_trailer: .second.spreader
+}
+
+vehicle_accessory: .slave.tchassis
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_spreader.sii"
+}
+
+vehicle_wheel_accessory: .slave.trwheel0
+{
+	offset: 0
+	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .slave.trwheel1
+{
+	offset: 2
+	data_path: "%wheel%"
+}
+
+vehicle_addon_accessory: .slave.trlr_cables	
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
+}
+%cargo_s%
+
+
+#########################################
+#
+#	SPREDER
+#
+#########################################
+
+trailer : .second.spreader
+{
+	accessories[]: .s.tchassis
+	accessories[]: .s.trwheel0
+	accessories[]: .s.trwheel1
+	accessories[]: .s.flag_r_r
+	accessories[]: .s.flag_r_l
+}
+
+vehicle_accessory: .s.tchassis
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_spreader.sii"
+}
+
+vehicle_wheel_accessory: .s.trwheel0
+{
+	offset: 0
+	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .s.trwheel1
+{
+	offset: 2
+	data_path: "%wheel%"
+}
+
+vehicle_addon_accessory: .s.flag_r_r
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .s.flag_r_l
+{
+	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
+}
+
+}

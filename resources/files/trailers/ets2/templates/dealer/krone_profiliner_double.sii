@@ -1,0 +1,222 @@
+SiiNunit
+{
+trailer : .krone.profiliner.double_3_2.curtain
+{
+	trailer_definition: trailer_def.krone.profiliner.double_3_2.curtain.dlc_krone
+
+	accessories[]: .data
+
+	accessories[]: .chassis
+	accessories[]: .body
+	accessories[]: .paint_job
+	accessories[]: .trlr_cables
+
+	accessories[]: .tire
+	accessories[]: .disc
+	accessories[]: .hub
+	accessories[]: .nuts
+
+	accessories[]: .tire2
+	accessories[]: .disc2
+	accessories[]: .hub2
+	accessories[]: .nuts2
+
+	accessories[]: .tire3
+	accessories[]: .disc3
+	accessories[]: .hub3
+	accessories[]: .nuts3
+
+	slave_trailer: .slave.trailer
+}
+
+vehicle_accessory: .data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .chassis
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/chassis_double.sii"
+}
+
+vehicle_accessory: .body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_paint_job_accessory: .paint_job
+{
+	base_color: (%color%)
+	data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory: .trlr_cables
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/accessory/trlr_cables.sii"
+}
+
+vehicle_wheel_accessory: .tire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_65_r22_krone.sii"
+}
+
+vehicle_wheel_accessory: .disc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_120_01.sii"
+}
+
+vehicle_wheel_accessory: .hub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_krone.sii"
+}
+
+vehicle_wheel_accessory: .nuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_120_01.sii"
+}
+
+vehicle_wheel_accessory: .tire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_65_r22_krone.sii"
+}
+
+vehicle_wheel_accessory: .disc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_120_01.sii"
+}
+
+vehicle_wheel_accessory: .hub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_krone.sii"
+}
+
+vehicle_wheel_accessory: .nuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_120_01.sii"
+}
+
+vehicle_wheel_accessory: .tire3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_65_r22_krone.sii"
+}
+
+vehicle_wheel_accessory: .disc3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_120_01.sii"
+}
+
+vehicle_wheel_accessory: .hub3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_krone.sii"
+}
+
+vehicle_wheel_accessory: .nuts3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_120_01.sii"
+}
+
+#
+# slave trailer
+#
+
+trailer : .slave.trailer
+{
+	accessories[]: .slave.data
+
+	accessories[]: .slave.chassis
+	accessories[]: .slave.body
+	accessories[]: .slave.paint_job
+
+	accessories[]: .slave.tire
+	accessories[]: .slave.disc
+	accessories[]: .slave.hub
+	accessories[]: .slave.nuts
+
+	accessories[]: .slave.tire2
+	accessories[]: .slave.disc2
+	accessories[]: .slave.hub2
+	accessories[]: .slave.nuts2
+}
+
+vehicle_accessory: .slave.data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .slave.chassis
+{
+	data_path: "/def/vehicle/trailer/krone/profiliner/chassis_loadcarrier.sii"
+}
+
+vehicle_accessory: .slave.body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_paint_job_accessory: .slave.paint_job
+{
+	base_color: (%color%)
+	data_path: "%paint_job%"
+}
+
+vehicle_wheel_accessory: .slave.tire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_65_r22_krone.sii"
+}
+
+vehicle_wheel_accessory: .slave.disc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_120_01.sii"
+}
+
+vehicle_wheel_accessory: .slave.hub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_krone.sii"
+}
+
+vehicle_wheel_accessory: .slave.nuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_120_01.sii"
+}
+
+vehicle_wheel_accessory: .slave.tire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/385_65_r22_krone.sii"
+}
+
+vehicle_wheel_accessory: .slave.disc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/disc_120_01.sii"
+}
+
+vehicle_wheel_accessory: .slave.hub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/hub_krone.sii"
+}
+
+vehicle_wheel_accessory: .slave.nuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_120_01.sii"
+}
+
+}
