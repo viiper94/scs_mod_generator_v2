@@ -30,7 +30,7 @@ The package is automatically added if you are in Laravel 5.5.
 
 #### Steam API Key
 
-Add your Steam API key to your `.env` file. You can your API key [here](http://steamcommunity.com/dev/apikey).
+Add your Steam API key to your `.env` file. You can get your API key [here](http://steamcommunity.com/dev/apikey).
 
 ```
 STEAM_API_KEY=SomeKindOfAPIKey
@@ -53,13 +53,17 @@ return [
      */
     'redirect_url' => '/auth/steam/handle',
     /*
+     * Realm override. Bypass domain ban by Valve. Use alternative domain with redirection to main for authentication (banned by valve).
+     */
+    // 'realm' => 'redirected.com',
+    /*
      *  API Key (set in .env file) [http://steamcommunity.com/dev/apikey]
      */
     'api_key' => env('STEAM_API_KEY', ''),
     /*
      * Is using https?
      */
-    'https' => false
+    'https' => false,
 ];
 
 ```
