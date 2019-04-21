@@ -1,93 +1,258 @@
-trailer : trailer.%trailer%
+SiiNunit
 {
-	accessories[]: .%trailer%.tchassis
-	accessories[]: .%trailer%.trwheel0
-	accessories[]: .%trailer%.trwheel1
-	accessories[]: .%trailer%.trwheel2
-	accessories[]: .%trailer%.trlr_cables
-	
-	slave_trailer: .%trailer%.slave.trailer
+trailer : .trailer.magnitude55l.12l
+{
+	trailer_definition: trailer_def.scs.box.triple_p.insulated
 
+	accessories[]: .data
+	accessories[]: .body
+	accessories[]: .paint_job
+	accessories[]: .tchassis
+
+	accessories[]: .rtire1
+    accessories[]: .rdisc1
+    accessories[]: .rhub1
+    accessories[]: .rnuts1
+
+    accessories[]: .rtire2
+    accessories[]: .rdisc2
+    accessories[]: .rhub2
+    accessories[]: .rnuts2
+
+    accessories[]: .rtire3
+    accessories[]: .rdisc3
+    accessories[]: .rhub3
+    accessories[]: .rnuts3
+
+	accessories[]: .trlr_cables
+	
+	slave_trailer: .slave.trailer
 }
 
-vehicle_accessory: .%trailer%.tchassis
+vehicle_accessory: .data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_paint_job_accessory : .paint_job
+{
+	data_path: "/def/vehicle/trailer_owned/scs.box/paint_job/color.sii"
+}
+
+vehicle_accessory: .tchassis
 {
 	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep_3.sii"
 }
 
-vehicle_wheel_accessory: .%trailer%.trwheel0
+vehicle_wheel_accessory: .rtire1
 {
 	offset: 0
-	data_path: "%wheel%"
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
 }
 
-vehicle_wheel_accessory: .%trailer%.trwheel1
+vehicle_wheel_accessory: .rdisc1
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .rhub1
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .rnuts1
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_wheel_accessory: .rtire2
 {
 	offset: 2
-	data_path: "%wheel%"
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
 }
 
-vehicle_wheel_accessory: .%trailer%.trwheel2
+vehicle_wheel_accessory: .rdisc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .rhub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .rnuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_wheel_accessory: .rtire3
 {
 	offset: 4
-	data_path: "%wheel%"
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
 }
 
-vehicle_addon_accessory: .%trailer%.trlr_cables	
+vehicle_wheel_accessory: .rdisc3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .rhub3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .rnuts3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_addon_accessory: .trlr_cables	
 {
 	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.sii"
 }
 
 
-
-#########################################
 #
 #	TRAILER
 #
-#########################################
 
-trailer : .%trailer%.slave.trailer
+trailer : .slave.trailer
 {
-	accessories[]: .%trailer%.slave.tchassis
-	accessories[]: .%trailer%.slave.trwheel0
-	accessories[]: .%trailer%.slave.trwheel1
-	accessories[]: .%trailer%.slave.trwheel2
+	accessories[]: .slave.data
+	accessories[]: .slave.body
+	accessories[]: .slave.tchassis
 
-    accessories[]: .%trailer%.slave.flag_r_r
-    accessories[]: .%trailer%.slave.flag_r_l
+	accessories[]: .slave.rtire1
+    accessories[]: .slave.rdisc1
+    accessories[]: .slave.rhub1
+    accessories[]: .slave.rnuts1
+
+    accessories[]: .slave.rtire2
+    accessories[]: .slave.rdisc2
+    accessories[]: .slave.rhub2
+    accessories[]: .slave.rnuts2
+
+    accessories[]: .slave.rtire3
+    accessories[]: .slave.rdisc3
+    accessories[]: .slave.rhub3
+    accessories[]: .slave.rnuts3
+
+    accessories[]: .slave.flag_r_r
+    accessories[]: .slave.flag_r_l
 	%cargo_def_s%
 }
 
-vehicle_accessory: .%trailer%.slave.tchassis
+vehicle_accessory: .slave.data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .slave.body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_accessory: .slave.tchassis
 {
 	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_l_3.sii"
 }
 
-vehicle_wheel_accessory: .%trailer%.slave.trwheel0
+vehicle_wheel_accessory: .slave.rtire1
 {
 	offset: 0
-	data_path: "%wheel%"
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
 }
 
-vehicle_wheel_accessory: .%trailer%.slave.trwheel1
+vehicle_wheel_accessory: .slave.rdisc1
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .slave.rhub1
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .slave.rnuts1
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_wheel_accessory: .slave.rtire2
 {
 	offset: 2
-	data_path: "%wheel%"
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
 }
 
-vehicle_wheel_accessory: .%trailer%.slave.trwheel2
+vehicle_wheel_accessory: .slave.rdisc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .slave.rhub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .slave.rnuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_wheel_accessory: .slave.rtire3
 {
 	offset: 4
-	data_path: "%wheel%"
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
 }
 
-vehicle_addon_accessory: .%trailer%.slave.flag_r_r
+vehicle_wheel_accessory: .slave.rdisc3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .slave.rhub3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .slave.rnuts3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_addon_accessory: .slave.flag_r_r
 {
 	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.sii"
 }
 
-vehicle_addon_accessory: .%trailer%.slave.flag_r_l
+vehicle_addon_accessory: .slave.flag_r_l
 {
 	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.sii"
 }
-%cargo_s%  
+%cargo_s%
+
+}
