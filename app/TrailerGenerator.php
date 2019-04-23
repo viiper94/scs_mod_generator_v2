@@ -377,7 +377,11 @@ class TrailerGenerator extends ModGenerator{
         $content = file_get_contents($this->filesDir.'/'.$this->game.'/templates/dealer/'.$this->chassis->alias.'.sii');
         if($this->paintJob){
             $content = str_replace(['%color%'], $this->paintJob->color ? $this->paintJob->color : '1, 1, 1', $content);
-            $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
+            if($this->paintJob->with_color){
+                $content = str_replace(['%paint_job%'], Paint::$defaultOwnablePaintJob[$this->game], $content);
+            }else{
+                $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
+            }
         }
         $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .cargo" : '', $content);
         $content = str_replace(['%cargo_def_s%'], $this->accessory ? "accessories[]: .slave.cargo" : '', $content);
