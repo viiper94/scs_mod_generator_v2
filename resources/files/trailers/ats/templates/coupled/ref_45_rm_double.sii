@@ -31,8 +31,10 @@ vehicle_wheel_accessory: .%trailer%.rwheel2
 
 vehicle_paint_job_accessory: .%trailer%.paint_job
 {
+	%color%
 	data_path: "%paint_job%"
 }
+
 vehicle_addon_accessory: .%trailer%.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
@@ -58,6 +60,7 @@ vehicle_wheel_accessory: .%trailer%.dolly.rwheel
 	offset: 0
 	data_path: "%wheel%"
 }
+
 vehicle_addon_accessory: .%trailer%.dolly.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly.sii"
@@ -90,5 +93,6 @@ vehicle_wheel_accessory: .%trailer%.second.rwheel
 
 vehicle_paint_job_accessory: .%trailer%.second.paint_job
 {
+	%color%
 	data_path: "%paint_job%"
 }

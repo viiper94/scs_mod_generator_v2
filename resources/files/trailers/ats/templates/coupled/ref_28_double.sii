@@ -23,6 +23,7 @@ vehicle_wheel_accessory: .%trailer%.rwheel
 
 vehicle_paint_job_accessory: .%trailer%.paint_job
 {
+	%color%
 	data_path: "%paint_job%"
 }
 
@@ -79,5 +80,6 @@ vehicle_wheel_accessory: .%trailer%.second.rwheel
 
 vehicle_paint_job_accessory: .%trailer%.second.paint_job
 {
+	%color%
 	data_path: "%paint_job%"
 }
