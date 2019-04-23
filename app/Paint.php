@@ -15,7 +15,7 @@ class Paint extends Model{
     ];
     public static $defaultOwnablePaintJob = [
         'ets2' => '/def/vehicle/trailer_owned/scs.box/paint_job/color_custom.sii',
-        'ats' => '/def/vehicle/trailer_owned/scs.box/paint_job/color.sii',
+        'ats' => '/def/vehicle/trailer_owned/scs.box/paint_job/color0.sii',
     ];
 
     public function chassisObj(){
