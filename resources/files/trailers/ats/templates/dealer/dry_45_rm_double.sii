@@ -1,21 +1,20 @@
 SiiNunit
 {
-trailer : .scs.rm_double.curtain
+trailer : .tgm.rm_double.dryvan
 {
-	trailer_definition: trailer_def.scs.flatbed.rm_double.curtain
+	trailer_definition: trailer_def.scs.box.rm_double_p.dryvan
 
 	accessories[]: .data
 	accessories[]: .chassis
 	accessories[]: .body
-	accessories[]: .markers
-	accessories[]: .r_bumper
-	accessories[]: .r_mudflap
 	accessories[]: .trlr_cables
 	accessories[]: .paint_job
+
 	accessories[]: .rtire
 	accessories[]: .rdisc
 	accessories[]: .rhub
 	accessories[]: .rnuts
+
 	accessories[]: .rtire2
 	accessories[]: .rdisc2
 	accessories[]: .rhub2
@@ -26,37 +25,22 @@ trailer : .scs.rm_double.curtain
 
 vehicle_accessory: .data
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/data.sii"
+	data_path: "/def/vehicle/tmg/data.sii"
 }
 
 vehicle_accessory: .chassis
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_45_hook.sii"
+	data_path: "/def/vehicle/trailer/scs_box/dry_45_hook.sii"
 }
 
 vehicle_accessory: .body
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/body/curtain_45.sii"
-}
-
-vehicle_addon_accessory: .markers
-{
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/curtain_45.sii"
-}
-
-vehicle_addon_accessory: .r_bumper
-{
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/curtain.sii"
-}
-
-vehicle_addon_accessory: .r_mudflap
-{
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_mudflap/simple.sii"
+	data_path: "/def/vehicle/tmg/body.sii"
 }
 
 vehicle_addon_accessory: .trlr_cables
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/trlr_cables/trailer.sii"
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
 }
 
 vehicle_paint_job_accessory : .paint_job
@@ -64,9 +48,9 @@ vehicle_paint_job_accessory : .paint_job
 	mask_r_color: (1.0, 0.0, 0.0)
 	mask_g_color: (0.0, 1.0, 0.0)
 	mask_b_color: (0.0, 0.0, 1.0)
-	base_color: (&3f470a3d, &3f36c8b4, &3e4adaba)
+	base_color: (%color%)
 	wear: 0
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_flat.sii"
+	data_path: "%paint_job%"
 }
 
 vehicle_wheel_accessory: .rtire
@@ -123,6 +107,7 @@ trailer : .dolly
 {
 	accessories[]: .dolly.data
 	accessories[]: .dolly.chassis
+	accessories[]: .dolly.body
 	accessories[]: .dolly.paint_job
 	accessories[]: .dolly.rtire
 	accessories[]: .dolly.rdisc
@@ -134,12 +119,17 @@ trailer : .dolly
 
 vehicle_accessory: .dolly.data
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/data.sii"
+	data_path: "/def/vehicle/tmg/data.sii"
 }
 
 vehicle_accessory: .dolly.chassis
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/dolly.sii"
+	data_path: "/def/vehicle/trailer/scs_box/dolly_c.sii"
+}
+
+vehicle_accessory: .dolly.body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
 }
 
 vehicle_paint_job_accessory : .dolly.paint_job
@@ -147,9 +137,9 @@ vehicle_paint_job_accessory : .dolly.paint_job
 	mask_r_color: (1.0, 0.0, 0.0)
 	mask_g_color: (0.0, 1.0, 0.0)
 	mask_b_color: (0.0, 0.0, 1.0)
-	base_color: (&3f470a3d, &3f36c8b4, &3e4adaba)
+	base_color: (%color%)
 	wear: 0
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_flat.sii"
+	data_path: "%paint_job%"
 }
 
 vehicle_wheel_accessory: .dolly.rtire
@@ -180,14 +170,11 @@ vehicle_wheel_accessory: .dolly.rnuts
 
 trailer : .second
 {
-	trailer_definition: trailer_def.scs.flatbed.single_28.curtain
+	trailer_definition: trailer_def.scs.box.single_45f.dryvan
 
 	accessories[]: .second.data
 	accessories[]: .second.chassis
 	accessories[]: .second.body
-	accessories[]: .second.markers
-	accessories[]: .second.r_bumper
-	accessories[]: .second.r_mudflap
 	accessories[]: .second.paint_job
 	accessories[]: .second.rtire
 	accessories[]: .second.rdisc
@@ -197,32 +184,17 @@ trailer : .second
 
 vehicle_accessory: .second.data
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/data.sii"
+	data_path: "/def/vehicle/tmg/data.sii"
 }
 
 vehicle_accessory: .second.chassis
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_28.sii"
+	data_path: "/def/vehicle/trailer/scs_box/dry_28_hook.sii"
 }
 
 vehicle_accessory: .second.body
 {
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/body/curtain_28.sii"
-}
-
-vehicle_addon_accessory: .second.markers
-{
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/curtain_28.sii"
-}
-
-vehicle_addon_accessory: .second.r_bumper
-{
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/curtain.sii"
-}
-
-vehicle_addon_accessory: .second.r_mudflap
-{
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_mudflap/simple.sii"
+	data_path: "/def/vehicle/tmg/body.sii"
 }
 
 vehicle_paint_job_accessory : .second.paint_job
@@ -230,9 +202,9 @@ vehicle_paint_job_accessory : .second.paint_job
 	mask_r_color: (1.0, 0.0, 0.0)
 	mask_g_color: (0.0, 1.0, 0.0)
 	mask_b_color: (0.0, 0.0, 1.0)
-	base_color: (&3f470a3d, &3f36c8b4, &3e4adaba)
+	base_color: (%color%)
 	wear: 0
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_flat.sii"
+	data_path: "%paint_job%"
 }
 
 vehicle_wheel_accessory: .second.rtire
@@ -258,6 +230,5 @@ vehicle_wheel_accessory: .second.rnuts
 	offset: 0
 	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
 }
-
 
 }

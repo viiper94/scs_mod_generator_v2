@@ -1,0 +1,258 @@
+SiiNunit
+{
+trailer : .first
+{
+	trailer_definition: trailer_def.scs.box.double_p.insulated
+
+	accessories[]: .data
+	accessories[]: .chassis
+	accessories[]: .body
+
+	accessories[]: .trlr_cables
+	accessories[]: .paint_job
+
+	accessories[]: .rtire
+	accessories[]: .rdisc
+	accessories[]: .rhub
+	accessories[]: .rnuts
+
+	accessories[]: .rtire2
+	accessories[]: .rdisc2
+	accessories[]: .rhub2
+	accessories[]: .rnuts2
+
+	accessories[]: .rtire3
+	accessories[]: .rdisc3
+	accessories[]: .rhub3
+	accessories[]: .rnuts3
+
+	slave_trailer: .dolly
+}
+
+vehicle_accessory: .data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .chassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/hook.sii"
+}
+
+vehicle_accessory: .body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_addon_accessory: .trlr_cables
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/accessory/trlr_cables/stock.sii"
+}
+
+vehicle_paint_job_accessory : .paint_job
+{
+	mask_r_color: (1.0, 0.0, 0.0)
+	mask_g_color: (0.0, 1.0, 0.0)
+	mask_b_color: (0.0, 0.0, 1.0)
+	base_color: (%color%)
+	wear: 0
+	data_path: "%paint_job%"
+}
+
+vehicle_wheel_accessory: .rtire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
+}
+
+vehicle_wheel_accessory: .rdisc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .rhub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .rnuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_wheel_accessory: .rtire2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
+}
+
+vehicle_wheel_accessory: .rdisc2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .rhub2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .rnuts2
+{
+	offset: 2
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+vehicle_wheel_accessory: .rtire3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
+}
+
+vehicle_wheel_accessory: .rdisc3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .rhub3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .rnuts3
+{
+	offset: 4
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+# -------------------- DOLLY ---------------------
+
+trailer : .dolly
+{
+	accessories[]: .dolly.data
+	accessories[]: .dolly.chassis
+	accessories[]: .dolly.paint_job
+
+	accessories[]: .dolly.rtire
+	accessories[]: .dolly.rdisc
+	accessories[]: .dolly.rhub
+	accessories[]: .dolly.rnuts
+
+	slave_trailer: .second
+}
+
+vehicle_accessory: .dolly.data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/dolly.sii"
+}
+
+vehicle_paint_job_accessory : .dolly.paint_job
+{
+	mask_r_color: (1.0, 0.0, 0.0)
+	mask_g_color: (0.0, 1.0, 0.0)
+	mask_b_color: (0.0, 0.0, 1.0)
+	base_color: (%color%)
+	wear: 0
+	data_path: "%paint_job%"
+}
+
+vehicle_wheel_accessory: .dolly.rtire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
+}
+
+vehicle_wheel_accessory: .dolly.rdisc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .dolly.rhub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .dolly.rnuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+# -------------------- SECOND 28 ---------------------
+
+trailer : .second
+{
+	accessories[]: .second.data
+	accessories[]: .second.chassis
+	accessories[]: .second.body
+	accessories[]: .second.paint_job
+
+	accessories[]: .second.rtire
+	accessories[]: .second.rdisc
+	accessories[]: .second.rhub
+	accessories[]: .second.rnuts
+}
+
+vehicle_accessory: .second.data
+{
+	data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory: .second.chassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/short_bumper_double.sii"
+}
+
+vehicle_accessory: .second.body
+{
+	data_path: "/def/vehicle/tmg/body.sii"
+}
+
+vehicle_paint_job_accessory : .second.paint_job
+{
+	mask_r_color: (1.0, 0.0, 0.0)
+	mask_g_color: (0.0, 1.0, 0.0)
+	mask_b_color: (0.0, 0.0, 1.0)
+	base_color: (%color%)
+	wear: 0
+	data_path: "%paint_job%"
+}
+
+vehicle_wheel_accessory: .second.rtire
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_tire/1.sii"
+}
+
+vehicle_wheel_accessory: .second.rdisc
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_disc/rear_disc_steel.sii"
+}
+
+vehicle_wheel_accessory: .second.rhub
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_hub/rear_hub_01.sii"
+}
+
+vehicle_wheel_accessory: .second.rnuts
+{
+	offset: 0
+	data_path: "/def/vehicle/trailer_wheel/r_nuts/rear_nuts_01_steel.sii"
+}
+
+}
