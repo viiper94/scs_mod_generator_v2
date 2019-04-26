@@ -195,6 +195,10 @@
         "cargo_man_lenz": "MAN LENZ",
         "cargo_man_lutz": "MAN LUTZ",
         "cargo_man_rebo": "MAN REBO",
+        "cargo_man_rein": "MAN REIN",
+        "cargo_mercedes": "Mercedes",
+        "cargo_scania_ek": "Scania EK",
+        "cargo_buggyra": "Buggyra",
         "cargo_cars_it": "Autos",
         "cargo_france_cars": "Autos",
         "cargo_balt1": "Cars",
@@ -325,6 +329,14 @@
         "volvocargo": "Volvo trucks",
         "iveco_daily": "Vans"
     },
+    "ets2 companies\/paints": {
+        "red": "Red",
+        "green": "Green",
+        "yellow": "Yellow",
+        "blue": "Blue",
+        "schw_logo": "Schwarzm\u00fcller Logo",
+        "default": "Colored"
+    },
     "validation": {
         "custom": {
             "img": {
@@ -419,17 +431,13 @@
             "dimensions": "Max image dimensions 3000x3000px"
         }
     },
-    "ets2 companies\/paints": {
-        "schw_logo": "Schwarzm\u00fcller Logo",
-        "default": "Colored"
-    },
     "ats trailers": {
         "acid": "Acid tank",
         "acid_long": "Acid tank long",
         "bottom_dump": "Bottom dump",
         "bottom_dump_short": "Bottom dump (Short)",
-        "bottom_dump_pup_double": "Double bottom dump (Short)",
-        "bottom_dump_rm_double": "Double bottom dump (Long)",
+        "bottom_dump_pup_double": "bottom dump (Double)",
+        "bottom_dump_rm_double": "bottom dump (RM Double)",
         "car": "Car Transporter",
         "car_black": "Car Transporter (Black)",
         "car_red": "Car Transporter (Red)",
@@ -468,9 +476,9 @@
         "ref_45_rm_double": "R.M. Double Reefer (45' + 28')",
         "ref_28_triple": "Triple Reefer (28')",
         "dry_bulk": "Dry Bulk",
-        "drybulk_long": "Double Dry Bulk (Long)",
-        "drybulk_ls": "Double Dry Bulk (Long\/Short)",
-        "drybulk_shrt": "Double Dry Bulk (Short)",
+        "drybulk_tp": "Dry Bulk (Turnpike Double)",
+        "drybulk_rm": "Dry Bulk (RM Double)",
+        "drybulk_pup": "Dry Bulk (Double)",
         "dump": "Dumper",
         "dump_black": "Dumper (Blue)",
         "dump_grey": "Dumper (Red)",
