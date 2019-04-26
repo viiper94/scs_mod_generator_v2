@@ -15,7 +15,7 @@
                 @else
                     src="{{ asset('images/users/default.jpg') }}"
                 @endif
-            >
+             style="max-width: 300px">
         </div>
         <div class="card-content">
             <h4 class="card-title">{{ $user->name }}</h4>
