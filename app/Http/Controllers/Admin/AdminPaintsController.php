@@ -124,11 +124,25 @@ class AdminPaintsController extends Controller{
             'moving_floor' => 'scs_box/moving_floor',
             'refrigerated' => 'scs_box/reefer',
             'willig_cistern' => 'willig/fuel_cistern',
+            'scs_chipvan' => 'chipvan',
 
             'krone_coolliner' => 'krone/coolliner',
             'krone_dryliner' => 'krone/dryliner',
             'krone_profiliner' => 'krone/profiliner',
         ];
+
+        // for ats
+        $multi = [
+            'scs_box' =>[
+                'dry_',
+                'ins_',
+                'ref_'
+            ],
+            'scs_flatbed' => [
+                'curtain',
+            ]
+        ];
+
         $path = resource_path('files/def');
         if(!is_dir($path)) return abort(404);
         $dlcs = Dlc::all()->keyBy('name')->toArray();
@@ -145,37 +159,64 @@ class AdminPaintsController extends Controller{
                         $chassis_paint_jobs_path = $dlc_trailer_path . '/' . $chassis . '/company_paint_job/';
 
                         // цикл по скинам
-                        foreach(scandir($chassis_paint_jobs_path) as $paint_job){
-                            if($paint_job !== '.' && $paint_job !== '..'){
+                        if(key_exists($chassis, $multi)){
+                            foreach($multi[$chassis] as $type_chassis){
+                                foreach(scandir($chassis_paint_jobs_path) as $paint_job){
+                                    if($paint_job !== '.' && $paint_job !== '..'){
+                                        $paint = new Paint();
+                                        $paint->fill([
+                                            'game' => $dlc_params['game'] ?? 'ats',
+                                            'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
+                                            'alias' => str_replace('.sii', '', $paint_job),
+                                            'look' => str_replace('.sii', '', $paint_job),
+                                            'chassis' => $type_chassis,
+                                            'dlc_id' => $dlc_params['id'],
+                                            'with_color' => $paint_job == 'default.sii' ? 1 : 0,
+                                            'sort' => $paint_job == 'default.sii' ? 1 : 0,
+                                            'active' => true,
+                                        ]);
+                                        if($paint_job === 'default.sii') $paint->sort = '1';
+                                        $paint->save();
+//                                        dump($paint);
+                                    }
+                                }
+                            }
+                        }else{
+                            foreach(scandir($chassis_paint_jobs_path) as $paint_job){
+                                if($paint_job !== '.' && $paint_job !== '..'){
+                                    $paint = new Paint();
+                                    $paint->fill([
+                                        'game' => $dlc_params['game'] ?? 'ats',
+                                        'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
+                                        'alias' => str_replace('.sii', '', $paint_job),
+                                        'look' => str_replace('.sii', '', $paint_job),
+                                        'chassis' => $chassis,
+                                        'dlc_id' => $dlc_params['id'],
+                                        'with_color' => $paint_job == 'default.sii' ? 1 : 0,
+                                        'sort' => $paint_job == 'default.sii' ? 1 : 0,
+                                        'active' => true,
+                                    ]);
+                                    if($paint_job === 'default.sii') $paint->sort = '1';
+                                    $paint->save();
+//                                    dump($paint);
+                                }
+                            }
+                            if($chassis === 'schw_curtain' || $chassis === 'schw_reefer'){
                                 $paint = new Paint();
                                 $paint->fill([
-                                    'game' => $dlc_params['game'] ?? 'ets2',
-                                    'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
-                                    'alias' => str_replace('.sii', '', $paint_job),
-                                    'look' => str_replace('.sii', '', $paint_job),
+                                    'game' => 'ets2',
+                                    'def' => '/def/trailer/'.$chassis.'/custom_paint_job/schw_logo.sii',
+                                    'alias' => 'schw_logo',
+                                    'look' => 'empty',
                                     'chassis' => $chassis,
-                                    'dlc_id' => $dlc_params['id'],
+                                    'dlc_id' => $dlcs['schwarzmuller']['id'],
+                                    'with_color' => 0,
                                     'active' => true,
+                                    'sort' => 1
                                 ]);
-                                if($paint_job === 'default.sii') $paint->sort = '1';
                                 $paint->save();
-//                                dump($paint);
+    //                            dump($paint);
                             }
-                        }
-                        if($chassis === 'schw_curtain' || $chassis === 'schw_reefer'){
-                            $paint = new Paint();
-                            $paint->fill([
-                                'game' => 'ets2',
-                                'def' => '/def/trailer/'.$chassis.'/custom_paint_job/schw_logo.sii',
-                                'alias' => 'schw_logo',
-                                'look' => 'empty',
-                                'chassis' => $chassis,
-                                'dlc_id' => $dlcs['schwarzmuller']['id'],
-                                'active' => true,
-                                'sort' => 1
-                            ]);
-                            $paint->save();
-//                            dump($paint);
                         }
                     }
                 }
