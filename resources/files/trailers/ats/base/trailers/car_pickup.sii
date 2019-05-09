@@ -1,0 +1,23 @@
+trailer : trailer.car_pickup 
+{
+	accessories[]: .car_pickup.chassis
+	accessories[]: .car_pickup.rwheel
+	accessories[]: .car_pickup.rwheel2
+}
+
+vehicle_accessory: .car_pickup.chassis
+{
+	data_path: "/def/vehicle/trailer/car/chassis_pickup.sii"
+}
+
+vehicle_wheel_accessory: .car_pickup.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .car_pickup.rwheel
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}

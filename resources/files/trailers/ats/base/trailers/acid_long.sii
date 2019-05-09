@@ -42,3 +42,5 @@ vehicle_paint_job_accessory: .acid_l.paint_job
 {
     	data_path: "/def/vehicle/trailer/acid_long/company_paint_job/default.sii"
 }
+
+
