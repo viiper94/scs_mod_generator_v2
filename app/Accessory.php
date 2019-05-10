@@ -2,6 +2,7 @@
 
 namespace App;
 
+use function foo\func;
 use I18n;
 use Illuminate\Database\Eloquent\Model;
 
@@ -46,11 +47,21 @@ class Accessory extends Model{
     public function getDefBySuffix($suffix){
         $suffix_list = explode(',', $this->suffixes);
         if(in_array($suffix, $suffix_list)){
-            $new_def = str_replace('_13', '', $this->def);
+            array_walk($suffix_list, function(&$item, $key, $prefix = '_'){
+                $item = $prefix.$item;
+            });
+            $new_def = str_replace($suffix_list, '', $this->def);
             return str_replace('.sii', '_'.$suffix.'.sii', $new_def);
         }else{
             return $this->def;
         }
+    }
+
+    public static function getCargoParams($temp){
+        $params = explode('_', str_replace('%', '', $temp));
+        $suffix = $params[1] ?? null;
+        $is_slave = isset($params[2]) && $params[2] == 's';
+        return ['suffix' => $suffix, 'slave' => $is_slave];
     }
 
 }

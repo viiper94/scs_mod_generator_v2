@@ -238,17 +238,14 @@ class TrailerGenerator extends ModGenerator{
 		}
         $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .$trailer_name.cargo" : '', $content);
         $content = str_replace(['%cargo_def_s%'], $this->accessory ? "accessories[]: .$trailer_name.slave.cargo" : '', $content);
-        $content = str_replace(['%cargo%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .$trailer_name.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+
+        preg_match('/%cargo[_0-9s]{0,}%/', $content, $matches);
+        $params = Accessory::getCargoParams($matches[0]);
+        $content = preg_replace('/%cargo[_0-9s]{0,}%/', $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .$trailer_name".($params['slave'] ? ".slave" : "").".cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix($params['suffix'])."\"\n}"
             : '', $content);
-        $content = str_replace(['%cargo_s%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .$trailer_name.slave.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
-            : '', $content);
-        $content = str_replace(['%cargo_8_s%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .$trailer_name.slave.cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix('8')."\"\n}\n"
-            : '', $content);
-//		$to_replace = ['box_pup_2', 'box_pup_3', 'box_rm_2', 'reefer_pup_2', 'reefer_pup_3', 'reefer_rm_2', '%trailer%'];
-		$content = str_replace('%trailer%', $trailer_name, $content);
+
+        $content = str_replace('%trailer%', $trailer_name, $content);
 		$content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
 
 		return $content;
@@ -385,15 +382,13 @@ class TrailerGenerator extends ModGenerator{
         }
         $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .cargo" : '', $content);
         $content = str_replace(['%cargo_def_s%'], $this->accessory ? "accessories[]: .slave.cargo" : '', $content);
-        $content = str_replace(['%cargo%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+
+        preg_match('/%cargo[_0-9s]{0,}%/', $content, $matches);
+        $params = Accessory::getCargoParams($matches[0]);
+        $content = preg_replace('/%cargo[_0-9s]{0,}%/', $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: ".($params['slave'] ? ".slave" : "").".cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix($params['suffix'])."\"\n}"
             : '', $content);
-        $content = str_replace(['%cargo_s%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .slave.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
-            : '', $content);
-        $content = str_replace(['%cargo_8_s%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .slave.cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix('8')."\"\n}\n"
-            : '', $content);
+
         $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
 
         return $content;
@@ -408,9 +403,13 @@ class TrailerGenerator extends ModGenerator{
             $content = str_replace(['%paint_job%'], $this->paintJob->def, $content);
         }
         $content = str_replace(['%cargo_def%'], $this->accessory ? "accessories[]: .$trailer_name.cargo" : '', $content);
-        $content = str_replace(['%cargo%'], $this->accessory && $this->accessory->def !== '' ?
-            "\nvehicle_accessory: .$trailer_name.cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n"
+
+        preg_match('/%cargo[_0-9s]{0,}%/', $content, $matches);
+        $params = Accessory::getCargoParams($matches[0]);
+        $content = preg_replace('/%cargo[_0-9s]{0,}%/', $this->accessory && $this->accessory->def !== '' ?
+            "\nvehicle_accessory: .$trailer_name".($params['slave'] ? ".slave" : "").".cargo\n{\n\tdata_path: \"".$this->accessory->getDefBySuffix($params['suffix'])."\"\n}"
             : '', $content);
+
         $content = str_replace(['%trailer%'], $trailer_name, $content);
         $content = str_replace(['%wheel%'], $this->chassis->wheels->def, $content);
 
