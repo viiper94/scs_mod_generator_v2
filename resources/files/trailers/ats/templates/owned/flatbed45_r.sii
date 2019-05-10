@@ -1,0 +1,56 @@
+trailer : trailer.%trailer%
+{
+	accessories[]: .%trailer%.chassis
+	accessories[]: .%trailer%.body
+	accessories[]: .%trailer%.markers
+	accessories[]: .%trailer%.r_bumper
+	accessories[]: .%trailer%.r_mudflap
+	accessories[]: .%trailer%.paint_job
+	accessories[]: .%trailer%.wheel1
+	accessories[]: .%trailer%.wheel2
+	%cargo_def%
+}
+
+vehicle_accessory: .%trailer%.chassis
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_45_r.sii"
+}
+
+vehicle_accessory: .%trailer%.body
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/body/flatbed_45w.sii"
+}
+
+vehicle_addon_accessory: .%trailer%.markers
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/flatbed_45.sii"
+}
+
+vehicle_addon_accessory: .%trailer%.r_bumper
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/flatbed.sii"
+}
+
+vehicle_addon_accessory: .%trailer%.r_mudflap
+{
+	data_path: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_mudflap/simple.sii"
+}
+
+vehicle_paint_job_accessory : .%trailer%.paint_job
+{
+	base_color: (%color%)
+    data_path: "%paint_job%"
+}
+
+vehicle_wheel_accessory: .%trailer%.wheel1
+{
+	offset: 0
+	data_path: "%wheel%"
+}
+
+vehicle_wheel_accessory: .%trailer%.wheel2
+{
+	offset: 2
+	data_path: "%wheel%"
+}
+%cargo_45%
