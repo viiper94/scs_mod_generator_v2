@@ -2,7 +2,6 @@
 
 namespace App;
 
-use function foo\func;
 use I18n;
 use Illuminate\Database\Eloquent\Model;
 
