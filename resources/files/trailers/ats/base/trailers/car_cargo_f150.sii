@@ -1,0 +1,29 @@
+trailer : trailer.car_pickup.cargo_f150
+{
+	accessories[]: .car_pickup.f150.chassis
+	accessories[]: .car_pickup.f150.rwheel
+	accessories[]: .car_pickup.f150.rwheel2
+	accessories[]: .car_pickup.f150.cargo
+}
+
+vehicle_accessory: .car_pickup.f150.chassis
+{
+	data_path: "/def/vehicle/trailer/car/chassis_pickup.sii"
+}
+
+vehicle_wheel_accessory: .car_pickup.f150.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .car_pickup.f150.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_accessory: .car_pickup.f150.cargo
+{
+	data_path: "/def/vehicle/trailer/car/cargo_f150.sii"
+}

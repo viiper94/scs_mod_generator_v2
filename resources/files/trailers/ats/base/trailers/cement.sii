@@ -1,26 +1,23 @@
 trailer : trailer.cement 
 {
-	accessories[]: .cement.tchassis
-	accessories[]: .cement.trwheel0
-	accessories[]: .cement.trwheel1
-
+	accessories[]: .cement.chassis
+	accessories[]: .cement.rwheel
+	accessories[]: .cement.rwheel2
 }
 
-vehicle_accessory: .cement.tchassis
+vehicle_accessory: .cement.chassis
 {
-    	data_path: "/def/vehicle/trailer/cement/chassis.sii"
+	data_path: "/def/vehicle/trailer/cement/chassis.sii"
 }
 
-vehicle_wheel_accessory: .cement.trwheel0
+vehicle_wheel_accessory: .cement.rwheel
 {
 	offset: 0
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_wheel_accessory: .cement.trwheel1
+vehicle_wheel_accessory: .cement.rwheel2
 {
 	offset: 2
-    	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-
-

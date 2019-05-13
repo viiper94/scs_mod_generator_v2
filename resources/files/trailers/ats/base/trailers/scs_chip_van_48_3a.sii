@@ -1,0 +1,37 @@
+trailer : trailer.scs_chipvan3
+{
+	trailer_definition: trailer_def.scs.chipvan.single_48_3.bellyvan
+
+	accessories[]: .scs_chipvan3.chassis
+	accessories[]: .scs_chipvan3.rwheel
+	accessories[]: .scs_chipvan3.rwheel2
+	accessories[]: .scs_chipvan3.rwheel3
+	accessories[]: .scs_chipvan3.paint_job
+}
+
+vehicle_accessory: .scs_chipvan3.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_chipvan/ch_3ax.sii"
+}
+
+vehicle_wheel_accessory: .scs_chipvan3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_chipvan3.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_chipvan3.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_chipvan3.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
