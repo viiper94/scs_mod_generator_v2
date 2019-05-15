@@ -57,8 +57,8 @@ class AdminTrailersController extends Controller{
         $chassis = Chassis::where('id', $id)->first();
         return view('admin.trailers.edit', [
             'chassis' => $chassis,
-            'wheels' => Wheel::where(['active' =>  1, 'game' => $chassis->game])->get(),
-            'dlc' => Dlc::where(['active' => 1, 'game' => $chassis->game])->get()
+            'wheels' => Wheel::where(['game' => $chassis->game])->get(),
+            'dlc' => Dlc::where(['game' => $chassis->game])->get()
         ]);
     }
 
