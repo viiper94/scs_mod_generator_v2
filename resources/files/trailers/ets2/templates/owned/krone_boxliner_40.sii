@@ -17,12 +17,12 @@ trailer : trailer.%trailer%
 
 vehicle_accessory: %trailer%.chassis
 {
-	data_path: "/def/vehicle/trailer_owned/krone.boxliner/chassis/chassis.sii"
+	data_path: "/def/vehicle/trailer_owned/krone.boxliner/chassis/chassis_40.sii"
 }
 
 vehicle_accessory: %trailer%.body
 {
-	data_path: "/def/vehicle/trailer_owned/krone.boxliner/body/boxliner.sii"
+	data_path: "/def/vehicle/trailer_owned/krone.boxliner/body/boxliner40.sii"
 }
 
 vehicle_paint_job_accessory: %trailer%.paint_job
