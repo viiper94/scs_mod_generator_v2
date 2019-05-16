@@ -1,36 +1,33 @@
 trailer : trailer.krone.boxliner20
 {
-	accessories[]: .krone.boxliner20.tchassis
-	accessories[]: .krone.boxliner20.trwheel0
-	accessories[]: .krone.boxliner20.trwheel1
-	accessories[]: .krone.boxliner20.trwheel2
-	accessories[]: .krone.boxliner20.cargo
+	trailer_definition: trailer_def.krone.boxliner.single_3.container
+
+	accessories[]: .krone.boxliner20.chassis
+	accessories[]: .krone.boxliner20.rwheel0
+	accessories[]: .krone.boxliner20.rwheel1
+	accessories[]: .krone.boxliner20.rwheel2
 }
 
-vehicle_accessory: .krone.boxliner20.tchassis
+vehicle_accessory: .krone.boxliner20.chassis
 {
-    	data_path: "/def/vehicle/trailer/krone/boxliner/chassis_20.sii"
+	data_path: "/def/vehicle/trailer/krone/boxliner/chassis_20.sii"
 }
 
-vehicle_wheel_accessory: .krone.boxliner20.trwheel0
+vehicle_wheel_accessory: .krone.boxliner20.rwheel0
 {
 	offset: 0
-    	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
 }
 
-vehicle_wheel_accessory: .krone.boxliner20.trwheel1
+vehicle_wheel_accessory: .krone.boxliner20.rwheel1
 {
 	offset: 2
-    	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
 }
 
-vehicle_wheel_accessory: .krone.boxliner20.trwheel2
+vehicle_wheel_accessory: .krone.boxliner20.rwheel2
 {
 	offset: 4
-    	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
-}
-vehicle_accessory: .krone.boxliner20.cargo
-{
-    	data_path: "/def/vehicle/trailer/krone/boxliner/container_20.sii"
+	data_path: "/def/vehicle/t_wheel/krone_385_65_r22_5.sii"
 }
 

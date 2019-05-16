@@ -1,0 +1,38 @@
+trailer : trailer.schw_slidep
+{
+	trailer_definition: trailer_def.schwmuller.slidepost.single_3.slidepost
+
+	accessories[]: .schw_slidep.chassis
+	accessories[]: .schw_slidep.rwheel
+	accessories[]: .schw_slidep.rwheel2
+	accessories[]: .schw_slidep.rwheel3
+	accessories[]: .schw_slidep.paint_job
+}
+
+vehicle_accessory: .schw_slidep.chassis
+{
+	data_path: "/def/vehicle/trailer/schw_slidepost/chassis.sii"
+}
+
+vehicle_wheel_accessory: .schw_slidep.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .schw_slidep.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .schw_slidep.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_paint_job_accessory: .schw_slidep.paint_job
+{
+	data_path: "/def/vehicle/trailer/schw_slidepost/company_paint_job/default.sii"
+}

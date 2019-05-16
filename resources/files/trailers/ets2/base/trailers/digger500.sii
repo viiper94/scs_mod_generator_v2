@@ -31,7 +31,7 @@ vehicle_wheel_accessory: .overweight.digger500.trwheel2
 }
 vehicle_accessory: .overweight.digger500.cargo
 {
-    	data_path: "/def/vehicle/trailer/overweight/cat422.sii"
+    	data_path: "/def/vehicle/trailer/overweight/digger500.sii"
 }
  
 

@@ -1,0 +1,32 @@
+trailer : trailer.scs_gosck40
+{
+	trailer_definition: trailer_def.scs.gooseneck.singl_3e_40.container
+
+	accessories[]: .scs_gosck40.tchassis
+	accessories[]: .scs_gosck40.trwheel0
+	accessories[]: .scs_gosck40.trwheel1
+	accessories[]: .scs_gosck40.trwheel2
+}
+
+vehicle_accessory: .scs_gosck40.tchassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/blue40.sii"
+}
+
+vehicle_wheel_accessory: .scs_gosck40.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .scs_gosck40.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .scs_gosck40.trwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
