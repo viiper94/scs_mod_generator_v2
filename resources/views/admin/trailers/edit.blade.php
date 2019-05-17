@@ -78,6 +78,18 @@
                     </div>
                     <div class="row no-margin">
                         <div class="mdc-text-field mdc-text-field--outlined">
+                            <input type="text" id="accessory_subgroup" class="mdc-text-field__input" name="accessory_subgroup" value="{{ $chassis->accessory_subgroup }}">
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="accessory_subgroup" class="mdc-floating-label">Accessory subgroup</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--outlined">
                             <input type="text" id="alias_short_paint" class="mdc-text-field__input" name="alias_short_paint" value="{{ $chassis->alias_short_paint }}">
                             <div class="mdc-notched-outline">
                                 <div class="mdc-notched-outline__leading"></div>
