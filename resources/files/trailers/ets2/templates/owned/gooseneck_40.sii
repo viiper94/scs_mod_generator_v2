@@ -68,4 +68,4 @@ vehicle_wheel_accessory : .%trailer%.wheel3
 	offset: 4
 	data_path: "%wheel%"
 }
-%cargo_220%
+%cargo_40%

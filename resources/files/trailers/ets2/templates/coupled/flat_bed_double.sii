@@ -56,7 +56,7 @@ vehicle_accessory : .%trailer%.body
 vehicle_paint_job_accessory : .%trailer%.paint_job 
 {
 	%color%
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color4.sii"
+	data_path: "%paint_job%"
 }
 
 vehicle_wheel_accessory : .%trailer%.wheel1 
@@ -130,6 +130,6 @@ vehicle_wheel_accessory : .%trailer%.slave.wheel2
 vehicle_paint_job_accessory : .%trailer%.slave.paint_job 
 {
 	%color%
-	data_path: "/def/vehicle/trailer_owned/scs.flatbed/paint_job/color4.sii"
+	data_path: "%paint_job%"
 }
 %cargo_8_s%
