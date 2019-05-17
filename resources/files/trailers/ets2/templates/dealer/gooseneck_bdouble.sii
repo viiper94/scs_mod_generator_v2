@@ -1,0 +1,235 @@
+SiiNunit
+{
+trailer : .scs.gooseneck.bdouble_2_2.container
+{
+	trailer_definition: trailer_def.scs.gooseneck.bdouble_2_2.container
+
+    accessories[]: .data
+    accessories[]: .chassis
+    accessories[]: .trlr_cables
+    accessories[]: .body
+    accessories[]: .paint_job
+    
+    accessories[]: .chs_f_l
+    accessories[]: .chs_f_r
+    accessories[]: .markers
+    accessories[]: .r_bumper
+    
+    accessories[]: .r_tire
+    accessories[]: .r_disc
+    accessories[]: .r_hub
+    accessories[]: .r_nuts
+    
+    accessories[]: .r_tire2
+    accessories[]: .r_disc2
+    accessories[]: .r_hub2
+    accessories[]: .r_nuts2
+	%cargo_def%
+    
+    slave_trailer: .slave
+}
+
+vehicle_accessory : .data
+{
+    data_path: "/def/vehicle/tmg/data.sii"
+}
+
+vehicle_accessory : .chassis
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/chassis/ch_2_bd.sii"
+}
+
+vehicle_addon_accessory : .trlr_cables 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/trlr_cables/bdouble_cables_short.sii"
+}
+
+vehicle_accessory : .body 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/body/cont_20.sii"
+}
+
+vehicle_paint_job_accessory : .paint_job 
+{
+    base_color: (%color%)
+    data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory : .chs_f_l 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/chs_f_l/cage_bd.sii"
+}
+
+vehicle_addon_accessory : .chs_f_r 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/chs_f_r/cage_bd.sii"
+}
+
+vehicle_addon_accessory : .markers 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/markers/simple_bd2.sii"
+}
+
+vehicle_addon_accessory : .r_bumper 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/r_bumper/euro_3_bd.sii"
+}
+
+vehicle_wheel_accessory : .r_tire 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .r_disc 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .r_hub 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory : .r_nuts 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory : .r_tire2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .r_disc2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .r_hub2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory : .r_nuts2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+%cargo_20%
+
+
+trailer : .slave 
+{
+    accessories[]: .slave.body
+    accessories[]: .slave.chassis
+    accessories[]: .slave.paint_job
+    accessories[]: .slave.r_bumper
+    accessories[]: .slave.markers
+    accessories[]: .slave.chs_f_l
+    accessories[]: .slave.chs_f_r
+
+    accessories[]: .slave.r_tire
+    accessories[]: .slave.r_disc
+    accessories[]: .slave.r_hub
+    accessories[]: .slave.r_nuts
+    
+    accessories[]: .slave.r_tire2
+    accessories[]: .slave.r_disc2
+    accessories[]: .slave.r_hub2
+    accessories[]: .slave.r_nuts2
+	%cargo_def_s%
+}
+
+vehicle_accessory : .slave.body
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/body/cont_20.sii"
+}
+
+vehicle_accessory : .slave.chassis
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/chassis/ch_2_8.sii"
+}
+
+vehicle_paint_job_accessory : .slave.paint_job 
+{
+    base_color: (%color%)
+    data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory : .slave.r_bumper 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/r_bumper/euro_3_bd.sii"
+}
+
+vehicle_addon_accessory : .slave.markers 
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/markers/simple_8.sii"
+}
+
+vehicle_addon_accessory : .slave.chs_f_l
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/chs_f_l/cage_8.sii"
+}
+
+vehicle_addon_accessory : .slave.chs_f_r
+{
+    data_path: "/def/vehicle/trailer_owned/scs.gooseneck/accessory/chs_f_r/cage_8.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_tire
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_disc 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_hub 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_nuts 
+{
+    offset: 0
+    data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_tire2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_tire/385_55_r22_t.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_disc2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_disc/disc_0_01_matt_gray.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_hub2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_hub/hub_0_01.sii"
+}
+
+vehicle_wheel_accessory : .slave.r_nuts2 
+{
+    offset: 2
+    data_path: "/def/vehicle/trailer_wheel/r_nuts/nuts_steel_0_01.sii"
+}
+%cargo_s%
+
+}
