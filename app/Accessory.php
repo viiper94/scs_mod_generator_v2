@@ -46,20 +46,25 @@ class Accessory extends Model{
     public function getDefBySuffix($suffix){
         $suffix_list = explode(',', $this->suffixes);
         if(in_array($suffix, $suffix_list)){
-            array_walk($suffix_list, function(&$item, $key, $prefix = '_'){
-                $item = $prefix.$item;
+            return str_replace($suffix_list, $suffix, $this->def);
+        }elseif($suffix === null){
+            array_walk($suffix_list, function(&$item1){
+                $item1 = "_$item1";
             });
-            $new_def = str_replace($suffix_list, '', $this->def);
-            return str_replace('.sii', '_'.$suffix.'.sii', $new_def);
+            return str_replace($suffix_list, '', $this->def);
         }else{
             return $this->def;
         }
     }
 
     public static function getCargoParams($temp){
+        $is_slave = false;
         $params = explode('_', str_replace('%', '', $temp));
+        if(in_array('s', $params)){
+            $is_slave = true;
+            array_splice($params, array_search('s', $params, true), 1);
+        }
         $suffix = $params[1] ?? null;
-        $is_slave = isset($params[2]) && $params[2] == 's';
         return ['suffix' => $suffix, 'slave' => $is_slave];
     }
 
