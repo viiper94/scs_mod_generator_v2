@@ -140,7 +140,6 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         ),
         'A' => 
         array (
-            'Awobaz\\Compoships\\' => 18,
             'App\\' => 4,
         ),
     );
@@ -368,10 +367,6 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
-        'Awobaz\\Compoships\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/awobaz/compoships/src',
-        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -470,16 +465,6 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'App\\TruckPaintGenerator' => __DIR__ . '/../..' . '/app/TruckPaintGenerator.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\Wheel' => __DIR__ . '/../..' . '/app/Wheel.php',
-        'Awobaz\\Compoships\\Compoships' => __DIR__ . '/..' . '/awobaz/compoships/src/Compoships.php',
-        'Awobaz\\Compoships\\ComposhipsServiceProvider' => __DIR__ . '/..' . '/awobaz/compoships/src/ComposhipsServiceProvider.php',
-        'Awobaz\\Compoships\\Database\\Eloquent\\Concerns\\HasRelationships' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Concerns/HasRelationships.php',
-        'Awobaz\\Compoships\\Database\\Eloquent\\Model' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Model.php',
-        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\BelongsTo' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/BelongsTo.php',
-        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\HasMany' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/HasMany.php',
-        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\HasOne' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/HasOne.php',
-        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\HasOneOrMany' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/HasOneOrMany.php',
-        'Awobaz\\Compoships\\Database\\Query\\Builder' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Query/Builder.php',
-        'Awobaz\\Compoships\\Exceptions\\InvalidUsageException' => __DIR__ . '/..' . '/awobaz/compoships/src/Exceptions/InvalidUsageException.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
         'Barryvdh\\Debugbar\\Controllers\\BaseController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/BaseController.php',
