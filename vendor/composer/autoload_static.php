@@ -9,10 +9,10 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -140,6 +140,7 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         ),
         'A' => 
         array (
+            'Awobaz\\Compoships\\' => 18,
             'App\\' => 4,
         ),
     );
@@ -367,6 +368,10 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
+        'Awobaz\\Compoships\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/awobaz/compoships/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -465,6 +470,16 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'App\\TruckPaintGenerator' => __DIR__ . '/../..' . '/app/TruckPaintGenerator.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\Wheel' => __DIR__ . '/../..' . '/app/Wheel.php',
+        'Awobaz\\Compoships\\Compoships' => __DIR__ . '/..' . '/awobaz/compoships/src/Compoships.php',
+        'Awobaz\\Compoships\\ComposhipsServiceProvider' => __DIR__ . '/..' . '/awobaz/compoships/src/ComposhipsServiceProvider.php',
+        'Awobaz\\Compoships\\Database\\Eloquent\\Concerns\\HasRelationships' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Concerns/HasRelationships.php',
+        'Awobaz\\Compoships\\Database\\Eloquent\\Model' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Model.php',
+        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\BelongsTo' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/BelongsTo.php',
+        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\HasMany' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/HasMany.php',
+        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\HasOne' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/HasOne.php',
+        'Awobaz\\Compoships\\Database\\Eloquent\\Relations\\HasOneOrMany' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Eloquent/Relations/HasOneOrMany.php',
+        'Awobaz\\Compoships\\Database\\Query\\Builder' => __DIR__ . '/..' . '/awobaz/compoships/src/Database/Query/Builder.php',
+        'Awobaz\\Compoships\\Exceptions\\InvalidUsageException' => __DIR__ . '/..' . '/awobaz/compoships/src/Exceptions/InvalidUsageException.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
         'Barryvdh\\Debugbar\\Controllers\\BaseController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/BaseController.php',
@@ -3968,8 +3983,23 @@ class ComposerStaticInit49e7bd4a3437fc09d4eabab08bd5416d
         'Symfony\\Contracts\\Cache\\CallbackInterface' => __DIR__ . '/..' . '/symfony/contracts/Cache/CallbackInterface.php',
         'Symfony\\Contracts\\Cache\\ItemInterface' => __DIR__ . '/..' . '/symfony/contracts/Cache/ItemInterface.php',
         'Symfony\\Contracts\\Cache\\TagAwareCacheInterface' => __DIR__ . '/..' . '/symfony/contracts/Cache/TagAwareCacheInterface.php',
+        'Symfony\\Contracts\\EventDispatcher\\Event' => __DIR__ . '/..' . '/symfony/contracts/EventDispatcher/Event.php',
+        'Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface' => __DIR__ . '/..' . '/symfony/contracts/EventDispatcher/EventDispatcherInterface.php',
+        'Symfony\\Contracts\\HttpClient\\ChunkInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/ChunkInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Exception\\ClientExceptionInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Exception/ClientExceptionInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Exception/ExceptionInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Exception\\HttpExceptionInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Exception/HttpExceptionInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Exception\\RedirectionExceptionInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Exception/RedirectionExceptionInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Exception\\ServerExceptionInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Exception/ServerExceptionInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Exception\\TransportExceptionInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Exception/TransportExceptionInterface.php',
+        'Symfony\\Contracts\\HttpClient\\HttpClientInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/HttpClientInterface.php',
+        'Symfony\\Contracts\\HttpClient\\ResponseInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/ResponseInterface.php',
+        'Symfony\\Contracts\\HttpClient\\ResponseStreamInterface' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/ResponseStreamInterface.php',
+        'Symfony\\Contracts\\HttpClient\\Test\\HttpClientTestCase' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Test/HttpClientTestCase.php',
+        'Symfony\\Contracts\\HttpClient\\Test\\TestHttpServer' => __DIR__ . '/..' . '/symfony/contracts/HttpClient/Test/TestHttpServer.php',
         'Symfony\\Contracts\\Service\\ResetInterface' => __DIR__ . '/..' . '/symfony/contracts/Service/ResetInterface.php',
         'Symfony\\Contracts\\Service\\ServiceLocatorTrait' => __DIR__ . '/..' . '/symfony/contracts/Service/ServiceLocatorTrait.php',
+        'Symfony\\Contracts\\Service\\ServiceProviderInterface' => __DIR__ . '/..' . '/symfony/contracts/Service/ServiceProviderInterface.php',
         'Symfony\\Contracts\\Service\\ServiceSubscriberInterface' => __DIR__ . '/..' . '/symfony/contracts/Service/ServiceSubscriberInterface.php',
         'Symfony\\Contracts\\Service\\ServiceSubscriberTrait' => __DIR__ . '/..' . '/symfony/contracts/Service/ServiceSubscriberTrait.php',
         'Symfony\\Contracts\\Tests\\Cache\\CacheTraitTest' => __DIR__ . '/..' . '/symfony/contracts/Tests/Cache/CacheTraitTest.php',

@@ -61,5 +61,6 @@ return array(
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'Barryvdh\\Debugbar\\' => array($vendorDir . '/barryvdh/laravel-debugbar/src'),
+    'Awobaz\\Compoships\\' => array($vendorDir . '/awobaz/compoships/src'),
     'App\\' => array($baseDir . '/app'),
 );
