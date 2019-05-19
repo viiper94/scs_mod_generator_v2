@@ -93,7 +93,8 @@ class Chassis extends Model{
             'value' => '',
             'selected' => true
         ];
-        $accessories = Accessory::where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])
+        $accessories = Accessory::where(['game' => $this->game, 'active' => 1])
+            ->whereIn('chassis', [$this->alias_short_paint, $this->accessory_subgroup])
             ->orderBy('alias', 'asc')->get();
         $dlc_list = Dlc::where('game', $this->game)->get()->keyBy('id');
         foreach($accessories as $key => $accessory){
