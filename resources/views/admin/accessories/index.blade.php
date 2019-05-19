@@ -38,7 +38,7 @@
                         <td>@lang($accessory->game.'_accessories.'.$accessory->alias)</td>
                         <td>{{ $accessory->def }}</td>
                         <td>{{ $accessory->suffixes ?? '—' }}</td>
-                        <td>@lang($accessory->game.'_trailers.'.$accessory->chassisObj->alias)</td>
+                        <td>{{ $accessory->chassis }}</td>
                         <td>
                             @if($accessory->isDLCContent())
                                 @foreach($accessory->getDLCs(true) as $dlc)
