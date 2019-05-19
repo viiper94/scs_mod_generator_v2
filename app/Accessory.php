@@ -44,14 +44,21 @@ class Accessory extends Model{
     }
 
     public function getDefBySuffix($suffix){
-        $suffix_list = explode(',', $this->suffixes);
+        $suffixes = explode(',', $this->suffixes);
+        $default_suffix = null;
+        $suffix_list = array();
+        foreach($suffixes as $key => $suf){
+            if(stripos($suf, '%') !== false) $default_suffix = $key;
+            $suffix_list[$key] = str_replace('%', '', $suf);
+        }
         if(in_array($suffix, $suffix_list)){
             return str_replace($suffix_list, $suffix, $this->def);
         }elseif($suffix === null){
+            $replace = isset($default_suffix) ? '_'.$suffix_list[$default_suffix] : '';
             array_walk($suffix_list, function(&$item1){
                 $item1 = "_$item1";
             });
-            return str_replace($suffix_list, '', $this->def);
+            return str_replace($suffix_list, $replace, $this->def);
         }else{
             return $this->def;
         }
