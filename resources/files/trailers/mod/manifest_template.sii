@@ -1,18 +1,9 @@
 SiiNunit{
 	mod_package : .package_name{
-
-
-		# Display name can be any string with any length.
 		display_name: "%%"
-
-		# Author can be any string with any length.
 		author: "Mayday"
-
-		# Categories is an array of strings. 
 		category[]: "trailer"
-
-		# Icon inside the root directory of the mod.
 		icon: "mod_icon.jpg"
-
+		compatible_versions[]: "1.35.*"
 	}
 }
