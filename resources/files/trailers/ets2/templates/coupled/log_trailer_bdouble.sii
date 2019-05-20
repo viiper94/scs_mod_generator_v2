@@ -5,6 +5,7 @@ trailer : trailer.%trailer%
     accessories[]: .%trailer%.body
     accessories[]: .%trailer%.paint_job
     
+    accessories[]: .%trailer%.f_body
     accessories[]: .%trailer%.chs_f_l
     accessories[]: .%trailer%.chs_f_r
     accessories[]: .%trailer%.markers
@@ -37,6 +38,11 @@ vehicle_paint_job_accessory : .%trailer%.paint_job
 {
     %color%
     data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory: .%trailer%.f_body
+{
+	data_path: "/def/vehicle/trailer_owned/scs.log/accessory/f_body/cage.sii"
 }
 
 vehicle_addon_accessory : .%trailer%.chs_f_l 
@@ -86,6 +92,7 @@ trailer : .%trailer%.slave
     accessories[]: .%trailer%.slave.paint_job
     accessories[]: .%trailer%.slave.r_bumper
     accessories[]: .%trailer%.slave.markers
+    accessories[]: .%trailer%.slave.f_body
     accessories[]: .%trailer%.slave.chs_f_l
     accessories[]: .%trailer%.slave.chs_f_r
     accessories[]: .%trailer%.slave.chs_r_l
@@ -122,6 +129,11 @@ vehicle_addon_accessory : .%trailer%.slave.r_bumper
 vehicle_addon_accessory : .%trailer%.slave.markers 
 {
     data_path: "/def/vehicle/trailer_owned/scs.log/accessory/markers/simple.sii"
+}
+
+vehicle_addon_accessory: .%trailer%.slave.f_body
+{
+	data_path: "/def/vehicle/trailer_owned/scs.log/accessory/f_body/cage.sii"
 }
 
 vehicle_addon_accessory : .%trailer%.slave.chs_f_l

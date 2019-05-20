@@ -10,6 +10,7 @@ trailer : .scs.log.bdouble_3_3.wood
     accessories[]: .body
     accessories[]: .paint_job
     
+    accessories[]: .f_body
     accessories[]: .chs_f_l
     accessories[]: .chs_f_r
     accessories[]: .markers
@@ -58,6 +59,11 @@ vehicle_paint_job_accessory : .paint_job
 {
     base_color: (%color%)
     data_path: "%paint_job%"
+}
+
+vehicle_addon_accessory: .f_body
+{
+	data_path: "/def/vehicle/trailer_owned/scs.log/accessory/f_body/cage.sii"
 }
 
 vehicle_addon_accessory : .chs_f_l 
@@ -161,6 +167,7 @@ trailer : .slave
     accessories[]: .slave.paint_job
     accessories[]: .slave.r_bumper
     accessories[]: .slave.markers
+    accessories[]: .slave.f_body
     accessories[]: .slave.chs_f_l
     accessories[]: .slave.chs_f_r
     accessories[]: .slave.chs_r_l
@@ -207,6 +214,11 @@ vehicle_addon_accessory : .slave.r_bumper
 vehicle_addon_accessory : .slave.markers 
 {
     data_path: "/def/vehicle/trailer_owned/scs.log/accessory/markers/simple.sii"
+}
+
+vehicle_addon_accessory: .slave.f_body
+{
+	data_path: "/def/vehicle/trailer_owned/scs.log/accessory/f_body/cage.sii"
 }
 
 vehicle_addon_accessory : .slave.chs_f_l
