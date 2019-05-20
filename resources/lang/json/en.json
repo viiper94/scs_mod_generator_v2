@@ -376,6 +376,8 @@
         "container_t50": "Container T50",
         "container_t75": "Container T75",
         "cows": "Cows",
+        "wooden_beams": "Wooden beams",
+        "logs_3x4m": "Logs 3x4m",
         "logs": "Logs",
         "lumber": "Lumber",
         "pipes": "Small pipes",
@@ -424,6 +426,7 @@
     },
     "ets2 companies\/paints": {
         "schw_logo": "Schwarzm\u00fcller Logo",
+        "schw_black_red": "Schwarzm\u00fcller Black and Red",
         "default": "Colored",
         "green": "Green",
         "red": "Red",
@@ -568,7 +571,10 @@
     "ats companies\/paints": {
         "default": "Colored",
         "black": "Black",
-        "red": "Red"
+        "red": "Red",
+        "green": "Green",
+        "blue": "Blue",
+        "gray": "Gray"
     },
     "ats wheels": {}
 }

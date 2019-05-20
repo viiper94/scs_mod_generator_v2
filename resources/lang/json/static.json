@@ -192,7 +192,15 @@
     "plaster": "Plaster & Sons",
     "voltison": "Voltison",
     "gallon": "Gallon",
-    "global_mills": "Global Mills"
+    "global_mills": "Global Mills",
+    "pnp_paper": "PNP Paper",
+    "kenworth": "Kenworth",
+    "darwing": "Darwing",
+    "homestore": "Home Store",
+    "heartwood": "Heartwood",
+    "ftf_food_pln": "FTF Food Plant",
+    "as_air_plnt": "AS Air Plant",
+    "deepgrove": "Deepgrove"
   },
   "ats wheels": {
     "w_single": "Single",
