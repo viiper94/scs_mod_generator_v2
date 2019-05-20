@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.flatbed.single_32_2.flatbed
+{
+	gross_trailer_weight_limit: 27000
+	chassis_mass: 3841.93
+	body_mass: 0
+	length: 9.7536
+	axles: 2
+	volume: 65.66
+	body_type: flatbed
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

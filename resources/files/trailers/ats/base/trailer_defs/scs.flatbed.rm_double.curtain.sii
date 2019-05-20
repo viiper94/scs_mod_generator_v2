@@ -2,7 +2,7 @@ SiiNunit
 {
 trailer_def : trailer_def.scs.flatbed.rm_double.curtain
 {
-	gross_trailer_weight_limit: 350000
+	gross_trailer_weight_limit: 38500
 	chassis_mass: 9784.2
 	body_mass: 1392.7
 	length: 23.7744
@@ -11,25 +11,12 @@ trailer_def : trailer_def.scs.flatbed.rm_double.curtain
 	body_type: curtainside
 	chain_type: rmdouble
 
-	country_validity[]: nevada
-	country_validity[]: oregon
+	
+	
+	
 
 	mass_ratio[]: 0.6
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
-
 	mass_ratio[]: 0.1
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,0,0)
-
 	mass_ratio[]: 0.3
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
 }
 }

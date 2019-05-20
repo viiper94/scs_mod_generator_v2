@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.gooseneck.single_45_3.container
+{
+	gross_trailer_weight_limit: 33500
+	chassis_mass: 4418.5
+	body_mass: 0
+	length: 13.716
+	axles: 3
+	volume: 90
+	body_type: container
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

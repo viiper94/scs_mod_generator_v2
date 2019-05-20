@@ -2,7 +2,7 @@ SiiNunit
 {
 trailer_def : trailer_def.scs.flatbed.triple_p.flatbed_a
 {
-	gross_trailer_weight_limit: 350000
+	gross_trailer_weight_limit: 46500
 	chassis_mass: 11181.4
 	body_mass: 0
 	length: 28.6512
@@ -11,37 +11,13 @@ trailer_def : trailer_def.scs.flatbed.triple_p.flatbed_a
 	body_type: flatbed
 	chain_type: triple
 
-	country_validity[]: nevada
-	country_validity[]: oregon
+	
+	
 
 	mass_ratio[]: 0.3
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
-
 	mass_ratio[]: 0.05
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,0,0)
-
 	mass_ratio[]: 0.3
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
-
 	mass_ratio[]: 0.05
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,0,0)
-
 	mass_ratio[]: 0.3
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
 }
 }

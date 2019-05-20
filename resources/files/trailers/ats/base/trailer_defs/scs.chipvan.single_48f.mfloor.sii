@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.chipvan.single_48f.mfloor
+{
+	gross_trailer_weight_limit: 30500
+	chassis_mass: 6123.5
+	body_mass: 181.5
+	length: 14.6304
+	axles: 2
+	volume: 101.36
+	body_type: chipvan
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

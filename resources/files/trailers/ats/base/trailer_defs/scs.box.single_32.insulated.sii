@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.single_32.insulated
+{
+	gross_trailer_weight_limit: 23000
+	chassis_mass: 4082.34
+	body_mass: 113.4
+	length: 9.7536
+	axles: 1
+	volume: 60.1
+	body_type: insulated
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.bdouble_3_2.insulated
+{
+	gross_trailer_weight_limit: 43000
+	chassis_mass: 9960.9
+	body_mass: 213.2
+	length: 19.5072
+	axles: 5
+	volume: 112.7
+	body_type: insulated
+	chain_type: bdouble
+
+	
+	
+
+	mass_ratio[]: 0.5
+	mass_ratio[]: 0.5
+}
+}

@@ -2,7 +2,7 @@ SiiNunit
 {
 trailer_def : trailer_def.scs.flatbed.double_p.flatbed
 {
-	gross_trailer_weight_limit: 350000
+	gross_trailer_weight_limit: 32000
 	chassis_mass: 7030.9
 	body_mass: 0
 	length: 18.8976
@@ -12,21 +12,7 @@ trailer_def : trailer_def.scs.flatbed.double_p.flatbed
 	chain_type: double
 
 	mass_ratio[]: 0.45
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
-
 	mass_ratio[]: 0.1
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,0,0)
-
 	mass_ratio[]: 0.45
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
 }
 }

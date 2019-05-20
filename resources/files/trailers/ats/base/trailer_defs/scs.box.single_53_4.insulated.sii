@@ -2,8 +2,8 @@ SiiNunit
 {
 trailer_def : trailer_def.scs.box.single_53_4.insulated
 {
-	gross_trailer_weight_limit: 350000
-	chassis_mass: 7166.8
+	gross_trailer_weight_limit: 38000
+	chassis_mass: 8028.59
 	body_mass: 199.6
 	length: 16.1544
 	axles: 4
@@ -12,9 +12,5 @@ trailer_def : trailer_def.scs.box.single_53_4.insulated
 	chain_type: single
 
 	mass_ratio[]: 1
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 350000
-	max_cog[]: (0,1,0)
 }
 }

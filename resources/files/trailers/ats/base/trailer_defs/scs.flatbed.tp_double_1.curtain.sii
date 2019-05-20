@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.flatbed.tp_double_1.curtain
+{
+	gross_trailer_weight_limit: 51500
+	chassis_mass: 12537.5
+	body_mass: 1696.6
+	length: 28.6512
+	axles: 5
+	volume: 191.2
+	body_type: curtainside
+	chain_type: tpdouble
+
+	
+
+	mass_ratio[]: 0.6
+	mass_ratio[]: 0.1
+	mass_ratio[]: 0.3
+}
+}

@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.tp_double_2.insulated
+{
+	gross_trailer_weight_limit: 54000
+	chassis_mass: 14016.16
+	body_mass: 335.8
+	length: 28.6512
+	axles: 6
+	volume: 169.06
+	body_type: insulated
+	chain_type: tpdouble
+
+	
+
+	mass_ratio[]: 0.6
+	mass_ratio[]: 0.1
+	mass_ratio[]: 0.3
+}
+}

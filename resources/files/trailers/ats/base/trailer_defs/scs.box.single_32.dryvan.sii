@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.single_32.dryvan
+{
+	gross_trailer_weight_limit: 23000
+	chassis_mass: 4082.34
+	body_mass: 0
+	length: 9.7536
+	axles: 1
+	volume: 65.66
+	body_type: dryvan
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}
