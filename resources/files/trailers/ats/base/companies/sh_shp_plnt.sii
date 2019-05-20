@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sh_shp_plnt
+{
+	name: "Sea Horizon"
+	sort_name: "sea horizon"
+	trailer_look: sea_horizon
+}

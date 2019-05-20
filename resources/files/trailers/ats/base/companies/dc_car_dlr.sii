@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dc_car_dlr
+{
+	name: "Doug Cars"
+	sort_name: "doug cars"
+	trailer_look: doug_cars
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ftf_food_pln
+{
+	name: "Fish Tail Food"
+	sort_name: "fish tail food"
+	trailer_look: fish_tail
+}
