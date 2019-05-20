@@ -44,28 +44,29 @@ class Accessory extends Model{
     }
 
     public function getDefBySuffix($suffix){
-        $suffixes = explode(',', $this->suffixes);
+        $suffixes = $this->suffixes ? explode(',', $this->suffixes) : null;
         $default_suffix = null;
         $replace = null;
         $suffix_list = array();
-        foreach($suffixes as $key => $suf){
-            if(stripos($suf, '%') !== false) $default_suffix = $key;
-            $suffix_list[$key] = str_replace('%', '', $suf);
+        if($suffixes){
+            foreach($suffixes as $key => $suf){
+                if(stripos($suf, '%') !== false) $default_suffix = $key;
+                $suffix_list[$key] = str_replace('%', '', $suf);
+            }
+            foreach($suffix as $key => $s){
+                if(in_array($s, $suffix_list)) $replace = $s;
+            }
+            if($replace){
+                return str_replace($suffix_list, $replace, $this->def);
+            }elseif(empty($suffix)){
+                $replace = isset($default_suffix) ? '_'.$suffix_list[$default_suffix] : '';
+                array_walk($suffix_list, function(&$item1){
+                    $item1 = "_$item1";
+                });
+                return str_replace($suffix_list, $replace, $this->def);
+            }
         }
-        foreach($suffix as $key => $s){
-            if(in_array($s, $suffix_list)) $replace = $s;
-        }
-        if($replace){
-            return str_replace($suffix_list, $replace, $this->def);
-        }elseif(empty($suffix)){
-            $replace = isset($default_suffix) ? '_'.$suffix_list[$default_suffix] : '';
-            array_walk($suffix_list, function(&$item1){
-                $item1 = "_$item1";
-            });
-            return str_replace($suffix_list, $replace, $this->def);
-        }else{
-            return $this->def;
-        }
+        return $this->def;
     }
 
     public static function getCargoParams($temp){
