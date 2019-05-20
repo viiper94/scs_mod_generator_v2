@@ -46,14 +46,18 @@ class Accessory extends Model{
     public function getDefBySuffix($suffix){
         $suffixes = explode(',', $this->suffixes);
         $default_suffix = null;
+        $replace = null;
         $suffix_list = array();
         foreach($suffixes as $key => $suf){
             if(stripos($suf, '%') !== false) $default_suffix = $key;
             $suffix_list[$key] = str_replace('%', '', $suf);
         }
-        if(in_array($suffix, $suffix_list)){
-            return str_replace($suffix_list, $suffix, $this->def);
-        }elseif($suffix === null){
+        foreach($suffix as $key => $s){
+            if(in_array($s, $suffix_list)) $replace = $s;
+        }
+        if($replace){
+            return str_replace($suffix_list, $replace, $this->def);
+        }elseif(empty($suffix)){
             $replace = isset($default_suffix) ? '_'.$suffix_list[$default_suffix] : '';
             array_walk($suffix_list, function(&$item1){
                 $item1 = "_$item1";
@@ -71,7 +75,7 @@ class Accessory extends Model{
             $is_slave = true;
             array_splice($params, array_search('s', $params, true), 1);
         }
-        $suffix = $params[1] ?? null;
+        $suffix = isset($params[1]) ? explode(',', $params[1]) : array();
         return ['suffix' => $suffix, 'slave' => $is_slave];
     }
 
