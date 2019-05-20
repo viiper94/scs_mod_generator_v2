@@ -1,0 +1,18 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.log.bdouble_3_3.wood
+{
+	gross_trailer_weight_limit: 65000
+	chassis_mass: 11760
+	body_mass: 600
+	length: 22.7
+	axles: 6
+	volume: 140
+	body_type: log
+	chain_type: b_double
+
+
+	mass_ratio[]: 0.33
+	mass_ratio[]: 0.67
+}
+}

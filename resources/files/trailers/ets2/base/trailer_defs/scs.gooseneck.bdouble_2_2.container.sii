@@ -1,0 +1,17 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.gooseneck.bdouble_2_2.container
+{
+	gross_trailer_weight_limit: 53000
+	chassis_mass: 6200
+	body_mass: 0
+	length: 22.7
+	axles: 4
+	volume: 80
+	body_type: container
+	chain_type: b_double
+
+	mass_ratio[]: 0.5
+	mass_ratio[]: 0.5
+}
+}
