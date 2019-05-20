@@ -6,6 +6,8 @@ trailer : trailer.%trailer%
 
 	accessories[]: .%trailer%.chs_f_l
 	accessories[]: .%trailer%.chs_f_r
+	accessories[]: .%trailer%.chs_r_l
+	accessories[]: .%trailer%.chs_r_r
 	accessories[]: .%trailer%.f_body
 	accessories[]: .%trailer%.markers
 	accessories[]: .%trailer%.r_bumper
@@ -35,6 +37,16 @@ vehicle_addon_accessory: .%trailer%.chs_f_l
 vehicle_addon_accessory: .%trailer%.chs_f_r
 {
 	data_path: "/def/vehicle/trailer_owned/scs.log/accessory/chs_f_r/cage_136.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.chs_r_l
+{
+    data_path: "/def/vehicle/trailer_owned/scs.log/accessory/chs_r_l/plastic_box_extinguisher.sii"
+}
+
+vehicle_addon_accessory : .%trailer%.chs_r_r
+{
+    data_path: "/def/vehicle/trailer_owned/scs.log/accessory/chs_r_r/spare_tire.sii"
 }
 
 vehicle_addon_accessory: .%trailer%.f_body
