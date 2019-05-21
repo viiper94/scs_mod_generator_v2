@@ -55,9 +55,6 @@
         <li @if(Request::is('ats'))class="active"@endif>
             <a href="{{url('/', 'ats')}}"><i class="truck-icons truck-us"></i>@lang('general.ats') @lang('general.trailer_generator')</a>
         </li>
-        <li @if(Request::is('color'))class="active"@endif>
-            <a href="{{route('color')}}"><i class="material-icons notranslate">format_paint</i>@lang('general.truck_paint_job_generator')</a>
-        </li>
         <li class="divider"></li>
         <li @if(Request::is('gallery'))class="active"@endif>
             <a href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a>

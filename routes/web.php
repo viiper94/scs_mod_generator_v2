@@ -23,10 +23,6 @@ Route::group(['middleware' => 'i18n'], function(){
     Route::get('/gallery', 'GalleryController@index')->name('gallery');
     Route::post('/gallery', 'GalleryController@getInfo');
 
-    Route::post('/color/generate', 'TruckPaintGeneratorController@generate')->name('color_generator');
-    Route::get('/color/{game?}/{d?}', 'TruckPaintGeneratorController@index');
-    Route::post('/color/{game?}', 'TruckPaintGeneratorController@getDLC')->name('color');
-
     Route::get('/profile/{id}/mods', 'ProfileController@mods')->name('profile_mods_admin');
     Route::get('/profile/mods', 'ProfileController@mods')->name('profile_mods');
     Route::post('/profile/mods', 'ProfileController@getModInfo');
