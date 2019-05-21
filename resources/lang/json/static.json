@@ -166,7 +166,7 @@
     "charged": "Charged",
     "darchelle": "Darchelle Uzau",
     "print": "42 Print",
-    "sellgoods": "Trator de esteira rolante",
+    "sellgoods": "Sell Goods",
     "sunshine": "Sunshine Crops",
     "wallbert": "Wallbert",
     "coastline": "Coastline Mining",
@@ -179,8 +179,8 @@
     "darwing": "Darwing",
     "homestore": "Home Store",
     "heartwood": "Heartwood Furniture",
-    "ftf_food_pln": "Fish Tail Food",
-    "as_air_plnt": "AS Air Plant",
+    "ftf_food": "Fish Tail Food",
+    "as_air": "AS Air Plant",
     "deepgrove": "Deepgrove"
   },
   "wheels": {
