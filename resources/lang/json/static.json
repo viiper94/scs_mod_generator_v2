@@ -20,7 +20,7 @@
     "special_ats": "DLC Special Transport",
     "raven": "DLC Raven Truck Design Pack"
   },
-  "ets2 companies\/paints": {
+  "companies\/paints": {
     "bcp": "BCP",
     "bhv": "BHV",
     "drekkar": "Drekkar Trans",
@@ -160,26 +160,7 @@
     "ukko": "UKKO Voima",
     "viljo_paper": "Viljo paperitehdas Oy",
     "viln_paper": "Vilniaus Popieriaus Fabrikas",
-    "zelenye": "Зеленые поля ООО"
-  },
-  "ets2 wheels": {
-    "w_single": "Single",
-    "w_385_65_r22_5": "385, 65, r22.5",
-    "w_435_50_r19_5": "435, 50, r19.5",
-    "w_krone_385_65_r22_5": "Krone 385, 65, r22.5",
-    "w_single_385_55_alu": "385, 55, ALU",
-    "w_single_385_55_steel": "385, 55, Steel",
-    "w_cartrans": "Cartrans",
-    "w_overweight": "Overweight",
-    "w_overweight_f": "Overweight_f",
-    "w_1.dlc_raven": "1",
-    "w_steel": "Steel",
-    "w_steel_single": "Steel Single",
-    "w_1": "1",
-    "w_2": "2",
-    "w_3": "3"
-  },
-  "ats companies\/paints": {
+    "zelenye": "Зеленые поля ООО",
     "chemso": "Chemso Ltd.",
     "bushnell": "Bushnell Farms",
     "charged": "Charged",
@@ -202,11 +183,24 @@
     "as_air_plnt": "AS Air Plant",
     "deepgrove": "Deepgrove"
   },
-  "ats wheels": {
+  "wheels": {
     "w_single": "Single",
+    "w_385_65_r22_5": "385, 65, r22.5",
+    "w_435_50_r19_5": "435, 50, r19.5",
+    "w_krone_385_65_r22_5": "Krone 385, 65, r22.5",
+    "w_single_385_55_alu": "385, 55, ALU",
+    "w_single_385_55_steel": "385, 55, Steel",
+    "w_cartrans": "Cartrans",
+    "w_overweight": "Overweight",
+    "w_overweight_f": "Overweight_f",
+    "w_1.dlc_raven": "1",
+    "w_steel": "Steel",
+    "w_steel_single": "Steel Single",
+    "w_1": "1",
+    "w_2": "2",
+    "w_3": "3",
     "w_single_small": "Single Small",
     "w_front": "Front",
-    "w_chrome": "Chrome",
-    "w_steel": "Steel"
+    "w_chrome": "Chrome"
   }
 }
