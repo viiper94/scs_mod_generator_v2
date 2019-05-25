@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Трв 21 2019 р., 17:59
+-- Час створення: Трв 25 2019 р., 18:08
 -- Версія сервера: 10.1.34-MariaDB
 -- Версія PHP: 7.2.8
 
@@ -351,8 +351,7 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `accessory_subgroup`
 (83, '/def/vehicle/trailer/fuel_long/chassis.sii', 'fuel_long', 'fuel_long', NULL, 'fuel_long', '3', 1, 1, 0, 0, 1, 0, '/def/vehicle/trailer/fuel_long/company_paint_job/default.sii', 1, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (84, '/def/vehicle/trailer/gas/chassis.sii', 'gas', 'gas', NULL, 'gas', '2', 1, 1, 0, 0, 1, 0, '/def/vehicle/trailer/gas/company_paint_job/default.sii', 1, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (85, '/def/vehicle/trailer/gas_long/chassis.sii', 'gas_long', 'gas_long', NULL, 'gas_long', '2', 1, 1, 0, 0, 1, 0, '/def/vehicle/trailer/gas_long/company_paint_job/default.sii', 1, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
-(86, '/def/vehicle/trailer/gooseneck/chassis_b.sii', 'gooseneck_ats_blue', 'gooseneck_ats', NULL, 'gooseneck_ats', '2', 1, 1, 0, 1, 0, 0, NULL, 0, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
-(87, '/def/vehicle/trailer/gooseneck/chassis_r.sii', 'gooseneck_ats_red', 'gooseneck_ats', NULL, 'gooseneck_ats', '2', 1, 1, 0, 1, 0, 0, NULL, 0, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
+(87, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck53_f', 'ats_gooseneck', 'container_53', 'container', '2', 13, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 0, 'ats', 0, NULL, 0, '2018-07-31 11:37:52', '2019-05-24 04:26:07'),
 (89, '/def/vehicle/trailer/lowboy/chassis_r.sii', 'lowboy_red', 'lowboy', NULL, 'lowboy', '2', 1, 1, 0, 1, 0, 0, NULL, 0, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (90, '/def/vehicle/trailer/lowboy/chassis_y.sii', 'lowboy_yellow', 'lowboy', NULL, 'lowboy', '2', 1, 1, 0, 1, 0, 0, NULL, 0, 'ats', 1, NULL, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
 (91, '/def/vehicle/trailer/magnitude_55l/chassis_jeep.sii', 'magnitude_55l_1_2', 'magnitude_55l_1_2', NULL, 'magnitude_55l', '2', 1, 1, 1, 1, 0, 0, NULL, 0, 'ats', 1, 8, 1, '2018-07-31 11:37:52', '2018-08-20 10:16:36'),
@@ -442,8 +441,8 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `accessory_subgroup`
 (194, '/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_3_hook.sii', 'brick_hct', 'brick_hct', NULL, 'brick_blue', '3', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color4.sii', 0, 'ets2', 1, NULL, 1, '2019-04-18 07:01:33', '2019-04-20 03:24:06'),
 (195, '/def/vehicle/trailer_owned/scs.flatbed/chassis/ch_3_hook.sii', 'flat_bed_hct', 'flat_bed_hct', NULL, 'flat_bed', '3', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color4.sii', 0, 'ets2', 1, NULL, 1, '2019-04-18 07:37:34', '2019-04-20 03:23:42'),
 (196, '/def/vehicle/trailer/scs_chipvan/ch_3ax.sii', 'chipvan', 'chipvan', NULL, 'chipvan', '3', 1, 1, 0, 0, 1, 0, '/def/vehicle/trailer/scs_chipvan/company_paint_job/default.sii', 1, 'ats', 0, NULL, 1, '2019-05-09 16:41:25', '2019-05-09 16:41:25'),
-(198, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck40_r', 'ats_gooseneck40_r', NULL, 'ats_gooseneck', '2', 13, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 'ats', 0, NULL, 1, '2019-05-10 08:31:45', '2019-05-10 09:19:40'),
-(199, '/def/vehicle/trailer/scs_gooseneck/ch_20_red.sii', 'ats_gooseneck32', 'ats_gooseneck32', NULL, 'ats_gooseneck32', '2', 13, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 'ats', 0, NULL, 1, '2019-05-10 09:16:53', '2019-05-10 09:19:34'),
+(198, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck40_r', 'ats_gooseneck40_r', 'container_40', 'container', '2', 13, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 'ats', 0, NULL, 1, '2019-05-10 08:31:45', '2019-05-22 04:21:22'),
+(199, '/def/vehicle/trailer/scs_gooseneck/ch_20_red.sii', 'ats_gooseneck32', 'ats_gooseneck32', 'container_20', 'container', '2', 13, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 'ats', 0, NULL, 1, '2019-05-10 09:16:53', '2019-05-22 04:21:01'),
 (201, '/def/vehicle/trailer/scs_log/chassis.sii', 'log_trailer_bdouble', 'log_trailer_bdouble', NULL, 'log_trailer', '6', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.log/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 06:31:34', '2019-05-19 06:43:33'),
 (202, '/def/vehicle/trailer/scs_log/chassis.sii', 'log_trailer_hct', 'log_trailer_hct', NULL, 'log_trailer', '8', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.log/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 06:33:07', '2019-05-19 06:43:40'),
 (203, '/def/vehicle/trailer/scs_gooseneck/red20.sii', 'gooseneck_20e', 'gooseneck_20e', 'container_20', 'container', '3', 7, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 12:49:10', '2019-05-17 06:30:23'),
@@ -451,7 +450,10 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `accessory_subgroup`
 (205, '/def/vehicle/trailer/scs_gooseneck/blue40.sii', 'gooseneck_40', 'gooseneck_40', 'container_40', 'container', '3', 7, 1, 0, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 13:04:03', '2019-05-17 09:18:06'),
 (206, '/def/vehicle/trailer/scs_gooseneck/blue40.sii', 'gooseneck_double', 'gooseneck_double', NULL, 'container', '3', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 13:05:32', '2019-05-17 05:24:11'),
 (207, '/def/vehicle/trailer/scs_gooseneck/blue40.sii', 'gooseneck_bdouble', 'gooseneck_bdouble', 'container_20', 'container', '4', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 13:17:01', '2019-05-17 08:25:56'),
-(208, '/def/vehicle/trailer/scs_gooseneck/blue40.sii', 'gooseneck_hct', 'gooseneck_hct', 'container_40', 'container', '8', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 13:17:47', '2019-05-19 05:59:28');
+(208, '/def/vehicle/trailer/scs_gooseneck/blue40.sii', 'gooseneck_hct', 'gooseneck_hct', 'container_40', 'container', '8', 7, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color4.sii', 0, 'ets2', 0, NULL, 1, '2019-05-15 13:17:47', '2019-05-19 05:59:28'),
+(209, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck_bdouble', 'ats_gooseneck53', NULL, 'container', '5', 13, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 0, 'ats', 0, NULL, 1, '2019-05-22 06:47:01', '2019-05-22 06:47:31'),
+(210, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck_rm_double', 'ats_gooseneck_rm_double', NULL, 'container', '4', 13, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 0, 'ats', 0, NULL, 1, '2019-05-22 06:50:22', '2019-05-22 06:51:03'),
+(211, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck_tp', 'ats_gooseneck_tp', 'container_40', 'container', '4', 13, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 0, 'ats', 0, NULL, 0, '2019-05-22 06:51:07', '2019-05-25 06:56:52');
 
 -- --------------------------------------------------------
 
@@ -2103,11 +2105,11 @@ INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`,
 (2736, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_flat1.sii', 'red', 'red', 'flatbed', 'ats', NULL, 0, 1, 0, '2019-05-10 06:14:22', '2019-05-10 06:36:56'),
 (2737, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_flat2.sii', 'blue', 'blue', 'flatbed', 'ats', NULL, 0, 1, 0, '2019-05-10 06:14:22', '2019-05-10 06:37:01'),
 (2738, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_flat3.sii', 'green', 'green', 'flatbed', 'ats', NULL, 0, 1, 0, '2019-05-10 06:14:22', '2019-05-10 06:36:42'),
-(2739, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 'default', 'default', 'ats_gooseneck', 'ats', NULL, 1, 1, 1, '2019-05-10 08:36:56', '2019-05-10 08:37:29'),
-(2740, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color.sii', 'gray', 'gray', 'ats_gooseneck', 'ats', NULL, 0, 1, 0, '2019-05-10 08:37:33', '2019-05-10 08:37:57'),
-(2741, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color1.sii', 'red', 'red', 'ats_gooseneck', 'ats', NULL, 0, 1, 0, '2019-05-10 08:37:45', '2019-05-10 08:38:01'),
-(2742, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color2.sii', 'blue', 'blue', 'ats_gooseneck', 'ats', NULL, 0, 1, 0, '2019-05-10 08:38:18', '2019-05-10 08:38:30'),
-(2743, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color2.sii', 'green', 'green', 'ats_gooseneck', 'ats', NULL, 0, 1, 0, '2019-05-10 08:38:33', '2019-05-10 08:38:40'),
+(2739, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 'default', 'default', 'container', 'ats', NULL, 1, 1, 1, '2019-05-10 08:36:56', '2019-05-10 08:37:29'),
+(2740, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color.sii', 'gray', 'gray', 'container', 'ats', NULL, 0, 1, 0, '2019-05-10 08:37:33', '2019-05-10 08:37:57'),
+(2741, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color1.sii', 'red', 'red', 'container', 'ats', NULL, 0, 1, 0, '2019-05-10 08:37:45', '2019-05-10 08:38:01'),
+(2742, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color2.sii', 'blue', 'blue', 'container', 'ats', NULL, 0, 1, 0, '2019-05-10 08:38:18', '2019-05-10 08:38:30'),
+(2743, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color2.sii', 'green', 'green', 'container', 'ats', NULL, 0, 1, 0, '2019-05-10 08:38:33', '2019-05-10 08:38:40'),
 (2744, '/def/vehicle/trailer_owned/scs.log/paint_job/color4.sii', 'default', 'default', 'schw_slidep', 'ets2', 4, 1, 1, 0, '2019-05-16 03:50:34', '2019-05-16 04:10:27'),
 (2745, '/def/vehicle/trailer_owned/schwmuller.slidepost/paint_job/schw_br.sii', 'schw_black_red', 'schw_black_red', 'schw_slidep', 'ets2', 4, 0, 1, 0, '2019-05-16 03:53:36', '2019-05-16 03:54:01'),
 (2746, '/def/vehicle/trailer_owned/krone.boxliner/paint_job/boxliner.sii', 'default', 'default', 'krone_boxliner_40', 'ets2', 12, 1, 1, 1, '2019-05-16 05:30:58', '2019-05-16 05:31:18'),
@@ -2300,7 +2302,7 @@ ALTER TABLE `accessories`
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
 
 --
 -- AUTO_INCREMENT для таблиці `companies`
@@ -2348,7 +2350,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT для таблиці `static_mods`
 --
 ALTER TABLE `static_mods`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблиці `wheels`
