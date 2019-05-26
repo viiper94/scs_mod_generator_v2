@@ -46,12 +46,14 @@ class Accessory extends Model{
     public function getDefBySuffix($suffix){
         $suffixes = $this->suffixes ? explode(',', $this->suffixes) : null;
         $default_suffix = null;
+        $with_underscore = array();
         $replace = null;
         $suffix_list = array();
         if($suffixes){
             foreach($suffixes as $key => $suf){
                 if(stripos($suf, '%') !== false) $default_suffix = $key;
-                $suffix_list[$key] = str_replace('%', '', $suf);
+                $with_underscore[$key] = stripos($suf, '^') === false;
+                $suffix_list[$key] = str_replace(['%', '^'], '', $suf);
             }
             foreach($suffix as $key => $s){
                 if(in_array($s, $suffix_list)) $replace = $s;
@@ -60,9 +62,9 @@ class Accessory extends Model{
                 return str_replace($suffix_list, $replace, $this->def);
             }elseif(empty($suffix)){
                 $replace = isset($default_suffix) ? '_'.$suffix_list[$default_suffix] : '';
-                array_walk($suffix_list, function(&$item1){
-                    $item1 = "_$item1";
-                });
+                foreach($suffix_list as $key => $s){
+                    if($with_underscore[$key]) $suffix_list[$key] = "_$s";
+                }
                 return str_replace($suffix_list, $replace, $this->def);
             }
         }
@@ -71,13 +73,23 @@ class Accessory extends Model{
 
     public static function getCargoParams($temp){
         $is_slave = false;
+        $is_slave_second = false;
+        $is_slave_third = false;
         $params = explode('_', str_replace('%', '', $temp));
         if(in_array('s', $params)){
             $is_slave = true;
             array_splice($params, array_search('s', $params, true), 1);
         }
+        if(in_array('ss', $params)){
+            $is_slave_second = true;
+            array_splice($params, array_search('ss', $params, true), 1);
+        }
+        if(in_array('st', $params)){
+            $is_slave_third = true;
+            array_splice($params, array_search('st', $params, true), 1);
+        }
         $suffix = isset($params[1]) ? explode(',', $params[1]) : array();
-        return ['suffix' => $suffix, 'slave' => $is_slave];
+        return ['suffix' => $suffix, 'slave' => $is_slave, 'slave_second' => $is_slave_second, 'slave_third' => $is_slave_third];
     }
 
 }
