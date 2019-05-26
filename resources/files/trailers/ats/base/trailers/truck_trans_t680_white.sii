@@ -1,0 +1,81 @@
+trailer : trailer.trans_k_t680.white
+{
+	accessories[]: .trans_k_t680.white.chassis
+	accessories[]: .trans_k_t680.white.rwheel
+	accessories[]: .trans_k_t680.white.rwheel1
+	accessories[]: .trans_k_t680.white.cargo
+
+	slave_trailer: .trans_k_t680.white.second
+}
+
+vehicle_accessory: .trans_k_t680.white.chassis
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/first.sii"
+}
+
+vehicle_wheel_accessory: .trans_k_t680.white.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+vehicle_wheel_accessory: .trans_k_t680.white.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+vehicle_accessory: .trans_k_t680.white.cargo
+{
+	data_path: "/def/vehicle/trailer_cargo/truck_transporter/t680_white1.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  second XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .trans_k_t680.white.second
+{
+	accessories[]: .trans_k_t680.white.second.chassis
+	accessories[]: .trans_k_t680.white.second.rwheel
+	accessories[]: .trans_k_t680.white.second.cargo
+
+	slave_trailer: .trans_k_t680.white.third
+}
+
+vehicle_accessory: .trans_k_t680.white.second.chassis
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/second.sii"
+}
+
+vehicle_wheel_accessory: .trans_k_t680.white.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_accessory: .trans_k_t680.white.second.cargo
+{
+	data_path: "/def/vehicle/trailer_cargo/truck_transporter/t680_white2.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX third 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .trans_k_t680.white.third
+{
+	accessories[]: .trans_k_t680.white.third.chassis
+	accessories[]: .trans_k_t680.white.third.rwheel
+	accessories[]: .trans_k_t680.white.third.cargo
+}
+
+vehicle_accessory: .trans_k_t680.white.third.chassis
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/third.sii"
+}
+
+vehicle_wheel_accessory: .trans_k_t680.white.third.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_accessory: .trans_k_t680.white.third.cargo
+{
+	data_path: "/def/vehicle/trailer_cargo/truck_transporter/t680_white3.sii"
+}
