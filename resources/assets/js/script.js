@@ -458,6 +458,37 @@ $(document).ready(function(){
         }
     });
 
+    $(document).on('click', '.acc-add', function(){
+        let index = parseInt($(this).data('current-index')) + 1;
+        let trailerIndex = $(this).parents('.card').data('id');
+        let template = $('#acc_template').html().replace(/%a_id%/g, index).replace(/%t_id%/g, trailerIndex);
+        console.log(index);
+        console.log(trailerIndex);
+        $('#trailer-'+trailerIndex+' .accessories').append(template);
+        $(this).data('current-index', index);
+        $.each($('.mdc-text-field'), function(i, item){
+            textFields[i] = new MDCTextField(item);
+        });
+    });
+
+    $(document).on('click', '.acc-remove', function(){
+        if(confirm('Видалити?')) $(this).parents('[id^=accessory-]').remove();
+    });
+
+    $(document).on('click', '.trailer-remove', function(){
+        if(confirm('Видалити?')) $(this).parents('[id^=trailer-]').remove();
+    });
+
+    $(document).on('click', '#trailer-add', function(){
+        let index = parseInt($(this).data('current-index')) + 1;
+        let template = $('#trailer_template').html().replace(/%t_id%/g, index);
+        $('.trailers').append(template);
+        $(this).data('current-index', index);
+        $.each($('.mdc-text-field'), function(i, item){
+            textFields[i] = new MDCTextField(item);
+        });
+    });
+
 });
 
 function getDLCList(value) {
@@ -475,7 +506,7 @@ function getDLCList(value) {
             $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
             $.each(response.dlc, function(index, dlc){
                 $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
-                    .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');;
+                    .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
             });
         }
 	});

@@ -2,11 +2,11 @@
 
 @section('content')
 
-    
-    <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
 
-        <div class="card" style="width: 600px;">
-            <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data">
+        <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
+
+            <div class="card" style="width: 600px;">
                 @csrf
                 <div class="card-content">
                     <div class="row">
@@ -38,18 +38,6 @@
                                 </div>
                             </div>
                             <label for="game_ats">ATS</label>
-                        </div>
-                    </div>
-                    <div class="row no-margin">
-                        <div class="mdc-text-field mdc-text-field--outlined">
-                            <input type="text" id="def" class="mdc-text-field__input" name="def" value="{{ $chassis->def }}" required>
-                            <div class="mdc-notched-outline">
-                                <div class="mdc-notched-outline__leading"></div>
-                                <div class="mdc-notched-outline__notch">
-                                    <label for="def" class="mdc-floating-label">Def</label>
-                                </div>
-                                <div class="mdc-notched-outline__trailing"></div>
-                            </div>
                         </div>
                     </div>
                     <div class="row no-margin">
@@ -107,18 +95,6 @@
                                 <div class="mdc-notched-outline__leading"></div>
                                 <div class="mdc-notched-outline__notch">
                                     <label for="default_paint_job" class="mdc-floating-label">Def стандартного скіна (якщо є)</label>
-                                </div>
-                                <div class="mdc-notched-outline__trailing"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-margin">
-                        <div class="mdc-text-field mdc-text-field--outlined">
-                            <input type="number" id="axles" class="mdc-text-field__input" name="axles" value="{{ $chassis->axles }}" required>
-                            <div class="mdc-notched-outline">
-                                <div class="mdc-notched-outline__leading"></div>
-                                <div class="mdc-notched-outline__notch">
-                                    <label for="axles" class="mdc-floating-label">Кількість осей</label>
                                 </div>
                                 <div class="mdc-notched-outline__trailing"></div>
                             </div>
@@ -218,23 +194,23 @@
                             </div>
                             <label for="with_paint_job">Із скіном</label>
                         </div>
-                        <div class="mdc-form-field col s12">
-                            <div class="mdc-checkbox">
-                                <input type="checkbox"
-                                       class="mdc-checkbox__native-control"
-                                       id="trailer_owned" name="trailer_owned" {{ $chassis->trailer_owned ? 'checked' : '' }}>
-                                <div class="mdc-checkbox__background">
-                                    <svg class="mdc-checkbox__checkmark"
-                                         viewBox="0 0 24 24">
-                                        <path class="mdc-checkbox__checkmark-path"
-                                              fill="none"
-                                              d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
-                                    </svg>
-                                    <div class="mdc-checkbox__mixedmark"></div>
-                                </div>
-                            </div>
-                            <label for="trailer_owned">trailer_owned</label>
-                        </div>
+{{--                        <div class="mdc-form-field col s12">--}}
+{{--                            <div class="mdc-checkbox">--}}
+{{--                                <input type="checkbox"--}}
+{{--                                       class="mdc-checkbox__native-control"--}}
+{{--                                       id="trailer_owned" name="trailer_owned" {{ $chassis->trailer_owned ? 'checked' : '' }}>--}}
+{{--                                <div class="mdc-checkbox__background">--}}
+{{--                                    <svg class="mdc-checkbox__checkmark"--}}
+{{--                                         viewBox="0 0 24 24">--}}
+{{--                                        <path class="mdc-checkbox__checkmark-path"--}}
+{{--                                              fill="none"--}}
+{{--                                              d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>--}}
+{{--                                    </svg>--}}
+{{--                                    <div class="mdc-checkbox__mixedmark"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <label for="trailer_owned">trailer_owned</label>--}}
+{{--                        </div>--}}
                         <div class="mdc-form-field col s12">
                             <div class="mdc-checkbox">
                                 <input type="checkbox"
@@ -288,19 +264,186 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-action">
-                    <div class="row no-margin">
-                        <button type="submit" class="mdc-button mdc-button--unelevated col s12"><b>Зберегти</b></button>
+{{--                <div class="card-action">--}}
+{{--                    <div class="row no-margin">--}}
+{{--                        <button type="submit" class="mdc-button mdc-button--unelevated col s12"><b>Зберегти</b></button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+            </div>
+
+            <div class="trailers">
+                <div class="card" style="width: 600px;" id="trailer-0" data-id="0">
+                    <div class="card-content">
+                        <div class="row">
+                            <h5 class="card-title center">Основний причіп</h5>
+                        </div>
+                        <div class="row no-margin">
+                            <div class="mdc-text-field mdc-text-field--outlined">
+                                <input type="text" id="def_0" class="mdc-text-field__input" name="def_0" value="{{ $chassis->def }}" required>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="def_0" class="mdc-floating-label">Def</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-margin">
+                            <div class="mdc-text-field mdc-text-field--outlined">
+                                <input type="number" id="axles_0" class="mdc-text-field__input" name="axles_0" value="{{ $chassis->axles }}" required>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="axles_0" class="mdc-floating-label">Кількість осей</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-margin accessories">
+                            <div class="col s12"><p>Аксесуари</p></div>
+                            <div id="accessory-0-0">
+                                <div class="col s12 m4">
+                                    <div class="mdc-text-field mdc-text-field--outlined">
+                                        <input type="text" id="acc_0_0_name" class="mdc-text-field__input" name="accessories[0][0][name]" value="{{ $chassis->axles }}">
+                                        <div class="mdc-notched-outline">
+                                            <div class="mdc-notched-outline__leading"></div>
+                                            <div class="mdc-notched-outline__notch">
+                                                <label for="acc_0_0_name" class="mdc-floating-label">Назва</label>
+                                            </div>
+                                            <div class="mdc-notched-outline__trailing"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s11 m7">
+                                    <div class="mdc-text-field mdc-text-field--outlined">
+                                        <input type="text" id="acc_0_0_def" class="mdc-text-field__input" name="accessories[0][0][def]" value="{{ $chassis->axles }}">
+                                        <div class="mdc-notched-outline">
+                                            <div class="mdc-notched-outline__leading"></div>
+                                            <div class="mdc-notched-outline__notch">
+                                                <label for="acc_0_0_def" class="mdc-floating-label">def</label>
+                                            </div>
+                                            <div class="mdc-notched-outline__trailing"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s1" style="line-height: 80px;">
+                                    <a style="cursor: pointer;" class="acc-remove"><i class="material-icons notranslate red-text">minimize</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="cursor: pointer;" class="col s12 mdc-button acc-add" data-current-index="0">Додати аксесуар</a>
                     </div>
                 </div>
-            </form>
+            </div>
+            <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated" id="trailer-add" data-current-index="0">Додати причіп</a>
         </div>
-    </div>
 
-    <div class="fixed-action-btn">
-        <a class="mdc-fab tooltipped" data-tooltip="Новий причіп на основі цього" href="{{ route('trailers') }}/copy/{{ $chassis->id }}">
-            <span class="material-icons mdc-fab__icon">file_copy</span>
-        </a>
-    </div>
+        <div class="fixed-action-btn">
+            <button class="mdc-fab tooltipped" type="submit" data-tooltip="Зберегти">
+                <span class="material-icons mdc-fab__icon">save</span>
+            </button>
+        </div>
+    </form>
+
+    <script type="text/html" id="acc_template">
+        <div id="accessory-%t_id%-%a_id%">
+            <div class="col s12 m4">
+                <div class="mdc-text-field mdc-text-field--outlined">
+                    <input type="text" id="acc_%t_id%_%a_id%_name" class="mdc-text-field__input" name="accessories[%t_id%][%a_id%][name]">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label for="acc_%t_id%_%a_id%_name" class="mdc-floating-label">Назва</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s11 m7">
+                <div class="mdc-text-field mdc-text-field--outlined">
+                    <input type="text" id="acc_%t_id%_%a_id%_def" class="mdc-text-field__input" name="accessories[%t_id%][%a_id%][def]">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label for="acc_%t_id%_%a_id%_def" class="mdc-floating-label">def</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s1" style="line-height: 80px;">
+                <a style="cursor: pointer;" class="acc-remove"><i class="material-icons notranslate red-text">minimize</i></a>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/html" id="trailer_template">
+        <div class="card" style="width: 600px;" id="trailer-%t_id%" data-id="%t_id%">
+            <div class="card-content">
+                <div class="row no-margin">
+                    <div class="mdc-text-field mdc-text-field--outlined">
+                        <input type="text" id="def_%t_id%" class="mdc-text-field__input" name="def_%t_id%">
+                        <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                                <label for="def_%id%" class="mdc-floating-label">Def</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-margin">
+                    <div class="mdc-text-field mdc-text-field--outlined">
+                        <input type="number" id="axles_%t_id%" class="mdc-text-field__input" name="axles_%t_id%">
+                        <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                                <label for="axles_%t_id%" class="mdc-floating-label">Кількість осей</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-margin accessories">
+                    <div class="col s12"><p>Аксесуари</p></div>
+                    <div id="accessory-%t_id%-0">
+                        <div class="col s12 m4">
+                            <div class="mdc-text-field mdc-text-field--outlined">
+                                <input type="text" id="acc_%t_id%_0_name" class="mdc-text-field__input" name="accessories[%t_id%][0][name]">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="acc_%t_id%_0_name" class="mdc-floating-label">Назва</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s11 m7">
+                            <div class="mdc-text-field mdc-text-field--outlined">
+                                <input type="text" id="acc_%t_id%_0_def" class="mdc-text-field__input" name="accessories[%t_id%][0][def]">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="acc_%t_id%_0_def" class="mdc-floating-label">def</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s1" style="line-height: 80px;">
+                            <a style="cursor: pointer;" class="acc-remove"><i class="material-icons notranslate red-text">minimize</i></a>
+                        </div>
+                    </div>
+                </div>
+                <a style="cursor: pointer;" class="col s12 mdc-button acc-add" data-current-index="0">Додати аксесуар</a>
+            </div>
+            <div class="card-action">
+                <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated trailer-remove">Видалити причіп</a>
+            </div>
+        </div>
+    </script>
 
 @endsection
