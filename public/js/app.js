@@ -6390,43 +6390,6 @@ $(document).ready(function () {
 		});
 	});
 
-	$('#color-select-chassis').uidropdown({
-		fullTextSearch: true,
-		duration: 300,
-		placeholder: false,
-		forceSelection: false,
-		onChange: function onChange(value, text, $choice) {
-			$('#generate-color-btn').attr('disabled', value === '');
-			$('[id^=dlc_]').prop('checked', false).prop('disabled', false);
-			$('[id^=dlc_] + input[type=hidden]').remove();
-			if (value !== '') {
-				$.ajax({
-					cache: false,
-					dataType: 'json',
-					type: 'POST',
-					data: {
-						'_token': $('input[name=_token]').val(),
-						'target': $('input[name=target]').val(),
-						'chassis': value
-					},
-					success: function success(response) {
-						if (response.status === 'OK') {
-							$.each(response.dlc, function (index, dlc) {
-								$('#dlc_' + dlc).prop('checked', true).prop('disabled', true);
-							});
-							if (response.wheels) {
-								$('.wheels.input-field').show();
-							} else {
-								$('.wheels.input-field').hide();
-								$('.wheels.input-field select').val('');
-							}
-						}
-					}
-				});
-			}
-		}
-	});
-
 	$('#advanced_color').change(function () {
 		if (this.checked) {
 			$('.color-advanced').show();
@@ -6457,12 +6420,8 @@ $(document).ready(function () {
 			$('#generate-btn').attr('disabled', true);
 			if (value !== '') {
 				$('#generate-btn').attr('disabled', false);
-				if (value !== 'schw_overweight' && value.indexOf('goldhofer') === -1) {
-					$('.wheels').show();
-				} else {
-					$('.wheels').hide();
-					$('.wheels select').val('');
-				}
+				$('.wheels').hide();
+				$('.wheels select').val('');
 				$.ajax({
 					cache: false,
 					dataType: 'json',
@@ -6484,7 +6443,7 @@ $(document).ready(function () {
 									fullTextSearch: true,
 									duration: 300,
 									placeholder: false,
-									forceSelection: false,
+									forceSelection: true,
 									onChange: function onChange(value, text, $choice) {
 										getDLCList(value);
 										if ($choice.children('span').data('with-color') === 1) {
