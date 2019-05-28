@@ -232,6 +232,40 @@
                             <div class="mdc-checkbox">
                                 <input type="checkbox"
                                        class="mdc-checkbox__native-control"
+                                       id="can_empty" name="can_empty" {{ $chassis->can_empty ? 'checked' : '' }}>
+                                <div class="mdc-checkbox__background">
+                                    <svg class="mdc-checkbox__checkmark"
+                                         viewBox="0 0 24 24">
+                                        <path class="mdc-checkbox__checkmark-path"
+                                              fill="none"
+                                              d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                    </svg>
+                                    <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                            </div>
+                            <label for="can_empty">Може бути пустим</label>
+                        </div>
+                        <div class="mdc-form-field col s12">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                       class="mdc-checkbox__native-control"
+                                       id="can_all_companies" name="can_all_companies" {{ $chassis->can_all_companies ? 'checked' : '' }}>
+                                <div class="mdc-checkbox__background">
+                                    <svg class="mdc-checkbox__checkmark"
+                                         viewBox="0 0 24 24">
+                                        <path class="mdc-checkbox__checkmark-path"
+                                              fill="none"
+                                              d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                    </svg>
+                                    <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                            </div>
+                            <label for="can_all_companies">Має скіни компаній</label>
+                        </div>
+                        <div class="mdc-form-field col s12">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                       class="mdc-checkbox__native-control"
                                        id="mp_support" name="mp_support" {{ $chassis->mp_support ? 'checked' : '' }}>
                                 <div class="mdc-checkbox__background">
                                     <svg class="mdc-checkbox__checkmark"

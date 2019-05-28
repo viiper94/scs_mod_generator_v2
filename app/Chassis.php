@@ -56,7 +56,8 @@ class Chassis extends Model{
     public function getAvailablePaints(){
         $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])
             ->orderBy('sort', 'desc')->orderBy('alias', 'asc')->get();
-        if(count($paints) > 1){
+        $list = array();
+        if($this->can_all_companies && count($paints) > 1){
             $list[] = [
                 'name' => trans('general.all_companies'),
                 'value' => 'all',
@@ -81,18 +82,21 @@ class Chassis extends Model{
             $list[] = [
                 'name' => $name,
                 'value' => $paint->def,
-                'selected' => count($paints) == 1
+                'selected' => count($paints) == 1 || !$this->can_all_companies && $key === 0
             ];
         }
         return $list;
     }
 
     public function getAvailableAccessories(){
-        $list[] = [
-            'name' => trans('general.choose_accessory'),
-            'value' => '',
-            'selected' => true
-        ];
+        $list = array();
+        if($this->can_empty){
+            $list[] = [
+                'name' => trans('general.choose_accessory'),
+                'value' => '',
+                'selected' => true
+            ];
+        }
         $accessories = Accessory::where(['game' => $this->game, 'active' => 1])
             ->whereIn('chassis', [$this->alias_short_paint, $this->accessory_subgroup])
             ->orderBy('alias', 'asc')->get();
@@ -123,7 +127,8 @@ class Chassis extends Model{
             };
             $list[] = [
                 'name' => $name,
-                'value' => $accessory->def
+                'value' => $accessory->def,
+                'selected' => count($accessories) == 1 || !$this->can_empty && $key === 0
             ];
         }
         return $list;
