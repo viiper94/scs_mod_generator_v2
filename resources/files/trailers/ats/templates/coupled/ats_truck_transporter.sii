@@ -39,7 +39,7 @@ trailer : .%trailer%.slave
 
 vehicle_accessory: .%trailer%.slave.chassis
 {
-	data_path: "/def/vehicle/trailer/truck_transporter/slave.sii"
+	data_path: "/def/vehicle/trailer/truck_transporter/second.sii"
 }
 
 vehicle_wheel_accessory: .%trailer%.slave.rwheel

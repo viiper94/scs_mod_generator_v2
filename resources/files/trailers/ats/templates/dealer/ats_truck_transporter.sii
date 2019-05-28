@@ -1,7 +1,9 @@
 SiiNunit
 {
-trailer : trailer
+trailer : .kw_t680.trans_k_t680.red
 {
+	trailer_definition: trailer_def.kw_t680.trans_k_t680.red
+
 	accessories[]: .data
 	accessories[]: .body
 	accessories[]: .chassis
@@ -65,7 +67,7 @@ vehicle_accessory: .slave.body
 
 vehicle_accessory: .slave.chassis
 {
-	data_path: "/def/vehicle/trailer/truck_transporter/slave.sii"
+	data_path: "/def/vehicle/trailer/truck_transporter/second.sii"
 }
 
 vehicle_wheel_accessory: .slave.rwheel
