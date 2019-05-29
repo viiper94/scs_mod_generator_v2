@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Трв 29 2019 р., 10:30
+-- Час створення: Трв 29 2019 р., 10:44
 -- Версія сервера: 10.1.34-MariaDB
 -- Версія PHP: 7.2.8
 
@@ -262,7 +262,8 @@ INSERT INTO `accessories` (`id`, `def`, `suffixes`, `alias`, `chassis`, `game`, 
 (924, '/def/vehicle/trailer_cargo/truck_transporter/t680_blue1.sii', '^1,^2,^3', 't680_blue', 'ats_truck_transporter', 'ats', NULL, 1, '2019-05-26 12:06:13', '2019-05-26 12:07:40'),
 (925, '/def/vehicle/trailer_cargo/truck_transporter/t680_red1.sii', '^1,^2,^3', 't680_red', 'ats_truck_transporter', 'ats', NULL, 1, '2019-05-26 12:06:51', '2019-05-26 12:07:35'),
 (926, '/def/vehicle/trailer_cargo/truck_transporter/t680_white1.sii', '^1,^2,^3', 't680_white', 'ats_truck_transporter', 'ats', NULL, 1, '2019-05-26 12:07:06', '2019-05-26 12:07:16'),
-(927, '/def/vehicle/trailer_cargo/truck_transporter/t680_yellow1.sii', '^1,^2,^3', 't680_yellow', 'ats_truck_transporter', 'ats', NULL, 1, '2019-05-26 12:07:23', '2019-05-26 12:07:29');
+(927, '/def/vehicle/trailer_cargo/truck_transporter/t680_yellow1.sii', '^1,^2,^3', 't680_yellow', 'ats_truck_transporter', 'ats', NULL, 1, '2019-05-26 12:07:23', '2019-05-26 12:07:29'),
+(928, '/def/vehicle/trailer/lowboy_boat/cargo_boat.sii', NULL, 'boat', 'lowboy_boat', 'ats', NULL, 1, '2019-05-29 04:39:00', '2019-05-29 04:39:00');
 
 -- --------------------------------------------------------
 
@@ -2305,7 +2306,7 @@ ALTER TABLE `wheels`
 -- AUTO_INCREMENT для таблиці `accessories`
 --
 ALTER TABLE `accessories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=928;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=929;
 
 --
 -- AUTO_INCREMENT для таблиці `chassis`
