@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Трв 28 2019 р., 16:08
+-- Час створення: Трв 29 2019 р., 10:30
 -- Версія сервера: 10.1.34-MariaDB
 -- Версія PHP: 7.2.8
 
@@ -461,7 +461,8 @@ INSERT INTO `chassis` (`id`, `def`, `alias`, `alias_short`, `accessory_subgroup`
 (209, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck_bdouble', 'ats_gooseneck53', NULL, 'container', '5', 13, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 0, 0, 'ats', 0, NULL, 1, '2019-05-22 06:47:01', '2019-05-22 06:47:31'),
 (210, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck_rm_double', 'ats_gooseneck_rm_double', NULL, 'container', '4', 13, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 0, 0, 'ats', 0, NULL, 1, '2019-05-22 06:50:22', '2019-05-22 06:51:03'),
 (211, '/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii', 'ats_gooseneck_tp', 'ats_gooseneck_tp', 'container_40', 'container', '4', 13, 1, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color0.sii', 1, 0, 0, 'ats', 0, NULL, 0, '2019-05-22 06:51:07', '2019-05-25 06:56:52'),
-(212, '/def/vehicle/trailer/truck_transporter/first.sii', 'ats_truck_transporter', 'ats_truck_transporter', NULL, 'ats_truck_transporter', '5', 16, 0, 1, 1, 0, 0, NULL, 0, 0, 0, 'ats', 0, NULL, 1, '2019-05-22 06:51:07', '2019-05-25 06:56:52');
+(212, '/def/vehicle/trailer/truck_transporter/first.sii', 'ats_truck_transporter', 'ats_truck_transporter', NULL, 'ats_truck_transporter', '5', 16, 0, 1, 1, 0, 0, NULL, 0, 0, 0, 'ats', 0, NULL, 1, '2019-05-22 06:51:07', '2019-05-25 06:56:52'),
+(213, '/def/vehicle/trailer/lowboy_boat/chassis.sii', 'lowboy_boat', 'lowboy_boat', NULL, 'lowboy_boat', '3', 12, 1, 0, 1, 0, 0, NULL, 1, 0, 1, 'ats', 0, NULL, 1, '2019-05-22 06:51:07', '2019-05-25 06:56:52');
 
 -- --------------------------------------------------------
 
@@ -2310,7 +2311,7 @@ ALTER TABLE `accessories`
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
 
 --
 -- AUTO_INCREMENT для таблиці `companies`
