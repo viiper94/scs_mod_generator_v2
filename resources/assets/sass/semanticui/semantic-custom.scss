@@ -102,5 +102,6 @@ select.browser-default {
     max-height: 50vh;
     overflow-y: scroll;
     width: 100%;
+    min-width: auto;
   }
 }
