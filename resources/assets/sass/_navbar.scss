@@ -33,7 +33,7 @@ nav.nav-extended{
     min-width: 177px;
     line-height: $nav-height;
   }
-  .nav-right{
+  .nav-right > a{
     text-align: right;
   }
   .logo{
