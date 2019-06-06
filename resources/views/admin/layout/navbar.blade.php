@@ -21,6 +21,11 @@
                     <div class="menu-right">
                         <span class="user-name">{{ Auth::user()->name }}</span>
                         <span class="user-email">{{ Auth::user()->email }}</span>
+                        <a href="{{ route('profile') }}" style="width: 100%;"
+                                                                                    class="mdc-button mdc-button--dense mdc-button--unelevated">
+                            <i class="material-icons mdc-button__icon notranslate">perm_identity_filled</i>
+                            @lang('user.profile')
+                        </a>
                     </div>
                 </div>
                 <div class="user-actions">
