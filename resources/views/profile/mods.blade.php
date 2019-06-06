@@ -75,7 +75,7 @@
                                 @endif
 
                             @endif
-                            <form action="{{ route($mod->type === 'trailer' ? 'generator' : 'color_generator') }}" method="post" class="regenerate">
+                            <form action="{{ route('generator') }}" method="post" class="regenerate">
                                 @csrf
                                 <input type="hidden" name="target" value="{{ $mod->game }}">
                                 <input type="hidden" name="title" value="{{ $mod->title }}">

@@ -19,6 +19,7 @@ class Mods extends Model{
 
     public function canRegenerate(){
         $params = unserialize($this->params);
+        if($this->type == 'paint') return false;
         try{
             if($params['form']['chassis'] !== 'paintable'){
                 Chassis::where(['alias' => $params['form']['chassis'], 'active' => '1'])->firstOrFail();
