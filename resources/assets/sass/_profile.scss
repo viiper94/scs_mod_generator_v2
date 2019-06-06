@@ -86,6 +86,9 @@ ul.user-mods.collapsible{
   }
   .settings{
     min-width: 650px;
+    @media (max-width: 600px){
+      min-width: 100%;
+    }
   }
   .password{
     min-width: 300px;

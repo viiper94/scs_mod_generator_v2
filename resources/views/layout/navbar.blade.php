@@ -2,7 +2,7 @@
     <nav class="nav-extended no-shadow">
         <div class="nav-left">
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons notranslate">menu</i></a>
-            <a href="/" class="logo"></a>
+            <a href="/" class="logo hide-on-small-only"></a>
         </div>
         @yield('navbar-content')
         <div class="nav-right">

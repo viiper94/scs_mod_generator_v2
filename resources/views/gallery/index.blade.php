@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('navbar-content')
-    <div class="nav-content">
+    <div class="nav-content hide-on-med-and-down">
         <ul class="tabs">
             <li class="tab"><a class="active" href="#ets2">Euro Truck Simulator 2</a></li>
             <li class="tab"><a href="#ats">American Truck Simulator</a></li>
@@ -12,6 +12,13 @@
 @endsection
 
 @section('content')
+
+    <div class="row hide-on-large-only no-margin" style="width: 100%;">
+        <ul class="tabs">
+            <li class="tab"><a class="active" href="#ets2">Euro Truck Simulator 2</a></li>
+            <li class="tab"><a href="#ats">American Truck Simulator</a></li>
+        </ul>
+    </div>
 
     <div class="row">
         @if(count($chassis_list) > 0)

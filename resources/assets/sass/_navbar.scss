@@ -30,6 +30,7 @@ nav.nav-extended{
   padding: 0 8px;
   .nav-left, .nav-right{
     height: $nav-height;
+    min-width: 171px;
     line-height: $nav-height;
   }
   .logo{
@@ -45,49 +46,12 @@ nav.nav-extended{
       background-image: url(/assets/img/logo-dark.png);
     }
   }
-  .tabs{
-    display: flex;
-    height: $nav-height;
-    background: $light-background-lighten-1;
-    .mdc-theme--dark &{
-      background: $dark-background-darker-1;
-    }
-    & .tab a{
-      color: $light-text;
-      transition: none;
-      .mdc-theme--dark &{
-        color: $dark-text;
-      }
-      &.active, &:hover{
-        color: $primary-text-dark;
-        .mdc-theme--dark &{
-          color: $primary-text-dark;
-        }
-      }
-      &:focus, &:focus.active{
-        background: none;
-      }
-    }
-    & .indicator{
-      background-color: $primary-text-dark;
-      .mdc-theme--dark &{
-        background-color: $primary-dark;
-      }
-    }
-    .tab{
-      line-height: $nav-height;
-      height: $nav-height;
-    }
-  }
+
   &, & .nav-content{
     border-bottom: 1px solid #dadce0;
     .mdc-theme--dark &{
       border-bottom: 1px solid $placeholder-text-dark;
     }
-  }
-  @media only screen and (max-width : 992px) {
-    width: 100%;
-    padding-left: 64px;
   }
   .user-view{
     display: inline-block;
@@ -257,8 +221,7 @@ i.truck-icons{
 }
 .sidenav-trigger{
   position: fixed;
-  left: 20px;
-  top: 11px;
+  top: 4px;
   z-index: 998;
   .mdc-theme--dark &{
     color: $dark-text;

@@ -1,4 +1,4 @@
-<div class="card-panel nav-search no-margin">
+<div class="card-panel nav-search no-margin hide-on-small-only">
     <form method="get">
         <div class="input-field no-margin">
             <button type="submit" class="mdc-icon-button material-icons prefix">search</button>
