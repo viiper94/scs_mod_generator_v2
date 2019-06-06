@@ -30,7 +30,7 @@ nav.nav-extended{
   padding: 0 8px;
   .nav-left, .nav-right{
     height: $nav-height;
-    min-width: 171px;
+    min-width: 177px;
     line-height: $nav-height;
   }
   .logo{
@@ -46,7 +46,6 @@ nav.nav-extended{
       background-image: url(/assets/img/logo-dark.png);
     }
   }
-
   &, & .nav-content{
     border-bottom: 1px solid #dadce0;
     .mdc-theme--dark &{
