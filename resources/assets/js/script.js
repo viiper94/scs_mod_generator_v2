@@ -160,7 +160,6 @@ $(document).ready(function(){
 									fullTextSearch : true,
 									duration : 300,
 									placeholder : false,
-                                    allowReselection : true,
 									forceSelection : true,
 									onChange : function(value, text, $choice){
 										getDLCList(value);
