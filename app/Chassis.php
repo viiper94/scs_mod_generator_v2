@@ -57,13 +57,6 @@ class Chassis extends Model{
         $paints = Paint::with('dlc')->where(['game' => $this->game, 'chassis' => $this->alias_short_paint, 'active' => 1])
             ->orderBy('sort', 'desc')->orderBy('alias', 'asc')->get();
         $list = array();
-        if($this->can_all_companies && count($paints) > 1){
-            $list[] = [
-                'name' => trans('general.all_companies'),
-                'value' => 'all',
-                'selected' => true
-            ];
-        }
         foreach($paints as $key => $paint){
             $name = '';
             if($paint->isDLCContent() && !$paint->dlc->mp_support){
@@ -82,7 +75,14 @@ class Chassis extends Model{
             $list[] = [
                 'name' => $name,
                 'value' => $paint->def,
-                'selected' => count($paints) == 1 || !$this->can_all_companies && $key === 0
+                'selected' => $key === 0
+            ];
+        }
+        if($this->can_all_companies && count($paints) > 1){
+            $list[] = [
+                'name' => trans('general.all_companies'),
+                'value' => 'all',
+                'selected' => false
             ];
         }
         return $list;
