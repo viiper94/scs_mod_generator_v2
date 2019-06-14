@@ -1,1 +1,11 @@
 // Collapsible
+
+// Trailers
+.trailers{
+  counter-reset: section;
+  counter-increment: section;
+  .card[id^=trailer]:not(#trailer-0) .card-title::before{
+    counter-increment: section;
+    content: counter(section)"й ";
+  }
+}

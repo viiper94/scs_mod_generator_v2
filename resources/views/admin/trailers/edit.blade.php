@@ -325,6 +325,18 @@
                         </div>
                         <div class="row no-margin">
                             <div class="mdc-text-field mdc-text-field--outlined">
+                                <input type="text" id="body_0" class="mdc-text-field__input" name="body_0" value="{{ $chassis->body }}">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="body_0" class="mdc-floating-label">Body</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-margin">
+                            <div class="mdc-text-field mdc-text-field--outlined">
                                 <input type="number" id="axles_0" class="mdc-text-field__input" name="axles_0" value="{{ $chassis->axles }}" required>
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
@@ -371,7 +383,9 @@
                     </div>
                 </div>
             </div>
-            <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated" id="trailer-add" data-current-index="0">Додати причіп</a>
+            <div class="row">
+                <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated" id="trailer-add" data-current-index="0">Додати причіп</a>
+            </div>
         </div>
 
         <div class="fixed-action-btn">
@@ -416,6 +430,9 @@
     <script type="text/html" id="trailer_template">
         <div class="card" style="width: 600px;" id="trailer-%t_id%" data-id="%t_id%">
             <div class="card-content">
+                <div class="row">
+                    <h5 class="card-title center">причіп</h5>
+                </div>
                 <div class="row no-margin">
                     <div class="mdc-text-field mdc-text-field--outlined">
                         <input type="text" id="def_%t_id%" class="mdc-text-field__input" name="def_%t_id%">
@@ -423,6 +440,18 @@
                             <div class="mdc-notched-outline__leading"></div>
                             <div class="mdc-notched-outline__notch">
                                 <label for="def_%id%" class="mdc-floating-label">Def</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-margin">
+                    <div class="mdc-text-field mdc-text-field--outlined">
+                        <input type="text" id="body_%t_id%" class="mdc-text-field__input" name="body_%t_id%">
+                        <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                                <label for="body_%t_id%" class="mdc-floating-label">Body</label>
                             </div>
                             <div class="mdc-notched-outline__trailing"></div>
                         </div>
