@@ -33,8 +33,11 @@ nav.nav-extended{
     min-width: 177px;
     line-height: $nav-height;
   }
-  .nav-right > a{
+  .nav-right{
     text-align: right;
+    .dropdown-content{
+      text-align: left;
+    }
   }
   .logo{
     vertical-align: middle;
