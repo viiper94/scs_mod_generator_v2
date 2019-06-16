@@ -10,6 +10,23 @@ use Illuminate\Http\Request;
 
 class AdminTrailersController extends Controller{
 
+    public $trailers = [
+        0 => [
+            'def' => null,
+            'axles' => 0,
+            'body' => null,
+            'suitable_suffix' => null,
+            'with_accessory' => 'on',
+            'with_paint_job' => 'on',
+            'accessories' => [
+                0 => [
+                    'name' => null,
+                    'def' => null,
+                ]
+            ]
+        ]
+    ];
+
     public function index(Request $request){
         $chassis = Chassis::select(['*']);
         if($request->input('q')) $chassis->where('def', 'like', '%'.$request->input('q').'%')
@@ -23,34 +40,30 @@ class AdminTrailersController extends Controller{
         if($request->method() === 'POST' && $id){
             $this->validate($request, [
                 'game' => 'required|string',
-                'def' => 'required|string',
                 'alias' => 'required|string',
-                'axles' => 'required|numeric|max:50',
                 'wheels_id' => 'required|numeric',
                 'default_paint_job' => 'required_if:with_paint_job,on',
             ]);
             $chassis = Chassis::find($id);
             $chassis->fill([
                 'game' => $request->input('game', 'ets2'),
-                'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
                 'alias_short' => $request->input('alias_short', $request->input('alias')),
                 'accessory_subgroup' => $request->input('accessory_subgroup', null),
                 'alias_short_paint' => $request->input('alias_short_paint', $request->input('alias')),
-                'axles' => $request->input('axles'),
                 'default_paint_job' => $request->input('default_paint_job', null),
                 'wheels_id' => $request->input('wheels_id'),
                 'dlc_id' => $request->input('dlc_id', null),
                 'supports_wheels' => $request->input('supports_wheels') == 'on',
-                'active' => $request->input('active') == 'on',
                 'coupled' => $request->input('coupled') == 'on',
                 'with_accessory' => $request->input('with_accessory') == 'on',
+                'with_paint_job' => $request->input('with_paint_job') == 'on',
+                'can_random' => $request->input('can_random') == 'on',
                 'can_empty' => $request->input('can_empty') == 'on',
                 'can_all_companies' => $request->input('can_all_companies') == 'on',
-                'with_paint_job' => $request->input('with_paint_job') == 'on',
-                'trailer_owned' => $request->input('trailer_owned') == 'on',
-                'can_random' => $request->input('can_random') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
+                'active' => $request->input('active') == 'on',
+                'trailers' => $request->input('trailers')
             ]);
             return $chassis->save() ?
                 redirect()->route('trailers')->with(['success' => 'Причіп успішно відредаговано!']) :
@@ -60,6 +73,7 @@ class AdminTrailersController extends Controller{
         $chassis = Chassis::where('id', $id)->first();
         return view('admin.trailers.edit', [
             'chassis' => $chassis,
+            'trailers' => $chassis->trailers ?? $this->trailers,
             'wheels' => Wheel::where(['game' => $chassis->game])->get(),
             'dlc' => Dlc::where(['game' => $chassis->game])->get()
         ]);
@@ -72,9 +86,9 @@ class AdminTrailersController extends Controller{
             'game' => $chassis->game,
             'def' => $chassis->def,
             'alias' => $chassis->alias.'_copy',
-            'alias_short' => $chassis->alias.'_copy',
-            'accessory_subgroup' => $chassis->accessory_subgroup.'_copy',
-            'alias_short_paint' => $chassis->alias.'_copy',
+            'alias_short' => $chassis->alias,
+            'accessory_subgroup' => $chassis->accessory_subgroup,
+            'alias_short_paint' => $chassis->alias,
             'axles' => $chassis->axles,
             'default_paint_job' => $chassis->default_paint_job,
             'wheels_id' => $chassis->wheels_id,
@@ -89,6 +103,7 @@ class AdminTrailersController extends Controller{
             'trailer_owned' => $chassis->trailer_owned,
             'can_random' => $chassis->can_random,
             'mp_support' => $chassis->mp_support,
+            'trailers' => $chassis->trailers,
         ]);
 
         return $new_chassis->save() ?
@@ -113,13 +128,10 @@ class AdminTrailersController extends Controller{
 
     public function add(Request $request){
         $chassis = new Chassis();
-
         if($request->method() === 'POST'){
             $this->validate($request, [
                 'game' => 'required|string',
-                'def' => 'required|string',
                 'alias' => 'required|string',
-                'axles' => 'required|numeric|max:50',
                 'wheels_id' => 'required|numeric',
                 'default_paint_job' => 'required_if:with_paint_job,on',
             ]);
@@ -144,12 +156,14 @@ class AdminTrailersController extends Controller{
                 'trailer_owned' => $request->input('trailer_owned') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
+                'trailers' => $request->input('trailers')
             ]);
             if($chassis->save()) return redirect()->route('trailers')->with(['success' => 'Причіп успішно додано!']);
         }
 
         return view('admin.trailers.edit', [
             'chassis' => $chassis,
+            'trailers' => $this->trailers,
             'wheels' => Wheel::where(['active' =>  1])->get(),
             'dlc' => Dlc::where(['active' => 1])->get()
         ]);

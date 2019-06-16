@@ -32,7 +32,8 @@ class TrailerGenerator extends ModGenerator{
 			$this->replaceCompanyFiles();
 		}
 		$this->copyDealerFiles();
-		$this->replaceDealerFile();
+        $this->copyTrailerDefsFiles();
+        $this->replaceDealerFile();
         if(Request::input('fix') == 'on'){
             $this->copyCaravanFix();
         }
@@ -119,7 +120,9 @@ class TrailerGenerator extends ModGenerator{
 							$content = $this->generateRandomTrailerContent($trailer_name, $accessory_name);
                         }
                     }else{
-                        if($content = $this->chassis->coupled){
+                        if($this->chassis->trailers){
+                            $content = $this->generateMarketTrailerContent($trailer_name);
+                        }else if($content = $this->chassis->coupled){
                             $content = $this->generateCoupledTrailerContent($trailer_name);
                         }else if($this->chassis->trailer_owned){
                             $content = $this->generateOwnedTrailerContent($trailer_name);
@@ -136,9 +139,10 @@ class TrailerGenerator extends ModGenerator{
 
     private function replaceDealerFile(){
         $file = $this->outDir .'/vehicle/trailer_dealer/tmg/tmg_trailer.sii';
-        if($this->chassis->coupled || $this->chassis->trailer_owned){
+        if($this->chassis->trailers){
+            $content = $this->generateDealerTrailerContent();
+        }else if($this->chassis->coupled || $this->chassis->trailer_owned){
             $content = $this->generateDealerFileContentByTemplate();
-            $this->copyTrailerDefsFiles();
         }else{
             $content = $this->generateDealerFileContent();
         }
@@ -172,6 +176,102 @@ class TrailerGenerator extends ModGenerator{
 			}
 		}
 		closedir($dir);
+	}
+
+    private function generateMarketTrailerContent($tr){
+//	    dd($this->chassis->trailers);
+        $output_string = '';
+        foreach($this->chassis->trailers as $key => $trailer){
+            $trailer_name = $key == 0 ? $tr : $tr.'.'.$key;
+
+            // trailer unit
+            $output_string .= "trailer : ".($key != 0 ? "." : "trailer.").$trailer_name."\n{\n";
+            $output_string .= "\taccessories[]: .".$trailer_name.".chassis\n";
+            if(isset($trailer->body)) $output_string .= "\taccessories[]: .".$trailer_name.".body\n";
+            if(isset($trailer->accessories)){
+                foreach($trailer->accessories as $accessory){
+                    $output_string .= "\taccessories[]: .".$trailer_name.".$accessory->name\n";
+                }
+            }
+            if($this->accessory || $this->paintJob){
+                if($trailer->with_accessory == 'on' && isset($this->accessory->def) && $this->accessory->def !== ''){
+                    $output_string .= "\taccessories[]: .".$trailer_name.".cargo\n";
+                }
+                if($trailer->with_paint_job == 'on' && isset($this->paintJob->def) && $this->paintJob->def !== ''){
+                    $output_string .= "\taccessories[]: .".$trailer_name.".paint_job\n";
+                }
+            }
+            for($i = 0; $i < $trailer->axles; $i++){
+                $output_string .= "\n\taccessories[]: .".$trailer_name.".wheel".$i;
+            }
+            if(isset($this->chassis->trailers[$key+1])){
+                $output_string .= "\n\n\tslave_trailer: .".$tr.'.'.($key+1);
+            }
+            $output_string .= "\n}\n";
+
+            // trailer accessories units
+            // chassis unit
+            $output_string .= "\nvehicle_accessory: .".$trailer_name.".chassis\n";
+            $output_string .= "{\n\tdata_path: \"".$trailer->def."\"\n}\n";
+
+            // body unit
+            if(isset($trailer->body)){
+                $output_string .= "\nvehicle_accessory: .".$trailer_name.".body\n";
+                $output_string .= "{\n\tdata_path: \"".$trailer->body."\"\n}\n";
+            }
+
+            // addons units
+            if(isset($trailer->accessories)){
+                foreach($trailer->accessories as $accessory){
+                    $output_string .= "\nvehicle_addon_accessory: .$trailer_name.$accessory->name\n";
+                    $output_string .= "{\n\tdata_path: \"".$accessory->def."\"\n}\n";
+                }
+            }
+
+            // wheels units
+            $wheelsRules = Wheel::$rules;
+            for($i = 0; $i < $trailer->axles; $i++){
+                $output_string .= "\nvehicle_wheel_accessory: .$trailer_name.wheel$i\n{";
+
+                if(key_exists($this->chassis->alias, $wheelsRules[$i])){
+                    $isRequired = isset($wheelsRules[$i][$this->chassis->alias]['required']) && $wheelsRules[$i][$this->chassis->alias]['required'];
+                    if($isRequired || (!$isRequired && !$this->chassis->customWheels)){
+                        if(isset($wheelsRules[$i][$this->chassis->alias]['offset'])){
+                            $output_string .= "\n\toffset: ".$wheelsRules[$i][$this->chassis->alias]['offset'];
+                        }else{
+                            $output_string .= "\n\toffset: ".($i*2);
+                        }
+                        $output_string .= "\n\tdata_path: \"".$wheelsRules[$i][$this->chassis->alias]['def']."\"";
+                    }else{
+                        $output_string .= "\n\toffset: ".($i*2)."\n\tdata_path: \"".$this->chassis->wheels->def."\"";
+                    }
+                }else{
+                    $output_string .= "\n\toffset: ".($i*2)."\n\tdata_path: \"".$this->chassis->wheels->def."\"";
+                }
+
+                $output_string .= "\n}\n";
+            }
+
+            // cargo and paint_job units
+            if($this->accessory || $this->paintJob){
+                if($trailer->with_accessory == 'on' && isset($this->accessory->def) && $this->accessory->def !== ''){
+                    $output_string .= "\nvehicle_accessory: .$trailer_name.cargo\n{\n";
+                    $output_string .= "\tdata_path: \"".$this->accessory->getDefBySuffix(explode(',', $trailer->suitable_suffix))."\"\n}\n";
+                }
+                if($trailer->with_paint_job == 'on' && isset($this->paintJob->def) && $this->paintJob->def !== ''){
+                    $output_string .= "\nvehicle_paint_job_accessory: .$trailer_name.paint_job\n{\n";
+                    if($this->paintJob->with_color){
+                        $output_string .= "\tbase_color: (".$this->paintJob->color.")\n";
+                    }
+                    $output_string .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n";
+                }
+            }
+
+            $output_string .= "\n\n";
+        }
+
+//        dd($output_string);
+        return $output_string;
 	}
 
 	private function generateTrailerContent($trailer_name, $accessory_name){
@@ -215,14 +315,14 @@ class TrailerGenerator extends ModGenerator{
 
 		if($this->accessory || $this->paintJob){
 			if(isset($this->accessory->def) && $this->accessory->def !== ''){
-				$output_string .= "\nvehicle_accessory: ".$accessory_name.".cargo\n{\n\t\tdata_path: \"".$this->accessory->def."\"\n}\n";
+				$output_string .= "\nvehicle_accessory: ".$accessory_name.".cargo\n{\n\tdata_path: \"".$this->accessory->def."\"\n}\n";
 			}
 			if(isset($this->paintJob->def) && $this->paintJob->def !== ''){
 				$output_string .= "\nvehicle_paint_job_accessory: ".$accessory_name.".paint_job\n{\n";
 				if(stripos($this->paintJob->def ,'default.sii')){
 					$output_string .= "\tbase_color: (".$this->paintJob->color.")\n";
 				}
-				$output_string .= "\t\tdata_path: \"".$this->paintJob->def."\"\n}\n";
+				$output_string .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n";
 			}
 		}
 		return $output_string;
@@ -294,6 +394,127 @@ class TrailerGenerator extends ModGenerator{
 
 		return $content;
 	}
+
+    private function generateDealerTrailerContent(){
+
+        $output_string = "SiiNunit\n{\n";
+        foreach($this->chassis->trailers as $key => $trailer){
+
+            // trailer unit
+            $output_string .= "trailer : .$key\n{\n";
+            if($key == 0){
+                $output_string .= "\ttrailer_definition: ".Chassis::$defaultOwnableDef[$this->game]."\n\n";
+                $output_string .= "\taccessories[]: .$key.data\n";
+            }
+            $output_string .= "\taccessories[]: .$key.chassis\n";
+            $output_string .= "\taccessories[]: .$key.body\n";
+            if(isset($trailer->accessories)){
+                foreach($trailer->accessories as $accessory){
+                    $output_string .= "\taccessories[]: .$key.$accessory->name\n";
+                }
+            }
+            if($this->accessory || $this->paintJob){
+                if($trailer->with_accessory == 'on' && isset($this->accessory->def) && $this->accessory->def !== ''){
+                    $output_string .= "\taccessories[]: .$key.cargo\n";
+                }
+            }
+            if($this->chassis->supports_wheels && !$this->chassis->custemWheels){
+                $output_string .= "\taccessories[]: .$key.paint_job\n";
+            }
+            for($i = 0; $i < $trailer->axles; $i++){
+                switch(Wheel::getWheelState($i, $this->chassis)){
+                    case 2:
+                        $output_string .= "\n\taccessories[]: .$key.tire".$i."\n";
+                        $output_string .= "\taccessories[]: .$key.disk".$i."\n";
+                        $output_string .= "\taccessories[]: .$key.hub".$i."\n";
+                        $output_string .= "\taccessories[]: .$key.nuts".$i."\n";
+                        break;
+                    case 3:
+                    case 1:
+                    default:
+                        $output_string .= "\taccessories[]: .$key.wheel".$i."\n";
+                        break;
+                }
+            }
+            if(isset($this->chassis->trailers[$key+1])){
+                $output_string .= "\n\tslave_trailer: .".($key+1);
+            }
+            $output_string .= "\n}\n\n";
+
+            // trailer accessories units
+            //data unit
+            if($key == 0) $output_string .= "vehicle_accessory: .$key.data\n{\n\tdata_path: \"/def/vehicle/tmg/data.sii\"\n}\n";
+
+            // chassis unit
+            $output_string .= "\nvehicle_accessory: .$key.chassis\n";
+            $output_string .= "{\n\tdata_path: \"".$trailer->def."\"\n}\n";
+
+            // body unit
+            $output_string .= "\nvehicle_accessory: .$key.body\n";
+            $output_string .= "{\n\tdata_path: \"".($trailer->body ?? '/def/vehicle/tmg/body.sii')."\"\n";
+            $output_string .= "}\n\n";
+
+            // addons units
+            if(isset($trailer->accessories)){
+                foreach($trailer->accessories as $accessory){
+                    $output_string .= "vehicle_addon_accessory: .$key.$accessory->name\n";
+                    $output_string .= "{\n\tdata_path: \"".$accessory->def."\"\n}\n\n";
+                }
+            }
+
+            // wheels units
+            for($i = 0; $i < $trailer->axles; $i++){
+                switch(Wheel::getWheelState($i, $this->chassis)){
+                    case 2:
+                        $output_string .= "vehicle_wheel_accessory: .$key.tire$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['tire']."\"\n}\n\n";
+                        $output_string .= "vehicle_wheel_accessory: .$key.disk$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['disk']."\"\n}\n\n";
+                        $output_string .= "vehicle_wheel_accessory: .$key.hub$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['hub']."\"\n}\n\n";
+                        $output_string .= "vehicle_wheel_accessory: .$key.nuts$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['nuts']."\"\n}\n\n";
+                        break;
+                    case 3:
+                        $wheelsRules = Wheel::$rules;
+                        $output_string .= "vehicle_wheel_accessory: .$key.wheel$i\n{";
+                        if(isset($wheelsRules[$i][$this->chassis->alias]['offset'])){
+                            $output_string .= "\n\toffset: ".$wheelsRules[$i][$this->chassis->alias]['offset'];
+                        }else{
+                            $output_string .= "\n\toffset: ".($i*2);
+                        }
+                        $output_string .= "\n\tdata_path: \"".$wheelsRules[$i][$this->chassis->alias]['def']."\"";
+                        $output_string .= "\n}\n\n";
+                        break;
+                    case 1:
+                    default:
+                        $output_string .= "vehicle_wheel_accessory: .$key.wheel$i\n{";
+                        $output_string .= "\n\toffset: ".($i*2)."\n\tdata_path: \"".$this->chassis->wheels->def."\"";
+                        $output_string .= "\n}\n\n";
+                        break;
+                }
+            }
+
+            // cargo and paint_job units
+            if($trailer->with_accessory == 'on' && $this->accessory && isset($this->accessory->def) && $this->accessory->def !== ''){
+                $output_string .= "vehicle_accessory: .$key.cargo\n{\n";
+                $output_string .= "\tdata_path: \"".$this->accessory->getDefBySuffix(explode(',', $trailer->suitable_suffix))."\"\n}\n\n";
+            }
+            if($trailer->with_paint_job == 'on' && isset($this->paintJob->def) && $this->paintJob->def !== ''){
+                $output_string .= "vehicle_paint_job_accessory: .$key.paint_job\n{\n";
+                if($this->paintJob->with_color){
+                    $output_string .= "\tbase_color: (".$this->paintJob->color.")\n";
+                    $output_string .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n\n";
+                }else{
+                    $output_string .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n\n";
+                }
+            }elseif($this->chassis->supports_wheels && !$this->chassis->custemWheels){
+                $output_string .= "vehicle_paint_job_accessory: .$key.paint_job\n{\n";
+                $output_string .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n";
+            }
+
+            $output_string .= "\n\n";
+        }
+        $output_string .= "}";
+//        dd($output_string);
+        return $output_string;
+    }
 
     private function generateDealerFileContent(){
         $content = "SiiNunit\n{\ntrailer : .tmg.ownable.trailer\n{\n";

@@ -26,6 +26,7 @@ class Chassis extends Model{
         'can_random' => 'boolean',
         'mp_support' => 'boolean',
         'active' => 'boolean',
+        'trailers' => 'object',
     ];
 
     public function dlc(){

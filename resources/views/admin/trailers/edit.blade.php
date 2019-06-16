@@ -194,23 +194,6 @@
                             </div>
                             <label for="with_paint_job">Із скіном</label>
                         </div>
-{{--                        <div class="mdc-form-field col s12">--}}
-{{--                            <div class="mdc-checkbox">--}}
-{{--                                <input type="checkbox"--}}
-{{--                                       class="mdc-checkbox__native-control"--}}
-{{--                                       id="trailer_owned" name="trailer_owned" {{ $chassis->trailer_owned ? 'checked' : '' }}>--}}
-{{--                                <div class="mdc-checkbox__background">--}}
-{{--                                    <svg class="mdc-checkbox__checkmark"--}}
-{{--                                         viewBox="0 0 24 24">--}}
-{{--                                        <path class="mdc-checkbox__checkmark-path"--}}
-{{--                                              fill="none"--}}
-{{--                                              d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>--}}
-{{--                                    </svg>--}}
-{{--                                    <div class="mdc-checkbox__mixedmark"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <label for="trailer_owned">trailer_owned</label>--}}
-{{--                        </div>--}}
                         <div class="mdc-form-field col s12">
                             <div class="mdc-checkbox">
                                 <input type="checkbox"
@@ -298,105 +281,163 @@
                         </div>
                     </div>
                 </div>
-{{--                <div class="card-action">--}}
-{{--                    <div class="row no-margin">--}}
-{{--                        <button type="submit" class="mdc-button mdc-button--unelevated col s12"><b>Зберегти</b></button>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
             </div>
 
             <div class="trailers">
-                <div class="card" style="width: 600px;" id="trailer-0" data-id="0">
-                    <div class="card-content">
-                        <div class="row">
-                            <h5 class="card-title center">Основний причіп</h5>
-                        </div>
-                        <div class="row no-margin">
-                            <div class="mdc-text-field mdc-text-field--outlined">
-                                <input type="text" id="def_0" class="mdc-text-field__input" name="trailers[0][def]" value="{{ $chassis->def }}" required>
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="def_0" class="mdc-floating-label">Def</label>
-                                    </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
+                @foreach($trailers as $key => $trailer)
+                    @php $trailer = (object)$trailer @endphp
+                    <div class="card" style="width: 600px;" id="trailer-{{$key}}" data-id="{{$key}}">
+                        <div class="card-content">
+                            <div class="row">
+                                <h5 class="card-title center">@if($key == 0)Основний @endif причіп</h5>
                             </div>
-                        </div>
-                        <div class="row no-margin">
-                            <div class="mdc-text-field mdc-text-field--outlined">
-                                <input type="text" id="body_0" class="mdc-text-field__input" name="trailers[0][body]" value="{{ $chassis->body }}">
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="body_0" class="mdc-floating-label">Body</label>
-                                    </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row no-margin">
-                            <div class="mdc-text-field mdc-text-field--outlined">
-                                <input type="number" id="axles_0" class="mdc-text-field__input" name="trailers[0][axles]" value="{{ $chassis->axles }}" required>
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="axles_0" class="mdc-floating-label">Кількість осей</label>
-                                    </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row no-margin">
-                            <div class="mdc-text-field mdc-text-field--outlined">
-                                <input type="text" id="suitable_suffix_0" class="mdc-text-field__input" name="trailers[0][suitable_suffix]" value="{{ $chassis->suitable_suffix }}">
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="suitable_suffix_0" class="mdc-floating-label">Суфікс вантажу</label>
-                                    </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row no-margin accessories">
-                            <div class="col s12"><p>Аксесуари</p></div>
-                            <div id="accessory-0-0">
-                                <div class="col s12 m4">
-                                    <div class="mdc-text-field mdc-text-field--outlined">
-                                        <input type="text" id="acc_0_0_name" class="mdc-text-field__input" name="trailers[0][accessories][0][name]" value="{{ $chassis->axles }}">
-                                        <div class="mdc-notched-outline">
-                                            <div class="mdc-notched-outline__leading"></div>
-                                            <div class="mdc-notched-outline__notch">
-                                                <label for="acc_0_0_name" class="mdc-floating-label">Назва</label>
-                                            </div>
-                                            <div class="mdc-notched-outline__trailing"></div>
+                            <div class="row no-margin">
+                                <div class="mdc-text-field mdc-text-field--outlined">
+                                    <input type="text" id="def_{{$key}}" class="mdc-text-field__input"
+                                           name="trailers[{{$key}}][def]" value="{{ $trailer->def }}" required>
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="def_{{$key}}" class="mdc-floating-label">Def</label>
                                         </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
                                     </div>
-                                </div>
-                                <div class="col s11 m7">
-                                    <div class="mdc-text-field mdc-text-field--outlined">
-                                        <input type="text" id="acc_0_0_def" class="mdc-text-field__input" name="trailers[0][accessories][0][def]" value="{{ $chassis->axles }}">
-                                        <div class="mdc-notched-outline">
-                                            <div class="mdc-notched-outline__leading"></div>
-                                            <div class="mdc-notched-outline__notch">
-                                                <label for="acc_0_0_def" class="mdc-floating-label">def</label>
-                                            </div>
-                                            <div class="mdc-notched-outline__trailing"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s1" style="line-height: 80px;">
-                                    <a style="cursor: pointer;" class="acc-remove"><i class="material-icons notranslate red-text">minimize</i></a>
                                 </div>
                             </div>
+                            <div class="row no-margin">
+                                <div class="mdc-text-field mdc-text-field--outlined">
+                                    <input type="text" id="body_{{$key}}" class="mdc-text-field__input"
+                                           name="trailers[{{$key}}][body]" value="{{ $trailer->body }}">
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="body_{{$key}}" class="mdc-floating-label">Body</label>
+                                        </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="mdc-text-field mdc-text-field--outlined">
+                                    <input type="number" id="axles_{{$key}}" class="mdc-text-field__input"
+                                           name="trailers[{{$key}}][axles]" value="{{ $trailer->axles }}" required>
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="axles_{{$key}}" class="mdc-floating-label">Кількість осей</label>
+                                        </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="mdc-text-field mdc-text-field--outlined">
+                                    <input type="text" id="suitable_suffix_{{$key}}" class="mdc-text-field__input"
+                                           name="trailers[{{$key}}][suitable_suffix]" value="{{ $trailer->suitable_suffix }}">
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="suitable_suffix_{{$key}}" class="mdc-floating-label">Суфікс вантажу</label>
+                                        </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-form-field col s12">
+                                <div class="mdc-checkbox">
+                                    <input type="hidden" value="off" name="trailers[{{$key}}][with_accessory]">
+                                    <input type="checkbox"
+                                           class="mdc-checkbox__native-control"
+                                           id="with_accessory_{{$key}}" name="trailers[{{$key}}][with_accessory]"
+                                            {{ $trailer->with_accessory == 'on' ? 'checked' : '' }}>
+                                    <div class="mdc-checkbox__background">
+                                        <svg class="mdc-checkbox__checkmark"
+                                             viewBox="0 0 24 24">
+                                            <path class="mdc-checkbox__checkmark-path"
+                                                  fill="none"
+                                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                        </svg>
+                                        <div class="mdc-checkbox__mixedmark"></div>
+                                    </div>
+                                </div>
+                                <label for="with_accessory_{{$key}}">З аксесуаром</label>
+                            </div>
+                            <div class="mdc-form-field col s12">
+                                <div class="mdc-checkbox">
+                                    <input type="hidden" value="off" name="trailers[{{$key}}][with_paint_job]">
+                                    <input type="checkbox"
+                                           class="mdc-checkbox__native-control"
+                                           id="with_paint_job_{{$key}}" name="trailers[{{$key}}][with_paint_job]"
+                                            {{ $trailer->with_paint_job == 'on' ? 'checked' : '' }}>
+                                    <div class="mdc-checkbox__background">
+                                        <svg class="mdc-checkbox__checkmark"
+                                             viewBox="0 0 24 24">
+                                            <path class="mdc-checkbox__checkmark-path"
+                                                  fill="none"
+                                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                        </svg>
+                                        <div class="mdc-checkbox__mixedmark"></div>
+                                    </div>
+                                </div>
+                                <label for="with_paint_job_{{$key}}">Із скіном</label>
+                            </div>
+                            <div class="row no-margin accessories">
+                                <div class="col s12"><p>Аксесуари</p></div>
+                                @if(isset($trailer->accessories))
+                                    @foreach($trailer->accessories as $acc_key => $accessory)
+                                        @php $accessory = (object)$accessory @endphp
+                                        <div id="accessory-{{$key}}-{{$acc_key}}">
+                                            <div class="col s12 m4">
+                                                <div class="mdc-text-field mdc-text-field--outlined">
+                                                    <input type="text" id="acc_{{$key}}_{{$acc_key}}_name" class="mdc-text-field__input"
+                                                           name="trailers[{{$key}}][accessories][{{$acc_key}}][name]" value="{{ $accessory->name }}">
+                                                    <div class="mdc-notched-outline">
+                                                        <div class="mdc-notched-outline__leading"></div>
+                                                        <div class="mdc-notched-outline__notch">
+                                                            <label for="acc_{{$key}}_{{$acc_key}}_name" class="mdc-floating-label">Назва</label>
+                                                        </div>
+                                                        <div class="mdc-notched-outline__trailing"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s11 m7">
+                                                <div class="mdc-text-field mdc-text-field--outlined">
+                                                    <input type="text" id="acc_{{$key}}_{{$acc_key}}_def" class="mdc-text-field__input"
+                                                           name="trailers[{{$key}}][accessories][{{$acc_key}}][def]" value="{{ $accessory->def }}">
+                                                    <div class="mdc-notched-outline">
+                                                        <div class="mdc-notched-outline__leading"></div>
+                                                        <div class="mdc-notched-outline__notch">
+                                                            <label for="acc_{{$key}}_{{$acc_key}}_def" class="mdc-floating-label">def</label>
+                                                        </div>
+                                                        <div class="mdc-notched-outline__trailing"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s1" style="line-height: 80px;">
+                                                <a style="cursor: pointer;" class="acc-remove"><i class="material-icons notranslate red-text">minimize</i></a>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+                            <a style="cursor: pointer;" class="col s12 mdc-button acc-add"
+                               data-current-index="{{isset($trailer->accessories) ? count((array)$trailer->accessories) - 1 : -1}}">
+                                Додати аксесуар
+                            </a>
                         </div>
-                        <a style="cursor: pointer;" class="col s12 mdc-button acc-add" data-current-index="0">Додати аксесуар</a>
+                        @if($key != 0)
+                            <div class="card-action">
+                                <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated trailer-remove">Видалити причіп</a>
+                            </div>
+                        @endif
                     </div>
-                </div>
+                @endforeach
             </div>
             <div class="row">
-                <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated" id="trailer-add" data-current-index="0">Додати причіп</a>
+                <a style="cursor: pointer;" class="btn mdc-button mdc-button--unelevated" id="trailer-add"
+                   data-current-index="{{count((array)$chassis->trailers) == 0 ? 0 : count((array)$chassis->trailers) - 1}}">
+                    Додати причіп
+                </a>
             </div>
         </div>
 
@@ -492,6 +533,42 @@
                             <div class="mdc-notched-outline__trailing"></div>
                         </div>
                     </div>
+                </div>
+                <div class="mdc-form-field col s12">
+                    <div class="mdc-checkbox">
+                        <input type="hidden" value="off" name="trailers[%t_id%][with_accessory]">
+                        <input type="checkbox"
+                               class="mdc-checkbox__native-control"
+                               id="with_accessory_%t_id%" name="trailers[%t_id%][with_accessory]">
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark"
+                                 viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path"
+                                      fill="none"
+                                      d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                    </div>
+                    <label for="with_accessory_%t_id%">З аксесуаром</label>
+                </div>
+                <div class="mdc-form-field col s12">
+                    <div class="mdc-checkbox">
+                        <input type="hidden" value="off" name="trailers[%t_id%][with_paint_job]">
+                        <input type="checkbox"
+                               class="mdc-checkbox__native-control"
+                               id="with_paint_job_%t_id%" name="trailers[%t_id%][with_paint_job]">
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark"
+                                 viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path"
+                                      fill="none"
+                                      d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                    </div>
+                    <label for="with_paint_job_%t_id%">Із скіном</label>
                 </div>
                 <div class="row no-margin accessories">
                     <div class="col s12"><p>Аксесуари</p></div>
