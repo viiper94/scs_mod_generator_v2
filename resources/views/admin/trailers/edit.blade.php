@@ -6,7 +6,7 @@
     <form method="post" enctype="multipart/form-data">
         <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
 
-            <div class="card" style="width: 600px;">
+            <div class="card" style="width: 800px;">
                 @csrf
                 <div class="card-content">
                     <div class="row">
@@ -286,7 +286,7 @@
             <div class="trailers">
                 @foreach($trailers as $key => $trailer)
                     @php $trailer = (object)$trailer @endphp
-                    <div class="card" style="width: 600px;" id="trailer-{{$key}}" data-id="{{$key}}">
+                    <div class="card" style="width: 800px;" id="trailer-{{$key}}" data-id="{{$key}}">
                         <div class="card-content">
                             <div class="row">
                                 <h5 class="card-title center">@if($key == 0)Основний @endif причіп</h5>
@@ -387,7 +387,7 @@
                                     @foreach($trailer->accessories as $acc_key => $accessory)
                                         @php $accessory = (object)$accessory @endphp
                                         <div id="accessory-{{$key}}-{{$acc_key}}" class="accessory-row">
-                                            <div class="col s12 m4">
+                                            <div class="col s12 m2">
                                                 <div class="mdc-text-field mdc-text-field--outlined">
                                                     <input type="text" id="acc_{{$key}}_{{$acc_key}}_name" class="mdc-text-field__input"
                                                            name="trailers[{{$key}}][accessories][{{$acc_key}}][name]" value="{{ $accessory->name }}">
@@ -400,7 +400,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col s11 m7">
+                                            <div class="col s11 m9">
                                                 <div class="mdc-text-field mdc-text-field--outlined">
                                                     <input type="text" id="acc_{{$key}}_{{$acc_key}}_def" class="mdc-text-field__input"
                                                            name="trailers[{{$key}}][accessories][{{$acc_key}}][def]" value="{{ $accessory->def }}">
@@ -450,7 +450,7 @@
 
     <script type="text/html" id="acc_template">
         <div id="accessory-%t_id%-%a_id%" class="accessory-row">
-            <div class="col s12 m4">
+            <div class="col s12 m2">
                 <div class="mdc-text-field mdc-text-field--outlined">
                     <input type="text" id="acc_%t_id%_%a_id%_name" class="mdc-text-field__input" name="trailers[%t_id%][accessories][%a_id%][name]">
                     <div class="mdc-notched-outline">
@@ -462,7 +462,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s11 m7">
+            <div class="col s11 m9">
                 <div class="mdc-text-field mdc-text-field--outlined">
                     <input type="text" id="acc_%t_id%_%a_id%_def" class="mdc-text-field__input" name="trailers[%t_id%][accessories][%a_id%][def]">
                     <div class="mdc-notched-outline">
@@ -481,7 +481,7 @@
     </script>
 
     <script type="text/html" id="trailer_template">
-        <div class="card" style="width: 600px;" id="trailer-%t_id%" data-id="%t_id%">
+        <div class="card" style="width: 800px;" id="trailer-%t_id%" data-id="%t_id%">
             <div class="card-content">
                 <div class="row">
                     <h5 class="card-title center">причіп</h5>
