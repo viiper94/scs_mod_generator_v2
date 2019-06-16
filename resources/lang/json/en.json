@@ -321,12 +321,17 @@
         "lowboy_boat": "Lowboy boat",
         "mbt": "Mobile Barrier",
         "home_transporter": "Home Transporter",
-        "magnitude_55l_1_2": "Lowboy 55L (2 + 3)",
-        "magnitude_55l_1_2_3": "Lowboy 55L (2 + 2 + 2)",
-        "magnitude_55l_13_2l3_33": "Lowboy 55L (3 + 3 long + 3)",
-        "magnitude_55l_13_2l3": "Lowboy 55L (3 + 3 long)",
-        "magnitude_55l_13_2sh3_33": "Lowboy 55L (3 + 3 short + 3)",
-        "magnitude_55l_13_2sh3": "Lowboy 55L (3 + 3 short)"
+        "magnitude_55l_j2_t3_heavy": "Lowboy 55L (Double)",
+        "magnitude_55l_j2_t2_s2_heavy": "Lowboy 55L (Triple)",
+        "magnitude_55l_j3_t3l_s3_special": "Lowboy 55L (Triple Long)",
+        "magnitude_55l_j3_t3l_special": "Lowboy 55L (Double Long)",
+        "magnitude_55l_j3_t3sh_s3_special": "Lowboy 55L (Triple Short)",
+        "magnitude_55l_j3_t3sh_special": "Lowboy 55L (Double Short)",
+        "magnitude_55l_t3_forest": "Lowboy 55L (Single)",
+        "magnitude_55l_j2_t3_forest": "Lowboy 55L (Double)",
+        "magnitude_55l_j2_t2_s2_forest": "Lowboy 55L (Triple)",
+        "kb_loader": "Knuckleboom loader",
+        "tub_grinder": "Tub grinder"
     },
     "companies\/paints": {
         "default": "Colored",
@@ -486,6 +491,12 @@
       "cargo_heavy_helicopter": "Transport helicopter",
       "cargo_mutt_hull": "Haul truck hull",
       "cargo_tank": "Large reservoir tank",
+      "cargo_raptor": "Mulcher",
+      "cargo_stumper": "Stumper",
+      "cargo_log_loader": "Log loader",
+      "cargo_log_stacker": "Log stacker",
+      "cargo_forwarder": "Forwarder",
+      "cargo_harvester": "Harvester",
       "aircraft_engine": "Aircraft engine"
     },
   "wheels": {}
