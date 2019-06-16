@@ -386,7 +386,7 @@
                                 @if(isset($trailer->accessories))
                                     @foreach($trailer->accessories as $acc_key => $accessory)
                                         @php $accessory = (object)$accessory @endphp
-                                        <div id="accessory-{{$key}}-{{$acc_key}}">
+                                        <div id="accessory-{{$key}}-{{$acc_key}}" class="accessory-row">
                                             <div class="col s12 m4">
                                                 <div class="mdc-text-field mdc-text-field--outlined">
                                                     <input type="text" id="acc_{{$key}}_{{$acc_key}}_name" class="mdc-text-field__input"
@@ -449,7 +449,7 @@
     </form>
 
     <script type="text/html" id="acc_template">
-        <div id="accessory-%t_id%-%a_id%">
+        <div id="accessory-%t_id%-%a_id%" class="accessory-row">
             <div class="col s12 m4">
                 <div class="mdc-text-field mdc-text-field--outlined">
                     <input type="text" id="acc_%t_id%_%a_id%_name" class="mdc-text-field__input" name="trailers[%t_id%][accessories][%a_id%][name]">
@@ -572,7 +572,7 @@
                 </div>
                 <div class="row no-margin accessories">
                     <div class="col s12"><p>Аксесуари</p></div>
-                    <div id="accessory-%t_id%-0">
+                    <div id="accessory-%t_id%-0" class="accessory-row">
                         <div class="col s12 m4">
                             <div class="mdc-text-field mdc-text-field--outlined">
                                 <input type="text" id="acc_%t_id%_0_name" class="mdc-text-field__input" name="trailers[%t_id%][accessories][0][name]">
