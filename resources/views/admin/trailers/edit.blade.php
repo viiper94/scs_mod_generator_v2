@@ -294,7 +294,7 @@
                             <div class="row no-margin">
                                 <div class="mdc-text-field mdc-text-field--outlined">
                                     <input type="text" id="def_{{$key}}" class="mdc-text-field__input"
-                                           name="trailers[{{$key}}][def]" value="{{ $trailer->def }}" required>
+                                           name="trailers[{{$key}}][def]" value="{{ $trailer->def ?? $chassis->def }}" required>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
                                         <div class="mdc-notched-outline__notch">
@@ -320,7 +320,7 @@
                             <div class="row no-margin">
                                 <div class="mdc-text-field mdc-text-field--outlined">
                                     <input type="number" id="axles_{{$key}}" class="mdc-text-field__input"
-                                           name="trailers[{{$key}}][axles]" value="{{ $trailer->axles }}" required>
+                                           name="trailers[{{$key}}][axles]" value="{{ $trailer->axles ?? $chassis->axles }}" required>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
                                         <div class="mdc-notched-outline__notch">
@@ -360,7 +360,7 @@
                                         <div class="mdc-checkbox__mixedmark"></div>
                                     </div>
                                 </div>
-                                <label for="with_accessory_{{$key}}">З аксесуаром</label>
+                                <label for="with_accessory_{{$key}}">З вантажем</label>
                             </div>
                             <div class="mdc-form-field col s12">
                                 <div class="mdc-checkbox">
@@ -488,7 +488,7 @@
                 </div>
                 <div class="row no-margin">
                     <div class="mdc-text-field mdc-text-field--outlined">
-                        <input type="text" id="def_%t_id%" class="mdc-text-field__input" name="trailers[%t_id%][def]">
+                        <input type="text" id="def_%t_id%" class="mdc-text-field__input" name="trailers[%t_id%][def]" required>
                         <div class="mdc-notched-outline">
                             <div class="mdc-notched-outline__leading"></div>
                             <div class="mdc-notched-outline__notch">
@@ -512,7 +512,7 @@
                 </div>
                 <div class="row no-margin">
                     <div class="mdc-text-field mdc-text-field--outlined">
-                        <input type="number" id="axles_%t_id%" class="mdc-text-field__input" name="trailers[%t_id%][axles]">
+                        <input type="number" id="axles_%t_id%" class="mdc-text-field__input" name="trailers[%t_id%][axles]" required>
                         <div class="mdc-notched-outline">
                             <div class="mdc-notched-outline__leading"></div>
                             <div class="mdc-notched-outline__notch">
@@ -550,7 +550,7 @@
                             <div class="mdc-checkbox__mixedmark"></div>
                         </div>
                     </div>
-                    <label for="with_accessory_%t_id%">З аксесуаром</label>
+                    <label for="with_accessory_%t_id%">З вантажем</label>
                 </div>
                 <div class="mdc-form-field col s12">
                     <div class="mdc-checkbox">
@@ -573,7 +573,7 @@
                 <div class="row no-margin accessories">
                     <div class="col s12"><p>Аксесуари</p></div>
                     <div id="accessory-%t_id%-0" class="accessory-row">
-                        <div class="col s12 m4">
+                        <div class="col s12 m2">
                             <div class="mdc-text-field mdc-text-field--outlined">
                                 <input type="text" id="acc_%t_id%_0_name" class="mdc-text-field__input" name="trailers[%t_id%][accessories][0][name]">
                                 <div class="mdc-notched-outline">
@@ -585,7 +585,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s11 m7">
+                        <div class="col s11 m9">
                             <div class="mdc-text-field mdc-text-field--outlined">
                                 <input type="text" id="acc_%t_id%_0_def" class="mdc-text-field__input" name="trailers[%t_id%][accessories][0][def]">
                                 <div class="mdc-notched-outline">

@@ -13,11 +13,11 @@ class AdminTrailersController extends Controller{
     public $trailers = [
         0 => [
             'def' => null,
-            'axles' => 0,
+            'axles' => null,
             'body' => null,
             'suitable_suffix' => null,
-            'with_accessory' => 'on',
-            'with_paint_job' => 'on',
+            'with_accessory' => 'off',
+            'with_paint_job' => 'off',
             'accessories' => [
                 0 => [
                     'name' => null,
