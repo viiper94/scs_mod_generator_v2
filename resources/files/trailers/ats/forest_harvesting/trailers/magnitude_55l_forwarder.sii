@@ -1,0 +1,87 @@
+trailer : trailer.mag_55l_t3.forwarder
+{
+	accessories[]: .mag_55l_t3.forwarder.tchassis
+	accessories[]: .mag_55l_t3.forwarder.trwheel0
+	accessories[]: .mag_55l_t3.forwarder.trwheel1
+	
+	slave_trailer: trailer.mag_55l_t3_t.forwarder
+
+}
+
+vehicle_accessory: .mag_55l_t3.forwarder.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_jeep.dlc_forest_harvesting.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t3.forwarder.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_t3.forwarder.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+
+
+#########################################
+#
+#	TRAILER
+#
+#########################################
+
+trailer : trailer.mag_55l_t3_t.forwarder
+{
+	accessories[]: .mag_55l_j_t3.forwarder.tchassis
+	accessories[]: .mag_55l_j_t3.forwarder.trwheel0
+	accessories[]: .mag_55l_j_t3.forwarder.trwheel1
+	accessories[]: .mag_55l_j_t3.forwarder.trwheel2
+    
+    accessories[]: .mag_55l_j_t3.forwarder.flag_r_r
+    accessories[]: .mag_55l_j_t3.forwarder.flag_r_l
+	
+	accessories[]: .mag_55l_j_t3.forwarder.cargo
+
+
+}
+
+vehicle_accessory: .mag_55l_j_t3.forwarder.tchassis
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_3.dlc_forest_harvesting.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_j_t3.forwarder.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_j_t3.forwarder.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .mag_55l_j_t3.forwarder.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .mag_55l_j_t3.forwarder.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_r/warning.dlc_forest_harvesting.sii"
+}
+
+vehicle_addon_accessory: .mag_55l_j_t3.forwarder.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/flag_r_l/warning.dlc_forest_harvesting.sii"
+}
+
+vehicle_accessory: .mag_55l_j_t3.forwarder.cargo
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_forwarder.sii"
+}
