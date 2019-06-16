@@ -449,11 +449,11 @@ $(document).ready(function(){
         });
     });
 
-    $(document).on('keyup', 'input[id*=_def]', function(){
+    $(document).on('keyup', '.accessory-row input[id*=_def]', function(){
         let arr = $(this).val().split('/');
         if(arr[1] !== 'def' && arr[2] !== 'vehicle') return false;
-        if($('input[id*=_name]').val() === '' && arr[arr.length - 2] !== undefined){
-            let targetRow = $(this).parents('.accessory-row');
+        let targetRow = $(this).parents('.accessory-row');
+        if(targetRow.find('input[id*=_name]').val() === '' && arr[arr.length - 2] !== undefined){
             targetRow.find('input[id*=_name]').val(arr[arr.length - 2]);
             targetRow.find('input[id*=_name] + div').addClass('mdc-notched-outline--notched')
                 .find('label').addClass('mdc-floating-label--float-above');
