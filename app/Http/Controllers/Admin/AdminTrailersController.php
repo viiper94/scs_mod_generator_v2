@@ -63,7 +63,7 @@ class AdminTrailersController extends Controller{
                 'can_all_companies' => $request->input('can_all_companies') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
                 'active' => $request->input('active') == 'on',
-                'trailers' => $request->input('trailers')
+                'trailers' => array_values($request->input('trailers'))
             ]);
             return $chassis->save() ?
                 redirect()->route('trailers')->with(['success' => 'Причіп успішно відредаговано!']) :
@@ -156,7 +156,7 @@ class AdminTrailersController extends Controller{
                 'trailer_owned' => $request->input('trailer_owned') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
-                'trailers' => $request->input('trailers')
+                'trailers' => array_values($request->input('trailers'))
             ]);
             if($chassis->save()) return redirect()->route('trailers')->with(['success' => 'Причіп успішно додано!']);
         }
