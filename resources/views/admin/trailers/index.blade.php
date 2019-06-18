@@ -31,7 +31,6 @@
                                 @lang($chassis->game.'_trailers.'.$chassis->alias)
                             </h5>
                             <p style="line-height: 24px;">
-                                @if($chassis->trailers)<i class="material-icons mdc-button__icon notranslate left">autorenew</i>@endif
                                 @if($chassis->with_accessory)<i class="material-icons mdc-button__icon notranslate left">category</i>@endif
                                 @if($chassis->with_paint_job)<i class="material-icons mdc-button__icon notranslate left">texture</i>@endif
                                 @if(!$chassis->mp_support)<s><b>MP</b></s>@endif
