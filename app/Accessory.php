@@ -71,25 +71,4 @@ class Accessory extends Model{
         return $this->def;
     }
 
-    public static function getCargoParams($temp){
-        $is_slave = false;
-        $is_slave_second = false;
-        $is_slave_third = false;
-        $params = explode('_', str_replace('%', '', $temp));
-        if(in_array('s', $params)){
-            $is_slave = true;
-            array_splice($params, array_search('s', $params, true), 1);
-        }
-        if(in_array('ss', $params)){
-            $is_slave_second = true;
-            array_splice($params, array_search('ss', $params, true), 1);
-        }
-        if(in_array('st', $params)){
-            $is_slave_third = true;
-            array_splice($params, array_search('st', $params, true), 1);
-        }
-        $suffix = isset($params[1]) ? explode(',', $params[1]) : array();
-        return ['suffix' => $suffix, 'slave' => $is_slave, 'slave_second' => $is_slave_second, 'slave_third' => $is_slave_third];
-    }
-
 }
