@@ -112,14 +112,10 @@ class TrailerGenerator extends ModGenerator{
 				if(is_file($dirname."/".$file)){
 					$rows = file($dirname."/".$file, FILE_IGNORE_NEW_LINES);
 					$trailer_name = trim(preg_split('/trailer\./', $rows[0])[1]);
-					$row_with_accessory_name = array_first($rows, function($value, $key){
-                        return stripos($value, 'accessories') !== false;
-                    });
-					$accessory_name = trim(preg_replace('/\.[a-z0-9]+$/', '', explode(':', $row_with_accessory_name)[1]));
 					if($this->chassis->alias == 'paintable'){
 						$content = $this->generatePaintableTrailersContent($rows);
 						if(stripos($content,'base_color') === false){
-							$content = $this->generateRandomTrailerContent($trailer_name, $accessory_name);
+							$content = $this->generateRandomTrailerContent($trailer_name);
                         }
                     }else{
                         $content = $this->generateMarketTrailerContent($trailer_name);
@@ -399,8 +395,8 @@ class TrailerGenerator extends ModGenerator{
         return $rows;
     }
 
-    private function generateRandomTrailerContent($trailer_name, $accessory_name){
-        $to_random = Chassis::where(['can_random' => 1, 'game' => $this->game])->get();
+    private function generateRandomTrailerContent($trailer_name){
+        $to_random = Chassis::where(['can_all_companies' => 1, 'game' => $this->game])->get();
         $random_chassis = $to_random->random();
         $random_chassis->setWheels($this->chassis->wheels);
 
@@ -413,9 +409,7 @@ class TrailerGenerator extends ModGenerator{
         $original_paint_job = $this->paintJob;
         $this->paintJob = $random_paint_job;
         $this->chassis = $random_chassis;
-        $content = $random_chassis->trailers ?
-            $this->generateMarketTrailerContent($trailer_name) :
-            $this->generateTrailerContent($trailer_name, $accessory_name);
+        $content = $this->generateMarketTrailerContent($trailer_name);
         $this->chassis = $original_chassis;
         $this->paintJob = $original_paint_job;
 

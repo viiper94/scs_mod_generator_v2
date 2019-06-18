@@ -29,7 +29,7 @@ class AdminTrailersController extends Controller{
 
     public function index(Request $request){
         $chassis = Chassis::select(['*']);
-        if($request->input('q')) $chassis->where('def', 'like', '%'.$request->input('q').'%')
+        if($request->input('q')) $chassis->where('trailers', 'like', '%'.$request->input('q').'%')
             ->orWhere('alias', 'like', $request->input('q').'%');
         return view('admin.trailers.index', [
             'chassis_list' => $chassis->orderBy('updated_at', 'desc')->paginate(20)
