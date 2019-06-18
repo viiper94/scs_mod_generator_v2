@@ -31,9 +31,11 @@ class TrailerGenerator extends ModGenerator{
 			$this->copyCompanyFiles();
 			$this->replaceCompanyFiles();
 		}
-		$this->copyDealerFiles();
-        $this->copyTrailerDefsFiles();
-        $this->replaceDealerFile();
+		if($this->chassis->alias !== 'paintable' && Request::input('paint') !== 'all'){
+            $this->copyDealerFiles();
+            $this->copyTrailerDefsFiles();
+            $this->replaceDealerFile();
+        }
         if(Request::input('fix') == 'on'){
             $this->copyCaravanFix();
         }
@@ -179,7 +181,6 @@ class TrailerGenerator extends ModGenerator{
 	}
 
     private function generateMarketTrailerContent($tr){
-//	    dd($this->chassis->trailers);
         $output_string = '';
         foreach($this->chassis->trailers as $key => $trailer){
             $trailer_name = $key == 0 ? $tr : $tr.'.'.$key;
@@ -270,7 +271,6 @@ class TrailerGenerator extends ModGenerator{
             $output_string .= "\n\n";
         }
 
-//        dd($output_string);
         return $output_string;
 	}
 
@@ -382,13 +382,16 @@ class TrailerGenerator extends ModGenerator{
 
 		$random_paint_job = new Paint();
 		$random_paint_job->def = $random_chassis->default_paint_job;
+		$random_paint_job->with_color = $this->paintJob->with_color;
 		$random_paint_job->color = $this->paintJob->color;
 
 		$original_chassis = $this->chassis;
 		$original_paint_job = $this->paintJob;
 		$this->paintJob = $random_paint_job;
 		$this->chassis = $random_chassis;
-		$content = $this->generateTrailerContent($trailer_name, $accessory_name);
+		$content = $random_chassis->trailers ?
+            $this->generateMarketTrailerContent($trailer_name) :
+            $this->generateTrailerContent($trailer_name, $accessory_name);
 		$this->chassis = $original_chassis;
 		$this->paintJob = $original_paint_job;
 

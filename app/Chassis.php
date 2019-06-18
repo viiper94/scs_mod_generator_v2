@@ -143,7 +143,7 @@ class Chassis extends Model{
             'selected' => true
         ];
         $list[] = [
-            'name' => trans($game.'_companies_paints.default'),
+            'name' => '<span data-with-color="1">'.trans($game.'_companies_paints.default').'</span>',
             'value' => 'default'];
         foreach($companies as $company){
             $name = trans($game.'_companies_paints.'.$company->name);
