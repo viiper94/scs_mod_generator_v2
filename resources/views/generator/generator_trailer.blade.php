@@ -34,7 +34,9 @@
                                 <div class="default text">@lang('general.choose_chassis')</div>
                                 <i class="dropdown icon right"></i>
                                 <div class="menu">
-                                    <div class="item" data-value="paintable">@lang('general.paintable_chassis')</div>
+                                    <div class="item" data-value="paintable">
+                                        <span class="name">@lang('general.paintable_chassis')</span>
+                                    </div>
                                     @foreach($chassis_list as $chassis)
                                         <div class="item @if(!$chassis->mp_support)
                                                 tooltipped" data-tooltip="@lang('general.mp_no_support')@endif"
