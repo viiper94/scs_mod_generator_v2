@@ -18,6 +18,7 @@ class ModGenerator{
 
     protected function makeOutDirectory(){
         mkdir($this->outDir);
+        file_put_contents($this->outDir.'/post.log', print_r(Request::all(), true));
     }
 
     protected function removeOutDirectory(){
@@ -110,6 +111,7 @@ class ModGenerator{
         $zip->addFile($this->filesDir.'/mod/manifest.sii', 'manifest.sii');
         $zip->addEmptyDir('def');
         $this->rZipCopy($zip, $this->outDir, 'def');
+        $zip->deleteName('def/post.log');
         if(is_dir($this->filesDir.'/mod/material')){
             $zip->addEmptyDir('material');
             $this->rZipCopy($zip, $this->filesDir.'/mod/material', 'material');
