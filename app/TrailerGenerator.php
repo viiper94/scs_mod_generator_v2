@@ -2,7 +2,9 @@
 
 namespace App;
 
+use function foo\func;
 use Request;
+use Illuminate\Support\Facades\DB;
 
 class TrailerGenerator extends ModGenerator{
 
@@ -397,7 +399,10 @@ class TrailerGenerator extends ModGenerator{
     }
 
     private function generateRandomTrailerContent($trailer_name){
-        $to_random = Chassis::where(['can_all_companies' => 1, 'game' => $this->game])->get();
+        $dlc_id = Dlc::whereIn('name', $this->dlc)->get()->keyBy('id')->keys()->toArray();
+        $to_random = Chassis::where(['can_all_companies' => 1, 'game' => $this->game])->where(function($q) use ($dlc_id) {
+            return $q->whereIn('dlc_id', $dlc_id)->orWhereNull('dlc_id');
+        })->get();
         $random_chassis = $to_random->random();
         $random_chassis->setWheels($this->chassis->wheels);
 
