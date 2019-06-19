@@ -171,10 +171,10 @@
                                         <div class="{{$dlc->name}}">
                                             <div class="mdc-form-field">
                                                 <div class="mdc-checkbox">
-                                                    <input type="checkbox"
+                                                    <input type="checkbox" name="dlc[{{ $dlc->id }}]"
                                                            class="mdc-checkbox__native-control"
                                                            id="dlc_{{$dlc->name}}"
-                                                           @if(in_array($dlc->name, $user_dlc)) checked @endif>
+                                                           @if(in_array($dlc->id, $user_dlc)) checked @endif>
                                                     <div class="mdc-checkbox__background">
                                                         <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
                                                             <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
