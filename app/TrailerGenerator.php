@@ -326,10 +326,11 @@ class TrailerGenerator extends ModGenerator{
             for($i = 0; $i < $trailer->axles; $i++){
                 switch(Wheel::getWheelState($i, $this->chassis)){
                     case 2:
-                        $output_string .= "vehicle_wheel_accessory: .$key.tire$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['tire']."\"\n}\n\n";
-                        $output_string .= "vehicle_wheel_accessory: .$key.disk$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['disk']."\"\n}\n\n";
-                        $output_string .= "vehicle_wheel_accessory: .$key.hub$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['hub']."\"\n}\n\n";
-                        $output_string .= "vehicle_wheel_accessory: .$key.nuts$i\n{\n\toffset: ".($i*2)."\n\tdata_path: \"".Wheel::$defaultOwnableWheels[$this->game]['nuts']."\"\n}\n\n";
+                        foreach(Wheel::$defaultOwnableWheels[$this->game] as $name => $def){
+                            $output_string .= "vehicle_wheel_accessory: .$key.$name$i\n";
+                            $output_string .= "{\n\toffset: ".($i*2)."\n";
+                            $output_string .= "\tdata_path: \"$def\"\n}\n\n";
+                        }
                         break;
                     case 3:
                         $wheelsRules = Wheel::$rules;
