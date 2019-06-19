@@ -56,7 +56,8 @@ class Accessory extends Model{
                 $suffix_list[$key] = str_replace(['%', '^'], '', $suf);
             }
             foreach($suffix as $key => $s){
-                if(in_array($s, $suffix_list)) $replace = $s;
+                if(!$s || $s === '') unset($suffix[$key]);
+                else if(in_array($s, $suffix_list)) $replace = $s;
             }
             if($replace){
                 return str_replace($suffix_list, $replace, $this->def);
