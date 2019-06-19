@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ika_ru
+{
+	name: "ИКА мебель"
+	sort_name: "ika mebel"
+	trailer_look: ika_ru
+}

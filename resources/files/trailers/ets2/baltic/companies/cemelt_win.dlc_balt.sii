@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cemelt_win
+{
+	name: "Cemeltex"
+	sort_name: "cemeltex"
+	trailer_look: cemeltex
+}

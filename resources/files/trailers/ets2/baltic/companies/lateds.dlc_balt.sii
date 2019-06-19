@@ -1,0 +1,6 @@
+company_permanent: company.permanent.lateds
+{
+	name: "Lateds"
+	sort_name: "lateds"
+	trailer_look: lateds
+}

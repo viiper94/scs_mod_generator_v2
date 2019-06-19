@@ -1,0 +1,6 @@
+company_permanent: company.permanent.domdepo_ru
+{
+	name: "ДомДепо"
+	sort_name: "domdepo"
+	trailer_look: domdepo_ru
+}

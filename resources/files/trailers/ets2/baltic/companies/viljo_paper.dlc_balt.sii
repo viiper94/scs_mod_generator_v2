@@ -1,0 +1,6 @@
+company_permanent: company.permanent.viljo_paper
+{
+	name: "Viljo paperitehdas Oy"
+	sort_name: "viljo paperitehdas oy"
+	trailer_look: viljo_paper
+}

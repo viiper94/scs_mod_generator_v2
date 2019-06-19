@@ -1,0 +1,6 @@
+company_permanent: company.permanent.viln_paper
+{
+	name: "Vilniaus Popieriaus Fabrikas"
+	sort_name: "vilniaus popieriaus fabrikas"
+	trailer_look: viln_paper
+}

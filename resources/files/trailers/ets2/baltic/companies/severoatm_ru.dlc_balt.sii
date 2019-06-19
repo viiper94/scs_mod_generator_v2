@@ -1,0 +1,6 @@
+company_permanent: company.permanent.severoatm_ru
+{
+	name: "Североатом"
+	sort_name: "severoatom"
+	trailer_look: severoatm_ru
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.suprema_ru
+{
+	name: "Супрема"
+	sort_name: "suprema"
+	trailer_look: suprema_ru
+}

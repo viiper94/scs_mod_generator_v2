@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sal_fi
+{
+	name: "SAL"
+	sort_name: "sal"
+	trailer_look: sal_fi
+}

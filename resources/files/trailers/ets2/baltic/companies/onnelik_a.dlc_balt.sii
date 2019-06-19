@@ -1,0 +1,6 @@
+company_permanent: company.permanent.onnelik_a
+{
+	name: "Õnnelik talu"
+	sort_name: "onnelik talu"
+	trailer_look: onnelik
+}

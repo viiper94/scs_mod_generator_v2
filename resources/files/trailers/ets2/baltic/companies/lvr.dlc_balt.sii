@@ -1,0 +1,6 @@
+company_permanent: company.permanent.lvr
+{
+	name: "Latvijas Vagonu Rūpnīca"
+	sort_name: "latvijas vagonu rupnica"
+	trailer_look: lvr
+}

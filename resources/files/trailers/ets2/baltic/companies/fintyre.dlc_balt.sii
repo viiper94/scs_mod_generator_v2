@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fintyre
+{
+	name: "Finnish Tyres"
+	sort_name: "finnish tyres"
+	trailer_look: fintyre
+}

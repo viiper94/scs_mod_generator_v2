@@ -1,0 +1,6 @@
+company_permanent: company.permanent.eviksi_a
+{
+	name: "Evikši ZS"
+	sort_name: "eviksi zs"
+	trailer_look: eviksi
+}

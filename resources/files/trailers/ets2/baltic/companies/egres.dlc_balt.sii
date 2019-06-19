@@ -1,0 +1,6 @@
+company_permanent: company.permanent.egres
+{
+	name: "Maatila Egres"
+	sort_name: "maatila egres"
+	trailer_look: egres
+}

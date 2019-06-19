@@ -1,0 +1,6 @@
+company_permanent: company.permanent.pk_medved_ru
+{
+	name: "ПК Медведь"
+	sort_name: "pk medved"
+	trailer_look: pk_medved_ru
+}

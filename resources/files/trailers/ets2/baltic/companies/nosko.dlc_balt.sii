@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nosko
+{
+	name: "Noskonitta"
+	sort_name: "noskonitta"
+	trailer_look: nosko
+}

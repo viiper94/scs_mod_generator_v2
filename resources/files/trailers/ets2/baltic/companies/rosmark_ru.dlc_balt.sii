@@ -1,0 +1,6 @@
+company_permanent: company.permanent.rosmark_ru
+{
+	name: "Росмарк"
+	sort_name: "rosmark"
+	trailer_look: rosmark_ru
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.radus
+{
+	name: "Radus"
+	sort_name: "radus"
+	trailer_look: radus
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.domdepo
+{
+	name: "DomDepo"
+	sort_name: "domdepo"
+	trailer_look: domdepo
+}

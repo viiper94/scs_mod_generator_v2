@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aerobalt
+{
+	name: "AeroBaltica"
+	sort_name: "aerobaltica"
+	trailer_look: aerobalt
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.kivi
+{
+	name: "Vanha Kivi"
+	sort_name: "vanha kivi"
+	trailer_look: kivi
+}

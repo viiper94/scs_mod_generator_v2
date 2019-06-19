@@ -1,0 +1,6 @@
+company_permanent: company.permanent.kamen_ru
+{
+	name: "Старый Камень"
+	sort_name: "staryj kamen"
+	trailer_look: kamen_ru
+}

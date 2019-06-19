@@ -1,0 +1,6 @@
+company_permanent: company.permanent.rosmark
+{
+	name: "Rosmark"
+	sort_name: "rosmark"
+	trailer_look: rosmark
+}

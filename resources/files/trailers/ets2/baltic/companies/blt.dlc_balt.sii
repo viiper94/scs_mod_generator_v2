@@ -1,0 +1,6 @@
+company_permanent: company.permanent.blt
+{
+	name: "BLT"
+	sort_name: "blt"
+	trailer_look: blt
+}

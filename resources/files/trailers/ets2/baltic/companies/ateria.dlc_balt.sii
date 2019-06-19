@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ateria
+{
+	name: "Ateria"
+	sort_name: "ateria"
+	trailer_look: ateria
+}

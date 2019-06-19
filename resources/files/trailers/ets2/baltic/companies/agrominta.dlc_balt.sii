@@ -1,0 +1,6 @@
+company_permanent: company.permanent.agrominta
+{
+	name: "Agrominta UAB"
+	sort_name: "agrominta uab"
+	trailer_look: agrominta
+}

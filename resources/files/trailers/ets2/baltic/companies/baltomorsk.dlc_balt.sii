@@ -1,0 +1,6 @@
+company_permanent: company.permanent.baltomorsk
+{
+	name: "Baltomorsk"
+	sort_name: "baltomorsk"
+	trailer_look: baltomorsk
+}

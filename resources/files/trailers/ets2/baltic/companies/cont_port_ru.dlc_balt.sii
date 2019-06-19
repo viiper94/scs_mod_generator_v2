@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cont_port_ru
+{
+	name: "Контейнерный пункт"
+	sort_name: "container port"
+	trailer_look: cont_port_ru
+}

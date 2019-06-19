@@ -1,0 +1,6 @@
+company_permanent: company.permanent.zelenye_a
+{
+	name: "Зелёные Поля OOO"
+	sort_name: "zelenye"
+	trailer_look: zelenye
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ibp
+{
+	name: "IBP"
+	sort_name: "ibp"
+	trailer_look: ibp
+}

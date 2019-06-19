@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ukko
+{
+	name: "UKKO Voima"
+	sort_name: "ukko voima"
+	trailer_look: ukko
+}

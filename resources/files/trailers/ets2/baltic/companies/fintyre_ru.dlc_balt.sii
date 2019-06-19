@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fintyre_ru
+{
+	name: "Финские шины"
+	sort_name: "finnish tyres"
+	trailer_look: fintyre_ru
+}

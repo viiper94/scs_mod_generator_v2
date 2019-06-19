@@ -1,0 +1,6 @@
+company_permanent: company.permanent.lintukainen
+{
+	name: "Lintukainen Oy"
+	sort_name: "lintukainen oy"
+	trailer_look: lintukainen
+}

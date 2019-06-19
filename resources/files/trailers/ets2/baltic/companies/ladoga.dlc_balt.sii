@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ladoga
+{
+	name: "Ladoga Auto"
+	sort_name: "ladoga auto"
+	trailer_look: ladoga
+}

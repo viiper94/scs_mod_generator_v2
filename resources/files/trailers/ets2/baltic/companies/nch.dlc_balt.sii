@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nch
+{
+	name: "NCH"
+	sort_name: "nch"
+	trailer_look: nch
+}

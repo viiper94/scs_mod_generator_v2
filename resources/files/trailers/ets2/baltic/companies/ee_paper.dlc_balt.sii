@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ee_paper
+{
+	name: "Estonian Paper AS"
+	sort_name: "estonian paper as"
+	trailer_look: ee_paper
+}

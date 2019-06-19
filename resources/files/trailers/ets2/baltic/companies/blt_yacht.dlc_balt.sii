@@ -1,0 +1,6 @@
+company_permanent: company.permanent.blt_yacht
+{
+	name: "Balteus Yachts"
+	sort_name: "balteus yachts"
+	trailer_look: blt_yacht
+}
