@@ -69,7 +69,8 @@
                                 <div class="mdc-switch__track"></div>
                                 <div class="mdc-switch__thumb-underlay">
                                     <div class="mdc-switch__thumb">
-                                        <input type="checkbox" id="all_accessories" data-target="accessory" class="mdc-switch__native-control" />
+                                        <input type="checkbox" id="all_accessories" name="all_accessories"
+                                               data-target="accessory" class="mdc-switch__native-control" />
                                     </div>
                                 </div>
                             </div>
