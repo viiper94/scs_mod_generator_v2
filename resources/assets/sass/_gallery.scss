@@ -7,3 +7,7 @@
 .game .collapsible{
   margin: 0;
 }
+.show-skin .collapsible-body{
+  min-width: 400px;
+  overflow-y: scroll;
+}
