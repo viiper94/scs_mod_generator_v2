@@ -50,7 +50,7 @@
                                     @endif
                                 </span>
                                 <span class="mdc-list-item__secondary-text">
-                                    @lang('general.'.$mod->game); @lang('mods.'.$mod->type); {{ $mod->created_at->format('j-m-Y H:i') }}
+                                    @lang('general.'.$mod->game); {{ $mod->created_at->format('j-m-Y H:i') }}
                                 </span>
                             </span>
                             <span class="mdc-list-item__meta" aria-hidden="true">
