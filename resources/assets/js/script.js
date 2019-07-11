@@ -145,7 +145,7 @@ $(document).ready(function(){
 						'chassis' : value
 					},
 					beforeSend : function(){
-						$('#chassis').after(getPreloaderHtml('small'));
+                        $('#select-chassis').addClass('loading');
 					},
 					success : function(response){
 						if(response.status === 'OK'){
@@ -186,7 +186,7 @@ $(document).ready(function(){
 						}
 					},
 					complete : function(){
-						$('.preloader-wrapper').remove();
+                        $('#select-chassis').removeClass('loading');
 					}
 				});
 			}
