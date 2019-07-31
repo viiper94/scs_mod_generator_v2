@@ -84,12 +84,10 @@ class AdminTrailersController extends Controller{
         $new_chassis = new Chassis();
         $new_chassis->fill([
             'game' => $chassis->game,
-            'def' => $chassis->def,
             'alias' => $chassis->alias.'_copy',
             'alias_short' => $chassis->alias,
             'accessory_subgroup' => $chassis->accessory_subgroup,
             'alias_short_paint' => $chassis->alias,
-            'axles' => $chassis->axles,
             'default_paint_job' => $chassis->default_paint_job,
             'wheels_id' => $chassis->wheels_id,
             'dlc_id' => $chassis->dlc_id,
@@ -100,10 +98,9 @@ class AdminTrailersController extends Controller{
             'can_all_companies' => $chassis->can_all_companies,
             'with_accessory' => $chassis->with_accessory,
             'with_paint_job' => $chassis->with_paint_job,
-            'trailer_owned' => $chassis->trailer_owned,
             'can_random' => $chassis->can_random,
             'mp_support' => $chassis->mp_support,
-            'trailers' => $chassis->trailers,
+            'trailers' => $chassis->trailers
         ]);
 
         return $new_chassis->save() ?
