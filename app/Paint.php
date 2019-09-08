@@ -53,7 +53,7 @@ class Paint extends Model{
         $list = array();
         foreach($paints as $item){
             $list[] = [
-                'name' => $item->def,
+                'name' => '<span data-with-color="'.$item->with_color.'">'.$item->def.'</span>',
                 'value' => $item->def
             ];
         }

@@ -114,7 +114,6 @@ $(document).ready(function(){
         if(this.checked){
             $('.color-advanced').show();
         }else{
-
             $('.color-advanced').hide();
         }
     });
@@ -243,13 +242,12 @@ $(document).ready(function(){
 								forceSelection : false,
 								onChange : function(value, text, $choice){
                                     getDLCList(value);
-									showColors(value);
+									showColors($choice);
 								}
 							});
                             $('#'+key).show().find('label.for-select').after(select);
 						}
 					});
-					showColors($('#paint').find('select').val());
 				}
 			},
 			complete : function(){
@@ -492,8 +490,8 @@ function getDLCList(value) {
 }
 
 function showColors(value){
-	if(value.length > 0) value = value.split('/');
-	if(value[value.length - 1] === 'default.sii'){
+	// if(value.length > 0) value = value.split('/');
+	if(value.children('span').data('with-color') === 1){
 		$('.colors').show();
 	}else{
 		$('.colors').hide();
