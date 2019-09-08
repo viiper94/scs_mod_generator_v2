@@ -99,8 +99,16 @@ $(document).ready(function(){
 	$('.lang-btn').click(function(){
 		setCookie('lang', $(this).data('lang'), {
 			expires : 3600 * 24 * 365
-		})
+		});
 	});
+
+	$('.card-close').click(function(){
+	    let target = $(this).data('cookie');
+        setCookie(target, 0, {
+            expires : 3600 * 24 * 365
+        });
+        $(this).parent().remove();
+    });
 
     $('#advanced_color').change(function () {
         if(this.checked){

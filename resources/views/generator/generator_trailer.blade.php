@@ -3,15 +3,15 @@
 @section('content')
 
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
-        <section class="trailer-generator">
-            @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && $errors->isEmpty())
-                @include('generator.download')
-            @endif
-            @if($errors->isNotEmpty())
-                @include('generator.warning')
-            @endif
-            @include('generator.ie')
-        </section>
+        @if(!(isset($_COOKIE['ie']) && $_COOKIE['ie'] == '0'))
+            @include('layout.ie')
+        @endif
+        @if(Request::input('d') && file_exists(public_path().'/download/'.Request::input('d').'.scs') && $errors->isEmpty())
+            @include('generator.download')
+        @endif
+        @if($errors->isNotEmpty())
+            @include('generator.warning')
+        @endif
         <section class="card trailer-generator overflow-visible">
             <form action="{{route('generator')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
@@ -115,12 +115,12 @@
                 </div>
             </form>
         </section>
-        @if(!$hasUserAcceptLanguage)
-            @include('generator.translate')
+        @if(!$hasUserAcceptLanguage && !(isset($_COOKIE['translate']) && $_COOKIE['translate'] == '0'))
+            @include('layout.translate')
         @endif
-        <section class="trailer-generator">
+        @if(!(isset($_COOKIE['discord']) && $_COOKIE['discord'] == '0'))
             @include('layout.discord')
-        </section>
+        @endif
     </div>
     <div class="fixed-action-btn">
         <a class="mdc-fab modal-trigger tooltipped" data-tooltip="@lang('general.how_to')" href="#how" id="how-to">

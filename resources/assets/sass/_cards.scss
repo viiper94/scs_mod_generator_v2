@@ -1,5 +1,6 @@
 // Cards
 .card, .card-panel{
+    position: relative;
   border: 1px solid $placeholder-text;
   border-radius: 6px;
   &:not(.overflow-visible){
@@ -17,4 +18,15 @@
 }
 .trailer .card-content{
   padding: 0;
+}
+
+.card-close{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.card-title > i.material-icons{
+    line-height: 18px;
 }
