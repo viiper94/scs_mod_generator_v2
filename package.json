@@ -10,27 +10,27 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "^0.18",
+        "axios": "^0.18.1",
         "bootstrap": "^4.3.1",
-        "cross-env": "^5.1",
-        "jquery": "^3.2",
+        "cross-env": "^5.2.1",
+        "jquery": "^3.4.1",
         "laravel-mix": "^2.0",
-        "lodash": "^4.17.4",
-        "popper.js": "^1.14.7",
+        "lodash": "^4.17.15",
+        "popper.js": "^1.15.0",
         "vue": "^2.6.10"
     },
     "dependencies": {
         "@material/auto-init": "^1.0.0",
         "@material/checkbox": "^1.1.0",
-        "@material/dialog": "^1.1.0",
+        "@material/dialog": "^1.1.1",
         "@material/line-ripple": "^1.1.0",
-        "@material/list": "^1.1.0",
+        "@material/list": "^1.1.1",
         "@material/radio": "^1.1.0",
         "@material/ripple": "^1.1.0",
         "@material/switch": "^1.1.0",
-        "@material/textfield": "^1.1.0",
-        "material-components-web": "^1.1.0",
+        "@material/textfield": "^1.1.1",
+        "material-components-web": "^1.1.1",
         "materialize-css": "^1.0.0",
-        "semantic-ui-sass": "^2.3.1"
+        "semantic-ui-sass": "^2.4.2"
     }
 }
