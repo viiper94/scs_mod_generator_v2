@@ -8,7 +8,7 @@
 
 @section('content')
 
-    {{ $paints->appends(['q' => Request::input('q')])->links('layout.pagination') }}
+    {{ $paints->appends(['q' => Request::input('q'), 'chassis' => Request::input('chassis')])->links('layout.pagination') }}
 
     <div class="row no-margin">
         <div class="col m12">
@@ -25,8 +25,9 @@
             <table class="highlight responsive-table">
                 <thead>
                 <th>Alias</th>
+                <th>Look</th>
                 <th>Def</th>
-                <th>Chassis</th>
+                <th><a href="{{ route('paints') }}">Chassis</a></th>
                 <th>Фарбується</th>
                 <th class="center">DLC</th>
                 <th>Гра</th>
@@ -36,13 +37,16 @@
                 @foreach($paints as $paint)
                     <tr @if(!$paint->active)class="grey darken-2 black-text" @endif>
                         <td>@lang($paint->game.'_companies_paints.'.$paint->alias)</td>
+                        <td>{{ $paint->look }}</td>
                         <td>{{ $paint->def }}</td>
                         <td>
-                            @if($paint->chassisObj)
-                                @lang($paint->game.'_trailers.'.$paint->chassisObj->alias)
-                            @else
-                                {{ $paint->chassis }}
-                            @endif
+                            <a href="{{ route('paints', ['chassis' => $paint->chassis]) }}">
+                                @if($paint->chassisObj)
+                                    @lang($paint->game.'_trailers.'.$paint->chassisObj->alias)
+                                @else
+                                    {{ $paint->chassis }}
+                                @endif
+                            </a>
                         </td>
                         <td class="center">{{ $paint->with_color ? '+' : '—' }}</td>
                         <td class="center">
@@ -70,7 +74,7 @@
         </div>
     </div>
 
-    {{ $paints->appends(['q' => Request::input('q')])->links('layout.pagination') }}
+    {{ $paints->appends(['q' => Request::input('q'), 'chassis' => Request::input('chassis')])->links('layout.pagination') }}
 
     <div class="fixed-action-btn">
         <a class="mdc-fab tooltipped" data-tooltip="Додати новий скін" href="{{ route('paints') }}/add">

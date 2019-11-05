@@ -11,6 +11,7 @@ class AdminPaintsController extends Controller{
 
     public function index(Request $request){
         $paints = Paint::with(['chassisObj', 'dlc']);
+        if($request->input('chassis')) $paints->where('chassis', $request->input('chassis'));
         if($request->input('q')) $paints->where('def', 'like', '%'.$request->input('q').'%')
             ->orWhere('alias', 'like', $request->input('q').'%')
             ->orWhere('chassis', 'like', $request->input('q').'%');
@@ -116,6 +117,7 @@ class AdminPaintsController extends Controller{
     }
 
     public function import(){
+        // CHECK BEFORE IMPORT!
         $asoc_names = [
             'cement_cistern' => 'cement',
             'curtain_sider' => 'scs_box/curtain_sider',
