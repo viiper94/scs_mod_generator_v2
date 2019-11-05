@@ -145,9 +145,19 @@ class Chassis extends Model{
             'name' => '<span data-with-color="1">'.trans($game.'_companies_paints.default').'</span>',
             'value' => 'default'];
         foreach($companies as $company){
-            $name = trans($game.'_companies_paints.'.$company->name);
+            $name = '';
+            if($company->isDLCContent() && !$company->dlc->mp_support){
+                $name .= '<s class="left hint dlc-tooltipped" 
+                    data-tooltip="'.trans('general.mp_no_support').'" 
+                    data-position="left">MP</s>';
+            }
+            $name .= trans($game.'_companies_paints.'.$company->name);
             if($company->isDLCContent()){
-                $name .= ' - '. trans('dlc_list.'.$company->dlc->name);
+                $name .= '<span class="right dlc-tooltipped hint" 
+                    data-tooltip="'.trans('dlc_list.'.$company->dlc->name).'" 
+                    data-position="right">';
+                $name .= '['.$company->dlc->short_name.']';
+                $name .= '</span>';
             };
             $list[] = [
                 'name' => $name,
@@ -156,5 +166,5 @@ class Chassis extends Model{
         }
         return $list;
     }
-    
+
 }
