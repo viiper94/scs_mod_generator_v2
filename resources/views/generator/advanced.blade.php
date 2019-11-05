@@ -53,6 +53,8 @@
                     </div>
                 </div>
 
+                @if($game ==='ets2') @include('generator.promods') @endif
+
                 {{--DLC section--}}
                 <div class="dlc row">
                     <label>@lang('general.include_dlc')

@@ -389,12 +389,30 @@ $(document).ready(function(){
         }
     });
 
+	$('#promods').change(function(){
+        let promodsRequiredDlc = [
+            'scandinavia',
+            'france',
+            'italy',
+            'baltic'
+        ];
+        if($(this)[0].checked){
+            $.each(promodsRequiredDlc, function(index, dlc){
+                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                    .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
+            });
+        }else{
+            $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            $('[id^=dlc_] + input[type=hidden]').remove();
+        }
+    });
+
 	$('#check_all').click(function(){
 		if($(this).data('check') === 0){
-            $('.dlc').find('input[id^=dlc_]').prop('checked', true);
+            $('[id^=dlc_], #promods').prop('checked', true);
             $(this).data('check', 1);
 		}else{
-            $('.dlc').find('input[id^=dlc_]').prop('checked', false);
+            $('[id^=dlc_], #promods').prop('checked', false);
             $(this).data('check', 0);
 		}
 
@@ -480,10 +498,25 @@ function getDLCList(value) {
             'chassis' : $('[name=chassis]').val(),
         },
 		success : function(response){
-            $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            let promodsRequiredDlc = [
+                'scandinavia',
+                'france',
+                'italy',
+                'baltic'
+            ];
+            $('[id^=dlc_], [id=promods]').prop('checked', false).prop('disabled', false);
             $.each(response.dlc, function(index, dlc){
-                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
-                    .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
+                if(dlc === 'promods'){
+                    $('#promods').prop('checked', true).prop('disabled', true)
+                        .after('<input type="hidden" name="promods" value="true">');
+                    $.each(promodsRequiredDlc, function(index, dlc){
+                        $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                            .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
+                    });
+                }else{
+                    $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                        .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
+                }
             });
         }
 	});
