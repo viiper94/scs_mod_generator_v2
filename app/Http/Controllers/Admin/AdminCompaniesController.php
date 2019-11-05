@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Company;
 use App\Dlc;
+use App\Paint;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -109,15 +110,23 @@ class AdminCompaniesController extends Controller{
                 // цикл по компаниям
                 foreach(scandir($dlc_company_path) as $item){
                     if($item !== '.' && $item !== '..'){
-                        $company = new Company();
-                        $company->fill([
-                            'game' => $dlc_params['game'] ?? 'ets2',
-                            'name' => preg_replace('%(\.[a-z_]+)?.sii%', '', $item),
-                            'dlc_id' => $dlc_params['id'],
-                            'active' => true,
-                        ]);
-                        $company->save();
-//                        dump($company);
+
+                        $content = file_get_contents($dlc_company_path.'/'.$item);
+                        preg_match('/trailer_look:\s[a-z0-9_]+/', $content, $matches);
+                        $look = str_replace('trailer_look: ', '', $matches[0]);
+
+                        if($look !== 'default' && count(Company::where('name', $look)->get()) === 0){
+                            $company = new Company();
+                            $company->fill([
+                                'game' => $dlc_params['game'] ?? 'ets2',
+                                'name' => preg_replace('%(\.[a-z_]+)?.sii%', '', $item),
+                                'dlc_id' => $dlc_params['id'],
+                                'active' => true,
+                            ]);
+//                            $company->save();
+                            dump($company);
+                        }
+
                     }
                 }
             }
