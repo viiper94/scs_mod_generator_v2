@@ -1,0 +1,6 @@
+company_permanent: company.permanent.port_tac
+{
+	name: "Port of Tacoma"
+	sort_name: "port of tacoma"
+	trailer_look: plain
+}
