@@ -3,7 +3,8 @@ trailer : trailer.mag_55l_t3.cat_627h
 	accessories[]: .mag_55l_t3.cat_627h.tchassis
 	accessories[]: .mag_55l_t3.cat_627h.trwheel0
 	accessories[]: .mag_55l_t3.cat_627h.trwheel1
-	
+	accessories[]: .mag_55l_t3.cat_627h.trlr_cables	
+
 	slave_trailer: trailer.mag_55l_t3_t.cat_627h
 
 }
@@ -25,7 +26,10 @@ vehicle_wheel_accessory: .mag_55l_t3.cat_627h.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t3.cat_627h.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #
@@ -83,5 +87,5 @@ vehicle_addon_accessory: .mag_55l_j_t3.cat_627h.flag_r_l
 
 vehicle_accessory: .mag_55l_j_t3.cat_627h.cargo
 {
-    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_cat_627h.sii"
+    	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_scraper.sii"
 }

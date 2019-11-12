@@ -3,6 +3,7 @@ trailer : trailer.mag_55l_t2s.transformer
 	accessories[]: .mag_55l_t2s.transformer.tchassis
 	accessories[]: .mag_55l_t2s.transformer.trwheel0
 	accessories[]: .mag_55l_t2s.transformer.trwheel1
+	accessories[]: .mag_55l_t2s.transformer.trlr_cables
 	
 	slave_trailer: trailer.mag_55_t2s_t.transformer
 
@@ -25,7 +26,10 @@ vehicle_wheel_accessory: .mag_55l_t2s.transformer.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t2s.transformer.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #
@@ -38,8 +42,8 @@ trailer : trailer.mag_55_t2s_t.transformer
 	accessories[]: .mag_55_t2s_t.transformer.tchassis
 	accessories[]: .mag_55_t2s_t.transformer.trwheel0
 	accessories[]: .mag_55_t2s_t.transformer.trwheel1
-
 	accessories[]: .mag_55_t2s_t.transformer.cargo
+	accessories[]: .mag_55_t2s_t.transformer.trlr_cables
 	
 	slave_trailer: trailer.mag_55_s2.transformer
 
@@ -65,6 +69,11 @@ vehicle_wheel_accessory: .mag_55_t2s_t.transformer.trwheel1
 vehicle_accessory: .mag_55_t2s_t.transformer.cargo
 {
     	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_transformer.sii"
+}
+
+vehicle_addon_accessory: .mag_55_t2s_t.transformer.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
 }
 
 

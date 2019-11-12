@@ -3,6 +3,7 @@ trailer : trailer.mag_55l_t3.case_ih_600q
 	accessories[]: .mag_55l_t3.case_ih_600q.tchassis
 	accessories[]: .mag_55l_t3.case_ih_600q.trwheel0
 	accessories[]: .mag_55l_t3.case_ih_600q.trwheel1
+	accessories[]: .mag_55l_t3.case_ih_600q.trlr_cables	
 	
 	slave_trailer: trailer.mag_55l_t3_t.case_ih_600q
 
@@ -25,7 +26,10 @@ vehicle_wheel_accessory: .mag_55l_t3.case_ih_600q.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t3.case_ih_600q.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #

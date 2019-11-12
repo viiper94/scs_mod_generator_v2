@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dmc_car_dlr
+{
+	name: "DeMuro Cars"
+	sort_name: "demuro cars"
+	trailer_look: demuro_cars
+}

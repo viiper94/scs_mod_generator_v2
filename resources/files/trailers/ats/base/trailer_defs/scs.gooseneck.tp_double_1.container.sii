@@ -12,6 +12,7 @@ trailer_def : trailer_def.scs.gooseneck.tp_double_1.container
 	chain_type: tpdouble
 
 	
+	
 
 	mass_ratio[]: 0.45
 	mass_ratio[]: 0.1

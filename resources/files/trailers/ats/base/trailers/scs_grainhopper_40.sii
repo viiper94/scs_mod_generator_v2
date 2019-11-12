@@ -1,0 +1,30 @@
+trailer : trailer.scs_grainh40
+{
+	trailer_definition: trailer_def.scs.grainhopper.single_40r.grainhopper
+
+	accessories[]: .scs_grainh40.chassis
+	accessories[]: .scs_grainh40.rwheel
+	accessories[]: .scs_grainh40.rwheel2
+	accessories[]: .scs_grainh40.paintjob
+}
+
+vehicle_accessory: .scs_grainh40.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_grainhopper/ch_40.sii"
+}
+
+vehicle_wheel_accessory: .scs_grainh40.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_grainh40.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_grainh40.paintjob
+{
+    	data_path: "/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii"
+}

@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.grainhopper.single_50sp.belt
+{
+	gross_trailer_weight_limit: 31000
+	chassis_mass: 6849.24
+	body_mass: 0
+	length: 15.24
+	axles: 2
+	volume: 62.22
+	body_type: hopper
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

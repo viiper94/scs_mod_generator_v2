@@ -3,7 +3,8 @@ trailer : trailer.mag_55l_t2s.wirtgn_w250i
 	accessories[]: .mag_55l_t2s.wirtgn_w250i.tchassis
 	accessories[]: .mag_55l_t2s.wirtgn_w250i.trwheel0
 	accessories[]: .mag_55l_t2s.wirtgn_w250i.trwheel1
-	
+	accessories[]: .mag_55l_t2s.wirtgn_w250i.trlr_cables	
+
 	slave_trailer: trailer.mag_55_t2s_t.wirtgn_w250i
 
 }
@@ -25,7 +26,10 @@ vehicle_wheel_accessory: .mag_55l_t2s.wirtgn_w250i.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t2s.wirtgn_w250i.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #
@@ -38,8 +42,8 @@ trailer : trailer.mag_55_t2s_t.wirtgn_w250i
 	accessories[]: .mag_55_t2s_t.wirtgn_w250i.tchassis
 	accessories[]: .mag_55_t2s_t.wirtgn_w250i.trwheel0
 	accessories[]: .mag_55_t2s_t.wirtgn_w250i.trwheel1
-
 	accessories[]: .mag_55_t2s_t.wirtgn_w250i.cargo
+	accessories[]: .mag_55_t2s_t.wirtgn_w250i.trlr_cables
 	
 	slave_trailer: trailer.mag_55_s2.wirtgn_w250i
 
@@ -67,6 +71,10 @@ vehicle_accessory: .mag_55_t2s_t.wirtgn_w250i.cargo
     	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_wirtgen_w250i.sii"
 }
 
+vehicle_addon_accessory: .mag_55_t2s_t.wirtgn_w250i.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #

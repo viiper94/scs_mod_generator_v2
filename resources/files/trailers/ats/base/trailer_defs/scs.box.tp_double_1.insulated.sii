@@ -12,6 +12,7 @@ trailer_def : trailer_def.scs.box.tp_double_1.insulated
 	chain_type: tpdouble
 
 	
+	
 
 	mass_ratio[]: 0.6
 	mass_ratio[]: 0.1

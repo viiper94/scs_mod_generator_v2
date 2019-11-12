@@ -3,6 +3,8 @@ trailer : trailer.mag_55l_t3.kalmar_rt240
 	accessories[]: .mag_55l_t3.kalmar_rt240.tchassis
 	accessories[]: .mag_55l_t3.kalmar_rt240.trwheel0
 	accessories[]: .mag_55l_t3.kalmar_rt240.trwheel1
+	accessories[]: .mag_55l_t3.kalmar_rt240.trlr_cables	
+
 	
 	slave_trailer: trailer.mag_55l_t3_t.kalmar_rt240
 
@@ -25,7 +27,10 @@ vehicle_wheel_accessory: .mag_55l_t3.kalmar_rt240.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t3.kalmar_rt240.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #

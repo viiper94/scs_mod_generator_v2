@@ -1,0 +1,23 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.grainhopper.rm_double_p.grainhopper
+{
+	gross_trailer_weight_limit: 38500
+	chassis_mass: 10995.14
+	body_mass: 0
+	length: 23.7744
+	axles: 4
+	volume: 88.15
+	body_type: hopper
+	chain_type: rmdouble
+
+	
+	
+	
+	
+
+	mass_ratio[]: 0.6
+	mass_ratio[]: 0.1
+	mass_ratio[]: 0.3
+}
+}

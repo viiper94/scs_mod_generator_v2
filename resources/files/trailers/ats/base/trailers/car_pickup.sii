@@ -16,7 +16,7 @@ vehicle_wheel_accessory: .car_pickup.rwheel
 	data_path: "/def/vehicle/t_wheel/single_small.sii"
 }
 
-vehicle_wheel_accessory: .car_pickup.rwheel
+vehicle_wheel_accessory: .car_pickup.rwheel2
 {
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single_small.sii"

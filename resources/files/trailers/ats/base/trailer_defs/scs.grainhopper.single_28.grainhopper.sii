@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.grainhopper.single_28.grainhopper
+{
+	gross_trailer_weight_limit: 15500
+	chassis_mass: 3919.04
+	body_mass: 0
+	length: 8.5344
+	axles: 1
+	volume: 36.3
+	body_type: hopper
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

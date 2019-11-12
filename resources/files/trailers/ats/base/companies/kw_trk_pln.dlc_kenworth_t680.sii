@@ -1,6 +1,0 @@
-company_permanent: company.permanent.kw_trk_pln
-{
-	name: "Kenworth"
-	sort_name: "kenworth"
-	trailer_look: kenworth
-}

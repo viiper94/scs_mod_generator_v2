@@ -3,7 +3,8 @@ trailer : trailer.mag_55l_t3.coil
 	accessories[]: .mag_55l_t3.coil.tchassis
 	accessories[]: .mag_55l_t3.coil.trwheel0
 	accessories[]: .mag_55l_t3.coil.trwheel1
-	
+	accessories[]: .mag_55l_t3.coil.trlr_cables	
+
 	slave_trailer: trailer.mag_55l_t3_t.coil
 
 }
@@ -25,7 +26,10 @@ vehicle_wheel_accessory: .mag_55l_t3.coil.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t3.coil.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #

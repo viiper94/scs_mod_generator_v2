@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.bulkfeed.single_45sp.bulkfeed
+{
+	gross_trailer_weight_limit: 30000
+	chassis_mass: 5851.4
+	body_mass: 0
+	length: 13.716
+	axles: 2
+	volume: 53.2
+	body_type: bulkfeed
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

@@ -3,6 +3,7 @@ trailer : trailer.mag_55l_t2s.t_c_3160
 	accessories[]: .mag_55l_t2s.t_c_3160.tchassis
 	accessories[]: .mag_55l_t2s.t_c_3160.trwheel0
 	accessories[]: .mag_55l_t2s.t_c_3160.trwheel1
+	accessories[]: .mag_55l_t2s.t_c_3160.trlr_cables
 	
 	slave_trailer: trailer.mag_55_t2s_t.t_c_3160
 
@@ -25,7 +26,10 @@ vehicle_wheel_accessory: .mag_55l_t2s.t_c_3160.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-
+vehicle_addon_accessory: .mag_55l_t2s.t_c_3160.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
+}
 
 #########################################
 #
@@ -38,8 +42,8 @@ trailer : trailer.mag_55_t2s_t.t_c_3160
 	accessories[]: .mag_55_t2s_t.t_c_3160.tchassis
 	accessories[]: .mag_55_t2s_t.t_c_3160.trwheel0
 	accessories[]: .mag_55_t2s_t.t_c_3160.trwheel1
-
 	accessories[]: .mag_55_t2s_t.t_c_3160.cargo
+	accessories[]: .mag_55_t2s_t.t_c_3160.trlr_cables
 	
 	slave_trailer: trailer.mag_55_s2.t_c_3160
 
@@ -65,6 +69,11 @@ vehicle_wheel_accessory: .mag_55_t2s_t.t_c_3160.trwheel1
 vehicle_accessory: .mag_55_t2s_t.t_c_3160.cargo
 {
     	data_path: "/def/vehicle/trailer/magnitude_55l/cargo_terex_challenger_3160.sii"
+}
+
+vehicle_addon_accessory: .mag_55_t2s_t.t_c_3160.trlr_cables	
+{
+    	data_path: "/def/vehicle/trailer/magnitude_55l/accessory/trlr_cables/stock.dlc_heavy_cargo.sii"
 }
 
 

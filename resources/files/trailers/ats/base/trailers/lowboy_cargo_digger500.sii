@@ -1,31 +1,31 @@
 trailer : trailer.lowboy_y.cargo_dig500
 {
-	accessories[]: .lowboy_y.digger500.tchassis
-	accessories[]: .lowboy_y.digger500.trwheel0
-	accessories[]: .lowboy_y.digger500.trwheel1
-	accessories[]: .lowboy_y.digger500.cargo
+	accessories[]: .lowboy_y.bckh_ldr.tchassis
+	accessories[]: .lowboy_y.bckh_ldr.trwheel0
+	accessories[]: .lowboy_y.bckh_ldr.trwheel1
+	accessories[]: .lowboy_y.bckh_ldr.cargo
 
 }
 
-vehicle_accessory: .lowboy_y.digger500.tchassis
+vehicle_accessory: .lowboy_y.bckh_ldr.tchassis
 {
-    	data_path: "/def/vehicle/trailer/lowboy/chassis_y.sii"
+    	data_path: "/def/vehicle/trailer/magnitude_55l/chassis_trailer_2_sh_ns.sii"
 }
 
-vehicle_wheel_accessory: .lowboy_y.digger500.trwheel0
+vehicle_wheel_accessory: .lowboy_y.bckh_ldr.trwheel0
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_wheel_accessory: .lowboy_y.digger500.trwheel1
+vehicle_wheel_accessory: .lowboy_y.bckh_ldr.trwheel1
 {
 	offset: 2
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_accessory: .lowboy_y.digger500.cargo
+vehicle_accessory: .lowboy_y.bckh_ldr.cargo
 {
-    	data_path: "/def/vehicle/trailer/lowboy/cargo_digger500.sii"
+    	data_path: "/def/vehicle/trailer/lowboy/cargo_backhoe_loader.sii"
 }
 

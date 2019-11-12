@@ -1,36 +1,48 @@
 trailer : trailer.lowboy_boat.cargo_boat
 {
-	accessories[]: .lowboy_boat.boat.chassis
-	accessories[]: .lowboy_boat.boat.rwheel
-	accessories[]: .lowboy_boat.boat.rwheel2
-	accessories[]: .lowboy_boat.boat.rwheel3
-	accessories[]: .lowboy_boat.boat.cargo
+	accessories[]: .lowboy_boat.chassis
+	accessories[]: .lowboy_boat.rwheel
+	accessories[]: .lowboy_boat.rwheel2
+	accessories[]: .lowboy_boat.rwheel3
+	accessories[]: .lowboy_boat.cargo
+	accessories[]: .lowboy_boat.flag_r_r
+    accessories[]: .lowboy_boat.flag_r_l
 }
 
-vehicle_accessory: .lowboy_boat.boat.chassis
+vehicle_accessory: .lowboy_boat.chassis
 {
 	data_path: "/def/vehicle/trailer/lowboy_boat/chassis.sii"
 }
 
-vehicle_wheel_accessory: .lowboy_boat.boat.rwheel
+vehicle_wheel_accessory: .lowboy_boat.rwheel
 {
 	offset: 0
-	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
 }
 
-vehicle_wheel_accessory: .lowboy_boat.boat.rwheel2
+vehicle_wheel_accessory: .lowboy_boat.rwheel2
 {
 	offset: 2
-	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
 }
 
-vehicle_wheel_accessory: .lowboy_boat.boat.rwheel3
+vehicle_wheel_accessory: .lowboy_boat.rwheel3
 {
 	offset: 4
-	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/single_small.sii"
 }
 
-vehicle_accessory: .lowboy_boat.boat.cargo
+vehicle_accessory: .lowboy_boat.cargo
 {
 	data_path: "/def/vehicle/trailer/lowboy_boat/cargo_boat.sii"
+}
+
+vehicle_addon_accessory: .lowboy_boat.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/lowboy_boat/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .lowboy_boat.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/lowboy_boat/accessory/flag_r_l/warning.sii"
 }

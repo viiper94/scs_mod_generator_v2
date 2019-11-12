@@ -1,0 +1,16 @@
+trailer : trailer.frac_tank_y
+{
+	accessories[]: .frac_tank_y.chassis
+	accessories[]: .frac_tank_y.rwheel
+}
+
+vehicle_accessory: .frac_tank_y.chassis
+{
+	data_path: "/def/vehicle/trailer/frac_tank/ch_40_yellow.sii"
+}
+
+vehicle_wheel_accessory: .frac_tank_y.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}

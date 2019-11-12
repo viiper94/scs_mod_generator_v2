@@ -1,0 +1,30 @@
+trailer : trailer.scs_bulfed45
+{
+	trailer_definition: trailer_def.scs.bulkfeed.single_45r.bulkfeed
+
+	accessories[]: .scs_fedbul45.chassis
+	accessories[]: .scs_fedbul45.rwheel
+	accessories[]: .scs_fedbul45.rwheel2
+	accessories[]: .scs_fedbul45.paintjob
+}
+
+vehicle_accessory: .scs_fedbul45.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_bulkfeed/ch_45.sii"
+}
+
+vehicle_wheel_accessory: .scs_fedbul45.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_fedbul45.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_fedbul45.paintjob
+{
+	data_path: "/def/vehicle/trailer/scs_bulkfeed/company_paint_job/default.sii"
+}
