@@ -36,10 +36,12 @@ class AdminDlcController extends Controller{
                 'game' => 'required|string',
                 'name' => 'required|string',
                 'short_name' => 'required|string',
+                'type' => 'required|string',
             ]);
             $dlc->fill([
                 'game' => $request->input('game', 'ets2'),
                 'name' => $request->input('name'),
+                'type' => $request->input('type'),
                 'short_name' => $request->input('short_name'),
                 'mp_support' => $request->input('mp_support') == 'on',
                 'active' => $request->input('active') == 'on',
@@ -49,7 +51,9 @@ class AdminDlcController extends Controller{
                 redirect()->back()->withErrors(['Не вдалось додати DLC']);
         }
 
-        return view('admin.dlc.add');
+        return view('admin.dlc.add', [
+            'types' => Dlc::$types
+        ]);
     }
 
 }

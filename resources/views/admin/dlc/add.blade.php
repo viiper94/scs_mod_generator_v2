@@ -2,7 +2,7 @@
 
 @section('content')
 
-    
+
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
 
         <div class="card" style="width: 600px;">
@@ -56,6 +56,16 @@
                                 </div>
                                 <div class="mdc-notched-outline__trailing"></div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 no-margin wheels">
+                            <label>Тип DLC</label>
+                            <select name="type">
+                                @foreach($types as $item)
+                                    <option value="{{ $item }}">{{ $item }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="row no-margin" style="margin-left: 1rem;">

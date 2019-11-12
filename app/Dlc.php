@@ -13,4 +13,8 @@ class Dlc extends Model{
         'active' => 'boolean',
     ];
 
+    public static $types = [
+        'map', 'trailer', 'addon', 'other'
+    ];
+
 }
