@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Лис 05 2019 р., 13:36
+-- Час створення: Лис 13 2019 р., 00:12
 -- Версія сервера: 10.1.34-MariaDB
 -- Версія PHP: 7.2.8
 
@@ -144,19 +144,19 @@ INSERT INTO `accessories` (`id`, `def`, `suffixes`, `alias`, `chassis`, `game`, 
 (233, '/def/vehicle/trailer/magnitude_55l/cargo_transformer.sii', NULL, 'transformer', 'magnitude_55l', 'ats', '8', 1, '2018-07-31 11:59:26', '2019-05-21 09:26:23'),
 (251, '/def/vehicle/trailer_cargo/scs_flatbed/beams_28.sii', '28,45', 'beams', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
 (252, '/def/vehicle/trailer_cargo/scs_flatbed/cars_scrap_28.sii', '28,45,53', 'cars_scrap', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(253, '/def/vehicle/trailer_cargo/scs_flatbed/ctubes_l_28.sii', '28,45,53', 'ctubes_l', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(254, '/def/vehicle/trailer_cargo/scs_flatbed/ctubes_s_28.sii', '28,45,53', 'ctubes_s', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(255, '/def/vehicle/trailer_cargo/scs_flatbed/hay_28.sii', '28,45,53', 'hay', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(256, '/def/vehicle/trailer_cargo/scs_flatbed/house_prefabs_28.sii', '28,45,53', 'house_prefabs', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(257, '/def/vehicle/trailer_cargo/scs_flatbed/hptank_28.sii', '28,45,53', 'hi_pressure_tank', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2019-05-21 09:26:02'),
-(258, '/def/vehicle/trailer_cargo/scs_flatbed/metal_coil_28.sii', '28,45,53', 'metal_coil', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(259, '/def/vehicle/trailer_cargo/scs_flatbed/mooring_buoy_28.sii', '28,45,53', 'mooring_buoy', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(260, '/def/vehicle/trailer_cargo/scs_flatbed/pipes_28.sii', '28,45', 'pipes', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(261, '/def/vehicle/trailer_cargo/scs_flatbed/planks_28.sii', '28,45,53', 'planks', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(262, '/def/vehicle/trailer_cargo/scs_flatbed/plows_28.sii', '28,45', 'plows', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(263, '/def/vehicle/trailer_cargo/scs_flatbed/square_tubing_28.sii', '28,45,53', 'square_tubing', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(264, '/def/vehicle/trailer_cargo/scs_flatbed/tubes_28.sii', '28,45', 'tubes', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
-(265, '/def/vehicle/trailer_cargo/scs_flatbed/vent_28.sii', '28,45', 'ventilator', 'flatbed28', 'ats', NULL, 1, '2018-08-20 09:58:17', '2019-05-21 09:25:35'),
+(253, '/def/vehicle/trailer_cargo/scs_flatbed/ctubes_l_28.sii', '28,45,53', 'ctubes_l', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(254, '/def/vehicle/trailer_cargo/scs_flatbed/ctubes_s_28.sii', '28,45,53', 'ctubes_s', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(255, '/def/vehicle/trailer_cargo/scs_flatbed/hay_28.sii', '28,45,53', 'hay', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(256, '/def/vehicle/trailer_cargo/scs_flatbed/house_prefabs_28.sii', '28,45,53', 'house_prefabs', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(257, '/def/vehicle/trailer_cargo/scs_flatbed/hptank_28.sii', '28,45,53', 'hi_pressure_tank', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2019-05-21 09:26:02'),
+(258, '/def/vehicle/trailer_cargo/scs_flatbed/metal_coil_28.sii', '28,45,53', 'metal_coil', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(259, '/def/vehicle/trailer_cargo/scs_flatbed/mooring_buoy_28.sii', '28,45,53', 'mooring_buoy', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(260, '/def/vehicle/trailer_cargo/scs_flatbed/pipes_28.sii', '28,45', 'pipes', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(261, '/def/vehicle/trailer_cargo/scs_flatbed/planks_28.sii', '28,45,53', 'planks', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(262, '/def/vehicle/trailer_cargo/scs_flatbed/plows_28.sii', '28,45', 'plows', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(263, '/def/vehicle/trailer_cargo/scs_flatbed/square_tubing_28.sii', '28,45,53', 'square_tubing', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(264, '/def/vehicle/trailer_cargo/scs_flatbed/tubes_28.sii', '28,45', 'tubes', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2018-08-20 09:58:17'),
+(265, '/def/vehicle/trailer_cargo/scs_flatbed/vent_28.sii', '28,45', 'ventilator', 'flatbed', 'ats', NULL, 1, '2018-08-20 09:58:17', '2019-05-21 09:25:35'),
 (336, '/def/vehicle/trailer/flatbed/cargo_tire.sii', NULL, 'tires', 'flatbed53_4ax', 'ats', '13', 1, '2018-11-26 18:30:54', '2019-05-21 09:25:12'),
 (337, '/def/vehicle/trailer/home_transporter/cargo_house.sii', NULL, 'cargo_house', 'home_transporter', 'ats', '13', 1, '2018-11-26 18:37:08', '2018-11-26 18:37:08'),
 (338, '/def/vehicle/trailer/magnitude_55l/cargo_lattice.sii', NULL, 'lattice_structure', 'magnitude_55l_j3_t3l_s3_special', 'ats', '13', 1, '2018-11-26 18:58:16', '2019-05-21 09:24:25'),
@@ -511,7 +511,14 @@ INSERT INTO `chassis` (`id`, `parent_trailer`, `chain_type_size`, `trailers`, `a
 (220, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/chassis\\/ch_28_bd_2a.sii\",\"body\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/body\\/flatbed_28w_bd.sii\",\"axles\":\"2\",\"suitable_suffix\":\"28\",\"with_accessory\":\"on\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"markers\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/markers\\/flatbed_28.sii\"},{\"name\":\"r_bumper\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/r_bumper\\/dolly_conv.sii\"},{\"name\":\"r_mudflap\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/r_mudflap\\/simple.sii\"},{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/trlr_cables\\/dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/chassis\\/ch_32_2a.sii\",\"body\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/body\\/flatbed_32w.sii\",\"axles\":\"2\",\"suitable_suffix\":\"28\",\"with_accessory\":\"on\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"r_mudflap\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/r_mudflap\\/simple.sii\"},{\"name\":\"r_bumper\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/r_bumper\\/flatbed.sii\"},{\"name\":\"markers\",\"def\":\"\\/def\\/vehicle\\/trailer_owned\\/scs.flatbed\\/accessory\\/markers\\/flatbed_28.sii\"}]}]', 'flatbed28_bdouble', 'flatbed28_bdouble', NULL, 'flatbed', 13, 1, 1, 1, 1, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color0.sii', 1, 0, 1, 'ats', 1, NULL, 1, '2019-06-17 06:16:27', '2019-06-17 06:36:45'),
 (221, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/ref_45_hook.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/ref_45_hook.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'ref_45_tp', 'ref_45_tp', NULL, 'ref_', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-06-18 15:14:57', '2019-06-18 15:17:43'),
 (222, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/curtain45_hook.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/curtain45_r.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'curtain45_tp', 'curtain45_tp', NULL, 'curtain', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_flatbed/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-06-18 15:37:58', '2019-06-18 15:39:17'),
-(223, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dry_45_hook.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dry_45_r.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'dry_45_tp', 'dry_45_tp', NULL, 'dry_', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-06-18 15:59:12', '2019-06-18 15:59:44');
+(223, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dry_45_hook.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/dry_45_r.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'dry_45_tp', 'dry_45_tp', NULL, 'dry_', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_box/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-06-18 15:59:12', '2019-06-18 15:59:44'),
+(224, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_bulkfeed\\/ch_45.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'bulkfeed', 'bulkfeed', NULL, 'bulkfeed', 13, 1, 0, 0, 1, '/def/vehicle/trailer/scs_bulkfeed/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:37:44', '2019-11-12 18:39:29'),
+(225, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_40.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'grainhopper_40', 'grainhopper', NULL, 'grainhopper', 13, 1, 0, 0, 1, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:44:34', '2019-11-12 18:47:43'),
+(226, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'grainhopper_28', 'grainhopper', NULL, 'grainhopper', 13, 1, 0, 0, 1, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:48:30', '2019-11-12 18:50:09'),
+(227, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":null,\"def\":null}]}]', 'grainhopper_double', 'grainhopper', NULL, 'grainhopper', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:51:10', '2019-11-12 18:59:43'),
+(228, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_40.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'grainhopper_rm_double', 'grainhopper', NULL, 'grainhopper', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:53:24', '2019-11-12 18:59:49'),
+(229, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_40.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_40.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'grainhopper_tp', 'grainhopper', NULL, 'grainhopper', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:54:20', '2019-11-12 18:59:55'),
+(230, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/dolly_c.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_dolly.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/ch_28.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_grainhopper\\/accessory\\/trlr_cables_trailer.sii\"}]}]', 'grainhopper_triple', 'grainhopper', NULL, 'grainhopper', 13, 1, 1, 0, 1, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2019-11-12 18:55:18', '2019-11-12 19:00:00');
 
 -- --------------------------------------------------------
 
@@ -763,7 +770,11 @@ INSERT INTO `dlc` (`id`, `name`, `short_name`, `game`, `mp_support`, `type`, `ac
 (13, 'special_ats', 'ST', 'ats', 0, 'trailer', 1, 32, '2018-11-26 18:22:00', '2018-11-26 18:22:00'),
 (14, 'baltic', 'B', 'ets2', 1, 'map', 1, 4, '2018-11-26 18:22:12', '2018-11-28 18:15:15'),
 (15, 'forest_harvesting', 'FM', 'ats', 1, 'trailer', 1, 33, '2019-06-16 04:27:12', '2019-06-16 04:27:12'),
-(16, 'promods', 'PM', 'ets2', 1, 'addon', 1, 51, '2019-10-27 22:00:00', '2019-10-27 22:00:00');
+(16, 'promods', 'PM', 'ets2', 1, 'addon', 1, 51, '2019-10-27 22:00:00', '2019-10-27 22:00:00'),
+(18, 'oregon', 'O', 'ats', 1, 'map', 1, 62, '2019-11-12 17:52:34', '2019-11-12 17:52:34'),
+(19, 'utah', 'U', 'ats', 1, 'map', 1, 64, '2019-11-12 17:52:50', '2019-11-12 17:52:50'),
+(20, 'new_mexico', 'NM', 'ats', 1, 'map', 1, 61, '2019-11-12 18:22:23', '2019-11-12 18:22:23'),
+(21, 'washington', 'W', 'ats', 1, 'map', 1, 63, '2019-11-12 18:22:37', '2019-11-12 18:22:37');
 
 -- --------------------------------------------------------
 
@@ -2445,7 +2456,16 @@ INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`,
 (2995, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/deret.sii', 'deret', 'deret', 'willig_cistern', 'ets2', 16, 0, 1, 0, '2019-10-28 11:52:33', '2019-10-28 11:52:33'),
 (2996, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/mazet.sii', 'mazet', 'mazet', 'willig_cistern', 'ets2', 16, 0, 1, 0, '2019-10-28 11:52:33', '2019-10-28 11:52:33'),
 (2997, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/nd.sii', 'nd', 'nd', 'willig_cistern', 'ets2', 16, 0, 1, 0, '2019-10-28 11:52:33', '2019-10-28 11:52:33'),
-(2998, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/orlen.sii', 'orlen', 'orlen', 'willig_cistern', 'ets2', 16, 0, 1, 0, '2019-10-28 11:52:33', '2019-10-28 11:52:33');
+(2998, '/def/vehicle/trailer/willig/fuel_cistern/company_paint_job/orlen.sii', 'orlen', 'orlen', 'willig_cistern', 'ets2', 16, 0, 1, 0, '2019-10-28 11:52:33', '2019-10-28 11:52:33'),
+(2999, '/def/vehicle/trailer/scs_bulkfeed/company_paint_job/default.sii', 'default', 'default', 'bulkfeed', 'ats', NULL, 1, 1, 1, '2019-11-12 18:41:27', '2019-11-12 18:41:27'),
+(3000, '/def/vehicle/trailer/scs_bulkfeed/company_paint_job/bushnell.sii', 'bushnell', 'bushnell', 'bulkfeed', 'ats', NULL, 0, 1, 0, '2019-11-12 18:41:38', '2019-11-12 18:41:58'),
+(3001, '/def/vehicle/trailer/scs_bulkfeed/company_paint_job/global_mills.sii', 'global_mills', 'global_mills', 'bulkfeed', 'ats', NULL, 0, 1, 0, '2019-11-12 18:42:02', '2019-11-12 18:42:10'),
+(3002, '/def/vehicle/trailer/scs_bulkfeed/company_paint_job/sunshine.sii', 'sunshine', 'sunshine', 'bulkfeed', 'ats', NULL, 0, 1, 0, '2019-11-12 18:42:14', '2019-11-12 18:42:21'),
+(3003, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii', 'default', 'default', 'grainhopper', 'ats', NULL, 1, 1, 1, '2019-11-12 19:00:43', '2019-11-12 19:01:07'),
+(3004, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/black.sii', 'black', 'black', 'grainhopper', 'ats', NULL, 0, 1, 0, '2019-11-12 19:04:36', '2019-11-12 19:04:49'),
+(3005, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/bushnell.sii', 'bushnell', 'bushnell', 'grainhopper', 'ats', NULL, 0, 1, 0, '2019-11-12 19:04:53', '2019-11-12 19:04:59'),
+(3006, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/global_mills.sii', 'global_mills', 'global_mills', 'grainhopper', 'ats', NULL, 0, 1, 0, '2019-11-12 19:05:03', '2019-11-12 19:05:09'),
+(3007, '/def/vehicle/trailer/scs_grainhopper/company_paint_job/sunshine.sii', 'sunshine', 'sunshine', 'grainhopper', 'ats', NULL, 0, 1, 0, '2019-11-12 19:05:13', '2019-11-12 19:05:18');
 
 -- --------------------------------------------------------
 
@@ -2624,7 +2644,7 @@ ALTER TABLE `accessories`
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=224;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=232;
 
 --
 -- AUTO_INCREMENT для таблиці `companies`
@@ -2636,7 +2656,7 @@ ALTER TABLE `companies`
 -- AUTO_INCREMENT для таблиці `dlc`
 --
 ALTER TABLE `dlc`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT для таблиці `error_codes`
@@ -2660,7 +2680,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `paints`
 --
 ALTER TABLE `paints`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2999;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3008;
 
 --
 -- AUTO_INCREMENT для таблиці `settings`
