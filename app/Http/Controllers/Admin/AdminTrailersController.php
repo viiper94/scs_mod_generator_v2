@@ -134,12 +134,10 @@ class AdminTrailersController extends Controller{
             ]);
             $chassis->fill([
                 'game' => $request->input('game', 'ets2'),
-                'def' => $request->input('def'),
                 'alias' => $request->input('alias'),
                 'alias_short' => $request->input('alias_short', $request->input('alias')),
                 'accessory_subgroup' => $request->input('accessory_subgroup', null),
                 'alias_short_paint' => $request->input('alias_short_paint', $request->input('alias')),
-                'axles' => $request->input('axles'),
                 'default_paint_job' => $request->input('default_paint_job', null),
                 'wheels_id' => $request->input('wheels_id'),
                 'dlc_id' => $request->input('dlc_id', null),
@@ -150,7 +148,6 @@ class AdminTrailersController extends Controller{
                 'can_all_companies' => $request->input('can_all_companies') == 'on',
                 'with_accessory' => $request->input('with_accessory') == 'on',
                 'with_paint_job' => $request->input('with_paint_job') == 'on',
-                'trailer_owned' => $request->input('trailer_owned') == 'on',
                 'can_random' => $request->input('can_random') == 'on',
                 'mp_support' => $request->input('mp_support') == 'on',
                 'trailers' => array_values($request->input('trailers'))
