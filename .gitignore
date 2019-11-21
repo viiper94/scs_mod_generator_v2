@@ -8,6 +8,7 @@
 !/public/images/mods/default.jpg
 /public/modifications/*
 /public/storage
+/resources/out_*
 /storage/*.key
 /.idea
 /.vscode
