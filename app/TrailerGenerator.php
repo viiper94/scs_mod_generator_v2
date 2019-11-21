@@ -19,7 +19,7 @@ class TrailerGenerator extends ModGenerator{
 		$this->paintJob = $paintJob;
 		$this->dlc = $this->getDLCArray();
         $this->title = $this->getTitle();
-		
+
 		$this->outDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->outDir . time();
 		$this->filesDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->filesDir;
 		$this->downloadDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->downloadDir;
@@ -77,7 +77,8 @@ class TrailerGenerator extends ModGenerator{
 		mkdir($this->outDir.'/vehicle');
 		mkdir($this->outDir.'/vehicle/trailer');
 		foreach($this->dlc as $dlc){
-			$this->rcopy($this->filesDir.'/'.$this->game.'/'.$dlc.'/trailers', $this->outDir.'/vehicle/trailer');
+            $dir = $this->filesDir.'/'.$this->game.'/'.$dlc.'/trailers';
+            !is_dir($dir) ? : $this->rcopy($dir, $this->outDir.'/vehicle/trailer');
 		}
 	}
 
