@@ -11,13 +11,6 @@ trailer_def : trailer_def.scs.flatbed.single_53sp.flatbed
 	body_type: flatbed
 	chain_type: single
 
-	
-	
-	_mexico
-	
-	
-	
-
 	mass_ratio[]: 1
 }
 }
