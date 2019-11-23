@@ -184,11 +184,11 @@ $(document).ready(function(){
                                 $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
                                     .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
                             });
-                            if(response.wheels){
-                                $('.wheels.input-field').show();
+                            if(response.wheels === true){
+                                $('.wheels').show();
                             }else{
-                                $('.wheels.input-field').hide();
-                                $('.wheels.input-field select').val('');
+                                $('.wheels').hide();
+                                $('.wheels select').val('');
                             }
 						}
 					},
