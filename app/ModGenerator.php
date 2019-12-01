@@ -98,7 +98,7 @@ class ModGenerator{
 
     protected function zipFiles(){
         $zip = new ZipArchive();
-        $filename = time().'_'.Transliterator::run($this->title);
+        $filename = Transliterator::run($this->title).'_'.md5(time());
 
         if($zip->open($this->downloadDir.'/'.$filename.'.scs', ZipArchive::CREATE) !== true){
             return false;
