@@ -131,6 +131,8 @@ class AdminPaintsController extends Controller{
             'krone_coolliner' => 'krone/coolliner',
             'krone_dryliner' => 'krone/dryliner',
             'krone_profiliner' => 'krone/profiliner',
+
+            'schw_food_cistern' => 'schw_cistern_food',
         ];
 
         // for ats
@@ -188,7 +190,7 @@ class AdminPaintsController extends Controller{
                                 if($paint_job !== '.' && $paint_job !== '..'){
                                     $paint = new Paint();
                                     $paint->fill([
-                                        'game' => $dlc_params['game'] ?? 'ats',
+                                        'game' => $dlc_params['game'] ?? 'ets2',
                                         'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
                                         'alias' => str_replace('.sii', '', $paint_job),
                                         'look' => str_replace('.sii', '', $paint_job),
@@ -203,27 +205,28 @@ class AdminPaintsController extends Controller{
 //                                    dump($paint);
                                 }
                             }
-                            if($chassis === 'schw_curtain' || $chassis === 'schw_reefer'){
-                                $paint = new Paint();
-                                $paint->fill([
-                                    'game' => 'ets2',
-                                    'def' => '/def/trailer/'.$chassis.'/custom_paint_job/schw_logo.sii',
-                                    'alias' => 'schw_logo',
-                                    'look' => 'empty',
-                                    'chassis' => $chassis,
-                                    'dlc_id' => $dlcs['schwarzmuller']['id'],
-                                    'with_color' => 0,
-                                    'active' => true,
-                                    'sort' => 1
-                                ]);
-                                $paint->save();
-    //                            dump($paint);
-                            }
+//                            if($chassis === 'schw_curtain' || $chassis === 'schw_reefer'){
+//                                $paint = new Paint();
+//                                $paint->fill([
+//                                    'game' => 'ets2',
+//                                    'def' => '/def/trailer/'.$chassis.'/custom_paint_job/schw_logo.sii',
+//                                    'alias' => 'schw_logo',
+//                                    'look' => 'empty',
+//                                    'chassis' => $chassis,
+//                                    'dlc_id' => $dlcs['schwarzmuller']['id'],
+//                                    'with_color' => 0,
+//                                    'active' => true,
+//                                    'sort' => 1
+//                                ]);
+//                                $paint->save();
+//    //                            dump($paint);
+//                            }
                         }
                     }
                 }
             }
         }
+//        dd('dumped');
         return redirect()->route('paints')->with(['success' => 'Скіни додано!']);
     }
 
