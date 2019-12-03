@@ -59,9 +59,9 @@ class AdminAccessoriesController extends Controller{
             'def' => $accessory->def,
             'suffixes' => $accessory->suffixes,
             'chassis' => $accessory->chassis,
-            'alias' => $accessory->alias.'_copy',
+            'alias' => $accessory->alias,
             'dlc' => $accessory->dlc,
-            'active' => false,
+            'active' => $accessory->active,
         ]);
 
         return $new_accessory->save() ?
