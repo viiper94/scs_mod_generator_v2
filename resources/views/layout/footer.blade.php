@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col m8 s12">
                 <h5>@lang('general.supported_versions')</h5>
-                <p class="fs20">@lang('general.ets2') - <b>1.35.*</b></p>
+                <p class="fs20">@lang('general.ets2') - <b>1.36.*</b></p>
                 <p class="fs20">@lang('general.ats') - <b>1.36.*</b></p>
             </div>
             <div class="col m4 s12 right-align">
