@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.hct_4_2s_4.reefer
+{
+	gross_trailer_weight_limit: 96000
+	chassis_mass: 14420
+	body_mass: 4400
+	length: 28.6
+	axles: 10
+	volume: 174
+	body_type: refrigerated
+	chain_type: hct
+
+	
+
+	mass_ratio[]: 0.45
+	mass_ratio[]: 0.1
+	mass_ratio[]: 0.45
+}
+}

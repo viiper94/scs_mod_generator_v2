@@ -11,6 +11,12 @@ trailer_def : trailer_def.scs.log.bdouble_3_3.wood
 	body_type: log
 	chain_type: b_double
 
+	
+	
+	
+	
+	
+	
 
 	mass_ratio[]: 0.33
 	mass_ratio[]: 0.67

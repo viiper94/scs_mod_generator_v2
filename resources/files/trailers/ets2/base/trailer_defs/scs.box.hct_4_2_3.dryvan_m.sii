@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.hct_4_2_3.dryvan_m
+{
+	gross_trailer_weight_limit: 90000
+	chassis_mass: 14120
+	body_mass: 3600
+	length: 28.6
+	axles: 9
+	volume: 174
+	body_type: dryvan
+	chain_type: hct
+
+	
+
+	mass_ratio[]: 0.45
+	mass_ratio[]: 0.1
+	mass_ratio[]: 0.45
+}
+}

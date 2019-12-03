@@ -12,22 +12,9 @@ trailer_def : trailer_def.scs.flatbed.hct_3_2_3.brick
 	chain_type: hct
 
 	
-	mass_ratio[]: 0.45
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 40000
-	max_cog[]: (0,1,0)
 
+	mass_ratio[]: 0.45
 	mass_ratio[]: 0.1
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 40000
-	max_cog[]: (0,1,0)
-
 	mass_ratio[]: 0.45
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 40000
-	max_cog[]: (0,1,0)
 }
 }

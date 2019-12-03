@@ -1,0 +1,24 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.double_3_2a.reefer
+{
+	gross_trailer_weight_limit: 55000
+	chassis_mass: 11090
+	body_mass: 3300
+	length: 22.7
+	axles: 5
+	volume: 140
+	body_type: refrigerated
+	chain_type: double
+
+	
+	
+	
+	
+	
+	
+
+	mass_ratio[]: 0.67
+	mass_ratio[]: 0.33
+}
+}

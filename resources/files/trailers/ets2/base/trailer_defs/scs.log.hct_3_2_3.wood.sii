@@ -11,6 +11,7 @@ trailer_def : trailer_def.scs.log.hct_3_2_3.wood
 	body_type: log
 	chain_type: hct
 
+	
 
 	mass_ratio[]: 0.45
 	mass_ratio[]: 0.1

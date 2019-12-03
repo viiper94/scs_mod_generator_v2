@@ -1,0 +1,24 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.flatbed.double_3_3.brick
+{
+	gross_trailer_weight_limit: 63000
+	chassis_mass: 10730
+	body_mass: 500
+	length: 22.7
+	axles: 6
+	volume: 140
+	body_type: flatbed_brck
+	chain_type: double
+
+	
+	
+	
+	
+	
+	
+
+	mass_ratio[]: 0.67
+	mass_ratio[]: 0.33
+}
+}

@@ -1,0 +1,146 @@
+trailer : trailer.car_trans_d1
+{
+	accessories[]: .car_trans_d1.tchassis
+	accessories[]: .car_trans_d1.trwheel0
+	accessories[]: .car_trans_d1.trwheel1
+	accessories[]: .car_trans_d1.dacia.cargo
+}
+
+vehicle_accessory: .car_trans_d1.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_blue.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d1.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d1.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_trans_d1.dacia.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_dacia.sii"
+}
+
+
+trailer : trailer.car_trans_d2
+{
+	accessories[]: .car_trans_d2.tchassis
+	accessories[]: .car_trans_d2.trwheel0
+	accessories[]: .car_trans_d2.trwheel1
+	accessories[]: .car_trans_d2.dacia.cargo
+}
+
+vehicle_accessory: .car_trans_d2.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_black.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d2.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d2.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_trans_d2.dacia.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_dacia_2.sii"
+}
+
+trailer : trailer.car_trans_d3
+{
+	accessories[]: .car_trans_d3.tchassis
+	accessories[]: .car_trans_d3.trwheel0
+	accessories[]: .car_trans_d3.trwheel1
+	accessories[]: .car_trans_d3.dacia.cargo
+}
+
+vehicle_accessory: .car_trans_d3.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_blue.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d3.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d3.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_trans_d3.dacia.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_dacia_3.sii"
+}
+
+
+trailer : trailer.car_trans_d4
+{
+	accessories[]: .car_trans_d4.tchassis
+	accessories[]: .car_trans_d4.trwheel0
+	accessories[]: .car_trans_d4.trwheel1
+	accessories[]: .car_trans_d4.dacia.cargo
+}
+
+vehicle_accessory: .car_trans_d4.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_black.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d4.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d4.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_trans_d4.dacia.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_dacia_4.sii"
+}
+
+trailer : trailer.car_trans_d5
+{
+	accessories[]: .car_trans_d5.tchassis
+	accessories[]: .car_trans_d5.trwheel0
+	accessories[]: .car_trans_d5.trwheel1
+	accessories[]: .car_trans_d5.dacia.cargo
+}
+
+vehicle_accessory: .car_trans_d5.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d5.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_d5.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+vehicle_accessory: .car_trans_d5.dacia.cargo
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/cargo_dacia_5.sii"
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.eolo_lines
+{
+	name: "Eolo Lines"
+	sort_name: "eolo lines"
+	trailer_look: eolo_lines
+}

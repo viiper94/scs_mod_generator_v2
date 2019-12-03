@@ -15,16 +15,10 @@ trailer_def : trailer_def.scs.box.bdouble_3_3.dryvan
 	
 	
 	
-	mass_ratio[]: 0.33
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,-2)
-	max_cog_mass[]: 30000
-	max_cog[]: (0,1,-3.5)
+	
+	
 
+	mass_ratio[]: 0.33
 	mass_ratio[]: 0.67
-	min_cog_mass[]: 0
-	min_cog[]: (0,0,0)
-	max_cog_mass[]: 30000
-	max_cog[]: (0,1,0)
 }
 }

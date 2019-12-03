@@ -11,6 +11,12 @@ trailer_def : trailer_def.scs.gooseneck.double_3_2.container
 	body_type: container
 	chain_type: double
 
+	
+	
+	
+	
+	
+	
 
 	mass_ratio[]: 0.66
 	mass_ratio[]: 0.34

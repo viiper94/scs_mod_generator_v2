@@ -1,0 +1,20 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.flatbed.hct_3_2_3.container
+{
+	gross_trailer_weight_limit: 84000
+	chassis_mass: 12700
+	body_mass: 400
+	length: 28.6
+	axles: 8
+	volume: 174
+	body_type: flatbed_cont
+	chain_type: hct
+
+	
+
+	mass_ratio[]: 0.45
+	mass_ratio[]: 0.1
+	mass_ratio[]: 0.45
+}
+}

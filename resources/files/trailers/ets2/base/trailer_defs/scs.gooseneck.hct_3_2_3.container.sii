@@ -11,6 +11,8 @@ trailer_def : trailer_def.scs.gooseneck.hct_3_2_3.container
 	body_type: container
 	chain_type: hct
 
+	
+
 	mass_ratio[]: 0.45
 	mass_ratio[]: 0.1
 	mass_ratio[]: 0.45
