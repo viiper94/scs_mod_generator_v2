@@ -1,35 +1,35 @@
 trailer : trailer.schw_ovrwght.twocats
 {
-	accessories[]: .schw_ovrwght.twocats.tchassis
-	accessories[]: .schw_ovrwght.twocats.trwheel0
-	accessories[]: .schw_ovrwght.twocats.trwheel1
-	accessories[]: .schw_ovrwght.twocats.trwheel2
-	accessories[]: .schw_ovrwght.twocats.cargo
+	accessories[]: .schw_ovrwght.b_w_ldr.tchassis
+	accessories[]: .schw_ovrwght.b_w_ldr.trwheel0
+	accessories[]: .schw_ovrwght.b_w_ldr.trwheel1
+	accessories[]: .schw_ovrwght.b_w_ldr.trwheel2
+	accessories[]: .schw_ovrwght.b_w_ldr.cargo
 }
 
-vehicle_accessory: .schw_ovrwght.twocats.tchassis
+vehicle_accessory: .schw_ovrwght.b_w_ldr.tchassis
 {
     	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
 }
 
-vehicle_wheel_accessory: .schw_ovrwght.twocats.trwheel0
+vehicle_wheel_accessory: .schw_ovrwght.b_w_ldr.trwheel0
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/overweight.sii"
 }
 
-vehicle_wheel_accessory: .schw_ovrwght.twocats.trwheel1
+vehicle_wheel_accessory: .schw_ovrwght.b_w_ldr.trwheel1
 {
 	offset: 2
     	data_path: "/def/vehicle/t_wheel/overweight.sii"
 }
 
-vehicle_wheel_accessory: .schw_ovrwght.twocats.trwheel2
+vehicle_wheel_accessory: .schw_ovrwght.b_w_ldr.trwheel2
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
 }
-vehicle_accessory: .schw_ovrwght.twocats.cargo
+vehicle_accessory: .schw_ovrwght.b_w_ldr.cargo
 {
-    	data_path: "/def/vehicle/trailer/schw_overweight/twocats.dlc_schwarzmuller.sii"
+    	data_path: "/def/vehicle/trailer/schw_overweight/b_w_loader.dlc_schwarzmuller.sii"
 }

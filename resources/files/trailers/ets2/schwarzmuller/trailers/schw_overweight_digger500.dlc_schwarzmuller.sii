@@ -1,35 +1,35 @@
 trailer : trailer.schw_ovrwght.digger500
 {
-	accessories[]: .schw_ovrwght.digger500.tchassis
-	accessories[]: .schw_ovrwght.digger500.trwheel0
-	accessories[]: .schw_ovrwght.digger500.trwheel1
-	accessories[]: .schw_ovrwght.digger500.trwheel2
-	accessories[]: .schw_ovrwght.digger500.cargo
+	accessories[]: .schw_ovrwght.bckh_ldr.tchassis
+	accessories[]: .schw_ovrwght.bckh_ldr.trwheel0
+	accessories[]: .schw_ovrwght.bckh_ldr.trwheel1
+	accessories[]: .schw_ovrwght.bckh_ldr.trwheel2
+	accessories[]: .schw_ovrwght.bckh_ldr.cargo
 }
 
-vehicle_accessory: .schw_ovrwght.digger500.tchassis
+vehicle_accessory: .schw_ovrwght.bckh_ldr.tchassis
 {
     	data_path: "/def/vehicle/trailer/schw_overweight/chassis.dlc_schwarzmuller.sii"
 }
 
-vehicle_wheel_accessory: .schw_ovrwght.digger500.trwheel0
+vehicle_wheel_accessory: .schw_ovrwght.bckh_ldr.trwheel0
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/overweight.sii"
 }
 
-vehicle_wheel_accessory: .schw_ovrwght.digger500.trwheel1
+vehicle_wheel_accessory: .schw_ovrwght.bckh_ldr.trwheel1
 {
 	offset: 2
     	data_path: "/def/vehicle/t_wheel/overweight.sii"
 }
 
-vehicle_wheel_accessory: .schw_ovrwght.digger500.trwheel2
+vehicle_wheel_accessory: .schw_ovrwght.bckh_ldr.trwheel2
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/overweight_f.sii"
 }
-vehicle_accessory: .schw_ovrwght.digger500.cargo
+vehicle_accessory: .schw_ovrwght.bckh_ldr.cargo
 {
-    	data_path: "/def/vehicle/trailer/schw_overweight/digger500.dlc_schwarzmuller.sii"
+    	data_path: "/def/vehicle/trailer/schw_overweight/backhoe_loader.dlc_schwarzmuller.sii"
 }
