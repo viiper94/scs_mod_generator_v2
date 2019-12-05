@@ -402,17 +402,17 @@ $(document).ready(function(){
                     .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
             });
         }else{
-            $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            $('[id^=dlc_]').prop('disabled', false);
             $('[id^=dlc_] + input[type=hidden]').remove();
         }
     });
 
 	$('#check_all').click(function(){
 		if($(this).data('check') === 0){
-            $('[id^=dlc_], #promods').prop('checked', true);
+            $('[id^=dlc_]').prop('checked', true);
             $(this).data('check', 1);
 		}else{
-            $('[id^=dlc_], #promods').prop('checked', false);
+            $('[id^=dlc_]:not([disabled])').prop('checked', false);
             $(this).data('check', 0);
 		}
 
