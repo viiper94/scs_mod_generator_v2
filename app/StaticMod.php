@@ -32,7 +32,7 @@ class StaticMod extends Model{
             if($this->file_name && file_exists(public_path($this->path).'/'.$this->file_name)){
                 unlink(public_path($this->path) . '/' . $this->file_name);
             }
-            $this->file_name = time().'_'.$file_name.'.'.$file->getClientOriginalExtension();
+            $this->file_name = $file_name.'_'.md5(time()).'.'.$file->getClientOriginalExtension();
             return $file->move(public_path($this->path), $this->file_name);
         }
         return false;
