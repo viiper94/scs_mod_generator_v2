@@ -1,0 +1,6 @@
+company_permanent: company.permanent.timberturtle
+{
+	name: "Timber Turtle"
+	sort_name: "timber turtle"
+	trailer_look: timberturtle
+}

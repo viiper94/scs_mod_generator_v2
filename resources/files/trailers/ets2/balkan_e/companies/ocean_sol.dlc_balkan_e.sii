@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ocean_sol
+{
+	name: "Ocean Solutions Group"
+	sort_name: "ocean solutions group"
+	trailer_look: ocean_sol
+}

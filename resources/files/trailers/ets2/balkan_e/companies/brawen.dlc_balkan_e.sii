@@ -1,0 +1,6 @@
+company_permanent: company.permanent.brawen
+{
+	name: "Brawen Transport"
+	sort_name: "brawen transport"
+	trailer_look: brawen
+}

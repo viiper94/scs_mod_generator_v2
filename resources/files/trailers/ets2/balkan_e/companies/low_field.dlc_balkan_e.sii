@@ -1,0 +1,6 @@
+company_permanent: company.permanent.low_field
+{
+	name: "Low Field"
+	sort_name: "low field"
+	trailer_look: low_field
+}

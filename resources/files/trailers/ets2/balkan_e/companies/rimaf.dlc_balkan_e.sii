@@ -1,0 +1,6 @@
+company_permanent: company.permanent.rimaf
+{
+	name: "RIMAF"
+	sort_name: "rimaf"
+	trailer_look: rimaf
+}

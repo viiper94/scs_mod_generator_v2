@@ -1,0 +1,6 @@
+company_permanent: company.permanent.tm_istanbul
+{
+	name: "Trade Market Istanbul"
+	sort_name: "trade market istanbul"
+	trailer_look: tm_istanbul
+}

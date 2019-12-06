@@ -1,0 +1,6 @@
+company_permanent: company.permanent.balkan_loco
+{
+	name: "Balkan Loco"
+	sort_name: "balkan loco"
+	trailer_look: balkan_loco
+}

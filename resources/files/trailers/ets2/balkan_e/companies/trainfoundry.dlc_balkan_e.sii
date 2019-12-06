@@ -1,0 +1,6 @@
+company_permanent: company.permanent.trainfoundry
+{
+	name: "Train Foundry"
+	sort_name: "train foundry"
+	trailer_look: trainfoundry
+}

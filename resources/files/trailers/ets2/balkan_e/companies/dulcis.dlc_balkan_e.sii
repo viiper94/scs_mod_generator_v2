@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dulcis
+{
+	name: "Dulcis"
+	sort_name: "dulcis"
+	trailer_look: dulcis
+}

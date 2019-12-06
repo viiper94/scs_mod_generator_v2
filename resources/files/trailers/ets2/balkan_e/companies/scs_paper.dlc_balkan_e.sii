@@ -1,0 +1,6 @@
+company_permanent: company.permanent.scs_paper
+{
+	name: "SCS Paper"
+	sort_name: "scs paper"
+	trailer_look: scs_paper
+}

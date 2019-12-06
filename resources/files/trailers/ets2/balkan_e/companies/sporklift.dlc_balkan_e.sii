@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sporklift
+{
+	name: "Sporklift"
+	sort_name: "sporklift"
+	trailer_look: sporklift
+}

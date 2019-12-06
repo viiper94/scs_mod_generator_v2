@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fallow
+{
+	name: "Fallow Cargo"
+	sort_name: "fallow cargo"
+	trailer_look: fallow
+}

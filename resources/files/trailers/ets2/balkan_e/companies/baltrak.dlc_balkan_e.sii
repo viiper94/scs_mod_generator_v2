@@ -1,0 +1,6 @@
+company_permanent: company.permanent.baltrak
+{
+	name: "Baltrak Lojistik"
+	sort_name: "baltrak lojistik"
+	trailer_look: baltrak
+}

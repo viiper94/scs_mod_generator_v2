@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ttk_bg
+{
+	name: "ТТК"
+	sort_name: "ttk"
+	trailer_look: ttk_bg
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dobr_ferm_bg
+{
+	name: "добра ферма"
+	sort_name: "dobra ferma"
+	trailer_look: dobr_ferm_bg
+}

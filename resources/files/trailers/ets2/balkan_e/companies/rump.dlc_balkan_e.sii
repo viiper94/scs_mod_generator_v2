@@ -1,0 +1,6 @@
+company_permanent: company.permanent.rump
+{
+	name: "Rump"
+	sort_name: "rump"
+	trailer_look: rump
+}

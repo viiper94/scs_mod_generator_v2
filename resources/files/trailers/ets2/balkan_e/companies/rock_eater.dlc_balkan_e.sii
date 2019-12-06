@@ -1,0 +1,6 @@
+company_permanent: company.permanent.rock_eater
+{
+	name: "Rock Eater"
+	sort_name: "rock eater"
+	trailer_look: rock_eater
+}
