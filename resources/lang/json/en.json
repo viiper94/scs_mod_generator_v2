@@ -163,6 +163,7 @@
         "cement_cistern": "Bulk cement trailer",
         "cement_mixer": "Cement mixer",
         "chemical_cistern": "Chemical tank trailer",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event",
         "flat_bed": "Flat bed",
         "flat_bed_double": "Flat bed Double",
         "flat_bed_hct": "Flat bed HCT",
@@ -175,7 +176,6 @@
         "fuel_cistern": "Fuel tank trailer",
         "glass_trailer": "Glass trailer",
         "curtain_sider": "Curtainsider",
-        "curtain_sider_gy": "Curtainsider - Goodyear Roll-Out Event",
         "curtain_sider_aero": "Aerodynamic Curtainsider",
         "curtain_sider_double": "Curtainsider Double",
         "curtain_sider_bdouble": "Curtainsider B-double",
@@ -274,6 +274,7 @@
         "curtain45_rm_double": "R.M. Double Curtain",
         "curtain28_triple": "Triple Curtain (28')",
         "curtain45_tp": "Double Turnpike Curtain",
+        "flatbed_xmas": "Flatbed Xmas - Christmas Grand Giving Event",
         "flatbed28": "Flatbed (28')",
         "flatbed45_r": "Flatbed (45', Rear Axles)",
         "flatbed53_f": "Flatbed (53', Front Axles)",
@@ -518,7 +519,8 @@
       "cargo_log_stacker": "Log stacker",
       "cargo_forwarder": "Forwarder",
       "cargo_harvester": "Harvester",
-      "aircraft_engine": "Aircraft engine"
+      "aircraft_engine": "Aircraft engine",
+      "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event"
     },
   "wheels": {}
 }
