@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Гру 06 2019 р., 08:56
+-- Час створення: Гру 24 2019 р., 09:58
 -- Версія сервера: 10.4.8-MariaDB
 -- Версія PHP: 7.3.11
 
@@ -309,7 +309,9 @@ INSERT INTO `accessories` (`id`, `def`, `suffixes`, `alias`, `chassis`, `game`, 
 (1032, '/def/vehicle/trailer/car_transporter/cargo_smax_2.sii', NULL, 'cargo_smax', 'car_transporter', 'ets2', NULL, 1, '2019-12-03 08:26:50', '2019-12-03 08:27:01'),
 (1033, '/def/vehicle/trailer/car_transporter/cargo_smax_3.sii', NULL, 'cargo_smax', 'car_transporter', 'ets2', NULL, 1, '2019-12-03 08:27:38', '2019-12-03 08:27:48'),
 (1034, '/def/vehicle/trailer/car_transporter/cargo_smax_4.sii', NULL, 'cargo_smax', 'car_transporter', 'ets2', NULL, 1, '2019-12-03 08:27:52', '2019-12-03 08:27:58'),
-(1035, '/def/vehicle/trailer/car_transporter/cargo_smax_5.sii', NULL, 'cargo_smax', 'car_transporter', 'ets2', NULL, 1, '2019-12-03 08:28:03', '2019-12-03 08:28:10');
+(1035, '/def/vehicle/trailer/car_transporter/cargo_smax_5.sii', NULL, 'cargo_smax', 'car_transporter', 'ets2', NULL, 1, '2019-12-03 08:28:03', '2019-12-03 08:28:10'),
+(1036, '/def/vehicle/trailer/christmas/xmas_gifts.sii', NULL, 'xmas_gifts', 'flat_bed_xmas', 'ets2', NULL, 1, '2019-12-23 18:02:23', '2019-12-23 18:02:23'),
+(1037, '/def/vehicle/trailer/christmas/xmas_gifts.sii', NULL, 'xmas_gifts', 'flatbed_xmas', 'ats', NULL, 1, '2019-12-24 06:35:35', '2019-12-24 06:35:51');
 
 -- --------------------------------------------------------
 
@@ -530,7 +532,9 @@ INSERT INTO `chassis` (`id`, `parent_trailer`, `chain_type_size`, `trailers`, `a
 (232, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_blue.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_blue', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:37:21', '2019-11-21 10:58:59'),
 (233, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_green.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_green', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:52:27', '2019-11-21 10:59:22'),
 (234, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_red.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_red', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:20', '2019-11-21 10:59:14'),
-(235, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_yellow.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_yellow', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:41', '2019-11-21 10:59:06');
+(235, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_yellow.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_yellow', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:41', '2019-11-21 10:59:06'),
+(236, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flat_bed_xmas', 'flat_bed_xmas', NULL, 'flat_bed_xmas', 7, 1, 0, 1, 0, NULL, 1, 0, 0, 'ets2', 1, NULL, 1, '2019-12-23 17:56:13', '2019-12-23 18:01:49'),
+(237, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"off\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flatbed_xmas', 'flatbed_xmas', NULL, 'flatbed_xmas', 13, 1, 0, 1, 0, NULL, 1, 0, 0, 'ats', 1, NULL, 1, '2019-12-24 06:36:00', '2019-12-24 06:37:25');
 
 -- --------------------------------------------------------
 
@@ -2826,13 +2830,13 @@ ALTER TABLE `wheels`
 -- AUTO_INCREMENT для таблиці `accessories`
 --
 ALTER TABLE `accessories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1036;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1038;
 
 --
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=236;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
 
 --
 -- AUTO_INCREMENT для таблиці `companies`
