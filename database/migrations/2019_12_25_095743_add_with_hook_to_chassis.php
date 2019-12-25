@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateErrorCodesTable extends Migration
+class AddWithHookToChassis extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateErrorCodesTable extends Migration
      */
     public function up()
     {
-        Schema::create('error_codes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('code');
-            $table->string('name');
-            $table->timestamps();
+        Schema::table('chassis', function(Blueprint $table)
+        {
+            $table->boolean('with_hook')->default(0)->after('with_paint_job');
         });
     }
 
@@ -28,6 +26,8 @@ class CreateErrorCodesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('error_codes');
+        Schema::table('chassis', function (Blueprint $table) {
+            $table->dropColumn('with_hook');
+        });
     }
 }
