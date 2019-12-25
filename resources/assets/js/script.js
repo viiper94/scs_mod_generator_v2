@@ -135,7 +135,7 @@ $(document).ready(function(){
 			$('#paint').hide().find('.ui.search').remove();
 			$('.colors').hide();
 			$('#all_accessories, #all_paints').prop('checked', false);
-            $('[id^=dlc_]').prop('checked', false).prop('disabled', false);
+            $('[id^=dlc_]').prop('disabled', false);
             $('[id^=dlc_] + input[type=hidden]').remove();
 			$('#generate-btn').attr('disabled', true);
 			if(value !== ''){
@@ -398,12 +398,12 @@ $(document).ready(function(){
         ];
         if($(this)[0].checked){
             $.each(promodsRequiredDlc, function(index, dlc){
-                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                $('#dlc_'+dlc).prop('checked', true).prop('disabled', true).attr('required-promods', true)
                     .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
             });
         }else{
-            $('[id^=dlc_]').prop('disabled', false);
-            $('[id^=dlc_] + input[type=hidden]').remove();
+            $('[id^=dlc_][required-promods=true]:not([required-chassis=true])').prop('disabled', false);
+            $('[id^=dlc_][required-promods=true]:not([required-chassis=true]) + input[type=hidden]').remove();
         }
     });
 
@@ -505,16 +505,17 @@ function getDLCList(value) {
                 'baltic'
             ];
             $('[id^=dlc_], [id=promods]').prop('checked', false).prop('disabled', false);
+            $('[id^=dlc_] + input[type=hidden], [id=promods] + input[type=hidden]').remove();
             $.each(response.dlc, function(index, dlc){
                 if(dlc === 'promods'){
-                    $('#promods').prop('checked', true).prop('disabled', true)
+                    $('#promods').prop('checked', true).prop('disabled', true).attr('required-chassis', true)
                         .after('<input type="hidden" name="promods" value="true">');
                     $.each(promodsRequiredDlc, function(index, dlc){
-                        $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                        $('#dlc_'+dlc).prop('checked', true).prop('disabled', true).attr('required-promods', true)
                             .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
                     });
                 }else{
-                    $('#dlc_'+dlc).prop('checked', true).prop('disabled', true)
+                    $('#dlc_'+dlc).prop('checked', true).prop('disabled', true).attr('required-chassis', true)
                         .after('<input type="hidden" name="'+$('#dlc_'+dlc).attr('name')+'" value="true">');
                 }
             });
