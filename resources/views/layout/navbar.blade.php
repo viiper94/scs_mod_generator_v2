@@ -87,6 +87,6 @@
         @endcan
     </ul>
     <div class="nav-footer">
-        <span><a href="http://steamcommunity.com/id/viiper94/" target="_blank">Mayday</a> - @lang('general.current_version'): <b>3.3.1.2</b></span>
+        <span><a href="http://steamcommunity.com/id/viiper94/" target="_blank">Mayday</a> - @lang('general.current_version'): <b>3.3.2</b></span>
     </div>
 </nav>
