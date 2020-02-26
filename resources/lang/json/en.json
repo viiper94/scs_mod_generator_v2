@@ -353,14 +353,8 @@
     },
     "companies\/paints": {
         "default": "Colored",
-        "black": "Black",
-        "red": "Red",
-        "green": "Green",
-        "blue": "Blue",
-        "gray": "Gray",
         "schw_logo": "Schwarzm\u00fcller Logo",
-        "schw_black_red": "Schwarzm\u00fcller Black and Red",
-        "yellow": "Yellow"
+        "schw_black_red": "Schwarzm\u00fcller Black and Red"
     },
     "accessories": {
         "cars_balt1": "Mercedes-Benz",
@@ -379,14 +373,6 @@
         "v2": "var. 2",
         "v3": "var. 3",
 
-        "blue": "Blue",
-        "green": "Green",
-        "silver": "Silver",
-        "white": "White",
-        "yellow": "Yellow",
-        "red": "Red",
-        "black": "Black",
-
         "cn_container": "Container",
         "cn_container_40r": "40' Reefer container",
 
@@ -394,11 +380,22 @@
         "cn_daf_trucks": "DAF trucks",
         "cn_man_trucks": "MAN trucks",
         "cover": "Cover",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
 
         "large": "Large",
         "small": "Small",
         "2x4": "2x4m",
         "3x4": "3x4m"
     },
-  "wheels": {}
+    "wheels": {},
+    "shared": {
+        "blue": "Blue",
+        "green": "Green",
+        "silver": "Silver",
+        "white": "White",
+        "yellow": "Yellow",
+        "red": "Red",
+        "gray": "Gray",
+        "black": "Black"
+    }
 }
