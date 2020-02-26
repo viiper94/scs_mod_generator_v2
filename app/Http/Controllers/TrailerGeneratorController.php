@@ -173,7 +173,7 @@ class TrailerGeneratorController extends Controller{
 
         if($request->post('accessory')){
             $params['form']['accessory'] = $generator->accessory->def;
-            $params['view']['accessory'] = $generator->accessory->alias;
+            $params['view']['accessory'] = $generator->accessory->name;
         }
 
         if($request->post('paint')) {

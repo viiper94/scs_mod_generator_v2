@@ -54,7 +54,7 @@
                                 </p>
                                 @if(isset($params['view']))
                                     @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'):
-                                        <b>@lang($mod->game.'_accessories.'.$params['view']['accessory'])</b></p>
+                                        <b>@lang('accessories.'.$params['view']['accessory'])</b></p>
                                     @endif
                                     @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>
                                             @if($params['view']['paint'] === null) @lang($mod->game.'_companies_paints.default')
