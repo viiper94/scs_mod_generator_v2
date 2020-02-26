@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "Sustav" #+ Message sender
+		subject: "Testna poruka" #+ Message subject
+		body: "Pozdrav!<br><br>Ovo je testna poruka od kolege administratora ;-)<br><br>Živio" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "Banka" #+ Message sender
+		subject: "Trebate novac? Mi vam možemo pomoći!" #+ Message subject
+		body: "Dragi gospodine/gospođo,<br><br>Mislimo da će vas zanimati činjenica da nudimo povoljne kredite novim tvrtkama. Trebate li financiranje kako biste održali vašu tvrtku? Mi smo tu da vam pomognemo! Molimo <link url=screen.bank color=@@clr_link@@>posjetite vaš lokalni bankarski centar</link> kako biste dobili više informacija.<br><br>S poštovanjem,<br>Menadžer prodaje<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "Banka" #+ Message sender
+		subject: "Možemo ti pomoći da se razviješ" #+ Message subject
+		body: "Dragi gospodine/gospođo,<br><br>Nismo mogli ne primijetiti vaše stabilne prihode, te vam želimo pomoći kako biste se još više razvili. Vaš kreditni limit je podignut na $MONEY$. Slobodno ga upotrijebite u bilo koje vrijeme u vašem <link url=screen.bank color=@@clr_link@@>lokalnom bankarskom centru</link>.<br><br>S poštovanjem,<br>Menadžer prodaje<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "Banka" #+ Message sender
+		subject: "Tvoj račun je u prekoračenju" #+ Message subject
+		body: "Dragi Klijentu,<br><br>S računa si podigao više novaca nego što je bilo raspoloživo. Omogućili smo ti kratkotrajnu pozajmicu za sljedećih nekoliko dana, bez naknade, kako bi mogao riješiti ovu situaciju. Ljubazno te molimo da to otplatiš što je prije moguće.<br><br>Srdačan pozdrav,<br>Tvoj Menadžer za odnose s klijentima<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "Banka" #+ Message sender
+		subject: "Imaš nepodmireno prekoračenje!" #+ Message subject
+		body: "Dragi Klijentu,<br><br>Stanje tvog računa je negativno! Molimo plati svoj dug u sljedećih $DAYS$ ili ćemo biti prisiljeni zaplijeniti tvoju imovinu.<br><br>S poštovanjem,<br>Tvoj Menadžer za odnose s klijentima<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "Banka" #+ Message sender
+		subject: "Posljednje upozorenje!" #+ Message subject
+		body: "Dragi Klijentu,<br><br>Ovo je tvoje posljednje upozorenje. Tvoj račun je u prekoračenju. Molimo te da minus pokriješ do sutra ili ćemo zaplijeniti tvoju imovinu kako bismo zatvorili dugovanje.<br><br>Iskreno tvoj<br>Menadžer za odnose s klijentima<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "Banka" #+ Message sender
+		subject: "Prekoračenje podmireno" #+ Message subject
+		body: "Dragi Klijentu,<br><br>Prekoračenje tvojeg računa je podmireno. Rado ćemo ti pomoći i u buduće ako ikada budeš trebao naše usluge.<br><br>Želimo ti ugodan dan,<br>Tvoj Menadžer za odnose s klijentima<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "Banka" #+ Message sender
+		subject: "Tvoj osobni kamion je prodan" #+ Message subject
+		body: "Dragi Klijentu,<br><br>Sa žaljenjem te moramo obavijestiti da smo bili prisiljeni prodati tvoj osobni kamion - $TRUCK_NAME$ - za $MONEY$. Na žalost, kod nas si imao dugotrajne dugove, a nisi imao nikakve druge načine za pokrivanje istih. Stoga nismo imali izbora, te smo morali poduzeti ove ekstremne mjere. Predlažemo ti da obavljaš brze poslove dok se tvoja financijska situacija ne popravi.<br><br>Iskreno tvoj<br>Menadžer za odnose s klijentima<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "Banka" #+ Message sender
+		subject: "Vaša osobna prikolica je prodana" #+ Message subject
+		body: "Dear Customer,<br><br>We regret to inform you that we had to sell your personal trailer - $TRAILER_NAME$ - for $MONEY$. Unfortunately, you have had a long-standing debt with us and had no other means to cover it. Sadly, there was no other way but to take these extreme measures. We suggest you drive quick jobs until your financial situation gets better.<br><br>Sincerely,<br>Your account manager<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "Banka" #+ Message sender
+		subject: "Tvoja imovina je prodana" #+ Message subject
+		body: "Dragi Klijentu,<br><br>Zbog dugotrajnog duga na računu morali smo zaplijeniti i prodati tvoju imovinu. Prikupljena sredstva u iznosu od <br>$MONEY$ iskorištena su za namirenje tvojih obveza. Konkretno, ovo su stvari koje su zaplijenjene:<br><br>$ITEM_LIST$<br>Žao nam je što je ova situacija otišla ovako daleko, te se nadamo da posljedice neće neće ozbiljno oštetiti tvoje daljnje pothvate.<br><br>Uz najbolje želje,<br>Tvoj Menadžer za odnose s klijentima<br>Banka" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "Prodavač kamiona - $CITY$" #+ Message sender
+		subject: "Potpuno novi $BRAND$ kamioni na prodaju!" #+ Message subject
+		body: "Dragi gospodine/gospođo,<br><br>Mi smo ovlašteni prodavači kamiona tvrtke $BRAND$. Nudimo širok izbor različitih konfiguracija, a također možemo i izvršiti prilagodbu kamiona vašim posebnim zahtjevima. Molimo <link url=truck.dealer_map color=@@clr_link@@>posjetite našu izložbenu prostoriju u gradu $CITY$</link>. Kamion o kojem ste uvijek maštali možda vas čeka baš iza naših vrata.<br><br>S poštovanjem,<br>Vaš prodavač kamiona tvrtke $BRAND$" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$COMPANY$, $CITY$" #+ Message sender
+		subject: "Tražimo vozače s vlastitom opremom" #+ Message subject
+		body: "Svima kojih bi se moglo ticati,<br><br>Tražimo vješte vozače s vlastitim kamionima za veći broj dostava. Nudimo konkurentne naknade do $MONEY$ po dostavi. Ako imaš vlastito vozilo, molimo obrati nam se izravno na našem doku u $CITY$u.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "Vozač $NAME$" #+ Message sender
+		subject: "Trebam kamion kako bih mogao raditi" #+ Message subject
+		body: "Pozdrav šefe,<br><br>Ne znam da li ste primijetili, no sjedim u $CITY$ bez posla sada već $DAYS$. To me poprilično živcira jer trebam novce za plaćanje računa, a ne mogu zaraditi ništa ako ovdje tratim vrijeme bez ikakva posla na vidiku. Molim vas, nabavite mi kamion u sljedeća $DAYS2$ kako bih počeo s radom jer ću vas inače morati napustiti.<br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "Vozačica $NAME$" #+ Message sender - written by female
+		subject: "Trebam kamion kako bih mogao raditi" #+ Message subject - written by female
+		body: "Pozdrav šefe,<br><br>Ne znam da li ste primijetili, no sjedim u $CITY$ bez posla sada već $DAYS$. To me poprilično živcira jer trebam novce za plaćanje računa, a ne mogu zaraditi ništa ako ovdje tratim vrijeme bez ikakva posla na vidiku. Molim vas, nabavite mi kamion u sljedeća $DAYS2$ kako bih počeo s radom jer ću vas inače morati napustiti.<br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "Vozač $NAME$" #+ Message sender
+		subject: "Zbogom" #+ Message subject
+		body: "Bok,<br><br>Ne mogu si priuštiti daljnje traćenje svojeg vremena. Ne mogu raditi bez kamiona i ne želim više čekati. Propuštam dobre prilike, i zato napuštam tvoju tvrtku kako bih svoju sreću okušao negdje drugdje. Svu moju opremu možeš pronaći u mojoj bivšoj garaži u gradu $CITY$.<br><br>Zbogom,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "Vozačica $NAME$" #+ Message sender - written by female
+		subject: "Zbogom" #+ Message subject - written by female
+		body: "Bok,<br><br>Ne mogu si priuštiti daljnje traćenje svojeg vremena. Ne mogu raditi bez kamiona i ne želim više čekati. Propuštam dobre prilike i zato napuštam tvoju tvrtku kako bih svoju sreću okušao negdje drugdje. Svu moju opremu možeš pronaći u mojoj bivšoj garaži u gradu $CITY$.<br><br>Zbogom,<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "Vozač $NAME$" #+ Message sender
+		subject: "Odlazim" #+ Message subject
+		body: "Pozdrav šefe,<br><br>Garaža u gradu $CITY$, gdje sam odsjeo, se zatvara. Došli su neki ljudi iz banke i rekli da se moram iseliti. Čini se da ova tvrtka u zadnje vrijeme ne posluje dobro. Zbog toga sam odlučio otići. Ionako ovdje od mene nema puno koristi - bez kamiona i toga svega. Pokušat ću negdje drugdje.<br><br>Zbogom i bez ljutnje,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "Vozačica $NAME$" #+ Message sender - written by female
+		subject: "Odlazim" #+ Message subject - written by female
+		body: "Pozdrav šefe,<br><br>Garaža u gradu $CITY$, gdje sam odsjeo, se zatvara. Došli su neki ljudi iz banke i rekli da se moram iseliti. Čini se da ova tvrtka u zadnje vrijeme ne posluje dobro. Zbog toga sam odlučio otići. Ionako ovdje od mene nema puno koristi - bez kamiona i svega. Pokušat ću negdje drugdje.<br><br>Zbogom i bez ljutnje,<br>$NAME$" #+ Message body - written by female
+	}
+	
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "Dispečer" #+ Message sender
+		subject: "Posebni prijevozi" #+ Message subject
+		body: "Hello boss.<br><br>I have something special for you. Thanks to our connections, we're now able to get to a real challenge. Some special, extra large and heavy cargoes need to be hauled by a true professional. It won't be easy and it'll require some skills, patience, cooperation with escorting vehicles and extra care, but I guess you have it all, right? Also bigger risk comes with a bigger profit.<br><br>If you're interested, you can visit these cities: $CITIES$." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "Dispečer" #+ Message sender
+		subject: "Novi izvanredni prijevozi" #+ Message subject
+		body: "Pozdrav šefe.<br><br>Više tvrtki želi angažirati tvoje profesionalne vještine za volanom za neke posebne isporuke. Baš kao i prošli put - neće biti lako i trebat će neke vještine, strpljenja, suradnje s pratećim vozilima i dodatnu pažnju, ali pretpostavljam da sve to još imate, zar ne? I ne zaboravite - za te terete je još veća dobit.<br><br>Uz trenutno dostupne izvanredne prijevoze na: $OLD_CITIES$ <br><br> Sada možete preuzeti i <color value=@@clr_sel@@>nove<color value=@@clr_txt@@> na: <br><br>$CITIES$." #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "Agencija za nekretnine" #+ Message sender
+		subject: "Želite li proširiti svoju tvrtku?" #+ Message subject
+		body: "Poštovani,<br><br>Želimo vam čestitati na napretku vaše tvrtke. Impresionirani smo uspjehom vašeg poslovanja i želimo vam ponuditi novi način da pomognete vašoj tvrtki da se dalje širi. Od danas možete koristiti naše usluge za kupnju dodatnih nekretnina gotovo trenutno! Za više informacija, molimo <link url=screen.real_estate color=@@clr_link@@>posjetite sučelje za kupnju garaža.</link>.<br><br>S poštovanjem,<br>menadžer za odnose s javnošću<br>Agencija za nekretnine" #+ Message body
+	}
+
+#@}
+}

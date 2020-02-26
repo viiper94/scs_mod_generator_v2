@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "System" #+ Message sender
+		subject: "Test" #+ Message subject
+		body: "Hei!<br><br> Dette er en test melding fra din administrator ;-)<br><br> Snakkes!" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "Bank" #+ Message sender
+		subject: "Trenger du penger? Vi kan hjelpe!" #+ Message subject
+		body: "Kjære kunde,<br><br>Det kunne kanskje være av interesse for Dem at vi tilbyr gunstige lån til nye bedrifter. Trenger De finansiering for å få firmaet Deres opp og gå? Vi kan hjelpe! <link url=screen.bank color=@@clr_link@@>Besøk din lokale bankfilial</link> for mer informasjon.<br><br>Med vennlig hilsen,<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "Bank" #+ Message sender
+		subject: "Vi kan hjelp deg å utvide" #+ Message subject
+		body: "Kjære kunde<br><br>Vi kan ikke unngå å legge merke til at fortjenestene dine er jevne, og vi vil gjerne hjelpe til med å utvikle potensialet videre. Vi har derfor satt opp din kredittgrense til $MONEY$. Du kan ta ut av den tilgjengelige summen på <link url=screen.bank color=@@clr_link@@>din lokale bank</link>.<br><br>Med vennlig hilsen<br>Bankmann Pengesen<br>Salgsrepresentant, Euro Kredittbank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "Bank" #+ Message sender
+		subject: "Kontoen din er overtrukket" #+ Message subject
+		body: "Kjære kunde<br><br>Du har overtrukket din konto. Vi har sørget for en korttidskreditt uten ekstra kostnader for deg, slik at du får løst den akutte situasjonen. Vennligst betal ned kreditten så raskt som mulig.<br><br>Med vennlig hilsen<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "Bank" #+ Message sender
+		subject: "Kontoen din er overtrukket!" #+ Message subject
+		body: "Kjære kunde<br><br>Din banksaldo er negativ! Vennligst betal din gjeld innen $DAYS$, ellers blir vi nødt til å inndra dine eiendeler.<br><br>Med vennlig hilsen,<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "Bank" #+ Message sender
+		subject: "Siste advarsel!" #+ Message subject
+		body: "Kjære kunde<br><br>Dette er siste advarsel. Din saldo er overtrukket. Vennligst refunder manglende beløp innen i morgen. Om dette ikke blir gjort, vil vi konfiskere dine eiendeler for å dekke gjelden.<br><br>Med hilsen<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "Bank" #+ Message sender
+		subject: "Overtrekk ordnet" #+ Message subject
+		body: "Kjære kunde<br><br>Din utestående kreditt er nedbetalt. Om du skulle trenge våre tjenester i framtiden, hjelper vi gjerne.<br><br>Ha en fortsatt god dag<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "Bank" #+ Message sender
+		subject: "Trekkvognen din er solgt" #+ Message subject
+		body: "Kjære kunde<br><br>Vi må informere om at vi har sett oss nødt til å selge din trekkvogn, $TRUCK_NAME$, på tvangssalg for $MONEY$. Du har hatt langvarig utestående gjeld hos oss, og vi ser ikke at du kunne hatt noen annen mulighet til å dekke denne. Da var det desverre ingen vei utenom disse drastiske tiltakene. Vi foreslår at du jobber som ansatt arbeidstaker frem til din økonomiske situasjon bedrer seg.<br><br>Med hilsen<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "Bank" #+ Message sender
+		subject: "Your personal trailer has been sold" #+ Message subject
+		body: "Kjære kunde<br><br>Vi må informere om at vi har sett oss nødt til å selge din tilhenger, $TRAILER_NAME$, på tvangssalg for $MONEY$. Du har hatt langvarig utestående gjeld hos oss, og vi ser ikke at du kunne hatt noen annen mulighet til å dekke denne. Da var det desverre ingen vei utenom disse drastiske tiltakene. Vi foreslår at du jobber som ansatt arbeidstaker frem til din økonomiske situasjon bedrer seg.<br><br>Med hilsen<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "Bank" #+ Message sender
+		subject: "Dine eiendeler er solgt" #+ Message subject
+		body: "Kjære kunde<br><br>Grunnet langvarig ubetalt gjeld hos deg har vi sett oss nødt til å inndra og selge dine eiendeler. De frigjorte midlene på totalt <br>$MONEY$ er blitt brukt til å innløse din gjeld. Følgende eiendeler er blitt tvangssolgt:<br><br>$ITEM_LIST$<br>Vi er lei for at det har gått så langt, og håper dette tiltaket ikke vil ha altfor store konsekvenser for din bedrift.<br><br>Lykke til videre<br>Ståle Pengesen<br>Banken" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "Lastebilforhandler - $CITY$" #+ Message sender
+		subject: "Fabrikknye $BRAND$ trekkvogner til salgs!" #+ Message subject
+		body: "Kjære kunde<br><br>Vi er en sertifisert forhandler av $BRAND$ lastebiler. Vi kan tilby et bredt utvalg ulike spesifikasjoner, og kan også bygge opp en bil etter kundens ønske. <link url=truck.dealer_map color=@@clr_link@@>Besøk gjerne våre lokaler i $CITY$</link>. Bilen du alltid har drømt om står kanskje parkert i vårt utstillingsvindu?<br><br>Med vennlig hilsen<br>Din forhandler av $BRAND$ lastebiler" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$SELSKAP$, $BY$" #+ Message sender
+		subject: "Sjåfører med eget materiell søkes" #+ Message subject
+		body: "Tilbud om jobb<br><br>Vi er på utkikk etter dyktige sjåfører med egen trekkvogn for et stort antall oppdrag. Vi tilbyr konkurransedyktige priser på opptil $MONEY$ per oppdrag. Om du er i besittelse av egen trekkvogn, ta gjerne kontakt direkte med vår terminal i $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "Driver $NAME$" #+ Message sender
+		subject: "Jeg trenger en trekkvogn for å jobbe" #+ Message subject
+		body: "Hei, sjef<br><br>Jeg vet ikke om du er klar over det, men jeg har nå sittet i $CITY$ uten oppdrag i $DAYS$. Dette er ikke holdbart, jeg må ha penger til å betale regninger, og jeg tjener ingenting på å sitte her og dingle med beina. Vennligst skaff meg en trekkvogn innen $DAYS2$, slik at jeg kan begynne å jobbe. Hvis ikke ser jeg ingen andre muligheter enn å si opp.<br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "Driver $NAME$" #+ Message sender - written by female
+		subject: "Jeg trenger en trekkvogn for å jobbe" #+ Message subject - written by female
+		body: "Hei, sjef<br><br>Jeg vet ikke om du er klar over det, men jeg har nå sittet i $CITY$ uten oppdrag i $DAYS$. Dette er ikke holdbart, jeg må ha penger til å betale regninger, og jeg tjener ingenting på å sitte her og dingle med beina. Vennligst skaff meg en trekkvogn innen $DAYS2$, slik at jeg kan begynne å jobbe. Hvis ikke ser jeg ingen andre muligheter enn å si opp.<br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "Driver $NAME$" #+ Message sender
+		subject: "Farvel" #+ Message subject
+		body: "Hei<br><br>Jeg har ikke råd til å kaste vekk mer tid her. Uten trekkvogn kan jeg ikke jobbe, og jeg er lei av å vente. Jeg har gått glipp av gode muligheter, og sier nå opp min stilling hos deg for å prøve lykken andre steder. Du finner det jeg har fått utlevert av utstyr i lokalene i $CITY$, der jeg var stasjonert.<br><br>Farvel!<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "Driver $NAME$" #+ Message sender - written by female
+		subject: "Farvel" #+ Message subject - written by female
+		body: "Hei<br><br>Jeg har ikke råd til å kaste vekk mer tid her. Uten trekkvogn kan jeg ikke jobbe, og jeg er lei av å vente. Jeg har gått glipp av gode muligheter, og sier nå opp min stilling hos deg for å prøve lykken andre steder. Du finner det jeg har fått utlevert av utstyr i lokalene i $CITY$, der jeg var stasjonert.<br><br>Farvel!<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "Sjåfør $NAME$" #+ Message sender
+		subject: "Jeg slutter" #+ Message subject
+		body: "Hei, sjef<br><br>Våre lokaler i $CITY$, der jeg holder til, blir stengt av. Folk fra banken dukket opp og sa at jeg måtte flytte ut. Jeg tolker dette som at firmaet sliter litt for tiden, så jeg har bestemt meg for å si opp min stilling. Jeg gjør ikke mye nytte for meg her uten bil eller noe likevel. Jeg vil prøve lykken andre steder.<br><br>Takk for tiden hos deg, lykke til videre<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "Driver $NAME$" #+ Message sender - written by female
+		subject: "Jeg slutter" #+ Message subject - written by female
+		body: "Hei, sjef<br><br>Våre lokaler i $CITY$, der jeg holder til, blir stengt av. Folk fra banken dukket opp og sa at jeg måtte flytte ut. Jeg tolker dette som at firmaet sliter litt for tiden, så jeg har bestemt meg for å si opp min stilling. Jeg gjør ikke mye nytte for meg her uten bil eller noe likevel. Jeg vil prøve lykken andre steder.<br><br>Takk for tiden hos deg, lykke til videre<br>$NAME$" #+ Message body - written by female
+	}
+	
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "Speditør" #+ Message sender
+		subject: "Special Transports" #+ Message subject
+		body: "Hello boss.<br><br>I have something special for you. Thanks to our connections, we're now able to get to a real challenge. Some special, extra large and heavy cargoes need to be hauled by a true professional. It won't be easy and it'll require some skills, patience, cooperation with escorting vehicles and extra care, but I guess you have it all, right? Also bigger risk comes with a bigger profit.<br><br>If you're interested, you can visit these cities: $CITIES$." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "Speditør" #+ Message sender
+		subject: "New Special Transports" #+ Message subject
+		body: "Hi boss.<br><br>More companies would like to hire your professional skills behind the wheel for some special deliveries. Just as last time - it won't be easy and it'll require some skills, patience, cooperation with escorting vehicles and extra care, but I guess you still have it all, am I right? And don't forget - there's still bigger profit for these cargoes.<br><br>Along with the currently available Special Transport jobs at: $OLD_CITIES$  <br><br> You can now also take <color value=@@clr_sel@@>new ones<color value=@@clr_txt@@> at: <br><br>$CITIES$." #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "Real Estate Agency" #+ Message sender
+		subject: "Are you looking to expanding your company?" #+ Message subject
+		body: "Dear Sir/Madam,<br><br>We would like to congratulate you on the progress of your company. We are impressed by the success of your business and we would like to offer you a new way to help your company expand further. From now on, you can use our services to purchase additional properties almost instantly! For more information, please <link url=screen.real_estate color=@@clr_link@@>visit Garage Purchase interface.</link>.<br><br>Sincerely,<br>Relations Manager<br>Real Estate Agency" #+ Message body
+	}
+
+#@}
+}

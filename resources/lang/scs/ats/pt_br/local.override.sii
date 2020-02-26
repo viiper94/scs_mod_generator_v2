@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Luzes da Cabine"
+
+	key[]: "cabdefl"
+	val[]: "Defletores da Cabine"
+
+	key[]: "deflector"
+	val[]: "Defletor de Insetos"
+
+	key[]: "filters"
+	val[]: "Filtros de Ar"
+
+	key[]: "f_banner"
+	val[]: "Faixa Frontal"
+
+	key[]: "flag_f_l"
+	val[]: "Bandeiras Frontais"
+
+	key[]: "flag_f_r"
+	val[]: "Bandeiras Frontais"
+
+	key[]: "flag_r_l"
+	val[]: "Bandeiras Traseiras"
+
+	key[]: "flag_r_r"
+	val[]: "Bandeiras Traseiras"
+
+	key[]: "fl_mirror"
+	val[]: "Retrovisor do Capô"
+
+	key[]: "fr_mirror"
+	val[]: "Retrovisor do Capô"
+
+	key[]: "grill"
+	val[]: "Grade"
+
+	key[]: "headache_r"
+	val[]: "Rack Protetor de Cabine"
+
+	key[]: "horns"
+	val[]: "Buzinas"
+
+	key[]: "hood"
+	val[]: "Capô"
+
+	key[]: "lghfender"
+	val[]: "Protetores dos Para-lamas"
+
+	key[]: "mudflaps"
+	val[]: "Para-Barro"
+
+	key[]: "mudguard"
+	val[]: "Para-lamas"
+
+	key[]: "sideflares"
+	val[]: "Painéis da Cabine"
+
+	key[]: "sideskrt_bar"
+	val[]: "Barras da Saia Lateral"
+
+	key[]: "topflares"
+	val[]: "Luzes do Teto"
+
+	key[]: "wing"
+	val[]: "Aerofólio"
+
+	key[]: "chainsaw_toy"
+	val[]: "Motoserra de Brinquedo"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Coloque suas música na pasta <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>em <color value=@@clr_sel@@>Meus Documentos <color value=@@clr_txt@@>e você vai vê-las aqui."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Edite <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>na pasta <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>em <color value=@@clr_sel@@>Meus Documentos <color value=@@clr_txt@@>para ouvir a sua rádio online favorita no jogo!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Por favor, consulte <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>na pasta <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>em  <color value=@@clr_sel@@>Meus Documentos <color value=@@clr_txt@@>para saber como adicionar suas músicas e streams de rádio."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Bem-vindo ao American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Carga Perigosa"
+
+	key[]: "mechanical"
+	val[]: "Economia de Combustível"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Perigosa"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Treinamento de Transporte HazMat"
+
+	key[]: "skill_adr_info"
+	val[]: "O transporte de mercadorias perigosas exige profissionais bem treinados. Use sua experiência suada para adquirir os seguintes certificados U.S. DOT HazMat e aumente substancialmente o seu rendimento:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Economia de Combustível"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Aprendendo várias técnicas de economizar combustível te ajudará a diminuir o consumo. Particularmente:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Bônus de entrega HazMat"
+
+	key[]: "adr_class"
+	val[]: "Classe de Perigo"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Motor de Avião"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Trator de Esteiras"
+
+	key[]: "cn_boat"
+	val[]: "Barco"
+
+	key[]: "cn_bottles"
+	val[]: "Garrafas Vazias"
+
+	key[]: "cn_butter"
+	val[]: "Manteiga"
+
+	key[]: "cn_cable"
+	val[]: "Cabos"
+
+	key[]: "cn_cable_reel"
+	val[]: "Rolo de Cabo"
+
+	key[]: "cn_colors"
+	val[]: "Tinta"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Tubos de Concreto"
+
+	key[]: "cn_const_houses"
+	val[]: "Escritórios de Construção"
+
+	key[]: "cn_crude_oil"
+	val[]: "Petróleo"
+
+	key[]: "cn_curtains"
+	val[]: "Cortinas"
+
+	key[]: "cn_dryfruit"
+	val[]: "Frutas Secas"
+
+	key[]: "cn_forwarder"
+	val[]: "Forwarder"
+
+	key[]: "cn_frac_tank"
+	val[]: "Tanque Reservatório"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Frutas Congeladas"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Vegetais Congelados"
+
+	key[]: "cn_fruits"
+	val[]: "Frutas"
+
+	key[]: "cn_grain"
+	val[]: "Grãos"
+
+	key[]: "cn_harvester"
+	val[]: "Colheitadeira"
+
+	key[]: "cn_hay"
+	val[]: "Feno"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Casa Pré-moldada"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Caminhões Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Carregadeira de Garra Articulada"
+
+	key[]: "cn_lift_truck"
+	val[]: "Empilhadeira de Containers"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Chassis de Empilhadeira"
+
+	key[]: "cn_log_harvester"
+	val[]: "Harvester"
+
+	key[]: "cn_log_loader"
+	val[]: "Carregador de Troncos"
+
+	key[]: "cn_log_stacker"
+	val[]: "Empilhador de Troncos"
+
+	key[]: "cn_lye"
+	val[]: "Detergente"
+
+	key[]: "cn_mbt"
+	val[]: "Barreira Móvel"
+
+	key[]: "cn_meat"
+	val[]: "Carne"
+
+	key[]: "cn_milling_machine"
+	val[]: "Moedor de Asfalto"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Guindaste para Todo Terreno"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Bóia de Amarração"
+
+	key[]: "cn_mortar"
+	val[]: "Argamassa"
+
+	key[]: "cn_mulcher"
+	val[]: "Carregadeira para Desmatamento"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Ração Animal em Pellets"
+
+	key[]: "cn_plows"
+	val[]: "Arados"
+
+	key[]: "cn_power_generator"
+	val[]: "Gerador de Força"
+
+	key[]: "cn_rawmilk"
+	val[]: "Leite Cru"
+
+	key[]: "cn_salt"
+	val[]: "Sal"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Carros Sucateados"
+
+	key[]: "cn_scraper"
+	val[]: "Escrêiper"
+
+	key[]: "cn_stumper"
+	val[]: "Removedor de Troncos"
+
+	key[]: "cn_transformer"
+	val[]: "Transformador"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Triturador de Troncos"
+
+	key[]: "cn_vegetable"
+	val[]: "Vegetais"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Casa Móvel"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Helicóptero de Transporte"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Tanque Reservatório Grande"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Caixa de Carga para Mineração"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Chassis de Caminhão de Mineração"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Máquina de Ar Condicionado"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Construção Grande"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Reboque Tanque para Ácido"
+
+	key[]: "tn_acid_long"
+	val[]: "Reboque Tanque para Ácido Longo"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Reboque de Fundo Basculante"
+
+	key[]: "tn_car"
+	val[]: "Cegonha"
+
+	key[]: "tn_cement"
+	val[]: "Reboque de Cimento a Granel"
+
+	key[]: "tn_chemical"
+	val[]: "Reboque Tanque Químico"
+
+	key[]: "tn_chemical_long"
+	val[]: "Reboque Tanque Químico Longo"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Reboque Granel a Seco"
+
+	key[]: "tn_dump"
+	val[]: "Reboque Basculante"
+
+	key[]: "tn_flatbed"
+	val[]: "Reboque Flatbed"
+
+	key[]: "tn_food_tank"
+	val[]: "Reboque Tanque para Alimentos"
+
+	key[]: "tn_frac_tank"
+	val[]: "Tanque Reservatório"
+
+	key[]: "tn_fuel"
+	val[]: "Reboque Tanque de Combustível"
+
+	key[]: "tn_fuel_long"
+	val[]: "Reboque Tanque de Combustível Longo"
+
+	key[]: "tn_gas"
+	val[]: "Reboque Tanque de Gás"
+
+	key[]: "tn_gas_long"
+	val[]: "Reboque Tanque de Gás Longo"
+
+	key[]: "tn_home_transporter"
+	val[]: "Transportador de Casas"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Carregadeira de Garra Articulada"
+
+	key[]: "tn_log"
+	val[]: "Reboque Florestal"
+
+	key[]: "tn_lowboy"
+	val[]: "Reboque Prancha Baixa"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Reboque para Barco com Plataforma Baixa"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Reboque Prancha Baixa 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Reboque Barreira Móvel"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Triturador de Troncos"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Classe de Perigo 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Classe de Perigo 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Classe de Perigo 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Classe de Perigo 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Classe de Perigo 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Classe de Perigo 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Classe de Perigo 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Cavalo de Batalha"
+	
+	key[]: "lvl_name3"
+	val[]: "Empresário"
+	
+	key[]: "lvl_name4"
+	val[]: "Profissional"
+	
+	key[]: "lvl_name6"
+	val[]: "18 Rodas de Habilidade"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Concessionária"
+	
+	key[]: "weblink_game"
+	val[]: "Site do American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator está tendo um problema e é incapaz de renderizar gráficos em seu computador (nenhum dispositivo gráfico válido foi encontrado).\nSugestões:\n\n1. Verifique se o seu computador e placa de vídeo atendem os requisitos mínimos de hardware.\n2. Atualize seu computador com a última versão do DirectX da Microsoft.\n3. Faça o download e instale os drivers mais recentes para sua placa de vídeo no site do seu fornecedor - os seus drivers gráficos estão provavelmente desatualizados.\n4. Tente alterar o método de renderização de OpenGL para DirectX ou vice-versa.\n5. Elimine arquivo de configuração 'config.cfg' em 'Documentos/'American Truck Simulator '. Ele pode ter sido corrompido.\nEste arquivo será automaticamente re-criado com os valores padrão válidos."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator está tendo um problema e não é capaz de renderizar gráficos em seu computador (nenhum dispositivo gráfico válido foi encontrado)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator não pode acessar o cliente Steam. Passos sugeridos:\n\n1. Verifique se o cliente Steam está em execução.\n2. Verifique se você possui a versão mais recente  do cliente Steam.\n3. Verifique se as atualizações automáticas estão ativadas e o jogo está atualizado para a versão mais recente."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Ativação bem sucedida.<br>Obrigado por adquirir uma cópia do American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Se você gostou da versão demonstrativa do American Truck Simulator, você pode comprar a versão completa no site <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - GERENCIADOR DE PERFIS" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Conteúdo do American Truck Simulator" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Silo Graneleiro"
+
+	key[]: "container"
+	val[]: "Plataforma para Container"
+
+	key[]: "curtainside"
+	val[]: "Lona Deslizante"
+
+	key[]: "chipvan"
+	val[]: "Reboque Granel"
+
+	key[]: "dryvan"
+	val[]: "Carga Seca"
+
+	key[]: "flatbed"
+	val[]: "Prancha"
+
+	key[]: "hopper"
+	val[]: "Graneleiro"
+
+	key[]: "insulated"
+	val[]: "Isolado"
+
+	key[]: "log"
+	val[]: "Tronco"
+
+	key[]: "refrigerated"
+	val[]: "Refrigerado"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Granel"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Material a Granel"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Material leve a Granel"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Grãos e Material a Granel"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Simples"
+
+	key[]: "double"
+	val[]: "Duplo"
+
+	key[]: "bdouble"
+	val[]: "Bi-Trem"
+
+	key[]: "rmdouble"
+	val[]: "Duplo M.R."
+
+	key[]: "tpdouble"
+	val[]: "Duplo T.P."
+
+	key[]: "triple"
+	val[]: "Triplo"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Simples"
+
+	key[]: "chain_staa_double"
+	val[]: "Duplo STAA"
+
+	key[]: "chain_b_double"
+	val[]: "Bi-Trem"
+
+	key[]: "chain_rm_double"
+	val[]: "Duplo das Montanhas Rochosas"
+
+	key[]: "chain_tp_double"
+	val[]: "Duplo Turnpike"
+
+	key[]: "chain_triple"
+	val[]: "Triplo"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "Duplo STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Duplo STAA 28 pés"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Duplo Pup, 4 Eixos"
+
+	key[]: "tr_b_double"
+	val[]: "Bi-Trem"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "Bi-Trem, 5 Eixos"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "Bi-Trem, 6 Eixos"
+
+	key[]: "tr_rm_double"
+	val[]: "Duplo das Montanhas Rochosas"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Duplo das Montanhas Rochosas 28 pés"
+
+	key[]: "tr_tp_double"
+	val[]: "Duplo Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Duplo Turnpike, 6 eixos"
+
+	key[]: "tr_single_28"
+	val[]: "28 pés"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 pés, 2 Eixos"
+
+	key[]: "tr_single_32"
+	val[]: "32 pés"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 pés, 2 Eixos"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 pés, 3 Eixos"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 pés, Extensível"
+
+	key[]: "tr_single_40"
+	val[]: "40 pés"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 pés, 3 Eixos"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 pés, Extensível"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 pés, Recuado"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 pés, Espaçado"
+
+	key[]: "tr_single_45"
+	val[]: "45 pés"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 pés, 3 Eixos"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 pés, 3 Eixos, Simples"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 pés, 3 Eixos, Direcional"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 pés, Avançado"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 pés, Recuado"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 pés, Deslizante, Avançado"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 pés, Deslizante, Recuado"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 pés, Espaçado"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 pés, 3 Eixos"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 pés, Avançado"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 pés, Recuado"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 pés, Deslizante, Avançado"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 pés, Deslizante, Recuado"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 pés, Espaçado"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 pés, 3 Eixos"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 pés, 3 Eixos, Simples"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 pés, 3 Eixos, Direcional"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 pés, Espaçado"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 pés, 3 Eixos"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 pés, 4 Eixos"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 pés, 4 Eixos, Espaçado"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 pés, 4 Eixos, Direcional"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 pés, Avançado"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 pés, Recuado"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 pés, Deslizante, Avançado"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 pés, Deslizante, Recuado"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 pés, Espaçado"
+
+	key[]: "tr_triple"
+	val[]: "Triplo"
+
+	key[]: "tr_triple_pup"
+	val[]: "Triplo 28 pés"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Conversor Dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Conversor Dolly, 2 Eixos"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly Van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Silo Graneleiro"
+
+	key[]: "bs_chipvan"
+	val[]: "Granel"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Granel, Chão Deslizante"
+
+	key[]: "bs_container"
+	val[]: "Plataforma para Contêiner"
+
+	key[]: "bs_curtain"
+	val[]: "Lona Deslizante"
+
+	key[]: "bs_dryvan"
+	val[]: "Carga Seca"
+
+	key[]: "bs_flatbed"
+	val[]: "Piso de Madeira"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Piso de Alumínio"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Reboque de Grãos"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Reboque de Grãos com Esteira"
+
+	key[]: "bs_insulated"
+	val[]: "Isolado"
+
+	key[]: "bs_log_4"
+	val[]: "Florestal 4 Fueiros"
+
+	key[]: "bs_log_6"
+	val[]: "Florestal 6 Fueiros"
+
+	key[]: "bs_reefer"
+	val[]: "Refrigerado"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Refrigerador"
+
+	key[]: "turbo_cooler"
+	val[]: "Refrigerador Turbo"
+
+	key[]: "chrome_cooler"
+	val[]: "Refrigerador Cromado"
+
+	key[]: "paint_wall"
+	val[]: "Parede Pintada"
+
+	key[]: "chrome_wall"
+	val[]: "Parede Cromada"
+
+	key[]: "alu_wall"
+	val[]: "Parede de Alumínio"
+
+	key[]: "steel_wall"
+	val[]: "Parede de Aço"
+
+	key[]: "light"
+	val[]: "Iluminação"
+
+	key[]: "light_bar"
+	val[]: "Barra de Luzes"
+
+	key[]: "log_cage"
+	val[]: "Gaiola de Troncos"
+
+	key[]: "log_wall"
+	val[]: "Antepara de Troncos"
+
+	key[]: "wind_deflector"
+	val[]: "Defletor de Vento"
+
+	key[]: "aero_sideskirt"
+	val[]: "Saia lateral Aerodinâmica"
+
+	key[]: "black_sideskirt"
+	val[]: "Saia lateral Preta"
+
+	key[]: "paint_sideskirt"
+	val[]: "Saia lateral Pintada"
+
+	key[]: "support_frame"
+	val[]: "Estrutura de Reforço"
+
+	key[]: "chrome_door"
+	val[]: "Porta Cromada"
+
+	key[]: "rollup_door"
+	val[]: "Porta de Rolo"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Porta de Rolo, Rampa Elevatória"
+
+	key[]: "standard_door"
+	val[]: "Porta Padrão"
+
+	key[]: "standard_door_aero"
+	val[]: "Porta Padrão, Defletor de Vento"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Califórnia"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Novo México"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grande Coulée"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Área de Descanso Pajarito"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Travel Center"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "São Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fé"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

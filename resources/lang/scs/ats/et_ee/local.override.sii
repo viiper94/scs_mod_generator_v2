@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Kabiinituled"
+
+	key[]: "cabdefl"
+	val[]: "Kabiini tuulesuunajad"
+
+	key[]: "deflector"
+	val[]: "Putukasuunaja"
+
+	key[]: "filters"
+	val[]: "Õhufiltrid"
+
+	key[]: "f_banner"
+	val[]: "Eesmine silt"
+
+	key[]: "flag_f_l"
+	val[]: "Eesmised Lipud"
+
+	key[]: "flag_f_r"
+	val[]: "Eesmised Lipud"
+
+	key[]: "flag_r_l"
+	val[]: "Tagumised lipud"
+
+	key[]: "flag_r_r"
+	val[]: "Tagumised lipud"
+
+	key[]: "fl_mirror"
+	val[]: "Eesmised peeglid"
+
+	key[]: "fr_mirror"
+	val[]: "Eesmised peeglid"
+
+	key[]: "grill"
+	val[]: "Võre"
+
+	key[]: "headache_r"
+	val[]: "Nänni kohad"
+
+	key[]: "horns"
+	val[]: "Pasunad"
+
+	key[]: "hood"
+	val[]: "Kapott"
+
+	key[]: "lghfender"
+	val[]: "Poritiivad"
+
+	key[]: "mudflaps"
+	val[]: "Porilapatsid"
+
+	key[]: "mudguard"
+	val[]: "Porilapakad"
+
+	key[]: "sideflares"
+	val[]: "Kabiini küljepaneelid"
+
+	key[]: "sideskrt_bar"
+	val[]: "Küljekatte rauad"
+
+	key[]: "topflares"
+	val[]: "Katusetuled"
+
+	key[]: "wing"
+	val[]: "Turbotiivad"
+
+	key[]: "chainsaw_toy"
+	val[]: "Mootorsae nipsasi"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Paiguta enda muusika kausta <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>, mis asub <color value=@@clr_sel@@>Minu Dokumendid <color value=@@clr_txt@@>kausta all."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Muuda faili <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>, mis asub <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>kaustas, <color value=@@clr_sel@@>Minu Dokumentide all, <color value=@@clr_txt@@>ja kuula oma lemmikraadiot üle interneti läbi mängu!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Palun lugege faili <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>, mis asub <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>kaustas, mis omakorda asub <color value=@@clr_sel@@>My Documents <color value=@@clr_txt@@> kaustas, et teada saada kuidas mängu lisada oma muusikat ja internetiraadioid."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Tere tulemast American Truck Simulator-te!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Ohtlik veos"
+
+	key[]: "mechanical"
+	val[]: "Kütuseökonoomsus"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Ohtlik"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Ohtlike vedude treening"
+
+	key[]: "skill_adr_info"
+	val[]: "Ohtlikke veoste vedu vajab hästitreenitud professionaale. Kasuta oma raskelt tulnud kogemusi, et saada kätte järgnevad U.S. DOT ohusertifikaadid ja suurenda oma sissetulekut:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Kütuseökonoomsus"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Õppides mitut kütusesäästlikku sõidunippi, aitab see sul kütust kokku hoida. Täpsemalt:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Ohtliku veose boonus"
+
+	key[]: "adr_class"
+	val[]: "Ohtlikkuse tase"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Lennukimootor"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Roomiktraktor"
+
+	key[]: "cn_boat"
+	val[]: "Paat"
+
+	key[]: "cn_bottles"
+	val[]: "Taara"
+
+	key[]: "cn_butter"
+	val[]: "Või"
+
+	key[]: "cn_cable"
+	val[]: "Kaablid"
+
+	key[]: "cn_cable_reel"
+	val[]: "Kaablirull"
+
+	key[]: "cn_colors"
+	val[]: "Värv"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Betoontorud"
+
+	key[]: "cn_const_houses"
+	val[]: "Soojakud"
+
+	key[]: "cn_crude_oil"
+	val[]: "Toornafta"
+
+	key[]: "cn_curtains"
+	val[]: "Kardinad"
+
+	key[]: "cn_dryfruit"
+	val[]: "Kuivad puuviljad"
+
+	key[]: "cn_forwarder"
+	val[]: "Forwarder"
+
+	key[]: "cn_frac_tank"
+	val[]: "Vedelikkonteiner"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Külmutatud puuviljad"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Külmutatud juurviljad"
+
+	key[]: "cn_fruits"
+	val[]: "Puuviljad"
+
+	key[]: "cn_grain"
+	val[]: "Teravili"
+
+	key[]: "cn_harvester"
+	val[]: "Kombain"
+
+	key[]: "cn_hay"
+	val[]: "Hein"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Majaosad"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth veokid"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Metsaveo veok"
+
+	key[]: "cn_lift_truck"
+	val[]: "Konteinerlift"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Tõstuki kere"
+
+	key[]: "cn_log_harvester"
+	val[]: "Harvester"
+
+	key[]: "cn_log_loader"
+	val[]: "Palgilaadija"
+
+	key[]: "cn_log_stacker"
+	val[]: "Palgitõstuk"
+
+	key[]: "cn_lye"
+	val[]: "Leelis"
+
+	key[]: "cn_mbt"
+	val[]: "Mobiilne tõkis"
+
+	key[]: "cn_meat"
+	val[]: "Liha"
+
+	key[]: "cn_milling_machine"
+	val[]: "Freesmasin"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Raske maastiku kraana"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Ankurduspoi"
+
+	key[]: "cn_mortar"
+	val[]: "Mört"
+
+	key[]: "cn_mulcher"
+	val[]: "Multšija"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Loomatoidu pelletid"
+
+	key[]: "cn_plows"
+	val[]: "Sahad"
+
+	key[]: "cn_power_generator"
+	val[]: "Generaator"
+
+	key[]: "cn_rawmilk"
+	val[]: "Toorpiim"
+
+	key[]: "cn_salt"
+	val[]: "Sool"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Romuautod"
+
+	key[]: "cn_scraper"
+	val[]: "Skreeper"
+
+	key[]: "cn_stumper"
+	val[]: "Kännujuurija"
+
+	key[]: "cn_transformer"
+	val[]: "Trafo"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Toruhöövel"
+
+	key[]: "cn_vegetable"
+	val[]: "Juurviljad"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Valmiselamu"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Transportkopter"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Suur mahuti"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Kaevandusveoki kere"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Kaevandusveoki šassii"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Õhukonditsioneer"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Suur ehitis"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Happetsistern"
+
+	key[]: "tn_acid_long"
+	val[]: "Pikk happetsistern"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Alumise luugiga haagis"
+
+	key[]: "tn_car"
+	val[]: "Autotransporter"
+
+	key[]: "tn_cement"
+	val[]: "Tsemendihaagis"
+
+	key[]: "tn_chemical"
+	val[]: "Keemiatsistern"
+
+	key[]: "tn_chemical_long"
+	val[]: "Pikk keemiatsistern"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Kuivlasti haagis"
+
+	key[]: "tn_dump"
+	val[]: "Kallurhaagis"
+
+	key[]: "tn_flatbed"
+	val[]: "Platvormhaagis"
+
+	key[]: "tn_food_tank"
+	val[]: "Toidutsistern haagis"
+
+	key[]: "tn_frac_tank"
+	val[]: "Vedelikkonteiner"
+
+	key[]: "tn_fuel"
+	val[]: "Kütusetsistern"
+
+	key[]: "tn_fuel_long"
+	val[]: "Kütusetsistern"
+
+	key[]: "tn_gas"
+	val[]: "Gaasitsistern"
+
+	key[]: "tn_gas_long"
+	val[]: "Gaasitsistern"
+
+	key[]: "tn_home_transporter"
+	val[]: "Majaveos"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Metalliekskavaator"
+
+	key[]: "tn_log"
+	val[]: "Palgitreiler"
+
+	key[]: "tn_lowboy"
+	val[]: "Madal treilerhaagis"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Madal paadihaagis"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Madal 55L treilerhaagis"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Mobiilne tõkistehaagis"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Toruhöövel"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Ohtlikkuse Tase 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Ohtlikkuse tase 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Ohtlikkuse tase 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Ohtlikkuse tase 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Ohtlikkuse tase 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Ohtlikkuse tase 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Ohtlikkuse tase 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Tööhobune"
+	
+	key[]: "lvl_name3"
+	val[]: "Ettevõtja"
+	
+	key[]: "lvl_name4"
+	val[]: "Professionaal"
+	
+	key[]: "lvl_name6"
+	val[]: "18 ratast oskusi"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Müügisalong"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator veebileht" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "American Truck Simulator Facebook" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "Mängul tekkis probleem ning ei suuda tekitada graafilist pilti teie arvutil (ei leitud vastavat graafikaseadet).\nSoovitavavad tegevused:\n\n1. Kontrolli, et arvuti ja videokaart vastavad mängu miinimumnõuetele.\n2. Uuenda oma arvutis Microsofti DirectX-i.\n3. Lae alla ja installi uusimad graafikadraiverid teie graafikakaardi looja veebilehelt - sinu kasutatavad draiverid võivad olla aegunud.\n4. Muuda pildi kuvamise režiim OpenGL-ilt DirectX-ile või vastupidi.\n5. Kustuta mängu konfiguratsioon, ehk 'config.cfg' mis asub 'Minu Dokumendid/American Truck Simulator' kaustas. See võib olla vigane. Kui olete ära kustutanud faili, siis ta tekib uuesti mängu käima pannes, aga algseadetega."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "Mängul on probleeme sinu arvutis graafilise pildi loomisega (ühtegi graafikaseadet ei leitud)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator ei saanud ligi Steami kliendile. Soovitatav teguviis: \n1. Kontrolli, kas Steam käib.\n2. Kontrolli, kas sul on uusim Steami klient.\n3. Kontrolli, kas mängul on automaatsed uuendused sisse lülitatud ja kas mäng on kõige uuem versioon."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Aktiveerimine õnnestus.<br>Täname, et ostsid koopia mängust American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Kui teile meeldis American Truck Simulator demo, siis palun ostke mängu täisversioon <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steamis</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - ALGUS" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator sisu" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Kuivsööt"
+
+	key[]: "container"
+	val[]: "Konteinerhaagis"
+
+	key[]: "curtainside"
+	val[]: "Liuglev present"
+
+	key[]: "chipvan"
+	val[]: "Hakkeveok"
+
+	key[]: "dryvan"
+	val[]: "Kuivlasti haagis"
+
+	key[]: "flatbed"
+	val[]: "Platvormhaagis"
+
+	key[]: "hopper"
+	val[]: "Põhjaluuk"
+
+	key[]: "insulated"
+	val[]: "Isoleeritud"
+
+	key[]: "log"
+	val[]: "Palk"
+
+	key[]: "refrigerated"
+	val[]: "Konditsioneeriga"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Kuivlast"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Kuivsööda materjal"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Kerge puistematerjal"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Vili ja puistematerjal"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Üksik"
+
+	key[]: "double"
+	val[]: "Topelt"
+
+	key[]: "bdouble"
+	val[]: "B-double"
+
+	key[]: "rmdouble"
+	val[]: "R.M. topelt"
+
+	key[]: "tpdouble"
+	val[]: "T.P. topelt"
+
+	key[]: "triple"
+	val[]: "Kolmene"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Üksik"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA topelt"
+
+	key[]: "chain_b_double"
+	val[]: "B-double"
+
+	key[]: "chain_rm_double"
+	val[]: "Rocky Mountain topelt"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike topelthaagis"
+
+	key[]: "chain_triple"
+	val[]: "Kolmene"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA topelt"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA topelthaagis"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA topeltkutsikas, 4 telge"
+
+	key[]: "tr_b_double"
+	val[]: "B-double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-double, 5 telge"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-double, 6 telge"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain topelthaagis"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Rocky Mountain kahene kutsikas"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike topelthaagis"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike topelt, 6 telge"
+
+	key[]: "tr_single_28"
+	val[]: "28 jalga"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 jalga, 2 telge"
+
+	key[]: "tr_single_32"
+	val[]: "32 jalga"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 jalga, 2 telge"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 jalga, 3 telge"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 jalga, pikendatav"
+
+	key[]: "tr_single_40"
+	val[]: "40 jalga"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 jalga, 3 telge"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 jalga, pikendatav"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 jalga, tagumine"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 jalga, hajutatud"
+
+	key[]: "tr_single_45"
+	val[]: "45 jalga"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 jalga, 3 telge"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 jalga, 3 telge, üksik"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 jalga, 3 telge, juhitav"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 jalga, eesmine"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 jalga, tagumine"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 jalga, libisev tandem, eesmine"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 jalga, libisev tandem, tagumine"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 jalga, hajutatud"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 jalga, 3 telge"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 jalga, eesmine"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 jalga, tagumine"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 jalga, libisev tandem, eesmine"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 jalga, libisev tandem, tagumine"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 jalga, hajutatud"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 jalga, 3 telge"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 jalga, 3 telge, üksik"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 jalga, 3 telge, juhitav"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 jalga, hajutatud"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 jalga, 3 telge"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 jalga, 4 telge"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 jalga, 4 telge, hajutatud"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 jalga, 4 telge, juhitav"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 jalga, eesmine"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 jalga, tagumine"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 jalga, libisev tandem, eesmine"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 jalga, libisev tandem, tagumine"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 jalga, hajutatud"
+
+	key[]: "tr_triple"
+	val[]: "Kolmene"
+
+	key[]: "tr_triple_pup"
+	val[]: "Kolmene kutsikas"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Ühendushaagis"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Konverterühendus, 2 telge"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Ühendus"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Kuivsööt"
+
+	key[]: "bs_chipvan"
+	val[]: "Hakkeveok"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Hakkeveok, liikuv põrand"
+
+	key[]: "bs_container"
+	val[]: "Konteinerhaagis"
+
+	key[]: "bs_curtain"
+	val[]: "Liuglev present"
+
+	key[]: "bs_dryvan"
+	val[]: "Kuivlast"
+
+	key[]: "bs_flatbed"
+	val[]: "Platvormhaagis"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Alumiinium platvormtreiler"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Viljahaagis"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Konveieriga viljahaagis"
+
+	key[]: "bs_insulated"
+	val[]: "Isoleeritud"
+
+	key[]: "bs_log_4"
+	val[]: "4 mastiga palgihaagis"
+
+	key[]: "bs_log_6"
+	val[]: "6 mastiga palgihaagis"
+
+	key[]: "bs_reefer"
+	val[]: "Jahuti"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Jahuti"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbojahuti"
+
+	key[]: "chrome_cooler"
+	val[]: "Kroomitud jahuti"
+
+	key[]: "paint_wall"
+	val[]: "Värvitud sein"
+
+	key[]: "chrome_wall"
+	val[]: "Kroomitud sein"
+
+	key[]: "alu_wall"
+	val[]: "Alumiiniumist sein"
+
+	key[]: "steel_wall"
+	val[]: "Terassein"
+
+	key[]: "light"
+	val[]: "Tuli"
+
+	key[]: "light_bar"
+	val[]: "Tuleriba"
+
+	key[]: "log_cage"
+	val[]: "Palgipuur"
+
+	key[]: "log_wall"
+	val[]: "Palgisein"
+
+	key[]: "wind_deflector"
+	val[]: "Tuulesuunaja"
+
+	key[]: "aero_sideskirt"
+	val[]: "Aero küljekate"
+
+	key[]: "black_sideskirt"
+	val[]: "Must küljekate"
+
+	key[]: "paint_sideskirt"
+	val[]: "Värvitud küljekate"
+
+	key[]: "support_frame"
+	val[]: "Tugiraam"
+
+	key[]: "chrome_door"
+	val[]: "Kroomitud uks"
+
+	key[]: "rollup_door"
+	val[]: "Tõstuks"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Tõstuks ja tõstuk"
+
+	key[]: "standard_door"
+	val[]: "Tavaline uks"
+
+	key[]: "standard_door_aero"
+	val[]: "Tavauks, tuulesuunaja"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "California"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "New Mexico"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito Rest Area"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Travel Center"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

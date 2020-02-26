@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Lumini Cabină"
+
+	key[]: "cabdefl"
+	val[]: "Spoilere Cabină"
+
+	key[]: "deflector"
+	val[]: "Spoiler Insecte"
+
+	key[]: "filters"
+	val[]: "Filtre de Aer"
+
+	key[]: "f_banner"
+	val[]: "Banner Faţă"
+
+	key[]: "flag_f_l"
+	val[]: "Steguleţe Faţă"
+
+	key[]: "flag_f_r"
+	val[]: "Steguleţe Faţă"
+
+	key[]: "flag_r_l"
+	val[]: "Steaguri posterioare"
+
+	key[]: "flag_r_r"
+	val[]: "Steaguri posterioare"
+
+	key[]: "fl_mirror"
+	val[]: "Oglinzi Frontale"
+
+	key[]: "fr_mirror"
+	val[]: "Oglinzi Frontale"
+
+	key[]: "grill"
+	val[]: "Grilă"
+
+	key[]: "headache_r"
+	val[]: "Grilaj Lunetă"
+
+	key[]: "horns"
+	val[]: "Claxoane"
+
+	key[]: "hood"
+	val[]: "Capotă"
+
+	key[]: "lghfender"
+	val[]: "Protecţii pentru Aripă"
+
+	key[]: "mudflaps"
+	val[]: "Apărătoare noroi din cauciuc"
+
+	key[]: "mudguard"
+	val[]: "Apărătoare noroi"
+
+	key[]: "sideflares"
+	val[]: "Lumini Praguri"
+
+	key[]: "sideskrt_bar"
+	val[]: "Bare pentru Praguri laterale"
+
+	key[]: "topflares"
+	val[]: "Lumini Acoperiş"
+
+	key[]: "wing"
+	val[]: "Aripă Turbo"
+
+	key[]: "chainsaw_toy"
+	val[]: "Drujbă de Jucărie"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Copiaţi fişierele audio în directorul <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>din <color value=@@clr_sel@@>My Documents <color value=@@clr_txt@@>pentru a le putea accesa aici."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Editaţi <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>în directorul <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>din <color value=@@clr_sel@@>My Documents <color value=@@clr_txt@@>pentru a asculta stream-urile radio preferate, în timp ce jucaţi!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Vă rugăm să studiaţi fişierul <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>în directorul <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>din directorul <color value=@@clr_sel@@>My Documents <color value=@@clr_txt@@>, pentru mai multe detalii legate de adăugarea propriilor melodii sau stream-uri radio."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Bun venit la American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Marfă Periculoasă"
+
+	key[]: "mechanical"
+	val[]: "Conducere Economică"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Periculos"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Pregătire Transport Substanţe Periculoase"
+
+	key[]: "skill_adr_info"
+	val[]: "Transportarea de mărfuri periculoase necesită profesionişti cu o înaltă pregătire. Utilizaţi-vă experienţa acumulată pentru obţinerea următoarelor certificate U.S. DOT HazMat, rotunjindu-vă astfel substanţial veniturile:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Conducere Economică"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Învăţarea diverselor tehnici de conducere economică vă va ajuta să reduceţi consumul de carburant. Mai exact:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Bonificaţie livrare Substanţe Periculoase"
+
+	key[]: "adr_class"
+	val[]: "Clasă Hazard"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Motor de Aeronavă"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Tractor Crawler"
+
+	key[]: "cn_boat"
+	val[]: "Ambarcaţiune"
+
+	key[]: "cn_bottles"
+	val[]: "Sticle Goale"
+
+	key[]: "cn_butter"
+	val[]: "Unt"
+
+	key[]: "cn_cable"
+	val[]: "Cabluri"
+
+	key[]: "cn_cable_reel"
+	val[]: "Rolă Cablu"
+
+	key[]: "cn_colors"
+	val[]: "Vopsea"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Tuburi Beton"
+
+	key[]: "cn_const_houses"
+	val[]: "Barăci"
+
+	key[]: "cn_crude_oil"
+	val[]: "Petrol Nerafinat"
+
+	key[]: "cn_curtains"
+	val[]: "Draperii"
+
+	key[]: "cn_dryfruit"
+	val[]: "Fructe Uscate"
+
+	key[]: "cn_forwarder"
+	val[]: "Transportor Forestier"
+
+	key[]: "cn_frac_tank"
+	val[]: "Rezervor pentru Fracturare"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Fructe Congelate"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Legume Congelate"
+
+	key[]: "cn_fruits"
+	val[]: "Fructe"
+
+	key[]: "cn_grain"
+	val[]: "Cereale"
+
+	key[]: "cn_harvester"
+	val[]: "Combină Agricolă"
+
+	key[]: "cn_hay"
+	val[]: "Fân"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Prefabricate locuinţă"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Camioane Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Încărcător cu Braţ Articulat"
+
+	key[]: "cn_lift_truck"
+	val[]: "Stivuitor Containere"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Şasiu Stivuitor Containere"
+
+	key[]: "cn_log_harvester"
+	val[]: "Utilaj Tăiere Buşteni"
+
+	key[]: "cn_log_loader"
+	val[]: "Încărcător de Buşteni"
+
+	key[]: "cn_log_stacker"
+	val[]: "Stivuitor Buşteni"
+
+	key[]: "cn_lye"
+	val[]: "Sodă caustică"
+
+	key[]: "cn_mbt"
+	val[]: "Barieră Mobilă"
+
+	key[]: "cn_meat"
+	val[]: "Carne"
+
+	key[]: "cn_milling_machine"
+	val[]: "Utilaj Decopertare"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Macara Off-Road"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Giamandură"
+
+	key[]: "cn_mortar"
+	val[]: "Mortar"
+
+	key[]: "cn_mulcher"
+	val[]: "Mulcer"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Mâncare Peletizată pentru Animale"
+
+	key[]: "cn_plows"
+	val[]: "Pluguri"
+
+	key[]: "cn_power_generator"
+	val[]: "Generator Electric"
+
+	key[]: "cn_rawmilk"
+	val[]: "Lapte"
+
+	key[]: "cn_salt"
+	val[]: "Sare"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Maşini concasate"
+
+	key[]: "cn_scraper"
+	val[]: "Răzuitor"
+
+	key[]: "cn_stumper"
+	val[]: "Utilaj Înlăturare Cioturi"
+
+	key[]: "cn_transformer"
+	val[]: "Transformator"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Tocător cu Tub"
+
+	key[]: "cn_vegetable"
+	val[]: "Legume"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Casă la Cheie"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Elicopter"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Rezervor Masiv"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Cupă buldozer"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Şasiu Camion Minier"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Instalaţie de Aer Condiţionat"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Grindă Masivă"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Cisternă Acizi"
+
+	key[]: "tn_acid_long"
+	val[]: "Cisternă Acizi Lungă"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Remorcă cu benă basculabilă"
+
+	key[]: "tn_car"
+	val[]: "Transportor Autovehicule"
+
+	key[]: "tn_cement"
+	val[]: "Remorcă Ciment Pulberi"
+
+	key[]: "tn_chemical"
+	val[]: "Cisternă Substanţe Chimice"
+
+	key[]: "tn_chemical_long"
+	val[]: "Cisternă Substanţe Chimice Lungă"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Remorcă Mărfuri vrac Uscate"
+
+	key[]: "tn_dump"
+	val[]: "Remorcă Basculabilă"
+
+	key[]: "tn_flatbed"
+	val[]: "Remorcă tip Platformă"
+
+	key[]: "tn_food_tank"
+	val[]: "Cisternă Produse Alimentare"
+
+	key[]: "tn_frac_tank"
+	val[]: "Rezervor pentru Fracturare"
+
+	key[]: "tn_fuel"
+	val[]: "Cisternă Combustibil"
+
+	key[]: "tn_fuel_long"
+	val[]: "Cisternă Combustibil Lungă"
+
+	key[]: "tn_gas"
+	val[]: "Cisternă Benzină"
+
+	key[]: "tn_gas_long"
+	val[]: "Cisternă Benzină Lungă"
+
+	key[]: "tn_home_transporter"
+	val[]: "Remorcă transportare casă"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Încărcător cu Braţ Articulat"
+
+	key[]: "tn_log"
+	val[]: "Remorcă forestieră"
+
+	key[]: "tn_lowboy"
+	val[]: "Remorcă Joasă"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Remorcă Joasă pentru Ambarcaţiuni"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Remorcă Joasă 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Remorcă pentru Bariera Mobilă"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Tocător cu Tub"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Clasa 1 Hazard"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Clasa 2 Hazard"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Clasa 3 Hazard"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Clasa 4 Hazard"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Clasa 5 Hazard"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Clasa 6 Hazard"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Clasa 8 Hazard"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Dedicat"
+	
+	key[]: "lvl_name3"
+	val[]: "Întreprinzător"
+	
+	key[]: "lvl_name4"
+	val[]: "Profesionist"
+	
+	key[]: "lvl_name6"
+	val[]: "18 Wheels of Skill"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Showroom"
+	
+	key[]: "weblink_game"
+	val[]: "Site-ul American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator nu este capabil să afişeze grafica pe acest computer (accelerator grafic compatibil inexistent).\nPaşi sugeraţi:\n\n1. Verificaţi satisfacerea cerinţelor tehnice minime pentru sistem şi placă video.\n2. Actualizaţi sistemul cu ultima versiune DirectX, furnizată de Microsoft.\n3. Descărcaţi de pe site-ul producătorului plăcii video şi instalaţi cele mai noi drivere - probabil cele curente sunt depăşite.\n4. Încercaţi metode diferite de afişare a graficii, din OpenGL în DirectX sau viceversa.\n5. Ştergeţi fişierul de configurare al jocului \\'config.cfg\\', din directorul \\'Documents\\' - \\'American Truck Simulator\\', acesta putând fi corupt.\n Acest fişier va fi recreeat automat, cu valori implicite valide, la următoarea pornire a jocului."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator a întâlnit o problemă şi nu poate afişa imagini pe acest calculator (accelerator grafic incompatibil)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator nu a reuşit conectarea la Steam. Vă sugerăm următoarele:\n1. Verificaţi funcţionarea Steam.\n2. Verificaţi dacă Steam este actualizat la cea mai nouă versiune.\n3. Asiguraţi-vă că jocul este actualizat la cea mai recentă versiune şi că actualizările automate sunt activate."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Activarea s-a finalizat cu succes.<br>Vă mulţumim pentru achiziţionarea acestei copii a American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Dacă v-a plăcut versiunea demo a American Truck Simulator, vă invităm să achiziţionaţi versiunea completă accesând adresa <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - SELECŢIE PROFIL" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Conţinut American Truck Simulator" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Remorcă Mărfuri Vrac"
+
+	key[]: "container"
+	val[]: "Transportator de Containere"
+
+	key[]: "curtainside"
+	val[]: "Trapă culisabilă"
+
+	key[]: "chipvan"
+	val[]: "Remorcă pentru Aşchii"
+
+	key[]: "dryvan"
+	val[]: "Remorcă Simplă"
+
+	key[]: "flatbed"
+	val[]: "Platformă"
+
+	key[]: "hopper"
+	val[]: "Buncăr"
+
+	key[]: "insulated"
+	val[]: "Izolat"
+
+	key[]: "log"
+	val[]: "Buştean"
+
+	key[]: "refrigerated"
+	val[]: "Refrigerată"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Vrac"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Materiale pentru furaje vrac"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Mărfuri vrac uşoare"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Cereale & Materiale Vrac"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Simplă"
+
+	key[]: "double"
+	val[]: "Dublu"
+
+	key[]: "bdouble"
+	val[]: "Dublă tip B"
+
+	key[]: "rmdouble"
+	val[]: "Dublă R.M"
+
+	key[]: "tpdouble"
+	val[]: "Dubla T.P."
+
+	key[]: "triple"
+	val[]: "Triplă"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Simplă"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA Dublă"
+
+	key[]: "chain_b_double"
+	val[]: "Dublă tip B"
+
+	key[]: "chain_rm_double"
+	val[]: "Dublă tip Rocky Mountain"
+
+	key[]: "chain_tp_double"
+	val[]: "Dubla tip Turnpike"
+
+	key[]: "chain_triple"
+	val[]: "Triplă"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA Dublă"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA Dublă 'Pup'"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 Axe"
+
+	key[]: "tr_b_double"
+	val[]: "Dublă tip B"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "Dublă tip B, 5 Axe"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "Dublă tip B, 6 Axe"
+
+	key[]: "tr_rm_double"
+	val[]: "Dublă tip Rocky Mountain"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Dublă tip Rocky Mountain"
+
+	key[]: "tr_tp_double"
+	val[]: "Remorcă dublă de tip Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Remorcă Dublă tip Turnpike, 6 Axe"
+
+	key[]: "tr_single_28"
+	val[]: "28 ft"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 picioare, 2 Axe"
+
+	key[]: "tr_single_32"
+	val[]: "32 picioare"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 picioare, 2 axe"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 picioare, 3 axe"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 picioare, Extensibilă"
+
+	key[]: "tr_single_40"
+	val[]: "40 picioare"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 ft, 3 Axe"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 picioare, Extensibilă"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 ft, spate"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 ft, extinsă"
+
+	key[]: "tr_single_45"
+	val[]: "45 picioare"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 ft, 3 Axe"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 picioare, 3 Axe, Simplă"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 picioare, 3 Axe, Viratoare"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 ft, frontală"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 ft, spate"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 picioare, Tandem Culisant, Faţă"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 picioare, Tandem Culisant, Spate"
+
+	key[]: "tr_single_45_spread"
+	val[]: "48 ft, extinsă"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 ft, 3 Axe"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 ft, frontal"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 ft, spate"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 picioare, Tandem Culisant, Faţă"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 picioare, Tandem Culisant, Spate"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 ft, extinsă"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 picioare, 3 Axe"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 picioare, 3 Axe, Simplă"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 picioare, 3 Axe, Viratoare"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 picioare, Extinsă"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 ft, 3 Axe"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 ft, 4 axe"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 ft, 4 axe, extinsă"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 ft, 4 axe, virabile"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 ft, frontal"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 ft, spate"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 picioare, Tandem Culisant, Faţă"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 picioare, Tandem Culisant, Spate"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 ft, extinsă"
+
+	key[]: "tr_triple"
+	val[]: "Triplă"
+
+	key[]: "tr_triple_pup"
+	val[]: "Triplă"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Cărucior convertor"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Convertor şasiu, 2 Axe"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Cărucior"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Remorcă cu Cală"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Remorcă Mărfuri Vrac"
+
+	key[]: "bs_chipvan"
+	val[]: "Remorcă pentru Aşchii"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Remorcă pentru Aşchii, Podea Mobilă"
+
+	key[]: "bs_container"
+	val[]: "Transportator de Containere"
+
+	key[]: "bs_curtain"
+	val[]: "Trapă culisabilă"
+
+	key[]: "bs_dryvan"
+	val[]: "Remorcă Simplă"
+
+	key[]: "bs_flatbed"
+	val[]: "Platformă"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Flatbed Aluminiu"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Remorcă Cereale"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Remorcă Cereale cu Bandă"
+
+	key[]: "bs_insulated"
+	val[]: "Izolată"
+
+	key[]: "bs_log_4"
+	val[]: "Remorcă forestieră, 4 Răcoanţe"
+
+	key[]: "bs_log_6"
+	val[]: "Remorcă forestieră, 6 Răcoanţe"
+
+	key[]: "bs_reefer"
+	val[]: "Refrigerată"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Răcitor"
+
+	key[]: "turbo_cooler"
+	val[]: "Frigider Turbo"
+
+	key[]: "chrome_cooler"
+	val[]: "Răcitor Cromat"
+
+	key[]: "paint_wall"
+	val[]: "Perete Vopsit"
+
+	key[]: "chrome_wall"
+	val[]: "Perete Cromat"
+
+	key[]: "alu_wall"
+	val[]: "Perete de Aluminiu"
+
+	key[]: "steel_wall"
+	val[]: "Perete Oţel"
+
+	key[]: "light"
+	val[]: "Lumină"
+
+	key[]: "light_bar"
+	val[]: "Bară lumini"
+
+	key[]: "log_cage"
+	val[]: "Cuşcă pentru Buşteni"
+
+	key[]: "log_wall"
+	val[]: "Perete pentru Buşteni"
+
+	key[]: "wind_deflector"
+	val[]: "Deflector de Vânt"
+
+	key[]: "aero_sideskirt"
+	val[]: "Panou Lateral Aero"
+
+	key[]: "black_sideskirt"
+	val[]: "Panou Lateral Negru"
+
+	key[]: "paint_sideskirt"
+	val[]: "Panou Lateral Vopsit"
+
+	key[]: "support_frame"
+	val[]: "Ramă Suport"
+
+	key[]: "chrome_door"
+	val[]: "Uşă Cromată"
+
+	key[]: "rollup_door"
+	val[]: "Uşă Pliabilă Vertical"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Uşă tip Rulou, Oblon Hidraulic"
+
+	key[]: "standard_door"
+	val[]: "Uşă Standard"
+
+	key[]: "standard_door_aero"
+	val[]: "Uşă Standard, Deflector de Vânt"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "California"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "New Mexico"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Zona de Odihnă Pajarito"
+
+	key[]: "pedro_travel_center"
+	val[]: "Centrul de Voiaj Pedro"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

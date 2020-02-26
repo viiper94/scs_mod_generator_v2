@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Φώτα Καμπίνας"
+
+	key[]: "cabdefl"
+	val[]: "Εκτροπείς καμπίνας"
+
+	key[]: "deflector"
+	val[]: "Προστατευτικό Εντόμων"
+
+	key[]: "filters"
+	val[]: "Φίλτρα Αέρα"
+
+	key[]: "f_banner"
+	val[]: "Μπροστινό Πανό "
+
+	key[]: "flag_f_l"
+	val[]: "Μπροστινές Σημαίες"
+
+	key[]: "flag_f_r"
+	val[]: "Μπροστινές Σημαίες"
+
+	key[]: "flag_r_l"
+	val[]: "Πίσω Σημαίες"
+
+	key[]: "flag_r_r"
+	val[]: "Πίσω Σημαίες"
+
+	key[]: "fl_mirror"
+	val[]: "Μπροστινοί Καθρέφτες"
+
+	key[]: "fr_mirror"
+	val[]: "Μπροστινοί Καθρέφτες"
+
+	key[]: "grill"
+	val[]: "Σχάρα"
+
+	key[]: "headache_r"
+	val[]: "Μπάρες Προστασίας Πίσω Παρμπρίζ"
+
+	key[]: "horns"
+	val[]: "Κόρνες"
+
+	key[]: "hood"
+	val[]: "Καπό"
+
+	key[]: "lghfender"
+	val[]: "Προστατευτικά Φτερών"
+
+	key[]: "mudflaps"
+	val[]: "Λασπωτήρες"
+
+	key[]: "mudguard"
+	val[]: "Λασπωτήρες"
+
+	key[]: "sideflares"
+	val[]: "Πάνελ Καμπίνας"
+
+	key[]: "sideskrt_bar"
+	val[]: "Μπάρες Μαρσπιέ"
+
+	key[]: "topflares"
+	val[]: "Φώτα Οροφής"
+
+	key[]: "wing"
+	val[]: "Πτερύγια Υπερσυμπιεστή"
+
+	key[]: "chainsaw_toy"
+	val[]: "Παιχνίδι Αλυσοπρίονο"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Βάλε τα τραγούδια σου στο <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>που βρίσκεται στον φάκελο <color value=@@clr_sel@@>Έγγραφα <color value=@@clr_txt@@>και μετά θα τα δεις εδώ."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Τροποποίησε το αρχείο <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>μέσα στον φάκελο <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>που βρίσκεται στον φάκελο <color value=@@clr_sel@@>Έγγραφα <color value=@@clr_txt@@>και άκουσε τον αγαπημένο σου διαδικτυακό ραδιοφωνικό σταθμό μέσα στο παιχνίδι!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Παρακαλώ, αναφερθείτε στο <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>μέσα στον φάκελο <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>που βρίσκεται στα <color value=@@clr_sel@@>Έγγραφα <color value=@@clr_txt@@>για να προσθέσετε τα δικά σας σας τραγούδια και ραδιοφωνικές μεταδόσεις. "
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Καλωσόρισες στο American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Επικίνδυνο φορτίο"
+
+	key[]: "mechanical"
+	val[]: "Οικονομία Καυσίμου"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Επικίνδυνο"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Εκπαίδευση Μεταφοράς Επικινδύνων"
+
+	key[]: "skill_adr_info"
+	val[]: "Η μεταφορά επικίνδυνων αγαθών απαιτεί καλά εκπαιδευμένους επαγγελματίες. Χρησιμοποίησε την πολύτιμη εμπειρία σου για να αποκτήσεις τα ακόλουθα πιστοποιητικά μεταφοράς επικίνδυνων φορτίων του Αμερικανικού Υπουργείου Μεταφορών και συνεπώς να αυξήσεις το εισόδημα σου:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Οικονομία Καυσίμου"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Η μάθηση διάφορων τεχνικών εξοικονόμησης καυσίμου θα σε βοηθήσει να ελαχιστοποιήσεις την κατανάλωση καυσίμων σου. Ιδιαίτερα: "
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Μπόνους παράδοσης επικίνδυνου φορτίου"
+
+	key[]: "adr_class"
+	val[]: "Κλάση κινδύνου "
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Κινητήρας Αεροσκάφους"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Ερπυστριοφόρος Ελκυστήρας "
+
+	key[]: "cn_boat"
+	val[]: "Σκάφος"
+
+	key[]: "cn_bottles"
+	val[]: "Άδεια Μπουκάλια"
+
+	key[]: "cn_butter"
+	val[]: "Βούτυρο"
+
+	key[]: "cn_cable"
+	val[]: "Καλώδια"
+
+	key[]: "cn_cable_reel"
+	val[]: "Καρούλι Καλωδίου"
+
+	key[]: "cn_colors"
+	val[]: "Βαφή"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Τσιμεντοσωλήνες"
+
+	key[]: "cn_const_houses"
+	val[]: "Προκατασκευασμένες Κατοικίες"
+
+	key[]: "cn_crude_oil"
+	val[]: "Αργό Πετρέλαιο"
+
+	key[]: "cn_curtains"
+	val[]: "Κουρτίνες"
+
+	key[]: "cn_dryfruit"
+	val[]: "Αποξηραμένα φρούτα"
+
+	key[]: "cn_forwarder"
+	val[]: "Μεταφορέας Ξυλείας"
+
+	key[]: "cn_frac_tank"
+	val[]: "Κοντέινερ Φορητής Αποθ/σης"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Κατεψυγμένα Φρούτα"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Κατεψυγμένα Λαχανικά"
+
+	key[]: "cn_fruits"
+	val[]: "Φρούτα"
+
+	key[]: "cn_grain"
+	val[]: "Σιτηρά"
+
+	key[]: "cn_harvester"
+	val[]: "Θεριστική Μηχανή"
+
+	key[]: "cn_hay"
+	val[]: "Σανό"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Προκατασκευασμένα Σπίτια"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Φορτηγά Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Γερανός Παπαγαλάκι"
+
+	key[]: "cn_lift_truck"
+	val[]: "Ανυψωτικό Όχημα"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Σασί Ανυψωτικού Οχήματος"
+
+	key[]: "cn_log_harvester"
+	val[]: "Μηχάνημα Υλοτόμησης"
+
+	key[]: "cn_log_loader"
+	val[]: "Φορτωτής Κορμών"
+
+	key[]: "cn_log_stacker"
+	val[]: "Μηχάνημα Στοιβάγματος Κορμών"
+
+	key[]: "cn_lye"
+	val[]: "Αλισίβα"
+
+	key[]: "cn_mbt"
+	val[]: "Κινητή Μπαριέρα"
+
+	key[]: "cn_meat"
+	val[]: "Κρέας"
+
+	key[]: "cn_milling_machine"
+	val[]: "Μηχάνημα απόξεσης"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Γερανός Παντός Εδάφους"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Σημαδούρα αγκυροβολίου"
+
+	key[]: "cn_mortar"
+	val[]: "Σοβάς"
+
+	key[]: "cn_mulcher"
+	val[]: "Ισοπεδωτής"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Ζωοτροφή σε Πέλλετ"
+
+	key[]: "cn_plows"
+	val[]: "Άροτρα"
+
+	key[]: "cn_power_generator"
+	val[]: "Γεννήτρια"
+
+	key[]: "cn_rawmilk"
+	val[]: "Νωπό γάλα"
+
+	key[]: "cn_salt"
+	val[]: "Αλάτι"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Αυτοκίνητα Παλιοσίδερα"
+
+	key[]: "cn_scraper"
+	val[]: "Αποξέστης"
+
+	key[]: "cn_stumper"
+	val[]: "Πρεμνοφάγος"
+
+	key[]: "cn_transformer"
+	val[]: "Μετασχηματιστής"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Θρυμματιστής"
+
+	key[]: "cn_vegetable"
+	val[]: "Λαχανικά"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Κατασκευή Έτοιμου Σπιτιού"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Μεταφορά Ελικοπτέρου"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Μεγάλη Δεξαμενή"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Φορτίο Αμαξώματος Ντάμπερ"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Φορτίο Σασί Ντάμπερ"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Μονάδα Κλιματιστικού"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Τεράστιες Κατασκευές"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Τρέιλερ Δεξαμενής Οξέος"
+
+	key[]: "tn_acid_long"
+	val[]: "Μακρύ Τρέιλερ Δεξαμενής Οξέος"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Ανοιγόμενο από κάτω Τρέιλερ"
+
+	key[]: "tn_car"
+	val[]: "Μεταφορά Αυτοκινήτων"
+
+	key[]: "tn_cement"
+	val[]: "Τρέιλερ Χύμα Τσιμέντου"
+
+	key[]: "tn_chemical"
+	val[]: "Βυτιοφόρο Χημικών"
+
+	key[]: "tn_chemical_long"
+	val[]: "Μακρύ Βυτιοφόρο Χημικών"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Σιλοφόρο Τρέιλερ"
+
+	key[]: "tn_dump"
+	val[]: "Ανατρεπόμενο τρέιλερ"
+
+	key[]: "tn_flatbed"
+	val[]: "Τρέιλερ Πλατφόρμα"
+
+	key[]: "tn_food_tank"
+	val[]: "Τρέιλερ Δεξαμενής Τροφίμων"
+
+	key[]: "tn_frac_tank"
+	val[]: "Κοντέινερ Φορητής Αποθ/σης"
+
+	key[]: "tn_fuel"
+	val[]: "Τρέιλερ Δεξαμενής Καυσίμων"
+
+	key[]: "tn_fuel_long"
+	val[]: "Μακρύ Τρέιλερ Καυσίμων"
+
+	key[]: "tn_gas"
+	val[]: "Τρέιλερ Δεξαμενής Αερίου"
+
+	key[]: "tn_gas_long"
+	val[]: "Μακρύ Τρέιλερ Δεξαμενής Αερίου"
+
+	key[]: "tn_home_transporter"
+	val[]: "Μεταφορά Κατοικιών"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Γερανός Παπαγαλάκι"
+
+	key[]: "tn_log"
+	val[]: "Τρέιλερ Κορμών"
+
+	key[]: "tn_lowboy"
+	val[]: "Χαμηλό Τρέιλερ"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Χαμηλό Τρέιλερ Σκάφους"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Χαμηλό Τρέιλερ 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Τρέιλερ Κινητής Μπαριέρας"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Θρυμματιστής"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Κλάση κινδύνου 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Κλάση κινδύνου 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Κλάση κινδύνου 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Κλάση κινδύνου 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Κλάση κινδύνου 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Κλάση κινδύνου 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Κλάση κινδύνου 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Θηρίο"
+	
+	key[]: "lvl_name3"
+	val[]: "Επιχειρηματίας"
+	
+	key[]: "lvl_name4"
+	val[]: "Επαγγελματίας"
+	
+	key[]: "lvl_name6"
+	val[]: "18 Ρόδες Ικανότητας"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Έκθεση"
+	
+	key[]: "weblink_game"
+	val[]: "Σελίδα American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "H σελίδα του American Truck Simulator στο Facebook" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "To American Truck Simulator έχει ένα πρόβλημα και είναι αδύνατον να επιστήσει τα γραφικά στον υπολογιστή σας (καμία έγκυρη συσκευή γραφικών δεν βρέθηκε).\nΠροτεινόμενα Βήματα:\n\n1. Ελέγξτε αν ο υπολογιστής σας και η κάρτα γραφικών συναντάει τις ελάχιστες απαιτήσεις υλικού.\n2. Ανανεώστε τον υπολογιστή σας στην τελευταία έκδοση του Microsoft DirectX.\n3. Κατεβάστε και εγκαταστήστε τους τελευταίους drivers για την κάρτα γραφικών σας από την ιστοσελίδα της εταιρίας - οι drivers πιθανώς έχουν λήξει.\n4. Προσπαθήστε να αλλάξετε την μέθοδο απόδοσης από το OpenGL στο DirectX ή αντίστροφα.\n5. Διαγράψτε το αρχείο για τις ρυθμίσεις του παιχνιδιού 'config.cfg' που βρίσκεται στα 'Έγγραφα' - 'American Truck Simulator'.Αυτό ίσως καταστράφηκε.\nΑυτό το αρχείο θα ξαναχτιστεί αυτόματα με τις σωστές προκαθορισμένες τιμές στην επόμενη έναρξη του παιχνιδιού."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "Το American Truck Simulator έχει ένα πρόβλημα και είναι αδύνατον να επιστήσει τα γραφικά στον υπολογιστή σας (καμία έγκυρη συσκευή γραφικών δεν βρέθηκε)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "Το American Truck Simulator δεν έχει πρόσβαση στον Steam client. Προτεινόμενα βήματα:\n1. Ελέγξτε ότι ο Steam client είναι σε λειτουργία.\n2. Ελέγξτε ότι έχετε μία ενημερωμένη έκδοση του Steam client\n3. Ελέγξτε ότι οι αυτόματες ενημερώσεις είναι ενεργοποιημένες και το παιχνίδι είναι ενημερωμένο στην τελευταία έκδοση."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Η ενεργοποίηση είναι επιτυχής.<br>Ευχαριστούμε που αγοράσατε ένα αντίτυπο του American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Εάν σας άρεσε η δοκιμαστική λειτουργία του American Truck Simulator, παρακαλούμε αγοράστε την πλήρη έκδοση από το <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - ΑΡΧΙΚΗ ΣΕΛΙΔΑ" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Περιεχόμενο American Truck Simulator" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Σιλοφόρο"
+
+	key[]: "container"
+	val[]: "Μεταφορέας Κοντέινερ"
+
+	key[]: "curtainside"
+	val[]: "Συρόμενος Μουσαμάς"
+
+	key[]: "chipvan"
+	val[]: "Chip Van"
+
+	key[]: "dryvan"
+	val[]: "Κόφα"
+
+	key[]: "flatbed"
+	val[]: "Πάτωμα"
+
+	key[]: "hopper"
+	val[]: "Σιλοφόρο με Χοάνη"
+
+	key[]: "insulated"
+	val[]: "Θερμομονωτικό "
+
+	key[]: "log"
+	val[]: "Κορμοί"
+
+	key[]: "refrigerated"
+	val[]: "Ψυγείο"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Χύμα"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Χύμα υλικό"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Ελαφρύ χύμα υλικό"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Χύμα υλικά & Σιτηρά"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Μονό"
+
+	key[]: "double"
+	val[]: "Διπλό"
+
+	key[]: "bdouble"
+	val[]: "Διπλό Επικαθήμενο"
+
+	key[]: "rmdouble"
+	val[]: "Διπλό R.M."
+
+	key[]: "tpdouble"
+	val[]: "Διπλό T.P."
+
+	key[]: "triple"
+	val[]: "Τριπλό"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Μονό"
+
+	key[]: "chain_staa_double"
+	val[]: "Διπλό STAA"
+
+	key[]: "chain_b_double"
+	val[]: "Διπλό Επικαθήμενο"
+
+	key[]: "chain_rm_double"
+	val[]: "Διπλό Rocky Mountain"
+
+	key[]: "chain_tp_double"
+	val[]: "Διπλό Turnpike"
+
+	key[]: "chain_triple"
+	val[]: "Τριπλό"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "Διπλό STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Διπλό STAA Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "Διπλό STAA Pup, 4 Άξονες"
+
+	key[]: "tr_b_double"
+	val[]: "Διπλό Επικαθήμενο"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "Διπλό Επικαθήμενο, 5 Άξονες"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "Διπλό Επικαθήμενο, 6 Άξονες"
+
+	key[]: "tr_rm_double"
+	val[]: "Διπλό Rocky Mountain"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Διπλό Rocky Mountain - pup"
+
+	key[]: "tr_tp_double"
+	val[]: "Διπλό Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Διπλό Turnpike, 6 Άξονες"
+
+	key[]: "tr_single_28"
+	val[]: "28 πόδια"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 πόδια, 2 Άξονες"
+
+	key[]: "tr_single_32"
+	val[]: "32 πόδια"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 πόδια, 2 Άξονες"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 πόδια, 3 Άξονες"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 πόδια, Επεκτατό"
+
+	key[]: "tr_single_40"
+	val[]: "40 πόδια"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 πόδια, 3 Άξονες"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 πόδια, Επεκτατό"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 πόδια, Πίσω"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 πόδια, Εν αποστάσει"
+
+	key[]: "tr_single_45"
+	val[]: "45 πόδια"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 πόδια, 3 Άξονες"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 πόδια, 3 Άξονες, Μονό"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 πόδια, 3 Άξονες, Κατευθυνόμενος"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 πόδια, Μπροστά"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 πόδια, Πίσω"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 πόδια, Ολισθαίνοντες, Μπροστά"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 πόδια, Ολισθαίνοντες, Πίσω"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 πόδια, Εν αποστάσει"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 πόδια, 3 Άξονες"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 πόδια, Μπροστά"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 πόδια, Πίσω"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 πόδια, Ολισθαίνοντες, Μπροστά"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 πόδια, Ολισθαίνοντες, Πίσω"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 πόδια, Εν αποστάσει"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 πόδια, 3 Άξονες"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 πόδια, 3 Άξονες, Μονό"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 πόδια, 3 Άξονες, Κατευθυνόμενος"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 πόδια, Εν αποστάσει"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 πόδια, 3 Άξονες"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 πόδια, 4 Άξονες"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 πόδια, 4 Άξονες, Εν αποστάσει"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 πόδια, 4 Άξονες, Κατευθυνόμενος"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 πόδια, Μπροστά"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 πόδια, Πίσω"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 πόδια, Ολισθαίνοντες, Μπροστά"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 πόδια, Ολισθαίνοντες, Πίσω"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 πόδια, Εν αποστάσει"
+
+	key[]: "tr_triple"
+	val[]: "Τριπλό"
+
+	key[]: "tr_triple_pup"
+	val[]: "Τριπλό - pup"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Αποσπώμενη πλάκα επικαθήσεως"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Αποσπ. πλ. επικαθ., 2 Άξονες"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Φερόμενη πλάκα επικαθήσεως"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly Van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Σιλοφόρο"
+
+	key[]: "bs_chipvan"
+	val[]: "Chip Van"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Chip Van, Κινούμενο Δάπεδο"
+
+	key[]: "bs_container"
+	val[]: "Μεταφορέας Κοντέινερ"
+
+	key[]: "bs_curtain"
+	val[]: "Συρόμενος Μουσαμάς"
+
+	key[]: "bs_dryvan"
+	val[]: "Κόφα"
+
+	key[]: "bs_flatbed"
+	val[]: "Πάτωμα"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Πάτωμα Αλουμινίου"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Σιλοφόρο με Χοάνη Σιτηρών"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Σιλοφόρο με Χοάνη Σιτηρών - Κυλ. Δάπεδο"
+
+	key[]: "bs_insulated"
+	val[]: "Θερμομονωτικό "
+
+	key[]: "bs_log_4"
+	val[]: "Τρέιλερ Μεταφοράς Ξυλείας, 4 στηρίγματα"
+
+	key[]: "bs_log_6"
+	val[]: "Τρέιλερ Μεταφοράς Ξυλείας, 6 στηρίγματα"
+
+	key[]: "bs_reefer"
+	val[]: "Ψυγείο"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Ψυγείο"
+
+	key[]: "turbo_cooler"
+	val[]: "Ψυγείο Turbo "
+
+	key[]: "chrome_cooler"
+	val[]: "Ψυγείο Χρώμιο"
+
+	key[]: "paint_wall"
+	val[]: "Βαμμένος Τοίχος"
+
+	key[]: "chrome_wall"
+	val[]: "Επιχρωμιωμένος Τοίχος"
+
+	key[]: "alu_wall"
+	val[]: "Αλουμινένιος Τοίχος"
+
+	key[]: "steel_wall"
+	val[]: "Χαλύβδινος Τοίχος"
+
+	key[]: "light"
+	val[]: "Φως"
+
+	key[]: "light_bar"
+	val[]: "Μπάρα φώτων"
+
+	key[]: "log_cage"
+	val[]: "Κλωβός Κορμών"
+
+	key[]: "log_wall"
+	val[]: "Τοίχος Κορμών"
+
+	key[]: "wind_deflector"
+	val[]: "Ανεμοθραύστης"
+
+	key[]: "aero_sideskirt"
+	val[]: "Αεροδυναμικό Μαρσπιέ"
+
+	key[]: "black_sideskirt"
+	val[]: "Μαύρο Μαρσπιέ"
+
+	key[]: "paint_sideskirt"
+	val[]: "Βαμμένο μαρσπιέ"
+
+	key[]: "support_frame"
+	val[]: "Υποστηρικτικό Πλαίσιο"
+
+	key[]: "chrome_door"
+	val[]: "Επιχρωμιωμένη Πόρτα"
+
+	key[]: "rollup_door"
+	val[]: "Πόρτα Ρολό"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Πόρτα Ρολό, Ράμπα Φορτίου"
+
+	key[]: "standard_door"
+	val[]: "Βασική Πόρτα"
+
+	key[]: "standard_door_aero"
+	val[]: "Κανονική Πόρτα, Ανεμοθραύστης"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Αριζόνα"
+
+	key[]: "california"
+	val[]: "Καλιφόρνια"
+
+	key[]: "nevada"
+	val[]: "Νεβάδα"
+
+	key[]: "new_mexico"
+	val[]: "Νέο Μεξικό"
+
+	key[]: "oregon"
+	val[]: "Όρεγκον"
+
+	key[]: "utah"
+	val[]: "Γιούτα"
+
+	key[]: "washington"
+	val[]: "Ουάσινγκτον"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Αμπερντήν"
+
+	key[]: "alamogordo"
+	val[]: "Αλαμογκόρντο"
+
+	key[]: "albuquerque"
+	val[]: "Αλμπουκέρκη"
+
+	key[]: "artesia"
+	val[]: "Αρτέσια"
+
+	key[]: "astoria"
+	val[]: "Αστόρια"
+
+	key[]: "bakersfield"
+	val[]: "Μπέικερσφιλντ"
+
+	key[]: "barstow"
+	val[]: "Μπάρστοου"
+
+	key[]: "bellingham"
+	val[]: "Μπέλινγκχαμ"
+
+	key[]: "bend"
+	val[]: "Μπεντ"
+
+	key[]: "burns"
+	val[]: "Μπερνς"
+
+	key[]: "camp_verde"
+	val[]: "Καμπ Βέρντε"
+
+	key[]: "carlsbad"
+	val[]: "Κάρλσμπαντ"
+
+	key[]: "carson_city"
+	val[]: "Κάρσον Σίτι"
+
+	key[]: "cedar_city"
+	val[]: "Σίνταρ Σίτυ"
+
+	key[]: "clifton"
+	val[]: "Κλίφτον"
+
+	key[]: "clovis"
+	val[]: "Κλόβις"
+
+	key[]: "colville"
+	val[]: "Κόλβιλ"
+
+	key[]: "coos_bay"
+	val[]: "Κους Μπέι"
+
+	key[]: "ehrenberg"
+	val[]: "Έρενμπεργκ"
+
+	key[]: "el_centro"
+	val[]: "Ελ Σέντρο"
+
+	key[]: "elko"
+	val[]: "Έλκο"
+
+	key[]: "ely"
+	val[]: "Έλι"
+
+	key[]: "eugene"
+	val[]: "Γιουτζίν"
+
+	key[]: "eureka"
+	val[]: "Γιουρίκα"
+
+	key[]: "everett"
+	val[]: "Έβερεττ"
+
+	key[]: "farmington"
+	val[]: "Φάρμινγκτον"
+
+	key[]: "flagstaff"
+	val[]: "Φλάγκσταφ"
+
+	key[]: "fresno"
+	val[]: "Φρέσνο"
+
+	key[]: "gallup"
+	val[]: "Γκάλοπ"
+
+	key[]: "grand_canyon"
+	val[]: "Γκραντ Κάνυον"
+
+	key[]: "grand_canyon_village"
+	val[]: "Γκραντ Κάνυον Βίλατζ"
+
+	key[]: "grand_coulee"
+	val[]: "Γκραντ Κούλη"
+
+	key[]: "hobbs"
+	val[]: "Χομπς"
+
+	key[]: "holbrook"
+	val[]: "Χόλμπρουκ"
+
+	key[]: "hornbrook"
+	val[]: "Χόρνμπρουκ"
+
+	key[]: "huron"
+	val[]: "Χούρον"
+
+	key[]: "jackpot"
+	val[]: "Τζάκποτ"
+
+	key[]: "kayenta"
+	val[]: "Καγιέντα"
+
+	key[]: "kennewick"
+	val[]: "Κένγουικ"
+
+	key[]: "kingman"
+	val[]: "Κίνγκμαν"
+
+	key[]: "klamath_falls"
+	val[]: "Κλάμαθ Φόλς"
+
+	key[]: "lakeview"
+	val[]: "Λέικβιου"
+
+	key[]: "las_cruces"
+	val[]: "Λας Κρούσες"
+
+	key[]: "las_vegas"
+	val[]: "Λας Βέγκας"
+
+	key[]: "logan"
+	val[]: "Λόγκαν"
+
+	key[]: "longview"
+	val[]: "Λόνγκβιου"
+
+	key[]: "los_angeles"
+	val[]: "Λος Άντζελες"
+
+	key[]: "medford"
+	val[]: "Μέντφορντ"
+
+	key[]: "moab"
+	val[]: "Μόαμπ"
+
+	key[]: "newport"
+	val[]: "Νιούπορτ"
+
+	key[]: "nogales"
+	val[]: "Νογκάλες"
+
+	key[]: "oakdale"
+	val[]: "Όουκντεϊλ"
+
+	key[]: "oakland"
+	val[]: "Όουκλαντ"
+
+	key[]: "ogden"
+	val[]: "Όγκντεν"
+
+	key[]: "olympia"
+	val[]: "Ολύμπια"
+
+	key[]: "omak"
+	val[]: "Όμακ"
+
+	key[]: "ontario"
+	val[]: "Οντάριο"
+
+	key[]: "oxnard"
+	val[]: "Όξναρντ"
+
+	key[]: "page"
+	val[]: "Πέιτζ"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Σ.Ε.Α. Pajarito Rest Area"
+
+	key[]: "pedro_travel_center"
+	val[]: "Ταξιδιωτικό Κέντρο Pedro"
+
+	key[]: "pendleton"
+	val[]: "Πέντλτον"
+
+	key[]: "phoenix"
+	val[]: "Φοίνιξ"
+
+	key[]: "pioche"
+	val[]: "Πίος"
+
+	key[]: "port_angeles"
+	val[]: "Πορτ Άντζελες"
+
+	key[]: "portland"
+	val[]: "Πόρτλαντ"
+
+	key[]: "price_ut"
+	val[]: "Πράις"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Πριμ"
+
+	key[]: "provo"
+	val[]: "Πρόβο"
+
+	key[]: "raton"
+	val[]: "Ρατόουν"
+
+	key[]: "redding"
+	val[]: "Ρέντινγκ"
+
+	key[]: "reno"
+	val[]: "Ρίνο"
+
+	key[]: "roswell"
+	val[]: "Ρόσγουελ"
+
+	key[]: "sacramento"
+	val[]: "Σακραμέντο"
+
+	key[]: "salem"
+	val[]: "Σάλεμ"
+
+	key[]: "salina"
+	val[]: "Σαλίνα"
+
+	key[]: "salt_lake_city"
+	val[]: "Σολτ Λέικ Σίτυ"
+
+	key[]: "san_diego"
+	val[]: "Σαν Ντιέγκο"
+
+	key[]: "san_francisco"
+	val[]: "Σαν Φρανσίσκο"
+
+	key[]: "san_rafael"
+	val[]: "Σαν Ραφαέλ"
+
+	key[]: "san_simon"
+	val[]: "Σαν Σιμόν"
+
+	key[]: "santa_cruz"
+	val[]: "Σάντα Κρουζ"
+
+	key[]: "santa_fe"
+	val[]: "Σάντα Φε"
+
+	key[]: "santa_maria"
+	val[]: "Σάντα Μαρία"
+
+	key[]: "seattle"
+	val[]: "Σιάτλ"
+
+	key[]: "show_low"
+	val[]: "Σόου Λόου"
+
+	key[]: "sierra_vista"
+	val[]: "Σιέρα Βίστα"
+
+	key[]: "socorro"
+	val[]: "Σοκόρο"
+
+	key[]: "spokane"
+	val[]: "Σποκέιν"
+
+	key[]: "st_george"
+	val[]: "Σαιντ Τζόρτζ"
+
+	key[]: "stockton"
+	val[]: "Στόκτον"
+
+	key[]: "tacoma"
+	val[]: "Τακόμα"
+
+	key[]: "the_dalles"
+	val[]: "Δε Ντάλλς"
+
+	key[]: "tonopah"
+	val[]: "Τονόπα"
+
+	key[]: "truckee"
+	val[]: "Τράκι"
+
+	key[]: "tucson"
+	val[]: "Τουσόν"
+
+	key[]: "tucumcari"
+	val[]: "Τουκαμκάρι"
+
+	key[]: "ukiah"
+	val[]: "Γιουκία"
+
+	key[]: "vancouver"
+	val[]: "Βανκούβερ"
+
+	key[]: "vernal"
+	val[]: "Βέρναλ"
+
+	key[]: "wenatchee"
+	val[]: "Γουενάτσι"
+
+	key[]: "winnemucca"
+	val[]: "Γουιναμούκα"
+
+	key[]: "yakima"
+	val[]: "Γιακίμα"
+
+	key[]: "yuma"
+	val[]: "Γιούμα"
+#@}
+
+}
+}

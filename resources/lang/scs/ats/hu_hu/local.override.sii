@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Fülkevilágítás"
+
+	key[]: "cabdefl"
+	val[]: "Légterelők"
+
+	key[]: "deflector"
+	val[]: "Bogárvédő"
+
+	key[]: "filters"
+	val[]: "Légszűrők"
+
+	key[]: "f_banner"
+	val[]: "Elülső transzparens"
+
+	key[]: "flag_f_l"
+	val[]: "Elülső zászlók"
+
+	key[]: "flag_f_r"
+	val[]: "Elülső zászlók"
+
+	key[]: "flag_r_l"
+	val[]: "Hátsó zászlók"
+
+	key[]: "flag_r_r"
+	val[]: "Hátsó zászlók"
+
+	key[]: "fl_mirror"
+	val[]: "Elülső tükrök"
+
+	key[]: "fr_mirror"
+	val[]: "Elülső tükrök"
+
+	key[]: "grill"
+	val[]: "Hűtőrács"
+
+	key[]: "headache_r"
+	val[]: "Fülkevédő rács"
+
+	key[]: "horns"
+	val[]: "Kürtök"
+
+	key[]: "hood"
+	val[]: "Motorháztető"
+
+	key[]: "lghfender"
+	val[]: "Sárvédők"
+
+	key[]: "mudflaps"
+	val[]: "Sárvédő gumik"
+
+	key[]: "mudguard"
+	val[]: "Sárhányók"
+
+	key[]: "sideflares"
+	val[]: "Karosszérialemezek"
+
+	key[]: "sideskrt_bar"
+	val[]: "Küszöbspoiler rudak"
+
+	key[]: "topflares"
+	val[]: "Tetőtéri helyzetjelző lámpák"
+
+	key[]: "wing"
+	val[]: "Légterelő"
+
+	key[]: "chainsaw_toy"
+	val[]: "Játék láncfűrész"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Helyezd kedvenc zeneszámaidat a <color value=@@clr_sel@@>Dokumentumok <color value=@@clr_txt@@>mappa <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>könyvtárába, hogy megjelenjenek a zenelejátszóban!"
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Ha szeretnéd hozzáadni kedvenc netrádiódat a rádiólistához, szerkeszd át a <color value=@@clr_sel@@>Dokumentumok <color value=@@clr_txt@@>mappa <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>könyvtárában található <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>fájlt!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Kérlek olvasd el a <color value=@@clr_sel@@>Dokumentumok <color value=@@clr_txt@@>könyvtár <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mappájában található <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>fájlt, ha saját zenét és online rádiót akarsz a lejátszóhoz adni!"
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Üdvözöl a American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Veszélyes rakomány"
+
+	key[]: "mechanical"
+	val[]: "Üzemanyag megtakarítás"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Veszélyes"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Veszélyesanyag-szállítási képzés"
+
+	key[]: "skill_adr_info"
+	val[]: "A veszélyes áruk szállítását csak megfelelően kiképzett szakember végezheti. A kemény munkával megszerzett tapasztalatod segítségével az amerikai Közlekedési Minisztérium alábbi, veszélyes anyagok szállítását engedélyező bizonyítványait szerezheted meg, ezzel lényegesen növelve jövedelmedet:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Üzemanyag megtakarítás"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Üzemanyag-megtakarítási technikák megtanulásával csökkentheted az üzemanyagfogyasztást. Pontosabban:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Veszélyes rakomány fuvarbónusz:"
+
+	key[]: "adr_class"
+	val[]: "Veszélyességi osztály"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Repülőgép hajtómű"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Kotrógép"
+
+	key[]: "cn_boat"
+	val[]: "Hajó"
+
+	key[]: "cn_bottles"
+	val[]: "Üres üvegek"
+
+	key[]: "cn_butter"
+	val[]: "Vaj"
+
+	key[]: "cn_cable"
+	val[]: "Kábelek"
+
+	key[]: "cn_cable_reel"
+	val[]: "Kábelcsévélő"
+
+	key[]: "cn_colors"
+	val[]: "Festék"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Betoncsövek"
+
+	key[]: "cn_const_houses"
+	val[]: "Előregyártott házak"
+
+	key[]: "cn_crude_oil"
+	val[]: "Nyersolaj"
+
+	key[]: "cn_curtains"
+	val[]: "Függönyök"
+
+	key[]: "cn_dryfruit"
+	val[]: "Aszalt gyümölcs"
+
+	key[]: "cn_forwarder"
+	val[]: "Erdészeti közelítőgép"
+
+	key[]: "cn_frac_tank"
+	val[]: "Frac Tank"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Fagyasztott gyümölcs"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Fagyasztott zöldség"
+
+	key[]: "cn_fruits"
+	val[]: "Gyümölcs"
+
+	key[]: "cn_grain"
+	val[]: "Gabona"
+
+	key[]: "cn_harvester"
+	val[]: "Kombájn"
+
+	key[]: "cn_hay"
+	val[]: "Széna"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Lakóház elemek"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth kamionok"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Erdészeti átrakógép"
+
+	key[]: "cn_lift_truck"
+	val[]: "Targonca"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Targonca alváz"
+
+	key[]: "cn_log_harvester"
+	val[]: "Erdészeti rönkemelő"
+
+	key[]: "cn_log_loader"
+	val[]: "Erdészeti rakodógép"
+
+	key[]: "cn_log_stacker"
+	val[]: "Erdészeti farönk-rakodó"
+
+	key[]: "cn_lye"
+	val[]: "Lúg"
+
+	key[]: "cn_mbt"
+	val[]: "Mobilkordon"
+
+	key[]: "cn_meat"
+	val[]: "Hús"
+
+	key[]: "cn_milling_machine"
+	val[]: "Marógép"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Önjáró daru"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Horgonybója"
+
+	key[]: "cn_mortar"
+	val[]: "Malter"
+
+	key[]: "cn_mulcher"
+	val[]: "Erdészeti talajtakarító"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Száraz állateledel"
+
+	key[]: "cn_plows"
+	val[]: "Ekék"
+
+	key[]: "cn_power_generator"
+	val[]: "Generátor"
+
+	key[]: "cn_rawmilk"
+	val[]: "Nyers tej"
+
+	key[]: "cn_salt"
+	val[]: "Só"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Roncsautók"
+
+	key[]: "cn_scraper"
+	val[]: "Földnyeső"
+
+	key[]: "cn_stumper"
+	val[]: "Erdészeti rönkhúzó"
+
+	key[]: "cn_transformer"
+	val[]: "Transzformátor"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Erdészeti faaprító"
+
+	key[]: "cn_vegetable"
+	val[]: "Zöldség"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Előregyártott ház"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Szállítóhelikopter"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Nagy gyűjtőtartály"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Bányadömper billencs"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Bányadömper alváz"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Légkondicionáló egység"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Nagy építmény"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Savszállító"
+
+	key[]: "tn_acid_long"
+	val[]: "Hosszú savszállító"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Billenőszekrényes"
+
+	key[]: "tn_car"
+	val[]: "Autószállító"
+
+	key[]: "tn_cement"
+	val[]: "Cementszállító"
+
+	key[]: "tn_chemical"
+	val[]: "Vegyszállító"
+
+	key[]: "tn_chemical_long"
+	val[]: "Hosszú vegyszállító"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Száraz ömlesztettáru-szállító"
+
+	key[]: "tn_dump"
+	val[]: "Billenős"
+
+	key[]: "tn_flatbed"
+	val[]: "Síkplatós"
+
+	key[]: "tn_food_tank"
+	val[]: "Élelmiszeripari tartálykocsi"
+
+	key[]: "tn_frac_tank"
+	val[]: "Frac Tank"
+
+	key[]: "tn_fuel"
+	val[]: "Üzemanyag-szállító"
+
+	key[]: "tn_fuel_long"
+	val[]: "Hosszú üzemanyag-szállító"
+
+	key[]: "tn_gas"
+	val[]: "Gáztartály"
+
+	key[]: "tn_gas_long"
+	val[]: "Hosszú gáztartály"
+
+	key[]: "tn_home_transporter"
+	val[]: "Otthonszállító"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Erdészeti átrakógép"
+
+	key[]: "tn_log"
+	val[]: "Rönkszállító"
+
+	key[]: "tn_lowboy"
+	val[]: "Mélybölcsős"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Hajószállító"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Lowboy 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Mobilkordon pótkocsi"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Aprítógép-szállító"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "1-es veszélyességi osztály"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "2-es veszélyességi osztály"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "3-as veszélyességi osztály"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "4-es veszélyességi osztály"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "5-ös veszélyességi osztály"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "6-os veszélyességi osztály"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "8-as veszélyességi osztály"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Igásló"
+	
+	key[]: "lvl_name3"
+	val[]: "Vállalkozó"
+	
+	key[]: "lvl_name4"
+	val[]: "Profi"
+	
+	key[]: "lvl_name6"
+	val[]: "Király 18 keréken"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Bemutatóterem"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator weboldal" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "A American Truck Simulator Facebook-oldala" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "Probléma merült fel, a American Truck Simulator nem tudja megjeleníteni a grafikát a számítógépeden (nem található érvényes grafikus megjelenítő).\nJavasolt lépések:\n\n1. Ellenőrizd, hogy a számítógép és a videókártya megfelel-e a minimális hardverkövetelményeknek.\n2. Frissítsd a számítógépeden található Microsoft DirectX-et a legújabb verzióra.\n3. Lehet, hogy elavult videókártyád meghajtóprogramja. Töltsd le és telepítsd a legfrissebb verziót a gyártó honlapjáról.n4. Próbáld meg a renderelési módot átállítani OpenGL-ről DirectX-re vagy fordítva.\n5. Töröld a játék beállításait tartalmazó 'config.cfg' fájlt a 'Dokumentumok - American Truck Simulator' mappából, mivel lehetséges, hogy meghibásodott.\nA fájlt a program a játék következő indításakor ismét létrehozza az alapértelmezett beállításokkal."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "A American Truck Simulator-nek problémája adódott, így nem képes megjeleníteni a grafikai tartalmat (nem talált megfelelő grafikus vezérlőt)!"
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "A American Truck Simulator nem tudja elérni a Steam klienst. Javasolt lépések:\n\n1. Ellenőrizd, hogy a Steam kliens el van-e indítva és fut.\n2. Ellenőrizd, hogy a Steam legfrissebb verzióját használod-e.\n3. Ellenőrizd, hogy a Steamben be van-e kapcsolva az automatikus frissítés, és hogy a játék a legújabb verzióra van-e frissítve."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Sikeres aktiválás!<br>Köszönjük, hogy megvásároltad a American Truck Simulator-t!"
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Ha tetszett a American Truck Simulator demója, kérlek vedd meg a teljes verziót <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steamen</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - INDÍTÓPULT" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator tartalmak" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Ömlesztett takarmány"
+
+	key[]: "container"
+	val[]: "Konténerszállító"
+
+	key[]: "curtainside"
+	val[]: "Elhúzható ponyvás"
+
+	key[]: "chipvan"
+	val[]: "Forgácsszállító"
+
+	key[]: "dryvan"
+	val[]: "Darabáru"
+
+	key[]: "flatbed"
+	val[]: "Síkplatós"
+
+	key[]: "hopper"
+	val[]: "Hopper"
+
+	key[]: "insulated"
+	val[]: "Szigetelt"
+
+	key[]: "log"
+	val[]: "Rönk"
+
+	key[]: "refrigerated"
+	val[]: "Mélyhűtött"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Ömlesztett"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Ömlesztett takarmány-alapanyag"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Könnyű ömlesztett anyagok"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Gabona és ömlesztett anyag"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Szóló"
+
+	key[]: "double"
+	val[]: "Dupla"
+
+	key[]: "bdouble"
+	val[]: "B-dupla"
+
+	key[]: "rmdouble"
+	val[]: "R.M. dupla"
+
+	key[]: "tpdouble"
+	val[]: "T.P. dupla"
+
+	key[]: "triple"
+	val[]: "Tripla"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Szóló"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA dupla"
+
+	key[]: "chain_b_double"
+	val[]: "B-dupla"
+
+	key[]: "chain_rm_double"
+	val[]: "Rocky Mountain dupla"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike dupla"
+
+	key[]: "chain_triple"
+	val[]: "Tripla"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA dupla"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA double pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA double pup, 4 tengely"
+
+	key[]: "tr_b_double"
+	val[]: "B-dupla"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-dupla, 5 tengely"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-dupla, 6 tengely"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain double"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Rocky Mountain dupla, rövid pótok"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike dupla"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike dupla, 6 tengelyes"
+
+	key[]: "tr_single_28"
+	val[]: "28 láb"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 láb, 2 tengely"
+
+	key[]: "tr_single_32"
+	val[]: "32 láb"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 láb, 2 tengely"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 láb, 3 tengely"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 láb, hosszabbítható"
+
+	key[]: "tr_single_40"
+	val[]: "40 láb"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 láb, 3 tengely"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 láb, hosszabbítható"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 láb, hátsó"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 láb, osztott"
+
+	key[]: "tr_single_45"
+	val[]: "45 láb"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 láb, 3 tengely"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 láb, 3 tengely, egyszeres"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 láb, 3 tengely, kormányozható"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 láb, első"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 láb, hátsó"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 láb, csúszótengelyes, első"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 láb, csúszótengelyes, hátsó"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 láb, osztott"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 láb, 3 tengely"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 láb, első"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 láb, hátsó"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 láb, csúszótengelyes, első"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 láb, csúszótengelyes, hátsó"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 láb, osztott"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 láb, 3 tengely"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 láb, 3 tengely, egyszeres"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 láb, 3 tengely, kormányozható"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 láb, osztott"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 láb, 3 tengely"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 láb, 4 tengely"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 láb, 4 tengely, osztott"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 láb, 4 tengely, kormányozható"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 láb, első"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 láb, hátsó"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 láb, csúszótengelyes, első"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 láb, csúszótengelyes, hátsó"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 láb, osztott"
+
+	key[]: "tr_triple"
+	val[]: "Tripla"
+
+	key[]: "tr_triple_pup"
+	val[]: "Tripla rövid pót"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Leakasztható dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Dolly konverter, 2 tengelyes"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Hasas"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Ömlesztett takarmány"
+
+	key[]: "bs_chipvan"
+	val[]: "Forgácsszállító"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Forgácsszállító, mozgópadlós"
+
+	key[]: "bs_container"
+	val[]: "Konténerszállító"
+
+	key[]: "bs_curtain"
+	val[]: "Elhúzható ponyvás"
+
+	key[]: "bs_dryvan"
+	val[]: "Darabáru"
+
+	key[]: "bs_flatbed"
+	val[]: "Síkplatós"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Alumínium síkplatós"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Gabonaszállító"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Gabonaszállító, szalagos"
+
+	key[]: "bs_insulated"
+	val[]: "Szigetelt"
+
+	key[]: "bs_log_4"
+	val[]: "Rönkszállító, 4 pár rakonca"
+
+	key[]: "bs_log_6"
+	val[]: "Rönkszállító, 6 pár rakonca"
+
+	key[]: "bs_reefer"
+	val[]: "Hűtőkocsi"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Hűtő"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbó hűtő"
+
+	key[]: "chrome_cooler"
+	val[]: "Krómozott hűtő"
+
+	key[]: "paint_wall"
+	val[]: "Festett fal"
+
+	key[]: "chrome_wall"
+	val[]: "Krómozott fal"
+
+	key[]: "alu_wall"
+	val[]: "Alumíniumfal"
+
+	key[]: "steel_wall"
+	val[]: "Acélfal"
+
+	key[]: "light"
+	val[]: "Fény"
+
+	key[]: "light_bar"
+	val[]: "Fényhíd"
+
+	key[]: "log_cage"
+	val[]: "Kalitka"
+
+	key[]: "log_wall"
+	val[]: "Elválasztó"
+
+	key[]: "wind_deflector"
+	val[]: "Szélterelő"
+
+	key[]: "aero_sideskirt"
+	val[]: "Aero küszöbspoiler"
+
+	key[]: "black_sideskirt"
+	val[]: "Fekete küszöbspoiler"
+
+	key[]: "paint_sideskirt"
+	val[]: "Festett küszöbspoiler"
+
+	key[]: "support_frame"
+	val[]: "Rögzítőkeret"
+
+	key[]: "chrome_door"
+	val[]: "Krómozott ajtó"
+
+	key[]: "rollup_door"
+	val[]: "Redőnyajtó"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Redőnyajtó, emelőkapu"
+
+	key[]: "standard_door"
+	val[]: "Normál ajtó"
+
+	key[]: "standard_door_aero"
+	val[]: "Normál ajtós, szélterelős"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Kalifornia"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Új-Mexikó"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito pihenőhely"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro utazási központ"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

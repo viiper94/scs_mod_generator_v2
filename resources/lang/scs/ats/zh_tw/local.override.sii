@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "駕駛室燈光"
+
+	key[]: "cabdefl"
+	val[]: "駕駛室導流板"
+
+	key[]: "deflector"
+	val[]: "導流板"
+
+	key[]: "filters"
+	val[]: "空氣濾清器"
+
+	key[]: "f_banner"
+	val[]: "前橫幅"
+
+	key[]: "flag_f_l"
+	val[]: "前旗幟"
+
+	key[]: "flag_f_r"
+	val[]: "前旗幟"
+
+	key[]: "flag_r_l"
+	val[]: "Rear Flags"
+
+	key[]: "flag_r_r"
+	val[]: "Rear Flags"
+
+	key[]: "fl_mirror"
+	val[]: "前後照鏡"
+
+	key[]: "fr_mirror"
+	val[]: "前後照鏡"
+
+	key[]: "grill"
+	val[]: "防護欄"
+
+	key[]: "headache_r"
+	val[]: "Headache Racks"
+
+	key[]: "horns"
+	val[]: "喇叭"
+
+	key[]: "hood"
+	val[]: "Hood"
+
+	key[]: "lghfender"
+	val[]: "擋泥板"
+
+	key[]: "mudflaps"
+	val[]: "擋泥板"
+
+	key[]: "mudguard"
+	val[]: "擋泥板"
+
+	key[]: "sideflares"
+	val[]: "駕駛室外面板"
+
+	key[]: "sideskrt_bar"
+	val[]: "Sideskirt Bars"
+
+	key[]: "topflares"
+	val[]: "上臥舖燈"
+
+	key[]: "wing"
+	val[]: "渦輪翼"
+
+	key[]: "chainsaw_toy"
+	val[]: "Chainsaw Toy"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "將你的音樂檔案放到 <color value=@@clr_sel@@>文件<color value=@@clr_txt@@> 裡的 <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@> 資料夾中，然後你就可以在下面看到歌曲了 ｡ "
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "編輯 <color value=@@clr_sel@@>文件<color value=@@clr_txt@@> 裡的 <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@> 裡的 <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@> 檔案來新增你喜愛的音樂電台！"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "請參考 <color value=@@clr_sel@@>文件<color value=@@clr_txt@@> 裡的 <color value=@@clr_sel@@>American Truck Simulator<color value=@@clr_txt@@> 資料夾中的 <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@> 檔案中的教學，來新增你自己的音樂及電台 ｡ "
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "歡迎來到 American Truck Simulator！"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "危險品貨物"
+
+	key[]: "mechanical"
+	val[]: "省油技巧"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "危險品"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "危險品運輸訓練"
+
+	key[]: "skill_adr_info"
+	val[]: "運送危險的貨物需要受過足夠訓練的專業司機 ｡ 使用你得來不易的經驗值來取得英國 DOT HazMat 證照並且提升你的收入:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "省油技巧"
+
+	key[]: "skill_mechanical_info"
+	val[]: "增進你的省油駕駛技巧，幫助你減少油耗 ｡ 詳細如下:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "危險品運輸獎勵"
+
+	key[]: "adr_class"
+	val[]: "危險品分類"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Aircraft Engine"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "履帶式拖拉機"
+
+	key[]: "cn_boat"
+	val[]: "Boat"
+
+	key[]: "cn_bottles"
+	val[]: "空瓶"
+
+	key[]: "cn_butter"
+	val[]: "奶油"
+
+	key[]: "cn_cable"
+	val[]: "線"
+
+	key[]: "cn_cable_reel"
+	val[]: "電線盤"
+
+	key[]: "cn_colors"
+	val[]: "塗裝"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "混凝土管"
+
+	key[]: "cn_const_houses"
+	val[]: "臨時房屋"
+
+	key[]: "cn_crude_oil"
+	val[]: "Crude Oil"
+
+	key[]: "cn_curtains"
+	val[]: "遮光簾"
+
+	key[]: "cn_dryfruit"
+	val[]: "乾果"
+
+	key[]: "cn_forwarder"
+	val[]: "Forwarder"
+
+	key[]: "cn_frac_tank"
+	val[]: "Frac Tank"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "急凍水果"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "急凍蔬菜"
+
+	key[]: "cn_fruits"
+	val[]: "水果"
+
+	key[]: "cn_grain"
+	val[]: "穀類"
+
+	key[]: "cn_harvester"
+	val[]: "Harvester"
+
+	key[]: "cn_hay"
+	val[]: "乾草"
+
+	key[]: "cn_house_prefabs"
+	val[]: "House Prefabs"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth Trucks"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Knuckleboom Loader"
+
+	key[]: "cn_lift_truck"
+	val[]: "起重機"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "起重機底盤"
+
+	key[]: "cn_log_harvester"
+	val[]: "Log Harvester"
+
+	key[]: "cn_log_loader"
+	val[]: "Log Loader"
+
+	key[]: "cn_log_stacker"
+	val[]: "Log Stacker"
+
+	key[]: "cn_lye"
+	val[]: "鹼"
+
+	key[]: "cn_mbt"
+	val[]: "流動路障"
+
+	key[]: "cn_meat"
+	val[]: "肉類"
+
+	key[]: "cn_milling_machine"
+	val[]: "銑床"
+
+	key[]: "cn_mobile_crane"
+	val[]: "越野起重機"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Mooring Buoy"
+
+	key[]: "cn_mortar"
+	val[]: "砂漿"
+
+	key[]: "cn_mulcher"
+	val[]: "Mulcher"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Pelleted Animal Food"
+
+	key[]: "cn_plows"
+	val[]: "犁"
+
+	key[]: "cn_power_generator"
+	val[]: "Power Generator"
+
+	key[]: "cn_rawmilk"
+	val[]: "生乳"
+
+	key[]: "cn_salt"
+	val[]: "Salt"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Scrapped Cars"
+
+	key[]: "cn_scraper"
+	val[]: "鏟運機"
+
+	key[]: "cn_stumper"
+	val[]: "Stumper"
+
+	key[]: "cn_transformer"
+	val[]: "變壓器"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Tub Grinder"
+
+	key[]: "cn_vegetable"
+	val[]: "蔬菜"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "可入住房屋建築"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "運輸直升機"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "大型液體罐"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "礦用卡車車身"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "礦用卡車底盤"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Air Conditioning Complex"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "巨大建築"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "酸液罐車"
+
+	key[]: "tn_acid_long"
+	val[]: "長酸液罐車"
+
+	key[]: "tn_bottom_dump"
+	val[]: "漏斗式自卸車"
+
+	key[]: "tn_car"
+	val[]: "汽車搬運車"
+
+	key[]: "tn_cement"
+	val[]: "散裝水泥拖車"
+
+	key[]: "tn_chemical"
+	val[]: "化工罐拖車"
+
+	key[]: "tn_chemical_long"
+	val[]: "長化工罐拖車"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Dry Bulk Trailer"
+
+	key[]: "tn_dump"
+	val[]: "砂石車"
+
+	key[]: "tn_flatbed"
+	val[]: "Flatbed Trailer"
+
+	key[]: "tn_food_tank"
+	val[]: "食品槽罐車"
+
+	key[]: "tn_frac_tank"
+	val[]: "Frac Tank"
+
+	key[]: "tn_fuel"
+	val[]: "油罐車"
+
+	key[]: "tn_fuel_long"
+	val[]: "長油罐車"
+
+	key[]: "tn_gas"
+	val[]: "氣罐車"
+
+	key[]: "tn_gas_long"
+	val[]: "長氣罐車"
+
+	key[]: "tn_home_transporter"
+	val[]: "Home Transporter"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Knuckleboom Loader"
+
+	key[]: "tn_log"
+	val[]: "Log Trailer"
+
+	key[]: "tn_lowboy"
+	val[]: "低板拖車"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Lowboy Boat Trailer"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "55L 低板拖車"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "流動路障拖車"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Tub Grinder"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "危險品分類 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "危險品分類 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "危險品分類 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "危險品分類 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "危險品分類 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "危險品分類 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "危險品分類 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "馱馬"
+	
+	key[]: "lvl_name3"
+	val[]: "企業家"
+	
+	key[]: "lvl_name4"
+	val[]: "專業"
+	
+	key[]: "lvl_name6"
+	val[]: "十八輪技巧"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "展示中心"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator 網站" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "American Truck Simulator FB 專頁" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator 無法正常繪製圖像 (未找到可使用的顯示卡) ｡ \n建議步驟:\n\n1. 檢查你的電腦和顯示卡是否滿足遊戲最低硬體需求 ｡ \n2. 更新你的 DirectX 至最新版本 ｡ \n3. 從你的硬體製造商下載並安裝最新的顯示卡驅動程序 - 你的顯示卡驅動程序可能太舊 ｡ \n4. 嘗試改用另一種渲染模式，OpenGL或DirectX ｡ \n5. 刪除在 'Documents' - 'American Truck Simulator' 資料夾裡的遊戲設定檔 'config.cfg' ｡ 它可能已損壞 ｡ \n    這個檔案將會在下次啟動遊戲時自動重建，並重置為有效的默認值 ｡ "
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator 無法正常繪製圖像 (未找到可使用的顯示卡) ｡ "
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator 無法存取 Steam 客戶端 ｡ 建設步驟: \n\n1. 確保 Steam 客戶端正在運行 ｡ \n2. 確保 Steam 客戶端已更新到最新版本\n3. 確保已啟用遊戲的自動更新並更新到最新版本 ｡ "
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "已成功啟動 ｡  <br>感謝您購買 American Truck Simulator ｡ "
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "如果您喜歡 American Truck Simulator 試玩版，可以透過<LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>購買完整版！" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator 內容" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Bulk Feed"
+
+	key[]: "container"
+	val[]: "Container Carrier"
+
+	key[]: "curtainside"
+	val[]: "Sliding Tarp"
+
+	key[]: "chipvan"
+	val[]: "Chip Van"
+
+	key[]: "dryvan"
+	val[]: "乾貨"
+
+	key[]: "flatbed"
+	val[]: "平板"
+
+	key[]: "hopper"
+	val[]: "Hopper"
+
+	key[]: "insulated"
+	val[]: "隔熱"
+
+	key[]: "log"
+	val[]: "原木"
+
+	key[]: "refrigerated"
+	val[]: "冷藏"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Bulk"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Bulk feed material"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Light bulk material"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Grain & Bulk material"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "半拖車"
+
+	key[]: "double"
+	val[]: "Double"
+
+	key[]: "bdouble"
+	val[]: "B-Double"
+
+	key[]: "rmdouble"
+	val[]: "落基山脈全拖"
+
+	key[]: "tpdouble"
+	val[]: "T.P. Double"
+
+	key[]: "triple"
+	val[]: "三拖"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "半拖"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA 全拖"
+
+	key[]: "chain_b_double"
+	val[]: "B-Double"
+
+	key[]: "chain_rm_double"
+	val[]: "落基山脈全拖"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike Double"
+
+	key[]: "chain_triple"
+	val[]: "三拖"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA 全拖"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA 全拖"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 Axles"
+
+	key[]: "tr_b_double"
+	val[]: "B-Double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-Double, 5 Axles"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-Double, 6 Axles"
+
+	key[]: "tr_rm_double"
+	val[]: "落基山脈雙全掛"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "落基山脈全拖"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike Double"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike Double, 6 Axles"
+
+	key[]: "tr_single_28"
+	val[]: "28 feet"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 feet, 2 Axles"
+
+	key[]: "tr_single_32"
+	val[]: "32 feet"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 feet, 2 Axles"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 feet, 3 Axles"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 feet, Extendable"
+
+	key[]: "tr_single_40"
+	val[]: "40 feet"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 feet, 3 Axles"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 feet, Extendable"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 feet, Rear"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 feet, Spread"
+
+	key[]: "tr_single_45"
+	val[]: "45 feet"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 feet, 3 Axles"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 feet, 3 Axles, Single"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 feet, 3 Axles, Steerable"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 feet, Front"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 feet, Rear"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 feet, Sliding Tandem, Front"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 feet, Sliding Tandem, Rear"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 feet, Spread"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 feet, 3 Axles"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 feet, Front"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 feet, Rear"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 feet, Sliding Tandem, Front"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 feet, Sliding Tandem, Rear"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 feet, Spread"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 feet, 3 Axles"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 feet, 3 Axles, Single"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 feet, 3 Axles, Steerable"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 feet, Spread"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 feet, 3 Axles"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 feet, 4 Axles"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 feet, 4 Axles, Spread"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 feet, 4 Axles, Steerable"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 feet, Front"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 feet, Rear"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 feet, Sliding Tandem, Front"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 feet, Sliding Tandem, Rear"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 feet, Spread"
+
+	key[]: "tr_triple"
+	val[]: "三拖"
+
+	key[]: "tr_triple_pup"
+	val[]: "三拖"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Converter Dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Converter Dolly, 2 Axles"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly Van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Bulk Feed"
+
+	key[]: "bs_chipvan"
+	val[]: "Chip Van"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Chip Van, Moving Floor"
+
+	key[]: "bs_container"
+	val[]: "Container Carrier"
+
+	key[]: "bs_curtain"
+	val[]: "Sliding Tarp"
+
+	key[]: "bs_dryvan"
+	val[]: "乾貨"
+
+	key[]: "bs_flatbed"
+	val[]: "平板"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "鋁平板"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Grain Hopper"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Grain Hopper Belt"
+
+	key[]: "bs_insulated"
+	val[]: "隔熱"
+
+	key[]: "bs_log_4"
+	val[]: "4 Bolster Logger"
+
+	key[]: "bs_log_6"
+	val[]: "6 Bolster Logger"
+
+	key[]: "bs_reefer"
+	val[]: "冷藏"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "冷卻器"
+
+	key[]: "turbo_cooler"
+	val[]: "渦輪冷卻器"
+
+	key[]: "chrome_cooler"
+	val[]: "電鍍冷卻器"
+
+	key[]: "paint_wall"
+	val[]: "塗裝壁"
+
+	key[]: "chrome_wall"
+	val[]: "電鍍壁"
+
+	key[]: "alu_wall"
+	val[]: "鋁壁"
+
+	key[]: "steel_wall"
+	val[]: "鋼壁"
+
+	key[]: "light"
+	val[]: "燈"
+
+	key[]: "light_bar"
+	val[]: "燈架"
+
+	key[]: "log_cage"
+	val[]: "Log Cage"
+
+	key[]: "log_wall"
+	val[]: "Log Wall"
+
+	key[]: "wind_deflector"
+	val[]: "導流板"
+
+	key[]: "aero_sideskirt"
+	val[]: "低風阻側裙"
+
+	key[]: "black_sideskirt"
+	val[]: "黑色側裙"
+
+	key[]: "paint_sideskirt"
+	val[]: "塗裝側裙"
+
+	key[]: "support_frame"
+	val[]: "支撐框架"
+
+	key[]: "chrome_door"
+	val[]: "電鍍門"
+
+	key[]: "rollup_door"
+	val[]: "上捲門"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Roll Up Door, Lift Gate"
+
+	key[]: "standard_door"
+	val[]: "標準門"
+
+	key[]: "standard_door_aero"
+	val[]: "Standard Door, Wind Deflector"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "California"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "New Mexico"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito Rest Area"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Travel Center"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Kabinaren argiak"
+
+	key[]: "cabdefl"
+	val[]: "Kabinaren deflektoreak"
+
+	key[]: "deflector"
+	val[]: "Aurreko deflektorea"
+
+	key[]: "filters"
+	val[]: "Aire-iragazkiak"
+
+	key[]: "f_banner"
+	val[]: "Aurreko pankarta"
+
+	key[]: "flag_f_l"
+	val[]: "Aurreko banderak"
+
+	key[]: "flag_f_r"
+	val[]: "Aurreko banderak"
+
+	key[]: "flag_r_l"
+	val[]: "Atzeko banderak"
+
+	key[]: "flag_r_r"
+	val[]: "Atzeko banderak"
+
+	key[]: "fl_mirror"
+	val[]: "Aurreko ispiluak"
+
+	key[]: "fr_mirror"
+	val[]: "Aurreko ispiluak"
+
+	key[]: "grill"
+	val[]: "Parrila"
+
+	key[]: "headache_r"
+	val[]: "Headache Racks"
+
+	key[]: "horns"
+	val[]: "Turutak"
+
+	key[]: "hood"
+	val[]: "Kapota"
+
+	key[]: "lghfender"
+	val[]: "Lohi-babesaren estalkiak"
+
+	key[]: "mudflaps"
+	val[]: "Lohi-Babesak"
+
+	key[]: "mudguard"
+	val[]: "Lohi-babesak"
+
+	key[]: "sideflares"
+	val[]: "Kabina Panelak"
+
+	key[]: "sideskrt_bar"
+	val[]: "Sideskirt Bars"
+
+	key[]: "topflares"
+	val[]: "Sleeper Argiak"
+
+	key[]: "wing"
+	val[]: "Turbo aleroia"
+
+	key[]: "chainsaw_toy"
+	val[]: "Chainsaw Toy"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Jarri itzazu zure abestiak <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>karpetan zure<color value=@@clr_sel@@>Documentuetan <color value=@@clr_txt@@>eta hemen ikusiko dituzu."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Edita ezazu <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>, <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>karpetan, zure<color value=@@clr_sel@@>Documentuetan <color value=@@clr_txt@@>eta entzun zure internet irrati gustukuenak jokoan bertan!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Mesedez, irakurri <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>helbidean,  <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>karpetan, zure irrati 'stream'-ak gehitzeko."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Ongi Etorri American Truck Simulator-ra!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Karga arriskutsua"
+
+	key[]: "mechanical"
+	val[]: "Erregai Ekonomia"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Karga arriskutsuak"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Material Arriskutsuen Garraio Trebakuntza"
+
+	key[]: "skill_adr_info"
+	val[]: "Karga arriskutsuen garraioa gidari profesionalak behar ditu. Erabili ezazu zure esperientzia ondorengo U.S. DOT HazMat ziurtagiriak lortu eta zure irabaziak handitzeko:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Erregai Ekonomia"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai kontsumoa gutxituko du. Bereziki:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Karga arriskutsuagatiko gehigarria"
+
+	key[]: "adr_class"
+	val[]: "Karga Arriskutsuen Maila"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Hegazkin-motorra"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Beldar-traktorea"
+
+	key[]: "cn_boat"
+	val[]: "Itsasontzia"
+
+	key[]: "cn_bottles"
+	val[]: "Botila hutsak"
+
+	key[]: "cn_butter"
+	val[]: "Gurina"
+
+	key[]: "cn_cable"
+	val[]: "Kableak"
+
+	key[]: "cn_cable_reel"
+	val[]: "Kable-bobina"
+
+	key[]: "cn_colors"
+	val[]: "Pintura"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Hormigoizko hodiak"
+
+	key[]: "cn_const_houses"
+	val[]: "Obra-etxolak"
+
+	key[]: "cn_crude_oil"
+	val[]: "Petrolio gordina"
+
+	key[]: "cn_curtains"
+	val[]: "Errezelak"
+
+	key[]: "cn_dryfruit"
+	val[]: "Fruitu lehorrak"
+
+	key[]: "cn_forwarder"
+	val[]: "Forwarder"
+
+	key[]: "cn_frac_tank"
+	val[]: "Fracking-depositua"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Fruta izoztuak"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Barazki izoztuak"
+
+	key[]: "cn_fruits"
+	val[]: "Fruta"
+
+	key[]: "cn_grain"
+	val[]: "Alekia"
+
+	key[]: "cn_harvester"
+	val[]: "Uzta-makina"
+
+	key[]: "cn_hay"
+	val[]: "Belarra"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Etxerako aurrerafabrikatuak"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth kamioiak"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Knuckleboom Loader"
+
+	key[]: "cn_lift_truck"
+	val[]: "Lift Truck"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Lift Truck Chassis"
+
+	key[]: "cn_log_harvester"
+	val[]: "Log Harvester"
+
+	key[]: "cn_log_loader"
+	val[]: "Log Loader"
+
+	key[]: "cn_log_stacker"
+	val[]: "Log Stacker"
+
+	key[]: "cn_lye"
+	val[]: "Lixiba"
+
+	key[]: "cn_mbt"
+	val[]: "Hesi mugikorra"
+
+	key[]: "cn_meat"
+	val[]: "Haragia"
+
+	key[]: "cn_milling_machine"
+	val[]: "Fresatzeko makina"
+
+	key[]: "cn_mobile_crane"
+	val[]: "All Terrain Crane"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Ilabea"
+
+	key[]: "cn_mortar"
+	val[]: "Morteroa"
+
+	key[]: "cn_mulcher"
+	val[]: "Mulcher"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Pelleted Animal Food"
+
+	key[]: "cn_plows"
+	val[]: "Goldeak"
+
+	key[]: "cn_power_generator"
+	val[]: "Sorgailu elektrikoa"
+
+	key[]: "cn_rawmilk"
+	val[]: "Esne gordina"
+
+	key[]: "cn_salt"
+	val[]: "Gatza"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Desegindako autoak"
+
+	key[]: "cn_scraper"
+	val[]: "Scraper"
+
+	key[]: "cn_stumper"
+	val[]: "Stumper"
+
+	key[]: "cn_transformer"
+	val[]: "Transformadorea"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Tub Grinder"
+
+	key[]: "cn_vegetable"
+	val[]: "Barazkiak"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Sartzeko prest etxea"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Transport Helicopter"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Erreserba-depositu handia"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Haul Truck Hull"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Haul Truck Chassis"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Aire girotuko ekipoa"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Huge Construction"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Garratz Depositu Trailerra"
+
+	key[]: "tn_acid_long"
+	val[]: "Garratz Depositu Trailer Luzea"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Bottom Dumper Trailer"
+
+	key[]: "tn_car"
+	val[]: "Auto-garraiatzailea"
+
+	key[]: "tn_cement"
+	val[]: "Zementu Trailerra"
+
+	key[]: "tn_chemical"
+	val[]: "Depositu Kimikoen Trailerra"
+
+	key[]: "tn_chemical_long"
+	val[]: "Depositu Kimikoen Trailer Luzea"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Dry Bulk Trailer"
+
+	key[]: "tn_dump"
+	val[]: "Dumper Trailerra"
+
+	key[]: "tn_flatbed"
+	val[]: "Plataforma-trailerra"
+
+	key[]: "tn_food_tank"
+	val[]: "Food Tank Trailer"
+
+	key[]: "tn_frac_tank"
+	val[]: "Fracking-depositua"
+
+	key[]: "tn_fuel"
+	val[]: "Erregai Depositu Trailerra"
+
+	key[]: "tn_fuel_long"
+	val[]: "Erregai Depositu Trailer Luzea"
+
+	key[]: "tn_gas"
+	val[]: "Gas Depositu Trailerra"
+
+	key[]: "tn_gas_long"
+	val[]: "Gas Depositu Trailer Luzea"
+
+	key[]: "tn_home_transporter"
+	val[]: "Etxe-garraiatzailea"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Knuckleboom Loader"
+
+	key[]: "tn_log"
+	val[]: "Enbor-trailerra"
+
+	key[]: "tn_lowboy"
+	val[]: "Lowboy Trailerra"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Itsasontzi-garraiatzailea"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Lowboy 55L Trailer"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Hesi mugikor trailerra"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Tub Grinder"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Carga Arriskutsuen 1. Maila"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Karga Arriskutsuen 2. Maila"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Karga Arriskutsuen 3. Maila"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Karga Arriskutsuen 4. Maila"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Karga Arriskutsuen 5. Maila"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Karga Arriskutsuen 6. Maila"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Karga Arriskutsuen 8. Maila"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Ohola Astoa"
+	
+	key[]: "lvl_name3"
+	val[]: "Enpresaburua"
+	
+	key[]: "lvl_name4"
+	val[]: "Profesionala"
+	
+	key[]: "lvl_name6"
+	val[]: "18 Wheels of Skill"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Erakusketa Sala"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator web-gunea" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "American Truck Simulator Facebook-a" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator arazoak izaten hari ditu zure ordenagailuan grafikoak mugitzerakoan (ez da txartel grafiko egokirik aurkitu).\nProposatutako pausoak:\n\n1. Ziurtatu zure ordenagailuak jokoaren beharrezko baldintzak betetzen dituela.\n2. Eguneratu zure Microsoft DirectX bertsioa.\n3. Azkeneko kontroladore grafikoak deskargatu eta instalatu itzazu.\n4. Jokoaren renderizazio metodoa aldatu OpenGL-tik DirectX-era edota alderantziz.\n5. Ezaba ezazu zure dokumentuetan dagoen 'config.cfg' artxiboa, 'American Truck Simulator' karpetan.\n    Artxiboa lehenetsitako balioekin birsortuko da jokoa berriro irekitzerakoan."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator arazoak izaten hari ditu zure ordenagailuan grafikoak eraikitzerakoan (ez da gailu grafikorik aurkitu)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator ezin da Steam klientera sartu. Gomendatzen da:\n\n1. Steam klientea martxan dabilela ziurtatu.\n2. Steam klientearen bertsio berriztatua izatea ziurtatu.\n3. Berriztapen automatikoak aktibaturik egotea eta jokoa azkeneko bertsioan dagoela ziurtatu."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Aktibazioa onartuta izan da.<br>Eskerrik asko American Truck Simulator erosteagatik."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "American Truck Simulator-ren demoa gustoko baduzu, erosi ezazu bertsio osoa hemen: <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - HASIERA" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator-aren edukia" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Bulk Feed"
+
+	key[]: "container"
+	val[]: "Kontainer-garraiatzailea"
+
+	key[]: "curtainside"
+	val[]: "Irristailu-olana"
+
+	key[]: "chipvan"
+	val[]: "Chip Van"
+
+	key[]: "dryvan"
+	val[]: "Dry Van"
+
+	key[]: "flatbed"
+	val[]: "Plataforma"
+
+	key[]: "hopper"
+	val[]: "Hopper"
+
+	key[]: "insulated"
+	val[]: "Isolatuta"
+
+	key[]: "log"
+	val[]: "Enborra"
+
+	key[]: "refrigerated"
+	val[]: "Hoztuta"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Bulk"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Bulk feed material"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Light bulk material"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Grain & Bulk material"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Banakoa"
+
+	key[]: "double"
+	val[]: "Bikoitza"
+
+	key[]: "bdouble"
+	val[]: "B-bikoitza"
+
+	key[]: "rmdouble"
+	val[]: "R.M. bikoitza"
+
+	key[]: "tpdouble"
+	val[]: "T.P. bikoitza"
+
+	key[]: "triple"
+	val[]: "Hirukoitza"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Banakoa"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA bikoitza"
+
+	key[]: "chain_b_double"
+	val[]: "B-bikoitza"
+
+	key[]: "chain_rm_double"
+	val[]: "Rocky Mountain bikoitza"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike bikoitza"
+
+	key[]: "chain_triple"
+	val[]: "Hirukoitza"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA bikoitza"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA Double Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 Axles"
+
+	key[]: "tr_b_double"
+	val[]: "B-bikoitza"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-bikoitza, 5 ardatz"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-bikoitza, 6 ardatz"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain bikoitza"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Rocky Mountain Double Pup"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike bikoitza"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike bikoitza, 6 ardatz"
+
+	key[]: "tr_single_28"
+	val[]: "28 oin"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 oin, 2 ardatz"
+
+	key[]: "tr_single_32"
+	val[]: "32 oin"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 oin, 2 ardatz"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 oin, 3 ardatz"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 oin, hedagarria"
+
+	key[]: "tr_single_40"
+	val[]: "40 oin"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 oin, 3 ardatz"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 oin, hedagarria"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 oin, atzean"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 oin, bereiziak"
+
+	key[]: "tr_single_45"
+	val[]: "45 oin"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 oin, 3 ardatz"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 feet, 3 Axles, Single"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 oin, 3 ardatz, direkziozkoa"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 oin, aurrean"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 oin, atzean"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 oin, tandem irristagarria, aurrean"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 oin, tandem irristagarria, atzean"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 oin, bereiziak"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 oin, 3 ardatz"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 oin, aurrean"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 oin, atzean"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 oin, tandem irristagarria, aurrean"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 oin, tandem irristagarria, atzean"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 oin, bereiziak"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 oin, 3 ardatz"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 feet, 3 Axles, Single"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 oin, 3 ardatz, direkziozkoa"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 oin, bereiziak"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 oin, 3 ardatz"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 oin, 4 ardatz"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 oin, 4 ardatz, bereiziak"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 oin, 4 ardatz, direkziozkoa"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 oin, aurrean"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 oin, atzean"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 oin, tandem irristagarria, aurrean"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 oin, tandem irristagarria, atzean"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 oin, bereiziak"
+
+	key[]: "tr_triple"
+	val[]: "Hirukoitza"
+
+	key[]: "tr_triple_pup"
+	val[]: "Triple Pup"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Converter Dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Converter Dolly, 2 Axles"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly Van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Bulk Feed"
+
+	key[]: "bs_chipvan"
+	val[]: "Chip Van"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Chip Van, Moving Floor"
+
+	key[]: "bs_container"
+	val[]: "Kontainer-garraiatzailea"
+
+	key[]: "bs_curtain"
+	val[]: "Irristailu-olana"
+
+	key[]: "bs_dryvan"
+	val[]: "Dry Van"
+
+	key[]: "bs_flatbed"
+	val[]: "Plataforma"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Aluminiozko plataforma"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Grain Hopper"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Grain Hopper Belt"
+
+	key[]: "bs_insulated"
+	val[]: "Isolatuta"
+
+	key[]: "bs_log_4"
+	val[]: "Zur-trailerra, 4 euskarrirekin"
+
+	key[]: "bs_log_6"
+	val[]: "Zur-trailerra, 6 euskarrirekin"
+
+	key[]: "bs_reefer"
+	val[]: "Hoztuta"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Hozkailua"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbo hozkailua"
+
+	key[]: "chrome_cooler"
+	val[]: "Hozkailu kromatua"
+
+	key[]: "paint_wall"
+	val[]: "Pareta margotua"
+
+	key[]: "chrome_wall"
+	val[]: "Pareta kromatua"
+
+	key[]: "alu_wall"
+	val[]: "Aluminiozko pareta"
+
+	key[]: "steel_wall"
+	val[]: "Altzairuzko pareta"
+
+	key[]: "light"
+	val[]: "Argia"
+
+	key[]: "light_bar"
+	val[]: "Argi-barra"
+
+	key[]: "log_cage"
+	val[]: "Log Cage"
+
+	key[]: "log_wall"
+	val[]: "Log Wall"
+
+	key[]: "wind_deflector"
+	val[]: "Haize-deflektorea"
+
+	key[]: "aero_sideskirt"
+	val[]: "Albo-hegal aerodinamikoa"
+
+	key[]: "black_sideskirt"
+	val[]: "Albo-hegal beltza"
+
+	key[]: "paint_sideskirt"
+	val[]: "Albo-hegal margotua"
+
+	key[]: "support_frame"
+	val[]: "Euskarri-egitura"
+
+	key[]: "chrome_door"
+	val[]: "Ate kromatua"
+
+	key[]: "rollup_door"
+	val[]: "Roll Up Door"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Roll Up Door, Lift Gate"
+
+	key[]: "standard_door"
+	val[]: "Ate estandarra"
+
+	key[]: "standard_door_aero"
+	val[]: "Ate estandarra, haize-deflektorea"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Kalifornia"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Mexiko Berria"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito Rest Area"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Travel Center"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Frantzisko"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

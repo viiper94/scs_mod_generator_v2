@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "시스템" #+ Message sender
+		subject: "테스트 메시지" #+ Message subject
+		body: "안녕하세요!<br><br>당신의 동료관리자가 보낸 테스트 메시지 입니다.<br><br>화이팅 ;-)" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "은행" #+ Message sender
+		subject: "자금이 필요하신가요? 저희가 도와드리겠습니다!" #+ Message subject
+		body: "친애하는 고객님께<br><br>사업을 지속하기 위한 자금이 필요하신가요? 저희는 고객님이 새로운 사업에 도움 될 대출을 제공해드릴 수 있음을 알려드리고자 합니다.<link url=screen.bank color=@@clr_link@@> 대출에 대한 자세한 정보가 필요하시다면</link> 저희 지역 은행에 방문해주시기 바랍니다.<br><br>존경을 담아<br>세일즈 매니저<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "은행" #+ Message sender
+		subject: "저희는 고객님의 성장에 도움이 되겠습니다." #+ Message subject
+		body: "친애하는 고객님께<br><br>고객님께서는 꾸준히 수입이 증가하고 있고, 그 발전 가능성을 보았을 때 더욱더 성장할 수 있도록 도와드리고자 합니다. 고객님의 신용한도를 $MONEY$ 만큼 올려드렸습니다. 언제든<link url=screen.bank color=@@clr_link@@></link> 저희 지역 은행에서 대출을 받으실 수 있습니다.<br><br>존경을 담아<br>세일즈 매니저<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "은행" #+ Message sender
+		subject: "고객님의 계정은 당좌대출 상태입니다." #+ Message subject
+		body: "친애하는 고객님께<br><br>현재 고객님의 계좌는 초과인출 상태입니다. 자금을 융통을 위해 며칠 동안 단기 신용 대출을 무료로 제공해 드렸으니, 이번 사태를 해결하실 수 있습니다. 가능한 한 이른 시일 내에 상환해주시기 바랍니다.<br><br>따듯한 안부를 전하며<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "은행" #+ Message sender
+		subject: "계약하신 당좌대월 한도를 초과하셨습니다." #+ Message subject
+		body: "친애하는 고객님께<br><br>고객님의 계좌는 기한이익상실 중으로, 안내해드리는 $DAYS$까지 상환하시지 못할 경우 귀하의 재산을 압류할 것입니다.<br><br>진심을 담아<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "은행" #+ Message sender
+		subject: "최종 경고!" #+ Message subject
+		body: "친애하는 고객님께<br><br>이것은 저희가 보내는 마지막 경고입니다. 귀하의 계좌는 기한이익상실 중입니다. 내일까지 빚을 상환하시지 못하면 저희는 고객님의 재산을 압류할 것입니다. <br><br>진심을 담아<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "은행" #+ Message sender
+		subject: "당좌대월을 계약함" #+ Message subject
+		body: "친애하는 고객님께<br><br>고객님의 당좌대월은 전부 해결되었습니다. 앞으로 저희의 서비스가 필요한 경우 언제든지 도와 드릴 수 있습니다.<br><br>좋은 하루 되시길<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "은행" #+ Message sender
+		subject: "귀하의 차량은 매각되었습니다" #+ Message subject
+		body: "친애하는 고객님께<br><br>저희는 고객님의 차량을 매각한다고 알려드립니다. $TRUCK_NAME$ $MONEY$. 불행히도 고객님은 오랫동안 채무 불이행을 하셨고, 그것을 막을 다른 방법이 없었습니다. 슬프게도, 다른 방법이 없기에 이러한 극단적인 조처를 취하게 되었습니다. 저희는 고객님의 재정 상황이 더 나아질때까지 빨리 다른 일을 구해야 한다고 생각합니다.<br><br>진심을 담아<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "은행" #+ Message sender
+		subject: "귀하의 트레일러는 매각되었습니다" #+ Message subject
+		body: "친애하는 고객님께<br><br>저희는 고객님의 트레일러를 매각한다고 알려드립니다. $TRAILER_NAME$ $MONEY$. 불행히도 고객님은 오랫동안 채무 불이행을 하셨고, 그것을 막을 다른 방법이 없었습니다. 슬프게도, 다른 방법이 없기에 이러한 극단적인 조처를 취하게 되었습니다. 저희는 고객님의 재정 상황이 더 나아질때까지 빨리 다른 일을 구해야 한다고 생각합니다.<br><br>진심을 담아<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "은행" #+ Message sender
+		subject: "귀하의 재산은 매각되었습니다" #+ Message subject
+		body: "친애하는 고객님께<br><br>오랜 채무 불이행으로 고객님의 재산을 압류, 매각을 시행하였습니다. 총 압류된 기금은 <br>$MONEY$ 이며, 고객님의 채무를 해결하기 위해 사용되었습니다. 이하 압류 항목은 다음과 같습니다:<br><br>$ITEM_LIST$<br>우리는 상황이 이렇게까지 멀리 온 것을 후회하고, 결과가 너무 심각하여 더 지속하지 않길 바랄 뿐입니다.<br><br>행복을 빌며<br>고객님의 계정 관리자<br>올림" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "트럭 딜러 - $CITY$" #+ Message sender
+		subject: "새로운 $BRAND$ 차량이 판매 중!" #+ Message subject
+		body: "친애하는 고객님께<br><br>저희는 $BRAND$ 트럭의 인증 소매업체입니다. 저희는 다양한 구성의 선택을 제공하고, 또한 특별한 이를 위해 차량을 맞춤설정 할 수 있습니다.<link url=truck.dealer_map color=@@clr_link@@>$CITY$에 있는 저희 딜러를 방문해주세요.</link> 당신이 항상 꿈꿔왔던 차량이 문 뒤에서 기다리고 있을지도 모르니까요.<br><br>감사합니다.<br>고객님의 $BRAND$ 차량 딜러" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$COMPANY$, $CITY$" #+ Message sender
+		subject: "자신의 트럭을 갖춘 드라이버가 필요합니다" #+ Message subject
+		body: "관계자들에게 전합니다.<br><br>우리는 능력 있는 트럭 운전자들을 찾고 있습니다. 우리는 이 일을 $MONEY$ 라는 매력적인 가격에 제공합니다. 그러므로 차가 있는 운전자들은 저희 $CITY$ 창고에 직접 문의를 해주세요.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "운전자$NAME$" #+ Message sender
+		subject: "제가 일하기 위해선 트럭이 필요합니다" #+ Message subject
+		body: "안녕하세요 사장님.<br><br>알고 있는지 모르겠지만, 저는 $CITY$에서 아무런 일거리 없이 $DAYS$ 만큼 지냈어요. 이제 엄청 짜증나요, 왜냐하면 저는 돈이 필요하고, 청구서를 지급해야 하므로 게으름뱅이처럼 일거리 없이 이러고 있으면 안돼거든요. 부탁이니, 저를 다음 $DAYS2$ 부터 일을 시작할 수 있게 해주세요. 안 그러면 전 그냥 이 회사를 떠나야겠네요.<br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "운전자$NAME$" #+ Message sender - written by female
+		subject: "제가 일하기 위해선 트럭이 필요합니다" #+ Message subject - written by female
+		body: "안녕하세요 사장님.<br><br>알고 있는지 모르겠지만, 저는 $CITY$에서 아무런 일거리 없이 $DAYS$ 만큼 지냈어요. 이제 엄청 짜증나요, 왜냐하면 저는 돈이 필요하고, 청구서를 지급해야 하므로 게으름뱅이처럼 일거리 없이 이러고 있으면 안돼거든요. 부탁이니, 저를 다음 $DAYS2$ 부터 일을 시작할 수 있게 해주세요. 안 그러면 전 그냥 이 회사를 떠나야겠네요.<br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "운전자$NAME$" #+ Message sender
+		subject: "안녕히 계십시오" #+ Message subject
+		body: "안녕하세요,<br><br>전 더 시간을 낭비할 여유가 없고, 트럭 없이 일할 수 없습니다. 그리고 더 기다릴 수도 없고요. 더 좋은 기회를 잃을 수 없으니, 저는 이 회사를 떠나려고 합니다. 제가 있었던 $CITY$ 에서 장비를 찾을 수 있을 겁니다.<br><br>안녕히 계십시오.<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "운전자$NAME$" #+ Message sender - written by female
+		subject: "안녕히 계십시오" #+ Message subject - written by female
+		body: "안녕하세요,<br><br>전 더 시간을 낭비할 여유가 없고, 트럭 없이 일할 수 없습니다. 그리고 더 기다릴 수도 없고요. 더 좋은 기회를 잃을 수 없으니, 저는 이 회사를 떠나려고 합니다. 제가 있었던 $CITY$ 에서 장비를 찾을 수 있을 겁니다.<br><br>안녕히 계십시오.<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "운전자$NAME$" #+ Message sender
+		subject: "난 떠나요" #+ Message subject
+		body: "안녕하세요 사장님. 요즘 회사가 잘 안 풀리는 거 같네요. 은행에서 어떤 사람들이 와서 제가 머물렀던<br><br> $CITY$의 차고 문을 닫았고, 차고에서 쫓겨났거든요. 트럭과 차고가 없다면 나는 별로 도움이 안 될 것이고, 그래서 그냥 떠날 생각입니다.<br><br>안녕, 나쁘게는 생각하지 말아요.<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "운전자$NAME$" #+ Message sender - written by female
+		subject: "난 떠나요" #+ Message subject - written by female
+		body: "안녕하세요 사장님. 요즘 회사가 잘 안 풀리는 거 같네요. 은행에서 어떤 사람들이 와서 제가 머물렀던<br><br> $CITY$의 차고 문을 닫았고, 차고에서 쫓겨났거든요. 트럭과 차고가 없다면 나는 별로 도움이 안 될 것이고, 그래서 그냥 떠날 생각입니다.<br><br>안녕, 나쁘게는 생각하지 말아요.<br>$NAME$" #+ Message body - written by female
+	}
+	
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "배차담당자" #+ Message sender
+		subject: "특수화물 운송" #+ Message subject
+		body: "안녕하세요 사장님.<br><br>사장님에게 특별히 전해줄 것이 있어요. 우리의 관계 덕분에 사장님은 진정한 도전에 도달할 수 있게 되었어요. 좀 특별하고, 아주 넓고 무거운 화물은 진정한 전문가가 운반해야 해요. 쉽지 않고 약간의 기술과 인내 그리고 호위 차량의 협력과 약간의 주의가 필요해요. 그리고 제 예상엔 사장님은 그 모든 것을 갖추고 있다고 봐요. 그렇죠? 더 큰 위험은 더 큰 수익을 가져다줄 거예요.<br><br>만약 관심이 있다면, $CITIES$ 에 방문해주세요." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "배차담당자" #+ Message sender
+		subject: "새로운 특수화물 운송" #+ Message subject
+		body: "안녕하세요 사장님.<br><br>특수 운송을 위해 많은 회사가 경험이 많은 사장님을 채용하려고 합니다. 지난번과 마찬가지로 쉽지 않을 거예요. 약간의 기술과 인내, 호위 차량과의 협조와 각별한 주의가 필요해요. 물론 여전히 그 실력을 발휘할 수 있을 거라 믿어요. 그렇죠? 잊지 마세요. - 이 화물들은 여전히 많은 이익을 가져다줄 겁니다.<br><br> 따라서 현재 배차 가능한 특수 운송 작업은 $OLD_CITIES$ 을 포함해서<br><br>이제 $CITIES$ 에서도<br><br><color value=@@clr_sel@@>새로운 화물을 배차 받을 수 있습니다.<color value=@@clr_txt@@>" #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "부동산 사무소" #+ Message sender
+		subject: "회사를 확장하실 생각이세요?" #+ Message subject
+		body: "친애하는 고객님께<br><br>귀사의 발전을 축하합니다. 우리는 귀사의 성공적인 비즈니스에 깊은 인상을 받았고, 귀사가 더욱 성장할 수 있도록 새로운 방법을 제시하고자 합니다. 이제 고객님은 우리의 서비스를 이용해 추가 자산을 즉시 구매할 수 있습니다! 자세한 내용은 <link url=screen.real_estate color=@@clr_link@@>차고 구매 인터페이스</link>를 방문하시기 바랍니다.<br><br>진심을 담아<br>고객 관계 매니저 올림<br>부동산 사무소" #+ Message body
+	}
+
+#@}
+}

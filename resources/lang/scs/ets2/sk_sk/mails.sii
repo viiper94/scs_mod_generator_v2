@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "Systém" #+ Message sender
+		subject: "Testovacia správa" #+ Message subject
+		body: "Ahoj!<br><br>Toto je skúšobná správa od administrátora ;-)<br><br>Maj sa" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "Banka" #+ Message sender
+		subject: "Potrebujete peniaze? Môžeme vám pomôcť." #+ Message subject
+		body: "Drahý Pán/Pani,<br><br>Radi by sme Vás informovali o našej ponuke priaznivých pôžičiek pre nových podnikateľov. Potrebujete financie na rozbehnutie vášho podnikania? Sme tu teda pre Vás! Pre viac informácií, prosím <link url=screen.bank color=@@clr_link@@>navštívte najbližšie bankové centrum</link>.<br><br>S úctou,<br>Váš obchodný manažér<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "Banka" #+ Message sender
+		subject: "Môžeme vám pomôcť s rozbehnúť sa" #+ Message subject
+		body: "Vážený pán/pani,<br><br> Nemohli sme si nevšimnúť váš stabilný zisk, radi by sme Vám pomohli s rozšíreným svojho potenciálu. Váš kreditný limit bol zvýšený na $MONEY$. Neváhajte čerpať kedykoľvek na vaše <link url=screen.bank color=@@clr_link@@> Navštívte pobočku banky pre viac informácii </link>.<br><br>S pozdravom<br>Obchodný manažér banky <br>" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "Banka" #+ Message sender
+		subject: "Váš účet je prečerpaný" #+ Message subject
+		body: "Vážený zákazník,<br><br> vybrali ste si z Vášho účtu viac peňazí ako bolo k dispozícii. Poskytli sme Vám krátkodobý úver, takže si môžete vyriešiť finančnú situáciu. Láskavo prosím, uhradte zostatok úveru hneď ako to bude možné.<br><br> <br> Tvoj správca účtu<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "Banka" #+ Message sender
+		subject: "Máte nestabilný bankový účet!" #+ Message subject
+		body: "Vážený zákazník,<br><br>Zostatok na Vašom bankovom účte je záporný! Prosím, zaplaťte svoje dlhy. Máte na to $DAYS$ dní. Inak budeme nútení zabaviť Váš majetok.<br><br>S pozdravom,<br>Správca vášho bankového účtu<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "Banka" #+ Message sender
+		subject: "Posledné varovanie!" #+ Message subject
+		body: "Vážený zákazník,<br><br>Toto je posledné upozornenie. Váš bankový účet je prečerpaný. Prosím, pokryte svoj dlh do zajtra, inak budeme musieť zabaviť Váš majetok na zaplatenie dlhu.<br><br>S pozdravom,<br>Váš správca účtu<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "Banka" #+ Message sender
+		subject: "Nestabilné konto" #+ Message subject
+		body: "Vážený zákazník,<br><br>Vaše prečerpanie účtu bolo vyriešené. Sme radi, ak Vám pomôžeme aj v budúcnosti, keď budete potrebovať naše služby.<br><br>Majte pekný deň,<br>váš správca účtu<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "Banka" #+ Message sender
+		subject: "Tvoj osobný ťahač bol predaný" #+ Message subject
+		body: "Vážený zákazník,<br><br>s poľutovaním Vám oznamujeme, že sme Vám museli predať ťahač - $TRUCK_NAME$ - za $MONEY$. Bohužiaľ, ste mali dlhotrvajúci dlh a nemali ste iné prostriedky na úhradu. Je smutné, že nebol iný spôsob okrem týchto opatrení. Odporúčame Vám prijímať rýchle úlohy, kým sa Vaša finančná situácia nezlepší.<br><br>S pozdravom<br>Váš správca účtu<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "Banka" #+ Message sender
+		subject: "Tvoj osobný náves bol predaný" #+ Message subject
+		body: "Vážený zákazník,<br><br>s poľutovaním Vám oznamujeme, že sme Vám museli predať náves - $TRAILER_NAME$ - za $MONEY$. Bohužiaľ, ste mali dlhotrvajúci dlh a nemali ste iné prostriedky na úhradu. Je smutné, že nebol iný spôsob okrem týchto opatrení. Odporúčame Vám prijímať rýchle úlohy, kým sa Vaša finančná situácia nezlepší.<br><br>S pozdravom<br>Váš správca účtu<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "Banka" #+ Message sender
+		subject: "Vaša nehnuteľnosť bola predaná" #+ Message subject
+		body: "Vážený zákazník,<br><br>Vzhľadom k dlhotrvajúcemu dlhu na Vašom bankovom účte sme boli nútený skonfiškovať a predať Váš majetok. Získané peniaze v celkovej sume <br>$MONEY$ boli použité na splatenie Vašich dlhov, presnejšie na tieto položky:<br><br>$ITEM_LIST$<br>Je nám ľúto, že situácia zašla až takto ďaleko, a dúfame, že následky tejto situácia nepoznačia Vaše ďaľšie úsilie v budúcnosti.<br><br>S pozdravom,<br>Váš bankový manažér<br>Banka" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "Predajca ťahačov - $CITY$" #+ Message sender
+		subject: "Úplne nové ťahače $BRAND$ na predaj!" #+ Message subject
+		body: "Drahý pán/ Drahá pani, <br><br> sme certifikovaným predajcom ťahačov značky $BRAND$. Ponúkame široký výber rôznych konfigurácii a tiež vieme vykonávať rôzne úpravy na špeciálne želanie. Prosím, <link url=truck.dealer_map color=@@clr_link@@> navštívte náš showroom v $CITY$</link>. Kamión o akom ste vždy snívali môže čakať hneď za dverami.<br><br> S pozdravom,<br> Váš $BRAND$ predajca ťahačov" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$COMPANY$, $CITY$" #+ Message sender
+		subject: "Hľadáme vodičov s vlastným vybavením" #+ Message subject
+		body: "Pre všetkých, čo sa ich to týka,<br><br>hľadáme skúsených vodičov s vlastnými ťahačmi pre veľké množstvo zásielok. Ponúkame výhodné odmeny za prácu až do $MONEY$ za zásielku. Prosím, ak máte vlastné vozidlo, informujte sa v našom sídle v $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "Vodič $NAME$" #+ Message sender
+		subject: "K práci potrebujem ťahač" #+ Message subject
+		body: "Ahoj šéf,<br><br> neviem či ste si všimli, ale ja som sedel v $CITY$ bez práce $DAYS$. Som pekne naštvaný, pretože potrebujem peniaze na zaplatenie svojich účtov a nemôžem robiť nič iné len motať sa, lebo práca je v nedohľadne. Prosím dajte mi ťahač v nasledujúcich $DAYS2$ aby som mohol začať dodávať, inak ťa budem musieť opustiť. <br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "Vodič $NAME$" #+ Message sender - written by female
+		subject: "K práci potrebujem ťahač" #+ Message subject - written by female
+		body: "Ahoj šéf,<br><br> neviem či ste si všimli, ale ja som sedel v $CITY$ bez práce $DAYS$. Som pekne naštvaný, pretože potrebujem peniaze na zaplatenie svojich účtov a nemôžem robiť nič iné len motať sa, lebo práca je v nedohľadne. Prosím dajte mi ťahač v nasledujúcich $DAYS2$ aby som mohol začať dodávať, inak ťa budem musieť opustiť. <br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "Vodič $NAME$" #+ Message sender
+		subject: "Dovidenia" #+ Message subject
+		body: "Ahoj,<br><br> nemôžem si dovoliť dlhšie strácať čas. Nemôžem pracovať bez ťahača a nechcem viac čakať. Strácam dobré príležitosti, takže odchádzam skúsiť svoje šťastie inde. Všetko pridelené príslušenstvo nechávam v mojej starej garáži v $CITY$.<br><br>Dovidenia,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "Vodič $NAME$" #+ Message sender - written by female
+		subject: "Dovidenia" #+ Message subject - written by female
+		body: "Ahoj,<br><br> nemôžem si dovoliť dlhšie strácať čas. Nemôžem pracovať bez ťahača a nechcem viac čakať. Strácam dobré príležitosti, takže odchádzam skúsiť svoje šťastie inde. Všetko pridelené vybavenie zanechávam v mojej starej garáži v $CITY$.<br><br>Dovidenia,<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "Vodič $NAME$" #+ Message sender
+		subject: "Končím" #+ Message subject
+		body: "Čau šéfe,<br><br>Garáž v meste $CITY$, kde som ostal, sa uzatvára. Prišli nejaký ľudia z banky a povedali že mám vypadnúť. Vyzerá to tak, že táto spoločnosť na tom v poslednej dobe až tak dobre nebola. Rozhodol som sa teda odísť. Aj tak by som tu toho veľa neurobil - bez ťahača a všetkého. Skúsim to niekde inde.<br><br>Neber to v zlom, ahoj<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "Vodič $NAME$" #+ Message sender - written by female
+		subject: "Končím" #+ Message subject - written by female
+		body: "Čau šéfe,<br><br>Garáž v meste $CITY$, kde som ostal, sa uzatvára. Prišli nejaký ľudia z banky a povedali že mám vypadnúť. Vyzerá to tak, že táto spoločnosť na tom v poslednej dobe až tak dobre nebola. Rozhodol som sa teda odísť. Aj tak by som tu toho veľa neurobil - bez ťahača a všetkého. Skúsim to niekde inde.<br><br>Neber to v zlom, ahoj<br>$NAME$" #+ Message body - written by female
+	}
+	
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "Dispečer" #+ Message sender
+		subject: "Špeciálne prepravy" #+ Message subject
+		body: "Zdravím šéfe.<br><br>Mám pre teba niečo špeciálne. Vďaka naším kontaktom sa môžeme pustiť do skutočnej výzvy. Niektoré špeciálne, nadrozmerné a ťažké náklady je potrebné prepraviť skúsenými profesionálmi. Nebude to jednoduché, bude potreba niektorých skúseností, trpezlivosti, spolupráce so sprievodnými vozidlami a veľa opatrnosti, čo ale pre teba však nebude žiadny problém? Naviac väčší risk prináša aj väčší zisk.<br><br>Ak máš záujem, môže navštíviť tieto mestá: $CITIES$." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "Dispečer" #+ Message sender
+		subject: "Nové špeciálne prepravy " #+ Message subject
+		body: "Zdravím šéf,<br><br>pribudlo niekoľko firiem, ktoré by potrebovali tvoje skúseností za volantom pre doručenie špeciálnych zákaziek. Tak ako naposledy, ani tentokrát to nebude jednoduché a bude potreba niektorých schopností, trpezlivostí, spolupráce so sprievodnými vozidlami a značnej opatrnosti, čo už ale všetko poznáš, že? A nezabudni - stále platí, že väčší risk prináša vyššie zisky.<br><br>Takže okrem už dostupných špeciálnych zákaziek v týchto mestách: $OLD_CITIES$<br><br>si teraz môžeš zobrať tiež <color value=@@clr_sel@@>nové<color value=@@clr_txt@@> zákazky z týchto miest: <br><br>$CITIES$." #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "Realitná kancelária" #+ Message sender
+		subject: "Rozhliadaš sa po expandovaní svojej firmy?" #+ Message subject
+		body: "Vážený pán/vážená pani,<br><br>chceli by sme Vám pogratulovať k progresu Vaše firmy. Sme ohromení z úspechu Vašej firmy a radi by sme Vám ponúkli nový spôsob, ako pomôcť Vašej firme naďalej napredovať. Odteraz môžete využívať naše služby k nákupu nehnuteľností takmer okamžite. Pre viac informácii, prosím, <link url=screen.real_estate color=@@clr_link@@>navštívte stránku pre nákup garáži</link>.<br><br>S pozdravom,<br>Manažér pre styk s verejnosťou<br>Realitná kancelária" #+ Message body
+	}
+
+#@}
+}

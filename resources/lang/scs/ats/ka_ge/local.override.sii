@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "კაბინის შუქები"
+
+	key[]: "cabdefl"
+	val[]: "კაბინის დეფლექტორი"
+
+	key[]: "deflector"
+	val[]: "მწერებისგან დამცავი"
+
+	key[]: "filters"
+	val[]: "ჰაერის ფილტრები"
+
+	key[]: "f_banner"
+	val[]: "წინა აბრა"
+
+	key[]: "flag_f_l"
+	val[]: "წინა დროშები"
+
+	key[]: "flag_f_r"
+	val[]: "წინა დროშები"
+
+	key[]: "flag_r_l"
+	val[]: "უკანა დროშები"
+
+	key[]: "flag_r_r"
+	val[]: "უკანა დროშები"
+
+	key[]: "fl_mirror"
+	val[]: "წინა სარკეები"
+
+	key[]: "fr_mirror"
+	val[]: "წინა სარკეები"
+
+	key[]: "grill"
+	val[]: "გრილი"
+
+	key[]: "headache_r"
+	val[]: "სალონის დამცავი"
+
+	key[]: "horns"
+	val[]: "სიგნალი"
+
+	key[]: "hood"
+	val[]: "კაპოტი"
+
+	key[]: "lghfender"
+	val[]: "ფრთების მცველები"
+
+	key[]: "mudflaps"
+	val[]: "შხეფების ფარი"
+
+	key[]: "mudguard"
+	val[]: "შხეფების საფარი"
+
+	key[]: "sideflares"
+	val[]: "კაბინის პანელები"
+
+	key[]: "sideskrt_bar"
+	val[]: "გვერდითი ხუფის ძელაკები"
+
+	key[]: "topflares"
+	val[]: "ძილის სახურავის შუქები"
+
+	key[]: "wing"
+	val[]: "ტურბო ფრთა"
+
+	key[]: "chainsaw_toy"
+	val[]: "სათამაშო ჯაჭვური ხერხი"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "განათავსეთ სასურველი მუსიკა საქაღალდეში <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>/<color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@> და მათ აქ იხილავთ."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "ჩაასწორეთ <color value=@@clr_sel@@>live_streams.sii ფაილი <color value=@@clr_txt@@><color value=@@clr_sel@@>American Truck Simulator-ის <color value=@@clr_txt@@>საქაღალდეში <color value=@@clr_sel@@>ჩემი დოკუმენტებში <color value=@@clr_txt@@>და მოუსმინეთ საყვარელ რადიოს თამაშში!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "მუსიკის დასამატებლად, წაიკითხეთ ფაილი <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@> საქაღალდეში <color value=@@clr_sel@@>Documents\\American Truck Simulator<color value=@@clr_txt@@><color value=@@clr_sel@@><color value=@@clr_txt@@>"
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "მოგესალმებით American Truck Simulator-ში!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "სახიფათო ტვირთი"
+
+	key[]: "mechanical"
+	val[]: "საწვავის დაზოგვა"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "სახიფათო"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "სახიფათო ტვირთის გადატანის ვარჯიში"
+
+	key[]: "skill_adr_info"
+	val[]: "სახიფათო ნივთების ტრანსპორტირება მოითხოვს კარგად გაწვრთნილ პროფესიონალებს. გამოიყენეთ თქვენი მძიმე შრომით მოპოვებული გამოცდილება U.S. DOT HazMat სერთიფიკატების მისაღებად და გაზარდეთ შემოსავალი:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "საწვავის დაზოგვა"
+
+	key[]: "skill_mechanical_info"
+	val[]: "საწვავის შემცირების უნარის გაუმჯობესება გამოიწვევს საწვავის მოხმარების შემცირებას. კერძოდ:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "სახიფათო ტვირთის ჯილდო"
+
+	key[]: "adr_class"
+	val[]: "საფრთხის დონე"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "ავიაძრავა"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "მცოცავი ტრაქტორი"
+
+	key[]: "cn_boat"
+	val[]: "ნავი"
+
+	key[]: "cn_bottles"
+	val[]: "ცარიელი ბოთლები"
+
+	key[]: "cn_butter"
+	val[]: "კარაქი"
+
+	key[]: "cn_cable"
+	val[]: "სადენები"
+
+	key[]: "cn_cable_reel"
+	val[]: "სადენის დასახვევი"
+
+	key[]: "cn_colors"
+	val[]: "საღებავი"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "ბეტონის მილები"
+
+	key[]: "cn_const_houses"
+	val[]: "მუშების სახლი"
+
+	key[]: "cn_crude_oil"
+	val[]: "ნედლი ნავთობი"
+
+	key[]: "cn_curtains"
+	val[]: "ფარდები"
+
+	key[]: "cn_dryfruit"
+	val[]: "გამხმარე ხილი"
+
+	key[]: "cn_forwarder"
+	val[]: "მორსათრევი"
+
+	key[]: "cn_frac_tank"
+	val[]: "ცისტერნა-კონტეინერი"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "გაყინული ხილი"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "გაყინული ბოსტნეული"
+
+	key[]: "cn_fruits"
+	val[]: "ხილი"
+
+	key[]: "cn_grain"
+	val[]: "მარცვლეული"
+
+	key[]: "cn_harvester"
+	val[]: "კომბაინი"
+
+	key[]: "cn_hay"
+	val[]: "თივა"
+
+	key[]: "cn_house_prefabs"
+	val[]: "ანაკრები სახლი"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "სატვირთოები Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "ამწე-მანიპულატორი"
+
+	key[]: "cn_lift_truck"
+	val[]: "მტვირთავი"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "მტვირთავის შასი"
+
+	key[]: "cn_log_harvester"
+	val[]: "მორების კომბაინი"
+
+	key[]: "cn_log_loader"
+	val[]: "მორების სატვირთველი"
+
+	key[]: "cn_log_stacker"
+	val[]: "მორჩამწყობი"
+
+	key[]: "cn_lye"
+	val[]: "ლიქიორი"
+
+	key[]: "cn_mbt"
+	val[]: "მობილური ბარიერი"
+
+	key[]: "cn_meat"
+	val[]: "ხორცი"
+
+	key[]: "cn_milling_machine"
+	val[]: "საფქვავი დანადგარი"
+
+	key[]: "cn_mobile_crane"
+	val[]: "ყველა რელიეფის ამწე"
+
+	key[]: "cn_moor_buoy"
+	val[]: "ჩასაბმელი ტივტივა"
+
+	key[]: "cn_mortar"
+	val[]: "ბეტონი"
+
+	key[]: "cn_mulcher"
+	val[]: "დასაქუცმაცებელი"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "ცხოველის გრანულირებული საკვები"
+
+	key[]: "cn_plows"
+	val[]: "გუთნები"
+
+	key[]: "cn_power_generator"
+	val[]: "ელექტროგენერატორი"
+
+	key[]: "cn_rawmilk"
+	val[]: "რძე"
+
+	key[]: "cn_salt"
+	val[]: "მარილი"
+
+	key[]: "cn_scrap_cars"
+	val[]: "ჩამოწერილი მანქანები"
+
+	key[]: "cn_scraper"
+	val[]: "სკრეპერი"
+
+	key[]: "cn_stumper"
+	val[]: "კუნძის მოსათხრელი"
+
+	key[]: "cn_transformer"
+	val[]: "ტრანსფორმერი"
+
+	key[]: "cn_tub_grinder"
+	val[]: "საღერღი მანქანა"
+
+	key[]: "cn_vegetable"
+	val[]: "ბოსტნეული"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "მთლიანი სახლის კონსტრუქცია"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "გადამზიდი შვეულმფრენი"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "დიდი ცისტერნა"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "თვითმცლელის ძარა"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "თვითმცლელის შასი"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "ჰაერის კონდიცირების სისტემა"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "დიდი კონსტრუქცია"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "მჟავის ავზიანი მისაბმელი"
+
+	key[]: "tn_acid_long"
+	val[]: "მჟავის ავზიანი გრძელი მისაბმელი"
+
+	key[]: "tn_bottom_dump"
+	val[]: "ფსკერული განტვირთვის მისაბმელი"
+
+	key[]: "tn_car"
+	val[]: "მანქანის გადამზიდი"
+
+	key[]: "tn_cement"
+	val[]: "ცემენტის ცისტერნა"
+
+	key[]: "tn_chemical"
+	val[]: "ავზი ქიმიური ნივთიერებებით"
+
+	key[]: "tn_chemical_long"
+	val[]: "ქიმიურ ავზიანი გრძელი მისაბმელი"
+
+	key[]: "tn_dry_bulk"
+	val[]: "მისაბმელი ნაყარი მასალებისთვის"
+
+	key[]: "tn_dump"
+	val[]: "საყირავი მისაბმელი"
+
+	key[]: "tn_flatbed"
+	val[]: "ბაქნიანი მისაბმელი"
+
+	key[]: "tn_food_tank"
+	val[]: "საჭმლის ავზი"
+
+	key[]: "tn_frac_tank"
+	val[]: "ცისტერნა-კონტეინერი"
+
+	key[]: "tn_fuel"
+	val[]: "საწვავის ავზიანი მისაბმელი"
+
+	key[]: "tn_fuel_long"
+	val[]: "საწვავის ავზიანი გრძელი მისაბმელი"
+
+	key[]: "tn_gas"
+	val[]: "საწვავის ავზიანი მისაბმელი"
+
+	key[]: "tn_gas_long"
+	val[]: "საწვავის ავზიანი გრძელი მისაბმელი"
+
+	key[]: "tn_home_transporter"
+	val[]: "სახლის გადამზიდი"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "ამწე-მანიპულატორი"
+
+	key[]: "tn_log"
+	val[]: "ხეტყის საზიდი მისაბმელი"
+
+	key[]: "tn_lowboy"
+	val[]: "დაბალჩარჩოიანი მისაბმელი"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "დაბალჩარჩოიანი მისაბმელი ნავისთვის"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "დაბალჩარჩოიანი 55ლ მისაბმელი"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "მობილური მისაბმელი"
+
+	key[]: "tn_tub_grinder"
+	val[]: "საღერღი მანქანა"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "საფრთხის დონე 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "საფრთხის დონე 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "საფრთხის დონე 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "საფრთხის დონე 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "საფრთხის დონე 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "საფრთხის დონე 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "საფრთხის დონე 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "ნამდვილი მუშა"
+	
+	key[]: "lvl_name3"
+	val[]: "მეწარმე"
+	
+	key[]: "lvl_name4"
+	val[]: "პროფესიონალი"
+	
+	key[]: "lvl_name6"
+	val[]: "ოსტატობის 18 ბორბალი"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "ავტოსალონი"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator-ის ვებგვერდი" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator-ის ჩართვა არ ხერხდება, რადგან არ მოიძებნა შესაფერისი გრაფიკული მოწყობილობა\nრჩევა:\n\n1. დარწმუნდით, რომ თქვენი კომპიუტერის გრაფიკული მოწყობილობა აკმაყოფილებს თამაშის უმცირეს მოთხოვნებს.\n2. განაახლეთ Microsoft DirectX.\n3. გადმოწერეთ და დააყენთ გრაფიკული მოწყობილობისთვის უახლესი დრაივერი\n4. შეცვალეთ OpenGL-ით გამოსახვა DirectX-ით.\n5. საქაღალდეში 'Documents' - 'American Truck Simulator' წაშალეთ გამართვის ფაილი 'config.cfg'. \n(თამაშის შემდეგი ჩართვისას, ეს ფაილი თავისით შეიქმნება)."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator-ს შეექმნა პრობლემა და არ ხერხდება ტექსტურების დახატავ (არ მოიძებნა შესაბამისი მოწყობილობა)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator ვერ დაუკავშირდა Steam-ის კლიენტს, შეამოწმეთ შემდეგი:\n1. დარწმუნდით, რომ Steam გაშვებულია.\n2. დარწმუნდით, რომ გაქვთ Steam-ის ბოლო ვერსია\n3. დარწმუნდით, რომ ავტომატური განახლება ჩართულია და გაქვთ თამაშის ბოლო ვერსია."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "თამაში გააქტიურდა.<br>მადლობას გიხდით American Truck Simulator-ის შეძენისთვის."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator-ის ვებგვერდი"
+
+	key[]: "steam_demo"
+	val[]: "თუ მოგეწონათ American Truck Simulator, შეიძინეთ სრული ვერსია <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam-ზე</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "თამაშის შიგთავსი" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "საკვებმზიდი"
+
+	key[]: "container"
+	val[]: "კონტეინერმზიდი"
+
+	key[]: "curtainside"
+	val[]: "გადასაწევი ფარდა"
+
+	key[]: "chipvan"
+	val[]: "ქვა-ღორღის საზიდი"
+
+	key[]: "dryvan"
+	val[]: "ფურგონი"
+
+	key[]: "flatbed"
+	val[]: "ბაქანი"
+
+	key[]: "hopper"
+	val[]: "ჰოპერი"
+
+	key[]: "insulated"
+	val[]: "იზოთერმული"
+
+	key[]: "log"
+	val[]: "ხეტყის საზიდი"
+
+	key[]: "refrigerated"
+	val[]: "სამაცივრე"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "ფხვიერი ტვირთი"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "ფხვიერი საკვები მასალა"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "მსუბუქი ფხვიერი მასალა"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "მარცვლოვანი და ფხვიერი მასალა"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "ერთიანი"
+
+	key[]: "double"
+	val[]: "ორმაგი"
+
+	key[]: "bdouble"
+	val[]: "გაერთ. ორმაგი"
+
+	key[]: "rmdouble"
+	val[]: "სამთო ორმაგი"
+
+	key[]: "tpdouble"
+	val[]: "ორმაგი სრული"
+
+	key[]: "triple"
+	val[]: "სამმაგი"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "ერთიანი"
+
+	key[]: "chain_staa_double"
+	val[]: "ორმაგი STAA"
+
+	key[]: "chain_b_double"
+	val[]: "გაერთ. ორმაგი"
+
+	key[]: "chain_rm_double"
+	val[]: "კლდოვანი სამთო ორმაგი"
+
+	key[]: "chain_tp_double"
+	val[]: "სრული სიგრძის ორმაგი"
+
+	key[]: "chain_triple"
+	val[]: "სამმაგი"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "ორმაგი STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "ორმაგი მოკლე STAA"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "ორმაგი მოკლე STAA, 4 ღერძი"
+
+	key[]: "tr_b_double"
+	val[]: "გაერთ. ორმაგი"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "გაერთ. ორმაგი, 5 ღერძი"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "გაერთ. ორმაგი, 6 ღერძი"
+
+	key[]: "tr_rm_double"
+	val[]: "კლდოვანი სამთო ორმაგი"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "კლდოვანი სამთო ორმაგი მოკლე"
+
+	key[]: "tr_tp_double"
+	val[]: "სრული სიგრძის ორმაგი"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "სრული სიგრძის ორმაგი, 6 ღერძი"
+
+	key[]: "tr_single_28"
+	val[]: "28 ფუტი"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 ფუტი, 2 ღერძი"
+
+	key[]: "tr_single_32"
+	val[]: "32 ფუტი"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 ფუტი, 2 ღერძი"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 ფუტი, გასაშლელი"
+
+	key[]: "tr_single_40"
+	val[]: "40 ფუტი"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 ფუტი, გასაშლელი"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 ფუტი, უკანა"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 ფუტი, დაშორებული"
+
+	key[]: "tr_single_45"
+	val[]: "45 ფუტი"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 ფუტი, 3 ღერძი, ერთიანი"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 ფუტი, 3 ღერძი, მართვადი"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 ფუტი, წინა"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 ფუტი, უკანა"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 ფუტი, მოძრავი ორმაგი ღერძი, წინა"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 ფუტი, მოძრავი ორმაგი ღერძი, უკანა"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 ფუტი, დაშორებული"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 ფუტი, წინა"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 ფუტი, უკანა"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 ფუტი, მოძრავი ორმაგი ღერძი, წინა"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 ფუტი, მოძრავი ორმაგი ღერძი, უკანა"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 ფუტი, დაშორებული"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 ფუტი, 3 ღერძი, ერთიანი"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 ფუტი, 3 ღერძი, მართვადი"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 ფუტი, დაშორებული"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 ფუტი, 4 ღერძი"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 ფუტი, 4 ღერძი, დაშორებული"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 ფუტი, 4 ღერძი, მართვადი"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 ფუტი, წინა"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 ფუტი, უკანა"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 ფუტი, მოძრავი ორმაგი ღერძი, წინა"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 ფუტი, მოძრავი ორმაგი ღერძი, უკანა"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 ფუტი, დაშორებული"
+
+	key[]: "tr_triple"
+	val[]: "სამმაგი"
+
+	key[]: "tr_triple_pup"
+	val[]: "სამმაგი მოკლე მისაბმელი"
+
+	key[]: "tr_conv_dolly"
+	val[]: "შუალედური ურიკა"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "შუალედური ურიკა, 2 ღერძი"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "შუალედური ურიკა"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "ფსკერული განტვირთვის"
+
+	key[]: "bs_bulk_feed"
+	val[]: "საკვებმზიდი"
+
+	key[]: "bs_chipvan"
+	val[]: "ქვა-ღორღის საზიდი"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "ქვა-ღორღის საზიდი, მოძრავი იატაკით"
+
+	key[]: "bs_container"
+	val[]: "კონტეინერმზიდი"
+
+	key[]: "bs_curtain"
+	val[]: "გადასაწევი ფარდა"
+
+	key[]: "bs_dryvan"
+	val[]: "ფურგონი"
+
+	key[]: "bs_flatbed"
+	val[]: "ბაქანი"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "ბაქანი ალუმინის"
+
+	key[]: "bs_grain_hopper"
+	val[]: "მარცვალსაზიდი"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "მარცვალსაზიდი ღვედით"
+
+	key[]: "bs_insulated"
+	val[]: "იზოთერმული"
+
+	key[]: "bs_log_4"
+	val[]: "ხეტყის საზიდი 4 საყრდენით"
+
+	key[]: "bs_log_6"
+	val[]: "ხეტყის საზიდი 6 საყრდენით"
+
+	key[]: "bs_reefer"
+	val[]: "სამაცივრე"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "მაცივებელი"
+
+	key[]: "turbo_cooler"
+	val[]: "მაცივებელი Turbo"
+
+	key[]: "chrome_cooler"
+	val[]: "ქრომირებული მაცივებელი"
+
+	key[]: "paint_wall"
+	val[]: "შეღებილი კედელი"
+
+	key[]: "chrome_wall"
+	val[]: "ქრომირებული კედელი"
+
+	key[]: "alu_wall"
+	val[]: "ალუმინის კედელი"
+
+	key[]: "steel_wall"
+	val[]: "ფოლადის კედელი"
+
+	key[]: "light"
+	val[]: "განათება"
+
+	key[]: "light_bar"
+	val[]: "სანათების სამაგრი"
+
+	key[]: "log_cage"
+	val[]: "ძელების საზიდი კარკასი"
+
+	key[]: "log_wall"
+	val[]: "ძელების საზიდი კედლით"
+
+	key[]: "wind_deflector"
+	val[]: "ქარამრიდი"
+
+	key[]: "aero_sideskirt"
+	val[]: "გარშემოდენილი ხუფი"
+
+	key[]: "black_sideskirt"
+	val[]: "შავი გვერდითი ხუფი"
+
+	key[]: "paint_sideskirt"
+	val[]: "შეღებილი გვერდითი ხუფი"
+
+	key[]: "support_frame"
+	val[]: "საყრდენი ჩარჩო"
+
+	key[]: "chrome_door"
+	val[]: "ქრომირებული კარები"
+
+	key[]: "rollup_door"
+	val[]: "რულონური კარი"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "რულონური კარი, ასაწევი ბაქანი"
+
+	key[]: "standard_door"
+	val[]: "ჩვეულებრივი კარები"
+
+	key[]: "standard_door_aero"
+	val[]: "ჩვეულებრივი კარი, ქარამრიდი"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "არიზონა"
+
+	key[]: "california"
+	val[]: "კალიფორნია"
+
+	key[]: "nevada"
+	val[]: "ნევადა"
+
+	key[]: "new_mexico"
+	val[]: "ნიუ მეხიკო"
+
+	key[]: "oregon"
+	val[]: "ორეგონი"
+
+	key[]: "utah"
+	val[]: "იუტა"
+
+	key[]: "washington"
+	val[]: "ვაშინგტონი"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "აბერდინი"
+
+	key[]: "alamogordo"
+	val[]: "ალამოგორდო"
+
+	key[]: "albuquerque"
+	val[]: "ალბუკერკე"
+
+	key[]: "artesia"
+	val[]: "არტეზია"
+
+	key[]: "astoria"
+	val[]: "ასტორია"
+
+	key[]: "bakersfield"
+	val[]: "ბეიკერსფილდი"
+
+	key[]: "barstow"
+	val[]: "ბარსტოუ"
+
+	key[]: "bellingham"
+	val[]: "ბელინგემი"
+
+	key[]: "bend"
+	val[]: "ბენდი"
+
+	key[]: "burns"
+	val[]: "ბერნსი"
+
+	key[]: "camp_verde"
+	val[]: "კამპ-ვერდე"
+
+	key[]: "carlsbad"
+	val[]: "კარლსბადი"
+
+	key[]: "carson_city"
+	val[]: "კარსონ-სიტი"
+
+	key[]: "cedar_city"
+	val[]: "სიდარ-სიტი"
+
+	key[]: "clifton"
+	val[]: "კლიფტონი"
+
+	key[]: "clovis"
+	val[]: "კლოვისი"
+
+	key[]: "colville"
+	val[]: "კოლვილი"
+
+	key[]: "coos_bay"
+	val[]: "კუს-ბეი"
+
+	key[]: "ehrenberg"
+	val[]: "ერენბერგი"
+
+	key[]: "el_centro"
+	val[]: "ელ-ცენტრო"
+
+	key[]: "elko"
+	val[]: "ელკო"
+
+	key[]: "ely"
+	val[]: "ელი"
+
+	key[]: "eugene"
+	val[]: "იუჯინი"
+
+	key[]: "eureka"
+	val[]: "იურიკა"
+
+	key[]: "everett"
+	val[]: "ევერეტი"
+
+	key[]: "farmington"
+	val[]: "ფარმინგტონი"
+
+	key[]: "flagstaff"
+	val[]: "ფლაგსტაფი"
+
+	key[]: "fresno"
+	val[]: "ფრესნო"
+
+	key[]: "gallup"
+	val[]: "გალაპი"
+
+	key[]: "grand_canyon"
+	val[]: "გრან-კანიონი"
+
+	key[]: "grand_canyon_village"
+	val[]: "გრან-კანიონ-ვილიჯი"
+
+	key[]: "grand_coulee"
+	val[]: "გრანდ-კული"
+
+	key[]: "hobbs"
+	val[]: "ჰობსი"
+
+	key[]: "holbrook"
+	val[]: "ჰოლბრუკი"
+
+	key[]: "hornbrook"
+	val[]: "ჰორნბრუკი"
+
+	key[]: "huron"
+	val[]: "ჰურონი"
+
+	key[]: "jackpot"
+	val[]: "ჯეკპოტი"
+
+	key[]: "kayenta"
+	val[]: "კაიენტა"
+
+	key[]: "kennewick"
+	val[]: "კენევიკი"
+
+	key[]: "kingman"
+	val[]: "კინგმანი"
+
+	key[]: "klamath_falls"
+	val[]: "კლამათ-ფოლსი"
+
+	key[]: "lakeview"
+	val[]: "ლეიკვიუ"
+
+	key[]: "las_cruces"
+	val[]: "ლას-კრუსიზი"
+
+	key[]: "las_vegas"
+	val[]: "ლას-ვეგასი"
+
+	key[]: "logan"
+	val[]: "ლოგანი"
+
+	key[]: "longview"
+	val[]: "ლონგვიუ"
+
+	key[]: "los_angeles"
+	val[]: "ლოს-ანჯელესი"
+
+	key[]: "medford"
+	val[]: "მედფორდი"
+
+	key[]: "moab"
+	val[]: "მოაბი"
+
+	key[]: "newport"
+	val[]: "ნიუპორტი"
+
+	key[]: "nogales"
+	val[]: "ნოგალესი"
+
+	key[]: "oakdale"
+	val[]: "ოკდეილი"
+
+	key[]: "oakland"
+	val[]: "ოკლენდი"
+
+	key[]: "ogden"
+	val[]: "ოგდენი"
+
+	key[]: "olympia"
+	val[]: "ოლიმპია"
+
+	key[]: "omak"
+	val[]: "ომაკი"
+
+	key[]: "ontario"
+	val[]: "ონტარიო"
+
+	key[]: "oxnard"
+	val[]: "ოქსნარდი"
+
+	key[]: "page"
+	val[]: "პეიჯი"
+
+	key[]: "pajarito_rest_area"
+	val[]: "პახარიტოს მოსასვენებელი არე"
+
+	key[]: "pedro_travel_center"
+	val[]: "პედროს ტურისტული ცენტრი"
+
+	key[]: "pendleton"
+	val[]: "პენდელტონი"
+
+	key[]: "phoenix"
+	val[]: "ფენიქსი"
+
+	key[]: "pioche"
+	val[]: "პაიოში"
+
+	key[]: "port_angeles"
+	val[]: "პორტ-ანჯელესი"
+
+	key[]: "portland"
+	val[]: "პორტლენდი"
+
+	key[]: "price_ut"
+	val[]: "პრაისი"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "პრიმი"
+
+	key[]: "provo"
+	val[]: "პროვო"
+
+	key[]: "raton"
+	val[]: "რატონი"
+
+	key[]: "redding"
+	val[]: "რედინგი"
+
+	key[]: "reno"
+	val[]: "რენო"
+
+	key[]: "roswell"
+	val[]: "როსველი"
+
+	key[]: "sacramento"
+	val[]: "საკრამენტო"
+
+	key[]: "salem"
+	val[]: "სეილემი"
+
+	key[]: "salina"
+	val[]: "სალინა"
+
+	key[]: "salt_lake_city"
+	val[]: "სოლტ-ლეიკ-სიტი"
+
+	key[]: "san_diego"
+	val[]: "სან-დიეგო"
+
+	key[]: "san_francisco"
+	val[]: "სან-ფრანცისკო"
+
+	key[]: "san_rafael"
+	val[]: "სან-რაფაელი"
+
+	key[]: "san_simon"
+	val[]: "სან-სიმონი"
+
+	key[]: "santa_cruz"
+	val[]: "სანტა-კრუსი"
+
+	key[]: "santa_fe"
+	val[]: "სანტა-ფე"
+
+	key[]: "santa_maria"
+	val[]: "სანტა-მარია"
+
+	key[]: "seattle"
+	val[]: "სიეტლი"
+
+	key[]: "show_low"
+	val[]: "შოუ-ლოუ"
+
+	key[]: "sierra_vista"
+	val[]: "სიერა-ვისტა"
+
+	key[]: "socorro"
+	val[]: "სოკორო"
+
+	key[]: "spokane"
+	val[]: "სპოუკენი"
+
+	key[]: "st_george"
+	val[]: "სენტ-ჯორჯი"
+
+	key[]: "stockton"
+	val[]: "სტოკტონი"
+
+	key[]: "tacoma"
+	val[]: "ტაკომა"
+
+	key[]: "the_dalles"
+	val[]: "დალესი"
+
+	key[]: "tonopah"
+	val[]: "ტონოპა"
+
+	key[]: "truckee"
+	val[]: "ტრაკი"
+
+	key[]: "tucson"
+	val[]: "ტუსონი"
+
+	key[]: "tucumcari"
+	val[]: "ტუკუმკარი"
+
+	key[]: "ukiah"
+	val[]: "უკია"
+
+	key[]: "vancouver"
+	val[]: "ვანკუვერი"
+
+	key[]: "vernal"
+	val[]: "ვერნალი"
+
+	key[]: "wenatchee"
+	val[]: "ვენატჩი"
+
+	key[]: "winnemucca"
+	val[]: "ვინემაკა"
+
+	key[]: "yakima"
+	val[]: "იაკიმა"
+
+	key[]: "yuma"
+	val[]: "იუმა"
+#@}
+
+}
+}

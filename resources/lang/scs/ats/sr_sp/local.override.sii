@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Kabinska svetla"
+
+	key[]: "cabdefl"
+	val[]: "Kabinski odbojnici"
+
+	key[]: "deflector"
+	val[]: "Štitnik od insekata"
+
+	key[]: "filters"
+	val[]: "Filter Vazduha"
+
+	key[]: "f_banner"
+	val[]: "Prednja Zastava"
+
+	key[]: "flag_f_l"
+	val[]: "Prednje zastavice"
+
+	key[]: "flag_f_r"
+	val[]: "Prednje zastavice"
+
+	key[]: "flag_r_l"
+	val[]: "Zadnje zastavice"
+
+	key[]: "flag_r_r"
+	val[]: "Zadnje zastavice"
+
+	key[]: "fl_mirror"
+	val[]: "Prednja ogledala"
+
+	key[]: "fr_mirror"
+	val[]: "Prednja ogledala"
+
+	key[]: "grill"
+	val[]: "Rešetka"
+
+	key[]: "headache_r"
+	val[]: "Šipke protiv glavobolje"
+
+	key[]: "horns"
+	val[]: "Sirene"
+
+	key[]: "hood"
+	val[]: "Hauba"
+
+	key[]: "lghfender"
+	val[]: "Štitnici blatobrana"
+
+	key[]: "mudflaps"
+	val[]: "Zavesice"
+
+	key[]: "mudguard"
+	val[]: "Blatobran"
+
+	key[]: "sideflares"
+	val[]: "Kabinski paneli"
+
+	key[]: "sideskrt_bar"
+	val[]: "Bočne lajsne"
+
+	key[]: "topflares"
+	val[]: "Krovna ukrasna svetla"
+
+	key[]: "wing"
+	val[]: "Krovni spojler"
+
+	key[]: "chainsaw_toy"
+	val[]: "Motorna testera igračka"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Stavite vaše pesme u <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>folder u vašim <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>i pojaviće se ovde."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Izmenite <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>u <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>folderu u vašim <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>i slušajte vaš omiljeni Internet-radio tokom igre!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Molimo, pogledajte <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>u<color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>folderu u vašim <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>kako da dodate svoju muziku i radio-stanice."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Dobrodošli u American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Opasan teret"
+
+	key[]: "mechanical"
+	val[]: "Ekonomija goriva"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Opasno"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Obuka prevoza opasnih materija"
+
+	key[]: "skill_adr_info"
+	val[]: "Prevoz opasnog tereta zahteva dobro obučenog profesionalca. Iskoristite vaše stečeno iskustvo da dobijete 'U.S. DOT HazMat' - sertifikate i značajno uvećate vaše prihode:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Ekonomija goriva"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Veština ekonomične vožnje će vam smanjiti potrošnju goriva. Tačnije:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Bonus za isporuku opasnog tereta"
+
+	key[]: "adr_class"
+	val[]: "Klasa opasnosti"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Avionski motor"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Traktor guseničar"
+
+	key[]: "cn_boat"
+	val[]: "Brod"
+
+	key[]: "cn_bottles"
+	val[]: "Prazne flaše"
+
+	key[]: "cn_butter"
+	val[]: "Puter"
+
+	key[]: "cn_cable"
+	val[]: "Kablovi"
+
+	key[]: "cn_cable_reel"
+	val[]: "Kablovski kalem"
+
+	key[]: "cn_colors"
+	val[]: "Boja"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Betonske cevi"
+
+	key[]: "cn_const_houses"
+	val[]: "Radničke barake"
+
+	key[]: "cn_crude_oil"
+	val[]: "Sirova nafta"
+
+	key[]: "cn_curtains"
+	val[]: "Zavese"
+
+	key[]: "cn_dryfruit"
+	val[]: "Sušeno voće"
+
+	key[]: "cn_forwarder"
+	val[]: "Špediter"
+
+	key[]: "cn_frac_tank"
+	val[]: "Frak tank"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Smrznuto voće"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Smrznuto povrće"
+
+	key[]: "cn_fruits"
+	val[]: "Voće"
+
+	key[]: "cn_grain"
+	val[]: "Zrnevlje"
+
+	key[]: "cn_harvester"
+	val[]: "Kombajn"
+
+	key[]: "cn_hay"
+	val[]: "Seno"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Modeli kuća"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth Kamioni"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Knuckleboom Utovarivač"
+
+	key[]: "cn_lift_truck"
+	val[]: "Viljuškari"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Šasije viljuškara"
+
+	key[]: "cn_log_harvester"
+	val[]: "Kombajn za trupce"
+
+	key[]: "cn_log_loader"
+	val[]: "Utovarivač trupaca"
+
+	key[]: "cn_log_stacker"
+	val[]: "Razvrstavač trupaca"
+
+	key[]: "cn_lye"
+	val[]: "Soda"
+
+	key[]: "cn_mbt"
+	val[]: "Pokretna ograda"
+
+	key[]: "cn_meat"
+	val[]: "Meso"
+
+	key[]: "cn_milling_machine"
+	val[]: "Mašina za asfalt"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Pokretna dizalica"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Bure za sidrenje"
+
+	key[]: "cn_mortar"
+	val[]: "Malter"
+
+	key[]: "cn_mulcher"
+	val[]: "Kosilica"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Paletirana hrana za životinje"
+
+	key[]: "cn_plows"
+	val[]: "Plugovi"
+
+	key[]: "cn_power_generator"
+	val[]: "Električni generator"
+
+	key[]: "cn_rawmilk"
+	val[]: "Sirovo mleko"
+
+	key[]: "cn_salt"
+	val[]: "So"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Automobilski otpad"
+
+	key[]: "cn_scraper"
+	val[]: "Strugač"
+
+	key[]: "cn_stumper"
+	val[]: "Rasklapač"
+
+	key[]: "cn_transformer"
+	val[]: "Transformator"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Drobilica"
+
+	key[]: "cn_vegetable"
+	val[]: "Povrće"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Montažne kuće"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Transport Helikoptera"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Veliki rezervoar"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Kamion za vuču trupaca"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Šasija za tegljač"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Kompleks klima uređaja"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Velika Konstrukcija"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Cisterna za kiselinu"
+
+	key[]: "tn_acid_long"
+	val[]: "Duga cisterna za kiselinu"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Duboka prikolica za rasuti teret"
+
+	key[]: "tn_car"
+	val[]: "Prevoz automobila"
+
+	key[]: "tn_cement"
+	val[]: "Prevoz cementa"
+
+	key[]: "tn_chemical"
+	val[]: "Cisterna za hemikalije"
+
+	key[]: "tn_chemical_long"
+	val[]: "Duga cisterna za hemikalije"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Prikolica za suvi rasuti teret"
+
+	key[]: "tn_dump"
+	val[]: "Prikolica za rasuti teret"
+
+	key[]: "tn_flatbed"
+	val[]: "Ravna Prikolica"
+
+	key[]: "tn_food_tank"
+	val[]: "Cisterna za hranu"
+
+	key[]: "tn_frac_tank"
+	val[]: "Frak tank"
+
+	key[]: "tn_fuel"
+	val[]: "Cisterna za gorivo"
+
+	key[]: "tn_fuel_long"
+	val[]: "Duga cisterna za gorivo"
+
+	key[]: "tn_gas"
+	val[]: "Cisterna za gas"
+
+	key[]: "tn_gas_long"
+	val[]: "Duga cisterna za gas"
+
+	key[]: "tn_home_transporter"
+	val[]: "Prevoz montažne kuće"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Knuckleboom Utovarivač"
+
+	key[]: "tn_log"
+	val[]: "Prikolica za balvane"
+
+	key[]: "tn_lowboy"
+	val[]: "Niska prikolica"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Prikolica za brodove sa niskom platformom"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Lowboy 55L prikolica"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Prikolica pokretne ograde"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Drobilica"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Klasa opasnosti 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Klasa opasnosti 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Klasa opasnosti 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Klasa opasnosti 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Klasa opasnosti 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Klasa opasnosti 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Klasa opasnosti 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Radni konj"
+	
+	key[]: "lvl_name3"
+	val[]: "Nadobudan"
+	
+	key[]: "lvl_name4"
+	val[]: "Profesionalac"
+	
+	key[]: "lvl_name6"
+	val[]: "18 točkova veštine"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Izložbeni salon"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator vebsajt" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Fejsbuk American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator ima problem i nije u mogućnosti da nacrta grafiku na vašem računaru (nije pronađena podržana grafička jedinica).\nPreporučeni koraci:\n1. Proverite da li vaš računar i video karta odgovaraju minimumu hardverskih zahteva.\n2. Instalirajte najnoviju verziju Microsoftovih DirectX drajvera.\n3. Instalirajte najnoviju verziju drajvera za vašu grafičku kartu sa proizvođačevog sajta.\n4. Prebacite metod renderovanja sa OpenGL u DirectX i obrnuto.\n5. Obrišite konfiguracioni fajl igre 'config.cfg' u vašem 'Documents' - 'American Truck Simulator' foldera. Možda je oštećen.\nOvaj fajl će biti automatski kreiran sa ispravnim početnim vrednostima prilikom sledećeg starta igre."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator ima problema da prikaže grafiku na vašem računaru (nije pronađena odgovarajuća grafička karta)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator ne može da pristupi Steam klijentu. Preporučujemo:\n\n1. Proverite da li je klijent pokrenut.\n2. Proverite da li imate ažuriranu verziju klijenta.\n3. Proverite da li je uključeno automatsko ažuriranje i da li je igra poslednja verzija."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Aktivacija je bila uspešna.<br>Hvala vam što ste kupili 'American Truck Simulator'."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Ako vam se dopao American Truck Simulator demo, molimo kupite punu verziju na <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - POKRETANJE" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator sadržaj" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Bulk Feed"
+
+	key[]: "container"
+	val[]: "Kontejnerski nosač"
+
+	key[]: "curtainside"
+	val[]: "Klizajuće zavese"
+
+	key[]: "chipvan"
+	val[]: "Zatvorena za iverje"
+
+	key[]: "dryvan"
+	val[]: "Suva zatvorena"
+
+	key[]: "flatbed"
+	val[]: "Ravnipod"
+
+	key[]: "hopper"
+	val[]: "Hopper"
+
+	key[]: "insulated"
+	val[]: "Izolovana"
+
+	key[]: "log"
+	val[]: "Trupci"
+
+	key[]: "refrigerated"
+	val[]: "Rashlađen"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Bulk"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Rasuti materijal"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Lagani rasuti materijal"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Zrnasti i rasuti materijal"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Pojedinačan"
+
+	key[]: "double"
+	val[]: "Duple"
+
+	key[]: "bdouble"
+	val[]: "B-Dupla"
+
+	key[]: "rmdouble"
+	val[]: "R.M. Dupla"
+
+	key[]: "tpdouble"
+	val[]: "T.P. Dupla"
+
+	key[]: "triple"
+	val[]: "Trostruke"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Singl"
+
+	key[]: "chain_staa_double"
+	val[]: "Dupla STAA"
+
+	key[]: "chain_b_double"
+	val[]: "B-Dupla"
+
+	key[]: "chain_rm_double"
+	val[]: "Dupla Rocky Mountain"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike Dupla"
+
+	key[]: "chain_triple"
+	val[]: "Trostruka"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "Dupla STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Dupla STAA Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Dupla Pup, 4 Osovine"
+
+	key[]: "tr_b_double"
+	val[]: "B-Dupla"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-Dupla, 5 Osovina"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-Dupla, 6 Osovina"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain Dupla"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Dupla Rocky Mountain Pup"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike Dupla"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike Dupla, 6 Osovina"
+
+	key[]: "tr_single_28"
+	val[]: "28 stopa"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 stopa, 2 Osovine"
+
+	key[]: "tr_single_32"
+	val[]: "32 stopa"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 stopa, 2 Osovine"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 stopa, 3 osovine"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 stope, rastegljivo"
+
+	key[]: "tr_single_40"
+	val[]: "40 stopa"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 stopa, 3 osovine"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 stopa, rastegljivo"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 stopa, zadnja"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 stopa, široka"
+
+	key[]: "tr_single_45"
+	val[]: "45 stopa"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 stopa, 3 osovine"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 stopa, 3 Osovine, Singl"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 stopa, 3 Osovine, Prateća"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 stopa, Prednja"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 stopa, Zadnja"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 stopa, klizni tandem, prednji"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 stopa, klizni tandem, zadnji"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 stopa, Široka"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 stopa, 3 osovine"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 stopa, Prednja"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 stopa, Zadnja"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 stopa, klizni tandem, prednji"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 stopa, klizni tandem, zadnji"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 stopa, Široka"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 stopa, 3 Osovine"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 stopa, 3 Osovine, Singl"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 stopa, 3 Osovine, Prateća"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 stopa, Široka"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 stopa, 3 osovine"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 stopa, 4 osovine"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 stopa, 4 Osovine, Široka"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 stopa, 4 Osovine, Prateća"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 stopa, Prednja"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 stopa, Zadnja"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 stopa, klizni tandem, prednji"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 feet, klizni tandem, zadnji"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 stopa, Široka"
+
+	key[]: "tr_triple"
+	val[]: "Trostruka"
+
+	key[]: "tr_triple_pup"
+	val[]: "Trostruka 'Pup'"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Teretna Kolica"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Teretna Kolica, 2 Osovine"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Kolica"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Trupna zatvorena"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Bulk Feed"
+
+	key[]: "bs_chipvan"
+	val[]: "Zatvorena za iverje"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Zatvorena za iverje sa pokretnim podom"
+
+	key[]: "bs_container"
+	val[]: "Nosač kontejnera"
+
+	key[]: "bs_curtain"
+	val[]: "Klizajuće zavese"
+
+	key[]: "bs_dryvan"
+	val[]: "Suva zatvorena"
+
+	key[]: "bs_flatbed"
+	val[]: "Ravna"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Ravna aluminijumska"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Grain Hopper"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Grain Hopper Belt"
+
+	key[]: "bs_insulated"
+	val[]: "Izolovana"
+
+	key[]: "bs_log_4"
+	val[]: "Prikolica za trupce sa 4 podloge"
+
+	key[]: "bs_log_6"
+	val[]: "Prikolica za trupce sa 6 podloga"
+
+	key[]: "bs_reefer"
+	val[]: "Hladnjača"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Hladnjak"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbo hladnjak"
+
+	key[]: "chrome_cooler"
+	val[]: "Hromirani hladnjak"
+
+	key[]: "paint_wall"
+	val[]: "Obojen zid"
+
+	key[]: "chrome_wall"
+	val[]: "Hromirani zid"
+
+	key[]: "alu_wall"
+	val[]: "Aluminijumski zid"
+
+	key[]: "steel_wall"
+	val[]: "Čelični zid"
+
+	key[]: "light"
+	val[]: "Svetla"
+
+	key[]: "light_bar"
+	val[]: "Nosač za svetla"
+
+	key[]: "log_cage"
+	val[]: "Kavez od trupaka"
+
+	key[]: "log_wall"
+	val[]: "Zid od trupaka"
+
+	key[]: "wind_deflector"
+	val[]: "Štitnik od vetra"
+
+	key[]: "aero_sideskirt"
+	val[]: "Aerodinamične suknjice"
+
+	key[]: "black_sideskirt"
+	val[]: "Crne suknjice"
+
+	key[]: "paint_sideskirt"
+	val[]: "Obojene suknjice"
+
+	key[]: "support_frame"
+	val[]: "Oslonac rama"
+
+	key[]: "chrome_door"
+	val[]: "Hromirana Vrata"
+
+	key[]: "rollup_door"
+	val[]: "Rolo Vrata"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Klizna vrata, kapija na podizanje"
+
+	key[]: "standard_door"
+	val[]: "Standardna vrata"
+
+	key[]: "standard_door_aero"
+	val[]: "Standardna vrata, Vetrobran"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Kalifornija"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Novi Meksiko"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Juta"
+
+	key[]: "washington"
+	val[]: "Vašington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdin"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albukerki"
+
+	key[]: "artesia"
+	val[]: "Artezija"
+
+	key[]: "astoria"
+	val[]: "Astorija"
+
+	key[]: "bakersfield"
+	val[]: "Bejkersfild"
+
+	key[]: "barstow"
+	val[]: "Barstou"
+
+	key[]: "bellingham"
+	val[]: "Belingem"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Berns"
+
+	key[]: "camp_verde"
+	val[]: "Kamp Verdi"
+
+	key[]: "carlsbad"
+	val[]: "Karlsbed"
+
+	key[]: "carson_city"
+	val[]: "Karson Siti"
+
+	key[]: "cedar_city"
+	val[]: "Sidar Grad"
+
+	key[]: "clifton"
+	val[]: "Klifton"
+
+	key[]: "clovis"
+	val[]: "Klovis"
+
+	key[]: "colville"
+	val[]: "Kolvil"
+
+	key[]: "coos_bay"
+	val[]: "Kus Bej"
+
+	key[]: "ehrenberg"
+	val[]: "Erenberg"
+
+	key[]: "el_centro"
+	val[]: "El Sentro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ili"
+
+	key[]: "eugene"
+	val[]: "Judžin"
+
+	key[]: "eureka"
+	val[]: "Jurika"
+
+	key[]: "everett"
+	val[]: "Everet"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaf"
+
+	key[]: "fresno"
+	val[]: "Frezno"
+
+	key[]: "gallup"
+	val[]: "Galap"
+
+	key[]: "grand_canyon"
+	val[]: "Veliki kanjon Kolorada"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Kanjon Vilidž"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Kuli"
+
+	key[]: "hobbs"
+	val[]: "Hobs"
+
+	key[]: "holbrook"
+	val[]: "Holbruk"
+
+	key[]: "hornbrook"
+	val[]: "Hornbruk"
+
+	key[]: "huron"
+	val[]: "Hjuron"
+
+	key[]: "jackpot"
+	val[]: "Džekpot"
+
+	key[]: "kayenta"
+	val[]: "Kajenta"
+
+	key[]: "kennewick"
+	val[]: "Kenevik"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamat Fols"
+
+	key[]: "lakeview"
+	val[]: "Lejkvju"
+
+	key[]: "las_cruces"
+	val[]: "Las Kruses"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longvju"
+
+	key[]: "los_angeles"
+	val[]: "Los Anđeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Njuport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oukdejl"
+
+	key[]: "oakland"
+	val[]: "Oukland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olimpija"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oksnard"
+
+	key[]: "page"
+	val[]: "Pejdz"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Odmorište Paharito"
+
+	key[]: "pedro_travel_center"
+	val[]: "Putni centar Pedro"
+
+	key[]: "pendleton"
+	val[]: "Pendlton"
+
+	key[]: "phoenix"
+	val[]: "Finiks"
+
+	key[]: "pioche"
+	val[]: "Pioče"
+
+	key[]: "port_angeles"
+	val[]: "Port Andzeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Prajs"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Prim"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Reding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Rozvel"
+
+	key[]: "sacramento"
+	val[]: "Sakramento"
+
+	key[]: "salem"
+	val[]: "Sejlem"
+
+	key[]: "salina"
+	val[]: "Salajna"
+
+	key[]: "salt_lake_city"
+	val[]: "Solt Lejk Grad"
+
+	key[]: "san_diego"
+	val[]: "San Dijego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisko"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Kruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Marija"
+
+	key[]: "seattle"
+	val[]: "Sijetl"
+
+	key[]: "show_low"
+	val[]: "Šou Lou"
+
+	key[]: "sierra_vista"
+	val[]: "Sijera Vista"
+
+	key[]: "socorro"
+	val[]: "Sokoro"
+
+	key[]: "spokane"
+	val[]: "Spoken"
+
+	key[]: "st_george"
+	val[]: "Sent Dzordz"
+
+	key[]: "stockton"
+	val[]: "Stokton"
+
+	key[]: "tacoma"
+	val[]: "Takoma"
+
+	key[]: "the_dalles"
+	val[]: "Dals"
+
+	key[]: "tonopah"
+	val[]: "Tonopa"
+
+	key[]: "truckee"
+	val[]: "Traki"
+
+	key[]: "tucson"
+	val[]: "Tuson"
+
+	key[]: "tucumcari"
+	val[]: "Tukumkari"
+
+	key[]: "ukiah"
+	val[]: "Jukaja"
+
+	key[]: "vancouver"
+	val[]: "Vankuver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Venači"
+
+	key[]: "winnemucca"
+	val[]: "Vinemaka"
+
+	key[]: "yakima"
+	val[]: "Jakima"
+
+	key[]: "yuma"
+	val[]: "Juma"
+#@}
+
+}
+}

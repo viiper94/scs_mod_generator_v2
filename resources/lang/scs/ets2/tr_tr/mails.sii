@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "Sistem" #+ Message sender
+		subject: "Test mesajı" #+ Message subject
+		body: "Merhaba!<br><br>Bu, yönetici dostundan gelen bir test mesajıdır ;-)<br><br>Teşekkürler" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "Banka" #+ Message sender
+		subject: "Paraya mı ihtiyacınız var? Biz yardımcı olalım!" #+ Message subject
+		body: "Sayın Bay/Bayan,<br><br>Yeni işletmeler için verdiğimiz uygun koşullu kredilerimizin ilginizi çekeceğini düşündük. İşinizi sürdürmek için kaynağa mı ihtiyacınız var? Merak etmeyin, biz buradayız! Lütfen daha fazla bilgi için  <link url=screen.bank color=@@clr_link@@>yerel bankanızı</link> ziyaret edin.<br><br>Saygılarımla,<br>Satış Müdürü<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "Banka" #+ Message sender
+		subject: "Büyümenize yardımcı olabiliriz" #+ Message subject
+		body: "Sayın Bay/Bayan,<br><br>İşletmenizin istikrarlı büyümesi son zamanlarda oldukça dikkatimizi çekti. Sizlere destek olup işinizi daha da büyütmenizi sağlamak istiyoruz. Buna istinaden, yeni kredi limitiniz $MONEY$ olarak belirlendi. Paranızı istediğiniz zaman <link url=screen.bank color=@@clr_link@@>yerel banka şubenizden</link> çekebilirsiniz.<br><br>Saygılarımızla,<br>Satış Müdürü<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "Banka" #+ Message sender
+		subject: "Hesabınız eksi bakiye veriyor" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>Hesabınızda bulunan paradan daha fazlasını çektiniz. Size kısa bir süreliğine masrafsız kredi verme kararı aldık ki, sorunu halledebilmeniz için siz değerli müşterimize biraz zaman tanımış olalım. İyi niyetimizi göz önünde bulundurarak, borcunuzu bir an önce ödeyeceğinizi umuyoruz.<br><br>En içten dileklerimizle,<br>Müşteri Temsilciniz<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "Banka" #+ Message sender
+		subject: "Ödenmemiş borcunuz bulunmaktadır!" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>Hesabınız eksi bakiye veriyor! Borcunuzu $DAYS$ gün içinde ödemeniz gerek, yoksa varlıklarınıza el koymamız gerekecek.<br><br>Saygılarımızle,<br>Müşteri temsilciniz<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "Banka" #+ Message sender
+		subject: "Son uyarı!" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>Bu size son uyarımız. Hesabınız eksi bakiye veriyor. Eğer yarına kadar borcunuzu ödemezseniz, borcunuzu karşılamak için malınızı mülkünüzü haczedeceğiz.<br><br>Saygılarımızla,<br>Müşteri temsilciniz<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "Banka" #+ Message sender
+		subject: "Borç ödendi" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>Bize olan borcunuz kapandı. İleride yine sizinle çalışmaktan mutluluk duyarız.<br><br>İyi günler dileriz,<br>Müşteri Temsilciniz<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "Banka" #+ Message sender
+		subject: "Şahsi çekiciniz satıldı" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>Üzülerek - $TRUCK_NAME$ - çekicinizi $MONEY$ karşılığında sattığımızı bildirmek durumundayız. Maalesef, bize olan borcunuzu ödeyecek bir kaynağınız yoktu. Dolayısıyla biz de son çare olarak bu tedbiri aldık. Mali durumunuz düzelene ve bir çekici alana kadar piyasaya şoför olarak çalışmanızı öneriyoruz.<br><br>Saygılarımızla,<br>Müşteri temsilciniz<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "Banka" #+ Message sender
+		subject: "Şahsi dorseniz satıldı" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>$TRAILER_NAME$ isimli dorsenizi $MONEY$ karşılığında sattığımızı üzülerek bildirmek durumundayız. Maalesef, bize olan borcunuzu ödeyecek bir kaynağınız yoktu. Dolayısıyla biz de son çare olarak bu tedbiri aldık. Mali durumunuz düzelene kadar piyasaya şoför olarak çalışmanızı öneriyoruz.<br><br>Saygılarımızla,<br>Müşteri temsilciniz<br>Banka" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "Banka" #+ Message sender
+		subject: "Varlığınız satıldı" #+ Message subject
+		body: "Sayın Müşterimiz,<br><br>Ödenmemiş borcunuz bulunduğundan varlıklarınızı satışa çıkarmak zorunda kaldık. Satıştan elde edilen <br>$MONEY$ borçlarınıza mahsuben alındı. Ayrıca aşağıdaki varlıklarınıza da el konuldu:<br><br>$ITEM_LIST$<br>Bankanız olarak durumun bu noktaya gelmiş olmasına üzgünüz. Bu durumun ilerideki girişimlerinizi etkilememesini umarız.<br><br>En içten dileklerimizle,<br>Müşteri temsilciniz<br>Banka" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "Çekici galerisi - $CITY$" #+ Message sender
+		subject: "Son model $BRAND$ çekiciler!" #+ Message subject
+		body: "Sayın Bay/Bayan,<br><br>$BRAND$ çekicilerin yetkili satıcısıyız. Oldukça geniş bir ürün çeşitliliğine sahip olmanın yanında isteklerinize göre çekicileri özelleştirebiliyoruz. Lütfen <link url=truck.dealer_map color=@@clr_link@@> $CITY$ şehrindeki galerimizi ziyaret edin</link>. Her zaman hayalini kurduğunuz çekici artık size çok daha yakın.<br><br>Saygılarımızla,<br>$BRAND$ yetkili satıcınız" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$COMPANY$, $CITY$" #+ Message sender
+		subject: "Kendi aracına sahip şoförler aranıyor" #+ Message subject
+		body: "İlgili Kişiye,<br><br>Çok sayıda teslimat için kendi çekicisine sahip usta şoförler arıyoruz. İş başına $MONEY$'a kadar iddialı ücretler sunuyoruz. Kendi aracınıza sahipseniz $CITY$ şehrindeki ofisimize lütfen bizzat başvurun.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "Şoför $NAME$" #+ Message sender
+		subject: "Çalışmak için bir çekiciye ihtiyacım var" #+ Message subject
+		body: "Selam patron,<br><br>Bilmiyorum dikkat ettin mi ama, $CITY$ şehrinde $DAYS$dür işsiz güçsüz oturuyorum. Artık moralim bozuldu, burada boş boş duracaksam ben nasıl para kazanırım, nasıl öderim faturalarımı? Lütfen önümüzdeki $DAYS2$ içinde bana bir çekici bul ki ben de iş bulayım, yoksa yanından ayrılmak zorunda kalacağım.<br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "Şoför $NAME$" #+ Message sender - written by female
+		subject: "Çalışmak için bir çekiciye ihtiyacım var" #+ Message subject - written by female
+		body: "Selam patron,<br><br>Bilmiyorum dikkat ettin mi ama, $CITY$ şehrinde $DAYS$ gündür işsiz güçsüz oturuyorum. Artık moralim bozuldu, burada boş boş duracaksam ben nasıl para kazanırım, nasıl öderim faturalarımı? Lütfen önümüzdeki $DAYS2$ içinde bana bir çekici bul ki ben de iş bulayım, yoksa yanından ayrılmak zorunda kalacağım.<br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "Şoför $NAME$" #+ Message sender
+		subject: "Hoşça kal" #+ Message subject
+		body: "Selam,<br><br>Kusura bakma zamanımı daha fazla harcayamam. Sürecek bir çekicim olmadıktan sonra beklemenin de bir anlamı yok. Daha fazla fırsat kaçırmamak için şirketinden ayrılıp başka yerlerde şansımı deneyeceğim. Şirkete ait olan tüm ekipmanı $CITY$ şehrindeki garaja bıraktım.<br><br>Hoşça kal,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "Şoför $NAME$" #+ Message sender - written by female
+		subject: "Hoşça kal" #+ Message subject - written by female
+		body: "Selam,<br><br>Kusura bakma zamanımı daha fazla harcayamam. Sürecek bir çekicim olmadıktan sonra beklemenin de bir anlamı yok. Daha fazla fırsat kaçırmamak için şirketinden ayrılıp başka yerlerde şansımı deneyeceğim. Şirkete ait olan tüm ekipmanı $CITY$ şehrindeki garaja bıraktım.<br><br>Hoşça kal,<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "Şoför $NAME$" #+ Message sender
+		subject: "İşi bırakıyorum" #+ Message subject
+		body: "Patron kolay gelsin,<br><br>$CITY$ şehrinde benim kaldığım garaj vardı ya hani, işte orası kapanıyor. Bugün bankadan birileri geldi, dediler ki burayı boşaltacaksın. Herhalde bizim şirket nalları dikecek patron, ben de ayrılmaya karar verdim o yüzden. Zaten çekicim falan olmadan da şirkete bir faydam olmaz. Ekmeğimi başka yerde arayacağım.<br><br>Selametle patron, darılmaca gücenmece olmasın,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "Şoför $NAME$" #+ Message sender - written by female
+		subject: "İşi bırakıyorum" #+ Message subject - written by female
+		body: "Patron kolay gelsin,<br><br>$CITY$ şehrinde benim kaldığım garaj vardı ya hani, işte orası kapanıyor. Bugün bankadan birileri geldi, dediler ki burayı boşaltacaksın. Herhalde bizim şirket nalları dikecek patron, ben de ayrılmaya karar verdim o yüzden. Zaten çekicim falan olmadan da şirkete bir faydam olmaz. Ekmeğimi başka yerde arayacağım.<br><br>Selametle patron, darılmaca gücenmece olmasın,<br>$NAME$" #+ Message body - written by female
+	}
+	
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "Sevk Memuru" #+ Message sender
+		subject: "Özel Nakliyeler" #+ Message subject
+		body: "Merhaba patron<br><br>Elimde tam sana göre bir iş var. Bağlantılarımız sayesinde sonunda dişimize göre zorlu işler bizi bekliyor. Tam bir usta tarafından çekilmesi gereken kimi özel, kimi ekstra geniş ve ağır yükler var. Kolay değil; ustalık, sabır, refakatçi araçlarla takım çalışması ve özen gerektiren işler. Ama sen zaten altından kalkarsın bunların, değil mi? Tabii ki büyük risk, büyük de kâr demek. <br><br>İlgilenirsen bu şehirlere bir uğra: $CITIES$." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "Sevk Memuru" #+ Message sender
+		subject: "Yeni Özel Nakliyeler" #+ Message subject
+		body: "Merhaba patron.<br><br>Bir çok yeni firma özel teslimatları için profesyonel sürüş kabiliyetlerini istiyor. Önceki gibi bu sefer de işler kolay değil. Kabiliyet, sabır ve refakatçi araçlarla beraber çalışma gerektiriyor. Ama bu kabiliyetleri köreltmemişsindir, haksız mıyım? Sakın unutma, bu işlerde hâlâ büyük kâr var<br><br>Yani hâlâ eskiden iş yaptığımız şu şehirler zaten var. $OLD_CITIES$ <br><br> Ama artık şu şehirlerden de <color value=@@clr_sel@@>yeni özel nakliye işi<color value=@@clr_txt@@> alabilirsin: <br><br>$CITIES$." #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "Emlak Ofisi" #+ Message sender
+		subject: "Şirketinizi büyütmek mi istiyorsunuz?" #+ Message subject
+		body: "Sayın Bay/Bayan,<br><br>Şirketinizin yükselişinden dolayı sizi tebrik etmek istiyoruz. İşletmenizin başarısından çok etkilendik ve şirketinizi daha da büyütmenizde yardımcı olmak için size bir teklifte bulunmak istiyoruz. Bundan böyle, hizmetlerimizi anında ilâve mülk satın almak için kullanabilirsiniz! Daha fazla bilgi için, lütfen <link url=screen.real_estate color=@@clr_link@@>Garaj Satın Alma arayüzünü ziyaret edin</link>.<br><br>Saygılarımızla,<br>İlişkiler Müdürü<br>Emlak Ofisi" #+ Message body
+	}
+
+#@}
+}

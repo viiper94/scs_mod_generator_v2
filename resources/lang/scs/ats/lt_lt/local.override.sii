@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Kabinos šviesos"
+
+	key[]: "cabdefl"
+	val[]: "Kabinos deflektoriai"
+
+	key[]: "deflector"
+	val[]: "Vabzdžių deflektorius"
+
+	key[]: "filters"
+	val[]: "Oro filtrai"
+
+	key[]: "f_banner"
+	val[]: "Užrašas priekyje"
+
+	key[]: "flag_f_l"
+	val[]: "Priekinės vėliavėlės"
+
+	key[]: "flag_f_r"
+	val[]: "Priekinės vėliavėlės"
+
+	key[]: "flag_r_l"
+	val[]: "Galinės vėliavėlės"
+
+	key[]: "flag_r_r"
+	val[]: "Galinės vėliavėlės"
+
+	key[]: "fl_mirror"
+	val[]: "Priekiniai veidrodžiai"
+
+	key[]: "fr_mirror"
+	val[]: "Priekiniai veidrodžiai"
+
+	key[]: "grill"
+	val[]: "Grotelės"
+
+	key[]: "headache_r"
+	val[]: "Galinė kabinos apsauga"
+
+	key[]: "horns"
+	val[]: "Trimitai"
+
+	key[]: "hood"
+	val[]: "Kapotas"
+
+	key[]: "lghfender"
+	val[]: "Sparnų apsaugos"
+
+	key[]: "mudflaps"
+	val[]: "Purvasargiai"
+
+	key[]: "mudguard"
+	val[]: "Purvasargiai"
+
+	key[]: "sideflares"
+	val[]: "Kabinos panelės"
+
+	key[]: "sideskrt_bar"
+	val[]: "Šonų apsaugų juostos"
+
+	key[]: "topflares"
+	val[]: "Apšvietimas ant stogo"
+
+	key[]: "wing"
+	val[]: "Spoileris"
+
+	key[]: "chainsaw_toy"
+	val[]: "Žaislinis pjūklas"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Dėkite dainas į <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>direktoriją prie savo<color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>ir pamatysite juos čia."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Redaguokite <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>direktorijoje <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>prie Jūsų <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>ir žaidime klausykitės Jūsų mėgstamos interneto radijo!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Informaciją apie tai, kaip pridėti savo muziką ir interneto radiją, rasite faile<color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>direktorijoje prie Jūsų <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Jus sveikina American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Pavojingi kroviniai"
+
+	key[]: "mechanical"
+	val[]: "Kuro taupymas"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Pavojingas"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Pavojingų krovinių vežimas"
+
+	key[]: "skill_adr_info"
+	val[]: "Pavojingus krovinius gali vežti tik apmokyti profesionalai. Savo sunkiai uždirbtą patirtį galite panaudoti gaudami šiuos JAV DOT HazMat sertifikatus, tuo pačiu padidindami galimas pajamas:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Kuro taupymas"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Įvairių kuro taupymo technikų įvaldymas padės jums sumažinti kuro suvartojimą. O būtent:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Premija už pavojingo krovinio pristatymą"
+
+	key[]: "adr_class"
+	val[]: "Pavojaus klasė"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Lėktuvo variklis"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Vikšrinis traktorius"
+
+	key[]: "cn_boat"
+	val[]: "Laivas"
+
+	key[]: "cn_bottles"
+	val[]: "Tušti buteliai"
+
+	key[]: "cn_butter"
+	val[]: "Sviestas"
+
+	key[]: "cn_cable"
+	val[]: "Kabeliai"
+
+	key[]: "cn_cable_reel"
+	val[]: "Kabelio ritė"
+
+	key[]: "cn_colors"
+	val[]: "Dažai"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Betono vamzdžiai"
+
+	key[]: "cn_const_houses"
+	val[]: "Statybiniai nameliai"
+
+	key[]: "cn_crude_oil"
+	val[]: "Nafta"
+
+	key[]: "cn_curtains"
+	val[]: "Užuolaidos"
+
+	key[]: "cn_dryfruit"
+	val[]: "Džiovinti vaisiai"
+
+	key[]: "cn_forwarder"
+	val[]: "Miško traktorius"
+
+	key[]: "cn_frac_tank"
+	val[]: "Frekingo cisterna"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Šaldyti vaisiai"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Šaldytos daržovės"
+
+	key[]: "cn_fruits"
+	val[]: "Vaisiai"
+
+	key[]: "cn_grain"
+	val[]: "Grūdai"
+
+	key[]: "cn_harvester"
+	val[]: "Kombainas"
+
+	key[]: "cn_hay"
+	val[]: "Šienas"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Namų ruošiniai"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth sunkvežimiai"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Rąstų krovėjas"
+
+	key[]: "cn_lift_truck"
+	val[]: "Krautuvas"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Krautuvo važiuoklė"
+
+	key[]: "cn_log_harvester"
+	val[]: "Rąstų kirtėjas"
+
+	key[]: "cn_log_loader"
+	val[]: "Rąstų krovėjas"
+
+	key[]: "cn_log_stacker"
+	val[]: "Rąstų krovėjas"
+
+	key[]: "cn_lye"
+	val[]: "Šarmas"
+
+	key[]: "cn_mbt"
+	val[]: "Keičiami barjerai"
+
+	key[]: "cn_meat"
+	val[]: "Mėsa"
+
+	key[]: "cn_milling_machine"
+	val[]: "Gręžimo mašina"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Visureigis kranas"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Švartavimo plūduras"
+
+	key[]: "cn_mortar"
+	val[]: "Cementas"
+
+	key[]: "cn_mulcher"
+	val[]: "Smulkintuvas"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Granuliuotas gyvūnų maistas"
+
+	key[]: "cn_plows"
+	val[]: "Plūgai"
+
+	key[]: "cn_power_generator"
+	val[]: "Elektros generatorius"
+
+	key[]: "cn_rawmilk"
+	val[]: "Neapdorotas pienas"
+
+	key[]: "cn_salt"
+	val[]: "Druska"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Nurašytos mašinos"
+
+	key[]: "cn_scraper"
+	val[]: "Grandiklis"
+
+	key[]: "cn_stumper"
+	val[]: "Kelmų rovėjas"
+
+	key[]: "cn_transformer"
+	val[]: "Transformatorius"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Smulkintuvas"
+
+	key[]: "cn_vegetable"
+	val[]: "Daržovės"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Namas"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Transportinis sraigtasparnis"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Didelė cisterna"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Savivarčio korpusas"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Savivarčio važiuoklė"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Oro kodicionieriaus komplektas"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Didelės statybinės dalys"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Cisterna rūgštims"
+
+	key[]: "tn_acid_long"
+	val[]: "Ilga cisterna rūgštims"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Priekaba savivartis (išpila žemyn)"
+
+	key[]: "tn_car"
+	val[]: "Priekaba automobiliams"
+
+	key[]: "tn_cement"
+	val[]: "Biraus cemento priekaba"
+
+	key[]: "tn_chemical"
+	val[]: "Chemikalų cisterna"
+
+	key[]: "tn_chemical_long"
+	val[]: "Ilga chemikalų cisterna"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Birių produktų priekaba"
+
+	key[]: "tn_dump"
+	val[]: "Priekaba savivartis"
+
+	key[]: "tn_flatbed"
+	val[]: "Priekaba platforma"
+
+	key[]: "tn_food_tank"
+	val[]: "Maisto cisterna"
+
+	key[]: "tn_frac_tank"
+	val[]: "Frekingo cisterna"
+
+	key[]: "tn_fuel"
+	val[]: "Kuro cisterna"
+
+	key[]: "tn_fuel_long"
+	val[]: "Ilga kuro cisterna"
+
+	key[]: "tn_gas"
+	val[]: "Dujų cisterna"
+
+	key[]: "tn_gas_long"
+	val[]: "Ilga dujų cisterna"
+
+	key[]: "tn_home_transporter"
+	val[]: "Namų transporteris"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Rąstų krovėjas"
+
+	key[]: "tn_log"
+	val[]: "Rąstų priekaba"
+
+	key[]: "tn_lowboy"
+	val[]: "Žema priekaba"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Žemagrindė laivų priekaba"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Žemagrindė 55L puspriekabė"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Keičiamo barjero priekaba"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Smulkintuvas"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Pavojaus klasė 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Pavojaus klasė 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Pavojaus klasė 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Pavojaus klasė 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Pavojaus klasė 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Pavojaus klasė 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Pavojaus klasė 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Darbinis arklys"
+	
+	key[]: "lvl_name3"
+	val[]: "Verslininkas"
+	
+	key[]: "lvl_name4"
+	val[]: "Profesionalas"
+	
+	key[]: "lvl_name6"
+	val[]: "18 ratų įgūdžių"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Salonas"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator tinklapis" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "American Truck Simulator Facebooke" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator turi problemą ir negali piešti vaizdo Jūsų kompiuteryje (nerastas tinkamas vaizdo įrenginys).\nSiūlomi sprendimai:\n1. Patikrinkite, ar Jūsų kompiuteris ir vaizdo plokštė atitinka minimalius žaidimo reikalavimus.\n2. Atnaujinkite Jūsų Microsoft's DirectX.\n3. Atsisiųskite ir instaliuokite naujausius Jūsų vaizdo plokštės draiverius iš Jūsų gamintojo tinklapio, gali būti, kad jie pasenę.\n4. Pabandykite pakeisti piešimo metodą iš OpenGL į DirectX arba atvirkščiai.\n5. Ištrinkite failą 'config.cfg' Jūsų  'Documents' - 'American Truck Simulator' direktorijoje. Jis galėjo susigadinti.\nŠis failas bus automatiškai atkurtas su standartiniais nustatymais kitą kartą paleidus žaidimą."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator turi problemą ir negali piešti vaizdo Jūsų kompiuteryje (nerastas jokia vaizdo plokštė)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator nesusisiekia su Steam klientu. Siūlomi žingsniai:\n1. Patikrinkite, ar paleistas Steam klientas.\n2. Patikrinkite, ar Steam klientas atnaujintas iki vėliausios versijos.\n3. Patikrinkite, ar įjungti žaidimo automatiniai atnaujinimai ir ar žaidimas atsinaujino iki paskutinės versijos."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Aktyvacija pavyko.<br>Dėkojame, kad pirkote American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Jei Jums patiko American Truck Simulator demonstracija, pilną versiją galite nusipirkti <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam sistemoje</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - PRADŽIA" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator turinys" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Siloso cisterna"
+
+	key[]: "container"
+	val[]: "Konteinerių priekaba"
+
+	key[]: "curtainside"
+	val[]: "Tentas užuolaida"
+
+	key[]: "chipvan"
+	val[]: "Skiedrų priekaba"
+
+	key[]: "dryvan"
+	val[]: "Sausas furgonas"
+
+	key[]: "flatbed"
+	val[]: "Platforma"
+
+	key[]: "hopper"
+	val[]: "Birių produktų priekaba"
+
+	key[]: "insulated"
+	val[]: "Izoliuota"
+
+	key[]: "log"
+	val[]: "Rąstų"
+
+	key[]: "refrigerated"
+	val[]: "Šaldoma"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Birūs"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Birių krovinių medžiaga"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Lengvų birių medžiaga"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Grūdų ir birių medžiaga"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Vienguba"
+
+	key[]: "double"
+	val[]: "Dviguba"
+
+	key[]: "bdouble"
+	val[]: "B-dviguba"
+
+	key[]: "rmdouble"
+	val[]: "Uolinių dviguba"
+
+	key[]: "tpdouble"
+	val[]: "Dvi puspriekabės"
+
+	key[]: "triple"
+	val[]: "Triguba"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Vienguba"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA dviguba"
+
+	key[]: "chain_b_double"
+	val[]: "B-dviguba"
+
+	key[]: "chain_rm_double"
+	val[]: "Uolinių kalnų dvigubas"
+
+	key[]: "chain_tp_double"
+	val[]: "Dvi puspriekabės"
+
+	key[]: "chain_triple"
+	val[]: "Triguba"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA dviguba"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA dviguba"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA dviguba, 4 ašys"
+
+	key[]: "tr_b_double"
+	val[]: "B-dviguba"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B dviguba, 5 ašys"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B dviguba, 6 ašys"
+
+	key[]: "tr_rm_double"
+	val[]: "Uolinių kalnų dvigubas"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Uolinių kalnų dvigubas"
+
+	key[]: "tr_tp_double"
+	val[]: "Dvi puspriekabės"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Dvi puspriekabės, 6 ašys"
+
+	key[]: "tr_single_28"
+	val[]: "28 pėdos"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 pėdos, 2 ašys"
+
+	key[]: "tr_single_32"
+	val[]: "32 pėdos"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 pėdos, 2 ašys"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 pėdų, 3 ašys"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 pėdos, prailginama"
+
+	key[]: "tr_single_40"
+	val[]: "40 pėdų"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 pėdų, 3 ašys"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 pėdų, prailginama"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 pėdų, galas"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 pėdų, plačiai"
+
+	key[]: "tr_single_45"
+	val[]: "45 pėdos"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 pėdos, 3 ašys"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 pėdos, 3 ašys, vienguba"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 pėdos, 3 ašys, vairuojama"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 pėdos, priekis"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 pėdos, galas"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 pėdos, slankiojantis tandemas, priekis"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 pėdos, slankiojantis tandemas, galas"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 pėdos, plačiai"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 pėdos, 3 ašys"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 pėdos, priekis"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 pėdos, galas"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 pėdos, slankiojantis tandemas, priekis"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 pėdos, slankiojantis tandemas, galas"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 pėdos, plačiai"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 pėdų, 3 ašys"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 pėdų, 3 ašys, vienguba"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 pėdų, 3 ašys, vairuojama"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 pėdų, praskleista"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 pėdos, 3 ašys"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 pėdos, 4 ašys"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 pėdos, 4 ašys, plačiai"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 pėdos, 4 ašys, vairuojamos"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 pėdos, priekis"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 pėdos, galas"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 pėdos, slankiojantis tandemas, priekis"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 pėdos, slankiojantis tandemas, galas"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 pėdos, plačiai"
+
+	key[]: "tr_triple"
+	val[]: "Triguba"
+
+	key[]: "tr_triple_pup"
+	val[]: "Triguba"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Prikabinimo vežimėlis"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Vežimėlis, 2 ašys"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Vežimėlis"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Priekaba, išpilama apačioje"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Siloso cisterna"
+
+	key[]: "bs_chipvan"
+	val[]: "Skiedrų priekaba"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Skiedrų priekaba, judančios grindys"
+
+	key[]: "bs_container"
+	val[]: "Konteinerių priekaba"
+
+	key[]: "bs_curtain"
+	val[]: "Tentas užuolaida"
+
+	key[]: "bs_dryvan"
+	val[]: "Sausas furgonas"
+
+	key[]: "bs_flatbed"
+	val[]: "Platforma"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Platforma aliuminis"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Grūdų priekaba"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Grūdų priekabos konvejeris"
+
+	key[]: "bs_insulated"
+	val[]: "Izoliuota"
+
+	key[]: "bs_log_4"
+	val[]: "Rąstų priekaba, 4 sustiprinimai"
+
+	key[]: "bs_log_6"
+	val[]: "Rąstų priekaba, 6 sustiprinimai"
+
+	key[]: "bs_reefer"
+	val[]: "Šaldytuvas"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Šaldiklis"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbo šaldiklis"
+
+	key[]: "chrome_cooler"
+	val[]: "Chromuotas šaldiklis"
+
+	key[]: "paint_wall"
+	val[]: "Dažyta siena"
+
+	key[]: "chrome_wall"
+	val[]: "Chromo siena"
+
+	key[]: "alu_wall"
+	val[]: "Aliuminio siena"
+
+	key[]: "steel_wall"
+	val[]: "Plieno siena"
+
+	key[]: "light"
+	val[]: "Šviesos"
+
+	key[]: "light_bar"
+	val[]: "Žibintų juosta"
+
+	key[]: "log_cage"
+	val[]: "Rastų narvas"
+
+	key[]: "log_wall"
+	val[]: "Rastų siena"
+
+	key[]: "wind_deflector"
+	val[]: "Vėjo deflektorius"
+
+	key[]: "aero_sideskirt"
+	val[]: "Aptakūs šonai"
+
+	key[]: "black_sideskirt"
+	val[]: "Juodi šonai"
+
+	key[]: "paint_sideskirt"
+	val[]: "Dažyti šonai"
+
+	key[]: "support_frame"
+	val[]: "Rėmas"
+
+	key[]: "chrome_door"
+	val[]: "Chromuotos durys"
+
+	key[]: "rollup_door"
+	val[]: "Durys žaliuzės"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Suvyniojamos durys, pakeliami vartai"
+
+	key[]: "standard_door"
+	val[]: "Standartinės durys"
+
+	key[]: "standard_door_aero"
+	val[]: "Standartinės durys, vėjo deflektorius"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Kalifornija"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Naujoji Meksika"
+
+	key[]: "oregon"
+	val[]: "Oregonas"
+
+	key[]: "utah"
+	val[]: "Juta"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Kedro miestas"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Loganas"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moabas"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogdenas"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito Poilsio aikštelė"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Kelionių centras"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Praisas"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Soltleiksitis"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. Džordžas"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernalis"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

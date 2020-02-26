@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "System" #+ Message sender
+		subject: "Wiadomość testowa" #+ Message subject
+		body: "Cześć!<br><br>To wiadomość testowa od twojego administratora ;-)<br><br>Pozdrówka" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "Bank" #+ Message sender
+		subject: "Potrzebujesz gotówki? Możemy Ci pomóc!" #+ Message subject
+		body: "Szanowni Państwo,<br><br>Uznaliśmy, że mogą być Państwo zainteresowani naszymi korzystnymi ofertami pożyczek udzielanych nowym firmom. Potrzebują Państwo funduszy na rozpoczęcie działalności? My możemy pomóc! Prosimy <link url=screen.bank color=@@clr_link@@>o wizytę w lokalnym banku</link> celem uzyskania dalszych informacji.<br><br>Z wyrazami szacunku,<br>Dyrektor Sprzedaży<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "Bank" #+ Message sender
+		subject: "Pomożemy ci rozwinąć skrzydła!" #+ Message subject
+		body: "Szanowni Państwo,<br><br>Zauważyliśmy że Państwa firma świetnie sobie radzi, dlatego chcielibyśmy pomóc w dalszym rozwoju jej potencjałów. Państwa limit kredytowy wzrósł do $MONEY$. Prosimy śmiało pobrać dostępną kwotę w każdej chwili z Państwa  <link url=screen.bank color=@@clr_link@@>lokalnej filii banku</link>.<br><br>Z wyrazami szacunku,<br>Dyrektor do spraw sprzedaży<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "Bank" #+ Message sender
+		subject: "Przekroczono stan twojego konta." #+ Message subject
+		body: "Szanowny Kliencie,<br><br>Podjąłeś z konta większą sumę niż dostępna. Zapewniliśmy Ci bezpłatny krótkoterminowy kredyt na następne kilka dni, żebyś mógł rozwiązać tę sytuację. Prosimy uprzejmie o spłatę kredytu w jak najszybszym terminie.<br><br>Szczere pozdrowienia<br>Opiekun Klienta<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "Bank" #+ Message sender
+		subject: "Przekroczono limit na twoim koncie!" #+ Message subject
+		body: "Drogi Kliencie,<br><br>Twoje saldo jest ujemne! Dług należy spłacić w ciągu następnych $DAYS$ - w przeciwnym wypadku będziemy zmuszeni do zajęcia Państwa mienia.<br><br>Z poważaniem,<br>Opiekun Klienta <br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "Bank" #+ Message sender
+		subject: "Ostateczne ostrzeżenie!" #+ Message subject
+		body: "Szanowny Kliencie,<br><br>To twoje ostatnie ostrzeżenie. Przekroczyłeś stan swojego konta. Prosimy o zwrot pieniędzy w dniu jutrzejszym. W przeciwnym razie będziemy musieli zająć Twoją własność, aby pokryć dług.<br><br>Z wyrazami szacunku,<br>Opiekun Klienta<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "Bank" #+ Message sender
+		subject: "Uregulowano dług" #+ Message subject
+		body: "Szanowny Kliencie,<br><br>Stan twojego konta został uregulowany. Z radością pomożemy w przyszłości, jeśli nasze usługi będą Ci potrzebne.<br><br>Życzę miłego dnia,<br>Opiekun Klienta<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "Bank" #+ Message sender
+		subject: "Twoja ciężarówka została sprzedana" #+ Message subject
+		body: "Szanowny Kliencie,<br><br>Z przykrością informujemy, że byliśmy zmuszeni do sprzedania Twojej ciężarówki - $TRUCK_NAME$ - za $MONEY$. Niestety, w naszych rozliczeniach od dawna figurował dług z Twojej strony i nie miałeś innych środków do spłaty tegoż długu. Z przykrością podjęliśmy takie ekstremalne kroki. Sugerujemy podejmowanie szybkich zleceń na rzecz poprawienia Twojej sytuacji finansowej.<br><br>Z wyrazami szacunku,<br>Opiekun Klienta<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "Bank" #+ Message sender
+		subject: "Twoja własna naczepa została sprzedana" #+ Message subject
+		body: "Szanowny Kliencie,<br><br>Z przykrością informujemy że byliśmy zmuszeni do sprzedania Twojej naczepy - $TRAILER_NAME$ - za $MONEY$. Niestety, w naszych rozliczeniach od dawna figurował dług z twojej strony i nie miałeś innych środków do spłaty tegoż długu. Z przykrością podjęliśmy takie ekstremalne kroki. Sugerujemy podejmowanie szybkich zleceń na rzecz poprawienia Twojej sytuacji finansowej.<br><br>Z wyrazami szacunku,<br>Opiekun Klienta<br>Bank " #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "Bank" #+ Message sender
+		subject: "Twoja własność została sprzedana" #+ Message subject
+		body: "Szanowny Kliencie,<br><br>Ze względu na długotrwały dług na Twoim koncie, musieliśmy zająć i sprzedać twoją własność. Otrzymane fundusze o całkowitej sumie <br>$MONEY$ zostały wykorzystane w celu uregulowania długu. Konkretnie rzecz biorąc, zajęliśmy następujące rzeczy:<br><br>$ITEM_LIST$<br>Żałujemy, że sytuacja posunęła się tak daleko i mamy nadzieję, że konsekwencje nie spowodują zbyt wielkich szkód Twojej przyszłej pracy.<br><br>Najlepsze życzenia,<br>Opiekun Klienta<br>Bank" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "Dealer ciężarówek - $CITY$" #+ Message sender
+		subject: "Nowiutka ciężarówka marki $BRAND$ jest na sprzedaż!" #+ Message subject
+		body: "Drodzy Państwo,<br><br>Jesteśmy certyfikowanym sprzedawcą ciężarówek marki $BRAND$. Oferujemy szeroki wachlarz najróżniejszych konfiguracji - jesteśmy w stanie dokonywać personalizacji wedle uznania klientów. Zachęcamy do odwiedzin <link url=truck.dealer_map color=@@clr_link@@>naszego salonu w mieście $CITY$</link>, a możliwe, że za drzwiami znajdą państwo ciężarówkę, o której zawsze marzyli.<br><br>Serdecznie pozdrawiamy,<br>Państwa dealer ciężarówek $BRAND$" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$COMPANY$, $CITY$" #+ Message sender
+		subject: "Poszukiwani kierowcy z własnym sprzętem" #+ Message subject
+		body: "Do wszystkich zainteresowanych:<br><br>Poszukujemy doświadczonych kierowców posiadających własne ciężarówki. Oferujemy interesujące zlecenia za atrakcyjne wynagrodzenie wynoszące nawet $MONEY$ od dostawy. Jeżeli jesteś zainteresowany, kieruj się bezpośrednio na miasto $CITY$, tam znajdziesz naszą najbliższą siedzibę.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "Kierowca $NAME$" #+ Message sender
+		subject: "Potrzebuję ciężarówki do pracy" #+ Message subject
+		body: "Witam, szefie<br><br>Nie wiem, czy szef zauważył, ale siedzę w mieście $CITY$ bez roboty już od $DAYS$. Zaczynam się wkurzać, bo potrzebuję pieniędzy na spłatę rachunków, a nic nie zarobię na marnowaniu czasu. Bardzo szefa proszę, niech mi szef załatwi ciężarówkę w ciągu $DAYS2$, żebym mógł zacząć dostawy, bo inaczej nie będę miał wyjścia i będę musiał zrezygnować.<br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "Kierowca $NAME$" #+ Message sender - written by female
+		subject: "Potrzebuję ciężarówki do pracy" #+ Message subject - written by female
+		body: "Witam, szefie<br><br>Nie wiem, czy szef zauważył, ale siedzę w mieście $CITY$ bez roboty już od $DAYS$. Zaczynam się wkurzać, bo potrzebuję pieniędzy na spłatę rachunków, a nic nie zarobię na marnowaniu czasu. Bardzo szefa proszę, niech mi szef załatwi ciężarówkę w ciągu $DAYS2$, żebym mogła zacząć dostawy, bo inaczej nie będę miała wyjścia i będę musiała zrezygnować.<br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "Kierowca $NAME$" #+ Message sender
+		subject: "Do widzenia" #+ Message subject
+		body: "Witam,<br><br>Nie mogę już dłużej pozwalać sobie na stratę czasu. Nie mogę pracować bez ciężarówki i nie chce mi się już dłużej czekać. Omijają mnie dobre zlecenia, więc opuszczam firmę, żeby spróbować szczęścia gdzie indziej. Pobrany sprzęt odnajdziesz w moim byłym garażu w mieście $CITY$.<br><br>Żegnam,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "Kierowca $NAME$" #+ Message sender - written by female
+		subject: "Do widzenia" #+ Message subject - written by female
+		body: "Witam,<br><br>Nie mogę już dłużej pozwalać sobie na stratę czasu. Nie mogę pracować bez ciężarówki i nie chce mi się już dłużej czekać. Omijają mnie dobre zlecenia, więc opuszczam firmę, żeby spróbować szczęścia gdzie indziej. Pobrany sprzęt odnajdziesz w moim byłym garażu w mieście $CITY$.<br><br>Żegnam,<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "Kierowca $NAME$" #+ Message sender
+		subject: "Odchodzę" #+ Message subject
+		body: "Witaj, szefie<br><br>Garaż w mieście $CITY$, czyli tam, gdzie się zatrzymałem, jest zamykany. Przyszli jacyś ludzie z banku i powiedzieli, że muszę się stamtąd wynosić. Ta firma chyba sobie ostatnio nie radziła zbyt dobrze. Zdecydowałem się wyjechać. I tak zbyt wiele bym tam nie zrobił, skoro nie mam ciężarówki. Spróbuję gdzieś indziej.<br><br>Żegnam, ale bez urazy,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "Kierowca $NAME$" #+ Message sender - written by female
+		subject: "Odchodzę" #+ Message subject - written by female
+		body: "Witaj, szefie<br><br>Garaż w mieście $CITY$, czyli tam, gdzie się zatrzymałam, jest zamykany. Przyszli jacyś ludzie z banku i powiedzieli, że muszę się stamtąd wynosić. Ta firma chyba sobie ostatnio nie radziła zbyt dobrze. Zdecydowałam się wyjechać. I tak zbyt wiele bym tam nie zrobiła, skoro nie mam ciężarówki. Spróbuję gdzieś indziej.<br><br>Żegnam, ale bez urazy,<br>$NAME$" #+ Message body - written by female
+	}
+	
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "Dyspozytor" #+ Message sender
+		subject: "Specjalne Transporty" #+ Message subject
+		body: "Witaj szefie.<br><br>Mam dla Ciebie coś wyjątkowego. Dzięki naszym kontaktom możemy podjąć się teraz prawdziwego wyzwania. Niektóre specjalne, wielkogabarytowe i ciężkie towary muszą być przewiezione przez prawdziwego profesjonalistę. Nie będzie to łatwe oraz wymaga to pewnych umiejętności, cierpliwości, współpracy z pojazdami eskortującymi i specjalnej uwagi, ale myślę, że masz wszystkie niezbędne predyspozycje, zgadza się? Większe ryzyko wiąże się również z większymi korzyściami.<br><br>Jeżeli jesteś tym zainteresowany, możesz odwiedzić te oto miasta: $CITIES$." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "Dyspozytor" #+ Message sender
+		subject: "Nowe Transporty Specjalne" #+ Message subject
+		body: "Witaj szefie.<br><br>Więcej firm chce zatrudnić Cię do przewożenia specjalnych ładunków. Tak samo jak ostatnim razem - nie będzie łatwo i będzie wymagało pewnych umiejętności, cierpliwości, współpracy z eskortującymi pojazdami i dużej ostrożności, ale wydaje mi się że wciąż masz wszystko, mam racje? Nie zapomnij - za te ładunki jest większy zarobek.<br><br>Tak więc z wyjątkiem aktualnie dostępnych zadań Transportu Specjalnego w: $OLD_CITIES$ <br><br> Możesz teraz wziąć <color value=@@clr_sel@@>nowe<color value=@@clr_txt@@> w: <br><br>$CITIES$." #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "Agencja nieruchomości" #+ Message sender
+		subject: "Chcesz rozbudować swoją firmę?" #+ Message subject
+		body: "Szanowni Państwo,<br><br>Chcielibyśmy pogratulować rozwoju Pańskiej firmy. Jesteśmy pod wrażeniem sukcesu firmy i chcielibyśmy zaoferować nowy sposób, aby pomóc firmie rozwijać się dalej. Od teraz możecie Państwo korzystać z naszych usług, aby kupować dodatkowe nieruchomości niemal natychmiast! Aby uzyskać więcej informacji, proszę <link url=screen.real_estate color=@@clr_link@@>odwiedź okno zakupu garażu</link>.<br><br>Z poważaniem,<br>Menedżer ds. Relacji<br>Agencja nieruchomości" #+ Message body
+	}
+
+#@}
+}

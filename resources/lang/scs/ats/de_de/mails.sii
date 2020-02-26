@@ -1,0 +1,160 @@
+SiiNunit
+{
+#+ Mails delivered to the player.
+#@{
+
+/**
+ * Test / debug mails
+ */
+
+	mail_text: mailtext.test1 {
+		from: "System" #+ Message sender
+		subject: "Testnachricht" #+ Message subject
+		body: "Hi!<br><br>Das ist eine Test-Nachricht von deinem Administrator-Kollegen ;-)<br><br>Bis dann!" #+ Message body
+	}
+
+/**
+ * Bank mails
+ */
+
+	mail_text: mailtext.bank_start {
+		from: "Bank" #+ Message sender
+		subject: "Benötigen Sie Geldmittel? Wir können helfen!" #+ Message subject
+		body: "Sehr geehrte Damen und Herren,<br><br>wir möchten Ihnen mitteilen, dass wir attraktive Kredite für junge Unternehmen anbieten. Benötigen Sie eine Finanzierung, um Ihrem Geschäft einen Schub zu geben? Wenden Sie sich an uns! Bitte <link url=screen.bank color=@@clr_link@@>besuchen Sie Ihre örtliche Bankfiliale</link> für weitere Informationen.<br><br>Hochachtungsvoll,<br>Verkaufsmanager<br>Bank  " #+ Message body
+	}
+
+	mail_text: mailtext.bank_credit {
+		from: "Bank" #+ Message sender
+		subject: "Wir können Ihnen helfen zu wachsen" #+ Message subject
+		body: "Sehr geehrte Damen und Herren,<br><br>angesichts Ihrer stetigen Erträge möchten wir Ihnen anbieten, bei der Entwicklung Ihres Potentials weiter behilflich zu sein. Wir haben uns erlaubt, Ihre Kreditlinie auf $MONEY$ zu erhöhen. Fühlen Sie sich frei, jederzeit bei Ihrer <link url=screen.bank color=@@clr_link@@>örtlichen Bank</link> über diese Summe zu verfügen.<br><br>Hochachtungsvoll,<br>Verkaufsmanager<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debt0 {
+		from: "Bank" #+ Message sender
+		subject: "Sie haben Ihr Konto überzogen" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>Sie haben Ihr Konto stärker belastet, als es Ihr Kontostand zugelassen hätte. Als Reaktion darauf haben wir Ihnen für die nächsten Tage einen gebührenfreien, kurzfristigen Kredit gewährt, so dass Sie Gelegenheit haben, die Situation zu lösen. Wir möchten Sie freundlich bitten, für Ihr Konto baldmöglichst einen Ausgleich zu schaffen.<br><br>Mit freundlichen Grüßen<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtx {
+		from: "Bank" #+ Message sender
+		subject: "Überziehung Ihres Bankkontos!" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>Ihr Kontostand ist negativ. Bitte gleichen Sie diesen innerhalb der nächsten $DAYS$ aus, andernfalls sehen wir uns gezwungen, eine Pfändung einzuleiten.<br><br>Mit freundlichem Gruß<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtf {
+		from: "Bank" #+ Message sender
+		subject: "Letzte Mahnung!" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>wir fordern Sie mit dieser Mahnung letztmalig auf, Ihr noch immer ungedecktes Konto auszugleichen. Sollte bis morgen kein Ausgleich erfolgt sein, sehen wir uns gezwungen, für Eigentum von Ihnen die Pfändung zu veranlassen.<br><br>Hochachtungsvoll<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_debtr {
+		from: "Bank" #+ Message sender
+		subject: "Kontoüberziehung ausgeglichen" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>Ihr überzogenes Konto wurde ausgeglichen. Wir sind gerne bereit Ihnen auch in Zukunft zu helfen, sollten Sie unsere Unterstützung benötigen.<br><br>Mit freundlichen Grüßen<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellpt {
+		from: "Bank" #+ Message sender
+		subject: "Ihr Lkw wurde verkauft" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>wir bedauern, Ihnen mitteilen zu müssen, dass es bei Ihrem Lkw - $TRUCK_NAME$ - zu einer Zwangsversteigerung kam.  Der Erlös beträgt $MONEY$. Unglücklicherweise hatten Sie eine lange ausstehende Verbindlichkeit gegenüber unserem Hause und vermochten leider nicht in anderer Form eine Deckung herbeizuführen. So blieb nur die Möglichkeit dieser für Sie wie für uns unangenehmen Maßnahme. Gestatten Sie uns, Ihnen die Annahme schneller Aufträge nahe zu legen bis sich Ihre finanzielle Situation verbessert.<br><br>Hochachtungsvoll<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellptr {
+		from: "Bank" #+ Message sender
+		subject: "Ihr Auflieger wurde verkauft" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>wir bedauern, Ihnen mitteilen zu müssen, dass es bei Ihrem Auflieger - $TRAILER_NAME$  - zu einer Zwangsversteigerung kam.  Der Erlös beträgt $MONEY$. Unglücklicherweise hatten Sie eine lange ausstehende Verbindlichkeit gegenüber unserem Hause und vermochten leider nicht in anderer Form eine Deckung herbeizuführen. So blieb nur die Möglichkeit dieser für Sie wie für uns unangenehmen Maßnahme. Gestatten Sie uns, Ihnen die Annahme schneller Aufträge nahe zu legen bis sich Ihre finanzielle Situation verbessert.<br><br>Hochachtungsvoll<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+	mail_text: mailtext.bank_sellrep {
+		from: "Bank" #+ Message sender
+		subject: "Zwangsverkauf von Firmengütern" #+ Message subject
+		body: "Sehr geehrter Kunde,<br><br>aufgrund Ihres langanhaltend unausgeglichenen Kontostandes, mussten wir eine drastische, jedoch unumgängliche Maßnahme ergreifen.<br>Wir hatten für Eigentum von Ihnen die Pfändung beantragt und zwischenzeitlich ist die Zwangsversteigerung vollzogen. Der daraus erzielte Erlös beträgt insgesamt<br>$MONEY$ und wurde zur Verrechnung Ihrer Verpflichtungen uns gegenüber verwendet. Folgende Sachwerte waren betroffen:<br><br>$ITEM_LIST$<br>Wir bedauern zutiefst, welche Ausmaße die Situation angenommen hat und hoffen, dass die Konsequenzen Ihre zukünftigen Anstrengungen nicht zu sehr schädigen werden.<br><br>Hochachtungsvoll<br>Ihr Kundenbetreuer<br>Bank" #+ Message body
+	}
+
+/**
+ * Truck dealer mails
+ */
+
+	mail_text: mailtext.td_visit {
+		from: "Lkw-Händler - $CITY$" #+ Message sender
+		subject: "Brandneue $BRAND$-Lkw eingetroffen!" #+ Message subject
+		body: "Sehr geehrte Damen und Herren,<br><br>als zertifizierter Händler von $BRAND$-Lkw bieten wir eine große Auswahl unterschiedlicher Ausführungen, und wir können darüber hinaus individuelle Anpassungen vornehmen, die keine Wünsche offen lassen. Besuchen Sie doch einmal <link url=truck.dealer_map color=@@clr_link@@>unsere Ausstellungsräume in $CITY$</link>. Die Zugmaschine, von der Sie schon immer geträumt haben, könnte Sie hinter unseren Türen erwarten. <br><br>Mit freundlichen Grüßen<br>Ihr $BRAND$-Händler" #+ Message body
+	}
+
+/**
+ * Company mails
+ */
+
+	mail_text: mailtext.comp_teaser {
+		from: "$COMPANY$, $CITY$" #+ Message sender
+		subject: "Selbstständige Fahrer gesucht" #+ Message subject
+		body: "Sind Sie an einer beruflichen Veränderung interessiert?<br><br> Für eine große Zahl an Auslieferungen suchen wir fähige Fahrer mit eigenem Lkw. Wir bieten überzeugende Frachtraten von bis zu $MONEY$ pro Auftrag. Sollten Sie über ein eigenes Fahrzeug verfügen, wenden Sie sich bitte direkt an unsere Beladestation in $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+	}
+
+/**
+ * Driver mails
+ */
+
+	mail_text: mailtext.drv_idle {
+		from: "Fahrer $NAME$" #+ Message sender
+		subject: "Ich brauche einen Lkw zum Arbeiten" #+ Message subject
+		body: "Hallo Chef,<br><br>ich bin nicht sicher, ob Sie es bemerkt haben, aber seit $DAYS$ sitze ich hier in $CITY$ rum und drehe Däumchen. Offen gestanden bin ich mittlerweile ziemlich verärgert, schließlich brauche ich Geld, um meine Rechnungen zu bezahlen. Und ich verdiene nichts, wenn ich hier ohne Aussicht auf Aufträge herumbrüte. Bitte teilen Sie mir in den nächsten $DAYS2$ eine Maschine zu, damit ich mit den Lieferungen beginnen kann. Andernfalls werde ich keine andere Wahl haben, als das Arbeitsverhältnis aufzulösen. <br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_idle.female {
+		from: "Fahrer $NAME$" #+ Message sender - written by female
+		subject: "Ich brauche einen Lkw zum Arbeiten" #+ Message subject - written by female
+		body: "Hallo Chef,<br><br>ich bin nicht sicher, ob Sie es bemerkt haben, aber seit $DAYS$ sitze ich hier in $CITY$ rum und drehe Däumchen. Offen gestanden bin ich mittlerweile ziemlich verärgert, schließlich brauche ich Geld, um meine Rechnungen zu bezahlen. Und ich verdiene nichts, wenn ich hier ohne Aussicht auf Aufträge herumbrüte. Bitte teilen Sie mir in den nächsten $DAYS2$ eine Maschine zu, damit ich mit den Lieferungen beginnen kann. Andernfalls werde ich keine andere Wahl haben, als das Arbeitsverhältnis aufzulösen. <br><br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_quit {
+		from: "Fahrer $NAME$" #+ Message sender
+		subject: "Auf Wiedersehen" #+ Message subject
+		body: "Hallo,<br><br>ich kann mir die Zeitverschwendung nicht länger leisten. Ohne Maschine lässt sich für mich kein Geld verdienen und ich habe jetzt vom Warten die Nase voll. Gute Gelegenheiten sind mir schon durch die Lappen gegangen, so dass ich hiermit kündige und mein Glück woanders suchen werde. Meine erhaltene Fahrerausrüstung finden Sie in meiner ehemaligen Garage in $CITY$.<br><br>Ciao,<br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_quit.female {
+		from: "Fahrer $NAME$" #+ Message sender - written by female
+		subject: "Auf Wiedersehen" #+ Message subject - written by female
+		body: "Hallo,<br><br>ich kann mir die Zeitverschwendung nicht länger leisten. Ohne Maschine lässt sich für mich kein Geld verdienen und ich habe jetzt vom Warten die Nase voll. Gute Gelegenheiten sind mir schon durch die Lappen gegangen, so dass ich hiermit kündige und mein Glück woanders suchen werde. Meine erhaltene Fahrerausrüstung finden Sie in meiner ehemaligen Garage in $CITY$.<br><br>Ciao,<br>$NAME$" #+ Message body - written by female
+	}
+
+	mail_text: mailtext.drv_sold {
+		from: "Fahrer $NAME$" #+ Message sender
+		subject: "Ich kündige" #+ Message subject
+		body: "Hallo Chef,<br><br>die Garage in $CITY$, in der ich arbeitete, ist geschlossen worden. Einige Leute von der Bank kamen und sagten, ich hätte das Gelände zu verlassen. Es scheint mir, diesem Unternehmen geht es seit kurzem nicht sonderlich gut, daher entschied ich mich den Betrieb zu verlassen. Ich könnte hier eh keinen Beitrag mehr leisten - ohne Maschine und all dem. So werde ich mich woanders umschauen. <br><br>Tschüs! ...und nehmen Sie es mir nicht krumm.<br><br>$NAME$" #+ Message body
+	}
+
+	mail_text: mailtext.drv_sold.female {
+		from: "Fahrer $NAME$" #+ Message sender - written by female
+		subject: "Ich kündige" #+ Message subject - written by female
+		body: "Hallo Chef,<br><br>die Garage in $CITY$, in der ich arbeitete, ist geschlossen worden. Einige Leute von der Bank kamen und sagten, ich hätte das Gelände zu verlassen. Es scheint mir, diesem Unternehmen geht es seit kurzem nicht sonderlich gut, daher entschied ich mich den Betrieb zu verlassen. Ich könnte hier eh keinen Beitrag mehr leisten - ohne Maschine und all dem. So werde ich mich woanders umschauen. <br><br>Tschüs! ...und nehmen Sie es mir nicht krumm.<br><br>$NAME$" #+ Message body - written by female
+	}
+
+/**
+ * Oversize
+ */
+
+	mail_text: mailtext.ovs.new_routes {
+		from: "Disponent" #+ Message sender
+		subject: "Spezialtransporte" #+ Message subject
+		body: "Hallo Chef.<br><br>Ich habe da etwas für Sie. Dank unserer Verbindungen sind wir jetzt in der glücklichen Lage, richtige Herausforderungen geboten zu bekommen. Einige spezielle, ziemlich große und schwere Frachten erfordern den Transport durch einen, der sein Fach wirklich versteht. Soetwas ist kein Spaziergang und verlangt nach gewissen Fertigkeiten. Aber auch eine besondere Sorgfalt, Geduld und die Zusammenarbeit mit Begleitfahrzeugen sind gefragt. Dass das erhöhte Risiko üppig vergütet wird, brauche ich wohl nicht zu erwähnen.<br><br>Bei Interesse schauen Sie einfach mal in diesen Städten vorbei: $CITIES$." #+ Message body
+	}
+	
+	mail_text: mailtext.ovs.upd_routes {
+		from: "Disponent" #+ Message sender
+		subject: "Neue Spezialtransporte" #+ Message subject
+		body: "Hallo Chef,<br><br>weitere Unternehmen in Europa würden gerne Ihre professionellen Fertigkeiten für einige spezielle Lieferungen in Anspruch nehmen. Wie beim letzten Mal, so gilt auch jetzt: Es wird nicht leicht, erfordert Geduld, Zusammenarbeit mit den Begleitfahrzeugen sowie besondere Sorgfalt. Aber ich schätze, daran fehlt es auch jetzt nicht, habe ich recht? Und vergessen Sie nicht: Nochimmer bringen diese Frachten höhere Einnahmen. <br><br>Neben den derzeit verfügbaren Spezialaufträgen in $OLD_CITIES$ <br><br> können Sie hier auch <color value=@@clr_sel@@>neue<color value=@@clr_txt@@> annehmen: <br><br>$CITIES$." #+ Message body
+	}
+
+/**
+ * Real Estate mail
+ */
+ 	mail_text: mailtext.real_estate {
+		from: "Immobilienmakler" #+ Message sender
+		subject: "Wollen Sie mit Ihrer Firma expandieren?" #+ Message subject
+		body: "Sehr geehrte Damen und Herren,<br><br>Wir gratulieren Ihnen zu Ihrem bisherigen Fortschritt mit Ihrer eigenen Firma. Wir sind von dem Erfolg Ihres Unternehmens beeindruckt und würden Ihnen gerne einen neuen Service zur weiteren Expansion anbieten. Von nun an können Sie bei uns ganz einfach neue Immobilien erwerben! Für mehr Informationen <link url=screen.real_estate color=@@clr_link@@>besuchen Sie bitte unsere Immobilienmakler-Seite</link>.<br><br>Mit freundlichen Grüßen<br>Immobilienmakler" #+ Message body
+	}
+	
+#@}
+}

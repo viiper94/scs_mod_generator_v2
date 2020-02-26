@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Svetlá na kabínu"
+
+	key[]: "cabdefl"
+	val[]: "Deflektory kabíny "
+
+	key[]: "deflector"
+	val[]: "Ochranný deflektor"
+
+	key[]: "filters"
+	val[]: "Vzduchové filtre"
+
+	key[]: "f_banner"
+	val[]: "Predné označenie "
+
+	key[]: "flag_f_l"
+	val[]: "Predné vlajky "
+
+	key[]: "flag_f_r"
+	val[]: "Predné vlajky "
+
+	key[]: "flag_r_l"
+	val[]: "Zadné vlajky"
+
+	key[]: "flag_r_r"
+	val[]: "Zadné vlajky"
+
+	key[]: "fl_mirror"
+	val[]: "Predné zrkadlá"
+
+	key[]: "fr_mirror"
+	val[]: "Predné zrkadlá"
+
+	key[]: "grill"
+	val[]: "Predná maska"
+
+	key[]: "headache_r"
+	val[]: "Ochranné mreže"
+
+	key[]: "horns"
+	val[]: "Klaksóny"
+
+	key[]: "hood"
+	val[]: "Kapota"
+
+	key[]: "lghfender"
+	val[]: "Lemy blatníkov"
+
+	key[]: "mudflaps"
+	val[]: "Zásterky"
+
+	key[]: "mudguard"
+	val[]: "Blatníky"
+
+	key[]: "sideflares"
+	val[]: "Bočné panely"
+
+	key[]: "sideskrt_bar"
+	val[]: "Nosníky na bočnom obložení"
+
+	key[]: "topflares"
+	val[]: "Strešné osvetlenie"
+
+	key[]: "wing"
+	val[]: "Spojler"
+
+	key[]: "chainsaw_toy"
+	val[]: "Motorová píla"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Dajte si svoje pesničky do zložky <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>ktorú nájdete vo vašich <color value=@@clr_sel@@>Dokumentoch <color value=@@clr_txt@@>a uvidíte ju tu."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Upravte <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>v zložke <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>ktorú nájdete vo vašich <color value=@@clr_sel@@>Dokumentoch <color value=@@clr_txt@@>a počúvajte svoje obľúbené internetové rádio počas hrania!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Ak si chcete pridať vlastnú hudbu a streamy na live rádiá, prosím pozrite si súbor <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>v zložke  <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@> ktorú nájdete vo vašich <color value=@@clr_sel@@>Dokumentoch <color value=@@clr_txt@@>."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Vitajte v hre American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Nebezpečný náklad"
+
+	key[]: "mechanical"
+	val[]: "Úspora paliva"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Nebezpečný "
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Výcvik prepravy nebezpečných nákladov "
+
+	key[]: "skill_adr_info"
+	val[]: "Preprava nebezpečného tovaru vyžaduje dobre vyškolených profesionálov. Použi svoje ťažko nazbierané skúsenosti na získanie U.S. DOT HazMat certifikátov a zvýšte svoj príjem."
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Úspora paliva"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Naučiť sa rôzne techniky úspory paliva ti pomôže znížiť tvoju spotrebu paliva."
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Bonus za prepravu nebezpečného nákladu"
+
+	key[]: "adr_class"
+	val[]: "Nebezpečný tovar "
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Lietadlový motor"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Pásový traktor "
+
+	key[]: "cn_boat"
+	val[]: "Jachta"
+
+	key[]: "cn_bottles"
+	val[]: "Prázdne fľaše "
+
+	key[]: "cn_butter"
+	val[]: "Maslo "
+
+	key[]: "cn_cable"
+	val[]: "Káble "
+
+	key[]: "cn_cable_reel"
+	val[]: "Káblový naviják "
+
+	key[]: "cn_colors"
+	val[]: "Farba "
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Betónové rúry"
+
+	key[]: "cn_const_houses"
+	val[]: "Stavebné unimobunky"
+
+	key[]: "cn_crude_oil"
+	val[]: "Surová ropa"
+
+	key[]: "cn_curtains"
+	val[]: "Záclonky "
+
+	key[]: "cn_dryfruit"
+	val[]: "Sušené ovocie"
+
+	key[]: "cn_forwarder"
+	val[]: "Vyvážací traktor"
+
+	key[]: "cn_frac_tank"
+	val[]: "Frakovacia nádrž"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Mrazené ovocie"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Mrazená zelenina "
+
+	key[]: "cn_fruits"
+	val[]: "Ovocie"
+
+	key[]: "cn_grain"
+	val[]: "Obilie "
+
+	key[]: "cn_harvester"
+	val[]: "Kombajn"
+
+	key[]: "cn_hay"
+	val[]: "Seno "
+
+	key[]: "cn_house_prefabs"
+	val[]: "Časti montovaného domu"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Ťahače Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Kĺbový nakladač dreva"
+
+	key[]: "cn_lift_truck"
+	val[]: "Prekladač kontajnerov  "
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Podvozok prekladača kontajnerov "
+
+	key[]: "cn_log_harvester"
+	val[]: "Harvestor"
+
+	key[]: "cn_log_loader"
+	val[]: "Nakladač dreva"
+
+	key[]: "cn_log_stacker"
+	val[]: "Sťahovač dreva"
+
+	key[]: "cn_lye"
+	val[]: "Lúh "
+
+	key[]: "cn_mbt"
+	val[]: "Mobilná bariéra "
+
+	key[]: "cn_meat"
+	val[]: "Mäso"
+
+	key[]: "cn_milling_machine"
+	val[]: "Cestná fréza "
+
+	key[]: "cn_mobile_crane"
+	val[]: "Terénny žeriav "
+
+	key[]: "cn_moor_buoy"
+	val[]: "Kotviace bóje"
+
+	key[]: "cn_mortar"
+	val[]: "Malta "
+
+	key[]: "cn_mulcher"
+	val[]: "Mulčovač"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Granulované zvieracie krmivo"
+
+	key[]: "cn_plows"
+	val[]: "Pluhy"
+
+	key[]: "cn_power_generator"
+	val[]: "Generátor"
+
+	key[]: "cn_rawmilk"
+	val[]: "Surové mlieko "
+
+	key[]: "cn_salt"
+	val[]: "Soľ"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Zlisované autá"
+
+	key[]: "cn_scraper"
+	val[]: "Skrejper"
+
+	key[]: "cn_stumper"
+	val[]: "Fréza na pne"
+
+	key[]: "cn_transformer"
+	val[]: "Transformátor "
+
+	key[]: "cn_tub_grinder"
+	val[]: "Štiepkovač"
+
+	key[]: "cn_vegetable"
+	val[]: "Zelenina "
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Konštrukcia domu "
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Dopravný vrtuľník "
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Veľká palivová nádrž "
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Korba pevného dumpra"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Podvozok ťažobného nákladného auta"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Klimatizačný komplex"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Veľká konštrukcia "
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Cisterna na kyselinu "
+
+	key[]: "tn_acid_long"
+	val[]: "Dlhá cisterna na kyselinu "
+
+	key[]: "tn_bottom_dump"
+	val[]: "Sklápací náves "
+
+	key[]: "tn_car"
+	val[]: "Prepravník aut"
+
+	key[]: "tn_cement"
+	val[]: "Náves na cement"
+
+	key[]: "tn_chemical"
+	val[]: "Cisterna na chemikálie "
+
+	key[]: "tn_chemical_long"
+	val[]: "Dlhá cisterna na chemikálie"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Cisterna na suchý materiál"
+
+	key[]: "tn_dump"
+	val[]: "Sklápací náves"
+
+	key[]: "tn_flatbed"
+	val[]: "Plochý náves"
+
+	key[]: "tn_food_tank"
+	val[]: "Potravinárska cisterna "
+
+	key[]: "tn_frac_tank"
+	val[]: "Frakovacia nádrž"
+
+	key[]: "tn_fuel"
+	val[]: "Cisterna na palivo "
+
+	key[]: "tn_fuel_long"
+	val[]: "Dlhá cisterna na palivo"
+
+	key[]: "tn_gas"
+	val[]: "Cisterna na plyn"
+
+	key[]: "tn_gas_long"
+	val[]: "Dlhá cisterna na plyn"
+
+	key[]: "tn_home_transporter"
+	val[]: "Prepravník budov"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Kĺbový nakladač dreva"
+
+	key[]: "tn_log"
+	val[]: "Klanicový náves"
+
+	key[]: "tn_lowboy"
+	val[]: "Podvalník"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Podvalník na prepravu lodí"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Podvalník 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Mobilný bariérový náves "
+
+	key[]: "tn_tub_grinder"
+	val[]: "Štiepkovač"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Nebezpečný tovar triedy 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Nebezpečný tovar triedy 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Nebezpečný tovar triedy 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Nebezpečný tovar triedy 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Nebezpečný tovar triedy 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Nebezpečný tovar triedy 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Nebezpečný tovar triedy 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Pracovný kôň"
+	
+	key[]: "lvl_name3"
+	val[]: "Podnikateľ"
+	
+	key[]: "lvl_name4"
+	val[]: "Profesionál"
+	
+	key[]: "lvl_name6"
+	val[]: "18 kolies zručností"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Showroom"
+	
+	key[]: "weblink_game"
+	val[]: "Webstránka American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator má problém a nedokáže vykresliť grafiku na tvojom počítači (nebola nájdená žiadna platná grafická karta).\nNavrhované kroky:\n\n1. Skontroluj či tvoj počítač a grafická karta spĺňa minimálne systémové požiadavky hry.\n2. Aktualizuj na svojom počítači DirectX na najnovšiu verziu.\n3. Stiahni a nainštaluj si najnovšie ovládače na svoju grafickú kartu.\n4. Skús zmeniť renderovaciu metódu z OpenGL na DirectX alebo naopak.\n5. Vymaž súbor hernej konfigurácie 'config.cfg' v tvojej zložke 'Dokumenty/American Truck Simulator'. Možno je tento súbor porušený.\nTento súbor bude automaticky vygenerovaný nový pri nasledujúcom spustení hry."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator má problém a nie je schopný vykresliť grafiku na vašom počítači (nebolo nájdené žiadne platné grafické zariadenie)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator nemôže získať prístup k Steamu. Odporúčaný postup:\n\n1. Skontrolujte, či Steam pracuje.\n2. Skontrolujte, či máte aktualizovanú verziu Steamu.\n3.Skontrolujte, či máte povolené automatické aktualizácie a hra je nainštalovaná na najnovšiu verziu. "
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Aktivácia produktu bola úspešná.<br>Ďakujeme za zakúpenie hry American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Ak si si skúšobnú verziu hry American Truck Simulator obľúbil, môžeš si zakúpiť plnú verziu pomocou služby <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - MENU" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Obsah z American Truck Simulator" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Náves pre prepravu krmiva"
+
+	key[]: "container"
+	val[]: "Prepravník kontajnerov"
+
+	key[]: "curtainside"
+	val[]: "Plachtový náves"
+
+	key[]: "chipvan"
+	val[]: "Chip Van"
+
+	key[]: "dryvan"
+	val[]: "Náves na suchý náklad"
+
+	key[]: "flatbed"
+	val[]: "Plochý náves"
+
+	key[]: "hopper"
+	val[]: "Náves pre prepravu obilia"
+
+	key[]: "insulated"
+	val[]: "Izolovaný náves"
+
+	key[]: "log"
+	val[]: "Klanicový náves"
+
+	key[]: "refrigerated"
+	val[]: "Chladiaci náves"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Sypký"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Kŕmny sypký materiál"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Jemný sypký materiál"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Obilniny a sypký materiál"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Single"
+
+	key[]: "double"
+	val[]: "Double"
+
+	key[]: "bdouble"
+	val[]: "B-Double"
+
+	key[]: "rmdouble"
+	val[]: "R.M. Double"
+
+	key[]: "tpdouble"
+	val[]: "T.P. Double"
+
+	key[]: "triple"
+	val[]: "Triple"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Single"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA Double"
+
+	key[]: "chain_b_double"
+	val[]: "B-Double"
+
+	key[]: "chain_rm_double"
+	val[]: "Rocky Mountain Double"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike Double"
+
+	key[]: "chain_triple"
+	val[]: "Triple"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA Double"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA Double Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 nápravy"
+
+	key[]: "tr_b_double"
+	val[]: "B-Double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-Double, 5 náprav"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-Double, 6 náprav"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain Double"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Rocky Mountain Double Pup"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike Double"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike Double, 6 náprav"
+
+	key[]: "tr_single_28"
+	val[]: "28 stôp"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 stôp, 2 nápravy"
+
+	key[]: "tr_single_32"
+	val[]: "32 stôp"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 stôp, 2 nápravy"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 stôp, 3 nápravy"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 stôp, predĺžený"
+
+	key[]: "tr_single_40"
+	val[]: "40 stôp"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 stôp, 3 nápravy"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 stôp, predĺžený"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 stôp, vzadu"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 stôp, rozdelené"
+
+	key[]: "tr_single_45"
+	val[]: "45 stôp"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 stôp, 3 nápravy"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 stôp, 3 nápravy, single"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 stôp, 3 nápravy, riadené"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 stôp, vpredu"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 stôp, vzadu"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 stôp, posuvná náprava, predná časť"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 stôp, posuvná náprava, zadná časť"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 stôp, rozdelené"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 stôp, 3 nápravy"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 stôp, vpredu"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 stôp, vzadu"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 stôp, posuvná náprava, predná časť"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 stôp, posuvná náprava, zadná časť"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 stôp, rozdelené"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 stôp, 3 nápravy"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 stôp, 3 nápravy, single"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 stôp, 3 nápravy, riadené"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 stôp, rozdelené"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 stôp, 3 nápravy"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 stôp, 4 nápravy"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 stôp, 4 nápravy, rozdelené"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 stôp, 4 nápravy, riadené"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 stôp, vpredu"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 stôp, vzadu"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 stôp, posuvná náprava, predná časť"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 stôp, posuvná náprava, zadná časť"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 stôp, rozdelené"
+
+	key[]: "tr_triple"
+	val[]: "Triple"
+
+	key[]: "tr_triple_pup"
+	val[]: "Triple Pup"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Sedlový podvozok"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Sedlový podvozok, 2 nápravy"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Podvozok Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly Van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Cisterna pre sypký materiál"
+
+	key[]: "bs_chipvan"
+	val[]: "Chip Van"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Chip Van, posuvná podlaha"
+
+	key[]: "bs_container"
+	val[]: "Prepravník kontajnerov"
+
+	key[]: "bs_curtain"
+	val[]: "Plachtový náves"
+
+	key[]: "bs_dryvan"
+	val[]: "Náves pre suchý náklad"
+
+	key[]: "bs_flatbed"
+	val[]: "Plochý náves, drevená podlaha"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Plochý náves, hliníková podlaha"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Náves pre prepravu obilia"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Náves pre prepravu obilia s dopravníkovým pásom"
+
+	key[]: "bs_insulated"
+	val[]: "Izolovaný náves"
+
+	key[]: "bs_log_4"
+	val[]: "Klanicový náves, 4 podpery"
+
+	key[]: "bs_log_6"
+	val[]: "Klanicový náves, 6 podpier"
+
+	key[]: "bs_reefer"
+	val[]: "Chladiaci náves"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Chladič"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbo chladič"
+
+	key[]: "chrome_cooler"
+	val[]: "Chrómovaný chladič"
+
+	key[]: "paint_wall"
+	val[]: "Nalakovaná stena"
+
+	key[]: "chrome_wall"
+	val[]: "Chrómovaná stena"
+
+	key[]: "alu_wall"
+	val[]: "Hliníková stena"
+
+	key[]: "steel_wall"
+	val[]: "Oceľová stena"
+
+	key[]: "light"
+	val[]: "Svetlo"
+
+	key[]: "light_bar"
+	val[]: "Svetelná lišta"
+
+	key[]: "log_cage"
+	val[]: "Klietka"
+
+	key[]: "log_wall"
+	val[]: "Stena"
+
+	key[]: "wind_deflector"
+	val[]: "Deflektor vetra"
+
+	key[]: "aero_sideskirt"
+	val[]: "Aerodynamické bočné obloženie"
+
+	key[]: "black_sideskirt"
+	val[]: "Čierne bočné obloženie"
+
+	key[]: "paint_sideskirt"
+	val[]: "Nalakované bočné obloženie"
+
+	key[]: "support_frame"
+	val[]: "Nosný rám"
+
+	key[]: "chrome_door"
+	val[]: "Chrómované dvere"
+
+	key[]: "rollup_door"
+	val[]: "Zrolovateľné dvere"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Zrolovateľné dvere, zdvíhacia plošina"
+
+	key[]: "standard_door"
+	val[]: "Štandardné dvere"
+
+	key[]: "standard_door_aero"
+	val[]: "Štandardné dvere, deflektor vetra"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Kalifornia"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Nové Mexiko"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito Rest Area"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Travel Center"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

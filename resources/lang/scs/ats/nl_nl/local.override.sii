@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Cabineverlichting "
+
+	key[]: "cabdefl"
+	val[]: "Cabine deflectors"
+
+	key[]: "deflector"
+	val[]: "Insectenscherm"
+
+	key[]: "filters"
+	val[]: "Luchtfilters"
+
+	key[]: "f_banner"
+	val[]: "Bumpervlag"
+
+	key[]: "flag_f_l"
+	val[]: "Vlaggen"
+
+	key[]: "flag_f_r"
+	val[]: "Vlaggen"
+
+	key[]: "flag_r_l"
+	val[]: "Achtervlaggen"
+
+	key[]: "flag_r_r"
+	val[]: "Achtervlaggen"
+
+	key[]: "fl_mirror"
+	val[]: "Motorkap spiegel"
+
+	key[]: "fr_mirror"
+	val[]: "Motorkap spiegel"
+
+	key[]: "grill"
+	val[]: "Grille"
+
+	key[]: "headache_r"
+	val[]: "Cabinebescherming"
+
+	key[]: "horns"
+	val[]: "Hoorns"
+
+	key[]: "hood"
+	val[]: "Motorkap"
+
+	key[]: "lghfender"
+	val[]: "Wielkappen"
+
+	key[]: "mudflaps"
+	val[]: "Spatlappen"
+
+	key[]: "mudguard"
+	val[]: "Wielkappen"
+
+	key[]: "sideflares"
+	val[]: "Cabinepanelen"
+
+	key[]: "sideskrt_bar"
+	val[]: "Sideskirtbeplating"
+
+	key[]: "topflares"
+	val[]: "Slaapcabine lichten"
+
+	key[]: "wing"
+	val[]: "Turbo Vleugel"
+
+	key[]: "chainsaw_toy"
+	val[]: "Speelgoedkettingzaag"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Plaats je liedjes in <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>map in <color value=@@clr_sel@@>Mijn Documenten <color value=@@clr_txt@@>en je zult ze hier zien."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Bewerk <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>in <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>map in <color value=@@clr_sel@@>Mijn Documenten <color value=@@clr_txt@@> en luister naar je favoriete internetradiozender in het spel!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Zie alsjeblieft <color value=@@clr_sel@@>leesmij.rtf <color value=@@clr_txt@@>in <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>map in <color value=@@clr_sel@@>Mijn Documenten <color value=@@clr_txt@@>over hoe je je eigen muziek en radiostreams kunt toevoegen."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Welkom bij American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Gevaarlijke vracht"
+
+	key[]: "mechanical"
+	val[]: "Brandstof verbruik"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Gevaarlijk"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Hazmat Transport Training"
+
+	key[]: "skill_adr_info"
+	val[]: "Het transport van gevaarlijke ladingen vraagt naar goed opgeleide professionals. Gebruik je hard verdiende ervaring om aan de volgende U.S. DOT HazMat certificaten te komen om je inkomen een boost te geven."
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Brandstof Besparing"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Door verschillende brandstof besparing technieken te leren, zal je verbuik afnemen."
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "HazMat leverings bonus"
+
+	key[]: "adr_class"
+	val[]: "Gevaren klasse"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Vliegtuigmotor"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Rupstractor"
+
+	key[]: "cn_boat"
+	val[]: "Boot"
+
+	key[]: "cn_bottles"
+	val[]: "Lege Flessen"
+
+	key[]: "cn_butter"
+	val[]: "Boter"
+
+	key[]: "cn_cable"
+	val[]: "Kabels"
+
+	key[]: "cn_cable_reel"
+	val[]: "Kabelhaspel"
+
+	key[]: "cn_colors"
+	val[]: "Verf"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Betonnen Buizen"
+
+	key[]: "cn_const_houses"
+	val[]: "Bouwhuizen"
+
+	key[]: "cn_crude_oil"
+	val[]: "Ruwe Olie"
+
+	key[]: "cn_curtains"
+	val[]: "Gordijnen"
+
+	key[]: "cn_dryfruit"
+	val[]: "Droog Fruit"
+
+	key[]: "cn_forwarder"
+	val[]: "Forwarder"
+
+	key[]: "cn_frac_tank"
+	val[]: "Fractank"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Ingevroren Fruit"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Bevroren groenten"
+
+	key[]: "cn_fruits"
+	val[]: "Vruchten"
+
+	key[]: "cn_grain"
+	val[]: "Graan"
+
+	key[]: "cn_harvester"
+	val[]: "Maaidorser"
+
+	key[]: "cn_hay"
+	val[]: "Hooi"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Prefab Huizen"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth-vrachtwagens"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Houtkraan"
+
+	key[]: "cn_lift_truck"
+	val[]: "Reachstacker"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Reachstacker chassis"
+
+	key[]: "cn_log_harvester"
+	val[]: "Velmachine"
+
+	key[]: "cn_log_loader"
+	val[]: "Houtkraan"
+
+	key[]: "cn_log_stacker"
+	val[]: "Houtstapelaar"
+
+	key[]: "cn_lye"
+	val[]: "Loog"
+
+	key[]: "cn_mbt"
+	val[]: "Mobiele Barrière"
+
+	key[]: "cn_meat"
+	val[]: "Vlees"
+
+	key[]: "cn_milling_machine"
+	val[]: "Freesmachine"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Mobiele Hijskraan"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Boei"
+
+	key[]: "cn_mortar"
+	val[]: "Mortel"
+
+	key[]: "cn_mulcher"
+	val[]: "Frees"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Dierenvoedsel in Korrelvorm"
+
+	key[]: "cn_plows"
+	val[]: "Ploegen"
+
+	key[]: "cn_power_generator"
+	val[]: "Stroomgenerator"
+
+	key[]: "cn_rawmilk"
+	val[]: "Rauwe Melk"
+
+	key[]: "cn_salt"
+	val[]: "Zout"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Sloopauto's"
+
+	key[]: "cn_scraper"
+	val[]: "Schraaper"
+
+	key[]: "cn_stumper"
+	val[]: "Boomstronkfrees"
+
+	key[]: "cn_transformer"
+	val[]: "Transformator"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Houthakselaar"
+
+	key[]: "cn_vegetable"
+	val[]: "Groenten"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Kant en Klare Woning"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Transport Helikopter"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Grote Reservoirtank"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Dumperlaadbak"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Dumper Chassis"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Airconditioning Complex"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Enorme Constructie"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Zuren tankoplegger"
+
+	key[]: "tn_acid_long"
+	val[]: "Lange zuren tankoplegger"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Kipper oplegger (onderlosser)"
+
+	key[]: "tn_car"
+	val[]: "Autotransport"
+
+	key[]: "tn_cement"
+	val[]: "Bulktrailer"
+
+	key[]: "tn_chemical"
+	val[]: "Oplegger voor chemicalien"
+
+	key[]: "tn_chemical_long"
+	val[]: "Lange chemischeoplegger"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Droge Bulktrailer"
+
+	key[]: "tn_dump"
+	val[]: "Kipper oplegger"
+
+	key[]: "tn_flatbed"
+	val[]: "Flatbedoplegger"
+
+	key[]: "tn_food_tank"
+	val[]: "Voedsel Tank Trailer"
+
+	key[]: "tn_frac_tank"
+	val[]: "Fractank"
+
+	key[]: "tn_fuel"
+	val[]: "Brandstoftrailer"
+
+	key[]: "tn_fuel_long"
+	val[]: "Lange tankoplegger"
+
+	key[]: "tn_gas"
+	val[]: "Gasoplegger"
+
+	key[]: "tn_gas_long"
+	val[]: "Lange gasoplegger"
+
+	key[]: "tn_home_transporter"
+	val[]: "Huistransporter"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Houtkraan"
+
+	key[]: "tn_log"
+	val[]: "Trailer met boomstammen"
+
+	key[]: "tn_lowboy"
+	val[]: "Dieplader"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Dieplader voor Boten"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Dieplader 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Trailer met Verrijdbare Afscherming"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Houtversnipperaar"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Gevaren klasse 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Gevaren klasse 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Gevaren klasse 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Gevaren klasse 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Gevaren klasse 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Gevaren klasse 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Gevaren klasse 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Werkpaard"
+	
+	key[]: "lvl_name3"
+	val[]: "Ondernemer"
+	
+	key[]: "lvl_name4"
+	val[]: "Professioneel"
+	
+	key[]: "lvl_name6"
+	val[]: "18 Wheels of Skill"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Showroom"
+	
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator-website" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "American Truck Simulator Facebook" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator ondervindt problemen en is niet in staat de visualisaties op jouw computer te tonen (er is geen geldig grafisch apparaat gevonden).\nSuggesties: \n\n1. Controleer of jouw computer en videokaart voldoen aan de minimale systeemvereisten.\n2. Voorzie jouw computer van de laatste versie van Microsoft's DirectX.\n3. Download en installeer de laatste stuurprogramma's voor jouw grafische kaart vanaf de website van de fabrikant - mogelijk zijn de sturingsprogramma's verouderd.\n4. Probeer de renderingsmethode om te schakelen van OpenGL naar DirectX of andersom.\n5. Verwijder het configuratiebestand 'config.cfg' in de 'Documenten' - 'American Truck Simulator'-map. Mogelijk is het bestand beschadigd geraakt.\nDit bestand wordt bij een volgende start van het spel automatisch opnieuw aangemaakt met werkende standaardwaarden."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator heeft een probleem en is niet in staat om afbeeldingen op uw computer weer te geven (er is geen geldige grafische kaart gevonden)."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator kan geen toegang krijgen tot de Steam client. Voorgestelde stappen:\n\n1. Controleer of de Steam client draait.\n2. Controleer of je de Steam client hebt geupdated.\n3. Controleer of automatisch updaten aanstaat en of het spel is geupdated naar de laatste versie."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Activatie is gelukt.<br>Bedankt voor het kopen van American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Als je de demo van American Truck Simulator leuk vindt, koop dan alstjeblieft de volledige versie op <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator-Content" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Bulkvoeder"
+
+	key[]: "container"
+	val[]: "Containerchassis"
+
+	key[]: "curtainside"
+	val[]: "Schuifzeil"
+
+	key[]: "chipvan"
+	val[]: "Trailer voor Houtsnippers"
+
+	key[]: "dryvan"
+	val[]: "Gesloten Oplegger"
+
+	key[]: "flatbed"
+	val[]: "Vlakke Trailer"
+
+	key[]: "hopper"
+	val[]: "Oplegger met Trechter"
+
+	key[]: "insulated"
+	val[]: "Geïsoleerd"
+
+	key[]: "log"
+	val[]: "Hout"
+
+	key[]: "refrigerated"
+	val[]: "Gekoeld"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Bulk"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Bulkvoedermateriaal"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Licht bulkmateriaal"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Graan & Bulkmateriaal"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Enkele trailer"
+
+	key[]: "double"
+	val[]: "LZV"
+
+	key[]: "bdouble"
+	val[]: "B-Double"
+
+	key[]: "rmdouble"
+	val[]: "R. M. Double"
+
+	key[]: "tpdouble"
+	val[]: "T.P. Dubbel"
+
+	key[]: "triple"
+	val[]: "Triple"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Enkele Oplegger"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA Dubbele Trailer"
+
+	key[]: "chain_b_double"
+	val[]: "B-Double"
+
+	key[]: "chain_rm_double"
+	val[]: "Rocky Mountain LZV"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike Dubbel"
+
+	key[]: "chain_triple"
+	val[]: "Triple"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "STAA Dubbel"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA Dubbele Trailer Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 Assen"
+
+	key[]: "tr_b_double"
+	val[]: "D-Double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-Double, 5 Assen"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-Double, 6 Assen"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain LZV"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Rocky Mountain Double Pup"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike Dubbel"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike Double, 6 Assen"
+
+	key[]: "tr_single_28"
+	val[]: "28 voet"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 voet, 2 Assen"
+
+	key[]: "tr_single_32"
+	val[]: "32 voet"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 voet, 2 Assen"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 voet, 3 Assen"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 voet, Uitschuifbaar"
+
+	key[]: "tr_single_40"
+	val[]: "40 voet"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 voet, 3 Assen"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 voet, Uitschuifbaar"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 voet, Achterkant"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 voet, Verspreid"
+
+	key[]: "tr_single_45"
+	val[]: "45 voet"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 voet, 3 Assen"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 voet, 3 Assen, Enkel"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 voet, 3 Assen, Meesturend"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 voet, Voorkant"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 voet, Achter"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 voet, Schuifbaar Tandemstel, Voor"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 voet, Schuifbaar Tandemstel, Achter"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 voet, Gespreid"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 voet, 3 Assen"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 voet, Voorkant"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 voet, Achterkant"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 voet, Schuifbaar Tandemstel, Voor"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 voet, Schuifbaar Tandemstel, Achter"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 voet, Gespreid"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 voet, 3 Assen"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 voet, 3 Assen, Enkel"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 voet, 3 Assen, Meesturend"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 voet, Gespreid"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 voet, 3 Assen"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 voet, 4 Assen"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 voet, 4 Assen, Gespreid"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 voet, 4 Assen, Meesturend"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 voet, Voorkant"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 voet, Achter"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 voet, Schuifbaar Tandemstel, Voor"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 voet, Schuifbaar Tandemstel, Achter"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 voet, Gespreid"
+
+	key[]: "tr_triple"
+	val[]: "Triple"
+
+	key[]: "tr_triple_pup"
+	val[]: "Triple Pup"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Converter Dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Converter Dolly, 2 Assen"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Belly Van"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Bulkvoeder"
+
+	key[]: "bs_chipvan"
+	val[]: "Chip Van"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Chip Van, Walking Floor"
+
+	key[]: "bs_container"
+	val[]: "Containertrailer"
+
+	key[]: "bs_curtain"
+	val[]: "Schuifzeil"
+
+	key[]: "bs_dryvan"
+	val[]: "Gesloten Oplegger"
+
+	key[]: "bs_flatbed"
+	val[]: "Vlakke Laadvloer"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Aluminium Laadvloer"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Graantrechter"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Graantrecher met Lopende Band"
+
+	key[]: "bs_insulated"
+	val[]: "Geïsoleerd"
+
+	key[]: "bs_log_4"
+	val[]: "Houttrailer, 4 Rongen"
+
+	key[]: "bs_log_6"
+	val[]: "Houttrailer, 6 Rongen"
+
+	key[]: "bs_reefer"
+	val[]: "Koelopbouw"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Koelmotor"
+
+	key[]: "turbo_cooler"
+	val[]: "Turbo Koelmotor"
+
+	key[]: "chrome_cooler"
+	val[]: "Verchroomde koelmotor"
+
+	key[]: "paint_wall"
+	val[]: "Gespoten muur"
+
+	key[]: "chrome_wall"
+	val[]: "Verchroomde muur"
+
+	key[]: "alu_wall"
+	val[]: "Aluminium Kopschot"
+
+	key[]: "steel_wall"
+	val[]: "Stalen Kopschot"
+
+	key[]: "light"
+	val[]: "Verlichting"
+
+	key[]: "light_bar"
+	val[]: "Lichtbalk"
+
+	key[]: "log_cage"
+	val[]: "Bomenkooi"
+
+	key[]: "log_wall"
+	val[]: "Metalen muur"
+
+	key[]: "wind_deflector"
+	val[]: "Windgeleider"
+
+	key[]: "aero_sideskirt"
+	val[]: "Aerodymanische Sideskirt"
+
+	key[]: "black_sideskirt"
+	val[]: "Zwarte Sideskirt"
+
+	key[]: "paint_sideskirt"
+	val[]: "Gespoten Sideskirt"
+
+	key[]: "support_frame"
+	val[]: "Ondersteuningsframe"
+
+	key[]: "chrome_door"
+	val[]: "Verchroomde deur"
+
+	key[]: "rollup_door"
+	val[]: "Roldeur"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Roldeur"
+
+	key[]: "standard_door"
+	val[]: "Standaard deur"
+
+	key[]: "standard_door_aero"
+	val[]: "Standaard deur, Windgeleider"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "Californië"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "Nieuw-Mexico"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Nationaal Park Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Pajarito rust plaats"
+
+	key[]: "pedro_travel_center"
+	val[]: "Pedro Travel Center"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}

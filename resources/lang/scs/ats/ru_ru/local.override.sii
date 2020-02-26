@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Освещение кабины"
+
+	key[]: "cabdefl"
+	val[]: "Боковые дефлекторы"
+
+	key[]: "deflector"
+	val[]: "Дефлектор"
+
+	key[]: "filters"
+	val[]: "Воздушные фильтры"
+
+	key[]: "f_banner"
+	val[]: "Передний баннер"
+
+	key[]: "flag_f_l"
+	val[]: "Передние флажки"
+
+	key[]: "flag_f_r"
+	val[]: "Передние флажки"
+
+	key[]: "flag_r_l"
+	val[]: "Задние флажки"
+
+	key[]: "flag_r_r"
+	val[]: "Задние флажки"
+
+	key[]: "fl_mirror"
+	val[]: "Передние зеркала"
+
+	key[]: "fr_mirror"
+	val[]: "Передние зеркала"
+
+	key[]: "grill"
+	val[]: "Решетка"
+
+	key[]: "headache_r"
+	val[]: "Защита кабины"
+
+	key[]: "horns"
+	val[]: "Пневматические сигналы"
+
+	key[]: "hood"
+	val[]: "Капот"
+
+	key[]: "lghfender"
+	val[]: "Защита крыльев"
+
+	key[]: "mudflaps"
+	val[]: "Брызговики"
+
+	key[]: "mudguard"
+	val[]: "Брызговики"
+
+	key[]: "sideflares"
+	val[]: "Декоративные панели"
+
+	key[]: "sideskrt_bar"
+	val[]: "Планки боковых юбок"
+
+	key[]: "topflares"
+	val[]: "Освещение спальника"
+
+	key[]: "wing"
+	val[]: "Антикрыло"
+
+	key[]: "chainsaw_toy"
+	val[]: "Игрушечная бензопила"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Скопируйте Вашу музыку в папку <color value=@@clr_sel@@>Документы / American Truck Simulator / music<color value=@@clr_txt@@>, и она станет доступна в игре."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Добавьте в файл <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>Ваши любимые онлайн-радиостанции и слушайте их в игре! Файл <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>находится в папке <color value=@@clr_sel@@>Документы / American Truck Simulator<color value=@@clr_txt@@>."
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Информацию о том, как добавить адреса радиостанций и свою музыку в проигрыватель, Вы можете найти в файле <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@>, находящемся в папке <color value=@@clr_sel@@>Документы / American Truck Simulator <color value=@@clr_txt@@>."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Добро пожаловать в American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Опасные грузы"
+
+	key[]: "mechanical"
+	val[]: "Экономичность"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Опасный груз"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Транспортирование опасных веществ"
+
+	key[]: "skill_adr_info"
+	val[]: "Перевозка опасных грузов - работа для настоящих профессионалов. Пусть накопленный опыт поможет Вам заполучить заветные сертификаты U.S. DOT HazMat и существенно увеличить свои доходы:"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Экономичное вождение"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Слишком часто замечаете на приборной панели сигнал опустевшего топливного бака? В таком случае Вам стоит задуматься о снижении расхода топлива. Способов великое множество, и со временем вы постигнете большую их часть. Правильнее всего будет начать с изменения манеры вождения. Выгоды:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Бонус за доставку опасного груза"
+
+	key[]: "adr_class"
+	val[]: "Класс опасности"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Авиационный двигатель"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Гусеничный трактор"
+
+	key[]: "cn_boat"
+	val[]: "Лодка"
+
+	key[]: "cn_bottles"
+	val[]: "Тара"
+
+	key[]: "cn_butter"
+	val[]: "Масло"
+
+	key[]: "cn_cable"
+	val[]: "Кабельная продукция"
+
+	key[]: "cn_cable_reel"
+	val[]: "Кабельная катушка"
+
+	key[]: "cn_colors"
+	val[]: "Краска"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Бетонные трубы"
+
+	key[]: "cn_const_houses"
+	val[]: "Модульные конструкции"
+
+	key[]: "cn_crude_oil"
+	val[]: "Сырая Нефть"
+
+	key[]: "cn_curtains"
+	val[]: "Занавески"
+
+	key[]: "cn_dryfruit"
+	val[]: "Сухофрукты"
+
+	key[]: "cn_forwarder"
+	val[]: "Форвардер"
+
+	key[]: "cn_frac_tank"
+	val[]: "Цистерна-контейнер"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Замороженные фрукты"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Замороженные овощи"
+
+	key[]: "cn_fruits"
+	val[]: "Фрукты"
+
+	key[]: "cn_grain"
+	val[]: "Зерно"
+
+	key[]: "cn_harvester"
+	val[]: "Комбайн"
+
+	key[]: "cn_hay"
+	val[]: "Сено"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Сборный дом"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Грузовики Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Кран-манипулятор"
+
+	key[]: "cn_lift_truck"
+	val[]: "Ричстакер"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Шасси ричстакера"
+
+	key[]: "cn_log_harvester"
+	val[]: "Харвестер"
+
+	key[]: "cn_log_loader"
+	val[]: "Погрузчик брёвен"
+
+	key[]: "cn_log_stacker"
+	val[]: "Брёвноукладчик"
+
+	key[]: "cn_lye"
+	val[]: "Щёлок"
+
+	key[]: "cn_mbt"
+	val[]: "Мобильный барьер"
+
+	key[]: "cn_meat"
+	val[]: "Мясо"
+
+	key[]: "cn_milling_machine"
+	val[]: "Фрезерная машина"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Внедорожный кран"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Швартовный буй"
+
+	key[]: "cn_mortar"
+	val[]: "Строительный раствор"
+
+	key[]: "cn_mulcher"
+	val[]: "Мульчер"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Гранулированный корм для животных"
+
+	key[]: "cn_plows"
+	val[]: "Плуги"
+
+	key[]: "cn_power_generator"
+	val[]: "Генератор"
+
+	key[]: "cn_rawmilk"
+	val[]: "Свежее молоко"
+
+	key[]: "cn_salt"
+	val[]: "Соль"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Списанные авто"
+
+	key[]: "cn_scraper"
+	val[]: "Скрепер"
+
+	key[]: "cn_stumper"
+	val[]: "Корчеватель"
+
+	key[]: "cn_transformer"
+	val[]: "Трансформатор"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Дробилка"
+
+	key[]: "cn_vegetable"
+	val[]: "Овощи"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Готовый дом «под ключ»"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Транспортный вертолёт"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Большой резервуар"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: " Кузов карьерного самосвала"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Шасси карьерного самосвала"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Промышленный кондиционер"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Большая конструкция"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Цистерна для кислот"
+
+	key[]: "tn_acid_long"
+	val[]: "Длинная цистерна для кислот"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Самосвал-хоппер"
+
+	key[]: "tn_car"
+	val[]: "Автовоз"
+
+	key[]: "tn_cement"
+	val[]: "Цистерна для цемента"
+
+	key[]: "tn_chemical"
+	val[]: "Химическая цистерна"
+
+	key[]: "tn_chemical_long"
+	val[]: "Длинная химическая цистерна"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Трейлер для сыпучих грузов"
+
+	key[]: "tn_dump"
+	val[]: "Прицеп-самосвал"
+
+	key[]: "tn_flatbed"
+	val[]: "Платформа"
+
+	key[]: "tn_food_tank"
+	val[]: "Пищевая цистерна"
+
+	key[]: "tn_frac_tank"
+	val[]: "Цистерна-контейнер"
+
+	key[]: "tn_fuel"
+	val[]: "Топливная цистерна"
+
+	key[]: "tn_fuel_long"
+	val[]: "Длинная топливная цистерна"
+
+	key[]: "tn_gas"
+	val[]: "Газовая цистерна"
+
+	key[]: "tn_gas_long"
+	val[]: "Длинная газовая цистерна"
+
+	key[]: "tn_home_transporter"
+	val[]: "Прицеп для перевозки домов"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Кран-манипулятор"
+
+	key[]: "tn_log"
+	val[]: "Лесовоз"
+
+	key[]: "tn_lowboy"
+	val[]: "Низкорамный трал"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Низкорамный трал для лодок"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Низкорамный трал 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Полуприцеп - мобильный барьер"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Дробилка"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Класс 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Класс 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Класс 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Класс 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Класс 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Класс 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Класс 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Рабочая лошадка"
+	
+	key[]: "lvl_name3"
+	val[]: "Предприниматель"
+	
+	key[]: "lvl_name4"
+	val[]: "Профессионал"
+	
+	key[]: "lvl_name6"
+	val[]: "Мастер восемнадцати колёс"
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Выставочный зал"
+	
+	key[]: "weblink_game"
+	val[]: "Сайт American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "Обнаружена ошибка: совместимый видеоадаптер не найден.\nВозможные пути решения проблемы:\n\n1. Убедитесь, что Ваш компьютер удовлетворяет программным и аппаратным требованиям.\n2. Установите последнюю версию Microsoft DirectX.\n3. Загрузите и установите последнюю версию драйверов для Вашей видеокарты - вполне вероятно, что текущие драйверы устарели.\n4. Попробуйте изменить метод рендеринга с OpenGL на DirectX, или наоборот.\n5. Удалите файл конфигурации игры 'config.cfg', находящийся в папке 'Документы' - 'American Truck Simulator' . Он может быть поврежден.\nЭтот файл будет создан автоматически при следующем запуске игры, настройки примут стандартные значения."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "Обнаружена ошибка: совместимый видеоадаптер не найден."
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator не может получить доступ к клиенту Steam. Что можно предпринять:\n\n1. Убедитесь, что клиент Steam запущен.\n2. Проверьте версию клиента Steam — возможно она неактуальна\n3. Удостоверьтесь, что включено автоматическое обновление, и клиент игры обновлён до последней версии."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Активация успешно завершена.<br>Благодарим Вас за приобретение копии American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Если American Truck Simulator Вам понравился,то приобретите полную версию игры через <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - ВЫБОР ПРОФИЛЯ" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Контент игры" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Кормовоз"
+
+	key[]: "container"
+	val[]: "Контейнеровоз"
+
+	key[]: "curtainside"
+	val[]: "Сдвижной тент"
+
+	key[]: "chipvan"
+	val[]: "Щеповоз"
+
+	key[]: "dryvan"
+	val[]: "Фургон"
+
+	key[]: "flatbed"
+	val[]: "Платформа"
+
+	key[]: "hopper"
+	val[]: "Хоппер"
+
+	key[]: "insulated"
+	val[]: "Изотермический"
+
+	key[]: "log"
+	val[]: "Лесовоз"
+
+	key[]: "refrigerated"
+	val[]: "Рефрижератор"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Насыпной груз"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Сыпучий материал"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Легкий сыпучий материал"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Зерно и сыпучий материал"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Одиночный прицеп"
+
+	key[]: "double"
+	val[]: "Двойная сцепка"
+
+	key[]: "bdouble"
+	val[]: "B-Double"
+
+	key[]: "rmdouble"
+	val[]: "Сцепка R.M."
+
+	key[]: "tpdouble"
+	val[]: "Сцепка T.P."
+
+	key[]: "triple"
+	val[]: "Тройная сцепка"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Одиночный прицеп"
+
+	key[]: "chain_staa_double"
+	val[]: "Сцепка STAA"
+
+	key[]: "chain_b_double"
+	val[]: "Сцепка B-Double"
+
+	key[]: "chain_rm_double"
+	val[]: "Сцепка Rocky Mountain Double"
+
+	key[]: "chain_tp_double"
+	val[]: "Сцепка Turnpike"
+
+	key[]: "chain_triple"
+	val[]: "Тройная сцепка"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "Прицеп STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Сцепка STAA, тип 2"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "Сцепка STAA, тип 2, 4 оси"
+
+	key[]: "tr_b_double"
+	val[]: "Сцепка B-Double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-Double, 5 осей"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-Double, 6 осей"
+
+	key[]: "tr_rm_double"
+	val[]: "Прицеп Rocky Mountain Double"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Сцепка Rocky Mountain Double, тип 2"
+
+	key[]: "tr_tp_double"
+	val[]: "Сцепка Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Сцепка Turnpike, 6 осей"
+
+	key[]: "tr_single_28"
+	val[]: "28 футов"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 футов, 2 оси"
+
+	key[]: "tr_single_32"
+	val[]: "32 фута"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 фута, 2 оси"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 фута, 3 оси"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 фута, раздвижной"
+
+	key[]: "tr_single_40"
+	val[]: "40 футов"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 футов, 3 оси"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 футов, раздвижной"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 футов, ось сзади"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 футов, оси разнесены"
+
+	key[]: "tr_single_45"
+	val[]: "45 футов"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 футов, 3 оси"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 футов, 3 оси, 3-я одинарная"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 футов, 3 оси, 3-я управляемая"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 футов, оси впереди"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 футов, ось сзади"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 футов, сдвижная тележка впереди"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 футов, сдвижная тележка сзади"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 футов, оси разнесены"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 футов, 3 оси"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 футов, оси впереди"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 футов, оси сзади"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 футов, сдвижная тележка впереди"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 футов, сдвижная тележка сзади"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 футов, оси разнесены"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 футов, 3 оси"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 футов, 3 оси, 3-я одинарная"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 футов, 3 оси, 3-я управляемая"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 футов, оси разнесены"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 фута, 3 оси"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 фута, 4 оси"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 фута, 4 оси, разнесены"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 фута, 4 оси, 4-я управляемая"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 фута, оси впереди"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 фута, ось сзади"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 фута, сдвижная тележка впереди"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 фута, сдвижная тележка сзади"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 фута, оси разнесены"
+
+	key[]: "tr_triple"
+	val[]: "Тройная сцепка"
+
+	key[]: "tr_triple_pup"
+	val[]: "Тройная сцепка, тип 2"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Сцепка Dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Промежуточная тележка, 2 оси"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Сцепка Dolly"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Низкопольный щеповоз"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Кормовоз"
+
+	key[]: "bs_chipvan"
+	val[]: "Щеповоз"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Щеповоз, сдвижной пол"
+
+	key[]: "bs_container"
+	val[]: "Контейнеровоз"
+
+	key[]: "bs_curtain"
+	val[]: "Сдвижной тент"
+
+	key[]: "bs_dryvan"
+	val[]: "Фургон"
+
+	key[]: "bs_flatbed"
+	val[]: "Платформа"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Алюминиевая платформа"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Зерновоз"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Зерновоз с лентой"
+
+	key[]: "bs_insulated"
+	val[]: "Изотермический"
+
+	key[]: "bs_log_4"
+	val[]: "Лесовоз: 4 коника"
+
+	key[]: "bs_log_6"
+	val[]: "Лесовоз: 6 коников"
+
+	key[]: "bs_reefer"
+	val[]: "Рефрижератор"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Холодильная установка"
+
+	key[]: "turbo_cooler"
+	val[]: "Установка Turbo"
+
+	key[]: "chrome_cooler"
+	val[]: "Хромированная установка"
+
+	key[]: "paint_wall"
+	val[]: "Окрашенная стенка"
+
+	key[]: "chrome_wall"
+	val[]: "Хромированная стенка"
+
+	key[]: "alu_wall"
+	val[]: "Алюминиевая стенка"
+
+	key[]: "steel_wall"
+	val[]: "Стальная стенка"
+
+	key[]: "light"
+	val[]: "Свет"
+
+	key[]: "light_bar"
+	val[]: "Лайтбар"
+
+	key[]: "log_cage"
+	val[]: "Стандартная стенка"
+
+	key[]: "log_wall"
+	val[]: "Усиленная стенка"
+
+	key[]: "wind_deflector"
+	val[]: "Дефлекторы"
+
+	key[]: "aero_sideskirt"
+	val[]: "Обтекаемые боковые отбойники"
+
+	key[]: "black_sideskirt"
+	val[]: "Черные боковые отбойники"
+
+	key[]: "paint_sideskirt"
+	val[]: "Окрашенные боковые отбойники"
+
+	key[]: "support_frame"
+	val[]: "Несущий каркас"
+
+	key[]: "chrome_door"
+	val[]: "Хромированные двери"
+
+	key[]: "rollup_door"
+	val[]: "Дверь-роллет"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Дверь-роллет, гидроборт"
+
+	key[]: "standard_door"
+	val[]: "Стандартные двери"
+
+	key[]: "standard_door_aero"
+	val[]: "Стандартная дверь, дефлектор"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Аризона"
+
+	key[]: "california"
+	val[]: "Калифорния"
+
+	key[]: "nevada"
+	val[]: "Невада"
+
+	key[]: "new_mexico"
+	val[]: "Нью-Мексико"
+
+	key[]: "oregon"
+	val[]: "Орегон"
+
+	key[]: "utah"
+	val[]: "Юта"
+
+	key[]: "washington"
+	val[]: "Вашингтон"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Абердин"
+
+	key[]: "alamogordo"
+	val[]: "Аламогордо"
+
+	key[]: "albuquerque"
+	val[]: "Альбукерке"
+
+	key[]: "artesia"
+	val[]: "Артижа"
+
+	key[]: "astoria"
+	val[]: "Астория"
+
+	key[]: "bakersfield"
+	val[]: "Бейкерсфилд"
+
+	key[]: "barstow"
+	val[]: "Барстоу"
+
+	key[]: "bellingham"
+	val[]: "Беллингхем"
+
+	key[]: "bend"
+	val[]: "Бенд"
+
+	key[]: "burns"
+	val[]: "Бёрнс"
+
+	key[]: "camp_verde"
+	val[]: "Камп Верде"
+
+	key[]: "carlsbad"
+	val[]: "Карлсбад"
+
+	key[]: "carson_city"
+	val[]: "Карсон-сити"
+
+	key[]: "cedar_city"
+	val[]: "Сидар-Сити"
+
+	key[]: "clifton"
+	val[]: "Клифтон"
+
+	key[]: "clovis"
+	val[]: "Кловис"
+
+	key[]: "colville"
+	val[]: "Колвилл"
+
+	key[]: "coos_bay"
+	val[]: "Кус Бей"
+
+	key[]: "ehrenberg"
+	val[]: "Эренберг"
+
+	key[]: "el_centro"
+	val[]: "Эль-Центро"
+
+	key[]: "elko"
+	val[]: "Элко"
+
+	key[]: "ely"
+	val[]: "Эли"
+
+	key[]: "eugene"
+	val[]: "Юджин"
+
+	key[]: "eureka"
+	val[]: "Юрика"
+
+	key[]: "everett"
+	val[]: "Эверетт"
+
+	key[]: "farmington"
+	val[]: "Фармингтон"
+
+	key[]: "flagstaff"
+	val[]: "Флагстафф"
+
+	key[]: "fresno"
+	val[]: "Фресно"
+
+	key[]: "gallup"
+	val[]: "Галлап"
+
+	key[]: "grand_canyon"
+	val[]: "Гран-Каньон"
+
+	key[]: "grand_canyon_village"
+	val[]: "Гран-Каньон Виллейдж"
+
+	key[]: "grand_coulee"
+	val[]: "Гранд-Кули"
+
+	key[]: "hobbs"
+	val[]: "Хоббс"
+
+	key[]: "holbrook"
+	val[]: "Холбрук"
+
+	key[]: "hornbrook"
+	val[]: "Хорнбрук"
+
+	key[]: "huron"
+	val[]: "Хьюрон"
+
+	key[]: "jackpot"
+	val[]: "Джекпот"
+
+	key[]: "kayenta"
+	val[]: "Кайента"
+
+	key[]: "kennewick"
+	val[]: "Кенневик"
+
+	key[]: "kingman"
+	val[]: "Кингман"
+
+	key[]: "klamath_falls"
+	val[]: "Кламат Фолс"
+
+	key[]: "lakeview"
+	val[]: "Лейквью"
+
+	key[]: "las_cruces"
+	val[]: "Лас-Крусес"
+
+	key[]: "las_vegas"
+	val[]: "Лас-Вегас"
+
+	key[]: "logan"
+	val[]: "Логан"
+
+	key[]: "longview"
+	val[]: "Лонгвью"
+
+	key[]: "los_angeles"
+	val[]: "Лос-Анджелес"
+
+	key[]: "medford"
+	val[]: "Медфорд"
+
+	key[]: "moab"
+	val[]: "Моаб"
+
+	key[]: "newport"
+	val[]: "Ньюпорт"
+
+	key[]: "nogales"
+	val[]: "Ногалез"
+
+	key[]: "oakdale"
+	val[]: "Окдейл"
+
+	key[]: "oakland"
+	val[]: "Окленд"
+
+	key[]: "ogden"
+	val[]: "Огден"
+
+	key[]: "olympia"
+	val[]: "Олимпия"
+
+	key[]: "omak"
+	val[]: "Омак"
+
+	key[]: "ontario"
+	val[]: "Онтарио"
+
+	key[]: "oxnard"
+	val[]: "Окснард"
+
+	key[]: "page"
+	val[]: "Пейдж"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Стоянка Пахарито"
+
+	key[]: "pedro_travel_center"
+	val[]: "Туристический центр Pedro"
+
+	key[]: "pendleton"
+	val[]: "Пендлтон"
+
+	key[]: "phoenix"
+	val[]: "Финикс"
+
+	key[]: "pioche"
+	val[]: "Пайош"
+
+	key[]: "port_angeles"
+	val[]: "Порт-Анджелес"
+
+	key[]: "portland"
+	val[]: "Портленд"
+
+	key[]: "price_ut"
+	val[]: "Прайс"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Примм"
+
+	key[]: "provo"
+	val[]: "Прово"
+
+	key[]: "raton"
+	val[]: "Ратон"
+
+	key[]: "redding"
+	val[]: "Реддинг"
+
+	key[]: "reno"
+	val[]: "Рино"
+
+	key[]: "roswell"
+	val[]: "Розуэлл"
+
+	key[]: "sacramento"
+	val[]: "Сакраменто"
+
+	key[]: "salem"
+	val[]: "Салем"
+
+	key[]: "salina"
+	val[]: "Салина"
+
+	key[]: "salt_lake_city"
+	val[]: "Солт-Лейк-Сити"
+
+	key[]: "san_diego"
+	val[]: "Сан-Диего"
+
+	key[]: "san_francisco"
+	val[]: "Сан-Франциско"
+
+	key[]: "san_rafael"
+	val[]: "Сан-Рафаэль"
+
+	key[]: "san_simon"
+	val[]: "Сан Саймон"
+
+	key[]: "santa_cruz"
+	val[]: "Санта-Круз"
+
+	key[]: "santa_fe"
+	val[]: "Санта-Фе"
+
+	key[]: "santa_maria"
+	val[]: "Санта-Мария"
+
+	key[]: "seattle"
+	val[]: "Сиэтл"
+
+	key[]: "show_low"
+	val[]: "Шоу Лоу"
+
+	key[]: "sierra_vista"
+	val[]: "Сиерра-Виста"
+
+	key[]: "socorro"
+	val[]: "Сокорро"
+
+	key[]: "spokane"
+	val[]: "Спокан"
+
+	key[]: "st_george"
+	val[]: "Сент-Джордж"
+
+	key[]: "stockton"
+	val[]: "Стоктон"
+
+	key[]: "tacoma"
+	val[]: "Такома"
+
+	key[]: "the_dalles"
+	val[]: "Даллес"
+
+	key[]: "tonopah"
+	val[]: "Тонопа"
+
+	key[]: "truckee"
+	val[]: "Траки"
+
+	key[]: "tucson"
+	val[]: "Тусон"
+
+	key[]: "tucumcari"
+	val[]: "Тукумкэри"
+
+	key[]: "ukiah"
+	val[]: "Юкайа"
+
+	key[]: "vancouver"
+	val[]: "Ванкувер"
+
+	key[]: "vernal"
+	val[]: "Вернал"
+
+	key[]: "wenatchee"
+	val[]: "Уэнатчи"
+
+	key[]: "winnemucca"
+	val[]: "Виннемакка"
+
+	key[]: "yakima"
+	val[]: "Якима"
+
+	key[]: "yuma"
+	val[]: "Юма"
+#@}
+
+}
+}

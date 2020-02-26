@@ -1,0 +1,1249 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
+
+	key[]: "steam_buy_url"
+	val[]: "https://store.steampowered.com/app/270880/"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	
+	key[]: "cabflares"
+	val[]: "Đèn khoang lái"
+
+	key[]: "cabdefl"
+	val[]: "Tấm chắn nắng"
+
+	key[]: "deflector"
+	val[]: "Chắn côn trùng"
+
+	key[]: "filters"
+	val[]: "Lưới lọc gió"
+
+	key[]: "f_banner"
+	val[]: "Bảng hiệu phía trước"
+
+	key[]: "flag_f_l"
+	val[]: "Cờ trước"
+
+	key[]: "flag_f_r"
+	val[]: "Cờ trước"
+
+	key[]: "flag_r_l"
+	val[]: "Cờ hậu"
+
+	key[]: "flag_r_r"
+	val[]: "Cờ hậu"
+
+	key[]: "fl_mirror"
+	val[]: "Gương chiếu hậu phía trước"
+
+	key[]: "fr_mirror"
+	val[]: "Gương chiếu hậu phía trước"
+
+	key[]: "grill"
+	val[]: "Nướng"
+
+	key[]: "headache_r"
+	val[]: "Thanh giằng"
+
+	key[]: "horns"
+	val[]: "Còi"
+
+	key[]: "hood"
+	val[]: "Nắp động cơ"
+
+	key[]: "lghfender"
+	val[]: "Rào chắn"
+
+	key[]: "mudflaps"
+	val[]: "Chắn bùn"
+
+	key[]: "mudguard"
+	val[]: "Chắn bùn"
+
+	key[]: "sideflares"
+	val[]: "Tấm che khoang lái"
+
+	key[]: "sideskrt_bar"
+	val[]: "Cản yếm xe"
+
+	key[]: "topflares"
+	val[]: "Đèn ngủ"
+
+	key[]: "wing"
+	val[]: "Cánh gió"
+
+	key[]: "chainsaw_toy"
+	val[]: "Máy cưa đồ chơi"
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Hãy chép nhạc vào <color value=@@clr_sel@@> thư mục American Truck Simulator/music <color value=@@clr_txt@@><color value=@@clr_sel@@>trong thư mục Documents <color value=@@clr_txt@@>và bạn sẽ thấy nó xuất hiên tại đây."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Chỉnh sửa <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>trong thư mục <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>ở <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>của bạn để có thể nghe các kênh radio ưa thích trên Internet ngay ở trong trò chơi!"
+	
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Hãy tham khảo màu <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> trong <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@> thư mục của bạn <color value=@@clr_sel@@>tài liệu <color value=@@clr_txt@@> các đưa nhạc và radio mà bạn chọn vào game."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Chào mừng bạn đến với American Truck Simulator!"
+#@}
+
+#+ Skills screen
+#+
+#+ Allows the player to use gained experience points to improve various skills.
+#@{
+
+#+ Names of individual skills which can be improved.
+#@{
+	key[]: "adr"
+	val[]: "Hàng hóa nguy hiểm"
+
+	key[]: "mechanical"
+	val[]: "Tiết kiệm xăng"
+#@}
+
+#+ Cargo types.
+#@{
+	key[]: "cargo_type_adr"
+	val[]: "Cảnh báo"
+#@}
+
+#+ Information about individual hazard classes.
+#@{
+	key[]: "skill_adr_title"
+	val[]: "Đào tạo chở hàng Hazmat"
+
+	key[]: "skill_adr_info"
+	val[]: "Vận chuyển hàng hóa nguy hiểm yêu cầu tài xế có trình độ. Hãy sử dụng những kinh nghiệm bạn tử kiếm được để đáp ứng những chứng chỉ của U.S. DOT HazMat đồng thời tăng thu nhập cho bạn"
+#@}
+
+#+ Information about individual ranks of "Fuel Economy" skill.
+#@{
+	key[]: "skill_mechanical_title"
+	val[]: "Tiết kiệm xăng"
+
+	key[]: "skill_mechanical_info"
+	val[]: "Học các cách tiết kiệm xăng để giảm thiểu tối đa lượng xăng tiêu thụ. Đặc biệt là:"
+#@}
+#@}
+
+#+ Job completed screen
+#+
+#+ Shown after completion of job.
+#@{
+
+#+ Individual possible components of the reward.
+#@{
+	key[]: "adr_bonus"
+	val[]: "Thưởng thêm HazMat"
+
+	key[]: "adr_class"
+	val[]: "Đèn cảnh báo"
+#@}
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Động cơ máy bay"
+
+	key[]: "cn_articulated_tractor"
+	val[]: "Đầu kéo bánh xích"
+
+	key[]: "cn_boat"
+	val[]: "Thuyền"
+
+	key[]: "cn_bottles"
+	val[]: "Chai rỗng"
+
+	key[]: "cn_butter"
+	val[]: "Bơ"
+
+	key[]: "cn_cable"
+	val[]: "Cáp"
+
+	key[]: "cn_cable_reel"
+	val[]: "Cuộn cáp"
+
+	key[]: "cn_colors"
+	val[]: "Sơn"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Ống bê tông"
+
+	key[]: "cn_const_houses"
+	val[]: "Công trình nhà"
+
+	key[]: "cn_crude_oil"
+	val[]: "Dầu thô"
+
+	key[]: "cn_curtains"
+	val[]: "Rèm "
+
+	key[]: "cn_dryfruit"
+	val[]: "Hoa quả sấy khô"
+
+	key[]: "cn_forwarder"
+	val[]: "Xe chở gỗ"
+
+	key[]: "cn_frac_tank"
+	val[]: "Bồn frac"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Hoa quả đông lạnh"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Rau củ đông lạnh"
+
+	key[]: "cn_fruits"
+	val[]: "Hoa quả"
+
+	key[]: "cn_grain"
+	val[]: "Ngũ cốc"
+
+	key[]: "cn_harvester"
+	val[]: "Máy gặt"
+
+	key[]: "cn_hay"
+	val[]: "Nôngsản"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Nhà tiền chế"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Xe tải Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Xe cẩu gỗ"
+
+	key[]: "cn_lift_truck"
+	val[]: "Xe nâng"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Khung gầm xe nâng"
+
+	key[]: "cn_log_harvester"
+	val[]: "Xe cắt gỗ"
+
+	key[]: "cn_log_loader"
+	val[]: "Xe nâng gỗ"
+
+	key[]: "cn_log_stacker"
+	val[]: "Xe xếp gỗ"
+
+	key[]: "cn_lye"
+	val[]: "Nhuộm"
+
+	key[]: "cn_mbt"
+	val[]: "Barrier di động"
+
+	key[]: "cn_meat"
+	val[]: "Thịt"
+
+	key[]: "cn_milling_machine"
+	val[]: "Máy gặt đập liên hợp"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Xe cần cẩu"
+
+	key[]: "cn_moor_buoy"
+	val[]: "Phao neo"
+
+	key[]: "cn_mortar"
+	val[]: "Vữa"
+
+	key[]: "cn_mulcher"
+	val[]: "Xe phát quang"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Thực phẩm động vật dạng viên"
+
+	key[]: "cn_plows"
+	val[]: "Máy cày"
+
+	key[]: "cn_power_generator"
+	val[]: "Máy phát điện"
+
+	key[]: "cn_rawmilk"
+	val[]: "Sữa thô"
+
+	key[]: "cn_salt"
+	val[]: "Muối"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Xe con đã được nghiền nát"
+
+	key[]: "cn_scraper"
+	val[]: "Cạo"
+
+	key[]: "cn_stumper"
+	val[]: "Xe xẻ gốc cây"
+
+	key[]: "cn_transformer"
+	val[]: "Máy biến áp"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Xe tái chế gỗ"
+
+	key[]: "cn_vegetable"
+	val[]: "Rau củ quả"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	#+ Name of the cargo of big house.
+	key[]: "cn_house"
+	val[]: "Nhà căn hộ"
+
+	#+ Name of the cargo of transport helicopter helicopter.
+	key[]: "cn_ovs_helicopter"
+	val[]: "Trực thăng vận tải"
+
+	#+ Name of the cargo of large reservoir tank transported on its side.
+	key[]: "cn_ovs_tank"
+	val[]: "Bồn chứa nước lớn"
+
+	#+ Name of the cargo of hull part for large dozers.
+	key[]: "cn_mutt_hull"
+	val[]: "Xe tải chở hàng"
+
+	#+ Name of the cargo of large dozer.
+	key[]: "cn_mutt"
+	val[]: "Khung gầm xe tải"
+
+	#+ Name of the cargo of big air condition complex.
+	key[]: "cn_aircondition"
+	val[]: "Giàn điều hòa"
+
+	#+ Name of the cargo of some construction - need to be properly named after the model is done.
+	key[]: "cn_lattice"
+	val[]: "Công trình lớn"
+#@}
+
+#+ Names of individual trailer and trailer chassis types.
+#@{
+	key[]: "tn_acid"
+	val[]: "Rơ-moóc chở axit"
+
+	key[]: "tn_acid_long"
+	val[]: "Rơ-moóc chở axit"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Rơ-moóc Thùng xả đáy"
+
+	key[]: "tn_car"
+	val[]: "Rơ-moóc chở xe ôtô"
+
+	key[]: "tn_cement"
+	val[]: "Rơ-moóc trộn bê tông"
+
+	key[]: "tn_chemical"
+	val[]: "Rơ-moóc chở chất hóa học"
+
+	key[]: "tn_chemical_long"
+	val[]: "Rơ-moóc chở chất hóa học"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Rơ-moóc khô nguyên khối"
+
+	key[]: "tn_dump"
+	val[]: "Rơ-moóc xe ben"
+
+	key[]: "tn_flatbed"
+	val[]: "Rơ-moóc sàn"
+
+	key[]: "tn_food_tank"
+	val[]: "Rơ-moóc chở thực phẩm"
+
+	key[]: "tn_frac_tank"
+	val[]: "Bồn frac"
+
+	key[]: "tn_fuel"
+	val[]: "Rơ-moóc chở nguyên liệu"
+
+	key[]: "tn_fuel_long"
+	val[]: "Rơ-moóc xe bồn dài"
+
+	key[]: "tn_gas"
+	val[]: "Rơ-moóc xe bồn"
+
+	key[]: "tn_gas_long"
+	val[]: "Rơ-moóc chở ga"
+
+	key[]: "tn_home_transporter"
+	val[]: "Nhà di động"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Xe cẩu gỗ"
+
+	key[]: "tn_log"
+	val[]: "Thùng chở gỗ"
+
+	key[]: "tn_lowboy"
+	val[]: "Rơ-moóc sàn thấp"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Rơ-moóc sàn thấp chở thuyền"
+
+	key[]: "tn_magnitude_55l"
+	val[]: "Rơ-moóc sàn thấp 55L"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Rơ-moóc chỏ Barrier"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Xe tái chế gỗ"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+	
+	key[]: "tt_ico_adr_1"
+	val[]: "Đèn thông báo cấp 1"
+	
+	key[]: "tt_ico_adr_2"
+	val[]: "Đèn thông báo cấp 2"
+	
+	key[]: "tt_ico_adr_3"
+	val[]: "Đèn thông báo cấp 3"
+	
+	key[]: "tt_ico_adr_4"
+	val[]: "Đèn thông báo cấp 4"
+	
+	key[]: "tt_ico_adr_5"
+	val[]: "Đèn thông báo cấp 5"
+	
+	key[]: "tt_ico_adr_6"
+	val[]: "Đèn thông báo cấp 6"
+	
+	key[]: "tt_ico_adr_8"
+	val[]: "Đèn thông báo cấp 8"
+#@}
+	
+#+ Names of individual experience tiers of the driver.
+#@{
+	
+	key[]: "lvl_name2"
+	val[]: "Công xưởng"
+	
+	key[]: "lvl_name3"
+	val[]: "Doanh nhân"
+	
+	key[]: "lvl_name4"
+	val[]: "Chuyên nghiệp"
+	
+	key[]: "lvl_name6"
+	val[]: "Kĩ năng 18 bánh "
+#@}
+	
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Cửa hàng giới thiệu"
+	
+	key[]: "weblink_game"
+	val[]: "Trang chủ American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+	
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator đang có vấn đề với card đồ họa của bạn. Vì vậy bạn hãy tiến hành các bước sau\n\n1. Kiềm tra xem cấu hình máy tính có đáp ứng cấu hình tối thiểu mà trò chơi yêu cầu.\n2. Tải hay nâng cấp phiên bản mới nhất của Microsoft's DirectX.\n3. Cài lại driver mới nhất cho card màn hình.\n4. Chọn kiểu đồ họa từ OpenGL qua  DirectX\n5. xóa file  file 'config.cfg' tront hư mục 'Documents' - 'American Truck Simulator'. Có thể nó đã bị lỗi.\nGame sẽ tự động tạo ra file khác ở lần chơi kế tiếp."
+	
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator gặp vấn đề trong việc hiển thị hình ảnh (không tìm thấy card màn hình ở máy tính của bạn)"
+#@}
+
+#+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
+
+	key[]: "sys_no_steam"
+	val[]: "American Truck Simulator không thể truy cập vảo Steam. Bạn hãy kiểm tra theo các bước sau:\n\n1. Kiểm tra xem Steam có đang được mở không..\n2. Kiểm tra xem Steam được nâng cấp bản mới nhất chưa.\n3. Kiểm trang xem phần tự động nâng cầp có được kích hoạt không và game đã được nâng cấp phiên bản mới nhất chưa."
+
+#+ Activation screen
+#@{
+	
+	key[]: "activated"
+	val[]: "Kích hoạt thành công.<br>Cám ơn sự ủng hộ của bạn dành cho trò chơi American Truck Simulator."
+	
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+	key[]: "steam_demo"
+	val[]: "Nếu bạn thích trò chơi thông qua bản demo, hãy vui lòng mua bản đầy đủ của trò chơi tại <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+	
+	key[]: "profile_sel_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - TRÌNH KHỞI ĐỘNG" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Nội dung American Truck Simulator" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Bồn chở đồ khô"
+
+	key[]: "container"
+	val[]: "Container Carrier"
+
+	key[]: "curtainside"
+	val[]: "Bạt trượt"
+
+	key[]: "chipvan"
+	val[]: "Xe chở vụn gỗ"
+
+	key[]: "dryvan"
+	val[]: "Xe caravan khô"
+
+	key[]: "flatbed"
+	val[]: "Sàn phẳng"
+
+	key[]: "hopper"
+	val[]: "Sà lan"
+
+	key[]: "insulated"
+	val[]: "Cách nhiệt"
+
+	key[]: "log"
+	val[]: "Khung chở gỗ"
+
+	key[]: "refrigerated"
+	val[]: "Đông lạnh"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "bulk"
+	val[]: "Đồ khô"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Nguyên liệu khô"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Nguyên liệu khô nhẹ"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Nguyên liệu khô & ngũ cốc"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Đơn"
+
+	key[]: "double"
+	val[]: "Đôi"
+
+	key[]: "bdouble"
+	val[]: "B-Double"
+
+	key[]: "rmdouble"
+	val[]: "R.M. Đôi"
+
+	key[]: "tpdouble"
+	val[]: "Rơ-moóc đôi dạng T.P"
+
+	key[]: "triple"
+	val[]: "Ba"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Đơn"
+
+	key[]: "chain_staa_double"
+	val[]: "Rơ-moóc đôi chuẩn STAA"
+
+	key[]: "chain_b_double"
+	val[]: "B-Double"
+
+	key[]: "chain_rm_double"
+	val[]: "Xe tải đôi"
+
+	key[]: "chain_tp_double"
+	val[]: "Rơ-moóc đôi dạng Turnpike"
+
+	key[]: "chain_triple"
+	val[]: "Ba"
+#@}
+
+#+ Trailer configurations
+
+#@{
+	key[]: "tr_double_staa"
+	val[]: "Rơ-moóc đôi chuẩn STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Rơ-moóc đôi chuẩn STAA"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 Axles"
+
+	key[]: "tr_b_double"
+	val[]: "B-Double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-Double, 5 trục"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-Double, 6 trục"
+
+	key[]: "tr_rm_double"
+	val[]: "Xe tải đôi"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Xe tải đôi"
+
+	key[]: "tr_tp_double"
+	val[]: "Rơ-moóc đôi dạng Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Rơ-moóc đôi dạng Turnpike, 6 trục"
+
+	key[]: "tr_single_28"
+	val[]: "28 ft"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 feet, 2 trục"
+
+	key[]: "tr_single_32"
+	val[]: "32 feet"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 feet, 2 trục"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 feet, 3 trục"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 feet, có thể cơi nới"
+
+	key[]: "tr_single_40"
+	val[]: "40 feet"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 feet, 3 trục"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 feet, Extendable, có thể cơi nới"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 feet, Trục sau"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 feet, Trục tách"
+
+	key[]: "tr_single_45"
+	val[]: "45 feet"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 ft, 3 trục"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 feet, 3 trục, đơn"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 feet, 3 trục, bánh điều hướng"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 ft, trục trước"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 ft, trục sau"
+
+	key[]: "tr_single_45_slide_front"
+	val[]: "45 feet, trục trượt, trước"
+
+	key[]: "tr_single_45_slide_rear"
+	val[]: "45 feet, trục trượt, sau"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 ft, trục tách"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 ft, 3 trục"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 ft, trục trước"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 ft, trục sau"
+
+	key[]: "tr_single_48_slide_front"
+	val[]: "48 feet, trục trượt, trước"
+
+	key[]: "tr_single_48_slide_rear"
+	val[]: "48 feet, trục trượt, sau"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 ft, trục tách"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 feet, 3 trục"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 feet, 3 trục, đơn"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 feet, 3 trục, bánh điều hướng"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 feet, Spread"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 ft, 3 trục"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 ft, 4 trục"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 ft, 4 trục tách"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 ft, 4 trục có bánh xe xoay được"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 ft, trục trước"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 ft, trục sau"
+
+	key[]: "tr_single_53_slide_front"
+	val[]: "53 feet, trục trượt, trước"
+
+	key[]: "tr_single_53_slide_rear"
+	val[]: "53 feet, trục trượt, sau"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 ft, trục tách"
+
+	key[]: "tr_triple"
+	val[]: "Ba"
+
+	key[]: "tr_triple_pup"
+	val[]: "Ba con nhộng"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Bánh chuyển đổi"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Rơ-moóc dạng hoán cải, 2 trục"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Tay kéo"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Thùng belly"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Bồn chở đồ khô"
+
+	key[]: "bs_chipvan"
+	val[]: "Xe chở vụn gỗ"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Xe chở vụn gỗ, sàn kéo được"
+
+	key[]: "bs_container"
+	val[]: "Khung chở rơ-moóc"
+
+	key[]: "bs_curtain"
+	val[]: "Bạt trượt"
+
+	key[]: "bs_dryvan"
+	val[]: "Xe caravan khô"
+
+	key[]: "bs_flatbed"
+	val[]: "Sàn phẳng"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Nhôm phẳng"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Sà lan ngũ cốc"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Sà lan ngũ cốc có băng chuyền"
+
+	key[]: "bs_insulated"
+	val[]: "Cách nhiệt"
+
+	key[]: "bs_log_4"
+	val[]: "Khung xương chở gỗ loại 4"
+
+	key[]: "bs_log_6"
+	val[]: "Khung xương chở gỗ loại 6"
+
+	key[]: "bs_reefer"
+	val[]: "Đông"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+	key[]: "cooler"
+	val[]: "Máy lạnh"
+
+	key[]: "turbo_cooler"
+	val[]: "Máy làm mát"
+
+	key[]: "chrome_cooler"
+	val[]: "Máy lạnh mạ Chrome"
+
+	key[]: "paint_wall"
+	val[]: "Tường đã được sơn"
+
+	key[]: "chrome_wall"
+	val[]: "Tường Chrome"
+
+	key[]: "alu_wall"
+	val[]: "Tường nhôm"
+
+	key[]: "steel_wall"
+	val[]: "Tường thép"
+
+	key[]: "light"
+	val[]: "Đèn"
+
+	key[]: "light_bar"
+	val[]: "Đèn thanh (dải)"
+
+	key[]: "log_cage"
+	val[]: "Rọ gỗ"
+
+	key[]: "log_wall"
+	val[]: "Vách gỗ"
+
+	key[]: "wind_deflector"
+	val[]: "Người làm lệch hướng gió"
+
+	key[]: "aero_sideskirt"
+	val[]: "Tấm chắn bên khí động học"
+
+	key[]: "black_sideskirt"
+	val[]: "Tấm chắn bên đen"
+
+	key[]: "paint_sideskirt"
+	val[]: "Tấm chắn hai bên đã được sơn"
+
+	key[]: "support_frame"
+	val[]: "Khung trợ lực"
+
+	key[]: "chrome_door"
+	val[]: "Cửa mạ Chrome"
+
+	key[]: "rollup_door"
+	val[]: "Kéo cửa lên"
+
+	key[]: "rollup_door_lift_gate"
+	val[]: "Cửa cuốn, cổng nâng"
+
+	key[]: "standard_door"
+	val[]: "Cửa tiêu chuẩn"
+
+	key[]: "standard_door_aero"
+	val[]: "Cửa tiêu chuẩn, cản gió"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Arizona"
+
+	key[]: "california"
+	val[]: "California"
+
+	key[]: "nevada"
+	val[]: "Nevada"
+
+	key[]: "new_mexico"
+	val[]: "New Mexico"
+
+	key[]: "oregon"
+	val[]: "Oregon"
+
+	key[]: "utah"
+	val[]: "Utah"
+
+	key[]: "washington"
+	val[]: "Washington"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Aberdeen"
+
+	key[]: "alamogordo"
+	val[]: "Alamogordo"
+
+	key[]: "albuquerque"
+	val[]: "Albuquerque"
+
+	key[]: "artesia"
+	val[]: "Artesia"
+
+	key[]: "astoria"
+	val[]: "Astoria"
+
+	key[]: "bakersfield"
+	val[]: "Bakersfield"
+
+	key[]: "barstow"
+	val[]: "Barstow"
+
+	key[]: "bellingham"
+	val[]: "Bellingham"
+
+	key[]: "bend"
+	val[]: "Bend"
+
+	key[]: "burns"
+	val[]: "Burns"
+
+	key[]: "camp_verde"
+	val[]: "Camp Verde"
+
+	key[]: "carlsbad"
+	val[]: "Carlsbad"
+
+	key[]: "carson_city"
+	val[]: "Carson City"
+
+	key[]: "cedar_city"
+	val[]: "Cedar City"
+
+	key[]: "clifton"
+	val[]: "Clifton"
+
+	key[]: "clovis"
+	val[]: "Clovis"
+
+	key[]: "colville"
+	val[]: "Colville"
+
+	key[]: "coos_bay"
+	val[]: "Coos Bay"
+
+	key[]: "ehrenberg"
+	val[]: "Ehrenberg"
+
+	key[]: "el_centro"
+	val[]: "El Centro"
+
+	key[]: "elko"
+	val[]: "Elko"
+
+	key[]: "ely"
+	val[]: "Ely"
+
+	key[]: "eugene"
+	val[]: "Eugene"
+
+	key[]: "eureka"
+	val[]: "Eureka"
+
+	key[]: "everett"
+	val[]: "Everett"
+
+	key[]: "farmington"
+	val[]: "Farmington"
+
+	key[]: "flagstaff"
+	val[]: "Flagstaff"
+
+	key[]: "fresno"
+	val[]: "Fresno"
+
+	key[]: "gallup"
+	val[]: "Gallup"
+
+	key[]: "grand_canyon"
+	val[]: "Grand Canyon"
+
+	key[]: "grand_canyon_village"
+	val[]: "Grand Canyon Village"
+
+	key[]: "grand_coulee"
+	val[]: "Grand Coulee"
+
+	key[]: "hobbs"
+	val[]: "Hobbs"
+
+	key[]: "holbrook"
+	val[]: "Holbrook"
+
+	key[]: "hornbrook"
+	val[]: "Hornbrook"
+
+	key[]: "huron"
+	val[]: "Huron"
+
+	key[]: "jackpot"
+	val[]: "Jackpot"
+
+	key[]: "kayenta"
+	val[]: "Kayenta"
+
+	key[]: "kennewick"
+	val[]: "Kennewick"
+
+	key[]: "kingman"
+	val[]: "Kingman"
+
+	key[]: "klamath_falls"
+	val[]: "Klamath Falls"
+
+	key[]: "lakeview"
+	val[]: "Lakeview"
+
+	key[]: "las_cruces"
+	val[]: "Las Cruces"
+
+	key[]: "las_vegas"
+	val[]: "Las Vegas"
+
+	key[]: "logan"
+	val[]: "Logan"
+
+	key[]: "longview"
+	val[]: "Longview"
+
+	key[]: "los_angeles"
+	val[]: "Los Angeles"
+
+	key[]: "medford"
+	val[]: "Medford"
+
+	key[]: "moab"
+	val[]: "Moab"
+
+	key[]: "newport"
+	val[]: "Newport"
+
+	key[]: "nogales"
+	val[]: "Nogales"
+
+	key[]: "oakdale"
+	val[]: "Oakdale"
+
+	key[]: "oakland"
+	val[]: "Oakland"
+
+	key[]: "ogden"
+	val[]: "Ogden"
+
+	key[]: "olympia"
+	val[]: "Olympia"
+
+	key[]: "omak"
+	val[]: "Omak"
+
+	key[]: "ontario"
+	val[]: "Ontario"
+
+	key[]: "oxnard"
+	val[]: "Oxnard"
+
+	key[]: "page"
+	val[]: "Page"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Trạm dừng Pajarito"
+
+	key[]: "pedro_travel_center"
+	val[]: "Trung tâm Lữ hành Pedro"
+
+	key[]: "pendleton"
+	val[]: "Pendleton"
+
+	key[]: "phoenix"
+	val[]: "Phoenix"
+
+	key[]: "pioche"
+	val[]: "Pioche"
+
+	key[]: "port_angeles"
+	val[]: "Port Angeles"
+
+	key[]: "portland"
+	val[]: "Portland"
+
+	key[]: "price_ut"
+	val[]: "Price"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Primm"
+
+	key[]: "provo"
+	val[]: "Provo"
+
+	key[]: "raton"
+	val[]: "Raton"
+
+	key[]: "redding"
+	val[]: "Redding"
+
+	key[]: "reno"
+	val[]: "Reno"
+
+	key[]: "roswell"
+	val[]: "Roswell"
+
+	key[]: "sacramento"
+	val[]: "Sacramento"
+
+	key[]: "salem"
+	val[]: "Salem"
+
+	key[]: "salina"
+	val[]: "Salina"
+
+	key[]: "salt_lake_city"
+	val[]: "Salt Lake City"
+
+	key[]: "san_diego"
+	val[]: "San Diego"
+
+	key[]: "san_francisco"
+	val[]: "San Francisco"
+
+	key[]: "san_rafael"
+	val[]: "San Rafael"
+
+	key[]: "san_simon"
+	val[]: "San Simon"
+
+	key[]: "santa_cruz"
+	val[]: "Santa Cruz"
+
+	key[]: "santa_fe"
+	val[]: "Santa Fe"
+
+	key[]: "santa_maria"
+	val[]: "Santa Maria"
+
+	key[]: "seattle"
+	val[]: "Seattle"
+
+	key[]: "show_low"
+	val[]: "Show Low"
+
+	key[]: "sierra_vista"
+	val[]: "Sierra Vista"
+
+	key[]: "socorro"
+	val[]: "Socorro"
+
+	key[]: "spokane"
+	val[]: "Spokane"
+
+	key[]: "st_george"
+	val[]: "St. George"
+
+	key[]: "stockton"
+	val[]: "Stockton"
+
+	key[]: "tacoma"
+	val[]: "Tacoma"
+
+	key[]: "the_dalles"
+	val[]: "The Dalles"
+
+	key[]: "tonopah"
+	val[]: "Tonopah"
+
+	key[]: "truckee"
+	val[]: "Truckee"
+
+	key[]: "tucson"
+	val[]: "Tucson"
+
+	key[]: "tucumcari"
+	val[]: "Tucumcari"
+
+	key[]: "ukiah"
+	val[]: "Ukiah"
+
+	key[]: "vancouver"
+	val[]: "Vancouver"
+
+	key[]: "vernal"
+	val[]: "Vernal"
+
+	key[]: "wenatchee"
+	val[]: "Wenatchee"
+
+	key[]: "winnemucca"
+	val[]: "Winnemucca"
+
+	key[]: "yakima"
+	val[]: "Yakima"
+
+	key[]: "yuma"
+	val[]: "Yuma"
+#@}
+
+}
+}
