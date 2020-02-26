@@ -12,7 +12,7 @@
                     <div class="row">
                         <h5 class="card-title center">
                             @if($accessory->game && $accessory->alias)
-                                @lang($accessory->game.'_accessories.'.$accessory->alias)
+                                {{ $accessory->translate() }}
                             @else
                                 Додати новий аксесуар
                             @endif
