@@ -2,7 +2,7 @@
 
 @section('content')
 
-    
+
     <div class="flex-center" style="flex: 1; align-items: center; flex-direction: column;">
 
         <div class="card" style="width: 600px;">
@@ -71,6 +71,18 @@
                                 <div class="mdc-notched-outline__leading"></div>
                                 <div class="mdc-notched-outline__notch">
                                     <label for="alias" class="mdc-floating-label">Alias</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--outlined">
+                            <input type="text" id="name" class="mdc-text-field__input" name="name" value="{{ $accessory->name }}" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="name" class="mdc-floating-label">Name</label>
                                 </div>
                                 <div class="mdc-notched-outline__trailing"></div>
                             </div>

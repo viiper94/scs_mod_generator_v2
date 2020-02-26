@@ -27,6 +27,7 @@ class AdminAccessoriesController extends Controller{
                 'game' => 'required|string',
                 'def' => 'required|string',
                 'alias' => 'required|string',
+                'name' => 'required|string',
                 'chassis' => 'required|string',
             ]);
             $accessory = Accessory::find($id);
@@ -35,6 +36,7 @@ class AdminAccessoriesController extends Controller{
                 'def' => $request->input('def'),
                 'suffixes' => $request->input('suffixes'),
                 'alias' => $request->input('alias'),
+                'name' => $request->input('name'),
                 'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'chassis' => $request->input('chassis'),
                 'active' => $request->input('active') == 'on',
@@ -60,6 +62,7 @@ class AdminAccessoriesController extends Controller{
             'suffixes' => $accessory->suffixes,
             'chassis' => $accessory->chassis,
             'alias' => $accessory->alias,
+            'name' => $accessory->name,
             'dlc' => $accessory->dlc,
             'active' => $accessory->active,
         ]);
@@ -92,6 +95,7 @@ class AdminAccessoriesController extends Controller{
                 'game' => 'required|string',
                 'def' => 'required|string',
                 'alias' => 'required|string',
+                'name' => 'required|string',
                 'chassis' => 'required|string',
             ]);
             $accessory->fill([
@@ -99,6 +103,7 @@ class AdminAccessoriesController extends Controller{
                 'def' => $request->input('def'),
                 'suffixes' => $request->input('suffixes'),
                 'alias' => $request->input('alias'),
+                'name' => $request->input('name'),
                 'chassis' => $request->input('chassis'),
                 'dlc' => $request->input('dlc') ? implode(',', $request->input('dlc')) : null,
                 'active' => $request->input('active') == 'on',
@@ -147,6 +152,7 @@ class AdminAccessoriesController extends Controller{
                                     'game' => $dlc_params['game'] ?? 'ets2',
                                     'def' => '/def/vehicle/trailer_cargo/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/'.$acc,
                                     'alias' => str_replace(['.sii', '_13'], '', $acc),
+                                    // TODO name
                                     'chassis' => $chassis,
                                     'dlc' =>  $dlc_params['id'],
                                     'active' => true,
@@ -161,6 +167,19 @@ class AdminAccessoriesController extends Controller{
         }
 //        die();
         return redirect()->route('accessories')->with(['success' => 'Аксесуари додано!']);
+    }
+
+    public function locale(){
+        $content = json_decode(file_get_contents(resource_path('files/alias_to_cn.json')), true);
+//        dd($content);
+        foreach($content as $old => $new){
+            $acc = Accessory::where('alias', $old)->get();
+            foreach($acc as $accessory){
+                $accessory->name = $new;
+                $accessory->save();
+            }
+        }
+        return redirect()->route('accessories')->with(['success' => 'Виконано!']);
     }
 
 }

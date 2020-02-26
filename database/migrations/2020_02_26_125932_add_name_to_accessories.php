@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddWithHookToChassis extends Migration
+class AddNameToAccessories extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddWithHookToChassis extends Migration
      */
     public function up()
     {
-        Schema::table('chassis', function(Blueprint $table)
+        Schema::table('accessories', function(Blueprint $table)
         {
-            $table->boolean('with_hook')->default(0)->after('with_paint_job');
+            $table->string('name')->nullable()->after('alias');
         });
     }
 
@@ -26,8 +26,8 @@ class AddWithHookToChassis extends Migration
      */
     public function down()
     {
-        Schema::table('chassis', function (Blueprint $table) {
-            $table->dropColumn('with_hook');
+        Schema::table('accessories', function (Blueprint $table) {
+            $table->dropColumn('name');
         });
     }
 }

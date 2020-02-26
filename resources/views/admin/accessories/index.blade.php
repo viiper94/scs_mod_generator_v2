@@ -24,6 +24,8 @@
         <div class="col m12">
             <table class="highlight responsive-table">
                 <thead>
+                <th>Назва</th>
+                <th>Name</th>
                 <th>Alias</th>
                 <th>Def</th>
                 <th>Suffixes</th>
@@ -35,7 +37,9 @@
                 <tbody>
                 @foreach($accessories as $accessory)
                     <tr @if(!$accessory->active)class="grey darken-2 black-text" @endif>
-                        <td>@lang($accessory->game.'_accessories.'.$accessory->alias)</td>
+                        <td>{{ $accessory->translate() }}</td>
+                        <td>{{ $accessory->name }}</td>
+                        <td>{{ $accessory->alias }}</td>
                         <td>{{ $accessory->def }}</td>
                         <td>{{ $accessory->suffixes ?? '—' }}</td>
                         <td>{{ $accessory->chassis }}</td>
