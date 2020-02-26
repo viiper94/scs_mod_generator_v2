@@ -27,6 +27,12 @@
     "raven": "DLC Raven Truck Design Pack",
     "promods": "ProMods"
   },
+  "accessories" : {
+      "t14": "T14",
+      "t22": "T22",
+      "t50": "T50",
+      "t75": "T75"
+  },
   "companies\/paints": {
     "bcp": "BCP",
     "bhv": "BHV",

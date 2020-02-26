@@ -112,7 +112,7 @@ class Chassis extends Model{
                     break;
                 }
             }
-            $name .= trans($this->game.'_accessories.'.$accessory->alias);
+            $name .= $accessory->translate();
             if($accessory->isDLCContent()){
                 $dlc = array();
                 $dlc_short = array();

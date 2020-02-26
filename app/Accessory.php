@@ -72,4 +72,23 @@ class Accessory extends Model{
         return $this->def;
     }
 
+    public function translate(){
+        $translated = array();
+        $index = 0;
+//        dd(explode('__', $this->name));
+        foreach(explode('__', $this->name) as $item){
+            if(substr($item,0, 1) === '%'){
+                $replace = '';
+//                if($index > 0 && substr($item,1) === '('){
+//                    $replace = ' ';
+//                }
+                $part = str_replace('%', $replace, $item);
+            }
+        else $part = trans('accessories.'.$item);
+            $translated[] = $part;
+            $index++;
+        }
+        return implode(' ', $translated);
+    }
+
 }
