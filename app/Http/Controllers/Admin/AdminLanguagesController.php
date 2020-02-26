@@ -65,4 +65,51 @@ class AdminLanguagesController extends Controller{
             redirect()->route('languages')->withErrors(['Виникла помилка!']);
     }
 
+    public function import($locale = null){
+        $asoc = [
+            'uk' => 'uk_uk',
+            'de' => 'de_de',
+            'el' => 'el_gr',
+            'en' => 'en_gb',
+            'es' => 'es_es',
+            'fr' => 'fr_fr',
+            'hr' => 'hr_hr',
+            'ja' => 'ja_jp',
+            'ka' => 'ka_ge',
+            'ko' => 'ko_kr',
+            'nl' => 'nl_nl',
+            'nn' => 'no_no',
+            'pl' => 'pl_pl',
+            'pt' => 'pt_pt',
+            'ro' => 'ro_ro',
+            'ru' => 'ru_ru',
+            'tr' => 'tr_tr',
+            'zh' => 'zh_cn',
+        ];
+
+        foreach($asoc as $lang => $locale){
+            $ets2Content = file_get_contents(resource_path('files/locale.scs/ets2/'.$locale.'/local.sii')).
+                file_get_contents(resource_path('files/locale.scs/ets2/'.$locale.'/local.override.sii'));
+            $atsContent = file_get_contents(resource_path('files/locale.scs/ats/'.$locale.'/local.sii')).
+                file_get_contents(resource_path('files/locale.scs/ats/'.$locale.'/local.override.sii'));
+            $content = $ets2Content.$atsContent;
+
+            $aliases = json_decode(file_get_contents(resource_path('files/alias_to_cn.json')), true);
+            $result = array();
+            foreach($aliases as $type => $cn_arr){
+                foreach($cn_arr as $cn){
+                    $pattern = '%key\[\]:\s"'.$cn.'"\n\tval\[\]:\s"([^"]+)"\n%';
+                    preg_match($pattern, $content, $matches);
+                    $result[$type][$cn] = trim($matches[1]);
+                }
+            }
+
+            file_put_contents(resource_path('lang/locale/'.$lang.'.json'), json_encode($result, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT ));
+
+        }
+
+        return redirect()->route('languages')->with(['success' => 'Виконано!']);
+
+    }
+
 }
