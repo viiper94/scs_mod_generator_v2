@@ -131,6 +131,12 @@
         "tcn_black": "tcn_black",
         "tcn_white": "tcn_white",
 
+        "cn_glass": "cn_glass",
+        "cn_floorpanels": "cn_floorpanels",
+        "cn_wallpan": "cn_wallpan",
+
+        "hct": "hct",
+
         "car_transporter": "tn_car_transporter",
         "cement_cistern": "tn_cement_cistern",
         "cement_mixer": "tn_cement_mixer",
