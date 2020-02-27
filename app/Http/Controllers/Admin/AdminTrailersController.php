@@ -41,12 +41,14 @@ class AdminTrailersController extends Controller{
             $this->validate($request, [
                 'game' => 'required|string',
                 'alias' => 'required|string',
+                'name' => 'required|string',
                 'wheels_id' => 'required|numeric',
                 'default_paint_job' => 'required_if:with_paint_job,on',
             ]);
             $chassis = Chassis::find($id);
             $chassis->fill([
                 'game' => $request->input('game', 'ets2'),
+                'name' => $request->input('name'),
                 'alias' => $request->input('alias'),
                 'alias_short' => $request->input('alias_short', $request->input('alias')),
                 'accessory_subgroup' => $request->input('accessory_subgroup', null),
@@ -84,6 +86,7 @@ class AdminTrailersController extends Controller{
         $new_chassis = new Chassis();
         $new_chassis->fill([
             'game' => $chassis->game,
+            'name' => $chassis->name,
             'alias' => $chassis->alias.'_copy',
             'alias_short' => $chassis->alias,
             'accessory_subgroup' => $chassis->accessory_subgroup,
@@ -128,12 +131,14 @@ class AdminTrailersController extends Controller{
         if($request->method() === 'POST'){
             $this->validate($request, [
                 'game' => 'required|string',
+                'name' => 'required|string',
                 'alias' => 'required|string',
                 'wheels_id' => 'required|numeric',
                 'default_paint_job' => 'required_if:with_paint_job,on',
             ]);
             $chassis->fill([
                 'game' => $request->input('game', 'ets2'),
+                'name' => $request->input('name'),
                 'alias' => $request->input('alias'),
                 'alias_short' => $request->input('alias_short', $request->input('alias')),
                 'accessory_subgroup' => $request->input('accessory_subgroup', null),

@@ -90,6 +90,18 @@
                     </div>
                     <div class="row no-margin">
                         <div class="mdc-text-field mdc-text-field--outlined">
+                            <input type="text" id="name" class="mdc-text-field__input" name="name" value="{{ $chassis->name }}" required>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="name" class="mdc-floating-label">Name</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin">
+                        <div class="mdc-text-field mdc-text-field--outlined">
                             <input type="text" id="default_paint_job" class="mdc-text-field__input" name="default_paint_job" value="{{ $chassis->default_paint_job }}">
                             <div class="mdc-notched-outline">
                                 <div class="mdc-notched-outline__leading"></div>
