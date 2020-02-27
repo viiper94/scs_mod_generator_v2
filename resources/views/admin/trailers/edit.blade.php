@@ -12,7 +12,7 @@
                     <div class="row">
                         <h5 class="card-title center">
                             @if($chassis->game && $chassis->alias)
-                                @lang($chassis->game.'_trailers.'.$chassis->alias)
+                                {{ $chassis->translate() }}
                             @else
                                 Додати нове шассі
                             @endif
