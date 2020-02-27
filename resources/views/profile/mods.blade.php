@@ -44,15 +44,16 @@
                         <div class="collapsible-body">
                             @php $params = unserialize($mod->params); @endphp
                             @if(is_array($params))
-                                <p>
-                                    @lang('general.chassis'):
-                                    <b>
-                                        @if($params['form']['chassis'] == 'paintable') @lang('general.paintable_chassis')
-                                        @else @lang($mod->game.'_trailers.'.$params['form']['chassis'])
-                                        @endif
-                                    </b>
-                                </p>
                                 @if(isset($params['view']))
+                                    <p>
+                                        @lang('general.chassis'):
+                                        <b>
+                                            @if($params['form']['chassis'] == 'paintable') @lang('general.paintable_chassis')
+                                            @elseif(key_exists('chassis', $params['view'])) @lang($mod->game.'_trailers.'.$params['view']['chassis'])
+                                            @else {{ $params['form']['chassis'] }}
+                                            @endif
+                                        </b>
+                                    </p>
                                     @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'):
                                         <b>@lang('accessories.'.$params['view']['accessory'])</b></p>
                                     @endif

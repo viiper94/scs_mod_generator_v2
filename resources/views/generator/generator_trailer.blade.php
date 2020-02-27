@@ -42,7 +42,7 @@
                                                 tooltipped" data-tooltip="@lang('general.mp_no_support')@endif"
                                              data-value="{{$chassis->alias}}" data-position="left">
                                             <span class="name">
-                                                @lang($game.'_trailers.'.$chassis->alias)
+                                                {{ $chassis->translate() }}
                                             </span>
                                             @if($chassis->isDLCContent())
                                                 <span class="right tooltipped hint"

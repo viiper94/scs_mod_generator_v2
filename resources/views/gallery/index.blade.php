@@ -35,7 +35,7 @@
                                     <div class="card-image">
                                         <img src="/assets/img/trailers/{{$alias}}/{{$alias}}.jpg">
                                         <h5 class="card-title trailer-name text-shadow" title="@lang($game.'_trailers.'.$alias)" style="width: 100%;">
-                                            @lang($game.'_trailers.'.$alias)
+                                            {{ $aliases_collection[0]->translate() }}
                                             @if($aliases_collection[0]->isDLCContent())
                                                 <br>@lang('dlc_list.'.$aliases_collection[0]->dlc->name)
                                             @endif

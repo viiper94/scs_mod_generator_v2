@@ -168,4 +168,20 @@ class Chassis extends Model{
         return $list;
     }
 
+    public function translate(){
+        $translated = array();
+        $index = 0;
+//        dd(explode('__', $this->name));
+        foreach(explode('__', $this->name) as $item){
+            if(substr($item,0, 1) === '%'){
+                $replace = '';
+                $part = str_replace('%', $replace, $item);
+            }
+            else $part = trans($this->game.'_trailers.'.$item);
+            $translated[] = $part;
+            $index++;
+        }
+        return implode(' ', $translated);
+    }
+
 }

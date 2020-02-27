@@ -169,6 +169,7 @@ class TrailerGeneratorController extends Controller{
     public function getInputParams($request, $generator){
         $params = array();
 
+        $params['view']['chassis'] = $generator->chassis->name;
         $params['form']['chassis'] = $request->post('chassis');
 
         if($request->post('accessory')){
