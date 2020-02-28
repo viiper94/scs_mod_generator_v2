@@ -53,7 +53,7 @@ class TrailerGenerator extends ModGenerator{
     private function getTitle(){
         $title = trim(htmlentities(Request::post('title')));
         if(strlen($title) == 0){
-            $title = trans($this->game.'_trailers.'.$this->chassis->alias);
+            $title = $this->chassis->translate();
         }
         return $title;
 	}
