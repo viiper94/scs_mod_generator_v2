@@ -29,12 +29,14 @@
                             <h5 class="card-title">
                                 @if(!$chassis->active) <i class="material-icons mdc-button__icon notranslate">visibility_off</i> @endif
                                 {{ $chassis->translate() }}
+                                    @if($chassis->isDLCContent()) - <i>@lang('dlc_list.'.$chassis->dlc->name)</i>@endif
                             </h5>
                             <p style="line-height: 24px;">
                                 @if($chassis->with_accessory)<i class="material-icons mdc-button__icon notranslate left">category</i>@endif
                                 @if($chassis->with_paint_job)<i class="material-icons mdc-button__icon notranslate left">texture</i>@endif
                                 @if(!$chassis->mp_support)<s><b>MP</b></s>@endif
-                                <br>Alias: <b>{{ $chassis->alias }}</b><br>Name:  <b>{{ $chassis->name }}</b>
+                                <br>Alias: <b>{{ $chassis->alias }}</b>
+                                <br>Name:  <b>{{ $chassis->name }}</b>
                             </p>
                         </div>
                         <div class="card-action">
