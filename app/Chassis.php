@@ -181,7 +181,7 @@ class Chassis extends Model{
             $translated[] = $part;
             $index++;
         }
-        return implode(' ', $translated);
+        return str_replace(['( ', ' )'], ['(', ')'], implode(' ', $translated));
     }
 
 }

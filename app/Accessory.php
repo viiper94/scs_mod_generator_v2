@@ -79,16 +79,13 @@ class Accessory extends Model{
         foreach(explode('__', $this->name) as $item){
             if(substr($item,0, 1) === '%'){
                 $replace = '';
-//                if($index > 0 && substr($item,1) === '('){
-//                    $replace = ' ';
-//                }
                 $part = str_replace('%', $replace, $item);
             }
         else $part = trans('accessories.'.$item);
             $translated[] = $part;
             $index++;
         }
-        return implode(' ', $translated);
+        return str_replace(['( ', ' )'], ['(', ')'], implode(' ', $translated));
     }
 
 }
