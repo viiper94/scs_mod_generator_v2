@@ -42,7 +42,7 @@
                         <td>
                             <a href="{{ route('paints', ['chassis' => $paint->chassis]) }}">
                                 @if($paint->chassisObj)
-                                    @lang($paint->game.'_trailers.'.$paint->chassisObj->alias)
+                                    {{ $paint->chassisObj->translate() }}
                                 @else
                                     {{ $paint->chassis }}
                                 @endif
