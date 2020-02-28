@@ -51,6 +51,7 @@ class Accessory extends Model{
         $suffix_list = array();
         if($suffixes){
             foreach($suffixes as $key => $suf){
+                // % - default suffix, ^ - suffix without "_"
                 if(stripos($suf, '%') !== false) $default_suffix = $key;
                 $with_underscore[$key] = stripos($suf, '^') === false;
                 $suffix_list[$key] = str_replace(['%', '^'], '', $suf);
