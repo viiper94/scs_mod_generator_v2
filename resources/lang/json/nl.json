@@ -15,7 +15,7 @@
         "cars_it": "Fiat, Alfa",
         "cars_dacia": "Dacia",
         "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "\u0160koda",
+        "cars_octavia": "Škoda",
         "cars_smax": "Ford",
         "cars_volvo": "Volvo",
         "cars_magnum": "Dodge",
@@ -208,7 +208,7 @@
     },
     "companies\/paints": {
         "default": "Gekleurde",
-        "schw_logo": "Schwarzm\u00fcller Logo",
-        "schw_black_red": "Schwarzm\u00fcller Black and Red"
+        "schw_logo": "Schwarzmüller Logo",
+        "schw_black_red": "Schwarzmüller Black and Red"
     }
 }

@@ -55,7 +55,9 @@ class OneSky{
             'export_file_name' => $in_locale.'.json'
         ));
         if(!isset($response['meta'])){
-            file_put_contents(resource_path('lang/json/'.$in_locale.'.json'), $response);
+//            dd();
+            file_put_contents(resource_path('lang/json/'.$in_locale.'.json'),
+                json_encode(json_decode($response, true), JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
             return true;
         }else{
             return false;
