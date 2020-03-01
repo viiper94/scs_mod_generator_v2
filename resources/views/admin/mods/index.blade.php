@@ -95,15 +95,15 @@
                                         </b></p>
                                     @endif
                                     @if(key_exists('color', $params['view']))<p>@lang('general.color'): <b>{{ $params['view']['color'] }}</b></p>@endif
-                                    @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['form']['weight'] }}</b></p>@endif
                                     @if(key_exists('wheels', $params['view']))<p>@lang('general.wheels'): <b>@lang($mod->game.'_wheels.'.$params['view']['wheels'])</b></p>@endif
-                                    @if(key_exists('dlc', $params['form']))
-                                        <ul>
-                                            @foreach($params['form']['dlc'] as $dlc => $on)
-                                                <li><b>@lang('dlc_list.'.$dlc)</b></li>
-                                            @endforeach
-                                        </ul>
-                                    @endif
+                                @endif
+                                @if(key_exists('weight', $params['form']))<p>@lang('general.trailer_weight'): <b>{{ $params['form']['weight'] }}</b></p>@endif
+                                @if(key_exists('dlc', $params['form']))
+                                    <ul>
+                                        @foreach($params['form']['dlc'] as $dlc => $on)
+                                            <li><b>@lang('dlc_list.'.$dlc)</b></li>
+                                        @endforeach
+                                    </ul>
                                 @endif
 
                             @endif
