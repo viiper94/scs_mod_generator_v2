@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.deret
+{
+	name: "Deret"
+	sort_name: "deret"
+	trailer_look: deret
+}

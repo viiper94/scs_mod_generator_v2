@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.hekla
+{
+	name: "Hekla"
+	sort_name: "hekla"
+	trailer_look: default
+}

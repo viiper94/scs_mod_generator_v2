@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.lafarge_t
+{
+	name: "Tarmac"
+	sort_name: "tarmac"
+	trailer_look: default
+}

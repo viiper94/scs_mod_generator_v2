@@ -1,0 +1,6 @@
+company_permanent: company.permanent.coop
+{
+	name: "Coop"
+	sort_name: "coop"
+	trailer_look: default
+}

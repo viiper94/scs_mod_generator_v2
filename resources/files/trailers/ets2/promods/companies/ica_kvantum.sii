@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.ica_kvantum
+{
+	name: "ICA Kvantum"
+	sort_name: "ica kvantum"
+	trailer_look: default
+}

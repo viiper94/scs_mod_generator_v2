@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.makro
+{
+	name: "Makro"
+	sort_name: "makro"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.rewe
+{
+	name: "REWE"
+	sort_name: "rewe"
+	trailer_look: rewe
+}

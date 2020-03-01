@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sag_tre
+{
+	name: "Sag & Tre"
+	sort_name: "sag tre"
+	trailer_look: sag_tre
+}

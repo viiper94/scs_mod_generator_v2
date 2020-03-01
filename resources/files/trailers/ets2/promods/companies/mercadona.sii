@@ -1,0 +1,6 @@
+company_permanent: company.permanent.mercadona
+{
+	name: "Mercadona"
+	sort_name: "mercadona"
+	trailer_look: default
+}

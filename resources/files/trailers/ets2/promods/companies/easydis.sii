@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.easydis
+{
+	name: "Easydis"
+	sort_name: "easydis"
+	trailer_look: default
+}

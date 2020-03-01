@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.heineken
+{
+	name: "Heineken"
+	sort_name: "heineken"
+	trailer_look: default
+}

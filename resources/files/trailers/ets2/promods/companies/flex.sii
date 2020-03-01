@@ -1,0 +1,6 @@
+company_permanent: company.permanent.flex
+{
+	name: "Flex"
+	sort_name: "flex"
+	trailer_look: default
+}

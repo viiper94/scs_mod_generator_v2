@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.tartak
+{
+	name: "TARTAK - Skład drzewny"
+	sort_name: "tartak"
+	trailer_look: default
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.epicentrk
+{
+	name: "Epicentr K"
+	sort_name: "epicentrk"
+	trailer_look: default
+}

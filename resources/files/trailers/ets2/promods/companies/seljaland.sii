@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.seljaland
+{
+	name: "Seljaland"
+	sort_name: "seljaland"
+	trailer_look: default
+}

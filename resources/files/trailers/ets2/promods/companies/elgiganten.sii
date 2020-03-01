@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.elgiganten
+{
+	name: "Elgiganten"
+	sort_name: "elgiganten"
+	trailer_look: default
+}

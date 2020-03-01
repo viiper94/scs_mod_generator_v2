@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cepsa
+{
+	name: "CEPSA"
+	sort_name: "cepsa"
+	trailer_look: default
+}

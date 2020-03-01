@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.carr
+{
+	name: "Carrefour"
+	sort_name: "carrefour"
+	trailer_look: default
+}

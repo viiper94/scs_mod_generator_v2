@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.psa_ant
+{
+	name: "PSA Antwerp"
+	sort_name: "psa antwerp"
+	trailer_look: default
+}

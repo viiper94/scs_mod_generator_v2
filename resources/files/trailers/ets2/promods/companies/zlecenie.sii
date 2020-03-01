@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.zlecenie
+{
+	name: "Zlecenie"
+	sort_name: "zlecenie"
+	trailer_look: default
+}

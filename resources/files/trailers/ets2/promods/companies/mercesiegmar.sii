@@ -1,0 +1,6 @@
+company_permanent: company.permanent.mercesiegmar
+{
+	name: "Autohaus Siegmar"
+	sort_name: "Mercedes"
+	trailer_look: bhv
+}

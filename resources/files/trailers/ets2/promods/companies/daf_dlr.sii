@@ -1,0 +1,6 @@
+company_permanent: company.permanent.daf_dlr
+{
+	name: "DAF Dealer"
+	sort_name: "daf dealer"
+	trailer_look: default
+}

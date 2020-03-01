@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.komfort
+{
+	name: "Komfort"
+	sort_name: "komfort"
+	trailer_look: default
+}

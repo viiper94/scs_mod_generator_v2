@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.citronex
+{
+	name: "CITRONEX"
+	sort_name: "citronex"
+    trailer_look: default
+}

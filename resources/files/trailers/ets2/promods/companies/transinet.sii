@@ -1,0 +1,6 @@
+company_permanent: company.permanent.transinet
+{
+	name: "TransiNet"
+	sort_name: "transinet"
+	trailer_look: transinet
+}

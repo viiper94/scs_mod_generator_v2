@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.lkw_walter
+{
+	name: "Lkw Walter"
+	sort_name: "lkw walter"
+	trailer_look: default
+}

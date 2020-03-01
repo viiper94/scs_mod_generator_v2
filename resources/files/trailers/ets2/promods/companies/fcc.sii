@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fcc
+{
+	name: "FCC"
+	sort_name: "fcc"
+	trailer_look: default
+}

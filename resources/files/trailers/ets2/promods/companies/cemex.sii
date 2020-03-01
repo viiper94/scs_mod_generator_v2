@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.cemex
+{
+	name: "CEMEX"
+	sort_name: "cemex"
+    trailer_look: default
+}

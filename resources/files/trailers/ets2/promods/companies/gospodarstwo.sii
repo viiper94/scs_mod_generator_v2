@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.gospodarstwo
+{
+	name: "Gospodarstwo Rolne"
+	sort_name: "gospodarstwo rolne"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.waberers
+{
+	name: "Waberer's"
+	sort_name: "waberers"
+	trailer_look: default
+}

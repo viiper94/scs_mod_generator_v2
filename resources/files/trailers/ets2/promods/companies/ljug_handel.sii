@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.ljug_handel
+{
+	name: "Ljugarns Handel AB"
+	sort_name: "ljugarns"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.stryiliso
+{
+	name: "Stryilisoprodukt"
+	sort_name: "stryiliso"
+	trailer_look: default
+}

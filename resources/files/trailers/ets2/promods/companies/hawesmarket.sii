@@ -1,0 +1,6 @@
+company_permanent: company.permanent.hawesmarket
+{
+	name: "Hawes Marketplace"
+	sort_name: "Hawes Marketplace"
+	trailer_look: default
+}

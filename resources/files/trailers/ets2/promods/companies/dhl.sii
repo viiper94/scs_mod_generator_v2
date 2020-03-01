@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.dhl
+{
+	name: "DHL"
+	sort_name: "dhl"
+	trailer_look: default
+}

@@ -1,0 +1,11 @@
+
+company_permanent: company.permanent.scania_dem
+{
+	name: "Scania Democentre"
+	sort_name: "scania democentre"
+	trailer_look: scania_fac
+	sound[]: "1.0|/sound/environment/chemical_factory_1.ogg"
+	sound[]: "1.0|/sound/environment/chemical_factory_2.ogg"
+	sound[]: "1.0|/sound/environment/chemical_factory_3.ogg"
+}
+

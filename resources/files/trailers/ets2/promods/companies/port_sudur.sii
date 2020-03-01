@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.port_sudur
+{
+	name: "Suðureyrarhöfn"
+	sort_name: "sudureyrarhofn"
+	trailer_look: default
+}

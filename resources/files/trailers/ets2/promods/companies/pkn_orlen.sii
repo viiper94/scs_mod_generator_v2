@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.pkn_orlen
+{
+	name: "Orlen"
+	sort_name: "orlen"
+	trailer_look: orlen
+}

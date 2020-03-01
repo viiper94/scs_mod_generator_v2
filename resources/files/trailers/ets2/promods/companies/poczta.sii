@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.poczta
+{
+	name: "Poczta Polska"
+	sort_name: "poczta polska"
+	trailer_look: default
+}

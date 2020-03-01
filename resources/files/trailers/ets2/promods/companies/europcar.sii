@@ -1,0 +1,6 @@
+company_permanent: company.permanent.europcar
+{
+	name: "Europcar"
+	sort_name: "europcar"
+	trailer_look: bhv
+}

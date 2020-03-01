@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.obi
+{
+	name: "OBI"
+	sort_name: "obi"
+	trailer_look: default
+}

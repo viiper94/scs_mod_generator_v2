@@ -1,0 +1,6 @@
+company_permanent: company.permanent.effo
+{
+	name: "Effo"
+	sort_name: "effo"
+	trailer_look: default
+}

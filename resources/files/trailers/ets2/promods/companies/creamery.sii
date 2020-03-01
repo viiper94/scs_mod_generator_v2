@@ -1,0 +1,6 @@
+company_permanent: company.permanent.creamery
+{
+	name: "Wensleydale Creamery"
+	sort_name: "wensleydale creamery"
+	trailer_look: default
+}

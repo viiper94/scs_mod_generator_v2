@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nestle_dist
+{
+	name: "Nestle UA Distribution Center"
+	sort_name: "nestle"
+	trailer_look: default
+}

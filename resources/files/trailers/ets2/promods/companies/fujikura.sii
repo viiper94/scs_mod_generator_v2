@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.fujikura
+{
+	name: "Fujikura"
+	sort_name: "fujikura"
+	trailer_look: default
+}

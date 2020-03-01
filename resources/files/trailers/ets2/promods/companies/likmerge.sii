@@ -1,0 +1,4 @@
+company_permanent: company.permanent.likmerge{
+	name: "UAB Likmerė"
+	sort_name: "likmere"
+	trailer_look: default}

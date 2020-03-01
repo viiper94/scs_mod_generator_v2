@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.captcook
+{
+	name: "Capitaine Cook"
+	sort_name: "capitaine cook"
+	trailer_look: default
+}
+

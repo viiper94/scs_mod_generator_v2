@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.captiglo
+{
+	name: "Iglo"
+	sort_name: "iglo"
+	trailer_look: default
+}
+

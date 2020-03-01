@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.port_bolun
+{
+	name: "Bolungarvíkurhöfn"
+	sort_name: "bolungarvikurhofn"
+	trailer_look: samskip
+}

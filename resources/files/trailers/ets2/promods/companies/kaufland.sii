@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.kaufland
+{
+	name: "Kaufland"
+	sort_name: "kaufland"
+	trailer_look: default
+}

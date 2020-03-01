@@ -1,0 +1,31 @@
+trailer : trailer.orlen 
+{
+	accessories[]: .orlen.tchassis
+	accessories[]: .orlen.trwheel0
+	accessories[]: .orlen.trwheel1
+	accessories[]: .orlen.trwheel2
+}
+
+vehicle_accessory: .orlen.tchassis
+{
+    	data_path: "/def/vehicle/trailer/cysterna_orlen/cysterna_benzyna.sii"
+}
+
+vehicle_wheel_accessory: .orlen.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .orlen.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .orlen.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+} 
+

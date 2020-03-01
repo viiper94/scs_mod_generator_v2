@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bg_wood
+{
+	name: "Wood"
+	sort_name: "wood"
+	trailer_look: default
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.lacquide
+{
+	name: "Air Lacquide"
+	sort_name: "air lacquide"
+	trailer_look: lacquide
+}

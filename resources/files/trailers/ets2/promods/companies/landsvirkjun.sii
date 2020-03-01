@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.landsvirkjun
+{
+	name: "Landsvirkjun"
+	sort_name: "landsvirkjun"
+	trailer_look: default
+}

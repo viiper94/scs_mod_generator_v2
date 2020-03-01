@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.orkan
+{
+	name: "Orkan"
+	sort_name: "orkan"
+	trailer_look: default
+}

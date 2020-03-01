@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.ina_dist
+{
+	name: "INA d.d."
+	sort_name: "ina"
+	trailer_look: default
+}

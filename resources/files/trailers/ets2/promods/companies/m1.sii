@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.m1
+{
+	name: "Centrum Handlowe M1"
+	sort_name: "m1"
+	trailer_look: default
+}

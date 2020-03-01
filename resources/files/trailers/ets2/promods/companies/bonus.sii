@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bonus
+{
+	name: "Bónus"
+	sort_name: "bonus"
+	trailer_look: default
+}

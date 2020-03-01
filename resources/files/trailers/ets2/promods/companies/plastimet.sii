@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.plastimet
+{
+	name: "Plastimet Sp. z o.o."
+	sort_name: "Plastimet"
+	trailer_look: plastimet
+}
+

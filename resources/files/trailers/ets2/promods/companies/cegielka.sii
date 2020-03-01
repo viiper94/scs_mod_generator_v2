@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.cegielka
+{
+	name: "Cegielnia Cegiełka"
+	sort_name: "cegielka"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.cargoexpress
+{
+	name: "Cargo Express"
+	sort_name: "cargo express"
+	trailer_look: default
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.vrtranspoint
+{
+	name: "VR Transpoint"
+	sort_name: "vr transpoint"
+	trailer_look: default
+}

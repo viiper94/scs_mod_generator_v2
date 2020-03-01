@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sawmillforst
+{
+	name: "Sägewerk Forst GmbH"
+	sort_name: "sagewerk forst"
+	trailer_look: tree_et
+}

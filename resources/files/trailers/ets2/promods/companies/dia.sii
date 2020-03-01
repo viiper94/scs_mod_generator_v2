@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dia
+{
+	name: "Dia"
+	sort_name: "dia"
+	trailer_look: default
+}

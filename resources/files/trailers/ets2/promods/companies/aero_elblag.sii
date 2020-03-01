@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.aero_elblag
+{
+	name: "Aeroklub Elbląski"
+	sort_name: "aeroklub elblaski"
+	trailer_look: default
+}

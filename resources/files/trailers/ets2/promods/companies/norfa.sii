@@ -1,0 +1,6 @@
+company_permanent: company.permanent.norfa
+{
+	name: "Norfa"
+	sort_name: "norfa"
+	trailer_look: default
+}

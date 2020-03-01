@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.port_isa
+{
+	name: "Ísafjarðarhöfn"
+	sort_name: "isafjardarhofn"
+	trailer_look: eimskip
+}

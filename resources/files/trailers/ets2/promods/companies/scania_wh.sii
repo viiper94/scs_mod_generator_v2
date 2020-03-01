@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.scania_wh
+{
+	name: "Scania Warehouse"
+	sort_name: "scania warehouse"
+	trailer_look: scania_wh
+}
+

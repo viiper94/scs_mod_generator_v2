@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.omv4
+{
+	name: "OMV Raffinerie Tor 4"
+	sort_name: "omv"
+	trailer_look: default
+}

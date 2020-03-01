@@ -1,0 +1,9 @@
+company_permanent: company.permanent.skoda
+{
+	name: "Scout"
+	sort_name: "skoda"
+	trailer_look: skoda
+	sound[]: "1.0|/sound/environment/chemical_factory_1.ogg"
+	sound[]: "1.0|/sound/environment/chemical_factory_2.ogg"
+	sound[]: "1.0|/sound/environment/chemical_factory_3.ogg"
+}

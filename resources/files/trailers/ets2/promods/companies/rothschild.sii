@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.rothschild
+{
+	name: "Rothschild"
+	sort_name: "rothschild"
+	trailer_look: default
+}
+

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.mostostal
+{
+	name: "Mostostal"
+	sort_name: "mostostal"
+    trailer_look: default
+}

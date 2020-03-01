@@ -1,0 +1,6 @@
+company_permanent: company.permanent.cont_port_fr
+{
+	name: "Port de Conteneur"
+	sort_name: "port de conteneur"
+	trailer_look: cont_port_fr
+}

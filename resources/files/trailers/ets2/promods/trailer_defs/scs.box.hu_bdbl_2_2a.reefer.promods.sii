@@ -1,0 +1,28 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.hu_bdbl_2_2a.reefer
+{
+	gross_trailer_weight_limit: 53000
+	chassis_mass: 11720
+	body_mass: 3300
+	length: 22.7
+	axles: 4
+	volume: 140
+	body_type: refrigerated
+	chain_type: b_double
+
+	
+
+	mass_ratio[]: 0.33
+#	min_cog_mass[]: 0
+#	min_cog[]: (0,0,-2)
+#	max_cog_mass[]: 30000
+#	max_cog[]: (0,1,-3.5)
+
+	mass_ratio[]: 0.67
+#	min_cog_mass[]: 0
+#	min_cog[]: (0,0,0)
+#	max_cog_mass[]: 30000
+#	max_cog[]: (0,1,0)
+}
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.dreams
+{
+	name: "Dreams"
+	sort_name: "dreams"
+	trailer_look: default
+}

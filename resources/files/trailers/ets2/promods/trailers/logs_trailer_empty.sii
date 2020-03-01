@@ -1,0 +1,30 @@
+trailer : trailer.logs.empty
+{
+	accessories[]: .log_trailer.empty.tchassis
+	accessories[]: .log_trailer.empty.trwheel0
+	accessories[]: .log_trailer.empty.trwheel1
+	accessories[]: .log_trailer.empty.trwheel2
+}
+
+vehicle_accessory: .log_trailer.empty.tchassis
+{
+	data_path: "/def/vehicle/trailer/log_trailer/chassis.sii"
+}
+
+vehicle_wheel_accessory: .log_trailer.empty.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .log_trailer.empty.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .log_trailer.empty.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}  

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.audi
+{
+	name: "Audi Hungaria Motor Kft."
+	sort_name: "audi"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.lidl_centrum
+{
+	name: "LIDL Distribution"
+	sort_name: "lidl distribution"
+	trailer_look: lidl
+}

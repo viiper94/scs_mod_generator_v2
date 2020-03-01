@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.vegagerdin
+{
+	name: "Vegagerðin"
+	sort_name: "vegagerdin"
+	trailer_look: default
+}

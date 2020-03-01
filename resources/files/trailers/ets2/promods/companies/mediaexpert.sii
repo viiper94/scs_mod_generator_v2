@@ -1,0 +1,7 @@
+﻿
+company_permanent: company.permanent.mediaexpert
+{
+	name: "Mediaexpert"
+	sort_name: "mediaexpert"
+	trailer_look: default
+}

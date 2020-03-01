@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.stacja
+{
+	name: "Stacja paliw"
+	sort_name: "stacja paliw"
+	trailer_look: default
+}

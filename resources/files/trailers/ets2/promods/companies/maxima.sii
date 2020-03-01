@@ -1,0 +1,6 @@
+company_permanent: company.permanent.maxima
+{
+	name: "Maxima"
+	sort_name: "maxima"
+	trailer_look: maxima
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.timbursala
+{
+	name: "Timbursala"
+	sort_name: "timbursala"
+	trailer_look: default
+}

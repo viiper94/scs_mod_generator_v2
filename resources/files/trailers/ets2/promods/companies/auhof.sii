@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.auhof
+{
+	name: "Construction Wien-Auhof"
+	sort_name: "autohof wien"
+    trailer_look: default
+}

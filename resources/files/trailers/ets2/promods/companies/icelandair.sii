@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.icelandair
+{
+	name: "Icelandair Cargo"
+	sort_name: "icelandair"
+	trailer_look: icelandair
+}

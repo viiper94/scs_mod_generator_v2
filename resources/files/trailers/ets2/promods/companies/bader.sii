@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bader
+{
+	name: "Bader"
+	sort_name: "bader"
+	trailer_look: default
+}

@@ -1,0 +1,11 @@
+
+company_permanent: company.permanent.saab
+{
+	name: "Saab Factory"
+	sort_name: "saab"
+	trailer_look: saab
+	sound[]: "1.0|/sound/environment/chemical_factory_1.ogg"
+	sound[]: "1.0|/sound/environment/chemical_factory_2.ogg"
+	sound[]: "1.0|/sound/environment/chemical_factory_3.ogg"
+}
+

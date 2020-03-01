@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.konzum
+{
+	name: "Konzum"
+	sort_name: "konzum"
+	trailer_look: konzum
+}

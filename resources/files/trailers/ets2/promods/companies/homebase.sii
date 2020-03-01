@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.homebase
+{
+	name: "Homebase"
+	sort_name: "homebase"
+	trailer_look: default
+}

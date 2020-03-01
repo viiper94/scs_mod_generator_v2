@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fle
+{
+	name: "FLE"
+	sort_name: "fle"
+	trailer_look: fle
+}

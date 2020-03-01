@@ -1,0 +1,6 @@
+company_permanent: company.permanent.dino
+{
+	name: "Dino"
+	sort_name: "dino"
+	trailer_look: default
+}

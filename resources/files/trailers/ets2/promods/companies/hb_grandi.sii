@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.hb_grandi
+{
+	name: "HB Grandi"
+	sort_name: "hb grandi"
+	trailer_look: hb_grandi
+}

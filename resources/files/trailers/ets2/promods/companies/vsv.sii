@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.vsv
+{
+	name: "VSV"
+	sort_name: "vsv"
+	trailer_look: default
+}

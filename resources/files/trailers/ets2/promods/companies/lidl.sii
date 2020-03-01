@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.lidl
+{
+	name: "Lidl"
+	sort_name: "lidl"
+	trailer_look: lidl
+}

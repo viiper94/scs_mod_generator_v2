@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.shell_fac
+{
+	name: "Shell"
+	sort_name: "shell"
+	trailer_look: default
+}

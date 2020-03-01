@@ -1,0 +1,35 @@
+trailer : trailer.truck_trans.man
+{
+	accessories[]: .truck_trans.man.tchassis
+	accessories[]: .truck_trans.man.trwheel0
+	accessories[]: .truck_trans.man.trwheel1
+	accessories[]: .truck_trans.man.trwheel2
+	accessories[]: .truck_trans.man.cargo
+}
+
+vehicle_accessory: .truck_trans.man.tchassis
+{
+    	data_path: "/def/vehicle/trailer/truck_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .truck_trans.man.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .truck_trans.man.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .truck_trans.man.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .truck_trans.man.cargo
+{
+    	data_path: "/def/vehicle/trailer/truck_transporter/mancargo.sii"
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.port_blond
+{
+	name: "Blönduóshöfn"
+	sort_name: "blonduoshofn"
+	trailer_look: default
+}

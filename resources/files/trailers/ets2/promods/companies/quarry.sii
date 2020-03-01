@@ -1,0 +1,6 @@
+company_permanent: company.permanent.quarry
+{
+	name: "Steinbruch"
+	sort_name: "steinbruch"
+	trailer_look: quarry
+}

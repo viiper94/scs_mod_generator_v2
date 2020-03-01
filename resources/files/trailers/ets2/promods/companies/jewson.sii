@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.jewson
+{
+	name: "Jewson"
+	sort_name: "jewson"
+	trailer_look: default
+}

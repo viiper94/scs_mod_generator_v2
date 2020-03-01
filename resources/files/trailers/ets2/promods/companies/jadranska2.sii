@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.jadranska2
+{
+	name: "Jadranska Trgovina Gate B"
+	sort_name: "jadranska"
+	trailer_look: jadranska
+}

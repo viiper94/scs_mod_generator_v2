@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.podlogi_elk
+{
+	name: "Fachowiec Podłogi i Drzwi"
+	sort_name: "podlogi_elk"
+	trailer_look: default
+}

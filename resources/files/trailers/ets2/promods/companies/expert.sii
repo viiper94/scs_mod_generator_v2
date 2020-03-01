@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.expert
+{
+	name: "Expert"
+	sort_name: "expert"
+	trailer_look: default
+}

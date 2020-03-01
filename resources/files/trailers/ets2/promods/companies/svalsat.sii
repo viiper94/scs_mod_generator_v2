@@ -1,0 +1,6 @@
+company_permanent: company.permanent.svalsat
+{
+	name: "Svalbard Satellite station"
+	sort_name: "svalbard satellite"
+	trailer_look: default
+}

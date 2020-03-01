@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.orlen_retail
+{
+	name: "Orlen"
+	sort_name: "orlen retail"
+	trailer_look: default
+}

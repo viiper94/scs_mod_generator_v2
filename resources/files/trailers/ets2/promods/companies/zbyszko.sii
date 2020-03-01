@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.zbyszko
+{
+	name: "Zbyszko Meats"
+	sort_name: "zbyszko"
+	trailer_look: default
+}

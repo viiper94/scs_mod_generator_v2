@@ -1,0 +1,28 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.es_bdbl_3_3s.insulated_s
+{
+	gross_trailer_weight_limit: 65000
+	chassis_mass: 12320
+	body_mass: 2250
+	length: 22.7
+	axles: 6
+	volume: 140
+	body_type: insulated
+	chain_type: b_double
+
+	
+
+	mass_ratio[]: 0.33
+#	min_cog_mass[]: 0
+#	min_cog[]: (0,0,-2)
+#	max_cog_mass[]: 30000
+#	max_cog[]: (0,1,-3.5)
+
+	mass_ratio[]: 0.67
+#	min_cog_mass[]: 0
+#	min_cog[]: (0,0,0)
+#	max_cog_mass[]: 30000
+#	max_cog[]: (0,1,0)
+}
+}

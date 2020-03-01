@@ -1,0 +1,6 @@
+company_permanent: company.permanent.supernetto
+{
+	name: "Supernetto"
+	sort_name: "supernetto"
+	trailer_look: default
+}

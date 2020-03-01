@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.kronan
+{
+	name: "Krónan"
+	sort_name: "kronan"
+	trailer_look: default
+}

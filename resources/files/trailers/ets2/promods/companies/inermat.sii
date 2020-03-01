@@ -1,0 +1,6 @@
+company_permanent: company.permanent.inermat
+{
+	name: "Inermat"
+	sort_name: "inermat"
+	trailer_look: default
+}

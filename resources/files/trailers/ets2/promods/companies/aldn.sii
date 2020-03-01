@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.aldn
+{
+	name: "Aldi Nord"
+	sort_name: "aldi nord"
+	trailer_look: default
+}

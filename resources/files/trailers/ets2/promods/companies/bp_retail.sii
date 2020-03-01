@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bp_retail
+{
+	name: "BP Retail"
+	sort_name: "bp retail"
+	trailer_look: default
+}

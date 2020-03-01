@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.seedvault
+{
+	name: "Global Seed Vault"
+	sort_name: "seed vault"
+	trailer_look: default
+}

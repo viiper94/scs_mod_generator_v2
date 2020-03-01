@@ -1,0 +1,6 @@
+company_permanent: company.permanent.leclerc
+{
+	name: "Leclerc"
+	sort_name: "e leclerc"
+	trailer_look: default
+}

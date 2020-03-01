@@ -1,0 +1,6 @@
+company_permanent: company.permanent.eroski
+{
+	name: "Eroski"
+	sort_name: "eroski"
+	trailer_look: eroski
+}

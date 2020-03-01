@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.statoil
+{
+	name: "Statoil"
+	sort_name: "statoil"
+	trailer_look: default
+}

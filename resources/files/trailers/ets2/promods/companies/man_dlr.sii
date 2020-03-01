@@ -1,0 +1,6 @@
+company_permanent: company.permanent.man_dlr
+{
+	name: "MAN Dealer"
+	sort_name: "man dealer"
+	trailer_look: default
+}

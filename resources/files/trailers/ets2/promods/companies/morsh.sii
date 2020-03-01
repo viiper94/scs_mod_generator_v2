@@ -1,0 +1,6 @@
+company_permanent: company.permanent.morsh
+{
+	name: "Моршинська"
+	sort_name: "morshynska"
+	trailer_look: default
+}

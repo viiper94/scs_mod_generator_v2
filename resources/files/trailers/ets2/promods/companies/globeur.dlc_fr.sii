@@ -1,0 +1,6 @@
+company_permanent: company.permanent.globeur
+{
+	name: "Globeur"
+	sort_name: "globeur"
+	trailer_look: globeur
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.lafarge
+{
+	name: "Lafarge"
+	sort_name: "lafarge"
+	trailer_look: default
+}

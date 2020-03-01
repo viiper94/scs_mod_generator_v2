@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bondi
+{
+	name: "Bændasamtök Íslands"
+	sort_name: "baendasamtok islands"
+	trailer_look: bondi
+}

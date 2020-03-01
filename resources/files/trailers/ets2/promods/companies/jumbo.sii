@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.jumbo
+{
+	name: "Jumbo"
+	sort_name: "jumbo"
+	trailer_look: default
+}

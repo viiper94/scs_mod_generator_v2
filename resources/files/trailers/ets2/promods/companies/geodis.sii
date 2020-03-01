@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.geodis
+{
+	name: "Geodis"
+	sort_name: "geodis"
+	trailer_look: default
+}
+

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.gardshorn
+{
+	name: "Garðshorn"
+	sort_name: "gardshorn"
+	trailer_look: default
+}

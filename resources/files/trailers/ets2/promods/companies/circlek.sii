@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.circlek
+{
+	name: "Circle K"
+	sort_name: "circle k"
+	trailer_look: default
+}

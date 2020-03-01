@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.smyril
+{
+	name: "Smyril Blue Water"
+	sort_name: "smyril blue water"
+	trailer_look: smyril
+}

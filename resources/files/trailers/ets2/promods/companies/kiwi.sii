@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.kiwi
+{
+	name: "KIWI Minipris"
+	sort_name: "kiwi"
+	trailer_look: default
+}

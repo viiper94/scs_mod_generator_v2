@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ika_bohag
+{
+	name: "IKEA"
+	sort_name: "ikea"
+	trailer_look: ika_bohag
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.raben
+{
+	name: "Raben"
+	sort_name: "raben"
+	trailer_look: raben
+}

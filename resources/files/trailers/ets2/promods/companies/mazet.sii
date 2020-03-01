@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.mazet
+{
+	name: "Mazet"
+	sort_name: "mazet"
+	trailer_look: mazet
+}
+

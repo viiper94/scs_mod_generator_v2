@@ -1,0 +1,6 @@
+company_permanent: company.permanent.ferrovial
+{
+	name: "Ferrovial"
+	sort_name: "ferrovial"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.rybackie_elk
+{
+	name: "Gospodarstwo Rybackie Sp. z o.o."
+	sort_name: "rybackie_elk"
+	trailer_look: default
+}

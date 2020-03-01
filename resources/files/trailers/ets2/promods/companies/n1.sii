@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.n1
+{
+	name: "N1"
+	sort_name: "n1"
+	trailer_look: default
+}

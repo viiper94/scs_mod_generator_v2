@@ -1,0 +1,83 @@
+trailer : trailer.hu_curt_b2
+{
+	trailer_definition: trailer_def.scs.box.hu_bdbl_3_3.curtain
+
+	accessories[]: .hu_curt_b2.chassis
+	accessories[]: .hu_curt_b2.rwheel
+	accessories[]: .hu_curt_b2.rwheel2
+	accessories[]: .hu_curt_b2.rwheel3
+	accessories[]: .hu_curt_b2.paint_job
+	accessories[]: .hu_curt_b2.trlr_cables
+
+	slave_trailer: .hu_curt_b2.second
+}
+
+vehicle_accessory: .hu_curt_b2.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/chassis_bd.sii"
+}
+
+vehicle_wheel_accessory: .hu_curt_b2.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .hu_curt_b2.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .hu_curt_b2.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+vehicle_paint_job_accessory: .hu_curt_b2.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .hu_curt_b2.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/accessory/trlr_cables.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXX second trailer - 13,6m XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .hu_curt_b2.second
+{
+	accessories[]: .hu_curt_b2.second.chassis
+	accessories[]: .hu_curt_b2.second.rwheel
+	accessories[]: .hu_curt_b2.second.rwheel2
+	accessories[]: .hu_curt_b2.second.rwheel3
+	accessories[]: .hu_curt_b2.second.paint_job
+}
+
+vehicle_accessory: .hu_curt_b2.second.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/chassis.sii"
+}
+
+vehicle_wheel_accessory: .hu_curt_b2.second.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .hu_curt_b2.second.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+vehicle_wheel_accessory: .hu_curt_b2.second.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_paint_job_accessory: .hu_curt_b2.second.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii"
+}

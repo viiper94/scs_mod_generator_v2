@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.ikea_pl
+{
+	name: "IKEA Retail Sp. z.o.o."
+	sort_name: "ikeapl"
+	trailer_look: ika_bohag
+}
+

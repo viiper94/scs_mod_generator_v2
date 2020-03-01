@@ -1,0 +1,6 @@
+company_permanent: company.permanent.rimi
+{
+	name: "Rimi"
+	sort_name: "rimi"
+	trailer_look: rimi
+}

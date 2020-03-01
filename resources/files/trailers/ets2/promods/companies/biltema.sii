@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.biltema
+{
+	name: "Biltema"
+	sort_name: "biltema"
+	trailer_look: default
+}
+

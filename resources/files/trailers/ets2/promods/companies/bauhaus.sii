@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bauhaus
+{
+	name: "Bauhaus"
+	sort_name: "bauhaus"
+	trailer_look: bauhaus
+}

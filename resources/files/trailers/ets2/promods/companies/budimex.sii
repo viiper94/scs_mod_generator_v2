@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.budimex
+{
+	name: "Budimex S.A"
+	sort_name: "budimex"
+    trailer_look: default
+}

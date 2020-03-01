@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.wurth
+{
+	name: "Würth"
+	sort_name: "wurth"
+	trailer_look: default
+}
+

@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.boliden
+{
+	name: "Boliden"
+	sort_name: "boliden"
+	trailer_look: default
+}
+

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.depo
+{
+	name: "DEPO"
+	sort_name: "depo"
+	trailer_look: default
+}

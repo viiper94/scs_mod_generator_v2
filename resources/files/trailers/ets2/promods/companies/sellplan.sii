@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sellplan
+{
+	name: "SellPlan"
+	sort_name: "sellplan"
+	trailer_look: sellplan
+}

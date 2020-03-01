@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.sah_afurdir
+{
+	name: "SAH Afurðir ehf."
+	sort_name: "sah afurdir"
+	trailer_look: default
+}

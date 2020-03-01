@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.metro
+{
+	name: "Metro"
+	sort_name: "metro"
+	trailer_look: metro
+}
+

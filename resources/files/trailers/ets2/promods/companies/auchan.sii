@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.auchan
+{
+	name: "Auchan"
+	sort_name: "auchan"
+    trailer_look: default
+}

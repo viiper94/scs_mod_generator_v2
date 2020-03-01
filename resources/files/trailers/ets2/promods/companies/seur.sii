@@ -1,0 +1,6 @@
+company_permanent: company.permanent.seur
+{
+	name: "SEUR"
+	sort_name: "seur"
+	trailer_look: default
+}

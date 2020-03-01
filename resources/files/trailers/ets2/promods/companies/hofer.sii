@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.hofer
+{
+	name: "Hofer"
+	sort_name: "hofer"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bunnings
+{
+	name: "Bunnings Warehouse"
+	sort_name: "bunnings"
+	trailer_look: default
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.trameri
+{
+	name: "Trameri"
+	sort_name: "trameri"
+	trailer_look: trameri
+}

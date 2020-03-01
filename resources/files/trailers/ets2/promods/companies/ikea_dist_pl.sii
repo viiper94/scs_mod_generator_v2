@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.ikea_dist_pl
+{
+	name: "IKEA Dist. Srv. SA"
+	sort_name: "ikeadistpl"
+	trailer_look: ika_bohag
+}
+

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.roadworks_a7
+{
+	name: "Roadworks A7"
+	sort_name: "roadworks"
+    trailer_look: default
+}

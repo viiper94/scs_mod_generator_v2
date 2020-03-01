@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.dagli
+{
+	name: "Dagli' Brugsen"
+	sort_name: "dagli brugsen"
+	trailer_look: default
+}

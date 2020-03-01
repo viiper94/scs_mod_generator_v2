@@ -1,0 +1,6 @@
+company_permanent: company.permanent.castorama_in
+{
+	name: "Castorama"
+	sort_name: "castorama"
+	trailer_look: default
+}

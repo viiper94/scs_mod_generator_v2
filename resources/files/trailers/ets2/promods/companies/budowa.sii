@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.budowa
+{
+	name: "Budowa"
+	sort_name: "budowa"
+    trailer_look: default
+}

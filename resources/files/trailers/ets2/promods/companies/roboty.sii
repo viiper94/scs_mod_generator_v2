@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.roboty
+{
+	name: "Roboty drogowe"
+	sort_name: "roadworks"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.netto
+{
+	name: "NETTO"
+	sort_name: "netto"
+	trailer_look: default
+}

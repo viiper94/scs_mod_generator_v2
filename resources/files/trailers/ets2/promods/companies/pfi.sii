@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.pfi
+{
+	name: "Port Fruitier International"
+	sort_name: "port fruitier"
+	trailer_look: cont_port
+}

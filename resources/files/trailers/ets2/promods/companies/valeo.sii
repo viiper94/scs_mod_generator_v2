@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.valeo
+{
+	name: "Valeo"
+	sort_name: "valeo"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.bilka
+{
+	name: "Bilka"
+	sort_name: "bilka"
+	trailer_look: default
+}

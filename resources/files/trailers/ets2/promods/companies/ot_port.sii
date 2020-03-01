@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.ot_port
+{
+	name: "OT Port Świnoujście"
+	sort_name: "ot port"
+	trailer_look: default
+}

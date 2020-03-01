@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.skn
+{
+	name: "SKN - Kopalnia Gabra Braszowice"
+	sort_name: "skn"
+	trailer_look: default
+}

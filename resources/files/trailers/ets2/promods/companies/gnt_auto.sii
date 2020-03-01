@@ -1,0 +1,6 @@
+company_permanent: company.permanent.gnt_auto
+{
+	name: "GNT"
+	sort_name: "gnt"
+	trailer_look: gnt
+}

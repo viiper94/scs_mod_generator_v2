@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.leroymerlin
+{
+	name: "Leroy Merlin"
+	sort_name: "leroy merlin"
+	trailer_look: default
+}

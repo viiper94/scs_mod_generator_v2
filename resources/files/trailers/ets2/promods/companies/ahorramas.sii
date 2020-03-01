@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.ahorramas
+{
+	name: "Ahorramás"
+	sort_name: "ahorramas"
+	trailer_look: default
+}

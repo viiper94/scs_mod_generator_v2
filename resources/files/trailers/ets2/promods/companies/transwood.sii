@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.transwood
+{
+	name: "Trans-Wood"
+	sort_name: "transwood"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.mcdonalds
+{
+	name: "McDonald's"
+	sort_name: "mcdonalds"
+	trailer_look: default
+}

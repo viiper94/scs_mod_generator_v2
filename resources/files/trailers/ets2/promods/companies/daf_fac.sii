@@ -1,0 +1,6 @@
+company_permanent: company.permanent.daf_fac
+{
+	name: "DAF Truck Factory"
+	sort_name: "daf truck factory"
+	trailer_look: default
+}

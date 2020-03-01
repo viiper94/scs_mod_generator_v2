@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.mediamarkt
+{
+	name: "Media-Markt"
+	sort_name: "mediamarkt"
+	trailer_look: default
+}

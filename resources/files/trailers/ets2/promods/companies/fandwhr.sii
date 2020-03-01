@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.fandwhr
+{
+	name: "Ffestiniog and Welsh Highland Railway"
+	sort_name: "ffestiniog and welsh highland railway"
+	trailer_look: default
+}

@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.salag
+{
+	name: "Salag Sp. o.o."
+	sort_name: "Salag"
+	trailer_look: default
+}
+

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.isavia
+{
+	name: "Isavia"
+	sort_name: "isavia"
+	trailer_look: default
+}

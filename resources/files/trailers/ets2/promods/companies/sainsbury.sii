@@ -1,0 +1,6 @@
+company_permanent: company.permanent.sainsbury
+{
+	name: "Sainsbury's"
+	sort_name: "sainsbury"
+	trailer_look: default
+}

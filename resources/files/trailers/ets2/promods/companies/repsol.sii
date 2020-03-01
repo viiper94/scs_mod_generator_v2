@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.repsol
+{
+	name: "Repsol"
+	sort_name: "repsol"
+	trailer_look: default
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.samkaup
+{
+	name: "Samkaup"
+	sort_name: "samkaup"
+	trailer_look: default
+}

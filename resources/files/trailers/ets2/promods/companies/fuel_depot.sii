@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.fuel_depot
+{
+	name: "Fuel Depot"
+	sort_name: "fuel depot"
+	trailer_look: default
+}

@@ -1,0 +1,75 @@
+trailer : trailer.krone.profiliner_s
+{
+	accessories[]: .krone.profiliner_s.tchassis
+	accessories[]: .krone.profiliner_s.paint_job
+	accessories[]: .krone.profiliner_s.trwheel0
+	accessories[]: .krone.profiliner_s.trwheel1
+	accessories[]: .krone.profiliner_s.trwheel2
+	
+	accessories[]: .krone.profiliner_s.trlr_cables
+
+	slave_trailer: trailer.krone.proficarri_s
+}
+
+vehicle_accessory: .krone.profiliner_s.tchassis
+{
+    	data_path: "/def/vehicle/trailer/krone/profiliner/chassis_d.sii"
+}
+
+vehicle_wheel_accessory: .krone.profiliner_s.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .krone.profiliner_s.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .krone.profiliner_s.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+}
+vehicle_paint_job_accessory: .krone.profiliner_s.paint_job
+{
+    	data_path: "/def/vehicle/trailer/krone/profiliner/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .krone.profiliner_s.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/krone/profiliner/accessory/trlr_cables/stock.sii"
+}
+
+
+trailer : trailer.krone.proficarri_s
+{
+	accessories[]: .krone.proficarri_s.tchassis
+	accessories[]: .krone.proficarri_s.paint_job
+	accessories[]: .krone.proficarri_s.trwheel0
+	accessories[]: .krone.proficarri_s.trwheel1
+}
+
+vehicle_accessory: .krone.proficarri_s.tchassis
+{
+    	data_path: "/def/vehicle/trailer/krone/proficarrier/chassis.sii"
+}
+
+vehicle_wheel_accessory: .krone.proficarri_s.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+}
+
+vehicle_wheel_accessory: .krone.proficarri_s.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/385_65_r22_5.sii"
+}
+
+vehicle_paint_job_accessory: .krone.proficarri_s.paint_job
+{
+    	data_path: "/def/vehicle/trailer/krone/proficarrier/company_paint_job/default.sii"
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.prisma
+{
+	name: "Prisma"
+	sort_name: "prisma"
+	trailer_look: default
+}

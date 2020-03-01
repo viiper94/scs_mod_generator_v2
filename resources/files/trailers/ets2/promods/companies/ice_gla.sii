@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.ice_gla
+{
+	name: "Icelandic"
+	sort_name: "icelandic"
+	trailer_look: default
+}

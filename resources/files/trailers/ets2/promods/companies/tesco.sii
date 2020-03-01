@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.tesco
+{
+	name: "Tesco"
+	sort_name: "tesco"
+	trailer_look: tesco
+}

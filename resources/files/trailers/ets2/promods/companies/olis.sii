@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.olis
+{
+	name: "Olís"
+	sort_name: "olis"
+	trailer_look: default
+}

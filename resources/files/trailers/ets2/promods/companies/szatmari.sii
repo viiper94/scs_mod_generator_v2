@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.szatmari
+{
+	name: "Szatmári"
+	sort_name: "szatmari"
+	trailer_look: default
+}

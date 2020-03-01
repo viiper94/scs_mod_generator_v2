@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nos_pat_brg
+{
+	name: "Nos Pâturages"
+	sort_name: "nos paturages"
+	trailer_look: nos_pat
+}

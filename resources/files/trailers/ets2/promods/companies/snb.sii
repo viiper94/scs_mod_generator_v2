@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.snb
+{
+	name: "Slibverwerking Noord-Brabant"
+	sort_name: "slibverwerking noord-brabant"
+	trailer_look: default
+}

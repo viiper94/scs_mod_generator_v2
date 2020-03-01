@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.schenker
+{
+	name: "DB Schenker"
+	sort_name: "db schenker"
+	trailer_look: default
+}

@@ -1,0 +1,8 @@
+
+company_permanent: company.permanent.aquael
+{
+	name: "Aquael"
+	sort_name: "Aquael"
+	trailer_look: default
+}
+

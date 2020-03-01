@@ -1,0 +1,78 @@
+trailer : trailer.hu_dry_2
+{
+	trailer_definition: trailer_def.scs.box.hu_dbl_3_2.dryvan
+
+	accessories[]: .hu_dry_2.chassis
+	accessories[]: .hu_dry_2.rwheel
+	accessories[]: .hu_dry_2.rwheel2
+	accessories[]: .hu_dry_2.rwheel3
+	accessories[]: .hu_dry_2.paint_job
+	accessories[]: .hu_dry_2.trlr_cables	
+
+	slave_trailer: .hu_dry_2.second
+}
+
+vehicle_accessory: .hu_dry_2.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/dry_van/chassis_hook.sii"
+}
+
+vehicle_wheel_accessory: .hu_dry_2.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
+}
+
+vehicle_wheel_accessory: .hu_dry_2.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
+}
+
+vehicle_wheel_accessory: .hu_dry_2.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
+}
+
+vehicle_paint_job_accessory: .hu_dry_2.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .hu_dry_2.trlr_cables
+{
+    	data_path: "/def/vehicle/trailer/scs_box/dry_van/accessory/trlr_cablesd.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXX second trailer - center axle XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .hu_dry_2.second
+{
+	accessories[]: .hu_dry_2.second.chassis
+	accessories[]: .hu_dry_2.second.rwheel
+	accessories[]: .hu_dry_2.second.rwheel2
+	accessories[]: .hu_dry_2.second.paint_job
+}
+
+vehicle_accessory: .hu_dry_2.second.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_box/dry_van/chassis_ca.sii"
+}
+
+vehicle_wheel_accessory: .hu_dry_2.second.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
+}
+
+vehicle_wheel_accessory: .hu_dry_2.second.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_385_55_alu.sii"
+}
+
+vehicle_paint_job_accessory: .hu_dry_2.second.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_box/dry_van/company_paint_job/default.sii"
+}

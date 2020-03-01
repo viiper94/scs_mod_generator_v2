@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.vest_port
+{
+	name: "Vestmannaeyjahöfn"
+	sort_name: "vestmannaeyjahofn"
+	trailer_look: samskip
+}

@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.albertheijn
+{
+	name: "Albert Heijn"
+	sort_name: "albert heijn"
+	trailer_look: default
+}

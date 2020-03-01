@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.sildarvinn
+{
+	name: "Síldarvinnslan hf."
+	sort_name: "sildarvinnslan"
+	trailer_look: smyril
+}

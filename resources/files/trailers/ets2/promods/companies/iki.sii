@@ -1,0 +1,6 @@
+company_permanent: company.permanent.iki
+{
+	name: "Iki"
+	sort_name: "iki"
+	trailer_look: default
+}

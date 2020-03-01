@@ -1,0 +1,28 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.box.hu_dbl_3_2a.dryvan_m
+{
+	gross_trailer_weight_limit: 55000
+	chassis_mass: 11090
+	body_mass: 2700
+	length: 22.7
+	axles: 5
+	volume: 140
+	body_type: dryvan
+	chain_type: double
+
+	
+
+	mass_ratio[]: 0.67
+#	min_cog_mass[]: 0
+#	min_cog[]: (0,0,0)
+#	max_cog_mass[]: 30000
+#	max_cog[]: (0,1,0)
+
+	mass_ratio[]: 0.33
+#	min_cog_mass[]: 0
+#	min_cog[]: (0,0,0)
+#	max_cog_mass[]: 30000
+#	max_cog[]: (0,1,0)
+}
+}

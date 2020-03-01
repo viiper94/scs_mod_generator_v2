@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.kaarfor2
+{
+	name: "Kaarfor"
+	sort_name: "kaarforz"
+	trailer_look: kaarfor
+}

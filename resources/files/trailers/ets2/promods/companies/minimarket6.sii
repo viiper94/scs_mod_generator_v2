@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.minimarket6
+{
+	name: "MiniMarket"
+	sort_name: "minimarket"
+	trailer_look: default
+}
