@@ -27,7 +27,10 @@
   h5{
     padding-left: 10px;
     .mdc-theme--dark & {
-      color: $dark-text;
+        color: $dark-text;
+        max-width: 500px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
   }
   .large-btn{
