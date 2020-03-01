@@ -3,7 +3,7 @@
         <div class="mdc-checkbox">
             <input type="checkbox"
                    class="mdc-checkbox__native-control"
-                   id="promods" name="promods">
+                   id="promods" name="dlc[promods]">
             <div class="mdc-checkbox__background">
                 <svg class="mdc-checkbox__checkmark"
                      viewBox="0 0 24 24">
