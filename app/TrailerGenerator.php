@@ -55,6 +55,7 @@ class TrailerGenerator extends ModGenerator{
         if(strlen($title) == 0){
             $title = $this->chassis->translate();
         }
+        if(in_array('promods', $this->dlc)) $title = '['.trans('dlc_list.promods').'] '.$title;
         return $title;
 	}
 
