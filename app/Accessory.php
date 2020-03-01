@@ -73,6 +73,10 @@ class Accessory extends Model{
         return $this->def;
     }
 
+    public static function getAccessoryByDef($def){
+        return Accessory::where('def', $def)->first();
+    }
+
     public function translate(){
         $translated = array();
         $index = 0;

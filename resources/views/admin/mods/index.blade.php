@@ -82,14 +82,12 @@
                             @if(is_array($params))
                                 <p>
                                     @lang('general.chassis'):
-                                    <b>
-                                        @if($params['form']['chassis'] == 'paintable') @lang('general.paintable_chassis')
-                                        @else @lang($mod->game.'_trailers.'.$params['form']['chassis'])
-                                        @endif
-                                    </b>
+                                    <b id="chassis-name">{{ $params['form']['chassis'] }}</b>
                                 </p>
                                 @if(isset($params['view']))
-                                    @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'): <b>@lang('accessories.'.$params['view']['accessory'])</b></p>@endif
+                                    @if(key_exists('accessory', $params['form']))<p>@lang('general.accessory'):
+                                        <b id="accessory-name">{{ $params['form']['accessory'] }}</b></p>
+                                    @endif
                                     @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>
                                             @if($params['view']['paint'] === null) @lang($mod->game.'_companies_paints.default')
                                             @else @lang($mod->game.'_companies_paints.'.$params['view']['paint'])

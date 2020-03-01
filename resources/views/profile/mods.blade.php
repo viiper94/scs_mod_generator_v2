@@ -28,7 +28,7 @@
                                        onclick="return confirm('@lang('mods.mark_as_working')')">report
                                     </a>
                                 @else
-                                    <a href="{{ route('mod_broken') }}/{{ $mod->id }}"
+                                    <a href="{{ route('mod_broken')   }}/{{ $mod->id }}"
                                        class="mdc-icon-button material-icons notranslate report"
                                        title="@lang('mods.broken')"
                                        onclick="return confirm('@lang('mods.mark_as_broken')')">report
@@ -39,7 +39,7 @@
                                        class="mdc-icon-button material-icons notranslate download"
                                        title="@lang('general.download_mod')">file_download</a>
                                 @endif
-                        </span>
+                            </span>
                         </div>
                         <div class="collapsible-body">
                             @php $params = unserialize($mod->params); @endphp
@@ -47,15 +47,10 @@
                                 @if(isset($params['view']))
                                     <p>
                                         @lang('general.chassis'):
-                                        <b>
-                                            @if($params['form']['chassis'] == 'paintable') @lang('general.paintable_chassis')
-                                            @elseif(key_exists('chassis', $params['view'])) @lang($mod->game.'_trailers.'.$params['view']['chassis'])
-                                            @else {{ $params['form']['chassis'] }}
-                                            @endif
-                                        </b>
+                                        <b id="chassis-name">{{ $params['form']['chassis'] }}</b>
                                     </p>
-                                    @if(key_exists('accessory', $params['view']))<p>@lang('general.accessory'):
-                                        <b>@lang('accessories.'.$params['view']['accessory'])</b></p>
+                                    @if(key_exists('accessory', $params['form']))<p>@lang('general.accessory'):
+                                        <b id="accessory-name">{{ $params['form']['accessory'] }}</b></p>
                                     @endif
                                     @if(key_exists('paint', $params['view']))<p>@lang('general.paint_job'): <b>
                                             @if($params['view']['paint'] === null) @lang($mod->game.'_companies_paints.default')

@@ -373,10 +373,16 @@ $(document).ready(function(){
                     'id' : $(mod).data('id'),
                 },
                 success : function(response){
-                    if(response.result){
+                    if(response.regenerate){
                         $(mod).find('.regenerate button[type=submit]').show()
                     }else{
                         $(mod).find('.regenerate button[type=submit]').show().attr('disabled', true)
+                    }
+                    if(response.chassis_name){
+                        $(mod).find('#chassis-name').text(response.chassis_name)
+                    }
+                    if(response.accessory_name){
+                        $(mod).find('#accessory-name').text(response.accessory_name)
                     }
                 },
                 beforeSend : function(){

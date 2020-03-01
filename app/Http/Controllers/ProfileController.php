@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Accessory;
+use App\Chassis;
 use App\Dlc;
 use App\Image;
 use App\Mods;
@@ -110,8 +112,24 @@ class ProfileController extends Controller{
     public function getModInfo(Request $request){
         if($request->ajax() && $request->input('id')){
             $mod = Mods::find($request->input('id'));
+            $params = unserialize($mod->params);
+            $chassis_alias = $params['form']['chassis'];
+            $accessory_name = '';
+            if(key_exists('accessory', $params['form'])){
+                $accessory_def = $params['form']['accessory'];
+                $accessory = Accessory::getAccessoryByDef($accessory_def);
+                $accessory_name = $accessory ? $accessory->translate() : null;
+            }
+            if($chassis_alias !== 'paintable'){
+                $chassis = Chassis::getChassisByAlias($chassis_alias);
+                $chassis_name = $chassis ? $chassis->translate() : null;
+            }else{
+                $chassis_name = trans('general.paintable_chassis');
+            }
             return response()->json([
-                'result' => $mod->canRegenerate(),
+                'regenerate' => $mod->canRegenerate(),
+                'chassis_name' => $chassis_name,
+                'accessory_name' => $accessory_name,
                 'status' => 'OK',
             ]);
         }

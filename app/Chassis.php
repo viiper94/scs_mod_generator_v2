@@ -184,4 +184,8 @@ class Chassis extends Model{
         return str_replace(['( ', ' )'], ['(', ')'], implode(' ', $translated));
     }
 
+    public static function getChassisByAlias($alias){
+        return Chassis::where('alias', $alias)->first();
+    }
+
 }
