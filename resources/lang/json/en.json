@@ -157,9 +157,7 @@
     "dlc list": {},
     "ets2 trailers": {
         "aero": "Aerodynamic",
-        "steer": "Steerable",
-
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "steer": "Steerable"
     },
     "ats trailers": {
         "rm_double": "R.M. Double",
@@ -221,6 +219,8 @@
         "yellow": "Yellow",
         "red": "Red",
         "gray": "Gray",
-        "black": "Black"
+        "black": "Black",
+
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }
