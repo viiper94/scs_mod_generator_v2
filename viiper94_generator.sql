@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Лют 28 2020 р., 17:00
+-- Час створення: Бер 04 2020 р., 13:59
 -- Версія сервера: 10.4.11-MariaDB
 -- Версія PHP: 7.4.1
 
@@ -527,7 +527,7 @@ INSERT INTO `chassis` (`id`, `parent_trailer`, `chain_type_size`, `trailers`, `a
 (234, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_red.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_red', 'tn_frac_tank__%(__tcn_red__%)', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:20', '2020-02-27 17:38:37'),
 (235, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_yellow.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_yellow', 'tn_frac_tank__%(__tcn_yellow__%)', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:41', '2020-02-27 17:38:37'),
 (236, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flat_bed_xmas', 'flat_bed_xmas', 'flat_bed_xmas', NULL, 'flat_bed_xmas', 7, 1, 0, 1, 0, NULL, 1, 0, 0, 'ets2', 1, NULL, 1, '2019-12-23 17:56:13', '2019-12-23 18:01:49'),
-(237, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"off\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flatbed_xmas', 'xmas_gifts', 'flatbed_xmas', NULL, 'flatbed_xmas', 13, 1, 0, 1, 0, NULL, 1, 0, 0, 'ats', 1, NULL, 1, '2019-12-24 06:36:00', '2020-02-27 17:38:37'),
+(237, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"off\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flatbed_xmas', 'flat_bed_xmas', 'flatbed_xmas', NULL, 'flatbed_xmas', 13, 1, 0, 1, 0, NULL, 1, 0, 0, 'ats', 1, NULL, 1, '2019-12-24 06:36:00', '2020-02-27 17:38:37'),
 (466668, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/magnitude_55l\\/chassis_trailer_2_sh_ns.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"off\"}]', 'magnitude_55l_t2', 'tn_magnitude_55l__%(__2ax__%)', 'magnitude_55l_t2', NULL, 'magnitude_55l_t2', 13, 1, 0, 1, 0, NULL, 1, 0, 0, 'ats', 1, NULL, 1, '2020-02-28 11:52:20', '2020-02-28 11:53:16');
 
 -- --------------------------------------------------------
@@ -855,9 +855,9 @@ CREATE TABLE `languages` (
 INSERT INTO `languages` (`id`, `locale`, `title`, `active`, `created_at`, `updated_at`) VALUES
 (1, 'cs', 'Čeština', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (2, 'de', 'Deutsch', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
-(3, 'el', 'Ελληνικά', 0, '2018-07-31 12:26:45', '2019-02-01 08:13:55'),
+(3, 'el', 'Ελληνικά', 1, '2018-07-31 12:26:45', '2020-02-28 16:55:37'),
 (4, 'en', 'English', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
-(5, 'es', 'Español', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
+(5, 'es', 'Español', 0, '2018-07-31 12:26:45', '2020-02-28 16:58:41'),
 (6, 'fi', 'Suomi', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (7, 'fr', 'Français', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (8, 'it', 'Italiano', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
@@ -867,13 +867,14 @@ INSERT INTO `languages` (`id`, `locale`, `title`, `active`, `created_at`, `updat
 (12, 'nn', 'Nynorsk', 1, '2018-07-31 12:26:45', '2019-04-18 12:36:27'),
 (13, 'pl', 'Polski', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (14, 'pt', 'Português', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
-(15, 'ro', 'Română', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
+(15, 'ro', 'Română', 0, '2018-07-31 12:26:45', '2020-02-28 16:58:12'),
 (16, 'ru', 'Русский', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (17, 'sv', 'Svenska', 0, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (18, 'tr', 'Türkçe', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (19, 'uk', 'Українська', 1, '2018-07-31 12:26:45', '2018-07-31 12:26:45'),
 (20, 'zh', '简体中文', 1, '2018-07-31 12:26:45', '2018-11-17 05:11:16'),
-(21, 'hr', 'Hrvatski', 1, NULL, NULL);
+(21, 'hr', 'Hrvatski', 0, NULL, '2020-02-28 16:58:37'),
+(22, 'ka', 'Georgian', 1, '2020-02-28 16:57:40', '2020-02-28 16:57:40');
 
 -- --------------------------------------------------------
 
@@ -2832,7 +2833,7 @@ ALTER TABLE `accessories`
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=466669;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=466670;
 
 --
 -- AUTO_INCREMENT для таблиці `companies`
@@ -2856,7 +2857,7 @@ ALTER TABLE `error_codes`
 -- AUTO_INCREMENT для таблиці `languages`
 --
 ALTER TABLE `languages`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT для таблиці `migrations`
@@ -2868,7 +2869,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `paints`
 --
 ALTER TABLE `paints`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4590;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4591;
 
 --
 -- AUTO_INCREMENT для таблиці `settings`
