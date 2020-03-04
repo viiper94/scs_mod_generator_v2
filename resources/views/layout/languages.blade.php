@@ -25,9 +25,9 @@
                 </div>
                 <div class="row">
                     <h6 class="center" style="font-size: 14px">@lang('general.help_translate')<br>
-                        <a href="https://mods-generator.oneskyapp.com/collaboration/project/307746"
+                        <a href="http://mods-generator.oneskyapp.com"
                            target="_blank"
-                           class="grey-text text-darken-1" style="text-decoration: underline;">https://mods-generator.oneskyapp.com/collaboration/project/307746</a>
+                           class="grey-text text-darken-1" style="text-decoration: underline;">http://mods-generator.oneskyapp.com</a>
                     </h6>
                 </div>
             </div>
