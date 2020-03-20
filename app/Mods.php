@@ -42,13 +42,15 @@ class Mods extends Model{
     }
 
     public static function cleanUp(){
-        $fromDate = Carbon::now()->subDay(7)->toDateString();
-        $mods = Mods::where('created_at', '<', $fromDate.' 00:00:00')->get();
+        $last_week = Carbon::now()->subDay(7)->toDateString();
+        $mods = Mods::where('created_at', '<', $last_week.' 00:00:00')->get();
         foreach($mods as $mod){
             if($mod->file_name && file_exists(public_path('download/'.$mod->file_name.'.scs'))){
                 unlink(public_path('download/'.$mod->file_name.'.scs'));
             }
         }
+        $last_month = Carbon::now()->subDay(31)->toDateString();
+        Mods::where('created_at', '<', $last_month.' 00:00:00')->whereNull('user_id')->delete();
     }
 
 }
