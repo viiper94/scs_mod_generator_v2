@@ -6,8 +6,8 @@
     "ats trailers": {
         "rm_double": "R.M. 더블",
         "tp": "턴파이크 더블",
-        "2ax": "2축",
-        "3ax": "3축"
+        "2ax": "2액슬",
+        "3ax": "3액슬"
     },
     "accessories": {
         "cars_balt1": "메르세데스-밴츠",
@@ -67,12 +67,12 @@
         "paint_job": "페인트",
         "color": "색상",
         "wheels": "휠",
-        "pick_chassis": "목록에서 트레일러 샤시 선택 (필수)",
+        "pick_chassis": "트레일러 샤시 선택 (필수)",
         "choose_chassis": "샤시 선택",
         "paintable_chassis": "모든 도색가능 샤시",
-        "pick_accessory": "아래 목록에서 액세서리를 선택하세요.",
+        "pick_accessory": "액세서리 선택",
         "choose_accessory": "액세서리 없음",
-        "pick_paint": "아래 리스트에서 페인트 선택",
+        "pick_paint": "페인트 선택",
         "choose_paint": "페인트 선택",
         "all_companies": "모든 회사",
         "are_you_sure": "확실합니까?",
@@ -91,17 +91,17 @@
         "see_paints": "사용 가능한 페인트",
         "see_cargo": "사용 가능한 화물",
         "trailers_gallery": "트레일러 갤러리",
-        "advanced": "고급 세팅",
+        "advanced": "고급 설정",
         "image_upload": "모드 이미지 업로드 (5MB 이하)",
         "current_version": "지원 버전",
         "success": "성공했습니다",
         "something_wrong": "무엇인가 잘못되었습니다. :(",
         "error": "에러가 발생하였습니다. 모드가 생성되지 않았을 수 있습니다. ( Code : ",
-        "select_wheels": "트레일러 휠을 선택하십시오.",
+        "select_wheels": "트레일러 휠 선택",
         "w_default": "기본",
         "dark_theme": "어두운 테마",
         "upload_image": "이미지 업로드",
-        "include_dlc": "DLC 포함",
+        "include_dlc": "포함할 DLC 컨텐츠",
         "trailer_generator": "트레일러 생성기",
         "languages": "언어",
         "links": "링크",
@@ -121,7 +121,7 @@
         "install_title": "어떻게 모드를 설치하나요?",
         "mp_use": "어떻게 모드를 TruckersMP에서 사용하나요?",
         "close_modal": "확인!",
-        "generate_mod_1": "모드의 이름을 입력하세요. (비어 있으면 샤시 이름을 지정됩니다.)",
+        "generate_mod_1": "모드의 이름을 입력하세요. (비어 있으면 샤시 이름으로 지정됩니다.)",
         "generate_mod_2": "드롭다운 목록에서 샤시를 선택하세요. 검색이 가능합니다. (필수)",
         "generate_mod_3": "선택 샤시에 따라, 트레일러용 화물 또는 스킨도 선택할 수 있습니다.",
         "generate_mod_4": "색깔 스킨을 고른다면 색상도 지정할 수 있어요.",
@@ -183,7 +183,7 @@
         "mark_as_broken": "이 모드가 확실히 손상됐나요?",
         "mark_as_working": "작동하는 모드로 표시할까요?",
         "mod_required_dlc": "필수",
-        "tested_on_ver": "다음 버전에서 테스트됨"
+        "tested_on_ver": "정상작동 확인 버전:"
     },
     "auth": {
         "failed": "이메일이나 비밀번호가 틀렸습니다."
