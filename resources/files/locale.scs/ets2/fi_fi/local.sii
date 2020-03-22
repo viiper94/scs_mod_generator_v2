@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -1112,7 +1118,7 @@ localization_db : .localization
 	val[]: "Sivupeili"
 
 	key[]: "s_reflector"
-	val[]: "Side Reflector"
+	val[]: "Heijastimet"
 
 	key[]: "rn_mirror"
 	val[]: "Oikea etupeili"
@@ -3229,7 +3235,7 @@ localization_db : .localization
 	val[]: "Nollaa pään seurannan tila"
 
 	key[]: "o_im_eye_pause"
-	val[]: "Pause Extended View (experimental)"
+	val[]: "Aseta laajennettu näkymä taukotilaan"
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Liikuta kameraa (hiiriohjauksessa)" #+ Enables camera look mode when mouse steering is active.
@@ -3610,19 +3616,19 @@ localization_db : .localization
 #+ Configuration of extended view options.
 #@{
 	key[]: "eye_extended_view_settings"
-	val[]: "Extended View" #+ Header of the section.
+	val[]: "Laajennettu näkymä" #+ Header of the section.
 
 	key[]: "eye_gaze_settings"
-	val[]: "Gaze Tracking Settings" #+ Header of the gaze settings
+	val[]: "Katseenseurannan asetukset" #+ Header of the gaze settings
 
 	key[]: "eye_headtracking_settings"
-	val[]: "Head Tracking Settings" #+ Header of headtracking settings
+	val[]: "Pään seurannan asetukset" #+ Header of headtracking settings
 
 	key[]: "eye_controls_settings"
-	val[]: "Keyboard Controls" #+ Header of keyboard controls
+	val[]: "Näppäimistö ohjaus" #+ Header of keyboard controls
 
 	key[]: "eye_extended_view"
-	val[]: "Enable Extended View" #+ Extended View enable checkbox.
+	val[]: "Aktivoi laajennettu näkymä" #+ Extended View enable checkbox.
 
 	key[]: "eye_autocenter"
 	val[]: "Enable auto-center" #+ Headtracking autocentering
@@ -3643,10 +3649,10 @@ localization_db : .localization
 	val[]: "Pään liikkeen seurannan reagoivuus" #+ How fast the view reacts to head position/orientation changes
 
 	key[]: "eye_head_roll"
-	val[]: "Enable roll (experimental)" #+ Enables the roll component of head orientation
+	val[]: "Aktivoi kallistaminen" #+ Enables the roll component of head orientation
 
 	key[]: "eye_head_position"
-	val[]: "Enable position (experimental)" #+ Enables use of head position
+	val[]: "Aktivoi sijainti" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
 	val[]: "Kääntökerroin (yaw)" #+ Multiplier applied to resulting yaw value
@@ -3673,7 +3679,7 @@ localization_db : .localization
 	val[]: "Katseenseurannan lopetuspiste"
 
 	key[]: "eye_head_scale"
-	val[]: "Head tracking ratio"
+	val[]: "Pään seurannan suhde"
 
 	key[]: "eye_head_exponent"
 	val[]: "Pään seurannan kerroin"
@@ -3688,19 +3694,19 @@ localization_db : .localization
 	val[]: "Pään seurannan lopetuspiste"
 
 	key[]: "eye_head_mode_direct_tooltip"
-	val[]: "Your head rotation directly corresponds to a camera rotation in-game. Recommended in normal cockpit/cabin situations."
+	val[]: "Pään liikkeet tuottavat vastineen pelinsisäiseen näkymään. Suositeltu vaihtoehto hyttinäkymässä."
 
 	key[]: "eye_head_mode_dynamic_tooltip"
 	val[]: "Your gaze will only affect your in-game camera when you actually turn your head. Recommended mode when it's important for your view to be absolutely centered."
 
 	key[]: "eye_gaze_view_responsiveness_tooltip"
-	val[]: "How quickly the in-game camera will respond to your gaze movements."
+	val[]: "Kuinka nopeasti pelinsisäinen näkymä vastaa katseesi liikkeisiin."
 
 	key[]: "eye_gaze_scale_tooltip"
-	val[]: "How fast the in-game camera turns towards your gaze point."
+	val[]: "Kuinka nopeasti pelinsisäinen näkymä kääntyy kohti katsekohdetta."
 
 	key[]: "eye_gaze_exponent_tooltip"
-	val[]: "Controls how gradually the speed ramps up."
+	val[]: "Säätelee vaiheittaista nopeuden lisääntymistä."
 
 	key[]: "eye_gaze_inflection_tooltip"
 	val[]: "The distance from the center of the screen where the acceleration will start to level out."
@@ -3715,31 +3721,31 @@ localization_db : .localization
 	val[]: "The in-game camera will continuously slowly recenter as you change your head’s natural position during play."
 
 	key[]: "eye_head_view_responsiveness_tooltip"
-	val[]: "How quickly the in-game camera will respond to your head movements."
+	val[]: "Kuinka nopeasti pelinsisäinen näkymä vastaa pään liikkeisiin."
 
 	key[]: "eye_head_position_tooltip"
-	val[]: "Your head’s position affects the in-game camera position."
+	val[]: "Pääsi asento vaikuttaa pelinsisäiseen näkymään."
 
 	key[]: "eye_head_roll_tooltip"
-	val[]: "If you tilt your head to either side, the in-game camera will tilt accordingly."
+	val[]: "Pelinsisäinen näkymä kallistuu, kun kallistat päätäsi sivuille."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "Multiplies the responsiveness of when you rotate your head by turning it from side to side."
+	val[]: "Kerroin, joka vaikuttaa pään sivusuuntaisista liikkeistä annettavaan vasteeseen."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "Multiplies the responsiveness of when you turn your head up and down."
+	val[]: "Kerroin, joka vaikuttaa pään pystysuuntaisista liikkeistä annettavaan vasteeseen."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
-	val[]: "Determines how far the camera can turn when you look to the edges of the screen."
+	val[]: "Määrittää kuinka pitkälle pelinsisäinen näkymä kääntyy, kun katsot näytön reunoille."
 
 	key[]: "eye_head_scale_tooltip"
-	val[]: "How much the in-game camera will turn compared to how much you turn your head."
+	val[]: "Kuinka paljon pelinsisäinen näkymä kääntyy verrattuna siihen kuinka paljon päätäsi todellisuudessa käännät."
 
 	key[]: "eye_head_exponent_tooltip"
-	val[]: "Controls how gradually the speed ramps up."
+	val[]: "Säätelee vaiheittaista nopeuden lisääntymistä."
 
 	key[]: "eye_head_inflection_point_tooltip"
-	val[]: "The amount of head rotation where the acceleration will start to level out."
+	val[]: "Pään kiertymän määrä, josta alkaen kiihtyvyys alkaa tasaantumaan."
 
 	key[]: "eye_head_start_point_tooltip"
 	val[]: "How much you have to rotate your head from the center position before the in-game camera starts to move."
@@ -3751,7 +3757,7 @@ localization_db : .localization
 	val[]: "Sets your current head position as the new default position, re-centering the in-game camera accordingly."
 
 	key[]: "eye_pause_extended_view_tooltip"
-	val[]: "Toggles on/off all Tobii Extended View features."
+	val[]: "Asettaa kaikki Tobii laajennetun näkymän toiminnot pois/päälle."
 #@}
 
 #+ Configuration of autopause.
@@ -3775,10 +3781,10 @@ localization_db : .localization
 	val[]: "Katseen poissaolon kynnysarvo" #+ How long must be the gaze absent from the game before pausing it in eye_autopause_gaze mode
 
 	key[]: "eye_autopause_mode_tooltip"
-	val[]: "Presence, Presence and Gaze or Disable."
+	val[]: "Läsnäolo, Läsnäolo + katse tai poista käytöstä."
 
 	key[]: "eye_autopause_gaze_tooltip"
-	val[]: "Amount of time in milliseconds before the game will automatically pause when it can’t detect your gaze."
+	val[]: "Aika millisekunneissa, jonka jälkeen peli ohjautuu taukotilaan mikäli se ei pysty havaitsemaan katsettasi."
 #@}
 
 #@}
@@ -3855,7 +3861,7 @@ localization_db : .localization
 	val[]: "Skaalaus" #+ Combo box selecting the scale with which is the game image rendered. Selecting value bigger than 100% creates anti-aliasing, selecting value lower than 100% increases performance.
 
 	key[]: "aa_mode"
-	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+	val[]: "Reunanpehmennys (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
 
 	key[]: "hdr"
 	val[]: "High dynamic range (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4725,34 +4731,34 @@ localization_db : .localization
 #+ blke weights, borders, x_rays, tolls
 #@{
 	key[]: "use_right_gate"
-	val[]: "Please use the rightmost gate." #+ Adviser text
+	val[]: "Käytä oikeanpuoleisinta tulliporttia." #+ Adviser text
 
 	key[]: "drive_thru_weight"
-	val[]: "Your total weight is $WEIGHT$.<br>You may proceed." #+ Adviser text
+	val[]: "Kokonaispaino $WEIGHT$.<br>Voit jatkaa matkaa." #+ Adviser text
 
 	key[]: "xray_call"
-	val[]: "Proceed to the X-Ray inspection inside the building ahead through the rightmost gate."
+	val[]: "Jatka oikeanpuoleisimman tulliportin jälkeen läpivalaisuun, joka suoritetaan edessä näkyvässä rakennuksessa."
 
 	key[]: "visit_xray"
-	val[]: "Proceed straight ahead into the X-Ray hall."
+	val[]: "Jatka suoraan läpivalaisuhalliin."
 
 	key[]: "control_call"
-	val[]: "Proceed straight ahead to complete the inspection."
+	val[]: "Tarkastuksen saattamiseksi loppuun jatka suoraan eteenpäin."
 
 	key[]: "control_call_1"
-	val[]: "Proceed to the detailed control ahead through the rightmost gate."
+	val[]: "Jatka oikeanpuoleisimman tulliportin jälkeen erikseen merkitylle tarkastusalueelle."
 
 	key[]: "control_call_2"
-	val[]: "Proceed to the weight check through one of the two rightmost gates."
+	val[]: "Jatka oikeanpuoleisimman tulliportin jälkeen ajoneuvon vaakaukseen."
 
 	key[]: "stop_inspection"
-	val[]: "Stop at the mark and stop the engine to start the inspection."
+	val[]: "Tarkastuksen aloittamiseksi pysähdy merkin kohdalle ja pysäytä moottori."
 
 	key[]: "xray_control_passed"
-	val[]: "X-Ray inspection successfully passed.<br>You may continue."
+	val[]: "Läpivalaisu suoritettu.<br>Voit jatkaa matkaa."
 
 	key[]: "control_passed"
-	val[]: "Everything is all right.<br>You may continue."
+	val[]: "Kaikki on kunnossa.<br>Voit jatkaa matkaa."
 
 #@}
 
@@ -4792,19 +4798,19 @@ localization_db : .localization
 	val[]: "Punaisia päin ajaminen."
 
 	key[]: "offence_weighing"
-	val[]: "Et pysähtynyt punnitusasemalle."
+	val[]: "Lakisääteisen vaakauksen välttely."
 
 	key[]: "offence_illegal_trailer"
 	val[]: "Perävaunun käyttörike."
 
 	key[]: "offence_avoid_inspection"
-	val[]: "Failed to stop for inspection."
+	val[]: "Lakisääteisen tarkastuksen välttely."
 
 	key[]: "offence_illegal_border"
-	val[]: "Unauthorized border crossing."
+	val[]: "Laiton rajanylitys."
 
 	key[]: "offence_shoulder_violation"
-	val[]: "Hard shoulder violation."
+	val[]: "Tien pientareen laiton käyttö."
 #@}
 
 #@}
@@ -4939,7 +4945,7 @@ localization_db : .localization
 	val[]: "Syövyttävät aineet"
 
 	key[]: "skill_adr_8"
-	val[]: "Substances that can dissolve organic tissue or severely corrode certain metals. As examples could be named sulphuric acid, hydrochloric acid, potassium hydroxide or sodium hydroxide."
+	val[]: "Aineet, jotka voivat liuottaa orgaanista kudosta tai pahoin syövyttää tiettyjä metalleja. Esimerkkinä voidaan nimetä rikkihappo, suolahappo, kaliumhydroksidi tai natriumhydroksidi."
 #@}
 
 #+ Informations about individual ranks of Long distance skill.
@@ -5585,7 +5591,7 @@ localization_db : .localization
 	val[]: "Jäätelöä"
 
 	key[]: "cn_iveco_vans"
-	val[]: "Braco-vaunut"
+	val[]: "Braco-alustat"
 
 	key[]: "cn_kerosene"
 	val[]: "Kerosiinia"
@@ -5606,7 +5612,7 @@ localization_db : .localization
 	val[]: "Tukkeja"
 
 	key[]: "cn_lpg"
-	val[]: "LPG"
+	val[]: "Nestekaasua"
 
 	key[]: "cn_lumber"
 	val[]: "Puutavaraa"
@@ -5777,7 +5783,7 @@ localization_db : .localization
 	val[]: "Sokeria"
 
 	key[]: "cn_sulfuric"
-	val[]: "Sulphuric Acid"
+	val[]: "Rikkihappoa"
 
 	key[]: "cn_tableware"
 	val[]: "Astiastoja"
@@ -5798,7 +5804,7 @@ localization_db : .localization
 	val[]: "Traktori"
 
 	key[]: "cn_tractors"
-	val[]: "Traktoreita"
+	val[]: "Traktorit"
 
 	key[]: "cn_trailers"
 	val[]: "Uusia lavetteja"
@@ -5807,7 +5813,7 @@ localization_db : .localization
 	val[]: "Junan akselit"
 
 	key[]: "cn_train_part2"
-	val[]: "Junan teli"
+	val[]: "Junan telit"
 
 	key[]: "cn_tv"
 	val[]: "Televisioita"
@@ -5987,13 +5993,13 @@ localization_db : .localization
 	val[]: "Lohifileitä"
 
 	key[]: "cn_salt_spices"
-	val[]: "Suolaa & mausteita"
+	val[]: "Suolaa ja mausteita"
 
 	key[]: "cn_sausages"
 	val[]: "Makkaroita"
 
 	key[]: "cn_scaffoldings"
-	val[]: "Scaffolding"
+	val[]: "Rakennustelineet"
 
 	key[]: "cn_scania_trucks"
 	val[]: "Vetoautot - Scania"
@@ -6032,10 +6038,10 @@ localization_db : .localization
 	val[]: "Kuorma-auton renkaita"
 
 	key[]: "cn_used_packaging"
-	val[]: "Used Packaging"
+	val[]: "Käytettyjä pakkausmateriaaleja"
 
 	key[]: "cn_used_plastics"
-	val[]: "Käytettyä muovia"
+	val[]: "Kierrätysmuovia"
 
 	key[]: "cn_vinegar"
 	val[]: "Etikkaa"
@@ -6098,7 +6104,7 @@ localization_db : .localization
 	val[]: "Viinirypäleitä"
 
 	key[]: "cn_graph_grease"
-	val[]: "Grafiittirasva"
+	val[]: "Grafiittirasvaa"
 
 	key[]: "cn_grass_rolls"
 	val[]: "Siirtonurmikkoa"
@@ -6782,7 +6788,7 @@ localization_db : .localization
 #@}
 
 	key[]: "compman_player_driver"
-	val[]: "Player"
+	val[]: "Pelaaja"
 
 	key[]: "compman_status"
 	val[]: "Tila:"
@@ -6855,7 +6861,7 @@ localization_db : .localization
 	val[]: "Tämän kokoisen täysin varustellun tallin odotetaan tienaavan näin paljon rahaa viikossa. Tämä palkki näyttää kuinka hyvin tällä tallilla menee."
 
 	key[]: "garageman_summary_hint"
-	val[]: "Select a garage from the right side to view its details"
+	val[]: "Valitse oikealta talli tarkastellaksesi sen tietoja"
 
 
 	key[]: "garageman_unavailable"
@@ -6967,25 +6973,25 @@ localization_db : .localization
 	val[]: "Ihaile rekkalaivueesi kokoa ja suunnittele kuinka voisit tehdä siitä vielä mahtavamman." #+ Help message associated with the truck management icon.
 
 	key[]: "truckman_summary_hint"
-	val[]: "Select a truck from the right side to view its details"
+	val[]: "Valitse oikealta rekka tarkastellaksesi sen tietoja"
 
 #+ Truck map filters
 #@{
 
 	key[]: "truckman_filter_all"
-	val[]: "All Trucks"
+	val[]: "Kaikki kuorma-autot"
 
 	key[]: "truckman_filter_idle"
-	val[]: "Idle Trucks"
+	val[]: "Vapaana olevat kuorma-autot"
 
 	key[]: "truckman_filter_driving"
-	val[]: "Driving Trucks"
+	val[]: "Ajossa olevat kuorma-autot"
 
 	key[]: "truckman_filter_sleeping"
-	val[]: "Sleeping Trucks"
+	val[]: "Tauolla olevat kuorma-autot"
 
 	key[]: "truckman_filter_returning"
-	val[]: "Returning Trucks"
+	val[]: "Palaamassa olevat kuorma-autot"
 #@}
 
 #+ Headers of table of trucks.
@@ -7187,25 +7193,25 @@ localization_db : .localization
 	val[]: "Tarkastele kuljettajiasi. Palkkaa, siirtele tai erota heidät omasta tahdostasi." #+ Help message associated with the driver management icon.
 
 	key[]: "driverman_summary_hint"
-	val[]: "Select a driver from the right side to view their details"
+	val[]: "Valitse oikealta kuljettaja tarkastellaksesi hänen tietoja"
 
 #+ Driver map filters
 #@{
 
 	key[]: "driverman_filter_all"
-	val[]: "All Drivers"
+	val[]: "Kaikki kuljettajat"
 
 	key[]: "driverman_filter_idle"
-	val[]: "Idle Drivers"
+	val[]: "Vapaana olevat kuljettajat"
 
 	key[]: "driverman_filter_driving"
-	val[]: "Driving Drivers"
+	val[]: "Ajossa olevat kuljettajat"
 
 	key[]: "driverman_filter_sleeping"
-	val[]: "Sleeping Drivers"
+	val[]: "Tauolla olevat kuljettajat"
 
 	key[]: "driverman_filter_returning"
-	val[]: "Returning Drivers"
+	val[]: "Palaamassa olevat kuljettajat"
 #@}
 
 #+ Headers of table of drivers.
@@ -7718,7 +7724,7 @@ localization_db : .localization
 	val[]: "Lisää uusi reittipiste vain loppuun" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
 
 	key[]: "append_new_avoid_pins"
-	val[]: "Add new avoid location" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
+	val[]: "Lisää vältettävä sijainti" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
 
 
 #+ Texts shown near individual icons on the map legend.
@@ -8309,7 +8315,7 @@ localization_db : .localization
 	val[]: "Portugali"
 
 	key[]: "romania"
-	val[]: "Roumanie"
+	val[]: "Romania"
 
 	key[]: "russia"
 	val[]: "Venäjä"
@@ -8428,7 +8434,7 @@ localization_db : .localization
 	val[]: "Bryssel"
 
 	key[]: "bucuresti"
-	val[]: "Bucharest"
+	val[]: "Bukarest"
 
 	key[]: "budapest"
 	val[]: "Budapest"
@@ -8614,7 +8620,7 @@ localization_db : .localization
 	val[]: "Innsbruck"
 
 	key[]: "istanbul"
-	val[]: "İstanbul"
+	val[]: "Istanbul"
 
 	key[]: "jonkoping"
 	val[]: "Jönköping"
@@ -9879,7 +9885,7 @@ localization_db : .localization
 	val[]: "Muovinharmaa" #+ Plastic mirror, doorhandle or other accessory
 
 	key[]: "plastic_gray_cover"
-	val[]: "Plastic Gray Cover" #+ Simple plastic cover used as small sideskirt or other accessory
+	val[]: "Harmaa muovisuojus" #+ Simple plastic cover used as small sideskirt or other accessory
 
 	key[]: "plastic_cover"
 	val[]: "Muovisuojus" #+ Simple plastic cover used as small sideskirt or other accessory
@@ -10035,10 +10041,10 @@ localization_db : .localization
 	val[]: "Mukautettu metalliväri" #+ Custom metallic color of the truck
 
 	key[]: "orange_reflector"
-	val[]: "Orange Reflector"
+	val[]: "Oranssi heijastin"
 
 	key[]: "white_reflector"
-	val[]: "White Reflector"
+	val[]: "Valkoinen heijastin"
 
 	key[]: "basic_chrome"
 	val[]: "Kromattu" #+ type of sideskirts, chromed
@@ -10086,31 +10092,151 @@ localization_db : .localization
 	val[]: "Schwarzmüller Special" #+ Schwarzmuller-branded exclusive generic accessory name.
 	
 	key[]: "christmas_sock"
-	val[]: "Christmas Sock" #+ Hanging interior accessory
+	val[]: "Joulusukka" #+ Hanging interior accessory
 	
 	key[]: "autumn_star"
-	val[]: "Autumn Star" #+ Hanging interior accessory
+	val[]: "Syksyn tähti" #+ Hanging interior accessory
 	
 	key[]: "twinkle_star"
-	val[]: "Twinkle Star" #+ Hanging interior accessory
+	val[]: "Tuikkiva tähti" #+ Hanging interior accessory
 	
 	key[]: "frosty_star"
-	val[]: "Frosty Star" #+ Hanging interior accessory
+	val[]: "Huurteinen tähti" #+ Hanging interior accessory
 	
 	key[]: "winter_star"
-	val[]: "Winter Star" #+ Hanging interior accessory
+	val[]: "Talven tähti" #+ Hanging interior accessory
 	
 	key[]: "christmas_star"
-	val[]: "Christmas Star" #+ Hanging interior accessory
+	val[]: "Joulun tähti" #+ Hanging interior accessory
 	
 	key[]: "wishing_star"
-	val[]: "Wishing Star" #+ Hanging interior accessory
+	val[]: "Toivomustähti" #+ Hanging interior accessory
 	
 	key[]: "diamond_star"
-	val[]: "Diamond Star" #+ Hanging interior accessory
+	val[]: "Timanttitähti" #+ Hanging interior accessory
 	
 	key[]: "grand_star"
-	val[]: "Grand Star" #+ Hanging interior accessory
+	val[]: "Suurtähti" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Bull Catcher MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Bull Catcher MAXI (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Bull Catcher MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Bull Catcher MEGA (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Bull Catcher MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Bull Catcher MIDI (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Bull Catcher MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Bull Catcher MINI (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Bull Catcher STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Bump Bar" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Bump Bar II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Bump Bar K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Front Lamp Holder" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Front Lamp Holder II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Front Lamp Holder CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Front Lamp Holder CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Front Lamp Holder TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Roof Lamp Holder" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Roof Lamp Holder II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Roof Lamp Holder III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Roof Lamp Holder (extra LEDs)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Roof Lamp Holder AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Roof Lamp Holder AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Roof Lamp Holder CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Roof Lamp Holder HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Roof Lamp Holder HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Roof Lamp Holder HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Roof Lamp Holder MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Roof Lamp Holder MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Roof Lamp Holder TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Roof Lamp Holder TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Roof Lamp Holder VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Side Bar" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Side Bar (extra LEDs)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Stainless Steel" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Sun Visor" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS-Schoch Cap" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS-Schoch Mug" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS-Schoch Paper Mug" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS-Schoch Pennant" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10986,7 +11112,7 @@ localization_db : .localization
 	val[]: "Kytkentä:<br><br>Vetopöytä lukittu. Nostetaan jalat ja kytketään kaapelit..."
 
 	key[]: "trailer_decoupling"
-	val[]: "Decoupling:<br><br>Lowering legs, detaching cables and unlocking fifth wheel..."
+	val[]: "Irtikytkentä:<br><br>Lasketaan jalat, irrotetaan kaapelit ja vapautetaan vetopöydän lukitus..."
 
 #@}
 
@@ -11552,7 +11678,7 @@ localization_db : .localization
 	val[]: "Hallinnoi yrityksesi perävaunuja ostamalla ja vaihtamalla niitä, osoita perävaunuja kuljettajiesi käyttöön sekä paljon muuta."
 
 	key[]: "trailerman_summary_hint"
-	val[]: "Select a trailer from the right side to view its details"
+	val[]: "Valitse oikealta perävaunu tarkastellaksesi sen tietoja"
 
 	key[]: "trailerman_tut_utilization"
 	val[]: "Prosentuaalinen perävaunujen päivittäinen käyttöaste. Luku perustuu päivittäiseen tuntimäärään, jonka aikana kuljettajasi käyttävät yrityksesi perävaunuja. Kaaviokuva päivittyy jokaisen päivän alussa. Korkea % arvo tarkoittaa, että kyseisellä perävaunutyypillä on kysyntää." #+ The utilization graph hint text.
@@ -11792,7 +11918,7 @@ localization_db : .localization
 	val[]: "Vaatii tallin:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Advance further in your career to access the Bank."
+	val[]: "Etene urallasi saadaksesi käyttöön pankkipalvelut."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "Kuorma-autoon ei ole saatavilla uusia päivityksiä juuri nyt."
@@ -11840,16 +11966,16 @@ localization_db : .localization
 #+ Trailer map filters
 #@{
 	key[]: "trailerman_filter_all"
-	val[]: "All Trailers"
+	val[]: "Kaikki perävaunut"
 
 	key[]: "trailerman_filter_idle"
-	val[]: "Idle Trailers"
+	val[]: "Vapaana olevat perävaunut"
 
 	key[]: "trailerman_filter_on_duty"
-	val[]: "On Duty Trailers"
+	val[]: "Ajossa olevat perävaunut"
 
 	key[]: "trailerman_filter_private"
-	val[]: "Private Trailers"
+	val[]: "Yksityiset perävaunut"
 #@}
 
 #+ Message box shown when user requests to sell selected trailer.
@@ -12459,13 +12585,13 @@ localization_db : .localization
 	val[]: "Kuorma-auto on ajossa"
 
 	key[]: "cm_legend_truck_status_parked"
-	val[]: "Truck is parked"
+	val[]: "Kuorma-auto on pysäköity"
 
 	key[]: "cm_legend_truck_status_returning"
-	val[]: "Truck is returning"
+	val[]: "Kuorma-auto on palaamassa"
 
 	key[]: "cm_legend_truck_player"
-	val[]: "Player"
+	val[]: "Pelaaja"
 
 	key[]: "cm_legend_trailer_status_idle"
 	val[]: "Perävaunu ei ole ajossa"
@@ -12477,7 +12603,7 @@ localization_db : .localization
 	val[]: "Perävaunu on yksityinen"
 
 	key[]: "cm_legend_trailer_player"
-	val[]: "Player trailer"
+	val[]: "Pelaajan perävaunu"
 
 	key[]: "cm_legend_driver_status_idle"
 	val[]: "Kuljettaja ei ole ajossa"
@@ -12489,13 +12615,13 @@ localization_db : .localization
 	val[]: "Kuljettaja on ajossa"
 
 	key[]: "cm_legend_driver_status_returning"
-	val[]: "Driver is returning"
+	val[]: "Pelaaja on palaamassa"
 
 	key[]: "cm_legend_driver_player"
-	val[]: "Player"
+	val[]: "Pelaaja"
 
 	key[]: "cm_legend_generic_trailer"
-	val[]: "Other trailers"
+	val[]: "Muut perävaunut"
 #@}
 
 #+ Detours.
@@ -13385,25 +13511,25 @@ localization_db : .localization
 #+ X-mas event 2019
 #@{
 	key[]: "xmas19_fetching"
-	val[]: "Fetching city progress..."
+	val[]: "Haetaan kaupungin edistymistä..."
 
 	key[]: "xmas19_star"
 	val[]: "★"
 
 	key[]: "xmas19_more_deliveries"
-	val[]: "Deliveries to the next star:"
+	val[]: "Toimituksia seuraavaan tähteen:"
 
 	key[]: "xmas19_fully_achieved"
-	val[]: "All stars achieved."
+	val[]: "Kaikki tähdet saavutettu."
 
 	key[]: "xmas19_map_description"
-	val[]: "Hover over cities to see the Christmas event progress. Visit $WOTR_URL$ to see the full progress summary."
+	val[]: "Vie hiiri kaupungin päälle nähdäksesi Joulutapahtuman edistyminen. Vieraile $WOTR_URL$ nähdäksesi yhteenveto edistymisestä."
 
 	key[]: "xmas19_max_city_message"
-	val[]: "This city's contribution towards the community goal is complete!<br><br>Why not help another city deliver its gifts?"
+	val[]: "Tämän kaupungin toimitukset on suoritettu!<br><br>Auttaisitko vielä muita kaupunkeja saamaan lahjat perille?"
 
 	key[]: "xmas19_back"
-	val[]: "Go back"
+	val[]: "Takaisin"
 #@}
 
 #@}

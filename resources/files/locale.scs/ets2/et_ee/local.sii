@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Suur täht" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Bull Catcher MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Bull Catcher MAXI (ekstra LED'id)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Bull Catcher MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Bull Catcher MEGA (ekstra LED'id)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Bull Catcher MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Bull Catcher MIDI (ekstra LED'id)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Bull Catcher MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Bull Catcher MINI (ekstra LED'id)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Bull Catcher STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Bump Bar" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Bump Bar II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Bump Bar K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Esilambi hoidik" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Esilambi hoidik II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Esilambi hoidik CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Esilambi hoidik CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Esilambi hoidik TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Katuselambi hoidik" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Katuselambi hoidik II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Katuselambi hoidik III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Katuselambi hoidik (ekstra LED'id)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Katuselambi hoidik AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Katuselambi hoidik AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Katuselambi hoidik CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Katuselambi hoidik HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Katuselambi hoidik HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Katuselambi hoidik HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Katuselambi hoidik MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Katuselambi hoidik MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Katuselambi hoidik TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Katuselambi hoidik TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Katuselambi hoidik VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Küljeriba" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Küljeriba (ekstra LED'id)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Roostevaba teras" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Päikesevari" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS Schoch müts" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS Schoch kruus" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS Schoch pabertops" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS Schoch vimpel" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.

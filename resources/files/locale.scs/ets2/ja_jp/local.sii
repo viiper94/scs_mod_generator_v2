@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Grand Star" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "ブルキャッチャー MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "ブルキャッチャー MAXI (LED付き)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "ブルキャッチャー MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "ブルキャッチャー MEGA (LED付き)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "ブルキャッチャー MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "ブルキャッチャー MIDI (LED付き)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "ブルキャッチャー MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "ブルキャッチャー MINI (LED付き)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "ブルキャッチャー スタンダード" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "バンプバー" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "バンプバー II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "バンプバー K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "フロントランプ ホルダー" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "フロントランプ ホルダー II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "フロントランプ ホルダー CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "フロントランプ ホルダー CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "フロントランプ ホルダー TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "ルーフランプ ホルダー" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "ルーフランプ ホルダー II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "ルーフランプ ホルダー III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "ルーフランプ ホルダー (LED付き)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "ルーフランプ ホルダー AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "ルーフランプ ホルダー AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "ルーフランプ ホルダー CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "ルーフランプ ホルダー HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "ルーフランプ ホルダー HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "ルーフランプ ホルダー HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "ルーフランプ ホルダー MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "ルーフランプ ホルダー MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "ルーフランプ ホルダー TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "ルーフランプ ホルダー TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "ルーフランプ ホルダー VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "サイドバー" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "サイドバー (LED付き)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "ステンレススチール" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "サンバイザー" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS Schoch キャップ" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS Schoch マグカップ" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS Schoch 紙コップ" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS Schoch ペナント" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.

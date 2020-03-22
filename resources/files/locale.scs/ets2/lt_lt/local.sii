@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Didžioji žvaigždė" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Bull Catcher MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Bull Catcher MAXI (papildomi LED)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Bull Catcher MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Bull Catcher MEGA (papildomi LED)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Bull Catcher MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Bull Catcher MIDI (papildomi LED)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Bull Catcher MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Bull Catcher MINI (papildomi LED)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Bull Catcher STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Rėmas priekyje" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Rėmas priekyje II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Apsauginis rėmas K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Priekinių lempų laikiklis" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Priekinių lempų laikiklis II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Priekinių lempų laikiklis City" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Priekinių lempų laikiklis Classic" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Priekinių lempų laikiklis Tailor" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Stogo lempų laikiklis" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Stogo lempų laikiklis II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Stogo lempų laikiklis III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Stogo lempų laikiklis (papildomi LED)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Stogo lempų laikiklis Aero Visor" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Stogo lempų laikiklis Aero Top" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Stogo lempų laikiklis Crossbar" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Stogo lempų laikiklis Hydra" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Stogo lempų laikiklis Hydra Max" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Stogo lempų laikiklis Hydra Top" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Stogo lempų laikiklis Max" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Stogo lempų laikiklis Mega" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Stogo lempų laikiklis Top" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Stogo lempų laikiklis Top II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Stogo lempų laikiklis Visor Bar" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Šoninė juosta" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Šoninė juosta (Papildomi LED)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Nerūdijantis plienas" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Skydelis nuo saulės" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS Schoch Kepuraitė" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS Schoch Puodelis" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS Schoch Popierinis puodelis" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS Schoch Vėliavėlė" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.

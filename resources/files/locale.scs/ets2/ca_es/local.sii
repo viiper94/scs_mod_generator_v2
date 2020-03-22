@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -2438,7 +2444,7 @@ localization_db : .localization
 	val[]: "Volum general" #+ Slider controlling master volume.
 
 	key[]: "sound_volume"
-	val[]: "Volums dels efectes" #+ Slider controlling volume of the sound effects.
+	val[]: "Volum dels efectes" #+ Slider controlling volume of the sound effects.
 
 	key[]: "music_volume"
 	val[]: "Volum de la música" #+ Slider controlling volume of the music effects.
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Gran estrella" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Para-cops MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Para-cops MAXI (amb LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Para-cops MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Para-cops MEGA (amb LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Para-cops MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Para-cops MIDI (amb LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Para-cops MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Para-cops MINI (amb LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Para-cops STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Barra para-xocs" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Barra para-xocs II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Barra para-xocs K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Suport per a llums frontals" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Suport per a llums frontals II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Suport per a llums frontals CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Suport per a llums frontals CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Suport per a llums frontals TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Suport per a llums del sostre" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Suport per a llums del sostre II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Suport per a llums del sostre III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Suport per a llums del sostre (amb LEDs)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Suport per a llums del sostre AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Suport per a llums del sostre AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Suport per a llums del sostre CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Suport per a llums del sostre HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Suport per a llums del sostre HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Suport per a llums del sostre HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Suport per a llums del sostre MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Suport per a llums del sostre MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Suport per a llums del sostre TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Suport per a llums del sostre TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Suport per a llums del sostre VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Barra lateral" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Barra lateral (amb LEDs)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Acer inoxidable" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Para-sol" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS-Schoch Cap" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS-Schoch Mug" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS-Schoch Paper Mug" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS-Schoch Pennant" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.

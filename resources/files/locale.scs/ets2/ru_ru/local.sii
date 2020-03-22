@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -2094,7 +2100,7 @@ localization_db : .localization
 	val[]: "Зарегистрироваться!" #+ Button text
 
 	key[]: "login"
-	val[]: "Логин" #+ Button text
+	val[]: "Войти" #+ Button text
 
 	key[]: "account_password_not_specified"
 	val[]: "Не указан пароль учётной записи."
@@ -6672,10 +6678,10 @@ localization_db : .localization
 #@{
 
 	key[]: "mail_title"
-	val[]: "E-MAIL" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "ПОЧТА" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "mail_link_title"
-	val[]: "E-mail" #+ Icon opening the email. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Почта" #+ Icon opening the email. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "mail_subject"
 	val[]: "Тема" #+ Header of the column containing subjects of the messages.
@@ -6693,7 +6699,7 @@ localization_db : .localization
 	val[]: "Непрочитанных сообщений нет" #+ Shown in message preview panel if no message is selected and no unread message exists.
 
 	key[]: "mail_new_mail"
-	val[]: "Количество непрочитанных сообщений: $COUNT$" #+ Shown in message preview panel if there are unread messages. The $COUNT$ is replaced with number of messages. For example "You have 1 unread message(s)"
+	val[]: "Непрочитанных сообщений: $COUNT$" #+ Shown in message preview panel if there are unread messages. The $COUNT$ is replaced with number of messages. For example "You have 1 unread message(s)"
 #@}
 
 
@@ -9435,7 +9441,7 @@ localization_db : .localization
 # The account was not verified yet.
 
 	key[]: "generic_not_verified"
-	val[]: "Эта учётная запись еще не активирована. На почтовый ящик, указанный Вами при регистрации, отправлено письмо с дальнейшими инструкциями."
+	val[]: "Эта учётная запись ещё не активирована. На адрес эл. почты, указанный Вами при регистрации, отправлено письмо с дальнейшими инструкциями."
 
 # The account was suspended.
 
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Великая звезда" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Bull Catcher MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Bull Catcher MAXI (доп. лампы)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Bull Catcher MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Bull Catcher MEGA (доп. лампы)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Bull Catcher MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Bull Catcher MIDI (доп. лампы)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Bull Catcher MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Bull Catcher MINI (доп. лампы)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Bull Catcher STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Защита бампера" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Защита бампера II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Защита бампера K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Держатель фар" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Держатель фар II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Держатель фар CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Держатель фар CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Держатель фар TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Держатель фар на крышу" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Держатель фар на крышу II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Держатель фар на крышу III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Держатель фар на крышу (доп.огни)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Держатель фар на крышу AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Держатель фар на крышу AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Держатель фар на крышу CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Держатель фар на крышу HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Держатель фар на крышу HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Держатель фар на крышу HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Держатель фар на крышу MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Держатель фар на крышу MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Держатель фар на крышу TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Держатель фар на крышу TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Держатель фар на крышу VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Боковой LED молдинг" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Боковой LED молдинг (доп.огни)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Нержавеющая сталь" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Козырёк" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "Кепка HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "Кружка HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "Картонный стакан HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "Вымпел HS Schoch" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10348,7 +10474,7 @@ localization_db : .localization
 	val[]: "Имя напарника" #+ Shown when editing text on co-driver plate accessory
 
 	key[]: "gamepad_enter_account_name_or_email"
-	val[]: "Логин аккаунта World of Trucks или связанный с ним email" #+ Shown when entering name of WoTr account or associated email
+	val[]: "Логин аккаунта World of Trucks или связанный с ним адрес эл. почты" #+ Shown when entering name of WoTr account or associated email
 
 	key[]: "gamepad_enter_account_password"
 	val[]: "Пароль аккаунта World of Trucks" #+ Shown when entering WoTr password

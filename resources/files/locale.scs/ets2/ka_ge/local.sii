@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -1094,10 +1100,10 @@ localization_db : .localization
 	val[]: "გამოსაბოლქვი"
 
 	key[]: "f_grill"
-	val[]: "დამცავი გისოსი"
+	val[]: "დამცავი ძელი"
 
 	key[]: "bullbar"
-	val[]: "დამცავი გისოსი"
+	val[]: "დამცავი ძელი"
 
 	key[]: "f_mirror"
 	val[]: "წინა სარკე"
@@ -3610,7 +3616,7 @@ localization_db : .localization
 #+ Configuration of extended view options.
 #@{
 	key[]: "eye_extended_view_settings"
-	val[]: "Extended View" #+ Header of the section.
+	val[]: "გაუმჯობესებული ხედვა" #+ Header of the section.
 
 	key[]: "eye_gaze_settings"
 	val[]: "მზერის მიდევნების პარამეტრები" #+ Header of the gaze settings
@@ -3622,7 +3628,7 @@ localization_db : .localization
 	val[]: "კლავიატურის პარამეტრები" #+ Header of keyboard controls
 
 	key[]: "eye_extended_view"
-	val[]: "ჩაირთოს Extended View" #+ Extended View enable checkbox.
+	val[]: "გაუმჯობესებული ხედვის ჩართვა" #+ Extended View enable checkbox.
 
 	key[]: "eye_autocenter"
 	val[]: "შუაში თვითგასწორება" #+ Headtracking autocentering
@@ -3724,10 +3730,10 @@ localization_db : .localization
 	val[]: "რომელ მხარესაც გადახრით თავს, თამაშში კამერაც იმ მხარეს გადაიხრება."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "გაამრავლებს მგრძნობელობას, თავის ერთი მხრიდან მეორისკენ შებრუნებისას."
+	val[]: "მამრავლი მგრძნობელობის, თავის ერთი მხრიდან მეორისკენ შებრუნებისას."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "გაამრავლებს მგრძნობელობას, თავის ზემოთ და ქვემოთ მოძრაობისას."
+	val[]: "მამრავლი მგრძნობელობის, თავის ზემოთ და ქვემოთ მოძრაობისას."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "განსაზღვრავს, რამდენად შორს შეიძლება კამერა მიბრუნდეს, ეკრანის კიდეზე შეხედვისას."
@@ -9223,7 +9229,7 @@ localization_db : .localization
 
 
 	key[]: "intro_1"
-	val[]: "მოგესალმებით Euro Truck Simulator 2-ში!"
+	val[]: "მოგესალმებათ Euro Truck Simulator 2!"
 
 	key[]: "intro_2"
 	val[]: "როგორც იქნა შანსი გაქვთ იმუშაოთ საოცნებო სამსახურში - მართოთ სატვირთო!"
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "დიადი ვარსკვლავი" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "დამცავი გისოსი MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "დამცავი გისოსი MAXI (დამატ. სანათები)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "დამცავი გისოსი MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "დამცავი გისოსი MEGA (დამატ. სანათები)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "დამცავი გისოსი MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "დამცავი გისოსი MIDI (დამატ. სანათები)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "დამცავი გისოსი MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "დამცავი გისოსი MINI (დამატ. სანათები)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "დამცავი გისოსი STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "ქვედა დამცავი ძელი" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "ქვედა დამცავი ძელი II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "ქვედა დამცავი ძელი K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "წინა სანათის დამჭერი" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "წინა სანათის დამჭერი II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "წინა სანათის დამჭერი CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "წინა სანათის დამჭერი CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "წინა სანათის დამჭერი TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "სახურავის სანათის დამჭერი" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "სახურავის სანათის დამჭერი II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "სახურავის სანათის დამჭერი III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "სახურავის სანათის დამჭერი (დამატ. სანათები)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "სახურავის სანათის დამჭერი AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "სახურავის სანათის დამჭერი AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "სახურავის სანათის დამჭერი CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "სახურავის სანათის დამჭერი HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "სახურავის სანათის დამჭერი HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "სახურავის სანათის დამჭერი HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "სახურავის სანათის დამჭერი MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "სახურავის სანათის დამჭერი MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "სახურავის სანათის დამჭერი TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "სახურავის სანათის დამჭერი TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "სახურავის სანათის დამჭერი VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "გვერდითი ძელი" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "გვერდითი ძელი (დამატ. სანათები)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "უჟანგავი ფოლადი" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "მზისგან დამცავი" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "ქუდი HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "კათხა HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "ქაღალდის ჭიქა HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "დროშა HS Schoch" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.

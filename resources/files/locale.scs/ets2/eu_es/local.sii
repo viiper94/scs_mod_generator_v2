@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -852,10 +858,10 @@ localization_db : .localization
 	val[]: "Motorraren potentzia" #+  truck's engine power
 
 	key[]: "truck_analysis_heavy_introduction"
-	val[]: "Karga astuneko lana egiteko zorian zaude. Ziurta ezazu kamioiaren oraingo konfigurazioa lanerako prestatu dagoela." #+  Description in the truck analysis pop-up window when taking heavy cargo job
+	val[]: "Karga astuneko lana egiteko zorian zaude. Ziurta ezazu kamioiaren uneko konfigurazioa lanerako prestatu dagoela." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
 	key[]: "truck_analysis_info_tooltip"
-	val[]: "Given your expected typical type of transportation, tune your truck to optimize it according to a combination of economy of driving, technical and legal limitations." #+  General tooltip description of Truck Analysis feature
+	val[]: "Egin nahi duzun garraio-mota kontuan hartuta, doitu zure kamioia, gidatze ekonomikoaren eta muga tekniko eta legalen konbinazioaren arabera optimizatzeko." #+  General tooltip description of Truck Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Salgai arin eta ertaineko garraiorako optimizatuta" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -867,7 +873,7 @@ localization_db : .localization
 	val[]: "Zure kamioiaren trebetasuna espazio txikietan maniobratzeko" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Optimized truck's power-train for smoother hill climbing and descent" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Kamioiaren motor-trena optimizatua aldapak errazago igotzeko eta jaisteko" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Azal irregular eta malkartsuak gainditzeko gaitasuna" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -1064,10 +1070,10 @@ localization_db : .localization
 	val[]: "$ACC$ ezin da instalatu <color value=@@clr_sel@@>$COUNTRIES$<color value=@@clr_txt@@>-tik kanpoan." #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for configurator country.
 
 	key[]: "trailer_garage_invalid_country"
-	val[]: "Oraingo aukeratutako $ACC$ ezin da erosi oraingo garajean. Trailerra <color value=@@clr_sel@@>$COUNTRIES$<color value=@@clr_txt@@>-n egon behar da." #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for country of trailer's garage.
+	val[]: "Uneko aukeratutako $ACC$ ezin da erosi uneko garajean. Trailerra <color value=@@clr_sel@@>$COUNTRIES$<color value=@@clr_txt@@>-n egon behar da." #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for country of trailer's garage.
 
 	key[]: "trailer_dealer_invalid_country"
-	val[]: "Oraingo aukeratutako $ACC$ ezin da erosi garaje bat <color value=@@clr_sel@@>$COUNTRIES$<color value=@@clr_txt@@>-n eduki gabe." #+ A warning shown when player tries to change trailer chain type or chassis configuration of trailer from dealer to one that's not valid for countries of garages he owns.
+	val[]: "Uneko aukeratutako $ACC$ ezin da erosi garaje bat <color value=@@clr_sel@@>$COUNTRIES$<color value=@@clr_txt@@>-n eduki gabe." #+ A warning shown when player tries to change trailer chain type or chassis configuration of trailer from dealer to one that's not valid for countries of garages he owns.
 
 #+ Various accessory slots or accessory names.
 #@{
@@ -1235,10 +1241,10 @@ localization_db : .localization
 	val[]: "Erdiko Lurzoru Objektuak" #+ Interior accessories placed on the floor in the center of the truck cabin
 
 	key[]: "set_dashbrd"
-	val[]: "Informazio Panel Konfigurazioak" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Aginte-panelerako sorta" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
-	val[]: "Haizetakoak" #+ Large Pin for sets of small pins of the windshield accessories
+	val[]: "Haizetakorako sorta" #+ Large Pin for sets of small pins of the windshield accessories
 
 	key[]: "set_lglass"
 	val[]: "Haizetakoaren izkina" #+ Large Pin for sets of small pins of the corner of windshield
@@ -1349,7 +1355,7 @@ localization_db : .localization
 	val[]: "Ezkerreko leihoaren bandera" #+ Left window flag
 
 	key[]: "c_grill"
-	val[]: "Aurreko parrilaren babeslea" #+ Steeled tubular bars that attached on the front of the cabin, usually above bullbars
+	val[]: "Aurreko parrilaren babesa" #+ Steeled tubular bars that attached on the front of the cabin, usually above bullbars
 
 	key[]: "f_inlay_cab"
 	val[]: "Aurreko parrila" #+ Front grille net located in spaces on the front truck's mask. Serves to cover truck's radiator
@@ -1367,7 +1373,7 @@ localization_db : .localization
 	val[]: "Haizetakoaren markoa" #+ The plate under truck windshield (where wipers are installed).
 
 	key[]: "s_guard"
-	val[]: "Haizetakoaren babeslea" #+ Protective grille-like element placed outside infront, at the bottom of the truck's windshield
+	val[]: "Haizetakoaren babesa" #+ Protective grille-like element placed outside infront, at the bottom of the truck's windshield
 
 	key[]: "s_panel"
 	val[]: "Alboko panela" #+ Panel on side window
@@ -1385,7 +1391,7 @@ localization_db : .localization
 	val[]: "Lehio-apaingarria" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
 
 	key[]: "intlight_bck"
-	val[]: "Light Board" #+ A board with LED lights shaped in various truck motives, placed inside truck's interior rear wall.
+	val[]: "Taula argiduna" #+ A board with LED lights shaped in various truck motives, placed inside truck's interior rear wall.
 
 	key[]: "exhaust_m"
 	val[]: "Atzeko ihes-hodia" #+ An open exhaust behind truck's cab. Usully one or two large vertical steel or chromed exhaust tubes.
@@ -1451,13 +1457,13 @@ localization_db : .localization
 	val[]: "Atera" #+ Icon allowing player to quit the game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "wanna_quit"
-	val[]: "Zure progresioa automatikoki gordeko da.<br><br>Zihur zaude itxi nahi duzula?"
+	val[]: "Zure aurrerapena automatikoki gordeko da.<br><br>Ziur zaude jokoa itxi nahi duzula?"
 
 	key[]: "change_profile_t"
 	val[]: "PROFILA ALDATU" #+ Title of message box shown before really leaving profile to profile selection. Please keep in upper case where possible.
 
 	key[]: "wanna_change_profile"
-	val[]: "Ziur zaude profila hutsi nahi duzula? <br><br>Zure progresioa automatikoki gordeko da."
+	val[]: "Ziur zaude profila utzi nahi duzula? <br><br> Zure aurrerapena automatikoki gordeko da."
 
 
 	key[]: "back"
@@ -1529,10 +1535,10 @@ localization_db : .localization
 	val[]: "Partida kargatu" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "load_game_desc"
-	val[]: "Lehenago gordetako partida kargatu. Bestelako progresioa galduko da!" #+ Help message associated with load game icon.
+	val[]: "Lehenago gordetako partida bat kargatu. Uneko aurrerapena galduko da!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
-	val[]: "Ziur zaude beste partida kargatu nahi duzula?<br><br>Gorde gabeko progresioa galduko da."
+	val[]: "Ziur zaude beste partida bat kargatu nahi duzula?<br><br>Gorde gabeko aurrerapena galduko da."
 
 	key[]: "autosave"
 	val[]: "- Auto-Gordetzea - " #+ Name used inside slot corresponding to automatically saved game.
@@ -1589,7 +1595,7 @@ localization_db : .localization
 	val[]: "Partida gorde" #+ Icon allowing player to save game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_desc"
-	val[]: "Progresioa gorde."  #+ Help message associated with save game icon.
+	val[]: "Jokoaren uneko aurrerapena gorde."  #+ Help message associated with save game icon.
 
 	key[]: "new_save_game"
 	val[]: "- Gordeleku berria -" #+ Name of save slot which create a new save file.
@@ -1713,7 +1719,7 @@ localization_db : .localization
 #@{
 
 	key[]: "validity"
-	val[]: "Eskaintza amaitzen da:" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
+	val[]: "Eskaintza amaituko da:" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
 
 	key[]: "expected_on"
 	val[]: "Espero da" #+ For example "Expected Sat 12:53 - Sat 19:33"
@@ -1758,7 +1764,7 @@ localization_db : .localization
 	val[]: "Entrega bat duzu bukatu gabe! Beste bat hasi baino lehen entrega hori bukatu behar duzu." #+ Shown in message box when tried to take a job while another one in progress.
 
 	key[]: "view_current_job"
-	val[]: "Ikusi oraingo lana" #+ The text shown on button opening current job screen.
+	val[]: "Ikusi uneko lana" #+ The text shown on button opening current job screen.
 #@}
 
 #+ Route info box.
@@ -1873,7 +1879,7 @@ localization_db : .localization
 	val[]: "Plataformak"
 
 	key[]: "cargo_type_lowbed"
-	val[]: "Lowbeds"
+	val[]: "Behe-zoruak"
 
 	key[]: "cargo_type_inloader"
 	val[]: "Inloaders"
@@ -1891,10 +1897,10 @@ localization_db : .localization
 	val[]: "Obrak"
 
 	key[]: "cargo_type_bulk"
-	val[]: "Bulk Carriers"
+	val[]: "Solteko garraioa"
 
 	key[]: "cargo_type_oversize"
-	val[]: "Garraio Berezia"
+	val[]: "Garraio berezia"
 
 	key[]: "cargo_type_highvalue"
 	val[]: "Balio handia"
@@ -2015,13 +2021,13 @@ localization_db : .localization
 	val[]: "Irudia" #+ Label of combo box used to select picture of the driver.
 
 	key[]: "profile_fav_brand"
-	val[]: "Gustukuen kamioi diseinua" #+ Label of combo box used to select favorite truck brand.
+	val[]: "Gustukoen kamioi-diseinua" #+ Label of combo box used to select favorite truck brand.
 
 	key[]: "profile_logo"
 	val[]: "Konpainiaren logoa" #+ Label of combo box used to select company logo.
 
 	key[]: "profile_company_name"
-	val[]: "Konpainia izena" #+ Label of edit box used to enter name of the company.
+	val[]: "Konpainiaren izena" #+ Label of edit box used to enter name of the company.
 
 	key[]: "profile_map_name"
 	val[]: "Jokatutako lekua" #+ Label of edit box used to select game map.
@@ -2079,19 +2085,19 @@ localization_db : .localization
 	val[]: "Online kontua" #+ Title for online account info in profile edit screen
 
 	key[]: "acc_name"
-	val[]: "Kontu Izena/Email:"
+	val[]: "Kontuaren izena/E-mail"
 
 	key[]: "passwd"
 	val[]: "Pasahitza"
 
 	key[]: "remember_psswd"
-	val[]: "Pasahitza Gogoratu"
+	val[]: "Pasahitza gogoratu"
 
 	key[]: "show_psswd"
-	val[]: "Pasahitza azaldu" #+ Checkbox which makes content of the password entry field visible while entering a new password.
+	val[]: "Pasahitza erakutsi" #+ Checkbox which makes content of the password entry field visible while entering a new password.
 
 	key[]: "register"
-	val[]: "Registratu orain!" #+ Button text
+	val[]: "Erregistratu orain!" #+ Button text
 
 	key[]: "login"
 	val[]: "Sartu" #+ Button text
@@ -2147,7 +2153,7 @@ localization_db : .localization
 	val[]: "ZURE SEDEA" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "hq_msg"
-	val[]: "Hasi nahi duzun hiria aukeratu."
+	val[]: "Aukeratu zein hiritan hasi nahi duzun."
 
 
 	key[]: "hq_t"
@@ -2365,10 +2371,10 @@ localization_db : .localization
 	val[]: "Musika altuegi dago? Jaitzi bolumena edo bestelako soinuak doitu soinu doiketetan."
 
 	key[]: "help_gameplay"
-	val[]: "Jokoaren doiketak. Aldatu zure esperientzia hobe ditzaketen hainbat gauza txiki."
+	val[]: "Jokoaren doikuntzak. Aldatu zure esperientzia hobe ditzaketen hainbat gauza txiki."
 
 	key[]: "help_keyboard"
-	val[]: "Assign game actions to the keys or buttons of your choice."
+	val[]: "Esleitu joko-ekintzak zuk aukeratutako teklei edo botoiei."
 
 	key[]: "help_controller"
 	val[]: "Bestelako kontroladorearik? Gamepad, Joystick, Bolantea? Zihurtatu ongi doiturik dagoela."
@@ -2383,7 +2389,7 @@ localization_db : .localization
 	val[]: "DOIKETEN LABURPENA" #+ Title of the window.
 
 	key[]: "options"
-	val[]: "Doiketak" #+ Icon opening the options window.
+	val[]: "Doikuntzak" #+ Icon opening the options window.
 #@}
 
 #+ Combo box choices used for various option parameters.
@@ -2480,7 +2486,7 @@ localization_db : .localization
 	val[]: "Ahotsa" #+ The voice report is used as speed warning.
 
 	key[]: "advanced_audio_t"
-	val[]: "BESTE SOINU DOIKETAK" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
+	val[]: "BESTE SOINU-DOIKUNTZAK" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
 	key[]: "reverse_stereo"
 	val[]: "Alderantzizko estereoa" #+ Checkbox flipping left and right loudspeaker.
@@ -2525,16 +2531,16 @@ localization_db : .localization
 	val[]: "seg" #+ Abbreviated form of seconds used for the fadeout delay suffix
 
 	key[]: "game_settings"
-	val[]: "JOKO-DOIKETAK"
+	val[]: "JOKO-DOIKUNTZAK"
 
 	key[]: "truck_settings"
-	val[]: "KAMIOI-DOIKETAK"
+	val[]: "KAMIOI-DOIKUNTZAK"
 
  	key[]: "camera_settings"
-	val[]: "KAMERA-DOIKETAK"
+	val[]: "KAMERA-DOIKUNTZAK"
 
 	key[]: "regional_settings"
-	val[]: "DOIKETA LOKALAK"
+	val[]: "ESKUALDEKO DOIKUNTZAK"
 
 	key[]: "language"
 	val[]: "Hizkuntza" #+ Language selection combo box.
@@ -2543,7 +2549,7 @@ localization_db : .localization
 #@{
 
 	key[]: "trans_type"
-	val[]: "Transmisio mota" #+ Combo box for selection of type of transmission.
+	val[]: "Transmisio-mota" #+ Combo box for selection of type of transmission.
 
 	key[]: "simple"
 	val[]: "Automatiko Sinplea" #+ Arcade like transmission. Pres forward to drive forward, press backward to drive backward.
@@ -2674,7 +2680,7 @@ localization_db : .localization
 #+ Adviser speed limit visualization
 #@{
 	key[]: "adviser_speed_limit"
-	val[]: "Nabigatzailearen abiadura-muga" #+ Droplist for selection mode of speed limit visualization.
+	val[]: "Ibilbide-aholkulariaren abiadura-muga" #+ Droplist for selection mode of speed limit visualization.
 
 	key[]: "hide"
 	val[]: "Ezkutatu" #+ Hide speed limit display on the advisor.
@@ -2686,7 +2692,7 @@ localization_db : .localization
 	val[]: "Autoen muga erakutsi" #+ Show speed limits for ordinary cars on the advisor.
 
 	key[]: "adviser_speed_warning"
-	val[]: "Nabigatzailearen abiadura-abisua" #+ Checkbox enabling speeding warning
+	val[]: "Ibilbide-aholkulariaren abiadura-abisua" #+ Checkbox enabling speeding warning
 #@}
 
 #+ Map alignment modes
@@ -2710,7 +2716,7 @@ localization_db : .localization
 	val[]: "Erakutsi nabigazioa" #+ Droplist for selection mode of GPS navigation visualization.
 
 	key[]: "navi_never"
-	val[]: "Inoiz Ez" #+ Hide navigation on all maps.
+	val[]: "Inoiz ez" #+ Hide navigation on all maps.
 
 	key[]: "navi_job"
 	val[]: "Lan mapa soilik" #+ Show navigation only on job selection map.
@@ -2778,7 +2784,7 @@ localization_db : .localization
 	val[]: "Aparkamendu automatikoko leihoa" #+ Checkbox enabling autoparking trigger.
 
 	key[]: "adviser_keep_hidden"
-	val[]: "Keep Route Advisor hidden" #+ Checkbox forcing hidden RA to stay hidden (no popups).
+	val[]: "Ibilbide-aholkularia ezkutua eutsi" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
 	val[]: "Karga astuneko ohar leihoa" #+ Heavy cargo warning screen pop up upon job selection.
@@ -2790,7 +2796,7 @@ localization_db : .localization
 	val[]: "Direkzioaren auto-zentratzea (teklatu nahiz gamepad bakarrik)" #+ Checkbox enabling automatic centering of in game driving wheel.
 
 	key[]: "brake_intensity"
-	val[]: "Balaztatze indarra" #+ Slider for player modification of braking force.
+	val[]: "Balaztatzearen intentsitatea" #+ Slider for player modification of braking force.
 
 	key[]: "truck_stability"
 	val[]: "Kamioiaren egonkortasuna" #+ Slider for player modification of truckstability (COG position).
@@ -2838,7 +2844,7 @@ localization_db : .localization
 	val[]: "Motor eta elektronikaren hasiera automatikoa" #+ Checkbox for automatic engine/electricity start by throttle.
 
 	key[]: "auto_park_brake"
-	val[]: "Automatic parking brake engage" #+ Checkbox for automatic parking brake.
+	val[]: "Esku-balaztaren jartze automatikoa" #+ Checkbox for automatic parking brake.
 
 	key[]: "auto_drop_axles"
 	val[]: "Gurpil toleskor automatikoak" #+ Checkbox for automatic axle dropping of liftable axles.
@@ -2859,7 +2865,7 @@ localization_db : .localization
 	val[]: "Abiadura kontrol adimenduna" #+ Smart cruise control setting.
 
 	key[]: "tolerance"
-	val[]: "Tolerantzia" #+ Speed tolerance for smart cruise control.
+	val[]: "Perdoia" #+ Speed tolerance for smart cruise control.
 
 	key[]: "blinker_auto_off"
 	val[]: "Keinukariaren itzaltze automatikoa" #+ Checkbox for enabling of automatic blinker turning off.
@@ -2877,7 +2883,7 @@ localization_db : .localization
 	val[]: "Irudi Dinamikoak" #+ Checkbox enabling use of online loading screens.
 
 	key[]: "mouse_invert"
-	val[]: "Arratoia alderantzizkatu" #+ Checkbox enabling inversion of the mouse.
+	val[]: "Sagua alderantzikatu" #+ Checkbox enabling inversion of the mouse.
 
 	key[]: "show_cutscenes"
 	val[]: "Eszenak azaldu" #+ Checkbox for enabling/disabling game cutscenes (e.g. garage/truck purchase/upgrade)
@@ -2906,19 +2912,19 @@ localization_db : .localization
 #+ Parking difficulty droplist
 #@{
 	key[]: "trailer_parking_difficulty"
-	val[]: "Aparkaleku Zailtasuna" #+ Droplist for parking difficulty selection
+	val[]: "Aparkamenduaren zailtasuna" #+ Droplist for parking difficulty selection
 
 	key[]: "trailer_parking_diff_dialog"
 	val[]: "Beti aukeratu" #+ Manual selection option
 
 	key[]: "trailer_parking_diff_easy"
-	val[]: "Aparkaleku segurua" #+ Low difficulty parking option
+	val[]: "Aparkamendu segurua" #+ Low difficulty parking option
 
 	key[]: "trailer_parking_diff_hard"
-	val[]: "Aparkaleku trebea" #+ High difficulty parking option
+	val[]: "Aparkamendu trebea" #+ High difficulty parking option
 
 	key[]: "trailer_parking_diff_random"
-	val[]: "Ausazko aparkalekua" #+ Random difficulty parking options
+	val[]: "Ausazko aparkamendua" #+ Random difficulty parking options
 #@}
 
 #@}
@@ -2988,40 +2994,40 @@ localization_db : .localization
 	val[]: "Balazta / Atzerako martxa"
 
 	key[]: "o_im_left"
-	val[]: "Direkzioa Ezkerrera" #+ Rotates wheel to the left.
+	val[]: "Ezkerretara biratu" #+ Rotates wheel to the left.
 
 	key[]: "o_im_right"
-	val[]: "Direkzioa Eskuinera" #+ Rotates wheel to the right.
+	val[]: "Eskuinetara biratu" #+ Rotates wheel to the right.
 
 	key[]: "o_im_look_left"
-	val[]: "Ezkerrera Begiratu" #+ Rotates view to the left.
+	val[]: "Ezkerrera begiratu" #+ Rotates view to the left.
 
 	key[]: "o_im_look_right"
-	val[]: "Eskuinera Begiratu" #+ Rotates view to the right.
+	val[]: "Eskuinera begiratu" #+ Rotates view to the right.
 
 	key[]: "o_im_gear_up"
-	val[]: "Martxa Gora" #+ Shifts to higher gear for automatic or sequential transmission
+	val[]: "Martxa igo" #+ Shifts to higher gear for automatic or sequential transmission
 
 	key[]: "o_im_gear_down"
-	val[]: "Martxa Bera" #+ Shifts to lower gear for automatic or sequential transmission
+	val[]: "Martxa jaitsi" #+ Shifts to lower gear for automatic or sequential transmission
 
 	key[]: "o_im_gear_neutral"
 	val[]: "Neutrora aldatu" #+ Shifts to neutral gear for automatic or sequential transmission
 
 	key[]: "o_im_gear_up_hint"
-	val[]: "Martxa Gora Abisoa" #+ Shift hint for automatic transmission
+	val[]: "Martxa igoteko iradokizuna" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_gear_down_hint"
 	val[]: "Martxa Bera Abisoa" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_trans_semi_switch"
-	val[]: "Transmisio Automatiko/Sekuentzial Aldatzailea" #+ Switch between real automatic and sequential transmissions
+	val[]: "Transmisio automatikoa / sekuentziala aldatu" #+ Switch between real automatic and sequential transmissions
 
 	key[]: "o_im_engine"
-	val[]: "Motorra Piztu/Itzali"
+	val[]: "Motorra piztu / itzali"
 
 	key[]: "o_im_engine_electricity"
-	val[]: "Start/Stop Engine Electricity"
+	val[]: "Motorraren elektrizitatea piztu / itzali"
 
 	key[]: "o_im_parkingbrake"
 	val[]: "Esku-balazta"
@@ -3030,7 +3036,7 @@ localization_db : .localization
 	val[]: "Motor-balazta"
 
 	key[]: "o_im_engine_brake_tgl"
-	val[]: "Engine Brake Toggle"
+	val[]: "Motor-balazta kommutatu"
 
 	key[]: "o_im_engine_brake_up"
 	val[]: "Motor-balazta handitu"
@@ -3042,10 +3048,10 @@ localization_db : .localization
 	val[]: "Trailerraren balazta"
 
 	key[]: "o_im_retarder_up"
-	val[]: "Handitu Retarder-a"
+	val[]: "Retarder-a handitu"
 
 	key[]: "o_im_retarder_down"
-	val[]: "Txikitu Retarder-a"
+	val[]: "Retarder-a gutxitu"
 
 	key[]: "o_im_lift_axle"
 	val[]: "Ardatza altxatu / jaitsi"
@@ -3057,22 +3063,22 @@ localization_db : .localization
 	val[]: "Diferentzialaren blokeoa"
 
 	key[]: "o_im_attach"
-	val[]: "Trailerra Lotu/Askatu"
+	val[]: "Trailerra krokatu / askatu"
 
 	key[]: "o_im_lblinker"
-	val[]: "Ezker Keinukaria"
+	val[]: "Ezkerreko keinukaria"
 
 	key[]: "o_im_rblinker"
-	val[]: "Eskuin Keinukaria"
+	val[]: "Eskuineko keinukaria"
 
 	key[]: "o_im_4wflasher"
-	val[]: "Oharpen Keinukariak"
+	val[]: "Larrialdiko keinukariak"
 
 	key[]: "o_im_lights"
-	val[]: "Argi Moduak"
+	val[]: "Argi moduak"
 
 	key[]: "o_im_hb_light"
-	val[]: "Goiko Argi Luzeak"
+	val[]: "Argi luzeak"
 
 	key[]: "o_im_beacon"
 	val[]: "Faroa"
@@ -3084,7 +3090,7 @@ localization_db : .localization
 	val[]: "Klaxona"
 
 	key[]: "o_im_air_horn"
-	val[]: "Aire klaxona"
+	val[]: "Aire-klaxona"
 
 	key[]: "o_im_wipers"
 	val[]: "Haizetako-garbigailuak"
@@ -3096,19 +3102,19 @@ localization_db : .localization
 	val[]: "Abiadura kontrola"
 
 	key[]: "o_im_cruise_ctrl_inc"
-	val[]: "Abiadura Kontrola Azkartu"
+	val[]: "Abiadura kontrola azkartu"
 
 	key[]: "o_im_cruise_ctrl_dec"
-	val[]: "Abiadura Kontrola Moteldu"
+	val[]: "Abiadura kontrola moteldu"
 
 	key[]: "o_im_cruise_ctrl_resume"
-	val[]: "Abiadura Kontrol Hasi"
+	val[]: "Abiadura kontrola berriz hasi"
 
 	key[]: "o_im_quick_save"
-	val[]: "Gordetze Azkarra"
+	val[]: "Gordetze azkarra"
 
 	key[]: "o_im_quick_load"
-	val[]: "Karga Azkarra"
+	val[]: "Karga azkarra"
 
 	key[]: "o_im_radio"
 	val[]: "Audio-erreproduzitzailea"
@@ -3126,13 +3132,13 @@ localization_db : .localization
 	val[]: "Audio-erreproduzitzailearen bolumena jaitsi"
 
 	key[]: "o_im_display"
-	val[]: "Aginte Mahaiaren Modua"
+	val[]: "Aginte-mahaiaren modua"
 
 	key[]: "o_im_trip_reset"
-	val[]: "Barne-Panelaren Informazioa Berrabiatu"
+	val[]: "Aginte-mahaiaren bidaia-informazioa berrabiatu"
 
 	key[]: "o_im_dashboard_map"
-	val[]: "Barne-Nabigatzailearen Mapa Mota"
+	val[]: "Aginte-mahaiaren maparen modua"
 
 	key[]: "o_im_activate"
 	val[]: "Aktibatu" #+ Context action for activation. For example sleep, refuel....
@@ -3142,10 +3148,10 @@ localization_db : .localization
 # hud
 
 	key[]: "o_im_show_mirrors"
-	val[]: "Erakutsi/Izkutatu pantailako Albo Ispiluak"
+	val[]: "Alboko ispiluak pantailan erakutsi / ezkutatu"
 
 	key[]: "o_im_show_hud"
-	val[]: "Nabigatzailearen Moduak"
+	val[]: "Ibilbide-aholkulariaren moduak"
 
 	key[]: "o_im_nav_map"
 	val[]: "Munduko mapa" #+ Opens the world map from game.
@@ -3154,28 +3160,28 @@ localization_db : .localization
 	val[]: "Garaje-kudeatzailea" #+ Opens the garage manager from game.
 
 	key[]: "o_im_adviser_cursor"
-	val[]: "Nabigatzailearen Arratoi Kontrola"
+	val[]: "Ibilbide-aholkularia saguarekin kontrolatu"
 
 	key[]: "o_im_adjuster"
-	val[]: "Kamioi Doiketak"
+	val[]: "Kamioi-doikuntzak"
 
 	key[]: "o_im_adviser_page0"
-	val[]: "Nabigatzailearen Bidai Orrialdea"
+	val[]: "Ibilbide-aholkulariaren nabigazio-orrialdea"
 
 	key[]: "o_im_adviser_page1"
-	val[]: "Nabigatzailearen Lan Info Orrialdea"
+	val[]: "Ibilbide-aholkulariaren lanaren informazio-orrialdea"
 
 	key[]: "o_im_adviser_page2"
-	val[]: "Nabigatzailearen Diagnostiko Orrialdea"
+	val[]: "Ibilbide-aholkulariaren diagnostiko-orrialdea"
 
 	key[]: "o_im_adviser_page3"
-	val[]: "Nagibatzailearen Info Orrialdea"
+	val[]: "Ibilbide-aholkulariaren informazio-orrialdea"
 
 	key[]: "o_im_adviser_next"
-	val[]: "Nabigatzailearen Hurrengo Orrialdea"
+	val[]: "Ibilbide-aholkulariaren hurrengo orrialdea"
 
 	key[]: "o_im_adviser_prev"
-	val[]: "Nabigatzailearen Aurreko Orrialdea"
+	val[]: "Ibilbide-aholkulariaren aurreko orrialdea"
 
 #assistant
 
@@ -3196,28 +3202,28 @@ localization_db : .localization
 #camera
 
 	key[]: "o_im_camera_cycle"
-	val[]: "Hurrengo Kamera"
+	val[]: "Hurrengo kamera"
 
 	key[]: "o_im_insidecam"
-	val[]: "Barne-Kamera"
+	val[]: "Barnealdeko kamera"
 
 	key[]: "o_im_uppercam"
-	val[]: "Sabai Kamera"
+	val[]: "Sabaiko kamera"
 
 	key[]: "o_im_bumpercam"
 	val[]: "Kolpe-leungailuko kamera"
 
 	key[]: "o_im_wheelcam"
-	val[]: "Gurpilaren Gaineko Kamera"
+	val[]: "Gurpilaren kamera"
 
 	key[]: "o_im_topcam"
-	val[]: "Goitik Beherako Kamera"
+	val[]: "Goitik beherako kamera"
 
 	key[]: "o_im_tvcam"
-	val[]: "TV Kamera"
+	val[]: "Telebista-kamera"
 
 	key[]: "o_im_freecam"
-	val[]: "Atzetiko Kamera"
+	val[]: "Atzetiko kamera"
 
 	key[]: "o_im_wincam"
 	val[]: "Lehiotik Ateratzeko Kamera"
@@ -3232,23 +3238,23 @@ localization_db : .localization
 	val[]: "Pause Extended View (experimental)"
 
 	key[]: "o_im_cam_rotate"
-	val[]: "Kamera biratu (Arratoiarekin)" #+ Enables camera look mode when mouse steering is active.
+	val[]: "Kamera biratu (saguarekin)" #+ Enables camera look mode when mouse steering is active.
 
 	key[]: "o_im_cam_zoom"
-	val[]: "Barnealdeko kamera zooma" #+ When hold zoom interior camera in current direction.
+	val[]: "Barnealdeko kameraren zooma" #+ When hold zoom interior camera in current direction.
 
 	key[]: "o_im_look_steer_mode"
-	val[]: "Direzioaren araberako Kamera Rotazioa" #+ Toggles enabled state of camera rotation based on steering angle.
+	val[]: "Direkzioaren araberako kameraren errotazioa" #+ Toggles enabled state of camera rotation based on steering angle.
 
 	key[]: "o_im_look_blink_mode"
-	val[]: "Norabide Argien araberako Kamera Rotazioa" #+ Toggles enabled state of camera rotation based on blinker activation.
+	val[]: "Keinukariaren araberako kameraren errotazioa" #+ Toggles enabled state of camera rotation based on blinker activation.
 
 
 #+ Rotates the interior camera to predefined position.
 #@{
 
 	key[]: "o_im_look_preset_1"
-	val[]: "Barruan Aurrera begiratu"
+	val[]: "Barruan aurrera begiratu"
 
 	key[]: "o_im_look_preset_2"
 	val[]: "Barruan Gora eta Eskuinera begiratu"
@@ -3257,10 +3263,10 @@ localization_db : .localization
 	val[]: "Barruan Gora eta Ezkerrera begiratu"
 
 	key[]: "o_im_look_preset_4"
-	val[]: "Barruan Eskuinera begiratu"
+	val[]: "Barruan eskuinera begiratu"
 
 	key[]: "o_im_look_preset_5"
-	val[]: "Barruan Ezkerrera Begiratu"
+	val[]: "Barruan ezkerrera begiratu"
 
 	key[]: "o_im_look_preset_6"
 	val[]: "Barruan Gora eta Erdira begiratu"
@@ -3289,10 +3295,10 @@ localization_db : .localization
 	val[]: "Teklatua" #+ Keyboard used in combination with another input device. For example "Keyboard + Logitech ...."
 
 	key[]: "mouse"
-	val[]: "Arratoi Direkzioa" #+ Mouse based steering. For example "Keyboard + Mouse Steering".
+	val[]: "Direkzioa saguarekin" #+ Mouse based steering. For example "Keyboard + Mouse Steering".
 
 	key[]: "mouse_full"
-	val[]: "Arratoi Direkzioa pedalekin batera" #+ Mouse based steering and pedals. For example "Keyboard + Mouse Steering including pedals".
+	val[]: "Direkzioa saguarekin, pedaleak barne" #+ Mouse based steering and pedals. For example "Keyboard + Mouse Steering including pedals".
 
 	key[]: "none"
 	val[]: "Ezein" #+ Used to indicate that nothing was selected in controller slot "+ None"
@@ -3411,13 +3417,13 @@ localization_db : .localization
 	val[]: "Normala" #+ Normal orientation of axis. Increasing value of axis in <-1;1> range increases controlled value.
 
 	key[]: "ax_mode_inv"
-	val[]: "Alderantzizkatua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;1> range increases controlled value.
+	val[]: "Alderantzikatua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;1> range increases controlled value.
 
 	key[]: "ax_mode_cent"
 	val[]: "Zentratua" #+ Normal orientation of axis. Increasing value of axis in <0;1> increases controlled value.
 
 	key[]: "ax_mode_inv_cent"
-	val[]: "Alderantzizkoa + zentratua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;0> range increases controlled value.
+	val[]: "Alderantzikatua + zentratua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;0> range increases controlled value.
 #@}
 
 
@@ -3495,7 +3501,7 @@ localization_db : .localization
 #@{
 
 	key[]: "hshift_split_none"
-	val[]: "Inoiz Ez"
+	val[]: "Inoiz ez"
 
 	key[]: "hshift_split_clutch"
 	val[]: "Clutch press"
@@ -3574,7 +3580,7 @@ localization_db : .localization
 #+ Misc configuration of periperies.
 #@{
 	key[]: "misc_category_controller"
-	val[]: "Miscellaneous" #+ Header of the section.
+	val[]: "Askotarikoa" #+ Header of the section.
 
 	key[]: "color_feedback"
 	val[]: "Color feedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
@@ -3592,7 +3598,7 @@ localization_db : .localization
 	val[]: "Eye tracking (no HW detected)" #+ Eye tracking enable checkbox if no eye compatible eye tracking HW is detected
 
 	key[]: "eye_configure"
-	val[]: "Configure" #+ Eye tracking configuration button
+	val[]: "Konfiguratu" #+ Eye tracking configuration button
 
 	key[]: "visit_tobii"
 	val[]: "Visit Tobii Gaming" #+ Link to tobii gaming related page
@@ -3834,21 +3840,21 @@ localization_db : .localization
 
 
 	key[]: "simple_graphical_settings_t"
-	val[]: "DOIKETA GRAFIKO SINPLEAK" #+ Header of section containing a simple selection between Low/Medium/High/Ultra quality preset.
+	val[]: "DOIKUNTZA GRAFIKO ERRAZAK" #+ Header of section containing a simple selection between Low/Medium/High/Ultra quality preset.
 
 	key[]: "custom_settings_applied_t"
 	val[]: "DOIKETA PROPIOAK APLIKATUAK" #+ Shown if the simple settings section if the current configuration does not correspond to any known preset.
 
 
 	key[]: "adv_graphical_settings_t"
-	val[]: "DOIKETA GRAFIKO AURRERATUAK" #+ Header of section containing all configuration options.
+	val[]: "DOIKUNTZA GRAFIKO AURRERATUAK" #+ Header of section containing all configuration options.
 
 
 	key[]: "simple_settings"
-	val[]: "Doiketa sinpleak" #+ Button used to switch the screen to the simple mode.
+	val[]: "Doikuntza errazak" #+ Button used to switch the screen to the simple mode.
 
 	key[]: "adv_settings"
-	val[]: "Doiketa aurreratuak" #+ Button used to switch the screen to the advanced mode.
+	val[]: "Doikuntza aurreratuak" #+ Button used to switch the screen to the advanced mode.
 
 
 	key[]: "scaling"
@@ -3900,7 +3906,7 @@ localization_db : .localization
 	val[]: "Textura kalitatea" #+ Combo box selecting quality of textures.
 
 	key[]: "anisotrop"
-	val[]: "Filtro anisotropikoa" #+ Slider controlling quality of anisotropic filtering applied to textures.
+	val[]: "Iragazki anisotropikoa" #+ Slider controlling quality of anisotropic filtering applied to textures.
 
 	key[]: "normal_maps"
 	val[]: "Ohiko mapak" #+ Slider enabling usage of normal maps on models.
@@ -3919,7 +3925,7 @@ localization_db : .localization
 
 
 	key[]: "gfx_changed"
-	val[]: "Monitorearen doiketak aldatu dira.<br>Horaingo doiketa mantendu nahi duzu?"
+	val[]: "Pantailaren doikuntzak aldatu dira.<br>Doikuntza berriak mantendu nahi dituzu?"
 
 	key[]: "reverting_in"
 	val[]: "Aurrekora bueltatzen" #+ Shown in message box if the user applies some complex settings. Followed by number of seconds before the settings are reverted unless the player confirms the message box. For example "Reverting in 18 seconds."
@@ -4055,7 +4061,7 @@ localization_db : .localization
 	val[]: "Erabiltzaile Giltza"
 
 	key[]: "i_mouse"
-	val[]: "Arratoia"
+	val[]: "Sagua"
 
 	key[]: "i_joy"
 	val[]: "Joystick"
@@ -4340,10 +4346,10 @@ localization_db : .localization
 	val[]: "Garraiolaria" #+ Title for message from your dispatcher. For example "Our customer expects delivery very soon! Make sure you arrive on-time!".
 
 	key[]: "current_job_title"
-	val[]: "Oraingo lana"
+	val[]: "Uneko lana"
 
 	key[]: "assistance_title"
-	val[]: "Asistentzia"
+	val[]: "Laguntza"
 
 	key[]: "job_offer_title"
 	val[]: "Konpainia"
@@ -4367,7 +4373,7 @@ localization_db : .localization
 	val[]: "Kamioi-tailerra"
 
 	key[]: "autopark_title"
-	val[]: "Auto-Aparkatzea" #+ Title for message from automatic parking assistant. For example "To skip parking the trailer and complete the delivery,<br> press (you will lose bonus points) ...."
+	val[]: "Auto-aparkatzea" #+ Title for message from automatic parking assistant. For example "To skip parking the trailer and complete the delivery,<br> press (you will lose bonus points) ...."
 
 	key[]: "ferry_title"
 	val[]: "Ferry"
@@ -4379,7 +4385,7 @@ localization_db : .localization
 	val[]: "Pisu-geltokia"
 
 	key[]: "weigh_cat_title"
-	val[]: "TR Scales"
+	val[]: "TR baskulak"
 
 	key[]: "job_delivery_title"
 	val[]: "Lan Bidaia"
@@ -4415,28 +4421,28 @@ localization_db : .localization
 
 
 	key[]: "wanna_assistance"
-	val[]: "Asistentzia Serbitsua $CITY$-ra eraman ahal dizu zure kamioiarekin batera. $MONEY$-ko kostua izango da eta $TIME$ beharko ditu.<br offset=30>Ados?"
+	val[]: "Laguntza-zerbitzuak $CITY$-ra eraman ahal dizu zure kamioiarekin batera. $MONEY$-ko kostua izango da eta $TIME$ beharko ditu.<br offset=30>Ados zaude?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "Asistentzia Serbitsua $CITY$-ra eraman ahal dizu zure kamioiarekin batera. $MONEY$-ko kostua izango da eta $TIME$ beharko ditu.<br>(Kostua zure nagusiak ordainduko du)<br offset=30>Ados?"
+	val[]: "Laguntza-zerbitzuak $CITY$-ra eraman ahal dizu zure kamioiarekin batera. $MONEY$-ko kostua izango da eta $TIME$ beharko ditu.<br>(Zure nagusiak kostua ordainduko du.)<br offset=30>Ados zaude?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "Asistentzia Serbitsua $CITY$-ra eraman ahal dizu zure kamioiarekin batera. $MONEY$-ko kostua izango da eta $TIME$ beharko ditu.<br offset=30>Zure oraingo entrega bertan behera utziko da.<br offset=30>Ados?"
+	val[]: "Laguntza-zerbitzuak $CITY$-ra eraman ahal dizu zure kamioiarekin batera. $MONEY$-ko kostua izango da eta $TIME$ beharko ditu.<br offset=30>Uneko entrega bertan behera utziko da.<br offset=30>Ados zaude?"
 
 	key[]: "wanna_refuel"
-	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$ and will take $TIME$.<br offset=30>Do you agree?"
+	val[]: "Larrialdiko depositua betetzeko zerbitzuak $VOLUME$ dieselez hornituko zaitu. $MONEY$ kostatuko da eta $TIME$ beharko ditu.<br offset=30>Ados zaude?"
 
 	key[]: "wanna_refuel_quick"
-	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$ and will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Larrialdiko depositua betetzeko zerbitzuak $VOLUME$ dieselez hornituko zaitu. $MONEY$ kostatuko da eta $TIME$ beharko ditu.<br>(Zure nagusiak kostua ordainduko du.)<br offset=30>Ados zaude?"
 
 	key[]: "wanna_refuel_online"
-	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$ and will take $TIME$.<br offset=30>Do you agree?"
+	val[]: "Larrialdiko depositua betetzeko zerbitzuak $VOLUME$ dieselez hornituko zaitu. $MONEY$ kostatuko da eta $TIME$ beharko ditu.<br offset=30>Ados zaude?"
 
 	key[]: "wait_refuel_fade_message"
-	val[]: "You are waiting for Emergency Refueling service."
+	val[]: "Larrialdiko depositua betetzeko zerbitzuaren zain zaude."
 
 	key[]: "full_ctrl_hint"
-	val[]: "Arratoia erabili Nabigatzailea kontrolatzeko"
+	val[]: "Sagua erabili Ibilbide-aholkularia kontrolatzeko"
 
 	key[]: "cancel_job_fademsg"
 	val[]: "Zure kargaz arduratuko den gidari bati itxaroten zabiz."
@@ -4454,7 +4460,7 @@ localization_db : .localization
 	val[]: "Zerbitzuak eta doikuntzak ikusi" #+ The text shown on button opening assistance window containing various assistance services for player.
 
 	key[]: "cancel_current_job"
-	val[]: "Oraingo lana atzera bota"
+	val[]: "Uneko lana bertan behera utzi"
 
 
 	key[]: "visit_service"
@@ -4602,7 +4608,7 @@ localization_db : .localization
 	val[]: "Mesedez, amaitu zure lana $COMPANY$ konpainiarentzat lan egiten hasi baino lehen."
 
 	key[]: "msg_finish_delivery_ind"
-	val[]: "Mesedez, amaitu ezazu oraingo lana zure kabuz joan baino lehen."
+	val[]: "Mesedez, amaitu ezazu uneko lana zure kabuz joan baino lehen."
 
 	key[]: "fuel_paid_by_employer"
 	val[]: "Zure nagusiak erregai-kostuak ordaintzen ditu."
@@ -4688,7 +4694,7 @@ localization_db : .localization
 	val[]: "Aire presio baxua!"
 
 	key[]: "low_air_2"
-	val[]: "Presio baxuak balazta sisteman. Itxaron motor piztuarekin aire presioa handitzen den bitartean."
+	val[]: "Presio baxua balazta-sisteman. Itxaron motor piztuarekin aire-presioa handitzen den bitartean."
 
 	key[]: "axle_lift_fail"
 	val[]: "Gurpilen igoera ezinezkoa. <br>Trailerra pisutsuegia da."
@@ -4728,31 +4734,31 @@ localization_db : .localization
 	val[]: "Eskuineko atea erabili, mesedez." #+ Adviser text
 
 	key[]: "drive_thru_weight"
-	val[]: "Your total weight is $WEIGHT$.<br>You may proceed." #+ Adviser text
+	val[]: "Zure pisua, guztira, $WEIGHT$ da.<br>Segi dezakezu." #+ Adviser text
 
 	key[]: "xray_call"
 	val[]: "Proceed to the X-Ray inspection inside the building ahead through the rightmost gate."
 
 	key[]: "visit_xray"
-	val[]: "Proceed straight ahead into the X-Ray hall."
+	val[]: "Zuzen segi X izpien gelaraino."
 
 	key[]: "control_call"
 	val[]: "Zuzen segi ikuskapena osatzeko."
 
 	key[]: "control_call_1"
-	val[]: "Proceed to the detailed control ahead through the rightmost gate."
+	val[]: "Segi kontrol zehazturaino eskuineko atean zehar."
 
 	key[]: "control_call_2"
-	val[]: "Proceed to the weight check through one of the two rightmost gates."
+	val[]: "Segitu pisu-kontrolaraino eskuineko bi ateetako batean zehar."
 
 	key[]: "stop_inspection"
-	val[]: "Stop at the mark and stop the engine to start the inspection."
+	val[]: "Markan gelditu eta motorra itzali ikuskapena hasteko."
 
 	key[]: "xray_control_passed"
-	val[]: "X-Ray inspection successfully passed.<br>You may continue."
+	val[]: "X izpien kontrola ongi gainditu da.<br>Segi dezakezu."
 
 	key[]: "control_passed"
-	val[]: "Everything is all right.<br>You may continue."
+	val[]: "Dena behar bezala dago.<br>Segi dezakezu."
 
 #@}
 
@@ -4763,7 +4769,7 @@ localization_db : .localization
 	val[]: "Irabazia: $PRICE$ ($DNAME$)"
 
 	key[]: "drv_return_empty_msg"
-	val[]: "$DNAME$ gidariak ezin izan du lanik aurkitu eta hutsik bueltatu da. Bere erregai eta mantenimendu kostuak $PRICE$ dira."
+	val[]: "$DNAME$ gidariak ezin izan du lanik aurkitu eta hutsik bueltatu da. Bere erregai eta mantenimendu kostuak $PRICE$-koak dira"
 
 	key[]: "drv_levelup_msg"
 	val[]: "$DNAME$ mailaz igo da!"
@@ -4798,7 +4804,7 @@ localization_db : .localization
 	val[]: "Ez baimendutako trailer erabileragatiko isuna."
 
 	key[]: "offence_avoid_inspection"
-	val[]: "Failed to stop for inspection."
+	val[]: "Ez zara ikuskatzeko gelditu."
 
 	key[]: "offence_illegal_border"
 	val[]: "Unauthorized border crossing."
@@ -5298,7 +5304,7 @@ localization_db : .localization
 #@{
 
 	key[]: "reward_h"
-	val[]: "Irabazia"
+	val[]: "Saria"
 
 	key[]: "money"
 	val[]: "Dirua"
@@ -5316,7 +5322,7 @@ localization_db : .localization
 #@{
 
 	key[]: "base_reward"
-	val[]: "Oinarrizko irabazia"
+	val[]: "Oinarrizko saria"
 
 	key[]: "level_bonus"
 	val[]: "Gaitasunagatiko hobekuntza"
@@ -5429,34 +5435,34 @@ localization_db : .localization
 	val[]: "Kloroa"
 
 	key[]: "cn_christmas_candles"
-	val[]: "Christmas Candles"
+	val[]: "Eguberri-kandelak"
 
 	key[]: "cn_christmas_candy_canes"
 	val[]: "Christmas Candy Canes"
 
 	key[]: "cn_christmas_chocolates"
-	val[]: "Christmas Chocolates"
+	val[]: "Eguberri-txokolateak"
 
 	key[]: "cn_christmas_cookies"
-	val[]: "Christmas Cookies"
+	val[]: "Eguberri-galletak"
 
 	key[]: "cn_christmas_crackers"
 	val[]: "Christmas Crackers"
 
 	key[]: "cn_christmas_decorations"
-	val[]: "Christmas Decorations"
+	val[]: "Eguberri-apainketak"
 
 	key[]: "cn_christmas_ornaments"
-	val[]: "Christmas Ornaments"
+	val[]: "Eguberri-ornamentuak"
 
 	key[]: "cn_christmas_socks"
-	val[]: "Christmas Socks"
+	val[]: "Eguberri-galtzerdiak"
 
 	key[]: "cn_christmas_tree_lights"
-	val[]: "Christmas Tree Lights"
+	val[]: "Eguberrietako zuhaitz-argiak"
 
 	key[]: "cn_christmas_wood_gifts"
-	val[]: "Wooden Christmas Gifts"
+	val[]: "Egurrezko Eguberri-opariak"
 
 	key[]: "cn_clothes"
 	val[]: "Arropa"
@@ -5528,7 +5534,7 @@ localization_db : .localization
 	val[]: "Fluorra"
 
 	key[]: "cn_food"
-	val[]: "Janari ontziratua"
+	val[]: "Ontziratutako janaria"
 
 	key[]: "cn_forklifts"
 	val[]: "Orga jasotzaileak"
@@ -5561,7 +5567,7 @@ localization_db : .localization
 	val[]: "Metal astunak"
 
 	key[]: "cn_home_acc"
-	val[]: "Etxe-osagarriak"
+	val[]: "Etxerako osagarriak"
 
 	key[]: "cn_household_appl"
 	val[]: "Etxetresna elektrikoak"
@@ -5573,10 +5579,10 @@ localization_db : .localization
 	val[]: "Ospitaleko hondakinak"
 
 	key[]: "cn_hydro_hammer"
-	val[]: "Mailu Hidraulikoa"
+	val[]: "Mailu hidraulikoa"
 
 	key[]: "cn_hydrochlor"
-	val[]: "Azido Hidroklorikoa"
+	val[]: "Azido klorhidrikoa"
 
 	key[]: "cn_hydrogen"
 	val[]: "Hidrogenoa"
@@ -5630,7 +5636,7 @@ localization_db : .localization
 	val[]: "Medikamenduak"
 
 	key[]: "cn_medicaments"
-	val[]: "Medikamenduak"
+	val[]: "Medikamentuak"
 
 	key[]: "cn_metal_coil"
 	val[]: "Metalezko bobinak"
@@ -5669,13 +5675,13 @@ localization_db : .localization
 	val[]: "Petrolioa"
 
 	key[]: "cn_olive_oil"
-	val[]: "Oliba-olio"
+	val[]: "Oliba-olioa"
 
 	key[]: "cn_oranges"
 	val[]: "Laranjak"
 
 	key[]: "cn_ore"
-	val[]: "Minerala"
+	val[]: "Mea"
 
 	key[]: "cn_paper"
 	val[]: "Bulego Papera"
@@ -5696,7 +5702,7 @@ localization_db : .localization
 	val[]: "Pestizidak"
 
 	key[]: "cn_pesto"
-	val[]: "Pesto"
+	val[]: "Pestoa"
 
 	key[]: "cn_petrol"
 	val[]: "Gasolina"
@@ -5708,7 +5714,7 @@ localization_db : .localization
 	val[]: "Fosforo zuria"
 
 	key[]: "cn_plastic"
-	val[]: "Plastikozko Pikorrak"
+	val[]: "Plastikozko pikorrak"
 
 	key[]: "cn_potahydro"
 	val[]: "Potasio hidroxidoa"
@@ -5801,7 +5807,7 @@ localization_db : .localization
 	val[]: "Traktoreak"
 
 	key[]: "cn_trailers"
-	val[]: "Planta Baxuko Semi-Trailerrak"
+	val[]: "Behe-zoruko semi-trailerrak"
 
 	key[]: "cn_train_parts"
 	val[]: "Tren-ardatzak"
@@ -5840,13 +5846,13 @@ localization_db : .localization
 	val[]: "Zulagailua - D-50"
 
 	key[]: "cn_roller"
-	val[]: "Martimuiloa - DYNA CC-2200"
+	val[]: "Zapalgailua - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
 	val[]: "Traktorea - RS-666"
 
 	key[]: "cn_yacht"
-	val[]: "Belauntzia"
+	val[]: "Yatea"
 
 	key[]: "cn_aircond"
 	val[]: "Aire-girogailuak"
@@ -5855,13 +5861,13 @@ localization_db : .localization
 	val[]: "Beldar-katea"
 
 	key[]: "cn_tube"
-	val[]: "Gas-hodien piezak"
+	val[]: "Gasbide-piezak"
 
 	key[]: "cn_gifts"
 	val[]: "Opariak"
 
 	key[]: "cn_atlantic_cod_fillet"
-	val[]: "Bakailao Atlantiko Xerra"
+	val[]: "Atlantikoko bakailao-xerrak"
 
 	key[]: "cn_barley"
 	val[]: "Garagarra"
@@ -5870,13 +5876,13 @@ localization_db : .localization
 	val[]: "Balazta-likidoa"
 
 	key[]: "cn_canned_beef"
-	val[]: "Behi Haragi Ontziratua"
+	val[]: "Lataratutako behikia"
 
 	key[]: "cn_canned_pork"
-	val[]: "Txerri Haragia"
+	val[]: "Lataratutako txerrikia"
 
 	key[]: "cn_canned_tuna"
-	val[]: "Atun Ontziratua"
+	val[]: "Lataratutako atuna"
 
 	key[]: "cn_carrots"
 	val[]: "Azenarioak"
@@ -5888,7 +5894,7 @@ localization_db : .localization
 	val[]: "Xurgatzaile kimikoa"
 
 	key[]: "cn_chicken_meat"
-	val[]: "Oilasko Haragia"
+	val[]: "Oilasko haragia"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Gaztanbera"
@@ -5900,7 +5906,7 @@ localization_db : .localization
 	val[]: "Kableatu Elektrikoa"
 
 	key[]: "cn_empty_barrels"
-	val[]: "Barril hutsak"
+	val[]: "Upel hutsak"
 
 	key[]: "cn_empty_palettes"
 	val[]: "Palet hutsak"
@@ -5909,13 +5915,13 @@ localization_db : .localization
 	val[]: "Arrain Hatzak"
 
 	key[]: "cn_fresh_fish"
-	val[]: "Arrain Freskoa"
+	val[]: "Arrain freskoa"
 
 	key[]: "cn_frozen_hake"
 	val[]: "Legatz izoztua"
 
 	key[]: "cn_fuel_tanks"
-	val[]: "Gasoil Tankeak"
+	val[]: "Erregai-deposituak"
 
 	key[]: "cn_garlic"
 	val[]: "Berakatza"
@@ -5936,7 +5942,7 @@ localization_db : .localization
 	val[]: "Gibel Pasta"
 
 	key[]: "cn_metal_cans"
-	val[]: "Metal Ontziak"
+	val[]: "Metalezko latak"
 
 	key[]: "cn_milk"
 	val[]: "Esnea"
@@ -5966,10 +5972,10 @@ localization_db : .localization
 	val[]: "Beruneria"
 
 	key[]: "cn_polystyrene_boxes"
-	val[]: "Poliestireno Ontziak"
+	val[]: "Poliestirenozko kutxak"
 
 	key[]: "cn_pork_meat"
-	val[]: "Txerria"
+	val[]: "Txerrikia"
 
 	key[]: "cn_potted_flowers"
 	val[]: "Potted Flowers"
@@ -5984,7 +5990,7 @@ localization_db : .localization
 	val[]: "Zekalea"
 
 	key[]: "cn_salmon_fillet"
-	val[]: "Izokin Xerra"
+	val[]: "Izokin-xerrak"
 
 	key[]: "cn_salt_spices"
 	val[]: "Gatza eta espeziak"
@@ -6005,13 +6011,13 @@ localization_db : .localization
 	val[]: "Ardi Larrua"
 
 	key[]: "cn_shock_absorbers"
-	val[]: "Amortiguatzaileak"
+	val[]: "Motelgailuak"
 
 	key[]: "cn_smoked_eel"
-	val[]: "Anguila Ketua"
+	val[]: "Aingira ketua"
 
 	key[]: "cn_smoked_sprats"
-	val[]: "Sardinak"
+	val[]: "Ijito-sardina ketua"
 
 	key[]: "cn_stone_dust"
 	val[]: "Harri Hautsa"
@@ -6029,13 +6035,13 @@ localization_db : .localization
 	val[]: "Kamioi-hagunak"
 
 	key[]: "cn_truck_tyres"
-	val[]: "Kamioi Gurpilak"
+	val[]: "Kamioi-pneumatikoak"
 
 	key[]: "cn_used_packaging"
 	val[]: "Erabilitako bilgarria"
 
 	key[]: "cn_used_plastics"
-	val[]: "Plastiko erabiliak"
+	val[]: "Erabilitako plastikoak"
 
 	key[]: "cn_vinegar"
 	val[]: "Ozpina"
@@ -6074,7 +6080,7 @@ localization_db : .localization
 	val[]: "Hazietako poltsa handiak"
 
 	key[]: "cn_canned_beans"
-	val[]: "Babarrun Ontziratuak"
+	val[]: "Lataratutako babarrunak"
 
 	key[]: "cn_cauliflower"
 	val[]: "Azaloreak"
@@ -6086,13 +6092,13 @@ localization_db : .localization
 	val[]: "Zuhaitz Ontziratuak"
 
 	key[]: "cn_copper_roof_gutters"
-	val[]: "Teilatu Hodiak"
+	val[]: "Kobrezko teilatu-hodiak"
 
 	key[]: "cn_dryers"
 	val[]: "Lehorgailuak\n"
 
 	key[]: "cn_goat_cheese"
-	val[]: "Ahuntz Gazta"
+	val[]: "Ahuntz-gazta"
 
 	key[]: "cn_grapes"
 	val[]: "Mahatsak"
@@ -6107,10 +6113,10 @@ localization_db : .localization
 	val[]: "Eztia"
 
 	key[]: "cn_ketchup"
-	val[]: "Ketchup"
+	val[]: "Ketchupa"
 
 	key[]: "cn_maple_syrup"
-	val[]: "Artzi Xarabea"
+	val[]: "Astigar-jarabea"
 
 	key[]: "cn_mason_jars"
 	val[]: "Kristal Ontziak"
@@ -6125,7 +6131,7 @@ localization_db : .localization
 	val[]: "Okaranak"
 
 	key[]: "cn_pnut_butter"
-	val[]: "Kakahuete Gantza"
+	val[]: "Kakahuete-gurina"
 
 	key[]: "cn_precast_stairs"
 	val[]: "Eskailera Aurrefabrikatuak"
@@ -6134,10 +6140,10 @@ localization_db : .localization
 	val[]: "Teilak"
 
 	key[]: "cn_roofing_felt"
-	val[]: "Zabai Zoruak"
+	val[]: "Asfaltozko geruza"
 
 	key[]: "cn_rooflights"
-	val[]: "Sabailehioak"
+	val[]: "Sabai-lehioak"
 
 	key[]: "cn_sandwich_panels"
 	val[]: "Sandwich panelak"
@@ -6167,10 +6173,10 @@ localization_db : .localization
 	val[]: "Albaka"
 
 	key[]: "cn_boric_acid"
-	val[]: "Azido Borikoa"
+	val[]: "Azido borikoa"
 
 	key[]: "cn_bottled_carbonated_water"
-	val[]: "Ur Karbonatua"
+	val[]: "Ur karbonatatua"
 
 	key[]: "cn_bottled_water"
 	val[]: "Botilako ura"
@@ -6194,7 +6200,7 @@ localization_db : .localization
 	val[]: "Ordenagailuko prozesadoreak"
 
 	key[]: "cn_concentrate_juices"
-	val[]: "Zuku Kontzentratuak"
+	val[]: "Zuku kontzentratuak"
 
 	key[]: "cn_corks"
 	val[]: "Kortxoak"
@@ -6206,19 +6212,19 @@ localization_db : .localization
 	val[]: "Diesel sorgailuak"
 
 	key[]: "cn_empty_wine_barrels"
-	val[]: "Empty Wine Barrels"
+	val[]: "Ardo-upel hutsak"
 
 	key[]: "cn_empty_wine_bottles"
-	val[]: "Empty Wine Bottles"
+	val[]: "Ardo-botila hutsak"
 
 	key[]: "cn_excavated_soil"
-	val[]: "Indusitako lurra"
+	val[]: "Hondeatutako lurra"
 
 	key[]: "cn_fuel_oil"
-	val[]: "Erregai Olioa"
+	val[]: "Fuel-olioa"
 
 	key[]: "cn_granite_cubes"
-	val[]: "Granite Cubes"
+	val[]: "Granitozko kuboak"
 
 	key[]: "cn_gummy_bears"
 	val[]: "Gummy Bears"
@@ -6230,13 +6236,13 @@ localization_db : .localization
 	val[]: "High Pressure Slide Valves"
 
 	key[]: "cn_high_voltage_cables"
-	val[]: "Goi-tentsio-kableak"
+	val[]: "Goi-tentsioko kableak"
 
 	key[]: "cn_lavender"
 	val[]: "Izpilikua"
 
 	key[]: "cn_limonades"
-	val[]: "Limoi-edari"
+	val[]: "Limoi-edaria"
 
 	key[]: "cn_medical_equipment"
 	val[]: "Ekipamendu Medikoa"
@@ -6272,7 +6278,7 @@ localization_db : .localization
 	val[]: "Soja-esnea"
 
 	key[]: "cn_spherical_valves"
-	val[]: "Spherical Valves"
+	val[]: "Balbula esferikoak"
 
 	key[]: "cn_steel_cord"
 	val[]: "Steel Cord"
@@ -6288,7 +6294,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asphalt Miller - Writigen 808"
+	val[]: "Asfaltoa fresatzeko makina - Writigen 808"
 
 	key[]: "cn_cable_reel"
 	val[]: "Kable-bobina industriala"
@@ -6322,7 +6328,7 @@ localization_db : .localization
 	val[]: "Auto-garraiatzailea"
 
 	key[]: "tn_cement_cistern"
-	val[]: "Zementu Trailerra"
+	val[]: "Zementu soltean trailerra"
 
 	key[]: "tn_cement_mixer"
 	val[]: "Zementu Nahasgailua"
@@ -6337,7 +6343,7 @@ localization_db : .localization
 	val[]: "Trailer Laua"
 
 	key[]: "tn_food_cistern"
-	val[]: "Depositu Trailerra"
+	val[]: "Depositu-trailerra"
 
 	key[]: "tn_fuel_cistern"
 	val[]: "Erregai Depositu Trailerra"
@@ -6355,10 +6361,10 @@ localization_db : .localization
 	val[]: "Kamioi-garraiatzailea"
 
 	key[]: "tn_log_trailer"
-	val[]: "Enbor Trailerra"
+	val[]: "Enbor-trailerra"
 
 	key[]: "tn_overweight"
-	val[]: "Planta Baxuko Trailerra"
+	val[]: "Behe-zoruko trailerra"
 
 	key[]: "tn_panel_transporter"
 	val[]: "Panel-garraiatzailea"
@@ -6431,7 +6437,7 @@ localization_db : .localization
 	val[]: "Schwarzmüller Tarpaulin Platform"
 
 	key[]: "tn_schw_overweight"
-	val[]: "Schwarzmüller Low Bed"
+	val[]: "Schwarzmüller behe-zorua"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Schwarzmüller hoztutako trailerra"
@@ -6517,10 +6523,10 @@ localization_db : .localization
 	val[]: "Maisua"
 
 	key[]: "lvl_name5"
-	val[]: "Irakasle"
+	val[]: "Irakaslea"
 
 	key[]: "lvl_name6"
-	val[]: "Elite"
+	val[]: "Elitea"
 
 	key[]: "lvl_name7"
 	val[]: "Errepidearen erregea"
@@ -6590,7 +6596,7 @@ localization_db : .localization
 	val[]: "Totala:" #+ Header of column sums of loans and payments over all active loans.
 
 	key[]: "bank_money"
-	val[]: "Kontuaren balantzea: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
+	val[]: "Kontuaren saldoa: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
 #+ New loan confirmation window
 #@{
@@ -6640,13 +6646,13 @@ localization_db : .localization
 	val[]: "Zure ondasunak $MONEY$-an saldu dira zure zorrak ordaintzeko."
 
 	key[]: "bank_pvehicles_sold"
-	val[]: "Unfortunately, your personal truck and trailer have been sold because of your long-standing debt. See e-mail for more information."
+	val[]: "Zoritxarrez, zure kamioi eta trailer pertsonalak saldu dira data luzeko zorrengatik. Ikusi posta elektronikoa informazio gehiagorako."
 
 	key[]: "bank_ptruck_sold"
 	val[]: "Tamalez, zure kamioia saldua izan da denbora luzean zehar izandako zorrengandik. Zure mezu sarrera begiratu informazio gehiagorako."
 
 	key[]: "bank_ptrailer_sold"
-	val[]: "Unfortunately, your personal trailer has been sold because of your long-standing debt. See e-mail for more information."
+	val[]: "Zoritxarrez, zure trailer pertsonala saldu da data luzeko zorrengatik. Ikusi posta elektronikoa informazio gehiagorako."
 
 	key[]: "bank_ptruck_confiscate"
 	val[]: "Zure kamioia konfiskatua izaten dabil..."
@@ -6976,7 +6982,7 @@ localization_db : .localization
 	val[]: "Kamioi guztiak"
 
 	key[]: "truckman_filter_idle"
-	val[]: "Idle Trucks"
+	val[]: "Lanik gabe dauden kamioiak"
 
 	key[]: "truckman_filter_driving"
 	val[]: "Driving Trucks"
@@ -6985,7 +6991,7 @@ localization_db : .localization
 	val[]: "Sleeping Trucks"
 
 	key[]: "truckman_filter_returning"
-	val[]: "Returning Trucks"
+	val[]: "Itzultzen ari diren kamioiak"
 #@}
 
 #+ Headers of table of trucks.
@@ -7024,7 +7030,7 @@ localization_db : .localization
 	val[]: "Egoera:"
 
 	key[]: "truckman_cargo"
-	val[]: "Oraingo karga:"
+	val[]: "Uneko karga:"
 
 #+ Possible status of owned truck.
 #@{
@@ -7104,7 +7110,7 @@ localization_db : .localization
 	val[]: "Ziur zaude $TRUCK$ kamioia $MONEY$-an saldu nahi duzula?"
 
 	key[]: "truckman_msg_nosell"
-	val[]: "Ezin duzu kamioia saldu lanean egotekotan! Amaitu ezazu zure eta zaia zaitez geroago."
+	val[]: "Ezin duzu kamioia saldu lanean egotekotan! Amaitu ezazu zure banaketa eta zaia zaitez geroago."
 #@}
 
 #+ Message box shown when user requests to relocate selected truck.
@@ -7136,7 +7142,7 @@ localization_db : .localization
 	val[]: "<br>(Aldaketa $TIME$ beharko ditu, zure kamioia oraindik lanean baitago)"
 
 	key[]: "truckman_conf_drive_own_trailer"
-	val[]: "(Zure oraingo trailerra garajean utziko da)" #+ Information shown when player wants to use the truck.
+	val[]: "(Uneko trailerra garajean utziko da)" #+ Information shown when player wants to use the truck.
 #@}
 
 #+ Message box shown when user requests to change color/paint job on truck he is driving.
@@ -7164,7 +7170,7 @@ localization_db : .localization
 	val[]: "KONFIGURAZIOA KOPIATU" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nouse"
-	val[]: "This truck cannot be used as copy configuration source due to missing data which is most likely caused by either MOD or DLC removal.<br><br>Reinstall MOD/DLC."
+	val[]: "Kamioi hau ezin da erabili konfigurazio-kopiaren iturri gisa, datuak falta direlako. Hau, seguruenik, MOD edo DLC ezabatzeak eragin du.<br><br>Berriz instalatu MOD-a/DLC-a."
 #@}
 
 # End of: "Truck management screen"
@@ -7196,16 +7202,16 @@ localization_db : .localization
 	val[]: "Gidari guztiak"
 
 	key[]: "driverman_filter_idle"
-	val[]: "Idle Drivers"
+	val[]: "Lanik gabe dauden gidariak"
 
 	key[]: "driverman_filter_driving"
-	val[]: "Driving Drivers"
+	val[]: "Gidatzen ari diren gidariak"
 
 	key[]: "driverman_filter_sleeping"
-	val[]: "Sleeping Drivers"
+	val[]: "Lotan dauden gidariak"
 
 	key[]: "driverman_filter_returning"
-	val[]: "Returning Drivers"
+	val[]: "Itzultzen ari diren gidariak"
 #@}
 
 #+ Headers of table of drivers.
@@ -7286,7 +7292,7 @@ localization_db : .localization
 	val[]: "Egoera:"
 
 	key[]: "driverman_stats_cargo"
-	val[]: "Oraingo karga:"
+	val[]: "Uneko karga:"
 
 	key[]: "driverman_stats_from"
 	val[]: "Nondik:"
@@ -7424,7 +7430,7 @@ localization_db : .localization
 	val[]: "Ezin izan ditu zure flotaren konfigurazioak aurkitu marka honetarako" #+ Text shown when the player does not have a fleet configuration for that brand.
 
 	key[]: "no_available_brands"
-	val[]: "Unable to find any valid brands.<br>Make sure your Mod brands contain valid truck offers." #+ Text shown when there are no available brands on the mod truck dealer.
+	val[]: "Ezin izan da baliozko markarik aurkitu.<br>Ziurtatu zure mod-markak baliozko kamioi-eskaintzak dituztela." #+ Text shown when there are no available brands on the mod truck dealer.
 
 #+ Content of information box with information about truck.
 #+
@@ -7586,7 +7592,7 @@ localization_db : .localization
 	val[]: "Benetan joan nahi duzu $CITY$-ra $BRAND$ kontzesionarioa bisitatzera?"
 
 	key[]: "tdsel_novisit_msg"
-	val[]: "Barkatu, ezin duzu bidai-bizkorra erabili karga batekin zabiltzan bitartean."
+	val[]: "Barkatu, ezin duzu bidai-bizkorra erabili karga batekin zabiltzan bitartean! Mesedez, lehenik amaitu zure entrega."
 
 	key[]: "tdsel_locked"
 	val[]: "Ez duzu kontzesionariorik aurkitu oraindik!"
@@ -7692,7 +7698,7 @@ localization_db : .localization
 	val[]: "$MONEY$ ordaindu eta $NAME$ kontratatu nahi duzu?"
 
 	key[]: "driver_autoworks"
-	val[]: "Your driver will arrive shortly, and will start working automatically after settling in, providing that they have a truck to drive."
+	val[]: "Zure gidaria laster iritsiko da, eta automatikoki hasiko da lanean instalatu ondoren, baldin eta gidatzeko kamioi bat badu."
 
 	key[]: "recruit_no_space"
 	val[]: "Ez daukazu leku nahikorik gidari berriarentzako!<br><br>Mesedez, garajea hobetu edo berri bat erosi."
@@ -7731,7 +7737,7 @@ localization_db : .localization
 	val[]: "Esploratutako errepidea"
 
 	key[]: "cur_route"
-	val[]: "Oraingo bidea"
+	val[]: "Uneko bidea"
 
 	key[]: "unexpl_city"
 	val[]: "Esploratu gabeko hiria"
@@ -7832,7 +7838,7 @@ localization_db : .localization
 	val[]: "Kamioi nabigatzailea"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_browser_help"
-	val[]: "Kamioi doiketak ezberdinekin jolastu."  #+ Description for the Truck Browser icon.
+	val[]: "Askotariko kamioi-konfigurazioak probatu."  #+ Description for the Truck Browser icon.
 
 #@}
 
@@ -7971,10 +7977,10 @@ localization_db : .localization
 #@{
 
 	key[]: "adjust_o_t"
-	val[]: "IBILGAILU-DOIKETAK" #+ Title of the window. Please keep in upper case where possible.
+	val[]: "IBILGAILU-DOIKUNTZAK" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "adjust_link_t"
-	val[]: "Ibilgailu doiketak" #+ Icon opening the adjuster. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Ibilgailu doikuntzak" #+ Icon opening the adjuster. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "lights"
 	val[]: "Argiak doitu" #+ Opens the light adjuster.
@@ -8006,7 +8012,7 @@ localization_db : .localization
 #@{
 
 	key[]: "mirror_adj_t"
-	val[]: "ISPILU DOIKETAK" #+ Title of the window. Please keep in upper case where possible.
+	val[]: "ISPILU-DOIKUNTZAK" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "adj_left"
 	val[]: "Ezkerrekoa" #+ Checkbox selecting left mirror.
@@ -8036,7 +8042,7 @@ localization_db : .localization
 #@{
 
 	key[]: "light_setting_t"
-	val[]: "ARGI DOIKETAK" #+ Title of the window. Please keep in upper case where possible.
+	val[]: "ARGI-DOIKUNTZAK" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "park_lights"
 	val[]: "Geldiune argiak" #+ Checkbox enabling the parking lights
@@ -8045,7 +8051,7 @@ localization_db : .localization
 	val[]: "Argi motza" #+ Checkbox enabling the low beam lights
 
 	key[]: "high_beam"
-	val[]: "Argi luzea" #+ Checkbox enabling the high beam lights
+	val[]: "Argi luzeak" #+ Checkbox enabling the high beam lights
 
 	key[]: "beacon"
 	val[]: "Faroa"  #+ Checkbox enabling the beacon
@@ -8070,7 +8076,7 @@ localization_db : .localization
 #@{
 
 	key[]: "seat_adj_t"
-	val[]: "ESERLEKU DOIKETAK" #+ Title of the window. Please keep in upper case where possible.
+	val[]: "ESERLEKU-DOIKUNTZAK" #+ Title of the window. Please keep in upper case where possible.
 #@}
 
 	key[]: "exit"
@@ -8094,7 +8100,7 @@ localization_db : .localization
 #!}
 
 	key[]: "reward"
-	val[]: "Irabazia:"
+	val[]: "Saria:"
 
 	key[]: "xp"
 	val[]: "XP" #+ Shortcut for experience points.
@@ -9152,7 +9158,7 @@ localization_db : .localization
 	val[]: "Albo ispiluak aldatu" #+ Shown bellow keys which will toggle side mirrors.
 
 	key[]: "show_hud_hint"
-	val[]: "Nabigatzailearen moduak aldatu" #+ Shown bellow keys which will toggle advisor modes.
+	val[]: "Ibilbide-aholkulariaren moduak aldatu" #+ Shown bellow keys which will toggle advisor modes.
 #@}
 
 #+ Texts shown on the dashboard.
@@ -9223,20 +9229,20 @@ localization_db : .localization
 
 
 	key[]: "intro_1"
-	val[]: "Ongi Etorri Euro Truck Simulator 2-ra!"
+	val[]: "Ongi etorri Euro Truck Simulator 2-ra!"
 
 	key[]: "intro_2"
-	val[]: "Azkenik badaukazu zure ametsetako lana frogatzeko. Gida ezazu kamioi bat!"
+	val[]: "Azkenik badaukazu zure ametsetako lana frogatzeko aukera, kamioi bat gidatzea!"
 
 	key[]: "intro_3"
-	val[]: "Zure garraio empresa irekita dago jadanik, baina ez daukazu diru nahikorik kamioia erosteko. Momentuz beste konpainientzat lan egin beharko duzu txofer modura."
+	val[]: "Zure garraio-enpresa irekita dago jadanik, baina zoritxarrez kamioia erosteko dirua falta duzu. Oraingoz, beste enpresa batzuentzat lan egin beharko duzu alokairuko gidari gisa."
 
 	key[]: "intro_4"
-	val[]: "Zure eginbeharra $JOB_CARGO$ kargatu eta $JOB_TARGET_CITY$-ko $JOB_TARGET_COMPANY$-ra eramatea da. Zure nagusiak kamioi bat utzi eta gastu guztiak ordainduko ditu. Ez huts egin eta denboran ailegatu."
+	val[]: "Zure eginbeharra $JOB_TARGET_CITY$-ko $JOB_TARGET_COMPANY$ enpresara $JOB_CARGO$-karga bat segurtasunez eramatea da. Zure nagusiak ibilgailu bat utzi dizu eta gastu guztiak ordainduko ditu. Ez huts egin inori eta garaiz iritsi."
 
 
 	key[]: "intro_garage_1"
-	val[]: "Hau da zure sedea."
+	val[]: "Hau da zure egoitza."
 
 	key[]: "intro_garage_2"
 	val[]: "Garaje basikoa da. Ez da asko, baina zerbaitengatik hasi beharra dago."
@@ -9252,7 +9258,7 @@ localization_db : .localization
 
 
 	key[]: "tut_msg_1"
-	val[]: "$KEY$ Sakatu motorra pizteko."
+	val[]: "$KEY$ sakatu motorra pizteko."
 
 	key[]: "tut_msg_2a"
 	val[]: "Mugitzeko ondorengo teklak erabili ditzazkezu:<br><br>$KEY_TABLE$<br>Aurrera gidatu metro batzuetan zehar eta geldi zaitez."
@@ -9267,7 +9273,7 @@ localization_db : .localization
 	val[]: "$KEY_TABLE$<br>Froga itzazu kamera ezberdinak eta $KEY_CONTINUE$ sakatu jarraitzeko."
 
 	key[]: "tut_msg_5"
-	val[]: "Lanari ekiteko garaia da! Zure nabigatzailea erabil ezazu non zauden eta nora joan behar duzun jakiteko. $KEY$ sakatu hurbilago begiratzeko..."
+	val[]: "Lanari ekiteko garaia da! Zure Ibilbide-aholkularia erabil ezazu non zauden eta nora joan behar duzun jakiteko. $KEY$ sakatu hurbilago begiratzeko..."
 
 	key[]: "tut_msg_6"
 	val[]: "Bikain! Badakizu oinarrizkoa. Jar dezagun musika pixka bat bidaia dibertigarriagoa egiteko. Sakatu $KEY$ irrati erreproduktorea irekitzeko.<br>(Zure idazmahaiaren beheko barran ere aurki dezakezu)"
@@ -9276,28 +9282,28 @@ localization_db : .localization
 	val[]: "Guztia prest. Jarrai ezazu zure nagibatzailea helmugararte."
 
 	key[]: "tut_msg_8"
-	val[]: "Approach the entrance gate to get a clearance to bring the cargo to a particular spot in the delivery terminal. Watch out for an animated beacon marking the spot where to stop the truck.<br><br>It may be a good time now to adjust the map scale on the Route Advisor navigation panel ($KEY$)."
+	val[]: "Hurbildu sarrerako ateraino, karga terminaleko leku jakin batera eramateko baimena lortzeko. Bilatu kamioia gelditzeko lekua markatzen duen baliza biziduna.<br><br>Ibilbide-aholkulariko nabigazio-paneleko maparen eskala doitzeko une egokia izan daiteke ($KEY$)."
 
 	key[]: "tut_msg_9"
-	val[]: "At the terminal, once you have selected your desired parking spot, proceed to park the trailer. At some terminals, you may choose an easier alternate spot (for less XP). If you get into any trouble, you may also choose to complete the delivery automatically.<br><br>A rectangular area will be highlighted on the ground and marked in Route Advisor as the place to park the trailer. When the trailer is properly positioned, a message will appear asking you to detach it."
+	val[]: "Terminalean, aparkalekua nahi duzun aukeratu ondoren, trailerra aparkatzeari ekin ezazu. Terminal batzuetan, leku alternatibo errazagoa hauta dezakezu (XP gutxiagorentzat). Arazoak badituzu, entrega automatikoki ere osa dezakezu.<br><br>Eremu angeluzuzen bat nabarmenduko da lurrean eta Ibilbide-aholkularian markatuko da trailerra aparkatzeko toki gisa. Trailerra egokiro kokatuta dagoenean, askatzeko eskatuko dizun mezua agertuko da."
 
 	key[]: "tut_msg_10"
 	val[]: "Ondo eginda! Zertara itxaroten zabiz? Deskargatu eta hasi zure kabuz jolasten!"
 
 	key[]: "tutorial_adviser0"
-	val[]: "When the game is paused, you can control Route Advisor with the mouse.<br><br>You have a sat nav, called Route Advisor, available at all times. Route Advisor displays your current status and helps you with information about your current job and points you where to go."
+	val[]: "Jokoa gelditu dagoenean, Ibilbide-aholkularia kontrola dezakezu saguarekin.<br><br>Ibilbide-aholkularia izeneko nabigatzaile duzu uneoro. Ibilbide-aholkulariak zure uneko egoera erakusten du, zure uneko lanari buruzko informazioa ematen dizu eta nora joan behar duzun erakusten dizu."
 
 	key[]: "tutorial_adviser1"
-	val[]: "There are also shortcut keys assigned to the most often used functions, which you can use instantly while driving. The available keys are suggested directly by Route Advisor."
+	val[]: "Gehien erabiltzen diren funtzioei esleitutako teklatu-lasterbideak ere badaude, gidatzen ari zaren bitartean erabil daitezkeenak. Eskuragarri dauden teklak Ibilbide-aholkulariak zuzenean iradokitzen ditu."
 
 	key[]: "tutorial_adviser1a"
-	val[]: "Zure egoera aktuala: oraingo abiadura, martxa, kalteak, erregaia, fatiga, e-mailak, denbora eta dirua."
+	val[]: "Zure uneko egoera: uneko abiadura, martxa, kalteak, erregaia, nekea, e-mailak, denbora eta zure dirua."
 
 	key[]: "tutorial_adviser1b"
-	val[]: "Aukeratutako orrialdearen edukinak:"
+	val[]: "Aukeratutako orrialdearen edukinak."
 
 	key[]: "tutorial_adviser1c"
-	val[]: "Orrialde aldaketa. Aukeratu nabigazioa, lanaren deskribapena, kamioiaren egoeraren, eta mezuen artean."
+	val[]: "Orrialde aldaketa. Aldatu nabigazioaren, lanaren deskribapenaren, kamioiaren diagnostikoaren eta mezu laburren artean."
 
 	key[]: "tutorial_adviser2"
 	val[]: "Mapan agertzen den gezi urdina zure kokalekua markatzen du. Lanean egotekotan, zure helmugarako bidai laburrena gorriz markatuko du.<br><br>Behean aurkituko duzu gelditzen den bidea eta distantzia. Zoom-a erabiltzeko $KEY$ erabili edota bertako botoia erabili."
@@ -9306,16 +9312,16 @@ localization_db : .localization
 	val[]: "Aldatu lanaren deskribapen orrialdera ($KEY$) jarraitzeko..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Lan Deskripen Horrialdeak eramaten duzun karga eta bere helmuga laburtzen du. Noiz itzaroten zaituzten, zenbat denbora duzun soberan, eta zenbateko irabaziak izango dituzun aipatzen dizu.<br><br>Lana ere atzera bota dezakezu, behar izatekotan, botoi gorria sakatuz, eta diru zigor bat ordainduz, jakina."
+	val[]: "Lanaren deskribapen orrialdeak eramaten duzun karga eta bere helmuga laburtzen du. Noiz itzaroten zaituzten, zenbat denbora duzun soberan eta zenbateko irabaziak izango dituzun aipatzen dizu.<br><br>Lana ere atzera bota dezakezu, behar izatekotan, botoi gorria sakatuz. Kasu horretan, isun bat ordaindu beharko duzu, jakina."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Aldatu diagnostiko orrialdera ($KEY$) jarraitzeko..."
 
 	key[]: "tutorial_adviser4"
-	val[]: "On the diagnostics page you can see how badly your truck, trailer and your cargo are damaged. The vehicles can be repaired at a service station in any city. The damage to cargo, however, is permanent. So be careful.<br><br>If you happen to get stuck on the road, you can also call road assistance by hitting the yellow button. For a fee they will take you to the nearest city and help get you back working."
+	val[]: "Diagnostiko-orrialdean zure kamioiak, trailerrak eta kargak dituen kalteak ikus dezakezu. Ibilgailuak edozein hiritako tailer batean konpon daitezke. Kargari egindako kaltea, ordea, iraunkorra da. Beraz, kontuz ibili.<br><br>Errepidean trabatuta gelditzen bazara, errepidearen laguntzara ere dei dezakezu botoi horia sakatuz. Kostu batengatik, hiririk hurbilenera eramango zaituzte eta lanera itzultzen lagunduko dizute."
 
 	key[]: "tutorial_adviser5"
-	val[]: "Hau izan da Nabigatzaileari buruz jakin behar duzun guztia.<br><br>Tutoriala errepika dezakezu laguntza botoia sakatuz gero.<br><br>Partida jarraitzeko $KEY$ sakatu."
+	val[]: "Hau izan da Ibilbide-aholkulariari buruz jakin behar duzun guztia.<br><br>Tutoriala errepika dezakezu laguntza botoia sakatuz gero.<br><br>Partida jarraitzeko $KEY$ sakatu."
 
 	key[]: "close_tutorial"
 	val[]: "Tutoriala itxi"
@@ -9325,16 +9331,16 @@ localization_db : .localization
 	val[]: "Aukera ezazu zure hurrengoko lana"
 
 	key[]: "desktop_tut_cargo_market"
-	val[]: "Erabil ezazu zeure trailer berria Karga-Mekatura sartzeko karga-aukera handia bere norakoetara entregatzeko." #+ The text of the bubble shown for the player when he has his own trailer attached first time letting him know that cargo market has been unlocked now.
+	val[]: "Erabil ezazu zeure trailer berria Karga-merkatura sartzeko karga-aukera handia bere norakoetara entregatzeko." #+ The text of the bubble shown for the player when he has his own trailer attached first time letting him know that cargo market has been unlocked now.
 
 	key[]: "desktop_tut_personal"
 	val[]: "Hemen ikus dezakezu zure aurrerapena."
 
 	key[]: "desktop_tut_company"
-	val[]: "Zure garajeak kontrolatu, gidari berriak kontratatu edota konpainia manexatu."
+	val[]: "Zure garajeak kontrolatu, gidari berriak kontratatu edota konpainia maneiatu."
 
 	key[]: "desktop_tut_trailers"
-	val[]: "From now on, you can purchase your own trailers, and upgrade or paint them to match your truck.<br><br>Your trailers can be stored in your chosen garage(s); they can be used by your drivers to increase profits. To manage your trailers, use the Trailer Manager."
+	val[]: "Hemendik aurrera, zure trailerrak eros ditzakezu, eta hobetu edo margotu zure kamioiarekin ondo emateko.<br><br>Zure trailerrak zure aukeratutako garaje(et)an gorde daitezke; zure gidariek erabil ditzakete irabaziak handitzeko. Trailerrak kudeatzeko, trailer-kudeatzailea erabili."
 #@}
 
 
@@ -9527,10 +9533,10 @@ localization_db : .localization
 #@{
 
 	key[]: "wiz_control_keyboard"
-	val[]: "Teklatuarekin gidatu eta arratoia erabili zure ingurura begiratzeko. Gidatzeko modu sinple eta merkeena."
+	val[]: "Teklatuarekin gidatu eta sagua erabili zure ingurura begiratzeko. Gidatzeko modu sinple eta merkeena, baina zehaztugabeena."
 
 	key[]: "wiz_control_mouse"
-	val[]: "Erabili arratoia zehaztasun handiagoko direkzioarentzat. Beste guztia teklatuarekin gauzatuko da. Erabil dezakezu arratoia aldi berean zure ingurura begiratzeko beste kamera botoi bat sakatzen baduzu."
+	val[]: "Erabili sagua zehaztasun handiagoko direkzioarentzat. Beste guztia teklatuarekin gauzatuko da. Erabil dezakezu sagua aldi berean zure ingurura begiratzeko beste kamera botoi bat sakatzen baduzu."
 
 	key[]: "wiz_control_controller"
 	val[]: "Bolante, Gamepad, edota Joystick bat erabili esperientzia errealistena lortzeko. Teklatua hainbat funtzio aukeratzeko erabilgarri jarraituko du, eta arratoaren bitartez zure ingurura begira dezakezu."
@@ -9677,7 +9683,7 @@ localization_db : .localization
 #+ Button which opens the advanced setup page.
 
 	key[]: "advanced"
-	val[]: "Doiketa aurreratua"
+	val[]: "Doikuntza aurreratua"
 #@}
 
 #+ Configuration complete page
@@ -9762,13 +9768,13 @@ localization_db : .localization
 	val[]: "Normala" #+ Normal orientation of axis. Increasing value of axis in <-1;1> range increases controlled value.
 
 	key[]: "inverted"
-	val[]: "Alderantzizkatua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;1> range increases controlled value.
+	val[]: "Alderantzikatua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;1> range increases controlled value.
 
 	key[]: "centered"
 	val[]: "Zentratua" #+ Normal orientation of axis. Increasing value of axis in <0;1> increases controlled value.
 
 	key[]: "inverted_centered"
-	val[]: "Alderantzizkoa eta Zentratua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;0> range increases controlled value.
+	val[]: "Alderantzikatua eta zentratua" #+ Inverted orientation of axis. Decreasing value of axis in <-1;0> range increases controlled value.
 #@}
 
 #+ Automatic gearbox setup page
@@ -9828,7 +9834,7 @@ localization_db : .localization
 	val[]: "Larruzko diru-zorroa" #+ A leather wallet
 
 	key[]: "dash"
-	val[]: "Dash" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+	val[]: "Aginte-panela" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
 
 	key[]: "center_table_exclusive"
 	val[]: "Center Table Exclusive" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
@@ -9936,25 +9942,25 @@ localization_db : .localization
 	val[]: "Esklusiboa" #+ Luxury/Exclusive version of the interior or accesory
 
 	key[]: "exclusive_2013"
-	val[]: "Exclusive 2013" #+ Luxury/Exclusive version of the interior or accesory (model year 2013)
+	val[]: "Esklusiboa 2013" #+ Luxury/Exclusive version of the interior or accesory (model year 2013)
 
 	key[]: "exclusive_black"
-	val[]: "Exclusive Black" #+ Luxury/Exclusive version of the interior or accesory
+	val[]: "Esklusiboa, beltza" #+ Luxury/Exclusive version of the interior or accesory
 
 	key[]: "exclusive_black_uk"
-	val[]: "Exclusive Black UK" #+ Luxury/Exclusive UK version of the interior or accesory
+	val[]: "Esklusiboa UK, beltza" #+ Luxury/Exclusive UK version of the interior or accesory
 
 	key[]: "exclusive_double"
-	val[]: "Esklusiboa bikoitza" #+ Luxury/Exclusive version (double variant) of the interior or accesory
+	val[]: "Esklusibo bikoitza" #+ Luxury/Exclusive version (double variant) of the interior or accesory
 
 	key[]: "exclusive_paint"
-	val[]: "Exclusive Painted" #+ Luxury/Exclusive painted version of the interior or accesory
+	val[]: "Esklusiboa, margotua" #+ Luxury/Exclusive painted version of the interior or accesory
 
 	key[]: "exclusive_uk"
-	val[]: "Exclusive UK" #+ Luxury/Exclusive UK version of the interior or accesory
+	val[]: "Esklusiboa UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
 	key[]: "exclusive_2013_uk"
-	val[]: "Exclusive 2013 UK" #+ Luxury/Exclusive UK version of the interior or accesory (model year 2013)
+	val[]: "Esklusiboa 2013 UK" #+ Luxury/Exclusive UK version of the interior or accesory (model year 2013)
 
 	key[]: "sleeper"
 	val[]: "Sleeper" #+ Sleeper version of the cabin or other accesory
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Grand Star" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Bull Catcher MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Bull Catcher MAXI (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Bull Catcher MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Bull Catcher MEGA (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Bull Catcher MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Bull Catcher MIDI (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Bull Catcher MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Bull Catcher MINI (extra LEDs)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Bull Catcher STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Bump Bar" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Bump Bar II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Bump Bar K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Front Lamp Holder" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Front Lamp Holder II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Front Lamp Holder CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Front Lamp Holder CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Front Lamp Holder TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Roof Lamp Holder" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Roof Lamp Holder II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Roof Lamp Holder III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Roof Lamp Holder (extra LEDs)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Roof Lamp Holder AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Roof Lamp Holder AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Roof Lamp Holder CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Roof Lamp Holder HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Roof Lamp Holder HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Roof Lamp Holder HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Roof Lamp Holder MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Roof Lamp Holder MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Roof Lamp Holder TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Roof Lamp Holder TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Roof Lamp Holder VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Side Bar" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Side Bar (extra LEDs)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Stainless Steel" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Sun Visor" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS-Schoch Cap" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS-Schoch Mug" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS-Schoch Paper Mug" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS-Schoch Pennant" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10348,7 +10474,7 @@ localization_db : .localization
 	val[]: "Laguntzailearen izena" #+ Shown when editing text on co-driver plate accessory
 
 	key[]: "gamepad_enter_account_name_or_email"
-	val[]: "World Of Trucks kontu izena edo erlazionatutako email-a" #+ Shown when entering name of WoTr account or associated email
+	val[]: "World Of Trucks kontuaren izena edo erlazionatutako email-a" #+ Shown when entering name of WoTr account or associated email
 
 	key[]: "gamepad_enter_account_password"
 	val[]: "World Of Trucks kontuaren pasahitza" #+ Shown when entering WoTr password
@@ -10402,7 +10528,7 @@ localization_db : .localization
 	val[]: "KURSORE KONTROLAK" #+ Title of window. Please keep in upper case where possible.
 
 	key[]: "use_as_mouse"
-	val[]: "Arratoi modura erabili" #+ Mesage box button confirming use of controller for UI-mouse purpose
+	val[]: "Sagu modura erabili" #+ Mesage box button confirming use of controller for UI-mouse purpose
 #@}
 
 	key[]: "use"
@@ -10429,7 +10555,7 @@ localization_db : .localization
 	val[]: "Gehigarriak"
 
 	key[]: "mod_category_ai_traffic"
-	val[]: "IA Trafikoa"
+	val[]: "IA trafikoa"
 
 	key[]: "mod_category_sound"
 	val[]: "Soinuak"
@@ -10444,7 +10570,7 @@ localization_db : .localization
 	val[]: "Mapak"
 
 	key[]: "mod_category_ui"
-	val[]: "UI"
+	val[]: "Erabiltzaile-interfazea"
 
 	key[]: "mod_category_weather_setup"
 	val[]: "Eguraldiaren doikuntza"
@@ -10459,10 +10585,10 @@ localization_db : .localization
 	val[]: "Modeloak"
 
 	key[]: "mod_category_movers"
-	val[]: "Movers"
+	val[]: "Mugitzen diren objektuak"
 
 	key[]: "mod_category_walkers"
-	val[]: "Walkers"
+	val[]: "Oinezkoak"
 
 	key[]: "mod_category_prefabs"
 	val[]: "Prefabs"
@@ -10570,7 +10696,7 @@ localization_db : .localization
 	val[]: "Aldaketak konfirmatu" #+ Button which stores the changes and closes the mod manager.
 
 	key[]: "workshop_download"
-	val[]: "Steam Workshop-en informazioa deskargatzen" #+ Label indicating download progress of the Steam workshop mods.
+	val[]: "Steam Workshop-en mod-ak deskargatzen" #+ Label indicating download progress of the Steam workshop mods.
 
 	key[]: "workshop_items_only"
 	val[]: "Steam Workshop-en objektuak bakarrik" #+ Show only Steam Workshop items
@@ -10611,7 +10737,7 @@ localization_db : .localization
 	val[]: "Besteak" #+ Label of section with legend about additional icons and buttons
 
 	key[]: "help_mm_btn_desc"
-	val[]: "Mezua irekitzen du." #+ Description of help icon.
+	val[]: "Mezu hau irekitzen du." #+ Description of help icon.
 
 	key[]: "welcome_mod_manager"
 	val[]: "ONGI ETORRI MOD-KUDEATZAILERA" #+ Label of window with the help for the mod manager which appears the first time the user launches the manager
@@ -10679,7 +10805,7 @@ localization_db : .localization
 	val[]: "Kamioilari aditu batek leku gutxiko aparkaleku estuetan maneiatzeko gai da. Hala ere, kargaren segurtasuna lehendabiziko ezaugarria da! Aparkaleku honekin ziur ez sentitzekotan, bidaltzailearekin beste leku bat negozia dezakezu."
 
 	key[]: "job_delivery_company"
-	val[]: "Facility:"
+	val[]: "Instalazioa:"
 
 	key[]: "parking_diff_tough"
 	val[]: "Non duzu beharrezkoa?" #+ Player agrees to take the challenge and park the trailer to the tough place
@@ -10741,7 +10867,7 @@ localization_db : .localization
 	val[]: "SINKRONIZAZIOA" #+ Name of the window pop-up during WOTR synchronization
 
 	key[]: "synchronizing_wotr"
-	val[]: "Zure progresioa World of Trucks-ekin<br>sinkronizatzen." #+ Message inside window pop-up during WOTR synchronization
+	val[]: "Zure aurrerapena World of Trucks-ekin<br>sinkronizatzen." #+ Message inside window pop-up during WOTR synchronization
 
 	key[]: "confirm_random_job"
 	val[]: "World of Trucks automatikoki aukeratuko du zure inguruan aurkitzen den lan kontratu bat.<br><br>Inoiz dakizu zein lan datorkizun etorkizunean!<br><br>Jarraitu?" #+ pop-up message to accept taking random job from WOTR
@@ -10753,28 +10879,28 @@ localization_db : .localization
 	val[]: "Konektatu" #+ Button to connect to WOTR service
 
 	key[]: "begin_job"
-	val[]: "Lana Hasi" #+ Button to begin WOTR job with
+	val[]: "Lana hasi" #+ Button to begin WOTR job with
 
 	key[]: "abort_job"
 	val[]: "Utzi" #+ Button to cancel WOTR job with
 
 	key[]: "cancel_online_job"
-	val[]: "Ziur zaude oraingo lana utzi nahi duzula?" #+ A pop-up warning notification on attempt to Cancel WOTR job
+	val[]: "Ziur zaude uneko lana utzi nahi duzula?" #+ A pop-up warning notification on attempt to Cancel WOTR job
 
 	key[]: "online_job_resumed"
-	val[]: "World of Trucks carga garraiatzen." #+ Icons with this text appears on the desktop when online job in progress
+	val[]: "World of Trucks-en lana aurrerabidean dago." #+ Icons with this text appears on the desktop when online job in progress
 
 	key[]: "suspend_job"
 	val[]: "Lana atxera bota" #+ Button to suspend / pause WOTR job
 
 	key[]: "resume_job"
-	val[]: "Lana Jarraitu" #+ Button to resume WOTR job
+	val[]: "Lana jarraitu" #+ Button to resume WOTR job
 
 	key[]: "online_job_suspended"
 	val[]: "World of Trucks lana geldiarazi da." #+ Icons with this text appears on the desktop when online job in suspended / paused
 
 	key[]: "economy_sync_failed"
-	val[]: "World of Trucks konekzioa galdu da.<br>Ezinezkoa da zure progresioa gordetzea." #+ Advisor message when game unable establish server connection to save the progress
+	val[]: "World of Trucks konekzioa galdu da.<br>Ezinezkoa da zure aurrerapena gordetzea." #+ Advisor message when game unable establish server connection to save the progress
 
 	key[]: "suspend_online_job"
 	val[]: "Martxan dagoen World of Trucks lana geldiarazi behar da bigarren bat hartu baino lehen.<br><br>Bigarren lana amaitu ostean lehenengoarekin jarraitu ahalko duzu.<br><br>Beste lan batekin hasi nahi duzu?" #+ Warning message to inform that player about to suspend online job in order to take offline one.
@@ -10825,7 +10951,7 @@ localization_db : .localization
 	val[]: "Zure kamioi edo trailerra luzeegia da World of Trucks lanaren hasiera puntuan aparkatzeko. Horiek aldatu ostean saia zaitez kontratuarekin jarraitzen."
 
 	key[]: "job_detail_t"
-	val[]: "ORAINGO LANA" #+ name of job detail screen
+	val[]: "UNEKO LANA" #+ name of job detail screen
 
 	key[]: "no_online_jobs_message"
 	val[]: "There are no contracts found around your current position.<br><br>Move closer to city or logistic company and try again." #+ message shown when there are no online jobs around player's position
@@ -10855,7 +10981,7 @@ localization_db : .localization
 	val[]: "The job requires an owned trailer. However, you do not currently have any such trailer attached." #+ Message shown when player tries to continue external market job however they have no compatible trailer attached.
 
 	key[]: "error_no_compatible_trailer_owned"
-	val[]: "You do not own any trailer that is compatible with that job." #+ Message shown if player does not own any trailer that would be compatible with the job but there is at least one available in trailer dealer.
+	val[]: "Ez duzu lan horrekin bateragarria den trailerrik." #+ Message shown if player does not own any trailer that would be compatible with the job but there is at least one available in trailer dealer.
 
 	key[]: "required_trailer_external_header"
 	val[]: "Required trailer parameters:" #+ Header of the section describing what trailer is needed to finish the job.
@@ -10983,10 +11109,10 @@ localization_db : .localization
 #@{
 
 	key[]: "trailer_coupling"
-	val[]: "Coupling:<br><br>Fifth wheel locked. Raising legs and attaching cables..."
+	val[]: "Krokatzen:<br><br>Bosgarren gurpila blokeatuta. Hankak altxatzen eta kableak konektatzen..."
 
 	key[]: "trailer_decoupling"
-	val[]: "Decoupling:<br><br>Lowering legs, detaching cables and unlocking fifth wheel..."
+	val[]: "Askatzen:<br><br>Ankak jaisten, kableak deskonektatzen eta bosgarren gurpila desblokeatzen..."
 
 #@}
 
@@ -11008,7 +11134,7 @@ localization_db : .localization
 	val[]: "Jokoa ondorengo bertsiora berritu da." #+ The message showed when upgrade of the game to the newer version has been detected.
 
 	key[]: "version_downgrade_detected"
-	val[]: "Game downgraded to an older version." #+ The message showed when downgrade of the game to the older version has been detected.
+	val[]: "Jokoa aurreko bertsio batera aldatu da." #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
 	val[]: "<br><br>Game version changes may break mods, resulting in game crashes or instabilities; mod authors are responsible for maintaining mod compatibility. Ensure that your activated mods are compatible.<br><br>Troubleshooting tip: If the current mod release is incompatible, try disabling it in the Mod Manager.<br><br>Game version: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
@@ -11032,16 +11158,16 @@ localization_db : .localization
 	val[]: "Edukiaren iragazkiak" #+ Button opening truck customization content filters dialog.
 
 	key[]: "no_accessory_found"
-	val[]: "Ez da informaziorik aurkitu aplikatutako filtroekin" #+ Text shown when there are no accessories found by filters.
+	val[]: "Ez da aurkitu zure iragazkiekin bat datorren objekturik" #+ Text shown when there are no accessories found by filters.
 
 	key[]: "no_truck_found"
-	val[]: "Unable to find trucks matching your filters" #+ Text shown when there are no trucks found by filters.
+	val[]: "Ez da aurkitu zure iragazkiekin bat datorren kamioirik" #+ Text shown when there are no trucks found by filters.
 #@}
 
 #+ Strings related to job filtering feature
 #@{
 	key[]: "no_job_found"
-	val[]: "Unable to find jobs matching your filters" #+ Text shown when there are no jobs found by filters.
+	val[]: "Ez da aurkitu zure iragazkiekin bat datorren lanik" #+ Text shown when there are no jobs found by filters.
 #@}
 
 #+ Game demo related strings.
@@ -11062,7 +11188,7 @@ localization_db : .localization
 	val[]: "Bilatu" #+ The button which opens the connected content browser screen.
 
 	key[]: "general_settings"
-	val[]: "DOIKETA OROKORRAK" #+ The separator text for the general online settings.
+	val[]: "DOIKUNTZA OROKORRAK" #+ The separator text for the general online settings.
 
 	key[]: "connect_content_t"
 	val[]: "EDUKIA KONEKTATU" #+ The title of the connect content window.
@@ -11172,11 +11298,11 @@ localization_db : .localization
 #@{
 	#+ The name of the pop-up window for oversize mission when it's succesfully delivered.
 	key[]: "oversize_job_done_desc"
-	val[]: "Special Transport mission's done!"
+	val[]: "Garraio bereziaren misioa egina dago!"
 
 	#+ The name of the pop-up window for oversize mission failing. Must be UPPER CASE.
 	key[]: "ovesize_failure_dialog_title"
-	val[]: "MISSION FAILED!"
+	val[]: "MISIOA HUTS EGIN DA!"
 
 	#+ Text on the button for giving up on the oversized cargo delivery.
 	key[]: "abandon_job"
@@ -11188,7 +11314,7 @@ localization_db : .localization
 
 	#+ Text showed when player will hit the escort vehicle and oversized cargo delivery is over because of that.
 	key[]: "oversize_escort_crash_player_failure_dialog_text"
-	val[]: "You've damaged the escort vehicle!<br> You can load a checkpoint or cancel the delivery with a penalty fee of $MONEY$."
+	val[]: "Eskolta-ibilgailua hondatu duzu!<br>Kontrol-puntua kargatu edo entrega bertan behera utz dezakezu, $MONEY$-ko zigorrarekin."
 
 	#+ Text showed when player lead the escort vehicle to crash with another traffic ai.
 	key[]: "oversize_escort_crash_ai_failure_dialog_text"
@@ -11204,15 +11330,15 @@ localization_db : .localization
 
 	#+ Text showed when fading after player will drive away from escort vehicles and the Special Transport is over.
 	key[]: "oversize_not_following_failure_fade_text"
-	val[]: "You've driven away from escort vehicles!"
+	val[]: "Eskolta-ibilgailuetatik urrundu zara!"
 
 	#+ Text showed when fading after player will crash the escort vehicles and the Special Transport is over.
 	key[]: "oversize_escort_crash_player_failure_fade_text"
-	val[]: "You've damaged the escort vehicle!"
+	val[]: "Eskolta-ibilgailua hondatu duzu!"
 
 	#+ Text showed when fading after player will lead the escort vehicles into crash with another ai and hence the Special Transport job is over.
 	key[]: "oversize_escort_crash_ai_failure_fade_text"
-	val[]: "Escort vehicle crashed!"
+	val[]: "Eskolta-ibilgailuak talka egin du!"
 
 	#+ Text showed when fading after player will leave the route and hence the Special Transport job is over.
 	key[]: "oversize_off_route_failure_fade_text"
@@ -11224,15 +11350,15 @@ localization_db : .localization
 
 	#+ Text in the upper left corner while job is active, that small window/menu of active job.
 	key[]: "special_job_resumed"
-	val[]: "Special Transport Delivery"
+	val[]: "Garraio bereziko entrega"
 
 	#+ Text GPS Advisor when player will leave the space between escorting vehicles.
 	key[]: "wrong_lane_warning"
-	val[]: "Please keep the cargo between the escort vehicles."
+	val[]: "Mesedez, eutsi kargari eskolta-ibilgailuen artean."
 
 	#+ Text under the small icon in the Job Market menu.
 	key[]: "job_special"
-	val[]: "Special Deliveries"
+	val[]: "Entrega bereziak"
 
 	#+ Dimensions on the loading screen and at the F6 menu in the GPS advisor.
 	key[]: "dimensions"
@@ -11240,101 +11366,101 @@ localization_db : .localization
 
 	#+ Text on the loading screen which refers to the what you're about to deliver.
 	key[]: "current_oversize_job_title"
-	val[]: "Garraio Berezia"
+	val[]: "Garraio berezia"
 
 	#+ Text on gps advisor which suggest slowing down for players.
 	key[]: "adviser_slow_down"
-	val[]: "Please slow down to prevent hitting the escort vehicle..."
+	val[]: "Mesedez, abiadura moteldu eskolta-ibilgailua ez jotzeko..."
 
 	#+ Text on gps advisor which suggest to wait for the rear escort vehicle.
 	key[]: "adviser_wait_back"
-	val[]: "Please wait for the rear escort vehicle..."
+	val[]: "Mesedez, itxaron atzeko eskolta-ibilgailuari..."
 
 	#+ Text on gps advisor which suggest careful behavior because of tight route coming.
 	key[]: "adviser_tight_route"
-	val[]: "Careful now please, really tight part of the route is coming..."
+	val[]: "Kontuz orain, mesedez, ibilbidearen zati estu bat dator..."
 
 	#+ Text on gps advisor which suggest careful behavior because of changing the lines.
 	key[]: "adviser_change_maneuver"
-	val[]: "Changing lane maneuver is coming. Adapt your speed to avoid a possible crash..."
+	val[]: "Errei-aldaketa maniobra iristen ari da. Egokitu zure abiadura istripurik gerta ez dadin..."
 
 	#+ Text on gps advisor which suggest careful behavior because the front escort vehicel is going forward to make a path for player.
 	key[]: "adviser_path_for_you"
-	val[]: "Front escort vehicle is going to warn other drivers... <br> Adapt your speed to avoid a possible crash..."
+	val[]: "Aurreko eskolta-ibilgailuak beste gidari batzuei ohartaraziko die...<br>Egokitu zure abiadura istripurik gerta ez dadin..."
 
 	#+ Text on gps advisor when player will be moving with a reverse to the rear escort to warn of a possible crash.
 	key[]: "close_to_the_back_escort_big_dist"
-	val[]: "Watch out!<br>You're moving to the rear escort!"
+	val[]: "Kontuz!<br>Atzeko ibilgailura mugitzen ari zara!"
 
 	#+ Text on gps advisor when player will be moving really close with a reverse to the rear escort to warn of possible crash.
 	key[]: "close_to_the_back_escort_small_dist"
-	val[]: "Watch out!<br>You're moving dangerously close to the rear escort!"
+	val[]: "Kontuz!<br>Atzeko ibilgailura gehiegi hurbiltzen ari zara!"
 
 	#+ Text on gps advisor that is showed when player drive on the trigger for special mission pickup.
 	key[]: "special_job_offer"
-	val[]: "Please press the following key to view the Special Job offer:"
+	val[]: "Mesedez, sakatu tekla hau lan bereziko eskaintza ikusteko:"
 
 	#+ Text on gps advisor that is showed when player drive on the trigger for special mission pickup, this is the name of the trigger, the name of the menu.
 	key[]: "special_job_offer_title"
-	val[]: "Special Job Offer:"
+	val[]: "Lan bereziko eskaintza:"
 
 	#+ Oversize tutorial intro text.
 	key[]: "oversize_tutorial_intro"
-	val[]: "You're about to haul a Special Transport cargo! There are two escort vehicles which will lead you. Please be careful and follow their lead and suggestions in the <color value=@@clr_sel@@>Route Advisor<color value=@@clr_txt@@>. Special transports like this don't stop on a red signal and have the right of way in most situations. During these deliveries, checkpoints are made more often to save your current progress."
+	val[]: "Garraio-bereziko karga bat garraiatzeko zorian zaude! Bi eskolta-ibilgailu gidatuko zaituzte. Mesedez, kontuz ibili eta bere esanak eta <color value=@@clr_sel@@>Ibilbide-aholkulariko<color value=@@clr_txt@@> iradokizunak bete. Horrelako garraio bereziak ez dira semaforo gorrietan gelditzen eta egoera gehienetan pasatzeko lehentasuna dute. Entrega horietan, kontrol-puntuak maizago egiten dira, uneko aurrerapena gordetzeko."
 
 	#+ Oversize tutorial warnings sub-title.
 	key[]: "oversize_tutorial_warnings_subtitle"
-	val[]: "Pay extra attention to the following:"
+	val[]: "Arreta berezia jarri honi:"
 
 	key[]: "oversize_tutorial_warning_conflict"
-	val[]: "Avoid any possible conflict with the escort vehicles and keep the cargo between them."
+	val[]: "Sahiestu edozein arazo eskolta-ibilgailuekin eta eutsi kargari haien artean."
 
 	key[]: "oversize_tutorial_warning_offroad"
 	val[]: "Ez gidatu ezarritako bidetik kanpora, ez gasolindegietara, ez atseden lekuetara etab."
 
 	key[]: "oversize_tutorial_warnings_speed"
-	val[]: "Obey speed limitations which will be ensured by the front escort vehicle."
+	val[]: "Aurreko eskolta-ibilgailuak markatzen dituen abiadura-mugak bete."
 
 	key[]: "oversize_tutorial_warnings_traffic"
-	val[]: "Watch out for the overtaking traffic and other drivers on the roads."
+	val[]: "Kontuz aurreratzen ari zaren trafikoarekin eta errepideetako beste gidari batzuekin."
 
 	key[]: "oversize_tutorial_warnings_change_lane"
 	val[]: "Errei-aldaketa maniobra:"
 
 	#+ Oversize tutorial outro text.
 	key[]: "oversize_tutorial_outro"
-	val[]: "If you do not follow these rules, your Special Transport mission may fail!"
+	val[]: "Arau hauek betetzen ez badituzu, zure garraio bereziaren misioak huts egin dezake!"
 
 	#+ First changle lane maneuver popup text.
 	key[]: "oversize_tutorial_popup_1"
-	val[]: "The maneuver is started by the <color value=@@clr_sel@@>rear<color value=@@clr_txt@@> escort by changing & blocking the designated lane."
+	val[]: "<color value=@@clr_sel@@>Atzeko<color value=@@clr_txt@@> eskoltak abiarazten du maniobra, esleitutako erreia aldatuz eta blokeatuz."
 
 	#+ Second changle lane maneuver popup text.
 	key[]: "oversize_tutorial_popup_2"
-	val[]: "The <color value=@@clr_sel@@>front<color value=@@clr_txt@@> escort waits until the designated lane is unoccupied, then it changes the lane too."
+	val[]: "<color value=@@clr_sel@@>Aurreko<color value=@@clr_txt@@> eskoltak erreia hutsik egon arte itxaron behar du, eta ondoren erreia ere aldatuko du."
 
 	#+ Third changle lane maneuver popup text.
 	key[]: "oversize_tutorial_popup_3"
-	val[]: "Then it's safe for a <color value=@@clr_sel@@>player<color value=@@clr_txt@@> to move into the designated lane."
+	val[]: "Ondoren, segurua da <color value=@@clr_sel@@>jokalariarentzat<color value=@@clr_txt@@> esleitutako erreira mugitzea."
 
 	#+ Message for fade_in screen when taking OVS mission with your own truck.
 	key[]: "oversize_preparing_cargo"
-	val[]: "Truck's tanks were refilled and driving hours restored."
+	val[]: "Kamioiaren tangak bete dira eta gidatze-orduak berrezarri dira."
 
 	#+ Warning when player want to use assistance call during oversize mission.
 	key[]: "oversize_assistance_reason"
-	val[]: "You can't call for an assistance during Special Transport mission."
+	val[]: "Ezin diozu laguntzari deitu garraio bereziko misio batean."
 
 	#+ Warning when player want to use ferry transport during oversize mission.
 	key[]: "oversize_ferry_reason"
-	val[]: "You can't use a ferry during Special Transport mission."
+	val[]: "Ezin duzu ferrya erabili garraio bereziko misio batean."
 
 
 	#OVERSIZED CARGO NAMES
 
 	#+ Name of the cargo of mystery cylinder.
 	key[]: "cn_mystery_cyl"
-	val[]: "High-Tech Device"
+	val[]: "Goi-teknologiako gailua"
 
 	#+ Name of the cargo of mystery box.
 	key[]: "cn_mystery_box"
@@ -11342,15 +11468,15 @@ localization_db : .localization
 
 	#+ Name of the cargo of condensator.
 	key[]: "cn_condensator"
-	val[]: "Industrial Condenser"
+	val[]: "Kondentsadore industriala"
 
 	#+ Name of the cargo of Boiler Parts.
 	key[]: "cn_boiler_parts"
-	val[]: "Boiler Part"
+	val[]: "Galdara-pieza"
 
 	#+ Name of the cargo of excavation bucket for large dozers.
 	key[]: "cn_ex_bucket"
-	val[]: "Excavator Bucket"
+	val[]: "Hondeamakin-zalia"
 
 	#+ Name of the cargo of tires for large dozers and other machines.
 	key[]: "cn_m_59_80_r63"
@@ -11374,7 +11500,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of lattice.
 	key[]: "cn_lattice"
-	val[]: "Construction Staircase"
+	val[]: "Eraikuntza-eskailera"
 #@}
 
 #+ Strings related to Steam inventory feature.
@@ -11486,7 +11612,7 @@ localization_db : .localization
 	val[]: "Open Event Page" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
-	val[]: "Progress" #+ The label used to indicate progress of the event.
+	val[]: "Aurrerapena" #+ The label used to indicate progress of the event.
 
 	key[]: "event_info"
 	val[]: "EVENT INFO" #+ Text showed on the button which opens informations about an event.
@@ -11576,7 +11702,7 @@ localization_db : .localization
 	val[]: "No truck assigned."
 
 	key[]: "no_trailer_assigned"
-	val[]: "No trailer assigned."
+	val[]: "Ez dago trailerrik esleituta."
 
 	key[]: "no_driver_assigned"
 	val[]: "No driver assigned."
@@ -11615,7 +11741,7 @@ localization_db : .localization
 	val[]: "Aukeratutako trailerra zure $CITY$-ko garajera lekualdatu da." #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_confirm_relocate"
-	val[]: "Do you really want to relocate $TRAILER$ to your garage in $CITY$?" #+ Message shown after trailer relocation.
+	val[]: "Ziur zaude $TRAILER$ zure $CITY$-ko garajera lekualdatu nahi duzula?" #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_swap_blocked"
 	val[]: "Trukatzeko, trailerraren garajea bisitatu" #+ Tooltip message shown when player is not able to swap his currently attached trailer with the currently previewed trailer in trailer manager because he is not in the garage where previewed trailer is stored at.
@@ -11642,13 +11768,13 @@ localization_db : .localization
 	val[]: "Do you really want to leave the Trailer Purchase screen?"
 
 	key[]: "trailerdealer_buy_confirm"
-	val[]: "Do you really want to buy $TRAILER$ for $PRICE$ and store it in your garage in $CITY$?" #+ Confirmation shown when player want's to buy new trailer.
+	val[]: "Ziur zaude $TRAILER$ $PRICE$-ren truke erosi eta $CITY$-ko garajean gorde nahi duzula?" #+ Confirmation shown when player want's to buy new trailer.
 
 	key[]: "trailerdealer_buy_confirm_no_truck"
-	val[]: "You do not currently own any truck, and so, you will not be able to use your trailer. Do you really want to buy the selected trailer?" #+ Confirmation shown when player tries to buy trailer but he has no truck.
+	val[]: "Orain ez duzu kamioirik, beraz, ezin izango duzu zure trailerra erabili. Ziur zaude hautatutako trailerra erosi nahi duzula?" #+ Confirmation shown when player tries to buy trailer but he has no truck.
 
 	key[]: "garageman_current_productivity"
-	val[]: "Oraingo produktibitatea:"
+	val[]: "Uneko produktibitatea:"
 
 	key[]: "trailerman_detail"
 	val[]: "Trailerraren xehetasunak"  #+ Header of panel containing informations about trailer.
@@ -11696,13 +11822,13 @@ localization_db : .localization
 	val[]: "Trailerraren erabilera (azken 7 egunetan):" #+ The header of the trailer utilization graph.
 
 	key[]: "trailerman_current_state"
-	val[]: "Oraingo egoera" #+ Title of the current trailer state section.
+	val[]: "Uneko egoera" #+ Title of the current trailer state section.
 
 	key[]: "trailerman_user"
-	val[]: "Oraingo erabiltzailea" #+ Current trailer user statistic.
+	val[]: "Uneko erabiltzailea" #+ Current trailer user statistic.
 
 	key[]: "trailerman_current_cargo"
-	val[]: "Oraingo karga" #+ Currently loaded cargo statistic.
+	val[]: "Uneko karga" #+ Currently loaded cargo statistic.
 
 	key[]: "trailerman_all_time_stats"
 	val[]: "Estatistika osoak:" #+ All time statistics section title.
@@ -11720,10 +11846,10 @@ localization_db : .localization
 	val[]: "Mota" #+ Title of the trailer type column.
 
 	key[]: "trailerman_col_user"
-	val[]: "Oraingo erabiltzailea" #+ Title of the current user column.
+	val[]: "Uneko erabiltzailea" #+ Title of the current user column.
 
 	key[]: "trailerman_col_truck"
-	val[]: "Oraingo kamioia" #+ Title of the trailer user truck column.
+	val[]: "Uneko kamioia" #+ Title of the trailer user truck column.
 
 	key[]: "trailerman_col_garage"
 	val[]: "Garajea" #+ Title of the garage trailer column.
@@ -11735,7 +11861,7 @@ localization_db : .localization
 	val[]: "Egoera" #+ Title of the trailer status column.
 
 	key[]: "trailerman_confirm_operation_delay"
-	val[]: "(It will take $TIME$ because selected trailer is currently on job)"
+	val[]: "($TIME$ beharko ditu aukeratutako trailerra lanean dagoelako)"
 
 	key[]: "garage_stats_t"
 	val[]: "EKONOMIAREN ERREGISTROA" #+ Garage statistics popup title.
@@ -11747,7 +11873,7 @@ localization_db : .localization
 	val[]: "Ezin duzu orain zauden garajera bidaiatu." #+ Tooltip shown when player hovers over disabled quick travel button.
 
 	key[]: "garage_quicktravel_locked_trailer_tooltip"
-	val[]: "Ezin duzu aukeratutako garajera bidaiatu zure oraingo trailerra baimenduta ez dagoelako garaje horretako estatuan." #+ Tooltip shown when player hovers over quick travel button that is disabled because their's currently assigned is not allowed in the garage's country.
+	val[]: "Ezin duzu aukeratutako garajera bidaiatu zure uneko trailerra baimenduta ez dagoelako garaje horretako estatuan." #+ Tooltip shown when player hovers over quick travel button that is disabled because their's currently assigned is not allowed in the garage's country.
 
 	key[]: "garage_sell_locked_tooltip"
 	val[]: "Ezin duzu saldu gidariak, kamioiak eta trailerrak dituen garajea." #+ Tooltip shown when player hovers over disabled garage sell button.
@@ -11756,10 +11882,10 @@ localization_db : .localization
 	val[]: "Garaje hau guztiz hobetu da." #+ Tooltip shown when player hovers over upgrade button.
 
 	key[]: "driverman_stats_trailer"
-	val[]: "Oraingo trailerra:" #+ Title of the current trailer statistics.
+	val[]: "Uneko trailerra:" #+ Title of the current trailer statistics.
 
 	key[]: "td_current_trailer_category"
-	val[]: "ORAINGO TRAILERRA:" #+ Title of the current trailer category in truck details tooltip.
+	val[]: "UNEKO TRAILERRA:" #+ Title of the current trailer category in truck details tooltip.
 
 	key[]: "td_trailer_property"
 	val[]: "Trailerra:" #+ The name of the property that contains model and brand of the trailer currently attached to the truck.
@@ -11774,7 +11900,7 @@ localization_db : .localization
 	val[]: "Zorionak! Trailerra erosi duzu eta aukeratutako garajean gordeko da.<br><br>Trailer-kudeatzailean ikus dezakezu." #+ The message shown when player buys new trailer.
 
 	key[]: "view_current_spedition_offer"
-	val[]: "Oraingo enpresaren lan-eskaintzak" #+ Button opening current spedition offer shown in job summary screen.
+	val[]: "Uneko enpresaren lan-eskaintzak" #+ Button opening current spedition offer shown in job summary screen.
 
 	key[]: "distance_driven"
 	val[]: "Gidatutako distantzia" #+ The name of statistic.
@@ -11792,7 +11918,7 @@ localization_db : .localization
 	val[]: "Garaje bat behar da hemen:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Advance further in your career to access the Bank."
+	val[]: "Aurreratu gehiago zure karreran Bankura sartzeko."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "There are no new truck upgrades available at the moment."
@@ -11807,7 +11933,7 @@ localization_db : .localization
 	val[]: "You have yet to discover any truck dealers."
 
 	key[]: "link_locked_msg_trailer_dealer"
-	val[]: "Advance further in your career to be able to purchase your own trailers."
+	val[]: "Aurreratu gehiago zure karreran trailerrak erosi ahal izateko."
 
 	key[]: "link_locked_msg_cabin_adjust"
 	val[]: "You cannot access cabin adjustements as you are not currently driving any truck."
@@ -11843,10 +11969,10 @@ localization_db : .localization
 	val[]: "Trailer guztiak"
 
 	key[]: "trailerman_filter_idle"
-	val[]: "Idle Trailers"
+	val[]: "Lanik gabe dauden trailerrak"
 
 	key[]: "trailerman_filter_on_duty"
-	val[]: "On Duty Trailers"
+	val[]: "Lanean dauden trailerrak"
 
 	key[]: "trailerman_filter_private"
 	val[]: "Trailer pribatuak"
@@ -11861,7 +11987,7 @@ localization_db : .localization
 	val[]: "Ziur zaude $TRAILER$ trailerra $MONEY$-an saldu nahi duzula?"
 
 	key[]: "trailerman_msg_nosell"
-	val[]: "Ezin duzu saldu orain erabiltzen ari zaren trailerra! Bukatu oraingo lana eta saia zaitez berriro."
+	val[]: "Ezin duzu saldu orain erabiltzen ari zaren trailerra! Bukatu uneko lana eta saia zaitez berriro."
 #@}
 
 #+ Message box shown to confirm take of selected trailer.
@@ -11891,7 +12017,7 @@ localization_db : .localization
 	val[]: "KONFIGURAZIOA KOPIATU" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_msg_nouse"
-	val[]: "This trailer cannot be used as copy configuration source due to missing data which is most likely caused by either MOD or DLC removal.<br><br>Reinstall MOD/DLC."
+	val[]: "Trailer hau ezin da erabili konfigurazio-kopiaren iturri gisa, datuak falta direlako. Hau, seguruenik, MOD edo DLC ezabatzeak eragin du.<br><br>Berriz instalatu MOD-a/DLC-a."
 #@}
 
 #+ Trailer detail tooltip.
@@ -11948,7 +12074,7 @@ localization_db : .localization
 	val[]: "Atoian eraman tailerrera"
 
 	key[]: "call_refuel_service"
-	val[]: "Emergency Refueling"
+	val[]: "Larrialdiko depositua betetzea"
 
 	key[]: "adjust_trailer"
 	val[]: "Trailerra doitu"
@@ -11999,10 +12125,10 @@ localization_db : .localization
 	val[]: "Kontainerrak eta depositu-kontainerrak"
 
 	key[]: "body_cargo_types_curtainside"
-	val[]: "General, dry goods"
+	val[]: "Salgai orokorrak, lehorrekoak"
 
 	key[]: "body_cargo_types_dryvan"
-	val[]: "General, dry goods"
+	val[]: "Salgai orokorrak, lehorrekoak"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "Salgai hoztuak"
@@ -12020,7 +12146,7 @@ localization_db : .localization
 	val[]: "Eraikuntzako ekipamenduak eta materialak"
 
 	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Eraikuntzako ekipamenduak eta kontainerrak"
+	val[]: "Eraikuntzako materialak eta kontainerrak"
 #@}
 
 #+ Trailer chain type names.
@@ -12318,7 +12444,7 @@ localization_db : .localization
 	val[]: "Su-itzalgailua"
 
 	key[]: "front_cage"
-	val[]: "Front Cage"
+	val[]: "Aurreko kaiola"
 
 	key[]: "front_door"
 	val[]: "Aurreko atea"
@@ -12555,7 +12681,7 @@ localization_db : .localization
 	val[]: "Ezein" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
-	val[]: "No trailers found" #+ Text shown if there are no trailer of given brands found.
+	val[]: "Ez da trailerrik aurkitu" #+ Text shown if there are no trailer of given brands found.
 
 	key[]: "cargo_model_t"
 	val[]: "KARGAREN AURREBISTA" #+ The title of the cargo preview modal. Keep it uppercase please.
@@ -12573,7 +12699,7 @@ localization_db : .localization
 	val[]: "Trailer nabigatzailea"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "trailer_browser_help"
-	val[]: "Trailer doiketak ezberdinekin jolastu."  #+ Description for the Trailer Browser icon.
+	val[]: "Askotariko trailer-konfigurazioak probatu."  #+ Description for the Trailer Browser icon.
 
 	key[]: "standard_trailers"
 	val[]: "Trailer estandarrak" #+ Name for non-branded trailers in brand list (aka SCS trailers).
@@ -12618,7 +12744,7 @@ localization_db : .localization
 	val[]: "Ziur zaude $TOTAL_PRICE$ ordaindu nahi dituzula aldaketengatik?"
 
 	key[]: "country_validity_trailer_warning_msg"
-	val[]: "<color value=@@clr_txt@@>This configuration can only be applied to compatible trailers in <color value=@@clr_sel@@>"
+	val[]: "<color value=@@clr_txt@@>Konfigurazio hori estatu hauetan dauden trailer bateragarriei soilik aplikatu ahal zaie: <color value=@@clr_sel@@>"
 
 	key[]: "player_assigned_truck_msg"
 	val[]: "<color value=FF7C7C7C>(excluding the currently assigned truck)"
@@ -12660,7 +12786,7 @@ localization_db : .localization
 	val[]: "Herrialdea"
 
 	key[]: "copy_config_truck_h_estimated_price"
-	val[]: "Estimated Price"
+	val[]: "Prezio zenbatetsia"
 
 	key[]: "copy_config_trailer_h_name"
 	val[]: "Mota"
@@ -12675,7 +12801,7 @@ localization_db : .localization
 	val[]: "Herrialdea"
 
 	key[]: "copy_config_trailer_h_estimated_price"
-	val[]: "Estimated Price"
+	val[]: "Prezio zenbatetsia"
 #@}
 
 #+ Garage Purchase

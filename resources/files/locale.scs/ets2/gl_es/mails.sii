@@ -102,21 +102,21 @@ SiiNunit
 	}
 
 	mail_text: mailtext.drv_idle.female {
-		from: "Condutor $NAME$" #+ Message sender - written by female
-		subject: "Preciso dun camión pra traballar" #+ Message subject - written by female
+		from: "Condutora $NAME$" #+ Message sender - written by female
+		subject: "Preciso dun camión para traballar" #+ Message subject - written by female
 		body: "Ola xefe,<br><br>Non sei se te deras conta, pero levo en $CITY$ $DAYS$ sen tarefas. Estou amolada, porque necesito cartos para pagar as miñas facturas e non podo facer nada se estou perdendo aquí o tempo e sen traballos á vista. Por favor, dame un camión nos próximos $DAYS2$ para que poida comezar as entregas ou non terei máis remedio que marchar.<br><br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_quit {
 		from: "Condutor $NAME$" #+ Message sender
 		subject: "Adeus" #+ Message subject
-		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o equipamento no garaxe da miña formación en $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body
+		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o meu equipamento no garaxe de $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_quit.female {
-		from: "Condutor $NAME$" #+ Message sender - written by female
+		from: "Condutora $NAME$" #+ Message sender - written by female
 		subject: "Adeus" #+ Message subject - written by female
-		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o equipamento no garaxe da miña formación en $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body - written by female
+		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o meu equipamento no garaxe de $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_sold {
@@ -126,8 +126,8 @@ SiiNunit
 	}
 
 	mail_text: mailtext.drv_sold.female {
-		from: "Condutor $NAME$" #+ Message sender - written by female
-		subject: "Saíndo" #+ Message subject - written by female
+		from: "Condutora $NAME$" #+ Message sender - written by female
+		subject: "Voume" #+ Message subject - written by female
 		body: "Ola xefe,<br><br>O garaxe de $CITY$, onde me atopaba, está sendo pechado. Algunha xente do banco veu e dixo que tiña que marchar. Parece que a compañía non o está a facer moi ben últimamente. Polo tanto, decidín marchar. Non podería facer nada bo aquí de todas formas - sen camión sobre todo. Probarei noutro sitio calquera.<br><br>Adeus e sen resentimentos,<br>$NAME$" #+ Message body - written by female
 	}
 	

@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -1055,7 +1061,7 @@ localization_db : .localization
 	val[]: "Você colocou alguns itens em seu pedidos!<br><br>Você quer cancelar todas as modificações?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
 	key[]: "borrowed_truck_refusal"
-	val[]: "Seu patrão não vai gostar se você modificar seu caminhão." #+ Shown if user attempts to upgrade a quick job truck.
+	val[]: "Seu empregador não vai gostar se você modificar o caminhão dele." #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Você não pode mudar o tipo, carroceria ou chassis do seu reboque durante um trabalho. Complete primeiro a entrega e então tente novamente." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -4616,28 +4622,28 @@ localization_db : .localization
 	val[]: "Para passar você deve pagar $MONEY$.<br>Pressione a seguinte tecla:"
 
 	key[]: "toll_one_time_quick"
-	val[]: "A passagem custa $MONEY$. Seu patrão irá pagar esta taxa.<br>Pressione a seguinte tecla:"
+	val[]: "A passagem custa $MONEY$. Seu empregador irá pagar a taxa.<br>Pressione a seguinte tecla:"
 
 	key[]: "toll_start"
-	val[]: "Início da estrada pedagiada. Guarde o bilhete.<br>Pressione a seguinte tecla:"
+	val[]: "Início do trecho com pedágio. Guarde o bilhete.<br>Pressione a seguinte tecla:"
 
 	key[]: "toll_start_automatic"
-	val[]: "Início da estrada com pedágio. a Taxa será cobrada na saída."
+	val[]: "Início do trecho com pedágio. A taxa será cobrada no fim do trecho."
 
 	key[]: "toll_end"
-	val[]: "Fim da estrada pedagiada. Você irá pagar<br>$MONEY$.<br>Pressione a seguinte tecla:"
+	val[]: "Fim do trecho com pedágio. Você irá pagar<br>$MONEY$.<br>Pressione a seguinte tecla:"
 
 	key[]: "toll_end_quick"
-	val[]: "Fim da estrada pedagiada. O seu patrão irá pagar<br>$MONEY$.<br>Pressione a seguinte tecla:"
+	val[]: "Fim do trecho com pedágio. O seu empregador irá pagar<br>$MONEY$.<br>Pressione a seguinte tecla:"
 
 	key[]: "toll_end_calc"
-	val[]: "Fim da estrada com pedágio.<br>(Calculando o valor de pedágio, por favor aguarde...)"
+	val[]: "Fim do trecho com pedágio.<br>(Calculando o valor de pedágio, por favor aguarde...)"
 
 	key[]: "paid_toll"
 	val[]: "Pedágio de $MONEY$ pago."
 
 	key[]: "paid_toll_quick"
-	val[]: "Pedágio de $MONEY$ pago pelo seu patrão."
+	val[]: "Pedágio de $MONEY$ pago pelo seu empregador."
 
 	key[]: "border_closed"
 	val[]: "Para apresentar os documentos, pressione:"
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Estrela Grande" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Quebra-mato MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Quebra-mato Maxi (LEDs extras)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Quebra-mato MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Quebra-mato MEGA (LEDs extras)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Quebra-mato MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Quebra-mato MIDI (LEDs extras)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Quebra-mato MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Quebra-mato MINI (LEDs extras)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Quebra-mato STANDARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Barra do Para-choque" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Barra do Para-choque II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Barra do Para-Choque K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Suporte de Lâmpada Frontal" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Suporte de Lâmpada Frontal II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Suporte de Lâmpada Frontal CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Suporte de Lâmpada Frontal CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Suporte de Lâmpada Frontal TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Suporte de Lâmpada de Teto" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Suporte de Lâmpada de Teto II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Suporte de Lâmpada de Teto III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Suporte de Lâmpada de Teto (LEDs extras)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Suporte de Lâmpada de Teto AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Suporte de Lâmpada de Teto AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Suporte de Lâmpada de Teto CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Suporte de Lâmpada de Teto HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Suporte de Lâmpada de Teto HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Suporte de Lâmpada de Teto HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Suporte de Lâmpada de Teto MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Suporte de Lâmpada de Teto MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Suporte de Lâmpada de Teto TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Suporte de Lâmpada de Teto TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Suporte de Lâmpada de Teto VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Barra Lateral" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Barra Lateral (LEDs extras)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Aço Inox" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Quebra-sol" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "Boné HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "Caneca HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "Copo de Papel HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "Flâmula HS Schoch" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10182,13 +10308,13 @@ localization_db : .localization
 	val[]: "Profundidade do Campo"
 
 	key[]: "photomode_dof_strength"
-	val[]: "Força do Blur"
+	val[]: "Intensidade do desfoque"
 
 	key[]: "photomode_dof_depth"
 	val[]: "Posição do plano de foco"
 
 	key[]: "photomode_dof_distance"
-	val[]: "Profundidade da transição do Blur"
+	val[]: "Profundidade do plano de desfoque"
 
 	key[]: "photomode_capture"
 	val[]: "Capturar imagem da tela"

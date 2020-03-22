@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -834,7 +840,7 @@ localization_db : .localization
 	val[]: "Ángulo de dirección:" #+  maximum degree angle of streeting wheels
 
 	key[]: "retarder_analysis"
-	val[]: "Retarder:" #+  retarder presense value yes / no
+	val[]: "Retardador:" #+  retarder presense value yes / no
 
 	key[]: "powered_axles"
 	val[]: "Ejes motores:" #+  amount of powered axles truck has
@@ -1420,7 +1426,7 @@ localization_db : .localization
 	val[]: "Torsión:" #+ Shortcut for "hydrodynamic torque multiplier" or "stall torque ratio", has to be very short as it needs to fit line "Torque 2.42x"
 
 	key[]: "retarder"
-	val[]: "Retarder" #+ Identifies presence of retarder on transmission, has to be short as it needs to fit line "12 speeds, retarder"
+	val[]: "Retardador" #+ Identifies presence of retarder on transmission, has to be short as it needs to fit line "12 speeds, retarder"
 
 #@}
 
@@ -1713,7 +1719,7 @@ localization_db : .localization
 #@{
 
 	key[]: "validity"
-	val[]: "La oferta expira en:" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
+	val[]: "La oferta expira en" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
 
 	key[]: "expected_on"
 	val[]: "Prevista" #+ For example "Expected Sat 12:53 - Sat 19:33"
@@ -2829,7 +2835,7 @@ localization_db : .localization
 #@}
 
 	key[]: "auto_retarder"
-	val[]: "Retarder automático" #+ Checkbox for automatic retarder usage.
+	val[]: "Retardador automático" #+ Checkbox for automatic retarder usage.
 
 	key[]: "auto_motor_brake"
 	val[]: "Freno motor automático" #+ Checkbox for automatic exhaust/engine brake usage.
@@ -3009,19 +3015,19 @@ localization_db : .localization
 	val[]: "Poner punto muerto" #+ Shifts to neutral gear for automatic or sequential transmission
 
 	key[]: "o_im_gear_up_hint"
-	val[]: "Indicar cuando subir de marcha" #+ Shift hint for automatic transmission
+	val[]: "Sugerir el subir de marcha automática" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_gear_down_hint"
-	val[]: "Indicar cuando bajar de marcha" #+ Shift hint for automatic transmission
+	val[]: "Sugerir el bajar de marcha automática" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_trans_semi_switch"
-	val[]: "Cambio de caja de cambios a automática o secuencial" #+ Switch between real automatic and sequential transmissions
+	val[]: "Alternar caja de cambios automática o secuencial" #+ Switch between real automatic and sequential transmissions
 
 	key[]: "o_im_engine"
-	val[]: "Arrancar y apagar el motor"
+	val[]: "Arrancar o apagar el motor"
 
 	key[]: "o_im_engine_electricity"
-	val[]: "Encender y apagar la electrónica del motor"
+	val[]: "Encender o apagar la electrónica del motor"
 
 	key[]: "o_im_parkingbrake"
 	val[]: "Freno de estacionamiento"
@@ -3042,22 +3048,22 @@ localization_db : .localization
 	val[]: "Freno del remolque"
 
 	key[]: "o_im_retarder_up"
-	val[]: "Aumentar el retarder"
+	val[]: "Aumentar el retardador"
 
 	key[]: "o_im_retarder_down"
-	val[]: "Reducir el retarder"
+	val[]: "Reducir el retardador"
 
 	key[]: "o_im_lift_axle"
-	val[]: "Elevar y descender los ejes"
+	val[]: "Elevar o descender los ejes"
 
 	key[]: "o_im_lift_axle_trailer"
-	val[]: "Elevar y descender los ejes del remolque"
+	val[]: "Elevar o descender los ejes del remolque"
 
 	key[]: "o_im_diff_lock"
 	val[]: "Bloquear el diferencial"
 
 	key[]: "o_im_attach"
-	val[]: "Acoplar y desacoplar el remolque"
+	val[]: "Acoplar o desacoplar el remolque"
 
 	key[]: "o_im_lblinker"
 	val[]: "Intermitente izquierdo"
@@ -3087,10 +3093,10 @@ localization_db : .localization
 	val[]: "Bocina de aire"
 
 	key[]: "o_im_wipers"
-	val[]: "Aumentar velocidad del limpiaparabrisas"
+	val[]: "Aumentar la velocidad de los limpiaparabrisas"
 
 	key[]: "o_im_wipers_back"
-	val[]: "Reducir velocidad del limpiaparabrisas"
+	val[]: "Reducir la velocidad de los limpiaparabrisas"
 
 	key[]: "o_im_cruise_ctrl"
 	val[]: "Control de crucero"
@@ -3154,10 +3160,10 @@ localization_db : .localization
 	val[]: "Gestor de garajes" #+ Opens the garage manager from game.
 
 	key[]: "o_im_adviser_cursor"
-	val[]: "Control de Route Advisor con ratón"
+	val[]: "Controlar Route Advisor con el ratón"
 
 	key[]: "o_im_adjuster"
-	val[]: "Ajustes de camión"
+	val[]: "Ajustes del camión"
 
 	key[]: "o_im_adviser_page0"
 	val[]: "Página de navegación de Route Advisor"
@@ -3226,13 +3232,13 @@ localization_db : .localization
 	val[]: "Captura de pantalla"
 
 	key[]: "o_im_head_reset"
-	val[]: "Restablecer cabeza (seguimiento de la cabeza)"
+	val[]: "Restablecer cabeza (usando seguimiento de la cabeza)"
 
 	key[]: "o_im_eye_pause"
 	val[]: "Pausar vista ampliada (experimental)"
 
 	key[]: "o_im_cam_rotate"
-	val[]: "Rotar la cámara (con el ratón)" #+ Enables camera look mode when mouse steering is active.
+	val[]: "Rotar la cámara (usando el ratón)" #+ Enables camera look mode when mouse steering is active.
 
 	key[]: "o_im_cam_zoom"
 	val[]: "Zoom de la cámara de cabina" #+ When hold zoom interior camera in current direction.
@@ -4679,7 +4685,7 @@ localization_db : .localization
 	val[]: "Pulsa el siguiente comando para desactivarlo:"
 
 	key[]: "retarder_on1"
-	val[]: "¡El retarder está activado!"
+	val[]: "¡El retardador está activado!"
 
 	key[]: "retarder_on2"
 	val[]: "Pulsa el siguiente comando para desactivarlo:"
@@ -4774,16 +4780,16 @@ localization_db : .localization
 #police_report:	"Police Report"
 
 	key[]: "offence_crash"
-	val[]: "Infracción por colisión de tráfico."
+	val[]: "Infracción por colisionar contra el tráfico."
 
 	key[]: "offence_sleeping"
-	val[]: "Infracción por dormirse al volante." #+ Driver does not respect the required pauses.
+	val[]: "Infracción por no respetar las pausas para descansar." #+ Driver does not respect the required pauses.
 
 	key[]: "offence_wrong_way"
 	val[]: "Infracción por circular en sentido contrario."
 
 	key[]: "offence_speeding"
-	val[]: "Infracción por exceso de velocidad."
+	val[]: "Infracción por exceder el límite de velocidad."
 
 	key[]: "offence_lights"
 	val[]: "Infracción por no poner las luces." #+ Driver did not have the headlights enabled when he should have.
@@ -4792,16 +4798,16 @@ localization_db : .localization
 	val[]: "Infracción por saltarse un semáforo en rojo."
 
 	key[]: "offence_weighing"
-	val[]: "Infracción por no parar en la estación de pesaje."
+	val[]: "Infracción por no parar en una estación de pesaje."
 
 	key[]: "offence_illegal_trailer"
-	val[]: "Infracción por uso de un remolque no autorizado."
+	val[]: "Infracción por usar un remolque no autorizado."
 
 	key[]: "offence_avoid_inspection"
-	val[]: "No has parado para realizar la inspección."
+	val[]: "No te has detenido a realizar la inspección."
 
 	key[]: "offence_illegal_border"
-	val[]: "Infracción por cruzar el puesto fronterizo sin autorización."
+	val[]: "Infracción por cruzar un puesto fronterizo sin autorización."
 
 	key[]: "offence_shoulder_violation"
 	val[]: "Infracción por circular por el arcén."
@@ -9810,16 +9816,16 @@ localization_db : .localization
 	val[]: "Gorra" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
 	key[]: "mug"
-	val[]: "Jarra" #+ "name" + "mug" name in accessory of a truck
+	val[]: "Taza" #+ "name" + "mug" name in accessory of a truck
 
 	key[]: "black_style_mug"
-	val[]: "Jarra de estilo negra" #+ specific color scheme of a mug in cabin
+	val[]: "Taza negra" #+ specific color scheme of a mug in cabin
 
 	key[]: "white_orange_mug"
-	val[]: "Jarra naranja y blanca" #+ specific color scheme of a mug in cabin
+	val[]: "Taza naranja y blanca" #+ specific color scheme of a mug in cabin
 
 	key[]: "black_orange_mug"
-	val[]: "Jarra naranja y negra" #+ specific color scheme of a mug in cabin
+	val[]: "Taza naranja y negra" #+ specific color scheme of a mug in cabin
 
 	key[]: "plush_toy"
 	val[]: "Peluche" #+ a plush toy in cabin of a truck
@@ -9840,13 +9846,13 @@ localization_db : .localization
 	val[]: "Mesa auxiliar central oscura" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "long_table_exclusive"
-	val[]: "Mesa auxiliar grande exclusiva" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla larga exclusiva" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "long_table_mahogany"
-	val[]: "Mesa auxiliar grande de caoba" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla larga de caoba" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "long_table_black"
-	val[]: "Mesa auxiliar grande negra" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla larga oscura" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "duty"
 	val[]: "De serie" #+ Basic truck accesory general
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Estrella imponente" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Barra protectora superior Maxi" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Barra protectora superior Maxi con leds" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Barra protectora superior Mega" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Barra protectora superior Mega con leds" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Barra protectora superior Midi" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Barra protectora superior Midi con leds" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Barra protectora superior Mini" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Barra protectora superior Mini con leds" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Barra protectora superior Standard" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "Barra protectora inferior I" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "Barra protectora inferior II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "Barra protectora inferior K-Liner" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Portafaros frontal I" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Portafaros frontal II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Portafaros frontal City" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Portafaros frontal Classic" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Portafaros frontal Tailor" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Portafaros superior I" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Portafaros superior II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Portafaros superior III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Portafaros superior con leds" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Portafaros superior Aero Visor" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Portafaros superior Aero Top" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Portafaros superior Crossbar" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Portafaros superior Hydra" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Portafaros superior Hydra Max" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Portafaros superior Hydra Top" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Portafaros superior Max" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Portafaros superior Mega" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Portafaros superior Top I" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Portafaros superior Top II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Portafaros superior Visor Bar" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "Barra protectora lateral" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "Barra protectora lateral con leds" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Acero inoxidable" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Visera parasol" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "Gorra de HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "Taza de HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "Taza desechable de HS Schoch" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "Banderín de HS Schoch" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -11810,7 +11936,7 @@ localization_db : .localization
 	val[]: "Sigue avanzando para adquirir tus propios remolques."
 
 	key[]: "link_locked_msg_cabin_adjust"
-	val[]: "No puedes acceder a los ajustes de cabina porque no estás conduciendo ningún camión."
+	val[]: "No puedes acceder a los ajustes de la cabina porque no estás conduciendo ningún camión."
 
 	key[]: "link_locked_msg_skills"
 	val[]: "Ahora mismo no tienes habilidades disponibles. Sube de nivel para desbloquear esta ventana."
@@ -13385,7 +13511,7 @@ localization_db : .localization
 #+ X-mas event 2019
 #@{
 	key[]: "xmas19_fetching"
-	val[]: "Recuperando el progreso de la ciudad...."
+	val[]: "Accediendo al progreso de la ciudad...."
 
 	key[]: "xmas19_star"
 	val[]: "★"

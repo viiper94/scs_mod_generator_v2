@@ -478,6 +478,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_bg"
 	val[]: "@@package_eut2_bg@@"
+	
+	key[]: "package_eut2_hs_schoch"
+	val[]: "DLC - HS-Schoch Tuning Pack"
+
+	key[]: "onlineid_eu_schoch"
+	val[]: "@@package_eut2_schoch@@"
 
 	# Truck brands
 
@@ -2853,7 +2859,7 @@ localization_db : .localization
 	val[]: "Realistisch brandstofverbruik" #+ Checkbox for enabling of realistic fuel consumption.
 
 	key[]: "cruise_control_grid"
-	val[]: "Stappen cruisecontrol" #+ Size of grid for cruise control increment/decrement step.
+	val[]: "Cruisecontrolmarge" #+ Size of grid for cruise control increment/decrement step.
 
 	key[]: "smart_cruise_control"
 	val[]: "Slimme cruisecontrol" #+ Smart cruise control setting.
@@ -2883,10 +2889,10 @@ localization_db : .localization
 	val[]: "Toon tussenfilmpjes" #+ Checkbox for enabling/disabling game cutscenes (e.g. garage/truck purchase/upgrade)
 
 	key[]: "steer_cam_rotation"
-	val[]: "Besturing camera rotatie" #+ Checkbox enabling camera rotation based on steering angle.
+	val[]: "Camerarotatie op basis van stuuruitslag" #+ Checkbox enabling camera rotation based on steering angle.
 
 	key[]: "steer_cam_rotation_factor"
-	val[]: "Besturing camera rotatie factor" #+ Slider for steering based camera rotation multiplier.
+	val[]: "Camerarotatiefactor op basis van stuuruitslag" #+ Slider for steering based camera rotation multiplier.
 
 	key[]: "steer_cam_rotation_reverse"
 	val[]: "Stuurrichting camera roteert zich wanneer je achteruit gaat" #+ Droplist for steering based camera rotation modes when reversing.
@@ -2895,10 +2901,10 @@ localization_db : .localization
 	val[]: "Beweging camera tijdens het gebruik van de richtingaanwijzers" #+ Checkbox enabling camera rotation based on blinker activation.
 
 	key[]: "phys_cam_move"
-	val[]: "Fysieke camera verplaatsen" #+ Checkbox enabling camera movement based on driver physics.
+	val[]: "Cockpitcamerabewegingen" #+ Checkbox enabling camera movement based on driver physics.
 
 	key[]: "phys_cam_move_factor"
-	val[]: "Factor beweging van de fysieke camera" #+ Slider for physics based camera movement multiplier.
+	val[]: "Cockpitcamerabewegingsfactor" #+ Slider for physics based camera movement multiplier.
 
 	key[]: "toy_phys_move"
 	val[]: "Beweging van cabineaccessoires" #+ Checkbox enabling cabin toys movement.
@@ -3238,7 +3244,7 @@ localization_db : .localization
 	val[]: "Interieur zoom" #+ When hold zoom interior camera in current direction.
 
 	key[]: "o_im_look_steer_mode"
-	val[]: "Rotatie Besturings Gebaseerde Camera" #+ Toggles enabled state of camera rotation based on steering angle.
+	val[]: "Camerarotatie op basis van stuuruitslag" #+ Toggles enabled state of camera rotation based on steering angle.
 
 	key[]: "o_im_look_blink_mode"
 	val[]: "Beweging richtingaanwijzer gebaseerde camera" #+ Toggles enabled state of camera rotation based on blinker activation.
@@ -4478,7 +4484,7 @@ localization_db : .localization
 	val[]: "Je AdBlue is op!<br>Zoek naar een tankstation."
 
 	key[]: "out_of_adblue_limit"
-	val[]: "AdBlue is op!<br>De motor werkt nu met beperkte trekkracht.<br>Vindt zo snel mogelijk een tankstation."
+	val[]: "AdBlue is op!<br>De motor werkt nu met verminderde trekkracht.<br>Zoek zo snel mogelijk een tankstation."
 
 	key[]: "trailer_lost"
 	val[]: "Trailer verloren!"
@@ -10111,6 +10117,126 @@ localization_db : .localization
 	
 	key[]: "grand_star"
 	val[]: "Grote Ster" #+ Hanging interior accessory
+
+	key[]: "hs_bull_catcher_maxi"
+	val[]: "Koeienvanger MAXI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_maxi_leds"
+	val[]: "Koeienvanger MAXI (extra leds)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega"
+	val[]: "Koeienvanger MEGA" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mega_leds"
+	val[]: "Koeienvanger MEGA (extra leds)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi"
+	val[]: "Koeienvanger MIDI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_midi_leds"
+	val[]: "Koeienvanger MIDI (extra leds)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini"
+	val[]: "Koeienvanger MINI" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_mini_leds"
+	val[]: "Koeienvanger MINI (extra leds)" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bull_catcher_standard"
+	val[]: "Koeienvanger STANDAARD" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar"
+	val[]: "BumpBar" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_2"
+	val[]: "BumpBar II" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_bump_bar_kliner"
+	val[]: "BumpBar K-LINER" #+ bottom grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder"
+	val[]: "Lampenbeugel Voorkant" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_2"
+	val[]: "Lampenbeugel Voorkant II" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_city"
+	val[]: "Lampenbeugel Voorkant CITY" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_classic"
+	val[]: "Lampenbeugel Voorkant CLASSIC" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_front_lamp_holder_tailor"
+	val[]: "Lampenbeugel Voorkant TAILOR" #+ front grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder"
+	val[]: "Daklampenbeugel" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_2"
+	val[]: "Daklampenbeugel II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_3"
+	val[]: "Daklampenbeugel III" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_leds"
+	val[]: "Daklampenbeugel (extra leds)" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_visor"
+	val[]: "Daklampenbeugel AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_aero_top"
+	val[]: "Daklampenbeugel AERO TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_crossbar"
+	val[]: "Daklampenbeugel CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra"
+	val[]: "Daklampenbeugel HYDRA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_max"
+	val[]: "Daklampenbeugel HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_hydra_top"
+	val[]: "Daklampenbeugel HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_max"
+	val[]: "Daklampenbeugel MAX" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_mega"
+	val[]: "Daklampenbeugel MEGA" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top"
+	val[]: "Daklampenbeugel TOP" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_top_2"
+	val[]: "Daklampenbeugel TOP II" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_roof_lamp_holder_visor_bar"
+	val[]: "Daklampenbeugel VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar"
+	val[]: "SideBar" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_side_bar_leds"
+	val[]: "SideBar (extra leds)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
+
+	key[]: "hs_stainless_steel"
+	val[]: "Roestvast Staal" #+ doorstep, mask or similar accessory name, HS Schoch naming
+
+	key[]: "hs_sun_visor"
+	val[]: "Zonneklep" #+ sun shield accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_cap"
+	val[]: "HS Schoch-pet" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_mug"
+	val[]: "HS Schoch-mok" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_paper_mug"
+	val[]: "HS Schoch-papieren mok" #+ toy accessory name, HS Schoch naming
+
+	key[]: "hs_schoch_pennant"
+	val[]: "HS Schoch-wimpel" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10804,7 +10930,7 @@ localization_db : .localization
 	val[]: "Wil je je internetbrowser openen en naar het World of Trucks vrachtcentrum gaan?" #+ pop-up message to inform about opening WOTR jobs page in web browser
 
 	key[]: "offline_profile_message"
-	val[]: "Dit profiel is niet gelinkt aan World of Trucks!<br><br>Om contracten te kunnen bemachtigen, moet je even je profiel wijzigen en het met World of Trucks koppelen."#+ A message on WOTR job screen if profile isn't connected to WOTR
+	val[]: "Dit profiel is niet gekoppeld aan World of Trucks!<br><br>Om contracten te kunnen bemachtigen, moet je even je profiel wijzigen en het met World of Trucks koppelen."#+ A message on WOTR job screen if profile isn't connected to WOTR
 
 	key[]: "edit_profile"
 	val[]: "Wijzig je profiel" #+ Button in WOTR jobs screens to begin editing profile if WOTR isn't conneted
@@ -11095,7 +11221,7 @@ localization_db : .localization
 	val[]: "Het steam-account dat je hebt gebruikt om de DLC's te registreren is niet gelijk aan het steam-account dat gebruikt werd om een World of Trucks-account aan te maken. Probeer het opnieuw met een ander steam-account." #+ The error displayed when the connect content operation fails because of a SteamID mismatch.
 
 	key[]: "registration_result_steamid_in_use"
-	val[]: "Het Steam-account dat je gebruikt om de DLC's te registreren is al gelinkt aan een ander World of Trucks-account. Om verder te gaan heb je een Steam-account nodig dat nog niet verbonden is met World of Trucks." #+ The error shown to the user when the connect content operation fails because the current Steam account is connected to a different WoTr account.
+	val[]: "Het Steam-account dat je gebruikt om de DLC's te registreren is al gekoppeld aan een ander World of Trucks-account. Om verder te gaan heb je een Steam-account nodig dat nog niet verbonden is met World of Trucks." #+ The error shown to the user when the connect content operation fails because the current Steam account is connected to a different WoTr account.
 
 	key[]: "registration_result_token_expired"
 	val[]: "Steam token is verlopen. Probeer het later opnieuw" #+ The message displayed when the connect content operation fails because the Steam token has expired.
