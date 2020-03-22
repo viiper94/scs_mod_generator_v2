@@ -132,8 +132,7 @@ class TrailerGenerator extends ModGenerator{
 	}
 
     private function replaceDealerFile(){
-        $file = $this->outDir .'/vehicle/trailer_dealer/tmg/tmg_trailer.sii';
-        file_put_contents($file, $this->generateDealerTrailerContent());
+        file_put_contents($this->outDir .'/vehicle/trailer_dealer/tmg/'.time().'.sii', $this->generateDealerTrailerContent());
         $dirname = $this->outDir .'/vehicle/tmg';
         $dir = opendir($dirname);
         while (($file = readdir($dir)) !== false){
