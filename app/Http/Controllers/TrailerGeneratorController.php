@@ -119,7 +119,8 @@ class TrailerGeneratorController extends Controller{
             $chassis = new Chassis();
             $chassis->alias = 'paintable';
             $chassis->supports_wheels = true;
-            $chassis->wheels = $request->input('wheels');
+            $chassis->wheels = new Wheel();
+            $chassis->wheels->def = $request->post('wheels');
 
             $paint_job = new Paint();
             $paint_job->look = $request->input('paint');
