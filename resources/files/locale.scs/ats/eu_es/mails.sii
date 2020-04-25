@@ -9,8 +9,8 @@ SiiNunit
 
 	mail_text: mailtext.test1 {
 		from: "Sistema" #+ Message sender
-		subject: "Testu mezua" #+ Message subject
-		body: "Aupa!<br><br>Honakoa zure administradore maitearen mezua da ; -)<br><br>Ondo segi" #+ Message body
+		subject: "Proba-mezua" #+ Message subject
+		body: "Aupa!<br><br>Honakoa zure administradore maitearen proba-mezua da ;-)<br><br>Ondo segi" #+ Message body
 	}
 
 /**
@@ -20,13 +20,13 @@ SiiNunit
 	mail_text: mailtext.bank_start {
 		from: "Bankua" #+ Message sender
 		subject: "Dirurik behar? Hemen daukazu laguntza!" #+ Message subject
-		body: "Jaun/Andre agurgarria,<br><br>Pentsatu dugu interesa ahal zaizula enpresa berrientzako eskaintzen ditugun maileguak. Fondorik behar duzu zure negozioa bultzatzeko? Laguntzeko prest gaude! Mesedez <link url=screen.bank color=@@clr_link@@>bisita ezazu zure banku zentrua</link>informazio gehiagorentzako<br><br>Respectfully,<br>Salmenta Arduraduna<br>Bankua" #+ Message body
+		body: "Jaun/Andre agurgarria,<br><br>Pentsatu dugu interesa ahal zaizula enpresa berrientzako eskaintzen ditugun maileguak. Fondorik behar duzu zure negozioa bultzatzeko? Laguntzeko prest gaude! Mesedez, <link url=screen.bank color=@@clr_link@@>bisita ezazu zure banku-zentroa</link> informazio gehiagorentzako.<br><br>Adeitasunez,<br>Salmenta-arduraduna<br>Bankua" #+ Message body
 	}
 
 	mail_text: mailtext.bank_credit {
 		from: "Bankua" #+ Message sender
-		subject: "Hedatzen lagunduko zaitugu." #+ Message subject
-		body: "Jaun/Andre agurgarria,<br><br>Zure irabazien igoera geldiezina ikusita gustatuko litzaiguke zure potentziala ahalik eta gehien bultzatzea. Hortaz, zure kreditu limitea handitu dugu $MONEY$-etara. Zifra horretararte nahi beste atera dezakezu zure <link url=screen.bank color=@@clr_link@@> banku lokalaren sedean </link>.<br><br>Errespetu guztiarekin,<br>Salmenta Zuzendaria<br>Bankua" #+ Message body
+		subject: "Hazten lagunduko zaitugu" #+ Message subject
+		body: "Jaun/Andre agurgarria,<br><br>Zure irabazien igoera geldiezina ikusita gustatuko litzaiguke zure potentziala ahalik eta gehien bultzatzea. Hortaz, zure kreditu limitea handitu dugu $MONEY$-etara. Zifra horretararte nahi beste atera dezakezu zure <link url=screen.bank color=@@clr_link@@>banku-zentroa </link>.<br><br>Adeitasunez,<br>Salmenta-arduraduna<br>Bankua" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debt0 {
@@ -77,8 +77,8 @@ SiiNunit
 
 	mail_text: mailtext.td_visit {
 		from: "Kontzesionarioa - $CITY$" #+ Message sender
-		subject: "$BRAND$ kamioi berria salgai!" #+ Message subject
-		body: "Jaun/Andre agurgarria,<br><br>$BRAND$ kamioien salerosle ofiziala gara. Edonolako konfigurazioak eskain ditzakegu eta bestelako doiketa pertsonala ere gauza dezakegu zure erosotasunerako. Mesedez, <link url=truck.dealer_map color=@@clr_link@@>bisitatu gure kontzesionarioa $CITY$-en</link>. Betidanik nahi izan duzun kamioia zure alboan eduki dezakezu zain<br><br>Agur beroenak,<br>Zure $BRAND$ Kamioi saleroslea." #+ Message body
+		subject: "$BRAND$ kamioi berriak salgai!" #+ Message subject
+		body: "Jaun/Andre agurgarria,<br><br>$BRAND$ kamioien salerosle ofiziala gara. Askotariko konfigurazioak eskaintzen ditugu eta bestelako doikuntza pertsonala ere gauza dezakegu zure beharrak betetzeko. Mesedez, <link url=truck.dealer_map color=@@clr_link@@>bisitatu gure kontzesionarioa $CITY$-n</link>. Betidanik nahi izan duzun kamioia zure alboan eduki dezakezu zain.<br><br>Agur beroenak,<br>Zure $BRAND$ kamioien saleroslea" #+ Message body
 	}
 
 /**
@@ -103,7 +103,7 @@ SiiNunit
 
 	mail_text: mailtext.drv_idle.female {
 		from: "$NAME$ gidaria" #+ Message sender - written by female
-		subject: "Kamoia behar dut lan egiteko" #+ Message subject - written by female
+		subject: "Kamioia behar dut lan egiteko" #+ Message subject - written by female
 		body: "Egun on jauna,<br><br>Ez dakit konturatu zaren, baina $DAYS$ daramatzat $CITY$-en lanik gabe. Nahiko nekagarria da diru sarrerarik gabe egotea nire kontuak ordaindu behar ditudan bitartean. Mesedez, eman nazazu kamioi bat hurrengoko $DAYS2$etan edo ez dut zu utzi baino baino aukera gehiagorik edukiko.<br><br>$NAME$" #+ Message body - written by female
 	}
 
@@ -137,13 +137,13 @@ SiiNunit
 
 	mail_text: mailtext.ovs.new_routes {
 		from: "Garraiolaria" #+ Message sender
-		subject: "Garraio Bereziak" #+ Message subject
-		body: "Hello boss.<br><br>I have something special for you. Thanks to our connections, we're now able to get to a real challenge. Some special, extra large and heavy cargoes need to be hauled by a true professional. It won't be easy and it'll require some skills, patience, cooperation with escorting vehicles and extra care, but I guess you have it all, right? Also bigger risk comes with a bigger profit.<br><br>If you're interested, you can visit these cities: $CITIES$." #+ Message body
+		subject: "Garraio bereziak" #+ Message subject
+		body: "Kaixo nagusi.<br><br>Zerbait berezia daukat zuretzat. Gure kontaktuei esker, orain erronka handi bati baiets dezakegu. Benetako profesional bat beharrezkoa da karga berezi, handi eta astun batzuk garraiatzeko. Ez da erraza izango eta trebetasuna, pazientzia, eskolta-ibilgailuekin lankidetza eta aparteko arreta eskatuko ditu, baina uste dut dena duzula, ezta? Halaber, arrisku handiagoak irabazi handiagoa dakar.<br><br>Interesa baduzu, hiri hauek bisita ditzakezu: $CITIES$." #+ Message body
 	}
 	
 	mail_text: mailtext.ovs.upd_routes {
 		from: "Garraiolaria" #+ Message sender
-		subject: "Garraio Berezi berriak" #+ Message subject
+		subject: "Garraio berezi berriak" #+ Message subject
 		body: "Kaixo nagusia.<br><br>Enpresa gehiagori gustatuko litzaieke zure lanbide-trebetasunak kontratatzea, entrega berezi batzuetarako. Azken aldia bezala: ez da erraza izango eta trebetasuna, pazientzia, lankidetza eskolta-ibilgailuekin eta arreta berezia eskatuko ditu, baina hori guztia daukazu oraindik, ezta? Eta ez ahaztu, karga horiengatiko irabaziak are handiagoak dira.<br><br>Orain arte garraio bereziko lanak aurkitu ahal zenituen hiri hauetan: $OLD_CITIES$.<br><br>Hemendik aurrera <color value=@@clr_sel@@>beste lan berri batzuk<color value=@@clr_txt@@> ere egin ahal izango dituzu hiri hauetan: <br><br>$CITIES$." #+ Message body
 	}
 

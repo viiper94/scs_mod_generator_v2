@@ -144,7 +144,7 @@ SiiNunit
 	mail_text: mailtext.ovs.upd_routes {
 		from: "Afsender" #+ Message sender
 		subject: "Nye særtransporter" #+ Message subject
-		body: "Hej chef.<br><br>Flere firmaer i hele Europa vil gerne ansætte dig og dine faglige færdigheder bag rattet til nogle særlige leverancer. Ligesom sidste gang - bliver det ikke nemt og det vil kræve nogle færdigheder, tålmodighed og samarbejde med følge køretøjer og ekstra pleje, men jeg tror du stadig har det i dig, har jeg ret? Og glem ikke - der er stadig større fortjeneste med disse særlige transporter.<br><br>Så forvent at se de aktuelle særlige transporter på: $OLD_CITIES$ <br><br> Du kan nu også finde <color value=@@clr_sel@@>nye<color value=@@clr_txt@@> på: <br><br>$CITIES$." #+ Message body
+		body: "Hej chef.<br><br>Flere firmaer vil gerne ansætte dig og dine faglige færdigheder bag rattet til nogle særleverancer. Ligesom sidste gang bliver det ikke nemt og det vil kræve nogle færdigheder, tålmodighed og samarbejde med følgekøretøjer og ekstra forsigtighed, men jeg tror du stadig har det i dig, har jeg ret? Og glem ikke - der er stadig større fortjeneste med disse særtransporter.<br><br>Sammen med de aktuelle særtransporter på: $OLD_CITIES$ <br><br> kan du nu også finde <color value=@@clr_sel@@>nye<color value=@@clr_txt@@> på: <br><br>$CITIES$." #+ Message body
 	}
 
 /**

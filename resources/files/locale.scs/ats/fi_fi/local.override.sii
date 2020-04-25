@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Hytin valaistus"
 
@@ -58,11 +57,14 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Hytin suojaseinämä"
 
+	key[]: "hndrail"
+	val[]: "Hand Rail"
+
 	key[]: "horns"
 	val[]: "Torvet"
 
 	key[]: "hood"
-	val[]: "Hood"
+	val[]: "Konepelti"
 
 	key[]: "lghfender"
 	val[]: "Rengaskaaren suojat"
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Rapakaaret"
 
+	key[]: "rear_cab"
+	val[]: "Cabin Rear"
+
 	key[]: "sideflares"
 	val[]: "Hytin ulkopaneelit"
 
 	key[]: "sideskrt_bar"
 	val[]: "Sivusuojat, putkimalli"
+
+	key[]: "slp_hndl"
+	val[]: "Door Handles"
+
+	key[]: "slp_vent"
+	val[]: "Tuuletusaukko"
 
 	key[]: "topflares"
 	val[]: "Katon yövalot"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Lelumoottorisaha"
+
+	key[]: "chrom_tank"
+	val[]: "Kromitankki" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Alumiinitankki" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-Shape" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -169,7 +189,7 @@ localization_db : .localization
 #+ Individual possible components of the reward.
 #@{
 	key[]: "adr_bonus"
-	val[]: "Vaarallisten aineiden toimitus lisä"
+	val[]: "Vaarallisten aineiden toimituslisä"
 
 	key[]: "adr_class"
 	val[]: "Vaarallisuusluokka"
@@ -210,7 +230,7 @@ localization_db : .localization
 	val[]: "Työmaakontteja"
 
 	key[]: "cn_crude_oil"
-	val[]: "Crude Oil"
+	val[]: "Raakaöljy"
 
 	key[]: "cn_curtains"
 	val[]: "Verhot"
@@ -222,7 +242,7 @@ localization_db : .localization
 	val[]: "Kuormatraktori"
 
 	key[]: "cn_frac_tank"
-	val[]: "Frac Tank"
+	val[]: "Säiliökontti"
 
 	key[]: "cn_frozen_fruits"
 	val[]: "Pakastehedelmiä"
@@ -233,11 +253,14 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "Hedelmiä"
 
+	key[]: "cn_fruit_juice"
+	val[]: "Fruit Juice"
+
 	key[]: "cn_grain"
 	val[]: "Viljaa"
 
 	key[]: "cn_harvester"
-	val[]: "Harvester"
+	val[]: "Leikkuupuimuri"
 
 	key[]: "cn_hay"
 	val[]: "Heinää"
@@ -291,7 +314,7 @@ localization_db : .localization
 	val[]: "Vesakkoleikkuri"
 
 	key[]: "cn_pelleted_animal_food"
-	val[]: "Pelleted Animal Food"
+	val[]: "Eläinruokapellettejä"
 
 	key[]: "cn_plows"
 	val[]: "Auroja"
@@ -303,7 +326,7 @@ localization_db : .localization
 	val[]: "Raakamaito"
 
 	key[]: "cn_salt"
-	val[]: "Salt"
+	val[]: "Suolaa"
 
 	key[]: "cn_scrap_cars"
 	val[]: "Romutettuja autoja"
@@ -392,7 +415,7 @@ localization_db : .localization
 	val[]: "Ruokasäiliöperävaunu"
 
 	key[]: "tn_frac_tank"
-	val[]: "Frac Tank"
+	val[]: "Säiliökontti"
 
 	key[]: "tn_fuel"
 	val[]: "Polttoainesäiliökärry"
@@ -533,7 +556,7 @@ localization_db : .localization
 #+ Trailer body type names (short/preview variant).
 #@{
 	key[]: "bulkfeed"
-	val[]: "Bulk Feed"
+	val[]: "Massasyöttöperävaunu"
 
 	key[]: "container"
 	val[]: "Konttikuljetukset"
@@ -551,7 +574,7 @@ localization_db : .localization
 	val[]: "Lavetti"
 
 	key[]: "hopper"
-	val[]: "Hopper"
+	val[]: "Hopperperävaunu"
 
 	key[]: "insulated"
 	val[]: "Eristetty"
@@ -566,19 +589,19 @@ localization_db : .localization
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "bulk"
-	val[]: "Bulk"
+	val[]: "Massa"
 #@}
 
 #+ Trailer cargo based on body type (tooltip usage)
 #@{
 	key[]: "body_cargo_types_bulkfeed"
-	val[]: "Bulk feed material"
+	val[]: "Massasyöttömateriaalit"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Light bulk material"
+	val[]: "Kevyetmassatavaramateriaalit"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Grain & Bulk material"
+	val[]: "Vilja- ja massatavaramateriaalit"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -634,7 +657,7 @@ localization_db : .localization
 	val[]: "STAA yhdistelmä"
 
 	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA Double Pup, 4 Axles"
+	val[]: "STAA yhdistelmä, 4 akselia"
 
 	key[]: "tr_b_double"
 	val[]: "B-yhdistelmä"
@@ -661,7 +684,7 @@ localization_db : .localization
 	val[]: "28 jalkaa"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28 feet, 2 Axles"
+	val[]: "28 jalkaa, 2 akselia"
 
 	key[]: "tr_single_32"
 	val[]: "32 jalkaa"
@@ -690,6 +713,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 jalkaa, levitetty"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 feet, Rear"
+
 	key[]: "tr_single_45"
 	val[]: "45 jalkaa"
 
@@ -697,10 +723,10 @@ localization_db : .localization
 	val[]: "45 jalkaa, 3 akselia"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 feet, 3 Axles, Single"
+	val[]: "45 jalkaa, 3 akselia, yksittäinen"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45 feet, 3 Axles, Steerable"
+	val[]: "45 jalkaa, 3 akselia, ohjattava"
 
 	key[]: "tr_single_45_front"
 	val[]: "45 jalkaa, etu"
@@ -736,16 +762,16 @@ localization_db : .localization
 	val[]: "48 jalkaa, levitetty"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50 feet, 3 Axles"
+	val[]: "50 jalkaa, 3 akselia"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 feet, 3 Axles, Single"
+	val[]: "50 jalkaa, 3 akselia, yksittäinen"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50 feet, 3 Axles, Steerable"
+	val[]: "50 jalkaa, 3 akselia, ohjattava"
 
 	key[]: "tr_single_50_spread"
-	val[]: "50 feet, Spread"
+	val[]: "50 jalkaa, levitetty"
 
 	key[]: "tr_single_53_3axle"
 	val[]: "53 jalkaa, 3 akselia"
@@ -797,7 +823,7 @@ localization_db : .localization
 	val[]: "Matalalattiaperävaunu"
 
 	key[]: "bs_bulk_feed"
-	val[]: "Bulk Feed"
+	val[]: "Massasyöttö"
 
 	key[]: "bs_chipvan"
 	val[]: "Puulastuperävaunu"
@@ -820,11 +846,14 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Lavettiperävauvu alumiinia"
 
+	key[]: "bs_food_tank"
+	val[]: "Food Tank"
+
 	key[]: "bs_grain_hopper"
-	val[]: "Grain Hopper"
+	val[]: "Viljahopper"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Grain Hopper Belt"
+	val[]: "Viljahopperin kuljetushihna"
 
 	key[]: "bs_insulated"
 	val[]: "Eristetty"

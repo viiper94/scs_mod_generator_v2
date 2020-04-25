@@ -190,7 +190,7 @@ localization_db : .localization
 	val[]: "DLC - Washington"
 
 	key[]: "onlineid_us_wa"
-	val[]: "@@package_ats_washington@@"
+	val[]: "@@package_ats_wa@@"
 	
 	key[]: "package_ats_utah"
 	val[]: "DLC - Utah"
@@ -224,6 +224,9 @@ localization_db : .localization
 	key[]: "brand_kenworth"
 	val[]: "Kenworth"
 
+	key[]: "brand_mack"
+	val[]: "Mack"
+
 	key[]: "brand_peterbilt"
 	val[]: "Peterbilt"
 
@@ -238,6 +241,9 @@ localization_db : .localization
 
 	key[]: "series_kenworth_w900"
 	val[]: "W900"
+
+	key[]: "series_mack_anthem"
+	val[]: "Anthem"
 
 	key[]: "series_peterbilt_389"
 	val[]: "389"
@@ -258,6 +264,9 @@ localization_db : .localization
 
 	key[]: "truck_browser_brand_kenworth_w900"
 	val[]: "Kenworth W900"
+
+	key[]: "truck_browser_brand_mack_anthem"
+	val[]: "Mack Anthem"
 
 	key[]: "truck_browser_brand_peterbilt_389"
 	val[]: "Peterbilt 389"
@@ -287,6 +296,9 @@ localization_db : .localization
 
 	key[]: "series_scs_flatbed"
 	val[]: "A-PLO-18"
+
+	key[]: "series_scs_foodtank"
+	val[]: "A-MLC-20"
 
 	key[]: "series_scs_grainhopper"
 	val[]: "A-SYP-19"
@@ -810,6 +822,9 @@ localization_db : .localization
 	key[]: "head_lights"
 	val[]: "Hlavní světla"
 
+	key[]: "f_light_chs"
+	val[]: "Headlights"
+
 	key[]: "halogen"
 	val[]: "Halogenová světla"
 
@@ -948,6 +963,12 @@ localization_db : .localization
 	key[]: "flag_l"
 	val[]: "Vlajka na levém zrcátku" #+ Left window flag
 
+	key[]: "f_mudflap"
+	val[]: "Přední zástěrky kol" #+ A couple of mudflaps on the front of the trucks bumper
+
+	key[]: "windowtrim"
+	val[]: "Window Trim" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
+
 	key[]: "steering_w"
 	val[]: "Volant" #+ Steering wheel
 
@@ -990,8 +1011,53 @@ localization_db : .localization
 
 	key[]: "screenshot"
 	val[]: "Vytvořit obrázek" #+ Tooltip for icon which makes screenshots.
+
+	key[]: "switch_walking_cam"
+	val[]: "Přepnout režim kamery" #+ Tooltip for icon which turns walking camera mode on and off.
+	
+	key[]: "tooltip_walk_look_around"
+	val[]: "Rozhlížení" #+ Tooltip for control icon: look around (by walking camera).
+	
+	key[]: "tooltip_mouse_rotate"
+	val[]: "Otáčení" #+ Tooltip for control icon: rotate by mouse.
+	
+	key[]: "tooltip_mouse_zoom"
+	val[]: "Přiblížení" #+ Tooltip for control icon: zoom by mouse.
+	
+	key[]: "tooltip_mouse_pan"
+	val[]: "Naklonění" #+ Tooltip for control icon: pan by mouse.
+	
+	key[]: "tooltip_walk_title"
+	val[]: "Ovládání režimu chůze:" #+ Title of walk mode controls tooltip.
+	
+	key[]: "tooltip_walk_forward"
+	val[]: "Dopředu" #+ Tooltip for walk forward.
+	
+	key[]: "tooltip_walk_back"
+	val[]: "Dozadu" #+ Tooltip for walk back.
+	
+	key[]: "tooltip_walk_left"
+	val[]: "Doleva" #+ Tooltip for walk left.
+	
+	key[]: "tooltip_walk_right"
+	val[]: "Doprava" #+ Tooltip for walk right.
+	
+	key[]: "tooltip_walk_crouch"
+	val[]: "Přikrčení" #+ Tooltip for crouch.
+	
+	key[]: "tooltip_walk_run"
+	val[]: "Běhání" #+ Tooltip for run.
 #@}
 
+#+ Notifications shown when camera mode is changed in truck configurator.
+#@{
+
+	key[]: "notification_walking_camera"
+	val[]: "Zapnut pohled z první osoby" #+ Notifications shown when walking camera is enabled.
+	
+	key[]: "notification_orbit_camera"
+	val[]: "Zapnuta oběžná kamera" #+ Notifications shown when orbit camera is enabled.
+#@}
 
 	key[]: "quit_game_t"
 	val[]: "UKONČIT HRU" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
@@ -1986,17 +2052,53 @@ localization_db : .localization
 	key[]: "master_volume"
 	val[]: "Celková hlasitost" #+ Slider controlling master volume.
 
-	key[]: "sound_volume"
-	val[]: "Hlasitost efektů" #+ Slider controlling volume of the sound effects.
+	key[]: "truck_engine_volume"
+	val[]: "Hlasitost motoru tahače" #+ Slider controlling volume of the truck engine.
 
-	key[]: "music_volume"
-	val[]: "Hlasitost hudby" #+ Slider controlling volume of the music effects.
+	key[]: "truck_exhaust_volume"
+	val[]: "Hlasitost výfuku tahače" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_effects_volume"
+	val[]: "Hlasitost efektů tahače" #+ Slider controlling volume of the truck effects.
+
+	key[]: "truck_noise_volume"
+	val[]: "Hlasitost hluku tahače" #+ Slider controlling volume of the truck noises.
+
+	key[]: "trailer_noise_volume"
+	val[]: "Hlasitost hluku návěsu" #+ Slider controlling volume of the trailer noises.
+
+	key[]: "traffic_volume"
+	val[]: "Hlasitost dopravy" #+ Slider controlling volume of the traffic.
+
+	key[]: "world_volume"
+	val[]: "Hlasitost zvuků prostředí" #+ Slider controlling volume of the environment sounds.
+
+	key[]: "ambient_volume"
+	val[]: "Hlasitost okolních zvuků" #+ Slider controlling volume of the ambient sounds.
+
+	key[]: "interior_volume"
+	val[]: "Hlasitost zvuků interiéru" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
 	val[]: "Hlasitost rádia" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Hlasitost hlasové navigace" #+ Slider controlling volume of the voice navigation.
+
+	key[]: "voiceover_volume"
+	val[]: "Hlasitost ostatních hlasů" #+ Slider controlling voice over volume.
+
+	key[]: "music_volume"
+	val[]: "Hlasitost hudby" #+ Slider controlling volume of the in-game music.
+
+	key[]: "game_ui_volume"
+	val[]: "Hlasitost zvuků hry" #+ Slider controlling volume of the game sound effects.
+
+	key[]: "music_ui_volume"
+	val[]: "Hlasitost hudby v menu" #+ Slider controlling volume of the ui (menu) music.
+
+	key[]: "intro_volume"
+	val[]: "Úvodní loga" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "HLASOVÁ NAVIGACE" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2031,20 +2133,29 @@ localization_db : .localization
 	key[]: "advanced_audio_t"
 	val[]: "OSTATNÍ NASTAVENÍ ZVUKU" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
-	key[]: "reverse_stereo"
-	val[]: "Převrátit stereo" #+ Checkbox flipping left and right loudspeaker.
-
-	key[]: "sound_effects"
-	val[]: "Zvukové efekty" #+ Checkbox enabling sound effects.
-
-	key[]: "music"
-	val[]: "Hudba" #+ Checkbox enabling music.
-
 	key[]: "sound_of_reverse"
 	val[]: "Zvukový signál při couvání" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
 
 	key[]: "rumble_stripe_sound"
 	val[]: "Hlučné vodící čáry" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
+
+	key[]: "noise_window"
+	val[]: "Hluk otevřených oken" #+ Checkbox enabling the sound of the opened windows noise.
+
+	key[]: "noise_aero"
+	val[]: "Hluk proudícího vzduchu" #+ Checkbox enabling the sound of the air noise.
+
+	key[]: "reverb_cabin"
+	val[]: "Efekt dozvuku kabiny" #+ Checkbox enabling the reverb effect of the cabin.
+
+	key[]: "reverb_world"
+	val[]: "Efekt dozvuku okolního prostředí" #+ Checkbox enabling the reverb effect of the environment.
+
+	key[]: "audio_driver_settings_t"
+	val[]: "ZVUKOVÝ VÝSTUP" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+
+	key[]: "default_audio_driver"
+	val[]: "- výchozí systémový ovladač -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -2326,7 +2437,7 @@ localization_db : .localization
 	key[]: "adviser_autopark"
 	val[]: "Dialog automatického parkování" #+ Checkbox enabling autoparking trigger.
 
-  key[]: "adviser_keep_hidden"
+	key[]: "adviser_keep_hidden"
 	val[]: "Zakázat samovolné objevení Route Advisoru" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
@@ -2520,6 +2631,9 @@ localization_db : .localization
 	key[]: "hud_controls"
 	val[]: "OVLÁDÁNÍ HUD"
 
+	key[]: "walk_mode"
+	val[]: "REŽIM CHŮZE"
+	
 	key[]: "other_controls"
 	val[]: "OSTATNÍ"
 #@}
@@ -2683,8 +2797,23 @@ localization_db : .localization
 	key[]: "o_im_activate"
 	val[]: "Aktivovat" #+ Context action for activation. For example sleep, refuel....
 
+	key[]: "o_im_right_window_open"
+	val[]: "Otevřít pravé okno" #+ Action for opening right window.
+
+	key[]: "o_im_right_window_close"
+	val[]: "Zavřít pravé okno" #+ Action for closing right window.
+
+	key[]: "o_im_left_window_open"
+	val[]: "Otevřít levé okno" #+ Action for opening left window.
+
+	key[]: "o_im_left_window_close"
+	val[]: "Zavřít levé okno" #+ Action for closing left window.
+
 	key[]: "o_im_menu"
 	val[]: "Nabídka" #+ Action for entering menu (hardcoded ESC + one optional control)
+
+	key[]: "o_im_eye_config"
+	val[]: "Otevřít nastavení sledování očí"
 # hud
 
 	key[]: "o_im_show_mirrors"
@@ -2789,7 +2918,25 @@ localization_db : .localization
 	key[]: "o_im_look_blink_mode"
 	val[]: "Otáčení kamery při použití blinkru" #+ Toggles enabled state of camera rotation based on blinker activation.
 
-
+#walk mode
+	key[]: "o_im_walk_forward"
+	val[]: "Dopředu" #+ Walk forward.
+	
+	key[]: "o_im_walk_back"
+	val[]: "Dozadu" #+ Walk back.
+	
+	key[]: "o_im_walk_left"
+	val[]: "Doleva" #+ Walk left.
+	
+	key[]: "o_im_walk_right"
+	val[]: "Doprava" #+ Walk right.
+	
+	key[]: "o_im_walk_crouch"
+	val[]: "Přikrčení" #+ Activate crouch.
+	
+	key[]: "o_im_walk_run"
+	val[]: "Běhání" #+ Activate run.
+	
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3195,10 +3342,16 @@ localization_db : .localization
 	val[]: "Povolit pozici (experimentální)" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
-	val[]: "Činitel otáčení" #+ Multiplier applied to resulting yaw value
+	val[]: "Činitel otáčení (v kabině)" #+ Multiplier applied to resulting yaw value (in cabin)
 
 	key[]: "eye_pitch_scale"
-	val[]: "Činitel stoupání" #+ Multiplier applied to resulting pitch value
+	val[]: "Činitel náklonu (v kabině)" #+ Multiplier applied to resulting pitch value (in cabin)
+	
+	key[]: "eye_walk_mode_yaw_scale"
+	val[]: "Činitel otáčení (v režimu chůze)" #+ Multiplier applied to resulting yaw value (in walk mode)
+
+	key[]: "eye_walk_mode_pitch_scale"
+	val[]: "Činitel náklonu (v režimu chůze)" #+ Multiplier applied to resulting pitch value (in walk mode)
 
 	key[]: "eye_gaze_max_angle"
 	val[]: "Maximální úhel pohledu" #+ Maximal angle change generated by gaze tracking.
@@ -3249,19 +3402,19 @@ localization_db : .localization
 	val[]: "Určuje, jak se postupně zvyšuje rychlost."
 
 	key[]: "eye_gaze_inflection_tooltip"
-	val[]: "The distance from the center of the screen where the acceleration will start to level out."
+	val[]: "Vzdálenost od středu obrazovky, kde se zrychlení začne vyrovnávat."
 
 	key[]: "eye_gaze_start_point_tooltip"
-	val[]: "How far from the center of the screen you’ll have to look before the in-game camera starts to move."
+	val[]: "Jak daleko od středu obrazovky se musíš podívat, dokud se herní kamera nezačne pohybovat."
 
 	key[]: "eye_gaze_endpoint_tooltip"
-	val[]: "How far from the center of the screen you’ll have to look in order to reach maximum camera speed."
+	val[]: "Jak daleko od středu obrazovky se musíš podívat pro dosažení maximální rychlosti kamery."
 
 	key[]: "eye_autocenter_tooltip"
 	val[]: "Herní kamera se bude pozvolna vracet na střed, když během hraní změníš přirozenou pozici hlavy."
 
 	key[]: "eye_head_view_responsiveness_tooltip"
-	val[]: "How quickly the in-game camera will respond to your head movements."
+	val[]: "Jak rychle bude herní kamera reagovat na tvé pohyby hlavou."
 
 	key[]: "eye_head_position_tooltip"
 	val[]: "Tvoje pozice hlavy ovlivní pozici herní kamery."
@@ -3270,10 +3423,16 @@ localization_db : .localization
 	val[]: "Pokud hlavu nakloníš na kteroukoliv stranu, herní kamera se nakloní odpovídajícím způsobem."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "Multiplies the responsiveness of when you rotate your head by turning it from side to side."
+	val[]: "Násobí citlivost při otáčení hlavou do stran (v kabině)."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "Multiplies the responsiveness of when you turn your head up and down."
+	val[]: "Násobí citlivost při otáčení hlavou nahoru a dolů (v kabině)."
+	
+	key[]: "eye_walk_mode_yaw_scale_tooltip"
+	val[]: "Násobí citlivost při otáčení hlavou do stran (v režimu chůze)."
+
+	key[]: "eye_walk_mode_pitch_scale_tooltip"
+	val[]: "Násobí citlivost při otáčení hlavou nahoru a dolů (v režimu chůze)."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "Určuje, jak daleko se může kamera při pohledu na okraje obrazovky otočit."
@@ -3959,6 +4118,20 @@ localization_db : .localization
 	key[]: "job_income"
 	val[]: "Příjem ze zakázky" #+ For example "Job income: E6,526"
 
+	key[]: "adviser_tooltip_map_page"
+	val[]: "Navigation" #+ Tooltip for map page in route advisor
+
+	key[]: "adviser_tooltip_job_page"
+	val[]: "Current Job" #+ Tooltip for job info page in route advisor
+
+	key[]: "adviser_tooltip_damage_page"
+	val[]: "Diagnostics & Assistance call" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+
+	key[]: "adviser_tooltip_message_page"
+	val[]: "Short Messages" #+ Tooltip for short messages page in route advisor
+
+	key[]: "adviser_tooltip_tutorial"
+	val[]: "Route Advisor Tutorial" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "Asistenční služba může tebe a tvůj tahač přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Souhlasíš?"
@@ -4215,6 +4388,15 @@ localization_db : .localization
 	key[]: "weigh_confirm"
 	val[]: "Děkujeme za spolupráci. Přejeme vám šťastnou cestu!" #+ Adviser text
 
+	key[]: "weigh_damaged"
+	val[]: "Tvé vozidlo není v perfektním technickém stavu. Příště buď opatrnější!" #+ Adviser text
+
+	key[]: "weigh_damaged_lot"
+	val[]: "Tvé vozidlo neodpovídá technickému stavu, který vyžaduje zákon. Musíš jej opravit!" #+ Adviser text
+
+	key[]: "weigh_illegal_trailer"
+	val[]: "Kombinace tvého tahače a návěsu zde není legální!" #+ Adviser text
+
 	key[]: "trucking_prohibited"
 	val[]: "V této oblasti je komerční nákladní doprava zakázána. Musíš se otočit a jet zpátky." #+ Adviser text
 
@@ -4308,6 +4490,18 @@ localization_db : .localization
 
 	key[]: "offence_illegal_trailer"
 	val[]: "Pokuta za nepovolený průjezd s návěsem."
+
+	key[]: "offence_avoid_inspection"
+	val[]: "Pokuta za nezastavení pro inspekci."
+
+	key[]: "offence_illegal_border"
+	val[]: "Pokuta za neoprávněný průjezd hranicemi."
+
+	key[]: "offence_shoulder_violation"
+	val[]: "Pokuta za jízdu po krajnici."
+
+	key[]: "offence_damaged_vehicle_usage"
+	val[]: "Pokuta za provozování poškozeného vozidla."
 #@}
 
 #@}
@@ -6217,7 +6411,7 @@ localization_db : .localization
 
 	key[]: "truckman_summary_hint"
 	val[]: "Vyber tahač na pravé straně a uvidíš jeho podrobnosti"
-	
+
 #+ Truck map filters
 #@{
 
@@ -6232,7 +6426,7 @@ localization_db : .localization
 
 	key[]: "truckman_filter_sleeping"
 	val[]: "Spící tahače"
-	
+
 	key[]: "truckman_filter_returning"
 	val[]: "Vracející se tahače"
 #@}
@@ -6452,7 +6646,7 @@ localization_db : .localization
 
 	key[]: "driverman_filter_sleeping"
 	val[]: "Spící řidiči"
-	
+
 	key[]: "driverman_filter_returning"
 	val[]: "Vracející se řidiči"
 #@}
@@ -7128,7 +7322,7 @@ localization_db : .localization
 	val[]: "'" #+ Feet
 
 	key[]: "unit_in"
-	val[]: "'" #+ Inches
+	val[]: "\"" #+ Inches
 
 	key[]: "kph"
 	val[]: "km/h" #+ Kilometres per hour
@@ -7241,7 +7435,7 @@ localization_db : .localization
 	val[]: "Přizpůsobit sedadlo"  #+ Opens the seat adjuster.
 
 	key[]: "truck_seat_help"
-	val[]: "Přizpůsob si pozici sedadla a volantu pro maximální pohodlí."  #+ Help message associated with seat adjuster icon.
+	val[]: "Přizpůsob si pozici sedadla a volantu pro maximální pohodlí." #+ Help message associated with seat adjuster icon.
 
 	# trailer adjuster name string is in assistance section (it could be open from both screens)
 
@@ -8420,31 +8614,31 @@ localization_db : .localization
 
 	key[]: "chrome_ribbon"
 	val[]: "Chromovaná stužka" #+ Accessory name, DLC Pink Ribbon.
-	
+
 	key[]: "christmas_sock"
 	val[]: "Vánoční ponožka" #+ Hanging interior accessory
-	
+
 	key[]: "autumn_star"
 	val[]: "Podzimní hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "twinkle_star"
 	val[]: "Zářící hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "frosty_star"
 	val[]: "Mrazivá hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "winter_star"
 	val[]: "Zimní hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "christmas_star"
 	val[]: "Vánoční hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "wishing_star"
 	val[]: "Přací hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "diamond_star"
 	val[]: "Diamantová hvězda" #+ Hanging interior accessory
-	
+
 	key[]: "grand_star"
 	val[]: "Hlavní hvězda" #+ Hanging interior accessory
 #@}
@@ -9783,7 +9977,7 @@ localization_db : .localization
 	val[]: "INFORMACE O EVENTU" #+ Title of the event popup.
 
 	key[]: "event_completed"
-	val[]: "Event dokončen!" #+ Text showed when player completes event.
+	val[]: "Osobní úkol dokončen!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
 	val[]: "Otevřít stránku eventu" #+ Button opening event page on WoTr.
@@ -10280,6 +10474,9 @@ localization_db : .localization
 	key[]: "flatbed"
 	val[]: "Plochý návěs"
 
+	key[]: "foodtank"
+	val[]: "Potravinářská cisterna"
+
 	key[]: "insulated"
 	val[]: "Izolovaný návěs"
 
@@ -10300,6 +10497,9 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Běžné, suché zboží"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "Tekuté potraviny"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "Chlazené zboží"
@@ -10354,6 +10554,12 @@ localization_db : .localization
 
 	key[]: "rear_body"
 	val[]: "Zadní část návěsu"
+
+	key[]: "r_body"
+	val[]: "Pravá část návěsu"
+
+	key[]: "l_body"
+	val[]: "Levá část návěsu"
 #@}
 
 #+ Trailer Configurator
@@ -10418,6 +10624,12 @@ localization_db : .localization
 
 	key[]: "fuel_tank"
 	val[]: "Palivová nádrž"
+
+	key[]: "hose"
+	val[]: "Hadice"
+
+	key[]: "hose_2"
+	val[]: "Hadice, 2x"
 
 	key[]: "ladder"
 	val[]: "Žebřík"
@@ -10562,7 +10774,7 @@ localization_db : .localization
 
 	key[]: "cm_legend_driver_status_returning"
 	val[]: "Řidič se vrací"
-	
+
 	key[]: "cm_legend_driver_player"
 	val[]: "Hráč"
 
@@ -10576,7 +10788,7 @@ localization_db : .localization
 	val[]: "Objížďky"
 
 	key[]: "detour_gps_warning"
-	val[]: "Na tvé trase se nachází neočekávaná událost. Důrazně doporučujeme ručně přenastavit navigaci."
+	val[]: "Nepodařilo se správně určit navigaci kvůli překážce na silnici. Najdi jinou trasu okolo nebo přenastav navigaci v mapě přidáním bodů, kterým se vyhnout."
 #@}
 
 #+ Steam cloud.
@@ -11127,6 +11339,36 @@ localization_db : .localization
 
 	key[]: "sctrl_input_screenshot"
 	val[]: "@@sctrl_action_screenshot@@"
+
+	key[]: "sctrl_input_camwalk_for"
+	val[]: "@@sctrl_action_camwalk_for@@"
+
+	key[]: "sctrl_input_camwalk_back"
+	val[]: "@@sctrl_action_camwalk_back@@"
+
+	key[]: "sctrl_input_camwalk_left"
+	val[]: "@@sctrl_action_camwalk_left@@"
+
+	key[]: "sctrl_input_camwalk_righ"
+	val[]: "@@sctrl_action_camwalk_righ@@"
+
+	key[]: "sctrl_input_camwalk_crou"
+	val[]: "@@sctrl_action_camwalk_crou@@"
+
+	key[]: "sctrl_input_camwalk_run"
+	val[]: "@@sctrl_action_camwalk_run@@"
+
+	key[]: "sctrl_input_rwinopen"
+	val[]: "@@sctrl_action_rwinopen@@"
+
+	key[]: "sctrl_input_rwinclose"
+	val[]: "@@sctrl_action_rwinclose@@"
+
+	key[]: "sctrl_input_lwinopen"
+	val[]: "@@sctrl_action_lwinopen@@"
+
+	key[]: "sctrl_input_lwinclose"
+	val[]: "@@sctrl_action_lwinclose@@"
 #!}
 
 #@}
@@ -11150,6 +11392,9 @@ localization_db : .localization
 
 	key[]: "sctrl_action_set_layer_gearbox_direct"
 	val[]: "Řazení řadicí pákou"
+
+	key[]: "sctrl_action_set_walking"
+	val[]: "Chůze"
 
 #+ Individual bindable actions
 #@{
@@ -11451,6 +11696,36 @@ localization_db : .localization
 
 	key[]: "sctrl_action_screenshot"
 	val[]: "@@o_im_screenshot@@"
+
+	key[]: "sctrl_action_camwalk_for"
+	val[]: "Walk Forward"
+
+	key[]: "sctrl_action_camwalk_back"
+	val[]: "Walk Backward"
+
+	key[]: "sctrl_action_camwalk_left"
+	val[]: "Walk Left"
+
+	key[]: "sctrl_action_camwalk_righ"
+	val[]: "Walk Right"
+
+	key[]: "sctrl_action_camwalk_crou"
+	val[]: "@@o_im_walk_crouch@@"
+
+	key[]: "sctrl_action_camwalk_run"
+	val[]: "@@o_im_walk_run@@"
+
+	key[]: "sctrl_action_rwinopen"
+	val[]: "@@o_im_right_window_open@@"
+
+	key[]: "sctrl_action_rwinclose"
+	val[]: "@@o_im_right_window_close@@"
+
+	key[]: "sctrl_action_lwinopen"
+	val[]: "@@o_im_left_window_open@@"
+
+	key[]: "sctrl_action_lwinclose"
+	val[]: "@@o_im_left_window_close@@"
 #!}
 #@}
 
@@ -11472,10 +11747,10 @@ localization_db : .localization
 	val[]: "Pro zobrazení postupu vánočním eventem přejeď kurzorem nad městem. Pro zobrazení kompletního shrnutí postupu navštiv $WOTR_URL$."
 
 	key[]: "xmas19_max_city_message"
-	val[]: "This city's contribution towards the community goal is complete!<br><br>Why not help another city deliver its gifts?"
+	val[]: "Postup tohoto města k dosažení komunitního cíle je úplný!<br><br>Nebude lepší pomoci jinému městu s doručením dárků?"
 
 	key[]: "xmas19_back"
-	val[]: "Go back"
+	val[]: "Zpět"
 #@}
 
 #@}

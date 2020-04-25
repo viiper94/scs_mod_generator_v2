@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Światła do kabiny"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Tylny stelaż ochronny"
 
+	key[]: "hndrail"
+	val[]: "Poręcz"
+
 	key[]: "horns"
 	val[]: "Titki"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Błotniki"
 
+	key[]: "rear_cab"
+	val[]: "Tył kabiny"
+
 	key[]: "sideflares"
 	val[]: "Progi"
 
 	key[]: "sideskrt_bar"
 	val[]: "Progi"
+
+	key[]: "slp_hndl"
+	val[]: "Uchwyt"
+
+	key[]: "slp_vent"
+	val[]: "Otwór wentylacyjny"
 
 	key[]: "topflares"
 	val[]: "Dachowe światła"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Piła łańcuchowa"
+
+	key[]: "chrom_tank"
+	val[]: "Chromowany zbiornik" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Zbiornik aluminiowy" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "Zbiornik" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -232,6 +252,9 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Ôwoce"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Sok owocowy"
 
 	key[]: "cn_grain"
 	val[]: "Zboże"
@@ -690,6 +713,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40ft, Długi rozstaw"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43ft, Z tyłu"
+
 	key[]: "tr_single_45"
 	val[]: "45ft"
 
@@ -819,6 +845,9 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Aluminiowa platforma"
+
+	key[]: "bs_food_tank"
+	val[]: "Cysterna spożywcza"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Zbożowa"

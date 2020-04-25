@@ -190,7 +190,7 @@ localization_db : .localization
 	val[]: "DLC - Washington"
 
 	key[]: "onlineid_us_wa"
-	val[]: "@@package_ats_washington@@"
+	val[]: "@@package_ats_wa@@"
 	
 	key[]: "package_ats_utah"
 	val[]: "DLC - Utah"
@@ -224,6 +224,9 @@ localization_db : .localization
 	key[]: "brand_kenworth"
 	val[]: "Kenworth"
 
+	key[]: "brand_mack"
+	val[]: "Mack"
+
 	key[]: "brand_peterbilt"
 	val[]: "Peterbilt"
 
@@ -238,6 +241,9 @@ localization_db : .localization
 
 	key[]: "series_kenworth_w900"
 	val[]: "W900"
+
+	key[]: "series_mack_anthem"
+	val[]: "Anthem"
 
 	key[]: "series_peterbilt_389"
 	val[]: "389"
@@ -258,6 +264,9 @@ localization_db : .localization
 
 	key[]: "truck_browser_brand_kenworth_w900"
 	val[]: "Kenworth W900"
+
+	key[]: "truck_browser_brand_mack_anthem"
+	val[]: "Mack Anthem"
 
 	key[]: "truck_browser_brand_peterbilt_389"
 	val[]: "Peterbilt 389"
@@ -287,6 +296,9 @@ localization_db : .localization
 
 	key[]: "series_scs_flatbed"
 	val[]: "A-PLO-18"
+
+	key[]: "series_scs_foodtank"
+	val[]: "A-MLC-20"
 
 	key[]: "series_scs_grainhopper"
 	val[]: "A-SYP-19"
@@ -810,6 +822,9 @@ localization_db : .localization
 	key[]: "head_lights"
 	val[]: "Priekšējās gaismas"
 
+	key[]: "f_light_chs"
+	val[]: "Headlights"
+
 	key[]: "halogen"
 	val[]: "Halogēnie lukturi"
 
@@ -862,7 +877,7 @@ localization_db : .localization
 	val[]: "Console Items" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
-	val[]: "Center Floor Items" #+ Interior accessories placed on the floor in the center of the truck cabin
+	val[]: "Centre Floor Items" #+ Interior accessories placed on the floor in the center of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Dashboard Sets" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -948,6 +963,12 @@ localization_db : .localization
 	key[]: "flag_l"
 	val[]: "Left Window Flag" #+ Left window flag
 
+	key[]: "f_mudflap"
+	val[]: "Front Mudflaps" #+ A couple of mudflaps on the front of the trucks bumper
+
+	key[]: "windowtrim"
+	val[]: "Window Trim" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
+
 	key[]: "steering_w"
 	val[]: "Steering Wheel" #+ Steering wheel
 
@@ -990,8 +1011,53 @@ localization_db : .localization
 
 	key[]: "screenshot"
 	val[]: "Uzņemt bildi" #+ Tooltip for icon which makes screenshots.
+
+	key[]: "switch_walking_cam"
+	val[]: "Switch Camera Mode" #+ Tooltip for icon which turns walking camera mode on and off.
+	
+	key[]: "tooltip_walk_look_around"
+	val[]: "Look around" #+ Tooltip for control icon: look around (by walking camera).
+	
+	key[]: "tooltip_mouse_rotate"
+	val[]: "Rotate" #+ Tooltip for control icon: rotate by mouse.
+	
+	key[]: "tooltip_mouse_zoom"
+	val[]: "Zoom" #+ Tooltip for control icon: zoom by mouse.
+	
+	key[]: "tooltip_mouse_pan"
+	val[]: "Pan" #+ Tooltip for control icon: pan by mouse.
+	
+	key[]: "tooltip_walk_title"
+	val[]: "WALK MODE CONTROLS:" #+ Title of walk mode controls tooltip.
+	
+	key[]: "tooltip_walk_forward"
+	val[]: "Forward" #+ Tooltip for walk forward.
+	
+	key[]: "tooltip_walk_back"
+	val[]: "Back" #+ Tooltip for walk back.
+	
+	key[]: "tooltip_walk_left"
+	val[]: "Left" #+ Tooltip for walk left.
+	
+	key[]: "tooltip_walk_right"
+	val[]: "Right" #+ Tooltip for walk right.
+	
+	key[]: "tooltip_walk_crouch"
+	val[]: "Crouch" #+ Tooltip for crouch.
+	
+	key[]: "tooltip_walk_run"
+	val[]: "Run" #+ Tooltip for run.
 #@}
 
+#+ Notifications shown when camera mode is changed in truck configurator.
+#@{
+
+	key[]: "notification_walking_camera"
+	val[]: "First person camera enabled" #+ Notifications shown when walking camera is enabled.
+	
+	key[]: "notification_orbit_camera"
+	val[]: "Orbit camera enabled" #+ Notifications shown when orbit camera is enabled.
+#@}
 
 	key[]: "quit_game_t"
 	val[]: "IZIET NO SPĒLES" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
@@ -1986,17 +2052,53 @@ localization_db : .localization
 	key[]: "master_volume"
 	val[]: "Kopējais skaļums" #+ Slider controlling master volume.
 
-	key[]: "sound_volume"
-	val[]: "Skaņas efektu skaļums" #+ Slider controlling volume of the sound effects.
+	key[]: "truck_engine_volume"
+	val[]: "Truck engine volume" #+ Slider controlling volume of the truck engine.
 
-	key[]: "music_volume"
-	val[]: "Mūzikas skaļums" #+ Slider controlling volume of the music effects.
+	key[]: "truck_exhaust_volume"
+	val[]: "Truck exhaust volume" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_effects_volume"
+	val[]: "Truck effects volume" #+ Slider controlling volume of the truck effects.
+
+	key[]: "truck_noise_volume"
+	val[]: "Truck noise volume" #+ Slider controlling volume of the truck noises.
+
+	key[]: "trailer_noise_volume"
+	val[]: "Trailer noise volume" #+ Slider controlling volume of the trailer noises.
+
+	key[]: "traffic_volume"
+	val[]: "Traffic volume" #+ Slider controlling volume of the traffic.
+
+	key[]: "world_volume"
+	val[]: "World sounds volume" #+ Slider controlling volume of the environment sounds.
+
+	key[]: "ambient_volume"
+	val[]: "Ambient sounds volume" #+ Slider controlling volume of the ambient sounds.
+
+	key[]: "interior_volume"
+	val[]: "Interior sounds volume" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
 	val[]: "Radio skaļums" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Voice navigation volume" #+ Slider controlling volume of the voice navigation.
+
+	key[]: "voiceover_volume"
+	val[]: "Voice over volume" #+ Slider controlling voice over volume.
+
+	key[]: "music_volume"
+	val[]: "Mūzikas skaļums" #+ Slider controlling volume of the in-game music.
+
+	key[]: "game_ui_volume"
+	val[]: "Game sounds volume" #+ Slider controlling volume of the game sound effects.
+
+	key[]: "music_ui_volume"
+	val[]: "UI music volume" #+ Slider controlling volume of the ui (menu) music.
+
+	key[]: "intro_volume"
+	val[]: "Intro logos" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "VOICE NAVIGATION" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2031,20 +2133,29 @@ localization_db : .localization
 	key[]: "advanced_audio_t"
 	val[]: "OTHER AUDIO SETTINGS" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
-	key[]: "reverse_stereo"
-	val[]: "Apvērstais stereo" #+ Checkbox flipping left and right loudspeaker.
-
-	key[]: "sound_effects"
-	val[]: "Skaņas efekti" #+ Checkbox enabling sound effects.
-
-	key[]: "music"
-	val[]: "Mūzika" #+ Checkbox enabling music.
-
 	key[]: "sound_of_reverse"
 	val[]: "Back-up beeper" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
 
 	key[]: "rumble_stripe_sound"
 	val[]: "Rumble stripes" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
+
+	key[]: "noise_window"
+	val[]: "Opened windows noise" #+ Checkbox enabling the sound of the opened windows noise.
+
+	key[]: "noise_aero"
+	val[]: "Noise of the flowing air" #+ Checkbox enabling the sound of the air noise.
+
+	key[]: "reverb_cabin"
+	val[]: "Reverb effect of the cabin" #+ Checkbox enabling the reverb effect of the cabin.
+
+	key[]: "reverb_world"
+	val[]: "Reverb effect of the environment" #+ Checkbox enabling the reverb effect of the environment.
+
+	key[]: "audio_driver_settings_t"
+	val[]: "AUDIO DRIVER" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+
+	key[]: "default_audio_driver"
+	val[]: "- system default driver -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -2326,7 +2437,7 @@ localization_db : .localization
 	key[]: "adviser_autopark"
 	val[]: "Automatic parking dialogue" #+ Checkbox enabling autoparking trigger.
 
-  key[]: "adviser_keep_hidden"
+	key[]: "adviser_keep_hidden"
 	val[]: "Keep Route Advisor hidden" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
@@ -2520,6 +2631,9 @@ localization_db : .localization
 	key[]: "hud_controls"
 	val[]: "HUD KONTROLES"
 
+	key[]: "walk_mode"
+	val[]: "WALK MODE"
+	
 	key[]: "other_controls"
 	val[]: "CITI"
 #@}
@@ -2683,8 +2797,23 @@ localization_db : .localization
 	key[]: "o_im_activate"
 	val[]: "Aktivizēt" #+ Context action for activation. For example sleep, refuel....
 
+	key[]: "o_im_right_window_open"
+	val[]: "Open Right Window" #+ Action for opening right window.
+
+	key[]: "o_im_right_window_close"
+	val[]: "Close Right Window" #+ Action for closing right window.
+
+	key[]: "o_im_left_window_open"
+	val[]: "Open Left Window" #+ Action for opening left window.
+
+	key[]: "o_im_left_window_close"
+	val[]: "Close Left Window" #+ Action for closing left window.
+
 	key[]: "o_im_menu"
 	val[]: "Izvēlne" #+ Action for entering menu (hardcoded ESC + one optional control)
+
+	key[]: "o_im_eye_config"
+	val[]: "Open Eye Tracking settings"
 # hud
 
 	key[]: "o_im_show_mirrors"
@@ -2789,7 +2918,25 @@ localization_db : .localization
 	key[]: "o_im_look_blink_mode"
 	val[]: "Blinker Based Camera Rotation" #+ Toggles enabled state of camera rotation based on blinker activation.
 
-
+#walk mode
+	key[]: "o_im_walk_forward"
+	val[]: "Forward" #+ Walk forward.
+	
+	key[]: "o_im_walk_back"
+	val[]: "Back" #+ Walk back.
+	
+	key[]: "o_im_walk_left"
+	val[]: "Left" #+ Walk left.
+	
+	key[]: "o_im_walk_right"
+	val[]: "Right" #+ Walk right.
+	
+	key[]: "o_im_walk_crouch"
+	val[]: "Crouch" #+ Activate crouch.
+	
+	key[]: "o_im_walk_run"
+	val[]: "Run" #+ Activate run.
+	
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -2877,7 +3024,7 @@ localization_db : .localization
 	val[]: "Force feedback stiffness" #+ Slider controlling strength of the FF stiffness.
 
 	key[]: "feedback_center"
-	val[]: "Force feedback centering" #+ Slider controlling strength of the FF centering spring.
+	val[]: "Force feedback centring" #+ Slider controlling strength of the FF centering spring.
 
 	key[]: "feedback_engine"
 	val[]: "Force feedback engine" #+ Slider controlling strength of the FF engine resonance effects.
@@ -3123,7 +3270,7 @@ localization_db : .localization
 	val[]: "Miscellaneous" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Color feedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Colour feedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3171,7 +3318,7 @@ localization_db : .localization
 	val[]: "Enable Extended View" #+ Extended View enable checkbox.
 
 	key[]: "eye_autocenter"
-	val[]: "Enable auto-center" #+ Headtracking autocentering
+	val[]: "Enable auto-centre" #+ Headtracking autocentering
 
 	key[]: "eye_head_mode"
 	val[]: "Head tracking mode" #+ Mode to use for head tracking (https://help.tobii.com/hc/en-us/articles/115000011125-Customization-in-Tobii-Game-Hub)
@@ -3195,10 +3342,16 @@ localization_db : .localization
 	val[]: "Enable position (experimental)" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
-	val[]: "Yaw multiplier" #+ Multiplier applied to resulting yaw value
+	val[]: "Yaw multiplier (in cabin)" #+ Multiplier applied to resulting yaw value (in cabin)
 
 	key[]: "eye_pitch_scale"
-	val[]: "Pitch multiplier" #+ Multiplier applied to resulting pitch value
+	val[]: "Pitch multiplier (in cabin)" #+ Multiplier applied to resulting pitch value (in cabin)
+	
+	key[]: "eye_walk_mode_yaw_scale"
+	val[]: "Yaw multiplier (in walk mode)" #+ Multiplier applied to resulting yaw value (in walk mode)
+
+	key[]: "eye_walk_mode_pitch_scale"
+	val[]: "Pitch multiplier (in walk mode)" #+ Multiplier applied to resulting pitch value (in walk mode)
 
 	key[]: "eye_gaze_max_angle"
 	val[]: "Maximal gaze angle" #+ Maximal angle change generated by gaze tracking.
@@ -3237,7 +3390,7 @@ localization_db : .localization
 	val[]: "Your head rotation directly corresponds to a camera rotation in-game. Recommended in normal cockpit/cabin situations."
 
 	key[]: "eye_head_mode_dynamic_tooltip"
-	val[]: "Your gaze will only affect your in-game camera when you actually turn your head. Recommended mode when it's important for your view to be absolutely centered."
+	val[]: "Your gaze will only affect your in-game camera when you actually turn your head. Recommended mode when it's important for your view to be absolutely centred."
 
 	key[]: "eye_gaze_view_responsiveness_tooltip"
 	val[]: "How quickly the in-game camera will respond to your gaze movements."
@@ -3249,16 +3402,16 @@ localization_db : .localization
 	val[]: "Controls how gradually the speed ramps up."
 
 	key[]: "eye_gaze_inflection_tooltip"
-	val[]: "The distance from the center of the screen where the acceleration will start to level out."
+	val[]: "The distance from the centre of the screen where the acceleration will start to level out."
 
 	key[]: "eye_gaze_start_point_tooltip"
-	val[]: "How far from the center of the screen you’ll have to look before the in-game camera starts to move."
+	val[]: "How far from the centre of the screen you’ll have to look before the in-game camera starts to move."
 
 	key[]: "eye_gaze_endpoint_tooltip"
-	val[]: "How far from the center of the screen you’ll have to look in order to reach maximum camera speed."
+	val[]: "How far from the centre of the screen you’ll have to look in order to reach maximum camera speed."
 
 	key[]: "eye_autocenter_tooltip"
-	val[]: "The in-game camera will continuously slowly recenter as you change your head’s natural position during play."
+	val[]: "The in-game camera will continuously slowly recentre as you change your head’s natural position during play."
 
 	key[]: "eye_head_view_responsiveness_tooltip"
 	val[]: "How quickly the in-game camera will respond to your head movements."
@@ -3270,10 +3423,16 @@ localization_db : .localization
 	val[]: "If you tilt your head to either side, the in-game camera will tilt accordingly."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "Multiplies the responsiveness of when you rotate your head by turning it from side to side."
+	val[]: "Multiplies the responsiveness of when you rotate your head by turning it from side to side (in cabin)."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "Multiplies the responsiveness of when you turn your head up and down."
+	val[]: "Multiplies the responsiveness of when you turn your head up and down (in cabin)."
+	
+	key[]: "eye_walk_mode_yaw_scale_tooltip"
+	val[]: "Multiplies the responsiveness of when you rotate your head by turning it from side to side (in walk mode)."
+
+	key[]: "eye_walk_mode_pitch_scale_tooltip"
+	val[]: "Multiplies the responsiveness of when you turn your head up and down (in walk mode)."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "Determines how far the camera can turn when you look to the edges of the screen."
@@ -3288,13 +3447,13 @@ localization_db : .localization
 	val[]: "The amount of head rotation where the acceleration will start to level out."
 
 	key[]: "eye_head_start_point_tooltip"
-	val[]: "How much you have to rotate your head from the center position before the in-game camera starts to move."
+	val[]: "How much you have to rotate your head from the centre position before the in-game camera starts to move."
 
 	key[]: "eye_head_endpoint_tooltip"
-	val[]: "How much you have to rotate your head from the center position in order to reach maximum camera rotation."
+	val[]: "How much you have to rotate your head from the centre position in order to reach maximum camera rotation."
 
 	key[]: "eye_reset_head_tooltip"
-	val[]: "Sets your current head position as the new default position, re-centering the in-game camera accordingly."
+	val[]: "Sets your current head position as the new default position, re-centring the in-game camera accordingly."
 
 	key[]: "eye_pause_extended_view_tooltip"
 	val[]: "Toggles on/off all Tobii Extended View features."
@@ -3959,6 +4118,20 @@ localization_db : .localization
 	key[]: "job_income"
 	val[]: "Ienākumi" #+ For example "Job income: E6,526"
 
+	key[]: "adviser_tooltip_map_page"
+	val[]: "Navigation" #+ Tooltip for map page in route advisor
+
+	key[]: "adviser_tooltip_job_page"
+	val[]: "Current Job" #+ Tooltip for job info page in route advisor
+
+	key[]: "adviser_tooltip_damage_page"
+	val[]: "Diagnostics & Assistance call" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+
+	key[]: "adviser_tooltip_message_page"
+	val[]: "Short Messages" #+ Tooltip for short messages page in route advisor
+
+	key[]: "adviser_tooltip_tutorial"
+	val[]: "Route Advisor Tutorial" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
@@ -4215,6 +4388,15 @@ localization_db : .localization
 	key[]: "weigh_confirm"
 	val[]: "Thank you for your cooperation. Have a safe journey!" #+ Adviser text
 
+	key[]: "weigh_damaged"
+	val[]: "Your vehicle is not in perfect technical state. Be more careful next time!" #+ Adviser text
+
+	key[]: "weigh_damaged_lot"
+	val[]: "Your vehicle is not in technical state required by law. You have to fix it!" #+ Adviser text
+
+	key[]: "weigh_illegal_trailer"
+	val[]: "Your truck and trailer combination is not legal here!" #+ Adviser text
+
 	key[]: "trucking_prohibited"
 	val[]: "Commercial trucking is prohibited in this area. You have to turn around and go back!" #+ Adviser text
 
@@ -4308,6 +4490,18 @@ localization_db : .localization
 
 	key[]: "offence_illegal_trailer"
 	val[]: "Illegal trailer usage offence."
+
+	key[]: "offence_avoid_inspection"
+	val[]: "Failed to stop for inspection."
+
+	key[]: "offence_illegal_border"
+	val[]: "Unauthorized border crossing."
+
+	key[]: "offence_shoulder_violation"
+	val[]: "Hard shoulder violation."
+
+	key[]: "offence_damaged_vehicle_usage"
+	val[]: "Damaged vehicle usage violation."
 #@}
 
 #@}
@@ -5594,7 +5788,7 @@ localization_db : .localization
 	val[]: "Locomotive - Vossloh G6"
 
 	key[]: "cn_metal_center"
-	val[]: "Metal Centering"
+	val[]: "Metal Centring"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Mobile Crane - Rex-Tex 45"
@@ -6217,7 +6411,7 @@ localization_db : .localization
 
 	key[]: "truckman_summary_hint"
 	val[]: "Select a truck from the right side to view its details"
-	
+
 #+ Truck map filters
 #@{
 
@@ -6232,7 +6426,7 @@ localization_db : .localization
 
 	key[]: "truckman_filter_sleeping"
 	val[]: "Sleeping Trucks"
-	
+
 	key[]: "truckman_filter_returning"
 	val[]: "Returning Trucks"
 #@}
@@ -6452,7 +6646,7 @@ localization_db : .localization
 
 	key[]: "driverman_filter_sleeping"
 	val[]: "Sleeping Drivers"
-	
+
 	key[]: "driverman_filter_returning"
 	val[]: "Returning Drivers"
 #@}
@@ -7241,7 +7435,7 @@ localization_db : .localization
 	val[]: "Adjust Seat"  #+ Opens the seat adjuster.
 
 	key[]: "truck_seat_help"
-	val[]: "Reposition your driver seat and steering wheel for maximum comfort."  #+ Help message associated with seat adjuster icon.
+	val[]: "Reposition your driver seat and steering wheel for maximum comfort." #+ Help message associated with seat adjuster icon.
 
 	# trailer adjuster name string is in assistance section (it could be open from both screens)
 
@@ -8258,10 +8452,10 @@ localization_db : .localization
 	val[]: "Deadzone is an area on axis that should intentionally provide no input. If you want to modify the deadzone of a selected axis, move the slider of that axis. The more you move the slider to the right, the bigger will be the deadzone. This option is especially useful with older controllers. By defining bigger deadzone you can circumvent inaccuracy or false input due to wear of your controller hardware."
 
 	key[]: "wiz_setup_axes_desc4"
-	val[]: "The mode of an axis determines how the axis in handled in the game. An inverted axis flips its reported direction, e.g. steering right may become steering left. A centered axis has its default position in the middle of its range (e.g. joystick). This setting should be used when an axis is detected incorrectly."
+	val[]: "The mode of an axis determines how the axis in handled in the game. An inverted axis flips its reported direction, e.g. steering right may become steering left. A centred axis has its default position in the middle of its range (e.g. joystick). This setting should be used when an axis is detected incorrectly."
 
 	key[]: "wiz_setup_axes_desc5"
-	val[]: "You can try the function of all selected axes visually. Use the controller and watch the moving bars. It will tell you the limits, centering, orientation and overall behaviour of each used axis."
+	val[]: "You can try the function of all selected axes visually. Use the controller and watch the moving bars. It will tell you the limits, centring, orientation and overall behaviour of each used axis."
 
 
 	key[]: "normal"
@@ -8274,7 +8468,7 @@ localization_db : .localization
 	val[]: "Centrēts" #+ Normal orientation of axis. Increasing value of axis in <0;1> increases controlled value.
 
 	key[]: "inverted_centered"
-	val[]: "Inverted and Centered" #+ Inverted orientation of axis. Decreasing value of axis in <-1;0> range increases controlled value.
+	val[]: "Inverted and Centred" #+ Inverted orientation of axis. Decreasing value of axis in <-1;0> range increases controlled value.
 #@}
 
 #+ Automatic gearbox setup page
@@ -8420,31 +8614,31 @@ localization_db : .localization
 
 	key[]: "chrome_ribbon"
 	val[]: "Chrome Ribbon" #+ Accessory name, DLC Pink Ribbon.
-	
+
 	key[]: "christmas_sock"
 	val[]: "Christmas Sock" #+ Hanging interior accessory
-	
+
 	key[]: "autumn_star"
 	val[]: "Autumn Star" #+ Hanging interior accessory
-	
+
 	key[]: "twinkle_star"
 	val[]: "Twinkle Star" #+ Hanging interior accessory
-	
+
 	key[]: "frosty_star"
 	val[]: "Frosty Star" #+ Hanging interior accessory
-	
+
 	key[]: "winter_star"
 	val[]: "Winter Star" #+ Hanging interior accessory
-	
+
 	key[]: "christmas_star"
 	val[]: "Christmas Star" #+ Hanging interior accessory
-	
+
 	key[]: "wishing_star"
 	val[]: "Wishing Star" #+ Hanging interior accessory
-	
+
 	key[]: "diamond_star"
 	val[]: "Diamond Star" #+ Hanging interior accessory
-	
+
 	key[]: "grand_star"
 	val[]: "Grand Star" #+ Hanging interior accessory
 #@}
@@ -9783,7 +9977,7 @@ localization_db : .localization
 	val[]: "EVENT INFO" #+ Title of the event popup.
 
 	key[]: "event_completed"
-	val[]: "Event Completed!" #+ Text showed when player completes event.
+	val[]: "Personal Goal Completed!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
 	val[]: "Open Event Page" #+ Button opening event page on WoTr.
@@ -10113,7 +10307,7 @@ localization_db : .localization
 	val[]: "Advance further in your career to be able to purchase your own trailers."
 
 	key[]: "link_locked_msg_cabin_adjust"
-	val[]: "You cannot access cabin adjustements as you are not currently driving any truck."
+	val[]: "You cannot access cabin adjustments as you are not currently driving any truck."
 
 	key[]: "link_locked_msg_skills"
 	val[]: "No skills are currently available. Level up to unlock this screen."
@@ -10280,6 +10474,9 @@ localization_db : .localization
 	key[]: "flatbed"
 	val[]: "Flatbed"
 
+	key[]: "foodtank"
+	val[]: "Food Tank"
+
 	key[]: "insulated"
 	val[]: "Insulated"
 
@@ -10300,6 +10497,9 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_dryvan"
 	val[]: "General, dry goods"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "Liquid food goods"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "Chilled goods"
@@ -10354,6 +10554,12 @@ localization_db : .localization
 
 	key[]: "rear_body"
 	val[]: "Trailer Rear"
+
+	key[]: "r_body"
+	val[]: "Trailer Right"
+
+	key[]: "l_body"
+	val[]: "Trailer Left"
 #@}
 
 #+ Trailer Configurator
@@ -10418,6 +10624,12 @@ localization_db : .localization
 
 	key[]: "fuel_tank"
 	val[]: "Fuel Tank"
+
+	key[]: "hose"
+	val[]: "Hose"
+
+	key[]: "hose_2"
+	val[]: "Hose, 2x"
 
 	key[]: "ladder"
 	val[]: "Ladder"
@@ -10562,7 +10774,7 @@ localization_db : .localization
 
 	key[]: "cm_legend_driver_status_returning"
 	val[]: "Driver is returning"
-	
+
 	key[]: "cm_legend_driver_player"
 	val[]: "Player"
 
@@ -10576,7 +10788,7 @@ localization_db : .localization
 	val[]: "Detours"
 
 	key[]: "detour_gps_warning"
-	val[]: "There is an unexpected event on your route. Manual adjustment of your navigation is strongly recommended."
+	val[]: "Navigation failure due to a roadblock. Find a way around or set up an avoid location in World Map screen."
 #@}
 
 #+ Steam cloud.
@@ -11127,6 +11339,36 @@ localization_db : .localization
 
 	key[]: "sctrl_input_screenshot"
 	val[]: "@@sctrl_action_screenshot@@"
+
+	key[]: "sctrl_input_camwalk_for"
+	val[]: "@@sctrl_action_camwalk_for@@"
+
+	key[]: "sctrl_input_camwalk_back"
+	val[]: "@@sctrl_action_camwalk_back@@"
+
+	key[]: "sctrl_input_camwalk_left"
+	val[]: "@@sctrl_action_camwalk_left@@"
+
+	key[]: "sctrl_input_camwalk_righ"
+	val[]: "@@sctrl_action_camwalk_righ@@"
+
+	key[]: "sctrl_input_camwalk_crou"
+	val[]: "@@sctrl_action_camwalk_crou@@"
+
+	key[]: "sctrl_input_camwalk_run"
+	val[]: "@@sctrl_action_camwalk_run@@"
+
+	key[]: "sctrl_input_rwinopen"
+	val[]: "@@sctrl_action_rwinopen@@"
+
+	key[]: "sctrl_input_rwinclose"
+	val[]: "@@sctrl_action_rwinclose@@"
+
+	key[]: "sctrl_input_lwinopen"
+	val[]: "@@sctrl_action_lwinopen@@"
+
+	key[]: "sctrl_input_lwinclose"
+	val[]: "@@sctrl_action_lwinclose@@"
 #!}
 
 #@}
@@ -11150,6 +11392,9 @@ localization_db : .localization
 
 	key[]: "sctrl_action_set_layer_gearbox_direct"
 	val[]: "H-Shifter Gearbox"
+
+	key[]: "sctrl_action_set_walking"
+	val[]: "Walking"
 
 #+ Individual bindable actions
 #@{
@@ -11451,6 +11696,36 @@ localization_db : .localization
 
 	key[]: "sctrl_action_screenshot"
 	val[]: "@@o_im_screenshot@@"
+
+	key[]: "sctrl_action_camwalk_for"
+	val[]: "Walk Forward"
+
+	key[]: "sctrl_action_camwalk_back"
+	val[]: "Walk Backward"
+
+	key[]: "sctrl_action_camwalk_left"
+	val[]: "Walk Left"
+
+	key[]: "sctrl_action_camwalk_righ"
+	val[]: "Walk Right"
+
+	key[]: "sctrl_action_camwalk_crou"
+	val[]: "@@o_im_walk_crouch@@"
+
+	key[]: "sctrl_action_camwalk_run"
+	val[]: "@@o_im_walk_run@@"
+
+	key[]: "sctrl_action_rwinopen"
+	val[]: "@@o_im_right_window_open@@"
+
+	key[]: "sctrl_action_rwinclose"
+	val[]: "@@o_im_right_window_close@@"
+
+	key[]: "sctrl_action_lwinopen"
+	val[]: "@@o_im_left_window_open@@"
+
+	key[]: "sctrl_action_lwinclose"
+	val[]: "@@o_im_left_window_close@@"
 #!}
 #@}
 

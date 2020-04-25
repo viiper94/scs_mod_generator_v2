@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Fülkevilágítás"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Fülkevédő rács"
 
+	key[]: "hndrail"
+	val[]: "Kapaszkodó"
+
 	key[]: "horns"
 	val[]: "Kürtök"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Sárhányók"
 
+	key[]: "rear_cab"
+	val[]: "Fülke hátulja"
+
 	key[]: "sideflares"
 	val[]: "Karosszérialemezek"
 
 	key[]: "sideskrt_bar"
 	val[]: "Küszöbspoiler rudak"
+
+	key[]: "slp_hndl"
+	val[]: "Markoló"
+
+	key[]: "slp_vent"
+	val[]: "Szellőzőrés"
 
 	key[]: "topflares"
 	val[]: "Tetőtéri helyzetjelző lámpák"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Játék láncfűrész"
+
+	key[]: "chrom_tank"
+	val[]: "Krómozott tartály" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Alumínium tartály" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-karabiner" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -183,7 +203,7 @@ localization_db : .localization
 	val[]: "Repülőgép hajtómű"
 
 	key[]: "cn_articulated_tractor"
-	val[]: "Kotrógép"
+	val[]: "Gumitalpas traktor"
 
 	key[]: "cn_boat"
 	val[]: "Hajó"
@@ -219,7 +239,7 @@ localization_db : .localization
 	val[]: "Aszalt gyümölcs"
 
 	key[]: "cn_forwarder"
-	val[]: "Erdészeti közelítőgép"
+	val[]: "Önrakodó rönkszállító"
 
 	key[]: "cn_frac_tank"
 	val[]: "Frac Tank"
@@ -232,6 +252,9 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Gyümölcs"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Gyümölcslé"
 
 	key[]: "cn_grain"
 	val[]: "Gabona"
@@ -252,13 +275,13 @@ localization_db : .localization
 	val[]: "Erdészeti átrakógép"
 
 	key[]: "cn_lift_truck"
-	val[]: "Targonca"
+	val[]: "Konténerrakodó targonca"
 
 	key[]: "cn_lift_truck_chassis"
-	val[]: "Targonca alváz"
+	val[]: "Konténerrakodó targonca alváz"
 
 	key[]: "cn_log_harvester"
-	val[]: "Erdészeti rönkemelő"
+	val[]: "Erdészeti betakarítógép"
 
 	key[]: "cn_log_loader"
 	val[]: "Erdészeti rakodógép"
@@ -312,7 +335,7 @@ localization_db : .localization
 	val[]: "Földnyeső"
 
 	key[]: "cn_stumper"
-	val[]: "Erdészeti rönkhúzó"
+	val[]: "Erdészeti rönkvágó"
 
 	key[]: "cn_transformer"
 	val[]: "Transzformátor"
@@ -690,6 +713,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 láb, osztott"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 láb, hátsó"
+
 	key[]: "tr_single_45"
 	val[]: "45 láb"
 
@@ -819,6 +845,9 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Alumínium síkplatós"
+
+	key[]: "bs_food_tank"
+	val[]: "Élelmiszer tartálykocsi"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Gabonaszállító"
