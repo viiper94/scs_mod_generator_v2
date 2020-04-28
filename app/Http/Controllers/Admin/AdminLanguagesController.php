@@ -69,10 +69,13 @@ class AdminLanguagesController extends Controller{
         $asoc = [
             'uk' => 'uk_uk',
             'de' => 'de_de',
+            'cs' => 'cs_cz',
+            'da' => 'da_dk',
             'el' => 'el_gr',
             'en' => 'en_gb',
             'es' => 'es_es',
             'fr' => 'fr_fr',
+            'it' => 'it_it',
             'hr' => 'hr_hr',
             'ja' => 'ja_jp',
             'ka' => 'ka_ge',
