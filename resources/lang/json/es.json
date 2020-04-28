@@ -4,7 +4,7 @@
         "steer": "Orientable"
     },
     "ats trailers": {
-        "rm_double": "R.M. Double",
+        "rm_double": "R.M. Doble",
         "tp": "Autopista",
         "2ax": "2 Ejes",
         "3ax": "3 Ejes"
@@ -37,7 +37,7 @@
     },
     "shared": {
         "double": "Doble",
-        "bdouble": "B-Double",
+        "bdouble": "B-Doble",
         "triple": "Triple",
         "ext": "Extensible",
         "short": "Corto",

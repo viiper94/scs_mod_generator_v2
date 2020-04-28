@@ -6,29 +6,29 @@
     "ats trailers": {
         "rm_double": "R.M. Double",
         "tp": "Turnpike Double",
-        "2ax": "2 axles",
-        "3ax": "3 axles"
+        "2ax": "2 osie",
+        "3ax": "3 osie"
     },
     "accessories": {
         "cars_balt1": "Mercedes-Benz",
         "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
+        "cars_it": "Fiat, Alfa Romeo",
         "cars_dacia": "Dacia",
         "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
+        "cars_octavia": "Skoda",
         "cars_smax": "Ford",
         "cars_volvo": "Volvo",
         "cars_magnum": "Dodge",
         "cars_mustang": "Ford",
         "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "Container",
+        "v1": "wariant 1",
+        "v2": "wariant 2",
+        "v3": "wariant 3",
+        "cn_container": "Kontener",
         "cn_container_40r": "40' Reefer container",
-        "cn_nextgen_scania_trucks": "Next Gen Scania trucks",
-        "cn_daf_trucks": "DAF trucks",
-        "cn_man_trucks": "MAN trucks",
+        "cn_nextgen_scania_trucks": "Ciężarówki Scana nowej generacji",
+        "cn_daf_trucks": "Ciężarówki DAF",
+        "cn_man_trucks": "Ciężarówki MAN",
         "large": "Large",
         "small": "Small",
         "3x4": "3x4m",
@@ -42,14 +42,14 @@
         "ext": "Extendable",
         "short": "Short",
         "long": "Long",
-        "silver": "Silver",
-        "white": "White",
+        "silver": "Srebrny",
+        "white": "Biały",
         "black": "Czarny",
-        "red": "Red",
-        "green": "Green",
-        "blue": "Blue",
-        "gray": "Gray",
-        "yellow": "Yellow"
+        "red": "Czerwony",
+        "green": "Zielony",
+        "blue": "Niebieski",
+        "gray": "Szary",
+        "yellow": "Żółty"
     },
     "general": {
         "choose_language": "Wybierz język",
@@ -110,10 +110,10 @@
         "mp_no_support": "NIE WSPIERANY PRZEZ MP",
         "include_fix": "Zawiera naprawe na Caravan (for użycia na TruckersMP)",
         "search": "Szukaj",
-        "static_mods": "More mods for MP",
+        "static_mods": "Więcej modyfikacji dla MP",
         "join_discord": "Dołącz na nasz serwer Discord i dołącz do dyskusji: ",
-        "check_all": "Check all",
-        "with_promods": "Include ProMods",
+        "check_all": "Zaznacz wszystko",
+        "with_promods": "Zawiera ProMods",
         "no_results": "Brak wyników"
     },
     "instructions": {
@@ -141,7 +141,7 @@
         "profile": "Profil",
         "login": "Zaloguj się",
         "register": "Zarejestruj się",
-        "registered": "Registered",
+        "registered": "Zarejestrowany",
         "register_now": "Zarejestruj się teraz",
         "name": "Imię",
         "email": "E-mail",
@@ -154,11 +154,11 @@
         "reset_password": "Resetuj hasło",
         "submit_password_reset": "Wyślij link do resetowania hasła",
         "profile_edit": "Edytuj profil",
-        "profile_settings": "Profile Settings",
+        "profile_settings": "Ustawienia profilu",
         "save_profile": "Zapisz profil",
-        "save_settings": "Save Profile Settings",
-        "choose_owned_dlc": "Choose owned DLCs",
-        "choose_lang": "Choose preferred language",
+        "save_settings": "Zapisz ustawienia profilu",
+        "choose_owned_dlc": "Wybierz posiadane DLC",
+        "choose_lang": "Wybierz preferowany język",
         "password_edit": "Zmien hasło",
         "old_password": "Stare hasło",
         "new_password": "Nowe hasło",
@@ -172,8 +172,8 @@
     },
     "mods": {
         "mods_history": "Historia modów",
-        "last_mods": "Recently Generated Mods",
-        "see_all": "All Generated Mods",
+        "last_mods": "Ostatnio generowane modyfikacje",
+        "see_all": "Wszystkie wygenerowane modyfikacje",
         "mod_params": "Parametry modu",
         "mod_for_version": "Wersje Modów",
         "no_mods": "Historia modów jest pusta.",
@@ -182,8 +182,8 @@
         "working": "Ten mod działa!",
         "mark_as_broken": "Pewny jesteś że chcesz oznaczyć tego moda jako nie działającego?",
         "mark_as_working": "Oznaczycz tego moda jako działającego?",
-        "mod_required_dlc": "Required",
-        "tested_on_ver": "Tested on version"
+        "mod_required_dlc": "Wymagane",
+        "tested_on_ver": "Przetestowane na wersji"
     },
     "auth": {
         "failed": "Nieprawidłowy e-mail lub hasło."
@@ -208,7 +208,7 @@
     },
     "companies\/paints": {
         "default": "Kolor",
-        "schw_logo": "Schwarzmüller Logo",
-        "schw_black_red": "Schwarzmüller Black and Red"
+        "schw_logo": "Logo Schwarzmüller",
+        "schw_black_red": "Czarny i czerwony Schwarzmüller"
     }
 }
