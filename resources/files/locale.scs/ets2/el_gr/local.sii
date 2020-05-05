@@ -634,6 +634,9 @@ localization_db : .localization
 	key[]: "series_scs_log"
 	val[]: "LOG"
 
+	key[]: "series_scs_foodtank"
+	val[]: "FDT"
+
 	key[]: "brand_krone"
 	val[]: "Krone"
 
@@ -1447,8 +1450,53 @@ localization_db : .localization
 
 	key[]: "screenshot"
 	val[]: "Φωτογραφία" #+ Tooltip for icon which makes screenshots.
+
+	key[]: "switch_walking_cam"
+	val[]: "Αλλαγή Λειτουργίας Κάμερας" #+ Tooltip for icon which turns walking camera mode on and off.
+	
+	key[]: "tooltip_walk_look_around"
+	val[]: "Κοίταγμα τριγύρω" #+ Tooltip for control icon: look around (by walking camera).
+	
+	key[]: "tooltip_mouse_rotate"
+	val[]: "Περιστροφή" #+ Tooltip for control icon: rotate by mouse.
+	
+	key[]: "tooltip_mouse_zoom"
+	val[]: "Ζουμ" #+ Tooltip for control icon: zoom by mouse.
+	
+	key[]: "tooltip_mouse_pan"
+	val[]: "Οπτικό πεδίο" #+ Tooltip for control icon: pan by mouse.
+	
+	key[]: "tooltip_walk_title"
+	val[]: "ΧΕΙΡΙΣΤΗΡΙΑ ΛΕΙΤΟΥΡΓΙΑΣ ΠΕΡΠΑΤΗΜΑΤΟΣ:" #+ Title of walk mode controls tooltip.
+	
+	key[]: "tooltip_walk_forward"
+	val[]: "Εμπρός" #+ Tooltip for walk forward.
+	
+	key[]: "tooltip_walk_back"
+	val[]: "Πίσω" #+ Tooltip for walk back.
+	
+	key[]: "tooltip_walk_left"
+	val[]: "Αριστερά" #+ Tooltip for walk left.
+	
+	key[]: "tooltip_walk_right"
+	val[]: "Δεξιά" #+ Tooltip for walk right.
+	
+	key[]: "tooltip_walk_crouch"
+	val[]: "Γονάτισε" #+ Tooltip for crouch.
+	
+	key[]: "tooltip_walk_run"
+	val[]: "Τρέξε" #+ Tooltip for run.
 #@}
 
+#+ Notifications shown when camera mode is changed in truck configurator.
+#@{
+
+	key[]: "notification_walking_camera"
+	val[]: "Κάμερα πρώτου προσώπου ενεργοποιήθηκε" #+ Notifications shown when walking camera is enabled.
+	
+	key[]: "notification_orbit_camera"
+	val[]: "Εναέρια κάμερα ενεργοποιήθηκε" #+ Notifications shown when orbit camera is enabled.
+#@}
 
 	key[]: "quit_game_t"
 	val[]: "ΕΞΟΔΟΣ ΠΑΙΧΝΙΔΙΟΥ" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
@@ -2443,17 +2491,53 @@ localization_db : .localization
 	key[]: "master_volume"
 	val[]: "Κύρια Ένταση" #+ Slider controlling master volume.
 
-	key[]: "sound_volume"
-	val[]: "Ένταση ηχητικών εφέ" #+ Slider controlling volume of the sound effects.
+	key[]: "truck_engine_volume"
+	val[]: "Ένταση κινητήρα φορτηγού" #+ Slider controlling volume of the truck engine.
 
-	key[]: "music_volume"
-	val[]: "Ένταση Μουσικής" #+ Slider controlling volume of the music effects.
+	key[]: "truck_exhaust_volume"
+	val[]: "Ένταση εξάτμισης φορτηγού" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_effects_volume"
+	val[]: "Ένταση ηχητικών εφέ φορτηγού" #+ Slider controlling volume of the truck effects.
+
+	key[]: "truck_noise_volume"
+	val[]: "Ένταση θορύβου φορτηγού" #+ Slider controlling volume of the truck noises.
+
+	key[]: "trailer_noise_volume"
+	val[]: "Ένταση θορύβου τρέιλερ" #+ Slider controlling volume of the trailer noises.
+
+	key[]: "traffic_volume"
+	val[]: "Ένταση κίνησης" #+ Slider controlling volume of the traffic.
+
+	key[]: "world_volume"
+	val[]: "Ένταση ήχων κόσμου" #+ Slider controlling volume of the environment sounds.
+
+	key[]: "ambient_volume"
+	val[]: "Ένταση ήχων περιβάλλοντος" #+ Slider controlling volume of the ambient sounds.
+
+	key[]: "interior_volume"
+	val[]: "Ένταση εσωτερικών ήχων" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
 	val[]: "Ένταση Ραδιοφώνου" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Ένταση φωνητικής πλοήγησης" #+ Slider controlling volume of the voice navigation.
+
+	key[]: "voiceover_volume"
+	val[]: "Ένταση φωνής έναντι ήχου" #+ Slider controlling voice over volume.
+
+	key[]: "music_volume"
+	val[]: "Ένταση Μουσικής" #+ Slider controlling volume of the in-game music.
+
+	key[]: "game_ui_volume"
+	val[]: "Ένταση ήχων παιχνιδιού" #+ Slider controlling volume of the game sound effects.
+
+	key[]: "music_ui_volume"
+	val[]: "Ένταση μουσικής μενού" #+ Slider controlling volume of the ui (menu) music.
+
+	key[]: "intro_volume"
+	val[]: "Λογότυπα εισαγωγής" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "ΦΩΝΗΤΙΚΗ ΠΛΟΗΓΗΣΗ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2488,20 +2572,29 @@ localization_db : .localization
 	key[]: "advanced_audio_t"
 	val[]: "ΑΛΛΕΣ ΡΥΘΜΙΣΕΙΣ ΗΧΟΥ" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
-	key[]: "reverse_stereo"
-	val[]: "Αντιστροφή στερεοφωνικού ήχου" #+ Checkbox flipping left and right loudspeaker.
-
-	key[]: "sound_effects"
-	val[]: "Ηχητικά εφέ" #+ Checkbox enabling sound effects.
-
-	key[]: "music"
-	val[]: "Μουσική " #+ Checkbox enabling music.
-
 	key[]: "sound_of_reverse"
 	val[]: "Ήχος της όπισθεν" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
 
 	key[]: "rumble_stripe_sound"
 	val[]: "Χαραγμένες γραμμές" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
+
+	key[]: "noise_window"
+	val[]: "Θόρυβος ανοιχτών παραθύρων" #+ Checkbox enabling the sound of the opened windows noise.
+
+	key[]: "noise_aero"
+	val[]: "Θόρυβος του αέρα" #+ Checkbox enabling the sound of the air noise.
+
+	key[]: "reverb_cabin"
+	val[]: "Εφέ αντήχησης της καμπίνας" #+ Checkbox enabling the reverb effect of the cabin.
+
+	key[]: "reverb_world"
+	val[]: "Εφέ αντήχησης περιβάλλοντος" #+ Checkbox enabling the reverb effect of the environment.
+
+	key[]: "audio_driver_settings_t"
+	val[]: "ΣΥΣΚΕΥΗ ΕΞΟΔΟΥ ΗΧΟΥ" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+
+	key[]: "default_audio_driver"
+	val[]: "- προεπιλεγμένη έξοδος συστήματος -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -2980,6 +3073,9 @@ localization_db : .localization
 	key[]: "hud_controls"
 	val[]: "ΕΛΕΓΧΟΣ HUD"
 
+	key[]: "walk_mode"
+	val[]: "ΛΕΙΤΟΥΡΓΙΑ ΠΕΡΠΑΤΗΜΑΤΟΣ"
+	
 	key[]: "other_controls"
 	val[]: "ΑΛΛΑ"
 #@}
@@ -3143,8 +3239,23 @@ localization_db : .localization
 	key[]: "o_im_activate"
 	val[]: "Ενεργοποίηση" #+ Context action for activation. For example sleep, refuel....
 
+	key[]: "o_im_right_window_open"
+	val[]: "Άνοιγμα Δεξιού Παραθύρου" #+ Action for opening right window.
+
+	key[]: "o_im_right_window_close"
+	val[]: "Κλείσιμο Δεξιού Παραθύρου" #+ Action for closing right window.
+
+	key[]: "o_im_left_window_open"
+	val[]: "Άνοιγμα Αριστερού Παραθύρου" #+ Action for opening left window.
+
+	key[]: "o_im_left_window_close"
+	val[]: "Κλείσιμο Αριστερού Παραθύρου" #+ Action for closing left window.
+
 	key[]: "o_im_menu"
 	val[]: "Μενού" #+ Action for entering menu (hardcoded ESC + one optional control)
+
+	key[]: "o_im_eye_config"
+	val[]: "Άνοιγμα ρυθμίσεων ελέγχου ματιών"
 # hud
 
 	key[]: "o_im_show_mirrors"
@@ -3249,7 +3360,25 @@ localization_db : .localization
 	key[]: "o_im_look_blink_mode"
 	val[]: "Περιστροφή κάμερας με βάση το φλας" #+ Toggles enabled state of camera rotation based on blinker activation.
 
-
+#walk mode
+	key[]: "o_im_walk_forward"
+	val[]: "Εμπρός" #+ Walk forward.
+	
+	key[]: "o_im_walk_back"
+	val[]: "Πίσω" #+ Walk back.
+	
+	key[]: "o_im_walk_left"
+	val[]: "Αριστερά" #+ Walk left.
+	
+	key[]: "o_im_walk_right"
+	val[]: "Δεξιά" #+ Walk right.
+	
+	key[]: "o_im_walk_crouch"
+	val[]: "Γονάτισε" #+ Activate crouch.
+	
+	key[]: "o_im_walk_run"
+	val[]: "Τρέξε" #+ Activate run.
+	
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3583,7 +3712,7 @@ localization_db : .localization
 	val[]: "Διάφορα" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Ανάδραση χρώματος" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Ανάδραση χρώματος (Colour feedback)" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3655,10 +3784,16 @@ localization_db : .localization
 	val[]: "Ενεργοποίηση θέσης (πειραματικό)" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
-	val[]: "Πολλαπλασιαστής περιστροφής κατακόρυφου άξονα" #+ Multiplier applied to resulting yaw value
+	val[]: "Πολλ/στής περ/φής κατακόρυφου άξονα (στην καμπίνα)" #+ Multiplier applied to resulting yaw value (in cabin)
 
 	key[]: "eye_pitch_scale"
-	val[]: "Πολλαπλασιαστής περιστροφής εγκάρσιου άξονα" #+ Multiplier applied to resulting pitch value
+	val[]: "Πολλ/στής περ/φής εγκάρσιου άξονα (στην καμπίνα)" #+ Multiplier applied to resulting pitch value (in cabin)
+	
+	key[]: "eye_walk_mode_yaw_scale"
+	val[]: "Πολλ/στής περ/φής κατακόρυφου άξονα (λειτουργία περπατήματος)" #+ Multiplier applied to resulting yaw value (in walk mode)
+
+	key[]: "eye_walk_mode_pitch_scale"
+	val[]: "Πολλ/στής περ/φής εγκάρσιου άξονα (λειτουργία περπατήματος)" #+ Multiplier applied to resulting pitch value (in walk mode)
 
 	key[]: "eye_gaze_max_angle"
 	val[]: "Μέγιστη γωνία βλέμματος" #+ Maximal angle change generated by gaze tracking.
@@ -3730,10 +3865,16 @@ localization_db : .localization
 	val[]: "Αν γείρεις το κεφάλι προς μία πλευρά, η κάμερα του παιχνιδιού θα γείρει αντίστοιχα."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "Πολλαπλασιάζει την απόκριση όταν περιστρέφεις το κεφάλι σου δεξιά αριστερά."
+	val[]: "Πολλαπλασιάζει την απόκριση όταν περιστρέφεις το κεφάλι σου δεξιά αριστερά (στην καμπίνα)."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "Πολλαπλασιάζει την απόκριση όταν κουνάς το κεφάλι σου πάνω κάτω."
+	val[]: "Πολλαπλασιάζει την απόκριση όταν κουνάς το κεφάλι σου πάνω κάτω (στην καμπίνα)."
+	
+	key[]: "eye_walk_mode_yaw_scale_tooltip"
+	val[]: "Πολλαπλασιάζει την απόκριση όταν περιστρέφεις το κεφάλι σου δεξιά αριστερά (σε λειτουργία περπατήματος)."
+
+	key[]: "eye_walk_mode_pitch_scale_tooltip"
+	val[]: "Πολλαπλασιάζει την απόκριση όταν κουνάς το κεφάλι σου πάνω κάτω (σε λειτουργία περπατήματος)."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "Καθορίζει πόσο πολύ θα μπορεί περιστρέφεται η κάμερα όταν κοιτάς στις άκρες την οθόνης."
@@ -4419,6 +4560,20 @@ localization_db : .localization
 	key[]: "job_income"
 	val[]: "Έσοδα" #+ For example "Job income: E6,526"
 
+	key[]: "adviser_tooltip_map_page"
+	val[]: "Πλοήγηση" #+ Tooltip for map page in route advisor
+
+	key[]: "adviser_tooltip_job_page"
+	val[]: "Τρέχουσα Δουλειά" #+ Tooltip for job info page in route advisor
+
+	key[]: "adviser_tooltip_damage_page"
+	val[]: "Διαγνωστικά & Κλήση βοήθειας" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+
+	key[]: "adviser_tooltip_message_page"
+	val[]: "Σύντομα Μηνύματα" #+ Tooltip for short messages page in route advisor
+
+	key[]: "adviser_tooltip_tutorial"
+	val[]: "Εισαγωγικό Πλοηγού" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "Η Οδική Βοήθεια μπορεί να μεταφέρει εσένα και το φορτηγό σου στην πόλη $CITY$. Θα σου κοστίσει $MONEY$ και το ταξίδι θα πάρει $TIME$.<br offset=30>Συμφωνείς;"
@@ -4675,6 +4830,15 @@ localization_db : .localization
 	key[]: "weigh_confirm"
 	val[]: "Σε ευχαριστούμε για την συνεργασία σου. Να έχεις ένα ασφαλές ταξίδι!" #+ Adviser text
 
+	key[]: "weigh_damaged"
+	val[]: "Το όχημα σου δεν είναι σε άριστη τεχνική κατάσταση. Να είσαι πιο προσεκτικός την επόμενη φορά!" #+ Adviser text
+
+	key[]: "weigh_damaged_lot"
+	val[]: "Το όχημα σου δεν είναι στην τεχνική κατάσταση που απαιτείται από τον νόμο. Πρέπει να το επισκευάσεις!" #+ Adviser text
+
+	key[]: "weigh_illegal_trailer"
+	val[]: "Ο συνδυασμός του φορτηγού και του τρέιλερ σου δεν είναι νόμιμος εδώ!" #+ Adviser text
+
 	key[]: "trucking_prohibited"
 	val[]: "Οι μεταφορές απαγορεύονται σε αυτή την περιοχή. Πρέπει να κάνεις αναστροφή και να γυρίσεις πίσω!" #+ Adviser text
 
@@ -4811,6 +4975,9 @@ localization_db : .localization
 
 	key[]: "offence_shoulder_violation"
 	val[]: "Παράβαση κίνησης στη ΛΕΑ."
+
+	key[]: "offence_damaged_vehicle_usage"
+	val[]: "Παράβαση χρήσης ζημιωμένου οχήματος."
 #@}
 
 #@}
@@ -6161,7 +6328,7 @@ localization_db : .localization
 	val[]: "Μεταχ/μένες Μπαταρίες Αυτοκινήτων"
 
 	key[]: "cn_air_mails"
-	val[]: "Γράμματα Αερομεταφορών"
+	val[]: "Αεροπορικό Ταχυδρομείο"
 
 	key[]: "cn_aircraft_tires"
 	val[]: "Ελαστικά Αεροπλάνων"
@@ -6200,7 +6367,7 @@ localization_db : .localization
 	val[]: "Επεξεργαστές Υπολογιστών"
 
 	key[]: "cn_concentrate_juices"
-	val[]: "Συμπυκνωμένοι Χυμοί"
+	val[]: "Συμπυκνωμένος Χυμός"
 
 	key[]: "cn_corks"
 	val[]: "Φελλοί"
@@ -6430,8 +6597,8 @@ localization_db : .localization
 
 #schwarzmuller trailers (for trailer listing screen)
 
-	key[]: "tn_schw_cistern_food"
-	val[]: "Δεξαμενή τροφίμων Schwarzmüller"
+	key[]: "tn_schw_foodtank"
+	val[]: "Βυτίο Τροφίμων Schwarzmüller"
 
 	key[]: "tn_schw_curtain"
 	val[]: "Τρέιλερ Schwarzmüller Tarpaulin Platform (Μουσαμάς)"
@@ -7637,10 +7804,10 @@ localization_db : .localization
 	val[]: "Που θέλεις να μετακινήσεις τον οδηγό σου;"
 
 	key[]: "td_garsel_move_trailer"
-	val[]: "Πού θα ήθελες να μετακινήσεις το επιλεγμένο τρέιλερ;"  #+ Text shown in garage selection screen.
+	val[]: "Πού θα ήθελες να μετακινήσεις το επιλεγμένο τρέιλερ;" #+ Text shown in garage selection screen.
 
 	key[]: "td_garsel_store_trailer"
-	val[]: "Πού θα ήθελες να αποθηκευτεί το τρέιλερ;"  #+ Text shown in garage selection screen.
+	val[]: "Πού θα ήθελες να αποθηκευτεί το τρέιλερ;" #+ Text shown in garage selection screen.
 #@}
 
 #+ Recruitment agency
@@ -9921,7 +10088,7 @@ localization_db : .localization
 	val[]: "Βαφή Μοντέρνο" #+ Modernized painted mirror, doorhandle or other accessory
 
 	key[]: "chrom_modern"
-	val[]: "Μοντέρνο χρώμιο" #+ Modernized chromed mirror, doorhandle or other accessory
+	val[]: "Μοντέρνο Χρώμιο" #+ Modernized chromed mirror, doorhandle or other accessory
 
 	key[]: "standard"
 	val[]: "Απλό" #+ Standard version of the interior or accesory
@@ -9972,7 +10139,7 @@ localization_db : .localization
 	val[]: "High Sleeper" #+ High Sleeper version of the cabin or other accesory
 
 	key[]: "light_chrome"
-	val[]: "Φωτάκι από χρώμιο" #+ Small accesory lights for bottom truck grills
+	val[]: "Φωτάκι Χρώμιο" #+ Small accesory lights for bottom truck grills
 
 	key[]: "badge_380"
 	val[]: "Σήμα 380" #+ Badge accessory (eg Renault T engine badge)
@@ -10019,6 +10186,9 @@ localization_db : .localization
 	key[]: "stock_super"
 	val[]: "Πλαϊνές Ποδιές Πλήρους Προστασίας" #+ Large, expensive sideskirts
 
+	key[]: "stock_super_cover"
+	val[]: "Πλήρης Προστασία με Κάλυμμα" #+ Large, expensive sideskirts with catwalk cover
+
 	key[]: "stock_v8"
 	val[]: "Πλαϊνές Ποδιές Στυλ V8" #+ V8 style MAN sideskirts
 
@@ -10047,7 +10217,7 @@ localization_db : .localization
 	val[]: "Λευκός Ανακλαστήρας"
 
 	key[]: "basic_chrome"
-	val[]: "Βασικές χρώμιο" #+ type of sideskirts, chromed
+	val[]: "Βασικές Χρώμιο" #+ type of sideskirts, chromed
 
 	key[]: "basic_paint"
 	val[]: "Βασικές Βαφή" #+ type of sideskirts, painted
@@ -10090,31 +10260,31 @@ localization_db : .localization
 
 	key[]: "schwarzmuller_special"
 	val[]: "Schwarzmüller Special" #+ Schwarzmuller-branded exclusive generic accessory name.
-	
+
 	key[]: "christmas_sock"
 	val[]: "Χριστουγεννιάτικη Κάλτσα" #+ Hanging interior accessory
-	
+
 	key[]: "autumn_star"
 	val[]: "Φθινοπωρινό Αστέρι" #+ Hanging interior accessory
-	
+
 	key[]: "twinkle_star"
 	val[]: "Αστραφτερό Αστέρι" #+ Hanging interior accessory
-	
+
 	key[]: "frosty_star"
 	val[]: "Παγωμένο Αστέρι" #+ Hanging interior accessory
-	
+
 	key[]: "winter_star"
 	val[]: "Χειμωνιάτικο Αστέρι" #+ Hanging interior accessory
-	
+
 	key[]: "christmas_star"
 	val[]: "Χριστουγεννιάτικο Αστέρι" #+ Hanging interior accessory
-	
+
 	key[]: "wishing_star"
 	val[]: "Αστέρι Των Ευχών" #+ Hanging interior accessory
-	
+
 	key[]: "diamond_star"
 	val[]: "Διαμαντένιο Αστέρι" #+ Hanging interior accessory
-	
+
 	key[]: "grand_star"
 	val[]: "Μεγαλοπρεπές Αστέρι" #+ Hanging interior accessory
 
@@ -10227,16 +10397,16 @@ localization_db : .localization
 	val[]: "Σκίαστρο" #+ sun shield accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_cap"
-	val[]: "Καπέλο HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "Καπέλο HS-Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_mug"
-	val[]: "Κούπα HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "Κούπα HS-Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_paper_mug"
-	val[]: "Χάρτινο Ποτήρι HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "Χάρτινο Ποτήρι HS-Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_pennant"
-	val[]: "Σημαία HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "Σημαία HS-Schoch" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -12109,6 +12279,9 @@ localization_db : .localization
 	key[]: "flatbed_cont"
 	val[]: "Πλατφόρμα / Κοντέινερ"
 
+	key[]: "foodtank"
+	val[]: "Βυτίο Τροφίμων"
+
 	key[]: "insulated"
 	val[]: "Θερμομονωτικό "
 
@@ -12117,6 +12290,10 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Ψυγείο"
+
+	key[]: "liquid"
+	val[]: "Υγρά"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -12129,6 +12306,9 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Γενικής χρήσης, ξηρά εμπορεύματα"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "Υγρά τρόφιμα"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "Παγωμένα εμπορεύματα"
@@ -12192,6 +12372,12 @@ localization_db : .localization
 
 	key[]: "rear_body"
 	val[]: "Τρέιλερ Πίσω"
+
+	key[]: "r_body"
+	val[]: "Τρέιλερ Δεξιά"
+
+	key[]: "l_body"
+	val[]: "Τρέιλερ Αριστερά"
 #@}
 
 #+ Trailer Configurator
@@ -12381,6 +12567,12 @@ localization_db : .localization
 	key[]: "bs_scs_flatbed_container"
 	val[]: "Πάτωμα με Κλειδιά Κοντέινερ"
 
+	key[]: "bs_scs_food_tank_paint"
+	val[]: "Βυτίο Τροφίμων Βαμμένο"
+
+	key[]: "bs_scs_food_tank_chrom"
+	val[]: "Βυτίο Τροφίμων Χρώμιο"
+
 	key[]: "bs_scs_insulated"
 	val[]: "Θερμομονωτικό "
 
@@ -12406,6 +12598,9 @@ localization_db : .localization
 #+ Series names for translation
 
 #@{
+	key[]: "series_schwarzmuller_food_cistern"
+	val[]: "Βυτίο Τροφίμων"
+
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Πλατφόρμα"
 
@@ -12454,6 +12649,12 @@ localization_db : .localization
 
 	key[]: "fuel_tank"
 	val[]: "Ρεζερβουάρ"
+
+	key[]: "hose"
+	val[]: "Μάνικα"
+
+	key[]: "hose_2"
+	val[]: "Μάνικα, 2x"
 
 	key[]: "ladder"
 	val[]: "Σκάλα"
@@ -12630,7 +12831,7 @@ localization_db : .localization
 	val[]: "Παρακάμψεις"
 
 	key[]: "detour_gps_warning"
-	val[]: "Υπήρξε ένα απρόοπτο συμβάν στη διαδρομή σου. Συνιστάται ένθερμα η χειροκίνητη ρύθμιση του πλοηγού."
+	val[]: "Αποτυχία πλοήγησης λόγω κλειστού δρόμου. Βρες μία εναλλακτική διαδρομή ή όρισε ένα σημείο αποφυγής στον Παγκόσμιο Χάρτη."
 #@}
 
 #+ Steam cloud.
@@ -12681,7 +12882,7 @@ localization_db : .localization
 	val[]: "Κανένα" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
-	val[]: "Δεν βρέθηκαν τρέιλερς" #+ Text shown if there are no trailer of given brands found.
+	val[]: "Δε βρέθηκαν τρέιλερ" #+ Text shown if there are no trailer of given brands found.
 
 	key[]: "cargo_model_t"
 	val[]: "ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΦΟΡΤΙΩΝ" #+ The title of the cargo preview modal. Keep it uppercase please.
@@ -13181,6 +13382,36 @@ localization_db : .localization
 
 	key[]: "sctrl_input_screenshot"
 	val[]: "@@sctrl_action_screenshot@@"
+
+	key[]: "sctrl_input_camwalk_for"
+	val[]: "@@sctrl_action_camwalk_for@@"
+
+	key[]: "sctrl_input_camwalk_back"
+	val[]: "@@sctrl_action_camwalk_back@@"
+
+	key[]: "sctrl_input_camwalk_left"
+	val[]: "@@sctrl_action_camwalk_left@@"
+
+	key[]: "sctrl_input_camwalk_righ"
+	val[]: "@@sctrl_action_camwalk_righ@@"
+
+	key[]: "sctrl_input_camwalk_crou"
+	val[]: "@@sctrl_action_camwalk_crou@@"
+
+	key[]: "sctrl_input_camwalk_run"
+	val[]: "@@sctrl_action_camwalk_run@@"
+
+	key[]: "sctrl_input_rwinopen"
+	val[]: "@@sctrl_action_rwinopen@@"
+
+	key[]: "sctrl_input_rwinclose"
+	val[]: "@@sctrl_action_rwinclose@@"
+
+	key[]: "sctrl_input_lwinopen"
+	val[]: "@@sctrl_action_lwinopen@@"
+
+	key[]: "sctrl_input_lwinclose"
+	val[]: "@@sctrl_action_lwinclose@@"
 #!}
 
 #@}
@@ -13204,6 +13435,9 @@ localization_db : .localization
 
 	key[]: "sctrl_action_set_layer_gearbox_direct"
 	val[]: "Χειροκίνητο Κιβώτιο Ταχυτήτων με Λεβιέ"
+
+	key[]: "sctrl_action_set_walking"
+	val[]: "Περπάτημα"
 
 #+ Individual bindable actions
 #@{
@@ -13505,6 +13739,36 @@ localization_db : .localization
 
 	key[]: "sctrl_action_screenshot"
 	val[]: "@@o_im_screenshot@@"
+
+	key[]: "sctrl_action_camwalk_for"
+	val[]: "Walk Forward"
+
+	key[]: "sctrl_action_camwalk_back"
+	val[]: "Walk Backward"
+
+	key[]: "sctrl_action_camwalk_left"
+	val[]: "Walk Left"
+
+	key[]: "sctrl_action_camwalk_righ"
+	val[]: "Walk Right"
+
+	key[]: "sctrl_action_camwalk_crou"
+	val[]: "@@o_im_walk_crouch@@"
+
+	key[]: "sctrl_action_camwalk_run"
+	val[]: "@@o_im_walk_run@@"
+
+	key[]: "sctrl_action_rwinopen"
+	val[]: "@@o_im_right_window_open@@"
+
+	key[]: "sctrl_action_rwinclose"
+	val[]: "@@o_im_right_window_close@@"
+
+	key[]: "sctrl_action_lwinopen"
+	val[]: "@@o_im_left_window_open@@"
+
+	key[]: "sctrl_action_lwinclose"
+	val[]: "@@o_im_left_window_close@@"
 #!}
 #@}
 

@@ -634,6 +634,9 @@ localization_db : .localization
 	key[]: "series_scs_log"
 	val[]: "LOG"
 
+	key[]: "series_scs_foodtank"
+	val[]: "FDT"
+
 	key[]: "brand_krone"
 	val[]: "Krone"
 
@@ -1385,7 +1388,7 @@ localization_db : .localization
 	val[]: "წინა საშხეფრები" #+ A couple of mudflaps on the front of the trucks bumper
 
 	key[]: "doortrim"
-	val[]: "კარის დამცავი" #+ Small variously shaped, decorative steel or chrome plates placed on truck's doors, around doorhandles
+	val[]: "სახელურის არშია" #+ Small variously shaped, decorative steel or chrome plates placed on truck's doors, around doorhandles
 
 	key[]: "windowtrim"
 	val[]: "ფანჯრის წვიმისგან დამცავი" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -1447,8 +1450,53 @@ localization_db : .localization
 
 	key[]: "screenshot"
 	val[]: "სურათის გადაღება" #+ Tooltip for icon which makes screenshots.
+
+	key[]: "switch_walking_cam"
+	val[]: "კამერის რეჟიმის გადართვა" #+ Tooltip for icon which turns walking camera mode on and off.
+	
+	key[]: "tooltip_walk_look_around"
+	val[]: "შეთვალიერება" #+ Tooltip for control icon: look around (by walking camera).
+	
+	key[]: "tooltip_mouse_rotate"
+	val[]: "მობრუნება" #+ Tooltip for control icon: rotate by mouse.
+	
+	key[]: "tooltip_mouse_zoom"
+	val[]: "მიახლოება" #+ Tooltip for control icon: zoom by mouse.
+	
+	key[]: "tooltip_mouse_pan"
+	val[]: "გაწევა" #+ Tooltip for control icon: pan by mouse.
+	
+	key[]: "tooltip_walk_title"
+	val[]: "ფეხით სიარულის სამართავი:" #+ Title of walk mode controls tooltip.
+	
+	key[]: "tooltip_walk_forward"
+	val[]: "წინსვლა" #+ Tooltip for walk forward.
+	
+	key[]: "tooltip_walk_back"
+	val[]: "უკან" #+ Tooltip for walk back.
+	
+	key[]: "tooltip_walk_left"
+	val[]: "მარცხნივ" #+ Tooltip for walk left.
+	
+	key[]: "tooltip_walk_right"
+	val[]: "მარჯვნივ" #+ Tooltip for walk right.
+	
+	key[]: "tooltip_walk_crouch"
+	val[]: "ჩაკუზვა" #+ Tooltip for crouch.
+	
+	key[]: "tooltip_walk_run"
+	val[]: "სირბილი" #+ Tooltip for run.
 #@}
 
+#+ Notifications shown when camera mode is changed in truck configurator.
+#@{
+
+	key[]: "notification_walking_camera"
+	val[]: "პირველი პირის ხედვა ჩართულია" #+ Notifications shown when walking camera is enabled.
+	
+	key[]: "notification_orbit_camera"
+	val[]: "გარეშე პირის ხედვა ჩართულია" #+ Notifications shown when orbit camera is enabled.
+#@}
 
 	key[]: "quit_game_t"
 	val[]: "გამოსვლა" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
@@ -1488,7 +1536,7 @@ localization_db : .localization
 	val[]: "გაახლება" #+ Button allowing user to upgrade something.
 
 	key[]: "continue"
-	val[]: "გაგრძელება" #+ Button which usually continues to next screen or message in sequence.
+	val[]: "განაგრძეთ" #+ Button which usually continues to next screen or message in sequence.
 
 	key[]: "or"
 	val[]: "ან" #+ Inserted between two generated texts which need to be connected. For example "Press Pause or F1".
@@ -1797,7 +1845,7 @@ localization_db : .localization
 	val[]: "დახარისხება" #+ Combo box with job sorting options."
 
 	key[]: "calculating_route"
-	val[]: "ითვლება გზა ..." #+ Shown temporarily on map screens when navigation route is being calculated
+	val[]: "დგინდება მიმართულება ..." #+ Shown temporarily on map screens when navigation route is being calculated
 
 #+ Job sorting options (Sort by:X)
 #@{
@@ -1849,7 +1897,7 @@ localization_db : .localization
 	val[]: "და დაიწყეთ მართვა!"
 
 	key[]: "jobf_hint_4b"
-	val[]: "ნავიგაციის დაყენება პირდაპირ იმ ადგილზე, სადაც შეგიძლიათ დაიწყოთ მუშაობა"
+	val[]: "გზამკვლევის მითითება პირდაპირ იმ საწყობზე, სადაც შეგიძლიათ დაიწყოთ მუშაობა"
 #@}
 
 #+ Cargo types.
@@ -1951,7 +1999,7 @@ localization_db : .localization
 	val[]: "გავლილი მანძილი:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "გაგრძელება" #+ Button which selects profile and continues in game.
+	val[]: "განაგრძეთ თამაში" #+ Button which selects profile and continues in game.
 
 	key[]: "new"
 	val[]: "ახალი პროფილი" #+ Button which opens new profile creation dialog.
@@ -2131,7 +2179,7 @@ localization_db : .localization
 	val[]: "პაროლი არასწორია, ან მითითებული ანგარიში არ არსებობს. სწორი პაროლის ან ანგარიშის/ელფოსტის შესაყვანად დააჭირეთ გამეორებას."
 
 	key[]: "continue_offline"
-	val[]: "ავტონომიურ რეჟიმში გაგრძელება" #+ Button which loads the profile in offline mode
+	val[]: "განაგრძეთ კავშირგარეშედ" #+ Button which loads the profile in offline mode
 
 	key[]: "continue_offline_info"
 	val[]: "შეგიძლიათ გააგრძელოთ ავტონომიურ რეჟიმში. კავშირის გარეშე წვდომა არ გექნებათ World of Trucks-თან და სხვა ონლაინ ფუნქციებთან."
@@ -2443,23 +2491,59 @@ localization_db : .localization
 	key[]: "master_volume"
 	val[]: "საერთო ხმოვანება" #+ Slider controlling master volume.
 
-	key[]: "sound_volume"
-	val[]: "ეფექტების ხმოვანება" #+ Slider controlling volume of the sound effects.
+	key[]: "truck_engine_volume"
+	val[]: "ძრავას ხმოვანება" #+ Slider controlling volume of the truck engine.
 
-	key[]: "music_volume"
-	val[]: "მუსიკის ხმოვანება" #+ Slider controlling volume of the music effects.
+	key[]: "truck_exhaust_volume"
+	val[]: "გამოსაბოლქვის ხმოვანება" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_effects_volume"
+	val[]: "ეფექტების ხმოვანება" #+ Slider controlling volume of the truck effects.
+
+	key[]: "truck_noise_volume"
+	val[]: "სატვირთოს ხმაური" #+ Slider controlling volume of the truck noises.
+
+	key[]: "trailer_noise_volume"
+	val[]: "მისაბმელის ხმაური" #+ Slider controlling volume of the trailer noises.
+
+	key[]: "traffic_volume"
+	val[]: "სამანქანო მოძრაობის ხმაური" #+ Slider controlling volume of the traffic.
+
+	key[]: "world_volume"
+	val[]: "გარესამყაროს ხმაური" #+ Slider controlling volume of the environment sounds.
+
+	key[]: "ambient_volume"
+	val[]: "გარემო ხმაურის დონე" #+ Slider controlling volume of the ambient sounds.
+
+	key[]: "interior_volume"
+	val[]: "შიდა ხმოვანება" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
 	val[]: "რადიოს ხმა" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
-	val[]: "ნავიგაციის ხმის დონე" #+ Slider controlling volume of the voice navigation.
+	val[]: "გზამკვლევის ხმის დონე" #+ Slider controlling volume of the voice navigation.
+
+	key[]: "voiceover_volume"
+	val[]: "გახმოვანების ხმა" #+ Slider controlling voice over volume.
+
+	key[]: "music_volume"
+	val[]: "მუსიკის ხმოვანება" #+ Slider controlling volume of the in-game music.
+
+	key[]: "game_ui_volume"
+	val[]: "თამაშის ხმოვანება" #+ Slider controlling volume of the game sound effects.
+
+	key[]: "music_ui_volume"
+	val[]: "მენიუს მუსიკის ხმოვანება" #+ Slider controlling volume of the ui (menu) music.
+
+	key[]: "intro_volume"
+	val[]: "საწყისი ეკრანის ხმოვანება" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
-	val[]: "ხმოვანი ნავიგაცია" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
+	val[]: "ხმოვანი გზამკვლევი" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
 
 	key[]: "voice_navigation_enable"
-	val[]: "ხმოვანი ნავიგაციის ჩართვა" #+ Checkbox enabling the voice navigation functionality.
+	val[]: "ხმოვანი გზამკვლევის ჩართვა" #+ Checkbox enabling the voice navigation functionality.
 
 	key[]: "voice_navigation_pack"
 	val[]: "ენა და ხმა" #+ Droplist for selection of the voice navigation pack.
@@ -2488,20 +2572,29 @@ localization_db : .localization
 	key[]: "advanced_audio_t"
 	val[]: "ხმის სხვა პარამეტრები" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
-	key[]: "reverse_stereo"
-	val[]: "სტერეო" #+ Checkbox flipping left and right loudspeaker.
-
-	key[]: "sound_effects"
-	val[]: "ხმის ეფექტები" #+ Checkbox enabling sound effects.
-
-	key[]: "music"
-	val[]: "მუსიკა" #+ Checkbox enabling music.
-
 	key[]: "sound_of_reverse"
 	val[]: "წრიპინი უკანსვლისას" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
 
 	key[]: "rumble_stripe_sound"
 	val[]: "ხმოვანი ზოლები" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
+
+	key[]: "noise_window"
+	val[]: "ხმაური ღია ფანჯრებიდან" #+ Checkbox enabling the sound of the opened windows noise.
+
+	key[]: "noise_aero"
+	val[]: "ხმაური ჰაერის მოძრაობისას" #+ Checkbox enabling the sound of the air noise.
+
+	key[]: "reverb_cabin"
+	val[]: "ხმის არეკვლა კაბინაში" #+ Checkbox enabling the reverb effect of the cabin.
+
+	key[]: "reverb_world"
+	val[]: "ხმის არეკვლა გარემოში" #+ Checkbox enabling the reverb effect of the environment.
+
+	key[]: "audio_driver_settings_t"
+	val[]: "ხმის სამართავი" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+
+	key[]: "default_audio_driver"
+	val[]: "- სისტემის ნაგულისხმევი -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -2713,7 +2806,7 @@ localization_db : .localization
 #+ Navigation display mode
 #@{
 	key[]: "show_navigation"
-	val[]: "ნავიგაცია" #+ Droplist for selection mode of GPS navigation visualization.
+	val[]: "გზამკვლევის ჩვენება" #+ Droplist for selection mode of GPS navigation visualization.
 
 	key[]: "navi_never"
 	val[]: "არასოდეს" #+ Hide navigation on all maps.
@@ -2731,7 +2824,7 @@ localization_db : .localization
 #+ Navigation routing mode
 #@{
 	key[]: "navigation_mode"
-	val[]: "ნავიგაციის რეჟიმი" #+ Droplist for selection mode of GPS navigation routing.
+	val[]: "გზამკვლევის რეჟიმი" #+ Droplist for selection mode of GPS navigation routing.
 
 	key[]: "navi_best"
 	val[]: "საუკეთესო" #+ Best: fastest and/or most comfortable route.
@@ -2980,6 +3073,9 @@ localization_db : .localization
 	key[]: "hud_controls"
 	val[]: "პანელი"
 
+	key[]: "walk_mode"
+	val[]: "სიარულის რეჟიმი"
+	
 	key[]: "other_controls"
 	val[]: "სხვა"
 #@}
@@ -3143,8 +3239,23 @@ localization_db : .localization
 	key[]: "o_im_activate"
 	val[]: "გააქტიურება" #+ Context action for activation. For example sleep, refuel....
 
+	key[]: "o_im_right_window_open"
+	val[]: "მარჯვენა ფანჯრის გაღება" #+ Action for opening right window.
+
+	key[]: "o_im_right_window_close"
+	val[]: "მარჯვენა ფანჯრის დახურვა" #+ Action for closing right window.
+
+	key[]: "o_im_left_window_open"
+	val[]: "მარცხენა ფანჯრის გაღება" #+ Action for opening left window.
+
+	key[]: "o_im_left_window_close"
+	val[]: "მარცხენა ფანჯრის დახურვა" #+ Action for closing left window.
+
 	key[]: "o_im_menu"
 	val[]: "მენიუ" #+ Action for entering menu (hardcoded ESC + one optional control)
+
+	key[]: "o_im_eye_config"
+	val[]: "თვალის მოძრაობის მიდევნების პარამეტრები"
 # hud
 
 	key[]: "o_im_show_mirrors"
@@ -3166,7 +3277,7 @@ localization_db : .localization
 	val[]: "სატვირთოს აღჭურვილობა"
 
 	key[]: "o_im_adviser_page0"
-	val[]: "გზამკვლევი - ნავიგაცია"
+	val[]: "გზამკვლევის გვერდი"
 
 	key[]: "o_im_adviser_page1"
 	val[]: "გზამკვლევი - ინფორმაცია სამუშაოზე"
@@ -3249,7 +3360,25 @@ localization_db : .localization
 	key[]: "o_im_look_blink_mode"
 	val[]: "კამერის მობრუნება მოხვევის მაჩვენებლის მიხედვით" #+ Toggles enabled state of camera rotation based on blinker activation.
 
-
+#walk mode
+	key[]: "o_im_walk_forward"
+	val[]: "წინსვლა" #+ Walk forward.
+	
+	key[]: "o_im_walk_back"
+	val[]: "უკან" #+ Walk back.
+	
+	key[]: "o_im_walk_left"
+	val[]: "მარცხნივ" #+ Walk left.
+	
+	key[]: "o_im_walk_right"
+	val[]: "მარჯვნივ" #+ Walk right.
+	
+	key[]: "o_im_walk_crouch"
+	val[]: "ჩაკუზვა" #+ Activate crouch.
+	
+	key[]: "o_im_walk_run"
+	val[]: "სირბილი" #+ Activate run.
+	
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3583,7 +3712,7 @@ localization_db : .localization
 	val[]: "სხვადასხვა" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "უკუკავშირის ფერი" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "ფერით უკუკავშირი" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3655,10 +3784,16 @@ localization_db : .localization
 	val[]: "მდებარეობის აღქმა (საცდელი)" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
-	val[]: "გადახრის მგრძნობელობა" #+ Multiplier applied to resulting yaw value
+	val[]: "გადახრის მგრძნობელობა (კაბინაში)" #+ Multiplier applied to resulting yaw value (in cabin)
 
 	key[]: "eye_pitch_scale"
-	val[]: "გადაწევის მგრძნობელობა" #+ Multiplier applied to resulting pitch value
+	val[]: "გადაწევის მგრძნობელობა (კაბინაში)" #+ Multiplier applied to resulting pitch value (in cabin)
+	
+	key[]: "eye_walk_mode_yaw_scale"
+	val[]: "გადახრის მგრძნობელობა (ფეხით სიარულისას)" #+ Multiplier applied to resulting yaw value (in walk mode)
+
+	key[]: "eye_walk_mode_pitch_scale"
+	val[]: "გადაწევის მგრძნობელობა (ფეხით სიარულისას)" #+ Multiplier applied to resulting pitch value (in walk mode)
 
 	key[]: "eye_gaze_max_angle"
 	val[]: "მზერის დასაშვები კუთხე" #+ Maximal angle change generated by gaze tracking.
@@ -3730,10 +3865,16 @@ localization_db : .localization
 	val[]: "რომელ მხარესაც გადახრით თავს, თამაშში კამერაც იმ მხარეს გადაიხრება."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "მამრავლი მგრძნობელობის, თავის ერთი მხრიდან მეორისკენ შებრუნებისას."
+	val[]: "მამრავლი მგრძნობელობის, თავის ერთი მხრიდან მეორისკენ შებრუნებისას (კაბინაში)."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "მამრავლი მგრძნობელობის, თავის ზემოთ და ქვემოთ მოძრაობისას."
+	val[]: "მამრავლი მგრძნობელობის, თავის ზემოთ და ქვემოთ მოძრაობისას (კაბინაში)."
+	
+	key[]: "eye_walk_mode_yaw_scale_tooltip"
+	val[]: "მამრავლი მგრძნობელობის, თავის ერთი მხრიდან მეორისკენ შებრუნებისას (ფეხით სიარულისას)."
+
+	key[]: "eye_walk_mode_pitch_scale_tooltip"
+	val[]: "მამრავლი მგრძნობელობის, თავის ზემოთ და ქვემოთ მოძრაობისას (ფეხით სიარულისას)."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "განსაზღვრავს, რამდენად შორს შეიძლება კამერა მიბრუნდეს, ეკრანის კიდეზე შეხედვისას."
@@ -4355,7 +4496,7 @@ localization_db : .localization
 	val[]: "კომპანია"
 
 	key[]: "navigation_title"
-	val[]: "ნავიგაცია"
+	val[]: "გზამკვლევი"
 
 	key[]: "garage_title"
 	val[]: "ფარეხი"
@@ -4419,6 +4560,20 @@ localization_db : .localization
 	key[]: "job_income"
 	val[]: "შემოსავალი" #+ For example "Job income: E6,526"
 
+	key[]: "adviser_tooltip_map_page"
+	val[]: "გზამკვლევი" #+ Tooltip for map page in route advisor
+
+	key[]: "adviser_tooltip_job_page"
+	val[]: "მიმდინარე სამუშაო" #+ Tooltip for job info page in route advisor
+
+	key[]: "adviser_tooltip_damage_page"
+	val[]: "შემოწმება და სამაშველო" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+
+	key[]: "adviser_tooltip_message_page"
+	val[]: "მოკლე შეტყობინებები" #+ Tooltip for short messages page in route advisor
+
+	key[]: "adviser_tooltip_tutorial"
+	val[]: "გზამკვლევის შესწავლა" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "სამაშველო სამსახური გთავაზობთ გადაყვანას სახელოსნოში, ქალაქი $CITY$. გადასახადი $MONEY$, დაჭირდება $TIME$.<br offset=30>თანახმა ხართ?"
@@ -4487,7 +4642,7 @@ localization_db : .localization
 	val[]: "გითავდებათ AdBlue!<br>ძრავას ბრუნვა შეიზღუდება.<br>იპოვეთ ბენზინგასამართი სადგური."
 
 	key[]: "trailer_lost"
-	val[]: "ტრეილერი დაიკარგა"
+	val[]: "მისაბმელი დაიკარგა!"
 
 
 	key[]: "truck_dealer"
@@ -4675,6 +4830,15 @@ localization_db : .localization
 	key[]: "weigh_confirm"
 	val[]: "მადლობას გიხდით თანამშრომლობისთვის, უსაფრთხო მგზავრობას გისურვებთ!" #+ Adviser text
 
+	key[]: "weigh_damaged"
+	val[]: "თქვენი მანქანა არც ისე კარგ მდგომარეობაშია. შემდეგში, მეტი ყურადღება გამოიჩინეთ!" #+ Adviser text
+
+	key[]: "weigh_damaged_lot"
+	val[]: "თქვენი მანქანის ტექნიკური მდგომარეობა, არ აკმაყოფილებს კანონის მოთხოვნებს. საჭიროა შეკეთება!" #+ Adviser text
+
+	key[]: "weigh_illegal_trailer"
+	val[]: "თქვენს სატვირთოზე ამგვარი მისაბმელი იკრძალება ამ არეში!" #+ Adviser text
+
 	key[]: "trucking_prohibited"
 	val[]: "სავაჭრო გადაზიდვები ამ არეში აკრძალულია. მოგიწევთ, უკან გაბრუნდეთ!" #+ Adviser text
 
@@ -4811,6 +4975,9 @@ localization_db : .localization
 
 	key[]: "offence_shoulder_violation"
 	val[]: "განაპირა ზოლზე დარღვევა."
+
+	key[]: "offence_damaged_vehicle_usage"
+	val[]: "დაზიანებული მანქანით სარგებლობაზე დარღვევა."
 #@}
 
 #@}
@@ -6161,7 +6328,7 @@ localization_db : .localization
 	val[]: "მანქანის მეორადი ელემენტები"
 
 	key[]: "cn_air_mails"
-	val[]: "საჰაერო ფოსტა"
+	val[]: "ავიაფოსტა"
 
 	key[]: "cn_aircraft_tires"
 	val[]: "საჰაერი ხომალდის საბურავები"
@@ -6200,7 +6367,7 @@ localization_db : .localization
 	val[]: "კომპიუტერის პროცესორები"
 
 	key[]: "cn_concentrate_juices"
-	val[]: "ნატურალური წვენი"
+	val[]: "კონცენტრირებული წვენი"
 
 	key[]: "cn_corks"
 	val[]: "საცობები"
@@ -6430,8 +6597,8 @@ localization_db : .localization
 
 #schwarzmuller trailers (for trailer listing screen)
 
-	key[]: "tn_schw_cistern_food"
-	val[]: "Schwarzmüller-ის საჭმლის ავზი"
+	key[]: "tn_schw_foodtank"
+	val[]: "საკვების ავზი Schwarzmüller"
 
 	key[]: "tn_schw_curtain"
 	val[]: "გადასაფარებლიანი Schwarzmüller"
@@ -7637,10 +7804,10 @@ localization_db : .localization
 	val[]: "სად გსურთ მძღოლის გადაყვანა?"
 
 	key[]: "td_garsel_move_trailer"
-	val[]: "სად გსურთ მისაბმელის გადაყვანა?"  #+ Text shown in garage selection screen.
+	val[]: "სად გსურთ მისაბმელის გადაყვანა?" #+ Text shown in garage selection screen.
 
 	key[]: "td_garsel_store_trailer"
-	val[]: "სად გსურთ მისაბმელის განთავსება?"  #+ Text shown in garage selection screen.
+	val[]: "სად გსურთ მისაბმელის განთავსება?" #+ Text shown in garage selection screen.
 #@}
 
 #+ Recruitment agency
@@ -7718,10 +7885,10 @@ localization_db : .localization
 	val[]: "ნანახი:" #+ Label shown before value indicating how many percents of the world are explored.
 
 	key[]: "reset_gps_pins"
-	val[]: "ნავიგაციის ჩამოყრა" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
+	val[]: "გზამკვლევის ჩამოყრა" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
 
 	key[]: "append_new_pins"
-	val[]: "ახალი წერტილის დამატება" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
+	val[]: "ახალი წერტილის მხოლოდ ბოლოში დამატება" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
 
 	key[]: "append_new_avoid_pins"
 	val[]: "ასარიდებელი ადგილის დამატება" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
@@ -7891,7 +8058,7 @@ localization_db : .localization
 	val[]: "კმ/სთ" #+ Kilometres per hour
 
 	key[]: "mph"
-	val[]: "მილი/სთ" #+ Miles per hour
+	val[]: "მილ/სთ" #+ Miles per hour
 
 	key[]: "unit_l"
 	val[]: "ლ" #+ Litre
@@ -7903,7 +8070,7 @@ localization_db : .localization
 	val[]: "გალ." #+ Gallon, short name
 
 	key[]: "mpg"
-	val[]: "მილი/გალონი" #+ Miles per gallon
+	val[]: "მილი/გალ" #+ Miles per gallon
 
 	key[]: "gph"
 	val[]: "გალონი/საათი" #+ Gallons per hour
@@ -8431,7 +8598,7 @@ localization_db : .localization
 	val[]: "ბრნო"
 
 	key[]: "brussel"
-	val[]: "ბრუსელი"
+	val[]: "ბრიუსელი"
 
 	key[]: "bucuresti"
 	val[]: "ბუქარესტი"
@@ -9152,7 +9319,7 @@ localization_db : .localization
 	val[]: "შეჩერებულია" #+ Shown on screen when the game is paused.
 
 	key[]: "pause_game_hint"
-	val[]: "თამაშის დაპაუზება ან გაშვება" #+ Shown bellow keys which (un)pause the game.
+	val[]: "თამაშის შეჩერება ან გაშვება" #+ Shown bellow keys which (un)pause the game.
 
 	key[]: "show_mirrors_hint"
 	val[]: "გვერდითი სარკეების ჩართვა/გამორთვა" #+ Shown bellow keys which will toggle side mirrors.
@@ -9225,7 +9392,7 @@ localization_db : .localization
 #@{
 
 	key[]: "intro_continue"
-	val[]: "გაგრძელება ($KEY$)" #+ Message box button.
+	val[]: "განაგრძეთ ($KEY$)" #+ Message box button.
 
 
 	key[]: "intro_1"
@@ -9235,23 +9402,23 @@ localization_db : .localization
 	val[]: "როგორც იქნა შანსი გაქვთ იმუშაოთ საოცნებო სამსახურში - მართოთ სატვირთო!"
 
 	key[]: "intro_3"
-	val[]: "თქვენი სატრანსპორტო კომპანია გაიხსნა. სამწუხაროდ არ გაქვთ ფული სატვირთოს საყიდლად. მოგიწევთ იმუშაოთ სხვა კომპანიებზე როგორც დაქირავებული მძღოლი."
+	val[]: "თქვენი კუთვნილი გადამზიდი კომპანია უკვე მზადაა საქმიანობისთვის, მაგრამ სამწუხაროდ არ გაქვთ ფული სატვირთოს შესაძენად. ჯერჯერობით, მოგიწევთ იმუშაოთ სხვა კომპანიებში, როგორც დაქირავებულმა მძღოლმა."
 
 	key[]: "intro_4"
-	val[]: "თქვენი დავალებაა $JOB_CARGO$ მიიტანოთ $JOB_TARGET_CITY$-ში $JOB_TARGET_COMPANY$ კომპანიის ოფისში. დამქირავებელმა მოგცათ სატვირთო და დაფარავს ყველა გადასახადს. არ დააგვიანოთ!"
+	val[]: "თქვენი დავალებაა $JOB_CARGO$ მიიტანოთ $JOB_TARGET_COMPANY$ კომპანიის საწყობში, ქალაქი $JOB_TARGET_CITY$. დამქირავებელი მოგაწვდით სატვირთოს და დაფარავს ყველა ხარჯს. შეეცადეთ, არ დააგვიანოთ."
 
 
 	key[]: "intro_garage_1"
 	val[]: "ესაა თქვენი სათაო ოფისი."
 
 	key[]: "intro_garage_2"
-	val[]: "მეტად უბრალო ფარეხია, დიდი არაფერი, მაგრამ ეს დასაწყისია."
+	val[]: "მეტად უბრალო ფარეხია, დიდი არაფერი, მაგრამ ეს მხოლოდ დასაწყისია."
 
 	key[]: "intro_garage_3"
 	val[]: "სამწუხაროდ, არაფერი გყავთ ფარეხში გასაჩერებლად, სწორედ ამიტომაა ირგვლივ სიცარიელე."
 
 	key[]: "intro_garage_4"
-	val[]: "მას შემდეგ, რაც საკმარისი ფული გექნებათ რომ იყიდოთ სატვირთო, შეგეძლებათ მსოფლიოში მოძრაობა თავისუფლად და ასევე შეგიძლიათ მართოთ ბიზნესი აქედან."
+	val[]: "მას შემდეგ, რაც საკმარისი ფული გექნებათ სატვირთოს შესაძენად, თავისუფლად შეგეძლებათ გადაადგილდეთ მსოფლიოში და აქედანვე აწარმოოთ საქმიანობა."
 
 	key[]: "intro_garage_5"
 	val[]: "გისურვებთ წარმატებას!"
@@ -9264,7 +9431,7 @@ localization_db : .localization
 	val[]: "სამოძრაოდ გამოიყენეთ:<br><br>$KEY_TABLE$<br>გაიარეთ რამდენიმე მეტრი და გაჩერდით."
 
 	key[]: "tut_msg_2b"
-	val[]: "სატვირთოს სამართავად გამოიყენეთ დამატებით მოწყობილობა.<br><br>გაატარეთ სატვირთო რამდენიმე მეტრით და გააჩერეთ."
+	val[]: "სატვირთოს ასამოძრავებლად გამოიყენეთ სამართავი მოწყობილობა.<br><br>გაატარეთ წინ რამდენიმე მეტრით და გააჩერეთ."
 
 	key[]: "tut_msg_3"
 	val[]: "ხელმისაწვდომია ხედვის სხვადასხვა არე. აირჩიეთ საუკეთესო.<br><br>$KEY_TABLE$<br>გადართეთ თავისუფალ ხედზე და მიმოიხედეთ სატვირთოს გარშემო"
@@ -9273,10 +9440,10 @@ localization_db : .localization
 	val[]: "$KEY_TABLE$<br>მოსინჯეთ სხვადასხვა ხედი და დააჭირეთ ღილაკს $KEY_CONTINUE$."
 
 	key[]: "tut_msg_5"
-	val[]: "მუშაობის დროა! გამოიყენეთ გზამკვლევი, რომ ნახოთ სად ხართ და სად უნდა წახვიდეთ. მისაახლოვებლად სანახავად დააჭირეთ $KEY$..."
+	val[]: "დროა დაიწყოთ მიწოდება! ისარგებლეთ გზამკვლევით, რომ გაიგოთ სად იმყოფებით და საით უნდა წახვიდეთ. უკეთ სანახავად გამოიყენეთ $KEY$..."
 
 	key[]: "tut_msg_6"
-	val[]: "შესანიშნავია! ზოგადი უკვე ისწავლეთ. მოდი ჩავრთოთ მუსიკა მგზავრობის გასამხიარულებლად. რადიოს ჩასართავად დააჭირეთ $KEY$-ს.<br>(ასევე შეგიძლიათ ჩართოთ სამუშაო მაგიდაზე დაბლითა ზოლიდან.)"
+	val[]: "შესანიშნავია! საფუძვლები უკვე შეისწავლეთ. მოდი ჩავრთოთ მუსიკა მგზავრობის გასამხიარულებლად. რადიოს ჩასართავად გამოიყენეთ $KEY$.<br>(მასზე წვდომა ასევე შეგიძლიათ მთავარი გვერდის ქვედა ზოლიდან)."
 
 	key[]: "tut_msg_7"
 	val[]: "ყველაფერი მზადაა. დანიშნულების ადგილამდე მიდით გზამკვლევის დახმარებით."
@@ -9285,40 +9452,40 @@ localization_db : .localization
 	val[]: "შეყოვნდით შესასვლელში, რომ მიიღოთ ნებართვა, ტვირთის შესაბამის წერტილში განსათავსებლად. ყურადღება მიაქციეთ მოძრავ სიგნალს, რომლითაც მონიშნულია სატვირთოს დასაყენებელი ადგილი.<br><br>ასევე, კარგი იქნება, თუ მოაახლოვებთ რუკას გზამკვლევის ეკრანზე: ($KEY$)."
 
 	key[]: "tut_msg_9"
-	val[]: "მას შემდეგ რაც სასურველ ადგილს შეარჩევთ, შეგიძლიათ დაიწყოთ მისაბმელის დაყენება. ზოგიერთ ტერმინალზე შეგიძლიათ აირჩიოთ სხვა, უფრო მოსახერხებელი ადგილი (ნაკლები გამოცდილების მიღების სანაცვლოდ). თუ ვერ ტოვებთ ტვირთს, აირჩიეთ ავტომატური მიწოდება.<br><br>მიწაზე განათებული იქნება შესაბამისი ადგილი სადაც უნდა დატოვოთ ტვირთი. როცა მისაბმელი სწორად იქნება განთავსებული, გეცნობებათ რომ უკვე შეგიძლიათ ჩახსნათ."
+	val[]: "მას შემდეგ რაც სასურველ ადგილს შეარჩევთ, შეგიძლიათ დაიწყოთ მისაბმელის დაყენება. ზოგიერთ ტერმინალზე შეგიძლიათ აირჩიოთ სხვა, უფრო მოსახერხებელი ადგილი (ნაკლები გამოცდილების მიღების სანაცვლოდ). თუ მაინც ვერ ახერხებთ დაყენებას, შეგიძლიათ გამოტოვებაც.<br><br>მიწაზე განათებული იქნება შესაბამისი ადგილი სადაც უნდა დატოვოთ ტვირთი. როცა მისაბმელი სწორად იქნება განთავსებული, გეცნობებათ რომ უკვე შეგიძლიათ ჩახსნათ."
 
 	key[]: "tut_msg_10"
-	val[]: "კარგი ნამუშევარია! რაღას უცდით? ჩამოტვირთეთ და გაუყევით თქვენს გზას!"
+	val[]: "კარგი ნამუშევარია! რაღას უცდით? ჩამოტვირთეთ და გაუყევით გზას!"
 
 	key[]: "tutorial_adviser0"
-	val[]: "თამაშის დაპაუზებისას, გზამკვლევის მართვა მაუსით შეგიძლიათ.<br><br>თქვენ დაყენებული გაქვთ გზამკვლევი, რომელიც ხელმისაწვდომია ყოველთვის. გზამკვლევი გიჩვენებთ ამჟამინდელ მდგომარეობას და გაწვდით ინფორმაციას სამუშაოსა და მდებარეობის შესახებ."
+	val[]: "თამაშის შეჩერებისას, გზამკვლევის მართვა თაგვით შეგიძლიათ.<br><br>თქვენ გაქვთ გზამკვლევი, რომელიც მუდამ ხელმისაწვდომია. გზამკვლევი გიჩვენებთ მიმდინარე მდგომარეობას და გაწვდით ინფორმაციას სამუშაოსა და დანიშნულების ადგილის შესახებ."
 
 	key[]: "tutorial_adviser1"
 	val[]: "ასევე ყველაზე ხშირად გამოყენებულ ფუნქციებზე მიმაგრებულია მალსახმობი კლავიშები, რომელთა გამოყენებაც მართვისას შეგიძლიათ. ხელმისაწვდომი კლავიშები ნაჩვენებია პირდაპირ გზამკვლევზე."
 
 	key[]: "tutorial_adviser1a"
-	val[]: "თქვენი მდგომარეობა: სიჩქარე, გად. კოლოფი, ზიანი, საწვავი, დაღლილობა, ელფოსტა, დრო და ფული."
+	val[]: "მიმდინარე მდგომარეობა: სიჩქარე, გად. კოლოფი, დაზიანება, საწვავი, დაღლილობა, ელფოსტა, დრო და თანხა."
 
 	key[]: "tutorial_adviser1b"
 	val[]: "არჩეული გვერდის შიგთავსი."
 
 	key[]: "tutorial_adviser1c"
-	val[]: "გვერდების გადართვა. გადართეთ ნავიგაციის, სამუშაოს აღწერის, სატვირთოს დიაგნოსტიკის და შეტყობინების გვერდებს შორის."
+	val[]: "გვერდების შორის გადასვლა. იხილეთ გზამკვლევის, სამუშაოს აღწერის, სატვირთოს მდგომარეობისა და შეტყობინების გვერდები."
 
 	key[]: "tutorial_adviser2"
-	val[]: "სანავიგაციო რუკა ლურჯი ისრის სახით გიჩვენებთ თქვენს ამჟამინდელ მდებარეობას. თუ სამუშაოზე ხართ, მაშინ გამოჩნდება უმოკლესი გზა დანიშნულებამდე.<br><br>გვერდის ქვემოთ გამოჩნდება გასავლელი მანძილი და დრო. ღილაკით $KEY$ შესაძლებელია სხვადასხვა მასშტაბის ხედზე გადართვა."
+	val[]: "გზამკვლევის რუკა ლურჯი ისრის სახით გიჩვენებთ თქვენს ამჟამინდელ მდებარეობას. თუ სამუშაოზე ხართ, მაშინ გამოჩნდება უმოკლესი გზა დანიშნულებამდე.<br><br>გვერდის ქვემოთ გამოჩნდება გასავლელი მანძილი და დრო. ღილაკით $KEY$ შესაძლებელია სხვადასხვა მასშტაბის ხედზე გადართვა."
 
 	key[]: "tutorial_adviser2a"
 	val[]: "გასაგრძელებლად გადადით სამუშაოს აღწერის გვერდზე ($KEY$)..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "სამუშაოს აღწერის გვერდი გიჩვენებთ რა და სად მიგაქვთ, ასევე გიჩვენებთ დარჩენილ დროს და თანხას, რომელსაც მიიღებთ ტვირთის დაზიანების გარეშე ჩაბარებისას.<br><br>წითელ ღილაკზე დაჭერით შეგიძლიათ გააუქმოთ თქვენი სამუშაო, მაგრამ ამისთვის მოგიწევთ დამატებითი ჯარიმის გადახდა."
+	val[]: "სამუშაოს აღწერის გვერდი გიჩვენებთ სად რა ტვირთი მიგაქვთ, ასევე დარჩენილ დროსა და თანხას, რომელსაც მიიღებთ ტვირთის დაუზიანებლად ჩაბარებისას.<br><br>წითელ ღილაკზე დაჭერით შეგიძლიათ გააუქმოთ თქვენი სამუშაო, თუმცა მოგიწევთ ჯარიმის გადახდა."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "გასაგრძელებლად გადადით დიაგნოსტიკის გვერდზე ($KEY$)..."
 
 	key[]: "tutorial_adviser4"
-	val[]: "დიაგნოსტიკის გვერდზე შეგიძლიათ იხილოთ დაზიანებულია თუ არა სატვირთო ან ტვირთი. სატვირთოს შეკეთება შეგიძლიათ ნებისმიერი ქალაქის სახელოსნოში. ტვირთის შეკეთება შეუძლებელია, ასე რომ იფრთხილეთ.<br><br>იმ შემთხვევაში თუ სატვირთო ძალიან დაზიანებულია და ვერ აგრძელებთ გზას, შეგიძლიათ გამოიძახოთ სამაშველო სამსახური, რომლებიც გადაგიყვანენ უახლოესი ქალაქის სახელოსნოში."
+	val[]: "დიაგნოსტიკის გვერდზე შეგიძლიათ იხილოთ დაზიანებულია თუ არა სატვირთო ან ტვირთი. სატვირთოს შეკეთება შეგიძლიათ ნებისმიერი ქალაქის სახელოსნოში. ტვირთის შეკეთება შეუძლებელია, ასე რომ მოუფრთხილდით.<br><br>იმ შემთხვევაში თუ სატვირთო ძალიან დაზიანებულია და ვერ აგრძელებთ გზას, შეგიძლიათ გამოიძახოთ სამაშველო სამსახური, რომელიც გადაგიყვანთ უახლოესი ქალაქის სახელოსნოში."
 
 	key[]: "tutorial_adviser5"
 	val[]: "აქ იხილავთ ყველაფერს გზამკვლევის შესხებ.<br><br>ამ ინფორმაციის ნახვას შეძლებთ დახმარების ღილაკზე დაჭერით.<br><br>თამაშის გასაგრძელებად დააჭირეთ $KEY$."
@@ -10019,6 +10186,9 @@ localization_db : .localization
 	key[]: "stock_super"
 	val[]: "სრულად დამცავი ხუფები" #+ Large, expensive sideskirts
 
+	key[]: "stock_super_cover"
+	val[]: "სრულად დამცავი ხუფით" #+ Large, expensive sideskirts with catwalk cover
+
 	key[]: "stock_v8"
 	val[]: "V8-სახის გვერდითი ხუფები" #+ V8 style MAN sideskirts
 
@@ -10090,31 +10260,31 @@ localization_db : .localization
 
 	key[]: "schwarzmuller_special"
 	val[]: "საგანგებო Schwarzmüller" #+ Schwarzmuller-branded exclusive generic accessory name.
-	
+
 	key[]: "christmas_sock"
 	val[]: "შობის წინდა" #+ Hanging interior accessory
-	
+
 	key[]: "autumn_star"
 	val[]: "შემოდგომის ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "twinkle_star"
 	val[]: "ციმციმა ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "frosty_star"
 	val[]: "ყინულის ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "winter_star"
 	val[]: "ზამთრის ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "christmas_star"
 	val[]: "შობის ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "wishing_star"
 	val[]: "ნატვრის ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "diamond_star"
 	val[]: "ალმასის ვარსკვლავი" #+ Hanging interior accessory
-	
+
 	key[]: "grand_star"
 	val[]: "დიადი ვარსკვლავი" #+ Hanging interior accessory
 
@@ -10227,16 +10397,16 @@ localization_db : .localization
 	val[]: "მზისგან დამცავი" #+ sun shield accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_cap"
-	val[]: "ქუდი HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "ქუდი HS-Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_mug"
-	val[]: "კათხა HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "კათხა HS-Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_paper_mug"
-	val[]: "ქაღალდის ჭიქა HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "ქაღალდის ჭიქა HS-Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_pennant"
-	val[]: "დროშა HS Schoch" #+ toy accessory name, HS Schoch naming
+	val[]: "დროშა HS-Schoch" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10799,7 +10969,7 @@ localization_db : .localization
 #@{
 
 	key[]: "job_delivery_t"
-	val[]: "ტრეილერის ჩაბარება"
+	val[]: "მისაბმელის ჩაბარება"
 
 	key[]: "job_delivery_desc"
 	val[]: "გამოცდილი მძღოლი ყოველთვის ახერხებს სატვირთოს ჩაყენებას ვიწრო ადგილში. გაითვალისწინეთ რომ ტვირთის უსაფრთხოება უმნიშვნელოვანესია! თუ გამოწვევისთვის მზად არ ხართ მოითხოვეთ სხვა ადგილის გამოყოფა."
@@ -10808,7 +10978,7 @@ localization_db : .localization
 	val[]: "ობიექტი"
 
 	key[]: "parking_diff_tough"
-	val[]: "პიკი-საათი" #+ Player agrees to take the challenge and park the trailer to the tough place
+	val[]: "მითხარით, სად დავაყენო" #+ Player agrees to take the challenge and park the trailer to the tough place
 
 	key[]: "parking_diff_tough_d"
 	val[]: "ყველაფერს გავაკეთებ!" #+ Player agrees to take the challenge and park the articulated trailer to the tough place (disabled by default)
@@ -10951,7 +11121,7 @@ localization_db : .localization
 	val[]: "თქვენს მიერ შეცვლილი სატვირთო ან მისაბმელია ძალიან გრძელია რომ უსაფრთხოდ დაყენდეს World of Trucks-ის საწყის პოზიციაზე. გამოიყენეთ სხვა სატვირთო ან მისაბმელი."
 
 	key[]: "job_detail_t"
-	val[]: "სამუშაო" #+ name of job detail screen
+	val[]: "გადასაზიდი" #+ name of job detail screen
 
 	key[]: "no_online_jobs_message"
 	val[]: "კონტრაქტი არ მოიძებნა.<br><br>მიუახლოვდით ქალაქს ან ლოჯისტიკის კომპანიას და სცადეთ." #+ message shown when there are no online jobs around player's position
@@ -11096,7 +11266,7 @@ localization_db : .localization
 	val[]: "ტვირთის მასა"
 
 	key[]: "quick_job_resumed"
-	val[]: "მიმდინარეობს სწრაფი საქმე."
+	val[]: "მიმდინარეობს ერთჯერადი სამუშაო."
 
 	key[]: "company_job_resumed"
 	val[]: "მიმდინარეობს ტვირთის გადაზიდვა."
@@ -11918,7 +12088,7 @@ localization_db : .localization
 	val[]: "საჭიროებს ფარეხს ქვეყანაში:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "წინ წაიწიეთ საქმეში, ბანკთან წვდომის მისაღებად"
+	val[]: "წინ წაიწიეთ საქმეში, ბანკთან წვდომის მისაღებად."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "სატვირთოს გაუმჯობესების შესაძლებლობები, ამჟამად არაა."
@@ -11936,7 +12106,7 @@ localization_db : .localization
 	val[]: "თქვენს საქმიანობაში წინსვლის შედეგად, შეგეძლებათ იქონიოთ საკუთარი მისაბმელები."
 
 	key[]: "link_locked_msg_cabin_adjust"
-	val[]: "თქვენ ვერ გექნებათ წვდომა სალონის მორგების არესთან, ვინაიდან ამჟამად არ მართავთ სატვირთოს."
+	val[]: "თქვენ ვერ გექნებათ წვდომა სალონის მორგების შესაძლებლობებთან, ვინაიდან ამჟამად არ მართავთ სატვირთოს."
 
 	key[]: "link_locked_msg_skills"
 	val[]: "უნარები არაა ხელმისაწვდომი. აიმაღლეთ დონე, შესაძლებლობების გასახსნელად."
@@ -12109,6 +12279,9 @@ localization_db : .localization
 	key[]: "flatbed_cont"
 	val[]: "ბაქანი / სათავსო"
 
+	key[]: "foodtank"
+	val[]: "საკვების ცისტერნა"
+
 	key[]: "insulated"
 	val[]: "იზოთერმული"
 
@@ -12117,6 +12290,10 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "სამაცივრე"
+
+	key[]: "liquid"
+	val[]: "თხევადი"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -12129,6 +12306,9 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_dryvan"
 	val[]: "ნებისმიერი, მშრალი საქონელი"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "თხევადი საკვები პროდუქტები"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "გაცივებული საქონელი"
@@ -12192,6 +12372,12 @@ localization_db : .localization
 
 	key[]: "rear_body"
 	val[]: "მისაბმელის უკანა არე"
+
+	key[]: "r_body"
+	val[]: "მისაბმელის მარჯვენა არე"
+
+	key[]: "l_body"
+	val[]: "მისაბმელის მარცხენა არე"
 #@}
 
 #+ Trailer Configurator
@@ -12381,6 +12567,12 @@ localization_db : .localization
 	key[]: "bs_scs_flatbed_container"
 	val[]: "კონტეინერის სამაგრებით"
 
+	key[]: "bs_scs_food_tank_paint"
+	val[]: "საკვების ავზი შეღებილი"
+
+	key[]: "bs_scs_food_tank_chrom"
+	val[]: "საკვების ავზი ქრომირებული"
+
 	key[]: "bs_scs_insulated"
 	val[]: "იზოთერმული"
 
@@ -12406,6 +12598,9 @@ localization_db : .localization
 #+ Series names for translation
 
 #@{
+	key[]: "series_schwarzmuller_food_cistern"
+	val[]: "საკვების ცისტერნა"
+
 	key[]: "series_schwarzmuller_platform"
 	val[]: "გადაუხურავი"
 
@@ -12454,6 +12649,12 @@ localization_db : .localization
 
 	key[]: "fuel_tank"
 	val[]: "საწვავის ავზი"
+
+	key[]: "hose"
+	val[]: "შლანგი"
+
+	key[]: "hose_2"
+	val[]: "შლანგი, 2x"
 
 	key[]: "ladder"
 	val[]: "კიბე"
@@ -12630,7 +12831,7 @@ localization_db : .localization
 	val[]: "გზის ასაქცევები"
 
 	key[]: "detour_gps_warning"
-	val[]: "თქვენს გზაზე მოულოდნელი შეფერხებაა. დაჟინებით გირჩევთ ხელით შეასწოროთ მარშრუტი."
+	val[]: "გზამკვლევის შეცდომა გზის გადაკეტვის გამო. მონახეთ შემოვლითი მარშრუტი ან დაამატეთ ასარიდებელი გზა მსოფლიო რუკაზე."
 #@}
 
 #+ Steam cloud.
@@ -13181,6 +13382,36 @@ localization_db : .localization
 
 	key[]: "sctrl_input_screenshot"
 	val[]: "@@sctrl_action_screenshot@@"
+
+	key[]: "sctrl_input_camwalk_for"
+	val[]: "@@sctrl_action_camwalk_for@@"
+
+	key[]: "sctrl_input_camwalk_back"
+	val[]: "@@sctrl_action_camwalk_back@@"
+
+	key[]: "sctrl_input_camwalk_left"
+	val[]: "@@sctrl_action_camwalk_left@@"
+
+	key[]: "sctrl_input_camwalk_righ"
+	val[]: "@@sctrl_action_camwalk_righ@@"
+
+	key[]: "sctrl_input_camwalk_crou"
+	val[]: "@@sctrl_action_camwalk_crou@@"
+
+	key[]: "sctrl_input_camwalk_run"
+	val[]: "@@sctrl_action_camwalk_run@@"
+
+	key[]: "sctrl_input_rwinopen"
+	val[]: "@@sctrl_action_rwinopen@@"
+
+	key[]: "sctrl_input_rwinclose"
+	val[]: "@@sctrl_action_rwinclose@@"
+
+	key[]: "sctrl_input_lwinopen"
+	val[]: "@@sctrl_action_lwinopen@@"
+
+	key[]: "sctrl_input_lwinclose"
+	val[]: "@@sctrl_action_lwinclose@@"
 #!}
 
 #@}
@@ -13204,6 +13435,9 @@ localization_db : .localization
 
 	key[]: "sctrl_action_set_layer_gearbox_direct"
 	val[]: "მექანიკური გადაცემათა კოლოფი"
+
+	key[]: "sctrl_action_set_walking"
+	val[]: "ფეხით სიარული"
 
 #+ Individual bindable actions
 #@{
@@ -13505,6 +13739,36 @@ localization_db : .localization
 
 	key[]: "sctrl_action_screenshot"
 	val[]: "@@o_im_screenshot@@"
+
+	key[]: "sctrl_action_camwalk_for"
+	val[]: "Walk Forward"
+
+	key[]: "sctrl_action_camwalk_back"
+	val[]: "Walk Backward"
+
+	key[]: "sctrl_action_camwalk_left"
+	val[]: "Walk Left"
+
+	key[]: "sctrl_action_camwalk_righ"
+	val[]: "Walk Right"
+
+	key[]: "sctrl_action_camwalk_crou"
+	val[]: "@@o_im_walk_crouch@@"
+
+	key[]: "sctrl_action_camwalk_run"
+	val[]: "@@o_im_walk_run@@"
+
+	key[]: "sctrl_action_rwinopen"
+	val[]: "@@o_im_right_window_open@@"
+
+	key[]: "sctrl_action_rwinclose"
+	val[]: "@@o_im_right_window_close@@"
+
+	key[]: "sctrl_action_lwinopen"
+	val[]: "@@o_im_left_window_open@@"
+
+	key[]: "sctrl_action_lwinclose"
+	val[]: "@@o_im_left_window_close@@"
 #!}
 #@}
 

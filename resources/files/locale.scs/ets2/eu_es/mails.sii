@@ -20,13 +20,13 @@ SiiNunit
 	mail_text: mailtext.bank_start {
 		from: "Bankua" #+ Message sender
 		subject: "Dirurik behar? Hemen daukazu laguntza!" #+ Message subject
-		body: "Jaun/Andre agurgarria,<br><br>Pentsatu dugu interesa ahal zaizula enpresa berrientzako eskaintzen ditugun maileguak. Fondorik behar duzu zure negozioa bultzatzeko? Laguntzeko prest gaude! Mesedez <link url=screen.bank color=@@clr_link@@>bisita ezazu zure banku zentrua</link>informazio gehiagorentzako<br><br>Respectfully,<br>Salmenta Arduraduna<br>Bankua" #+ Message body
+		body: "Jaun/Andre agurgarria,<br><br>Pentsatu dugu interesa ahal zaizula enpresa berrientzako eskaintzen ditugun maileguak. Fondorik behar duzu zure negozioa bultzatzeko? Laguntzeko prest gaude! Mesedez, <link url=screen.bank color=@@clr_link@@>bisita ezazu zure banku-zentroa</link> informazio gehiagorentzako.<br><br>Adeitasunez,<br>Salmenta-arduraduna<br>Bankua" #+ Message body
 	}
 
 	mail_text: mailtext.bank_credit {
 		from: "Bankua" #+ Message sender
-		subject: "Hedatzen lagunduko zaitugu." #+ Message subject
-		body: "Jaun/Andre agurgarria,<br><br>Zure irabazien igoera geldiezina ikusita gustatuko litzaiguke zure potentziala ahalik eta gehien bultzatzea. Hortaz, zure kreditu limitea handitu dugu $MONEY$-etara. Zifra horretararte nahi beste atera dezakezu zure <link url=screen.bank color=@@clr_link@@> banku lokalaren sedean </link>.<br><br>Errespetu guztiarekin,<br>Salmenta Zuzendaria<br>Bankua" #+ Message body
+		subject: "Hazten lagunduko zaitugu" #+ Message subject
+		body: "Jaun/Andre agurgarria,<br><br>Zure irabazien igoera geldiezina ikusita gustatuko litzaiguke zure potentziala ahalik eta gehien bultzatzea. Hortaz, zure kreditu limitea handitu dugu $MONEY$-etara. Zifra horretararte nahi beste atera dezakezu zure <link url=screen.bank color=@@clr_link@@>banku-zentroa </link>.<br><br>Adeitasunez,<br>Salmenta-arduraduna<br>Bankua" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debt0 {
@@ -77,8 +77,8 @@ SiiNunit
 
 	mail_text: mailtext.td_visit {
 		from: "Kontzesionarioa - $CITY$" #+ Message sender
-		subject: "$BRAND$ kamioi berria salgai!" #+ Message subject
-		body: "Jaun/Andre agurgarria,<br><br>$BRAND$ kamioien salerosle ofiziala gara. Edonolako konfigurazioak eskain ditzakegu eta bestelako doiketa pertsonala ere gauza dezakegu zure erosotasunerako. Mesedez, <link url=truck.dealer_map color=@@clr_link@@>bisitatu gure kontzesionarioa $CITY$-en</link>. Betidanik nahi izan duzun kamioia zure alboan eduki dezakezu zain<br><br>Agur beroenak,<br>Zure $BRAND$ Kamioi saleroslea." #+ Message body
+		subject: "$BRAND$ kamioi berriak salgai!" #+ Message subject
+		body: "Jaun/Andre agurgarria,<br><br>$BRAND$ kamioien salerosle ofiziala gara. Askotariko konfigurazioak eskaintzen ditugu eta bestelako doikuntza pertsonala ere gauza dezakegu zure beharrak betetzeko. Mesedez, <link url=truck.dealer_map color=@@clr_link@@>bisitatu gure kontzesionarioa $CITY$-n</link>. Betidanik nahi izan duzun kamioia zure alboan eduki dezakezu zain.<br><br>Agur beroenak,<br>Zure $BRAND$ kamioien saleroslea" #+ Message body
 	}
 
 /**
