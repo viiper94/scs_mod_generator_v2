@@ -103,6 +103,7 @@ class AdminLanguagesController extends Controller{
                 foreach($cn_arr as $cn){
                     $pattern = '%key\[\]:\s"'.$cn.'"\n\tval\[\]:\s"([^"]+)"\n%';
                     preg_match($pattern, $content, $matches);
+                    if(!isset($matches[1])) dd('"'.$cn.'" not found!');
                     $result[$type][$cn] = trim($matches[1]);
                 }
             }

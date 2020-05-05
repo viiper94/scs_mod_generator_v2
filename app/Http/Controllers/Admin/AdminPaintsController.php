@@ -119,6 +119,7 @@ class AdminPaintsController extends Controller{
     public function import(){
         // CHECK BEFORE IMPORT!
         $asoc_names = [
+            // folder (renamed to trailer alias) => correct def folder
             'cement_cistern' => 'cement',
             'curtain_sider' => 'scs_box/curtain_sider',
             'dry_van' => 'scs_box/dry_van',
@@ -127,6 +128,7 @@ class AdminPaintsController extends Controller{
             'refrigerated' => 'scs_box/reefer',
             'willig_cistern' => 'willig/fuel_cistern',
             'scs_chipvan' => 'chipvan',
+            'foodtank' => 'scs_foodtank',
 
             'krone_coolliner' => 'krone/coolliner',
             'krone_dryliner' => 'krone/dryliner',
@@ -174,7 +176,7 @@ class AdminPaintsController extends Controller{
                                             'alias' => str_replace('.sii', '', $paint_job),
                                             'look' => str_replace('.sii', '', $paint_job),
                                             'chassis' => $type_chassis,
-                                            'dlc_id' => $dlc_params['id'],
+                                            'dlc_id' => $dlc_params['id'] ?? null,
                                             'with_color' => $paint_job == 'default.sii' ? 1 : 0,
                                             'sort' => $paint_job == 'default.sii' ? 1 : 0,
                                             'active' => true,
@@ -190,12 +192,13 @@ class AdminPaintsController extends Controller{
                                 if($paint_job !== '.' && $paint_job !== '..'){
                                     $paint = new Paint();
                                     $paint->fill([
+                                        // CHECK GAME BEFORE IMPORT
                                         'game' => $dlc_params['game'] ?? 'ets2',
                                         'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
                                         'alias' => str_replace('.sii', '', $paint_job),
                                         'look' => str_replace('.sii', '', $paint_job),
                                         'chassis' => $chassis,
-                                        'dlc_id' => $dlc_params['id'],
+                                        'dlc_id' => $dlc_params['id'] ?? null,
                                         'with_color' => $paint_job == 'default.sii' ? 1 : 0,
                                         'sort' => $paint_job == 'default.sii' ? 1 : 0,
                                         'active' => true,
