@@ -1,0 +1,38 @@
+trailer : trailer.scs_fodt
+{
+	trailer_definition: trailer_def.scs.foodtank.single_3.paint
+
+	accessories[]: .scs_fodt.chassis
+	accessories[]: .scs_fodt.rwheel
+	accessories[]: .scs_fodt.rwheel2
+	accessories[]: .scs_fodt.rwheel3
+	accessories[]: .scs_fodt.paint_job
+}
+
+vehicle_accessory: .scs_fodt.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_foodtank/chassis.sii"
+}
+
+vehicle_wheel_accessory: .scs_fodt.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_385_65_steel.sii"
+}
+
+vehicle_wheel_accessory: .scs_fodt.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_385_65_steel.sii"
+}
+
+vehicle_wheel_accessory: .scs_fodt.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single_385_65_steel.sii"
+}
+
+vehicle_paint_job_accessory: .scs_fodt.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii"
+}

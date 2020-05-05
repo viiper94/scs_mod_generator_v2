@@ -5,7 +5,7 @@ trailer : trailer.bdump_rm_2
 	accessories[]: .bdump_rm_2.trwheel1
 	accessories[]: .bdump_rm_2.trwheel2
 	accessories[]: .bdump_rm_2.trlr_cables
-	
+
 	slave_trailer: .bdump_rm_2.dolly
 }
 
@@ -43,7 +43,7 @@ trailer : .bdump_rm_2.dolly
 	accessories[]: .bdump_rm_2.dolly.tchassis
 	accessories[]: .bdump_rm_2.dolly.trwheel0
 
-	
+
 	slave_trailer: .bdump_rm_2.second
 }
 

@@ -3,7 +3,7 @@ trailer : trailer.bdump_pup_2
 	accessories[]: .bdump_pup_2.tchassis
 	accessories[]: .bdump_pup_2.trwheel0
 	accessories[]: .bdump_pup_2.trlr_cables
-	
+
 	slave_trailer: .bdump_pup_2.dolly
 }
 
@@ -29,7 +29,7 @@ trailer : .bdump_pup_2.dolly
 	accessories[]: .bdump_pup_2.dolly.tchassis
 	accessories[]: .bdump_pup_2.dolly.trwheel0
 
-	
+
 	slave_trailer: .bdump_pup_2.second
 }
 

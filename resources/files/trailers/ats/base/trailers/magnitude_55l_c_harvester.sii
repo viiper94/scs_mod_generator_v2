@@ -1,4 +1,4 @@
-trailer : trailer.mag_55l_t3.c_harvester
+trailer : trailer.mag_55l_t3.c_harvester	#combine harvester
 {
 	accessories[]: .mag_55l_t3.c_harvester.chassis
 	accessories[]: .mag_55l_t3.c_harvester.rwheel0

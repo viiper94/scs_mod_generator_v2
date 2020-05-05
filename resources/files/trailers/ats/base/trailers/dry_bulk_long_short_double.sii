@@ -3,7 +3,7 @@ trailer : trailer.drybulk_rm2
 	accessories[]: .drybulk_rm2.chassis
 	accessories[]: .drybulk_rm2.rwheel
 	accessories[]: .drybulk_rm2.rwheel2
-	accessories[]: .drybulk_rm2.trlr_cables	
+	accessories[]: .drybulk_rm2.trlr_cables
 
 	slave_trailer: .drybulk_rm2.dolly
 }
@@ -52,7 +52,7 @@ vehicle_wheel_accessory: .drybulk_rm2.dolly.rwheel
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_addon_accessory: .drybulk_rm2.dolly.trlr_cables	
+vehicle_addon_accessory: .drybulk_rm2.dolly.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/dry_bulk/accessory/trlr_cables/stock.sii"
 }

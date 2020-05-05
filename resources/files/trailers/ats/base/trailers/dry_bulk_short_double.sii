@@ -18,7 +18,7 @@ vehicle_wheel_accessory: .drybulk2.rwheel
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_addon_accessory: .drybulk2.trlr_cables	
+vehicle_addon_accessory: .drybulk2.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/dry_bulk/accessory/trlr_cables/stock.sii"
 }

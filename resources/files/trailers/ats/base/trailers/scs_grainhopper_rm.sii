@@ -1,13 +1,13 @@
 trailer : trailer.scs_grainhrm
 {
 	trailer_definition: trailer_def.scs.grainhopper.rm_double_p.grainhopper
-	
+
 	accessories[]: .scs_grainhrm.chassis
 	accessories[]: .scs_grainhrm.rwheel
 	accessories[]: .scs_grainhrm.rwheel2
 	accessories[]: .scs_grainhrm.paintjob
 	accessories[]: .scs_grainhrm.trlr_cables
-	
+
 	slave_trailer: .scs_grainhdl
 }
 
