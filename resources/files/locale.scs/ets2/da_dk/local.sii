@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "Diverse" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Farve-feedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Farvefeedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Din lastbils tekniske tilstand overholder ikke loven. Du er nødt til at få det ordnet!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Din lastbil og trailer kombination er ikke tilladt her!" #+ Adviser text
+	val[]: "Din lastbil- og trailerkombination er ikke lovlig i dette land!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Kommercielle lastbiltrafik er forbudt i dette område. Du skal vende og køre tilbage!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Maling" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Maling Lang" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Krom" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Eksklusivt farvet" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Eksklusivt forkromet" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Eksklusiv UK" #+ Luxury/Exclusive UK version of the interior or accesory
 

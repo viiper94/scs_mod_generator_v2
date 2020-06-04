@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3844,7 +3850,7 @@ localization_db : .localization
 	val[]: "Hızın hangi kademeyle arttığını kontrol eder."
 
 	key[]: "eye_gaze_inflection_tooltip"
-	val[]: "İvmenin sabit hâle gelmeye başlayacağı yer olan ekranın merkezine doğru olan mesafe."
+	val[]: "İvmenin sabit hâle gelmeye başlayacağı, ekranın merkezine doğru olan mesafe."
 
 	key[]: "eye_gaze_start_point_tooltip"
 	val[]: "Oyun içi kameranın harekete geçmesi için ekranın merkezinden ne kadar uzakta bakmanız gerektiğidir."
@@ -4831,13 +4837,13 @@ localization_db : .localization
 	val[]: "Yardımınız için teşekkürler. Hayırlı yolculuklar!" #+ Adviser text
 
 	key[]: "weigh_damaged"
-	val[]: "Aracınız teknik durumu iyi değil. Sonraki sefere daha dikkatli olun!" #+ Adviser text
+	val[]: "Aracınızın teknik durumu iyi değil. Sonraki sefere daha dikkatli olun!" #+ Adviser text
 
 	key[]: "weigh_damaged_lot"
 	val[]: "Aracınız, teknik yasal zorunlulukları karşılamıyor. Tamir etmeniz gerekli!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Çekici ve dorse kombinasyonunuz burada yasal değil!" #+ Adviser text
+	val[]: "Çekici ve dorse kombinasyonunuz bu ülkede yasal değil!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Bu bölge ticari kamyon taşımacılığına kapalıdır. Geri dönmelisiniz." #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Boyalı" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Boyalı Uzun" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Krom Kaplamalı" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Özel Renkli" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Özel Krom Kaplamalı" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Özel, Birleşik Krallık" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -12088,7 +12100,7 @@ localization_db : .localization
 	val[]: "Belirtilen ülkelerden birinde garaj gerekli:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Bankaya erişmek için mesleğinizde daha da ilerleyin."
+	val[]: "Bankaya erişmek için mesleğinizde daha da ilerleyin"
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "Hâlihazırda yeni bir çekici parçası kullanılabilir değil."

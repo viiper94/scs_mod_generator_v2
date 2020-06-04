@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -2513,7 +2519,7 @@ localization_db : .localization
 	val[]: "Volume dos sons do mundo" #+ Slider controlling volume of the environment sounds.
 
 	key[]: "ambient_volume"
-	val[]: "Volume do som ambiente" #+ Slider controlling volume of the ambient sounds.
+	val[]: "Volume do som do ambiente" #+ Slider controlling volume of the ambient sounds.
 
 	key[]: "interior_volume"
 	val[]: "Volume dos sons interiores" #+ Slider controlling volume of interior sounds (like sticks, buttons).
@@ -2582,7 +2588,7 @@ localization_db : .localization
 	val[]: "Volume da janela aberta" #+ Checkbox enabling the sound of the opened windows noise.
 
 	key[]: "noise_aero"
-	val[]: "Volume do vento" #+ Checkbox enabling the sound of the air noise.
+	val[]: "Volume do ar corrente" #+ Checkbox enabling the sound of the air noise.
 
 	key[]: "reverb_cabin"
 	val[]: "Efeito de reverberação da cabina" #+ Checkbox enabling the reverb effect of the cabin.
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "O seu veículo não está no estado técnico obrigatório por lei. É obrigado a repará-lo!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "A combinação do seu camião e reboque não é legal aqui!" #+ Adviser text
+	val[]: "A combinação do seu camião e reboque não é legal neste país!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Não é permitido circularem camiões nesta área. Deves inverter a marcha e voltar para trás!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Tinta" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Pintura Total" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Pintura Exclusiva" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Cromado Exclusivo" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exclusivo UK" #+ Luxury/Exclusive UK version of the interior or accesory
 

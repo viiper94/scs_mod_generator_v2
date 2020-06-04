@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "Różne" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Kolor zwrotny" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Informacja o kolorze" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Twój pojazd nie jest w odpowiednim stanie technicznym wymaganym przez prawo. Musisz go naprawić!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Twój zestaw ciężarówki i naczepy nie jest tu legalny!" #+ Adviser text
+	val[]: "Twoja kombinacja ciężarówek i naczepy jest nielegalna w tym kraju!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Transport komercyjny jest zabroniony na tym obszarze. Musisz zawrócić!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Malowane" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Długie malowane" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Chromowane" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Ekskluzywne malowane" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Ekskluzywny chromowany" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Ekskluzywne UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -12088,7 +12100,7 @@ localization_db : .localization
 	val[]: "Wymaga garażu w:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Postępuj dalej w swojej karierze, aby uzyskać dostęp do banku."
+	val[]: "Postępuj dalej w swojej karierze, aby uzyskać dostęp do banku"
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "W tej chwili nie są dostępne żadne nowe ulepszenia pojazdów ciężarowych."
@@ -12338,7 +12350,7 @@ localization_db : .localization
 	val[]: "Podwójna"
 
 	key[]: "b_double"
-	val[]: "B-double"
+	val[]: "B-Double"
 
 	key[]: "hct"
 	val[]: "HCT"
@@ -12459,16 +12471,16 @@ localization_db : .localization
 	val[]: "4 osie, Skrętna"
 
 	key[]: "tn_bdouble_2_2"
-	val[]: "B-double, 2+2 osie"
+	val[]: "B-Double, 2+2 osie"
 
 	key[]: "tn_bdouble_3_3"
-	val[]: "B-double, 3+3 osie"
+	val[]: "B-Double, 3+3 osie"
 
 	key[]: "tn_bdouble_3_3_steer"
-	val[]: "B-double, 3+3 osie, Skrętna"
+	val[]: "B-Double, 3+3 osie, Skrętna"
 
 	key[]: "tn_bdouble_2_2_spread"
-	val[]: "B-double, 2+2 osie, Długi rozstaw"
+	val[]: "B-Double, 2+2 osie, Długi rozstaw"
 
 	key[]: "tn_double_3_1"
 	val[]: "Podwójne, 3+1 oś"
@@ -12510,16 +12522,16 @@ localization_db : .localization
 	val[]: "3 osie, Pośrodku"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_bdouble_2axle"
-	val[]: "B-double, 2 osie"	#+ Component chassis name (upgrade screen only)
+	val[]: "B-Double, 2 osie"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_bdouble_2axle_spread"
-	val[]: "B-double, 2 osie, Długi rozstaw"	#+ Component chassis name (upgrade screen only)
+	val[]: "B-Double, 2 osie, Długi rozstaw"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_bdouble_3axle"
-	val[]: "B-double, 3+3 osie"	#+ Component chassis name (upgrade screen only)
+	val[]: "B-Double, 3+3 osie"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_bdouble_3axle_steer"
-	val[]: "B-double, 3+3 osie, Skrętna"	#+ Component chassis name (upgrade screen only)
+	val[]: "B-Double, 3+3 osie, Skrętna"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_dolly_2axle"
 	val[]: "Dolly, 2 osie"	#+ Component chassis name (upgrade screen only)

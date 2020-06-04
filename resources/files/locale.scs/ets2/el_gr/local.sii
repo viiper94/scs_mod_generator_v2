@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "Διάφορα" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Ανάδραση χρώματος (Colour feedback)" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Ανάδραση χρώματος" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4777,7 +4783,7 @@ localization_db : .localization
 	val[]: "Για να περάσεις πρέπει να πληρώσεις $MONEY$.<br> Πάτησε το ακόλουθο κουμπί:"
 
 	key[]: "toll_one_time_quick"
-	val[]: "Το πέρασμα κοστίζει $MONEY$. Ο εργοδότης σου θα πληρώσει το ποσό.<br> Πάτησε το ακόλουθο κουμπί:"
+	val[]: "Η διέλευση κοστίζει $MONEY$. Ο εργοδότης σου θα πληρώσει το ποσό.<br> Πάτησε το ακόλουθο κουμπί:"
 
 	key[]: "toll_start"
 	val[]: "Αρχή δρόμου διοδίων. Κράτα το εισιτήριο.<br> Πάτησε το ακόλουθο κουμπί:"
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Το όχημα σου δεν είναι στην τεχνική κατάσταση που απαιτείται από τον νόμο. Πρέπει να το επισκευάσεις!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Ο συνδυασμός του φορτηγού και του τρέιλερ σου δεν είναι νόμιμος εδώ!" #+ Adviser text
+	val[]: "Ο συνδυασμός του φορτηγού και του τρέιλερ σου δεν είναι νόμιμος σε αυτή τη χώρα!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Οι μεταφορές απαγορεύονται σε αυτή την περιοχή. Πρέπει να κάνεις αναστροφή και να γυρίσεις πίσω!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Βαφή" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Χρώμιο" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Μοναδικό Βαφή" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Μοναδικό Χρώμιο" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Μοναδικό UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -12882,7 +12894,7 @@ localization_db : .localization
 	val[]: "Κανένα" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
-	val[]: "Δε βρέθηκαν τρέιλερ" #+ Text shown if there are no trailer of given brands found.
+	val[]: "Δεν βρέθηκαν τρέιλερς" #+ Text shown if there are no trailer of given brands found.
 
 	key[]: "cargo_model_t"
 	val[]: "ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΦΟΡΤΙΩΝ" #+ The title of the cargo preview modal. Keep it uppercase please.

@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -2164,13 +2170,13 @@ localization_db : .localization
 	val[]: "FIÓK ELLENŐRZÉSE" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "veryfying_account"
-	val[]: "Fiókinformáció ellenõrzése. Kérjük, várj."
+	val[]: "Fiókinformáció ellenõrzése. Kérlek, várj."
 
 	key[]: "wait_title_signin"
 	val[]: "BEJELENTKEZÉS"
 
 	key[]: "signing_in"
-	val[]: "Bejelentkezés. Kérjük, várj."
+	val[]: "Bejelentkezés. Kérlek, várj."
 
 	key[]: "verification_access_denied"
 	val[]: "A megadott fióknév vagy jelszó nem megfelelő!"
@@ -4804,7 +4810,7 @@ localization_db : .localization
 	val[]: "Az ellenőrzés megkezdéséhez nyomd le a következőt:"
 
 	key[]: "border_wait"
-	val[]: "Iratellenőrzés folyamatban. Kérjük, várj..."
+	val[]: "Iratellenőrzés folyamatban. Kérem, várjon..."
 
 	key[]: "border_open"
 	val[]: "Minden rendben.<br> További jó utat!"
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "A járműved technikai állapota nem felel meg a törvényi előírásoknak! Javíttasd meg a járművet!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "A szerelvényed nem felel meg a helyi előírásoknak!" #+ Adviser text
+	val[]: "A szerelvényed nem felel meg a helyi nemzeti előírásoknak!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "A teherszállítás tiltott ezen a szakaszon. Fordulj vissza, és keress más útvonalat!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Festett" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Festett hosszú" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Krómozott" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Festett exkluzív" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Krómozott exkluzív" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exkluzív UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10803,7 +10815,7 @@ localization_db : .localization
 	val[]: "Készítő" #+ Label of field used to show the author of the mod and also a entry of sorting dropdown indicating sorting according to the author.
 
 	key[]: "install_time"
-	val[]: "Telepítési idő" #+ Entry in sorting drop down in mod manager allowing sorting accoding to the installation time of the mod.
+	val[]: "Telepítés ideje" #+ Entry in sorting drop down in mod manager allowing sorting accoding to the installation time of the mod.
 
 	key[]: "package_name"
 	val[]: "Csomag neve" #+ Label of field used to show the name of the mod package (i.e. the name of the zip file of folder containing the mod)

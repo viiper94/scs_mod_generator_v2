@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -2915,16 +2921,16 @@ localization_db : .localization
 	val[]: "なし" #+ Name of the mode with no physical cables.
 
 	key[]: "trailer_cables_mode_player"
-	val[]: "プレイヤーの1台目のトレーラーのみ" #+ Name of the mode with physical cables only between player truck and first trailer.
+	val[]: "プレーヤーの1台目のトレーラーのみ" #+ Name of the mode with physical cables only between player truck and first trailer.
 
 	key[]: "trailer_cables_mode_player_all"
-	val[]: "プレイヤーのトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers.
+	val[]: "プレーヤーのトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers.
 
 	key[]: "trailer_cables_mode_player_all_first_ai"
 	val[]: "プレーヤー & トラフィックの1台目のトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables for first traffic trailers.
 
 	key[]: "trailer_cables_mode_all"
-	val[]: "プレイヤーのトレーラー & トラフィックのすべてのトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
+	val[]: "プレーヤー & トラフィックのすべてのトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
 #@}
 
 	key[]: "auto_retarder"
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "あなたの車両は法による保安基準に適合していません. ただちに整備してください!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "あなたのトラックとトレーラーの組み合わせはここでは合法ではありません!" #+ Adviser text
+	val[]: "あなたのトラックとトレーラーの組み合わせはこの国では合法ではありません!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "このエリアでは営業運転車両による乗り入れが禁止されています. 速やかに転回して戻ってください!" #+ Adviser text
@@ -6678,7 +6684,7 @@ localization_db : .localization
 	val[]: "新入り"
 
 	key[]: "lvl_name1"
-	val[]: "働き者"
+	val[]: "愛好家"
 
 	key[]: "lvl_name2"
 	val[]: "熟練労働者"
@@ -6696,7 +6702,7 @@ localization_db : .localization
 	val[]: "エリート"
 
 	key[]: "lvl_name7"
-	val[]: "キング オブ ザ ロード"
+	val[]: "キング・オブ・ザ・ロード"
 
 	key[]: "lvl_name8"
 	val[]: "レジェンド"
@@ -9443,7 +9449,7 @@ localization_db : .localization
 	val[]: "それでは配送を始めましょう! ルートアドバイザーを使ってあなたの現在地と目的地を確認します. <br>$KEY$ を押してよく確認しましょう..."
 
 	key[]: "tut_msg_6"
-	val[]: "素晴らしい! これで基本は学びました. 更に気分を盛り上げるために音楽を掛けましょう. $KEY$ を押すとラジオプレイヤーが開きます.<br>(デスクトップ画面の下部にあるバーからでもアクセスできます.)"
+	val[]: "素晴らしい! これで基本は学びました. 更に気分を盛り上げるために音楽を掛けましょう. $KEY$ を押すとラジオプレーヤーが開きます.<br>(デスクトップ画面の下部にあるバーからでもアクセスできます.)"
 
 	key[]: "tut_msg_7"
 	val[]: "全ての準備が整いました. ナビゲーションに従って目的地に向かいましょう."
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "ペイント" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "ペイント ロング" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "クローム" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10121,8 +10130,11 @@ localization_db : .localization
 	val[]: "エクスクルーシブ ダブル" #+ Luxury/Exclusive version (double variant) of the interior or accesory
 
 	key[]: "exclusive_paint"
-	val[]: "エクスクルーシブペイント" #+ Luxury/Exclusive painted version of the interior or accesory
+	val[]: "エクスクルーシブ ペイント" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "エクスクルーシブ クローム" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "エクスクルーシブ UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -11611,7 +11623,7 @@ localization_db : .localization
 
 	#+ Third changle lane maneuver popup text.
 	key[]: "oversize_tutorial_popup_3"
-	val[]: "安全が確保されたので <color value=@@clr_sel@@>プレイヤー<color value=@@clr_txt@@> は指定された車線へ移動する事ができます."
+	val[]: "安全が確保されたので <color value=@@clr_sel@@>プレーヤー<color value=@@clr_txt@@> は指定された車線へ移動する事ができます."
 
 	#+ Message for fade_in screen when taking OVS mission with your own truck.
 	key[]: "oversize_preparing_cargo"

@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Tvé vozidlo neodpovídá technickému stavu, který vyžaduje zákon. Musíš jej opravit!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Kombinace tvého tahače a návěsu zde není legální!" #+ Adviser text
+	val[]: "Kombinace tvého tahače a návěsu není v této zemi legální!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "V této oblasti je komerční nákladní doprava zakázána. Musíš se otočit a jet zpátky." #+ Adviser text
@@ -10040,7 +10046,7 @@ localization_db : .localization
 	val[]: "Tovární, nalakované" #+ Paintable Stock accesory
 
 	key[]: "stock_long"
-	val[]: "Tovární prodloužené" #+ Extended leg version of the front truck mirror
+	val[]: "Tovární, prodloužené" #+ Extended leg version of the front truck mirror
 
 	key[]: "stock_cab_doorstep"
 	val[]: "Tovární prahy" #+ Stock doorstep for cab of the truck
@@ -10062,6 +10068,9 @@ localization_db : .localization
 
 	key[]: "paint"
 	val[]: "Nalakované" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "Nalakované, prodloužené" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chromované" #+ Chromed mirror, doorhandle or other accessory
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Exkluzivní, nalakované" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Exkluzivní, chromované" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exkluzivní (UK)" #+ Luxury/Exclusive UK version of the interior or accesory
 

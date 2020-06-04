@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -2579,10 +2585,10 @@ localization_db : .localization
 	val[]: "Räfflade kantlinjer" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
 
 	key[]: "noise_window"
-	val[]: "Opened windows noise" #+ Checkbox enabling the sound of the opened windows noise.
+	val[]: "Ljud öppet fönster" #+ Checkbox enabling the sound of the opened windows noise.
 
 	key[]: "noise_aero"
-	val[]: "Noise of the flowing air" #+ Checkbox enabling the sound of the air noise.
+	val[]: "Ljud från vinden" #+ Checkbox enabling the sound of the air noise.
 
 	key[]: "reverb_cabin"
 	val[]: "Efterklang av kabinen" #+ Checkbox enabling the reverb effect of the cabin.
@@ -3300,7 +3306,7 @@ localization_db : .localization
 	val[]: "Assistansval 1"
 
 	key[]: "o_im_assistent_action2"
-	val[]: "Assistantsval 2"
+	val[]: "Assistansval 2"
 
 	key[]: "o_im_assistent_action3"
 	val[]: "Assistansval 3"
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "Diverse" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Färgåterkoppling" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Färgfeedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4561,16 +4567,16 @@ localization_db : .localization
 	val[]: "Inkomst" #+ For example "Job income: E6,526"
 
 	key[]: "adviser_tooltip_map_page"
-	val[]: "Navigation" #+ Tooltip for map page in route advisor
+	val[]: "Navigering" #+ Tooltip for map page in route advisor
 
 	key[]: "adviser_tooltip_job_page"
-	val[]: "Current Job" #+ Tooltip for job info page in route advisor
+	val[]: "Nuvarande jobb" #+ Tooltip for job info page in route advisor
 
 	key[]: "adviser_tooltip_damage_page"
-	val[]: "Diagnostics & Assistance call" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+	val[]: "Assistans samtal" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
 
 	key[]: "adviser_tooltip_message_page"
-	val[]: "Short Messages" #+ Tooltip for short messages page in route advisor
+	val[]: "Snabba meddelanden" #+ Tooltip for short messages page in route advisor
 
 	key[]: "adviser_tooltip_tutorial"
 	val[]: "Route Advisor Tutorial" #+ Tooltip for the tutorial icon route advisor
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Ditt fordon är inte i teknisk skick enligt lagen. Du måste reparera det!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Din fordonskombination är inte tillåten här!" #+ Adviser text
+	val[]: "Din fordonskombination är inte tillåten i detta land!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Kommersiell lastbilstrafik är förbjudet i detta område. Du måste vända!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Färg" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Krom" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Exklusivt lackerad" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Exclusive Chromed" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exklusiv UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10391,10 +10403,10 @@ localization_db : .localization
 	val[]: "Side Bar (extra LEDs)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
 
 	key[]: "hs_stainless_steel"
-	val[]: "Stainless Steel" #+ doorstep, mask or similar accessory name, HS Schoch naming
+	val[]: "Rostfritt stål" #+ doorstep, mask or similar accessory name, HS Schoch naming
 
 	key[]: "hs_sun_visor"
-	val[]: "Sun Visor" #+ sun shield accessory name, HS Schoch naming
+	val[]: "Solskärm" #+ sun shield accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_cap"
 	val[]: "HS-Schoch keps" #+ toy accessory name, HS Schoch naming
@@ -12106,7 +12118,7 @@ localization_db : .localization
 	val[]: "Avancera i din karriär för att kunna köpa dina egna släp."
 
 	key[]: "link_locked_msg_cabin_adjust"
-	val[]: "You cannot access cabin adjustments as you are not currently driving any truck."
+	val[]: "Du kan för nuvarande ej visa hyttkonfigureringen då du för närvarande ej kör någon lastbil."
 
 	key[]: "link_locked_msg_skills"
 	val[]: "Det finns inga färdigheter tillgängliga. Gå upp en nivå för att låsa upp den här skärmen."
@@ -12292,7 +12304,7 @@ localization_db : .localization
 	val[]: "Kyld"
 
 	key[]: "liquid"
-	val[]: "Liquid"
+	val[]: "Vätska"
 
 #@}
 
@@ -12568,10 +12580,10 @@ localization_db : .localization
 	val[]: "Golv med containerlås"
 
 	key[]: "bs_scs_food_tank_paint"
-	val[]: "Food Tank Paint"
+	val[]: "Tanktrailer för mat färg"
 
 	key[]: "bs_scs_food_tank_chrom"
-	val[]: "Food Tank Chrome"
+	val[]: "Mattank krom"
 
 	key[]: "bs_scs_insulated"
 	val[]: "Insulerad"

@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -1583,7 +1589,7 @@ localization_db : .localization
 	val[]: "게임 불러오기" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "load_game_desc"
-	val[]: "이전에 저장한 게임을 불러옵니다. 현재 진행 사항은 저장되지 않습니다!" #+ Help message associated with load game icon.
+	val[]: "이전에 저장한 게임을 불러옵니다. 현재 진행 상황은 저장되지 않습니다!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
 	val[]: "다른 게임을 불러오시겠습니까?<br><br>저장하지 않은 데이터를 모두 잃게 됩니다."
@@ -4652,7 +4658,7 @@ localization_db : .localization
 	val[]: "$BRAND$ 트럭 딜러 발견!"
 
 	key[]: "service"
-	val[]: "트럭 및 트레일러를 수리 또는 업그레이드 하거나<br>도색을 변경하려면 다음 키를 누르십시오:"
+	val[]: "트럭 혹은 트레일러를 수리 또는 업그레이드 하거나<br>도색을 변경하려면 다음 키를 누르십시오:"
 
 	key[]: "job_offer"
 	val[]: "일거리를 보려면 다음 키를 누르십시오:"
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "당신의 차량은 법에서 요구하는 기술적 상태가 아닙니다. 시정하시기 바랍니다!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "당신의 트럭과 트레일러의 조합은 이곳에서 불법입니다!" #+ Adviser text
+	val[]: "당신의 트럭과 트레일러의 조합은 이 지역에서 불법입니다!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "이 지역은 상업적 트럭 운송이 금지되어 있습니다. 되돌아가십시오." #+ Adviser text
@@ -6730,7 +6736,7 @@ localization_db : .localization
 	val[]: "대출 상품" #+ Header of section containing available loans.  Please keep in upper case where possible.
 
 	key[]: "bank_offer_installment"
-	val[]: "매일 상환되는 돈 $MONEY$" #+ Shown on separate line inside loan description and contains amount you need to repay per day. The $MONEY$ is replaced with the real amount.
+	val[]: "매일 $MONEY$ 상환" #+ Shown on separate line inside loan description and contains amount you need to repay per day. The $MONEY$ is replaced with the real amount.
 
 	key[]: "bank_active_loans"
 	val[]: "활성화된 대출: $NUMBER$" #+ The $NUMBER$ is replaced with number of loans the player is currently repaying.
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "페인트" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "페인트 롱" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "크롬" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "고급형 도색" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "고급형 크롬" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "고급형 UK" #+ Luxury/Exclusive UK version of the interior or accesory
 

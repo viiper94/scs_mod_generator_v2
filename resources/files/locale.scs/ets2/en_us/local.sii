@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3844,13 +3850,13 @@ localization_db : .localization
 	val[]: "Controls how gradually the speed ramps up."
 
 	key[]: "eye_gaze_inflection_tooltip"
-	val[]: "The distance from the center of the screen where the acceleration will start to level out."
+	val[]: "The distance from the centre of the screen where the acceleration will start to level out."
 
 	key[]: "eye_gaze_start_point_tooltip"
-	val[]: "How far from the center of the screen you’ll have to look before the in-game camera starts to move."
+	val[]: "How far from the centre of the screen you’ll have to look before the in-game camera starts to move."
 
 	key[]: "eye_gaze_endpoint_tooltip"
-	val[]: "How far from the center of the screen you’ll have to look in order to reach maximum camera speed."
+	val[]: "How far from the centre of the screen you’ll have to look in order to reach maximum camera speed."
 
 	key[]: "eye_autocenter_tooltip"
 	val[]: "The in-game camera will continuously slowly recenter as you change your head’s natural position during play."
@@ -3889,10 +3895,10 @@ localization_db : .localization
 	val[]: "The amount of head rotation where the acceleration will start to level out."
 
 	key[]: "eye_head_start_point_tooltip"
-	val[]: "How much you have to rotate your head from the center position before the in-game camera starts to move."
+	val[]: "How much you have to rotate your head from the centre position before the in-game camera starts to move."
 
 	key[]: "eye_head_endpoint_tooltip"
-	val[]: "How much you have to rotate your head from the center position in order to reach maximum camera rotation."
+	val[]: "How much you have to rotate your head from the centre position in order to reach maximum camera rotation."
 
 	key[]: "eye_reset_head_tooltip"
 	val[]: "Sets your current head position as the new default position, re-centering the in-game camera accordingly."
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Your vehicle is not in technical state required by law. You have to fix it!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Your truck and trailer combination is not legal!" #+ Adviser text
+	val[]: "Your truck and trailer combination is not legal in this country!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Commercial trucking is prohibited in this area. You have to turn around and go back!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Paint" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Chrome" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Exclusive Painted" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Exclusive Chromed" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exclusive UK" #+ Luxury/Exclusive UK version of the interior or accesory
 

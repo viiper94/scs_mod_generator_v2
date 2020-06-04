@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "Kita" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Spalvų atsakas" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Spalvų atgalinis ryšys" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Jūsų sunkvežimis neatitinka įstatymų reikalavimų. Privalote jį sutaisyti!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Jūsų sunkvežimio ir priekabos junginys čia neteisėtas!" #+ Adviser text
+	val[]: "Jūsų sunkvežimio ir priekabos junginys neteisėtas šioje valstybėje!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Čia negalima važiuoti komerciniam transportui. Reikia apsisukti ir grįžti!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Dažai" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Chromo" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Išskirtinė dažyta" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Prabangiai chromuotas" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Prabangus angliškas" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -12088,7 +12100,7 @@ localization_db : .localization
 	val[]: "Reikia garažo mieste:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Sukaupkite daugiau patirties kad Jums atsirakintų Bankas."
+	val[]: "Sukaupkite daugiau patirties kad Jums atsirakintų Bankas"
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "Šiuo metu nėra galimų naujų sunkvežimių aksesuarų."

@@ -55,7 +55,7 @@ SiiNunit
 
 	mail_text: mailtext.bank_sellpt {
 		from: "Bank" #+ Message sender
-		subject: "Din lastebil har blitt solgt" #+ Message subject
+		subject: "Din personlige lastebil har blitt solgt" #+ Message subject
 		body: "Kjære kunde<br><br>Vi må informere om at vi har sett oss nødt til å selge din trekkvogn, $TRUCK_NAME$, på tvangssalg for $MONEY$. Du har hatt langvarig utestående gjeld hos oss, og vi ser ikke at du kunne hatt noen annen mulighet til å dekke denne. Da var det desverre ingen vei utenom disse drastiske tiltakene. Vi foreslår at du jobber som ansatt arbeidstaker frem til din økonomiske situasjon bedrer seg.<br><br>Med vennlig hilsen<br>Ståle Pengesen<br>Banken" #+ Message body
 	}
 
@@ -78,7 +78,7 @@ SiiNunit
 	mail_text: mailtext.td_visit {
 		from: "Lastebilforhandler - $CITY$" #+ Message sender
 		subject: "Splitter nye $BRAND$ lastebiler til salgs!" #+ Message subject
-		body: "Kjære kunde<br><br>Vi er en sertifisert forhandler av $BRAND$ lastebiler. Vi kan tilby et bredt utvalg ulike spesifikasjoner, og kan også bygge opp en bil etter kundens ønske. <link url=truck.dealer_map color=@@clr_link@@>Besøk gjerne våre lokaler i $CITY$</link>. Bilen du alltid har drømt om står kanskje parkert i vårt utstillingsvindu?<br><br>Med vennlig hilsen<br>Din forhandler av $BRAND$ lastebiler" #+ Message body
+		body: "Kjære kunde<br><br>Vi er en sertifisert $BRAND$ lastebilforhandler. Vi kan tilby et bredt utvalg ulike spesifikasjoner, og kan også bygge opp en lastebil etter kundens ønske. Vennligst,<link url=truck.dealer_map color=@@clr_link@@>besøk gjerne vår utstillingslokale i $CITY$</link>. Lastebilen du alltid har drømt om står kanskje parkert i vårt utstillingsvindu.<br><br>Med vennlig hilsen<br>Din $BRAND$ lastebilforhandler" #+ Message body
 	}
 
 /**
@@ -86,7 +86,7 @@ SiiNunit
  */
 
 	mail_text: mailtext.comp_teaser {
-		from: "$SELSKAP$, $BY$" #+ Message sender
+		from: "$COMPANY$, $CITY$" #+ Message sender
 		subject: "Sjåfører med eget materiell søkes" #+ Message subject
 		body: "Tilbud om jobb<br><br>Vi er på utkikk etter dyktige sjåfører med egen trekkvogn for et stort antall oppdrag. Vi tilbyr konkurransedyktige priser på opptil $MONEY$ per oppdrag. Om du er i besittelse av egen trekkvogn, ta gjerne kontakt direkte med vår terminal i $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
 	}
@@ -138,7 +138,7 @@ SiiNunit
 	mail_text: mailtext.ovs.new_routes {
 		from: "Speditør" #+ Message sender
 		subject: "Spesialtransport" #+ Message subject
-		body: "Hei sjefen.<br><br>Jeg har noe spesielt til deg. Takk til våre forbindelser, vi er nå i stand til å få en ekte utfordring. Noen spesielle, ekstra store og tunge last trengs å bli trukket av en ekte profesjonell. Det vil ikke være enkelt og det krever noen erfaringer, tålmodighet, samarbeid med eskorteringskjøretøyer og ekstra forsiktighet, men jeg gjetter om at du har det, riktig? Også større risiko kommer med en større fortjeneste.<br><br>Hvis du er interessert, så kan du besøke disse byene: $CITIES$." #+ Message body
+		body: "Hei sjefen.<br><br>Jeg har noe spesielt til deg. Takk til våre forbindelser, vi er nå i stand til å få en ekte utfordring. Noen spesielle, ekstra store og tunge last trengs å bli trukket av en ekte profesjonell. Det vil ikke være enkelt og det krever noen erfaringer, tålmodighet, samarbeid med følgebiler og ekstra forsiktighet, men jeg gjetter om at du har det, riktig? Også større risiko kommer med en større fortjeneste.<br><br>Hvis du er interessert, så kan du besøke disse byene: $CITIES$." #+ Message body
 	}
 	
 	mail_text: mailtext.ovs.upd_routes {
@@ -153,7 +153,7 @@ SiiNunit
  	mail_text: mailtext.real_estate {
 		from: "Eiendommeglingsfirma" #+ Message sender
 		subject: "Ser du etter å ekspandere ditt selskap?" #+ Message subject
-		body: "Kjære deg<br><br>Vi vil gratulere deg om prosessen for ditt selskap. Vi er imponerte for suksessen av din bedrift og vi ville likt å gi deg en ny tilbud til å hjelpe din bedrift til å ekspandere større. Fra nå av, så kan du bruke våre tjenester til å kjøpe flere garasjer nesten med en gang! For mer informasjon, vennligst <link url=screen.real_estate color=@@clr_link@@>besøk Garasjekjøpsgrensesnittet.</link>.<br><br>Med vennlig hilsen<br>Relasjonsutvikler<br>Eiendommeglingsfirma" #+ Message body
+		body: "Kjære deg<br><br>Vi vil gratulere deg om prosessen for ditt selskap. Vi er imponerte for suksessen av din forretning og vi ville likt å gi deg en ny tilbud til å hjelpe din bedrift til å ekspandere større. Fra nå av, så kan du bruke våre tjenester til å kjøpe flere garasjer nesten med en gang! For mer informasjon, vennligst <link url=screen.real_estate color=@@clr_link@@>besøk Garasjekjøpsgrensesnittet.</link>.<br><br>Med vennlig hilsen<br>Relasjonsutvikler<br>Eiendommeglingsfirma" #+ Message body
 	}
 
 #@}

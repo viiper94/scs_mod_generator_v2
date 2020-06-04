@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "Divers" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Couleur du rétro-éclairage" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Rétro-éclairage" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4807,7 +4813,7 @@ localization_db : .localization
 	val[]: "Vérification de vos documents, veuillez patienter..."
 
 	key[]: "border_open"
-	val[]: "Tout est en ordre.<br>Passez une bonne journée."
+	val[]: "Tout est en ordre.<br>Bonne route."
 
 	key[]: "stop_to_weigh"
 	val[]: "Veuillez vous arrêter au poste de pesée le plus proche pour une inspection de votre véhicule." #+ Adviser text: Weigh station visit required.
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Votre véhicule n'est pas dans l'état technique requis par la loi. Vous devez le réparer !" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Votre ensemble camion et remorque n'est pas légal ici !" #+ Adviser text
+	val[]: "Votre ensemble camion et remorque n'est pas autorisé dans ce pays !" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Les véhicules de transport de marchandises sont interdits dans cette zone. Vous devez faire demi-tour et repartir !" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Peinture" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Long peint" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Chrome" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Peinture exclusive" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Exclusif chromé" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exclusif UK" #+ Luxury/Exclusive UK version of the interior or accesory
 

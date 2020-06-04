@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -909,7 +915,7 @@ localization_db : .localization
 	val[]: "MELLORAS DE CAMIÓNS" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
-	val[]: "MELLORAS DE REMOLQUES" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "MELLORAS DO REMOLQUE" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "truck_upgrades"
 	val[]: "Melloras de camións" #+ The name of the screen containing truck upgrades. There is limited space allowing for two lines of 7 'W' characters each.
@@ -988,10 +994,10 @@ localization_db : .localization
 	val[]: "Reembolsos" #+ Label of line with combine price of all parts sold as part of the upgrade.
 
 	key[]: "select_cat"
-	val[]: "Elixe a categoría de mellora dende o menú superior." #+ Text shown if user did not select any component category.
+	val[]: "Escolle a categoría de mellora dende o menú superior." #+ Text shown if user did not select any component category.
 
 	key[]: "select_pin"
-	val[]: "Elixe unha parte do camión para ver accesorios compatibles."
+	val[]: "Escolle unha parte do camión para ollar accesorios compatíbeis."
 
 	key[]: "tc_orig_price"
 	val[]: "Prezo orixinal:" #+ Followed by the price of the original configuration of the new truck.
@@ -1067,7 +1073,7 @@ localization_db : .localization
 	val[]: "O teu xefe non lle vai a gustar que xogues co seu camión." #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
-	val[]: "Non podes cambiar o tipo de tráiler, o corpo ou o chasis durante un traballo. Finaliza a túa entrega e téntao de novo." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
+	val[]: "Non podes mudar o tipo de remolque, o corpo ou o chasis durante un traballo. Remata a túa entrega e téntao de novo." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
 
 	key[]: "trailer_configurator_invalid_country"
 	val[]: "Non se pode instalar o $ACC$ seleccionado no país fora de <color value=@@clr_sel@@>$COUNTRIES$." #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for configurator country.
@@ -1837,7 +1843,7 @@ localization_db : .localization
 	val[]: "Distancia por estrada" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Elixe a carga para ollar os detalles da ruta" #+ Text shown centered in the route info box when no job is selected.
+	val[]: "Escolle a carga para ollar os detalles da ruta" #+ Text shown centered in the route info box when no job is selected.
 #@}
 
 
@@ -1885,13 +1891,13 @@ localization_db : .localization
 #@{
 
 	key[]: "jobf_hint_1"
-	val[]: "Elixe unha cidade atopada no mapa para ver as ofertas dispoñibles de traballo que comezan alí"
+	val[]: "Escolle unha cidade atopada no mapa para ver as ofertas dispoñíbeis de traballo que comezan alí"
 
 	key[]: "jobf_hint_2"
 	val[]: "Usa o reordenado para ver as ofertas que te interesan ó principio"
 
 	key[]: "jobf_hint_3"
-	val[]: "Elixe unha oferta de traballo"
+	val[]: "Escolle unha oferta de traballo"
 
 	key[]: "jobf_hint_4a"
 	val[]: "E comeza a conducir!"
@@ -1906,7 +1912,7 @@ localization_db : .localization
 	val[]: "Maquinaria"
 
 	key[]: "cargo_type_adr"
-	val[]: "ADR"
+	val[]: "Mercadoría perigosa"
 
 	key[]: "cargo_type_containers"
 	val[]: "Contedores e cortinas laterais"
@@ -1927,7 +1933,7 @@ localization_db : .localization
 	val[]: "Plataformas"
 
 	key[]: "cargo_type_lowbed"
-	val[]: "Camas baixas"
+	val[]: "Leitos baixos"
 
 	key[]: "cargo_type_inloader"
 	val[]: "Cargas interiores"
@@ -2099,13 +2105,13 @@ localization_db : .localization
 	val[]: "Tes que introducir o teu nome!"
 
 	key[]: "select_face"
-	val[]: "Elixe a túa foto!"
+	val[]: "Escolle a túa foto!"
 
 	key[]: "select_design"
-	val[]: "Elixe o teu diseño de camión favorito!"
+	val[]: "Escolle o teu diseño de camión favorito!"
 
 	key[]: "select_logo"
-	val[]: "Elixe un logotipo para a túa compañía!"
+	val[]: "Escolle un logotipo para a túa compañía!"
 
 	key[]: "enter_comp_name"
 	val[]: "Precisas nomear a túa compañía!"
@@ -2201,7 +2207,7 @@ localization_db : .localization
 	val[]: "A TÚA SEDE" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "hq_msg"
-	val[]: "Elixe a cidade onde queres comezar."
+	val[]: "Escolle a cidade onde queres comezar."
 
 
 	key[]: "hq_t"
@@ -3602,7 +3608,7 @@ localization_db : .localization
 	val[]: "Separador"
 
 	key[]: "range_splitter"
-	val[]: "Separador de Rango"
+	val[]: "Separador de rango"
 
 #@}
 
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "O seu vehículo non se atopa nas condicións técnicas requiridas por lei. Ten que arranxalo!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "A súa combinación de camión e remolque non é legal aquí!" #+ Adviser text
+	val[]: "A túa combinación de camión e remolque non é legal neste país!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "O transporte comercial está prohibido nesta área. Tes que dar a volta e volver!" #+ Adviser text
@@ -5037,7 +5043,7 @@ localization_db : .localization
 #@{
 
 	key[]: "adr"
-	val[]: "ADR"
+	val[]: "Mercadoría perigosa"
 
 	key[]: "long_dist"
 	val[]: "Larga distancia"
@@ -5073,34 +5079,34 @@ localization_db : .localization
 #@{
 
 	key[]: "skill_adr_title"
-	val[]: "Entrenamento ADR"
+	val[]: "Adestramento en mercadorías perigosas"
 
 	key[]: "skill_adr_info"
-	val[]: "O transporte de mercadorías perigosas require profesionais ben formados. Usa a túa experiencia adquirida duramente para lograr os seguintes certificados de ADR e aumenta as túas ganancias de xeito substancial:"
+	val[]: "O transporte de mercadorías perigosas require profesionais ben formados. Usa a túa experiencia adquirida duramente para lograr os seguintes certificados de perigosidade e aumenta as túas ganancias de xeito substancial:"
 
 	key[]: "skill_adr_classt1"
 	val[]: "Explosivos"
 
 	key[]: "skill_adr_1"
-	val[]: "Como dinamita, fogos de artificio ou munición."
+	val[]: "Coma dinamita, fogos artificiais ou munición."
 
 	key[]: "skill_adr_classt2"
 	val[]: "Gases"
 
 	key[]: "skill_adr_2"
-	val[]: "Clase 2.1: Gases inflamables, por exemplo, acetileno ou hidróxeno.<br>Clase 2.2: Gases non inflamables, como gases crioxénicos e líquidos, como o nitróxeno ou neón.<br>Clase 2.3: Gases velenosos que poden causar a morte ou lesións graves ó inhalalos, por ex., flúor, cloro, cianuro de hidróxeno."
+	val[]: "Clase 2.1: Gases inflamábeis, por exemplo, acetileno ou hidróxeno.<br>Clase 2.2: Gases non inflamábeis, como gases crioxénicos e líquidos, coma o nitróxeno ou neón.<br>Clase 2.3: Gases velenosos que poden causar a morte ou lesións graves ó inhalalos, por ex., flúor, cloro, cianuro de hidróxeno."
 
 	key[]: "skill_adr_classt3"
-	val[]: "Líquidos Inflamables"
+	val[]: "Líquidos inflamábeis"
 
 	key[]: "skill_adr_3"
 	val[]: "Inclúe combustibles moi comúns, pero tamén moi perigosos, como gasolina, gasóleo ou queroseno."
 
 	key[]: "skill_adr_classt4"
-	val[]: "Sólidos inflamables"
+	val[]: "Sólidos inflamábeis"
 
 	key[]: "skill_adr_4"
-	val[]: "Clase 4.1: Sólidos inflamables, nitrocelulosa de fácil ignición, magnesio, ou fósforos de seguridade, entre outros.<br>Clase 4.2: Combustión espontánea de alquilos de aluminio ou fósforo branco.<br>Clase 4.3: Perigosos cando están húmidos coma o sodio, calcio, potasio, ..."
+	val[]: "Clase 4.1: Sólidos inflamábeis, nitrocelulosa de fácil ignición, magnesio, ou fósforos de seguranza, entre outros.<br>Clase 4.2: Combustión espontánea de alquilos de aluminio ou fósforo branco.<br>Clase 4.3: Perigosos cando están húmidos coma o sodio, calcio, potasio, ..."
 
 	key[]: "skill_adr_classt6"
 	val[]: "Substancias tóxicas e infecciosas"
@@ -5252,7 +5258,7 @@ localization_db : .localization
 	val[]: "Até un $FUEL_TRAILER5$% de combustíbel aforrado ó conducir con remolque.<br>Até un $FUEL5$% de combustíbel aforrado en condución libre."
 
 	key[]: "skill_mechanical_rank6"
-	val[]: "Até un $FUEL_TRAILER6$% de combustíbel aforrado ó conducir con remolque.<br>Ata un $FUEL6$% de combustíbel aforrado en condución libre."
+	val[]: "Até un $FUEL_TRAILER6$% de combustíbel aforrado ó conducir con remolque.<br>Até un $FUEL6$% de combustíbel aforrado en condución libre."
 #@}
 #@}
 
@@ -5507,7 +5513,7 @@ localization_db : .localization
 	val[]: "Bonus por entrega urxente"
 
 	key[]: "adr_bonus"
-	val[]: "Bonificación por entrega ADR"
+	val[]: "Bonificación por entrega perigosa"
 
 	key[]: "damage_penalty"
 	val[]: "Penalización por dano"
@@ -5516,10 +5522,10 @@ localization_db : .localization
 	val[]: "Sanción por demora"
 
 	key[]: "park_bonus"
-	val[]: "Bonificación por manobra do tráiler"
+	val[]: "Bonificación por manobra do remolque"
 
 	key[]: "adr_class"
-	val[]: "Clase ADR"
+	val[]: "Clase de mercadoría perigosa"
 
 	key[]: "skill_level"
 	val[]: "nivel de habilidade" #+ Bonus for skill rank with specific cargo. For example "skill rank 5"
@@ -6604,7 +6610,7 @@ localization_db : .localization
 	val[]: "Plataforma con lona Schwarzmüller"
 
 	key[]: "tn_schw_overweight"
-	val[]: "Cama baixa Schwarzmüller"
+	val[]: "Leito baixa Schwarzmüller"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Remolque refrixerado Schwarzmüller"
@@ -6644,25 +6650,25 @@ localization_db : .localization
 	val[]: "Entrega urxente"
 
 	key[]: "tt_ico_adr_1"
-	val[]: "ADR clase 1"
+	val[]: "Mercadoría perigosa clase 1"
 
 	key[]: "tt_ico_adr_2"
-	val[]: "ADR clase 2"
+	val[]: "Mercadoría perigosa clase 2"
 
 	key[]: "tt_ico_adr_3"
-	val[]: "ADR clase 3"
+	val[]: "Mercadoría perigosa clase 3"
 
 	key[]: "tt_ico_adr_4"
-	val[]: "ADR clase 4"
+	val[]: "Mercadoría perigosa clase 4"
 
 	key[]: "tt_ico_adr_5"
-	val[]: "ADR clase 5"
+	val[]: "Mercadoría perigosa clase 5"
 
 	key[]: "tt_ico_adr_6"
-	val[]: "ADR clase 6"
+	val[]: "Mercadoría perigosa clase 6"
 
 	key[]: "tt_ico_adr_8"
-	val[]: "ADR clase 8"
+	val[]: "Mercadoría perigosa clase 8"
 
 	key[]: "tt_ico_articulated"
 	val[]: "Remolque articulado"
@@ -7028,7 +7034,7 @@ localization_db : .localization
 	val[]: "Un garaxe equipado completamente deste tamaño adoita fornecer moitos cartos á semana. A barra amosa o ben que está a ir este garaxe."
 
 	key[]: "garageman_summary_hint"
-	val[]: "Elixe un garaxe da dereita para ver os seus detalles"
+	val[]: "Escolle un garaxe da dereita para ollar os seus detalles"
 
 
 	key[]: "garageman_unavailable"
@@ -7116,10 +7122,10 @@ localization_db : .localization
 #@{
 
 	key[]: "garageman_hint_1"
-	val[]: "Elixe un dos teus garaxes para ver os seus detalles"
+	val[]: "Escolle un dos teus garaxes para ollar os seus detalles"
 
 	key[]: "garageman_hint_2"
-	val[]: "Elixe un espazo de garaxe dispoñible"
+	val[]: "Escolle un espazo dispoñíbel no garaxe"
 
 	key[]: "garageman_hint_3"
 	val[]: "Fai clic na icona do camión ou do condutor para ver instantaneamente as súas respectivas fichas"
@@ -7140,7 +7146,7 @@ localization_db : .localization
 	val[]: "Admira o tamaño da túa frota de camións, e planea como poderías facela aínda máis poderosa." #+ Help message associated with the truck management icon.
 
 	key[]: "truckman_summary_hint"
-	val[]: "Elixe un camión da dereita para ver os seus detalles"
+	val[]: "Escolle un camión da dereita para ollar os seus detalles"
 
 #+ Truck map filters
 #@{
@@ -7360,7 +7366,7 @@ localization_db : .localization
 	val[]: "Comproba os teus condutores. Contrata, mestura ou despídeos como queiras." #+ Help message associated with the driver management icon.
 
 	key[]: "driverman_summary_hint"
-	val[]: "Elixe un condutor da dereita para ver os seus detalles"
+	val[]: "Escolle un condutor da dereita para ollar os seus detalles"
 
 #+ Driver map filters
 #@{
@@ -7777,13 +7783,13 @@ localization_db : .localization
 	val[]: "SELECCIONAR GARAXE" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "td_garsel_nogarage"
-	val[]: "Por favor, elixe un garaxe para continuar."
+	val[]: "Por favor, escolle un garaxe para continuar."
 
 	key[]: "td_garsel_noslot"
-	val[]: "Por favor, elixe un lugar dispoñible para continuar."
+	val[]: "Por favor, escolle un lugar dispoñíbel para continuar."
 
 	key[]: "td_garsel_pickgarage"
-	val[]: "Primeiro, elixe o garaxe de destino:"
+	val[]: "Primeiro, escolle o garaxe de destino:"
 
 	key[]: "td_garsel_pickslot"
 	val[]: "E despois pica no espazo de destino:"
@@ -9452,7 +9458,7 @@ localization_db : .localization
 	val[]: "Achégate á porta da entrada para obter o permiso para entregar a carga nun punto determinado da terminal de entrega. Busca unha baliza animada que indica o punto onde deter o camión.<br><br>Agora pode ser un bo momento para axustar a escala do mapa no panel de navegación do Asesor de Ruta ($KEY$)."
 
 	key[]: "tut_msg_9"
-	val[]: "Na terminal, unha vez seleccionaches o lugar desexado para estacionar, vai aparcar o tráiler. Nalgunhas terminais podes usar un lugar alternativo máis fácil (por menos XP). Se te atopas con problemas, tamén podes elixir finalizar a entrega automaticamente.<br><br>Marcarase unha área rectangular no chan e aparecerá no Asesor de Ruta como o sitio onde aparcar o tráiler. Cando o tráiler estea situado correctamente, aparecerá unha mensaxe pedíndote que o desenganches."
+	val[]: "Na terminal, unha vez escolliches o lugar desexado para estacionar, vai aparcar o remolques. Nalgunhas terminais podes usar un lugar alternativo máis doado (por menos XP). Se te atopas con problemas, tamén podes escoller rematar a entrega de xeito automático.<br><br>Marcarase unha área rectangular no chan e aparecerá no Asesor de Ruta como o lugar onde aparcar o remolque. Cando o remolque estea situado correctamente, aparecerá unha mensaxe pedíndote que o desenganches."
 
 	key[]: "tut_msg_10"
 	val[]: "Ben feito! A que estás agardando? Descarga e comeza a xogar por tí mesmo!"
@@ -9689,7 +9695,7 @@ localization_db : .localization
 #+ Method selection page title
 
 	key[]: "select_control_method"
-	val[]: "Elixe método de control"
+	val[]: "Escolle método de control"
 
 #+ Button in the input wizard used to indicate that user wants to use wheel, gamepad or joystick for steering.
 
@@ -9759,7 +9765,7 @@ localization_db : .localization
 #+ Controller type selection page title
 
 	key[]: "select_controller_type"
-	val[]: "Elixe tipo de controlador"
+	val[]: "Escolle tipo de controlador"
 
 #+ Button in the input wizard used to indicate that the controller is wheel-like.
 
@@ -9788,7 +9794,7 @@ localization_db : .localization
 
 
 	key[]: "select_gearbox_type"
-	val[]: "Elixe tipo de caixa de cambios"
+	val[]: "Escolle tipo de caixa de cambios"
 
 #+ Descriptions of individual choices.
 #@{
@@ -9823,7 +9829,7 @@ localization_db : .localization
 
 
 	key[]: "select_hshifter_layout"
-	val[]: "Elixe o esquema do Shifter en H"
+	val[]: "Escolle o esquema do Shifter en H"
 
 #+ Descriptions of individual choices.
 #@{
@@ -9916,10 +9922,10 @@ localization_db : .localization
 	val[]: "Configurar eixos do controlador"
 
 	key[]: "wiz_setup_axes_desc"
-	val[]: "Aquí podes elixir todos os eixos."
+	val[]: "Aquí podes escoller todos os eixos."
 
 	key[]: "wiz_setup_axes_desc2"
-	val[]: "Escolle un eixo premendo no botón cercano ó nome do eixo. Após premer mudarás ó modo de entrada. Usa o teu controlador movendo a panca, volante ou pedal ó que queres asignar o eixo elixido."
+	val[]: "Escolle un eixo premendo no botón cercano ó nome do eixo. Após premer mudarás ó modo de entrada. Usa o teu controlador movendo a panca, volante ou pedal ó que queres asignar o eixo escollido."
 
 	key[]: "wiz_setup_axes_desc3"
 	val[]: "A zona morta é unha área do eixo que non recibirá resposta de xeito intencionado. Se queres modificar a zona morta dun eixo seleccionado, move o deslizador dese eixo. Canto máis movas o deslizador cara á dereita, máis grande será a zona morta. Esta opción é especialmente útil con controladores antigos. Definindo unha zona morta maior pode resultar nunha falta de precisión ou entrada errónea debido ó desgaste do teu periférico."
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Pintura" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Pintura longa" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Exclusivo pintado" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Cromado exclusivo" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exclusivo UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10433,7 +10445,7 @@ localization_db : .localization
 	val[]: "Imaxes destacadas" #+ link button title
 
 	key[]: "lscr_browser_help"
-	val[]: "Navega por unha selección de espectaculares imaxes elixidas de World of Trucks para usalas nas pantallas de carga."
+	val[]: "Navega por unha selección de espectaculares imaxes escollidas do World of Trucks para empregalas nas pantallas de carga."
 
 	key[]: "photomode_cam_ctrl"
 	val[]: "CONTROIS DE CÁMARA" #+ window title
@@ -10524,7 +10536,7 @@ localization_db : .localization
 	val[]: "Permite que poidas subir capturas gardadas ao portal de World of Trucks."
 
 	key[]: "screenshotman_desc"
-	val[]: "Usa Modo fotógrafo ou a tecla @@imv_nrm_screenshot@@ para tomar capturas. Podes subilas ao portal de World of Trucks.<br>Elixe unha captura e un espazo na web debaixo, entón preme o botón <color value=@@clr_sel@@>Subir ó espazo seleccionado<color value=@@clr_txt@@>." #+ description
+	val[]: "Emprega o Modo fotógrafo ou a tecla @@imv_nrm_screenshot@@ para tomar capturas. Podes subilas ó portal do World of Trucks.<br>Escolle unha captura e un espazo na web debaixo, entón preme o botón <color value=@@clr_sel@@>Subir ó espazo escollido<color value=@@clr_txt@@>." #+ description
 
 	key[]: "screenshotman_slot"
 	val[]: "Espazos para capturas do perfil online" #+ Slots title
@@ -10659,7 +10671,7 @@ localization_db : .localization
 	val[]: "Nome da partida gardada" #+ Shown when entering name of save file during manual save
 
 	key[]: "gamepad_enter_search_text"
-	val[]: "Buscar texto" #+ Shown when entering search text (for example in mod manager)
+	val[]: "Procurar texto" #+ Shown when entering search text (for example in mod manager)
 #@}
 
 #+ Message shown in the "View game info" window on Steam. Shown to all Steam friends, so it needs to be in English.
@@ -10788,7 +10800,7 @@ localization_db : .localization
 	val[]: "Diminuír prioridade" #+ Button which decreases priority of the mod
 
 	key[]: "search"
-	val[]: "Buscar" #+ Label of field used to search mod by name
+	val[]: "Procurar" #+ Label of field used to search mod by name
 
 	key[]: "mod_manager_btn"
 	val[]: "Xestor de Mods" #+ Button opening the mod manager
@@ -10961,7 +10973,7 @@ localization_db : .localization
 	val[]: "Imaxe destacada de World of Trucks - autor:" #+ Shown on loading screen
 
 	key[]: "allow_loading_screens"
-	val[]: "Queres activar a función de imaxes destacadas?<br><br>Poderás navegar por unha selección de espectaculares imaxes elixidas de World of Trucks para usalas nas pantallas de carga." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+	val[]: "Queres activar a función de imaxes destacadas?<br><br>Poderás navegar por unha escolma de espectaculares imaxes escollidas do World of Trucks para empregalas nas pantallas de carga." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
 #@}
 
 
@@ -11848,7 +11860,7 @@ localization_db : .localization
 	val[]: "Xestiona os remolques da túa compañía, asígnaos ós teus condutores, cómpraos, intercámbiaos e moito máis."
 
 	key[]: "trailerman_summary_hint"
-	val[]: "Elixe un remolque da dereita para ver os seus detalles"
+	val[]: "Escolle un remolque da dereita para ollar os seus detalles"
 
 	key[]: "trailerman_tut_utilization"
 	val[]: "Porcentaxe de utilización diaria do remolque no estado actual da economía. Está baseado no número de horas por día que os teus condutores usan o remolque. A gráfica actualízase ó comenzo de cada día. Un % maior indica unha maior demanda dun determinado tipo de tráiler no seu garaxe." #+ The utilization graph hint text.
@@ -12810,7 +12822,7 @@ localization_db : .localization
 	val[]: "O condutor está inactivo"
 
 	key[]: "cm_legend_driver_status_sleeping"
-	val[]: "O condutor está durmindo"
+	val[]: "O condutor está a durmir"
 
 	key[]: "cm_legend_driver_status_driving"
 	val[]: "O condutor está a conducir"
@@ -12966,10 +12978,10 @@ localization_db : .localization
 	val[]: "VISTAS PREVIAS"
 
 	key[]: "empty_resulting_truck_preview"
-	val[]: "Elixe un camión a copiar da táboa de abaixo<br>para obter unha vista previa."
+	val[]: "Escolle un camión a copiar da táboa de abaixo<br>para obter unha vista previa."
 
 	key[]: "empty_resulting_trailer_preview"
-	val[]: "Elixe un remolque a copiar da táboa de abaixo<br>para obter unha vista previa."
+	val[]: "Escolle un remolque a copiar da táboa de abaixo<br>para obter unha vista previa."
 #@}
 
 #+ Copy Configuration Tables.

@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "Vaše vozilo nije u tehničkom stanju predviđenom zakonom. Morate to da popravite!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Kombinacija vašeg kamiona i prikolice ovde nije legalna!" #+ Adviser text
+	val[]: "Kombinacija vašeg kamiona i prikolice nije legalna u ovoj zemlji!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "U ovom području zabranjeno je komercijalno transportiranje. Morate se okrenuti i vratiti se!" #+ Adviser text
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Boja" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "Hromirano" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Ekskluzivno obojen" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Ekskluzivno hromirano" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Ekskluzivna UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -12088,7 +12100,7 @@ localization_db : .localization
 	val[]: "Zahteva garažu u:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Napredujte dalje u karijeri kako biste pristupili Banci."
+	val[]: "Napredujte dalje u karijeri kako biste pristupili Banci"
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "U ovom trenutku nema novih nadogradnji za kamion."

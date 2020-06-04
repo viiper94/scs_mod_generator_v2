@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -1831,7 +1837,7 @@ localization_db : .localization
 	val[]: "Distância na balsa" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_ferry_price"
-	val[]: "Preço da Balsa" #+ Shown in the route info box in the line indicating price of the ferry route. For example "Ferry price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.-"
+	val[]: "Preço da balsa" #+ Shown in the route info box in the line indicating price of the ferry route. For example "Ferry price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.-"
 
 	key[]: "trip_land_len"
 	val[]: "Distância em terra" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
@@ -1851,7 +1857,7 @@ localization_db : .localization
 #@{
 
 	key[]: "expiration"
-	val[]: "Validade"
+	val[]: "Prazo Limite"
 
 	key[]: "cargo_name"
 	val[]: "Carga"
@@ -1863,7 +1869,7 @@ localization_db : .localization
 	val[]: "Destino"
 
 	key[]: "route_length"
-	val[]: "Quilometragem do trajeto"
+	val[]: "Distância do trajeto"
 
 	key[]: "cargo"
 	val[]: "Tipo de carga"
@@ -1906,7 +1912,7 @@ localization_db : .localization
 	val[]: "Máquinarios"
 
 	key[]: "cargo_type_adr"
-	val[]: "PERIGOSA"
+	val[]: "Produtos Perigosos (ADR)"
 
 	key[]: "cargo_type_containers"
 	val[]: "Contêineres e Reboques Cortina"
@@ -2011,7 +2017,7 @@ localization_db : .localization
 	val[]: "Garagens próprias" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
-	val[]: "pequena: $SMALL$, grande: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
+	val[]: "pequenas: $SMALL$, grandes: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
 	val[]: "Caminhões próprios" #+ how many trucks the player owns
@@ -2537,7 +2543,7 @@ localization_db : .localization
 	val[]: "Volume da música da interface" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Logos de Introdução" #+ Slider controlling volume of the intro logos.
+	val[]: "Volume da introdução" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAVEGAÇÃO POR VOZ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2579,7 +2585,7 @@ localization_db : .localization
 	val[]: "Som das linhas da rodovia" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
 
 	key[]: "noise_window"
-	val[]: "Barulho das janelas aberta" #+ Checkbox enabling the sound of the opened windows noise.
+	val[]: "Barulho das janelas abertas" #+ Checkbox enabling the sound of the opened windows noise.
 
 	key[]: "noise_aero"
 	val[]: "Barulho do vento" #+ Checkbox enabling the sound of the air noise.
@@ -2839,7 +2845,7 @@ localization_db : .localization
 #+ Time zones and their display mode
 #@{
 	key[]: "time_zones"
-	val[]: "Zonas de tempo" #+ Droplist for selection of time zone and their visualization.
+	val[]: "Fusos horários" #+ Droplist for selection of time zone and their visualization.
 
 	key[]: "timezones_time_only"
 	val[]: "Apenas tempo" #+ Enabled time zones, but display only zone time.
@@ -2868,7 +2874,7 @@ localization_db : .localization
 	val[]: "Simulação de fadiga" #+ Checkbox enabling simulation of driver's fatique.
 
 	key[]: "preferred_job_length"
-	val[]: "Distância preferida para cargas" #+ Slider that affects job generating process.
+	val[]: "Distância preferida para entregas" #+ Slider that affects job generating process.
 
 	key[]: "traffic_offense"
 	val[]: "Infração de trânsito " #+ Checkbox enabling receiving offence penalty.
@@ -2949,7 +2955,7 @@ localization_db : .localization
 	val[]: "Simulação de freios a ar" #+ Checkbox for enabling of air brake safeguard (emergency brake is active if there is insufficient pressure in the air brakes).
 
 	key[]: "fuel_consumption_simulation"
-	val[]: "Consumo de combustível real" #+ Checkbox for enabling of realistic fuel consumption.
+	val[]: "Consumo de combustível realista" #+ Checkbox for enabling of realistic fuel consumption.
 
 	key[]: "cruise_control_grid"
 	val[]: "Passo da grade do controle de cruzeiro" #+ Size of grid for cruise control increment/decrement step.
@@ -2964,7 +2970,7 @@ localization_db : .localization
 	val[]: "Desligar Pisca Automaticamente" #+ Checkbox for enabling of automatic blinker turning off.
 
 	key[]: "road_events"
-	val[]: "Eventos Aleatórios na Estrada" #+ Slider for player modification of road event probability and placement.
+	val[]: "Eventos aleatórios na estrada" #+ Slider for player modification of road event probability and placement.
 
 	key[]: "rain_factor"
 	val[]: "Probabilidade de chuva" #+ Slider for player modification of rain probability and duration.
@@ -3946,7 +3952,7 @@ localization_db : .localization
 	val[]: "Aplicar" #+ Button which applies the state configured in the screen.
 
 	key[]: "dt_theme"
-	val[]: "Tema da Área de Trabalho" #+ Combo box for selection of desktop background theme.
+	val[]: "Tema de Fundo" #+ Combo box for selection of desktop background theme.
 
 	key[]: "display_t"
 	val[]: "GRÁFICOS" #+ Header of the section containing resolution related settings.
@@ -4555,7 +4561,7 @@ localization_db : .localization
 	val[]: "Recalculando rota..." #+ Shown temporarily when navigation route is being recalculated.
 
 	key[]: "adviser_eta"
-	val[]: "Dia e hora:" #+ For example "ETA: Sat 14:20 CEST"
+	val[]: "Chegada estimada:" #+ For example "ETA: Sat 14:20 CEST"
 
 	key[]: "job_income"
 	val[]: "Renda do trabalho" #+ For example "Job income: E6,526"
@@ -4831,13 +4837,13 @@ localization_db : .localization
 	val[]: "Obrigado por sua cooperação. Tenha uma viagem segura!" #+ Adviser text
 
 	key[]: "weigh_damaged"
-	val[]: "O seu veículo não está no melhor estado técnico. Tenha mais cuidado na próxima vez!" #+ Adviser text
+	val[]: "Seu veículo não está nas melhores condições técnicas. Seja mais precavido na próxima!" #+ Adviser text
 
 	key[]: "weigh_damaged_lot"
-	val[]: "O seu veículo não está no estado técnico obrigatório por lei. É obrigado a repará-lo!" #+ Adviser text
+	val[]: "Seu veículo não está em condições para circular previstas em lei. Você tem que repará-lo!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "A combinação do seu camião e reboque não é legal aqui!" #+ Adviser text
+	val[]: "Sua combinação de caminhão e reboque é ilegal neste país!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Transporte de cargas comerciais proibido nesta área. Você deve retornar e voltar!" #+ Adviser text
@@ -5037,7 +5043,7 @@ localization_db : .localization
 #@{
 
 	key[]: "adr"
-	val[]: "PERIGOSA"
+	val[]: "Produtos Perigosos (ADR)"
 
 	key[]: "long_dist"
 	val[]: "Longa Distância"
@@ -5056,7 +5062,7 @@ localization_db : .localization
 #@}
 
 	key[]: "rank"
-	val[]: "Posição" #+ Header of section describing advantages the driver gets when has selected skill at specified rank.
+	val[]: "Nível" #+ Header of section describing advantages the driver gets when has selected skill at specified rank.
 
 	key[]: "class"
 	val[]: "Classe" #+ Header of section describing cargoes belonging to specified ADR class.
@@ -5427,7 +5433,7 @@ localization_db : .localization
 #@{
 
 	key[]: "job_completed_t"
-	val[]: "SERVIÇO COMPLETADO" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "ENTREGA CONCLUÍDA" #+ Title of the screen. Please keep in upper case where possible."
 
 #+ Job completion quality rating. Please keep in upper case where possible."
 #@{
@@ -6751,7 +6757,7 @@ localization_db : .localization
 	val[]: "Duração<br>(Em dias)" #+ Header of the column containing remaining durations of individual loans.
 
 	key[]: "bank_loan_intrate"
-	val[]: "Taxa de juros<br>(p.a.)" #+ Header of the column containing interest rates for individual loans.
+	val[]: "Taxa de juros<br>(a.a.)" #+ Header of the column containing interest rates for individual loans.
 
 	key[]: "bank_loan_installment"
 	val[]: "Parcela" #+ Header of the column containing the daily payments for individual loans.
@@ -7211,7 +7217,7 @@ localization_db : .localization
 
 
 	key[]: "truckman_stats_all"
-	val[]: "Todas as estatísticas de tempo" #+ Header of panel with cumulated statistics
+	val[]: "Estatísticas totais" #+ Header of panel with cumulated statistics
 
 	key[]: "truckman_stats_week"
 	val[]: "Estatísticas dos últimos 7 dias" #+ Header of panel with statistics for last 7 days
@@ -10063,14 +10069,17 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "Pintura" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "Pintura Longa" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
-	val[]: "Cromo" #+ Chromed mirror, doorhandle or other accessory
+	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
 	key[]: "paint_chrom"
-	val[]: "Pintura & Cromo" #+ Painted and chromed mirror, doorhandle or other accessory
+	val[]: "Pintura & Cromado" #+ Painted and chromed mirror, doorhandle or other accessory
 
 	key[]: "plastic_chrom"
-	val[]: "Plástico e Cromo" #+ Plastic mixed with chromed mirror, doorhandle or other accessory
+	val[]: "Plástico e Cromado" #+ Plastic mixed with chromed mirror, doorhandle or other accessory
 
 	key[]: "plastic_paint"
 	val[]: "Pintura & Plástico" #+ Plastic mixed with painted mirror, doorhandle or other accessory
@@ -10088,7 +10097,7 @@ localization_db : .localization
 	val[]: "Pintura Moderna" #+ Modernized painted mirror, doorhandle or other accessory
 
 	key[]: "chrom_modern"
-	val[]: "Cromo Moderno" #+ Modernized chromed mirror, doorhandle or other accessory
+	val[]: "Cromado Moderno" #+ Modernized chromed mirror, doorhandle or other accessory
 
 	key[]: "standard"
 	val[]: "Padrão" #+ Standard version of the interior or accesory
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "Pintado Exclusivo" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "Cromado Exclusivo" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "Exclusivo UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10975,7 +10987,7 @@ localization_db : .localization
 	val[]: "Um caminhoneiro habilidoso pode lidar com manobras em espaços apertados ao deixar um reboque. No entanto, a segurança da carga é a maior prioridade! Se você não se sentir pronto para o desafio, negocie com o despachante um local alternativo para estacionar o reboque."
 
 	key[]: "job_delivery_company"
-	val[]: "Facilidade:"
+	val[]: "Instalações:"
 
 	key[]: "parking_diff_tough"
 	val[]: "Aonde você precisa dele?" #+ Player agrees to take the challenge and park the trailer to the tough place

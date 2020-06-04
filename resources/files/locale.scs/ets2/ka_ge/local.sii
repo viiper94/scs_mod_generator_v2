@@ -484,6 +484,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
+	
+	key[]: "package_eut2_fh_pack"
+	val[]: "DLC - FH Pack"
+
+	key[]: "onlineid_eu_fhpack"
+	val[]: "@@package_eut2_fhpack@@"
 
 	# Truck brands
 
@@ -512,7 +518,7 @@ localization_db : .localization
 	val[]: "DAF"
 
 	key[]: "series_volvo_fh16"
-	val[]: "FH16 Classic"
+	val[]: "FH Classic"
 
 	key[]: "series_volvo_fh16_2012"
 	val[]: "FH"
@@ -611,10 +617,10 @@ localization_db : .localization
 	val[]: "Scania Streamline"
 
 	key[]: "truck_browser_brand_volvo_fh16"
-	val[]: "Volvo FH16 2009"
+	val[]: "Volvo FH Classic"
 
 	key[]: "truck_browser_brand_volvo_fh16_2012"
-	val[]: "Volvo FH 2012"
+	val[]: "Volvo FH"
 
 
 # Trailer brands
@@ -1767,7 +1773,7 @@ localization_db : .localization
 #@{
 
 	key[]: "validity"
-	val[]: "შემოთავაზებას ვადა გასდის" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
+	val[]: "შემოთავაზება ძალაშია" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
 
 	key[]: "expected_on"
 	val[]: "ჩაბარების დრო" #+ For example "Expected Sat 12:53 - Sat 19:33"
@@ -3059,7 +3065,7 @@ localization_db : .localization
 	val[]: "მიუთითეთ ფუნქცია, რომლის გაუქმებაც გინდათ." #+ Hint shown when "unassign" button pressed.
 
 	key[]: "lost_function_binding"
-	val[]: "დაეკარგა ფუნქცია" #+ Shown when key was rebound to a different function.
+	val[]: "დაიკარგა ფუნქცია:" #+ Shown when key was rebound to a different function.
 
 #+ Headers of individual sections
 #@{
@@ -3096,7 +3102,7 @@ localization_db : .localization
 	val[]: "მოხვევა მარჯვნივ" #+ Rotates wheel to the right.
 
 	key[]: "o_im_look_left"
-	val[]: "სალონში მარცხნივ გახედვა" #+ Rotates view to the left.
+	val[]: "მარცხნივ გახედვა" #+ Rotates view to the left.
 
 	key[]: "o_im_look_right"
 	val[]: "მარჯვნივ გახედვა" #+ Rotates view to the right.
@@ -3386,10 +3392,10 @@ localization_db : .localization
 	val[]: "სალონში წინ გახედვა"
 
 	key[]: "o_im_look_preset_2"
-	val[]: "სალონში მარჯვნივ გახედვა"
+	val[]: "სალონის მარჯვნისაკენ გახედვა"
 
 	key[]: "o_im_look_preset_3"
-	val[]: "სალონში მარცხნივ გახედვა"
+	val[]: "სალონის მარცხნისაკენ გახედვა"
 
 	key[]: "o_im_look_preset_4"
 	val[]: "სალონში მარჯვნივ გახედვა"
@@ -3398,7 +3404,7 @@ localization_db : .localization
 	val[]: "სალონში მარცხნივ გახედვა"
 
 	key[]: "o_im_look_preset_6"
-	val[]: "სალონში შუაში გახედვა"
+	val[]: "სალონის შუისკენ გახედვა"
 #@}
 #@}
 #@}
@@ -3712,7 +3718,7 @@ localization_db : .localization
 	val[]: "სხვადასხვა" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "ფერით უკუკავშირი" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "უკუკავშირის ფერი" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -4837,7 +4843,7 @@ localization_db : .localization
 	val[]: "თქვენი მანქანის ტექნიკური მდგომარეობა, არ აკმაყოფილებს კანონის მოთხოვნებს. საჭიროა შეკეთება!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "თქვენს სატვირთოზე ამგვარი მისაბმელი იკრძალება ამ არეში!" #+ Adviser text
+	val[]: "თქვენს სატვირთოზე ამგვარი მისაბმელი იკრძალება ამ ქვეყანაში!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "სავაჭრო გადაზიდვები ამ არეში აკრძალულია. მოგიწევთ, უკან გაბრუნდეთ!" #+ Adviser text
@@ -5516,7 +5522,7 @@ localization_db : .localization
 	val[]: "ჯარიმა დაგვიანებისთვის"
 
 	key[]: "park_bonus"
-	val[]: "მისაბმელის მანევრირების ჯილდი"
+	val[]: "მისაბმელის მანევრირების ჯილდო"
 
 	key[]: "adr_class"
 	val[]: "ADR კლასი"
@@ -6310,7 +6316,7 @@ localization_db : .localization
 	val[]: "საურავი ქეჩა"
 
 	key[]: "cn_rooflights"
-	val[]: "სახურავის შუქები"
+	val[]: "სხვენის ფანჯრები"
 
 	key[]: "cn_sandwich_panels"
 	val[]: "სენდვიჩ-პანელები"
@@ -7786,7 +7792,7 @@ localization_db : .localization
 	val[]: "მიუთითეთ ფარეხი:"
 
 	key[]: "td_garsel_pickslot"
-	val[]: "და შემდეგ აირჩიეთ ადგილი:"
+	val[]: "შემდეგ კი აირჩიეთ ადგილი:"
 
 	key[]: "td_garsel_new_truck"
 	val[]: "სად მივიყვანოთ თქვენი სატვირთო?"
@@ -8197,10 +8203,10 @@ localization_db : .localization
 	val[]: "გვერდითი" #+ Checkbox selecting side mirror.
 
 	key[]: "left_small"
-	val[]: "პატარა მარცხენა" #+ Checkbox selecting small mirror on the left side.
+	val[]: "მარცხენა მცირე" #+ Checkbox selecting small mirror on the left side.
 
 	key[]: "right_small"
-	val[]: "პატარა მარჯვენა" #+ Checkbox selecting small mirror on the right side.
+	val[]: "მარჯვენა მცირე" #+ Checkbox selecting small mirror on the right side.
 #@}
 
 #+ Light Adjuster
@@ -8218,7 +8224,7 @@ localization_db : .localization
 	val[]: "ახლო მაშუქი" #+ Checkbox enabling the low beam lights
 
 	key[]: "high_beam"
-	val[]: "დიდი ნათება" #+ Checkbox enabling the high beam lights
+	val[]: "შორი ნათება" #+ Checkbox enabling the high beam lights
 
 	key[]: "beacon"
 	val[]: "შუქურა"  #+ Checkbox enabling the beacon
@@ -8227,7 +8233,7 @@ localization_db : .localization
 	val[]: "დამატებითი განათება" #+ Header of section for auxilliary ilumination
 
 	key[]: "front_aux"
-	val[]: "წინა განათება" #+ Checkbox enabling lights on additional front accessories.
+	val[]: "წინა სანათები" #+ Checkbox enabling lights on additional front accessories.
 
 	key[]: "roof_aux"
 	val[]: "სახურავის სანათები" #+ Checkbox enabling lights on additional roof accessories.
@@ -9470,7 +9476,7 @@ localization_db : .localization
 	val[]: "არჩეული გვერდის შიგთავსი."
 
 	key[]: "tutorial_adviser1c"
-	val[]: "გვერდების შორის გადასვლა. იხილეთ გზამკვლევის, სამუშაოს აღწერის, სატვირთოს მდგომარეობისა და შეტყობინების გვერდები."
+	val[]: "გვერდების გადართვა. იხილეთ გზამკვლევის, სამუშაოს აღწერის, სატვირთოს მდგომარეობისა და შეტყობინების გვერდები."
 
 	key[]: "tutorial_adviser2"
 	val[]: "გზამკვლევის რუკა ლურჯი ისრის სახით გიჩვენებთ თქვენს ამჟამინდელ მდებარეობას. თუ სამუშაოზე ხართ, მაშინ გამოჩნდება უმოკლესი გზა დანიშნულებამდე.<br><br>გვერდის ქვემოთ გამოჩნდება გასავლელი მანძილი და დრო. ღილაკით $KEY$ შესაძლებელია სხვადასხვა მასშტაბის ხედზე გადართვა."
@@ -10063,6 +10069,9 @@ localization_db : .localization
 	key[]: "paint"
 	val[]: "შეღებილი" #+ Painted mirror, doorhandle or other accessory
 
+	key[]: "paint_long"
+	val[]: "შეღებილი გრძელი" #+ Extended leg version of the front truck mirror
+
 	key[]: "chrom"
 	val[]: "ქრომირებული" #+ Chromed mirror, doorhandle or other accessory
 
@@ -10123,6 +10132,9 @@ localization_db : .localization
 	key[]: "exclusive_paint"
 	val[]: "რჩეული, შეღებილი" #+ Luxury/Exclusive painted version of the interior or accesory
 
+	key[]: "exclusive_chrom"
+	val[]: "რჩეული, ქრომირებული" #+ Luxury/Exclusive painted version of the interior or accesory
+	
 	key[]: "exclusive_uk"
 	val[]: "რჩეული (ბრიტ.)" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10590,10 +10602,10 @@ localization_db : .localization
 #@}
 
 	key[]: "screenshot_resized_dimensions"
-	val[]: "სურათი იყო დაშვებულ მაქსიმალურ ზომაზე $LIMIT$ დიდი და დაპატარავდა" # Warning message shown after upload which triggered automatic resize because of its dimensions. $LIMIT$ is a string like "1920x1200".
+	val[]: "სურათი აღემატებოდა დაშვებულ ზომას $LIMIT$ და დაპატარავდა." # Warning message shown after upload which triggered automatic resize because of its dimensions. $LIMIT$ is a string like "1920x1200".
 
 	key[]: "screenshot_resized_file_size"
-	val[]: "სურათი იყო დაშვებულ ზომაზე $LIMIT$KB დიდი და დაპატარავდა.." # Warning message shown after upload which triggered automatic resize because of its file size.  $LIMIT$ is a string like "3000".
+	val[]: "სურათი აღემატებოდა დაშვებულ მოცულობას $LIMIT$ KB და დაპატარავდა." # Warning message shown after upload which triggered automatic resize because of its file size.  $LIMIT$ is a string like "3000".
 #@}
 
 	key[]: "mods_t"
@@ -10978,7 +10990,7 @@ localization_db : .localization
 	val[]: "ობიექტი"
 
 	key[]: "parking_diff_tough"
-	val[]: "მითხარით, სად დავაყენო" #+ Player agrees to take the challenge and park the trailer to the tough place
+	val[]: "სად გნებავთ დავაყენო?" #+ Player agrees to take the challenge and park the trailer to the tough place
 
 	key[]: "parking_diff_tough_d"
 	val[]: "ყველაფერს გავაკეთებ!" #+ Player agrees to take the challenge and park the articulated trailer to the tough place (disabled by default)
@@ -10987,10 +10999,10 @@ localization_db : .localization
 	val[]: "მოდით, ვითამაშოთ უსაფრთხოდ" #+ Player wants to park the trailer to the easiest place
 
 	key[]: "parking_diff_easy_d"
-	val[]: "სად დავტოვო?" #+ Player wants to park the articulated trailer to proper place (allowed for doubles/triples)
+	val[]: "სად უნდა დავაყენო?" #+ Player wants to park the articulated trailer to proper place (allowed for doubles/triples)
 
 	key[]: "parking_diff_autopark"
-	val[]: "ძალიან მეჩქარება (გამოტოვება)" #+ Player wants to use auto park feature
+	val[]: "ბოდიში, მეჩქარება (გამოტოვება)" #+ Player wants to use auto park feature
 
 	key[]: "job_delivery_confirm"
 	val[]: "დამოწმება" #+ Confirm selected job delivery options
@@ -12088,7 +12100,7 @@ localization_db : .localization
 	val[]: "საჭიროებს ფარეხს ქვეყანაში:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "წინ წაიწიეთ საქმეში, ბანკთან წვდომის მისაღებად."
+	val[]: "წინ წაიწიეთ საქმეში, ბანკთან წვდომის მისაღებად"
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "სატვირთოს გაუმჯობესების შესაძლებლობები, ამჟამად არაა."
