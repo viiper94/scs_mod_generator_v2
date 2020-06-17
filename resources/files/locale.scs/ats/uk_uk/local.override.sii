@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Освітлення кабіни"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Захист кабіни"
 
-	key[]: "hndrail"
-	val[]: "Поручень"
-
 	key[]: "horns"
 	val[]: "Пневматичні сигнали"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Бризковики"
 
-	key[]: "rear_cab"
-	val[]: "Зад кабіни"
-
 	key[]: "sideflares"
 	val[]: "Декоративні Панелі"
 
 	key[]: "sideskrt_bar"
 	val[]: "Планки бічних накладок"
-
-	key[]: "slp_hndl"
-	val[]: "Ручка"
-
-	key[]: "slp_vent"
-	val[]: "Вентиляція"
 
 	key[]: "topflares"
 	val[]: "Ліхтарі Спальника"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Іграшкова бензопила"
-
-	key[]: "chrom_tank"
-	val[]: "Хромований бак" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Алюмінієвий бак" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-образний" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Фрукти"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Фруктовий сік"
 
 	key[]: "cn_grain"
 	val[]: "Зерно "
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 футів, рознесені осі"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 футів, ззаду"
-
 	key[]: "tr_single_45"
 	val[]: "45 футів"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Алюмінієва платформа"
-
-	key[]: "bs_food_tank"
-	val[]: "Харчова цистерна"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Зерновоз"

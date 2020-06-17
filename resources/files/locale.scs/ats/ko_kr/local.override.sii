@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "캐빈 라이트"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "헤드에이크 랙"
 
-	key[]: "hndrail"
-	val[]: "핸드레일"
-
 	key[]: "horns"
 	val[]: "경적"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "머드가드"
 
-	key[]: "rear_cab"
-	val[]: "캐빈 후방"
-
 	key[]: "sideflares"
 	val[]: "캡 판넬"
 
 	key[]: "sideskrt_bar"
 	val[]: "사이드 스커트 바"
-
-	key[]: "slp_hndl"
-	val[]: "핸들러"
-
-	key[]: "slp_vent"
-	val[]: "벤트"
 
 	key[]: "topflares"
 	val[]: "루프 슬리퍼 라이트"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "전기톱 장난감"
-
-	key[]: "chrom_tank"
-	val[]: "크롬 탱크" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "알루미늄 탱크" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-쉐이프" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -253,9 +233,6 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "과일"
 
-	key[]: "cn_fruit_juice"
-	val[]: "과일 주스"
-
 	key[]: "cn_grain"
 	val[]: "곡물"
 
@@ -335,7 +312,7 @@ localization_db : .localization
 	val[]: "스크레이퍼"
 
 	key[]: "cn_stumper"
-	val[]: "스텀퍼"
+	val[]: "근굴기"
 
 	key[]: "cn_transformer"
 	val[]: "변압기"
@@ -412,16 +389,16 @@ localization_db : .localization
 	val[]: "평판 트레일러"
 
 	key[]: "tn_food_tank"
-	val[]: "푸드 탱크 트레일러"
+	val[]: "음식 탱크 트레일러"
 
 	key[]: "tn_frac_tank"
 	val[]: "프락 탱크"
 
 	key[]: "tn_fuel"
-	val[]: "연료 탱크 트레일러"
+	val[]: "기름 탱크 트레일러"
 
 	key[]: "tn_fuel_long"
-	val[]: "연료 탱크 장축 트레일러"
+	val[]: "기름 탱크 장축 트레일러"
 
 	key[]: "tn_gas"
 	val[]: "가스 탱크 트레일러"
@@ -503,7 +480,7 @@ localization_db : .localization
 	val[]: "쇼룸"
 	
 	key[]: "weblink_game"
-	val[]: "American Truck Simulator 홈페이지" #+ weblink description
+	val[]: "American Truck Simulator 웹사이트" #+ weblink description
 
 	key[]: "weblink_facebook"
 	val[]: "American Truck Simulator 페이스북" #+ facebook weblink description
@@ -512,28 +489,28 @@ localization_db : .localization
 #@{
 	
 	key[]: "sys_no_graphics"
-	val[]: "당신의 컴퓨터에서 American Truck Simulator의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)\n문제 해결을 위한 제안입니다:\n\n1. 당신의 컴퓨터에 장착된 그래픽카드가 시스템 최소 요구사양을 충족하는지 확인하십시오.\n2. Microsoft DirectX를 최신 버전으로 업데이트하십시오.\n3. 사용 중인 그래픽카드의 드라이버를 최신 버전으로 업데이트하십시오. 그래픽카드 드라이버가 오래되었을 가능성도 있습니다.\n4. 렌더링 방식을 OpenGL에서 DirectX로 바꾸거나 반대로 바꿔보시기 바랍니다.\n5. '내 문서'의 'American Truck Simulator' 폴더에 있는 게임 구성 파일인 Config.cfg 파일이 손상되었을 가능성이 있으니 삭제하십시오.\n    이 파일은 게임을 다시 시작하면 유효한 기본값이 적용되어 자동으로 생성됩니다."
+	val[]: "American Truck Simulator 가 귀하의 컴퓨터에서 실행할수없습니다.(유효한 그래픽 장치를 찾을 수 없습니다).\n해결방법입니다:\n\n1. 자신 컴퓨터의 그래픽카드가 게임의 최소사양이랑 맞는지 체크해보세요.\n2. 마이크로소프트사의 다이렉트X를 최신버전으로 업데이트해보세요.\n3. 자신의 그래픽카드를 최신버전으로 업데이트해보세요. 만약 존재하지않는다면 그래픽카드가 오래된것입니다.\n4. 랜더링 기법을 OpenGL 에서 다이렉트X나 Vice versa 로 바꿔보세요.\n5. '내문서'에 있는 'American Truck Simulator' 폴더에서 Config.cfg 를 삭제해보세요. 파일이 꼬였을지도 모릅니다.\n 이 파일은 다음번에 게임을 실행할때 새로 만들어집니다."
 	
 	key[]: "sys_no_graphics_simple"
-	val[]: "당신의 컴퓨터에서 American Truck Simulator의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)"
+	val[]: "American Truck Simulator 가 귀하의 컴퓨터에서 실행할 수 없습니다 (유효한 그래픽 장치를 찾을 수 없습니다)."
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "American Truck Simulator가 스팀 클라이언트에 접근할 수 없습니다. 문제 해결을 위한 제안입니다:\n\n1. 스팀 클라이언트가 실행 중인지 확인하십시오.\n2. 스팀 클라이언트의 버전을 업데이트했는지 확인하십시오.\n3. 자동 업데이트가 활성화되어 있고 게임이 최신 버전으로 업데이트되어 있는지 확인합니다."
+	val[]: "American Truck Simulator 가 스팀에 연결할 수 없습니다. 다음과 같이 시도해 보십시오 :\n\n1. 스팀이 실행되고 있는지 확인합니다.\n2. 스팀 버전을 업데이트 했는지 확인합니다.\n3. 자동 업데이트가 활성화되어 있는지 게임이 최신 버전으로 업데이트되어 있는지 확인합니다."
 
 #+ Activation screen
 #@{
 	
 	key[]: "activated"
-	val[]: "성공적으로 인증되었습니다.<br>American Truck Simulator를 구입해 주셔서 감사합니다."
+	val[]: "정품인증이 되었습니다.<br>American Truck Simulator 를 구입해주셔서 감사합니다."
 	
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
 	key[]: "steam_demo"
-	val[]: "American Truck Simulator 무료 평가판이 마음에 드셨다면 <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>에서 정식 버전을 구입해 주시기 바랍니다!" #+ Message shown on the "activation" screen for steam demo only build.
+	val[]: "만약 American Truck Simulator 무료 평가판이 마음에 드셨다면, <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>! 에서 정식버전을 구입해주세요." #+ Message shown on the "activation" screen for steam demo only build.
 #@}
 
 #+ Profile selection.
@@ -684,7 +661,7 @@ localization_db : .localization
 	val[]: "28ft"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28ft, 2액슬"
+	val[]: "28 피트, 2 액슬"
 
 	key[]: "tr_single_32"
 	val[]: "32ft"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40ft, 스프레드"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43ft, 후방"
-
 	key[]: "tr_single_45"
 	val[]: "45ft"
 
@@ -723,10 +697,10 @@ localization_db : .localization
 	val[]: "45ft, 3액슬"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45ft, 3액슬, 싱글"
+	val[]: "45 피트, 3 액슬, 싱글"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45ft, 3액슬, 조향가능"
+	val[]: "45 피트, 3 액슬, 조향가능"
 
 	key[]: "tr_single_45_front"
 	val[]: "45ft, 전방"
@@ -762,16 +736,16 @@ localization_db : .localization
 	val[]: "48ft, 스프레드"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50ft, 3액슬"
+	val[]: "50 피트, 3 액슬"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50ft, 3액슬, 싱글"
+	val[]: "50 피트, 3 액슬, 싱글"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50ft, 3액슬, 조향가능"
+	val[]: "50 피트, 3 액슬, 조향가능"
 
 	key[]: "tr_single_50_spread"
-	val[]: "50ft, 스프레드"
+	val[]: "50 피트, 스프레드"
 
 	key[]: "tr_single_53_3axle"
 	val[]: "53ft, 3액슬"
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "평판 알루미늄"
-
-	key[]: "bs_food_tank"
-	val[]: "푸드 탱크"
 
 	key[]: "bs_grain_hopper"
 	val[]: "곡물 호퍼"

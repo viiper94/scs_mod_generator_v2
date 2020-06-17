@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Luces de cabina"
 
@@ -28,10 +29,10 @@ localization_db : .localization
 	val[]: "Deflector de insectos"
 
 	key[]: "filters"
-	val[]: "Filtros de ar"
+	val[]: "Filtros de aire"
 
 	key[]: "f_banner"
-	val[]: "Bandeirola frontal"
+	val[]: "Pancarta frontal"
 
 	key[]: "flag_f_l"
 	val[]: "Bandeiras frontais"
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Protector traseiro da cabina"
 
-	key[]: "hndrail"
-	val[]: "Varanda"
-
 	key[]: "horns"
 	val[]: "Bucinas"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Gardalamas"
 
-	key[]: "rear_cab"
-	val[]: "Traseira da cabina"
-
 	key[]: "sideflares"
 	val[]: "Paneis de cabina"
 
 	key[]: "sideskrt_bar"
 	val[]: "Barras do faldrón lateral"
-
-	key[]: "slp_hndl"
-	val[]: "Guindastre"
-
-	key[]: "slp_vent"
-	val[]: "Respiradoiro"
 
 	key[]: "topflares"
 	val[]: "Luces do teito do dormitorio"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Motoserra de xoguete"
-
-	key[]: "chrom_tank"
-	val[]: "Tanque cromado" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Tanque de aluminio" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "Forma tipo D" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -150,16 +130,16 @@ localization_db : .localization
 #+ Names of individual skills which can be improved.
 #@{
 	key[]: "adr"
-	val[]: "Mercadoría perigosa"
+	val[]: "Mercancía perigosa"
 
 	key[]: "mechanical"
-	val[]: "Consumo de combustíbel"
+	val[]: "Consumo de combustible"
 #@}
 
 #+ Cargo types.
 #@{
 	key[]: "cargo_type_adr"
-	val[]: "Mercadoría perigosa"
+	val[]: "Mercancía perigosa"
 #@}
 
 #+ Information about individual hazard classes.
@@ -174,7 +154,7 @@ localization_db : .localization
 #+ Information about individual ranks of "Fuel Economy" skill.
 #@{
 	key[]: "skill_mechanical_title"
-	val[]: "Consumo de combustíbel"
+	val[]: "Consumo de combustible"
 
 	key[]: "skill_mechanical_info"
 	val[]: "Aprender varias técnicas de aforro de combustible axudaranche a minimizar o consumo de combustible. Particularmente:"
@@ -215,10 +195,10 @@ localization_db : .localization
 	val[]: "Manteiga"
 
 	key[]: "cn_cable"
-	val[]: "Cabos"
+	val[]: "Cables"
 
 	key[]: "cn_cable_reel"
-	val[]: "Rolos de cabo"
+	val[]: "Bobina de cable"
 
 	key[]: "cn_colors"
 	val[]: "Pintura"
@@ -236,7 +216,7 @@ localization_db : .localization
 	val[]: "Cortinas"
 
 	key[]: "cn_dryfruit"
-	val[]: "Froitos secos"
+	val[]: "Froitas secas"
 
 	key[]: "cn_forwarder"
 	val[]: "Autocargador"
@@ -248,13 +228,10 @@ localization_db : .localization
 	val[]: "Froitas conxeladas"
 
 	key[]: "cn_frozen_vegetable"
-	val[]: "Vexetais conxelados"
+	val[]: "Verduras conxeladas"
 
 	key[]: "cn_fruits"
-	val[]: "Froitas"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Zume de froitas"
+	val[]: "Froita"
 
 	key[]: "cn_grain"
 	val[]: "Gran"
@@ -272,7 +249,7 @@ localization_db : .localization
 	val[]: "Camións Kenworth"
 
 	key[]: "cn_knuckleboom_loader"
-	val[]: "Guindastre articulado"
+	val[]: "Knuckleboom Loader"
 
 	key[]: "cn_lift_truck"
 	val[]: "Carretilla portacontedores"
@@ -302,7 +279,7 @@ localization_db : .localization
 	val[]: "Fresadora"
 
 	key[]: "cn_mobile_crane"
-	val[]: "Guindastre todo terreo"
+	val[]: "Grúa todo terreo"
 
 	key[]: "cn_moor_buoy"
 	val[]: "Boia de amarre"
@@ -329,13 +306,13 @@ localization_db : .localization
 	val[]: "Sal"
 
 	key[]: "cn_scrap_cars"
-	val[]: "Coches sinistrados"
+	val[]: "Coches achatarrados"
 
 	key[]: "cn_scraper"
-	val[]: "Motoachanzadora"
+	val[]: "Mototraílla"
 
 	key[]: "cn_stumper"
-	val[]: "Triturador de tocos"
+	val[]: "Triturador de cepas"
 
 	key[]: "cn_transformer"
 	val[]: "Transformador"
@@ -344,7 +321,7 @@ localization_db : .localization
 	val[]: "Trituradora de moega"
 
 	key[]: "cn_vegetable"
-	val[]: "Vexetais"
+	val[]: "Verduras"
 
 #@}
 
@@ -372,11 +349,11 @@ localization_db : .localization
 
 	#+ Name of the cargo of big air condition complex.
 	key[]: "cn_aircondition"
-	val[]: "Equipo de ar acondicionado"
+	val[]: "Complexo de aire acondicionado"
 
 	#+ Name of the cargo of some construction - need to be properly named after the model is done.
 	key[]: "cn_lattice"
-	val[]: "Estrutura grande"
+	val[]: "Estrutura enorme"
 #@}
 
 #+ Names of individual trailer and trailer chassis types.
@@ -385,7 +362,7 @@ localization_db : .localization
 	val[]: "Remolque cisterna de ácidos"
 
 	key[]: "tn_acid_long"
-	val[]: "Remolque cisterna de ácidos longo"
+	val[]: "Remolque cisterna de ácidos largo"
 
 	key[]: "tn_bottom_dump"
 	val[]: "Remolque de descarga inferior"
@@ -394,13 +371,13 @@ localization_db : .localization
 	val[]: "Remolque de coches"
 
 	key[]: "tn_cement"
-	val[]: "Remolque de cimento a granel"
+	val[]: "Remolque de cemento a granel"
 
 	key[]: "tn_chemical"
 	val[]: "Remolque de químicos"
 
 	key[]: "tn_chemical_long"
-	val[]: "Remolque de químicos longo"
+	val[]: "Remolque de químicos largo"
 
 	key[]: "tn_dry_bulk"
 	val[]: "Remolque de cargas secas a granel"
@@ -418,34 +395,34 @@ localization_db : .localization
 	val[]: "Tanque de fracking"
 
 	key[]: "tn_fuel"
-	val[]: "Remolque de combustíbel"
+	val[]: "Remolque de combustible"
 
 	key[]: "tn_fuel_long"
-	val[]: "Remolque de combustíbel longo"
+	val[]: "Remolque de combustible largo"
 
 	key[]: "tn_gas"
 	val[]: "Remolque de gas"
 
 	key[]: "tn_gas_long"
-	val[]: "Remolque de gas longo"
+	val[]: "Remolque de gas largo"
 
 	key[]: "tn_home_transporter"
 	val[]: "Remolque de vivendas"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "Guindastre articulado"
+	val[]: "Knuckleboom Loader"
 
 	key[]: "tn_log"
 	val[]: "Remolque de troncos"
 
 	key[]: "tn_lowboy"
-	val[]: "Remolque de leito baixo"
+	val[]: "Remolque cama baixa"
 
 	key[]: "tn_lowboy_boat"
-	val[]: "Remolque de leito baixo para barcos"
+	val[]: "Remolque cama baixa para barcos"
 
 	key[]: "tn_magnitude_55l"
-	val[]: "Remolque de leito baixo 55L"
+	val[]: "Remolque cama baixa 55L"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Remolque barreira móbil"
@@ -512,10 +489,10 @@ localization_db : .localization
 #@{
 	
 	key[]: "sys_no_graphics"
-	val[]: "O American Truck Simulator está a ter un problema e non é capaz de amosar gráficos no teu ordenador (non se atopou un dispositivo de gráficos válido).\nPasos recomendados:\n\n1. Comproba que o teu ordenador e tarxeta gráfica cumpren os requisitos mínimos de hardware.\n2. Actualiza o teu ordenador á última versión de Microsoft DirectX.\n3. Baixa e instala os últimos drivers gráficos para a túa tarxeta gráfica dende a web do fabricante - os teus drivers gráficos seica estean obsoletos.\n4. Proba mudando o método de renderizado do OpenGL a DirectX ou viceversa.\n5. Elimina o ficheiro de configuración do xogo 'config.cfg' na túa carpeta 'Documentos' - 'American Truck Simulator'. Podería estar corrupto.\n    Este ficheiro volverase crear de xeito automático con valores por defecto válidos na seguinte carga do xogo."
+	val[]: "American Truck Simulator está tendo un problema e non é capaz de mostrar gráficos no teu ordenador (non se atopou un dispositivo de gráficos válido).\nPasos recomendados:\n\n1. Comproba que o teu ordenador e tarxeta gráfica cumpren os requisitos mínimos de hardware.\n2. Actualiza o teu ordenador á última versión de Microsoft's DirectX.\n3. Descarga e instala os últimos drivers gráficos para a túa tarxeta gráfica dende a web do fabricante - os teus drivers gráficos probablemente estean obsoletos.\n4. Proba cambiando o método de renderizado de OpenGL a DirectX ou viceversa.\n5. Elimina o arquivo de configuración do xogo 'config.cfg' na túa carpeta 'Documentos' - 'American Truck Simulator'. Podería estar corrupto.\n    Este arquivo volverase a crear automaticamente con valores por defecto válidos na seguinte carga do xogo."
 	
 	key[]: "sys_no_graphics_simple"
-	val[]: "O American Truck Simulator está a ter un problema e non é capaz de amosar gráficos no teu ordenador (non se atopou tarxeta gráfica válida)."
+	val[]: "American Truck Simulator está tendo un problema e non é capaz de mostrar gráficos no teu ordenador (non se atopou tarxeta gráfica válida)."
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
@@ -556,13 +533,13 @@ localization_db : .localization
 #+ Trailer body type names (short/preview variant).
 #@{
 	key[]: "bulkfeed"
-	val[]: "Penso a granel"
+	val[]: "Bulk Feed"
 
 	key[]: "container"
 	val[]: "Portacontedores"
 
 	key[]: "curtainside"
-	val[]: "Lona deslizante"
+	val[]: "Lona corrediza"
 
 	key[]: "chipvan"
 	val[]: "Remolque de lascas"
@@ -574,7 +551,7 @@ localization_db : .localization
 	val[]: "Plataforma"
 
 	key[]: "hopper"
-	val[]: "Moega"
+	val[]: "Hopper"
 
 	key[]: "insulated"
 	val[]: "Illado"
@@ -595,13 +572,13 @@ localization_db : .localization
 #+ Trailer cargo based on body type (tooltip usage)
 #@{
 	key[]: "body_cargo_types_bulkfeed"
-	val[]: "Material alimentario a granel"
+	val[]: "Bulk feed material"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Materiais lixeiros a granel"
+	val[]: "Light bulk material"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Gran e materiais a granel"
+	val[]: "Grain & Bulk material"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -613,13 +590,13 @@ localization_db : .localization
 	val[]: "Dobre"
 
 	key[]: "bdouble"
-	val[]: "B-Duplo"
+	val[]: "B-dobre"
 
 	key[]: "rmdouble"
-	val[]: "Duplo R.M."
+	val[]: "Dobre M.R."
 
 	key[]: "tpdouble"
-	val[]: "Duplo T.P."
+	val[]: "Dobre T.P."
 
 	key[]: "triple"
 	val[]: "Triplo"
@@ -632,16 +609,16 @@ localization_db : .localization
 	val[]: "Individual"
 
 	key[]: "chain_staa_double"
-	val[]: "Duplo STAA"
+	val[]: "Dobre STAA"
 
 	key[]: "chain_b_double"
-	val[]: "B-Duplo"
+	val[]: "B-dobre"
 
 	key[]: "chain_rm_double"
-	val[]: "Duplo das Montañas Rochosas"
+	val[]: "Dobre das Montañas Rochosas"
 
 	key[]: "chain_tp_double"
-	val[]: "Duplo Turnpike"
+	val[]: "Dobre Turnpike"
 
 	key[]: "chain_triple"
 	val[]: "Triplo"
@@ -651,61 +628,61 @@ localization_db : .localization
 
 #@{
 	key[]: "tr_double_staa"
-	val[]: "Duplo STAA"
+	val[]: "Dobre STAA"
 
 	key[]: "tr_double_staa_pup"
-	val[]: "Duplo STAA Pup"
+	val[]: "STAA Double Pup"
 
 	key[]: "tr_double_staa_pup_4axle"
-	val[]: "Duplo STAA Pup, 4 eixos"
+	val[]: "STAA Double Pup, 4 Axles"
 
 	key[]: "tr_b_double"
-	val[]: "B-Duplo"
+	val[]: "B-dobre"
 
 	key[]: "tr_b_double_5axle"
-	val[]: "B-Duplo, 5 eixos"
+	val[]: "B-dobre, 5 eixes"
 
 	key[]: "tr_b_double_6axle"
-	val[]: "B-Duplo, 6 eixos"
+	val[]: "B-dobre, 6 eixes"
 
 	key[]: "tr_rm_double"
-	val[]: "Duplo das Montañas Rochosas"
+	val[]: "Dobre das Montañas Rochosas"
 
 	key[]: "tr_rm_double_pup"
-	val[]: "Duplo Rocky Mountain Pup"
+	val[]: "Rocky Mountain Double Pup"
 
 	key[]: "tr_tp_double"
-	val[]: "Duplo Turnpike"
+	val[]: "Dobre Turnpike"
 
 	key[]: "tr_tp_double_6axle"
-	val[]: "Duplo Turnpike, 6 eixos"
+	val[]: "Dobre Turnpike, 6 eixes"
 
 	key[]: "tr_single_28"
 	val[]: "28 pés"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28 pés, 2 eixos"
+	val[]: "28 pés, 2 eixes"
 
 	key[]: "tr_single_32"
 	val[]: "32 pés"
 
 	key[]: "tr_single_32_2axle"
-	val[]: "32 pés, 2 eixos"
+	val[]: "32 pés, 2 eixes"
 
 	key[]: "tr_single_32_3axle"
-	val[]: "32 pés, 3 eixos"
+	val[]: "32 pés, 3 eixes"
 
 	key[]: "tr_single_32_ext"
-	val[]: "32 pés, extensíbel"
+	val[]: "32 pés, extensible"
 
 	key[]: "tr_single_40"
 	val[]: "40 pés"
 
 	key[]: "tr_single_40_3axle"
-	val[]: "40 pés, 3 eixos"
+	val[]: "40 pés, 3 eixes"
 
 	key[]: "tr_single_40_ext"
-	val[]: "40 pés, extensíbel"
+	val[]: "40 pés, extensible"
 
 	key[]: "tr_single_40_rear"
 	val[]: "40 pés, posterior"
@@ -713,20 +690,17 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 pés, separados"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 pés, posterior"
-
 	key[]: "tr_single_45"
 	val[]: "45 pés"
 
 	key[]: "tr_single_45_3axle"
-	val[]: "45 pés, 3 eixos"
+	val[]: "45 pés, 3 eixes"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 pés, 3 eixos, individual"
+	val[]: "45 pés, 3 eixes, simple"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45 pés, 3 eixos, direccional"
+	val[]: "45 pés, 3 eixes, direccional"
 
 	key[]: "tr_single_45_front"
 	val[]: "45 pés, frontal"
@@ -744,7 +718,7 @@ localization_db : .localization
 	val[]: "45 pés, separados"
 
 	key[]: "tr_single_48_3axle"
-	val[]: "48 pés, 3 eixos"
+	val[]: "48 pés, 3 eixes"
 
 	key[]: "tr_single_48_front"
 	val[]: "48 pés, frontal"
@@ -762,28 +736,28 @@ localization_db : .localization
 	val[]: "48 pés, separados"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50 pés, 3 eixos"
+	val[]: "50 pés, 3 eixes"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 pés, 3 eixos, individual"
+	val[]: "50 pés, 3 eixes, simple"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50 pés, 3 eixos, direccional"
+	val[]: "50 pés, 3 eixes, direccional"
 
 	key[]: "tr_single_50_spread"
 	val[]: "50 pés, separados"
 
 	key[]: "tr_single_53_3axle"
-	val[]: "53 pés, 3 eixos"
+	val[]: "53 pés, 3 eixes"
 
 	key[]: "tr_single_53_4axle"
-	val[]: "53 pés, 4 eixos"
+	val[]: "53 pés, 4 eixes"
 
 	key[]: "tr_single_53_4axle_spread"
-	val[]: "53 pés, 4 eixos, separados"
+	val[]: "53 pés, 4 eixes, separados"
 
 	key[]: "tr_single_53_4axle_steer"
-	val[]: "53 pés, 4 eixos, direccional"
+	val[]: "53 pés, 4 eixes, direccional"
 
 	key[]: "tr_single_53_front"
 	val[]: "53 pés, frontal"
@@ -804,13 +778,13 @@ localization_db : .localization
 	val[]: "Triplo"
 
 	key[]: "tr_triple_pup"
-	val[]: "Triplo Pup"
+	val[]: "Triple Pup"
 
 	key[]: "tr_conv_dolly"
-	val[]: "Conversor Dolly"	#+ Component chassis name (upgrade screen only)
+	val[]: "Converter Dolly"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tr_conv_dolly_2"
-	val[]: "Conversor Dolly, 2 eixos"	#+ Component chassis name (upgrade screen only)
+	val[]: "Converter Dolly, 2 Axles"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tr_dolly"
 	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
@@ -823,7 +797,7 @@ localization_db : .localization
 	val[]: "Remolque con ventre"
 
 	key[]: "bs_bulk_feed"
-	val[]: "Penso a granel"
+	val[]: "Bulk Feed"
 
 	key[]: "bs_chipvan"
 	val[]: "Remolque de lascas"
@@ -846,14 +820,11 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Plataforma de aluminio"
 
-	key[]: "bs_food_tank"
-	val[]: "Cisterna alimentaria"
-
 	key[]: "bs_grain_hopper"
-	val[]: "Moega de gran"
+	val[]: "Grain Hopper"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Moega de gran con cinta"
+	val[]: "Grain Hopper Belt"
 
 	key[]: "bs_insulated"
 	val[]: "Illado"

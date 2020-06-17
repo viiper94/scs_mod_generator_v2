@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Осветление на кабината"
 
@@ -57,14 +58,11 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Защитна решетка"
 
-	key[]: "hndrail"
-	val[]: "Hand Rail"
-
 	key[]: "horns"
 	val[]: "Клаксони"
 
 	key[]: "hood"
-	val[]: "Капак"
+	val[]: "Hood"
 
 	key[]: "lghfender"
 	val[]: "Лайсни за калник"
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Калници"
 
-	key[]: "rear_cab"
-	val[]: "Cabin Rear"
-
 	key[]: "sideflares"
 	val[]: "Панели на кабината"
 
 	key[]: "sideskrt_bar"
 	val[]: "Броня на странични прагове"
-
-	key[]: "slp_hndl"
-	val[]: "Door Handles"
-
-	key[]: "slp_vent"
-	val[]: "Vent"
 
 	key[]: "topflares"
 	val[]: "Осветление на спалното помещение"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Касапинът"
-
-	key[]: "chrom_tank"
-	val[]: "Chrome Tank" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aluminium Tank" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-Shape" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -120,17 +100,17 @@ localization_db : .localization
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
 	key[]: "music_player_hint"
-	val[]: "Поставете своите песни в папка <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>във вашата <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@> папка и ще ги видите тук."
+	val[]: "Поставете Вашите песни в папка <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>в 'My <color value=@@clr_sel@@>Documents' <color value=@@clr_txt@@>и ще ги видите тук."
 
 #+ Tooltip shown when hovering over the radio_stream button.
 
 	key[]: "radio_hint"
-	val[]: "Променете файла <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>, намиращ се в папка <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>в <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>, ако искате да слушате любимото си, докато шофирате!"
+	val[]: "Променете файла<color value=@@clr_sel@@> live_streams.sii <color value=@@clr_txt@@>, намиращ се в папка <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>в 'My <color value=@@clr_sel@@>Documents' <color value=@@clr_txt@@>, ако искате да слушате Вашето любимото радио в играта!"
 	
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
-	val[]: "Моля, прочетете файла <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>, намиращ се в папка <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>в <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>, за да разберете как да добавите своя музика или радио поток."
+	val[]: "Моля, прочетете файла <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>в папка <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>в 'My <color value=@@clr_sel@@>Documents' <color value=@@clr_txt@@>, за това как да добавите своя музика или радио поток."
 #@}
 
 #+ Messages shown as part of the tutorial.
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Плодове"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Fruit Juice"
 
 	key[]: "cn_grain"
 	val[]: "Зърно"
@@ -433,7 +410,7 @@ localization_db : .localization
 	val[]: "Платформа за превоз на къщи"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "Мобилен товарач на трупи"
+	val[]: "Кран-товарач"
 
 	key[]: "tn_log"
 	val[]: "Дървовоз"
@@ -533,7 +510,7 @@ localization_db : .localization
 	val[]: "American Truck Simulator"
 
 	key[]: "steam_demo"
-	val[]: "Ако харесвате тази демонстрация на American Truck Simulator, моля, закупете пълната версия на играта в <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+	val[]: "Ако харесвате тази демонстрация на American Truck Simulator, моля, закупете пълната версия на играта от <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
 #@}
 
 #+ Profile selection.
@@ -565,7 +542,7 @@ localization_db : .localization
 	val[]: "Подвижно платнище"
 
 	key[]: "chipvan"
-	val[]: "Самосвално ремарке"
+	val[]: "Насипно ремарке"
 
 	key[]: "dryvan"
 	val[]: "Сухотоварно ремарке"
@@ -574,7 +551,7 @@ localization_db : .localization
 	val[]: "Платформа"
 
 	key[]: "hopper"
-	val[]: "Хопър"
+	val[]: "Самосвал"
 
 	key[]: "insulated"
 	val[]: "Изотермично"
@@ -595,7 +572,7 @@ localization_db : .localization
 #+ Trailer cargo based on body type (tooltip usage)
 #@{
 	key[]: "body_cargo_types_bulkfeed"
-	val[]: "Насипен хранителен материал"
+	val[]: "Насипен фураж"
 
 	key[]: "body_cargo_types_chipvan"
 	val[]: "Лек насипен материал"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 фута, разделени"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 feet, Rear"
-
 	key[]: "tr_single_45"
 	val[]: "45 фута"
 
@@ -820,13 +794,13 @@ localization_db : .localization
 
 #@{
 	key[]: "bs_bellyvan"
-	val[]: "Нископлатформен самосвал"
+	val[]: "Самосвално ремарке"
 
 	key[]: "bs_bulk_feed"
 	val[]: "Фуражовоз"
 
 	key[]: "bs_chipvan"
-	val[]: "Самосвално ремарке"
+	val[]: "Ремарке за дървени стърготини"
 
 	key[]: "bs_chipvan_mfloor"
 	val[]: "Самосвално ремарке, подвижен под"
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Алуминиева платформа"
-
-	key[]: "bs_food_tank"
-	val[]: "Food Tank"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Зърновоз"

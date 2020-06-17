@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Luci Cabina"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Protezioni cabina"
 
-	key[]: "hndrail"
-	val[]: "Maniglia di Supporto"
-
 	key[]: "horns"
 	val[]: "Trombe"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Parafanghi"
 
-	key[]: "rear_cab"
-	val[]: "Cabina Posteriore"
-
 	key[]: "sideflares"
 	val[]: "Pannello sotto porta"
 
 	key[]: "sideskrt_bar"
 	val[]: "Minigonne"
-
-	key[]: "slp_hndl"
-	val[]: "Maniglia"
-
-	key[]: "slp_vent"
-	val[]: "Ventilatore"
 
 	key[]: "topflares"
 	val[]: "Luci Cuccetta"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Motosega giocattolo"
-
-	key[]: "chrom_tank"
-	val[]: "Serbatoio cromato" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Tanque de Alumínio" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "Forma D" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -253,9 +233,6 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "Frutta"
 
-	key[]: "cn_fruit_juice"
-	val[]: "Succo di Frutta"
-
 	key[]: "cn_grain"
 	val[]: "Grano"
 
@@ -311,7 +288,7 @@ localization_db : .localization
 	val[]: "Malta"
 
 	key[]: "cn_mulcher"
-	val[]: "Trinciatrice"
+	val[]: "Pacciamatura"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Cibo per animali in pellet"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 piedi, separato"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 piedi, dietro"
-
 	key[]: "tr_single_45"
 	val[]: "45 piedi"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Alluminio piano"
-
-	key[]: "bs_food_tank"
-	val[]: "Cisterna alimentare"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Tramoggia del grano"

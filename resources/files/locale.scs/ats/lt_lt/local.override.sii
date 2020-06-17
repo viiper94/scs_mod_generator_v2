@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Kabinos šviesos"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Galinė kabinos apsauga"
 
-	key[]: "hndrail"
-	val[]: "Turėklas"
-
 	key[]: "horns"
 	val[]: "Trimitai"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Purvasargiai"
 
-	key[]: "rear_cab"
-	val[]: "Kabinos galas"
-
 	key[]: "sideflares"
 	val[]: "Kabinos panelės"
 
 	key[]: "sideskrt_bar"
 	val[]: "Šonų apsaugų juostos"
-
-	key[]: "slp_hndl"
-	val[]: "Door Handles"
-
-	key[]: "slp_vent"
-	val[]: "Orlaidė"
 
 	key[]: "topflares"
 	val[]: "Apšvietimas ant stogo"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Žaislinis pjūklas"
-
-	key[]: "chrom_tank"
-	val[]: "Chromuotas bakas" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aliuminio cisterna" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D formos" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Vaisiai"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Vaisių sultys"
 
 	key[]: "cn_grain"
 	val[]: "Grūdai"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 pėdų, plačiai"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 pėdos, galas"
-
 	key[]: "tr_single_45"
 	val[]: "45 pėdos"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Platforma aliuminis"
-
-	key[]: "bs_food_tank"
-	val[]: "Maisto cisterna"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Grūdų priekaba"

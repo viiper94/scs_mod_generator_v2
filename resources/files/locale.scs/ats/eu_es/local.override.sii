@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Kabinaren argiak"
 
@@ -55,10 +56,7 @@ localization_db : .localization
 	val[]: "Parrila"
 
 	key[]: "headache_r"
-	val[]: "Kabinaren atzeko babesa"
-
-	key[]: "hndrail"
-	val[]: "Eskudela"
+	val[]: "Headache Racks"
 
 	key[]: "horns"
 	val[]: "Turutak"
@@ -70,25 +68,16 @@ localization_db : .localization
 	val[]: "Lohi-babesaren estalkiak"
 
 	key[]: "mudflaps"
-	val[]: "Lohi-babesak"
+	val[]: "Lohi-Babesak"
 
 	key[]: "mudguard"
 	val[]: "Lohi-babesak"
 
-	key[]: "rear_cab"
-	val[]: "Kabinaren atzealdea"
-
 	key[]: "sideflares"
-	val[]: "Kabinaren panelak"
+	val[]: "Kabina Panelak"
 
 	key[]: "sideskrt_bar"
-	val[]: "Albo-hegalaren barrak"
-
-	key[]: "slp_hndl"
-	val[]: "Eskulekua"
-
-	key[]: "slp_vent"
-	val[]: "Haizebidea"
+	val[]: "Sideskirt Bars"
 
 	key[]: "topflares"
 	val[]: "Sleeper Argiak"
@@ -97,16 +86,7 @@ localization_db : .localization
 	val[]: "Turbo aleroia"
 
 	key[]: "chainsaw_toy"
-	val[]: "Jostailuko motozerra"
-
-	key[]: "chrom_tank"
-	val[]: "Depositu kromatua" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aluminiozko depositua" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-itxurakoa" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "Chainsaw Toy"
 
 #@}
 
@@ -120,17 +100,17 @@ localization_db : .localization
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
 	key[]: "music_player_hint"
-	val[]: "Jarri itzazu zure abestiak <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>karpetan zure <color value=@@clr_sel@@>Dokumentuetan <color value=@@clr_txt@@>eta hemen ikusiko dituzu."
+	val[]: "Jarri itzazu zure abestiak <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>karpetan zure<color value=@@clr_sel@@>Documentuetan <color value=@@clr_txt@@>eta hemen ikusiko dituzu."
 
 #+ Tooltip shown when hovering over the radio_stream button.
 
 	key[]: "radio_hint"
-	val[]: "Edita ezazu <color value=@@clr_sel@@>live_streams.sii<color value=@@clr_txt@@>, <color value=@@clr_sel@@>American Truck Simulator<color value=@@clr_txt@@> karpetan, zure <color value=@@clr_sel@@>Dokumentuetan<color value=@@clr_txt@@> eta entzun zure internet-irrati gustukuenak jokoan bertan!"
+	val[]: "Edita ezazu <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>, <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>karpetan, zure<color value=@@clr_sel@@>Documentuetan <color value=@@clr_txt@@>eta entzun zure internet irrati gustukuenak jokoan bertan!"
 	
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
-	val[]: "Mesedez, irakurri <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>helbidean, <color value=@@clr_sel@@>Dokumentuak <color value=@@clr_txt@@>karpetan, zure irrati 'stream'-ak gehitzeko."
+	val[]: "Mesedez, irakurri <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>helbidean,  <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>karpetan, zure irrati 'stream'-ak gehitzeko."
 #@}
 
 #+ Messages shown as part of the tutorial.
@@ -139,7 +119,7 @@ localization_db : .localization
 #@{
 
 	key[]: "intro_1"
-	val[]: "Ongi etorri American Truck Simulator-ra!"
+	val[]: "Ongi Etorri American Truck Simulator-ra!"
 #@}
 
 #+ Skills screen
@@ -153,7 +133,7 @@ localization_db : .localization
 	val[]: "Karga arriskutsua"
 
 	key[]: "mechanical"
-	val[]: "Erregai-kontsumoa"
+	val[]: "Erregai Ekonomia"
 #@}
 
 #+ Cargo types.
@@ -174,7 +154,7 @@ localization_db : .localization
 #+ Information about individual ranks of "Fuel Economy" skill.
 #@{
 	key[]: "skill_mechanical_title"
-	val[]: "Erregai-kontsumoa"
+	val[]: "Erregai Ekonomia"
 
 	key[]: "skill_mechanical_info"
 	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai kontsumoa gutxituko du. Bereziki:"
@@ -239,7 +219,7 @@ localization_db : .localization
 	val[]: "Fruitu lehorrak"
 
 	key[]: "cn_forwarder"
-	val[]: "Enbor-garraiatzailea"
+	val[]: "Forwarder"
 
 	key[]: "cn_frac_tank"
 	val[]: "Fracking-depositua"
@@ -253,11 +233,8 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "Fruta"
 
-	key[]: "cn_fruit_juice"
-	val[]: "Fruta-zukua"
-
 	key[]: "cn_grain"
-	val[]: "Alea"
+	val[]: "Alekia"
 
 	key[]: "cn_harvester"
 	val[]: "Uzta-makina"
@@ -275,19 +252,19 @@ localization_db : .localization
 	val[]: "Knuckleboom Loader"
 
 	key[]: "cn_lift_truck"
-	val[]: "Kamioi jasotzailea"
+	val[]: "Lift Truck"
 
 	key[]: "cn_lift_truck_chassis"
-	val[]: "Kamioi jasotzailearen txasisa"
+	val[]: "Lift Truck Chassis"
 
 	key[]: "cn_log_harvester"
-	val[]: "Enbor-prozesadorea"
+	val[]: "Log Harvester"
 
 	key[]: "cn_log_loader"
-	val[]: "Enbor-kargatzailea"
+	val[]: "Log Loader"
 
 	key[]: "cn_log_stacker"
-	val[]: "Enbor-pilatzailea"
+	val[]: "Log Stacker"
 
 	key[]: "cn_lye"
 	val[]: "Lixiba"
@@ -302,7 +279,7 @@ localization_db : .localization
 	val[]: "Fresatzeko makina"
 
 	key[]: "cn_mobile_crane"
-	val[]: "Lur orotako garabia"
+	val[]: "All Terrain Crane"
 
 	key[]: "cn_moor_buoy"
 	val[]: "Ilabea"
@@ -311,10 +288,10 @@ localization_db : .localization
 	val[]: "Morteroa"
 
 	key[]: "cn_mulcher"
-	val[]: "Eskokatzeko makina"
+	val[]: "Mulcher"
 
 	key[]: "cn_pelleted_animal_food"
-	val[]: "Animalientzako janari pikortatua"
+	val[]: "Pelleted Animal Food"
 
 	key[]: "cn_plows"
 	val[]: "Goldeak"
@@ -332,16 +309,16 @@ localization_db : .localization
 	val[]: "Desegindako autoak"
 
 	key[]: "cn_scraper"
-	val[]: "Karrakailua"
+	val[]: "Scraper"
 
 	key[]: "cn_stumper"
-	val[]: "Epaitondo-birringailua"
+	val[]: "Stumper"
 
 	key[]: "cn_transformer"
 	val[]: "Transformadorea"
 
 	key[]: "cn_tub_grinder"
-	val[]: "Kalapatxa-birringailua"
+	val[]: "Tub Grinder"
 
 	key[]: "cn_vegetable"
 	val[]: "Barazkiak"
@@ -356,7 +333,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of transport helicopter helicopter.
 	key[]: "cn_ovs_helicopter"
-	val[]: "Garraio-helikopteroa"
+	val[]: "Transport Helicopter"
 
 	#+ Name of the cargo of large reservoir tank transported on its side.
 	key[]: "cn_ovs_tank"
@@ -364,7 +341,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of hull part for large dozers.
 	key[]: "cn_mutt_hull"
-	val[]: "Dumperraren kutxa"
+	val[]: "Haul Truck Hull"
 
 	#+ Name of the cargo of large dozer.
 	key[]: "cn_mutt"
@@ -376,7 +353,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of some construction - need to be properly named after the model is done.
 	key[]: "cn_lattice"
-	val[]: "Egitura ikaragarria"
+	val[]: "Huge Construction"
 #@}
 
 #+ Names of individual trailer and trailer chassis types.
@@ -394,7 +371,7 @@ localization_db : .localization
 	val[]: "Auto-garraiatzailea"
 
 	key[]: "tn_cement"
-	val[]: "Zementu soltean trailerra"
+	val[]: "Zementu Trailerra"
 
 	key[]: "tn_chemical"
 	val[]: "Depositu Kimikoen Trailerra"
@@ -403,7 +380,7 @@ localization_db : .localization
 	val[]: "Depositu Kimikoen Trailer Luzea"
 
 	key[]: "tn_dry_bulk"
-	val[]: "Lehorreko kargak soltean trailerra"
+	val[]: "Dry Bulk Trailer"
 
 	key[]: "tn_dump"
 	val[]: "Dumper Trailerra"
@@ -439,19 +416,19 @@ localization_db : .localization
 	val[]: "Enbor-trailerra"
 
 	key[]: "tn_lowboy"
-	val[]: "Behe-zoruko trailerra"
+	val[]: "Lowboy Trailerra"
 
 	key[]: "tn_lowboy_boat"
 	val[]: "Itsasontzi-garraiatzailea"
 
 	key[]: "tn_magnitude_55l"
-	val[]: "Behe-zoruko 55L trailerra"
+	val[]: "Lowboy 55L Trailer"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Hesi mugikor trailerra"
 
 	key[]: "tn_tub_grinder"
-	val[]: "Kalapatxa-birringailua"
+	val[]: "Tub Grinder"
 
 #@}
 
@@ -485,7 +462,7 @@ localization_db : .localization
 #@{
 	
 	key[]: "lvl_name2"
-	val[]: "Zamaberea"
+	val[]: "Ohola Astoa"
 	
 	key[]: "lvl_name3"
 	val[]: "Enpresaburua"
@@ -494,7 +471,7 @@ localization_db : .localization
 	val[]: "Profesionala"
 	
 	key[]: "lvl_name6"
-	val[]: "18 trebetasun-gurpil"
+	val[]: "18 Wheels of Skill"
 #@}
 	
 #+ Map legend
@@ -556,7 +533,7 @@ localization_db : .localization
 #+ Trailer body type names (short/preview variant).
 #@{
 	key[]: "bulkfeed"
-	val[]: "Pentsua soltean"
+	val[]: "Bulk Feed"
 
 	key[]: "container"
 	val[]: "Kontainer-garraiatzailea"
@@ -565,16 +542,16 @@ localization_db : .localization
 	val[]: "Irristailu-olana"
 
 	key[]: "chipvan"
-	val[]: "Txirbil-trailerra"
+	val[]: "Chip Van"
 
 	key[]: "dryvan"
-	val[]: "Karga lehorretarako furgoia"
+	val[]: "Dry Van"
 
 	key[]: "flatbed"
 	val[]: "Plataforma"
 
 	key[]: "hopper"
-	val[]: "Kalapatxa"
+	val[]: "Hopper"
 
 	key[]: "insulated"
 	val[]: "Isolatuta"
@@ -589,19 +566,19 @@ localization_db : .localization
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "bulk"
-	val[]: "Soltean"
+	val[]: "Bulk"
 #@}
 
 #+ Trailer cargo based on body type (tooltip usage)
 #@{
 	key[]: "body_cargo_types_bulkfeed"
-	val[]: "Pentsua soltean"
+	val[]: "Bulk feed material"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Material arinak soltean"
+	val[]: "Light bulk material"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Alea eta materialak soltean"
+	val[]: "Grain & Bulk material"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 oin, bereiziak"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 oin, atzean"
-
 	key[]: "tr_single_45"
 	val[]: "45 oin"
 
@@ -723,7 +697,7 @@ localization_db : .localization
 	val[]: "45 oin, 3 ardatz"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 oin, 3 ardatz, banakoa"
+	val[]: "45 feet, 3 Axles, Single"
 
 	key[]: "tr_single_45_3axle_steer"
 	val[]: "45 oin, 3 ardatz, direkziozkoa"
@@ -765,7 +739,7 @@ localization_db : .localization
 	val[]: "50 oin, 3 ardatz"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 oin, 3 ardatz, banakoa"
+	val[]: "50 feet, 3 Axles, Single"
 
 	key[]: "tr_single_50_3axle_steer"
 	val[]: "50 oin, 3 ardatz, direkziozkoa"
@@ -820,16 +794,16 @@ localization_db : .localization
 
 #@{
 	key[]: "bs_bellyvan"
-	val[]: "Sabeldun trailerra"
+	val[]: "Belly Van"
 
 	key[]: "bs_bulk_feed"
-	val[]: "Pentsua soltean"
+	val[]: "Bulk Feed"
 
 	key[]: "bs_chipvan"
-	val[]: "Txirbil-trailerra"
+	val[]: "Chip Van"
 
 	key[]: "bs_chipvan_mfloor"
-	val[]: "Txirbil-trailerra, zoru mugikorra"
+	val[]: "Chip Van, Moving Floor"
 
 	key[]: "bs_container"
 	val[]: "Kontainer-garraiatzailea"
@@ -838,7 +812,7 @@ localization_db : .localization
 	val[]: "Irristailu-olana"
 
 	key[]: "bs_dryvan"
-	val[]: "Karga lehorretarako furgoia"
+	val[]: "Dry Van"
 
 	key[]: "bs_flatbed"
 	val[]: "Plataforma"
@@ -846,14 +820,11 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Aluminiozko plataforma"
 
-	key[]: "bs_food_tank"
-	val[]: "Elikagai-zisterna"
-
 	key[]: "bs_grain_hopper"
-	val[]: "Aleako kalapatxa"
+	val[]: "Grain Hopper"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Aleako kalapatxa zintarekin"
+	val[]: "Grain Hopper Belt"
 
 	key[]: "bs_insulated"
 	val[]: "Isolatuta"
@@ -923,10 +894,10 @@ localization_db : .localization
 	val[]: "Ate kromatua"
 
 	key[]: "rollup_door"
-	val[]: "Ate bilgarria"
+	val[]: "Roll Up Door"
 
 	key[]: "rollup_door_lift_gate"
-	val[]: "Ate bilgarria, plataforma jasotzailea"
+	val[]: "Roll Up Door, Lift Gate"
 
 	key[]: "standard_door"
 	val[]: "Ate estandarra"
@@ -1139,7 +1110,7 @@ localization_db : .localization
 	val[]: "Page"
 
 	key[]: "pajarito_rest_area"
-	val[]: "Pajarito atsedenlekua"
+	val[]: "Pajarito Rest Area"
 
 	key[]: "pedro_travel_center"
 	val[]: "Pedro Travel Center"

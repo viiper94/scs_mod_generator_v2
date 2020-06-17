@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,8 +18,9 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
-	val[]: "Førerhus lys"
+	val[]: "Kabinelys"
 
 	key[]: "cabdefl"
 	val[]: "Kabine-deflektor"
@@ -34,10 +35,10 @@ localization_db : .localization
 	val[]: "Skilt Front"
 
 	key[]: "flag_f_l"
-	val[]: "Venstre Frontflag"
+	val[]: "Frontflag venstre"
 
 	key[]: "flag_f_r"
-	val[]: "Højre frontflag"
+	val[]: "Frontflag højre"
 
 	key[]: "flag_r_l"
 	val[]: "Advarselsskilte Bag"
@@ -46,19 +47,16 @@ localization_db : .localization
 	val[]: "Advarselsskilte Bag"
 
 	key[]: "fl_mirror"
-	val[]: "Venstre Frontspejl"
+	val[]: "Frontspejle venstre"
 
 	key[]: "fr_mirror"
-	val[]: "Højre Frontspejl"
+	val[]: "Frontspejle højre"
 
 	key[]: "grill"
 	val[]: "Kølergrill"
 
 	key[]: "headache_r"
 	val[]: "Beskyttelsesvæg"
-
-	key[]: "hndrail"
-	val[]: "Håndtagsbøjle"
 
 	key[]: "horns"
 	val[]: "Horn"
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Skærme"
 
-	key[]: "rear_cab"
-	val[]: "Kabine Bagpå"
-
 	key[]: "sideflares"
 	val[]: "Førerhuspaneler"
 
 	key[]: "sideskrt_bar"
 	val[]: "Sideskørt-stænger"
-
-	key[]: "slp_hndl"
-	val[]: "Sidehåndtag"
-
-	key[]: "slp_vent"
-	val[]: "Aftræk"
 
 	key[]: "topflares"
 	val[]: "Taglys"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Motorsav"
-
-	key[]: "chrom_tank"
-	val[]: "Krom Tank" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aluminiumtank" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-Form" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Frugt"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Frugtjuice"
 
 	key[]: "cn_grain"
 	val[]: "Korn"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "12 m, mellemrum"
 
-	key[]: "tr_single_43_rear"
-	val[]: "13 meter, bag"
-
 	key[]: "tr_single_45"
 	val[]: "14 m"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Flatbed aluminium"
-
-	key[]: "bs_food_tank"
-	val[]: "Fødevaretank"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Kornhopper"

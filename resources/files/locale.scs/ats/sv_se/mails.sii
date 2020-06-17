@@ -10,7 +10,7 @@ SiiNunit
 	mail_text: mailtext.test1 {
 		from: "System" #+ Message sender
 		subject: "Testmeddelande" #+ Message subject
-		body: "Hej!<br><br>Detta är ett meddelande från en kollega och administratör ;-)<br><br>Hej då" #+ Message body
+		body: "Hej!<br><br>Detta är ett meddelande från en kollege administratör ;-)<br><br>Hej då" #+ Message body
 	}
 
 /**
@@ -20,55 +20,55 @@ SiiNunit
 	mail_text: mailtext.bank_start {
 		from: "Bank" #+ Message sender
 		subject: "I behov av pengar? Vi kan hjälpa dig!" #+ Message subject
-		body: "Bästa herr/fru,<br><br>Vi tänkte att du säkert ville känna till att vi erbjuder fördelaktiga lån till nya företag. Behöver du pengar för att få föreaget på fötter? Vi finns här för att hjälpa till! Vänligen <link url=screen.bank color=@@clr_link@@>besök ditt lokala bankkontor</link> för mer information.<br><br>Vänliga hälsningar,<br>Försäljningchefen<br>Bank" #+ Message body
+		body: "Käraste kund,<br><br>Vi tänkte att du ville veta om våra fördelaktiga lån för nya företag. Behöver du finanser för att få igång ditt företag? Vi finns för att hjälpa till! Vänligen <link url=screen.bank color=@@clr_link@@>besök ditt lokala bankkontor</link> för mer information.<br><br>Vänliga hälsningar,<br>Försäljare<br>Bank" #+ Message body
 	}
 
 	mail_text: mailtext.bank_credit {
 		from: "Bank" #+ Message sender
 		subject: "Vi kan hjälpa dig att växa" #+ Message subject
-		body: "Bästa herr/fru,<br><br>Vi har noterat att ni har en stadig inkomst, och vi skulle vilja erbjuda dig att utveckla din potential ytterligare. Din kredit har höjts till $MONEY$. Du är välkommen att använda den tillgängliga summan när du vill på ditt <link url=screen.bank color=@@clr_link@@>lokala bankkontor</link>.<br><br>Vänliga hälsningar,<br>Försäljningschefen<br>Banken" #+ Message body
+		body: "Bäste/bästa förare,<br><br>Vi kunde ej undgå att märka att Ni har en stadig inkomst och Vi önskar därför hjälpa Er att vidareutveckla Er potential.  Din kredit har höjts till $MONEY$.  Tveka ej att hämta ut upp till denna summa när som helst på ditt  <link url=screen.bank color=@@clr_link@@>lokala bankkontor</link>.<br><br>Högaktningsvärt,<br>Försäljningschefen<br>Banken" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debt0 {
 		from: "Bank" #+ Message sender
 		subject: "Ditt konto är övertrasserat" #+ Message subject
-		body: "Kära kund,<br><br>Du tog ut mer pengar från ditt konto än vad som fanns tillgängligt. Vi har gett dig en kortsiktigt kredit i några dagar, utan kostnad, så att du kan lösa situationen. Vänligen betala tillbaka din kredit snarast möjligt.<br><br>Vänliga hälsningar,<br>Din handläggare<br>Banken" #+ Message body
+		body: "Värderade kund,<br><br>du tog ut mer pengar från ditt konto än vad som fanns tillgängligt.  Vi ger dig en kortsiktigt kredit i några dagar, helt gratis, så att du kan finna en lösning på denna situation.  Var god betala tillbaka snarast möjligt för att återställa din kontobalans.<br><br>Varma hälsningar,<br>Din handläggare<br>Banken" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debtx {
 		from: "Bank" #+ Message sender
-		subject: "Du har en oreglerad övertrassering!" #+ Message subject
-		body: "Kära kund,<br><br>Du har ett negativt banksaldo! Vänligen betala av din skuld inom de kommande $DAYS$, annars tvingas vi utmäta din egendom.<br><br>Med vänliga hälsningar,<br>Din kontohandläggare<br>Bank" #+ Message body
+		subject: "Du har en ouppklarad övertrassering!" #+ Message subject
+		body: "Kära kund,<br><br>ditt banksaldo är negativt! Var god betala av din skuld inom de följande $DAYS$, annars tvingas vi utmäta din egendom.<br><br>Med vänliga hälsningar,<br>Din kontohandläggare<br>Bank" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debtf {
 		from: "Bank" #+ Message sender
 		subject: "Sista varningen!" #+ Message subject
-		body: "Kära kund,<br><br>detta är din sista varning. Ditt konto är övertrasserat. Vänligen återbetala summan senast i morgon, annars tvingas vi konfiskera din egendom för att täcka skulden.<br><br>Hälsningar,<br>Din handläggare<br>Banken" #+ Message body
+		body: "Värderade kund,<br><br>detta är din sista förmaning.  Ditt konto är övertrasserat.  Var god återbetala detta i morgon dag senast, annars tvingas vi konfiskera din egendom för att täcka skulden.<br><br>Högaktningsfullt,<br>Din handläggare<br>Banken" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debtr {
 		from: "Bank" #+ Message sender
-		subject: "Övertrassering reglerad" #+ Message subject
-		body: "Kära kund,<br><br>Din övertrassering har nu reglerats. Vi kan med glädje bistå dig i framtiden om våra tjänster behövs.<br><br>Vänliga hälsningar,<br>Din handläggare<br>Banken" #+ Message body
+		subject: "Övertrassering återbetald" #+ Message subject
+		body: "Värderade kund,<br><br>Din övertrassering har nu tillgodosetts.  Vi är glada att bistå dig i framtiden om våra tjänster behövs.<br><br>Välönskningar,<br>Din handläggare<br>Banken" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellpt {
 		from: "Bank" #+ Message sender
 		subject: "Din lastbil har blivit såld" #+ Message subject
-		body: "Kära kund,<br><br>Vi beklagar att vi måste meddela dig att vi sålt din personliga lastbil – $TRUCK_NAME$ – för $MONEY$. Tyvärr hade du en långvarig skuld hos oss och saknade medel att betala av den. Vi gavs inget annat val än att vidta dessa åtgärder. Vi föreslår att du jobbar som frilans tills dess att din ekonomiska situation förbättrats.<br><br>Hälsningar,<br>Din handläggare<br>Banken" #+ Message body
+		body: "Värderade kund,<br><br>vi beklagar att vi måste meddela dig att vi sålt din personliga lastbil - $TRUCK_NAME$ - för $MONEY$.  Tyvärr så hade du en långvarig skuld hos oss och saknade medel att täcka denna skuld.  Ledsamt nog så gavs vi inget annat val än att vidtaga dessa åtgärder.  Vi föreslår att du jobbar som frilans tills dess att din ekonomiska situation förbättrats.<br><br>Högaktningsfullt,<br>Din handläggare<br>Banken" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellptr {
 		from: "Bank" #+ Message sender
 		subject: "Ditt personliga släp har blivit sålt" #+ Message subject
-		body: "Käre kund,<br><br>Vi är ledsna att behöva meddela dig att vi sålt ditt personliga släp – $TRAILER_NAME$ – för $MONEY$. Tyvärr hade du en långvarig skuld hos oss och saknade medel att betala den. Vi gavs därmed inget annat val än att vidta dessa åtgärder. Vi föreslår att du jobbar som frilans tills dess att din ekonomiska situation förbättrats.<br><br>Hälsningar,<br>Din handläggare<br>Banken" #+ Message body
+		body: "Värderade kund,<br><br>vi beklagar att vi måste meddela dig att vi sålt ditt personliga släp - $TRAILER_NAME$ - för $MONEY$.  Tyvärr så hade du en långvarig skuld hos oss och saknade medel att täcka denna skuld.  Ledsamt nog så gavs vi inget annat val än att vidtaga dessa åtgärder.  Vi föreslår att du jobbar som frilans tills dess att din ekonomiska situation förbättrats.<br><br>Högaktningsfullt,<br>Din handläggare<br>Banken" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellrep {
 		from: "Bank" #+ Message sender
-		subject: "Din fastighet har sålts" #+ Message subject
-		body: "Bäste kund,<br><br>På grund av en långvarig skuld på ditt konto har vi tvingats konfiskera och sälja din egendom. Av dessa medel användes<br>$MONEY$ till att betala av dina skulder. Följande egendom beslagtogs:<br><br>$ITEM_LIST$<br>Vi beklagar att det behövt gå såhär långt, och hoppas att detta inte påverkar dina framtida affärer alltför mycket.<br><br>Vänliga hälsningar,<br>Din handläggare<br>Banken" #+ Message body
+		subject: "Din fastighet har blivit såld" #+ Message subject
+		body: "Värderade kund,<br><br>på grund av en utdragen skuld på ditt konto så har vi tvingats konfiskera och sälja din egendom.  Av dessa medel användes<br>$MONEY$ till att tillfredställa dina skulder.  Närmare bestämt beslagtogs följande egendom:<br><br>$ITEM_LIST$<br>Vi beklagar att situationen urartat till denna grad och hoppas att detta inte menligt påverkar dina framtida affärer alltför mycket.<br><br>Bästa lyckönskningar,<br>Din handläggare<br>Banken" #+ Message body
 	}
 
 /**
@@ -77,8 +77,8 @@ SiiNunit
 
 	mail_text: mailtext.td_visit {
 		from: "Lastbilsåterförsäljare - $CITY$" #+ Message sender
-		subject: "Splitternya $BRAND$ lastbilar till salu!" #+ Message subject
-		body: "Kära herrn/frun,<br><br>Vi är certifierade återförsäljare av $BRAND$-lastbilar. Vi erbjuder ett stort urval av olika konfigurationer och vi kan också utföra anpassningar för att fullfölja dina önskningar. <link url=truck.dealer_mapcolor=@@clr_link@@>Besök vår bilhall i $CITY$</link>. Lastbilen du alltid har drömt om väntar kan finnas runt hörnet.<br><br>Hälsningar,<br>Din återförsäljare av $BRAND$-lastbilar" #+ Message body
+		subject: "Splitter nya $BRAND$ lastbilar till salu!" #+ Message subject
+		body: "Kära Herr/Dam,<br><br>Vi är en ceretifierad återförsäljare av $BRAND$ lastbilar. Vi erbjuder ett stort urval av olika konfigurationer och vi kan också utföra anpassningar för att uppnå dina önskningar. Snälla, <link url=truck.dealer_mapcolor=@@clr_link@@>besök våran utställning i  $CITY$</link>. Lastbilen du alltid har drömmt om väntar bakom dörren.<br><br>Hälsningar,<br>Din $BRAND$ Lastbils Återförsäljare" #+ Message body
 	}
 
 /**
@@ -86,9 +86,9 @@ SiiNunit
  */
 
 	mail_text: mailtext.comp_teaser {
-		from: "$COMPANY$, $CITY$" #+ Message sender
-		subject: "Chaufförer med egen utrustning behövs" #+ Message subject
-		body: "Till den det berör,<br><br>Vi söker skickliga förare med egen lastbil för ett stort antal leveranser. Vi erbjuder konkurrenskraftiga priser, upp till $MONEY$ för ett jobb. Om du har ett eget fordon kan du fråga direkt vid vår lastkaj i $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+		from: "Företag" #+ Message sender
+		subject: "Förare med egen utrustning sökes" #+ Message subject
+		body: "Till den det berör,<br><br>vi söker skickliga förare med egen lastbil för att stort antal leveranser.  Vi erbjuder konkurrenskraftiga priser, upp till $MONEY$ för ett jobb.  Om du har eget fordon, var god fråga direkt vid vår lastkaj i $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
 	}
 
 /**
@@ -96,39 +96,39 @@ SiiNunit
  */
 
 	mail_text: mailtext.drv_idle {
-		from: "Chaufför $NAME$" #+ Message sender
+		from: "Förare $NAME$" #+ Message sender
 		subject: "Jag behöver en lastbil för att arbeta" #+ Message subject
-		body: "Hej chefen,<br><br>jag vet inte om du sett det men vi har suttit i $CITY$ helt utan jobb i $DAYS$. Jag börjar bli ganska irriterad, för jag behöver pengar för att betala mina räkningar. Jag kan inte göra något om jag bara sitter här utan jobb. Snälla, ge mig en lastbil inom $DAYS2$ så jag kan börja leverera. Annars har jag inget annat val än att säga upp mig.<br><br>$NAME$" #+ Message body
+		body: "Hej Chefen,<br><br>jag vet inte om du sett det men vi har suttit i $CITY$ helt utan jobb i $DAYS$. Jag börjar bli ganska irriterad, för jag behöver pengar för att betala mina räkningar och jag kan inte göra något om jag bara sitter här utan jobb i sikte. Snälla, ge mig en lastbil inom $DAYS2$ så jag kan börja leverera. Annars har jag inget annat val än att säga upp mig.<br><br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_idle.female {
-		from: "Chaufför $NAME$" #+ Message sender - written by female
+		from: "Förare $NAME$" #+ Message sender - written by female
 		subject: "Jag behöver en lastbil för att arbeta" #+ Message subject - written by female
-		body: "Hej chefen,<br><br>Jag vet inte om du sett det men vi har suttit i $CITY$ helt utan jobb i $DAYS$. Jag börjar bli ganska irriterad, för jag behöver pengar för att betala mina räkningar. Jag kan inte göra något om jag bara sitter här utan jobb. Snälla, ge mig en lastbil inom $DAYS2$ så jag kan börja leverera. Annars har jag inget annat val än att säga upp mig.<br><br>$NAME$" #+ Message body - written by female
+		body: "Hej Chefen,<br><br>jag vet inte om du sett det men vi har suttit i $CITY$ helt utan jobb i $DAYS$. Jag börjar bli ganska irriterad, för jag behöver pengar för att betala mina räkningar och jag kan inte göra något om jag bara sitter här utan jobb i sikte. Snälla, ge mig en lastbil inom $DAYS2$ så jag kan börja leverera. Annars har jag inget annat val än att säga upp mig.<br><br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_quit {
-		from: "Chaufför $NAME$" #+ Message sender
-		subject: "Hej då" #+ Message subject
-		body: "Hej,<br><br>Jag kan inte slösa bort mer tid. Jag kan inte arbeta utan en lastbil och jag vill inte vänta längre. Jag går miste om bra jobbmöjligheter, så jag säger upp mig för att söka efter ett nytt jobb. Du kan hitta eventuell utrustning i mitt före detta garage i $CITY$.<br><br>Hejdå,<br>$NAME$" #+ Message body
+		from: "Förare $NAME$" #+ Message sender
+		subject: "Adjö" #+ Message subject
+		body: "Hej,<br><br>jag kan inte slösa mer av min tid. Jag kan inte arbeta utan en lastbil och jag vill inte vänta mer. Jag  missar flera bra jobbmöjligheter, så jag säger upp mig för att söka efter ett nytt jobb. Du kan hitta eventuell utrustning i mitt föredetta garage i $CITY$.<br><br>Hejdå,<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_quit.female {
-		from: "Chaufför $NAME$" #+ Message sender - written by female
-		subject: "Hej då" #+ Message subject - written by female
-		body: "Hej,<br><br>Jag har inte råd att slösa bort mer av min tid. Jag kan inte jobba utan en lastbil, och jag klarar inte av att vänta längre. Jag missar jobbmöjligheter, så jag säger upp mig för att söka efter ett nytt jobb. Eventuell utrustning finns i mitt före detta garage i $CITY$.<br><br>Hejdå,<br>$NAME$" #+ Message body - written by female
+		from: "Förare $NAME$" #+ Message sender - written by female
+		subject: "Adjö" #+ Message subject - written by female
+		body: "Hej,<br><br>jag kan inte slösa mer av min tid. Jag kan inte arbeta utan en lastbil och jag vill inte vänta mer. Jag  missar flera bra jobbmöjligheter, så jag säger upp mig för att söka efter ett nytt jobb. Du kan hitta eventuell utrustning i mitt föredetta garage i $CITY$.<br><br>Hejdå,<br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_sold {
-		from: "Chaufför $NAME$" #+ Message sender
-		subject: "Jag säger upp mig" #+ Message subject
-		body: "Hej chefen,<br><br>Garaget i $CITY$, där jag utgick ifrån, ska läggas ner. Några från banken kom och sa att jag var tvungen att flytta. Det verkar som att det inte har gått så bra för företaget på sistone. Så jag bestämde mig för att säga upp mig. Jag kan ändå inte göra mycket utan en lastbil. Jag försöker någon annanstans.<br><br>Hejdå och jag hoppas att du inte tar illa upp,<br>$NAME$" #+ Message body
+		from: "Förare $NAME$" #+ Message sender
+		subject: "Jag går" #+ Message subject
+		body: "Hej chefen,<br><br>Garaget i $CITY$, där jag stannade, ska läggas ner. Några från banken kom och sa att jag var tvungen att flytta. Det verkar som att det inte har gått så bra för det här företaget den senaste tiden. Så jag bestämde mig för att säga upp mig. Jag kan inte göra mycket här ändå utan en lastbil och allt. Jag försöker någon annanstans.<br><br>Hejdå och jag hoppas att du inte tar illa upp,<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_sold.female {
-		from: "Chaufför $NAME$" #+ Message sender - written by female
-		subject: "Jag slutar" #+ Message subject - written by female
-		body: "Hej chefen,<br><br>Garaget i $CITY$, som jag utgick ifrån, ska läggas ner. Några från banken kom och sa att jag var tvungen att flytta. Det verkar som att det inte gått så bra för företaget på sistone. Så jag bestämde mig för att säga upp mig. Jag kan ändå inte göra mycket här utan en lastbil. Jag försöker någon annanstans.<br><br>Hejdå och jag hoppas att du inte tar illa upp,<br>$NAME$" #+ Message body - written by female
+		from: "Förare $NAME$" #+ Message sender - written by female
+		subject: "Jag går" #+ Message subject - written by female
+		body: "Hej chefen,<br><br>Garaget i $CITY$, där jag stannade, ska läggas ner. Några från banken kom och sa att jag var tvungen att flytta. Det verkar som att det inte har gått så bra för det här företaget den senaste tiden. Så jag bestämde mig för att säga upp mig. Jag kan inte göra mycket här ändå utan en lastbil och allt. Jag försöker någon annanstans.<br><br>Hejdå och jag hoppas att du inte tar illa upp,<br>$NAME$" #+ Message body - written by female
 	}
 
 /**
@@ -138,22 +138,22 @@ SiiNunit
 	mail_text: mailtext.ovs.new_routes {
 		from: "Speditör" #+ Message sender
 		subject: "Specialtransporter" #+ Message subject
-		body: "Hej, chefen.<br><br>Jag har något extra åt dig. Tack vare våra kontakter så har vi chansen att ta oss an en rejäl utmaning. Det finns speciella, extra stora och tunga laster som kräver ett äkta proffs. Det kommer inte att vara lätt och kommer att kräva skicklighet, tålamod, samarbete med eskortfordon och extra försiktighet, men du har ju allt det, inte sant? Naturligtvis innebär detta också en större förtjänst.<br><br>Om du är intresserad, besök en av dessa städer: $CITIES$." #+ Message body
+		body: "Hej, chefen.<br><br>Jag har någonting extra åt dig.  Tack vare våra kontakter så har vi chansen att möta en rejäl utmaning.  Det finns speciella, extra stora och tunga laster som kräver ett äkta proffs.  Det kommer inte att vara lätt och kommer att kräva förmåga, tålamod, samarbete med eskorter och extra försiktighet, men du har ju allt det, inte sant?  Naturligtvis innebär detta också en större förjänst.<br><br>Om du är intresserad, besök en av dessa städer:  $CITIES$." #+ Message body
 	}
 	
 	mail_text: mailtext.ovs.upd_routes {
 		from: "Speditör" #+ Message sender
 		subject: "Nya specialtransporter" #+ Message subject
-		body: "Hej, chefen.<br><br>Fler företag vill hyra in din skicklighet bakom ratten för specialleveranser.  Precis som vid förra tillfället kommer det inte att bli lätt och det kommer att kräva ditt bästa – tålamod, samarbete med eskortfordonen och extra försiktighet – men du har ju allt det där fortfarande, inte sant?  Glöm inte att laster som denna betalar väldigt bra.<br><br>Godset finns tillgängligt på följande orter:  $OLD_CITIES$  <br><br>Du kan även ta <color value=@@clr_sel@@>nya<color value=@@clr_txt@@> uppdrag från: <br><br>$CITIES$." #+ Message body
+		body: "Hej, chefen.<br><br>Det finns några fler företag som skulle vilja hyra din skicklighet bakom ratter för några specialleveranser.  Precis som förra gången - det blir inte lätt och kommer att kräva ditt bästa, tålamod, samarbete med eskorten och extra försiktighet, men du har ju allt det där fortfarande, inte sant?  Och glöm inte - laster som denna betalar väldigt bra.<br><br>Tillgängliga laster finns tillgängliga från följande orter:  $OLD_CITIES$  <br><br>Du kan även ta <color value=@@clr_sel@@>nya<color value=@@clr_txt@@> från: <br><br>$CITIES$." #+ Message body
 	}
 
 /**
  * Real Estate mail
  */
  	mail_text: mailtext.real_estate {
-		from: "Fastighetsförmedling" #+ Message sender
+		from: "Fastighets förmedling" #+ Message sender
 		subject: "Vill du utöka ditt företag?" #+ Message subject
-		body: "Bästa herr/fru, <br><br>Vi skulle vilja gratulera dig till ditt företags framgång. Vi är imponerade av hur bra det gått för företaget, och vill föreslå dig ett nytt sätt som du kan utöka firman ytterligare på. Från och med nu så kan du använda våra tjänster för att köpa olika saker nästan omedelbart! För mer information, <link url=screen.real_estate color=@@clr_link@@> gå till gränssnittet för garageinköp.</link>.<br><br>Med vänliga hälsningar, <br>Informationschefen<br> Fastighetsförmedlingen" #+ Message body
+		body: "Hej herrn/frun, <br><br>Vi skulle vilja gratulera din utveckling av ditt företag. Vi är imponerade av din framgång av ditt företag och vi vill föreslå dig ett nytt sätt att hjälpa dig expandera ditt företag ännu mera. Från och med nu så kan du använda våra tjänser för att införskaffa dig ytterligare tillgångar nästan på direkten! För mer information, var god <link url=screen.real_estate color=@@clr_link@@> gå till gränssnittet för garageinköp.</link>.<br><br>Med vänliga hälsningar, <br>Informationschefen<br> från Fastighetsförmedlingen" #+ Message body
 	}
 	
 #@}

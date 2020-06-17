@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Kabiinituled"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Nänni kohad"
 
-	key[]: "hndrail"
-	val[]: "Käepide"
-
 	key[]: "horns"
 	val[]: "Pasunad"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Porilapakad"
 
-	key[]: "rear_cab"
-	val[]: "Kabiini tagaosa"
-
 	key[]: "sideflares"
 	val[]: "Kabiini küljepaneelid"
 
 	key[]: "sideskrt_bar"
 	val[]: "Küljekatte rauad"
-
-	key[]: "slp_hndl"
-	val[]: "Käepide"
-
-	key[]: "slp_vent"
-	val[]: "Tuulutusava"
 
 	key[]: "topflares"
 	val[]: "Katusetuled"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Mootorsae nipsasi"
-
-	key[]: "chrom_tank"
-	val[]: "Kroomitud kütusepaak" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Alumiiniumist paak" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-kujuline" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Puuviljad"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Puuviljamahl"
 
 	key[]: "cn_grain"
 	val[]: "Teravili"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 jalga, hajutatud"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 jalga, tagumine"
-
 	key[]: "tr_single_45"
 	val[]: "45 jalga"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Alumiinium platvormtreiler"
-
-	key[]: "bs_food_tank"
-	val[]: "Toidutsistern"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Viljahaagis"

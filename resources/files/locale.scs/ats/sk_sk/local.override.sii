@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Svetlá na kabínu"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Ochranné mreže"
 
-	key[]: "hndrail"
-	val[]: "Držadlo"
-
 	key[]: "horns"
 	val[]: "Klaksóny"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Blatníky"
 
-	key[]: "rear_cab"
-	val[]: "Zadná časť kabíny"
-
 	key[]: "sideflares"
 	val[]: "Bočné panely"
 
 	key[]: "sideskrt_bar"
 	val[]: "Nosníky na bočnom obložení"
-
-	key[]: "slp_hndl"
-	val[]: "Rúčka"
-
-	key[]: "slp_vent"
-	val[]: "Vetrací otvor"
 
 	key[]: "topflares"
 	val[]: "Strešné osvetlenie"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Motorová píla"
-
-	key[]: "chrom_tank"
-	val[]: "Chrómovaná nádrž" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Hliníková nádrž" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "Nádrž v tvare D" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Ovocie"
-
-	key[]: "cn_fruit_juice"
-	val[]: "Ovocný džús"
 
 	key[]: "cn_grain"
 	val[]: "Obilie "
@@ -556,7 +533,7 @@ localization_db : .localization
 #+ Trailer body type names (short/preview variant).
 #@{
 	key[]: "bulkfeed"
-	val[]: "Náves na prepravu krmiva"
+	val[]: "Náves pre prepravu krmiva"
 
 	key[]: "container"
 	val[]: "Prepravník kontajnerov"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 stôp, rozdelené"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 stôp, vzadu"
-
 	key[]: "tr_single_45"
 	val[]: "45 stôp"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Plochý náves, hliníková podlaha"
-
-	key[]: "bs_food_tank"
-	val[]: "Potravinárska cisterna"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Náves pre prepravu obilia"

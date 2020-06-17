@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "驾驶室灯"
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "驾驶室防撞栏板"
 
-	key[]: "hndrail"
-	val[]: "扶手"
-
 	key[]: "horns"
 	val[]: "喇叭"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "挡泥板"
 
-	key[]: "rear_cab"
-	val[]: "驾驶室后部"
-
 	key[]: "sideflares"
 	val[]: "驾驶室面板"
 
 	key[]: "sideskrt_bar"
 	val[]: "车裙边条"
-
-	key[]: "slp_hndl"
-	val[]: "吊臂"
-
-	key[]: "slp_vent"
-	val[]: "通气口"
 
 	key[]: "topflares"
 	val[]: "上卧铺灯"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "玩具电锯"
-
-	key[]: "chrom_tank"
-	val[]: "镀铬罐" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "铝罐" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D形罐" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -252,9 +232,6 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "水果"
-
-	key[]: "cn_fruit_juice"
-	val[]: "果汁"
 
 	key[]: "cn_grain"
 	val[]: "粮食"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40英尺分散桥"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43英尺，车轴靠后"
-
 	key[]: "tr_single_45"
 	val[]: "45英尺"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "铝平板"
-
-	key[]: "bs_food_tank"
-	val[]: "食品罐"
 
 	key[]: "bs_grain_hopper"
 	val[]: "粮食料斗"

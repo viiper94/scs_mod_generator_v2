@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://www.americantrucksimulator.com/support.html"
+	val[]: "https://http://www.americantrucksimulator.com//support.php"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,6 +18,7 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	
 	key[]: "cabflares"
 	val[]: "Cabineverlichting "
 
@@ -57,9 +58,6 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Cabinebescherming"
 
-	key[]: "hndrail"
-	val[]: "Instapleuning"
-
 	key[]: "horns"
 	val[]: "Hoorns"
 
@@ -75,20 +73,11 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Wielkappen"
 
-	key[]: "rear_cab"
-	val[]: "Cabine Achterkant"
-
 	key[]: "sideflares"
 	val[]: "Cabinepanelen"
 
 	key[]: "sideskrt_bar"
 	val[]: "Sideskirtbeplating"
-
-	key[]: "slp_hndl"
-	val[]: "Door Handles"
-
-	key[]: "slp_vent"
-	val[]: "Luchtrooster"
 
 	key[]: "topflares"
 	val[]: "Slaapcabine lichten"
@@ -98,15 +87,6 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Speelgoedkettingzaag"
-
-	key[]: "chrom_tank"
-	val[]: "Chromen Dieseltank" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aluminium Tank" #+ Aluminium tank accessory (water, fuel, etc)
-
-	key[]: "d_shape"
-	val[]: "D-Vorm" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -253,9 +233,6 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "Vruchten"
 
-	key[]: "cn_fruit_juice"
-	val[]: "Vruchtensap"
-
 	key[]: "cn_grain"
 	val[]: "Graan"
 
@@ -332,7 +309,7 @@ localization_db : .localization
 	val[]: "Sloopauto's"
 
 	key[]: "cn_scraper"
-	val[]: "Scraper"
+	val[]: "Schraaper"
 
 	key[]: "cn_stumper"
 	val[]: "Boomstronkfrees"
@@ -713,9 +690,6 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 voet, Verspreid"
 
-	key[]: "tr_single_43_rear"
-	val[]: "43 voet, Achter"
-
 	key[]: "tr_single_45"
 	val[]: "45 voet"
 
@@ -845,9 +819,6 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "Aluminium Laadvloer"
-
-	key[]: "bs_food_tank"
-	val[]: "Voedseltank"
 
 	key[]: "bs_grain_hopper"
 	val[]: "Graantrechter"
