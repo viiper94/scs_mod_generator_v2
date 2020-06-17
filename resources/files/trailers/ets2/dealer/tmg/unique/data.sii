@@ -1,6 +1,6 @@
 SiiNunit
 {
-accessory_trailer_data : vehicle.tmg.main
+accessory_trailer_data : %unique%.tmg.data
 {
 	info[]: ""
 	info[]: "%title%"

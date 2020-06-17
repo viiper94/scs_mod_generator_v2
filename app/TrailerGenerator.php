@@ -11,6 +11,7 @@ class TrailerGenerator extends ModGenerator{
 	public $accessory;
 	public $filesDir = 'resources/files/trailers';
 	public $dlc = ['base'];
+	public $unique;
 
 	public function load($chassis, $accessory, $paintJob){
         $this->game = Request::input('target');
@@ -19,6 +20,7 @@ class TrailerGenerator extends ModGenerator{
 		$this->paintJob = $paintJob;
 		$this->dlc = $this->getDLCArray();
         $this->title = $this->getTitle();
+        $this->unique = substr(md5(time()), 0, 10);
 
 		$this->outDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->outDir . time();
 		$this->filesDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->filesDir;
@@ -86,6 +88,7 @@ class TrailerGenerator extends ModGenerator{
     private function copyDealerFiles(){
         if(is_dir($this->filesDir.'/'.$this->game.'/dealer')) {
             $this->rcopy($this->filesDir . '/' . $this->game . '/dealer', $this->outDir . '/vehicle');
+            rename($this->outDir . '/vehicle/tmg/unique', $this->outDir . '/vehicle/tmg/'.$this->unique);
         }
     }
 
@@ -132,14 +135,15 @@ class TrailerGenerator extends ModGenerator{
 	}
 
     private function replaceDealerFile(){
-        file_put_contents($this->outDir .'/vehicle/trailer_dealer/tmg/'.time().'.sii', $this->generateDealerTrailerContent());
-        $dirname = $this->outDir .'/vehicle/tmg';
+        file_put_contents($this->outDir .'/vehicle/trailer_dealer/tmg/'.$this->unique.'.sii', $this->generateDealerTrailerContent());
+        $dirname = $this->outDir .'/vehicle/tmg/'.$this->unique;
         $dir = opendir($dirname);
         while (($file = readdir($dir)) !== false){
             if($file != "." && $file != ".."){
                 if(is_file($dirname."/".$file)){
                     $content = file_get_contents($dirname."/".$file);
                     $content = str_replace('%title%', $this->title, $content);
+                    $content = str_replace('%unique%', $this->unique, $content);
                     file_put_contents($dirname."/".$file, $content);
                 }
             }
@@ -306,7 +310,7 @@ class TrailerGenerator extends ModGenerator{
 
             // trailer accessories units
             //data unit
-            if($key == 0) $output_string .= "vehicle_accessory: .$key.data\n{\n\tdata_path: \"/def/vehicle/tmg/data.sii\"\n}\n";
+            if($key == 0) $output_string .= "vehicle_accessory: .$key.data\n{\n\tdata_path: \"/def/vehicle/tmg/".$this->unique."/data.sii\"\n}\n";
 
             // chassis unit
             $output_string .= "\nvehicle_accessory: .$key.chassis\n";
@@ -314,7 +318,7 @@ class TrailerGenerator extends ModGenerator{
 
             // body unit
             $output_string .= "\nvehicle_accessory: .$key.body\n";
-            $output_string .= "{\n\tdata_path: \"".($trailer->body ?? '/def/vehicle/tmg/body.sii')."\"\n";
+            $output_string .= "{\n\tdata_path: \"".($trailer->body ?? '/def/vehicle/tmg/'.$this->unique.'/body.sii')."\"\n";
             $output_string .= "}\n\n";
 
             // addons units
