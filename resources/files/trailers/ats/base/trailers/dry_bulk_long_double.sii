@@ -1,5 +1,3 @@
-# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx default long trailer with hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 trailer : trailer.drybulk_long
 {
 	accessories[]: .drybulk_long.tchassis
