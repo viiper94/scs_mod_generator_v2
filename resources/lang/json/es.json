@@ -21,19 +21,19 @@
         "cars_magnum": "Dogde",
         "cars_mustang": "Ford",
         "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
+        "v1": "Var. 1",
+        "v2": "Var. 2",
+        "v3": "Var. 3",
         "cn_container": "Contenedor",
-        "cn_container_40r": "40' Reefer container",
-        "cn_nextgen_scania_trucks": "Next Gen Scania trucks",
+        "cn_container_40r": "40' Contenedor Refrigerado",
+        "cn_nextgen_scania_trucks": "Camión Scania Nueva Generación",
         "cn_daf_trucks": "Camión DAF",
         "cn_man_trucks": "Camión Man",
         "large": "Largo",
         "small": "Corto",
         "3x4": "3x4m",
         "2x4": "2x4m",
-        "cover": "Cover"
+        "cover": "Cubrir"
     },
     "shared": {
         "double": "Doble",
@@ -103,9 +103,9 @@
         "upload_image": "Subir Imagen",
         "include_dlc": "Además, incluya contenido DLC",
         "trailer_generator": "Generador de Remolque",
-        "languages": "Lenguajes",
-        "links": "Links",
-        "forums_topic": "Forum Topic",
+        "languages": "Idiomas",
+        "links": "Enlaces",
+        "forums_topic": "tema del foro",
         "scs_blog": "Scs Blog",
         "mp_no_support": "No soportado por MP",
         "include_fix": "Incluir caravana (para el uso de TruckersMP)",
@@ -165,22 +165,22 @@
         "new_password_confirmation": "Nueva contraseña de nuevo",
         "save_password": "Guardar nueva contraseña",
         "old_pass_fail": "La contraseña anterior es incorrecta",
-        "generated_mods": "Generated Mods",
+        "generated_mods": "Generar Mods",
         "logout": "Cerrar sesión",
         "link_steam": "Conectar cuenta de Steam",
         "my_steam": "Perfil de Steam"
     },
     "mods": {
-        "mods_history": "Mods History",
-        "last_mods": "Recently Generated Mods",
-        "see_all": "All Generated Mods",
-        "mod_params": "Mods Params",
-        "mod_for_version": "Mods Version",
-        "no_mods": "Mods history is empty.",
-        "regenerate_mod": "Regenerate mod",
+        "mods_history": "Historial de Mods",
+        "last_mods": "Mods generados recientemente",
+        "see_all": "Todos los Mods generados",
+        "mod_params": "Parámetros de los Mods",
+        "mod_for_version": "Versión de los Mods",
+        "no_mods": "El historial de mods está vacío.",
+        "regenerate_mod": "Genera Mod",
         "broken": "¿Está este mod roto?",
         "working": "¿Funciona este mod?",
-        "mark_as_broken": "Are you sure mark this mod as broken?",
+        "mark_as_broken": "¿Estás seguro de marcar este mod como roto?",
         "mark_as_working": "Mark this mod as working?",
         "mod_required_dlc": "Necesario",
         "tested_on_ver": "Probado en la versión"
@@ -209,6 +209,6 @@
     "companies\/paints": {
         "default": "Colored",
         "schw_logo": "Schwarzmüller Logo",
-        "schw_black_red": "Schwarzmüller Black and Red"
+        "schw_black_red": "Schwarzmüller Negro o Rojo."
     }
 }
