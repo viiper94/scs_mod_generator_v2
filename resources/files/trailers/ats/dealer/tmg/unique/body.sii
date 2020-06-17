@@ -1,6 +1,6 @@
 SiiNunit
 {
-accessory_trailer_body_data : default.tmg.body
+accessory_trailer_body_data : %unique%.tmg.body
 {
 	name: "%title%"
 	price: 1
