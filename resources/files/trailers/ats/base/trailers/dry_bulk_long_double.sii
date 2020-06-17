@@ -1,9 +1,11 @@
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx default long trailer with hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 trailer : trailer.drybulk_long
 {
 	accessories[]: .drybulk_long.tchassis
 	accessories[]: .drybulk_long.trwheel0
 	accessories[]: .drybulk_long.trwheel1
-	accessories[]: .drybulk_long.trlr_cables
+	accessories[]: .drybulk_long.trlr_cables		
 	slave_trailer: .drybulk_long.convertor
 
 }
@@ -25,7 +27,7 @@ vehicle_wheel_accessory: .drybulk_long.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_addon_accessory: .drybulk_long.trlr_cables
+vehicle_addon_accessory: .drybulk_long.trlr_cables	
 {
     	data_path: "/def/vehicle/trailer/dry_bulk/accessory/trlr_cables/stock.sii"
 }
@@ -39,7 +41,7 @@ trailer : .drybulk_long.convertor
 	accessories[]: .drybulk_long.convertor.trwheel1
 	accessories[]: .drybulk_long.convertor.trlr_cables
 
-
+	
 	slave_trailer: .drybulk_long.second
 }
 
@@ -60,7 +62,7 @@ vehicle_wheel_accessory: .drybulk_long.convertor.trwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_addon_accessory: .drybulk_long.convertor.trlr_cables
+vehicle_addon_accessory: .drybulk_long.convertor.trlr_cables	
 {
     	data_path: "/def/vehicle/trailer/dry_bulk/accessory/trlr_cables/stock.sii"
 }
