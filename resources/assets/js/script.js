@@ -400,7 +400,8 @@ $(document).ready(function(){
             'scandinavia',
             'france',
             'italy',
-            'baltic'
+            'baltic',
+            'balkan_e'
         ];
         if($(this)[0].checked){
             $.each(promodsRequiredDlc, function(index, dlc){
