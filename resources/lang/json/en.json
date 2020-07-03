@@ -208,6 +208,9 @@
         "bdouble": "B-Double",
         "triple": "Triple",
 
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+
         "ext": "Extendable",
         "short": "Short",
         "long": "Long",
