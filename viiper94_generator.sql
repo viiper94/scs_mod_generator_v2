@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Чрв 17 2020 р., 18:14
+-- Час створення: Лип 03 2020 р., 16:15
 -- Версія сервера: 10.4.11-MariaDB
 -- Версія PHP: 7.4.3
 
@@ -524,11 +524,12 @@ INSERT INTO `chassis` (`id`, `parent_trailer`, `chain_type_size`, `trailers`, `a
 (233, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_green.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_green', 'tn_frac_tank__%(__tcn_green__%)', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:52:27', '2020-02-27 17:38:37'),
 (234, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_red.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_red', 'tn_frac_tank__%(__tcn_red__%)', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:20', '2020-02-27 17:38:37'),
 (235, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_yellow.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_yellow', 'tn_frac_tank__%(__tcn_yellow__%)', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:41', '2020-02-27 17:38:37'),
-(236, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flat_bed_xmas', 'flat_bed_xmas', 'flat_bed_xmas', NULL, 'flat_bed_xmas', 7, 1, 0, 1, 0, NULL, 1, 0, 0, 'ets2', 1, NULL, 1, '2019-12-23 17:56:13', '2019-12-23 18:01:49'),
 (237, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/chassis_xmas.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"off\",\"accessories\":{\"5\":{\"name\":\"electrics\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_flatbed\\/accessory\\/xmas_lights.sii\"}}}]', 'flatbed_xmas', 'flat_bed_xmas', 'flatbed_xmas', NULL, 'flatbed_xmas', 13, 1, 0, 1, 0, NULL, 1, 0, 0, 'ats', 1, NULL, 1, '2019-12-24 06:36:00', '2020-02-27 17:38:37'),
 (466668, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/magnitude_55l\\/chassis_trailer_2_sh_ns.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"off\"}]', 'magnitude_55l_t2', 'tn_magnitude_55l__%(__2ax__%)', 'magnitude_55l_t2', NULL, 'magnitude_55l_t2', 13, 1, 0, 1, 0, NULL, 1, 0, 0, 'ats', 1, NULL, 1, '2020-02-28 11:52:20', '2020-02-28 11:53:16'),
 (466671, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_foodtank\\/ch_43.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'food_tank_43_r', 'tn_food_tank', 'food_tank_43_r', NULL, 'food_tank_', 13, 1, 0, 0, 1, '/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2020-04-25 05:14:38', '2020-06-17 15:13:29'),
-(466672, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_foodtank\\/chassis.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'foodtank', 'foodtank', 'foodtank', NULL, 'foodtank', 7, 1, 0, 0, 1, '/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii', 0, 1, 1, 'ets2', 1, NULL, 1, '2020-05-05 06:28:47', '2020-05-05 07:10:09');
+(466672, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_foodtank\\/chassis.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'foodtank', 'foodtank', 'foodtank', NULL, 'foodtank', 7, 1, 0, 0, 1, '/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii', 0, 1, 1, 'ets2', 1, NULL, 1, '2020-05-05 06:28:47', '2020-05-05 07:10:09'),
+(466673, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/curtain_sider\\/chassis_open.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'curtain_sider_open', 'bs_scs_curtain__%(__open_doors__%)', 'curtain_sider_open', NULL, 'curtain_sider', 7, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 1, 1, 'ets2', 1, NULL, 1, '2020-07-03 04:25:10', '2020-07-03 13:13:02'),
+(466674, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/curtain_sider\\/chassis_open_side.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'curtain_sider_open_side', 'bs_scs_curtain__%(__open_side__%)', 'curtain_sider_open_side', NULL, 'curtain_sider', 7, 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 1, 1, 1, 'ets2', 1, NULL, 1, '2020-07-03 04:26:31', '2020-07-03 13:13:06');
 
 -- --------------------------------------------------------
 
@@ -807,7 +808,7 @@ INSERT INTO `dlc` (`id`, `name`, `short_name`, `game`, `mp_support`, `type`, `ac
 (19, 'utah', 'U', 'ats', 1, 'map', 1, 64, '2019-11-12 17:52:50', '2019-11-12 17:52:50'),
 (20, 'new_mexico', 'NM', 'ats', 1, 'map', 1, 61, '2019-11-12 18:22:23', '2019-11-12 18:22:23'),
 (21, 'washington', 'W', 'ats', 1, 'map', 1, 63, '2019-11-12 18:22:37', '2019-11-12 18:22:37'),
-(22, 'balkan_e', 'RTBS', 'ets2', 0, 'map', 1, 5, '2019-12-05 16:29:34', '2019-12-05 16:29:34');
+(22, 'balkan_e', 'RTBS', 'ets2', 1, 'map', 1, 5, '2019-12-05 16:29:34', '2019-12-05 16:29:34');
 
 -- --------------------------------------------------------
 
@@ -2658,16 +2659,24 @@ INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`,
 -- --------------------------------------------------------
 
 --
--- Структура таблиці `settings`
+-- Структура таблиці `password_resets`
 --
 
-CREATE TABLE `settings` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `key` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `value` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+CREATE TABLE `password_resets` (
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп даних таблиці `password_resets`
+--
+
+INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
+('1964504708@qq.com', '$2y$10$Kjjh2XikxRFn/MA/mGeRTefHG4GganLkJPoQ3rp2vGcafRTNHiK6y', '2019-01-09 01:50:06'),
+('black_warlok@yahoo.co.uk', '$2y$10$2rExrd1hev5/hUtgPi3IBOHiJALptUONKroORCJiwX8W6gpuBfZL2', '2019-03-24 16:24:19'),
+('serega575@gmail.com', '$2y$10$oXD3EeDjky3X2Ja5YsnMde5hQ/M00AAIswZcEcPC8DZ9bMZK2RIBe', '2019-05-04 10:18:26'),
+('viiper94@gmail.com', '$2y$10$8j8bTs/s3LWQAV7u0Vxwfuk0nTVzrCmTflHHUNVSkn2euRSuDLebO', '2019-11-25 11:32:48');
 
 -- --------------------------------------------------------
 
@@ -2799,10 +2808,10 @@ ALTER TABLE `paints`
   ADD PRIMARY KEY (`id`);
 
 --
--- Індекси таблиці `settings`
+-- Індекси таблиці `password_resets`
 --
-ALTER TABLE `settings`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`);
 
 --
 -- Індекси таблиці `static_mods`
@@ -2830,7 +2839,7 @@ ALTER TABLE `accessories`
 -- AUTO_INCREMENT для таблиці `chassis`
 --
 ALTER TABLE `chassis`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=466673;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=466675;
 
 --
 -- AUTO_INCREMENT для таблиці `companies`
@@ -2867,12 +2876,6 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `paints`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4614;
-
---
--- AUTO_INCREMENT для таблиці `settings`
---
-ALTER TABLE `settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT для таблиці `static_mods`
