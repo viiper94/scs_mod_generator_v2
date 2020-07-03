@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Аеродинамічний",
-        "steer": "Підрулюючий"
-    },
-    "ats trailers": {
-        "rm_double": "Подвійний R.M.",
-        "tp": "Подвійний Turnpike",
-        "2ax": "2 осі",
-        "3ax": "3 осі"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo\n",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "вар. 1",
-        "v2": "вар. 2",
-        "v3": "вар. 3",
-        "cn_container": "Контейнер",
-        "cn_container_40r": "40' рефрижераторний контейнер",
-        "cn_nextgen_scania_trucks": "Вантажівки Scania Next Gen",
-        "cn_daf_trucks": "Вантажівки DAF ",
-        "cn_man_trucks": "Вантажівки MAN",
-        "large": "Великі",
-        "small": "Малі",
-        "3x4": "3x4м",
-        "2x4": "2x4м",
-        "cover": "Закритий"
-    },
-    "shared": {
-        "double": "Подвійний",
-        "bdouble": "B-double",
-        "triple": "Потрійний",
-        "ext": "Розсувний",
-        "short": "Короткий",
-        "long": "Довгий",
-        "silver": "Сірий",
-        "white": "Білий",
-        "black": "Чорний",
-        "red": "Червоний",
-        "green": "Зелений",
-        "blue": "Синій",
-        "gray": "Сірий",
-        "yellow": "Жовтий"
-    },
     "general": {
         "choose_language": "Оберіть мову",
         "help_translate": "Ви можете допомогти перекласти сайт на вашу мову",
@@ -206,9 +154,63 @@
             "dimensions": "Максимальні розміри зображення 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Аеродинамічний",
+        "steer": "Підрулюючий"
+    },
+    "ats trailers": {
+        "rm_double": "Подвійний R.M.",
+        "tp": "Подвійний Turnpike",
+        "2ax": "2 осі",
+        "3ax": "3 осі"
+    },
     "companies\/paints": {
         "default": "Кольоровий",
         "schw_logo": "Логотип Schwarzmüller",
         "schw_black_red": "Schwarzmüller червоний і чорний"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo\n",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "вар. 1",
+        "v2": "вар. 2",
+        "v3": "вар. 3",
+        "cn_container": "Контейнер",
+        "cn_container_40r": "40' рефрижераторний контейнер",
+        "cn_nextgen_scania_trucks": "Вантажівки Scania Next Gen",
+        "cn_daf_trucks": "Вантажівки DAF ",
+        "cn_man_trucks": "Вантажівки MAN",
+        "cover": "Закритий",
+        "large": "Великі",
+        "small": "Малі",
+        "2x4": "2x4м",
+        "3x4": "3x4м"
+    },
+    "shared": {
+        "double": "Подвійний",
+        "bdouble": "B-double",
+        "triple": "Потрійний",
+        "open_side": "Відкритий збоку",
+        "open_doors": "Відкриті двері",
+        "ext": "Розсувний",
+        "short": "Короткий",
+        "long": "Довгий",
+        "blue": "Синій",
+        "green": "Зелений",
+        "silver": "Сірий",
+        "white": "Білий",
+        "yellow": "Жовтий",
+        "red": "Червоний",
+        "gray": "Сірий",
+        "black": "Чорний"
     }
 }

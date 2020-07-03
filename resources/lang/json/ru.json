@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Аэродинамический",
-        "steer": "Подруливающий"
-    },
-    "ats trailers": {
-        "rm_double": "Двойной R.M.",
-        "tp": "Двойной Turnpike",
-        "2ax": "2 оси",
-        "3ax": "3 оси"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "вар. 1",
-        "v2": "вар. 2",
-        "v3": "вар. 3",
-        "cn_container": "Контейнер",
-        "cn_container_40r": "40' рефрижераторный контейнер",
-        "cn_nextgen_scania_trucks": "Грузовики Scania Next Gen",
-        "cn_daf_trucks": "Грузовики DAF",
-        "cn_man_trucks": "Грузовики MAN",
-        "large": "Большие",
-        "small": "Малые",
-        "3x4": "3x4м",
-        "2x4": "2x4м",
-        "cover": "Закрытый самосвал"
-    },
-    "shared": {
-        "double": "Двойной",
-        "bdouble": "B-double",
-        "triple": "Тройной",
-        "ext": "Расширяемый",
-        "short": "Короткий",
-        "long": "Длинный",
-        "silver": "Серый",
-        "white": "Белый",
-        "black": "Чёрный",
-        "red": "Красный",
-        "green": "Зелёный",
-        "blue": "Синий",
-        "gray": "Серый",
-        "yellow": "Жёлтый"
-    },
     "general": {
         "choose_language": "Выберите язык",
         "help_translate": "Вы можете помочь переводу сайта на ваш язык",
@@ -206,9 +154,63 @@
             "dimensions": "Максимальные размеры изображения 3000 x 3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Аэродинамический",
+        "steer": "Подруливающий"
+    },
+    "ats trailers": {
+        "rm_double": "Двойной R.M.",
+        "tp": "Двойной Turnpike",
+        "2ax": "2 оси",
+        "3ax": "3 оси"
+    },
     "companies\/paints": {
         "default": "Цветной",
         "schw_logo": "Логотип Schwarzmüller",
         "schw_black_red": "Schwarzmüller красный и чёрный"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "вар. 1",
+        "v2": "вар. 2",
+        "v3": "вар. 3",
+        "cn_container": "Контейнер",
+        "cn_container_40r": "40' рефрижераторный контейнер",
+        "cn_nextgen_scania_trucks": "Грузовики Scania Next Gen",
+        "cn_daf_trucks": "Грузовики DAF",
+        "cn_man_trucks": "Грузовики MAN",
+        "cover": "Закрытый самосвал",
+        "large": "Большие",
+        "small": "Малые",
+        "2x4": "2x4м",
+        "3x4": "3x4м"
+    },
+    "shared": {
+        "double": "Двойной",
+        "bdouble": "B-double",
+        "triple": "Тройной",
+        "open_side": "Открытый сбоку",
+        "open_doors": "Открытые двери",
+        "ext": "Расширяемый",
+        "short": "Короткий",
+        "long": "Длинный",
+        "blue": "Синий",
+        "green": "Зелёный",
+        "silver": "Серый",
+        "white": "Белый",
+        "yellow": "Жёлтый",
+        "red": "Красный",
+        "gray": "Серый",
+        "black": "Чёрный"
     }
 }
