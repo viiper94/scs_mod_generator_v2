@@ -58,11 +58,23 @@ class AdminLanguagesController extends Controller{
     }
 
     public function download(Request $request, $locale){
-        if(!isset($locale)) return redirect()->back()->withErrors(['Виникла помилка!']);
         $oneSky = new OneSky();
-        return $oneSky->exportTranslations($locale) ?
-            redirect()->route('languages')->with(['success' => 'Виконано!']) :
-            redirect()->route('languages')->withErrors(['Виникла помилка!']);
+        if(!isset($locale)) return redirect()->back()->withErrors(['Виникла помилка!']);
+        if($locale === 'all'){
+            $locales = Language::where('active', true)->get();
+            foreach($locales as $lang){
+                if($lang->locale !== 'en'){
+                    if(!$oneSky->exportTranslations($lang->locale)){
+                        return redirect()->route('languages')->withErrors(['Виникла помилка!']);
+                    }
+                }
+            }
+            return redirect()->route('languages')->with(['success' => 'Виконано!']);
+        }else{
+            return $oneSky->exportTranslations($locale) ?
+                redirect()->route('languages')->with(['success' => 'Виконано!']) :
+                redirect()->route('languages')->withErrors(['Виникла помилка!']);
+        }
     }
 
     public function import($locale = null){

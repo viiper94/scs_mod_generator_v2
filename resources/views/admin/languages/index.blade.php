@@ -8,7 +8,11 @@
                 <th></th>
                 <th>Назва</th>
                 <th>Локаль</th>
-                <th></th>
+                <th class="right-align">
+                    <a href="{{ route('languages') }}/download/all"
+                       class="mdc-button mdc-button--unelevated"
+                       onclick="return confirm('Завантажити всі переклади?')">Завантажити всі</a>
+                </th>
             </thead>
             <tbody>
             @foreach($languages as $item)
