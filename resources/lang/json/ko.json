@@ -1,62 +1,10 @@
 {
-    "ets2 trailers": {
-        "aero": "에어로 다이내믹",
-        "steer": "조향가능"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. 더블",
-        "tp": "턴파이크 더블",
-        "2ax": "2액슬",
-        "3ax": "3액슬"
-    },
-    "accessories": {
-        "cars_balt1": "메르세데스-밴츠",
-        "cars_balt2": "현대",
-        "cars_it": "피아트, 알파로메오",
-        "cars_dacia": "다시아",
-        "cars_fr": "푸조, 시트로엥",
-        "cars_octavia": "스코다",
-        "cars_smax": "포드",
-        "cars_volvo": "볼보",
-        "cars_magnum": "닷지",
-        "cars_mustang": "포드",
-        "cars_tesla": "테슬라",
-        "v1": "변형 1",
-        "v2": "변형 2",
-        "v3": "변형 3",
-        "cn_container": "컨테이너",
-        "cn_container_40r": "40\" 리퍼 컨테이너",
-        "cn_nextgen_scania_trucks": "차세대 스카니아 트럭",
-        "cn_daf_trucks": "DAF 트럭",
-        "cn_man_trucks": "MAN 트럭",
-        "large": "대형",
-        "small": "소형",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "커버"
-    },
-    "shared": {
-        "double": "더블",
-        "bdouble": "B-더블",
-        "triple": "트리플",
-        "ext": "확장식",
-        "short": "짧음",
-        "long": "긺",
-        "silver": "은색",
-        "white": "흰색",
-        "black": "검정",
-        "red": "빨강",
-        "green": "초록",
-        "blue": "파랑",
-        "gray": "회색",
-        "yellow": "노랑"
-    },
     "general": {
         "choose_language": "언어 변경",
         "help_translate": "사이트 번역을 도와주세요!",
         "close": "닫기",
         "feature_disabled": "일시적으로 사용할 수 없는 기능입니다.",
-        "title": "ETS2, ATS 모드 생성기",
+        "title": "ETS2, ATS 트레일러 모드 생성기",
         "mods_title": "ETS2MP, ATSMP가 지원되는 모드",
         "mods_description": "Euro Truck Simulator 2와 American Truck Simulator 지원. TruckersMP 지원.",
         "head_title": "트레일러 모드 생성기",
@@ -183,7 +131,7 @@
         "mark_as_broken": "이 모드가 확실히 손상됐나요?",
         "mark_as_working": "작동하는 모드로 표시할까요?",
         "mod_required_dlc": "필수",
-        "tested_on_ver": "정상작동 확인 버전:"
+        "tested_on_ver": "정상작동 확인 버전"
     },
     "auth": {
         "failed": "이메일이나 비밀번호가 틀렸습니다."
@@ -206,9 +154,63 @@
             "dimensions": "최대 이미지 크기는 3000x3000px입니다"
         }
     },
+    "ets2 trailers": {
+        "aero": "에어로 다이내믹",
+        "steer": "조향가능"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. 더블",
+        "tp": "턴파이크 더블",
+        "2ax": "2액슬",
+        "3ax": "3액슬"
+    },
     "companies\/paints": {
         "default": "사용자 지정 색상",
         "schw_logo": "Schwarzmüller 로고",
         "schw_black_red": "Schwarzmüller 검정 및 빨강"
+    },
+    "accessories": {
+        "cars_balt1": "메르세데스-밴츠",
+        "cars_balt2": "현대",
+        "cars_it": "피아트, 알파로메오",
+        "cars_dacia": "다시아",
+        "cars_fr": "푸조, 시트로엥",
+        "cars_octavia": "스코다",
+        "cars_smax": "포드",
+        "cars_volvo": "볼보",
+        "cars_magnum": "닷지",
+        "cars_mustang": "포드",
+        "cars_tesla": "테슬라",
+        "v1": "변형 1",
+        "v2": "변형 2",
+        "v3": "변형 3",
+        "cn_container": "컨테이너",
+        "cn_container_40r": "40\" 리퍼 컨테이너",
+        "cn_nextgen_scania_trucks": "차세대 스카니아 트럭",
+        "cn_daf_trucks": "DAF 트럭",
+        "cn_man_trucks": "MAN 트럭",
+        "cover": "커버",
+        "large": "대형",
+        "small": "소형",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "더블",
+        "bdouble": "B-더블",
+        "triple": "트리플",
+        "open_side": "사이드 열기",
+        "open_doors": "창문 열기",
+        "ext": "확장식",
+        "short": "짧음",
+        "long": "긺",
+        "blue": "파랑",
+        "green": "초록",
+        "silver": "은색",
+        "white": "흰색",
+        "yellow": "노랑",
+        "red": "빨강",
+        "gray": "회색",
+        "black": "검정"
     }
 }

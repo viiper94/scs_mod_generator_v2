@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Aerodynamika",
-        "steer": "Řiditelný"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. Dvojnásobek",
-        "tp": "dvě mýta",
-        "2ax": "2 nápravy",
-        "3ax": "3 nápravy"
-    },
-    "accessories": {
-        "cars_balt1": "Mercefes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peaugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "Kontejner",
-        "cn_container_40r": "40' Chladící kontejner",
-        "cn_nextgen_scania_trucks": "Další Generace Scania",
-        "cn_daf_trucks": "Daf kamión",
-        "cn_man_trucks": "MAN kamión",
-        "large": "Velký",
-        "small": "Malý",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "Pokrýt"
-    },
-    "shared": {
-        "double": "Dvakrát",
-        "bdouble": "B-Dvakrát",
-        "triple": "Tři",
-        "ext": "Rozšiřitelný",
-        "short": "Krátký",
-        "long": "Dlouhý",
-        "silver": "Stříbrný",
-        "white": "Bílý",
-        "black": "Černá",
-        "red": "Červená",
-        "green": "Zelená",
-        "blue": "Modrá",
-        "gray": "Šedá",
-        "yellow": "Žlutá"
-    },
     "general": {
         "choose_language": "Vybrat jazyk",
         "help_translate": "Můžete pomoci překládat web do vašeho jazyka",
@@ -206,9 +154,63 @@
             "dimensions": "Maximální rozměry obrázku 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Aerodynamika",
+        "steer": "Řiditelný"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. Dvojnásobek",
+        "tp": "dvě mýta",
+        "2ax": "2 nápravy",
+        "3ax": "3 nápravy"
+    },
     "companies\/paints": {
         "default": "Barevný",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller černá a červená"
+    },
+    "accessories": {
+        "cars_balt1": "Mercefes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peaugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "var. 1",
+        "v2": "var. 2",
+        "v3": "var. 3",
+        "cn_container": "Kontejner",
+        "cn_container_40r": "40' Chladící kontejner",
+        "cn_nextgen_scania_trucks": "Další Generace Scania",
+        "cn_daf_trucks": "Daf kamión",
+        "cn_man_trucks": "MAN kamión",
+        "cover": "Pokrýt",
+        "large": "Velký",
+        "small": "Malý",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Dvakrát",
+        "bdouble": "B-Dvakrát",
+        "triple": "Tři",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "Rozšiřitelný",
+        "short": "Krátký",
+        "long": "Dlouhý",
+        "blue": "Modrá",
+        "green": "Zelená",
+        "silver": "Stříbrný",
+        "white": "Bílý",
+        "yellow": "Žlutá",
+        "red": "Červená",
+        "gray": "Šedá",
+        "black": "Černá"
     }
 }

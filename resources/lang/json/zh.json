@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "气动窗帘支持者悬垂型",
-        "steer": "可操纵的窗帘支持者悬垂型"
-    },
-    "ats trailers": {
-        "rm_double": "在一个上下文的拖车",
-        "tp": "收费高速公路双",
-        "2ax": "2轴",
-        "3ax": "3轴"
-    },
-    "accessories": {
-        "cars_balt1": "梅赛德斯-奔驰",
-        "cars_balt2": "现代",
-        "cars_it": "菲亚特的阿尔法",
-        "cars_dacia": "达契亚",
-        "cars_fr": "标致雪铁龙",
-        "cars_octavia": "斯柯达",
-        "cars_smax": "福特",
-        "cars_volvo": "沃尔沃",
-        "cars_magnum": "道奇",
-        "cars_mustang": "福特",
-        "cars_tesla": "特斯拉",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "容器",
-        "cn_container_40r": "40的冷藏集装箱",
-        "cn_nextgen_scania_trucks": "下一个创斯堪尼亚卡车",
-        "cn_daf_trucks": "是卡车",
-        "cn_man_trucks": "人的卡车",
-        "large": "大型管",
-        "small": "小管",
-        "3x4": "3 x4m",
-        "2x4": "2 x4m",
-        "cover": "盖住的"
-    },
-    "shared": {
-        "double": "Double",
-        "bdouble": "B-Double",
-        "triple": "Triple",
-        "ext": "Extendable",
-        "short": "Short",
-        "long": "Long",
-        "silver": "Silver",
-        "white": "白色",
-        "black": "黑",
-        "red": "红",
-        "green": "绿",
-        "blue": "蓝",
-        "gray": "Gray",
-        "yellow": "黄"
-    },
     "general": {
         "choose_language": "选择语言",
         "help_translate": "您能帮助我们将网站翻译成您的语言",
@@ -206,9 +154,63 @@
             "dimensions": "最大图像尺寸 3000x3000像素"
         }
     },
+    "ets2 trailers": {
+        "aero": "气动窗帘支持者悬垂型",
+        "steer": "可操纵的窗帘支持者悬垂型"
+    },
+    "ats trailers": {
+        "rm_double": "在一个上下文的拖车",
+        "tp": "收费高速公路双",
+        "2ax": "2轴",
+        "3ax": "3轴"
+    },
     "companies\/paints": {
         "default": "彩色",
         "schw_logo": "Schwarzmüller商标",
         "schw_black_red": "Schwarzmüller Black and Red"
+    },
+    "accessories": {
+        "cars_balt1": "梅赛德斯-奔驰",
+        "cars_balt2": "现代",
+        "cars_it": "菲亚特的阿尔法",
+        "cars_dacia": "达契亚",
+        "cars_fr": "标致雪铁龙",
+        "cars_octavia": "斯柯达",
+        "cars_smax": "福特",
+        "cars_volvo": "沃尔沃",
+        "cars_magnum": "道奇",
+        "cars_mustang": "福特",
+        "cars_tesla": "特斯拉",
+        "v1": "var. 1",
+        "v2": "var. 2",
+        "v3": "var. 3",
+        "cn_container": "容器",
+        "cn_container_40r": "40的冷藏集装箱",
+        "cn_nextgen_scania_trucks": "下一个创斯堪尼亚卡车",
+        "cn_daf_trucks": "是卡车",
+        "cn_man_trucks": "人的卡车",
+        "cover": "盖住的",
+        "large": "大型管",
+        "small": "小管",
+        "2x4": "2 x4m",
+        "3x4": "3 x4m"
+    },
+    "shared": {
+        "double": "Double",
+        "bdouble": "B-Double",
+        "triple": "Triple",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "Extendable",
+        "short": "Short",
+        "long": "Long",
+        "blue": "蓝",
+        "green": "绿",
+        "silver": "Silver",
+        "white": "白色",
+        "yellow": "黄",
+        "red": "红",
+        "gray": "Gray",
+        "black": "黑"
     }
 }

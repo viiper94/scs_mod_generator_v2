@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "aerodynamisk",
-        "steer": "styrbar"
-    },
-    "ats trailers": {
-        "rm_double": "Dobbel trailer",
-        "tp": "Turnpike dobbelt",
-        "2ax": "2 axle",
-        "3ax": "3 axle"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "container",
-        "cn_container_40r": "40' Reefer container",
-        "cn_nextgen_scania_trucks": "Næste Gen Scania lastbil",
-        "cn_daf_trucks": "DAF lastbil",
-        "cn_man_trucks": "MAN Lastbiler",
-        "large": "Store",
-        "small": "Små",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "Dækning"
-    },
-    "shared": {
-        "double": "Dobbelt",
-        "bdouble": "B-dobbelt",
-        "triple": "tredobbelt",
-        "ext": "forlænges",
-        "short": "Lille",
-        "long": "Lang",
-        "silver": "Sølv",
-        "white": "Hvid",
-        "black": "Sort",
-        "red": "Rød",
-        "green": "Grøn",
-        "blue": "Blå",
-        "gray": "Grå",
-        "yellow": "Gul"
-    },
     "general": {
         "choose_language": "Vælg sprog",
         "help_translate": "Du kan hjælpe med at oversætte hjemmesiden med dit sprog",
@@ -62,7 +10,7 @@
         "head_title": "Trailer mod skabber",
         "download_mod": "Installer modden",
         "mod_title": "Mod titel",
-        "chassis": "Understel",
+        "chassis": "trailer",
         "accessory": "Tilbehør ",
         "paint_job": "Maling",
         "color": "Farve",
@@ -111,7 +59,7 @@
         "include_fix": "Inkludere campingvogns last fixede (for TruckersMP Brug)  ",
         "search": "Søg",
         "static_mods": "Flere mods fra MP",
-        "join_discord": "Besøg fores Discord server og deltag i diskussion",
+        "join_discord": "Besøg vores Discord server og deltag i diskussion:",
         "check_all": "Vælg alle",
         "with_promods": "Inkludere ProMod",
         "no_results": "Ingen resultat"
@@ -126,7 +74,7 @@
         "generate_mod_3": "pålidelig af den trailer du vælger, du vil blive spurgt om yderligere last eller skin for trailen",
         "generate_mod_4": "Også, når du vælger farven for skin, du kan \nbestemme nøjagtig farven du vil",
         "generate_mod_5": "i  avanceret indstillinger du kan skifte mod billede (Valgfri)",
-        "generate_mod_6": "click på \"skab\" knappen. Moden vil blive skabet og du vil se knappen for installer",
+        "generate_mod_6": "klik på \"skab\" knappen. Moden vil blive skabet og du vil se knappen for installer",
         "install_mod_1": "Installer moden og gem den til \"Documents\\Euro Truck Simulator 2\\mod\" Mappe",
         "install_mod_2": "Start spilled. før du vælger profil gå ind til modifikation manager.",
         "install_mod_3": "Vælg installer mod, vær sikker på at den  er i den højre kolonne",
@@ -206,9 +154,63 @@
             "dimensions": "Max billede omfang er 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "aerodynamisk",
+        "steer": "styrbar"
+    },
+    "ats trailers": {
+        "rm_double": "Dobbel trailer",
+        "tp": "Turnpike dobbelt",
+        "2ax": "2 axle",
+        "3ax": "3 axle"
+    },
     "companies\/paints": {
         "default": "Farver",
         "schw_logo": "Schwarzmüller logo",
         "schw_black_red": "Schwarzmüller  sort og rød"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "var. 1",
+        "v2": "var. 2",
+        "v3": "var. 3",
+        "cn_container": "container",
+        "cn_container_40r": "40' Reefer container",
+        "cn_nextgen_scania_trucks": "Næste Gen Scania lastbil",
+        "cn_daf_trucks": "DAF lastbil",
+        "cn_man_trucks": "MAN Lastbiler",
+        "cover": "Dækning",
+        "large": "Store",
+        "small": "Små",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Dobbelt",
+        "bdouble": "B-dobbelt",
+        "triple": "tredobbelt",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "forlænges",
+        "short": "Lille",
+        "long": "Lang",
+        "blue": "Blå",
+        "green": "Grøn",
+        "silver": "Sølv",
+        "white": "Hvid",
+        "yellow": "Gul",
+        "red": "Rød",
+        "gray": "Grå",
+        "black": "Sort"
     }
 }

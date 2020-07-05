@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Aerodynamic",
-        "steer": "Steerable"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. Double",
-        "tp": "Turnpike Double",
-        "2ax": "2 axles",
-        "3ax": "3 axles"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "Container",
-        "cn_container_40r": "40' Reefer container",
-        "cn_nextgen_scania_trucks": "Next Gen Scania trucks",
-        "cn_daf_trucks": "DAF trucks",
-        "cn_man_trucks": "MAN trucks",
-        "large": "Large",
-        "small": "Small",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "Cover"
-    },
-    "shared": {
-        "double": "Double",
-        "bdouble": "B-Double",
-        "triple": "Triple",
-        "ext": "Extendable",
-        "short": "Short",
-        "long": "Long",
-        "silver": "Silver",
-        "white": "White",
-        "black": "Black",
-        "red": "Red",
-        "green": "Green",
-        "blue": "Blue",
-        "gray": "Gray",
-        "yellow": "Yellow"
-    },
     "general": {
         "choose_language": "აირჩიეთ ენა",
         "help_translate": "თქვენ შეგიძლიათ საიტს თქვენს ენაზე თარგმნაში დაეხმაროთ",
@@ -206,9 +154,63 @@
             "dimensions": "გამოსახულების მაქსიმალური ზომაა 3000 x 3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Aerodynamic",
+        "steer": "Steerable"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. Double",
+        "tp": "Turnpike Double",
+        "2ax": "2 axles",
+        "3ax": "3 axles"
+    },
     "companies\/paints": {
         "default": "Colored",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller Black and Red"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "var. 1",
+        "v2": "var. 2",
+        "v3": "var. 3",
+        "cn_container": "Container",
+        "cn_container_40r": "40' Reefer container",
+        "cn_nextgen_scania_trucks": "Next Gen Scania trucks",
+        "cn_daf_trucks": "DAF trucks",
+        "cn_man_trucks": "MAN trucks",
+        "cover": "Cover",
+        "large": "Large",
+        "small": "Small",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Double",
+        "bdouble": "B-Double",
+        "triple": "Triple",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "Extendable",
+        "short": "Short",
+        "long": "Long",
+        "blue": "Blue",
+        "green": "Green",
+        "silver": "Silver",
+        "white": "White",
+        "yellow": "Yellow",
+        "red": "Red",
+        "gray": "Gray",
+        "black": "Black"
     }
 }

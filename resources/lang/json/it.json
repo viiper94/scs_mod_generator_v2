@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Aerodinamico",
-        "steer": "Sterzabile"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. Doppio",
-        "tp": "Turnpike Doppio",
-        "2ax": "2 assi",
-        "3ax": "3 assi"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "Container",
-        "cn_container_40r": "40' container refrigerato",
-        "cn_nextgen_scania_trucks": "Next Gen camion Scania",
-        "cn_daf_trucks": "Camion DAF",
-        "cn_man_trucks": "Camion MAN",
-        "large": "Grande",
-        "small": "Piccolo",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "Copertura"
-    },
-    "shared": {
-        "double": "Doppio",
-        "bdouble": "B-Doppio",
-        "triple": "Triplo",
-        "ext": "Estensibile",
-        "short": "Corto",
-        "long": "Lungo",
-        "silver": "Argento",
-        "white": "Bianco",
-        "black": "Nero",
-        "red": "Rosso",
-        "green": "Verde",
-        "blue": "Blu",
-        "gray": "Grigio",
-        "yellow": "Giallo"
-    },
     "general": {
         "choose_language": "Scegli la lingua",
         "help_translate": "Puoi aiutare nella traduzione del sito web nella tua lingua",
@@ -206,9 +154,63 @@
             "dimensions": "Dimensioni massime dell'immagine 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Aerodinamico",
+        "steer": "Sterzabile"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. Doppio",
+        "tp": "Turnpike Doppio",
+        "2ax": "2 assi",
+        "3ax": "3 assi"
+    },
     "companies\/paints": {
         "default": "Colorato",
         "schw_logo": "Logo Schwarzmüller",
         "schw_black_red": "Rosso e nero Schwarzmüller"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "var. 1",
+        "v2": "var. 2",
+        "v3": "var. 3",
+        "cn_container": "Container",
+        "cn_container_40r": "40' container refrigerato",
+        "cn_nextgen_scania_trucks": "Next Gen camion Scania",
+        "cn_daf_trucks": "Camion DAF",
+        "cn_man_trucks": "Camion MAN",
+        "cover": "Copertura",
+        "large": "Grande",
+        "small": "Piccolo",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Doppio",
+        "bdouble": "B-Doppio",
+        "triple": "Triplo",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "Estensibile",
+        "short": "Corto",
+        "long": "Lungo",
+        "blue": "Blu",
+        "green": "Verde",
+        "silver": "Argento",
+        "white": "Bianco",
+        "yellow": "Giallo",
+        "red": "Rosso",
+        "gray": "Grigio",
+        "black": "Nero"
     }
 }

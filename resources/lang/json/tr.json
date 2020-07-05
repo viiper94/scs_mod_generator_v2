@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Aerodinamik",
-        "steer": "Yönlendirilebilir"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. Çiftli Dorse",
-        "tp": "Turnpike Çiftli Dorse",
-        "2ax": "2 Aks",
-        "3ax": "3 Aks"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "çeşit 1",
-        "v2": "çeşit 2",
-        "v3": "çeşit 3",
-        "cn_container": "Konteyner",
-        "cn_container_40r": "40' Soğutuculu Konteyner",
-        "cn_nextgen_scania_trucks": "Yeni Nesil Scania Çekiciler",
-        "cn_daf_trucks": "DAF Çekiciler",
-        "cn_man_trucks": "MAN Çekiciler",
-        "large": "Büyük",
-        "small": "Küçük",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "Kapak"
-    },
-    "shared": {
-        "double": "Çift",
-        "bdouble": "B-Çift",
-        "triple": "Üçlü",
-        "ext": "Uzatılabilir",
-        "short": "Kısa",
-        "long": "Uzun",
-        "silver": "Gümüş",
-        "white": "Beyaz",
-        "black": "Siyah",
-        "red": "Kırmızı",
-        "green": "Yeşil",
-        "blue": "Mavi",
-        "gray": "Gri",
-        "yellow": "Sarı"
-    },
     "general": {
         "choose_language": "Dil seçin",
         "help_translate": "Web sitesini dilinize çevirerek yardımcı olabilirsiniz",
@@ -206,9 +154,63 @@
             "dimensions": "Maks. resim boyutları 3000x3000pks"
         }
     },
+    "ets2 trailers": {
+        "aero": "Aerodinamik",
+        "steer": "Yönlendirilebilir"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. Çiftli Dorse",
+        "tp": "Turnpike Çiftli Dorse",
+        "2ax": "2 Aks",
+        "3ax": "3 Aks"
+    },
     "companies\/paints": {
         "default": "Renkli",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller Siyah ve Kırmızı"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "çeşit 1",
+        "v2": "çeşit 2",
+        "v3": "çeşit 3",
+        "cn_container": "Konteyner",
+        "cn_container_40r": "40' Soğutuculu Konteyner",
+        "cn_nextgen_scania_trucks": "Yeni Nesil Scania Çekiciler",
+        "cn_daf_trucks": "DAF Çekiciler",
+        "cn_man_trucks": "MAN Çekiciler",
+        "cover": "Kapak",
+        "large": "Büyük",
+        "small": "Küçük",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Çift",
+        "bdouble": "B-Çift",
+        "triple": "Üçlü",
+        "open_side": "Açık Yan Taraf",
+        "open_doors": "Açık Kapılar",
+        "ext": "Uzatılabilir",
+        "short": "Kısa",
+        "long": "Uzun",
+        "blue": "Mavi",
+        "green": "Yeşil",
+        "silver": "Gümüş",
+        "white": "Beyaz",
+        "yellow": "Sarı",
+        "red": "Kırmızı",
+        "gray": "Gri",
+        "black": "Siyah"
     }
 }

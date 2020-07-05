@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Aerodynamic",
-        "steer": "Steerable"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. Double",
-        "tp": "Turnpike Double",
-        "2ax": "2 osie",
-        "3ax": "3 osie"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa Romeo",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Skoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "wariant 1",
-        "v2": "wariant 2",
-        "v3": "wariant 3",
-        "cn_container": "Kontener",
-        "cn_container_40r": "40' Reefer container",
-        "cn_nextgen_scania_trucks": "Ciężarówki Scana nowej generacji",
-        "cn_daf_trucks": "Ciężarówki DAF",
-        "cn_man_trucks": "Ciężarówki MAN",
-        "large": "Large",
-        "small": "Small",
-        "3x4": "3x4m",
-        "2x4": "2x4m",
-        "cover": "Covered"
-    },
-    "shared": {
-        "double": "Double",
-        "bdouble": "B-Double",
-        "triple": "Triple",
-        "ext": "Extendable",
-        "short": "Short",
-        "long": "Long",
-        "silver": "Srebrny",
-        "white": "Biały",
-        "black": "Czarny",
-        "red": "Czerwony",
-        "green": "Zielony",
-        "blue": "Niebieski",
-        "gray": "Szary",
-        "yellow": "Żółty"
-    },
     "general": {
         "choose_language": "Wybierz język",
         "help_translate": "Możesz pomóc tłumaczyć stronę",
@@ -206,9 +154,63 @@
             "dimensions": "Maksymalny wymiar zdjęcia 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Aerodynamic",
+        "steer": "Steerable"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. Double",
+        "tp": "Turnpike Double",
+        "2ax": "2 osie",
+        "3ax": "3 osie"
+    },
     "companies\/paints": {
         "default": "Kolor",
         "schw_logo": "Logo Schwarzmüller",
         "schw_black_red": "Czarny i czerwony Schwarzmüller"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa Romeo",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Skoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "wariant 1",
+        "v2": "wariant 2",
+        "v3": "wariant 3",
+        "cn_container": "Kontener",
+        "cn_container_40r": "40' Reefer container",
+        "cn_nextgen_scania_trucks": "Ciężarówki Scana nowej generacji",
+        "cn_daf_trucks": "Ciężarówki DAF",
+        "cn_man_trucks": "Ciężarówki MAN",
+        "cover": "Covered",
+        "large": "Large",
+        "small": "Small",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Double",
+        "bdouble": "B-Double",
+        "triple": "Triple",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "Extendable",
+        "short": "Short",
+        "long": "Long",
+        "blue": "Niebieski",
+        "green": "Zielony",
+        "silver": "Srebrny",
+        "white": "Biały",
+        "yellow": "Żółty",
+        "red": "Czerwony",
+        "gray": "Szary",
+        "black": "Czarny"
     }
 }

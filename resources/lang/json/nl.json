@@ -1,56 +1,4 @@
 {
-    "ets2 trailers": {
-        "aero": "Aerodynamic",
-        "steer": "Steerable"
-    },
-    "ats trailers": {
-        "rm_double": "R.M. Double",
-        "tp": "Turnpike Double",
-        "2ax": "2 axles",
-        "3ax": "3 axles"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "var. 1",
-        "v2": "var. 2",
-        "v3": "var. 3",
-        "cn_container": "Container",
-        "cn_container_40r": "40' Reefer container",
-        "cn_nextgen_scania_trucks": "Next Gen Scania trucks",
-        "cn_daf_trucks": "DAF trucks",
-        "cn_man_trucks": "MAN trucks",
-        "large": "Grote",
-        "small": "Kleine",
-        "3x4": "3x4m",
-        "2x4": "2x4",
-        "cover": "Hoes"
-    },
-    "shared": {
-        "double": "Double",
-        "bdouble": "B-Double",
-        "triple": "Triple",
-        "ext": "Extendable",
-        "short": "Kort",
-        "long": "Lang",
-        "silver": "Zilver",
-        "white": "Wit",
-        "black": "Zwart",
-        "red": "Rood",
-        "green": "Groen",
-        "blue": "Blauw",
-        "gray": "Grijs",
-        "yellow": "Geel"
-    },
     "general": {
         "choose_language": "Kies taal",
         "help_translate": "Jij kan ook helpen met het vertalen van de site!",
@@ -113,7 +61,7 @@
         "static_mods": "Meer mods voor MP",
         "join_discord": "Bezoek onze Discord server en sluit je aan bij discussie:",
         "check_all": "Vink alles aan",
-        "with_promods": "Include ProMods",
+        "with_promods": "Bevat Promods",
         "no_results": "Geen resultaten"
     },
     "instructions": {
@@ -172,8 +120,8 @@
     },
     "mods": {
         "mods_history": "Mods Geschiedenis",
-        "last_mods": "Recently Generated Mods",
-        "see_all": "All Generated Mods",
+        "last_mods": "Recent gemaakte mods",
+        "see_all": "Alle gemaakte mods",
         "mod_params": "Mods Params",
         "mod_for_version": "Mods Versie",
         "no_mods": "Mods geschiedenis is leeg",
@@ -181,7 +129,7 @@
         "broken": "Is deze mod gebroken?",
         "working": "Werkt deze mod?",
         "mark_as_broken": "Are you sure mark this mod as broken?",
-        "mark_as_working": "Mark this mod as working?",
+        "mark_as_working": "Markeer deze mod als werkend ",
         "mod_required_dlc": "Verplicht",
         "tested_on_ver": "Getest op versie"
     },
@@ -206,9 +154,63 @@
             "dimensions": "Max afbeelding afmeting 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "aero": "Aerodynamic",
+        "steer": "Steerable"
+    },
+    "ats trailers": {
+        "rm_double": "R.M. Double",
+        "tp": "Turnpike Double",
+        "2ax": "2 axles",
+        "3ax": "3 axles"
+    },
     "companies\/paints": {
         "default": "Gekleurde",
         "schw_logo": "Schwarzmüller Logo",
-        "schw_black_red": "Schwarzmüller Black and Red"
+        "schw_black_red": "Schwarzmüller Zwart en Rood"
+    },
+    "accessories": {
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "var. 1",
+        "v2": "var. 2",
+        "v3": "var. 3",
+        "cn_container": "Container",
+        "cn_container_40r": "40' Koelcontainer\n",
+        "cn_nextgen_scania_trucks": "Next Gen Scania vrachtwagen",
+        "cn_daf_trucks": "DAF trucks",
+        "cn_man_trucks": "MAN trucks",
+        "cover": "Hoes",
+        "large": "Grote",
+        "small": "Kleine",
+        "2x4": "2x4",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "double": "Dubbel",
+        "bdouble": "B-Dubbel",
+        "triple": "Triple",
+        "open_side": "Open Side",
+        "open_doors": "Open Doors",
+        "ext": "Verlengbaar",
+        "short": "Kort",
+        "long": "Lang",
+        "blue": "Blauw",
+        "green": "Groen",
+        "silver": "Zilver",
+        "white": "Wit",
+        "yellow": "Geel",
+        "red": "Rood",
+        "gray": "Grijs",
+        "black": "Zwart"
     }
 }
