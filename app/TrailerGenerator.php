@@ -12,6 +12,7 @@ class TrailerGenerator extends ModGenerator{
 	public $filesDir = 'resources/files/trailers';
 	public $dlc = ['base'];
 	public $unique;
+	public $allPaintable = false;
 
 	public function load($chassis, $accessory, $paintJob){
         $this->game = Request::input('target');
@@ -20,7 +21,8 @@ class TrailerGenerator extends ModGenerator{
 		$this->paintJob = $paintJob;
 		$this->dlc = $this->getDLCArray();
         $this->title = $this->getTitle();
-        $this->unique = substr(md5(time()), 0, 10);
+        $this->unique = substr(md5(time()), 0, 5);
+        $this->allPaintable = $this->chassis->alias === 'paintable';
 
 		$this->outDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->outDir . time();
 		$this->filesDir = $_SERVER['DOCUMENT_ROOT'] .'/../'. $this->filesDir;
@@ -35,7 +37,7 @@ class TrailerGenerator extends ModGenerator{
 			$this->copyCompanyFiles();
 			$this->replaceCompanyFiles();
 		}
-		if($this->chassis->alias !== 'paintable' && Request::input('paint') !== 'all'){
+		if(Request::input('paint') !== 'all'){
             $this->copyDealerFiles();
             $this->copyTrailerDefsFiles();
             $this->replaceDealerFile();
@@ -119,14 +121,9 @@ class TrailerGenerator extends ModGenerator{
 				if(is_file($dirname."/".$file)){
 					$rows = file($dirname."/".$file, FILE_IGNORE_NEW_LINES);
 					$trailer_name = trim(preg_split('/trailer\./', $rows[0])[1]);
-					if($this->chassis->alias == 'paintable'){
-						$content = $this->generatePaintableTrailersContent($rows);
-						if(stripos($content,'base_color') === false){
-							$content = $this->generateRandomTrailerContent($trailer_name);
-                        }
-                    }else{
+					$this->allPaintable ?
+                        $content = $this->generateRandomTrailerContent($trailer_name):
                         $content = $this->generateMarketTrailerContent($trailer_name);
-					}
                     file_put_contents($dirname."/".$file, $content);
 				}
 			}
@@ -135,20 +132,52 @@ class TrailerGenerator extends ModGenerator{
 	}
 
     private function replaceDealerFile(){
-        file_put_contents($this->outDir .'/vehicle/trailer_dealer/tmg/'.$this->unique.'.sii', $this->generateDealerTrailerContent());
-        $dirname = $this->outDir .'/vehicle/tmg/'.$this->unique;
-        $dir = opendir($dirname);
-        while (($file = readdir($dir)) !== false){
-            if($file != "." && $file != ".."){
-                if(is_file($dirname."/".$file)){
-                    $content = file_get_contents($dirname."/".$file);
-                    $content = str_replace('%title%', $this->title, $content);
-                    $content = str_replace('%unique%', $this->unique, $content);
-                    file_put_contents($dirname."/".$file, $content);
+        if($this->allPaintable){
+            $this->prepareDealerAllPaintableData();
+        }else{
+            file_put_contents($this->outDir .'/vehicle/trailer_dealer/tmg/'.$this->unique.'.sii', $this->generateDealerTrailerContent());
+            $dirname = $this->outDir .'/vehicle/tmg/'.$this->unique;
+            $dir = opendir($dirname);
+            while (($file = readdir($dir)) !== false){
+                if($file != "." && $file != ".."){
+                    if(is_file($dirname."/".$file)){
+                        $content = file_get_contents($dirname."/".$file);
+                        $content = str_replace('%title%', $this->title, $content);
+                        $content = str_replace('%unique%', $this->unique, $content);
+                        file_put_contents($dirname."/".$file, $content);
+                    }
                 }
             }
+            closedir($dir);
         }
-        closedir($dir);
+	}
+
+    private function prepareDealerAllPaintableData(){
+        $dlc_id = Dlc::whereIn('name', $this->dlc)->get()->keyBy('id')->keys()->toArray();
+        $list = Chassis::where(['can_all_companies' => 1, 'game' => $this->game])->where(function($q) use ($dlc_id) {
+            return $q->whereIn('dlc_id', $dlc_id)->orWhereNull('dlc_id');
+        })->get();
+        foreach($list as $key => $item){
+            $item_paint_job = Paint::where(['chassis' => $item->alias_short_paint, 'look' => $this->paintJob->look])->first();
+            if(!$item_paint_job) continue;
+
+            // copy body file, rename it and replace placeholders
+            copy($this->outDir . '/vehicle/tmg/'.$this->unique.'/data.sii', $this->outDir . '/vehicle/tmg/'.$this->unique.'/data'.$item->id.'.sii');
+            copy($this->outDir . '/vehicle/tmg/'.$this->unique.'/body.sii', $this->outDir . '/vehicle/tmg/'.$this->unique.'/body'.$item->id.'.sii');
+
+            $body = file_get_contents($this->outDir . '/vehicle/tmg/'.$this->unique.'/body'.$item->id.'.sii');
+            $body = str_replace('%title%', $item->translate(), $body);
+            $body = str_replace('%unique%', $this->unique.$item->id, $body);
+            file_put_contents($this->outDir . '/vehicle/tmg/'.$this->unique.'/body'.$item->id.'.sii', $body);
+
+            $data = file_get_contents($this->outDir . '/vehicle/tmg/'.$this->unique.'/data'.$item->id.'.sii');
+            $data = str_replace('%title%', $item->translate(), $data);
+            $data = str_replace('%unique%', $this->unique.$item->id, $data);
+            file_put_contents($this->outDir . '/vehicle/tmg/'.$this->unique.'/data'.$item->id.'.sii', $data);
+
+            // generate content
+            file_put_contents($this->outDir .'/vehicle/trailer_dealer/tmg/'.$item->alias.'-'.$this->unique.'.sii', $this->generateDealerAllPaintableContent($item, $item_paint_job));
+        }
 	}
 
 	private function replaceCompanyFiles(){
@@ -268,7 +297,7 @@ class TrailerGenerator extends ModGenerator{
         foreach($this->chassis->trailers as $key => $trailer){
 
             // trailer unit
-            $output_string .= "trailer : .$key\n{\n";
+            $output_string .= 'trailer : .'.$this->unique.'.'.$this->chassis->id.$key."\n{\n";
             if($key == 0){
                 $output_string .= "\ttrailer_definition: ".Chassis::$defaultOwnableDef[$this->game]."\n\n";
                 $output_string .= "\taccessories[]: .$key.data\n";
@@ -285,7 +314,7 @@ class TrailerGenerator extends ModGenerator{
                     $output_string .= "\taccessories[]: .$key.cargo\n";
                 }
             }
-            if($this->chassis->supports_wheels && !$this->chassis->custemWheels){
+            if($this->chassis->supports_wheels && !$this->chassis->custemWheels || $this->paintJob){
                 $output_string .= "\taccessories[]: .$key.paint_job\n";
             }
             for($i = 0; $i < $trailer->axles; $i++){
@@ -304,13 +333,20 @@ class TrailerGenerator extends ModGenerator{
                 }
             }
             if(isset($this->chassis->trailers[$key+1])){
-                $output_string .= "\n\tslave_trailer: .".($key+1);
+                $output_string .= "\n\tslave_trailer: .".$this->unique.'.'.$this->chassis->id.($key+1);
             }
             $output_string .= "\n}\n\n";
 
             // trailer accessories units
             //data unit
-            if($key == 0) $output_string .= "vehicle_accessory: .$key.data\n{\n\tdata_path: \"/def/vehicle/tmg/".$this->unique."/data.sii\"\n}\n";
+
+            if($key == 0){
+                if($this->allPaintable){
+                    $output_string .= "vehicle_accessory: .$key.data\n{\n\tdata_path: \"/def/vehicle/tmg/".$this->unique."/data".$this->chassis->id.".sii\"\n}\n";
+                }else{
+                    $output_string .= "vehicle_accessory: .$key.data\n{\n\tdata_path: \"/def/vehicle/tmg/".$this->unique."/data.sii\"\n}\n";
+                }
+            }
 
             // chassis unit
             $output_string .= "\nvehicle_accessory: .$key.chassis\n";
@@ -318,7 +354,11 @@ class TrailerGenerator extends ModGenerator{
 
             // body unit
             $output_string .= "\nvehicle_accessory: .$key.body\n";
-            $output_string .= "{\n\tdata_path: \"".($trailer->body ?? '/def/vehicle/tmg/'.$this->unique.'/body.sii')."\"\n";
+            if($this->allPaintable){
+                $output_string .= "{\n\tdata_path: \"".($trailer->body ?? '/def/vehicle/tmg/'.$this->unique.'/body'.$this->chassis->id.'.sii')."\"\n";
+            }else{
+                $output_string .= "{\n\tdata_path: \"".($trailer->body ?? '/def/vehicle/tmg/'.$this->unique.'/body.sii')."\"\n";
+            }
             $output_string .= "}\n\n";
 
             // addons units
@@ -408,11 +448,12 @@ class TrailerGenerator extends ModGenerator{
         $to_random = Chassis::where(['can_all_companies' => 1, 'game' => $this->game])->where(function($q) use ($dlc_id) {
             return $q->whereIn('dlc_id', $dlc_id)->orWhereNull('dlc_id');
         })->get();
-        $random_chassis = $to_random->random();
-        $random_chassis->setWheels($this->chassis->wheels);
+        do{
+            $random_chassis = $to_random->random();
+            $random_paint_job = Paint::where(['chassis' => $random_chassis->alias_short_paint, 'look' => $this->paintJob->look])->first();
+        }while(!$random_paint_job);
 
-        $random_paint_job = new Paint();
-        $random_paint_job->def = $random_chassis->default_paint_job;
+        $random_chassis->setWheels($this->chassis->wheels);
         $random_paint_job->with_color = $this->paintJob->with_color;
         $random_paint_job->color = $this->paintJob->color;
 
@@ -425,6 +466,17 @@ class TrailerGenerator extends ModGenerator{
         $this->paintJob = $original_paint_job;
 
         return $content;
+    }
+
+    private function generateDealerAllPaintableContent($chassis, $chassis_paint_job){
+        $chassis->setWheels($this->chassis->wheels);
+        $chassis_paint_job->with_color = $this->paintJob->with_color;
+        $chassis_paint_job->color = $this->paintJob->color;
+
+        $this->paintJob = $chassis_paint_job;
+        $this->chassis = $chassis;
+
+        return $this->generateDealerTrailerContent();
     }
 
 }
