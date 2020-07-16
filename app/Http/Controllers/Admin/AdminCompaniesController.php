@@ -115,22 +115,23 @@ class AdminCompaniesController extends Controller{
                         preg_match('/trailer_look:\s[a-z0-9_]+/', $content, $matches);
                         $look = str_replace('trailer_look: ', '', $matches[0]);
 
-                        if($look !== 'default' && count(Company::where('name', $look)->get()) === 0){
+                        if(!in_array($look, ['default', 'plain']) && count(Company::where('name', $look)->get()) === 0){
                             $company = new Company();
                             $company->fill([
-                                'game' => $dlc_params['game'] ?? 'ets2',
-                                'name' => preg_replace('%(\.[a-z_]+)?.sii%', '', $item),
-                                'dlc_id' => $dlc_params['id'],
+                                'game' => $dlc_params['game'] ?? 'ats',
+                                'name' => $look,
+                                'dlc_id' => $dlc_params['id'] ?? null,
                                 'active' => true,
                             ]);
-//                            $company->save();
-                            dump($company);
+                            $company->save();
+//                            dump($company);
                         }
 
                     }
                 }
             }
         }
+//        die;
         return redirect()->route('companies')->with(['success' => 'Компанії додано!']);
     }
 
