@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.grainhopper.rm_double_p.grainhopper
 	body_type: hopper
 	chain_type: rmdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 0.6
+						mass_ratio[]: 0.6
 	mass_ratio[]: 0.1
 	mass_ratio[]: 0.3
 }

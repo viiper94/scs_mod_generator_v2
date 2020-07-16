@@ -11,13 +11,7 @@ trailer_def : trailer_def.scs.box.single_53r.dryvan
 	body_type: dryvan
 	chain_type: single
 
-	
-	
-	
-	
-	
-	
-
-	mass_ratio[]: 1
+				country_validity[]: new_mexico
+				mass_ratio[]: 1
 }
 }

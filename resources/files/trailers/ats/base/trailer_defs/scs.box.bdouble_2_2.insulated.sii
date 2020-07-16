@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.box.bdouble_2_2.insulated
 	body_type: insulated
 	chain_type: bdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 0.5
+						mass_ratio[]: 0.5
 	mass_ratio[]: 0.5
 }
 }

@@ -1,0 +1,34 @@
+trailer : trailer.kb_loader
+{
+	accessories[]: .trailer.kb_loader.chassis
+	accessories[]: .trailer.kb_loader.rwheel0
+	accessories[]: .trailer.kb_loader.rwheel1
+	accessories[]: .trailer.kb_loader.flag_r_r
+    accessories[]: .trailer.kb_loader.flag_r_l
+}
+
+vehicle_accessory: .trailer.kb_loader.chassis
+{
+	data_path: "/def/vehicle/trailer/kb_loader/chassis.sii"
+}
+
+vehicle_wheel_accessory: .trailer.kb_loader.rwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .trailer.kb_loader.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .trailer.kb_loader.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/kb_loader/accessory/flag_r_r/warning.dlc_forest_harvesting.sii"
+}
+
+vehicle_addon_accessory: .trailer.kb_loader.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/kb_loader/accessory/flag_r_l/warning.dlc_forest_harvesting.sii"
+}

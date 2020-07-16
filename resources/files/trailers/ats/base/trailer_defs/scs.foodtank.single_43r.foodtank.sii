@@ -1,0 +1,16 @@
+SiiNunit
+{
+trailer_def : trailer_def.scs.foodtank.single_43r.foodtank
+{
+	gross_trailer_weight_limit: 30000
+	chassis_mass: 5261.67
+	body_mass: 0
+	length: 13.1064
+	axles: 2
+	volume: 24.61
+	body_type: foodtank
+	chain_type: single
+
+	mass_ratio[]: 1
+}
+}

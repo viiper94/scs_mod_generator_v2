@@ -11,11 +11,7 @@ trailer_def : trailer_def.scs.flatbed.triple.curtain
 	body_type: curtainside
 	chain_type: triple
 
-	
-	
-	
-
-	mass_ratio[]: 0.3
+					mass_ratio[]: 0.3
 	mass_ratio[]: 0.05
 	mass_ratio[]: 0.3
 	mass_ratio[]: 0.05

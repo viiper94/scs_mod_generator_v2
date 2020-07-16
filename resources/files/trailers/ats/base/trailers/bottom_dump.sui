@@ -1,0 +1,30 @@
+trailer : trailer.bottom_dump
+{
+	accessories[]: .bottom_dump.tchassis
+	accessories[]: .bottom_dump.trwheel0
+	accessories[]: .bottom_dump.trwheel1
+	accessories[]: .bottom_dump.trwheel2
+}
+
+vehicle_accessory: .bottom_dump.tchassis
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/chassis.sii"
+}
+
+vehicle_wheel_accessory: .bottom_dump.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .bottom_dump.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .bottom_dump.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}

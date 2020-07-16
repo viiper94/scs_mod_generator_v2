@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.flatbed.rm_double.flatbed
 	body_type: flatbed
 	chain_type: rmdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 0.6
+						mass_ratio[]: 0.6
 	mass_ratio[]: 0.1
 	mass_ratio[]: 0.3
 }

@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.flatbed.bdouble_2_2.flatbed_a
 	body_type: flatbed
 	chain_type: bdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 0.5
+						mass_ratio[]: 0.5
 	mass_ratio[]: 0.5
 }
 }

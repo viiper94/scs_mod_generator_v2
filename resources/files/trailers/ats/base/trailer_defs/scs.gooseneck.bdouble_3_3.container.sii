@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.gooseneck.bdouble_3_3.container
 	body_type: container
 	chain_type: bdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 1
+						mass_ratio[]: 1
 	mass_ratio[]: 0
 }
 }

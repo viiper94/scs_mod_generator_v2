@@ -11,13 +11,7 @@ trailer_def : trailer_def.scs.flatbed.single_53r.curtain
 	body_type: curtainside
 	chain_type: single
 
-	
-	
-	
-	
-	
-	
-
-	mass_ratio[]: 1
+				country_validity[]: new_mexico
+				mass_ratio[]: 1
 }
 }

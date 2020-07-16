@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.box.bdouble_3_2.dryvan
 	body_type: dryvan
 	chain_type: bdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 0.5
+						mass_ratio[]: 0.5
 	mass_ratio[]: 0.5
 }
 }

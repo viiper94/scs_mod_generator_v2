@@ -11,12 +11,7 @@ trailer_def : trailer_def.scs.flatbed.bdouble_3_2.curtain
 	body_type: curtainside
 	chain_type: bdouble
 
-	
-	
-	
-	
-
-	mass_ratio[]: 0.5
+						mass_ratio[]: 0.5
 	mass_ratio[]: 0.5
 }
 }

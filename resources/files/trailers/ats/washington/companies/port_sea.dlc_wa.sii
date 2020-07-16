@@ -1,6 +1,0 @@
-company_permanent: company.permanent.port_sea
-{
-	name: "Port of Seattle"
-	sort_name: "port of seattle"
-	trailer_look: plain
-}
