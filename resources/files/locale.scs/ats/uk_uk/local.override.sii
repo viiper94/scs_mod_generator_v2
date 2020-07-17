@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Освітлення кабіни"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Захист кабіни"
 
+	key[]: "hndrail"
+	val[]: "Поручень"
+
 	key[]: "horns"
 	val[]: "Пневматичні сигнали"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Бризковики"
 
+	key[]: "rear_cab"
+	val[]: "Зад кабіни"
+
 	key[]: "sideflares"
 	val[]: "Декоративні Панелі"
 
 	key[]: "sideskrt_bar"
 	val[]: "Планки бічних накладок"
+
+	key[]: "slp_hndl"
+	val[]: "Дверні ручки"
+
+	key[]: "slp_vent"
+	val[]: "Вентиляція"
 
 	key[]: "topflares"
 	val[]: "Ліхтарі Спальника"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Іграшкова бензопила"
+
+	key[]: "chrom_tank"
+	val[]: "Хромований бак" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Алюмінієвий бак" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-образний" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -120,6 +140,12 @@ localization_db : .localization
 
 	key[]: "intro_1"
 	val[]: "Вітаємо у American Truck Simulator!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Ваша комбінація тягача і причепа є незаконна в цьому штаті!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -232,6 +258,9 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Фрукти"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Фруктовий сік"
 
 	key[]: "cn_grain"
 	val[]: "Зерно "
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 футів, рознесені осі"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 футів, ззаду"
+
 	key[]: "tr_single_45"
 	val[]: "45 футів"
 
@@ -820,6 +852,9 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Алюмінієва платформа"
 
+	key[]: "bs_food_tank"
+	val[]: "Харчова цистерна"
+
 	key[]: "bs_grain_hopper"
 	val[]: "Зерновоз"
 
@@ -914,6 +949,9 @@ localization_db : .localization
 	key[]: "california"
 	val[]: "Каліфорнія"
 
+	key[]: "idaho"
+	val[]: "Айдахо"
+
 	key[]: "nevada"
 	val[]: "Невада"
 
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Бенд"
 
+	key[]: "boise"
+	val[]: "Бойсі"
+
 	key[]: "burns"
 	val[]: "Барнс"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Кловіс"
+
+	key[]: "coeur_dalene"
+	val[]: "Коур-д'Ален"
 
 	key[]: "colville"
 	val[]: "Колвілл"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Гранд-Кулі"
 
+	key[]: "grangeville"
+	val[]: "Ґрейнджвілл"
+
 	key[]: "hobbs"
 	val[]: "Хобс"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Хюрон"
 
+	key[]: "idaho_falls"
+	val[]: "Айдахо-Фолс"
+
 	key[]: "jackpot"
 	val[]: "Джекпот"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Кенневік"
+
+	key[]: "ketchum"
+	val[]: "Кетчум"
 
 	key[]: "kingman"
 	val[]: "Кінгман"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Лас-Вегас"
 
+	key[]: "lewiston"
+	val[]: "Льюїстон"
+
 	key[]: "logan"
 	val[]: "Логан"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Моаб"
+
+	key[]: "nampa"
+	val[]: "Нампа"
 
 	key[]: "newport"
 	val[]: "Нюпорт"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "Пайош"
 
+	key[]: "pocatello"
+	val[]: "Покателло"
+
 	key[]: "port_angeles"
 	val[]: "Порт-Анджелес"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Саліна"
 
+	key[]: "salmon"
+	val[]: "Салман"
+
 	key[]: "salt_lake_city"
 	val[]: "Солт-Лейк-Сіті"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "Сан-Сімон"
+
+	key[]: "sandpoint"
+	val[]: "Сандпоінт"
 
 	key[]: "santa_cruz"
 	val[]: "Санта-Круз"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Тукумкарі"
 
+	key[]: "twin_falls"
+	val[]: "Туін-Фолс"
+
 	key[]: "ukiah"
 	val[]: "Юкайа"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Юма"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Картопляна ферма Туін-Фолс"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Перевал Галена"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Пам'ятний міст Перріна"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Національний монумент Лунні Кратери"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "м. Бойсе"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "м. Сандпойнт"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Лісозаготовка"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "м. Макол"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "м. Айдахо-Фолс"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Зона відпочинку Мідвейл-Хіл"
 #@}
 
 }

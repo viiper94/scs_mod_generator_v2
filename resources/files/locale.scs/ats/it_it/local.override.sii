@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,12 +18,11 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Luci Cabina"
 
 	key[]: "cabdefl"
-	val[]: "Deflettori Vetri"
+	val[]: "Spoiler"
 
 	key[]: "deflector"
 	val[]: "Deflettore "
@@ -32,7 +31,7 @@ localization_db : .localization
 	val[]: "Filtro Aria"
 
 	key[]: "f_banner"
-	val[]: "Bandiera"
+	val[]: "Bandiera anteriore"
 
 	key[]: "flag_f_l"
 	val[]: "Bandierine anteriori"
@@ -50,13 +49,16 @@ localization_db : .localization
 	val[]: "Specchi sul cofano"
 
 	key[]: "fr_mirror"
-	val[]: "Specchio sul cofano"
+	val[]: "Specchi sul cofano"
 
 	key[]: "grill"
 	val[]: "Griglia"
 
 	key[]: "headache_r"
 	val[]: "Protezioni cabina"
+
+	key[]: "hndrail"
+	val[]: "Maniglia di supporto"
 
 	key[]: "horns"
 	val[]: "Trombe"
@@ -65,7 +67,7 @@ localization_db : .localization
 	val[]: "Cofano"
 
 	key[]: "lghfender"
-	val[]: "Passa ruota "
+	val[]: "Passaruota"
 
 	key[]: "mudflaps"
 	val[]: "Paraspruzzi"
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Parafanghi"
 
+	key[]: "rear_cab"
+	val[]: "Retro della cabina"
+
 	key[]: "sideflares"
-	val[]: "Pannello sotto porta"
+	val[]: "Pannello sottoporta"
 
 	key[]: "sideskrt_bar"
 	val[]: "Minigonne"
+
+	key[]: "slp_hndl"
+	val[]: "Maniglie"
+
+	key[]: "slp_vent"
+	val[]: "Presa d'aria"
 
 	key[]: "topflares"
 	val[]: "Luci Cuccetta"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Motosega giocattolo"
+
+	key[]: "chrom_tank"
+	val[]: "Serbatoio cromato" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Serbatoio in alluminio" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "Forma D" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -122,6 +142,12 @@ localization_db : .localization
 	val[]: "Benvenuto su American Truck Simulator!"
 #@}
 
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Il tuo camion e rimorchio non sono legali in questo stato!" #+ Adviser text
+#@}
+
 #+ Skills screen
 #+
 #+ Allows the player to use gained experience points to improve various skills.
@@ -145,10 +171,10 @@ localization_db : .localization
 #+ Information about individual hazard classes.
 #@{
 	key[]: "skill_adr_title"
-	val[]: "Formazione trasporto materiali pericolosi "
+	val[]: "Formazione sul trasporto di materiali pericolosi"
 
 	key[]: "skill_adr_info"
-	val[]: "Il trasporto di merci pericolose richiede professionisti ben addestrati. Usa la tua esperienza, ottenuta faticosamente, per acquisire i seguenti certificati U.S. DOT per materiali pericolosi e aumenta notevolmente il tuo reddito:"
+	val[]: "Il trasporto di merci pericolose richiede professionisti ben addestrati. Usa la tua esperienza, ottenuta faticosamente, per acquisire i seguenti certificati U.S. DOT HazMat e aumenta notevolmente il tuo reddito:"
 #@}
 
 #+ Information about individual ranks of "Fuel Economy" skill.
@@ -189,7 +215,7 @@ localization_db : .localization
 	val[]: "Barca"
 
 	key[]: "cn_bottles"
-	val[]: "Bottiglie Vuote"
+	val[]: "Bottiglie vuote"
 
 	key[]: "cn_butter"
 	val[]: "Burro"
@@ -207,22 +233,22 @@ localization_db : .localization
 	val[]: "Tubi in calcestruzzo"
 
 	key[]: "cn_const_houses"
-	val[]: "Case prefabbricate"
+	val[]: "Baracca da cantiere"
 
 	key[]: "cn_crude_oil"
-	val[]: "Olio crudo"
+	val[]: "Petrolio greggio"
 
 	key[]: "cn_curtains"
-	val[]: "Centinato "
+	val[]: "Tende"
 
 	key[]: "cn_dryfruit"
 	val[]: "Frutta secca"
 
 	key[]: "cn_forwarder"
-	val[]: "Spedizioniere"
+	val[]: "Trasportatore"
 
 	key[]: "cn_frac_tank"
-	val[]: "Serbatoio"
+	val[]: "Serbatoio mobile"
 
 	key[]: "cn_frozen_fruits"
 	val[]: "Frutta congelata"
@@ -233,6 +259,9 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "Frutta"
 
+	key[]: "cn_fruit_juice"
+	val[]: "Succo di Frutta"
+
 	key[]: "cn_grain"
 	val[]: "Grano"
 
@@ -240,28 +269,28 @@ localization_db : .localization
 	val[]: "Mietitrebbia"
 
 	key[]: "cn_hay"
-	val[]: "Balle di Paglia"
+	val[]: "Fieno"
 
 	key[]: "cn_house_prefabs"
-	val[]: "Casa prefabbricata"
+	val[]: "Prefabbricati per case"
 
 	key[]: "cn_kenworth_t680"
 	val[]: "Camion Kenworth"
 
 	key[]: "cn_knuckleboom_loader"
-	val[]: "Caricatore Knuckleboom"
+	val[]: "Caricatore con braccio articolato"
 
 	key[]: "cn_lift_truck"
 	val[]: "Carrello elevatore"
 
 	key[]: "cn_lift_truck_chassis"
-	val[]: "Telaio sollevabile"
+	val[]: "Telaio di carrello elevatore"
 
 	key[]: "cn_log_harvester"
-	val[]: "Macchina da taglio"
+	val[]: "Disboscatrice"
 
 	key[]: "cn_log_loader"
-	val[]: "Caricatore di tronchi"
+	val[]: "Carica tronchi"
 
 	key[]: "cn_log_stacker"
 	val[]: "Accatasta tronchi"
@@ -270,13 +299,13 @@ localization_db : .localization
 	val[]: "Liscivia"
 
 	key[]: "cn_mbt"
-	val[]: "Barriera Mobile"
+	val[]: "Barriera mobile"
 
 	key[]: "cn_meat"
 	val[]: "Carni"
 
 	key[]: "cn_milling_machine"
-	val[]: "Fresa Stradale"
+	val[]: "Fresa stradale"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Gru"
@@ -288,13 +317,13 @@ localization_db : .localization
 	val[]: "Malta"
 
 	key[]: "cn_mulcher"
-	val[]: "Pacciamatura"
+	val[]: "Trinciatrice"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Cibo per animali in pellet"
 
 	key[]: "cn_plows"
-	val[]: "Aratro"
+	val[]: "Aratri"
 
 	key[]: "cn_power_generator"
 	val[]: "Generatore elettrico"
@@ -309,10 +338,10 @@ localization_db : .localization
 	val[]: "Auto rottamate"
 
 	key[]: "cn_scraper"
-	val[]: "Raschietto"
+	val[]: "Ruspa"
 
 	key[]: "cn_stumper"
-	val[]: "Frammenti"
+	val[]: "Fresaceppi"
 
 	key[]: "cn_transformer"
 	val[]: "Trasformatore"
@@ -329,7 +358,7 @@ localization_db : .localization
 #@{
 	#+ Name of the cargo of big house.
 	key[]: "cn_house"
-	val[]: "Casa modulare"
+	val[]: "Casa mobile"
 
 	#+ Name of the cargo of transport helicopter helicopter.
 	key[]: "cn_ovs_helicopter"
@@ -341,11 +370,11 @@ localization_db : .localization
 
 	#+ Name of the cargo of hull part for large dozers.
 	key[]: "cn_mutt_hull"
-	val[]: "Scafo del camion"
+	val[]: "Cassone per dumper da miniera"
 
 	#+ Name of the cargo of large dozer.
 	key[]: "cn_mutt"
-	val[]: "Telaio per camion"
+	val[]: "Telaio per dumper da miniera"
 
 	#+ Name of the cargo of big air condition complex.
 	key[]: "cn_aircondition"
@@ -359,28 +388,28 @@ localization_db : .localization
 #+ Names of individual trailer and trailer chassis types.
 #@{
 	key[]: "tn_acid"
-	val[]: "Cisterna Acido"
+	val[]: "Cisterna per acidi"
 
 	key[]: "tn_acid_long"
-	val[]: "Cisterna Acido lunga "
+	val[]: "Cisterna per acidi lunga"
 
 	key[]: "tn_bottom_dump"
-	val[]: "Rimorchio ribaltabile posteriore"
+	val[]: "Tramoggia inerti"
 
 	key[]: "tn_car"
 	val[]: "Bisarca"
 
 	key[]: "tn_cement"
-	val[]: "Cemento sfuso"
+	val[]: "Siloveicolo per cemento"
 
 	key[]: "tn_chemical"
-	val[]: "Cisterna Chimici"
+	val[]: "Cisterna per prodotti chimici"
 
 	key[]: "tn_chemical_long"
-	val[]: "Cisterna Chimici Lunga"
+	val[]: "Cisterna per prodotti chimici lunga"
 
 	key[]: "tn_dry_bulk"
-	val[]: "Rimorchio rinfuso"
+	val[]: "Siloveicolo"
 
 	key[]: "tn_dump"
 	val[]: "Ribaltabile"
@@ -389,43 +418,43 @@ localization_db : .localization
 	val[]: "Pianale"
 
 	key[]: "tn_food_tank"
-	val[]: "Rimorchio cisterna alimentare"
+	val[]: "Cisterna alimentare"
 
 	key[]: "tn_frac_tank"
-	val[]: "Serbatoio"
+	val[]: "Serbatoio mobile"
 
 	key[]: "tn_fuel"
-	val[]: "Cisterna Combustibile"
+	val[]: "Cisterna per combustibili"
 
 	key[]: "tn_fuel_long"
-	val[]: "Cisterna Combustibile Lunga"
+	val[]: "Cisterna per combustibili lunga"
 
 	key[]: "tn_gas"
-	val[]: "Rimorchio Cisterna Gas"
+	val[]: "Cisterna per gas"
 
 	key[]: "tn_gas_long"
-	val[]: "Rimorchio Cisterna Gas Lungo"
+	val[]: "Cisterna per gas lunga"
 
 	key[]: "tn_home_transporter"
-	val[]: "Trasporto domestico"
+	val[]: "Trasporto case"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "Caricatore con gru"
+	val[]: "Caricatore con braccio articolato"
 
 	key[]: "tn_log"
-	val[]: "Rimorchio Tronchi"
+	val[]: "Rimorchio trasporta tronchi"
 
 	key[]: "tn_lowboy"
 	val[]: "Pianale ribassato"
 
 	key[]: "tn_lowboy_boat"
-	val[]: "Pianale per barche"
+	val[]: "Pianale ribassato per barche"
 
 	key[]: "tn_magnitude_55l"
-	val[]: "Rimorchio Lowboy 55L"
+	val[]: "Pianale ribassato 55L"
 
 	key[]: "tn_mbt1_barrier"
-	val[]: "Rimorchio Barriera Mobile"
+	val[]: "Barriera mobile"
 
 	key[]: "tn_tub_grinder"
 	val[]: "Vasca trituratrice"
@@ -462,16 +491,16 @@ localization_db : .localization
 #@{
 	
 	key[]: "lvl_name2"
-	val[]: "Cavalli"
+	val[]: "Stacanovista"
 	
 	key[]: "lvl_name3"
-	val[]: "Enterpreneur"
+	val[]: "Imprenditore"
 	
 	key[]: "lvl_name4"
 	val[]: "Professionista"
 	
 	key[]: "lvl_name6"
-	val[]: "18 ruote di abilità"
+	val[]: "18 Wheels of Skill"
 #@}
 	
 #+ Map legend
@@ -504,7 +533,7 @@ localization_db : .localization
 #@{
 	
 	key[]: "activated"
-	val[]: "L' attivazione del gioco ha avuto successo!<br>Ti ringraziamo per aver acquistato una copia di American Truck Simulator."
+	val[]: "L' attivazione del gioco è avvenuta con successo!<br>Ti ringraziamo per aver acquistato una copia di American Truck Simulator."
 	
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
@@ -545,7 +574,7 @@ localization_db : .localization
 	val[]: "Rimorchio detriti"
 
 	key[]: "dryvan"
-	val[]: "Van vuoto"
+	val[]: "Rimorchio per merce secca"
 
 	key[]: "flatbed"
 	val[]: "Pianale"
@@ -575,10 +604,10 @@ localization_db : .localization
 	val[]: "Materiale sfuso"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Carico leggero"
+	val[]: "Carico sfuso leggero"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Grano & materiale vario"
+	val[]: "Grano & materiale sfuso"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -587,16 +616,16 @@ localization_db : .localization
 	val[]: "Singolo"
 
 	key[]: "double"
-	val[]: "Doppio"
+	val[]: "doppio"
 
 	key[]: "bdouble"
-	val[]: "B-Doppio"
+	val[]: "B-Double"
 
 	key[]: "rmdouble"
-	val[]: "RockyMountain doppio"
+	val[]: "R. M. doppio"
 
 	key[]: "tpdouble"
-	val[]: "Turnpike doppio"
+	val[]: "T.P. doppio"
 
 	key[]: "triple"
 	val[]: "Triplo"
@@ -612,16 +641,16 @@ localization_db : .localization
 	val[]: "STAA doppio"
 
 	key[]: "chain_b_double"
-	val[]: "B-Doppio"
+	val[]: "B-Double"
 
 	key[]: "chain_rm_double"
-	val[]: "RockyMountain doppio"
+	val[]: "Rocky Mountain doppio"
 
 	key[]: "chain_tp_double"
 	val[]: "Turnpike doppio"
 
 	key[]: "chain_triple"
-	val[]: "Triplo"
+	val[]: "triplo"
 #@}
 
 #+ Trailer configurations
@@ -631,25 +660,25 @@ localization_db : .localization
 	val[]: "STAA doppio"
 
 	key[]: "tr_double_staa_pup"
-	val[]: "STAA doppio ridotto"
+	val[]: "STAA doppio Pup"
 
 	key[]: "tr_double_staa_pup_4axle"
 	val[]: "STAA doppio Pup, 4 assi"
 
 	key[]: "tr_b_double"
-	val[]: "B-Doppio"
+	val[]: "B-Double"
 
 	key[]: "tr_b_double_5axle"
-	val[]: "B-Doppio, 5 assi"
+	val[]: "B-Double, 5 assi"
 
 	key[]: "tr_b_double_6axle"
-	val[]: "B-Doppio, 6 assi"
+	val[]: "B-Double, 6 assi"
 
 	key[]: "tr_rm_double"
-	val[]: "RockyMountain doppio"
+	val[]: "Rocky Mountain doppio"
 
 	key[]: "tr_rm_double_pup"
-	val[]: "RockyMountain doppio ridotto"
+	val[]: "Rocky Mountain doppio Pup"
 
 	key[]: "tr_tp_double"
 	val[]: "Turnpike doppio"
@@ -685,10 +714,13 @@ localization_db : .localization
 	val[]: "40 piedi, estendibile"
 
 	key[]: "tr_single_40_rear"
-	val[]: "40 piedi, dietro"
+	val[]: "40 piedi, posteriore"
 
 	key[]: "tr_single_40_spread"
 	val[]: "40 piedi, separato"
+
+	key[]: "tr_single_43_rear"
+	val[]: "43 piedi, posteriore"
 
 	key[]: "tr_single_45"
 	val[]: "45 piedi"
@@ -703,10 +735,10 @@ localization_db : .localization
 	val[]: "45 piedi, 3 Assi, sterzante"
 
 	key[]: "tr_single_45_front"
-	val[]: "45 piedi, davanti"
+	val[]: "45 piedi, anteriore"
 
 	key[]: "tr_single_45_rear"
-	val[]: "45 piedi, dietro"
+	val[]: "45 piedi, posteriore"
 
 	key[]: "tr_single_45_slide_front"
 	val[]: "45 piedi, scorrevole, frontale"
@@ -721,10 +753,10 @@ localization_db : .localization
 	val[]: "48 piedi, 3 assi"
 
 	key[]: "tr_single_48_front"
-	val[]: "48 piedi, davanti"
+	val[]: "48 piedi, anteriore"
 
 	key[]: "tr_single_48_rear"
-	val[]: "48 piedi, dietro"
+	val[]: "48 piedi, posteriore"
 
 	key[]: "tr_single_48_slide_front"
 	val[]: "48 piedi, scorrevole, frontale"
@@ -760,10 +792,10 @@ localization_db : .localization
 	val[]: "53 piedi, 4 assi, sterzante"
 
 	key[]: "tr_single_53_front"
-	val[]: "53 piedi, davanti"
+	val[]: "53 piedi, anteriore"
 
 	key[]: "tr_single_53_rear"
-	val[]: "53 piedi, dietro"
+	val[]: "53 piedi, posteriore"
 
 	key[]: "tr_single_53_slide_front"
 	val[]: "53 piedi, scorrevole, frontale"
@@ -778,7 +810,7 @@ localization_db : .localization
 	val[]: "Triplo"
 
 	key[]: "tr_triple_pup"
-	val[]: "Triplo ridotto"
+	val[]: "Pup triplo"
 
 	key[]: "tr_conv_dolly"
 	val[]: "Dolly convertitore"	#+ Component chassis name (upgrade screen only)
@@ -803,7 +835,7 @@ localization_db : .localization
 	val[]: "Rimorchio detriti"
 
 	key[]: "bs_chipvan_mfloor"
-	val[]: "Rimorchio detriti, pavimento scorrevole"
+	val[]: "Rimorchio detriti, piano scorrevole"
 
 	key[]: "bs_container"
 	val[]: "Portacontainer"
@@ -812,19 +844,22 @@ localization_db : .localization
 	val[]: "Telone scorrevole"
 
 	key[]: "bs_dryvan"
-	val[]: "Van vuoto"
+	val[]: "Rimorchio per merce secca"
 
 	key[]: "bs_flatbed"
-	val[]: "Pianale"
+	val[]: "Pianale in legno"
 
 	key[]: "bs_flatbed_alu"
-	val[]: "Alluminio piano"
+	val[]: "Pianale in alluminio"
+
+	key[]: "bs_food_tank"
+	val[]: "Cisterna alimentare"
 
 	key[]: "bs_grain_hopper"
-	val[]: "Tramoggia del grano"
+	val[]: "Tramoggia per cereali"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Tramoggia del grano legata"
+	val[]: "Tramoggia a nastro per cereali"
 
 	key[]: "bs_insulated"
 	val[]: "Isolato"
@@ -846,7 +881,7 @@ localization_db : .localization
 	val[]: "Frigo"
 
 	key[]: "turbo_cooler"
-	val[]: "Frigo Turbo"
+	val[]: "Frigo turbo"
 
 	key[]: "chrome_cooler"
 	val[]: "Frigo cromato"
@@ -885,7 +920,7 @@ localization_db : .localization
 	val[]: "Minigonna nera"
 
 	key[]: "paint_sideskirt"
-	val[]: "Porta pallet verniciato"
+	val[]: "Minigonna verniciata"
 
 	key[]: "support_frame"
 	val[]: "Telaio di supporto"
@@ -913,6 +948,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "California"
+
+	key[]: "idaho"
+	val[]: "Idaho"
 
 	key[]: "nevada"
 	val[]: "Nevada"
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Bend"
 
+	key[]: "boise"
+	val[]: "Boise"
+
 	key[]: "burns"
 	val[]: "Burns"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Clovis"
+
+	key[]: "coeur_dalene"
+	val[]: "Coeur d'Alene"
 
 	key[]: "colville"
 	val[]: "Colville"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
 
+	key[]: "grangeville"
+	val[]: "Grangeville"
+
 	key[]: "hobbs"
 	val[]: "Hobbs"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Huron"
 
+	key[]: "idaho_falls"
+	val[]: "Idaho Falls"
+
 	key[]: "jackpot"
 	val[]: "Jackpot"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Kennewick"
+
+	key[]: "ketchum"
+	val[]: "Ketchum"
 
 	key[]: "kingman"
 	val[]: "Kingman"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Las Vegas"
 
+	key[]: "lewiston"
+	val[]: "Lewiston"
+
 	key[]: "logan"
 	val[]: "Logan"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "nampa"
+	val[]: "Nampa"
 
 	key[]: "newport"
 	val[]: "Newport"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "Pioche"
 
+	key[]: "pocatello"
+	val[]: "Pocatello"
+
 	key[]: "port_angeles"
 	val[]: "Port Angeles"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Salina"
 
+	key[]: "salmon"
+	val[]: "Salmon"
+
 	key[]: "salt_lake_city"
 	val[]: "Salt Lake City"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "San Simon"
+
+	key[]: "sandpoint"
+	val[]: "Sandpoint"
 
 	key[]: "santa_cruz"
 	val[]: "Santa Cruz"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Tucumcari"
 
+	key[]: "twin_falls"
+	val[]: "Twin Falls"
+
 	key[]: "ukiah"
 	val[]: "Ukiah"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Yuma"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Campo di patate di Twin Falls"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Galena Summit"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Perrine Memorial Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Monumento e riserva nazionale Craters of the Moon"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "La città di Boise"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "La città di Sandpoint"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Zona di raccolta legname"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "La cittadina di McCall"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "La città di Idaho Falls"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Area di sosta Midvale Hill"
 #@}
 
 }

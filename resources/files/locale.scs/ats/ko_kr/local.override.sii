@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "캐빈 라이트"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "헤드에이크 랙"
 
+	key[]: "hndrail"
+	val[]: "핸드레일"
+
 	key[]: "horns"
 	val[]: "경적"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "머드가드"
 
+	key[]: "rear_cab"
+	val[]: "캐빈 후방"
+
 	key[]: "sideflares"
-	val[]: "캡 판넬"
+	val[]: "캡 패널"
 
 	key[]: "sideskrt_bar"
 	val[]: "사이드 스커트 바"
+
+	key[]: "slp_hndl"
+	val[]: "도어 핸들"
+
+	key[]: "slp_vent"
+	val[]: "벤트"
 
 	key[]: "topflares"
 	val[]: "루프 슬리퍼 라이트"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "전기톱 장난감"
+
+	key[]: "chrom_tank"
+	val[]: "크롬 탱크" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "알루미늄 탱크" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-쉐이프" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -120,6 +140,12 @@ localization_db : .localization
 
 	key[]: "intro_1"
 	val[]: "American Truck Simulator 에 오신 것을 환영합니다!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "당신의 트럭과 트레일러의 조합은 이 지역에서 불법입니다!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -233,6 +259,9 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "과일"
 
+	key[]: "cn_fruit_juice"
+	val[]: "과일 주스"
+
 	key[]: "cn_grain"
 	val[]: "곡물"
 
@@ -312,7 +341,7 @@ localization_db : .localization
 	val[]: "스크레이퍼"
 
 	key[]: "cn_stumper"
-	val[]: "근굴기"
+	val[]: "스텀퍼"
 
 	key[]: "cn_transformer"
 	val[]: "변압기"
@@ -389,16 +418,16 @@ localization_db : .localization
 	val[]: "평판 트레일러"
 
 	key[]: "tn_food_tank"
-	val[]: "음식 탱크 트레일러"
+	val[]: "푸드 탱크 트레일러"
 
 	key[]: "tn_frac_tank"
 	val[]: "프락 탱크"
 
 	key[]: "tn_fuel"
-	val[]: "기름 탱크 트레일러"
+	val[]: "연료 탱크 트레일러"
 
 	key[]: "tn_fuel_long"
-	val[]: "기름 탱크 장축 트레일러"
+	val[]: "연료 탱크 장축 트레일러"
 
 	key[]: "tn_gas"
 	val[]: "가스 탱크 트레일러"
@@ -480,7 +509,7 @@ localization_db : .localization
 	val[]: "쇼룸"
 	
 	key[]: "weblink_game"
-	val[]: "American Truck Simulator 웹사이트" #+ weblink description
+	val[]: "American Truck Simulator 홈페이지" #+ weblink description
 
 	key[]: "weblink_facebook"
 	val[]: "American Truck Simulator 페이스북" #+ facebook weblink description
@@ -489,28 +518,28 @@ localization_db : .localization
 #@{
 	
 	key[]: "sys_no_graphics"
-	val[]: "American Truck Simulator 가 귀하의 컴퓨터에서 실행할수없습니다.(유효한 그래픽 장치를 찾을 수 없습니다).\n해결방법입니다:\n\n1. 자신 컴퓨터의 그래픽카드가 게임의 최소사양이랑 맞는지 체크해보세요.\n2. 마이크로소프트사의 다이렉트X를 최신버전으로 업데이트해보세요.\n3. 자신의 그래픽카드를 최신버전으로 업데이트해보세요. 만약 존재하지않는다면 그래픽카드가 오래된것입니다.\n4. 랜더링 기법을 OpenGL 에서 다이렉트X나 Vice versa 로 바꿔보세요.\n5. '내문서'에 있는 'American Truck Simulator' 폴더에서 Config.cfg 를 삭제해보세요. 파일이 꼬였을지도 모릅니다.\n 이 파일은 다음번에 게임을 실행할때 새로 만들어집니다."
+	val[]: "당신의 컴퓨터에서 American Truck Simulator의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)\n문제 해결을 위한 제안입니다:\n\n1. 당신의 컴퓨터에 장착된 그래픽카드가 시스템 최소 요구사양을 충족하는지 확인하십시오.\n2. Microsoft DirectX를 최신 버전으로 업데이트하십시오.\n3. 사용 중인 그래픽카드의 드라이버를 최신 버전으로 업데이트하십시오. 그래픽카드 드라이버가 오래되었을 가능성도 있습니다.\n4. 렌더링 방식을 OpenGL에서 DirectX로 바꾸거나 반대로 바꿔보시기 바랍니다.\n5. '내 문서'의 'American Truck Simulator' 폴더에 있는 게임 구성 파일인 Config.cfg 파일이 손상되었을 가능성이 있으니 삭제하십시오.\n    이 파일은 게임을 다시 시작하면 유효한 기본값이 적용되어 자동으로 생성됩니다."
 	
 	key[]: "sys_no_graphics_simple"
-	val[]: "American Truck Simulator 가 귀하의 컴퓨터에서 실행할 수 없습니다 (유효한 그래픽 장치를 찾을 수 없습니다)."
+	val[]: "당신의 컴퓨터에서 American Truck Simulator의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)"
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "American Truck Simulator 가 스팀에 연결할 수 없습니다. 다음과 같이 시도해 보십시오 :\n\n1. 스팀이 실행되고 있는지 확인합니다.\n2. 스팀 버전을 업데이트 했는지 확인합니다.\n3. 자동 업데이트가 활성화되어 있는지 게임이 최신 버전으로 업데이트되어 있는지 확인합니다."
+	val[]: "American Truck Simulator가 스팀 클라이언트에 접근할 수 없습니다. 문제 해결을 위한 제안입니다:\n\n1. 스팀 클라이언트가 실행 중인지 확인하십시오.\n2. 스팀 클라이언트의 버전을 업데이트했는지 확인하십시오.\n3. 자동 업데이트가 활성화되어 있고 게임이 최신 버전으로 업데이트되어 있는지 확인합니다."
 
 #+ Activation screen
 #@{
 	
 	key[]: "activated"
-	val[]: "정품인증이 되었습니다.<br>American Truck Simulator 를 구입해주셔서 감사합니다."
+	val[]: "성공적으로 인증되었습니다.<br>American Truck Simulator를 구입해 주셔서 감사합니다."
 	
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
 	key[]: "steam_demo"
-	val[]: "만약 American Truck Simulator 무료 평가판이 마음에 드셨다면, <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>! 에서 정식버전을 구입해주세요." #+ Message shown on the "activation" screen for steam demo only build.
+	val[]: "American Truck Simulator 무료 평가판이 마음에 드셨다면 <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>에서 정식 버전을 구입해 주시기 바랍니다!" #+ Message shown on the "activation" screen for steam demo only build.
 #@}
 
 #+ Profile selection.
@@ -661,7 +690,7 @@ localization_db : .localization
 	val[]: "28ft"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28 피트, 2 액슬"
+	val[]: "28ft, 2액슬"
 
 	key[]: "tr_single_32"
 	val[]: "32ft"
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40ft, 스프레드"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43ft, 후방"
+
 	key[]: "tr_single_45"
 	val[]: "45ft"
 
@@ -697,10 +729,10 @@ localization_db : .localization
 	val[]: "45ft, 3액슬"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 피트, 3 액슬, 싱글"
+	val[]: "45ft, 3액슬, 싱글"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45 피트, 3 액슬, 조향가능"
+	val[]: "45ft, 3액슬, 조향가능"
 
 	key[]: "tr_single_45_front"
 	val[]: "45ft, 전방"
@@ -736,16 +768,16 @@ localization_db : .localization
 	val[]: "48ft, 스프레드"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50 피트, 3 액슬"
+	val[]: "50ft, 3액슬"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 피트, 3 액슬, 싱글"
+	val[]: "50ft, 3액슬, 싱글"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50 피트, 3 액슬, 조향가능"
+	val[]: "50ft, 3액슬, 조향가능"
 
 	key[]: "tr_single_50_spread"
-	val[]: "50 피트, 스프레드"
+	val[]: "50ft, 스프레드"
 
 	key[]: "tr_single_53_3axle"
 	val[]: "53ft, 3액슬"
@@ -819,6 +851,9 @@ localization_db : .localization
 
 	key[]: "bs_flatbed_alu"
 	val[]: "평판 알루미늄"
+
+	key[]: "bs_food_tank"
+	val[]: "푸드 탱크"
 
 	key[]: "bs_grain_hopper"
 	val[]: "곡물 호퍼"
@@ -914,6 +949,9 @@ localization_db : .localization
 	key[]: "california"
 	val[]: "캘리포니아"
 
+	key[]: "idaho"
+	val[]: "아이다호"
+
 	key[]: "nevada"
 	val[]: "네바다"
 
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "벤드"
 
+	key[]: "boise"
+	val[]: "보이시"
+
 	key[]: "burns"
 	val[]: "번즈"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "클로비스"
+
+	key[]: "coeur_dalene"
+	val[]: "코달레인"
 
 	key[]: "colville"
 	val[]: "콜빌"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "그랜드 쿨리"
 
+	key[]: "grangeville"
+	val[]: "그랜지빌"
+
 	key[]: "hobbs"
 	val[]: "홉스"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "휴런"
 
+	key[]: "idaho_falls"
+	val[]: "아이다호폴스"
+
 	key[]: "jackpot"
 	val[]: "잭팟"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "케너윅"
+
+	key[]: "ketchum"
+	val[]: "케첨"
 
 	key[]: "kingman"
 	val[]: "킹맨"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "라스베이거스"
 
+	key[]: "lewiston"
+	val[]: "루이스턴"
+
 	key[]: "logan"
 	val[]: "로건"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "모아브"
+
+	key[]: "nampa"
+	val[]: "넴파"
 
 	key[]: "newport"
 	val[]: "뉴포트"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "피오세"
 
+	key[]: "pocatello"
+	val[]: "포커텔로"
+
 	key[]: "port_angeles"
 	val[]: "포트앤젤레스"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "살리나"
 
+	key[]: "salmon"
+	val[]: "새먼"
+
 	key[]: "salt_lake_city"
 	val[]: "솔트레이크 시티"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "샌 사이먼"
+
+	key[]: "sandpoint"
+	val[]: "샌드포인트"
 
 	key[]: "santa_cruz"
 	val[]: "산타크루즈"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "투컴캐리"
 
+	key[]: "twin_falls"
+	val[]: "트윈폴스"
+
 	key[]: "ukiah"
 	val[]: "유키아"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "유마"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "트윈폴스 감자 농장"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "갈레나 서밋"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "페린 메모리얼 브리지"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "달 분화구 국립기념물 & 보호구역"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "보이시"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "샌드포인트"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "벌목장"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "맥콜"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "아이다호폴스"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "미드베일 힐 휴게소"
 #@}
 
 }

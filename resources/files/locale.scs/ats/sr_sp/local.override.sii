@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Kabinska svetla"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Šipke protiv glavobolje"
 
+	key[]: "hndrail"
+	val[]: "Rukohvat"
+
 	key[]: "horns"
 	val[]: "Sirene"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Blatobran"
 
+	key[]: "rear_cab"
+	val[]: "Kabina zadnja"
+
 	key[]: "sideflares"
 	val[]: "Kabinski paneli"
 
 	key[]: "sideskrt_bar"
 	val[]: "Bočne lajsne"
+
+	key[]: "slp_hndl"
+	val[]: "Kvake"
+
+	key[]: "slp_vent"
+	val[]: "Ventilacija"
 
 	key[]: "topflares"
 	val[]: "Krovna ukrasna svetla"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Motorna testera igračka"
+
+	key[]: "chrom_tank"
+	val[]: "Hromiran rezervoar" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Aluminijumski rezervoar" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-Oblik" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -120,6 +140,12 @@ localization_db : .localization
 
 	key[]: "intro_1"
 	val[]: "Dobrodošli u American Truck Simulator!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Kombinacija vašeg kamiona i prikolice u ovoj državi nije legalna!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -232,6 +258,9 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Voće"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Voćni sok"
 
 	key[]: "cn_grain"
 	val[]: "Zrnevlje"
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 stopa, široka"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 stopa, Zadnja"
+
 	key[]: "tr_single_45"
 	val[]: "45 stopa"
 
@@ -820,6 +852,9 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Ravna aluminijumska"
 
+	key[]: "bs_food_tank"
+	val[]: "Cisterna za hranu"
+
 	key[]: "bs_grain_hopper"
 	val[]: "Grain Hopper"
 
@@ -914,6 +949,9 @@ localization_db : .localization
 	key[]: "california"
 	val[]: "Kalifornija"
 
+	key[]: "idaho"
+	val[]: "Ajdaho"
+
 	key[]: "nevada"
 	val[]: "Nevada"
 
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Bend"
 
+	key[]: "boise"
+	val[]: "Boizi"
+
 	key[]: "burns"
 	val[]: "Berns"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Klovis"
+
+	key[]: "coeur_dalene"
+	val[]: "Kor D'Alen"
 
 	key[]: "colville"
 	val[]: "Kolvil"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Grand Kuli"
 
+	key[]: "grangeville"
+	val[]: "Grejndzvil"
+
 	key[]: "hobbs"
 	val[]: "Hobs"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Hjuron"
 
+	key[]: "idaho_falls"
+	val[]: "Ajdaho Fols"
+
 	key[]: "jackpot"
 	val[]: "Džekpot"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Kenevik"
+
+	key[]: "ketchum"
+	val[]: "Kečum"
 
 	key[]: "kingman"
 	val[]: "Kingman"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Las Vegas"
 
+	key[]: "lewiston"
+	val[]: "Luiston"
+
 	key[]: "logan"
 	val[]: "Logan"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "nampa"
+	val[]: "Nampa"
 
 	key[]: "newport"
 	val[]: "Njuport"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "Pioče"
 
+	key[]: "pocatello"
+	val[]: "Pokatelo"
+
 	key[]: "port_angeles"
 	val[]: "Port Andzeles"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Salajna"
 
+	key[]: "salmon"
+	val[]: "Samon"
+
 	key[]: "salt_lake_city"
 	val[]: "Solt Lejk Grad"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "San Simon"
+
+	key[]: "sandpoint"
+	val[]: "Sandpojnt"
 
 	key[]: "santa_cruz"
 	val[]: "Santa Kruz"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Tukumkari"
 
+	key[]: "twin_falls"
+	val[]: "Tvin Fols"
+
 	key[]: "ukiah"
 	val[]: "Jukaja"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Juma"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Tvin Fols farma krompira"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Galena Samit"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Perrin memorijalni most"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Krater meseca i Nacionalni spomenik"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "Grad Bojsi"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "Grad Sandpoint"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Timber harvest site"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "Grad Mekol"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "Grad Ajdaho Fols"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Odmaralište Midvale Hill"
 #@}
 
 }

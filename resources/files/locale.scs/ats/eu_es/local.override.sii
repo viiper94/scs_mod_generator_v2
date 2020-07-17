@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Kabinaren argiak"
 
@@ -56,7 +55,10 @@ localization_db : .localization
 	val[]: "Parrila"
 
 	key[]: "headache_r"
-	val[]: "Headache Racks"
+	val[]: "Kabinaren atzeko babesa"
+
+	key[]: "hndrail"
+	val[]: "Eskudela"
 
 	key[]: "horns"
 	val[]: "Turutak"
@@ -68,16 +70,25 @@ localization_db : .localization
 	val[]: "Lohi-babesaren estalkiak"
 
 	key[]: "mudflaps"
-	val[]: "Lohi-Babesak"
+	val[]: "Lohi-babesak"
 
 	key[]: "mudguard"
 	val[]: "Lohi-babesak"
 
+	key[]: "rear_cab"
+	val[]: "Kabinaren atzealdea"
+
 	key[]: "sideflares"
-	val[]: "Kabina Panelak"
+	val[]: "Kabinaren panelak"
 
 	key[]: "sideskrt_bar"
-	val[]: "Sideskirt Bars"
+	val[]: "Albo-hegalaren barrak"
+
+	key[]: "slp_hndl"
+	val[]: "Ate-eskulekuak"
+
+	key[]: "slp_vent"
+	val[]: "Haizebidea"
 
 	key[]: "topflares"
 	val[]: "Sleeper Argiak"
@@ -86,7 +97,16 @@ localization_db : .localization
 	val[]: "Turbo aleroia"
 
 	key[]: "chainsaw_toy"
-	val[]: "Chainsaw Toy"
+	val[]: "Jostailuko motozerra"
+
+	key[]: "chrom_tank"
+	val[]: "Depositu kromatua" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Aluminiozko depositua" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-itxurakoa" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -100,17 +120,17 @@ localization_db : .localization
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
 	key[]: "music_player_hint"
-	val[]: "Jarri itzazu zure abestiak <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>karpetan zure<color value=@@clr_sel@@>Documentuetan <color value=@@clr_txt@@>eta hemen ikusiko dituzu."
+	val[]: "Jarri itzazu zure abestiak <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>karpetan zure <color value=@@clr_sel@@>Dokumentuetan <color value=@@clr_txt@@>eta hemen ikusiko dituzu."
 
 #+ Tooltip shown when hovering over the radio_stream button.
 
 	key[]: "radio_hint"
-	val[]: "Edita ezazu <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>, <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>karpetan, zure<color value=@@clr_sel@@>Documentuetan <color value=@@clr_txt@@>eta entzun zure internet irrati gustukuenak jokoan bertan!"
+	val[]: "Edita ezazu <color value=@@clr_sel@@>live_streams.sii<color value=@@clr_txt@@>, <color value=@@clr_sel@@>American Truck Simulator<color value=@@clr_txt@@> karpetan, zure <color value=@@clr_sel@@>Dokumentuetan<color value=@@clr_txt@@> eta entzun zure internet-irrati gustukuenak jokoan bertan!"
 	
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
-	val[]: "Mesedez, irakurri <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>helbidean,  <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>karpetan, zure irrati 'stream'-ak gehitzeko."
+	val[]: "Mesedez, irakurri <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>helbidean, <color value=@@clr_sel@@>Dokumentuak <color value=@@clr_txt@@>karpetan, zure irrati 'stream'-ak gehitzeko."
 #@}
 
 #+ Messages shown as part of the tutorial.
@@ -119,7 +139,13 @@ localization_db : .localization
 #@{
 
 	key[]: "intro_1"
-	val[]: "Ongi Etorri American Truck Simulator-ra!"
+	val[]: "Ongi etorri American Truck Simulator-ra!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Zure kamioi eta trailer-konbinazioa ez da legala estatu honetan!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -133,7 +159,7 @@ localization_db : .localization
 	val[]: "Karga arriskutsua"
 
 	key[]: "mechanical"
-	val[]: "Erregai Ekonomia"
+	val[]: "Erregai-kontsumoa"
 #@}
 
 #+ Cargo types.
@@ -154,7 +180,7 @@ localization_db : .localization
 #+ Information about individual ranks of "Fuel Economy" skill.
 #@{
 	key[]: "skill_mechanical_title"
-	val[]: "Erregai Ekonomia"
+	val[]: "Erregai-kontsumoa"
 
 	key[]: "skill_mechanical_info"
 	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai kontsumoa gutxituko du. Bereziki:"
@@ -219,7 +245,7 @@ localization_db : .localization
 	val[]: "Fruitu lehorrak"
 
 	key[]: "cn_forwarder"
-	val[]: "Forwarder"
+	val[]: "Enbor-garraiatzailea"
 
 	key[]: "cn_frac_tank"
 	val[]: "Fracking-depositua"
@@ -233,8 +259,11 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "Fruta"
 
+	key[]: "cn_fruit_juice"
+	val[]: "Fruta-zukua"
+
 	key[]: "cn_grain"
-	val[]: "Alekia"
+	val[]: "Alea"
 
 	key[]: "cn_harvester"
 	val[]: "Uzta-makina"
@@ -252,19 +281,19 @@ localization_db : .localization
 	val[]: "Knuckleboom Loader"
 
 	key[]: "cn_lift_truck"
-	val[]: "Lift Truck"
+	val[]: "Kamioi jasotzailea"
 
 	key[]: "cn_lift_truck_chassis"
-	val[]: "Lift Truck Chassis"
+	val[]: "Kamioi jasotzailearen txasisa"
 
 	key[]: "cn_log_harvester"
-	val[]: "Log Harvester"
+	val[]: "Enbor-prozesadorea"
 
 	key[]: "cn_log_loader"
-	val[]: "Log Loader"
+	val[]: "Enbor-kargatzailea"
 
 	key[]: "cn_log_stacker"
-	val[]: "Log Stacker"
+	val[]: "Enbor-pilatzailea"
 
 	key[]: "cn_lye"
 	val[]: "Lixiba"
@@ -279,7 +308,7 @@ localization_db : .localization
 	val[]: "Fresatzeko makina"
 
 	key[]: "cn_mobile_crane"
-	val[]: "All Terrain Crane"
+	val[]: "Lur orotako garabia"
 
 	key[]: "cn_moor_buoy"
 	val[]: "Ilabea"
@@ -288,10 +317,10 @@ localization_db : .localization
 	val[]: "Morteroa"
 
 	key[]: "cn_mulcher"
-	val[]: "Mulcher"
+	val[]: "Eskokatzeko makina"
 
 	key[]: "cn_pelleted_animal_food"
-	val[]: "Pelleted Animal Food"
+	val[]: "Animalientzako janari pikortatua"
 
 	key[]: "cn_plows"
 	val[]: "Goldeak"
@@ -309,16 +338,16 @@ localization_db : .localization
 	val[]: "Desegindako autoak"
 
 	key[]: "cn_scraper"
-	val[]: "Scraper"
+	val[]: "Karrakailua"
 
 	key[]: "cn_stumper"
-	val[]: "Stumper"
+	val[]: "Epaitondo-birringailua"
 
 	key[]: "cn_transformer"
 	val[]: "Transformadorea"
 
 	key[]: "cn_tub_grinder"
-	val[]: "Tub Grinder"
+	val[]: "Kalapatxa-birringailua"
 
 	key[]: "cn_vegetable"
 	val[]: "Barazkiak"
@@ -333,7 +362,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of transport helicopter helicopter.
 	key[]: "cn_ovs_helicopter"
-	val[]: "Transport Helicopter"
+	val[]: "Garraio-helikopteroa"
 
 	#+ Name of the cargo of large reservoir tank transported on its side.
 	key[]: "cn_ovs_tank"
@@ -341,11 +370,11 @@ localization_db : .localization
 
 	#+ Name of the cargo of hull part for large dozers.
 	key[]: "cn_mutt_hull"
-	val[]: "Haul Truck Hull"
+	val[]: "Dumperraren kutxa"
 
 	#+ Name of the cargo of large dozer.
 	key[]: "cn_mutt"
-	val[]: "Haul Truck Chassis"
+	val[]: "Dumperraren txasisa"
 
 	#+ Name of the cargo of big air condition complex.
 	key[]: "cn_aircondition"
@@ -353,7 +382,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of some construction - need to be properly named after the model is done.
 	key[]: "cn_lattice"
-	val[]: "Huge Construction"
+	val[]: "Egitura ikaragarria"
 #@}
 
 #+ Names of individual trailer and trailer chassis types.
@@ -365,13 +394,13 @@ localization_db : .localization
 	val[]: "Garratz Depositu Trailer Luzea"
 
 	key[]: "tn_bottom_dump"
-	val[]: "Bottom Dumper Trailer"
+	val[]: "Beheko deskargako trailerra"
 
 	key[]: "tn_car"
 	val[]: "Auto-garraiatzailea"
 
 	key[]: "tn_cement"
-	val[]: "Zementu Trailerra"
+	val[]: "Zementu soltean trailerra"
 
 	key[]: "tn_chemical"
 	val[]: "Depositu Kimikoen Trailerra"
@@ -380,7 +409,7 @@ localization_db : .localization
 	val[]: "Depositu Kimikoen Trailer Luzea"
 
 	key[]: "tn_dry_bulk"
-	val[]: "Dry Bulk Trailer"
+	val[]: "Lehorreko kargak soltean trailerra"
 
 	key[]: "tn_dump"
 	val[]: "Dumper Trailerra"
@@ -389,7 +418,7 @@ localization_db : .localization
 	val[]: "Plataforma-trailerra"
 
 	key[]: "tn_food_tank"
-	val[]: "Food Tank Trailer"
+	val[]: "Elikagai-depositu trailerra"
 
 	key[]: "tn_frac_tank"
 	val[]: "Fracking-depositua"
@@ -416,19 +445,19 @@ localization_db : .localization
 	val[]: "Enbor-trailerra"
 
 	key[]: "tn_lowboy"
-	val[]: "Lowboy Trailerra"
+	val[]: "Behe-zoruko trailerra"
 
 	key[]: "tn_lowboy_boat"
 	val[]: "Itsasontzi-garraiatzailea"
 
 	key[]: "tn_magnitude_55l"
-	val[]: "Lowboy 55L Trailer"
+	val[]: "Behe-zoruko 55L trailerra"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Hesi mugikor trailerra"
 
 	key[]: "tn_tub_grinder"
-	val[]: "Tub Grinder"
+	val[]: "Kalapatxa-birringailua"
 
 #@}
 
@@ -462,7 +491,7 @@ localization_db : .localization
 #@{
 	
 	key[]: "lvl_name2"
-	val[]: "Ohola Astoa"
+	val[]: "Zamaberea"
 	
 	key[]: "lvl_name3"
 	val[]: "Enpresaburua"
@@ -471,7 +500,7 @@ localization_db : .localization
 	val[]: "Profesionala"
 	
 	key[]: "lvl_name6"
-	val[]: "18 Wheels of Skill"
+	val[]: "18 trebetasun-gurpil"
 #@}
 	
 #+ Map legend
@@ -533,7 +562,7 @@ localization_db : .localization
 #+ Trailer body type names (short/preview variant).
 #@{
 	key[]: "bulkfeed"
-	val[]: "Bulk Feed"
+	val[]: "Pentsua soltean"
 
 	key[]: "container"
 	val[]: "Kontainer-garraiatzailea"
@@ -542,16 +571,16 @@ localization_db : .localization
 	val[]: "Irristailu-olana"
 
 	key[]: "chipvan"
-	val[]: "Chip Van"
+	val[]: "Txirbil-trailerra"
 
 	key[]: "dryvan"
-	val[]: "Dry Van"
+	val[]: "Karga lehorretarako furgoia"
 
 	key[]: "flatbed"
 	val[]: "Plataforma"
 
 	key[]: "hopper"
-	val[]: "Hopper"
+	val[]: "Kalapatxa"
 
 	key[]: "insulated"
 	val[]: "Isolatuta"
@@ -566,19 +595,19 @@ localization_db : .localization
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "bulk"
-	val[]: "Bulk"
+	val[]: "Soltean"
 #@}
 
 #+ Trailer cargo based on body type (tooltip usage)
 #@{
 	key[]: "body_cargo_types_bulkfeed"
-	val[]: "Bulk feed material"
+	val[]: "Pentsua soltean"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Light bulk material"
+	val[]: "Material arinak soltean"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Grain & Bulk material"
+	val[]: "Alea eta materialak soltean"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 oin, bereiziak"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 oin, atzean"
+
 	key[]: "tr_single_45"
 	val[]: "45 oin"
 
@@ -697,7 +729,7 @@ localization_db : .localization
 	val[]: "45 oin, 3 ardatz"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 feet, 3 Axles, Single"
+	val[]: "45 oin, 3 ardatz, banakoa"
 
 	key[]: "tr_single_45_3axle_steer"
 	val[]: "45 oin, 3 ardatz, direkziozkoa"
@@ -739,7 +771,7 @@ localization_db : .localization
 	val[]: "50 oin, 3 ardatz"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 feet, 3 Axles, Single"
+	val[]: "50 oin, 3 ardatz, banakoa"
 
 	key[]: "tr_single_50_3axle_steer"
 	val[]: "50 oin, 3 ardatz, direkziozkoa"
@@ -794,16 +826,16 @@ localization_db : .localization
 
 #@{
 	key[]: "bs_bellyvan"
-	val[]: "Belly Van"
+	val[]: "Sabeldun trailerra"
 
 	key[]: "bs_bulk_feed"
-	val[]: "Bulk Feed"
+	val[]: "Pentsua soltean"
 
 	key[]: "bs_chipvan"
-	val[]: "Chip Van"
+	val[]: "Txirbil-trailerra"
 
 	key[]: "bs_chipvan_mfloor"
-	val[]: "Chip Van, Moving Floor"
+	val[]: "Txirbil-trailerra, zoru mugikorra"
 
 	key[]: "bs_container"
 	val[]: "Kontainer-garraiatzailea"
@@ -812,7 +844,7 @@ localization_db : .localization
 	val[]: "Irristailu-olana"
 
 	key[]: "bs_dryvan"
-	val[]: "Dry Van"
+	val[]: "Karga lehorretarako furgoia"
 
 	key[]: "bs_flatbed"
 	val[]: "Plataforma"
@@ -820,11 +852,14 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Aluminiozko plataforma"
 
+	key[]: "bs_food_tank"
+	val[]: "Elikagai-zisterna"
+
 	key[]: "bs_grain_hopper"
-	val[]: "Grain Hopper"
+	val[]: "Aleako kalapatxa"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Grain Hopper Belt"
+	val[]: "Aleako kalapatxa zintarekin"
 
 	key[]: "bs_insulated"
 	val[]: "Isolatuta"
@@ -894,10 +929,10 @@ localization_db : .localization
 	val[]: "Ate kromatua"
 
 	key[]: "rollup_door"
-	val[]: "Roll Up Door"
+	val[]: "Ate bilgarria"
 
 	key[]: "rollup_door_lift_gate"
-	val[]: "Roll Up Door, Lift Gate"
+	val[]: "Ate bilgarria, plataforma jasotzailea"
 
 	key[]: "standard_door"
 	val[]: "Ate estandarra"
@@ -913,6 +948,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Kalifornia"
+
+	key[]: "idaho"
+	val[]: "Idaho"
 
 	key[]: "nevada"
 	val[]: "Nevada"
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Bend"
 
+	key[]: "boise"
+	val[]: "Boise"
+
 	key[]: "burns"
 	val[]: "Burns"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Clovis"
+
+	key[]: "coeur_dalene"
+	val[]: "Coeur d'Alene"
 
 	key[]: "colville"
 	val[]: "Colville"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
 
+	key[]: "grangeville"
+	val[]: "Grangeville"
+
 	key[]: "hobbs"
 	val[]: "Hobbs"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Huron"
 
+	key[]: "idaho_falls"
+	val[]: "Idaho Falls"
+
 	key[]: "jackpot"
 	val[]: "Jackpot"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Kennewick"
+
+	key[]: "ketchum"
+	val[]: "Ketchum"
 
 	key[]: "kingman"
 	val[]: "Kingman"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Las Vegas"
 
+	key[]: "lewiston"
+	val[]: "Lewiston"
+
 	key[]: "logan"
 	val[]: "Logan"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "nampa"
+	val[]: "Nampa"
 
 	key[]: "newport"
 	val[]: "Newport"
@@ -1110,7 +1169,7 @@ localization_db : .localization
 	val[]: "Page"
 
 	key[]: "pajarito_rest_area"
-	val[]: "Pajarito Rest Area"
+	val[]: "Pajarito atsedenlekua"
 
 	key[]: "pedro_travel_center"
 	val[]: "Pedro Travel Center"
@@ -1123,6 +1182,9 @@ localization_db : .localization
 
 	key[]: "pioche"
 	val[]: "Pioche"
+
+	key[]: "pocatello"
+	val[]: "Pocatello"
 
 	key[]: "port_angeles"
 	val[]: "Port Angeles"
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Salina"
 
+	key[]: "salmon"
+	val[]: "Salmon"
+
 	key[]: "salt_lake_city"
 	val[]: "Salt Lake City"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "San Simon"
+
+	key[]: "sandpoint"
+	val[]: "Sandpoint"
 
 	key[]: "santa_cruz"
 	val[]: "Santa Cruz"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Tucumcari"
 
+	key[]: "twin_falls"
+	val[]: "Twin Falls"
+
 	key[]: "ukiah"
 	val[]: "Ukiah"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Yuma"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Twin Falls potato farm"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Galena Summit"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Perrine Memorial Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Craters of the Moon National Monument & Preserve"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "Boise hiria"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "Sandpoint hiria"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Timber harvest site"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "McCall herria"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "Idaho Falls hiria"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Midvale Hill atsedenlekua"
 #@}
 
 }

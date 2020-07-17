@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -190,7 +190,7 @@ localization_db : .localization
 	val[]: "DLC - Washington"
 
 	key[]: "onlineid_us_wa"
-	val[]: "@@package_ats_washington@@"
+	val[]: "@@package_ats_wa@@"
 	
 	key[]: "package_ats_utah"
 	val[]: "DLC - Utah"
@@ -216,6 +216,12 @@ localization_db : .localization
 	key[]: "onlineid_us_pribbon"
 	val[]: "@@package_at_pribbon@@"
 
+	key[]: "package_ats_idaho"
+	val[]: "DLC - Idaho"
+
+	key[]: "onlineid_us_idaho"
+	val[]: "@@package_ats_idaho@@"
+
 # Truck brands
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
@@ -223,6 +229,9 @@ localization_db : .localization
 
 	key[]: "brand_kenworth"
 	val[]: "Kenworth"
+
+	key[]: "brand_mack"
+	val[]: "Mack"
 
 	key[]: "brand_peterbilt"
 	val[]: "Peterbilt"
@@ -238,6 +247,9 @@ localization_db : .localization
 
 	key[]: "series_kenworth_w900"
 	val[]: "W900"
+
+	key[]: "series_mack_anthem"
+	val[]: "Anthem"
 
 	key[]: "series_peterbilt_389"
 	val[]: "389"
@@ -258,6 +270,9 @@ localization_db : .localization
 
 	key[]: "truck_browser_brand_kenworth_w900"
 	val[]: "Kenworth W900"
+
+	key[]: "truck_browser_brand_mack_anthem"
+	val[]: "Mack Anthem"
 
 	key[]: "truck_browser_brand_peterbilt_389"
 	val[]: "Peterbilt 389"
@@ -288,13 +303,16 @@ localization_db : .localization
 	key[]: "series_scs_flatbed"
 	val[]: "A-PLO-18"
 
+	key[]: "series_scs_foodtank"
+	val[]: "A-MLC-20"
+
 	key[]: "series_scs_grainhopper"
 	val[]: "A-SYP-19"
 
 	key[]: "series_scs_log"
 	val[]: "A-KLN-19"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 	key[]: "game_name"
@@ -326,7 +344,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -810,6 +828,9 @@ localization_db : .localization
 	key[]: "head_lights"
 	val[]: "Reflektory"
 
+	key[]: "f_light_chs"
+	val[]: "Reflektory"
+
 	key[]: "halogen"
 	val[]: "Halogeny"
 
@@ -948,6 +969,12 @@ localization_db : .localization
 	key[]: "flag_l"
 	val[]: "Okienna lewa flaga" #+ Left window flag
 
+	key[]: "f_mudflap"
+	val[]: "Przednie chlapacze" #+ A couple of mudflaps on the front of the trucks bumper
+
+	key[]: "windowtrim"
+	val[]: "Wykończenie okna" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
+
 	key[]: "steering_w"
 	val[]: "Kierownica" #+ Steering wheel
 
@@ -977,7 +1004,7 @@ localization_db : .localization
 #@{
 
 	key[]: "to_fullscreen"
-	val[]: "Przegląd pełnoekranowy" #+ Tooltip for icon which hides ui.
+	val[]: "Podgląd pełnoekranowy" #+ Tooltip for icon which hides ui.
 
 	key[]: "set_lights"
 	val[]: "Przełącznik świateł" #+ Tooltip for icon which turns truck lights on and off.
@@ -990,8 +1017,53 @@ localization_db : .localization
 
 	key[]: "screenshot"
 	val[]: "Zrób zdjęcie" #+ Tooltip for icon which makes screenshots.
+
+	key[]: "switch_walking_cam"
+	val[]: "Przełącz tryb kamery" #+ Tooltip for icon which turns walking camera mode on and off.
+	
+	key[]: "tooltip_walk_look_around"
+	val[]: "Rozglądanie się" #+ Tooltip for control icon: look around (by walking camera).
+	
+	key[]: "tooltip_mouse_rotate"
+	val[]: "Obracanie" #+ Tooltip for control icon: rotate by mouse.
+	
+	key[]: "tooltip_mouse_zoom"
+	val[]: "Powiększanie" #+ Tooltip for control icon: zoom by mouse.
+	
+	key[]: "tooltip_mouse_pan"
+	val[]: "Przesuwanie" #+ Tooltip for control icon: pan by mouse.
+	
+	key[]: "tooltip_walk_title"
+	val[]: "KONTROLA CHODU:" #+ Title of walk mode controls tooltip.
+	
+	key[]: "tooltip_walk_forward"
+	val[]: "Naprzód" #+ Tooltip for walk forward.
+	
+	key[]: "tooltip_walk_back"
+	val[]: "Powrót" #+ Tooltip for walk back.
+	
+	key[]: "tooltip_walk_left"
+	val[]: "Lewo" #+ Tooltip for walk left.
+	
+	key[]: "tooltip_walk_right"
+	val[]: "Prawo" #+ Tooltip for walk right.
+	
+	key[]: "tooltip_walk_crouch"
+	val[]: "Kucanie" #+ Tooltip for crouch.
+	
+	key[]: "tooltip_walk_run"
+	val[]: "Bieganie" #+ Tooltip for run.
 #@}
 
+#+ Notifications shown when camera mode is changed in truck configurator.
+#@{
+
+	key[]: "notification_walking_camera"
+	val[]: "Kamera pierwszoosobowa włączona" #+ Notifications shown when walking camera is enabled.
+	
+	key[]: "notification_orbit_camera"
+	val[]: "Kamera obrotowa włączona" #+ Notifications shown when orbit camera is enabled.
+#@}
 
 	key[]: "quit_game_t"
 	val[]: "WYJDŹ Z GRY" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
@@ -1197,7 +1269,7 @@ localization_db : .localization
 	val[]: "Lakiernia" #+ Icon allowing player to apply a new paint to the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_paint_about"
-	val[]: "Znudził ci się kolor ciężarówki? Ożyw go trochę!" #+ Help message associated with paint shop icon.
+	val[]: "Znudził Ci się kolor ciężarówki? Ożyw go trochę!" #+ Help message associated with paint shop icon.
 
 	key[]: "paintjob_t"
 	val[]: "PROJEKTY" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
@@ -1205,11 +1277,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Miejsce na lakier" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Zachowaj kolor" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Zapisz kolor jako gotowy" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Użyj zachowany kolor" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Zapisz wszystkie kolory jako gotowe" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Zastosuj wstępne ustawienie kolorów" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1333,6 +1408,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Wybierz ładunek, aby przejrzeć szczegóły trasy" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Następny punkt kontrolny" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Czas następnego punktu kontrolnego" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -1677,7 +1760,7 @@ localization_db : .localization
 	val[]: "Kontynuuj w trybie offline" #+ Button which loads the profile in offline mode
 
 	key[]: "continue_offline_info"
-	val[]: "Możesz kontynuować w trybie offline. Bez połączenia internetowego nie będziesz miał dostępu do zleceń World of Trucks i innych opcji online. "
+	val[]: "Możesz kontynuować w trybie offline. Bez połączenia nie będziesz mieć dostępu do zleceń z World of Trucks i innych funkcji online."
 
 	key[]: "retry"
 	val[]: "Ponów" #+ Button text in online wait dilaog
@@ -1986,17 +2069,53 @@ localization_db : .localization
 	key[]: "master_volume"
 	val[]: "Głośność ogólna" #+ Slider controlling master volume.
 
-	key[]: "sound_volume"
-	val[]: "Głośność efektów dźwiękowych" #+ Slider controlling volume of the sound effects.
+	key[]: "truck_engine_volume"
+	val[]: "Głośność silnika ciężarówki" #+ Slider controlling volume of the truck engine.
 
-	key[]: "music_volume"
-	val[]: "Głośność muzyki" #+ Slider controlling volume of the music effects.
+	key[]: "truck_exhaust_volume"
+	val[]: "Głośność wydechu ciężarówki" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_effects_volume"
+	val[]: "Głośność efektów dźwiękowych ciężarówki" #+ Slider controlling volume of the truck effects.
+
+	key[]: "truck_noise_volume"
+	val[]: "Głośność hałasu ciężarówki" #+ Slider controlling volume of the truck noises.
+
+	key[]: "trailer_noise_volume"
+	val[]: "Głośność hałasu naczepy" #+ Slider controlling volume of the trailer noises.
+
+	key[]: "traffic_volume"
+	val[]: "Głośność ruchu ulicznego" #+ Slider controlling volume of the traffic.
+
+	key[]: "world_volume"
+	val[]: "Głośność świata" #+ Slider controlling volume of the environment sounds.
+
+	key[]: "ambient_volume"
+	val[]: "Głośność dźwięków otoczenia" #+ Slider controlling volume of the ambient sounds.
+
+	key[]: "interior_volume"
+	val[]: "Głośność wnętrza ciężarówki" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
 	val[]: "Głośność radia" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Głośność nawigacji głosowej" #+ Slider controlling volume of the voice navigation.
+
+	key[]: "voiceover_volume"
+	val[]: "Głośność głosu" #+ Slider controlling voice over volume.
+
+	key[]: "music_volume"
+	val[]: "Głośność muzyki" #+ Slider controlling volume of the in-game music.
+
+	key[]: "game_ui_volume"
+	val[]: "Głośność gry" #+ Slider controlling volume of the game sound effects.
+
+	key[]: "music_ui_volume"
+	val[]: "Głośność muzyki interfejsu" #+ Slider controlling volume of the ui (menu) music.
+
+	key[]: "intro_volume"
+	val[]: "Głośność logo wprowadzającego" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAWIGACJA GŁOSOWA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2031,20 +2150,29 @@ localization_db : .localization
 	key[]: "advanced_audio_t"
 	val[]: "INNE USTAWIENIA AUDIO" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
-	key[]: "reverse_stereo"
-	val[]: "Odwróć stereo" #+ Checkbox flipping left and right loudspeaker.
-
-	key[]: "sound_effects"
-	val[]: "Efekty dźwiękowe" #+ Checkbox enabling sound effects.
-
-	key[]: "music"
-	val[]: "Muzyka" #+ Checkbox enabling music.
-
 	key[]: "sound_of_reverse"
 	val[]: "Sygnał dźwiękowy biegu wstecznego" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
 
 	key[]: "rumble_stripe_sound"
 	val[]: "Dźwięk pasów ostrzegawczych" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
+
+	key[]: "noise_window"
+	val[]: "Hałas otwartych okien" #+ Checkbox enabling the sound of the opened windows noise.
+
+	key[]: "noise_aero"
+	val[]: "Hałas przepływającego powietrza" #+ Checkbox enabling the sound of the air noise.
+
+	key[]: "reverb_cabin"
+	val[]: "Efekt pogłosu kabiny" #+ Checkbox enabling the reverb effect of the cabin.
+
+	key[]: "reverb_world"
+	val[]: "Efekt pogłosu środowiska" #+ Checkbox enabling the reverb effect of the environment.
+
+	key[]: "audio_driver_settings_t"
+	val[]: "STEROWNIK AUDIO" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+
+	key[]: "default_audio_driver"
+	val[]: "- domyślny sterownik systemu -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -2223,7 +2351,7 @@ localization_db : .localization
 #+ Adviser speed limit visualization
 #@{
 	key[]: "adviser_speed_limit"
-	val[]: "Doradca Drogowy - Wyświetlane ograniczenie prędkości" #+ Droplist for selection mode of speed limit visualization.
+	val[]: "Doradca drogowy - Wyświetlane ograniczenie prędkości" #+ Droplist for selection mode of speed limit visualization.
 
 	key[]: "hide"
 	val[]: "Ukryj" #+ Hide speed limit display on the advisor.
@@ -2235,7 +2363,7 @@ localization_db : .localization
 	val[]: "Dla aut osobowych" #+ Show speed limits for ordinary cars on the advisor.
 
 	key[]: "adviser_speed_warning"
-	val[]: "Doradca Drogowy - Ostrzeżenie o nadmiernej prędkości" #+ Checkbox enabling speeding warning
+	val[]: "Doradca drogowy - Ostrzeżenie o nadmiernej prędkości" #+ Checkbox enabling speeding warning
 #@}
 
 #+ Map alignment modes
@@ -2326,8 +2454,8 @@ localization_db : .localization
 	key[]: "adviser_autopark"
 	val[]: "Komunikat automatycznego parkowania" #+ Checkbox enabling autoparking trigger.
 
-  key[]: "adviser_keep_hidden"
-	val[]: "Ukryj Doradcę Drogowego" #+ Checkbox forcing hidden RA to stay hidden (no popups).
+	key[]: "adviser_keep_hidden"
+	val[]: "Ukryj doradcę drogowego" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
 	val[]: "Ostrzeżenie o ładunku ciężkim" #+ Heavy cargo warning screen pop up upon job selection.
@@ -2520,6 +2648,9 @@ localization_db : .localization
 	key[]: "hud_controls"
 	val[]: "KONTROLERY HUD"
 
+	key[]: "walk_mode"
+	val[]: "TRYB CHODU"
+	
 	key[]: "other_controls"
 	val[]: "INNE"
 #@}
@@ -2660,10 +2791,10 @@ localization_db : .localization
 	val[]: "Odtwarzacz audio"
 
 	key[]: "o_im_radio_next"
-	val[]: "Odtwarzacz audio - Następny ulubiony"
+	val[]: "Odtwarzacz audio - Następny ulubiony utwór"
 
 	key[]: "o_im_radio_prev"
-	val[]: "Odtwarzacz audio - Poprzedni ulubiony"
+	val[]: "Odtwarzacz audio - Poprzedni ulubiony utwór"
 
 	key[]: "o_im_radio_vol_up"
 	val[]: "Odtwarzacz audio - Zwiększ głośność"
@@ -2683,15 +2814,30 @@ localization_db : .localization
 	key[]: "o_im_activate"
 	val[]: "Włącz" #+ Context action for activation. For example sleep, refuel....
 
+	key[]: "o_im_right_window_open"
+	val[]: "Otwórz prawe okno" #+ Action for opening right window.
+
+	key[]: "o_im_right_window_close"
+	val[]: "Zamknij prawe okno" #+ Action for closing right window.
+
+	key[]: "o_im_left_window_open"
+	val[]: "Otwórz lewe okno" #+ Action for opening left window.
+
+	key[]: "o_im_left_window_close"
+	val[]: "Zamknij lewe okno" #+ Action for closing left window.
+
 	key[]: "o_im_menu"
 	val[]: "Menu" #+ Action for entering menu (hardcoded ESC + one optional control)
+
+	key[]: "o_im_eye_config"
+	val[]: "Otwórz ustawienia śledzenia wzroku"
 # hud
 
 	key[]: "o_im_show_mirrors"
 	val[]: "Pokaż/Ukryj lusterka ekranowe"
 
 	key[]: "o_im_show_hud"
-	val[]: "Tryby Doradcy Drogowego"
+	val[]: "Tryby doradcy drogowego"
 
 	key[]: "o_im_nav_map"
 	val[]: "Mapa świata" #+ Opens the world map from game.
@@ -2700,28 +2846,31 @@ localization_db : .localization
 	val[]: "Zarządzaj garażami" #+ Opens the garage manager from game.
 
 	key[]: "o_im_adviser_cursor"
-	val[]: "Kontrola myszy w Doradcy Drogowym"
+	val[]: "Kontrola myszy w doradcy drogowym"
 
 	key[]: "o_im_adjuster"
 	val[]: "Regulacja ustawień kabiny"
 
 	key[]: "o_im_adviser_page0"
-	val[]: "Strona nawigacyjna Doradcy Drogowego"
+	val[]: "Strona nawigacyjna doradcy drogowego"
 
 	key[]: "o_im_adviser_page1"
-	val[]: "Strona informacji o zleceniach Doradcy Drogowego"
+	val[]: "Strona informacji o zleceniach doradcy drogowego"
 
 	key[]: "o_im_adviser_page2"
-	val[]: "Strona diagnostyki Doradcy Drogowego"
+	val[]: "Strona diagnostyki doradcy drogowego"
 
 	key[]: "o_im_adviser_page3"
-	val[]: "Strona informacyjna Doradcy Drogowego"
+	val[]: "Strona informacyjna doradcy drogowego"
 
 	key[]: "o_im_adviser_next"
-	val[]: "Następna strona Doradcy Drogowego"
+	val[]: "Następna strona doradcy drogowego"
 
 	key[]: "o_im_adviser_prev"
-	val[]: "Poprzednia strona Doradcy Drogowego"
+	val[]: "Poprzednia strona doradcy drogowego"
+
+	key[]: "o_im_adviser_eta"
+	val[]: "Tryb docelowy doradcy drogowego"
 
 #assistant
 
@@ -2774,8 +2923,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Zresetuj śledzenie głowy"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Włącz śledzenie (sterowanie kamery)" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Wstrzymaj widok rozszerzony (eksperymentalny)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Zastosuj ustawienie wstępne widoku rozszerzonego 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Zastosuj ustawienie wstępne widoku rozszerzonego 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Zastosuj ustawienie wstępne widoku rozszerzonego 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Obrót kamery (za pomocą myszy)" #+ Enables camera look mode when mouse steering is active.
@@ -2789,7 +2950,25 @@ localization_db : .localization
 	key[]: "o_im_look_blink_mode"
 	val[]: "Korekcja kamery za kierunkowskazem" #+ Toggles enabled state of camera rotation based on blinker activation.
 
-
+#walk mode
+	key[]: "o_im_walk_forward"
+	val[]: "Naprzód" #+ Walk forward.
+	
+	key[]: "o_im_walk_back"
+	val[]: "Powrót" #+ Walk back.
+	
+	key[]: "o_im_walk_left"
+	val[]: "Lewo" #+ Walk left.
+	
+	key[]: "o_im_walk_right"
+	val[]: "Prawo" #+ Walk right.
+	
+	key[]: "o_im_walk_crouch"
+	val[]: "Kucanie" #+ Activate crouch.
+	
+	key[]: "o_im_walk_run"
+	val[]: "Bieganie" #+ Activate run.
+	
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3158,6 +3337,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Widok rozszerzony" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Rozszerzone ustawienia wstępne widoku" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Wprowadź nazwę ustawienia wstępnego" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Czy na pewno chcesz usunąć wybrane ustawienie wstępne?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Istniejące ustawienia wstępne o tej samej nazwie zostaną zastąpione. Czy chcesz kontynuować?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Ustawienia śledzenia spojrzenia" #+ Header of the gaze settings
 
@@ -3195,10 +3386,16 @@ localization_db : .localization
 	val[]: "Włącz pozycję (eksperymentalne)" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
-	val[]: "Mnożnik rotacji na boki" #+ Multiplier applied to resulting yaw value
+	val[]: "Mnożnik odchylenia (w kabinie)" #+ Multiplier applied to resulting yaw value (in cabin)
 
 	key[]: "eye_pitch_scale"
-	val[]: "Mnożnik rotacji góra - dół" #+ Multiplier applied to resulting pitch value
+	val[]: "Mnożnik podziałki (w kabinie)" #+ Multiplier applied to resulting pitch value (in cabin)
+	
+	key[]: "eye_walk_mode_yaw_scale"
+	val[]: "Mnożnik odchylenia (w trybie chodu)" #+ Multiplier applied to resulting yaw value (in walk mode)
+
+	key[]: "eye_walk_mode_pitch_scale"
+	val[]: "Mnożnik podziałki (w trybie chodu)" #+ Multiplier applied to resulting pitch value (in walk mode)
 
 	key[]: "eye_gaze_max_angle"
 	val[]: "Maks. kąt obr. kamery ruchem oczu" #+ Maximal angle change generated by gaze tracking.
@@ -3270,10 +3467,16 @@ localization_db : .localization
 	val[]: "Jeśli przechylisz głowę na boki, kamera w grze odpowiednio się pochyli."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "Mnoży czas reakcji, gdy obracasz głowę, obracając ją na boki."
+	val[]: "Mnoży czas reakcji, gdy obracasz głowę, obracając ją z boku na bok (w kabinie)."
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "Mnoży czas reakcji, gdy obracasz głowę w górę i w dół."
+	val[]: "Mnoży czas reakcji, gdy obracasz głowę w górę i w dół (w kabinie)."
+	
+	key[]: "eye_walk_mode_yaw_scale_tooltip"
+	val[]: "Mnoży czas reakcji, gdy obracasz głowę, obracając ją z boku na bok (w trybie chodu)."
+
+	key[]: "eye_walk_mode_pitch_scale_tooltip"
+	val[]: "Mnoży czas reakcji, gdy obracasz głowę w górę i w dół (w trybie chodu)."
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "Określa, jak daleko kamera może się obrócić, patrząc na krawędzie ekranu."
@@ -3402,6 +3605,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antyaliasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Okluzja otoczenia przestrzeni ekranu (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Technika HDR" #+ Checkbox enabling the high dynamic range rendering.
@@ -3959,6 +4165,20 @@ localization_db : .localization
 	key[]: "job_income"
 	val[]: "Przychód zlecenia" #+ For example "Job income: E6,526"
 
+	key[]: "adviser_tooltip_map_page"
+	val[]: "Nawigacja" #+ Tooltip for map page in route advisor
+
+	key[]: "adviser_tooltip_job_page"
+	val[]: "Obecne zlecenie" #+ Tooltip for job info page in route advisor
+
+	key[]: "adviser_tooltip_damage_page"
+	val[]: "Diagnostyka i pomoc telefoniczna" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+
+	key[]: "adviser_tooltip_message_page"
+	val[]: "Krótkie wiadomości" #+ Tooltip for short messages page in route advisor
+
+	key[]: "adviser_tooltip_tutorial"
+	val[]: "Samouczek doradcy drogowego" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "Pomoc drogowa może Cię zabrać razem z Twoją ciężarówką do miasta $CITY$. To będzie kosztować $MONEY$, a podróż potrwa $TIME$.<br offset=30>Wyrażasz zgodę?"
@@ -3982,7 +4202,7 @@ localization_db : .localization
 	val[]: "Czekasz na usługę tankowania awaryjnego."
 
 	key[]: "full_ctrl_hint"
-	val[]: "Używaj kursora myszy do poruszania się po Doradcy Drogowym"
+	val[]: "Używaj kursora myszy do poruszania się po doradcy drogowym"
 
 	key[]: "cancel_job_fademsg"
 	val[]: "Czekasz, aż inny kierowca przejmie twoje zlecenie."
@@ -4002,9 +4222,14 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Anuluj obecne zlecenie"
 
-
 	key[]: "visit_service"
 	val[]: "Musisz odwiedzić stację kontroli pojazdów!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Pełna informacja o podróży" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informacje o następnym punkcie kontrolnym" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
 
 # Adviser info
 
@@ -4055,7 +4280,7 @@ localization_db : .localization
 	val[]: "Brak funduszy."
 
 	key[]: "no_buy_gar"
-	val[]: "Ten garaż można kupić za $MONEY$<br offset=10>Niestety, aktualnie cię na niego nie stać."
+	val[]: "Ten garaż można kupić za $MONEY$<br offset=10>Niestety, aktualnie Cię na niego nie stać."
 
 	key[]: "enter_dealer"
 	val[]: "Naciśnij przycisk, aby odwiedzić dealera ciężarówek:"
@@ -4100,7 +4325,7 @@ localization_db : .localization
 	val[]: "Jesteś zmęczony!<br>Lepiej znajdź jakieś miejsce na odpoczynek!"
 
 	key[]: "you_are_getting_tired"
-	val[]: "Dopada cię zmęczenie.<br>W takich sytuacjach powinieneś znaleźć jakiś parking, żeby odpocząć."
+	val[]: "Dopada Cię zmęczenie.<br>W takich sytuacjach powinieneś znaleźć jakiś parking, żeby odpocząć."
 
 	key[]: "parking"
 	val[]: "Naciśnij następujący klawisz, aby odpoczywać:"
@@ -4194,6 +4419,9 @@ localization_db : .localization
 	key[]: "border_open"
 	val[]: "Wszystko jest w porządku.<br> Miłej podróży."
 
+	key[]: "stop_viewpoint"
+	val[]: "Zatrzymaj się i wyłącz silnik, aby aktywować punkt widokowy."
+
 	key[]: "stop_to_weigh"
 	val[]: "Proszę zatrzymać pojazd na najbliższej stacji kontroli wagi." #+ Adviser text: Weigh station visit required.
 
@@ -4214,6 +4442,15 @@ localization_db : .localization
 
 	key[]: "weigh_confirm"
 	val[]: "Dziękujemy za Twoją współpracę! Szerokiej drogi!" #+ Adviser text
+
+	key[]: "weigh_damaged"
+	val[]: "Twój pojazd nie jest w idealnym stanie technicznym. Następnym razem bądź bardziej ostrożny!" #+ Adviser text
+
+	key[]: "weigh_damaged_lot"
+	val[]: "Twój pojazd nie jest w odpowiednim stanie technicznym wymaganym przez prawo. Musisz go naprawić!" #+ Adviser text
+
+	key[]: "weigh_illegal_trailer"
+	val[]: "Twoja kombinacja ciężarówek i naczepy jest nielegalna w tym kraju!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Transport komercyjny jest zabroniony na tym obszarze. Musisz zawrócić!" #+ Adviser text
@@ -4237,7 +4474,7 @@ localization_db : .localization
 	val[]: "Niskie ciśnienie w pneumatycznym systemie hamulcowym. Zostaw włączony silnik i poczekaj aż ciśnienie wróci do normy."
 
 	key[]: "axle_lift_fail"
-	val[]: "Podniesienie osi nieudane.<br>Przyczepiona naczepa jest zbyt ciężka."
+	val[]: "Podniesienie osi nieudane.<br>Podczepiona naczepa jest zbyt ciężka."
 
 	key[]: "diff_lock_fail"
 	val[]: "Dyferencjał nie może zostać zablokowany. Zatrzymaj się i spróbuj ponownie. "
@@ -4308,6 +4545,18 @@ localization_db : .localization
 
 	key[]: "offence_illegal_trailer"
 	val[]: "Wykroczenie: nielegalne użycie naczepy."
+
+	key[]: "offence_avoid_inspection"
+	val[]: "Nie udało się zatrzymać w celu kontroli."
+
+	key[]: "offence_illegal_border"
+	val[]: "Nieuprawnione przekroczenie granicy."
+
+	key[]: "offence_shoulder_violation"
+	val[]: "Jazda pasem awaryjnym."
+
+	key[]: "offence_damaged_vehicle_usage"
+	val[]: "Naruszenie zasad użytkowania uszkodzonego pojazdu."
 #@}
 
 #@}
@@ -5889,22 +6138,22 @@ localization_db : .localization
 	val[]: "Twój majątek został sprzedany za $MONEY$ celem pokrycia długu."
 
 	key[]: "bank_pvehicles_sold"
-	val[]: "Niestety, twoja ciężarówka i naczepa została sprzedana z powodu długotrwałego długu. Więcej informacji znajdziesz w skrzynce e-mail."
+	val[]: "Niestety, Twoja ciężarówka i naczepa została sprzedana z powodu długotrwałego długu. Więcej informacji znajdziesz w skrzynce e-mail."
 
 	key[]: "bank_ptruck_sold"
-	val[]: "Niestety, twoja ciężarówka została sprzedana z powodu długotrwałego długu. Więcej informacji znajdziesz w skrzynce e-mail."
+	val[]: "Niestety, Twoja ciężarówka została sprzedana z powodu długotrwałego długu. Więcej informacji znajdziesz w skrzynce e-mail."
 
 	key[]: "bank_ptrailer_sold"
 	val[]: "Niestety, twoja naczepa została sprzedana z powodu długotrwałego długu. Więcej informacji znajdziesz w skrzynce e-mail."
 
 	key[]: "bank_ptruck_confiscate"
-	val[]: "Niestety, twoja ciężarówka została skonfiskowana ..."
+	val[]: "Niestety, Twoja ciężarówka została skonfiskowana..."
 
 	key[]: "bank_ptrailer_confiscate"
 	val[]: "Niestety, twoja naczepa została skonfiskowana ..."
 
 	key[]: "bank_ptruck_and_trailer_confiscate"
-	val[]: "Niestety, twoja ciężarówka oraz naczepa została skonfiskowana ... "
+	val[]: "Niestety, Twoja ciężarówka oraz naczepa została skonfiskowana..."
 
 	key[]: "bank_sell_report_truck"
 	val[]: "Ciężarówka $NAME$ z garażu w mieście $CITY$. Szacowana wartość: $MONEY$"
@@ -6172,7 +6421,7 @@ localization_db : .localization
 	val[]: "Nie masz wystarczających funduszy na modernizację garażu. Potrzebujesz przynajmniej $MONEY$."
 
 	key[]: "garageman_upgrade_hint"
-	val[]: "Zmodernizowanie tego garażu da ci dwa dodatkowe miejsca dla ciężarówek i kierowców."
+	val[]: "Zmodernizowanie tego garażu da Ci dwa dodatkowe miejsca dla ciężarówek i kierowców."
 #@}
 
 #+ Message box shown to confirm request to sell the garage.
@@ -6217,7 +6466,7 @@ localization_db : .localization
 
 	key[]: "truckman_summary_hint"
 	val[]: "Wybierz ciężarówkę z prawej strony, aby wyświetlić jej szczegóły"
-	
+
 #+ Truck map filters
 #@{
 
@@ -6232,7 +6481,7 @@ localization_db : .localization
 
 	key[]: "truckman_filter_sleeping"
 	val[]: "Odpoczywające ciężarówki"
-	
+
 	key[]: "truckman_filter_returning"
 	val[]: "Powracające ciężarówki"
 #@}
@@ -6452,7 +6701,7 @@ localization_db : .localization
 
 	key[]: "driverman_filter_sleeping"
 	val[]: "Odpoczywający kierowcy"
-	
+
 	key[]: "driverman_filter_returning"
 	val[]: "Powracający kierowcy"
 #@}
@@ -6741,7 +6990,7 @@ localization_db : .localization
 #@{
 
 	key[]: "td_msg_first_bought"
-	val[]: "Dziękujemy za kupno swojej pierwszej ciężarówki właśnie od nas! Zapraszamy ponownie!"
+	val[]: "Dziękujemy za zakup od nas swojej pierwszej ciężarówki! Proszę przyjść ponownie!"
 
 	key[]: "td_msg_first_and_busy"
 	val[]: "Dziękujemy za kupno swojej pierwszej ciężarówki właśnie u nas!<br><br>Dostarczymy Ci ją do centrali, skąd będzie można ją odebrać, gdy już zakończysz swoje aktualne zlecenie."
@@ -6774,7 +7023,7 @@ localization_db : .localization
 	val[]: "Czy na pewno chcesz opuścić salon cieżarówek?"
 
 	key[]: "truckdealer_cust_lost"
-	val[]: "Ta operacja zresetuje Twoje modyfikacje cięzarówki, czy potwierdzasz?"
+	val[]: "Ta operacja zresetuje Twoje modyfikacje ciężarówki, czy potwierdzasz?"
 
 	key[]: "td_truck_insurance_paid"
 	val[]: "<br><br>Proszę zauważyć, że wszystkie ciężarówki kupione tutaj mają już wykupione standardowe ubezpieczenie."
@@ -6798,7 +7047,7 @@ localization_db : .localization
 	val[]: "Wszyscy dealerzy ciężarówek" #+ Show if no truck brand is filter enabled on the map.
 
 	key[]: "tdsel_title_brand"
-	val[]: "dealerzy marki $BRAND$" #+ Shown if only dealers corresponding to specified brand are visible.
+	val[]: "Dealerzy marki $BRAND$" #+ Shown if only dealers corresponding to specified brand are visible.
 
 	key[]: "tdsel_buy_online"
 	val[]: "Kup online" #+ Button to trigger online purchase screen for selected dealer.
@@ -6999,6 +7248,9 @@ localization_db : .localization
 
 	key[]: "mapl_train"
 	val[]: "Eurotunel"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Punkt widokowy"
 
 	key[]: "mapl_gas"
 	val[]: "Stacja benzynowa"
@@ -7241,7 +7493,7 @@ localization_db : .localization
 	val[]: "Regulacja fotela"  #+ Opens the seat adjuster.
 
 	key[]: "truck_seat_help"
-	val[]: "Zmień pozycję fotela kierowcy i kierownicy dla maksymalnego komfortu. "  #+ Help message associated with seat adjuster icon.
+	val[]: "Zmień pozycję fotela kierowcy i kierownicy dla maksymalnego komfortu. " #+ Help message associated with seat adjuster icon.
 
 	# trailer adjuster name string is in assistance section (it could be open from both screens)
 
@@ -7258,13 +7510,13 @@ localization_db : .localization
 	val[]: "REGULACJA LUSTEREK" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "adj_left"
-	val[]: "Lewe" #+ Checkbox selecting left mirror.
+	val[]: "Lewo" #+ Checkbox selecting left mirror.
 
 	key[]: "adj_hood"
 	val[]: "Maska" #+ checkbox selecting one of the hood mirrors.
 
 	key[]: "adj_right"
-	val[]: "Prawe" #+ Checkbox selecting right mirror.
+	val[]: "Prawo" #+ Checkbox selecting right mirror.
 
 	key[]: "front"
 	val[]: "Przednie" #+ Checkbox selecting front mirror.
@@ -7773,7 +8025,7 @@ localization_db : .localization
 	val[]: "$KEY_TABLE$<br>Spróbuj różnych ujęć, a następnie naciśnij klawisz $KEY_CONTINUE$, aby kontynuować."
 
 	key[]: "tut_msg_5"
-	val[]: "Czas na dostawę! Skorzystaj z Doradcy Drogowego, żeby sprawdzić, gdzie jesteś i dokąd musisz się udać. Naciśnij klawisz $KEY$, aby przyjrzeć się dokładniej..."
+	val[]: "Czas na dostawę! Skorzystaj z doradcy drogowego, żeby sprawdzić, gdzie jesteś i dokąd musisz się udać. Naciśnij klawisz $KEY$, aby przyjrzeć się dokładniej..."
 
 	key[]: "tut_msg_6"
 	val[]: "Świetnie! Znasz już podstawy. Włączmy sobie muzykę, żeby umilić podróż. Naciśnij klawisz $KEY$, aby włączyć radio.<br>(Możesz uzyskać do niego dostęp z dolnego paska na pulpicie)."
@@ -7782,19 +8034,19 @@ localization_db : .localization
 	val[]: "Wszystko zwarte i gotowe. Kieruj się wskazówkami systemu nawigacji."
 
 	key[]: "tut_msg_8"
-	val[]: "Podjedź do bramy wjazdowej, aby dostać pozwolenie do podjechania na miejsce rozładunku. Wypatruj animowanego znaku do zatrzymania ciężarówki. <br><br> To może być dobra pora na ustawienie wielkości mapy na panelu nawigacji Doradcy Drogowego ($KEY$)."
+	val[]: "Podjedź do bramy wjazdowej, aby dostać pozwolenie do podjechania na miejsce rozładunku. Wypatruj animowanego znaku do zatrzymania ciężarówki. <br><br> To może być dobra pora na ustawienie wielkości mapy na panelu nawigacji doradcy drogowego ($KEY$)."
 
 	key[]: "tut_msg_9"
-	val[]: "Kiedy już wybierzesz w terminalu miejsce zaparkowania, kontynuuj parkowanie naczepy. W niektórych terminalach możesz wybrać łatwiejszą alternatywę (za mniejszą ilość XP w nagrodę). Jeśli znajdziesz się w tarapatach, możesz wybrać opcję parkowania automatycznego.<br><br>Miejsce zaparkowania naczepy będzie oznaczone na gruncie prostokątem oraz będzie zaznaczone w Doradcy Drogowym. W momencie kiedy naczepa będzie znajdować się w poprawnej pozycji, pojawi się wiadomość z prośbą o odczepienie jej."
+	val[]: "Kiedy już wybierzesz w terminalu miejsce zaparkowania, kontynuuj parkowanie naczepy. W niektórych terminalach możesz wybrać łatwiejszą alternatywę (za mniejszą ilość XP w nagrodę). Jeśli znajdziesz się w tarapatach, możesz wybrać opcję parkowania automatycznego.<br><br>Miejsce zaparkowania naczepy będzie oznaczone na gruncie prostokątem oraz będzie zaznaczone w doradcy drogowym. W momencie kiedy naczepa będzie znajdować się w poprawnej pozycji, pojawi się wiadomość z prośbą o odczepienie jej."
 
 	key[]: "tut_msg_10"
 	val[]: "Dobra robota! Na co czekasz? Wyładuj towar i zacznij grać na własną rękę!"
 
 	key[]: "tutorial_adviser0"
-	val[]: "Gdy gra jest wstrzymana, możesz kontrolować Doradce Drogowego myszką. <br><br> Posiadasz nawigację satelitarną o nazwie Doradca Drogowy. Nawigacja ta jest dostępna w każdym momencie. Doradca wyświetla twój obecny status oraz udziela informacji na temat obecnego zlecenia i wskazuje, gdzie należy się udać."
+	val[]: "Gdy gra jest wstrzymana, możesz kontrolować doradce drogowego myszką. <br><br> Posiadasz nawigację satelitarną o nazwie doradca drogowy. Nawigacja ta jest dostępna w każdym momencie. Doradca drogowy wyświetla twój obecny status oraz udziela informacji na temat obecnego zlecenia i wskazuje, gdzie należy się udać."
 
 	key[]: "tutorial_adviser1"
-	val[]: "Istnieją również skróty klawiszowe przypisane do najczęściej używanych funkcji, które możesz użyć natychmiast podczas jazdy. Dostępne klawisze są sugerowane przez Doradce Drogowego. "
+	val[]: "Istnieją również skróty klawiszowe przypisane do najczęściej używanych funkcji, które możesz użyć natychmiast podczas jazdy. Dostępne klawisze są sugerowane przez doradcę drogowego."
 
 	key[]: "tutorial_adviser1a"
 	val[]: "Aktualny status: Aktualna prędkość, bieg, uszkodzenia, paliwo, zmęczenie, stan skrzynki e-mail, czas i stan twojego konta."
@@ -7806,13 +8058,13 @@ localization_db : .localization
 	val[]: "Przełączniki stron. Zmieniaj treść między nawigacją, opisem obecnego zlecenia, diagnostyką ciężarówki i krótkimi wiadomościami."
 
 	key[]: "tutorial_adviser2"
-	val[]: "Mapa nawigacyjna pokazuje twoją obecną pozycję w postaci niebieskiej strzałki. Jeśli jesteś w trakcie zlecenia, pokazuje też najkrótszą trasę do twojego celu, który jest zaznaczony na czerwono.<br><br>Na dole strony zobaczysz szacunkowe wyliczenia czasu podróży i odległości. Możesz przełączać się pomiędzy różnymi poziomami przybliżenia poprzez naciśnięcie $KEY$ lub klawisza pokazanego na ekranie."
+	val[]: "Mapa nawigacji pokazuje twoją obecną pozycję w postaci niebieskiej strzałki. Jeśli jesteś w trakcie zlecenia, pokazuje też najkrótszą trasę do twojego celu, który jest zaznaczony na czerwono.<br><br>Na dole strony zobaczysz szacunkowe wyliczenia czasu podróży i odległości. Możesz przełączać się pomiędzy różnymi poziomami przybliżenia poprzez naciśnięcie $KEY$ lub klawisza pokazanego na ekranie."
 
 	key[]: "tutorial_adviser2a"
 	val[]: "Przełącz na stronę opisu pracy ($KEY$), aby kontynuować..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Strona opisu zlecenia podsumowuje, co będziesz przewozić i dokąd. Opisuje też, kiedy masz być u klienta, ile czasu ci zostało i ile pieniędzy otrzymasz, jeśli dojedziesz na czas bez uszkodzenia ładunku.<br><br>Jeżeli musisz, możesz anulować obecne zlecenie poprzez naciśnięcie czerwonego przycisku. W takim wypadku otrzymasz pokaźną karę do zapłacenia."
+	val[]: "Strona opisu stanowiska podsumowuje to, co przewozisz i gdzie. Informuje, kiedy należy się spodziewać, ile czasu Ci pozostało i ile pieniędzy otrzymasz, jeśli dotrzesz na czas bez uszkadzania ładunku."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Aby kontynuować, przełącz na stronę diagnostyki ($KEY$)..."
@@ -7821,7 +8073,7 @@ localization_db : .localization
 	val[]: "Na stronie diagnostycznej można zobaczyć, jak bardzo uszkodzeniu uległa ciężarówka, naczepa i ładunek. Pojazdy można naprawić na stacji obsługi w dowolnym mieście. Uszkodzenie ładunku jest jednak trwałe. Bądź więc ostrożny.<br><br>Jeśli zdarzy ci się utknąć na drodze, możesz również zadzwonić po pomoc drogową, naciskając żółty przycisk. Za opłatą przetransportują cię do najbliższego miasta i pomogą ci wrócić do pracy."
 
 	key[]: "tutorial_adviser5"
-	val[]: "To już wszystko, co należy wiedzieć o Doradcy Drogowym.<br><br>W każdej chwili możesz obejrzeć ponownie to szkolenie - wystarczy, że naciśniesz przycisk pomocy.<br><br>Aby wznowić grę, naciśnij przycisk $KEY$."
+	val[]: "To już wszystko, co należy wiedzieć o doradcy drogowym.<br><br>W każdej chwili możesz obejrzeć ponownie to szkolenie - wystarczy, że naciśniesz przycisk pomocy.<br><br>Aby wznowić grę, naciśnij przycisk $KEY$."
 
 	key[]: "close_tutorial"
 	val[]: "Zamknij samouczek"
@@ -8420,31 +8672,31 @@ localization_db : .localization
 
 	key[]: "chrome_ribbon"
 	val[]: "Chromowana wstążka" #+ Accessory name, DLC Pink Ribbon.
-	
+
 	key[]: "christmas_sock"
 	val[]: "Świąteczna skarpeta" #+ Hanging interior accessory
-	
+
 	key[]: "autumn_star"
 	val[]: "Jesienna gwiazda" #+ Hanging interior accessory
-	
+
 	key[]: "twinkle_star"
 	val[]: "Migocząca gwiazda" #+ Hanging interior accessory
-	
+
 	key[]: "frosty_star"
 	val[]: "Mroźna gwiazda" #+ Hanging interior accessory
-	
+
 	key[]: "winter_star"
 	val[]: "Zimowa gwiazda" #+ Hanging interior accessory
-	
+
 	key[]: "christmas_star"
 	val[]: "Gwiazdka Bożonarodzeniowa" #+ Hanging interior accessory
-	
+
 	key[]: "wishing_star"
 	val[]: "Gwiazda życzeń" #+ Hanging interior accessory
-	
+
 	key[]: "diamond_star"
 	val[]: "Diamentowa gwiazda" #+ Hanging interior accessory
-	
+
 	key[]: "grand_star"
 	val[]: "Wielka gwiazda" #+ Hanging interior accessory
 #@}
@@ -9002,6 +9254,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Czy chcesz aktywować galerię wyróżnionych zrzutów ekranu?<br><br>Będziesz mógł przeglądać niesamowite zdjęcia z World of Trucks, które będą wykorzystywane podczas ekranów ładowania." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Wykryto zmianę treści. Aktualizacja danych nawigacyjnych. Proszę czekać..." #+ Shown on loading screen
 #@}
 
 
@@ -9041,10 +9296,10 @@ localization_db : .localization
 #@{
 
 	key[]: "online_job_t"
-	val[]: "ZAMÓWIENIA ZEWNĘTRZNE" #+ Title of WOTR jobs window
+	val[]: "ZLECENIA ZEWNĘTRZNE" #+ Title of WOTR jobs window
 
 	key[]: "job_online"
-	val[]: "Zamówienia zewnętrzne" #+ name of WOTR Jobs icon on desktop
+	val[]: "Zlecenia zewnętrzne" #+ name of WOTR Jobs icon on desktop
 
 	key[]: "online_job_desc"
 	val[]: "Wykonaj dostawę World of Trucks za pomocą własnego sprzętu. Rejestr z tych zleceń znajduje się na Twoim profilu World of Trucks." #+ description of the WOTR Jobs icon on desktop
@@ -9062,13 +9317,13 @@ localization_db : .localization
 	val[]: "Czas gry" #+ Time inside the game world
 
 	key[]: "no_online_job_message"
-	val[]: "Aktualnie nie masz żadnego aktywnego kontraktu dostarczenia z World of Trucks." #+ Message shown when player does't have any online job taken
+	val[]: "Aktualnie nie masz żadnego aktywnego zlecenia z World of Trucks." #+ Message shown when player does't have any online job taken
 
 	key[]: "refresh_jobs"
 	val[]: "Odśwież" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Przeglądaj zamówienia" #+ Opens browser on WOTR page to search for a job
+	val[]: "Przeglądaj zlecenia" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Podpisz losowy kontrakt" #+ Connects with server and accept random job in proximity of player's current position
@@ -9140,13 +9395,13 @@ localization_db : .localization
 	val[]: "Czy chcesz otworzyć przeglądarkę internetową, żeby odwiedzić stronę rynku pracy World of Trucks?" #+ pop-up message to inform about opening WOTR jobs page in web browser
 
 	key[]: "offline_profile_message"
-	val[]: "Profil nie jest połączony z World of Trucks!<br><br>Aby dostawać kontrakty przesyłkowe edytuj swój profil, podłączając go do World of Trucks."#+ A message on WOTR job screen if profile isn't connected to WOTR
+	val[]: "Profil nie jest połączony z World of Trucks!<br><br>Aby móc otrzymywać zlecenia dostawy, edytuj swój profil, podłączając go do World of Trucks."#+ A message on WOTR job screen if profile isn't connected to WOTR
 
 	key[]: "edit_profile"
 	val[]: "Edycja profilu" #+ Button in WOTR jobs screens to begin editing profile if WOTR isn't conneted
 
 	key[]: "online_jobs_completed_count"
-	val[]: "Zlecenia z World of Trucks ukończone." #+ number of completed WOTR jobs
+	val[]: "Ukończone zlecenia z World of Trucks:" #+ number of completed WOTR jobs
 
 	key[]: "error_report_progress_t"
 	val[]: "NIEPOPRAWNE ZLECENIE"
@@ -9164,10 +9419,10 @@ localization_db : .localization
 	val[]: "AKTUALNE ZLECENIE" #+ name of job detail screen
 
 	key[]: "no_online_jobs_message"
-	val[]: "Nie ma żadnych kontraktów w Twojej okolicy. <br><br> Podjedź bliżej miasta lub spedycji i spróbuj ponownie." #+ message shown when there are no online jobs around player's position
+	val[]: "Nie ma żadnych zleceń w Twojej okolicy. <br><br> Podjedź bliżej miasta lub spedycji i spróbuj ponownie." #+ message shown when there are no online jobs around player's position
 
 	key[]: "no_company_online_jobs_message"
-	val[]: "Nie ma żadnych kontraktów w tej firmie." #+ message shown when there are no online jobs at company activation point
+	val[]: "Nie ma żadnych zleceń w tej firmie." #+ message shown when there are no online jobs at company activation point
 
 	key[]: "show_nearest_online_jobs"
 	val[]: "Pokaż najbliższe" #+ Button to show online jobs in radius instead of jobs at company activation point
@@ -9176,7 +9431,7 @@ localization_db : .localization
 	val[]: "Nie można podpisać kontraktu" #+ message shown when taking of online job fails
 
 	key[]: "error_fetching_online_jobs"
-	val[]: "Nie udało się załadować listy kontraktów z serwera." #+ message shown when listing of online jobs fails
+	val[]: "Nie udało się załadować listy zleceń z serwera." #+ message shown when listing of online jobs fails
 
 	key[]: "error_taking_online_job_expired"
 	val[]: "Ten kontrakt już wygasł. Proszę wybrać inny. " #+  message shown when taking online job that is already expired – it happens when job list screen is opened for a long time
@@ -9338,7 +9593,7 @@ localization_db : .localization
 #+ Version change detected message box.
 #@{
 	key[]: "version_change_detected_t"
-	val[]: "ZMIANA WERSJI ZOSTAŁA WYKRYTA" #+ Title of the infomational message box when version change has been detected.
+	val[]: "WYKRYTO ZMIANĘ WERSJI GRY" #+ Title of the infomational message box when version change has been detected.
 
 	key[]: "version_upgrade_detected"
 	val[]: "Gra została zaktualizowana do nowszej wersji." #+ The message showed when upgrade of the game to the newer version has been detected.
@@ -9347,7 +9602,7 @@ localization_db : .localization
 	val[]: "Zainstalowana została starsza aktualizacja gry." #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
-	val[]: "<br><br>Zmiana wersji gry może psuć modyfikacje, powodując zawieszanie się gry lub niestabilność; Autorzy modyfikacji są odpowiedzialni za utrzymanie kompatybilności modyfikacji. Upewnij się, że aktywowane modyfikacje są kompatybilne.<br><br>Wskazówka dotycząca rozwiązywania problemów: Jeśli obecne wydanie modyfikacji jest niekompatybilne, spróbuj wyłączyć je w Menedżerze modyfikacji.<br><br>Wersja gry: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
+	val[]: "<br><br>Zmiana wersji gry może psuć modyfikacje, powodując zawieszanie się gry lub niestabilność; autorzy modyfikacji są odpowiedzialni za utrzymanie kompatybilności modyfikacji. Upewnij się, że aktywowane modyfikacje są kompatybilne.<br><br>Wskazówka dotycząca rozwiązywania problemów: Jeśli obecne wydanie modyfikacji jest niekompatybilne, spróbuj wyłączyć je w Menedżerze modyfikacji.<br><br>Wersja gry: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
 #@}
 
 #+ Strings related to accessory filtering feature.
@@ -9588,7 +9843,7 @@ localization_db : .localization
 
 	#+ Text on gps advisor which suggest careful behavior because of tight route coming.
 	key[]: "adviser_tight_route"
-	val[]: "Zachowaj ostrożność, ciasna część trasy przed tobą..."
+	val[]: "Zachowaj ostrożność, ciasna część trasy przed Tobą..."
 
 	#+ Text on gps advisor which suggest careful behavior because of changing the lines.
 	key[]: "adviser_change_maneuver"
@@ -9616,7 +9871,7 @@ localization_db : .localization
 
 	#+ Oversize tutorial intro text.
 	key[]: "oversize_tutorial_intro"
-	val[]: "Przed tobą misja transportu specjalnego ładunku! Będziesz transportował ładunek w asyście dwóch pojazdów eskorty. Zachowaj szczególną ostrożność, podążaj za pojazdami eskorty oraz wykonuj ich polecenia które będą pojawiać się na <color value=@@clr_sel@@>Doradcy drogowym<color value=@@clr_txt@@>. Transportując ładunek specjalny masz pierwszeństwo w większości przypadków oraz nie zatrzymujesz się na czerwonym świetle. W czasie takiej misji, punkty kontrolne występują częściej, aby zapisywać twój aktualny postęp."
+	val[]: "Przed Tobą misja transportu specjalnego ładunku! Będziesz transportował ładunek w asyście dwóch pojazdów eskorty. Zachowaj szczególną ostrożność, podążaj za pojazdami eskorty oraz wykonuj ich polecenia które będą pojawiać się na <color value=@@clr_sel@@>doradcy drogowym<color value=@@clr_txt@@>. Transportując ładunek specjalny masz pierwszeństwo w większości przypadków oraz nie zatrzymujesz się na czerwonym świetle. W czasie takiej misji, punkty kontrolne występują częściej, aby zapisywać Twój aktualny postęp."
 
 	#+ Oversize tutorial warnings sub-title.
 	key[]: "oversize_tutorial_warnings_subtitle"
@@ -9783,7 +10038,7 @@ localization_db : .localization
 	val[]: "INFORMACJE O WYDARZENIU" #+ Title of the event popup.
 
 	key[]: "event_completed"
-	val[]: "Ukończono!" #+ Text showed when player completes event.
+	val[]: "Cel osobisty zrealizowany!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
 	val[]: "Otwórz stronę wydarzeń" #+ Button opening event page on WoTr.
@@ -10113,7 +10368,7 @@ localization_db : .localization
 	val[]: "Pnij się w górę po szczeblach swojej kariery, aby móc kupić własne naczepy."
 
 	key[]: "link_locked_msg_cabin_adjust"
-	val[]: "Nie możesz uzyskać dostępu do regulacji kabiny, ponieważ nie jeździsz obecnie żadną ciężarówką."
+	val[]: "Nie można uzyskać dostępu do regulacji kabiny, ponieważ obecnie nie prowadzisz żadnej ciężarówki."
 
 	key[]: "link_locked_msg_skills"
 	val[]: "Brak dostępnych umiejętności. Odblokuj następny poziom, aby to zobaczyć."
@@ -10280,6 +10535,9 @@ localization_db : .localization
 	key[]: "flatbed"
 	val[]: "Platforma"
 
+	key[]: "foodtank"
+	val[]: "Cysterna spożywcza"
+
 	key[]: "insulated"
 	val[]: "Izoterma"
 
@@ -10288,6 +10546,9 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Chłodnia"
+
+	key[]: "liquid"
+	val[]: "Ciecz"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10300,6 +10561,9 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Ogólne, towary suche"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "Płynne artykuły spożywcze"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "Chłodzone produkty"
@@ -10323,7 +10587,7 @@ localization_db : .localization
 	val[]: "Podwójna"
 
 	key[]: "b_double"
-	val[]: "B-double"
+	val[]: "B-Double"
 #@}
 
 #+ Trailer accessory types.
@@ -10354,6 +10618,12 @@ localization_db : .localization
 
 	key[]: "rear_body"
 	val[]: "Tył naczepy"
+
+	key[]: "r_body"
+	val[]: "Prawa strona naczepy"
+
+	key[]: "l_body"
+	val[]: "Lewa strona naczepy"
 #@}
 
 #+ Trailer Configurator
@@ -10418,6 +10688,12 @@ localization_db : .localization
 
 	key[]: "fuel_tank"
 	val[]: "Zbiornik paliwa"
+
+	key[]: "hose"
+	val[]: "Wąż"
+
+	key[]: "hose_2"
+	val[]: "Wąż, 2x"
 
 	key[]: "ladder"
 	val[]: "Drabina"
@@ -10562,7 +10838,7 @@ localization_db : .localization
 
 	key[]: "cm_legend_driver_status_returning"
 	val[]: "Powracający kierowca"
-	
+
 	key[]: "cm_legend_driver_player"
 	val[]: "Gracz"
 
@@ -10576,7 +10852,7 @@ localization_db : .localization
 	val[]: "Objazdy"
 
 	key[]: "detour_gps_warning"
-	val[]: "Na trasie jest nieoczekiwane zdarzenie. Zalecana jest ręczna regulacja nawigacji."
+	val[]: "Błąd nawigacji z powodu blokady drogi. Znajdź drogę lub ustaw unikalną lokalizację na mapie świata."
 #@}
 
 #+ Steam cloud.
@@ -11127,6 +11403,36 @@ localization_db : .localization
 
 	key[]: "sctrl_input_screenshot"
 	val[]: "@@sctrl_action_screenshot@@"
+
+	key[]: "sctrl_input_camwalk_for"
+	val[]: "@@sctrl_action_camwalk_for@@"
+
+	key[]: "sctrl_input_camwalk_back"
+	val[]: "@@sctrl_action_camwalk_back@@"
+
+	key[]: "sctrl_input_camwalk_left"
+	val[]: "@@sctrl_action_camwalk_left@@"
+
+	key[]: "sctrl_input_camwalk_righ"
+	val[]: "@@sctrl_action_camwalk_righ@@"
+
+	key[]: "sctrl_input_camwalk_crou"
+	val[]: "@@sctrl_action_camwalk_crou@@"
+
+	key[]: "sctrl_input_camwalk_run"
+	val[]: "@@sctrl_action_camwalk_run@@"
+
+	key[]: "sctrl_input_rwinopen"
+	val[]: "@@sctrl_action_rwinopen@@"
+
+	key[]: "sctrl_input_rwinclose"
+	val[]: "@@sctrl_action_rwinclose@@"
+
+	key[]: "sctrl_input_lwinopen"
+	val[]: "@@sctrl_action_lwinopen@@"
+
+	key[]: "sctrl_input_lwinclose"
+	val[]: "@@sctrl_action_lwinclose@@"
 #!}
 
 #@}
@@ -11150,6 +11456,9 @@ localization_db : .localization
 
 	key[]: "sctrl_action_set_layer_gearbox_direct"
 	val[]: "H-Shifter"
+
+	key[]: "sctrl_action_set_walking"
+	val[]: "Chodzenie"
 
 #+ Individual bindable actions
 #@{
@@ -11451,6 +11760,36 @@ localization_db : .localization
 
 	key[]: "sctrl_action_screenshot"
 	val[]: "@@o_im_screenshot@@"
+
+	key[]: "sctrl_action_camwalk_for"
+	val[]: "Walk Forward"
+
+	key[]: "sctrl_action_camwalk_back"
+	val[]: "Walk Backward"
+
+	key[]: "sctrl_action_camwalk_left"
+	val[]: "Walk Left"
+
+	key[]: "sctrl_action_camwalk_righ"
+	val[]: "Walk Right"
+
+	key[]: "sctrl_action_camwalk_crou"
+	val[]: "@@o_im_walk_crouch@@"
+
+	key[]: "sctrl_action_camwalk_run"
+	val[]: "@@o_im_walk_run@@"
+
+	key[]: "sctrl_action_rwinopen"
+	val[]: "@@o_im_right_window_open@@"
+
+	key[]: "sctrl_action_rwinclose"
+	val[]: "@@o_im_right_window_close@@"
+
+	key[]: "sctrl_action_lwinopen"
+	val[]: "@@o_im_left_window_open@@"
+
+	key[]: "sctrl_action_lwinclose"
+	val[]: "@@o_im_left_window_close@@"
 #!}
 #@}
 
@@ -11480,7 +11819,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

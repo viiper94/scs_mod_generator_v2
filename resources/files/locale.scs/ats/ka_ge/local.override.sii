@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,12 +18,11 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
-	val[]: "კაბინის შუქები"
+	val[]: "კაბინის განათება"
 
 	key[]: "cabdefl"
-	val[]: "კაბინის დეფლექტორი"
+	val[]: "კაბინის ამრეკლები"
 
 	key[]: "deflector"
 	val[]: "მწერებისგან დამცავი"
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "სალონის დამცავი"
 
+	key[]: "hndrail"
+	val[]: "ხელის მოსაკიდებელი"
+
 	key[]: "horns"
 	val[]: "სიგნალი"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "შხეფების საფარი"
 
+	key[]: "rear_cab"
+	val[]: "კაბინის უკანა არე"
+
 	key[]: "sideflares"
 	val[]: "კაბინის პანელები"
 
 	key[]: "sideskrt_bar"
 	val[]: "გვერდითი ხუფის ძელაკები"
+
+	key[]: "slp_hndl"
+	val[]: "კარის სახელურები"
+
+	key[]: "slp_vent"
+	val[]: "საჰაერო"
 
 	key[]: "topflares"
 	val[]: "ძილის სახურავის შუქები"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "სათამაშო ჯაჭვური ხერხი"
+
+	key[]: "chrom_tank"
+	val[]: "ქრომირებული ავზი" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "ალუმინის ავზი" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-სებრი" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -119,7 +139,13 @@ localization_db : .localization
 #@{
 
 	key[]: "intro_1"
-	val[]: "მოგესალმებით American Truck Simulator-ში!"
+	val[]: "მოგესალმებათ American Truck Simulator!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "თქვენს სატვირთოზე ამგვარი მისაბმელი იკრძალება ამ შტატში!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -145,7 +171,7 @@ localization_db : .localization
 #+ Information about individual hazard classes.
 #@{
 	key[]: "skill_adr_title"
-	val[]: "სახიფათო ტვირთის გადატანის ვარჯიში"
+	val[]: "სახიფათო ტვირთის გადატანაში გადამზადება"
 
 	key[]: "skill_adr_info"
 	val[]: "სახიფათო ნივთების ტრანსპორტირება მოითხოვს კარგად გაწვრთნილ პროფესიონალებს. გამოიყენეთ თქვენი მძიმე შრომით მოპოვებული გამოცდილება U.S. DOT HazMat სერთიფიკატების მისაღებად და გაზარდეთ შემოსავალი:"
@@ -233,6 +259,9 @@ localization_db : .localization
 	key[]: "cn_fruits"
 	val[]: "ხილი"
 
+	key[]: "cn_fruit_juice"
+	val[]: "ხილის წვენი"
+
 	key[]: "cn_grain"
 	val[]: "მარცვლეული"
 
@@ -315,7 +344,7 @@ localization_db : .localization
 	val[]: "კუნძის მოსათხრელი"
 
 	key[]: "cn_transformer"
-	val[]: "ტრანსფორმერი"
+	val[]: "ტრანსფორმატორი"
 
 	key[]: "cn_tub_grinder"
 	val[]: "საღერღი მანქანა"
@@ -413,7 +442,7 @@ localization_db : .localization
 	val[]: "ამწე-მანიპულატორი"
 
 	key[]: "tn_log"
-	val[]: "ხეტყის საზიდი მისაბმელი"
+	val[]: "ხეტყის მისაბმელი"
 
 	key[]: "tn_lowboy"
 	val[]: "დაბალჩარჩოიანი მისაბმელი"
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 ფუტი, დაშორებული"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 ფუტი, უკანა"
+
 	key[]: "tr_single_45"
 	val[]: "45 ფუტი"
 
@@ -820,6 +852,9 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "ბაქანი ალუმინის"
 
+	key[]: "bs_food_tank"
+	val[]: "საკვების ცისტერნა"
+
 	key[]: "bs_grain_hopper"
 	val[]: "მარცვალსაზიდი"
 
@@ -914,6 +949,9 @@ localization_db : .localization
 	key[]: "california"
 	val[]: "კალიფორნია"
 
+	key[]: "idaho"
+	val[]: "აიდაჰო"
+
 	key[]: "nevada"
 	val[]: "ნევადა"
 
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "ბენდი"
 
+	key[]: "boise"
+	val[]: "ბოისე"
+
 	key[]: "burns"
 	val[]: "ბერნსი"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "კლოვისი"
+
+	key[]: "coeur_dalene"
+	val[]: "კორ-დ’ალენი"
 
 	key[]: "colville"
 	val[]: "კოლვილი"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "გრანდ-კული"
 
+	key[]: "grangeville"
+	val[]: "გრეინჯვილი"
+
 	key[]: "hobbs"
 	val[]: "ჰობსი"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "ჰურონი"
 
+	key[]: "idaho_falls"
+	val[]: "აიდაჰო-ფოლსი"
+
 	key[]: "jackpot"
 	val[]: "ჯეკპოტი"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "კენევიკი"
+
+	key[]: "ketchum"
+	val[]: "კეტჩუმი"
 
 	key[]: "kingman"
 	val[]: "კინგმანი"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "ლას-ვეგასი"
 
+	key[]: "lewiston"
+	val[]: "ლიუისტონი"
+
 	key[]: "logan"
 	val[]: "ლოგანი"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "მოაბი"
+
+	key[]: "nampa"
+	val[]: "ნამპა"
 
 	key[]: "newport"
 	val[]: "ნიუპორტი"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "პაიოში"
 
+	key[]: "pocatello"
+	val[]: "პოკატელო"
+
 	key[]: "port_angeles"
 	val[]: "პორტ-ანჯელესი"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "სალინა"
 
+	key[]: "salmon"
+	val[]: "სალმონი"
+
 	key[]: "salt_lake_city"
 	val[]: "სოლტ-ლეიკ-სიტი"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "სან-სიმონი"
+
+	key[]: "sandpoint"
+	val[]: "სანდპოინტი"
 
 	key[]: "santa_cruz"
 	val[]: "სანტა-კრუსი"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "ტუკუმკარი"
 
+	key[]: "twin_falls"
+	val[]: "ტვინ-ფოლსი"
+
 	key[]: "ukiah"
 	val[]: "უკია"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "იუმა"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "ტვინ-ფოლსის კარტოფილის მეურნეობა"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "გალენას უღელტეხილი"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "პერინის მემორიალური ხიდი"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "ეროვნული ძეგლი და ნაკრძალი მთვარის კრატერები"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "ქალაქი ბოისე"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "ქალაქი სანდპოინტი"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "ხეტყის მომპოვებელი მხარე"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "ქალაქი მაკკოლი"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "ქალაქი აიდაჰო-ფოლსი"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "მიდვეილ-ჰილის დასასვენებელი ადგილი"
 #@}
 
 }

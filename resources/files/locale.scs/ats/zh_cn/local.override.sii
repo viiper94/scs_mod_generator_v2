@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "驾驶室灯"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "驾驶室防撞栏板"
 
+	key[]: "hndrail"
+	val[]: "扶手"
+
 	key[]: "horns"
 	val[]: "喇叭"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "挡泥板"
 
+	key[]: "rear_cab"
+	val[]: "驾驶室后部"
+
 	key[]: "sideflares"
 	val[]: "驾驶室面板"
 
 	key[]: "sideskrt_bar"
 	val[]: "车裙边条"
+
+	key[]: "slp_hndl"
+	val[]: "门把手"
+
+	key[]: "slp_vent"
+	val[]: "通气口"
 
 	key[]: "topflares"
 	val[]: "上卧铺灯"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "玩具电锯"
+
+	key[]: "chrom_tank"
+	val[]: "镀铬罐" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "铝罐" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D形罐" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -120,6 +140,12 @@ localization_db : .localization
 
 	key[]: "intro_1"
 	val[]: "欢迎来到《American Truck Simulator》！"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "您的卡车和挂车组合在这个州不合法！" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -232,6 +258,9 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "水果"
+
+	key[]: "cn_fruit_juice"
+	val[]: "果汁"
 
 	key[]: "cn_grain"
 	val[]: "粮食"
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40英尺分散桥"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43英尺，车轴靠后"
+
 	key[]: "tr_single_45"
 	val[]: "45英尺"
 
@@ -820,6 +852,9 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "铝平板"
 
+	key[]: "bs_food_tank"
+	val[]: "食品罐"
+
 	key[]: "bs_grain_hopper"
 	val[]: "粮食料斗"
 
@@ -914,6 +949,9 @@ localization_db : .localization
 	key[]: "california"
 	val[]: "加利福尼亚州"
 
+	key[]: "idaho"
+	val[]: "爱达荷州"
+
 	key[]: "nevada"
 	val[]: "内华达州"
 
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "本德"
 
+	key[]: "boise"
+	val[]: "博伊西"
+
 	key[]: "burns"
 	val[]: "柏恩斯"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "克洛维斯"
+
+	key[]: "coeur_dalene"
+	val[]: "科达莲"
 
 	key[]: "colville"
 	val[]: "科尔维尔"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "大古力"
 
+	key[]: "grangeville"
+	val[]: "格兰奇维尔"
+
 	key[]: "hobbs"
 	val[]: "霍布斯"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "休伦"
 
+	key[]: "idaho_falls"
+	val[]: "爱达荷福尔斯"
+
 	key[]: "jackpot"
 	val[]: "杰克波特"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "肯纳威克"
+
+	key[]: "ketchum"
+	val[]: "凯彻姆"
 
 	key[]: "kingman"
 	val[]: "金曼"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "拉斯维加斯"
 
+	key[]: "lewiston"
+	val[]: "刘易斯顿"
+
 	key[]: "logan"
 	val[]: "洛根"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "摩押"
+
+	key[]: "nampa"
+	val[]: "楠帕"
 
 	key[]: "newport"
 	val[]: "纽波特"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "皮奥奇"
 
+	key[]: "pocatello"
+	val[]: "波卡特洛"
+
 	key[]: "port_angeles"
 	val[]: "安吉利斯港"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "盐田"
 
+	key[]: "salmon"
+	val[]: "萨蒙"
+
 	key[]: "salt_lake_city"
 	val[]: "盐湖城"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "圣西蒙"
+
+	key[]: "sandpoint"
+	val[]: "沙点"
 
 	key[]: "santa_cruz"
 	val[]: "圣克鲁斯"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "图克姆卡里"
 
+	key[]: "twin_falls"
+	val[]: "特温福尔斯"
+
 	key[]: "ukiah"
 	val[]: "尤奇亚"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "尤马"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "特温福尔斯市土豆农场"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "格伦纳峰"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "皮瑞尼铁桥"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "月球撞击坑国家纪念地和保护区"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "博伊西市"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "沙点市"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "木材采伐场"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "麦考尔镇"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "爱达荷福尔斯市"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "米德韦尔山服务区"
 #@}
 
 }

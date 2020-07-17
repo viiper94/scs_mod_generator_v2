@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,12 +18,11 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
-	val[]: "Hytt belysning"
+	val[]: "Hyttbelysning"
 
 	key[]: "cabdefl"
-	val[]: "Vindavisare"
+	val[]: "Vindavvisare"
 
 	key[]: "deflector"
 	val[]: "Insektsskärm"
@@ -50,19 +49,22 @@ localization_db : .localization
 	val[]: "Sidospeglar"
 
 	key[]: "fr_mirror"
-	val[]: "Främre speglar"
+	val[]: "Sidospeglar"
 
 	key[]: "grill"
-	val[]: "Galler"
+	val[]: "Grill"
 
 	key[]: "headache_r"
 	val[]: "Skyddsräcke"
 
+	key[]: "hndrail"
+	val[]: "Handtag"
+
 	key[]: "horns"
-	val[]: "Horn"
+	val[]: "Signalhorn"
 
 	key[]: "hood"
-	val[]: "Hood"
+	val[]: "Huv"
 
 	key[]: "lghfender"
 	val[]: "Kofångarskydd"
@@ -73,20 +75,38 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Stänkskärmar"
 
+	key[]: "rear_cab"
+	val[]: "Bakre hytt"
+
 	key[]: "sideflares"
-	val[]: "Hytt paneler"
+	val[]: "Hyttpaneler"
 
 	key[]: "sideskrt_bar"
 	val[]: "Sidokjolsskydd"
 
+	key[]: "slp_hndl"
+	val[]: "Door Handles"
+
+	key[]: "slp_vent"
+	val[]: "Vindavisare"
+
 	key[]: "topflares"
-	val[]: "Takbelysning"
+	val[]: "Nattbelysning i tak"
 
 	key[]: "wing"
 	val[]: "Turbovinge"
 
 	key[]: "chainsaw_toy"
 	val[]: "Leksaksmotorsåg"
+
+	key[]: "chrom_tank"
+	val[]: "Kromtank" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Aluminiumtank" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-form" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -100,17 +120,17 @@ localization_db : .localization
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
 	key[]: "music_player_hint"
-	val[]: "Lägg till dina låtar <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>folder in your <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>och du kommer att kunna se dem här."
+	val[]: "Lägg till dina låtar i <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>folder in your <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>så kommer du att se dem här."
 
 #+ Tooltip shown when hovering over the radio_stream button.
 
 	key[]: "radio_hint"
-	val[]: "Ändra <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>in <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mappen i dina <color value=@@clr_sel@@>Dokument <color value=@@clr_txt@@>och lyssna på din favorit Internetradiostation direkt i spelet!"
+	val[]: "Ändra <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>i <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>-mappen i <color value=@@clr_sel@@>Mina Dokument <color value=@@clr_txt@@>och lyssna på din favoritradio direkt i spelet!"
 	
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
-	val[]: "Var god läs <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>i <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mappen i dina <color value=@@clr_sel@@>Dokument <color value=@@clr_txt@@>hur du kan lägga till din egen musik och radiostationer."
+	val[]: "Läs gärna <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>i <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>-mappen i <color value=@@clr_sel@@>Mina Dokument <color value=@@clr_txt@@>. Där står hur du kan lägga till egen musik och radiostationer."
 #@}
 
 #+ Messages shown as part of the tutorial.
@@ -120,6 +140,12 @@ localization_db : .localization
 
 	key[]: "intro_1"
 	val[]: "Välkommen till American Truck Simulator!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Your truck and trailer combination is not legal in this state!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -145,10 +171,10 @@ localization_db : .localization
 #+ Information about individual hazard classes.
 #@{
 	key[]: "skill_adr_title"
-	val[]: "Transport av farligt gods (HazMat) träning"
+	val[]: "Träning på transport av farligt gods (HazMat)"
 
 	key[]: "skill_adr_info"
-	val[]: "Transport av farligt gods kräver välutbildade proffs.  Använd din hårt förvärvade erfarenhet till att skaffa de följande U.S DOT HazMat certifikat och därmed kraftigt öka din inkomst:"
+	val[]: "Transport av farligt gods kräver välutbildade proffs. Använd din hårt förvärvade erfarenhet för att skaffa de följande U.S DOT HazMat certifikat och därmed kraftigt öka din inkomst:"
 #@}
 
 #+ Information about individual ranks of "Fuel Economy" skill.
@@ -169,7 +195,7 @@ localization_db : .localization
 #+ Individual possible components of the reward.
 #@{
 	key[]: "adr_bonus"
-	val[]: "Farligt gods (HazMat) leveransbonus"
+	val[]: "Leveransbonus för farligt gods (HazMat)"
 
 	key[]: "adr_class"
 	val[]: "Farligt gods klass"
@@ -180,7 +206,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_aircraft_engine"
-	val[]: "Flygplans motor"
+	val[]: "Flygplansmotor"
 
 	key[]: "cn_articulated_tractor"
 	val[]: "Bandlastare"
@@ -210,7 +236,7 @@ localization_db : .localization
 	val[]: "Byggbaracker"
 
 	key[]: "cn_crude_oil"
-	val[]: "Crude Oil"
+	val[]: "Råolja"
 
 	key[]: "cn_curtains"
 	val[]: "Gardiner"
@@ -222,22 +248,25 @@ localization_db : .localization
 	val[]: "Skogstraktor"
 
 	key[]: "cn_frac_tank"
-	val[]: "Frac Tank"
+	val[]: "Vätsketank"
 
 	key[]: "cn_frozen_fruits"
-	val[]: "Frysta Frukter"
+	val[]: "Frysta frukter"
 
 	key[]: "cn_frozen_vegetable"
-	val[]: "Frusna grönsaker"
+	val[]: "Frysta grönsaker"
 
 	key[]: "cn_fruits"
 	val[]: "Frukter"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Fruktjuice"
 
 	key[]: "cn_grain"
 	val[]: "Spannmål"
 
 	key[]: "cn_harvester"
-	val[]: "Harvester"
+	val[]: "Skördetröska"
 
 	key[]: "cn_hay"
 	val[]: "Hö"
@@ -246,10 +275,10 @@ localization_db : .localization
 	val[]: "Monteringsfärdigt hus"
 
 	key[]: "cn_kenworth_t680"
-	val[]: "Kenworth lastbilar"
+	val[]: "Kenworth-lastbilar"
 
 	key[]: "cn_knuckleboom_loader"
-	val[]: "Knuckleboom Loader"
+	val[]: "Skogsmaskin"
 
 	key[]: "cn_lift_truck"
 	val[]: "Högstaplare"
@@ -291,13 +320,13 @@ localization_db : .localization
 	val[]: "Fräs"
 
 	key[]: "cn_pelleted_animal_food"
-	val[]: "Pelleted Animal Food"
+	val[]: "Pelleterad djurmat"
 
 	key[]: "cn_plows"
 	val[]: "Plogar"
 
 	key[]: "cn_power_generator"
-	val[]: "Kraftgenerator"
+	val[]: "Generator"
 
 	key[]: "cn_rawmilk"
 	val[]: "Råmjölk"
@@ -341,11 +370,11 @@ localization_db : .localization
 
 	#+ Name of the cargo of hull part for large dozers.
 	key[]: "cn_mutt_hull"
-	val[]: "Gruvschaktmaskinstomme"
+	val[]: "Stomme till gruvschaktmaskin"
 
 	#+ Name of the cargo of large dozer.
 	key[]: "cn_mutt"
-	val[]: "Dumperlastbilschassi"
+	val[]: "Chassi till dumper"
 
 	#+ Name of the cargo of big air condition complex.
 	key[]: "cn_aircondition"
@@ -359,13 +388,13 @@ localization_db : .localization
 #+ Names of individual trailer and trailer chassis types.
 #@{
 	key[]: "tn_acid"
-	val[]: "Syretanktrailer"
+	val[]: "Släp för syratank"
 
 	key[]: "tn_acid_long"
-	val[]: "Syretankstrailer, lång"
+	val[]: "Släp för syratank, lång"
 
 	key[]: "tn_bottom_dump"
-	val[]: "Halvbottenddumper"
+	val[]: "Halvbottendumper"
 
 	key[]: "tn_car"
 	val[]: "Biltransport"
@@ -392,25 +421,25 @@ localization_db : .localization
 	val[]: "Tanktrailer för mat"
 
 	key[]: "tn_frac_tank"
-	val[]: "Frac Tank"
+	val[]: "Vätsketank"
 
 	key[]: "tn_fuel"
-	val[]: "Bränsletankstrailer"
+	val[]: "Bränsletankssläp"
 
 	key[]: "tn_fuel_long"
-	val[]: "Bränsletankstrailer, Lång"
+	val[]: "Bränsletankssläp, långt"
 
 	key[]: "tn_gas"
-	val[]: "Gastanktrailer"
+	val[]: "Gastankssläp"
 
 	key[]: "tn_gas_long"
-	val[]: "Gastanktrailer, lång"
+	val[]: "Gastankssläp, långt"
 
 	key[]: "tn_home_transporter"
 	val[]: "Hustransport"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "Knuckleboom Loader"
+	val[]: "Vedlastare"
 
 	key[]: "tn_log"
 	val[]: "Timmersläp"
@@ -422,10 +451,10 @@ localization_db : .localization
 	val[]: "Båttrailer"
 
 	key[]: "tn_magnitude_55l"
-	val[]: "Tungtransport 55L släp"
+	val[]: "Tungtransportsläp, 55L"
 
 	key[]: "tn_mbt1_barrier"
-	val[]: "Mobil barriärtrailer"
+	val[]: "Släp för mobil barriär"
 
 	key[]: "tn_tub_grinder"
 	val[]: "Stubbfräs"
@@ -471,7 +500,7 @@ localization_db : .localization
 	val[]: "Professionell"
 	
 	key[]: "lvl_name6"
-	val[]: "18 Hjul av Skicklighet"
+	val[]: "18 hjuls skicklighet"
 #@}
 	
 #+ Map legend
@@ -480,7 +509,7 @@ localization_db : .localization
 	val[]: "Visningshall"
 	
 	key[]: "weblink_game"
-	val[]: "American Truck Simulator hemsida" #+ weblink description
+	val[]: "Hemsida för American Truck Simulator" #+ weblink description
 
 	key[]: "weblink_facebook"
 	val[]: "American Truck Simulator på Facebook" #+ facebook weblink description
@@ -489,28 +518,28 @@ localization_db : .localization
 #@{
 	
 	key[]: "sys_no_graphics"
-	val[]: "American Truck Simulator har råkat ut för problem och kan inte rita upp grafik på din dator (kunde ej hitta giltig grafikenhet).\nÅtgärdsförslag:\n\n1. Kontrollera att din dator och ditt grafikkort möter minimum-kraven.\n2. Uppdatera din dator med den senaste DirectX från Microsoft.\n3. Hämta hem och installera den senaste drivrutinen för ditt grafikkort från tillverkarens hemsida - drivrutinerna kan vara för gamla.\n4. Prova att använda den andra grafikrenderingsmetoden, från OpenGL till DirectX och tvärt om (Start-menyn).\n5. Radera spelets konfigurationsfil, 'config.cfg', i din 'Dokument' - 'American Truck Simulator' foldern.  Den kan ha korrumperats.\nDenna fil kommer automatiskt att återskapas med giltiga förintställda värden vid nästa spelstart."
+	val[]: "American Truck Simulator har råkat ut för problem och kan inte rita upp grafik på din dator (ingen giltig grafikenhet hittades).\nFöreslagna steg:\n\n1. Kontrollera att din dator och ditt grafikkort möter minimikraven.\n2. Uppdatera din dator med den senaste DirectX från Microsoft.\n3. Ladda ned och installera den senaste drivrutinen för ditt grafikkort från tillverkarens hemsida – drivrutinerna är troligen inaktuella.\n4. Prova att byta metod för att rendera grafik, från OpenGL till DirectX och tvärtom.\n5. Radera spelets konfigurationsfil, 'config.cfg', i mappen 'Dokument' - 'American Truck Simulator'.  Den kan ha blivit skadad.\nDenna fil kommer automatiskt att återskapas med giltiga förinställda värden vid nästa spelstart."
 	
 	key[]: "sys_no_graphics_simple"
-	val[]: "American Truck Simulator har ett problem och kan inte generera grafiken på din dator (ingen giltig grafikenhet hittades)"
+	val[]: "American Truck Simulator har stött på ett problem och kan inte rita upp grafiken på din dator (ingen giltig grafikenhet hittades)."
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "American Truck Simulator kan inte nå Steam-klienten.  Föreslagna åtgärder:\n\n1.  Försäkra dig om att Steam-klienten körs\n2.  Försäkra dig om att Steam-klienten är uppdaterad till senaste versionen.\n3.  Försäkra dig om att automatiska uppdateringar är aktiverade och att spelet är uppdaterat till den senaste versionen."
+	val[]: "American Truck Simulator kan inte nå Steam-klienten. Föreslagna åtgärder:\n\n1. Försäkra dig om att Steam-klienten körs\n2. Kontrollera om Steam-klienten är uppdaterad till senaste versionen.\n3. Kontrollera att automatiska uppdateringar är aktiverade och att spelet är uppdaterat till den senaste versionen."
 
 #+ Activation screen
 #@{
 	
 	key[]: "activated"
-	val[]: "Aktiveringen godkändes.<br>Tack för att du köpte American Truck Simulator."
+	val[]: "Aktiveringen lyckades.<br>Tack för att du köpte American Truck Simulator."
 	
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
 	key[]: "steam_demo"
-	val[]: "Om du gillar demon av American Truck Simulator köp den gärna på <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
+	val[]: "Om du gillar demon av American Truck Simulator, köp gärna spelet på <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>!" #+ Message shown on the "activation" screen for steam demo only build.
 #@}
 
 #+ Profile selection.
@@ -526,7 +555,7 @@ localization_db : .localization
 #+ Strings related to accessory filtering feature.
 #@{
 	key[]: "base"
-	val[]: "American Truck Simulator Innehåll" #+ The category of the accessories that are inside the base game files.
+	val[]: "Innehåll i American Truck Simulator" #+ The category of the accessories that are inside the base game files.
 #@}
 
 
@@ -551,7 +580,7 @@ localization_db : .localization
 	val[]: "Flatbädd"
 
 	key[]: "hopper"
-	val[]: "Hopper"
+	val[]: "Spannmålstrailer"
 
 	key[]: "insulated"
 	val[]: "Insulerad"
@@ -578,7 +607,7 @@ localization_db : .localization
 	val[]: "Lätt bulkmaterial"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Grain & Bulk material"
+	val[]: "Spannmål och bulkmaterial"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -593,10 +622,10 @@ localization_db : .localization
 	val[]: "B-dubbel"
 
 	key[]: "rmdouble"
-	val[]: "R. M. Dubbel"
+	val[]: "R. M. dubbel"
 
 	key[]: "tpdouble"
-	val[]: "T.P. Dubbel"
+	val[]: "T.P. dubbel"
 
 	key[]: "triple"
 	val[]: "Trippel"
@@ -609,16 +638,16 @@ localization_db : .localization
 	val[]: "Enkel"
 
 	key[]: "chain_staa_double"
-	val[]: "STAA Dubbel"
+	val[]: "STAA dubbel"
 
 	key[]: "chain_b_double"
 	val[]: "B-dubbel"
 
 	key[]: "chain_rm_double"
-	val[]: "Rocky Mountain Dubbel"
+	val[]: "Rocky Mountain dubbel"
 
 	key[]: "chain_tp_double"
-	val[]: "Turnpike Dubbel"
+	val[]: "Turnpike dubbel"
 
 	key[]: "chain_triple"
 	val[]: "Trippel"
@@ -628,13 +657,13 @@ localization_db : .localization
 
 #@{
 	key[]: "tr_double_staa"
-	val[]: "STAA Dubbel"
+	val[]: "STAA dubbel"
 
 	key[]: "tr_double_staa_pup"
-	val[]: "STAA Dubbelsläp"
+	val[]: "STAA ledad trailer"
 
 	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA Double Pup, 4 Axles"
+	val[]: "STAA ledad trailer, 4 axlar"
 
 	key[]: "tr_b_double"
 	val[]: "B-dubbel"
@@ -646,10 +675,10 @@ localization_db : .localization
 	val[]: "B-dubbel, 6 axlar"
 
 	key[]: "tr_rm_double"
-	val[]: "Rocky Mountain Dubbel"
+	val[]: "Rocky Mountain dubbel"
 
 	key[]: "tr_rm_double_pup"
-	val[]: "Rocky Mountain Dubbel pup"
+	val[]: "Rocky Mountain ledad trailer"
 
 	key[]: "tr_tp_double"
 	val[]: "Turnpike dubbel"
@@ -661,7 +690,7 @@ localization_db : .localization
 	val[]: "28 fot"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28 feet, 2 Axles"
+	val[]: "28 fot, 2 axlar"
 
 	key[]: "tr_single_32"
 	val[]: "32 fot"
@@ -688,7 +717,10 @@ localization_db : .localization
 	val[]: "40 fot, bak"
 
 	key[]: "tr_single_40_spread"
-	val[]: "40 fot, spridnings"
+	val[]: "40 fot, mellanrum"
+
+	key[]: "tr_single_43_rear"
+	val[]: "43 fot, bak"
 
 	key[]: "tr_single_45"
 	val[]: "45 fot"
@@ -697,10 +729,10 @@ localization_db : .localization
 	val[]: "45 fot, 3 axlar"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 feet, 3 Axles, Single"
+	val[]: "45 fot, 3 axlar"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45 feet, 3 Axles, Steerable"
+	val[]: "45 fot, 3 axlar, styrbar"
 
 	key[]: "tr_single_45_front"
 	val[]: "45 fot, fram"
@@ -709,13 +741,13 @@ localization_db : .localization
 	val[]: "45 fot, bak"
 
 	key[]: "tr_single_45_slide_front"
-	val[]: "45 fot, glidnings tandem, front"
+	val[]: "45 fot, glidningstandem, front"
 
 	key[]: "tr_single_45_slide_rear"
-	val[]: "45 fot, glidnings tandem, bak"
+	val[]: "45 fot, glidningstandem, bak"
 
 	key[]: "tr_single_45_spread"
-	val[]: "45 fot, spridnings"
+	val[]: "45 fot, mellanrum"
 
 	key[]: "tr_single_48_3axle"
 	val[]: "48 fot, 3 axlar"
@@ -727,25 +759,25 @@ localization_db : .localization
 	val[]: "48 fot, bak"
 
 	key[]: "tr_single_48_slide_front"
-	val[]: "48 fot, glidnings tandem, front"
+	val[]: "48 fot, glidningstandem, front"
 
 	key[]: "tr_single_48_slide_rear"
-	val[]: "48 fot, glidnings tandem, bak"
+	val[]: "48 fot, glidningstandem, bak"
 
 	key[]: "tr_single_48_spread"
-	val[]: "48 fot, spridnings"
+	val[]: "48 fot, mellanrum"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50 feet, 3 Axles"
+	val[]: "50 fot, 3 axlar"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 feet, 3 Axles, Single"
+	val[]: "50 fot, 3 axlar, enkel"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50 feet, 3 Axles, Steerable"
+	val[]: "50 fot, 3 axlar, styrbar"
 
 	key[]: "tr_single_50_spread"
-	val[]: "50 feet, Spread"
+	val[]: "50 fot, mellanrum"
 
 	key[]: "tr_single_53_3axle"
 	val[]: "53 fot, 3 axlar"
@@ -754,7 +786,7 @@ localization_db : .localization
 	val[]: "53 fot, 4 axlar"
 
 	key[]: "tr_single_53_4axle_spread"
-	val[]: "53 fot, 4 axlar, spridnings"
+	val[]: "53 fot, 4 axlar, mellanrum"
 
 	key[]: "tr_single_53_4axle_steer"
 	val[]: "53 fot, 4 axlar, styrbar"
@@ -766,19 +798,19 @@ localization_db : .localization
 	val[]: "53 fot, bak"
 
 	key[]: "tr_single_53_slide_front"
-	val[]: "53 fot, glidnings tandem, front"
+	val[]: "53 fot, glidningstandem, front"
 
 	key[]: "tr_single_53_slide_rear"
-	val[]: "53 fot, glidnings tandem, bak"
+	val[]: "53 fot, glidningstandem, bak"
 
 	key[]: "tr_single_53_spread"
-	val[]: "53 fot, spridnings"
+	val[]: "53 fot, mellanrum"
 
 	key[]: "tr_triple"
 	val[]: "Trippel"
 
 	key[]: "tr_triple_pup"
-	val[]: "Trippel pup"
+	val[]: "Treledad trailer"
 
 	key[]: "tr_conv_dolly"
 	val[]: "Anpassad dolly"	#+ Component chassis name (upgrade screen only)
@@ -794,16 +826,16 @@ localization_db : .localization
 
 #@{
 	key[]: "bs_bellyvan"
-	val[]: "Belly Van"
+	val[]: "Lågtrailer"
 
 	key[]: "bs_bulk_feed"
-	val[]: "Bulk Feed"
+	val[]: "Bulkmatning"
 
 	key[]: "bs_chipvan"
 	val[]: "Flistrailer"
 
 	key[]: "bs_chipvan_mfloor"
-	val[]: "Flisvagn, Rörligt Golv"
+	val[]: "Flistrailer, rörligt golv"
 
 	key[]: "bs_container"
 	val[]: "Containersläp"
@@ -820,23 +852,26 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Flatbäddstrailer, aluminium"
 
+	key[]: "bs_food_tank"
+	val[]: "Mattank"
+
 	key[]: "bs_grain_hopper"
-	val[]: "Grain Hopper"
+	val[]: "Spannmålstrailer"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Grain Hopper Belt"
+	val[]: "Band till spannmålstrailer"
 
 	key[]: "bs_insulated"
 	val[]: "Isolerad"
 
 	key[]: "bs_log_4"
-	val[]: "4 bollstammar"
+	val[]: "Timmersläp, 4 sektioner"
 
 	key[]: "bs_log_6"
-	val[]: "6 bollstammar"
+	val[]: "Timmersläp, 6 sektioner"
 
 	key[]: "bs_reefer"
-	val[]: "Frys"
+	val[]: "Kylvaror"
 #@}
 
 #+ Trailer only accessories
@@ -879,7 +914,7 @@ localization_db : .localization
 	val[]: "Vindavvisare"
 
 	key[]: "aero_sideskirt"
-	val[]: "Aerosidokjol"
+	val[]: "Aerodynamisk sidokjol"
 
 	key[]: "black_sideskirt"
 	val[]: "Svart sidokjol"
@@ -903,7 +938,7 @@ localization_db : .localization
 	val[]: "Standarddörr"
 
 	key[]: "standard_door_aero"
-	val[]: "Standard dörr, vindavvisare"
+	val[]: "Standarddörr, vindavvisare"
 #@}
 
 #+ Names of countries/states
@@ -913,6 +948,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Kalifornien"
+
+	key[]: "idaho"
+	val[]: "Idaho"
 
 	key[]: "nevada"
 	val[]: "Nevada"
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Bend"
 
+	key[]: "boise"
+	val[]: "Boise"
+
 	key[]: "burns"
 	val[]: "Burns"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Clovis"
+
+	key[]: "coeur_dalene"
+	val[]: "Coeur d'Alene"
 
 	key[]: "colville"
 	val[]: "Colville"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
 
+	key[]: "grangeville"
+	val[]: "Grangeville"
+
 	key[]: "hobbs"
 	val[]: "Hobbs"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Huron"
 
+	key[]: "idaho_falls"
+	val[]: "Idaho Falls"
+
 	key[]: "jackpot"
 	val[]: "Jackpot"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Kennewick"
+
+	key[]: "ketchum"
+	val[]: "Ketchum"
 
 	key[]: "kingman"
 	val[]: "Kingman"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Las Vegas"
 
+	key[]: "lewiston"
+	val[]: "Lewiston"
+
 	key[]: "logan"
 	val[]: "Logan"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "nampa"
+	val[]: "Nampa"
 
 	key[]: "newport"
 	val[]: "Newport"
@@ -1110,10 +1169,10 @@ localization_db : .localization
 	val[]: "Page"
 
 	key[]: "pajarito_rest_area"
-	val[]: "Pajarito rastplats"
+	val[]: "Pajaritos rastplats"
 
 	key[]: "pedro_travel_center"
-	val[]: "Pedro resecenter"
+	val[]: "Pedro's resecenter"
 
 	key[]: "pendleton"
 	val[]: "Pendleton"
@@ -1123,6 +1182,9 @@ localization_db : .localization
 
 	key[]: "pioche"
 	val[]: "Pioche"
+
+	key[]: "pocatello"
+	val[]: "Pocatello"
 
 	key[]: "port_angeles"
 	val[]: "Port Angeles"
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Salina"
 
+	key[]: "salmon"
+	val[]: "Salmon"
+
 	key[]: "salt_lake_city"
 	val[]: "Salt Lake City"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "San Simon"
+
+	key[]: "sandpoint"
+	val[]: "Sandpoint"
 
 	key[]: "santa_cruz"
 	val[]: "Santa Cruz"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Tucumcari"
 
+	key[]: "twin_falls"
+	val[]: "Twin Falls"
+
 	key[]: "ukiah"
 	val[]: "Ukiah"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Yuma"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Twin Falls potato farm"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Galena Summit"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Perrine Memorial Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Craters of the Moon National Monument & Preserve"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "Staden Boise"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "Staden Sandpoint"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Timber harvest site"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "Staden McCall"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "Staden Idaho Falls"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Midvale Hill Rest Area"
 #@}
 
 }

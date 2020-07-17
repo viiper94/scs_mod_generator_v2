@@ -56,19 +56,19 @@ SiiNunit
 	mail_text: mailtext.bank_sellpt {
 		from: "Banca" #+ Message sender
 		subject: "O teu camión persoal foi vendido" #+ Message subject
-		body: "Estimado Cliente,<br><br>Lamentamos informarche de que tivemos que vender o teu camión persoal - $TRUCK_NAME$ - por $MONEY$. Desafortunadamente, tiñas unha débeda de largo plazo con nos e non tiñamos outra forma de cubrila. Tristemente, non houbo ningunha maneira de evitar esas medidas extremas. Suxerísmosche que conduzas en traballos rápidos ata que a túa situación financeira mellore.<br><br>Saúdos,<br>O administrador de contas<br>Banco" #+ Message body
+		body: "Estimado Cliente,<br><br>Lamentamos informarche de que tivemos que vender o teu camión persoal - $TRUCK_NAME$ - por $MONEY$. Desafortunadamente, tiñas unha débeda de longo plazo connosco e non tiñamos outro xeito de cubrila. Tristemente, non houbo ningunha maneira de evitar esas medidas extremas. Suxerísmosche que conduzas en traballos rápidos até que a túa situación financeira mellore.<br><br>Saúdos,<br>O administrador de contas<br>Banco" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellptr {
 		from: "Banca" #+ Message sender
 		subject: "O teu remolque persoal foi vendido" #+ Message subject
-		body: "Estimado Cliente,<br><br>Lamentamos informarlle de que tivemos que vender o seu remolque persoal - $TRAILER_NAME$ - por $MONEY$. Desafortunadamente, tiña unha débeda de largo prazo con nos e non tíñamos outra forma de cubrila. Tristemente, non houbo ningunha maneira de evitar estas medidas extremas. Suxerísmoslle que conduza en traballos rápidos ata que a súa situación financeira mellore.<br><br>Saúdos,<br>O administrador de contas<br>Banco" #+ Message body
+		body: "Estimado Cliente,<br><br>Lamentamos informarlle de que tivemos que vender o seu remolque persoal - $TRAILER_NAME$ - por $MONEY$. Desafortunadamente, tiña unha débeda de longo prazo connosco e non tíñamos outro xeito de cubrila. Tristemente, non houbo ningunha maneira de evitar estas medidas extremas. Suxerísmoslle que conduza en traballos rápidos até que a súa situación financeira mellore.<br><br>Saúdos,<br>O administrador de contas<br>Banco" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellrep {
 		from: "Banca" #+ Message sender
 		subject: "A túa propiedade foi vendida" #+ Message subject
-		body: "Estimado cliente,<br><br>Por mor dunha débeda de largo prazo na túa conta tivemos que embargar e vender a túa propiedade. Os fondos recuperados na suma total de <br>$MONEY$ foron usados para satisfacer as túas obligacións. En particular, estos obxectos foron confiscados:<br><br>$ITEM_LIST$<br>Lamentamos que a situación chegase tan lonxe, e esperamos que as consecuencias non danen os teus esforzos futuros en exceso.<br><br>Cos mellores desexos,<br>O teu administrador de contas<br>Banco" #+ Message body
+		body: "Estimado cliente,<br><br>Por mor dunha débeda de longo prazo na túa conta tivemos que embargar e vender a túa propiedade. Os fondos recuperados na suma total de <br>$MONEY$ foron usados para satisfacer as túas obrigas. En particular, estes obxectos foron confiscados:<br><br>$ITEM_LIST$<br>Lamentamos que a situación chegase tan lonxe, e esperamos que as consecuencias non danen os teus esforzos futuros en exceso.<br><br>Cos mellores desexos,<br>O teu administrador de contas<br>Banco" #+ Message body
 	}
 
 /**
@@ -88,7 +88,7 @@ SiiNunit
 	mail_text: mailtext.comp_teaser {
 		from: "$COMPANY$, $CITY$" #+ Message sender
 		subject: "Condutores requeridos co seu propio equipamento" #+ Message subject
-		body: "A quen lle poda interesar,<br><br>Estamos procurando conductores con experiencia que teñan camión propio para facer un gran número de entregas. Ofrecemos boas recompensas de ata $MONEY$ por tarefa. Por favor, se tes camión propio, achégate directamente ó noso negocio en $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+		body: "A quen lle poida interesar,<br><br>Estamos a procurar condutores con experiencia que teñan camión propio para facer un grande número de entregas. Ofrecemos boas recompensas de até $MONEY$ por tarefa. Por favor, se tes camión propio, achégate directamente ó noso negocio en $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
 	}
 
 /**
@@ -102,21 +102,21 @@ SiiNunit
 	}
 
 	mail_text: mailtext.drv_idle.female {
-		from: "Condutor $NAME$" #+ Message sender - written by female
-		subject: "Preciso dun camión pra traballar" #+ Message subject - written by female
+		from: "Condutora $NAME$" #+ Message sender - written by female
+		subject: "Preciso dun camión para traballar" #+ Message subject - written by female
 		body: "Ola xefe,<br><br>Non sei se te deras conta, pero levo en $CITY$ $DAYS$ sen tarefas. Estou amolada, porque necesito cartos para pagar as miñas facturas e non podo facer nada se estou perdendo aquí o tempo e sen traballos á vista. Por favor, dame un camión nos próximos $DAYS2$ para que poida comezar as entregas ou non terei máis remedio que marchar.<br><br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_quit {
 		from: "Condutor $NAME$" #+ Message sender
 		subject: "Adeus" #+ Message subject
-		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o equipamento no garaxe da miña formación en $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body
+		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o meu equipamento no garaxe de $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_quit.female {
-		from: "Condutor $NAME$" #+ Message sender - written by female
+		from: "Condutora $NAME$" #+ Message sender - written by female
 		subject: "Adeus" #+ Message subject - written by female
-		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o equipamento no garaxe da miña formación en $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body - written by female
+		body: "Ola,<br><br>Non podo seguir malgastando o meu tempo. Non podo traballar sen camión e non quero esperar máis. Estou desaproveitando boas oportunidades, polo que deixo a túa compañía para tentar sorte noutro lugar. Atoparás todo o meu equipamento no garaxe de $CITY$.<br><br>Adeus,<br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_sold {
@@ -126,8 +126,8 @@ SiiNunit
 	}
 
 	mail_text: mailtext.drv_sold.female {
-		from: "Condutor $NAME$" #+ Message sender - written by female
-		subject: "Saíndo" #+ Message subject - written by female
+		from: "Condutora $NAME$" #+ Message sender - written by female
+		subject: "Voume" #+ Message subject - written by female
 		body: "Ola xefe,<br><br>O garaxe de $CITY$, onde me atopaba, está sendo pechado. Algunha xente do banco veu e dixo que tiña que marchar. Parece que a compañía non o está a facer moi ben últimamente. Polo tanto, decidín marchar. Non podería facer nada bo aquí de todas formas - sen camión sobre todo. Probarei noutro sitio calquera.<br><br>Adeus e sen resentimentos,<br>$NAME$" #+ Message body - written by female
 	}
 

@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,51 +18,53 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Markeringslys"
 
 	key[]: "cabdefl"
-	val[]: "Takvinge"
+	val[]: "Vindavleder"
 
 	key[]: "deflector"
-	val[]: "Snuteskjerm"
+	val[]: "Insektskjerm"
 
 	key[]: "filters"
 	val[]: "Luftfilter"
 
 	key[]: "f_banner"
-	val[]: "Banner Fremme"
+	val[]: "Fremre banner"
 
 	key[]: "flag_f_l"
-	val[]: "Flagg Fremme"
+	val[]: "Fremre flagger"
 
 	key[]: "flag_f_r"
-	val[]: "Flagg Fremme"
+	val[]: "Fremre flagger"
 
 	key[]: "flag_r_l"
-	val[]: "Rear Flags"
+	val[]: "Bakre flagger"
 
 	key[]: "flag_r_r"
-	val[]: "Rear Flags"
+	val[]: "Bakre flagger"
 
 	key[]: "fl_mirror"
-	val[]: "Snutespeil"
+	val[]: "Sidespeiler"
 
 	key[]: "fr_mirror"
-	val[]: "Snutespeil"
+	val[]: "Sidespeiler"
 
 	key[]: "grill"
 	val[]: "Grill"
 
 	key[]: "headache_r"
-	val[]: "Headache Racks"
+	val[]: "Beskyttelsevegg"
+
+	key[]: "hndrail"
+	val[]: "Håndtaksbøyle"
 
 	key[]: "horns"
 	val[]: "Horn"
 
 	key[]: "hood"
-	val[]: "Hood"
+	val[]: "Panser"
 
 	key[]: "lghfender"
 	val[]: "Skjermer"
@@ -71,22 +73,40 @@ localization_db : .localization
 	val[]: "Skvettlapper"
 
 	key[]: "mudguard"
-	val[]: "Skjermer"
+	val[]: "Søleskjermer"
+
+	key[]: "rear_cab"
+	val[]: "Bakre hytte"
 
 	key[]: "sideflares"
-	val[]: "Sidemarkeringslys"
+	val[]: "Hyttepaneler"
 
 	key[]: "sideskrt_bar"
-	val[]: "Sideskirt Bars"
+	val[]: "Sideskjørtstenger"
+
+	key[]: "slp_hndl"
+	val[]: "Dørhåndtak"
+
+	key[]: "slp_vent"
+	val[]: "Avtrekk"
 
 	key[]: "topflares"
-	val[]: "Lys Hyttetak"
+	val[]: "Hyttetaklys"
 
 	key[]: "wing"
-	val[]: "Vinge"
+	val[]: "Turbovinge"
 
 	key[]: "chainsaw_toy"
-	val[]: "Chainsaw Toy"
+	val[]: "Motorsag"
+
+	key[]: "chrom_tank"
+	val[]: "Kromtank" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Aluminiumtank" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "D-form" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -100,17 +120,17 @@ localization_db : .localization
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
 	key[]: "music_player_hint"
-	val[]: "Legg dine sanger i <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>mappen i <color value=@@clr_sel@@>Mine Dokumenter <color value=@@clr_txt@@>, og du vil se dem her."
+	val[]: "Legg dine sanger i <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>mappen i <color value=@@clr_sel@@>Dokumenter <color value=@@clr_txt@@>, og du vil se dem her."
 
 #+ Tooltip shown when hovering over the radio_stream button.
 
 	key[]: "radio_hint"
-	val[]: "Rediger <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>i <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mappen i <color value=@@clr_sel@@>Dokumenter-mappen din <color value=@@clr_txt@@>og hør på dine favorittradiokanaler i spillet!"
+	val[]: "Rediger <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>i <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mappen i <color value=@@clr_sel@@>Dokumenter <color value=@@clr_txt@@>og hør på dine favorittradiokanaler i spillet!"
 	
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
-	val[]: "Vennligst se <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> i mappen <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@> i <color value=@@clr_sel@@>Mine Dokumenter <color value=@@clr_txt@@> for hvordan legge til egen musikk og radiokanaler."
+	val[]: "Vennligst se <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@> i mappen <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@> i <color value=@@clr_sel@@>Dokumenter <color value=@@clr_txt@@> for hvordan legge til egen musikk og radiokanaler."
 #@}
 
 #+ Messages shown as part of the tutorial.
@@ -122,6 +142,12 @@ localization_db : .localization
 	val[]: "Velkommen til American Truck Simulator!"
 #@}
 
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Din lastebil- og hengerkombinasjon er ikke tillatt her i denne staten!" #+ Adviser text
+#@}
+
 #+ Skills screen
 #+
 #+ Allows the player to use gained experience points to improve various skills.
@@ -130,7 +156,7 @@ localization_db : .localization
 #+ Names of individual skills which can be improved.
 #@{
 	key[]: "adr"
-	val[]: "Farlig gods (ADR)"
+	val[]: "Farlig last"
 
 	key[]: "mechanical"
 	val[]: "Drivstofføkonomi"
@@ -139,16 +165,16 @@ localization_db : .localization
 #+ Cargo types.
 #@{
 	key[]: "cargo_type_adr"
-	val[]: "Farlig Gods"
+	val[]: "Farlig last"
 #@}
 
 #+ Information about individual hazard classes.
 #@{
 	key[]: "skill_adr_title"
-	val[]: "Farlig gods / ADR-kurs"
+	val[]: "Farlig last transporttrening"
 
 	key[]: "skill_adr_info"
-	val[]: "Transport av farlig gods krever kurset og profesjonelt mannskap. Bruk dine hardt tjente erfaringspoeng for å skaffe deg de følgende ADR-bevisene og slik øke dine inntekter:"
+	val[]: "Transport av farlige last krever velutdannede fagfolk. Bruk dine hardt tjente erfaringspoeng for å skaffe deg de følgende amerikanske DOT farlig last-sertifikater og øke dine inntekter betydelig:"
 #@}
 
 #+ Information about individual ranks of "Fuel Economy" skill.
@@ -157,7 +183,7 @@ localization_db : .localization
 	val[]: "Drivstofføkonomi"
 
 	key[]: "skill_mechanical_info"
-	val[]: "Forbedret økonomikjøring vil hjelpe til med å redusere drivstofforbruket, nærmere bestemt:"
+	val[]: "Lær forskjellige drivstoffsparende teknikker for å hjelpe deg til med å redusere din drivstofforbruk, særlig:"
 #@}
 #@}
 
@@ -169,7 +195,7 @@ localization_db : .localization
 #+ Individual possible components of the reward.
 #@{
 	key[]: "adr_bonus"
-	val[]: "Bonus Farlig Last"
+	val[]: "Leveransebonus for farlig last (HazMat)"
 
 	key[]: "adr_class"
 	val[]: "Fareklasse"
@@ -180,13 +206,13 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_aircraft_engine"
-	val[]: "Aircraft Engine"
+	val[]: "Flymotor"
 
 	key[]: "cn_articulated_tractor"
 	val[]: "Beltetraktor"
 
 	key[]: "cn_boat"
-	val[]: "Boat"
+	val[]: "Båt"
 
 	key[]: "cn_bottles"
 	val[]: "Tomflasker"
@@ -195,7 +221,7 @@ localization_db : .localization
 	val[]: "Smør"
 
 	key[]: "cn_cable"
-	val[]: "Kabel"
+	val[]: "Kabeler"
 
 	key[]: "cn_cable_reel"
 	val[]: "Kabeltrommel"
@@ -207,97 +233,100 @@ localization_db : .localization
 	val[]: "Betongrør"
 
 	key[]: "cn_const_houses"
-	val[]: "Brakker"
+	val[]: "Byggebrakker"
 
 	key[]: "cn_crude_oil"
-	val[]: "Crude Oil"
+	val[]: "Råolje"
 
 	key[]: "cn_curtains"
 	val[]: "Gardiner"
 
 	key[]: "cn_dryfruit"
-	val[]: "Tørket Frukt"
+	val[]: "Tørket frukt"
 
 	key[]: "cn_forwarder"
-	val[]: "Forwarder"
+	val[]: "Skogstraktor"
 
 	key[]: "cn_frac_tank"
-	val[]: "Frac Tank"
+	val[]: "Frac tank"
 
 	key[]: "cn_frozen_fruits"
-	val[]: "Frossen Frukt"
+	val[]: "Frossen frukt"
 
 	key[]: "cn_frozen_vegetable"
-	val[]: "Frosne Grønnsaker"
+	val[]: "Frosne grønnsaker"
 
 	key[]: "cn_fruits"
 	val[]: "Frukt"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Fruktjuice"
 
 	key[]: "cn_grain"
 	val[]: "Korn"
 
 	key[]: "cn_harvester"
-	val[]: "Harvester"
+	val[]: "Skurtreske"
 
 	key[]: "cn_hay"
 	val[]: "Høy"
 
 	key[]: "cn_house_prefabs"
-	val[]: "House Prefabs"
+	val[]: "Monteringsferdighus"
 
 	key[]: "cn_kenworth_t680"
-	val[]: "Kenworth Trucks"
+	val[]: "Kenworth-lastebiler"
 
 	key[]: "cn_knuckleboom_loader"
-	val[]: "Knuckleboom Loader"
+	val[]: "Skogmaskin"
 
 	key[]: "cn_lift_truck"
 	val[]: "Containertruck"
 
 	key[]: "cn_lift_truck_chassis"
-	val[]: "Containertruck Uten Bom"
+	val[]: "Containertruck uten bom"
 
 	key[]: "cn_log_harvester"
-	val[]: "Log Harvester"
+	val[]: "Tømmerhøster"
 
 	key[]: "cn_log_loader"
-	val[]: "Log Loader"
+	val[]: "Tømmerlaster"
 
 	key[]: "cn_log_stacker"
-	val[]: "Log Stacker"
+	val[]: "Tømmerstabler"
 
 	key[]: "cn_lye"
 	val[]: "Lut"
 
 	key[]: "cn_mbt"
-	val[]: "Mobil Veisperring"
+	val[]: "Mobil veisperring"
 
 	key[]: "cn_meat"
 	val[]: "Kjøtt"
 
 	key[]: "cn_milling_machine"
-	val[]: "Borerigg"
+	val[]: "Fresermaskin"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Mobilkran"
 
 	key[]: "cn_moor_buoy"
-	val[]: "Mooring Buoy"
+	val[]: "Fortøyningsbøy"
 
 	key[]: "cn_mortar"
 	val[]: "Mørtel"
 
 	key[]: "cn_mulcher"
-	val[]: "Mulcher"
+	val[]: "Hakkere"
 
 	key[]: "cn_pelleted_animal_food"
-	val[]: "Pelleted Animal Food"
+	val[]: "Pelletert dyremat"
 
 	key[]: "cn_plows"
-	val[]: "Landbruksutsyr"
+	val[]: "Ploger"
 
 	key[]: "cn_power_generator"
-	val[]: "Power Generator"
+	val[]: "Strømgenerator"
 
 	key[]: "cn_rawmilk"
 	val[]: "Råmelk"
@@ -306,19 +335,19 @@ localization_db : .localization
 	val[]: "Salt"
 
 	key[]: "cn_scrap_cars"
-	val[]: "Scrapped Cars"
+	val[]: "Skrotbiler"
 
 	key[]: "cn_scraper"
-	val[]: "Veihøvel"
+	val[]: "Skraper"
 
 	key[]: "cn_stumper"
-	val[]: "Stumper"
+	val[]: "Stubbefjerner"
 
 	key[]: "cn_transformer"
 	val[]: "Transformator"
 
 	key[]: "cn_tub_grinder"
-	val[]: "Tub Grinder"
+	val[]: "Tubekvern"
 
 	key[]: "cn_vegetable"
 	val[]: "Grønnsaker"
@@ -333,39 +362,39 @@ localization_db : .localization
 
 	#+ Name of the cargo of transport helicopter helicopter.
 	key[]: "cn_ovs_helicopter"
-	val[]: "Frakthelikopter"
+	val[]: "Transporthelikopter"
 
 	#+ Name of the cargo of large reservoir tank transported on its side.
 	key[]: "cn_ovs_tank"
-	val[]: "Stor Vanntank"
+	val[]: "Stor reservoartank"
 
 	#+ Name of the cargo of hull part for large dozers.
 	key[]: "cn_mutt_hull"
-	val[]: "Dumper"
+	val[]: "Dumperskrog"
 
 	#+ Name of the cargo of large dozer.
 	key[]: "cn_mutt"
-	val[]: "Dumper u/Hjul"
+	val[]: "Dumperkarosseri"
 
 	#+ Name of the cargo of big air condition complex.
 	key[]: "cn_aircondition"
-	val[]: "Air Conditioning Complex"
+	val[]: "Klimaanleggskompleks"
 
 	#+ Name of the cargo of some construction - need to be properly named after the model is done.
 	key[]: "cn_lattice"
-	val[]: "Svært Byggverk"
+	val[]: "Svært byggverk"
 #@}
 
 #+ Names of individual trailer and trailer chassis types.
 #@{
 	key[]: "tn_acid"
-	val[]: "Tankhenger Syre"
+	val[]: "Syretankhenger"
 
 	key[]: "tn_acid_long"
-	val[]: "Lang Tankhenger Syre"
+	val[]: "Lang syretankhenger"
 
 	key[]: "tn_bottom_dump"
-	val[]: "Dumper med Bunnventil"
+	val[]: "Dumper med bunnventil"
 
 	key[]: "tn_car"
 	val[]: "Bilhenger"
@@ -374,61 +403,61 @@ localization_db : .localization
 	val[]: "Bulksementhenger"
 
 	key[]: "tn_chemical"
-	val[]: "Kjemikalietanker"
+	val[]: "Kjemikalietankhenger"
 
 	key[]: "tn_chemical_long"
-	val[]: "Lang Kjemikalietanker"
+	val[]: "Lang kjemikalietankhenger"
 
 	key[]: "tn_dry_bulk"
-	val[]: "Dry Bulk Trailer"
+	val[]: "Tørrbulkhenger"
 
 	key[]: "tn_dump"
 	val[]: "Tipphenger"
 
 	key[]: "tn_flatbed"
-	val[]: "Flatbed Trailer"
+	val[]: "Planhenger"
 
 	key[]: "tn_food_tank"
-	val[]: "Tankhenger Mat"
+	val[]: "Mattankhenger"
 
 	key[]: "tn_frac_tank"
-	val[]: "Frac Tank"
+	val[]: "Frac tank"
 
 	key[]: "tn_fuel"
-	val[]: "Drivstofftanker"
+	val[]: "Drivstoffstankhenger"
 
 	key[]: "tn_fuel_long"
-	val[]: "Lang Tankhenger"
+	val[]: "Lang drivstoffstankhenger"
 
 	key[]: "tn_gas"
-	val[]: "Gasshenger"
+	val[]: "Gasstankhenger"
 
 	key[]: "tn_gas_long"
-	val[]: "Lang Gasshenger"
+	val[]: "Lang gasstankhenger"
 
 	key[]: "tn_home_transporter"
-	val[]: "Home Transporter"
+	val[]: "Hustransport"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "Knuckleboom Loader"
+	val[]: "Knuckleboom-laster"
 
 	key[]: "tn_log"
-	val[]: "Log Trailer"
+	val[]: "Tømmerhenger"
 
 	key[]: "tn_lowboy"
 	val[]: "Maskinhenger"
 
 	key[]: "tn_lowboy_boat"
-	val[]: "Lowboy Boat Trailer"
+	val[]: "Båthenger"
 
 	key[]: "tn_magnitude_55l"
 	val[]: "Maskinhenger 55L"
 
 	key[]: "tn_mbt1_barrier"
-	val[]: "Mobil Veisperring"
+	val[]: "Mobil veisperringhenger"
 
 	key[]: "tn_tub_grinder"
-	val[]: "Tub Grinder"
+	val[]: "Tubekvern"
 
 #@}
 
@@ -437,25 +466,25 @@ localization_db : .localization
 #@{
 	
 	key[]: "tt_ico_adr_1"
-	val[]: "Farlig Gods klasse 1"
+	val[]: "Fareklasse 1"
 	
 	key[]: "tt_ico_adr_2"
-	val[]: "Farlig Gods klasse 2"
+	val[]: "Fareklasse 2"
 	
 	key[]: "tt_ico_adr_3"
-	val[]: "Farlig Gods klasse 3"
+	val[]: "Fareklasse 3"
 	
 	key[]: "tt_ico_adr_4"
-	val[]: "Farlig Gods klasse 4"
+	val[]: "Fareklasse 4"
 	
 	key[]: "tt_ico_adr_5"
-	val[]: "Farlig Gods klasse 5"
+	val[]: "Fareklasse 5"
 	
 	key[]: "tt_ico_adr_6"
-	val[]: "Farlig Gods klasse 6"
+	val[]: "Fareklasse 6"
 	
 	key[]: "tt_ico_adr_8"
-	val[]: "Farlig Gods klasse 8"
+	val[]: "Fareklasse 8"
 #@}
 	
 #+ Names of individual experience tiers of the driver.
@@ -471,7 +500,7 @@ localization_db : .localization
 	val[]: "Profesjonell"
 	
 	key[]: "lvl_name6"
-	val[]: "18 Wheels of Skill"
+	val[]: "18 hjuler av erfaring"
 #@}
 	
 #+ Map legend
@@ -480,16 +509,16 @@ localization_db : .localization
 	val[]: "Utstillingslokale"
 	
 	key[]: "weblink_game"
-	val[]: "American Truck Simulator nettside" #+ weblink description
+	val[]: "Nettsiden til American Truck Simulator" #+ weblink description
 
 	key[]: "weblink_facebook"
-	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+	val[]: "American Truck Simulator på Facebook" #+ facebook weblink description
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
 	
 	key[]: "sys_no_graphics"
-	val[]: "American Truck Simulator har et problem og kan ikke vise noe bilde på skjermen din (ingen grafikkort funnet).\nForeslåtte løsninger:\n\n1. Sjekk om datamaskinen og skjermkortet ditt møter minimumskravene til American Truck Simulator.\n2. Last ned og oppdater siste versjon av Microsofts DirectX\n3. Last ned og installer de siste driverene til grafikkortet ditt fra produsentens hjemmeside - driverene til skjermkortet er mest sannsynlig for gamle.\n4. Prøv å endre rendering fra OpenGL til DirectX eller motsatt.\n5. Slett filen 'config.cfg' i mappen 'Mine Dokumenter' - 'American Truck Simulator'. Den kan være korrupt.\nDenne filen vil automatisk bli opprettet igjen neste gang du starter spillet."
+	val[]: "American Truck Simulator har et problem og kan ikke vise noe bilde på skjermen din (ingen grafikkort funnet).\nForeslåtte løsninger:\n\n1. Sjekk om at datamaskinen og skjermkortet ditt møter minimumskravene til American Truck Simulator.\n2. Last ned og oppdater til den nyeste versjonen av Microsoft DirectX.\n3. Last ned og installer den nyeste driver til grafikkortet ditt fra produsentens hjemmeside - driveren til grafikkortet er mest sannsynlig for gammel.\n4. Prøv å endre renderingsmetode fra OpenGL til DirectX eller motsatt.\n5. Slett filen 'config.cfg' i mappen 'Mine Dokumenter' - 'American Truck Simulator'. Den kan være korrupt.\nDenne filen vil automatisk bli opprettet igjen med riktige standardverdier neste gang du starter spillet."
 	
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator har et problem, og er ikke i stand å tegne grafikk på datamaskinen din (ingen gyldig grafikkenhet ble funnet)."
@@ -498,7 +527,7 @@ localization_db : .localization
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "American Truck Simulator kan ikke koble til Steam Client. Foreslåtte tiltak:\n1. Se til at Steam kjører.\n2. Se til at din Steam er oppdatert.\n3. Se til at du har aktivert automatisk oppdatering og at du har seneste spillversjon."
+	val[]: "American Truck Simulator kan ikke koble til Steam. Foreslåtte tiltak:\n1. Sjekk om at Steam kjører.\n2. Sjekk om at du har oppdatert versjon av Steam.\n3. Sjekk om at du har aktivert automatisk oppdatering og at spillet er oppdatert til den nyeste spillversjonen."
 
 #+ Activation screen
 #@{
@@ -526,7 +555,7 @@ localization_db : .localization
 #+ Strings related to accessory filtering feature.
 #@{
 	key[]: "base"
-	val[]: "American Truck Simulator Content" #+ The category of the accessories that are inside the base game files.
+	val[]: "Innhold i American Truck Simulator" #+ The category of the accessories that are inside the base game files.
 #@}
 
 
@@ -536,31 +565,31 @@ localization_db : .localization
 	val[]: "Bulk Feed"
 
 	key[]: "container"
-	val[]: "Container Carrier"
+	val[]: "Containerhenger"
 
 	key[]: "curtainside"
-	val[]: "Sliding Tarp"
+	val[]: "Rullegardiner"
 
 	key[]: "chipvan"
-	val[]: "Chip Van"
+	val[]: "Flishenger"
 
 	key[]: "dryvan"
 	val[]: "Skap"
 
 	key[]: "flatbed"
-	val[]: "Åpen Tralle"
+	val[]: "Plattform"
 
 	key[]: "hopper"
 	val[]: "Hopper"
 
 	key[]: "insulated"
-	val[]: "Insulated"
+	val[]: "Isolert"
 
 	key[]: "log"
-	val[]: "Log"
+	val[]: "Trestokk"
 
 	key[]: "refrigerated"
-	val[]: "Refrigerated"
+	val[]: "Avkjølt"
 #@}
 
 #+ Trailer category types (not identical to body type)
@@ -572,31 +601,31 @@ localization_db : .localization
 #+ Trailer cargo based on body type (tooltip usage)
 #@{
 	key[]: "body_cargo_types_bulkfeed"
-	val[]: "Bulk feed material"
+	val[]: "Bulk feed-materiale"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Light bulk material"
+	val[]: "Lett bulkmateriale"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Grain & Bulk material"
+	val[]: "Korn og bulkmateriale"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
 #@{
 	key[]: "single"
-	val[]: "Single"
+	val[]: "Enkel"
 
 	key[]: "double"
-	val[]: "Double"
+	val[]: "Dobbel"
 
 	key[]: "bdouble"
-	val[]: "B-Double"
+	val[]: "B-dobbel"
 
 	key[]: "rmdouble"
-	val[]: "R.M. Double"
+	val[]: "R.M. dobbel"
 
 	key[]: "tpdouble"
-	val[]: "T.P. Double"
+	val[]: "T.P. dobbel"
 
 	key[]: "triple"
 	val[]: "Trippel"
@@ -606,19 +635,19 @@ localization_db : .localization
 
 #@{
 	key[]: "chain_single"
-	val[]: "Singel"
+	val[]: "Enkel"
 
 	key[]: "chain_staa_double"
-	val[]: "STAA Double"
+	val[]: "STAA dobbel"
 
 	key[]: "chain_b_double"
-	val[]: "B-Double"
+	val[]: "B-dobbel"
 
 	key[]: "chain_rm_double"
-	val[]: "Rocky Mountain Double"
+	val[]: "Rocky Mountain dobbel"
 
 	key[]: "chain_tp_double"
-	val[]: "Turnpike Double"
+	val[]: "Turnpike dobbel"
 
 	key[]: "chain_triple"
 	val[]: "Trippel"
@@ -628,163 +657,166 @@ localization_db : .localization
 
 #@{
 	key[]: "tr_double_staa"
-	val[]: "STAA Double"
+	val[]: "STAA dobbel"
 
 	key[]: "tr_double_staa_pup"
-	val[]: "STAA Double Pup"
+	val[]: "STAA med dollyhenger"
 
 	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA Double Pup, 4 Axles"
+	val[]: "STAA Double Pup, 4 aksler"
 
 	key[]: "tr_b_double"
-	val[]: "B-Double"
+	val[]: "B-dobbel"
 
 	key[]: "tr_b_double_5axle"
-	val[]: "B-Double, 5 Axles"
+	val[]: "B-dobbel, 5 aksler"
 
 	key[]: "tr_b_double_6axle"
-	val[]: "B-Double, 6 Axles"
+	val[]: "B-dobbel, 6 aksler"
 
 	key[]: "tr_rm_double"
-	val[]: "Rocky Mountain Double"
+	val[]: "Rocky Mountain dobbel"
 
 	key[]: "tr_rm_double_pup"
-	val[]: "Rocky Mountain Double Pup"
+	val[]: "Rocky Mountain med 2 dollyhenger"
 
 	key[]: "tr_tp_double"
-	val[]: "Turnpike Double"
+	val[]: "Turnpike dobbel"
 
 	key[]: "tr_tp_double_6axle"
-	val[]: "Turnpike Double, 6 Axles"
+	val[]: "Turnpike dobbel, 6 aksler"
 
 	key[]: "tr_single_28"
-	val[]: "28 feet"
+	val[]: "28 fot"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28 feet, 2 Axles"
+	val[]: "28 fot, 2 aksler"
 
 	key[]: "tr_single_32"
-	val[]: "32 feet"
+	val[]: "32 fot"
 
 	key[]: "tr_single_32_2axle"
-	val[]: "32 feet, 2 Axles"
+	val[]: "32 fot, 2 aksler"
 
 	key[]: "tr_single_32_3axle"
-	val[]: "32 feet, 3 Axles"
+	val[]: "32 fot, 3 aksler"
 
 	key[]: "tr_single_32_ext"
-	val[]: "32 feet, Extendable"
+	val[]: "32 fot, utvidbar"
 
 	key[]: "tr_single_40"
-	val[]: "40 feet"
+	val[]: "40 fot"
 
 	key[]: "tr_single_40_3axle"
-	val[]: "40 feet, 3 Axles"
+	val[]: "40 fot, 3 aksler"
 
 	key[]: "tr_single_40_ext"
-	val[]: "40 feet, Extendable"
+	val[]: "40 fot, utvidbar"
 
 	key[]: "tr_single_40_rear"
-	val[]: "40 feet, Rear"
+	val[]: "40 fot, bak"
 
 	key[]: "tr_single_40_spread"
-	val[]: "40 feet, Spread"
+	val[]: "40 fot, spredt"
+
+	key[]: "tr_single_43_rear"
+	val[]: "43 fot, bak"
 
 	key[]: "tr_single_45"
-	val[]: "45 feet"
+	val[]: "45 fot"
 
 	key[]: "tr_single_45_3axle"
-	val[]: "45 feet, 3 Axles"
+	val[]: "45 fot, 3 aksler"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 feet, 3 Axles, Single"
+	val[]: "45 fot, 3 aksler, enkel"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45 feet, 3 Axles, Steerable"
+	val[]: "45 fot, 3 aksler, styrbar"
 
 	key[]: "tr_single_45_front"
-	val[]: "45 feet, Front"
+	val[]: "45 fot, front"
 
 	key[]: "tr_single_45_rear"
-	val[]: "45 feet, Rear"
+	val[]: "45 fot, bak"
 
 	key[]: "tr_single_45_slide_front"
-	val[]: "45 feet, Sliding Tandem, Front"
+	val[]: "45 fot, tandem, front"
 
 	key[]: "tr_single_45_slide_rear"
-	val[]: "45 feet, Sliding Tandem, Rear"
+	val[]: "45 fot, tandem, bak"
 
 	key[]: "tr_single_45_spread"
-	val[]: "45 feet, Spread"
+	val[]: "45 fot, spredt"
 
 	key[]: "tr_single_48_3axle"
-	val[]: "48 feet, 3 Axles"
+	val[]: "48 fot, 3 aksler"
 
 	key[]: "tr_single_48_front"
-	val[]: "48 feet, Front"
+	val[]: "48 fot, front"
 
 	key[]: "tr_single_48_rear"
-	val[]: "48 feet, Rear"
+	val[]: "48 fot, bak"
 
 	key[]: "tr_single_48_slide_front"
-	val[]: "48 feet, Sliding Tandem, Front"
+	val[]: "48 fot, tandem, front"
 
 	key[]: "tr_single_48_slide_rear"
-	val[]: "48 feet, Sliding Tandem, Rear"
+	val[]: "48 fot, tandem, bak"
 
 	key[]: "tr_single_48_spread"
-	val[]: "48 feet, Spread"
+	val[]: "48 fot, spredt"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50 feet, 3 Axles"
+	val[]: "50 fot, 3 aksler"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 feet, 3 Axles, Single"
+	val[]: "50 fot, 3 aksler, enkel"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50 feet, 3 Axles, Steerable"
+	val[]: "50 fot, 3 aksler, styrbar"
 
 	key[]: "tr_single_50_spread"
-	val[]: "50 feet, Spread"
+	val[]: "50 fot, spredt"
 
 	key[]: "tr_single_53_3axle"
-	val[]: "53 feet, 3 Axles"
+	val[]: "53 fot, 3 aksler"
 
 	key[]: "tr_single_53_4axle"
-	val[]: "53 feet, 4 Axles"
+	val[]: "53 fot, 4 aksler"
 
 	key[]: "tr_single_53_4axle_spread"
-	val[]: "53 feet, 4 Axles, Spread"
+	val[]: "53 fot, 4 aksler, spredt"
 
 	key[]: "tr_single_53_4axle_steer"
-	val[]: "53 feet, 4 Axles, Steerable"
+	val[]: "53 fot, 4 aksler, styrbar"
 
 	key[]: "tr_single_53_front"
-	val[]: "53 feet, Front"
+	val[]: "53 fot, front"
 
 	key[]: "tr_single_53_rear"
-	val[]: "53 feet, Rear"
+	val[]: "53 fot, bak"
 
 	key[]: "tr_single_53_slide_front"
-	val[]: "53 feet, Sliding Tandem, Front"
+	val[]: "53 fot, tandem, front"
 
 	key[]: "tr_single_53_slide_rear"
-	val[]: "53 feet, Sliding Tandem, Rear"
+	val[]: "53 fot, tandem, bak"
 
 	key[]: "tr_single_53_spread"
-	val[]: "53 feet, Spread"
+	val[]: "53 fot, spredt"
 
 	key[]: "tr_triple"
 	val[]: "Trippel"
 
 	key[]: "tr_triple_pup"
-	val[]: "Trippel Pup"
+	val[]: "Trippel pup"
 
 	key[]: "tr_conv_dolly"
-	val[]: "Converter Dolly"	#+ Component chassis name (upgrade screen only)
+	val[]: "Tilpasset dolly"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tr_conv_dolly_2"
-	val[]: "Converter Dolly, 2 Axles"	#+ Component chassis name (upgrade screen only)
+	val[]: "Justerbar dolly, 2 aksler"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tr_dolly"
 	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
@@ -794,46 +826,49 @@ localization_db : .localization
 
 #@{
 	key[]: "bs_bellyvan"
-	val[]: "Belly Van"
+	val[]: "Dyphenger"
 
 	key[]: "bs_bulk_feed"
 	val[]: "Bulk Feed"
 
 	key[]: "bs_chipvan"
-	val[]: "Chip Van"
+	val[]: "Flishenger"
 
 	key[]: "bs_chipvan_mfloor"
-	val[]: "Chip Van, Moving Floor"
+	val[]: "Flishenger, bevegelige gulv"
 
 	key[]: "bs_container"
-	val[]: "Container Carrier"
+	val[]: "Containerhenger"
 
 	key[]: "bs_curtain"
-	val[]: "Sliding Tarp"
+	val[]: "Rullegardiner"
 
 	key[]: "bs_dryvan"
 	val[]: "Skap"
 
 	key[]: "bs_flatbed"
-	val[]: "Åpen Tralle"
+	val[]: "Plan"
 
 	key[]: "bs_flatbed_alu"
-	val[]: "Åpen Tralle, Aluminium"
+	val[]: "Plan, aluminium"
+
+	key[]: "bs_food_tank"
+	val[]: "Mattank"
 
 	key[]: "bs_grain_hopper"
-	val[]: "Grain Hopper"
+	val[]: "Kornhopper"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Grain Hopper Belt"
+	val[]: "Kornhopperbelte"
 
 	key[]: "bs_insulated"
-	val[]: "Termo"
+	val[]: "Isolert"
 
 	key[]: "bs_log_4"
-	val[]: "4 Bolster Logger"
+	val[]: "Tømmerhenger, 4 seksjoner"
 
 	key[]: "bs_log_6"
-	val[]: "6 Bolster Logger"
+	val[]: "Tømmerhenger, 6 seksjoner"
 
 	key[]: "bs_reefer"
 	val[]: "Kjølevogn"
@@ -843,19 +878,19 @@ localization_db : .localization
 
 #@{
 	key[]: "cooler"
-	val[]: "Cooler"
+	val[]: "Kjøler"
 
 	key[]: "turbo_cooler"
 	val[]: "Turbokjøler"
 
 	key[]: "chrome_cooler"
-	val[]: "Forkrommet Kjølevogn"
+	val[]: "Forkrommet kjølevogn"
 
 	key[]: "paint_wall"
-	val[]: "Lakkert Vegg"
+	val[]: "Lakkert vegg"
 
 	key[]: "chrome_wall"
-	val[]: "Forkrommet Vegg"
+	val[]: "Forkrommet vegg"
 
 	key[]: "alu_wall"
 	val[]: "Aluminiumsvegg"
@@ -870,40 +905,40 @@ localization_db : .localization
 	val[]: "Lyktebøyle"
 
 	key[]: "log_cage"
-	val[]: "Log Cage"
+	val[]: "Tømmerbur"
 
 	key[]: "log_wall"
-	val[]: "Log Wall"
+	val[]: "Tømmerbeskyttelse"
 
 	key[]: "wind_deflector"
-	val[]: "Vinge"
+	val[]: "Vindavleder"
 
 	key[]: "aero_sideskirt"
-	val[]: "Aerodynamiske Sideskjørt"
+	val[]: "Aerodynamiske sideskjørt"
 
 	key[]: "black_sideskirt"
 	val[]: "Svart sideskjørt"
 
 	key[]: "paint_sideskirt"
-	val[]: "Lakkerte Sideskjørt"
+	val[]: "Lakkerte sideskjørt"
 
 	key[]: "support_frame"
 	val[]: "Støtteramme"
 
 	key[]: "chrome_door"
-	val[]: "Forkrommet Dør"
+	val[]: "Forkrommet dør"
 
 	key[]: "rollup_door"
 	val[]: "Rulledør"
 
 	key[]: "rollup_door_lift_gate"
-	val[]: "Roll Up Door, Lift Gate"
+	val[]: "Rulledør, løfteport"
 
 	key[]: "standard_door"
-	val[]: "Standard Dør"
+	val[]: "Standard dør"
 
 	key[]: "standard_door_aero"
-	val[]: "Standard Door, Wind Deflector"
+	val[]: "Standard dør, vindavleder"
 #@}
 
 #+ Names of countries/states
@@ -912,7 +947,10 @@ localization_db : .localization
 	val[]: "Arizona"
 
 	key[]: "california"
-	val[]: "California"
+	val[]: "Californien"
+
+	key[]: "idaho"
+	val[]: "Idaho"
 
 	key[]: "nevada"
 	val[]: "Nevada"
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Bend"
 
+	key[]: "boise"
+	val[]: "Boise"
+
 	key[]: "burns"
 	val[]: "Burns"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Clovis"
+
+	key[]: "coeur_dalene"
+	val[]: "Coeur d'Alene"
 
 	key[]: "colville"
 	val[]: "Colville"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
 
+	key[]: "grangeville"
+	val[]: "Grangeville"
+
 	key[]: "hobbs"
 	val[]: "Hobbs"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Huron"
 
+	key[]: "idaho_falls"
+	val[]: "Idaho Falls"
+
 	key[]: "jackpot"
 	val[]: "Jackpot"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Kennewick"
+
+	key[]: "ketchum"
+	val[]: "Ketchum"
 
 	key[]: "kingman"
 	val[]: "Kingman"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Las Vegas"
 
+	key[]: "lewiston"
+	val[]: "Lewiston"
+
 	key[]: "logan"
 	val[]: "Logan"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "nampa"
+	val[]: "Nampa"
 
 	key[]: "newport"
 	val[]: "Newport"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "Pioche"
 
+	key[]: "pocatello"
+	val[]: "Pocatello"
+
 	key[]: "port_angeles"
 	val[]: "Port Angeles"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Salina"
 
+	key[]: "salmon"
+	val[]: "Salmon"
+
 	key[]: "salt_lake_city"
 	val[]: "Salt Lake City"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "San Simon"
+
+	key[]: "sandpoint"
+	val[]: "Sandpoint"
 
 	key[]: "santa_cruz"
 	val[]: "Santa Cruz"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Tucumcari"
 
+	key[]: "twin_falls"
+	val[]: "Twin Falls"
+
 	key[]: "ukiah"
 	val[]: "Ukiah"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Yuma"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Twin Falls potetgård"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Galena Summit"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Perrine Memorial Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Craters of the Moon National Monument & Preserve"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "Byen Boise"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "Byen Sandpoint"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Tømmerhøststed"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "Byen McCall"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "Byen Idaho Falls"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Midvale Hill Rest Area"
 #@}
 
 }

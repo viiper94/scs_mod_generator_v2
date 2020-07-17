@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -190,7 +190,7 @@ localization_db : .localization
 	val[]: "DLC - Washington"
 
 	key[]: "onlineid_us_wa"
-	val[]: "@@package_ats_washington@@"
+	val[]: "@@package_ats_wa@@"
 	
 	key[]: "package_ats_utah"
 	val[]: "DLC - Utah"
@@ -216,6 +216,12 @@ localization_db : .localization
 	key[]: "onlineid_us_pribbon"
 	val[]: "@@package_at_pribbon@@"
 
+	key[]: "package_ats_idaho"
+	val[]: "DLC - Idaho"
+
+	key[]: "onlineid_us_idaho"
+	val[]: "@@package_ats_idaho@@"
+
 # Truck brands
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
@@ -223,6 +229,9 @@ localization_db : .localization
 
 	key[]: "brand_kenworth"
 	val[]: "Kenworth"
+
+	key[]: "brand_mack"
+	val[]: "Mack"
 
 	key[]: "brand_peterbilt"
 	val[]: "Peterbilt"
@@ -238,6 +247,9 @@ localization_db : .localization
 
 	key[]: "series_kenworth_w900"
 	val[]: "W900"
+
+	key[]: "series_mack_anthem"
+	val[]: "Anthem"
 
 	key[]: "series_peterbilt_389"
 	val[]: "389"
@@ -258,6 +270,9 @@ localization_db : .localization
 
 	key[]: "truck_browser_brand_kenworth_w900"
 	val[]: "Kenworth W900"
+
+	key[]: "truck_browser_brand_mack_anthem"
+	val[]: "Mack Anthem"
 
 	key[]: "truck_browser_brand_peterbilt_389"
 	val[]: "Peterbilt 389"
@@ -288,13 +303,16 @@ localization_db : .localization
 	key[]: "series_scs_flatbed"
 	val[]: "A-PLO-18"
 
+	key[]: "series_scs_foodtank"
+	val[]: "A-MLC-20"
+
 	key[]: "series_scs_grainhopper"
 	val[]: "A-SYP-19"
 
 	key[]: "series_scs_log"
 	val[]: "A-KLN-19"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 	key[]: "game_name"
@@ -326,7 +344,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -591,7 +609,7 @@ localization_db : .localization
 	val[]: "트럭을 정비 또는 수리합니다. 훌륭한 운전자는 자신의 차량을 항상 최상의 상태로 유지합니다." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
-	val[]: "손상도 보고" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
+	val[]: "대미지 리포트" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
 
 	key[]: "truck_service_truck_t"
 	val[]: "트럭" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
@@ -657,7 +675,7 @@ localization_db : .localization
 	val[]: "트럭에 대한 정보와 현재 상태를 확인할 수 있습니다."
 
 	key[]: "truck_diag_warning"
-	val[]: "트럭이 손상되었습니다! 가급적 빨리 서비스 센터에 방문하십시오!"
+	val[]: "트럭이 손상되었습니다! 가급적 빨리 서비스 센터를 방문하십시오!"
 #@}
 
 
@@ -796,7 +814,7 @@ localization_db : .localization
 	val[]: "범퍼"
 
 	key[]: "cab_doorstep"
-	val[]: "캡 도어스탭"
+	val[]: "캡 도어 스텝"
 
 	key[]: "drv_plate"
 	val[]: "운전자 플레이트"
@@ -808,6 +826,9 @@ localization_db : .localization
 	val[]: "페인트"
 
 	key[]: "head_lights"
+	val[]: "전조등"
+
+	key[]: "f_light_chs"
 	val[]: "전조등"
 
 	key[]: "halogen"
@@ -948,6 +969,12 @@ localization_db : .localization
 	key[]: "flag_l"
 	val[]: "좌측 창문 깃발" #+ Left window flag
 
+	key[]: "f_mudflap"
+	val[]: "전면 흙받이" #+ A couple of mudflaps on the front of the trucks bumper
+
+	key[]: "windowtrim"
+	val[]: "윈도우 트림" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
+
 	key[]: "steering_w"
 	val[]: "스티어링 휠" #+ Steering wheel
 
@@ -990,8 +1017,53 @@ localization_db : .localization
 
 	key[]: "screenshot"
 	val[]: "사진 찍기" #+ Tooltip for icon which makes screenshots.
+
+	key[]: "switch_walking_cam"
+	val[]: "카메라 모드 전환" #+ Tooltip for icon which turns walking camera mode on and off.
+	
+	key[]: "tooltip_walk_look_around"
+	val[]: "주변 둘러보기" #+ Tooltip for control icon: look around (by walking camera).
+	
+	key[]: "tooltip_mouse_rotate"
+	val[]: "회전" #+ Tooltip for control icon: rotate by mouse.
+	
+	key[]: "tooltip_mouse_zoom"
+	val[]: "확대" #+ Tooltip for control icon: zoom by mouse.
+	
+	key[]: "tooltip_mouse_pan"
+	val[]: "시점 이동" #+ Tooltip for control icon: pan by mouse.
+	
+	key[]: "tooltip_walk_title"
+	val[]: "보행 모드 조작:" #+ Title of walk mode controls tooltip.
+	
+	key[]: "tooltip_walk_forward"
+	val[]: "앞으로" #+ Tooltip for walk forward.
+	
+	key[]: "tooltip_walk_back"
+	val[]: "뒤로" #+ Tooltip for walk back.
+	
+	key[]: "tooltip_walk_left"
+	val[]: "왼쪽" #+ Tooltip for walk left.
+	
+	key[]: "tooltip_walk_right"
+	val[]: "오른쪽" #+ Tooltip for walk right.
+	
+	key[]: "tooltip_walk_crouch"
+	val[]: "웅크리기" #+ Tooltip for crouch.
+	
+	key[]: "tooltip_walk_run"
+	val[]: "달리기" #+ Tooltip for run.
 #@}
 
+#+ Notifications shown when camera mode is changed in truck configurator.
+#@{
+
+	key[]: "notification_walking_camera"
+	val[]: "1인칭 카메라 활성화됨" #+ Notifications shown when walking camera is enabled.
+	
+	key[]: "notification_orbit_camera"
+	val[]: "주변 카메라 활성화됨" #+ Notifications shown when orbit camera is enabled.
+#@}
 
 	key[]: "quit_game_t"
 	val[]: "게임 종료" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
@@ -1010,7 +1082,7 @@ localization_db : .localization
 
 
 	key[]: "back"
-	val[]: "이전" #+ Button to return to previous step of some action.
+	val[]: "뒤로" #+ Button to return to previous step of some action.
 
 	key[]: "yes"
 	val[]: "예" #+ Button in a message box asking yes/no choice.
@@ -1037,7 +1109,7 @@ localization_db : .localization
 	val[]: "또는" #+ Inserted between two generated texts which need to be connected. For example "Press Pause or F1".
 
 	key[]: "at"
-	val[]: "에서" #+ Inserted between engine strength and rpm. For example "1,800 Nm at 950-1,400rpm".
+	val[]: "범위:" #+ Inserted between engine strength and rpm. For example "1,800 Nm at 950-1,400rpm".
 
 	key[]: "ui_list_last_and"
 	val[]: ", 그리고" #+ Used when combining list of values. For example "5 day(s), and 5 hour(s)" or "Prague, and Berlin"
@@ -1050,7 +1122,7 @@ localization_db : .localization
 	val[]: "저장 & 불러오기" #+ Icon allowing player to save and load the game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_reset"
-	val[]: "게임이 수정되었습니다! 게임 세이브 호환성 문제를 방지하기 위해, 완료되지 않은 모든 배송이 수수료 없이 취소되었습니다.<br offset=15>트럭은 안전한 장소에 다시 주차해 놓았습니다." #+ Game state reset info message
+	val[]: "게임이 수정되었습니다! 게임 수정으로 인한 게임 세이브 호환성 문제를 방지하기 위해, 완료되지 않은 모든 배송이 위약금 없이 취소되었습니다.<br offset=15>필요한 경우, 당신의 트럭을 안전한 장소에 다시 주차합니다." #+ Game state reset info message
 
 	key[]: "save_in_progress"
 	val[]: "저장 중..." #+ Game save indicator message.
@@ -1078,7 +1150,7 @@ localization_db : .localization
 	val[]: "게임 불러오기" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "load_game_desc"
-	val[]: "이전에 저장한 게임을 불러옵니다. 현재 진행 사항은 저장되지 않습니다!" #+ Help message associated with load game icon.
+	val[]: "이전에 저장한 게임을 불러옵니다. 현재 진행 상황은 저장되지 않습니다!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
 	val[]: "다른 게임을 불러오시겠습니까?<br><br>저장하지 않은 데이터를 모두 잃게 됩니다."
@@ -1090,13 +1162,13 @@ localization_db : .localization
 	val[]: "- 빠른저장 -" #+ Name used inside slot corresponding to a quick saved game.
 
 	key[]: "show_autosaves"
-	val[]: "자동저장 보이기" #+ Description of checkbox allowing user to enable display of automatically generated saves.
+	val[]: "자동저장 보기" #+ Description of checkbox allowing user to enable display of automatically generated saves.
 
 	key[]: "load"
 	val[]: "불러오기" #+ Button triggering load.
 
 	key[]: "incompatible_save_upgrade"
-	val[]: "호환되지 않는 세이브입니다!<br>최신버전으로 게임을 업데이트해 보세요." #+ Warning shown when save has unknown version.
+	val[]: "호환되지 않는 세이브입니다!<br>게임을 최신 버전으로 업데이트해 보세요." #+ Warning shown when save has unknown version.
 
 #+ Notification shown in the side panel when the load slot selection window appears automatically
 #@{
@@ -1104,19 +1176,19 @@ localization_db : .localization
 	val[]: "주의" #+ Panel title. Please keep in upper case where possible.
 
 	key[]: "load_msg_load_error"
-	val[]: "<color value=@@clr_red@@>세이브 불러오는 중에 문제가 발생했습니다.<color value=@@clr_txt@@><br><br>세이브 불러오기를 실패했습니다. 아래의 정보를 이용해 문제를 해결하시거나, 다른 세이브 파일을 불러올 수 있습니다..<br><br>다음과 같은 이유로 문제가 발생합니다::<br><br>1. 세이브 파일이 현재 설치된 모드(들)과 호환되지 않습니다.<br><br>2. 세이브 파일에 빠지어있거나 사용할 수 없는 모드가 포함되어 있습니다.<br><br>3. 세이브 파일이 모드에 의해 손상되었습니다..<br><br>4. PC와의 충돌이나 세이브를 저장하는 도중 손상되었을 수 있습니다."
+	val[]: "<color value=@@clr_red@@>세이브 파일을 불러오는 도중 문제가 발생했습니다.<color value=@@clr_txt@@><br><br>세이브 파일을 불러오지 못했습니다. 아래 정보를 통해 문제의 원인을 파악하고 문제를 해결할 수 있습니다. 대안으로, 다른 세이브 파일을 불러오는 방법도 있습니다.<br><br>다음과 같은 이유로 문제가 발생할 수 있습니다:<br><br>1. 세이브 파일이 현재 설치된 일부 모드와 호환되지 않습니다.<br><br>2. 세이브 파일에 누락되었거나 사용할 수 없는 모드의 정보가 포함되어 있습니다.<br><br>3. 세이브 파일이 올바르게 제작되지 않은 모드에 의해 손상되었습니다.<br><br>4. 게임이 저장되는 도중 혹은 저장된 직후 PC와의 충돌로 인해 세이브 파일이 손상되었을 수 있습니다."
 
 	key[]: "load_msg_missing_mod"
 	val[]: "<color value=@@clr_sel@@>모드 파일이 누락되었습니다.<color value=@@clr_txt@@><br><br>가장 최근에 저장한 세이브 파일은 누락되거나 활성화되지 않은 모드에 종속되어있습니다.<br><br>만약 이 상황이 의도치 않은 것이라면 모드 파일의 상태를 확인하십시오.<br><br>그렇지 않다면 그대로 세이브 파일을 불러오시기 바랍니다. 하지만, 모드의 의존도에 따라 세이브 파일을 불러오지 못하거나 다른 문제가 발생할 수 있습니다.<br><br>대안으로, 누락된 모드에 종속되지 않은 다른 세이브 파일을 불러오는 방법도 있습니다."
 
 	key[]: "load_msg_missing_rem_dlc"
-	val[]: "<color value=@@clr_sel@@>DLC가 누락되었습니다.<color value=@@clr_txt@@><br><br>해당 세이브가 누락된 DLC(공식 게임 확장팩)을 포함 하기 때문입니다.<br><br>누락된 DLC(들) 의 상태를 확인하길 바랍니다.<br><br>또는 강제적으로 세이브를 불러올 수 있습니다. 그렇지만 누락된 DLC(들) 가(이) 포함된 일부 기능을 사용하지 못할 겁니다.<br><br>아니면 DLC(들) 가(이) 포함되어있지 않은 다른 세이브를 사용할 수 있습니다."
+	val[]: "<color value=@@clr_sel@@>선택형 DLC가 누락되었습니다.<color value=@@clr_txt@@><br><br>가장 최근에 저장한 세이브 파일은 누락된 DLC (공식 게임 확장팩)에 종속되어있습니다.<br><br>만약 이 상황이 의도치 않은 것이라면 DLC의 상태를 확인하십시오.<br><br>그렇지 않다면 그대로 세이브 파일을 불러오시기 바랍니다. 하지만, 누락된 DLC에서 제공하는 기능 중 일부를 사용할 수 없게 됩니다.<br><br>대안으로, 누락된 DLC에 종속되지 않은 다른 세이브 파일을 불러오는 방법도 있습니다."
 
 	key[]: "load_msg_missing_dlc"
-	val[]: "<color value=@@clr_red@@>DLC가 누락되었습니다.<color value=@@clr_txt@@><br><br>해당 세이브가 누락된 DLC(공식 게임 확장팩)을 포함 하기 때문입니다.<br><br>게임이 제대로 작동하려면 DLC가 활성화 되어야 합니다.<br><br>아니면 DLC(들) 가(이) 포함되어있지 않은 다른 세이브를 사용할 수 있습니다."
+	val[]: "<color value=@@clr_red@@>DLC가 누락되었습니다.<color value=@@clr_txt@@><br><br>가장 최근에 저장한 세이브 파일은 누락된 DLC (공식 게임 확장팩)에 종속되어있습니다.<br><br>이 세이브 파일을 불러오기 위해서는 해당 DLC를 이 컴퓨터에 설치하고 활성화해야 합니다.<br><br>대안으로, 누락된 DLC에 종속되지 않은 다른 세이브 파일을 불러오는 방법도 있습니다."
 
 	key[]: "load_msg_mod_dlc_dep"
-	val[]: "<color value=@@clr_red@@>MOD가 DLC와 호환되지 않습니다.<color value=@@clr_txt@@><br><br>MOD 혹은 DLC(공식 확장팩) 중 하나는 설치하지 말아야 합니다.<br><br> 문제 해결을 위해 MOD(들) 를(을) 비활성 해놓거나 DLC(들) 를(을) 사용해야 합니다."
+	val[]: "<color value=@@clr_red@@>모드가 DLC 콘텐츠에 종속되어있습니다.<color value=@@clr_txt@@><br><br>하나 이상의 모드가 현재 설치되어 있지 않은 DLC (공식 게임 확장팩)에 종속되어있습니다.<br><br>모드를 비활성화하거나 모드를 종속하고 있는 DLC를 설치해야 합니다."
 
 	key[]: "load_msg_crash"
 	val[]: "<color value=@@clr_red@@>충돌이 감지되었습니다.<color value=@@clr_txt@@><br><br>최근, 게임을 불러오는 도중 충돌이 발생한 것 같습니다.<br><br>아래 정보를 통해 문제의 원인을 파악하고 문제를 해결할 수 있습니다. 대안으로, 다른 세이브 파일을 불러오는 방법도 있습니다.<br><br>다음과 같은 이유로 문제가 발생할 수 있습니다:<br><br>1. 설치한 모드 중 일부가 손상되었거나 현재 버전과 호환되지 않습니다.<br><br>2. 세이브 파일에 누락되었거나 사용할 수 없는 모드의 정보가 포함되어 있습니다.<br><br>3. 세이브 파일이 올바르게 제작되지 않은 모드에 의해 손상되었습니다.<br><br>4. 간혹 하드웨어 또는 드라이버의 오작동으로 인해 게임이 중단될 수 있습니다."
@@ -1144,10 +1216,10 @@ localization_db : .localization
 	val[]: "- 새로운 저장 -" #+ Name of save slot which create a new save file.
 
 	key[]: "noname_save_game"
-	val[]: "이름 없이 저장" #+ Name used instead as the name of the save file if no name was provided by player. For example "Unamed save 1"
+	val[]: "이름없는 저장" #+ Name used instead as the name of the save file if no name was provided by player. For example "Unamed save 1"
 
 	key[]: "overwrite_save"
-	val[]: "정말로 저장되어 있던 곳에 덮어씌울까요?"
+	val[]: "정말로 저장되어 있던 곳에 덮어씌우시겠습니까?"
 
 	key[]: "save_delete"
 	val[]: "선택한 세이브를 삭제하시겠습니까?"
@@ -1166,7 +1238,7 @@ localization_db : .localization
 	val[]: "주의" #+ Title of message box containing some warning. Please keep in upper case where possible.
 
 	key[]: "error"
-	val[]: "에러" #+ Title of message box reporting some error. Please keep in upper case where possible.
+	val[]: "오류" #+ Title of message box reporting some error. Please keep in upper case where possible.
 
 	key[]: "confirmation_t"
 	val[]: "확인" #+ Title of message box asking for confirmation of some action. Please keep in upper case where possible.
@@ -1197,7 +1269,7 @@ localization_db : .localization
 	val[]: "페인트 숍" #+ Icon allowing player to apply a new paint to the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_paint_about"
-	val[]: "지금 색상이 지루하신가요? 색상을 바꿔보세요!" #+ Help message associated with paint shop icon.
+	val[]: "칙칙한 도색에 지루함을 느끼셨나요? 색상을 바꿔보세요!" #+ Help message associated with paint shop icon.
 
 	key[]: "paintjob_t"
 	val[]: "블루프린트" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
@@ -1205,11 +1277,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "페인트 슬롯" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "사전 설정에 등록" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "색상을 사전 설정에 저장" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "사전 설정 사용" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "모든 색상을 사전 설정에 저장" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "사전 설정 색상 적용" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1280,7 +1355,7 @@ localization_db : .localization
 	val[]: "빠른 일거리" #+ Icon opening the quick job screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "quick_job_desc"
-	val[]: "운전기사로 고용됩니다. 운송에 필요한 모든 것이 제공되니, 일거리를 고르고 운전을 시작하세요."
+	val[]: "전문 운전기사로 고용됩니다. 걱정하지 마십시오. 운송에 필요한 모든 것이 제공되니 원하는 일거리를 선택해 운전하시면 됩니다."
 #@}
 
 #+ Freight market job selection screen
@@ -1295,7 +1370,7 @@ localization_db : .localization
 	val[]: "배송 시장" #+ Icon opening the freight market screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "comp_job_desc"
-	val[]: "자신의 트럭을 사용하여 수익을 올리세요. 화물을 적재하고 안전하게 운송하세요."
+	val[]: "자신의 트럭을 사용하여 수익을 올리십시오. 적재된 화물이 파손되지 않도록 안전하게 운송하십시오."
 
 	key[]: "select_job_offer"
 	val[]: "해당 목적지로 GPS 설정" #+ Button which will set pickup point for selected job as target in the GPS.
@@ -1333,6 +1408,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "화물을 선택하면 경로 정보를 볼 수 있습니다" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "다음 체크포인트까지 남은 거리" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "다음 체크포인트까지 소요 시간" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -1494,7 +1577,7 @@ localization_db : .localization
 	val[]: "주행 거리:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "게임을 계속합니다" #+ Button which selects profile and continues in game.
+	val[]: "게임을 진행합니다" #+ Button which selects profile and continues in game.
 
 	key[]: "new"
 	val[]: "새 프로필" #+ Button which opens new profile creation dialog.
@@ -1533,7 +1616,7 @@ localization_db : .localization
 	val[]: "선택한 프로필 일람" #+ heading text for Profile info
 
 	key[]: "new_version"
-	val[]: "새로운 버전이 나왔습니다..."
+	val[]: "새로운 게임 버전을 사용할 수 있습니다..."
 
 	key[]: "latest_news_t"
 	val[]: "최근 소식" #+ Title of the window. Please keep in upper case where possible.
@@ -1671,13 +1754,13 @@ localization_db : .localization
 	val[]: "비밀번호가 잘못되었거나 온라인 계정이 존재하지 않습니다."
 
 	key[]: "signin_access_denied"
-	val[]: "비밀번호가 잘못되었거나 온라인 계정이 존재하지 않습니다. 다시 시도 버튼을 눌러 올바른 아이디 및 비밀번호를 입력하세요."
+	val[]: "비밀번호가 잘못되었거나 온라인 계정이 존재하지 않습니다. 재시도 버튼을 눌러 아이디와 비밀번호를 올바르게 입력하십시오."
 
 	key[]: "continue_offline"
-	val[]: "오프라인 모드로 계속하기" #+ Button which loads the profile in offline mode
+	val[]: "오프라인 모드로 진행" #+ Button which loads the profile in offline mode
 
 	key[]: "continue_offline_info"
-	val[]: "오프라인 모드로 계속 진행할 수 있습니다. 대신 World of Trucks의 작업 및 기타 기능은 사용할 수 없습니다."
+	val[]: "오프라인 모드로 계속 진행할 수 있습니다. 오프라인 모드에서는 World of Trucks 작업이나 기타 온라인 기능을 사용할 수 없습니다."
 
 	key[]: "retry"
 	val[]: "재시도" #+ Button text in online wait dilaog
@@ -1703,17 +1786,17 @@ localization_db : .localization
 	val[]: "본사 선정" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "setup_hq"
-	val[]: "선택을 확인합니다" #+ Button used to confirm selection of city containing the headquarters.
+	val[]: "확인" #+ Button used to confirm selection of city containing the headquarters.
 #@}
 
 #+ News.
 #@{
 
 	key[]: "new_version_available"
-	val[]: "최신버전이<br> 존재합니다."
+	val[]: "새로운 게임 버전을<br>사용할 수 있습니다."
 
 	key[]: "new_version_available_steam"
-	val[]: "새로운 게임 버전이<br>발견되었습니다.<br><br>자동 업데이트를 꺼두지 않으셨다면, 스팀이 자동으로 게임을 업데이트합니다."
+	val[]: "새로운 게임 버전을<br>사용할 수 있습니다.<br><br>자동 업데이트를 끄지 않으셨다면 스팀이 자동으로 게임을 업데이트합니다."
 
 	key[]: "allow_news"
 	val[]: "게임 업데이트와 뉴스를 자동으로 확인하도록 허용하시겠습니까?" #+ Text shown in a message box.
@@ -1728,7 +1811,7 @@ localization_db : .localization
 #+ DLC browser.
 #@{
 	key[]: "dlc_browser_t"
-	val[]: "다운로드 가능한 콘텐츠 브라우저" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "다운로드 가능한 콘텐츠 (DLC) 브라우저" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_btn"
 	val[]: "DLC 브라우저" #+ Button used to start DLC browser.
@@ -1778,7 +1861,7 @@ localization_db : .localization
 
 
 	key[]: "game_activation"
-	val[]: "모든 기능을 즐기고 싶으시면 게임을 활성화하셔야 합니다."
+	val[]: "모든 기능을 즐기려면 게임을 활성화하십시오."
 
 	key[]: "activate"
 	val[]: "게임 활성화" #+ Button triggering activation of the game using the entered serial number.
@@ -1791,14 +1874,14 @@ localization_db : .localization
 	val[]: "DVD 버전 게임입니까?"
 
 	key[]: "boxed_game_text"
-	val[]: "제품 키는 게임의 패키지 안에 포함되어있으며, 게임의 모든 기능을 해제하려면 아래에 제품 키를 입력해주십시오."
+	val[]: "제품 키는 게임 패키지 안에 포함되어 있으며 제품 키를 입력하면 게임의 모든 기능을 사용할 수 있습니다."
 
 
 	key[]: "downloaded_game_title"
 	val[]: "인터넷에서 게임을 다운로드하였습니까?"
 
 	key[]: "downloaded_game_text"
-	val[]: "여러분은 무료 평가판을 즐기면서 여러분의 컴퓨터에서 잘 구동되는지 확인할 수 있고, 정식 버전 구매 의사로 이어지기를 소망합니다."
+	val[]: "무료 평가판을 통해 게임을 무료로 체험할 수 있으며 당신의 컴퓨터에서 원활하게 구동되는지도 확인할 수 있습니다. 저희는 당신이 이 게임을 구매하고 싶은 생각이 들 때까지 충분히 즐겨보시기를 희망합니다!"
 
 	key[]: "enter_product_key"
 	val[]: "이 게임을 활성화하려면 제품 키를 입력하십시오." #+ Text for customized activation screen.
@@ -1808,11 +1891,11 @@ localization_db : .localization
 
 
 	key[]: "wrong_key_entered"
-	val[]: "입력하신 제품 키가 잘못되었거나, 잘못 입력하셨습니다. 제품 키가 잘못 입력된 경우 수정하고 다시 시도하십시오. <br offset=15> 올바른 문자를 입력해야합니다. <br offset=15>B와 8, G와 6, U와 V, Q와 O <br> 문자 O와 숫자 0 (영) <br> 문자 Z와 숫자 2 (둘) 을 헷갈리지 않았는지 확인하세요."
+	val[]: "제품 키를 올바르게 입력하지 않았거나 유효하지 않습니다. 제품 키를 올바르게 입력하지 않은 경우 올바르게 입력한 후 다시 시도하십시오.<br offset=15>문자를 올바르게 입력했는지 확인하십시오. 다음 문자는 비슷한 형태로 인해 헷갈리기 쉽습니다:<br offset=15>B와 8, G와 6, U와 V, Q와 O<br>문자 O와 숫자 0 (영)<br>문자 Z와 숫자 2 (이)"
 
 
 	key[]: "activated"
-	val[]: "정품인증이 되었습니다.<br>Euro Truck Simulator 2 를 구입해주셔서 감사합니다."
+	val[]: "성공적으로 인증되었습니다.<br>Euro Truck Simulator 2를 구입해 주셔서 감사합니다."
 
 	key[]: "www_link_game"
 	val[]: "Euro Truck Simulator 2"
@@ -1827,16 +1910,16 @@ localization_db : .localization
 	val[]: "제품 키 확인" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "verifying"
-	val[]: "제품 키를 확인하고 있습니다. 잠시만 기다려주세요." #+ Shown in message box while the verification operation is in progress.
+	val[]: "제품 키를 확인하고 있습니다. 잠시만 기다려주십시오." #+ Shown in message box while the verification operation is in progress.
 
 	key[]: "verification_required"
-	val[]: "제품 키를 확인해야합니다. 인증을 위해 인터넷 연결을 시도합니다. <br> <br> 만약에 이 컴퓨터가 인터넷에 연결되어 있지 않으면, <LINK URL=@@offline_activation_url@@ \nCOLOR=@@clr_link@@>@@offline_activation_url@@</LINK> 을 통해 오프라인 인증을 할수 있습니다."
+	val[]: "제품 키를 확인합니다. 제품 키를 확인하기 위해서는 컴퓨터가 인터넷에 연결되어 있어야 합니다.<br><br>만약 컴퓨터가 인터넷에 연결되어 있지 않다면 <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>의 설명에 따라 오프라인으로 인증 받으시기 바랍니다."
 
 	key[]: "unable_to_verify"
-	val[]: "제품 키를 확인할 수 없으나, 당장은 실행하실 수 있습니다.<br> <br>다시 게임을 시작할 때 제품 키를 재확인합니다. 그래도 문제가 해결되지 않을 시, 인터넷에 연결되어 있는지 확인하거나 오프라인 활성화를 사용하시기 바랍니다. 설명 <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>"
+	val[]: "제품 키를 확인할 수 없지만, 게임은 진행할 수 있습니다.<br><br>다음에 게임을 실행하면 제품 키를 다시 확인합니다. 만약 문제가 계속된다면 인터넷 연결 상태를 확인하거나 <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>의 설명에 따라 오프라인으로 인증 받으시기 바랍니다."
 
 	key[]: "unable_to_verify_version"
-	val[]: "제품 키를 확인할 수 없으므로, 게임 업데이트를 권장합니다.<br> <br>다시 게임을 시작할 때 제품 키를 재확인합니다. 그래도 문제가 해결되지 않을 시, 인터넷에 연결되어 있는지 확인하거나 오프라인 활성화를 사용하시기 바랍니다. 설명 <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>"
+	val[]: "제품 키를 확인할 수 없으므로 게임 업데이트를 권장하지만, 게임은 진행할 수 있습니다.<br><br>다음에 게임을 실행하면 제품 키를 다시 확인합니다. 만약 문제가 계속된다면 인터넷 연결 상태를 확인하거나 <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>의 설명에 따라 오프라인으로 인증 받으시기 바랍니다."
 
 # Currently only used with otherwise Steam-only DLCs provided to testers as part of
 # special retail builds so no translation nor offline activation support is necessary.
@@ -1849,13 +1932,13 @@ localization_db : .localization
 #!}
 
 	key[]: "rejected_key"
-	val[]: "제품키가 잘못되었거나 차단되었습니다. 게임 판매자에게 연락해보십시오." #+ Shown when there is a problem with the key
+	val[]: "제품 키가 유효하지 않거나 차단되었습니다. 게임 판매자에게 문의하시기 바랍니다." #+ Shown when there is a problem with the key
 
 	key[]: "exit_game"
 	val[]: "게임 종료" #+ Button allowing the player to exit the game.
 
 	key[]: "steam_demo"
-	val[]: "만약 Euro Truck Simulator 2 무료 평가판이 마음에 드셨다면, <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>! 에서 정식버전을 구입해주세요." #+ Message shown on the "activation" screen for Steam demo only build.
+	val[]: "Euro Truck Simulator 2 무료 평가판이 마음에 드셨다면 <LINK URL=@@steam_buy_url@@ COLOR=@@clr_link@@>Steam</LINK>에서 정식 버전을 구입해 주시기 바랍니다!" #+ Message shown on the "activation" screen for Steam demo only build.
 
 	key[]: "run_demo"
 	val[]: "무료 평가판 실행" #+ Button allowing the player to launch the game in a demo mode for demo only build.
@@ -1867,13 +1950,13 @@ localization_db : .localization
 #+ DLC activation screen
 #@{
 	key[]: "dlc_activation"
-	val[]: "다운로드한 콘텐츠 활성화" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "다운로드 가능한 콘텐츠 (DLC) 활성화" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_activation_text"
-	val[]: "'@@dlc_name@@'의 제품 키를 입력하여 콘텐츠를 사용하세요." #+ Informational text shown in the dialog
+	val[]: "\"@@dlc_name@@\"의 모든 콘텐츠를 사용하시려면 제품 키를 입력하십시오." #+ Informational text shown in the dialog
 
 	key[]: "dlc_activation_code"
-	val[]: "제품 키 '@@dlc_name@@':"
+	val[]: "\"@@dlc_name@@\"의 제품 키:"
 
 	key[]: "dlc_activate"
 	val[]: "DLC 활성화" #+ Button which starts the activation
@@ -1882,7 +1965,7 @@ localization_db : .localization
 	val[]: "지금 DLC를 무시" #+ Button which skips the activation, the dlc content will be unavailable and the game will ask again during next launch.
 
 	key[]: "dlc_activated"
-	val[]: "성공적으로 정품인증 되었습니다.<br>'@@dlc_name@@' Euro Truck Simulator 2 를 구입해주셔서 감사합니다."
+	val[]: "성공적으로 인증되었습니다.<br>\"@@dlc_name@@\"을(를) 구입해 주셔서 감사합니다."
 #@}
 
 	key[]: "sdk_warning"
@@ -1892,13 +1975,13 @@ localization_db : .localization
 #@{
 
 	key[]: "demo_ended"
-	val[]: "무료 평가판 종료" #+ Title of a message box. Please keep in upper case where possible.
+	val[]: "무료 체험 종료" #+ Title of a message box. Please keep in upper case where possible.
 
 	key[]: "demo_complete"
-	val[]: "게임의 무료 평가판은 여기서 끝납니다. 여행을 계속하려면 게임을 활성화해야합니다."
+	val[]: "무료 체험은 여기까지입니다. 여행을 계속하려면 게임을 활성화해야 합니다."
 
 	key[]: "standalone_demo_complete"
-	val[]: "게임의 무료 평가판은 여기서 끝납니다. 여행을 계속하고 싶으시면, 게임을 구입해주세요." #+ Used for standalone demo
+	val[]: "무료 체험은 여기까지입니다. 여행을 계속하려면 게임을 구입하시기 바랍니다." #+ Used for standalone demo
 
 	key[]: "go_to_store_page"
 	val[]: "상점 페이지로 가기" #+ Button opening store page used to purchase the game at end of the standalone demo
@@ -1986,17 +2069,53 @@ localization_db : .localization
 	key[]: "master_volume"
 	val[]: "마스터 볼륨" #+ Slider controlling master volume.
 
-	key[]: "sound_volume"
-	val[]: "사운드 이펙트 볼륨" #+ Slider controlling volume of the sound effects.
+	key[]: "truck_engine_volume"
+	val[]: "트럭 엔진 볼륨" #+ Slider controlling volume of the truck engine.
 
-	key[]: "music_volume"
-	val[]: "음악 볼륨" #+ Slider controlling volume of the music effects.
+	key[]: "truck_exhaust_volume"
+	val[]: "트럭 배기 볼륨" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_effects_volume"
+	val[]: "트럭 효과음 볼륨" #+ Slider controlling volume of the truck effects.
+
+	key[]: "truck_noise_volume"
+	val[]: "트럭 소음 볼륨" #+ Slider controlling volume of the truck noises.
+
+	key[]: "trailer_noise_volume"
+	val[]: "트레일러 소음 볼륨" #+ Slider controlling volume of the trailer noises.
+
+	key[]: "traffic_volume"
+	val[]: "다른 차량 볼륨" #+ Slider controlling volume of the traffic.
+
+	key[]: "world_volume"
+	val[]: "세계 사운드 볼륨" #+ Slider controlling volume of the environment sounds.
+
+	key[]: "ambient_volume"
+	val[]: "주변 사운드 볼륨" #+ Slider controlling volume of the ambient sounds.
+
+	key[]: "interior_volume"
+	val[]: "인테리어 사운드 볼륨" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
 	val[]: "라디오 볼륨" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "경로 음성 안내 볼륨" #+ Slider controlling volume of the voice navigation.
+
+	key[]: "voiceover_volume"
+	val[]: "음성 볼륨" #+ Slider controlling voice over volume.
+
+	key[]: "music_volume"
+	val[]: "음악 볼륨" #+ Slider controlling volume of the in-game music.
+
+	key[]: "game_ui_volume"
+	val[]: "게임 사운드 볼륨" #+ Slider controlling volume of the game sound effects.
+
+	key[]: "music_ui_volume"
+	val[]: "UI 음악 볼륨" #+ Slider controlling volume of the ui (menu) music.
+
+	key[]: "intro_volume"
+	val[]: "인트로 로고 볼륨" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "경로 음성 안내" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2031,20 +2150,29 @@ localization_db : .localization
 	key[]: "advanced_audio_t"
 	val[]: "기타 오디오 설정" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
-	key[]: "reverse_stereo"
-	val[]: "리버스 스테레오" #+ Checkbox flipping left and right loudspeaker.
-
-	key[]: "sound_effects"
-	val[]: "사운드 이펙트" #+ Checkbox enabling sound effects.
-
-	key[]: "music"
-	val[]: "음악" #+ Checkbox enabling music.
-
 	key[]: "sound_of_reverse"
 	val[]: "후진 경보음" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
 
 	key[]: "rumble_stripe_sound"
 	val[]: "럼블 스트립" #+ Checkbox enabling the rumbling sound when truck goes over road's outer rumbling line.
+
+	key[]: "noise_window"
+	val[]: "열린 창문 소음" #+ Checkbox enabling the sound of the opened windows noise.
+
+	key[]: "noise_aero"
+	val[]: "바람 소리" #+ Checkbox enabling the sound of the air noise.
+
+	key[]: "reverb_cabin"
+	val[]: "실내 소리 리버브 효과" #+ Checkbox enabling the reverb effect of the cabin.
+
+	key[]: "reverb_world"
+	val[]: "주변 소리 리버브 효과" #+ Checkbox enabling the reverb effect of the environment.
+
+	key[]: "audio_driver_settings_t"
+	val[]: "오디오 드라이버" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+
+	key[]: "default_audio_driver"
+	val[]: "- 시스템 기본 드라이버 -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -2062,7 +2190,7 @@ localization_db : .localization
 	val[]: "바탕화면 백그라운드 테마"
 
 	key[]: "bcg_rnd"
-	val[]: "랜덤 바탕화면 백그라운드 테마"
+	val[]: "무작위 바탕화면 백그라운드 테마"
 
 	key[]: "get_more_themes"
 	val[]: "더 많은 테마 받기"
@@ -2326,7 +2454,7 @@ localization_db : .localization
 	key[]: "adviser_autopark"
 	val[]: "자동주차 의사를 물어보기" #+ Checkbox enabling autoparking trigger.
 
-  key[]: "adviser_keep_hidden"
+	key[]: "adviser_keep_hidden"
 	val[]: "경로 관리자 항상 감추기" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
@@ -2464,7 +2592,7 @@ localization_db : .localization
 	val[]: "숙련된 주차" #+ High difficulty parking option
 
 	key[]: "trailer_parking_diff_random"
-	val[]: "랜덤 주차" #+ Random difficulty parking options
+	val[]: "무작위 주차" #+ Random difficulty parking options
 #@}
 
 #@}
@@ -2520,6 +2648,9 @@ localization_db : .localization
 	key[]: "hud_controls"
 	val[]: "HUD 컨트롤"
 
+	key[]: "walk_mode"
+	val[]: "보행 모드"
+	
 	key[]: "other_controls"
 	val[]: "기타"
 #@}
@@ -2561,13 +2692,13 @@ localization_db : .localization
 	val[]: "기어 다운 힌트" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_trans_semi_switch"
-	val[]: "기어박스를 자동 혹은 시퀸설로 변환" #+ Switch between real automatic and sequential transmissions
+	val[]: "기어 박스를 자동 혹은 시퀸설로 변환" #+ Switch between real automatic and sequential transmissions
 
 	key[]: "o_im_engine"
 	val[]: "엔진 시동/정지"
 
 	key[]: "o_im_engine_electricity"
-	val[]: "엔진 전기 가동/정지"
+	val[]: "엔진 전기계통 가동/정지"
 
 	key[]: "o_im_parkingbrake"
 	val[]: "주차 브레이크"
@@ -2672,7 +2803,7 @@ localization_db : .localization
 	val[]: "오디오 플레이어 볼륨 내리기"
 
 	key[]: "o_im_display"
-	val[]: "대시보드 디스플레이"
+	val[]: "대시보드 디스플레이 모드"
 
 	key[]: "o_im_trip_reset"
 	val[]: "대시보드 트립 정보 초기화"
@@ -2683,8 +2814,23 @@ localization_db : .localization
 	key[]: "o_im_activate"
 	val[]: "실행" #+ Context action for activation. For example sleep, refuel....
 
+	key[]: "o_im_right_window_open"
+	val[]: "오른쪽 창문 열기" #+ Action for opening right window.
+
+	key[]: "o_im_right_window_close"
+	val[]: "오른쪽 창문 닫기" #+ Action for closing right window.
+
+	key[]: "o_im_left_window_open"
+	val[]: "왼쪽 창문 열기" #+ Action for opening left window.
+
+	key[]: "o_im_left_window_close"
+	val[]: "왼쪽 창문 닫기" #+ Action for closing left window.
+
 	key[]: "o_im_menu"
 	val[]: "메뉴" #+ Action for entering menu (hardcoded ESC + one optional control)
+
+	key[]: "o_im_eye_config"
+	val[]: "아이 트래킹 설정 열기"
 # hud
 
 	key[]: "o_im_show_mirrors"
@@ -2700,7 +2846,7 @@ localization_db : .localization
 	val[]: "차고 관리자" #+ Opens the garage manager from game.
 
 	key[]: "o_im_adviser_cursor"
-	val[]: "경로 관리자 마우스 사용"
+	val[]: "경로 관리자 마우스 컨트롤"
 
 	key[]: "o_im_adjuster"
 	val[]: "트럭 조정"
@@ -2722,6 +2868,9 @@ localization_db : .localization
 
 	key[]: "o_im_adviser_prev"
 	val[]: "경로 관리자 이전 페이지"
+
+	key[]: "o_im_adviser_eta"
+	val[]: "경로 관리자 목적지 모드"
 
 #assistant
 
@@ -2774,8 +2923,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "헤드 초기화 (헤드 트래킹)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "헤드 트래킹 사용" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Extended View 일시 정지 (실험기능)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Extended View 사전 설정 1 적용" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Extended View 사전 설정 2 적용" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Extended View 사전 설정 3 적용" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "카메라 회전 (마우스 사용)" #+ Enables camera look mode when mouse steering is active.
@@ -2789,7 +2950,25 @@ localization_db : .localization
 	key[]: "o_im_look_blink_mode"
 	val[]: "방향지시등을 기반으로 카메라 회전" #+ Toggles enabled state of camera rotation based on blinker activation.
 
-
+#walk mode
+	key[]: "o_im_walk_forward"
+	val[]: "앞으로" #+ Walk forward.
+	
+	key[]: "o_im_walk_back"
+	val[]: "뒤로" #+ Walk back.
+	
+	key[]: "o_im_walk_left"
+	val[]: "왼쪽" #+ Walk left.
+	
+	key[]: "o_im_walk_right"
+	val[]: "오른쪽" #+ Walk right.
+	
+	key[]: "o_im_walk_crouch"
+	val[]: "웅크리기" #+ Activate crouch.
+	
+	key[]: "o_im_walk_run"
+	val[]: "달리기" #+ Activate run.
+	
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3044,13 +3223,13 @@ localization_db : .localization
 	val[]: "사용하지 않음"
 
 	key[]: "hshift_split_clutch"
-	val[]: "클러치 페달을 누를 때"
+	val[]: "클러치 페달을 밟을 때"
 
 	key[]: "hshift_split_throttle"
-	val[]: "가속 페달을 누르지 않을 때"
+	val[]: "가속 페달을 밟지 않을 때"
 
 	key[]: "hshift_split_both"
-	val[]: "클러치 혹은 가속페달"
+	val[]: "클러치 혹은 가속 페달"
 
 #@}
 
@@ -3096,10 +3275,10 @@ localization_db : .localization
 
 
 	key[]: "hshift_auto_drive"
-	val[]: "자동 기어박스 : 전진" #+ Label of line containing button whose pressed state indicates "Drive" position.
+	val[]: "자동 기어 박스: 전진" #+ Label of line containing button whose pressed state indicates "Drive" position.
 
 	key[]: "hshift_auto_reverse"
-	val[]: "자동 기어박스 : 후진" #+ Label of line containing button whose pressed state indicates "Reverse" position.
+	val[]: "자동 기어 박스: 후진" #+ Label of line containing button whose pressed state indicates "Reverse" position.
 #@}
 
 #+ Configuration of the UI mouse emulation using a controller.
@@ -3158,6 +3337,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Extended View" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Extended View 사전 설정" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "사전 설정 이름 입력" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "선택한 사전 설정을 삭제하시겠습니까?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "동일한 이름을 가진 기존의 사전 설정에 덮어씌웁니다. 계속하시겠습니까?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "시선 트래킹 설정" #+ Header of the gaze settings
 
@@ -3195,10 +3386,16 @@ localization_db : .localization
 	val[]: "포지션 활성화 (실험기능)" #+ Enables use of head position
 
 	key[]: "eye_yaw_scale"
-	val[]: "Yaw 증폭" #+ Multiplier applied to resulting yaw value
+	val[]: "좌우 회전 증폭 (캐빈)" #+ Multiplier applied to resulting yaw value (in cabin)
 
 	key[]: "eye_pitch_scale"
-	val[]: "Pitch 증폭" #+ Multiplier applied to resulting pitch value
+	val[]: "상하 회전 증폭 (캐빈)" #+ Multiplier applied to resulting pitch value (in cabin)
+	
+	key[]: "eye_walk_mode_yaw_scale"
+	val[]: "좌우 회전 증폭 (보행 모드)" #+ Multiplier applied to resulting yaw value (in walk mode)
+
+	key[]: "eye_walk_mode_pitch_scale"
+	val[]: "상하 회전 증폭 (보행 모드)" #+ Multiplier applied to resulting pitch value (in walk mode)
 
 	key[]: "eye_gaze_max_angle"
 	val[]: "시선 트래킹 최대 각도" #+ Maximal angle change generated by gaze tracking.
@@ -3270,10 +3467,16 @@ localization_db : .localization
 	val[]: "머리를 한쪽으로 기울이면 게임 내 카메라도 그에 맞춰 기울어집니다."
 
 	key[]: "eye_yaw_scale_tooltip"
-	val[]: "고개를 좌우로 돌릴 때마다 응답 속도가 증가합니다."
+	val[]: "고개를 좌우로 돌릴 때마다 응답 속도가 증가합니다. (캐빈)"
 
 	key[]: "eye_pitch_scale_tooltip"
-	val[]: "고개를 위아래로 끄덕일 때마다 응답 속도가 증가합니다."
+	val[]: "고개를 위아래로 끄덕일 때마다 응답 속도가 증가합니다. (캐빈)"
+	
+	key[]: "eye_walk_mode_yaw_scale_tooltip"
+	val[]: "고개를 좌우로 돌릴 때마다 응답 속도가 증가합니다. (보행 모드)"
+
+	key[]: "eye_walk_mode_pitch_scale_tooltip"
+	val[]: "고개를 위아래로 끄덕일 때마다 응답 속도가 증가합니다. (보행 모드)"
 
 	key[]: "eye_maximal_gaze_angle_tooltip"
 	val[]: "시선을 화면 가장자리로 옮기면 카메라의 회전 각도를 재설정합니다."
@@ -3403,6 +3606,9 @@ localization_db : .localization
 	key[]: "aa_mode"
 	val[]: "안티앨리어싱 (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
 
+	key[]: "ssao_mode"
+	val[]: "화면 영역 주변 폐색 (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
+
 	key[]: "hdr"
 	val[]: "높은 동적 범위 (HDR)" #+ Checkbox enabling the high dynamic range rendering.
 
@@ -3481,7 +3687,7 @@ localization_db : .localization
 	val[]: "Esc"
 
 	key[]: "i_backspace"
-	val[]: "Backspace"
+	val[]: "백스페이스"
 
 	key[]: "i_tab"
 	val[]: "Tab"
@@ -3490,25 +3696,25 @@ localization_db : .localization
 	val[]: "Enter"
 
 	key[]: "i_lctrl"
-	val[]: "Left Ctrl"
+	val[]: "왼쪽 Ctrl"
 
 	key[]: "i_lshift"
-	val[]: "Left Shift"
+	val[]: "왼쪽 Shift"
 
 	key[]: "i_bslash"
-	val[]: "백슬래시"
+	val[]: "역슬래시"
 
 	key[]: "i_slash"
-	val[]: "/"
+	val[]: "슬래시"
 
 	key[]: "i_rshift"
-	val[]: "Right Shift"
+	val[]: "오른쪽 Shift"
 
 	key[]: "i_lalt"
-	val[]: "Left Alt"
+	val[]: "왼쪽 Alt"
 
 	key[]: "i_space"
-	val[]: "Space"
+	val[]: "스페이스 바"
 
 	key[]: "i_caps"
 	val[]: "Caps Lock"
@@ -3523,10 +3729,10 @@ localization_db : .localization
 	val[]: "Print Screen"
 
 	key[]: "i_rctrl"
-	val[]: "Right Ctrl"
+	val[]: "오른쪽 Ctrl"
 
 	key[]: "i_ralt"
-	val[]: "Right Alt"
+	val[]: "오른쪽 Alt"
 
 	key[]: "i_numlck"
 	val[]: "NumLock"
@@ -3538,16 +3744,16 @@ localization_db : .localization
 	val[]: "End"
 
 	key[]: "i_uarrow"
-	val[]: "Up Arrow"
+	val[]: "위쪽 방향키"
 
 	key[]: "i_larrow"
-	val[]: "Left Arrow"
+	val[]: "왼쪽 방향키"
 
 	key[]: "i_rarrow"
-	val[]: "Right Arrow"
+	val[]: "오른쪽 방향키"
 
 	key[]: "i_darrow"
-	val[]: "Down Arrow"
+	val[]: "아래쪽 방향키"
 
 	key[]: "i_pgup"
 	val[]: "Page Up"
@@ -3563,10 +3769,10 @@ localization_db : .localization
 
 
 	key[]: "i_mwup"
-	val[]: "Mouse Wheel Up"
+	val[]: "마우스 휠 업"
 
 	key[]: "i_mwdown"
-	val[]: "Mouse Wheel Down"
+	val[]: "마우스 휠 다운"
 
 	key[]: "i_mleft"
 	val[]: "Mouse Left"
@@ -3614,10 +3820,10 @@ localization_db : .localization
 	val[]: "Fn"
 
 	key[]: "i_lcmd"
-	val[]: "Left Cmd"
+	val[]: "왼쪽 Cmd"
 
 	key[]: "i_rcmd"
-	val[]: "Right Cmd"
+	val[]: "오른쪽 Cmd"
 
 	key[]: "i_help"
 	val[]: "Help"
@@ -3889,7 +4095,7 @@ localization_db : .localization
 	val[]: "현재 배차"
 
 	key[]: "assistance_title"
-	val[]: "어시스턴트"
+	val[]: "어시스턴스"
 
 	key[]: "job_offer_title"
 	val[]: "회사"
@@ -3941,7 +4147,7 @@ localization_db : .localization
 	val[]: "트레일러 대미지" #+ For example "Trailer damage: 5%"
 
 	key[]: "time_remain"
-	val[]: "남은 시간" #+ For example "Time remaining: 8h 21 min"
+	val[]: "납품 마감까지 남은 시간" #+ For example "Time remaining: 8h 21 min"
 
 	key[]: "next_rest_in"
 	val[]: "다음 휴식까지 남은 시간" #+ For example "Next rest stop in: 5 h 3 min"
@@ -3959,15 +4165,29 @@ localization_db : .localization
 	key[]: "job_income"
 	val[]: "들어오는 소득" #+ For example "Job income: E6,526"
 
+	key[]: "adviser_tooltip_map_page"
+	val[]: "내비게이션" #+ Tooltip for map page in route advisor
+
+	key[]: "adviser_tooltip_job_page"
+	val[]: "현재 배차" #+ Tooltip for job info page in route advisor
+
+	key[]: "adviser_tooltip_damage_page"
+	val[]: "진단 & 긴급출동 요청" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+
+	key[]: "adviser_tooltip_message_page"
+	val[]: "단문 메시지" #+ Tooltip for short messages page in route advisor
+
+	key[]: "adviser_tooltip_tutorial"
+	val[]: "경로 관리자 튜토리얼" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
-	val[]: "어시스턴트 서비스가 당신과 트럭을 $CITY$(으)로 데려갈 것입니다. 비용은 $MONEY$이며 $TIME$이 소요됩니다.<br offset=30>동의하십니까?"
+	val[]: "긴급출동 서비스가 당신과 트럭을 $CITY$(으)로 데려갈 것입니다. 비용은 $MONEY$이며 $TIME$이 소요됩니다.<br offset=30>동의하십니까?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "어시스턴트 서비스가 당신과 트럭을 $CITY$(으)로 데려갈 것입니다. 비용은 $MONEY$이며 $TIME$이 소요됩니다.<br>(비용은 고용주가 부담할 것입니다)<br offset=30>동의하십니까?"
+	val[]: "긴급출동 서비스가 당신과 트럭을 $CITY$(으)로 데려갈 것입니다. 비용은 $MONEY$이며 $TIME$이 소요됩니다.<br>(비용은 고용주가 부담할 것입니다)<br offset=30>동의하십니까?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "어시스턴트 서비스가 당신과 트럭을 $CITY$(으)로 데려갈 것입니다. 비용은 $MONEY$이고 $TIME$이 소요되며<br offset=30>진행 중인 화물 운송이 취소됩니다.<br offset=30>동의하십니까?"
+	val[]: "긴급출동 서비스가 당신과 트럭을 $CITY$(으)로 데려갈 것입니다. 비용은 $MONEY$이고 $TIME$이 소요되며<br offset=30>진행 중인 화물 운송이 취소됩니다.<br offset=30>동의하십니까?"
 
 	key[]: "wanna_refuel"
 	val[]: "비상 급유 서비스를 통해 $VOLUME$의 경유를 제공합니다. 비용은 $MONEY$이며 $TIME$이 소요됩니다.<br offset=30>동의하십니까?"
@@ -4002,9 +4222,14 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "이번 배차 취소하기"
 
-
 	key[]: "visit_service"
 	val[]: "즉시 서비스 센터를 방문하십시오!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "전체 경로 정보" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "다음 체크포인트 정보" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
 
 # Adviser info
 
@@ -4015,7 +4240,7 @@ localization_db : .localization
 	val[]: "연료 부족!<br>주유소를 찾아야 합니다."
 
 	key[]: "out_of_fuel"
-	val[]: "기름이 없습니다!"
+	val[]: "연료가 없습니다!"
 
 	key[]: "adblue_warn"
 	val[]: "요소수 부족!<br>주유소를 찾아야 합니다."
@@ -4037,7 +4262,7 @@ localization_db : .localization
 	val[]: "$BRAND$ 트럭 딜러 발견!"
 
 	key[]: "service"
-	val[]: "트럭 및 트레일러를 수리 또는 업그레이드 하거나<br>도색을 변경하려면 다음 키를 누르십시오:"
+	val[]: "트럭 혹은 트레일러를 수리 또는 업그레이드 하거나<br>도색을 변경하려면 다음 키를 누르십시오:"
 
 	key[]: "job_offer"
 	val[]: "일거리를 보려면 다음 키를 누르십시오:"
@@ -4112,7 +4337,7 @@ localization_db : .localization
 	val[]: "주유소"
 
 	key[]: "tank_full"
-	val[]: "연료탱크가 가득 찼습니다!"
+	val[]: "연료 탱크가 가득 찼습니다!"
 
 	key[]: "stop_engine_short"
 	val[]: "엔진을 정지하십시오!"
@@ -4130,7 +4355,7 @@ localization_db : .localization
 	val[]: "주차 브레이크를 작동하려면 다음 키를 누르십시오:"
 
 	key[]: "gas_station_hint"
-	val[]: "연료탱크를 채우려면 다음 키를 누르고 계십시오:"
+	val[]: "연료 탱크를 채우려면 다음 키를 누르고 계십시오:"
 
 	key[]: "diesel_price"
 	val[]: "경유 가격"
@@ -4194,6 +4419,9 @@ localization_db : .localization
 	key[]: "border_open"
 	val[]: "모든 것이 적법합니다.<br> 즐거운 여행 되십시오."
 
+	key[]: "stop_viewpoint"
+	val[]: "뷰포인트를 활성화하려면 정차한 후 엔진을 정지하십시오."
+
 	key[]: "stop_to_weigh"
 	val[]: "가까운 과적 검문소로 이동해 검사를 받으시기 바랍니다." #+ Adviser text: Weigh station visit required.
 
@@ -4214,6 +4442,15 @@ localization_db : .localization
 
 	key[]: "weigh_confirm"
 	val[]: "협조해주셔서 감사합니다. 안전한 여행 되십시오!" #+ Adviser text
+
+	key[]: "weigh_damaged"
+	val[]: "당신의 차량은 기술적으로 완벽한 상태가 아닙니다. 다음에는 조금 더 주의하시기 바랍니다!" #+ Adviser text
+
+	key[]: "weigh_damaged_lot"
+	val[]: "당신의 차량은 법에서 요구하는 기술적 상태가 아닙니다. 시정하시기 바랍니다!" #+ Adviser text
+
+	key[]: "weigh_illegal_trailer"
+	val[]: "당신의 트럭과 트레일러의 조합은 이 지역에서 불법입니다!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "이 지역은 상업적 트럭 운송이 금지되어 있습니다. 되돌아가십시오." #+ Adviser text
@@ -4263,7 +4500,7 @@ localization_db : .localization
 	val[]: "레벨이 올랐습니다!<br>당신은 이제 $LEVEL$ $TIER$입니다."
 
 	key[]: "engine_malfunction"
-	val[]: "엔진 고장!<br>가급적 빨리 서비스 센터에 들르십시오."
+	val[]: "엔진 고장!<br>가급적 빨리 서비스 센터를 방문하십시오."
 
 	key[]: "job_delivery"
 	val[]: "운송 작업을 처리하려면 다음 키를 누르십시오:"
@@ -4289,10 +4526,10 @@ localization_db : .localization
 	val[]: "차량 충돌"
 
 	key[]: "offence_sleeping"
-	val[]: "졸음 음전" #+ Driver does not respect the required pauses.
+	val[]: "졸음 운전" #+ Driver does not respect the required pauses.
 
 	key[]: "offence_wrong_way"
-	val[]: "차선 위반"
+	val[]: "역주행"
 
 	key[]: "offence_speeding"
 	val[]: "속도 위반"
@@ -4308,6 +4545,18 @@ localization_db : .localization
 
 	key[]: "offence_illegal_trailer"
 	val[]: "불법 트레일러 사용"
+
+	key[]: "offence_avoid_inspection"
+	val[]: "검사임에도 정지하지 않았습니다."
+
+	key[]: "offence_illegal_border"
+	val[]: "국경 통과 절차 무시"
+
+	key[]: "offence_shoulder_violation"
+	val[]: "갓길 주행"
+
+	key[]: "offence_damaged_vehicle_usage"
+	val[]: "파손 차량 운용"
 #@}
 
 #@}
@@ -4455,7 +4704,7 @@ localization_db : .localization
 	val[]: "장거리 스킬은 영업할 수 있는 최대 거리를 늘려줍니다. 처음에는 $KM0$ 이상 운행할 수 없습니다. 랭크에 따른 최대 영업 거리는 다음과 같습니다."
 
 	key[]: "skill_distance_rank1"
-	val[]: "최대 $KM1$ 까지 운행 가능<br>+ 영업 거리가 $KM0$ 이상인 화물의 배송을 완료하면 $MONEY1$%의 추가 수익 제공<br>+ 영업 거리가 $KM0$ 이상인 화물의 배송을 완료하면 $XP$% 의 추가 경험치 제공"
+	val[]: "최대 $KM1$ 까지 운행 가능<br>+ 영업 거리가 $KM0$ 이상인 화물의 배송을 완료하면 $MONEY1$%의 추가 수익 제공<br>+ 영업 거리가 $KM0$ 이상인 화물의 배송을 완료하면 $XP$%의 추가 경험치 제공"
 
 	key[]: "skill_distance_rank2"
 	val[]: "최대 $KM2$ 까지 운행 가능<br>+ 영업 거리가 $KM1$ 이상인 화물의 배송을 완료하면 $MONEY2$%의 추가 수익 제공"
@@ -4857,7 +5106,7 @@ localization_db : .localization
 
 
 	key[]: "skip_anim"
-	val[]: "결과보기" #+ Button which skips animation.
+	val[]: "결과 보기" #+ Button which skips animation.
 
 
 	key[]: "cur_xp"
@@ -5046,7 +5295,7 @@ localization_db : .localization
 	val[]: "고온 화학약품"
 
 	key[]: "cn_hwaste"
-	val[]: "병원 폐기물"
+	val[]: "의료 폐기물"
 
 	key[]: "cn_hydro_hammer"
 	val[]: "유압 해머"
@@ -5214,7 +5463,7 @@ localization_db : .localization
 	val[]: "물탱크"
 
 	key[]: "cn_tanker"
-	val[]: "기름 탱크"
+	val[]: "연료 탱크"
 
 	key[]: "cn_tomatoes"
 	val[]: "토마토"
@@ -5334,7 +5583,7 @@ localization_db : .localization
 	val[]: "냉동 대구"
 
 	key[]: "cn_fuel_tanks"
-	val[]: "기름 탱크"
+	val[]: "연료 탱크"
 
 	key[]: "cn_garlic"
 	val[]: "마늘"
@@ -5541,7 +5790,7 @@ localization_db : .localization
 	val[]: "자두"
 
 	key[]: "cn_pnut_butter"
-	val[]: "피넛 버터"
+	val[]: "땅콩버터"
 
 	key[]: "cn_precast_stairs"
 	val[]: "조립형 계단"
@@ -5553,7 +5802,7 @@ localization_db : .localization
 	val[]: "루핑 펠트"
 
 	key[]: "cn_rooflights"
-	val[]: "유리지붕"
+	val[]: "지붕 채광창"
 
 	key[]: "cn_sandwich_panels"
 	val[]: "샌드위치 패널"
@@ -5634,7 +5883,7 @@ localization_db : .localization
 	val[]: "탱크 트레일러"
 
 	key[]: "tn_fuel_cistern"
-	val[]: "기름 탱크 트레일러"
+	val[]: "연료 탱크 트레일러"
 
 	key[]: "tn_glass_trailer"
 	val[]: "유리 트레일러"
@@ -5806,7 +6055,7 @@ localization_db : .localization
 	val[]: "대출 상품" #+ Header of section containing available loans.  Please keep in upper case where possible.
 
 	key[]: "bank_offer_installment"
-	val[]: "매일 상환되는 돈 $MONEY$" #+ Shown on separate line inside loan description and contains amount you need to repay per day. The $MONEY$ is replaced with the real amount.
+	val[]: "매일 $MONEY$ 상환" #+ Shown on separate line inside loan description and contains amount you need to repay per day. The $MONEY$ is replaced with the real amount.
 
 	key[]: "bank_active_loans"
 	val[]: "활성화된 대출: $NUMBER$" #+ The $NUMBER$ is replaced with number of loans the player is currently repaying.
@@ -5880,31 +6129,31 @@ localization_db : .localization
 	val[]: "총 $MONEY$의 대출 분할금을 상환하였습니다."
 
 	key[]: "bank_msg_ptsold"
-	val[]: "귀하의 개인 트럭은 귀하의 부채를 충당하기 위해 $MONEY$에 매각되었습니다."
+	val[]: "당신의 개인 트럭은 당신의 부채를 충당하기 위해 $MONEY$에 매각되었습니다."
 
 	key[]: "bank_msg_ptrsold"
-	val[]: "귀하의 개인 트레일러는 귀하의 부채를 충당하기 위해 $MONEY$에 매각되었습니다."
+	val[]: "당신의 개인 트레일러는 당신의 부채를 충당하기 위해 $MONEY$에 매각되었습니다."
 
 	key[]: "bank_msg_assets_sold"
-	val[]: "귀하의 자산은 귀하의 부채를 충당하기 위해 $MONEY$에 매각되었습니다."
+	val[]: "당신의 자산은 당신의 부채를 충당하기 위해 $MONEY$에 매각되었습니다."
 
 	key[]: "bank_pvehicles_sold"
-	val[]: "유감스럽게도, 귀하의 개인 트럭과 트레일러는 귀하의 오랜 채무 불이행으로 인해 매각되었습니다. 자세한 내용은 이메일을 확인하시기 바랍니다."
+	val[]: "유감스럽게도, 당신의 개인 트럭과 트레일러는 당신의 오랜 채무 불이행으로 인해 매각되었습니다. 자세한 내용은 이메일을 확인하시기 바랍니다."
 
 	key[]: "bank_ptruck_sold"
-	val[]: "유감스럽게도, 귀하의 개인 트럭은 귀하의 오랜 채무 불이행으로 인해 매각되었습니다. 자세한 내용은 이메일을 확인하시기 바랍니다."
+	val[]: "유감스럽게도, 당신의 개인 트럭은 당신의 오랜 채무 불이행으로 인해 매각되었습니다. 자세한 내용은 이메일을 확인하시기 바랍니다."
 
 	key[]: "bank_ptrailer_sold"
-	val[]: "유감스럽게도, 귀하의 개인 트레일러는 귀하의 오랜 채무 불이행으로 인해 매각되었습니다. 자세한 내용은 이메일을 확인하시기 바랍니다."
+	val[]: "유감스럽게도, 당신의 개인 트레일러는 당신의 오랜 채무 불이행으로 인해 매각되었습니다. 자세한 내용은 이메일을 확인하시기 바랍니다."
 
 	key[]: "bank_ptruck_confiscate"
-	val[]: "귀하의 트럭은 압류되었습니다..."
+	val[]: "당신의 트럭은 압류되었습니다..."
 
 	key[]: "bank_ptrailer_confiscate"
-	val[]: "귀하의 트레일러는 압류되었습니다..."
+	val[]: "당신의 트레일러는 압류되었습니다..."
 
 	key[]: "bank_ptruck_and_trailer_confiscate"
-	val[]: "귀하의 트럭과 트레일러는 압류되었습니다..."
+	val[]: "당신의 트럭과 트레일러는 압류되었습니다..."
 
 	key[]: "bank_sell_report_truck"
 	val[]: "$CITY$ 차고에 있는 트럭 $NAME$의 예상 가격: $MONEY$"
@@ -6166,7 +6415,7 @@ localization_db : .localization
 	val[]: "차고 업그레이드" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "garageman_upgrade_conf"
-	val[]: "차고를 업그레이드하기 위해 $MONEY$을(를) 결제하시겠습니까?<br><br>차고를 업그레이드하면 두 개의 추가 슬롯이 제공됩니다."
+	val[]: "차고를 업그레이드하기 위해 $MONEY$을(를) 결제하시겠습니까?<br><br>차고를 업그레이드하면 두 개의 슬롯이 추가로 제공됩니다."
 
 	key[]: "garageman_no_upgrade"
 	val[]: "차고를 업그레이드하기에 충분한 돈을 가지고 있지 않습니다. 최소 $MONEY$의 자금이 필요합니다."
@@ -6198,7 +6447,7 @@ localization_db : .localization
 	val[]: "사용 가능한 차고 슬롯을 선택하십시오"
 
 	key[]: "garageman_hint_3"
-	val[]: "해당 카드를 보려면 트럭 또는 드라이버 아이콘을 클릭합니다"
+	val[]: "트럭 또는 드라이버 아이콘을 클릭하면 해당 카드를 볼 수 있습니다"
 #@}
 
 #@}
@@ -6217,7 +6466,7 @@ localization_db : .localization
 
 	key[]: "truckman_summary_hint"
 	val[]: "자세한 내용을 보려면 오른쪽에서 트럭을 선택하십시오"
-	
+
 #+ Truck map filters
 #@{
 
@@ -6232,7 +6481,7 @@ localization_db : .localization
 
 	key[]: "truckman_filter_sleeping"
 	val[]: "정차 중인 트럭"
-	
+
 	key[]: "truckman_filter_returning"
 	val[]: "회차 중인 트럭"
 #@}
@@ -6452,7 +6701,7 @@ localization_db : .localization
 
 	key[]: "driverman_filter_sleeping"
 	val[]: "취침 중인 드라이버"
-	
+
 	key[]: "driverman_filter_returning"
 	val[]: "복귀 중인 드라이버"
 #@}
@@ -6715,10 +6964,10 @@ localization_db : .localization
 	val[]: "엔진 토크:" #+ Torque of the engine. For example "Engine torque:&nbsp;&nbsp;&nbsp;&nbsp; 1,800Nm/950-1,400rpm"
 
 	key[]: "td_info_trans"
-	val[]: "기어박스:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
+	val[]: "기어 박스:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
 
 	key[]: "td_info_tank"
-	val[]: "연료탱크:" #+ Capacity of the fuel tank. For example "Fueltank:&nbsp;&nbsp;&nbsp;&nbsp; 600+400l"
+	val[]: "연료 탱크:" #+ Capacity of the fuel tank. For example "Fueltank:&nbsp;&nbsp;&nbsp;&nbsp; 600+400l"
 
 	key[]: "td_info_edition"
 	val[]: "에디션:" #+ Name of a special edition if any, for example "Edition: Route 66"
@@ -6741,22 +6990,22 @@ localization_db : .localization
 #@{
 
 	key[]: "td_msg_first_bought"
-	val[]: "당신의 첫 번째 트럭을 우리에게서 구매해주신 것에 대해 감사드립니다! 다음에 또 들러주십시오!"
+	val[]: "고객님의 첫 번째 트럭을 저희에게서 구매해주신 것에 대해 감사드립니다! 다음에 또 들러주십시오!"
 
 	key[]: "td_msg_first_and_busy"
-	val[]: "당신의 첫 번째 트럭을 우리에게서 구매해주신 것에 대해 감사드립니다!<br><br>당신의 일이 끝나는 대로 트럭을 사용할 수 있도록 당신의 본사로 배송해드리겠습니다."
+	val[]: "고객님의 첫 번째 트럭을 저희에게서 구매해주신 것에 대해 감사드립니다!<br><br>고객님의 일이 끝나는 대로 트럭을 사용할 수 있도록 고객님의 본사로 배송해드리겠습니다."
 
 	key[]: "td_msg_bought_assigned"
-	val[]: "구매해주셔서 감사합니다. 새로운 트럭을 즐기십시오!<br><br>우리는 당신의 예전 트럭을 $CITY$에 있는 차고로 옮길 것입니다."
+	val[]: "구매해주셔서 감사합니다. 새로운 트럭을 즐기십시오!<br><br>저희는 고객님의 예전 트럭을 $CITY$에 있는 차고로 옮길 것입니다."
 
 	key[]: "td_msg_bought_sent"
-	val[]: "구매해주셔서 감사합니다. 새로 구매한 트럭을 $CITY$에 있는 당신의 차고로 즉시 배송해드리겠습니다."
+	val[]: "구매해주셔서 감사합니다. 새로 구매하신 트럭을 $CITY$에 있는 고객님의 차고로 즉시 배송해드리겠습니다."
 
 	key[]: "td_msg_bought_assigned2"
 	val[]: "구매해주셔서 감사합니다. 새로운 트럭을 즐기십시오!"
 
 	key[]: "td_msg_nospace"
-	val[]: "죄송합니다. 당신의 차고에 여유 공간이 없습니다!"
+	val[]: "죄송합니다. 고객님의 차고에 여유 공간이 없습니다!"
 
 	key[]: "td_msg_wannadrive"
 	val[]: "새로운 트럭을 운전하시겠습니까?"
@@ -6765,16 +7014,16 @@ localization_db : .localization
 	val[]: "정말로 현재 타고 있는 트럭을<br>$MONEY$에 매각하시겠습니까?"
 
 	key[]: "td_msg_notradein"
-	val[]: "죄송하게도 구매를 처리하는 데 시간이 걸릴 것으로 예상하며 우리는 당신을 기다리게 하고 싶지 않습니다. 부디, 당신이 트럭을 교환하고 싶으실 때 다시 방문해주시기 바랍니다."
+	val[]: "죄송하게도 구매를 처리하는 데 시간이 걸릴 것으로 예상하며 저희는 고객님을 기다리게 하고 싶지 않습니다. 부디, 고객님께서 트럭을 교환하고 싶으실 때 다시 방문해주시기 바랍니다."
 
 	key[]: "td_msg_tradein_success"
-	val[]: "축하합니다! 당신의 기존 트럭과 새로운 $TRUCK$을(를) 성공적으로 교환했습니다. 당신과 거래한 것을 기쁘게 생각합니다!"
+	val[]: "축하합니다! 고객님의 기존 트럭과 새로운 $TRUCK$을(를) 성공적으로 교환했습니다. 고객님과 거래한 것을 기쁘게 생각합니다!"
 
 	key[]: "truckdealer_exit_confirm"
 	val[]: "정말로 트럭 판매점을 떠나시겠습니까?"
 
 	key[]: "truckdealer_cust_lost"
-	val[]: "이 행동으로 인해 당신이 구성한 트럭이 초기화될 것입니다. 계속하시겠습니까?"
+	val[]: "이 작업을 수행하면 당신이 구성한 트럭이 초기화될 것입니다. 계속하시겠습니까?"
 
 	key[]: "td_truck_insurance_paid"
 	val[]: "<br><br>이곳에서 구매한 모든 트럭은 이미 정기 보험금을 내고 있다는 점에 유의하십시오."
@@ -6865,7 +7114,7 @@ localization_db : .localization
 	val[]: "그리고 대상 슬롯을 선택하십시오:"
 
 	key[]: "td_garsel_new_truck"
-	val[]: "당신의 새 트럭을 어디로 배송해드릴까요?"
+	val[]: "고객님의 새 트럭을 어디로 배송해드릴까요?"
 
 	key[]: "td_garsel_old_truck"
 	val[]: "현재 트럭을 어디로 보내시겠습니까?"
@@ -6901,7 +7150,7 @@ localization_db : .localization
 	val[]: "드라이버가 필요하십니까? 이곳은 그들을 찾기에 적합한 장소입니다." #+ Help message associated the recruitment agency icon.
 
 	key[]: "recruit_info"
-	val[]: "고용기관에 오신 것을 환영합니다!<br>우리는 구직 중인 전문 드라이버를 소개하고 있으며 구직자 명단은 매일 업데이트됩니다.<br>저희 서비스를 이용해 드라이버를 채용하는 경우 드라이버당 $MONEY$의 수수료를 청구합니다."
+	val[]: "고용기관에 오신 것을 환영합니다!<br>저희는 구직 중인 전문 드라이버를 소개하고 있으며 구직자 명단은 매일 업데이트됩니다.<br>저희 서비스를 이용해 드라이버를 채용하는 경우 드라이버당 $MONEY$의 수수료를 청구합니다."
 
 	key[]: "hire"
 	val[]: "드라이버 고용" #+ Button which will hire selected driver.
@@ -6999,6 +7248,9 @@ localization_db : .localization
 
 	key[]: "mapl_train"
 	val[]: "채널 터널"
+
+	key[]: "mapl_viewpoint"
+	val[]: "뷰포인트"
 
 	key[]: "mapl_gas"
 	val[]: "주유소"
@@ -7232,21 +7484,21 @@ localization_db : .localization
 	val[]: "트럭에 설치된 라이트를 설정합니다." #+ Help message associated with light adjuster icon.
 
 	key[]: "mirrors"
-	val[]: "거울 조정" #+ Opens the mirror adjuster.
+	val[]: "미러 조정" #+ Opens the mirror adjuster.
 
 	key[]: "truck_mirror_help"
-	val[]: "주변 상황을 더욱 잘 확인할 수 있도록 거울 각도를 조정합니다." #+ Help message associated with mirror adjuster icon.
+	val[]: "주변 상황을 더욱 잘 확인할 수 있도록 미러 각도를 조정합니다." #+ Help message associated with mirror adjuster icon.
 
 	key[]: "seat"
 	val[]: "시트 조정"  #+ Opens the seat adjuster.
 
 	key[]: "truck_seat_help"
-	val[]: "편안함을 극대화하기 위해 운전석 시트와 스티어링 휠의 위치를 조정합니다."  #+ Help message associated with seat adjuster icon.
+	val[]: "편안함을 극대화하기 위해 운전석 시트와 스티어링 휠의 위치를 조정합니다." #+ Help message associated with seat adjuster icon.
 
 	# trailer adjuster name string is in assistance section (it could be open from both screens)
 
 	key[]: "trailer_adjust_help"
-	val[]: "선택한 화물이 당신의 의도에 좀 더 부합하도록 길이나 다른 기능을 조정하십시오. 이는 화물 시장에 영향을 줍니다." #+ Help message associated with trailer adjuster icon.
+	val[]: "당신의 의도에 좀 더 부합하는 화물을 선택할 수 있도록 트레일러의 길이나 다른 기능을 조정합니다. 이는 화물 시장에 영향을 줍니다." #+ Help message associated with trailer adjuster icon.
 #@}
 
 #+ Mirrors Adjuster
@@ -7309,7 +7561,7 @@ localization_db : .localization
 	val[]: "지붕 보조" #+ Checkbox enabling lights on additional roof accessories.
 
 	key[]: "dash_backlight"
-	val[]: "운전석 백라이트" #+ Label of slider controlling intensity of dashboard backlight.
+	val[]: "대시보드 백라이트" #+ Label of slider controlling intensity of dashboard backlight.
 #@}
 
 
@@ -7355,7 +7607,7 @@ localization_db : .localization
 	val[]: "등급:" #+ Driver rating. For example "Rating: 10.0"
 
 	key[]: "fuel_km"
-	val[]: "주행가능거리:" #+ For example "Fuel remaining for: 3,270 mi"
+	val[]: "주행 가능 거리:" #+ For example "Fuel remaining for: 3,270 mi"
 
 	key[]: "damage_colon"
 	val[]: "대미지:" #+ For example "Damage: 0%"
@@ -7389,7 +7641,7 @@ localization_db : .localization
 
 
 	key[]: "12_speed"
-	val[]: "12단 기어박스" #+ Name of transmission accessory.
+	val[]: "12단 기어 박스" #+ Name of transmission accessory.
 
 	key[]: "available_at"
 	val[]: "사용가능" #+ Appended with translation of "level" and index of level the player needs to have before he can buy specified stuff. For example "Available from Level 16"
@@ -7725,7 +7977,7 @@ localization_db : .localization
 #@{
 
 	key[]: "intro_continue"
-	val[]: "계속합니다 ($KEY$)" #+ Message box button.
+	val[]: "계속 ($KEY$)" #+ Message box button.
 
 
 	key[]: "intro_1"
@@ -7735,7 +7987,7 @@ localization_db : .localization
 	val[]: "트럭 운전 - 당신이 꿈꾸는 직업을 체험할 수 있는 기회입니다!"
 
 	key[]: "intro_3"
-	val[]: "현재 당신의 운송회사가 영업 중이지만, 슬프게도 트럭을 구매할 자금이 부족합니다. 당신은 당분간 다른 회사에서 지입 드라이버로 일해야 합니다."
+	val[]: "현재 당신은 운송회사를 경영하고 있지만, 안타깝게도 트럭을 구매할 자금이 부족합니다. 당신은 당분간 다른 회사에서 직원으로 일해야 합니다."
 
 	key[]: "intro_4"
 	val[]: "당신의 임무는 $JOB_CARGO$ 화물을 $JOB_TARGET_CITY$에 있는 $JOB_TARGET_COMPANY$까지 안전하게 운반하는 것입니다. 당신의 고용주가 차량을 포함한 모든 비용을 부담할 것입니다. 절대로 모두를 실망하게 하는 짓을 하지 마십시오."
@@ -7779,7 +8031,7 @@ localization_db : .localization
 	val[]: "좋습니다! 당신은 기본적인 것을 배웠습니다. 더욱 즐거운 여행을 위해 음악을 켜봅시다. $KEY$을(를) 눌러 라디오 플레이어를 실행해보십시오.<br>(바탕화면 하단의 아이콘을 통해 실행할 수도 있습니다)"
 
 	key[]: "tut_msg_7"
-	val[]: "이동할 준비가 되었습니다. 내비게이션을 따라 목적지로 향하십시오."
+	val[]: "모든 준비가 끝났습니다. 경로 안내에 따라 목적지로 이동하십시오."
 
 	key[]: "tut_msg_8"
 	val[]: "화물 터미널 입구에 들어선 후 특정 지점으로 이동하면 화물 하차 위치를 배정받을 수 있습니다. 정차 위치를 알리는 애니메이션 비콘 마킹을 참고삼아 주의하여 트럭을 세우십시오.<br><br>이제 경로 관리자의 내비게이션 패널 배율을 조정하는 것이 좋습니다 ($KEY$)."
@@ -7794,7 +8046,7 @@ localization_db : .localization
 	val[]: "게임을 일시 정지하면 마우스로 경로 관리자를 제어할 수 있습니다.<br><br>당신은 위성항법장치, 즉 경로 관리자를 가지고 있습니다. 경로 관리자는 현재 상태를 표시하고 현재 작업과 관련된 정보를 제공하며 어디로 가야 하는지도 알려줍니다."
 
 	key[]: "tutorial_adviser1"
-	val[]: "운전 중에 사용할 수 있는 그리고 가장 빈번하게 사용되는 기능에 대한 단축키가 있습니다. 해당 단축키는 경로 관리자가 직접 제안합니다."
+	val[]: "운전 중에 사용할 수 있는, 그리고 가장 빈번하게 사용되는 기능에 대한 단축키가 있습니다. 해당 단축키는 경로 관리자가 직접 제안합니다."
 
 	key[]: "tutorial_adviser1a"
 	val[]: "현재 상태: 현재 속도, 기어, 대미지, 연료량, 피로도, 이메일 알림, 시간 그리고 당신의 소지금."
@@ -7812,13 +8064,13 @@ localization_db : .localization
 	val[]: "계속하려면 운송 정보 페이지 ($KEY$)로 전환하십시오..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "운송 정보 페이지는 당신이 무엇을 어디로 운송 중인지에 대한 간략한 정보를 담고 있습니다. 또한 이 페이지를 통해 납품기한과 화물을 파손하지 않고 정시에 도착했을 때 받을 수 있는 보수를 확인할 수도 있습니다.<br><br>만약, 부득이하게 운송을 취소해야 하는 상황이 발생하면 빨간 버튼을 누르십시오. 단, 운송을 취소할 경우 높은 수준의 취소 수수료를 부담해야 합니다."
+	val[]: "운송 정보 페이지는 당신이 무엇을 어디로 운송 중인지에 대한 간략한 정보를 담고 있습니다. 또한 이 페이지를 통해 납품기한과 더불어 화물을 파손하지 않고 정시에 도착했을 때 받을 수 있는 보수를 확인할 수도 있습니다."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "계속하려면 진단 페이지 ($KEY$)로 전환하십시오..."
 
 	key[]: "tutorial_adviser4"
-	val[]: "진단 페이지를 통해 트럭, 트레일러 그리고 화물이 얼마나 심하게 파손되었는지를 확인할 수 있습니다. 차량은 도시의 정비소에서 수리할 수 있으나 화물은 수리할 수 없는 점을 주의하시기 바랍니다.<br><br>도로 위에 멈춰선 경우 노란 버튼을 눌러 긴급출동 서비스를 요청할 수 있습니다. 비용을 부담하면 인근 도시로 견인해주며 다시 일할 수 있도록 도와줍니다."
+	val[]: "진단 페이지를 통해 트럭, 트레일러 그리고 화물이 얼마나 심하게 파손되었는지를 확인할 수 있습니다. 차량은 도시의 정비소에서 수리할 수 있으나 화물은 수리할 수 없다는 점에 주의하십시오.<br><br>도로 위에 멈춰선 경우 노란 버튼을 눌러 긴급출동 서비스를 요청할 수 있습니다. 비용을 부담하면 인근 도시로 견인해주며 다시 일할 수 있도록 도와줍니다."
 
 	key[]: "tutorial_adviser5"
 	val[]: "이상이 경로 관리자에 대해 알아야 할 모든 것입니다.<br><br>Help 버튼을 누르면 언제든지 본 튜토리얼을 다시 실행할 수 있습니다.<br><br>일시 정지를 해제하고 게임을 진행하려면 $KEY$을(를) 누르십시오."
@@ -7849,7 +8101,7 @@ localization_db : .localization
 
 
 	key[]: "weblink_game"
-	val[]: "Euro Truck Simulator 2 웹사이트"
+	val[]: "Euro Truck Simulator 2 홈페이지"
 
 	key[]: "weblink_scs"
 	val[]: "SCS Software 홈페이지"
@@ -7873,7 +8125,7 @@ localization_db : .localization
 	val[]: "SCS Software 트위터"
 
 	key[]: "weblink_confirm"
-	val[]: "인터넷 브라우저를 열고 선택한 웹 페이지로 이동하시겠습니까?"
+	val[]: "인터넷 브라우저를 열고 선택한 인터넷 페이지로 이동하시겠습니까?"
 
 #+ Networking errors
 #@{
@@ -7886,7 +8138,7 @@ localization_db : .localization
 #+ Unable to establish connection with the service.
 
 	key[]: "generic_unable_to_connect"
-	val[]: "온라인 서비스에 연결하기를 설정할 수 없습니다. 인터넷에 연결되어 있는지 확인하십시오."
+	val[]: "온라인 서비스에 연결할 수 없습니다. 인터넷 연결 상태를 확인하시기 바랍니다."
 
 #+ Error during socket read/write.
 
@@ -7906,32 +8158,32 @@ localization_db : .localization
 #+ The service talks using version of the protocol or does not support this version of the game.
 
 	key[]: "generic_version_mismatch"
-	val[]: "이 서비스는 게임의 현재 버전과 호환되지 않습니다. 게임에 대한 새로운 패치를 사용할 수 있는지 확인하시기 바랍니다."
+	val[]: "이 서비스는 현재 게임 버전과 호환되지 않습니다. 게임에 적용할 수 있는 새로운 패치가 있는지 확인하시기 바랍니다."
 
 #+ The services are currently unavailable for some unspecified reason.
 
 	key[]: "generic_service_unavailable"
-	val[]: "서비스를 현재 사용할 수 없습니다. 나중에 다시 시도하십시오."
+	val[]: "서비스를 사용할 수 없습니다. 나중에 다시 시도하십시오."
 
 #+ The services are currently unavailable for maintenance or overload.
 
 	key[]: "generic_service_temporarily_unavailable"
-	val[]: "이 서비스는 유지 보수 또는 과부하 되어 다운되었습니다. 나중에 다시 시도하십시오."
+	val[]: "유지 보수 또는 과부하로 인해 서비스가 중단되었습니다. 나중에 다시 시도하십시오."
 
 #+ The authentication provided by the client was incorrect.
 
 	key[]: "generic_access_denied"
-	val[]: "인증 정보가 유효하지 않습니다. 재시도 바랍니다."
+	val[]: "인증 정보가 유효하지 않습니다. 다시 로그인하십시오."
 
 #+ The account was locked down because of too many failed login attempts.
 
 	key[]: "generic_failure_lockdown"
-	val[]: "온라인 계정이 너무 많은 로그인 실패로 인해 잠겼습니다. 30분 후 다시 시도하십시오."
+	val[]: "너무 잦은 로그인 실패로 인해 온라인 계정이 잠겼습니다. 30분 후에 다시 시도하십시오."
 
 #+ The account was locked down because of too many suspicious accesses.
 
 	key[]: "generic_suspicious_lockdown"
-	val[]: "온라인 계정이 현재 의심스러운 접속으로 인해 잠겼습니다. 24시간 후에 다시 시도하십시오."
+	val[]: "의심스러운 접근으로 인해 온라인 계정이 잠겼습니다. 24시간 후에 다시 시도하십시오."
 
 # The account does not have this game registered to itself.
 
@@ -7941,32 +8193,32 @@ localization_db : .localization
 # The account was not verified yet.
 
 	key[]: "generic_not_verified"
-	val[]: "계정이 아직 활성화되지 않았습니다. 계정 활성화 인증메일을 받았는지 확인하시기 바랍니다."
+	val[]: "계정이 아직 활성화되지 않았습니다. 계정 활성화를 위한 인증 메일을 받았는지 확인하시기 바랍니다."
 
 # The account was suspended.
 
 	key[]: "generic_suspended"
-	val[]: "계정이 일시 정지되었습니다. 기술 지원팀에 문의 바랍니다."
+	val[]: "계정이 정지되었습니다. 기술 지원팀에 문의하시기 바랍니다."
 
 # The account was banned.
 	key[]: "generic_banned"
-	val[]: "계정이 차단되었습니다. 기술 지원팀에 문의 바랍니다."
+	val[]: "계정이 차단되었습니다. 기술 지원팀에 문의하시기 바랍니다."
 
 #+ The proxy used does require authentication which we do not support.
 
 	key[]: "generic_proxy_authentication_not_supported"
-	val[]: "프록시 인증이 게임에서 지원되지 않습니다. 다른 프록시 또는 직접 연결을 사용하시기 바랍니다."
+	val[]: "이 게임은 프록시 인증을 지원하지 않습니다. 다른 프록시를 사용하거나 직접 연결하십시오."
 
 #+ The required object (e.g. replay) is not available.
 
 	key[]: "generic_object_unavailable"
-	val[]: "필수 개체가 현재 사용할 수 없습니다. 몇 분 후에 다시 시도해 보시기 바랍니다."
+	val[]: "필수 개체를 사용할 수 없습니다. 몇 분 후에 다시 시도하십시오."
 
 #+ Problem not covered by anything above. Currently it means that we generated incorrect URI or that the http client returned error code which
 #+ is not handled by http_online_link_t::complete.
 
 	key[]: "generic_internal_error"
-	val[]: "내부 오류가 발생했습니다. net.log에 자세한 정보가 있을것입니다."
+	val[]: "내부 오류가 발생했습니다. net.log 파일에 자세한 정보가 기록되어 있을 것입니다."
 
 #@}
 
@@ -7974,16 +8226,16 @@ localization_db : .localization
 #@{
 
 	key[]: "sys_no_graphics"
-	val[]: "Euro Truck Simulator 2 가 귀하의 컴퓨터에서 실행할수없습니다.(유효한 그래픽 장치를 찾을 수 없습니다).\n해결방법입니다:\n\n1. 자신 컴퓨터의 그래픽카드가 게임의 최소사양이랑 맞는지 체크해보세요.\n2. 마이크로소프트사의 다이렉트X를 최신버전으로 업데이트해보세요.\n3. 자신의 그래픽카드를 최신버전으로 업데이트해보세요. 만약 존재하지않는다면 그래픽카드가 오래된것입니다.\n4. 랜더링 기법을 OpenGL 에서 다이렉트X나 Vice versa 로 바꿔보세요.\n5. '내문서'에 있는 'Euro Truck Simulator 2' 폴더에서 Config.cfg 를 삭제해보세요. 파일이 꼬였을지도 모릅니다.\n 이 파일은 다음번에 게임을 실행할때 새로 만들어집니다."
+	val[]: "당신의 컴퓨터에서 Euro Truck Simulator 2의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)\n문제 해결을 위한 제안입니다:\n\n1. 당신의 컴퓨터에 장착된 그래픽카드가 시스템 최소 요구사양을 충족하는지 확인하십시오.\n2. Microsoft DirectX를 최신 버전으로 업데이트하십시오.\n3. 사용 중인 그래픽카드의 드라이버를 최신 버전으로 업데이트하십시오. 그래픽카드 드라이버가 오래되었을 가능성도 있습니다.\n4. 렌더링 방식을 OpenGL에서 DirectX로 바꾸거나 반대로 바꿔보시기 바랍니다.\n5. '내 문서'의 'Euro Truck Simulator 2' 폴더에 있는 게임 구성 파일인 Config.cfg 파일이 손상되었을 가능성이 있으니 삭제하십시오.\n    이 파일은 게임을 다시 시작하면 유효한 기본값이 적용되어 자동으로 생성됩니다."
 
 	key[]: "sys_no_graphics_simple"
-	val[]: "Euro Truck Simulator 2 가 귀하의 컴퓨터에서 실행할 수 없습니다 (유효한 그래픽 장치를 찾을 수 없습니다)."
+	val[]: "당신의 컴퓨터에서 Euro Truck Simulator 2의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)"
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "Euro Truck Simulator 2 가 스팀에 연결할 수 없습니다. 다음과 같이 시도해 보십시오 :\n\n1. 스팀이 실행되고 있는지 확인합니다.\n2. 스팀 버전을 업데이트 했는지 확인합니다.\n3. 자동 업데이트가 활성화되어 있는지 게임이 최신 버전으로 업데이트되어 있는지 확인합니다."
+	val[]: "Euro Truck Simulator 2가 스팀 클라이언트에 접근할 수 없습니다. 문제 해결을 위한 제안입니다:\n\n1. 스팀 클라이언트가 실행 중인지 확인하십시오.\n2. 스팀 클라이언트의 버전을 업데이트했는지 확인하십시오.\n3. 자동 업데이트가 활성화되어 있고 게임이 최신 버전으로 업데이트되어 있는지 확인합니다."
 
 #+ Input wizard
 #@{
@@ -8121,13 +8373,13 @@ localization_db : .localization
 
 
 	key[]: "select_gearbox_type"
-	val[]: "기어박스 종류 선택"
+	val[]: "기어 박스 종류 선택"
 
 #+ Descriptions of individual choices.
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "키보드 컨트롤을 위해 특별히 설계된 가장 간편한 운전 방법입니다. (물론 유일한 방법은 아님) 전진 키를 누르면 앞으로, 후진 키를 누르면 정지 또는 후진합니다. 기어박스는 전진, 정지 또는 후진을 가능하게 하거나 적절한 기어 단을 넣을 수 있도록 모든 것을 처리해줄 것입니다."
+	val[]: "키보드 컨트롤을 위해 특별히 설계된 가장 간편한 운전 방법입니다. (물론 유일한 방법은 아님) 전진 키를 누르면 앞으로, 후진 키를 누르면 정지 또는 후진합니다. 기어 박스는 전진, 정지 또는 후진을 가능하게 하거나 적절한 기어 단을 넣을 수 있도록 모든 것을 처리해줄 것입니다."
 
 	key[]: "wiz_gb_automatic"
 	val[]: "페달이 제공되는 레이싱 휠 장비에 적합합니다. 버튼을 이용해 전진, 중립 또는 후진으로 전환할 수 있습니다. 그리고 가속 페달을 누르면 현재 설정한 기어에 맞는 방향으로 차량이 움직입니다."
@@ -8136,7 +8388,7 @@ localization_db : .localization
 	val[]: "기어를 올리거나 내리는 것, 후진하거나 중립에 놓는 것을 수동으로 합니다. 처음에는 기어를 조작하는 것이 조금 어렵겠지만, 익숙해지면 주행 실력이 좋아지고 어떠한 상황에서도 차량을 완벽하게 제어할 수 있습니다."
 
 	key[]: "wiz_gb_hshifter"
-	val[]: "원하는 기어를 직접 선택하십시오. 난이도는 시퀸설 기어박스와 비슷하지만, 훨씬 현실적입니다. 클러치를 필요로 하기 때문에 G29 또는 TH8A와 같은 실제 H-시프터 장비를 권장합니다."
+	val[]: "원하는 기어를 직접 선택하십시오. 난이도는 시퀸설 기어 박스와 비슷하지만, 훨씬 현실적입니다. 클러치를 필요로 하기 때문에 G29 또는 TH8A와 같은 실제 H-시프터 장비를 권장합니다."
 #@}
 
 #+ Shown when feature requires a gamming controller.
@@ -8265,7 +8517,7 @@ localization_db : .localization
 
 
 	key[]: "normal"
-	val[]: "보통" #+ Normal orientation of axis. Increasing value of axis in <-1;1> range increases controlled value.
+	val[]: "일반" #+ Normal orientation of axis. Increasing value of axis in <-1;1> range increases controlled value.
 
 	key[]: "inverted"
 	val[]: "반전" #+ Inverted orientation of axis. Decreasing value of axis in <-1;1> range increases controlled value.
@@ -8280,10 +8532,10 @@ localization_db : .localization
 #+ Automatic gearbox setup page
 #@{
 	key[]: "automatic_gb_setup"
-	val[]: "자동 기어박스 설정"
+	val[]: "자동 기어 박스 설정"
 
 	key[]: "automatic_gb_setup_desc"
-	val[]: "자동 기어박스를 사용하면 전진, 중립 그리고 후진 모드로만 조작할 수 있습니다. 다음 키와 컨트롤러 버튼을 사용해 이 작업을 수행할 수 있습니다. 설정을 변경하려면 버튼을 클릭한 후 새로 사용할 키 또는 컨트롤러 버튼을 누릅니다."
+	val[]: "자동 기어 박스를 사용하면 전진, 중립 그리고 후진 모드로만 조작할 수 있습니다. 다음 키와 컨트롤러 버튼을 사용해 이 작업을 수행할 수 있습니다. 설정을 변경하려면 버튼을 클릭한 후 새로 사용할 키 또는 컨트롤러 버튼을 누릅니다."
 
 	key[]: "automatic_gb_setup_desc2"
 	val[]: "H-시프터 하드웨어를 연결한 경우 이를 실제 자동 기어를 시물레이션하는데 사용할 수 있습니다. 이 옵션을 사용하면 전진과 후진 위치를 H-시프터에 지정할 수 있습니다. 지정되지 않은 다른 위치는 전부 중립으로 처리됩니다. 이 설정은 H-시프터를 위해 제작된 만큼 단축키나 컨트롤러 버튼으로는 작동할 수 없습니다. 설정을 변경하려면 버튼을 클릭한 후 원하는 위치로 H-시프터를 이동한 다음 다시 중립 위치로 이동하십시오."
@@ -8292,19 +8544,19 @@ localization_db : .localization
 #+ Sequential gearbox setup page
 #@{
 	key[]: "sequential_gb_setup"
-	val[]: "시퀸설 기어박스 설정"
+	val[]: "시퀸설 기어 박스 설정"
 
 	key[]: "sequential_gb_setup_desc"
-	val[]: "시퀸설 기어박스를 이용해 전진 또는 후진 기어의 모든 단, 그리고 중립 위치로 변속할 수 있습니다. 언급한 대로 단 수를 올리고 내리는데 사용하는 키 또는 버튼이 있습니다. 설정을 변경하려면 버튼을 클릭한 후 새로 사용할 키 또는 컨트롤러 버튼을 누릅니다."
+	val[]: "시퀸설 기어 박스를 이용해 전진 또는 후진 기어의 모든 단, 그리고 중립 위치로 변속할 수 있습니다. 언급한 대로 단 수를 올리고 내리는데 사용하는 키 또는 버튼이 있습니다. 설정을 변경하려면 버튼을 클릭한 후 새로 사용할 키 또는 컨트롤러 버튼을 누릅니다."
 #@}
 
 #+ H-Shifter gearbox setup page
 #@{
 	key[]: "hshifter_gb_setup"
-	val[]: "H-시프터 기어박스 설정"
+	val[]: "H-시프터 기어 박스 설정"
 
 	key[]: "hshifter_gb_setup_desc"
-	val[]: "이곳에서 H-시프터의 기본 레이아웃을 선택하고 해당 기능을 사용할 수 있습니다. 그림을 통해 시프터의 기어봉이 어느 기어 단에 들어가 있는지 확인할 수 있습니다. 기어박스는 시프터의 전체 기어 단 수보다 더 많은 기어 수를 가지고 있으므로 토글 버튼을 이용해 기어 세트를 전환해야 합니다."
+	val[]: "이곳에서 H-시프터의 기본 레이아웃을 선택하고 해당 기능을 사용할 수 있습니다. 그림을 통해 시프터의 기어봉이 어느 기어 단에 들어가 있는지 확인할 수 있습니다. 기어 박스는 시프터의 전체 기어 단 수보다 더 많은 기어 수를 가지고 있으므로 토글 버튼을 이용해 기어 세트를 전환해야 합니다."
 
 	key[]: "hshifter_gb_setup_desc2"
 	val[]: "현재 선택된 시프터 위치와 토글 버튼은 관련 컨트롤 옆 하단에 표시됩니다. 설정을 변경하려면 해당 버튼을 클릭한 후 원하는 위치로 시프터를 이동한 다음 다시 중립 위치로 이동하십시오."
@@ -8389,7 +8641,7 @@ localization_db : .localization
 	val[]: "고급형 더블" #+ Luxury/Exclusive version (double variant) of the interior or accesory
 
 	key[]: "exclusive_paint"
-	val[]: "고급형 도색" #+ Luxury/Exclusive painted version of the interior or accesory
+	val[]: "고급형 페인트" #+ Luxury/Exclusive painted version of the interior or accesory
 
 	key[]: "light_chrome"
 	val[]: "라이트 크롬" #+ Small accesory lights for bottom truck grills
@@ -8420,31 +8672,31 @@ localization_db : .localization
 
 	key[]: "chrome_ribbon"
 	val[]: "크롬 리본" #+ Accessory name, DLC Pink Ribbon.
-	
+
 	key[]: "christmas_sock"
 	val[]: "크리스마스 양말" #+ Hanging interior accessory
-	
+
 	key[]: "autumn_star"
 	val[]: "가을의 별" #+ Hanging interior accessory
-	
+
 	key[]: "twinkle_star"
 	val[]: "반짝이는 별" #+ Hanging interior accessory
-	
+
 	key[]: "frosty_star"
 	val[]: "차가운 별" #+ Hanging interior accessory
-	
+
 	key[]: "winter_star"
 	val[]: "겨울의 별" #+ Hanging interior accessory
-	
+
 	key[]: "christmas_star"
 	val[]: "크리스마스 별" #+ Hanging interior accessory
-	
+
 	key[]: "wishing_star"
 	val[]: "소원의 별" #+ Hanging interior accessory
-	
+
 	key[]: "diamond_star"
 	val[]: "다이아몬드 별" #+ Hanging interior accessory
-	
+
 	key[]: "grand_star"
 	val[]: "커다란 별" #+ Hanging interior accessory
 #@}
@@ -8660,16 +8912,16 @@ localization_db : .localization
 	val[]: "호환되지 않는 DLC" #+ Window title
 
 	key[]: "incompatible_dlc"
-	val[]: "현재 설치된 다운로드 콘텐츠 중 일부는 현재 게임 버전과 호환되지 않으므로 사용할 수 없습니다. 호환성을 복원하려면 최신 버전으로 <LINK URL=http://www.eurotrucksimulator2.com/update.php$VERSION_INFO$ COLOR=@@clr_link@@>업데이트</LINK>하십시오.<br><br>호환되지 않는 콘텐츠는 다음과 같습니다:"
+	val[]: "현재 설치된 DLC (다운로드 가능한 콘텐츠) 중 일부는 현재 게임 버전과 호환되지 않으므로 사용할 수 없습니다. 호환성을 복원하려면 최신 버전으로 <LINK URL=http://www.eurotrucksimulator2.com/update.php$VERSION_INFO$ COLOR=@@clr_link@@>업데이트</LINK>하십시오.<br><br>호환되지 않는 콘텐츠는 다음과 같습니다:"
 
 	key[]: "incompatible_dlc_steam"
-	val[]: "현재 설치된 다운로드 콘텐츠 중 일부는 현재 게임 버전과 호환되지 않으므로 사용할 수 없습니다. 스팀 게임 캐시의 무결성을 확인하십시오.<br><br>호환되지 않는 콘텐츠는 다음과 같습니다:"
+	val[]: "현재 설치된 DLC (다운로드 가능한 콘텐츠) 중 일부는 현재 게임 버전과 호환되지 않으므로 사용할 수 없습니다. 스팀 게임 캐시의 무결성을 확인하십시오.<br><br>호환되지 않는 콘텐츠는 다음과 같습니다:"
 #@}
 
 #+ Message shown when the save depends on DLC which is currently unavailable.
 #@{
 	key[]: "missing_dlcs"
-	val[]: "불러오려는 세이브는 현재 사용할 수 없는 DLC (다운로드 콘텐츠)를 포함하고 있습니다. 누락된 콘텐츠는 다음과 같습니다:"
+	val[]: "불러오려는 세이브는 현재 사용할 수 없는 DLC (다운로드 가능한 콘텐츠)를 포함하고 있습니다. 누락된 콘텐츠는 다음과 같습니다:"
 
 	key[]: "missing_dlcs_cont"
 	val[]: "해당 DLC가 없으면 저장할 수 없습니다."
@@ -8684,7 +8936,7 @@ localization_db : .localization
 	val[]: "교대 운전자의 이름" #+ Shown when editing text on co-driver plate accessory
 
 	key[]: "gamepad_enter_account_name_or_email"
-	val[]: "World of Trucks에 관련된 계정 혹은 이메일의 이름" #+ Shown when entering name of WoTr account or associated email
+	val[]: "World of Trucks 계정 이름 혹은 관련 이메일" #+ Shown when entering name of WoTr account or associated email
 
 	key[]: "gamepad_enter_account_password"
 	val[]: "World of Trucks 계정의 비밀번호" #+ Shown when entering WoTr password
@@ -8750,7 +9002,7 @@ localization_db : .localization
 #+ Mod categories
 #@{
 	key[]: "mod_category_any"
-	val[]: "아무거나" #+ Used as category filter to indicate that no category based filter is applied
+	val[]: "모두 보기" #+ Used as category filter to indicate that no category based filter is applied
 
 	key[]: "mod_category_truck"
 	val[]: "트럭"
@@ -8897,7 +9149,7 @@ localization_db : .localization
 	val[]: "모드가 현재 게임 버전과 호환되지 않습니다. 활성화 할 수 없습니다." #+ Text shown if mod is not compatible with currently game version, and user tries to activate it.
 
 	key[]: "mm_confirm_leave"
-	val[]: "정말로 모드 관리자를 종료할까요?" #+ Content of the dialog confirming leaving the mod manager.
+	val[]: "정말로 모드 관리자를 종료하시겠습니까?" #+ Content of the dialog confirming leaving the mod manager.
 
 	key[]: "mm_confirm_leave_changes"
 	val[]: "모든 변경사항이 취소됩니다." #+ Shown in the leave confirmation dialog if user have made some changes.
@@ -9002,6 +9254,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "이미지 스포트라이트 기능을 사용하시겠습니까?<br><br>로딩 화면에서 사용 수 있도록 엄선한 멋진 이미지를 World of Trucks에서 검색하거나 선택할 수 있습니다." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "콘텐츠 변경이 감지되었습니다. 내비게이션 데이터를 업데이트합니다. 잠시만 기다려주십시오..." #+ Shown on loading screen
 #@}
 
 
@@ -9009,7 +9264,7 @@ localization_db : .localization
 #@{
 
 	key[]: "job_delivery_t"
-	val[]: "트레일러 운송"
+	val[]: "트레일러 딜리버리"
 
 	key[]: "job_delivery_desc"
 	val[]: "숙련된 운전자는 트레일러를 하역할 때 좁은 공간에서도 기동할 수 있습니다. 하지만, 화물의 안전을 최우선으로 해야 합니다! 만약, 이러한 도전을 염두에 두지 않았다면 트레일러를 주차할 수 있는 또 다른 장소와 관련해 화주와 상의하십시오."
@@ -9113,16 +9368,16 @@ localization_db : .localization
 	val[]: "World of Trucks와의 연결이 끊겼습니다.<br>진행 상황을 저장할 수 없습니다." #+ Advisor message when game unable establish server connection to save the progress
 
 	key[]: "suspend_online_job"
-	val[]: "다음 일을 받기 위해서는 진행 중인 World of Trucks 작업을 중단해야 합니다.<br><br>현재 World of Trucks 계약을 끝내야만 다음 작업을 계약할 수 있습니다.<br><br>지금 다른 일을 시작하시겠습니까?" #+ Warning message to inform that player about to suspend online job in order to take offline one.
+	val[]: "다음 일을 받기 위해서는 진행 중인 World of Trucks 작업을 중단해야 합니다.<br><br>현재 World of Trucks 계약을 완료하면 다음 작업을 계약할 수 있습니다.<br><br>지금 다른 일을 시작하시겠습니까?" #+ Warning message to inform that player about to suspend online job in order to take offline one.
 
 	key[]: "connection_error_message"
-	val[]: "World of Trucks에 연결할 수 없습니다.<br><br>연결을 설정한 후 연결을 눌러 계약 정보를 복원하십시오." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found.
+	val[]: "World of Trucks에 연결할 수 없습니다.<br><br>연결 상태를 확인한 후 연결을 눌러 계약 정보를 복원하십시오." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found.
 
 	key[]: "error_resuming_online_job"
-	val[]: "World of Trucks에 연결할 수 없습니다.<br><br>연결을 설정한 후 연결을 눌러 계약 정보를 복원하고 작업을 재개하십시오." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to resume job.
+	val[]: "World of Trucks에 연결할 수 없습니다.<br><br>연결 상태를 확인한 후 연결을 눌러 계약 정보를 복원하고 작업을 재개하십시오." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to resume job.
 
 	key[]: "error_aborting_online_job"
-	val[]: "World of Trucks에 연결할 수 없습니다.<br><br>연결을 설정한 후 연결을 눌러 계약 정보를 복원하고 계약을 취소하십시오." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to cancel the job.
+	val[]: "World of Trucks에 연결할 수 없습니다.<br><br>연결 상태를 확인한 후 연결을 눌러 계약 정보를 복원하고 계약을 취소하십시오." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to cancel the job.
 
 	key[]: "wotr_not_connected"
 	val[]: "World of Trucks와의 연결이 끊겼습니다." #+ Icons with this text appears on the desktop when online job lost its connection with WOTR
@@ -9146,7 +9401,7 @@ localization_db : .localization
 	val[]: "프로필 편집" #+ Button in WOTR jobs screens to begin editing profile if WOTR isn't conneted
 
 	key[]: "online_jobs_completed_count"
-	val[]: "World of Trucks 계약이 완료되었습니다" #+ number of completed WOTR jobs
+	val[]: "완료한 World of Trucks 계약:" #+ number of completed WOTR jobs
 
 	key[]: "error_report_progress_t"
 	val[]: "유효하지 않은 계약"
@@ -9170,7 +9425,7 @@ localization_db : .localization
 	val[]: "이 회사에는 아무런 계약도 존재하지 않습니다." #+ message shown when there are no online jobs at company activation point
 
 	key[]: "show_nearest_online_jobs"
-	val[]: "인근 화물 표시" #+ Button to show online jobs in radius instead of jobs at company activation point
+	val[]: "인근 화물 보기" #+ Button to show online jobs in radius instead of jobs at company activation point
 
 	key[]: "error_taking_online_job"
 	val[]: "계약서에 서명할 수 없습니다." #+ message shown when taking of online job fails
@@ -9197,7 +9452,7 @@ localization_db : .localization
 	val[]: "트레일러 요구 사항:" #+ Header of the section describing what trailer is needed to finish the job.
 
 	key[]: "error_no_compatible_trailer_available"
-	val[]: "게임에 호환되는 트레일러가 없습니다. MOD 또는 DLC 제거로 인해 이러한 현상이 발생했을 수 있습니다. 컨텐츠 패키지를 재설치하거나 작업을 취소하십시오." #+ Message shown if player does not own any trailer that would be compatible with the job and there is no compatible trailer available in game, probably due to removal od MOD or DLC.
+	val[]: "게임에 호환되는 트레일러가 없습니다. 모드 또는 DLC 제거로 인해 이러한 현상이 발생했을 수 있습니다. 콘텐츠 패키지를 재설치하거나 작업을 취소하십시오." #+ Message shown if player does not own any trailer that would be compatible with the job and there is no compatible trailer available in game, probably due to removal od MOD or DLC.
 
 	key[]: "error_incompatible_trailer_in_use"
 	val[]: "지금 연결된 트레일러는 이 운송에 적합하지 않습니다." #+ Message shown if player tries to resume external market job however currently attached trailer is not compatible with the job.
@@ -9230,7 +9485,7 @@ localization_db : .localization
 	val[]: "필수 DLC (공식 게임 확장팩) $DEPENDENCY_NAME$이(가) 없습니다. 이 세이브가 올바르게 작동하기 위해서는 이 DLC가 활성화되어야 합니다. 이 세이브를 불러오기 전에 문제를 해결해야 합니다." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
-	val[]: "부가 DLC (공식 게임 확장팩) $DEPENDENCY_NAME$이(가) 없습니다. 만약 이 DLC가 누락되지 않았다고 생각한다면 DLC의 상태를 확인하시기 바랍니다.<br><br>이 세이브를 불러올 수 있지만, DLC에서 제공하는 기능 중 일부를 사용하지 못하게 될 수도 있습니다." #+ Information showed when dependency of type optional DLC is missing.
+	val[]: "선택형 DLC (공식 게임 확장팩) $DEPENDENCY_NAME$이(가) 없습니다. 만약 이 DLC가 누락되지 않았다고 생각한다면 DLC의 상태를 확인하시기 바랍니다.<br><br>이 세이브를 불러올 수 있지만, DLC에서 제공하는 기능 중 일부를 사용하지 못하게 될 수도 있습니다." #+ Information showed when dependency of type optional DLC is missing.
 
 	key[]: "missing_mod"
 	val[]: "$DEPENDENCY_NAME$ 모드가 없거나 사용할 수 없습니다. 만약 이 모드가 누락되지 않았다고 생각한다면 모드 상태를 확인하시기 바랍니다. 이 세이브를 불러올 수 있지만, 모드의 의존도에 따라 세이브를 불러오지 못하거나 다른 문제가 발생할 수 있습니다." #+ Information displayed when dependency of type mod is missing.
@@ -9269,7 +9524,7 @@ localization_db : .localization
 	val[]: "워크숍 모드" #+ Steam Workshop mod.
 
 	key[]: "removable_dlc"
-	val[]: "부가 DLC" #+ DLC that can be removed or disabled.
+	val[]: "선택형 DLC" #+ DLC that can be removed or disabled.
 
 	key[]: "required_dlc"
 	val[]: "필수 DLC" #+ DLC that is required to load save that is depending on it.
@@ -9306,7 +9561,7 @@ localization_db : .localization
 	val[]: "화물 중량"
 
 	key[]: "quick_job_resumed"
-	val[]: "빠른 일거리가 진행 중입니다."
+	val[]: "빠른 일거리 작업이 진행 중입니다."
 
 	key[]: "company_job_resumed"
 	val[]: "배송 시장 작업이 진행 중입니다."
@@ -9455,13 +9710,13 @@ localization_db : .localization
 	val[]: "콘텐츠 브라우저" #+ Title of the online connected content browser screen.
 
 	key[]: "registration_success"
-	val[]: "축하합니다! 선택한 DLC가 World Of Trucks 계정에 성공적으로 연결되었습니다." #+ The content of the message box shown when selected content was successfully connected.
+	val[]: "축하합니다! 선택한 DLC가 World of Trucks 계정에 성공적으로 연결되었습니다." #+ The content of the message box shown when selected content was successfully connected.
 
 	key[]: "registration_not_possible_steamid_mismatch"
 	val[]: "현재 스팀 계정이 다른 World of Trucks 계정과 연결되어있어 콘텐츠를 연결할 수 없습니다." #+ The message displayed when the current Steam account is connected to any world of trucks account that is not a currently used World of Trucks account.
 
 	key[]: "registration_result_some_failed"
-	val[]: "일부 DLC가 연결에 실패했습니다.<br>해당 DLC의 느낌표 위로 마우스 커서를 가져가면 자세한 내용을 볼 수 있습니다." #+ The content of the message box shown when not all selected content was successfully connected.
+	val[]: "일부 DLC와의 연결에 실패했습니다.<br>해당 DLC의 느낌표 위로 마우스 커서를 가져가면 자세한 내용을 볼 수 있습니다." #+ The content of the message box shown when not all selected content was successfully connected.
 
 	key[]: "content_connect_progress"
 	val[]: "$CURRENT_CONTENT_NAME$ 등록 중" #+ The text used to display the progress of the online content connecting.
@@ -9470,7 +9725,7 @@ localization_db : .localization
 	val[]: "현재 프로필이 World of Trucks에 연결되어 있지 않거나, 게임이 오프라인 모드로 실행 중입니다." #+ An error shown when a user accesses the online options screen while his profile is not an online one or the online layer was not set up properly.
 
 	key[]: "online_connect_content_info"
-	val[]: "<color value=@@clr_sel@@>$CONNECTED_CONTENT$ <color value=@@clr_txt@@>/ $TOTAL_CONTENT$ 현재 호환되는 DLC만 연결됩니다. 일부 DLC가 World of Trucks에 연결되어 있지 않으면 일부 기능이 누락 될 수 있습니다." #+ The text displayed in online options which displays a summary of how many DLCs are connected to WoTr.
+	val[]: "<color value=@@clr_sel@@>$CONNECTED_CONTENT$ <color value=@@clr_txt@@>/ $TOTAL_CONTENT$ 중 현재 호환되는 DLC만 연결됩니다. 일부 DLC가 World of Trucks에 연결되어 있지 않으면 일부 기능이 누락될 수 있습니다." #+ The text displayed in online options which displays a summary of how many DLCs are connected to WoTr.
 
 	key[]: "online_connect_content_all_connected"
 	val[]: "<color value=@@clr_sel@@>축하합니다!<color value=@@clr_txt@@> 모든 콘텐츠가 World of Trucks에 연결되었습니다! 이제 모든 기능을 사용할 수 있습니다." #+ The text displayed in online options which confirms that every DLC the user owns is connected.
@@ -9497,7 +9752,7 @@ localization_db : .localization
 	val[]: "나중에" #+ The button postponing DLC registration for the later time.
 
 	key[]: "dlc_registration_blocked_no_permanent_ownership"
-	val[]: "스팀 가족 라이브러리 공유 기능을 사용하는 경우, 정식 라이선스가 등록되지 않았기 때문에 이 DLC를 등록할 수 없습니다." #+ The error displayed when DLC registration is blocked because the package is not permanently owned by player (for example due to family sharing).
+	val[]: "이 DLC를 등록할 수 없습니다. 스팀 가족 라이브러리 공유로 인해 영구 라이선스를 찾지 못했습니다." #+ The error displayed when DLC registration is blocked because the package is not permanently owned by player (for example due to family sharing).
 
 	key[]: "dlc_no_permanent_ownership"
 	val[]: "영구 소유권이 존재하지 않음" #+ The state of the content that cannot be connected due to invalid license.
@@ -9524,19 +9779,19 @@ localization_db : .localization
 
 	#+ Text showed when player will hit the escort vehicle and oversized cargo delivery is over because of that.
 	key[]: "oversize_escort_crash_player_failure_dialog_text"
-	val[]: "호위 차량을 파손했습니다!<br> 체크포인트부터 다시 시작하거나 $MONEY$의 벌금을 내고 운송을 취소할 수 있습니다."
+	val[]: "호위 차량을 파손했습니다!<br> 체크포인트부터 다시 시작하거나 $MONEY$의 위약금을 내고 운송을 취소할 수 있습니다."
 
 	#+ Text showed when player lead the escort vehicle to crash with another traffic ai.
 	key[]: "oversize_escort_crash_ai_failure_dialog_text"
-	val[]: "부적절한 운전으로 인해 호위 차량이 다른 차량과 충돌했습니다.<br> 체크포인트부터 다시 시작하거나 $MONEY$의 벌금을 내고 운송을 취소할 수 있습니다."
+	val[]: "부적절한 운전으로 인해 호위 차량이 다른 차량과 충돌했습니다.<br> 체크포인트부터 다시 시작하거나 $MONEY$의 위약금을 내고 운송을 취소할 수 있습니다."
 
 	#+ Text showed when player will drive off the route and Special Transport is over because of that.
 	key[]: "oversize_off_route_failure_dialog_text"
-	val[]: "지정된 경로에서 이탈했습니다.<br> 체크포인트부터 다시 시작하거나 $MONEY$의 벌금을 내고 운송을 취소할 수 있습니다."
+	val[]: "지정된 경로에서 이탈했습니다.<br> 체크포인트부터 다시 시작하거나 $MONEY$의 위약금을 내고 운송을 취소할 수 있습니다."
 
 	#+ Text showed when player will drive away from the escort vehicles and Special Transport is over because of that.
 	key[]: "oversize_not_following_failure_dialog_text"
-	val[]: "호위 차량과 함께 움직여야 합니다.<br> 체크포인트부터 다시 시작하거나 $MONEY$의 벌금을 내고 운송을 취소할 수 있습니다."
+	val[]: "호위 차량과 함께 움직여야 합니다.<br> 체크포인트부터 다시 시작하거나 $MONEY$의 위약금을 내고 운송을 취소할 수 있습니다."
 
 	#+ Text showed when fading after player will drive away from escort vehicles and the Special Transport is over.
 	key[]: "oversize_not_following_failure_fade_text"
@@ -9655,7 +9910,7 @@ localization_db : .localization
 
 	#+ Message for fade_in screen when taking OVS mission with your own truck.
 	key[]: "oversize_preparing_cargo"
-	val[]: "트럭의 연료탱크가 다시 채워지고 주행 가능 시간이 회복되었습니다."
+	val[]: "트럭의 연료 탱크가 다시 채워지고 주행 가능 시간이 회복되었습니다."
 
 	#+ Warning when player want to use assistance call during oversize mission.
 	key[]: "oversize_assistance_reason"
@@ -9741,7 +9996,7 @@ localization_db : .localization
 	val[]: "성공" #+ Success result message.
 
 	key[]: "steam_result_serviceunavailable"
-	val[]: "스팀 연결을 설정할 수 없습니다. 인터넷 연결을 확인하십시오. 문제가 없으면 나중에 다시 시도하십시오." #+ The message showed when game fails to connect to Steam servers.
+	val[]: "스팀에 연결할 수 없습니다. 인터넷 연결 상태를 확인해보시고 만약 문제가 없다면 나중에 다시 시도하십시오." #+ The message showed when game fails to connect to Steam servers.
 
 	key[]: "steam_result_timeout"
 	val[]: "스팀과 게임 간의 연결 시간이 초과되었습니다. 다시 시도하십시오." #+ The message showed when connection between game and Steam services times out.
@@ -9783,7 +10038,7 @@ localization_db : .localization
 	val[]: "이벤트 정보" #+ Title of the event popup.
 
 	key[]: "event_completed"
-	val[]: "이벤트 완료!" #+ Text showed when player completes event.
+	val[]: "개인 목표 달성!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
 	val[]: "이벤트 페이지 열기" #+ Button opening event page on WoTr.
@@ -9903,7 +10158,7 @@ localization_db : .localization
 	val[]: "선택한 트레일러가 $CITY$ 차고에서 대기 중입니다." #+ Success message when trailer was delivered to the selected garage.
 
 	key[]: "trailerman_trailer_taken_ingarage"
-	val[]: "선택한 트레일러가 장착되었습니다." #+ Success message when trailer was taken and attached to player's truck.
+	val[]: "선택한 트레일러가 연결되었습니다." #+ Success message when trailer was taken and attached to player's truck.
 
 	key[]: "trailerman_trailer_stored"
 	val[]: "트레일러가 성공적으로 차고에 주차되었습니다." #+ Success message when trailer is parked in garage.
@@ -9915,10 +10170,10 @@ localization_db : .localization
 	val[]: "이전 트레일러는 차고에 주차되었으며 새로운 트레일러가 연결되었습니다." #+ Success message when trailer swap succeeeds. (while swapping trailers in garage)
 
 	key[]: "trailerman_trailer_relocated"
-	val[]: "트레일러가 성공적으로 $CITY$ 차고로 재배치되었습니다." #+ Message shown after trailer relocation.
+	val[]: "트레일러가 $CITY$ 차고에 성공적으로 재배치되었습니다." #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_confirm_relocate"
-	val[]: "정말로 이 $TRAILER$을(를) $CITY$ 차고로 옮길까요?" #+ Message shown after trailer relocation.
+	val[]: "정말로 이 $TRAILER$을(를) $CITY$ 차고로 옮기시겠습니까?" #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_swap_blocked"
 	val[]: "교체하려면 트레일러가 있는 차고에 방문하십시오" #+ Tooltip message shown when player is not able to swap his currently attached trailer with the currently previewed trailer in trailer manager because he is not in the garage where previewed trailer is stored at.
@@ -9933,7 +10188,7 @@ localization_db : .localization
 	val[]: "외부 계약을 체결하기 전에 연결된 트레일러를 $CITY$ 차고로 옮겨야합니다.<br><br>트레일러를 분리한 후 이 일을 받으시겠습니까?" #+ Alert showed when player tries to take online job (with company trailer) while having own trailer attached.
 
 	key[]: "no_cargo_available"
-	val[]: "이 트레일러에 맞는 화물이 존재하지 않습니다.<br><br>이 트레일러로 화물을 운반하는데 필요한 모든 스킬을 갖추었는지 그리고 해당 지역에서 이 트레일러를 사용할 수 있는지 확인하십시오." #+ Message showed when there are no available cargoes compatible with current trailer.
+	val[]: "이 트레일러에 적재할 수 있는 화물이 존재하지 않습니다.<br><br>이 트레일러로 화물을 운반하는데 필요한 모든 스킬을 갖추었는지 그리고 해당 지역에서 이 트레일러를 사용할 수 있는지 확인하십시오." #+ Message showed when there are no available cargoes compatible with current trailer.
 
 	key[]: "hint_open_global_cargo_market"
 	val[]: "현재 제한된 수의 화물 시장을 보고 있습니다 하단 버튼을 클릭하면 전 지역 화물 시장을 볼 수 있습니다." #+ Hint shown when user is seeing cargo market offer while visiting company in person or checking offer right after delivering cargo.
@@ -10011,13 +10266,13 @@ localization_db : .localization
 	val[]: "총 시간 통계:" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "총 주행 거리" #+ Total distance this trailer driven during jobs.
+	val[]: "영업 주행 거리" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
-	val[]: "운송 횟수" #+ Total number of transported cargoes.
+	val[]: "누적 운송 횟수" #+ Total number of transported cargoes.
 
 	key[]: "trailerman_stats_weight_transp"
-	val[]: "운송 중량" #+ Total weight transported by the trailer.
+	val[]: "누적 운송 중량" #+ Total weight transported by the trailer.
 
 	key[]: "trailerman_col_type"
 	val[]: "종류" #+ Title of the trailer type column.
@@ -10095,7 +10350,7 @@ localization_db : .localization
 	val[]: "필요한 차고지:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "당신의 사업을 더욱 확장하려면 은행과 상담하십시오"
+	val[]: "당신의 사업을 더욱 확장하려면 은행과 상담하십시오."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "현재 사용할 수 있는 트럭 업그레이드가 존재하지 않습니다."
@@ -10134,7 +10389,7 @@ localization_db : .localization
 	val[]: "드라이버 관리자에 접근하려면 먼저 첫 트럭을 구매해야 합니다."
 
 	key[]: "link_locked_msg_recruit_map"
-	val[]: "고용기관에 접근하려면 먼저 트럭을 구매해야 합니다."
+	val[]: "고용기관에 접근하려면 먼저 첫 트럭을 구매해야 합니다."
 
 	key[]: "link_locked_msg_real_estate"
 	val[]: "빠른 차고 구매 인터페이스에 접속하려면 차고를 좀 더 구매하십시오."
@@ -10161,7 +10416,7 @@ localization_db : .localization
 	val[]: "트레일러 매각" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_msg_reallysell"
-	val[]: "정말로 당신의 $TRAILER$을(를) $MONEY$에 매각할까요?"
+	val[]: "정말로 당신의 $TRAILER$을(를) $MONEY$에 매각하시겠습니까?"
 
 	key[]: "trailerman_msg_nosell"
 	val[]: "사용 중인 트레일러는 판매할 수 없습니다! 운송을 마친 후 다시 시도하십시오."
@@ -10173,7 +10428,7 @@ localization_db : .localization
 	val[]: "정말로 이 $TRAILER$을(를) 사용하시겠습니까?<br><br>$CITY$ 차고에 나타날 것입니다."
 
 	key[]: "trailerman_confirm_take_from_garage"
-	val[]: "정말로 $TRAILER$을(를) 가져갈까요?"
+	val[]: "정말로 $TRAILER$을(를) 가져가시겠습니까?"
 #@}
 
 #+ Message box shown to confirm store of selected trailer.
@@ -10280,6 +10535,9 @@ localization_db : .localization
 	key[]: "flatbed"
 	val[]: "평판"
 
+	key[]: "foodtank"
+	val[]: "푸드 탱크"
+
 	key[]: "insulated"
 	val[]: "단열"
 
@@ -10288,6 +10546,9 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "냉장"
+
+	key[]: "liquid"
+	val[]: "액체"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10300,6 +10561,9 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_dryvan"
 	val[]: "일반, 건조제품"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "액체 식품"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "냉장식품"
@@ -10354,6 +10618,12 @@ localization_db : .localization
 
 	key[]: "rear_body"
 	val[]: "트레일러 후방"
+
+	key[]: "r_body"
+	val[]: "트레일러 우측"
+
+	key[]: "l_body"
+	val[]: "트레일러 좌측"
 #@}
 
 #+ Trailer Configurator
@@ -10417,7 +10687,13 @@ localization_db : .localization
 	val[]: "전면 벽"
 
 	key[]: "fuel_tank"
-	val[]: "연료탱크"
+	val[]: "연료 탱크"
+
+	key[]: "hose"
+	val[]: "호스"
+
+	key[]: "hose_2"
+	val[]: "호스, 2x"
 
 	key[]: "ladder"
 	val[]: "사다리"
@@ -10504,13 +10780,13 @@ localization_db : .localization
 	val[]: "등급:"
 
 	key[]: "pwt_dist_on_job"
-	val[]: "총 주행 거리:"
+	val[]: "영업 주행 거리:"
 
 	key[]: "pwt_cargo_transp"
-	val[]: "운송 횟수:"
+	val[]: "누적 운송 횟수:"
 
 	key[]: "pwt_weight_transp"
-	val[]: "운송 중량:"
+	val[]: "누적 운송 중량:"
 #@}
 
 #+ Message box shown when user requests to upgrade the trailer he has attached.
@@ -10562,7 +10838,7 @@ localization_db : .localization
 
 	key[]: "cm_legend_driver_status_returning"
 	val[]: "드라이버가 복귀 중임"
-	
+
 	key[]: "cm_legend_driver_player"
 	val[]: "플레이어"
 
@@ -10576,7 +10852,7 @@ localization_db : .localization
 	val[]: "경로 우회"
 
 	key[]: "detour_gps_warning"
-	val[]: "이동 경로에 예기치 못한 일이 발생했습니다. 경로를 직접 수정하는 것이 좋습니다."
+	val[]: "도로 차단으로 인해 경로 탐색에 실패했습니다. 새로운 경로를 찾거나 지도 화면에서 회피 지점을 설정하십시오."
 #@}
 
 #+ Steam cloud.
@@ -10594,28 +10870,28 @@ localization_db : .localization
 	val[]: "스팀 클라우드 사용" #+ Edit or create screen checkbox.
 
 	key[]: "load_msg_out_of_steam_intro_has_space"
-	val[]: "스팀 클라우드에 저장공간이 충분히 있습니다." #+ Load screen with out of steam warning when player removed enough save.
+	val[]: "스팀 클라우드에 당신의 세이브 파일을 보관할 충분한 공간이 있습니다." #+ Load screen with out of steam warning when player removed enough save.
 
 	key[]: "load_msg_out_of_steam_intro_no_space"
-	val[]: "<color value=@@clr_red@@>스팀 클라우드의 용량이 부족합니다!<color value=@@clr_txt@@><br><br>계속하시려면 일부 저장 파일을 제거하십시오. 다음은 플레이어를 돕기 위한 정보입니다 :" #+ Load scrren with out of steam warning when player does not yet removed enough save.
+	val[]: "<color value=@@clr_red@@>스팀 클라우드의 용량이 부족합니다!<color value=@@clr_txt@@><br><br>계속하려면 일부 세이브 파일을 삭제하십시오. 다음은 플레이어를 돕기 위한 정보입니다:" #+ Load scrren with out of steam warning when player does not yet removed enough save.
 
 	key[]: "load_msg_out_of_steam_to_free_bytes"
-	val[]: "용량 초과 : <color value=@@clr_red@@>$BYTES$ Mb<color value=@@clr_txt@@>" #+ Number of Megabytes player has to remove.
+	val[]: "초과된 용량: <color value=@@clr_red@@>$BYTES$ MB<color value=@@clr_txt@@>" #+ Number of Megabytes player has to remove.
 
 	key[]: "load_msg_out_of_steam_to_free_files"
-	val[]: "초과된 파일 : <color value=@@clr_red@@>$FILES$<color value=@@clr_txt@@>" #+ Number of files player has to remove.
+	val[]: "초과된 파일: <color value=@@clr_red@@>$FILES$<color value=@@clr_txt@@>" #+ Number of files player has to remove.
 
 	key[]: "load_msg_out_of_steam_used_bytes"
-	val[]: "사용된 스팀 클라우드 용량 : <color value=@@clr_sel@@>$BYTES$ Mb<color value=@@clr_txt@@>" #+ Number of Megabytes player has in the cloud.
+	val[]: "사용된 스팀 클라우드 용량: <color value=@@clr_sel@@>$BYTES$ MB<color value=@@clr_txt@@>" #+ Number of Megabytes player has in the cloud.
 
 	key[]: "load_msg_out_of_steam_used_files"
-	val[]: "스팀 클라우드의 파일 : <color value=@@clr_sel@@>$FILES$<color value=@@clr_txt@@>" #+ Number of files player has in the cloud.
+	val[]: "스팀 클라우드의 파일: <color value=@@clr_sel@@>$FILES$<color value=@@clr_txt@@>" #+ Number of files player has in the cloud.
 
 	key[]: "load_msg_out_of_steam_selected_save"
-	val[]: "선택된 세이브파일은<color value=@@clr_sel@@>$SAVE$<color value=@@clr_txt@@><color value=@@clr_sel@@>$BYTES$ Mb<color value=@@clr_txt@@><color value=@@clr_sel@@>$FILES$<color value=@@clr_txt@@>입니다." #+ Selected save info.
+	val[]: "선택한 세이브 <color value=@@clr_sel@@>$SAVE$<color value=@@clr_txt@@>은(는) <color value=@@clr_sel@@>$FILES$<color value=@@clr_txt@@> 파일, <color value=@@clr_sel@@>$BYTES$ MB<color value=@@clr_txt@@> 입니다." #+ Selected save info.
 
 	key[]: "load_msg_out_of_steam_box"
-	val[]: "스팀 클라우드의 용량이 부족합니다. 계속하시려면 일부 저장 파일을 제거하십시오.<br><br>오른쪽 패널에서 자세한 정보를 읽으십시오." #+ Popup when trying load game ignoring warning about steam cloud running out of space.
+	val[]: "스팀 클라우드의 용량이 부족합니다. 계속하려면 일부 세이브 파일을 삭제하십시오.<br><br>오른쪽 패널에서 자세한 정보를 읽으십시오." #+ Popup when trying load game ignoring warning about steam cloud running out of space.
 
 	key[]: "steam_profile_migration_to_local_warning"
 	val[]: "프로필을 로컬 프로필 형태로 전환하면 해당 프로필은 접속한 스팀 계정과 관계없이 이 컴퓨터에서만 사용할 수 있습니다." #+ Popup warning when player unchecks the steam cloud checkbox in the profile edit screen.
@@ -10675,7 +10951,7 @@ localization_db : .localization
 	val[]: "<color value=@@clr_txt@@>총 결제 금액: <color value=@@clr_sel@@>$PRICE$"
 
 	key[]: "copy_option_description"
-	val[]: "복사 유형을 선택"
+	val[]: "복사 유형 선택"
 
 	key[]: "copy_option_paintjob"
 	val[]: "도색 복사"
@@ -11127,6 +11403,36 @@ localization_db : .localization
 
 	key[]: "sctrl_input_screenshot"
 	val[]: "@@sctrl_action_screenshot@@"
+
+	key[]: "sctrl_input_camwalk_for"
+	val[]: "@@sctrl_action_camwalk_for@@"
+
+	key[]: "sctrl_input_camwalk_back"
+	val[]: "@@sctrl_action_camwalk_back@@"
+
+	key[]: "sctrl_input_camwalk_left"
+	val[]: "@@sctrl_action_camwalk_left@@"
+
+	key[]: "sctrl_input_camwalk_righ"
+	val[]: "@@sctrl_action_camwalk_righ@@"
+
+	key[]: "sctrl_input_camwalk_crou"
+	val[]: "@@sctrl_action_camwalk_crou@@"
+
+	key[]: "sctrl_input_camwalk_run"
+	val[]: "@@sctrl_action_camwalk_run@@"
+
+	key[]: "sctrl_input_rwinopen"
+	val[]: "@@sctrl_action_rwinopen@@"
+
+	key[]: "sctrl_input_rwinclose"
+	val[]: "@@sctrl_action_rwinclose@@"
+
+	key[]: "sctrl_input_lwinopen"
+	val[]: "@@sctrl_action_lwinopen@@"
+
+	key[]: "sctrl_input_lwinclose"
+	val[]: "@@sctrl_action_lwinclose@@"
 #!}
 
 #@}
@@ -11140,16 +11446,19 @@ localization_db : .localization
 	val[]: "주행"
 
 	key[]: "sctrl_action_set_layer_gearbox_arcade"
-	val[]: "아케이드 기어박스"
+	val[]: "아케이드 기어 박스"
 
 	key[]: "sctrl_action_set_layer_gearbox_automatic"
-	val[]: "자동 기어박스"
+	val[]: "자동 기어 박스"
 
 	key[]: "sctrl_action_set_layer_gearbox_manual"
-	val[]: "수동 기어박스"
+	val[]: "수동 기어 박스"
 
 	key[]: "sctrl_action_set_layer_gearbox_direct"
-	val[]: "H-시프터 기어박스"
+	val[]: "H-시프터 기어 박스"
+
+	key[]: "sctrl_action_set_walking"
+	val[]: "보행"
 
 #+ Individual bindable actions
 #@{
@@ -11451,6 +11760,36 @@ localization_db : .localization
 
 	key[]: "sctrl_action_screenshot"
 	val[]: "@@o_im_screenshot@@"
+
+	key[]: "sctrl_action_camwalk_for"
+	val[]: "Walk Forward"
+
+	key[]: "sctrl_action_camwalk_back"
+	val[]: "Walk Backward"
+
+	key[]: "sctrl_action_camwalk_left"
+	val[]: "Walk Left"
+
+	key[]: "sctrl_action_camwalk_righ"
+	val[]: "Walk Right"
+
+	key[]: "sctrl_action_camwalk_crou"
+	val[]: "@@o_im_walk_crouch@@"
+
+	key[]: "sctrl_action_camwalk_run"
+	val[]: "@@o_im_walk_run@@"
+
+	key[]: "sctrl_action_rwinopen"
+	val[]: "@@o_im_right_window_open@@"
+
+	key[]: "sctrl_action_rwinclose"
+	val[]: "@@o_im_right_window_close@@"
+
+	key[]: "sctrl_action_lwinopen"
+	val[]: "@@o_im_left_window_open@@"
+
+	key[]: "sctrl_action_lwinclose"
+	val[]: "@@o_im_left_window_close@@"
 #!}
 #@}
 
@@ -11469,7 +11808,7 @@ localization_db : .localization
 	val[]: "모든 별을 획득했습니다."
 
 	key[]: "xmas19_map_description"
-	val[]: "도시 위에 마우스를 올려 크리스마트 이벤트 상태를 확인하세요. $WOTR_URL$에 방문에서 전체 정보 요약을 확인할 수 있습니다."
+	val[]: "도시 위에 마우스를 올려 크리스마트 이벤트 상태를 확인하세요. $WOTR_URL$에 방문하면 전체 진행 상황을 확인할 수 있습니다."
 
 	key[]: "xmas19_max_city_message"
 	val[]: "이 도시의 커뮤니티 목표는 완료됐습니다!<br><br>다른 도시에 선물을 주는 건 어떨까요?"
@@ -11480,7 +11819,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

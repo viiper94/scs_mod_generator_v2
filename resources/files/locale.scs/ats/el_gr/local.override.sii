@@ -7,7 +7,7 @@ localization_db : .localization
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
 	key[]: "offline_activation_url"
-	val[]: "https://http://www.americantrucksimulator.com//support.php"
+	val[]: "https://www.americantrucksimulator.com/support.html"
 
 	key[]: "steam_buy_url"
 	val[]: "https://store.steampowered.com/app/270880/"
@@ -18,7 +18,6 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
-	
 	key[]: "cabflares"
 	val[]: "Φώτα Καμπίνας"
 
@@ -58,6 +57,9 @@ localization_db : .localization
 	key[]: "headache_r"
 	val[]: "Μπάρες Προστασίας Πίσω Παρμπρίζ"
 
+	key[]: "hndrail"
+	val[]: "Χειρολαβή"
+
 	key[]: "horns"
 	val[]: "Κόρνες"
 
@@ -73,11 +75,20 @@ localization_db : .localization
 	key[]: "mudguard"
 	val[]: "Λασπωτήρες"
 
+	key[]: "rear_cab"
+	val[]: "Καμπίνα Πίσω"
+
 	key[]: "sideflares"
 	val[]: "Πάνελ Καμπίνας"
 
 	key[]: "sideskrt_bar"
 	val[]: "Μπάρες Μαρσπιέ"
+
+	key[]: "slp_hndl"
+	val[]: "Χειρολαβές"
+
+	key[]: "slp_vent"
+	val[]: "Αεραγωγός"
 
 	key[]: "topflares"
 	val[]: "Φώτα Οροφής"
@@ -87,6 +98,15 @@ localization_db : .localization
 
 	key[]: "chainsaw_toy"
 	val[]: "Παιχνίδι Αλυσοπρίονο"
+
+	key[]: "chrom_tank"
+	val[]: "Δεξαμενή Χρώμιο" #+ Chromed tank accessory (water, fuel, etc)
+
+	key[]: "alu_tank"
+	val[]: "Δεξαμενή Αλουμινίου" #+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "d_shape"
+	val[]: "Σχήμα-D" #+ D-shaped tank accessory (water, fuel, etc)
 
 #@}
 
@@ -120,6 +140,12 @@ localization_db : .localization
 
 	key[]: "intro_1"
 	val[]: "Καλωσόρισες στο American Truck Simulator!"
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Ο συνδυασμός του φορτηγού και του τρέιλερ σου δεν είναι νόμιμος σε αυτή την πολιτεία!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -219,7 +245,7 @@ localization_db : .localization
 	val[]: "Αποξηραμένα φρούτα"
 
 	key[]: "cn_forwarder"
-	val[]: "Μεταφορέας Ξυλείας"
+	val[]: "Λαστιχοφόρος Προωθητής"
 
 	key[]: "cn_frac_tank"
 	val[]: "Κοντέινερ Φορητής Αποθ/σης"
@@ -232,6 +258,9 @@ localization_db : .localization
 
 	key[]: "cn_fruits"
 	val[]: "Φρούτα"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Χυμός Φρούτων"
 
 	key[]: "cn_grain"
 	val[]: "Σιτηρά"
@@ -258,7 +287,7 @@ localization_db : .localization
 	val[]: "Σασί Ανυψωτικού Οχήματος"
 
 	key[]: "cn_log_harvester"
-	val[]: "Μηχάνημα Υλοτόμησης"
+	val[]: "Συλλεκτική Μηχανή Υλοτόμησης"
 
 	key[]: "cn_log_loader"
 	val[]: "Φορτωτής Κορμών"
@@ -410,7 +439,7 @@ localization_db : .localization
 	val[]: "Μεταφορά Κατοικιών"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "Γερανός Παπαγαλάκι"
+	val[]: "Γερανός Κορμών (Παπαγαλάκι)"
 
 	key[]: "tn_log"
 	val[]: "Τρέιλερ Κορμών"
@@ -690,6 +719,9 @@ localization_db : .localization
 	key[]: "tr_single_40_spread"
 	val[]: "40 πόδια, Εν αποστάσει"
 
+	key[]: "tr_single_43_rear"
+	val[]: "43 πόδια, Πίσω"
+
 	key[]: "tr_single_45"
 	val[]: "45 πόδια"
 
@@ -820,6 +852,9 @@ localization_db : .localization
 	key[]: "bs_flatbed_alu"
 	val[]: "Πάτωμα Αλουμινίου"
 
+	key[]: "bs_food_tank"
+	val[]: "Βυτίο Τροφίμων"
+
 	key[]: "bs_grain_hopper"
 	val[]: "Σιλοφόρο με Χοάνη Σιτηρών"
 
@@ -914,6 +949,9 @@ localization_db : .localization
 	key[]: "california"
 	val[]: "Καλιφόρνια"
 
+	key[]: "idaho"
+	val[]: "Άινταχο"
+
 	key[]: "nevada"
 	val[]: "Νεβάδα"
 
@@ -959,6 +997,9 @@ localization_db : .localization
 	key[]: "bend"
 	val[]: "Μπεντ"
 
+	key[]: "boise"
+	val[]: "Μπόιζ"
+
 	key[]: "burns"
 	val[]: "Μπερνς"
 
@@ -979,6 +1020,9 @@ localization_db : .localization
 
 	key[]: "clovis"
 	val[]: "Κλόβις"
+
+	key[]: "coeur_dalene"
+	val[]: "Κερ ντ' Αλέν"
 
 	key[]: "colville"
 	val[]: "Κόλβιλ"
@@ -1028,6 +1072,9 @@ localization_db : .localization
 	key[]: "grand_coulee"
 	val[]: "Γκραντ Κούλη"
 
+	key[]: "grangeville"
+	val[]: "Γκρέιντζβιλ"
+
 	key[]: "hobbs"
 	val[]: "Χομπς"
 
@@ -1040,6 +1087,9 @@ localization_db : .localization
 	key[]: "huron"
 	val[]: "Χούρον"
 
+	key[]: "idaho_falls"
+	val[]: "Άινταχο Φολς"
+
 	key[]: "jackpot"
 	val[]: "Τζάκποτ"
 
@@ -1048,6 +1098,9 @@ localization_db : .localization
 
 	key[]: "kennewick"
 	val[]: "Κένγουικ"
+
+	key[]: "ketchum"
+	val[]: "Κέτσαμ"
 
 	key[]: "kingman"
 	val[]: "Κίνγκμαν"
@@ -1064,6 +1117,9 @@ localization_db : .localization
 	key[]: "las_vegas"
 	val[]: "Λας Βέγκας"
 
+	key[]: "lewiston"
+	val[]: "Λιούιστον"
+
 	key[]: "logan"
 	val[]: "Λόγκαν"
 
@@ -1078,6 +1134,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Μόαμπ"
+
+	key[]: "nampa"
+	val[]: "Νάμπα"
 
 	key[]: "newport"
 	val[]: "Νιούπορτ"
@@ -1124,6 +1183,9 @@ localization_db : .localization
 	key[]: "pioche"
 	val[]: "Πίος"
 
+	key[]: "pocatello"
+	val[]: "Ποκατέλο"
+
 	key[]: "port_angeles"
 	val[]: "Πορτ Άντζελες"
 
@@ -1160,6 +1222,9 @@ localization_db : .localization
 	key[]: "salina"
 	val[]: "Σαλίνα"
 
+	key[]: "salmon"
+	val[]: "Σάλμον"
+
 	key[]: "salt_lake_city"
 	val[]: "Σολτ Λέικ Σίτυ"
 
@@ -1174,6 +1239,9 @@ localization_db : .localization
 
 	key[]: "san_simon"
 	val[]: "Σαν Σιμόν"
+
+	key[]: "sandpoint"
+	val[]: "Σάντποϊντ"
 
 	key[]: "santa_cruz"
 	val[]: "Σάντα Κρουζ"
@@ -1223,6 +1291,9 @@ localization_db : .localization
 	key[]: "tucumcari"
 	val[]: "Τουκαμκάρι"
 
+	key[]: "twin_falls"
+	val[]: "Τουίν Φολς"
+
 	key[]: "ukiah"
 	val[]: "Γιουκία"
 
@@ -1243,6 +1314,49 @@ localization_db : .localization
 
 	key[]: "yuma"
 	val[]: "Γιούμα"
+#@}
+
+#+ Names of point of interest cutscenes.
+#@{
+	#+ Google maps link: no particular location
+	key[]: "id_cut_potato"
+	val[]: "Αγρόκτημα πατάτας του Τουίν Φόλς"
+
+	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
+	key[]: "id_cut_galena"
+	val[]: "Κορυφή Γκαλήνα"
+
+	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
+	key[]: "id_cut_perrine"
+	val[]: "Γέφυρα - Μνημείο Περίν"
+
+	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
+	key[]: "id_cut_craters"
+	val[]: "Εθνικό Μνημείο «Craters of the Moon»"
+
+	#+ Google maps link: https://goo.gl/maps/DzhPVsa71e4pYYUH8
+	key[]: "id_cut_boise"
+	val[]: "Η πόλη Μπόιζ"
+
+	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
+	key[]: "id_cut_sandpoint"
+	val[]: "Η πόλη Σάντποϊντ"
+
+	#+ Google maps link: no particular location
+	key[]: "id_cut_timber"
+	val[]: "Περιοχή υλοτομίας"
+
+	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
+	key[]: "id_cut_mccall"
+	val[]: "Η πόλη ΜακΚόλ"
+
+	#+ Google maps link: https://goo.gl/maps/cx2TbNZrx8PUSS2d8
+	key[]: "id_cut_idaho_falls"
+	val[]: "Η πόλη Άινταχο Φoλς"
+
+	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
+	key[]: "id_cut_midvale"
+	val[]: "Σ.Ε.Α. «Midvale Hill Rest Area»"
 #@}
 
 }
