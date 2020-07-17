@@ -1,0 +1,6 @@
+company_permanent: company.permanent.aport_abq
+{
+	name: "ABQ Cargo Center"
+	sort_name: "abq cargo center"
+	trailer_look: aport_abq
+}
