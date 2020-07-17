@@ -100,6 +100,7 @@ class AdminCompaniesController extends Controller{
         $path = resource_path('files/def');
         if(!is_dir($path)) return abort(404);
         $dlcs = Dlc::all()->keyBy('name')->toArray();
+        $look_list = Paint::select('look')->where('game', 'ats')->distinct()->get()->toArray();
 
         // цикл по длс-кам
         foreach(scandir($path) as $dlc){
@@ -115,7 +116,7 @@ class AdminCompaniesController extends Controller{
                         preg_match('/trailer_look:\s[a-z0-9_]+/', $content, $matches);
                         $look = str_replace('trailer_look: ', '', $matches[0]);
 
-                        if(!in_array($look, ['default', 'plain']) && count(Company::where('name', $look)->get()) === 0){
+                        if(in_array($look, array_flatten($look_list)) && count(Company::where('name', $look)->get()) === 0){
                             $company = new Company();
                             $company->fill([
                                 'game' => $dlc_params['game'] ?? 'ats',
