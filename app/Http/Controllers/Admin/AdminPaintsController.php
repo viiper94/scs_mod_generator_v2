@@ -138,7 +138,7 @@ class AdminPaintsController extends Controller{
             'chipvan' => 'scs_chipvan',
             'bulkfeed' => 'scs_bulkfeed',
             'grainhopper' => 'scs_grainhopper',
-            'food_tank_43_r' => 'scs_foodtank',
+            'food_tank_' => 'scs_foodtank',
         ];
 
         // for ats
