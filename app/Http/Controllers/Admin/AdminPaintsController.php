@@ -120,6 +120,7 @@ class AdminPaintsController extends Controller{
         // CHECK BEFORE IMPORT!
         $asoc_names = [
             // folder (renamed to trailer alias) => correct def folder
+            // ets2 trailers
             'cement_cistern' => 'cement',
             'curtain_sider' => 'scs_box/curtain_sider',
             'dry_van' => 'scs_box/dry_van',
@@ -127,14 +128,17 @@ class AdminPaintsController extends Controller{
             'moving_floor' => 'scs_box/moving_floor',
             'refrigerated' => 'scs_box/reefer',
             'willig_cistern' => 'willig/fuel_cistern',
-            'scs_chipvan' => 'chipvan',
-            'foodtank' => 'scs_foodtank',
-
             'krone_coolliner' => 'krone/coolliner',
             'krone_dryliner' => 'krone/dryliner',
             'krone_profiliner' => 'krone/profiliner',
-
             'schw_food_cistern' => 'schw_cistern_food',
+
+            // ats trailers
+            'curtain' => 'scs_flatbed',
+            'chipvan' => 'scs_chipvan',
+            'bulkfeed' => 'scs_bulkfeed',
+            'grainhopper' => 'scs_grainhopper',
+            'food_tank_43_r' => 'scs_foodtank',
         ];
 
         // for ats
@@ -143,9 +147,6 @@ class AdminPaintsController extends Controller{
                 'dry_',
                 'ins_',
                 'ref_'
-            ],
-            'scs_flatbed' => [
-                'curtain',
             ]
         ];
 
@@ -182,8 +183,8 @@ class AdminPaintsController extends Controller{
                                             'active' => true,
                                         ]);
                                         if($paint_job === 'default.sii') $paint->sort = '1';
-                                        $paint->save();
-//                                        dump($paint);
+//                                        $paint->save();
+                                        dump($paint);
                                     }
                                 }
                             }
@@ -193,7 +194,7 @@ class AdminPaintsController extends Controller{
                                     $paint = new Paint();
                                     $paint->fill([
                                         // CHECK GAME BEFORE IMPORT
-                                        'game' => $dlc_params['game'] ?? 'ets2',
+                                        'game' => $dlc_params['game'] ?? 'ats',
                                         'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
                                         'alias' => str_replace('.sii', '', $paint_job),
                                         'look' => str_replace('.sii', '', $paint_job),
@@ -204,8 +205,8 @@ class AdminPaintsController extends Controller{
                                         'active' => true,
                                     ]);
                                     if($paint_job === 'default.sii') $paint->sort = '1';
-                                    $paint->save();
-//                                    dump($paint);
+//                                    $paint->save();
+                                    dump($paint);
                                 }
                             }
 //                            if($chassis === 'schw_curtain' || $chassis === 'schw_reefer'){
@@ -229,7 +230,7 @@ class AdminPaintsController extends Controller{
                 }
             }
         }
-//        dd('dumped');
+        dd('dumped');
         return redirect()->route('paints')->with(['success' => 'Скіни додано!']);
     }
 
