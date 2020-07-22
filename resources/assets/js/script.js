@@ -509,9 +509,11 @@ function getDLCList(value) {
                 'scandinavia',
                 'france',
                 'italy',
-                'baltic'
+                'baltic',
+                'balkan_e'
             ];
-            $('[id^=dlc_], [id=promods]').prop('checked', false).prop('disabled', false);
+            $('[id=promods]').prop('checked', false);
+            $('[id^=dlc_], [id=promods]').prop('disabled', false);
             $('[id^=dlc_] + input[type=hidden], [id=promods] + input[type=hidden]').remove();
             $.each(response.dlc, function(index, dlc){
                 if(dlc === 'promods'){
