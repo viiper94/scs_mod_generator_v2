@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Pare-buffles"
+
+	key[]: "l_horn"
+	val[]: "Trompe gauche"
+
+	key[]: "r_horn"
+	val[]: "Trompe droite"
 
 	key[]: "f_mirror"
 	val[]: "Antéviseurs"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Emplacement peinture" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Garder comme prédéfini" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Conserver la couleur comme prédéfinie" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Utiliser le préréglage" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Conserver toutes les couleurs comme prédéfinies" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Appliquer la couleur prédéfinie" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Sélectionnez une marchandise pour voir les détails du trajet" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distance de la prochaine étape"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Durée avant la prochaine étape" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Volume de la musique de l'interface utilisateur" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Logos d'intro" #+ Slider controlling volume of the intro logos.
+	val[]: "Volume des logos d'intro" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "GUIDAGE VOCAL" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Page précédente du GPS"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Mode de destination du GPS"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Réinitialiser la tête (Head tracking)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Activer le suivi de la tête" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pause de la vue étendue (expérimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Activer la présélection 1 de la vue étendue" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Activer la présélection 2 de la vue étendue" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Activer la présélection 3 de la vue étendue" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Tourner la caméra (avec la souris)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,7 +3750,7 @@ localization_db : .localization
 	val[]: "Divers" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Rétro-éclairage" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Couleur du rétro-éclairage" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Vue étendue" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Activer la présélection de la vue étendue" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Saisir un nom de présélection" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Etes-vous sûr de vouloir supprimer la présélection sélectionnée ?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Un préréglage existant portant le même nom sera remplacé. Voulez-vous continuer ?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Réglages du suivi du regard" #+ Header of the gaze settings
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Anticrénelage (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "SSAO" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Haut rendu dynamique (HDR) " #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Annuler la mission"
 
-
 	key[]: "visit_service"
 	val[]: "Visitez un atelier de réparation immédiatement !"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Info complètes du trajet" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Info de la prochaine étape" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4890,7 +4944,7 @@ localization_db : .localization
 	val[]: "$XP$ pour $DISTANCE$ en solo !"
 
 	key[]: "level_up_msg"
-	val[]: "Vous avez progressé !<br>Vous êtes maintenant au $LEVEL$ $TIER$."
+	val[]: "Vous avez progressé !<br>Vous êtes maintenant au $LEVEL$ : $TIER$."
 
 	key[]: "engine_malfunction"
 	val[]: "Mauvais fonctionnement du moteur !<br>Veuillez visiter un atelier de réparation le plus tôt possible."
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Permutez vers la page descriptive de la mission ($KEY$) pour continuer..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "La page de description de la mission résume ce que vous transportez et à quel endroit. Elle vous indique quand vous êtes attendu, votre temps de conduite et l'argent que vous recevrez si vous arrivez à l'heure sans endommager votre marchandise.<br><br>Vous pouvez également annuler votre mission, si c'est vraiment nécessaire, en appuyant sur le bouton rouge. Dans ce cas, vous devrez payer une somme substantielle en guise de pénalité."
+	val[]: "La page de description du contrat résume ce que vous transportez et sa destination. Elle indique l'heure à laquelle vous êtes attendu, combien de temps il vous reste et la somme que vous recevrez si vous arrivez à l'heure sans endommager la cargaison."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Permutez vers la page de diagnostics ($KEY$) pour continuer..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Activer la fonctionnalité 'Image à l'honneur' ?<br><br>Vous pourrez naviguer à travers une sélection d'images spectaculaires triées sur le volet à partir de World of Trucks pour une utilisation dans les écrans de chargement." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Modification de contenu détectée. Mise à jour des données de navigation. Veuillez patienter..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

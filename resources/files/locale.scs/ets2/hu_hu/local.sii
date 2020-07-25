@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Gallytörőrács"
+
+	key[]: "l_horn"
+	val[]: "Bal kürt"
+
+	key[]: "r_horn"
+	val[]: "Jobb kürt"
 
 	key[]: "f_mirror"
 	val[]: "Elülső tükör"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Mintaszín" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Mentés sablonként" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Szín mentése sablonként" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Sablon használata" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Összes szín mentése sablonként" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Szín sablon alkalmazása" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1828,10 +1837,10 @@ localization_db : .localization
 #@{
 
 	key[]: "trip_len"
-	val[]: "Fuvartávolság" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "Teljes út hossza" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_time"
-	val[]: "Menetidő" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
+	val[]: "Teljes út menetideje" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
 
 	key[]: "trip_ferry_len"
 	val[]: "Kompút hossza" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Kattints a pótkocsikra a fuvarinfó megjelenítéséhez!" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Következő pont távolsága"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Következő ponthoz érkezés ideje" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Kezelőfelületi zene hangereje" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro animációk hangereje" #+ Slider controlling volume of the intro logos.
+	val[]: "Intro logók hangereje" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "HANGNAVIGÁCIÓ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Útinform - Előző oldal"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Útinform célállomás mód"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Fej középre igazítása (Fejmozgáskövetésnél)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Fejmozgáskövetés engedélyezése" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Kiterjesztett nézet szüneteltetése (kísérleti)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "1. sablon alkalmazása" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "2. sablon alkalmazása" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "3. sablon alkalmazása" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Kamera forgatása (egérrel)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Kiterjesztett nézet" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Kiterjesztett nézet sablonok" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Írd be a sablon nevét!" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Tényleg törlöd a kiválasztott sablont?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Az azonos nevű sablon felülírásra kerül. Tényleg elmented a módosításokat?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Tekintetkövetés beállításai" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Élsimítás (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "SSAO" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Nagy dinamikatartomány (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Aktuális fuvar lemondása"
 
-
 	key[]: "visit_service"
 	val[]: "Azonnal menj el szervizbe!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Teljes út" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Következő útvonalpont" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -6961,7 +7015,7 @@ localization_db : .localization
 #@}
 
 	key[]: "compman_player_driver"
-	val[]: "Szerény személyed"
+	val[]: "Te"
 
 	key[]: "compman_status"
 	val[]: "Állapot:"
@@ -7831,7 +7885,7 @@ localization_db : .localization
 	val[]: "Sofőröket keresel a garázsodba? Itt megtalálod őket!" #+ Help message associated the recruitment agency icon.
 
 	key[]: "recruit_info"
-	val[]: "Köszöntünk a munkaközvetítőnél!<br>Nálunk számos szakképzett sofőr közül választhatod ki új alkalmazottadat, a munkát keresők körét minden nap frissítjük.<br>Szolgáltatásainkért mindössze szerény,  $MONEY$-nyi összeget számítunk fel minden felvett sofőr után."
+	val[]: "Köszöntünk a munkaközvetítőnél!<br>Nálunk számos szakképzett sofőr közül választhatod ki új alkalmazottadat, a munkát keresők körét minden nap frissítjük.<br>Szolgáltatásainkért mindössze egy szerény összeget ($MONEY$) számítunk fel minden felvett sofőr után."
 
 	key[]: "hire"
 	val[]: "Sofőr felvétele" #+ Button which will hire selected driver.
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Lapozz a Fuvarleírás oldalra ($KEY$) a folytatáshoz..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "A Fuvarleírás oldal az aktuális feladatoddal kapcsolatos információkat tartalmazza: a rakomány típusát, a célállomást, a határidőt, az addig hátralévő menetidőt, illetve a késés valamint sérülés nélkül leszállított áru fuvardíját.<br><br>Ha szükséges, a piros gomb megnyomásával vissza is mondhatod a fuvart, ekkor viszont jelentős összegű büntetést kell fizetned."
+	val[]: "A fuvarleírás a jelenlegi megbízatásoddal kapcsolatos információkat tartalmazza: a rakományod és a célállomás nevét, a fuvar határidejét, a még hátralévő időt, és az időben, sérülés nélkül leszállított áru után járó munkadíjat."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Lapozz az Állapotfelmérés oldalra ($KEY$) a folytatáshoz..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Engedélyezed a Kiemelt Képek szolgáltatást?<br><br>Ezzel a funkcióval a World of Trucks oldalról válogatott látványos képek közül böngészhetsz, a kijelölt képeket pedig a játék töltőképernyőin használhatod." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "A játék tartalomváltozást érzékelt, ezért frissíteni kell a navigációs adatokat. Kérlek, várj..." #+ Shown on loading screen
 #@}
 
 
@@ -12804,7 +12861,7 @@ localization_db : .localization
 	val[]: "A kamion visszaúton van"
 
 	key[]: "cm_legend_truck_player"
-	val[]: "Szerény személyed"
+	val[]: "Te"
 
 	key[]: "cm_legend_trailer_status_idle"
 	val[]: "Inaktív pótkocsi"
@@ -12831,7 +12888,7 @@ localization_db : .localization
 	val[]: "A sofőr visszaúton van"
 
 	key[]: "cm_legend_driver_player"
-	val[]: "Szerény személyed"
+	val[]: "Te"
 
 	key[]: "cm_legend_generic_trailer"
 	val[]: "Egyéb pótkocsik"
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

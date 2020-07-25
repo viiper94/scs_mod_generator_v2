@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -867,7 +867,7 @@ localization_db : .localization
 	val[]: "Potenza motore" #+  truck's engine power
 
 	key[]: "truck_analysis_heavy_introduction"
-	val[]: "Stai per iniziare un lavoro con un carico pesante. Rivedi la configurazione corrente del tuo camion per assicurarti che sia all'altezza del compito." #+  Description in the truck analysis pop-up window when taking heavy cargo job
+	val[]: "Stai per iniziare un lavoro con un carico pesante. Rivedi la configurazione del tuo camion per assicurarti che sia all'altezza del compito." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
 	key[]: "truck_analysis_info_tooltip"
 	val[]: "Data la tipologia di trasporto che prevedi di svolgere, ottimizza il tuo veicolo in base a una combinazione di economia di guida e prestazioni." #+  General tooltip description of Truck Analysis feature
@@ -918,10 +918,10 @@ localization_db : .localization
 	val[]: "AGGIORNAMENTI RIMORCHIO" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "truck_upgrades"
-	val[]: "Aggiornamenti camion" #+ The name of the screen containing truck upgrades. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Novità camion" #+ The name of the screen containing truck upgrades. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "trailer_upgrades"
-	val[]: "Aggiornamenti rimorchio" #+ The name of the screen containing trailer upgrades. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Novità rimorchio" #+ The name of the screen containing trailer upgrades. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "new_upgrades_about"
 	val[]: "Scopri i nuovi accessori disponibili." #+ Help message associated with new upgrades icon.
@@ -1114,6 +1114,12 @@ localization_db : .localization
 	key[]: "bullbar"
 	val[]: "Bull Bar"
 
+	key[]: "l_horn"
+	val[]: "Tromba sinistra"
+
+	key[]: "r_horn"
+	val[]: "Tromba destra"
+
 	key[]: "f_mirror"
 	val[]: "Specchio sul cofano"
 
@@ -1178,7 +1184,7 @@ localization_db : .localization
 	val[]: "Targa passeggero"
 
 	key[]: "paint_cat"
-	val[]: "Verniciate"
+	val[]: "Verniciature"
 
 	key[]: "head_lights"
 	val[]: "Proiettori"
@@ -1250,7 +1256,7 @@ localization_db : .localization
 	val[]: "Oggetti pavimento" #+ Interior accessories placed on the floor in the center of the truck cabin
 
 	key[]: "set_dashbrd"
-	val[]: "Settaggio cruscotto" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Impostazioni cruscotto" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
 	val[]: "Imposta parabrezza" #+ Large Pin for sets of small pins of the windshield accessories
@@ -1259,40 +1265,40 @@ localization_db : .localization
 	val[]: "Angolo Parabrezza" #+ Large Pin for sets of small pins of the corner of windshield
 
 	key[]: "f_hub"
-	val[]: "Mozzo" #+ Wheel hub for front wheel
+	val[]: "Coprimozzo" #+ Wheel hub for front wheel
 
 	key[]: "fhub"
-	val[]: "Bulloni" #+ Wheel hub for front wheel
+	val[]: "Coprimozzo" #+ Wheel hub for front wheel
 
 	key[]: "r_hub"
-	val[]: "Copri mozzo" #+ Wheel hub for rear wheel
+	val[]: "Coprimozzo" #+ Wheel hub for rear wheel
 
 	key[]: "rhub"
-	val[]: "Bulloni" #+ Wheel hub for rear wheel
+	val[]: "Coprimozzo" #+ Wheel hub for rear wheel
 
 	key[]: "f_disc"
-	val[]: "Cerchio anteriore" #+ Wheel rim for front wheel
+	val[]: "Cerchioni anteriori" #+ Wheel rim for front wheel
 
 	key[]: "fdisc"
-	val[]: "Cerchio anteriore" #+ Wheel rim for front wheel
+	val[]: "Cerchioni anteriori" #+ Wheel rim for front wheel
 
 	key[]: "r_disc"
-	val[]: "Cerchio posteriore" #+ Wheel rim for rear wheel
+	val[]: "Cerchioni posteriori" #+ Wheel rim for rear wheel
 
 	key[]: "rdisc"
-	val[]: "Cerchio posteriore" #+ Wheel rim for rear wheel
+	val[]: "Cerchioni posteriori" #+ Wheel rim for rear wheel
 
 	key[]: "f_cover"
 	val[]: "Copribulloni" #+ Wheel hubcap / hub cover for front wheel
 
 	key[]: "fcover"
-	val[]: "Coprimozzo" #+ Wheel hubcap / hub cover for front wheel
+	val[]: "Copribulloni" #+ Wheel hubcap / hub cover for front wheel
 
 	key[]: "r_cover"
 	val[]: "Copribulloni" #+ Wheel hubcap / hub cover for rear wheel
 
 	key[]: "rcover"
-	val[]: "Coprimozzo" #+ Wheel hubcap / hub cover for rear wheel
+	val[]: "Copribulloni" #+ Wheel hubcap / hub cover for rear wheel
 
 	key[]: "f_nuts"
 	val[]: "Bulloni" #+ Wheel nuts for front wheel
@@ -1473,7 +1479,7 @@ localization_db : .localization
 	val[]: "Muovi" #+ Tooltip for control icon: pan by mouse.
 	
 	key[]: "tooltip_walk_title"
-	val[]: "CONTROLLI MODALITA' A PIEDI" #+ Title of walk mode controls tooltip.
+	val[]: "CONTROLLI MODALITÀ A PIEDI:" #+ Title of walk mode controls tooltip.
 	
 	key[]: "tooltip_walk_forward"
 	val[]: "Avanti" #+ Tooltip for walk forward.
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Slot Vernice" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Salva la tonalità" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Salva colore come predefinito" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Usa colori memorizzati" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Salva tutti i colori come predefiniti" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Applica colore predefinito" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Seleziona un carico per visualizzare<br> nella mappa il percorso ideale" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distanza prossimo checkpoint"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Tempo prossimo checkpoint" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2419,7 +2436,7 @@ localization_db : .localization
 #@{
 
 	key[]: "help_gfx"
-	val[]: "Aumenta le impostazioni video ed il gioco sarà ancora più bello e realistico. Oppure, aiuta il tuo computer a prendere fiato, abbassandole un po'."
+	val[]: "Migliora le impostazioni video ed il gioco sarà ancora più bello e realistico. Oppure, aiuta il tuo computer a prendere fiato, abbassandole un po'."
 
 	key[]: "help_audio"
 	val[]: "La musica è troppo alta? Abbassane il volume o regola gli altri suoni del gioco nelle opzioni audio."
@@ -2501,7 +2518,7 @@ localization_db : .localization
 	val[]: "Volume motore camion" #+ Slider controlling volume of the truck engine.
 
 	key[]: "truck_exhaust_volume"
-	val[]: "Volume scarico motore" #+ Slider controlling volume of the truck exhaust.
+	val[]: "Volume scarichi camion" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_effects_volume"
 	val[]: "Volume effetti camion" #+ Slider controlling volume of the truck effects.
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Volume musica menù" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Loghi introduttivi" #+ Slider controlling volume of the intro logos.
+	val[]: "Volume loghi introduttivi" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "VOCE NAVIGATORE" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2630,13 +2647,13 @@ localization_db : .localization
 	val[]: "sec" #+ Abbreviated form of seconds used for the fadeout delay suffix
 
 	key[]: "game_settings"
-	val[]: "SETTAGGIO GIOCO"
+	val[]: "IMPOSTAZIONI GIOCO"
 
 	key[]: "truck_settings"
-	val[]: "SETTAGGIO CAMION"
+	val[]: "IMPOSTAZIONI CAMION"
 
  	key[]: "camera_settings"
-	val[]: "SETTAGGIO TELECAMERA"
+	val[]: "IMPOSTAZIONI TELECAMERA"
 
 	key[]: "regional_settings"
 	val[]: "IMPOSTAZIONI REGIONALI"
@@ -2861,7 +2878,7 @@ localization_db : .localization
 	val[]: "Nomi di città e paesi localizzati" #+ Checkbox for naming selection.
 
 	key[]: "show_secondary_names_in_map"
-	val[]: "Visualizza nomi secondari sulla mappa" #+ Checkbox for secondary localization selection.
+	val[]: "Mostra anche i nomi originali sulla mappa" #+ Checkbox for secondary localization selection.
 
 # external_gauges: "External gauges" - Seems to be not used anymore.
 
@@ -3080,7 +3097,7 @@ localization_db : .localization
 	val[]: "CONTROLLI HUD"
 
 	key[]: "walk_mode"
-	val[]: "MODALITA' CAMMINO"
+	val[]: "MODALITÀ CAMMINO"
 	
 	key[]: "other_controls"
 	val[]: "ALTRO"
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Pagina precedente Route Advisor"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor modalità destinazione"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Reimposta Head (Monitoraggio testa)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Abilita Head Tracking" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pausa Extended View (sperimentale)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Applica preset Extended View 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Applica preset Extended View 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Applica preset Extended View 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Visuale ruotabile (quando il mouse fa da sterzo)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,7 +3750,7 @@ localization_db : .localization
 	val[]: "Varie" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Colore feedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Risposta del colore" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Vista estesa" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Preset Extended View" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Inserisci nome preset" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Sei sicuro di voler eliminare il preset selezionato?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Il preset esistente con lo stesso nome sarà sovrascritto. Vuoi continuare?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Imposta Gaze Tracking" #+ Header of the gaze settings
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Screen Space Ambient Occlusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Alta gamma dinamica (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4514,7 +4561,7 @@ localization_db : .localization
 	val[]: "Casello"
 
 	key[]: "border_title"
-	val[]: "Frontiera Checkpoint"
+	val[]: "Valico di frontiera"
 
 	key[]: "service_title"
 	val[]: "Officina"
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Cancella il lavoro attuale"
 
-
 	key[]: "visit_service"
 	val[]: "Vai immediatamente in un' officina!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Info viaggio" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Info prossimo checkpoint" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -5800,7 +5854,7 @@ localization_db : .localization
 	val[]: "Blocchi di marmo"
 
 	key[]: "cn_marble_slab"
-	val[]: "Lastra di marmo"
+	val[]: "Lastre di marmo"
 
 	key[]: "cn_med_equipment"
 	val[]: "Attrezzature mediche"
@@ -5812,7 +5866,7 @@ localization_db : .localization
 	val[]: "Medicine"
 
 	key[]: "cn_metal_coil"
-	val[]: "Bobina di metallo"
+	val[]: "Bobine di metallo"
 
 	key[]: "cn_mercuric"
 	val[]: "Cloruro di mercurio"
@@ -5899,7 +5953,7 @@ localization_db : .localization
 	val[]: "Patate"
 
 	key[]: "cn_presstank"
-	val[]: "Recipiente in pressione"
+	val[]: "Recipienti in pressione"
 
 	key[]: "cn_princess_v39"
 	val[]: "Yacht - Queen V39"
@@ -6610,10 +6664,10 @@ localization_db : .localization
 	val[]: "Piattaforma tela cerata Schwarzmüller"
 
 	key[]: "tn_schw_overweight"
-	val[]: "Semirimorchio ribassato Schwarzmuller"
+	val[]: "Semirimorchio ribassato Schwarzmüller"
 
 	key[]: "tn_schw_reefer"
-	val[]: "Semirimorchio refrigerato Schwarzmuller"
+	val[]: "Semirimorchio refrigerato Schwarzmüller"
 
 	key[]: "tn_schw_slidepost"
 	val[]: "Pannello scorrevole Schwarzmüller"
@@ -7719,7 +7773,7 @@ localization_db : .localization
 	val[]: "SCELTA CONCESSIONARIO" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "tdsel_link"
-	val[]: "Concessionari" #+ Icon opening the map of truck dealers. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Rivenditori camion" #+ Icon opening the map of truck dealers. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "tdsel_help"
 	val[]: "Visita i concessionari che hai localizzato." #+ Help message associated the dealer map icon.
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Passa alla pagina con la descrizione del lavoro ($KEY$) per continuare..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "La pagina di descrizione del lavoro riassume ciò che stai trasportando e dove. Ti dice quando è previsto l'arrivo a destinazione, quanto tempo hai ha disposizione e quanti soldi riceverai se arrivi in tempo e senza danneggiare la merce.<br><br> È inoltre possibile annullare il lavoro, se proprio devi, premendo il pulsante rosso. In questo caso dovrai pagare una notevole somma come penale."
+	val[]: "La pagina di descrizione del lavoro riassume cosa stai trasportando e dove. Ti mostra l'orario previsto per la consegna, quanto tempo ti rimane e quanti soldi riceverai se arriverai in tempo senza danneggiare il carico."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Passa alla pagina di diagnostica ($KEY$) per continuare..."
@@ -10067,7 +10121,7 @@ localization_db : .localization
 	val[]: "Copertura verniciata" #+ Simple painted cover used as small sideskirt or other accessory
 
 	key[]: "paint"
-	val[]: "Vernici" #+ Painted mirror, doorhandle or other accessory
+	val[]: "Verniciato" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
 	val[]: "Verniciato lungo" #+ Extended leg version of the front truck mirror
@@ -10106,7 +10160,7 @@ localization_db : .localization
 	val[]: "Standard 2013" #+ Standard UK version of the interior or accesory (model year 2013)
 
 	key[]: "standard_double"
-	val[]: "Doppio standard" #+ Standard version (double variant) of the interior or accesory
+	val[]: "Standard doppio" #+ Standard version (double variant) of the interior or accesory
 
 	key[]: "standard_uk"
 	val[]: "Standard UK" #+ Standard UK version of the interior or accesory
@@ -10193,7 +10247,7 @@ localization_db : .localization
 	val[]: "Minigonna laterale" #+ Large, expensive sideskirts on the side of the truck
 
 	key[]: "stock_cage"
-	val[]: "Barre di protezione laterale" #+ Simple, inexpensive sideskirts on the side of the truck
+	val[]: "Barre laterali" #+ Simple, inexpensive sideskirts on the side of the truck
 
 	key[]: "stock_super"
 	val[]: "Minigonna laterale" #+ Large, expensive sideskirts
@@ -10337,64 +10391,64 @@ localization_db : .localization
 	val[]: "Bump Bar K-LINER" #+ bottom grill accessory name, HS Schoch naming
 
 	key[]: "hs_front_lamp_holder"
-	val[]: "Sostegno lampada frontale" #+ front grill accessory name, HS Schoch naming
+	val[]: "Barra portafari frontale" #+ front grill accessory name, HS Schoch naming
 
 	key[]: "hs_front_lamp_holder_2"
-	val[]: "Sostegno lampada frontale II" #+ front grill accessory name, HS Schoch naming
+	val[]: "Barra portafari frontale II" #+ front grill accessory name, HS Schoch naming
 
 	key[]: "hs_front_lamp_holder_city"
-	val[]: "Sostegno lampada frontale CITY" #+ front grill accessory name, HS Schoch naming
+	val[]: "Barra portafari frontale CITY" #+ front grill accessory name, HS Schoch naming
 
 	key[]: "hs_front_lamp_holder_classic"
-	val[]: "Sostegno lampada frontale CLASSIC" #+ front grill accessory name, HS Schoch naming
+	val[]: "Barra portafari frontale CLASSIC" #+ front grill accessory name, HS Schoch naming
 
 	key[]: "hs_front_lamp_holder_tailor"
-	val[]: "Sostegno lampada frontale TAILOR" #+ front grill accessory name, HS Schoch naming
+	val[]: "Barra portafari frontale TAILOR" #+ front grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder"
-	val[]: "Sostegno lampada tetto" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_2"
-	val[]: "Sostegno lampada tetto II" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari II" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_3"
-	val[]: "Sostegno lampada tetto III" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari III" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_leds"
-	val[]: "Sostegno lampada tetto (LED extra)" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari (LED extra)" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_aero_visor"
-	val[]: "Lampada tetto Holder AERO VISOR" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari AERO VISOR" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_aero_top"
-	val[]: "Lampada tetto Holder AERO TOP" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari AERO TOP" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_crossbar"
-	val[]: "Lampada tetto Holder CROSSBAR" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari CROSSBAR" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_hydra"
-	val[]: "Lampada tetto Holder HYDRA" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari HYDRA" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_hydra_max"
-	val[]: "Lampada tetto Holder HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari HYDRA MAX" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_hydra_top"
-	val[]: "Sostegno lampada tetto HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari HYDRA TOP" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_max"
-	val[]: "Lampada tetto Holder MAX" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari MAX" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_mega"
-	val[]: "Lampada tetto Holder MEGA" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari MEGA" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_top"
-	val[]: "Lampada tetto Holder TOP" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari TOP" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_top_2"
-	val[]: "Sostegno lampada tetto TOP II" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari TOP II" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_roof_lamp_holder_visor_bar"
-	val[]: "Sostegno lampada tetto VISOR BAR" #+ roof grill accessory name, HS Schoch naming
+	val[]: "Barra portafari VISOR BAR" #+ roof grill accessory name, HS Schoch naming
 
 	key[]: "hs_side_bar"
 	val[]: "Barra laterale" #+ sideskirt bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Abilitare la funzione di foto da World of Trucks?<br><br>Potrai navigare attraverso una selezione di spettacolari immagini raccolte da World of Trucks per usarle nelle schermate di caricamento." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Rilevato cambio di contenuti. Aggiornamento dati navigazione. Attendere..." #+ Shown on loading screen
 #@}
 
 
@@ -11854,7 +11911,7 @@ localization_db : .localization
 	val[]: "I MIEI RIMORCHI"
 
 	key[]: "trailerman_link_title"
-	val[]: "Gestione del rimorchio"
+	val[]: "Gestione rimorchi"
 
 	key[]: "trailerman_help"
 	val[]: "Gestisci i rimorchi della tua azienda, assegnali agli autisti, comprali, scambiali e molto altro."
@@ -11890,7 +11947,7 @@ localization_db : .localization
 	val[]: "Nessun autista assegnato."
 
 	key[]: "garageman_op_log"
-	val[]: "Resoconto economico" #+ Garage manager operation opening economy log of the garage.
+	val[]: "Bilancio" #+ Garage manager operation opening economy log of the garage.
 
 	key[]: "garageman_op_upgrade"
 	val[]: "Migliora" #+ Garage manager operation upgrading garage.
@@ -12100,7 +12157,7 @@ localization_db : .localization
 	val[]: "Richiede un garage in:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Avanza ulteriormente in carriera per accedere alla Banca."
+	val[]: "Avanza ulteriormente in carriera per accedere alla banca."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "Non ci sono nuovi aggiornamenti per il camion disponibili al momento."
@@ -12118,7 +12175,7 @@ localization_db : .localization
 	val[]: "Avanza ulteriormente nella carriera per poter acquistare i tuoi rimorchi personali."
 
 	key[]: "link_locked_msg_cabin_adjust"
-	val[]: "Non è possibile accedere alle regolazioni della cabina poiché non si sta guidando alcun camion."
+	val[]: "Non è possibile accedere alle regolazioni della cabina poiché non stai guidando alcun camion."
 
 	key[]: "link_locked_msg_skills"
 	val[]: "Nessuna abilità è disponibile. Sali di livello per sbloccarle."
@@ -12347,7 +12404,7 @@ localization_db : .localization
 	val[]: "Singolo"
 
 	key[]: "double"
-	val[]: "Doppio"
+	val[]: "doppio"
 
 	key[]: "b_double"
 	val[]: "Doppio tipo B"
@@ -12620,7 +12677,7 @@ localization_db : .localization
 	val[]: "Refrigerato"
 
 	key[]: "series_schwarzmuller_slidepost"
-	val[]: "Trasporto legname"
+	val[]: "Trasporto tronchi"
 #@}
 
 #+ Trailer only accessories
@@ -12942,7 +12999,7 @@ localization_db : .localization
 	val[]: "<color value=@@clr_txt@@>Totale da pagare: <color value=@@clr_sel@@>$PRICE$"
 
 	key[]: "copy_option_description"
-	val[]: "Seleziona tipo o copia operazione"
+	val[]: "Seleziona il tipo di operazione"
 
 	key[]: "copy_option_paintjob"
 	val[]: "Copia colorazione"
@@ -12978,7 +13035,7 @@ localization_db : .localization
 	val[]: "ANTEPRIME"
 
 	key[]: "empty_resulting_truck_preview"
-	val[]: "Seleziona un camion da copiare dalla tabella seguente<br>per visualizzarne l'anteprima."
+	val[]: "Seleziona un camion dalla tabella seguente<br>per visualizzarne l'anteprima."
 
 	key[]: "empty_resulting_trailer_preview"
 	val[]: "Seleziona un rimorchio da copiare dalla tabella seguente<br>per visualizzarne l'anteprima."
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

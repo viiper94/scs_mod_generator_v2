@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1029,7 +1029,7 @@ localization_db : .localization
 
 
 	key[]: "truck_repair_quick"
-	val[]: "Cenu popravki će pokriti vaš poslodavac." #+ Shown in repair screens when the player is driving a quick job truck.
+	val[]: "Cenu popravke će pokriti vaš poslodavac." #+ Shown in repair screens when the player is driving a quick job truck.
 
 
 	key[]: "your_money"
@@ -1061,7 +1061,7 @@ localization_db : .localization
 	val[]: "Dodatak '$NEW_ACC$' nije kompatibilan sa '$ACC$'. Da ga instalirate, '$ACC$' mora biti prvo uklonjen."
 
 	key[]: "remove_confl"
-	val[]: "Dodatak '$NEW_ACC$' nije kompatibilan sa '$ACC$'. <br> Da ga instalirate, '$ACC$' mora biti uklonjen. <br><br><br> Hoćeteli da ga uklonite?"
+	val[]: "Dodatak '$NEW_ACC$' nije kompatibilan sa '$ACC$'. <br> Da ga instalirate, '$ACC$' mora biti uklonjen. <br><br><br> Da li želite da ga uklonite?"
 
 	key[]: "empty_cart"
 	val[]: "Odbaci sve nove izmene?" #+ Shown as message box when basket clearing icon is pressed.
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Kengurobran"
+
+	key[]: "l_horn"
+	val[]: "Leva sirena"
+
+	key[]: "r_horn"
+	val[]: "Desna sirena"
 
 	key[]: "f_mirror"
 	val[]: "Prednje ogledalo"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Mesto za boju" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Sačuvaj kao preset" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Sačuvati boju kao podrazumevanu" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Koristi preset" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Sačuvati sve boje kao podrazumevane" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Primeniti podrazumevanu boju" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1828,22 +1837,30 @@ localization_db : .localization
 #@{
 
 	key[]: "trip_len"
-	val[]: "Dužina puta" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "Rastojanje puta" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_time"
 	val[]: "Trajanje putovanja" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
 
 	key[]: "trip_ferry_len"
-	val[]: "Trajektom" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "Rastojanje trajektom" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_ferry_price"
 	val[]: "Cena trajekta" #+ Shown in the route info box in the line indicating price of the ferry route. For example "Ferry price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.-"
 
 	key[]: "trip_land_len"
-	val[]: "Putem" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "Kopneno rastojanje" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
 	val[]: "Izaberite teret da vidite detalje" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Razdaljina do sledeće kontrolne tačke"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Vreme do sledeće kontrolne tačke" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -1912,7 +1929,7 @@ localization_db : .localization
 	val[]: "Mašinerija"
 
 	key[]: "cargo_type_adr"
-	val[]: "'ADR'"
+	val[]: "ADR"
 
 	key[]: "cargo_type_containers"
 	val[]: "Kontejnerke i Zavese"
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Jačina muzike u meniju" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro logo" #+ Slider controlling volume of the intro logos.
+	val[]: "Jačina uvodnog logoa" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "GLASOVNA NAVIGACIJA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "'Putni Računar' - Predhodna strana"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Način destinacije navigacije"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Resetovanje glave (Praćenje glave)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Omogućiti praćenje glave" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pauziranje proširenog prikaza (eksperimentalno)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Primeniti podrazumevani prošireni pogled 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Primeniti podrazumevani prošireni pogled 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Primeniti podrazumevani prošireni pogled 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rotirajuća kamera (kontrola mišem)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Prošireni prikaz" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Podrazumevani prošireni pogledi" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Uneti naziv preseta" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Da li sigurno želite da obrišete izabrani preset?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Postojeća podešavanja sa istim nazivom biće pregažena. Da li želite da nastavite?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Podešavanje praćenja pogleda" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Ekransko apsorbovanje okolnog prostora (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Izražene boje i kontrast (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Prekinuti trenutni posao"
 
-
 	key[]: "visit_service"
 	val[]: "Posetite servis što pre!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Puna informacija o putu" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informacija o sledećoj kontrolnoj tački" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Prebacite na opis posla ($KEY$) da nastavite..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Strana sa opisom posla sažima šta prevozite i gde. Govori vam kada ste očekivani, koliko vremena vam je ostalo i koliko novca ćete dobiti ako stignete na vreme i sa neoštećenim teretom.<br><br>Ovde možete i prekinuti posao ako baš morate, pritiskajući crveno dugme. U tom slučaju ćete, za kaznu, platiti značajnu svotu."
+	val[]: "Strana za opis posla prikazuje šta prevozite i gde. Ona govori o tome kada je očekivan dolazak, koliko vremena imate na raspolaganju, i koliko novca ćete dobiti ako stignete na vreme bez oštećenja tereta."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Prebacite na servisnu stranicu ($KEY$) da nastavite..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Boja" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Duga boja" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Hromirano" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Omogućiti album sa slikama?<br><br>. Moći ćete da listate prelepe probrane slike sa World of Trucks koje će se prikazivati tokom učitavanja." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Primećena izmena sadržaja. Ažuriranje podataka o navigaciji. Molimo sačekajte..." #+ Shown on loading screen
 #@}
 
 
@@ -12100,7 +12157,7 @@ localization_db : .localization
 	val[]: "Zahteva garažu u:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Napredujte dalje u karijeri kako biste pristupili Banci"
+	val[]: "Napredujte dalje u karijeri kako biste pristupili Banci."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "U ovom trenutku nema novih nadogradnji za kamion."
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

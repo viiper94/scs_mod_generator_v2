@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Bullbar"
+
+	key[]: "l_horn"
+	val[]: "Lichthoorn, links"
+
+	key[]: "r_horn"
+	val[]: "Luchthoorn, rechts"
 
 	key[]: "f_mirror"
 	val[]: "Vooruitkijkspiegel"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Lakruimte" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Bewaren als geselecteerd" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Kleur als voorkeuze opslaan" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Gebruik voorafingestelde instelling" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Alle kleuren als voorkeuze opslaan" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Kleurvoorkeuze toepassen" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Selecteer de vracht om de routedetails te zien" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Afstand tot volgend checkpunt"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Tijd tot volgend checkpunt" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Spelmuziekvolume" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intrologo's" #+ Slider controlling volume of the intro logos.
+	val[]: "Intrologovolume" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAVIGATIESTEM" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2985,7 +3002,7 @@ localization_db : .localization
 	val[]: "Muis omkeren" #+ Checkbox enabling inversion of the mouse.
 
 	key[]: "show_cutscenes"
-	val[]: "Toon tussenfilmpjes" #+ Checkbox for enabling/disabling game cutscenes (e.g. garage/truck purchase/upgrade)
+	val[]: "Toon cutscenes" #+ Checkbox for enabling/disabling game cutscenes (e.g. garage/truck purchase/upgrade)
 
 	key[]: "steer_cam_rotation"
 	val[]: "Camerarotatie op basis van stuuruitslag" #+ Checkbox enabling camera rotation based on steering angle.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Vorige pagina Route Advies"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor Bestemmingsmodus"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Reset Hoofd (Hoofd Tracking)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Schakel de hoofdbesturing in" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pauzeer uitgebreide weergave (experimenteel)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Uitgebreide weergave toepassen, voorkeuze 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Uitgebreide weergave toepassen, voorkeuze 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Uitgebreide weergave toepassen, voorkeuze 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Draaicamera (bij muisbesturing)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Uitgebreide Weergave" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Uitgebreide weergave voorkeuzes" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Naam voorkeuze invoeren" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Weet je zeker dat je de geselecteerde voorkeuze wilt verwijderen?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Instellingen Blik Volgen" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Anti-aliasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Screen Space Ambient Occlusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "High dynamic range (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4573,13 +4620,13 @@ localization_db : .localization
 	val[]: "Huidige Opdracht" #+ Tooltip for job info page in route advisor
 
 	key[]: "adviser_tooltip_damage_page"
-	val[]: "Diagnostics & Assistance call" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
+	val[]: "Diagnose- & Ondersteuningsoproep" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
 
 	key[]: "adviser_tooltip_message_page"
 	val[]: "Korte Berichten" #+ Tooltip for short messages page in route advisor
 
 	key[]: "adviser_tooltip_tutorial"
-	val[]: "Route Advisor Tutorial" #+ Tooltip for the tutorial icon route advisor
+	val[]: "Route Advisor-Introductie" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "De wegenwacht kan jou en je vrachtwagen naar $CITY$ brengen. Dat kost $MONEY$ en de reis duurt $TIME$.<br offset=30>Ga je daarmee akkoord?"
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Annuleer de huidige opdracht"
 
-
 	key[]: "visit_service"
 	val[]: "Bezoek meteen een werkplaats!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Volledige routeinformatie" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Info volgend checkpunt" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9476,16 +9530,16 @@ localization_db : .localization
 	val[]: "Inhoud van de geselecteerde pagina."
 
 	key[]: "tutorial_adviser1c"
-	val[]: "Paginaschakeling. Schakel tussen navigatie; de huidige taakomschrijving; vrachtwagendiagnostiek en korte berichten."
+	val[]: "Paginaschakeling. Schakel tussen navigatie; de huidige leveringsomschrijving; vrachtwagendiagnostiek en korte berichten."
 
 	key[]: "tutorial_adviser2"
 	val[]: "De navigatiekaart toont je huidige positie door middel van een blauwe pijl. Als je met een opdracht bezig bent, toont het ook de kortste route naar je bestemming in het rood.<br><br>Onderaan de pagina staat een schatting van de resterende reistijd en afstand. Je kunt ook kiezen uit verschillende zoomniveaus door te drukken op $KEY$ of de knop in je scherm."
 
 	key[]: "tutorial_adviser2a"
-	val[]: "Schakel over naar functieomschrijving op pagina ($KEY$) om door te gaan..."
+	val[]: "Schakel over naar de leveringsbeschrijving ($KEY$) om door te gaan..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Op de functieomschrijvingspagina vind je een samenvatting van wat je vervoert en waar. Het vertelt je wanneer je wordt verwacht, hoeveel tijd je nog hebt en hoeveel geld je zult ontvangen wanneer je op tijd arriveert zonder schade.<br><br>Je kunt ook de opdracht annuleren. Als je dit echt wilt, doe je dit door op de rode knop te klikken. In dat geval moet je een aanzienlijk bedrag betalen als boete. "
+	val[]: "De leveringsbeschrijving geeft een samenvatting van wat je bij je hebt en waar dit naartoe gaat. Het vertelt je wanneer je wordt verwacht, hoeveel tijd je nog hebt en hoeveel geld je krijgt als je op tijd aankomt zonder de lading te beschadigen."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Schakel over naar de diagnosepagina ($KEY$) om verder te gaan..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Wil je de Spotlight Afbeelding inschakelen?<br><br>Je kan dan bladeren door de selectie van handgekozen World of Trucks' afbeeldingen voor gebruik in de laadschermen." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Spelwijziging gedetecteerd. Navigatiedata aan het bijwerken. Even geduld, alsjeblieft..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

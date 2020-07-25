@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Zezen Barra"
+
+	key[]: "l_horn"
+	val[]: "Ezkerreko turuta"
+
+	key[]: "r_horn"
+	val[]: "Eskuineko turuta"
 
 	key[]: "f_mirror"
 	val[]: "Aurreko ispilua"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Pintura Mota" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Kolorea gorde" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Kolorea gorde" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Kolorea erabili" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Kolore guztiak gorde" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Kolorea eman" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Karga aukeratu bidaiaren xehetasunak ikusteko" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Bidearen hurrengo punturaino distantzia"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Bidearen hurrengo punturaino denbora" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Menuaren musikaren bolumena" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Sarreraren logoak" #+ Slider controlling volume of the intro logos.
+	val[]: "Sarreraren logoen bolumena" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "AHOTS-NABIGAZIOA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Ibilbide-aholkulariaren aurreko orrialdea"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Ibilbide-aholkulariaren helmuga-modua"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Reset Head (Head tracking)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Enable Head Tracking" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pause Extended View (experimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Apply Extended View Preset 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Apply Extended View Preset 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Apply Extended View Preset 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Kamera biratu (saguarekin)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Extended View" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Extended View Presets" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Enter preset name" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Are you sure you want to delete the selected preset?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Gaze Tracking Settings" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Screen space ambient occlusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Tarte dinamiko handia (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Uneko lana bertan behera utzi"
 
-
 	key[]: "visit_service"
 	val[]: "Tailer batera joan zaitez!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Bidai osoaren informazioa" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Bidearen hurrengo puntuaren informazioa" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Aldatu lanaren deskribapen orrialdera ($KEY$) jarraitzeko..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Lanaren deskribapen orrialdeak eramaten duzun karga eta bere helmuga laburtzen du. Noiz itxaroten zaituzten, zenbat denbora duzun soberan eta zenbateko irabaziak izango dituzun aipatzen dizu.<br><br>Lana ere atzera bota dezakezu, behar izatekotan, botoi gorria sakatuz. Kasu horretan, isun bat ordaindu beharko duzu, jakina."
+	val[]: "The job description page summarizes what you're carrying and where. It tells you when you are expected, how much time you have left and how much money you'll receive if you arrive on time without damaging the cargo."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Aldatu diagnostiko orrialdera ($KEY$) jarraitzeko..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Pintura" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Pintura luzea" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Kromatua" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Irudi Dinamikoak aktibatu?<br><br>World of Trucks plataformatik ateratako irudiak ikusi ahal izango dituzu jokoa kargatzen ari den bitartean." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Eduki-aldaketa detektatu da. Nabigazio-datuak eguneratzen. Itxaron, mesedez..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

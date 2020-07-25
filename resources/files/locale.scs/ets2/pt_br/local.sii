@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Quebra-mato"
+
+	key[]: "l_horn"
+	val[]: "Buzina da Esquerda"
+
+	key[]: "r_horn"
+	val[]: "Buzina da Direita"
 
 	key[]: "f_mirror"
 	val[]: "Retrovisor Frontal"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Tipo de Tinta" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Manter Predefinição" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Salvar cor como predefinição" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Usar Predefinição" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Salvar todas as cores como predefinição" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Aplicar cor predefinida" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Selecione uma carga para ver os detalhes do percurso" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distância até o próximo checkpoint"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Tempo até o próximo checkpoint" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Volume da música da interface" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Volume da introdução" #+ Slider controlling volume of the intro logos.
+	val[]: "Volume dos logos de introdução" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAVEGAÇÃO POR VOZ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Página Anterior do Supervisor de Rotas"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Modo de destino do Route Advisor"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Resetar Cabeça (Rastreamento)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Ativar Rastreamento de Cabeça" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pausar Visão Estendida (experimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Aplicar Predefinição de Visão Estendida 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Aplicar Predefinição de Visão Estendida 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Aplicar Predefinição de Visão Estendida 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Girar Câmera (com o mouse)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Visão Estendida" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Predefinições de Visão Estendida" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Inserir nome da predefinição" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Tem certeza que quer deletar a predefinição selecionada?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "A predefinição existente com o mesmo nome será substituída. Deseja continuar?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Ajustes do Rastreamento do Olhar" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Oclusão de ambiente (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Grande alcance dinâmico (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4561,7 +4608,7 @@ localization_db : .localization
 	val[]: "Recalculando rota..." #+ Shown temporarily when navigation route is being recalculated.
 
 	key[]: "adviser_eta"
-	val[]: "Chegada estimada:" #+ For example "ETA: Sat 14:20 CEST"
+	val[]: "Chegada em:" #+ For example "ETA: Sat 14:20 CEST"
 
 	key[]: "job_income"
 	val[]: "Renda do trabalho" #+ For example "Job income: E6,526"
@@ -4579,7 +4626,7 @@ localization_db : .localization
 	val[]: "Mensagens Curtas" #+ Tooltip for short messages page in route advisor
 
 	key[]: "adviser_tooltip_tutorial"
-	val[]: "Tutorial de Navegação" #+ Tooltip for the tutorial icon route advisor
+	val[]: "Tutorial do Navegador" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "O Serviço de Assistência pode levar você e seu caminhão até $CITY$. Isso custará $MONEY$ e a viagem demorará $TIME$.<br offset=30>Você concorda?"
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Cancelar o trabalho atual"
 
-
 	key[]: "visit_service"
 	val[]: "Visite uma oficina imediatamente!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Informação da viagem inteira" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informação do próximo checkpoint" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -5465,7 +5519,7 @@ localization_db : .localization
 
 
 	key[]: "job_done_desc"
-	val[]: "$CARGO$ transportada de $ORIGIN$ para $DESTINATION$."
+	val[]: "Carga de $CARGO$ transportada de $ORIGIN$ para $DESTINATION$."
 
 	key[]: "time_taken"
 	val[]: "Tempo necessário:"
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Mude para a página de descrição de trabalhos ($KEY$) para continuar..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "A página de descrição do trabalho resume o que você está transportando e para onde. Ele te diz qual a data esperada para a entrega, quanto tempo lhe resta e quanto dinheiro você vai receber se você chegar a tempo e sem danificar o carga.<br><br>Você também pode cancelar o trabalho, se você realmente quiser, pressionando a tecla vermelha. Neste caso, você terá que pagar uma quantia substancial como penalidade."
+	val[]: "A página de descrição da entrega resume qual sua carga e para onde está indo. Ela te avisa quando você deve chegar, quando tempo ainda te resta e o dinheiro a receber se você chegar a tempo sem danificar a carga."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Mude para a página de diagnóstico ($KEY$) para continuar..."
@@ -9647,7 +9701,7 @@ localization_db : .localization
 #@{
 
 	key[]: "sys_no_graphics"
-	val[]: "Euro Truck Simulator 2 está tendo um problema e é incapaz de renderizar gráficos em seu computador (nenhum dispositivo gráfico válido foi encontrado).\nSugestões:\n\n1. Verifique se o seu computador e placa de vídeo atendem os requisitos mínimos de hardware.\n2. Atualize seu computador com a última versão do DirectX da Microsoft.\n3. Faça o download e instale os drivers mais recentes para sua placa de vídeo no site do seu fornecedor - os seus drivers gráficos estão provavelmente desatualizados.\n4. Tente alterar o método de renderização de OpenGL para DirectX ou vice-versa.\n5. Elimine arquivo de configuração 'config.cfg' em 'Documentos/'Euro Truck Simulator 2 '. Ele pode ter sido corrompido.\nEste arquivo será automaticamente re-criado com os valores padrão válidos."
+	val[]: "Euro Truck Simulator 2 está tendo um problema e é incapaz de renderizar gráficos em seu computador (nenhum dispositivo gráfico válido foi encontrado).\nSugestões:\n\n1. Verifique se o seu computador e placa de vídeo atendem os requisitos mínimos de hardware.\n2. Atualize seu computador com a última versão do DirectX da Microsoft.\n3. Faça o download e instale os drivers mais recentes para sua placa de vídeo no site do seu fornecedor - os seus drivers gráficos estão provavelmente desatualizados.\n4. Tente alterar o método de renderização de OpenGL para DirectX ou vice-versa.\n5. Elimine arquivo de configuração 'config.cfg' em 'Documentos/'Euro Truck Simulator 2 '. Ele pode ter sido corrompido.\nEste arquivo será automaticamente recriado com os valores padrão válidos."
 
 	key[]: "sys_no_graphics_simple"
 	val[]: "Euro Truck Simulator 2 está tendo um problema e não é capaz de renderizar gráficos em seu computador (nenhum dispositivo gráfico válido foi encontrado)."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Pintura" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Pintura Longa" #+ Extended leg version of the front truck mirror
+	val[]: "Pintado Longo" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
@@ -10079,7 +10133,7 @@ localization_db : .localization
 	val[]: "Pintura & Cromado" #+ Painted and chromed mirror, doorhandle or other accessory
 
 	key[]: "plastic_chrom"
-	val[]: "Plástico e Cromado" #+ Plastic mixed with chromed mirror, doorhandle or other accessory
+	val[]: "Plástico & Cromado" #+ Plastic mixed with chromed mirror, doorhandle or other accessory
 
 	key[]: "plastic_paint"
 	val[]: "Pintura & Plástico" #+ Plastic mixed with painted mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Ativar o recurso de Imagem em Destaque?<br><br>Você poderá navegar pela seleção de imagens espetaculares escolhidas à mão do World of Trucks para serem usadas nas telas de carregamento." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Mudança no conteúdo detectada. Atualizando dados de navegação. Por favor aguarde..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

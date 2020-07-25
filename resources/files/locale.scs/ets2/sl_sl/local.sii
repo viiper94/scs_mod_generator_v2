@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "'Bull' prečka"
+
+	key[]: "l_horn"
+	val[]: "Leva troblja"
+
+	key[]: "r_horn"
+	val[]: "Desna troblja"
 
 	key[]: "f_mirror"
 	val[]: "Sprednje ogledalo"
@@ -1592,7 +1598,7 @@ localization_db : .localization
 	val[]: "Naloži prej shranjeno igro. Trenutni napredek se bo izgubil!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
-	val[]: "Ali želite naložiti drugo igro?<br><br> Vaš trenutni napredek bo izgubljen razen če ste ga shranili prej."
+	val[]: "Ali želiš naložiti drugo igro?<br><br> Tvoj trenutni napredek bo izgubljen, če ga predhodno nisi shranil."
 
 	key[]: "autosave"
 	val[]: " - Avtomatsko shranjena igra -" #+ Name used inside slot corresponding to automatically saved game.
@@ -1661,7 +1667,7 @@ localization_db : .localization
 	val[]: "Ali želiš prepisati to starejšo shranjeno igro?"
 
 	key[]: "save_delete"
-	val[]: "Ste prepričani da želite izbrisati to shranjeno igro?"
+	val[]: "Si prepričan, da želiš izbrisati to shranjeno igro?"
 
 	key[]: "save_input_hint"
 	val[]: "- Vnesi ime za novo shranjeno igro -" #+ Text shown in the save name edit box until any content is entered.
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Pobarvano Mesto" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Ohrani kot prednastavitev" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Shrani barvo kot prednastavljeno" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Uporabi Prednastavitev" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Shrani vse barve kot prednastavljene" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Uporabi prednastavljeno barvo" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Izberi tovor za podrobnosti o poti" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Razdalja do naslednje kontrolne točke"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Čas do naslednje kontrolne točke" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -1996,7 +2013,7 @@ localization_db : .localization
 	val[]: "Spremeni nastavitve profila." #+ Help message associated with profile selection icon.
 
 	key[]: "wanna_remove_profile"
-	val[]: "Ste prepričani, da želite izbrisati ta profil?"
+	val[]: "Si prepričan, da želiš izbrisati ta profil?"
 
 	key[]: "profile_level"
 	val[]: "Nivo" #+ Suffixed with number to indicate experience level of the profile. For example "Level 1".
@@ -2319,7 +2336,7 @@ localization_db : .localization
 
 
 	key[]: "wrong_key_entered"
-	val[]: "Vnešen ključ je napačen ali neveljaven. Če ste ga napisali napačno, prosimo poskusite ponovno.<br offset=15>Prepričajte se, da vpisujete pravilne črke in števila. Pogosto se lahko zgodi, da se črke zamenja z števili, kot npr.<br offset=15>B in 8, G in 6, U in V, Q in O<br>črka O in številka 0 (nič),<br>črka Z in številka 2 (dve)."
+	val[]: "Vnešen ključ je napačen ali neveljaven. Če si ga napisal napačno, prosimo poskusi ponovno.<br offset=15>Prepričaj se, da vpisuješ pravilne črke in števila. Pogosto se lahko zgodi, da se črke zamenja z števili, kot npr.<br offset=15>B in 8, G in 6, U in V, Q in O<br>črka O in številka 0 (nič),<br>črka Z in številka 2 (dve)."
 
 
 	key[]: "activated"
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Glasnost glasbe uporabniškega vmesnika" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Uvod v igro" #+ Slider controlling volume of the intro logos.
+	val[]: "Glasnost uvodnih logotipov" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "GOVORNA NAVIGACIJA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Route Advisor - Prejšnja Stran"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor - Način destinacije"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Ponastavi pozicijo glave (Sistem sledenja glavi)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Omogoči sledenje glavi" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Začasno ustavi razširjen pogled (eksperimentalno)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Uporabi prednastavljen razširjen pogled št. 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Uporabi prednastavljen razširjen pogled št. 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Uporabi prednastavljen razširjen pogled št. 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Omogoči Zasuk Kamere (kadar je miška kontroler)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Razširjen pogled" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Prednastavljeni razširjeni pogledi" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Vnesi ime prednastavitve" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Si prepričan, da želiš izbrisati izbrano prednastavitev?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Obstoječe prednastavitve z enakim imenom bodo prepisane. Želiš nadaljevati?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Nastavitve sledenja oči" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Glajenje robov (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Okluzija okolice v zaslonskem prostoru (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Visok dinamični doseg (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Prekliči trenutno dostavo"
 
-
 	key[]: "visit_service"
 	val[]: "Takoj obišči servis!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Popolne informacije o potovanju" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informacije kontrolne točke" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -7520,7 +7574,7 @@ localization_db : .localization
 	val[]: "Ne moreš se preseliti dokler opravljaš dostavo! Najprej zaključi dostavo."
 
 	key[]: "driverman_conf_relocate"
-	val[]: "Res želiš premestiti sebe z mestom voznika  $DRIVER_DST$?"
+	val[]: "Res želiš zamenjati z mestom voznika $DRIVER_DST$?"
 
 	key[]: "driverman_conf_relocate2"
 	val[]: "<br>(Zamenjva bo trajala $TIME$, ker voznik trenutno opravlja dostavo)"
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Preklopi na opisno stran ponudbe ($KEY$) za nadaljevanje..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Tekst opisuje kaj boste peljali in kam. Pove vam kdaj je pričakovana dostava tovora, koliko časa vam je še ostalo in koliko denarja boste prejeli če med potjo ne boste poškodovali tovora.<br><br>To dostavo lahko prekinete tako da pritisnete rdeči gumb. V tem primeru boste morali plačati tudi kazen."
+	val[]: "Opis dostave povzema informacije o tem kaj voziš in kam. Izdaja informacije tudi o tem kdaj te pričakujejo, koliko ti preostane časa in koliko denarja dobiš v zameno, če prispeš pravočasno z nepoškodovanim tovorom."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Premakni na diagnostično stran ($KEY$) za nadaljevanje... "
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Omogoči funkcionalnost Slika pod Žarometom?<br><br>Lahko boš brskal po selekciji spektakularnih ročno izbranih slik iz portala World of Trucks in jih videval med nalaganjem igre." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Zaznana sprememba vsebine. Posodabljanje podatkov navigacije. Prosimo, počakajte ..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

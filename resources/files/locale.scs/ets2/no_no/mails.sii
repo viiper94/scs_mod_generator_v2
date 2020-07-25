@@ -88,7 +88,7 @@ SiiNunit
 	mail_text: mailtext.comp_teaser {
 		from: "$COMPANY$, $CITY$" #+ Message sender
 		subject: "Sjåfører med eget materiell søkes" #+ Message subject
-		body: "Tilbud om jobb<br><br>Vi er på utkikk etter dyktige sjåfører med egen trekkvogn for et stort antall oppdrag. Vi tilbyr konkurransedyktige priser på opptil $MONEY$ per oppdrag. Om du er i besittelse av egen trekkvogn, ta gjerne kontakt direkte med vår terminal i $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+		body: "Tilbud om jobb<br><br>Vi er på utkikk etter dyktige sjåfører med egen trekkvogn for et stort antall oppdrag. Vi tilbyr konkurransedyktige priser på opptil $MONEY$ per oppdrag. Om du er i besittelse av din egen lastebil, ta gjerne kontakt direkte med vår terminal i $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
 	}
 
 /**

@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Kængurugitter"
+
+	key[]: "l_horn"
+	val[]: "Venstre Horn"
+
+	key[]: "r_horn"
+	val[]: "Højre Horn"
 
 	key[]: "f_mirror"
 	val[]: "Frontspejl"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Farveplads" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Behold som forudindstilling" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Gem farve som en forudindstilling" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Brug Forvalgt" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Gem alle farver som forudindstilling" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Anvend farve-forudindstilling" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Vælg gods for at se rutedetaljer" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Næste punkt i km"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Næste punkt i tid" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Lydstyrke for menumusik" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro-logoer" #+ Slider controlling volume of the intro logos.
+	val[]: "Lydstyrke for intro-logoerne" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "Navigationstemme" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Rutevejleder Forrige Side"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Rutevejleder Mål-indstilling"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Nulstil Udsyn (Hoved styring)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Tænd head tracking" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pause-udvidet visning (eksperimentel)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Anvend udvidet syn forudindstilling 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Anvend udvidet syn forudindstilling 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Anvend udvidet syn forudindstilling 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rotér Kameraet (ved hjælp af musen)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,7 +3750,7 @@ localization_db : .localization
 	val[]: "Diverse" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Farvefeedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Farve-feedback" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Udvidet visning" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Fordindstillinger for udvidet syn" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Angiv forudindstillings-navn" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Er du sikker på du vil slette valgte forudindstillings-navn?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Eksisterende forudindstilling med samme navn vil blive overskrevet. Vil du fortsætte?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Indstillinger for bliksporing" #+ Header of the gaze settings
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Kvalitet af skærmens okklusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "High dynamic range (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Annuller nuværende job"
 
-
 	key[]: "visit_service"
 	val[]: "Du skal straks køre på værksted!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Komplet tur-info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Info om næste kontrolpunkt" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Skift til jobbeskrivelse ($KEY$) for at fortsætte..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Jobbeskrivelsen fortæller hvad du skal transportere, og hvorhen det skal transporteres. Det fremgår, hvornår du skal være fremme, og hvor meget tid du har tilbage, samt hvor meget du tjener ved at nå frem til tiden uden at skade godset.<br><br>Du kan også trykke på den røde knap for at annullere leverancen. Dette vil dog medføre en stor bøde."
+	val[]: "Jobbeskrivelses-siden opsummerer, hvad du fragter og hvorhen. Den fortæller dig, hvornår du forventes at ankomme, hvor lang tid du har tilbage og hvor mange penge, du vil modtage, hvis du ankommer til tiden uden at skade fragten."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Skift til diagnosticerings-siden ($KEY$) for at fortsætte..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Aktiver billedfremviser-funktionen?<br><br>Du vil være i stand til at gennemse udvalgte spektakulære billeder, håndplukket fra World of Truck, til fremvisning mens spillet venter på at starte op." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Ændring af indhold registreret. Opdaterer navigationsdata. Vent venligst..." #+ Shown on loading screen
 #@}
 
 
@@ -11809,7 +11866,7 @@ localization_db : .localization
 #+ Trailer ownership
 #@{
 	key[]: "cargo_loading_screen"
-	val[]: "Laster trailer..." #+ The text showed when cargo is loading on trailer.
+	val[]: "Pålæsning af trailer..." #+ The text showed when cargo is loading on trailer.
 
 	key[]: "cargo_loaded1"
 	val[]: "Lasten er nu på din trailer."
@@ -11827,7 +11884,7 @@ localization_db : .localization
 	val[]: "Henter trailer"
 
 	key[]: "job_load"
-	val[]: "Tryk følgende knap for at laste din trailer:"
+	val[]: "Tryk følgende knap for at pålæs din trailer:"
 
 	key[]: "job_autoload_title"
 	val[]: "Last automatisk trailer"
@@ -11836,10 +11893,10 @@ localization_db : .localization
 	val[]: "Last traileren uden at parkere,<br>tast:"
 
 	key[]: "job_unload_title"
-	val[]: "Losser trailer"
+	val[]: "Aflæs trailer"
 
 	key[]: "job_unload"
-	val[]: "Tryk følgende knap for at losse din trailer:"
+	val[]: "Tryk følgende knap for at aflæs din trailer:"
 
 	key[]: "cargo_market_t"
 	val[]: "LASTCENTER"
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

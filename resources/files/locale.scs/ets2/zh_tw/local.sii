@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "防撞桿"
+
+	key[]: "l_horn"
+	val[]: "Left Horn"
+
+	key[]: "r_horn"
+	val[]: "Right Horn"
 
 	key[]: "f_mirror"
 	val[]: "前後照鏡"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "塗裝" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "設為預設" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Save colour as preset" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "選擇預設" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Save all colours as preset" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Apply colour preset" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "選擇貨物，以查看路線資訊" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Next checkpoint distance"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Next checkpoint time" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "UI music volume" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro logos" #+ Slider controlling volume of the intro logos.
+	val[]: "Intro logos volume" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "VOICE NAVIGATION" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "行車資訊器上一頁"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor Destination Mode"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Reset Head (Head tracking)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Enable Head Tracking" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pause Extended View (experimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Apply Extended View Preset 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Apply Extended View Preset 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Apply Extended View Preset 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "移動視角(使用滑鼠控制)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Extended View" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Extended View Presets" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Enter preset name" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Are you sure you want to delete the selected preset?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Gaze Tracking Settings" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Screen space ambient occlusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "高動態範圍 (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "取消目前工作"
 
-
 	key[]: "visit_service"
 	val[]: "請立刻參訪卡車維修中心！"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Full trip info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Next checkpoint info" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "切換到工作描述頁面 ($KEY$) 來繼續..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "工作描述頁面總結了你將運輸的貨物以及目的地的位置 ｡ 他會告訴你預期送達的時間，你還剩下多少時間以及當你準時送達後並且没有損壞貨物的情况下會獲得多少金錢 ｡ <br><br>你也可以取消任務，如果你確定想要這麼做，按下红色的按鈕 ｡ 當你按下這個選項時，你將必須付出巨額的違約金 ｡ "
+	val[]: "The job description page summarizes what you're carrying and where. It tells you when you are expected, how much time you have left and how much money you'll receive if you arrive on time without damaging the cargo."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "切換到車況界面 ($KEY$) 來繼續..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "啟用焦點照片功能？<br><br>你可以在載入畫面中看到從 World of Trucks 精心挑選的照片 ｡ " #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Content change detected. Updating navigation data. Please wait..." #+ Shown on loading screen
 #@}
 
 
@@ -12350,7 +12407,7 @@ localization_db : .localization
 	val[]: "Double"
 
 	key[]: "b_double"
-	val[]: "B-double"
+	val[]: "B-Double"
 
 	key[]: "hct"
 	val[]: "HCT"
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

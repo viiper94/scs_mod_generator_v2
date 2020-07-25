@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Thanh cản trước"
+
+	key[]: "l_horn"
+	val[]: "Còi trái"
+
+	key[]: "r_horn"
+	val[]: "Còi phải"
 
 	key[]: "f_mirror"
 	val[]: "Kính phía trước xe"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Chỗ chứa Sơn" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Giữ màu hiện tại" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Lưu cấu hình màu" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Sử dụng cài sẵn" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Lưu tất cả cấu hình màu" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Áp dụng cấu hình màu" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Chọn chuyến hàng để biết chính xác lộ trình." #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Khoảng cách tiếp điểm kế tiếp"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Thời gian đến tiếp điểm kế tiếp" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Âm lượng giao diện người dùng" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Logo giới thiệu" #+ Slider controlling volume of the intro logos.
+	val[]: "Âm lượng logo giới thiệu" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "ĐIỀU HƯỚNG BẰNG GIỌNG NÓI" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Trang trước thiết bị dẫn đường"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Chế độ thiết bị dẫn đường đến đích"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Đặt lại vị trí đầu (Bộ theo dõi chuyển động của đầu)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Kích hoạt theo dõi đầu" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Tạm dừng chế độ xem mở rộng (thử nghiệm)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Áp dụng cấu hình quan sát mở rộng 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Áp dụng cấu hình quan sát mở rộng 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Áp dụng cấu hình quan sát mở rộng 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Xoay góc nhìn (sử dụng chuột)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Chế độ hiển thị mở rộng" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Các cấu hình quan sát mở rộng" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Nhập tên cấu hình" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Bạn có chắc muốn xóa cấu hình này?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Cấu hình trùng tên sẽ bị ghi đè. Bạn có muốn tiếp tục?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Cài đặt theo dõi việc nhìn chằm chằm" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Khử răng cưa (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Đổ bóng trên không gian màn hình (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Độ tương phản rộng (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Hủy công việc hiện tại"
 
-
 	key[]: "visit_service"
 	val[]: "Hãy đến trạm sửa xe ngay!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Toàn bộ thông tin hành trình" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Thông tin tiếp điểm kế tiếp" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4843,7 +4897,7 @@ localization_db : .localization
 	val[]: "Xe của bạn không nằm trong tình trạng kỹ thuật mà chính quyền bắt buộc. Bạn phải khắc phục chúng!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Your truck and trailer combination is not legal in this country!" #+ Adviser text
+	val[]: "Tổ hợp xe tải và thùng hàng của bạn không hợp lệ ở bang này!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Xe tải với mục đích thương mại bị cấm tại khu vực này. Bạn phải quay đầu và tìm đường khác!" #+ Adviser text
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Chuyển sang trang mô tả công việc ($KEY$)  để tiếp tục..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Phần chi tiết về chuyến hàng sẽ cho bạn biết bạn đang vận chuyển thứ gì và cần đến đâu. Nó cũng sẽ cho bạn biết thời gian giao hàng là khi nào, bạn còn bao nhiêu thời gian, và quan trọng nhất là bạn sẽ được bao nhiêu tiền khi hoàn thành chuyến hàng này.<br><br>Bạn cũng có thể hủy chuyến hàng nếu bạn không còn sự lựa chọn khác. Lúc này bạn phải trả phí bồi thường."
+	val[]: "Trang mô tả công việc tóm tắt bạn đang vận chuyển gì và đi đâu. Nó cho biết bạn dự kiến đến khi nào, còn bao nhiêu thời gian và nhận được bao nhiêu tiền nếu đến đúng giờ với hàng hóa không bị hư hại."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Chuyển sang trang chuẩn đoán ($KEY$) để tiếp tục..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Sơn" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Sơn phiên bản dài" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chrome" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Bật tính năng những bức ảnh tiêu biểu(Image Spotlight)? <br><br> Bạn có thể xem những bức ảnh phong cảnh tuyệt vời được chọn lọc từ World of Trucks để sử dụng làm màn hình tải game." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Phát hiện thay đổi nội dung. Đang cập nhật dữ liệu dẫn đường. Hãy đợi..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

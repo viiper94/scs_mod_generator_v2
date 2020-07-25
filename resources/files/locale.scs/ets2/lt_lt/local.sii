@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Rėmas priekyje"
+
+	key[]: "l_horn"
+	val[]: "Kairys trimitas"
+
+	key[]: "r_horn"
+	val[]: "Dešinys trimitas"
 
 	key[]: "f_mirror"
 	val[]: "Priekinis veidrodis"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Dažų vieta" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Paskirti įprastine" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Įsiminti spalvą" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Naudoti iš sąrašo" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Įsiminti visas spalvas" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Pritaikyti įsimintą spalvą" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Pasirinkite krovinį ir pamatysite maršruto duomenis" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Atstumas iki kito taško"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Laikas iki kito taško" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Meniu muzikos garsumas" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Logotipai pradžioje" #+ Slider controlling volume of the intro logos.
+	val[]: "Logotipų pradžioje garsumas" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "BALSO NAVIGACIJA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Maršruto patarėjo Ankstesnis puslapis"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Maršruto patarėjo tikslo režimas"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Atstatyti galvą (galvos sekimas)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Įjungti galvos sekimą" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Sustabdyti ištęstą vaizdą (eksperimentas)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Pritaikyti nustatytą praplėstą vaizdą 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Pritaikyti nustatytą praplėstą vaizdą 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Pritaikyti nustatytą praplėstą vaizdą 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Sukioti kamerą (valdant pele)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,7 +3750,7 @@ localization_db : .localization
 	val[]: "Kita" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Spalvų atgalinis ryšys" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Spalvų atsakas" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Ištęstas vaizdas" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Nustatyti praplėsti vaizdai" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Įrašykite nustatymo pavadinimą" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Ar tikrai norite ištrinti šį nustatymą?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Dabartinis nustatymas tokiu pavadinimu bus perrašytas. Tęsti?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Žvilgsnio sekimo nustatymai" #+ Header of the gaze settings
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Išlyginimas (antialiasing SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Ekrano erdvės okliuzija (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Aukštas dinaminis ruožas (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Nutraukti dabartinį darbą"
 
-
 	key[]: "visit_service"
 	val[]: "Nedelsiant vykite į aptarnavimo stotį!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Visa kelionės info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Info apie kitą tašką" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Persijunkite į darbo aprašymo puslapį ($KEY$)..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Darbo aprašymo puslapis rodo ką Jūs vežate ir kur. Čia nurodoma kada Jūsų laukiama, kiek liko laiko ir kiek pinigų gausite, jei atvyksite laiku ir su nepažeistu kroviniu.<br><br>Taip pat čia galite nutraukti darbą jei labai reikia, paspausdami raudoną mygtuką. Tokiu atveju reikės sumokėti netesybas."
+	val[]: "Darbo aprašymo ekranas apibendriną ką ir kur reikia vežti. Čia matai kada tavęs laukia, kiek laiko liko ir kiek pinigų gausi, jei krovinį atveši laiku ir nepažeistą."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Persijunkite į diagnostikos puslapį ($KEY$)..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Dažai" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Nudažytas ilgas" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chromo" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Įjungti Vaizdų peržiūrą?<br><br>Žaidimui kraunantis galėsite peržiūrėti įvairius nuostabius vaizdus, atrinktus iš visų World of Trucks vaizdų." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Nustatytas turinio pasikeitimas. Atnaujinu navigacijos duomenis. Palaukite..." #+ Shown on loading screen
 #@}
 
 
@@ -12100,7 +12157,7 @@ localization_db : .localization
 	val[]: "Reikia garažo mieste:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Sukaupkite daugiau patirties kad Jums atsirakintų Bankas"
+	val[]: "Sukaupkite daugiau patirties kad Jums atsirakintų Bankas."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "Šiuo metu nėra galimų naujų sunkvežimių aksesuarų."
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

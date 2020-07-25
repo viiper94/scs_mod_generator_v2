@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -918,7 +918,7 @@ localization_db : .localization
 	val[]: "HENGEROPPGRADERINGER" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "truck_upgrades"
-	val[]: "Lastebiloppgraderinger" #+ The name of the screen containing truck upgrades. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Lastebil- oppgraderinger" #+ The name of the screen containing truck upgrades. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "trailer_upgrades"
 	val[]: "Henger- oppgraderinger" #+ The name of the screen containing trailer upgrades. There is limited space allowing for two lines of 7 'W' characters each.
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Kufanger"
+
+	key[]: "l_horn"
+	val[]: "Venstre Horn"
+
+	key[]: "r_horn"
+	val[]: "Høyre Horn"
 
 	key[]: "f_mirror"
 	val[]: "EU-speil"
@@ -1514,7 +1520,7 @@ localization_db : .localization
 	val[]: "Din fremdrift blir lagret automatisk. <br><br>Er du sikker på at du vil avslutte spillet?"
 
 	key[]: "change_profile_t"
-	val[]: "SKIFT PROFIL" #+ Title of message box shown before really leaving profile to profile selection. Please keep in upper case where possible.
+	val[]: "BYTTE PROFIL" #+ Title of message box shown before really leaving profile to profile selection. Please keep in upper case where possible.
 
 	key[]: "wanna_change_profile"
 	val[]: "Er du sikker på at du ønsker å forlate denne profilen? <br><br> Fremdriften vil bli lagret automatisk."
@@ -1661,7 +1667,7 @@ localization_db : .localization
 	val[]: "Er du sikker på at du vil overskrive din gamle lagring?"
 
 	key[]: "save_delete"
-	val[]: "Er du sikker på at du vil slette valgte lagring?"
+	val[]: "Er du sikker på at du vil slette den valgte lagring?"
 
 	key[]: "save_input_hint"
 	val[]: "- Skriv inn navn på ny lagret spill -" #+ Text shown in the save name edit box until any content is entered.
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Velg farge" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Behold som forhåndsinnstilt" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Lagre farge som forhåndsinnstilt" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Bruk forhåndsvalgt" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Lagre alle farger som forhåndsinnstilt" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Bruk forhåndsinnstilt farge" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1730,7 +1739,7 @@ localization_db : .localization
 	val[]: "VELG OPPDRAGSTYPE" #+ Title of window containing selection between quick job and freight market screens. Please keep in upper case where possible.
 
 	key[]: "job_market"
-	val[]: "Oppdrag- marked" #+ Icon allowing player to take a job. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Oppdrags- marked" #+ Icon allowing player to take a job. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "take_job"
 	val[]: "Ta oppdrag" #+ Button which will take the selected job. Shown for quick jobs or when the player is at pickup point of freght market job.
@@ -1785,10 +1794,10 @@ localization_db : .localization
 #@{
 
 	key[]: "quick_job_t"
-	val[]: "KJAPP JOBB TILBUD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "KJAPP OPPDRAGSTILBUD" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "job_quick"
-	val[]: "Kjapp jobb" #+ Icon opening the quick job screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Kjapp oppdrag" #+ Icon opening the quick job screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "quick_job_desc"
 	val[]: "Bli ansatt som sjåfør. Ikke noe styr, alt står klart. Bare velg et oppdrag og kjør."
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Velg last for å se rutedetaljer" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Neste sjekkpunktdistanse"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Neste sjekkpunkttid" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2005,7 +2022,7 @@ localization_db : .localization
 	val[]: "Avstand tilbakelagt:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "Fortsett spill" #+ Button which selects profile and continues in game.
+	val[]: "Fortsett å spille videre" #+ Button which selects profile and continues in game.
 
 	key[]: "new"
 	val[]: "Ny profil" #+ Button which opens new profile creation dialog.
@@ -2182,7 +2199,7 @@ localization_db : .localization
 	val[]: "Du har skrevet inn feil passord eller brukernavn."
 
 	key[]: "signin_access_denied"
-	val[]: "Passordet er feil, eller så eksisterer ikke kontoen. Trykk på Prøv igjen knappen for å skrive inn korrekt passord eller brukernavn/e-post."
+	val[]: "Passordet er feil, eller så eksisterer ikke kontoen. Trykk på Prøv igjen-knappen for å skrive inn korrekt passord eller brukernavn/e-post."
 
 	key[]: "continue_offline"
 	val[]: "Fortsett i frakoblet modus" #+ Button which loads the profile in offline mode
@@ -2525,7 +2542,7 @@ localization_db : .localization
 	val[]: "Lydstyrke for interiørlyder" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
-	val[]: "Radiovolum" #+ Slider controlling volume of the radio in game.
+	val[]: "Lydstyrke for radio" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Lydstyrke for stemmenavigasjon" #+ Slider controlling volume of the voice navigation.
@@ -2534,7 +2551,7 @@ localization_db : .localization
 	val[]: "Lydstyrke for stemmeangivelse" #+ Slider controlling voice over volume.
 
 	key[]: "music_volume"
-	val[]: "Volum for musikk" #+ Slider controlling volume of the in-game music.
+	val[]: "Lydstyrke for musikk" #+ Slider controlling volume of the in-game music.
 
 	key[]: "game_ui_volume"
 	val[]: "Lydstyrke for spillyder" #+ Slider controlling volume of the game sound effects.
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Lydstyrke for menymusikk" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Oppstartslogoer" #+ Slider controlling volume of the intro logos.
+	val[]: "Lydstyrke for oppstartslogoer" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "STEMMENAVIGASJON" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3056,10 +3073,10 @@ localization_db : .localization
 	val[]: "Fjern" #+ Button for cancelling the existing input assignent.
 
 	key[]: "press_key_to_assign"
-	val[]: "Trykk på tasten du vil bruke til denne funksjonen." #+ Key/button assignment hint.
+	val[]: "Trykk på den tasten du vil bruke til denne funksjonen." #+ Key/button assignment hint.
 
 	key[]: "press_button_to_assign"
-	val[]: "Trykk på knappen du vil bruke til denne funksjonen."#+ Key/button/axis assignment hint.
+	val[]: "Trykk på denne knappen du vil bruke til denne funksjonen."#+ Key/button/axis assignment hint.
 
 	key[]: "select_input_to_unassign"
 	val[]: "Velg inndata som du ønsker å fjerne funksjonen fra." #+ Hint shown when "unassign" button pressed.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Ruteplanlegger forrige side"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Ruteplanlegger destinasjonsmodus"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Nullstill utsyn (hodestyring)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Aktiver hodesporing" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pause utvidet visning (eksperimentell)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Bruk forhåndsinnstilling for utvidet visning 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Bruk forhåndsinnstilling for utvidet visning 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Bruk forhåndsinnstilling for utvidet visning 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Snu kamera (med muskontroll)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Utvidet visning" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Forhåndsinnstillinger for utvidet visning" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Skriv inn forhåndsinnstillingsnavn" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Er du sikker på at du vil slette den valgte forhåndsinnstillingen?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Eksisterende forhåndsinnstilling med samme navn vil bli overskrevet. Er du sikker på at du ønsker å fortsette?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Innstillinger for blikksporing" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Omgivende okklusjon i skjermområdet (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Utvidet dynamisk område (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Avbryt oppdrag"
 
-
 	key[]: "visit_service"
 	val[]: "Besøk verksted øyeblikkelig!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Full turinfo" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Neste sjekkpunktsinfo" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4661,10 +4715,10 @@ localization_db : .localization
 	val[]: "For å reparere, oppgradere eller lakkere<br>din lastebil eller henger, trykk:"
 
 	key[]: "job_offer"
-	val[]: "Trykk følgende tast for å se de forskjellige jobbtilbudene:"
+	val[]: "Trykk den følgende tast for å se de forskjellige oppdragstilbudene:"
 
 	key[]: "garage"
-	val[]: "Trykk på følgende tast for å administrere denne garasjen:"
+	val[]: "Trykk på den følgende tast for å administrere denne garasjen:"
 
 	key[]: "garage_basic"
 	val[]: "Dette er et enkelt skjul som beskytter mot regn og sterk vind.<br><br>Du bør gjerne vurdere en oppgradering senere."
@@ -4679,13 +4733,13 @@ localization_db : .localization
 	val[]: "Denne garasjen er til salgs for $MONEY$<br offset=10>Det har du dessverre ikke råd til å kjøpe den akkurat nå."
 
 	key[]: "enter_dealer"
-	val[]: "Trykk på følgende tast for å besøke lastebilforhandleren:"
+	val[]: "Trykk på den følgende tast for å besøke lastebilforhandleren:"
 
 	key[]: "closed_dealer"
 	val[]: "Forhandleren er stengt.<br offset=20>Åpningstider:<br>Mandag - Lørdag $START$ - $END$"
 
 	key[]: "enter_recruit"
-	val[]: "Trykk på følgende tast for å besøke bemanningsbyrået:"
+	val[]: "Trykk på den følgende tast for å besøke bemanningsbyrået:"
 
 	key[]: "closed_recruit"
 	val[]: "Bemanningsbyrået er stengt.<br offset=20>Åpningstider:<br>Mandag - Lørdag $START$ - $END$"
@@ -4694,13 +4748,13 @@ localization_db : .localization
 	val[]: "Du har oppdaget et bemanningsbyrå!<br><br>Her kan du ansette nye sjåfører til å jobbe for deg."
 
 	key[]: "attach_load"
-	val[]: "Trykk følgende tast <br> for å kople på hengeren:"
+	val[]: "Trykk den følgende tast <br> for å kople på hengeren:"
 
 	key[]: "attach_load_advanced"
-	val[]: "Trykk på følgende tast <br> for å fullføre tilkoblingen:" #+ Adviser text for advanced coupling only shown after fifth wheel is locked and player should press button to finish coupling.
+	val[]: "Trykk på den følgende tast <br> for å fullføre tilkoblingen:" #+ Adviser text for advanced coupling only shown after fifth wheel is locked and player should press button to finish coupling.
 
 	key[]: "unload_load"
-	val[]: "Godset er klart til lossing.<br> Trykk på følgende tast for å koble av hengeren:"
+	val[]: "Godset er klart til lossing.<br> Trykk på den følgende tast for å koble av hengeren:"
 
 	key[]: "unload_load_auto"
 	val[]: "For å bruke automatisk parkering og fullføre leveransen<br>(du vil gå glipp av parkeringspoeng),<br>trykk på:"
@@ -4724,7 +4778,7 @@ localization_db : .localization
 	val[]: "Du begynner å bli trøtt.<br>Du må finne en plass du kan stå og hvile."
 
 	key[]: "parking"
-	val[]: "Trykk på følgende tast for å hvile:"
+	val[]: "Trykk på den følgende tast for å hvile:"
 
 	key[]: "park_nf"
 	val[]: "Dette er en rasteplass,<br> men du er ikke trøtt akkurat nå."
@@ -4742,16 +4796,16 @@ localization_db : .localization
 	val[]: "Stopp bilen!"   #+ Quick message shown when sleep was prevented by truck movement.
 
 	key[]: "stop_engine"
-	val[]: "Trykk på følgende tast for å stoppe motoren:"
+	val[]: "Trykk på den følgende tast for å stoppe motoren:"
 
 	key[]: "engine_turning_off"
 	val[]: "Skrur av motoren..."
 
 	key[]: "engage_parking_brake"
-	val[]: "Trykk på følgende tast for å aktivere håndbrekket:"
+	val[]: "Trykk på den følgende tast for å aktivere håndbrekket:"
 
 	key[]: "gas_station_hint"
-	val[]: "Trykk og hold følgende tast for å fylle tanken:"
+	val[]: "Trykk og hold den følgende tast for å fylle tanken:"
 
 	key[]: "diesel_price"
 	val[]: "Dieselpris"
@@ -4780,22 +4834,22 @@ localization_db : .localization
 
 
 	key[]: "toll_one_time"
-	val[]: "For å passere må du betale $MONEY$.<br>Trykk følgende tast:"
+	val[]: "For å passere må du betale $MONEY$.<br>Trykk den følgende tast:"
 
 	key[]: "toll_one_time_quick"
-	val[]: "For å passere her må du betale $MONEY$. Arbeidsgiveren din vil ta regningen.<br> Trykk følgende tast:"
+	val[]: "For å passere her må du betale $MONEY$. Arbeidsgiveren din vil ta regningen.<br> Trykk den følgende tast:"
 
 	key[]: "toll_start"
-	val[]: "Start av bomvei. Behold billetten.<br> Trykk følgende tast:"
+	val[]: "Start av bomvei. Behold billetten.<br> Trykk den følgende tast:"
 
 	key[]: "toll_start_automatic"
 	val[]: "Start av bomvei. Avgift blir utbetalt ved slutten av bomveien."
 
 	key[]: "toll_end"
-	val[]: "Slutt på bomvei. Du må betale<br>$MONEY$.<br> Trykk på følgende tast:"
+	val[]: "Slutt på bomvei. Du må betale<br>$MONEY$.<br> Trykk på den følgende tast:"
 
 	key[]: "toll_end_quick"
-	val[]: "Slutt på bomvei. Din arbeidsgiver vil betale<br>$MONEY$.<br> Trykk på følgende tast:"
+	val[]: "Slutt på bomvei. Din arbeidsgiver vil betale<br>$MONEY$.<br> Trykk på den følgende tast:"
 
 	key[]: "toll_end_calc"
 	val[]: "Slutt på bomvei.<br>(Regner ut avgift, vennligst vent...)"
@@ -4896,7 +4950,7 @@ localization_db : .localization
 	val[]: "Motorfeil!<br>Besøk et serviceverksted så fort som mulig."
 
 	key[]: "job_delivery"
-	val[]: "Trykk følgende tast for å sjekke oppdraget:"
+	val[]: "Trykk den følgende tast for å sjekke oppdraget:"
 
 #+ blke weights, borders, x_rays, tolls
 #@{
@@ -8298,7 +8352,7 @@ localization_db : .localization
 
 
 	key[]: "compw_garages"
-	val[]: "Antall lokaler:"
+	val[]: "Antall garasjer:"
 
 	key[]: "compw_drivers"
 	val[]: "Antall sjåfører:"
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Bytt til oppdragsinformasjon ($KEY$) for å fortsette..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Oppdragsinformasjonen viser hvilken last du har, og hvor den skal. Den gir estimert ankomsttid, hvor lenge det er til lasten skal leveres og hvor mye du får betalt om du leverer i tide og skadefritt.<br><br>Du kan også avbryte oppdraget om du må, ved å trykke på den røde knappen. Du må i så fall betale et betydelig straffegebyr."
+	val[]: "Oppdragsbeskrivelsesside oppsummerer hva du fører og hvor. Den forteller deg når du er forventet, hvor mye tid du har igjen og hvor mye penger du vil få hvis du ankommer i tide uten å skade lasten."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Bytt til diagnostikk ($KEY$) for å fortsette..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Lakkering" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Lakk lang" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Krom" #+ Chromed mirror, doorhandle or other accessory
@@ -10615,7 +10669,7 @@ localization_db : .localization
 	val[]: "Det lagrede spillet du prøver å laste inn bruker tilleggsfunksjoner som ikke er tilgjengelige. Disse manglende pakkene er:"
 
 	key[]: "missing_deps_cont"
-	val[]: "Vil du likevel fortsette?<br>Spillet kan bli ubrukelig." #+ missing mods warning
+	val[]: "Er du sikker på at du likevel vil fortsette?<br>Spillet kan bli ubrukelig!" #+ missing mods warning
 
 	key[]: "missing_deps_rdlc_cont"
 	val[]: "Vil du fortsette likevel?<br>Noen funksjoner kan forsvinne!" #+ missing dlc warning if the save depends only on functionality from removable DLCs (e.g. paintjob)
@@ -10869,7 +10923,7 @@ localization_db : .localization
 	val[]: "Modifikasjonen er inkompatibel med den aktuelle spillversjonen. Du kan ikke aktivere denne." #+ Text shown if mod is not compatible with currently game version, and user tries to activate it.
 
 	key[]: "mm_confirm_leave"
-	val[]: "Vil du virkelig forlate modifikasjonsadministrasjon?" #+ Content of the dialog confirming leaving the mod manager.
+	val[]: "Er du sikker på at du vil gå ut av Modifikasjonsoversikt?" #+ Content of the dialog confirming leaving the mod manager.
 
 	key[]: "mm_confirm_leave_changes"
 	val[]: "Eventuelle endringer vil gå tapt." #+ Shown in the leave confirmation dialog if user have made some changes.
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Aktivere Image Spotlight-funksjonen?<br><br>Du vil kunne bla gjennom et utvalg spektakulære bilder håndplukket fra World of Trucks til bruk når spillet laster inn." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Innholdsforandring oppdaget. Oppdaterer navigasjonsdata. Vennligst vent..." #+ Shown on loading screen
 #@}
 
 
@@ -11019,7 +11076,7 @@ localization_db : .localization
 	val[]: "Eksterne oppdrag" #+ name of WOTR Jobs icon on desktop
 
 	key[]: "online_job_desc"
-	val[]: "Komplette leveransekontrakter fra World of Trucks ved å bruke ditt eget utstyr. En oversikt over disse leveransene lagres i din World of Trucks-profil." #+ description of the WOTR Jobs icon on desktop
+	val[]: "Komplette leveransekontrakter fra World of Trucks ved å bruke din egen lastebil. En oversikt over disse leveransene lagres i din World of Trucks-profil." #+ description of the WOTR Jobs icon on desktop
 
 	key[]: "external_market"
 	val[]: "Ekstern- lastemarkedet"
@@ -11181,7 +11238,7 @@ localization_db : .localization
 	val[]: "Oversikt over kompatible hengere" #+ Button opening compatible trailers browser where user can select trailer to continue delivering external market job from his own trailers.
 
 	key[]: "open_trailer_dealer"
-	val[]: "Åpne hengerkjøp" #+ Button opening trailer dealer external market job.
+	val[]: "Åpne Hengerkjøp" #+ Button opening trailer dealer external market job.
 
 	key[]: "trailer_selector_t"
 	val[]: "HENGERVALG"
@@ -11193,7 +11250,7 @@ localization_db : .localization
 #+ Misc World of Trucks related localization strings.
 #@{
 	key[]: "wotr_public_beta_warning"
-	val[]: "Spillet bruker den åpne betaklienten. World of Trucks-pålogging og alle nettfunksjoner bruker den åpne beta-weben: $OPENBETA_URL$" #+ Text displayed in notification when the player is playing open beta version.
+	val[]: "Spillet bruker den åpne betaklienten. World of Trucks-pålogging og alle nettfunksjoner bruker den åpne beta-nettsiden: $OPENBETA_URL$" #+ Text displayed in notification when the player is playing open beta version.
 #@}
 
 #+ Dependency missing dialog related texts.
@@ -11278,7 +11335,7 @@ localization_db : .localization
 	val[]: "Vekt på last"
 
 	key[]: "quick_job_resumed"
-	val[]: "Kjapp jobb pågår."
+	val[]: "Kjapp oppdrag pågår."
 
 	key[]: "company_job_resumed"
 	val[]: "Fraktmarked-oppdrag pågår."
@@ -11291,7 +11348,7 @@ localization_db : .localization
 #@{
 
 	key[]: "trailer_coupling"
-	val[]: "Kobling:<br> <br>Femte hjul låst. Løft benene og fest kabler..."
+	val[]: "Kobling:<br> <br>Femte hjul låst. Løfter benene opp og fester kabler..."
 
 	key[]: "trailer_decoupling"
 	val[]: "Frakobler:<br><br>Senke ben, løsne kabler og låse opp støttehjulet..."
@@ -11319,7 +11376,7 @@ localization_db : .localization
 	val[]: "Spillet er nedgradert til en eldre versjon." #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
-	val[]: "<br> <br> Endringer i spillversjonen kan ødelegge modfikasjoner, noe som kan føre til spillkrasj eller ustabilitet; modifikasjonskapere er ansvarlige for å opprettholde modifikasjonskompatibilitet. Forsikre deg om at dine aktiverte modfikasjonspakker er kompatible. <br> <br> Tips for feilsøking: Hvis den nåværende modifikasjon-utgivelsen er inkompatibel, kan du prøve å deaktivere den i Modifikasjonsadministrasjon.<br><br>Spillversjon: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
+	val[]: "<br> <br> Endringer i spillversjonen kan ødelegge modfikasjoner, noe som kan føre til spillkrasj eller ustabilitet; modifikasjonskapere er ansvarlige for å opprettholde modifikasjonskompatibilitet. Forsikre deg om at dine aktiverte modfikasjonspakker er kompatible. <br> <br> Tips for feilsøking: Hvis den nåværende modifikasjonsutgivelsen er inkompatibel, kan du prøve å deaktivere den i Modifikasjonsoversikt.<br><br>Spillversjon: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
 #@}
 
 #+ Strings related to accessory filtering feature.
@@ -11580,7 +11637,7 @@ localization_db : .localization
 
 	#+ Text on gps advisor that is showed when player drive on the trigger for special mission pickup.
 	key[]: "special_job_offer"
-	val[]: "Trykk følgende tast for å vise spesialoppdragstilbudet:"
+	val[]: "Trykk den følgende tast for å vise spesialoppdragstilbudet:"
 
 	#+ Text on gps advisor that is showed when player drive on the trigger for special mission pickup, this is the name of the trigger, the name of the menu.
 	key[]: "special_job_offer_title"
@@ -11694,7 +11751,7 @@ localization_db : .localization
 	val[]: "Kunne ikke laste ned Steam-innhold." #+ The error message showed in truck configurator screen when game fails to send Steam inventory request.
 
 	key[]: "inventory_wait_t"
-	val[]: "STEAM INVENTAR" #+ Title of the inventory wait dialog.
+	val[]: "STEAM-INNHOLD" #+ Title of the inventory wait dialog.
 
 	key[]: "inventory_wait_msg"
 	val[]: "Laster inn Steam-innhold..." #+ Message describing why player has to wait for inventory items to be loaded.
@@ -11724,7 +11781,7 @@ localization_db : .localization
 	val[]: "Prøv igjen senere" #+ The button continuing the flow of the game even if inventory failed to load - it will be loaded again when game will need it's data.
 
 	key[]: "inventory_items_sold_t"
-	val[]: "STEAM INVENTAR" #+ The title of the dialog showed when user sells or trades some inventory item.
+	val[]: "STEAM-INNHOLD" #+ The title of the dialog showed when user sells or trades some inventory item.
 
 	key[]: "inventory_items_sold_text"
 	val[]: "Noen ting er blitt fjernet fra ditt Steam-innhold. Du vil ikke lengre å kunne kjøpe dem på serviceverkstedet.<br><br>Dette berører ikke dine installerte deler." #+ The text showed in the dialog displayed when user sells or trades some inventory item.
@@ -11827,7 +11884,7 @@ localization_db : .localization
 	val[]: "Laster opp henger"
 
 	key[]: "job_load"
-	val[]: "Trykk på følgende knapp for å laste opp hengeren din: "
+	val[]: "Trykk på den følgende tast for å laste opp hengeren din:"
 
 	key[]: "job_autoload_title"
 	val[]: "Autolaster henger"
@@ -11839,7 +11896,7 @@ localization_db : .localization
 	val[]: "Losser av henger"
 
 	key[]: "job_unload"
-	val[]: "Trykk den følgende knapp for å losse av din henger:"
+	val[]: "Trykk den følgende tast for å losse av din henger:"
 
 	key[]: "cargo_market_t"
 	val[]: "LASTEMARKEDET"
@@ -12016,7 +12073,7 @@ localization_db : .localization
 	val[]: "Fullstendig historikk:" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "Distanse på oppdraget" #+ Total distance this trailer driven during jobs.
+	val[]: "Distanse på oppdrag" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
 	val[]: "Fraktet last" #+ Total number of transported cargoes.
@@ -12082,7 +12139,7 @@ localization_db : .localization
 	val[]: "Gratulerer! Denne hengeren har blitt kjøpt og vil bli plassert i den valgte garasjen.<br><br>Du kan få tilgang til den fra hengeroversikt." #+ The message shown when player buys new trailer.
 
 	key[]: "view_current_spedition_offer"
-	val[]: "Nåværende selskapets oppdragtilbud" #+ Button opening current spedition offer shown in job summary screen.
+	val[]: "Nåværende selskapets oppdragstilbud" #+ Button opening current spedition offer shown in job summary screen.
 
 	key[]: "distance_driven"
 	val[]: "Avstand tilbakelagt" #+ The name of statistic.
@@ -12771,7 +12828,7 @@ localization_db : .localization
 	val[]: "Rangering:"
 
 	key[]: "pwt_dist_on_job"
-	val[]: "Distanse på oppdraget:"
+	val[]: "Distanse på oppdrag:"
 
 	key[]: "pwt_cargo_transp"
 	val[]: "Fraktet last:"
@@ -12909,7 +12966,7 @@ localization_db : .localization
 	val[]: "Hengermodell" #+ The tooltip in browser for trailer model category.
 
 	key[]: "trailer_browser"
-	val[]: "Hengeroversikt"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Henger- oversikt"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "trailer_browser_help"
 	val[]: "Prøv ut ulike konfigurasjoner til henger."  #+ Description for the Trailer Browser icon.
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Barra parachoques"
+
+	key[]: "l_horn"
+	val[]: "Left Horn"
+
+	key[]: "r_horn"
+	val[]: "Right Horn"
 
 	key[]: "f_mirror"
 	val[]: "Espello frontal"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Pintar espazo" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Gardar pintura" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Gardar cor coma predefinido" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Empregar gardada" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Gardar todas as cores coma predefinidos" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Aplicar cor predefinida" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Escolle a carga para ollar os detalles da ruta" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distancia ata o seguinte punto"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Tempo ata o seguinte punto" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Páxina anterior do Asesor de ruta"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Modo de navegación do navegador"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Restablecer cabeza (seguimento da cabeza)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Activar seguimento coa cabeza" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Deter a vista ampliada (experimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Aplicar predefinido da vista ampliada 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Aplicar predefinido da vista ampliada 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Aplicar predefinido da vista ampliada 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rotación da cámara (controlado co rato)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Vista ampliada" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Predefinidos da vista ampliada" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Inserir nome do predefinido" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Seguro que queres eliminar o predefinido escollido?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Axustes do seguimento da mirada" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Oclusión ambiental do espazo da pantalla (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Rango Dinámico Alto (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Cancelar traballo actual"
 
-
 	key[]: "visit_service"
 	val[]: "Visita o taller inmediatamente!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Información da viaxe completa" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Información ata o seguinte punto" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Cambie á páxina de descripción do traballo ($KEY$) para continuar..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "A páxina de descripción do traballo resume o que estás levando e a onde. Díceche cando deberías chegar, canto tempo che queda para elo e canto diñeiro recibirás se chegas a tempo e sen danar a carga.<br><br>Tamén podes cancelar o traballo, se realmente queres, premendo o botón vermello. Nese caso terás que pagar unha cantidade considerable como penalización."
+	val[]: "A páxina de entrega actual detalla o que levas e a onde. Amósache canto agarda o cliente, canto tempo che queda e canto diñeiro recibirás se chegas a tempo sen danar a mercadoría."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Cambie á páxina de diagnósticos ($KEY$) para continuar..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Queres activar a función de imaxes destacadas?<br><br>Poderás navegar por unha escolma de espectaculares imaxes escollidas do World of Trucks para empregalas nas pantallas de carga." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Modificación no contido detectada. Actualizando os datos de navegación. Agarda por favor..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

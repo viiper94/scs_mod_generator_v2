@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1114,6 +1114,12 @@ localization_db : .localization
 	key[]: "bullbar"
 	val[]: "Protección delantera superior"
 
+	key[]: "l_horn"
+	val[]: "Bocina izquierda"
+
+	key[]: "r_horn"
+	val[]: "Bocina derecha"
+
 	key[]: "f_mirror"
 	val[]: "Espejo frontal"
 
@@ -1394,7 +1400,7 @@ localization_db : .localization
 	val[]: "Faldillas delanteras" #+ A couple of mudflaps on the front of the trucks bumper
 
 	key[]: "doortrim"
-	val[]: "Embellecedores de manetas" #+ Small variously shaped, decorative steel or chrome plates placed on truck's doors, around doorhandles
+	val[]: "Embellecedores de manijas" #+ Small variously shaped, decorative steel or chrome plates placed on truck's doors, around doorhandles
 
 	key[]: "windowtrim"
 	val[]: "Embellecedores de ventanillas" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Espacio de pintura" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Mantenga como pre ajuste" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Guardar color como preajuste" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Usar preajuste" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Guardar colores como preajuste" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Aplicar preajuste de color" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1828,7 +1837,7 @@ localization_db : .localization
 #@{
 
 	key[]: "trip_len"
-	val[]: "Distancia a recorrer:" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "Distancia del trayecto" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_time"
 	val[]: "Tiempo de viaje" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Selecciona una mercancía para ver los detalles de la ruta." #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distancia hasta el próximo punto en ruta"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Tiempo hasta el próximo punto en ruta" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2519,7 +2536,7 @@ localization_db : .localization
 	val[]: "Volumen de los sonidos del entorno" #+ Slider controlling volume of the environment sounds.
 
 	key[]: "ambient_volume"
-	val[]: "Volumen de los sonidos ambientales" #+ Slider controlling volume of the ambient sounds.
+	val[]: "Volumen de los sonidos del ambiente" #+ Slider controlling volume of the ambient sounds.
 
 	key[]: "interior_volume"
 	val[]: "Volumen de los controles de la cabina" #+ Slider controlling volume of interior sounds (like sticks, buttons).
@@ -2537,13 +2554,13 @@ localization_db : .localization
 	val[]: "Volumen de la música" #+ Slider controlling volume of the in-game music.
 
 	key[]: "game_ui_volume"
-	val[]: "Volumen de los efectos de la interfaz" #+ Slider controlling volume of the game sound effects.
+	val[]: "Volumen de los efectos de los menús" #+ Slider controlling volume of the game sound effects.
 
 	key[]: "music_ui_volume"
 	val[]: "Volumen de la música de la interfaz" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Volumen de los logos introductorios" #+ Slider controlling volume of the intro logos.
+	val[]: "Volumen de los logos de introducción" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAVEGACIÓN POR VOZ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2576,7 +2593,7 @@ localization_db : .localization
 	val[]: "Voz" #+ The voice report is used as speed warning.
 
 	key[]: "advanced_audio_t"
-	val[]: "MISCELÁNEOS" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
+	val[]: "MISCELÁNEAS" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
 	key[]: "sound_of_reverse"
 	val[]: "Advertencia de marcha atrás" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Página anterior en Route Advisor"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Modo de destino de Route Advisor"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Restablecer cabeza (usando seguimiento de la cabeza)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Activar seguimiento de la cabeza" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pausar vista ampliada (experimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Aplicar preajuste de vista ampliada 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Aplicar preajuste de vista ampliada 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Aplicar preajuste de vista ampliada 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rotar la cámara (usando el ratón)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,13 +3750,13 @@ localization_db : .localization
 	val[]: "MISCELÁNEAS" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Control de color en la retroiluminación del teclado" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Color de la retroiluminación" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
 #@{
 	key[]: "eye_tracking"
-	val[]: "Seguimiento de la mirada" #+ Header of the section.
+	val[]: "SEGUIMIENTO DE LA MIRADA" #+ Header of the section.
 
 	key[]: "eye_tracking_enable"
 	val[]: "Seguimiento de la mirada" #+ Eye tracking enable checkbox
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Vista ampliada" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Preajustes de vista ampliada" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Nombre del preajuste" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "¿Seguro que quieres eliminar el preajuste seleccionado?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Se sobrescribirá el preajuste existente con el mismo nombre. ¿Quieres continuar?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Ajustes del seguimiento de la mirada" #+ Header of the gaze settings
@@ -3805,7 +3849,7 @@ localization_db : .localization
 	val[]: "Ángulo máximo de la mirada" #+ Maximal angle change generated by gaze tracking.
 
 	key[]: "eye_gaze_scale"
-	val[]: "Velocidad de seguimiento de la mirada"
+	val[]: "Velocidad del seguimiento de la mirada"
 
 	key[]: "eye_gaze_exponent"
 	val[]: "Exponente del seguimiento de la mirada"
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Oclusión ambiental (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Alto rango dinámico" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Cancelar entrega actual"
 
-
 	key[]: "visit_service"
 	val[]: "¡Visita un taller inmediatamente!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Detalles del trayecto" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Próximo punto en ruta" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4843,7 +4897,7 @@ localization_db : .localization
 	val[]: "Tu camión no se encuentra en condiciones para circular. ¡Acude a un taller para repararlo!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "La combinación actual de camión y remolque está fuera de los parámetros legales en este lugar." #+ Adviser text
+	val[]: "La combinación actual de camión y remolque está fuera de los parámetros legales en este país." #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "El transporte comercial no está autorizado en esta zona. ¡Debes dar la vuelta!" #+ Adviser text
@@ -7603,7 +7657,7 @@ localization_db : .localization
 	val[]: "No se han encontrado en tu flota configuraciones para esta marca." #+ Text shown when the player does not have a fleet configuration for that brand.
 
 	key[]: "no_available_brands"
-	val[]: "No se ha encontrado ninguna marca válida<br>Asegúrate de que las marcas modificadas contengan ofertas de camiones válidas." #+ Text shown when there are no available brands on the mod truck dealer.
+	val[]: "No se ha encontrado ninguna marca válida.<br>Asegúrate de que las marcas modificadas contengan ofertas de camiones válidas." #+ Text shown when there are no available brands on the mod truck dealer.
 
 #+ Content of information box with information about truck.
 #+
@@ -7807,10 +7861,10 @@ localization_db : .localization
 	val[]: "¿Dónde quieres establecer al nuevo conductor?"
 
 	key[]: "td_garsel_move_driver"
-	val[]: "¿Dónde quieres mover al conductor seleccionado?"
+	val[]: "¿Dónde quieres trasladar al conductor seleccionado?"
 
 	key[]: "td_garsel_move_trailer"
-	val[]: "¿Dónde quieres mover el remolque seleccionado?" #+ Text shown in garage selection screen.
+	val[]: "¿Dónde quieres trasladar el remolque seleccionado?" #+ Text shown in garage selection screen.
 
 	key[]: "td_garsel_store_trailer"
 	val[]: "¿Dónde quieres almacenar el remolque seleccionado?" #+ Text shown in garage selection screen.
@@ -7894,10 +7948,10 @@ localization_db : .localization
 	val[]: "Restablecer navegación" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
 
 	key[]: "append_new_pins"
-	val[]: "Añadir nuevos puntos de control solo al final" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
+	val[]: "Añadir nuevos puntos en ruta solo al final" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
 
 	key[]: "append_new_avoid_pins"
-	val[]: "Añadir nueva ubicación a evitar" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
+	val[]: "Añadir punto a evitar" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
 
 
 #+ Texts shown near individual icons on the map legend.
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Cambia a la página de entrega actual ($KEY$) para continuar..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "La página de entrega actual resume la mercancía que transportas y hacia dónde lo haces. Te informa de cuándo se te espera, cuánto tiempo te queda y cuánto dinero recibirás si llegas a tiempo sin dañar la mercancía.<br><br>También puedes cancelar la entrega, si realmente necesitas hacerlo, pulsando el botón rojo. En ese caso tendrás que pagar una cantidad considerable como penalización."
+	val[]: "La página de entrega actual detalla lo que llevas y a dónde. Te muestra cuándo se te espera, cuánto tiempo te queda y cuánto dinero recibirás si llegas a tiempo sin dañar la mercancía."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Cambia a la página de asistencia ($KEY$) para continuar..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "¿Quieres activar la característica de imágenes destacadas?<br><br>Podrás navegar a través de una selección de espectaculares imágenes seleccionadas desde World of Trucks para usarlas en las pantallas de carga." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Cambios en el contenido detectados. Actualizando los datos de navegación. Espera, por favor..." #+ Shown on loading screen
 #@}
 
 
@@ -11294,7 +11351,7 @@ localization_db : .localization
 	val[]: "Acoplando...<br><br>Quinta rueda bloqueada. Elevando las patas y enganchando los cables..."
 
 	key[]: "trailer_decoupling"
-	val[]: "Desacoplando:<br><br>Quinta rueda desbloqueada. Descendiendo las patas y desenganchando los cables..."
+	val[]: "Desacoplando...<br><br>Quinta rueda desbloqueada. Descendiendo las<br>patas y desenganchando los cables..."
 
 #@}
 
@@ -11785,7 +11842,7 @@ localization_db : .localization
 	val[]: "NUEVO EVENTO" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "INFORMACIÓN DEL EVENTO" #+ Title of the event popup.
+	val[]: "DETALLES DEL EVENTO" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "¡Objetivo personal completado!" #+ Text showed when player completes event.
@@ -12906,7 +12963,7 @@ localization_db : .localization
 	val[]: "MODELO" #+ The title of the trailer model category.
 
 	key[]: "tr_model"
-	val[]: "Modelo de remolque" #+ The tooltip in browser for trailer model category.
+	val[]: "Modelo" #+ The tooltip in browser for trailer model category.
 
 	key[]: "trailer_browser"
 	val[]: "Explorador de remolques"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

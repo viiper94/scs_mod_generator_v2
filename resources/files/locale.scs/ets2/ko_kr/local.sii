@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "불바"
+
+	key[]: "l_horn"
+	val[]: "좌측 경적"
+
+	key[]: "r_horn"
+	val[]: "우측 경적"
 
 	key[]: "f_mirror"
 	val[]: "전방 미러"
@@ -1658,7 +1664,7 @@ localization_db : .localization
 	val[]: "이름없는 저장" #+ Name used instead as the name of the save file if no name was provided by player. For example "Unamed save 1"
 
 	key[]: "overwrite_save"
-	val[]: "정말로 저장되어 있던 곳에 덮어씌울까요?"
+	val[]: "정말로 저장되어 있던 곳에 덮어씌우시겠습니까?"
 
 	key[]: "save_delete"
 	val[]: "선택한 세이브를 삭제하시겠습니까?"
@@ -1693,7 +1699,7 @@ localization_db : .localization
 	val[]: "소지금 부족" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "ui_game_over_msg"
-	val[]: "이런, <br><br> 여행하기에 충분한 돈이 없습니다. <br><br> 하지만 걱정하지 마세요! <br><br> 마지막 체크 포인트 또는 처음부터 다시 시작할 수 있습니다. 다음에는 좀 더 신중하게 운전하세요."
+	val[]: "이런, <br><br> 여행하기에 충분한 돈이 없습니다. <br><br> 하지만 걱정하지 마세요! <br><br> 마지막 체크포인트 또는 처음부터 다시 시작할 수 있습니다. 다음에는 좀 더 신중하게 운전하세요."
 #@}
 
 #+ Paint Shop
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "페인트 슬롯" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "사전 설정에 등록" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "색상을 사전 설정에 저장" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "사전 설정 사용" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "모든 색상을 사전 설정에 저장" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "사전 설정 색상 적용" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "화물을 선택하면 경로 정보를 볼 수 있습니다" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "다음 체크포인트까지 남은 거리"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "다음 체크포인트까지 소요 시간" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "UI 음악 볼륨" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "인트로 로고" #+ Slider controlling volume of the intro logos.
+	val[]: "인트로 로고 볼륨" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "경로 음성 안내" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "경로 관리자 이전 페이지"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "경로 관리자 목적지 모드"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "헤드 초기화 (헤드 트래킹)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "헤드 트래킹 사용" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Extended View 일시 정지 (실험기능)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Extended View 사전 설정 1 적용" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Extended View 사전 설정 2 적용" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Extended View 사전 설정 3 적용" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "카메라 회전 (마우스 사용)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Extended View" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Extended View 사전 설정" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "사전 설정 이름 입력" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "선택한 사전 설정을 삭제하시겠습니까?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "동일한 이름을 가진 기존의 사전 설정에 덮어씌웁니다. 계속하시겠습니까?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "시선 트래킹 설정" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "안티앨리어싱 (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "화면 영역 주변 폐색 (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "높은 동적 범위 (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "이번 배차 취소하기"
 
-
 	key[]: "visit_service"
 	val[]: "즉시 서비스 센터를 방문하십시오!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "전체 경로 정보" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "다음 체크포인트 정보" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "계속하려면 운송 정보 페이지 ($KEY$)로 전환하십시오..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "운송 정보 페이지는 당신이 무엇을 어디로 운송 중인지에 대한 간략한 정보를 담고 있습니다. 또한 이 페이지를 통해 납품기한과 더불어 화물을 파손하지 않고 정시에 도착했을 때 받을 수 있는 보수를 확인할 수도 있습니다.<br><br>만약, 부득이하게 운송을 취소해야 하는 상황이 발생하면 빨간 버튼을 누르십시오. 단, 운송을 취소할 경우 높은 수준의 위약금을 부담해야 합니다."
+	val[]: "운송 정보 페이지는 당신이 무엇을 어디로 운송 중인지에 대한 간략한 정보를 담고 있습니다. 또한 이 페이지를 통해 납품기한과 더불어 화물을 파손하지 않고 정시에 도착했을 때 받을 수 있는 보수를 확인할 수도 있습니다."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "계속하려면 진단 페이지 ($KEY$)로 전환하십시오..."
@@ -10130,7 +10184,7 @@ localization_db : .localization
 	val[]: "고급형 더블" #+ Luxury/Exclusive version (double variant) of the interior or accesory
 
 	key[]: "exclusive_paint"
-	val[]: "고급형 도색" #+ Luxury/Exclusive painted version of the interior or accesory
+	val[]: "고급형 페인트" #+ Luxury/Exclusive painted version of the interior or accesory
 
 	key[]: "exclusive_chrom"
 	val[]: "고급형 크롬" #+ Luxury/Exclusive painted version of the interior or accesory
@@ -10869,7 +10923,7 @@ localization_db : .localization
 	val[]: "모드가 현재 게임 버전과 호환되지 않습니다. 활성화 할 수 없습니다." #+ Text shown if mod is not compatible with currently game version, and user tries to activate it.
 
 	key[]: "mm_confirm_leave"
-	val[]: "정말로 모드 관리자를 종료할까요?" #+ Content of the dialog confirming leaving the mod manager.
+	val[]: "정말로 모드 관리자를 종료하시겠습니까?" #+ Content of the dialog confirming leaving the mod manager.
 
 	key[]: "mm_confirm_leave_changes"
 	val[]: "모든 변경사항이 취소됩니다." #+ Shown in the leave confirmation dialog if user have made some changes.
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "이미지 스포트라이트 기능을 사용하시겠습니까?<br><br>로딩 화면에서 사용 수 있도록 엄선한 멋진 이미지를 World of Trucks에서 검색하거나 선택할 수 있습니다." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "콘텐츠 변경이 감지되었습니다. 내비게이션 데이터를 업데이트합니다. 잠시만 기다려주십시오..." #+ Shown on loading screen
 #@}
 
 
@@ -11923,7 +11980,7 @@ localization_db : .localization
 	val[]: "트레일러가 $CITY$ 차고에 성공적으로 재배치되었습니다." #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_confirm_relocate"
-	val[]: "정말로 이 $TRAILER$을(를) $CITY$ 차고로 옮길까요?" #+ Message shown after trailer relocation.
+	val[]: "정말로 이 $TRAILER$을(를) $CITY$ 차고로 옮기시겠습니까?" #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_swap_blocked"
 	val[]: "교체하려면 트레일러가 있는 차고에 방문하십시오" #+ Tooltip message shown when player is not able to swap his currently attached trailer with the currently previewed trailer in trailer manager because he is not in the garage where previewed trailer is stored at.
@@ -12178,7 +12235,7 @@ localization_db : .localization
 	val[]: "정말로 이 $TRAILER$을(를) 사용하시겠습니까?<br><br>$CITY$ 차고에 나타날 것입니다."
 
 	key[]: "trailerman_confirm_take_from_garage"
-	val[]: "정말로 $TRAILER$을(를) 가져갈까요?"
+	val[]: "정말로 $TRAILER$을(를) 가져가시겠습니까?"
 #@}
 
 #+ Message box shown to confirm store of selected trailer.
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Frontschutzbügel"
+
+	key[]: "l_horn"
+	val[]: "Linke Hupe"
+
+	key[]: "r_horn"
+	val[]: "Rechte Hupe"
 
 	key[]: "f_mirror"
 	val[]: "Frontspiegel"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Farb-Slot" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Als Voreinstellung speichern" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Farbe als Vorlage speichern" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Voreinstellung wählen" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Alle Farben als Vorlagen speichern" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Farbvorlage anwenden" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Um Routendetails zu sehen, wähle eine Fracht aus" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distanz zu nächstem Wegpunkt"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Fahrtdauer zu nächstem Wegpunkt" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Lautstärke der Menümusik" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro-Geräusche (Logos)" #+ Slider controlling volume of the intro logos.
+	val[]: "Lautstärke der Intro-Logos" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAVI-SPRACHAUSGABE" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Route Advisor vorherige Seite"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor Ziel-Modus"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Head-Tracking zurücksetzen"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Head-Tracking aktivieren" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Erweiterte Sicht pausieren (experimentell)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Vorlage 1 für Erweiterte Sicht anwenden" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Vorlage 2 für Erweiterte Sicht anwenden" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Vorlage 3 für Erweiterte Sicht anwenden" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Ansicht drehen (während Maussteuerung)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Erweiterte Sicht" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Vorlagen für Erweiterte Sicht" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Name für Vorlage eingeben" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Bist du sicher, dass du die ausgewählte Vorlage löschen möchtest?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Es existiert bereits eine Vorlage mit diesem Namen. Soll sie überschrieben werden?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Blick-Tracking-Einstellungen" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Kantenglättung (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Bildschirm-Umgebungsokklusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Hochkontrastgrafik (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Auftrag abbrechen"
 
-
 	key[]: "visit_service"
 	val[]: "Sofort Werkstatt aufsuchen!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Information zu gesamter Route" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Information zu nächstem Wegpunkt" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4822,7 +4876,7 @@ localization_db : .localization
 	val[]: "Sie können die nahe Wiegestation umfahren.<br>Ihnen eine sichere Fahrt!" #+ Adviser text: Weigh station bypass allowed.
 
 	key[]: "stop_at_scale"
-	val[]: "Halten Sie vorne am Lkw-Signal und übermitteln Sie das Lkw-Gewicht." #+ Adviser text: Text on weighing station for mandatory weighing.
+	val[]: "Halten Sie vorne auf der Waage, damit wir Ihr Lkw-Gewicht ermitteln können." #+ Adviser text: Text on weighing station for mandatory weighing.
 
 	key[]: "weigh_activate"
 	val[]: "Taste für die Durchführung der Überprüfung:" #+ Adviser text
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Wechsle zur Auftragsbeschreibung ($KEY$), um fortzufahren ..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Die Auftragsbeschreibung fasst zusammen, was du gerade fährst und wohin. Sie zeigt dir, wann du erwartet wirst, wie viel Zeit noch übrig ist und wie viel Geld du erhältst, wenn du die Fracht pünktlich und unbeschädigt lieferst.<br><br>Wenn nötig, kannst du den Auftrag auch abbrechen. Dann wird jedoch eine erhebliche Strafzahlung fällig."
+	val[]: "Die Auftragsbeschreibung fasst zusammen, was du wohin transportierst. Sie gibt an, wann die Lieferung erwartet wird, wie viel Zeit dir noch bleibt und wie viel Geld du erhältst, wenn du pünktlich ankommst, ohne die Ladung zu beschädigen."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Wechsle zur Seite 'Zustand' ($KEY$), um fortzufahren ..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Spotlight-Bilder zulassen?<br><br>Dieses Feature lässt dich online durch eine Reihe spektakulärer, von Hand ausgewählter Bilder aus World of Trucks blättern, die du für die Spielladesequenzen nutzen kannst." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Änderung an Inhalt festgestellt. Aktualisiere Navigationsdaten. Bitte warten..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Protecção Frontal"
+
+	key[]: "l_horn"
+	val[]: "Buzina Esquerda"
+
+	key[]: "r_horn"
+	val[]: "Buzina Direita"
 
 	key[]: "f_mirror"
 	val[]: "Espelho Frontal"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Espaço para Pintura" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Manter como predefinição" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Guardar cor como pré-definição" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Usar a cor por defeito" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Guardar todas a cores como pré-definição" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Aplicar pré-definição da cor" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Selecciona a carga para ver detalhes da rota" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Distância até ao próximo ponto de controlo"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Tempo até ao próximo ponto de controlo" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2519,7 +2536,7 @@ localization_db : .localization
 	val[]: "Volume dos sons do mundo" #+ Slider controlling volume of the environment sounds.
 
 	key[]: "ambient_volume"
-	val[]: "Volume do som do ambiente" #+ Slider controlling volume of the ambient sounds.
+	val[]: "Volume do som ambiente" #+ Slider controlling volume of the ambient sounds.
 
 	key[]: "interior_volume"
 	val[]: "Volume dos sons interiores" #+ Slider controlling volume of interior sounds (like sticks, buttons).
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Volume da música da IU" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Logos apresentação" #+ Slider controlling volume of the intro logos.
+	val[]: "Volume da introdução" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "VOZ DE NAVEGAÇÃO" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2588,7 +2605,7 @@ localization_db : .localization
 	val[]: "Volume da janela aberta" #+ Checkbox enabling the sound of the opened windows noise.
 
 	key[]: "noise_aero"
-	val[]: "Volume do ar corrente" #+ Checkbox enabling the sound of the air noise.
+	val[]: "Volume do vento" #+ Checkbox enabling the sound of the air noise.
 
 	key[]: "reverb_cabin"
 	val[]: "Efeito de reverberação da cabina" #+ Checkbox enabling the reverb effect of the cabin.
@@ -3195,10 +3212,10 @@ localization_db : .localization
 	val[]: "Buzina a ar"
 
 	key[]: "o_im_wipers"
-	val[]: "Limpa pára-brisas"
+	val[]: "Ligar limpa pára-brisas"
 
 	key[]: "o_im_wipers_back"
-	val[]: "Reverter Limpa Pára-brisas"
+	val[]: "Desligar limpa pára-brisas"
 
 	key[]: "o_im_cruise_ctrl"
 	val[]: "Cruise Control"
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Página Anterior do Navegador"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Modo de Navegação do Navegador"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Repor Cabeça (Monitorização da cabeça)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Activar rastreamento com a cabeça" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pausar Vista Extendida (Experimental)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Aplicar Pré-definição da Vista 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Aplicar Pré-definição da Vista 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Aplicar Pré-definição da Vista 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rodar a câmara (controlo com o rato)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Vista Extendida" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Pré-definições da Vista Extendida" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Inserir nome da pré-definição" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Tem a certeza que quer eliminar a pré-definição seleccionada?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "A configuração existente com o mesmo nome será substituída. Deseja continuar?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Configurações do Olhar" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Oclusão ambiental do espaço do ecrã(SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Alto alcance dinâmico (AAD)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Cancelar trabalho actual"
 
-
 	key[]: "visit_service"
 	val[]: "Visita a estação de serviço imediatamente!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Informação global da viagem" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informação do próximo ponto de controlo" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Muda para a página da descrição do trabalho ($KEY$) para continuar..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "A página da descrição do trabalho sumariza o que estás a carregar e para onde. Diz-te qual a hora estimada de chegada, quanto tempo tens disponível e quanto dinheiro receberás se chegares a tempo e sem danos na carga.<br><br>Podes também cancelar o trabalho, se precisares mesmo, pressionando o botão vermelho. Nesse caso terás de pagar uma pequena multa como penalização."
+	val[]: "A página da descrição da entrega sumariza o que está a carregar e para onde. Diz-lhe quando é esperada a entrega, qual o tempo restante e o valor a receber caso a entrega seja feita a tempo e horas e sem danos na carga."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Muda para a página de diagnóstico ($KEY$) para continuar..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Activar as Imagens em Destaque?<br><br>Serás capaz de procurar fantásticas imagens escolhidas no World of Trucks para usares nos ecrãs de carregmento." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Detectada uma mudança de conteúdo. A actualizar os dados de navegação. Por favor espere..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

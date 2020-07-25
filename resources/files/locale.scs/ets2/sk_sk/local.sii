@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Predný rám "
+
+	key[]: "l_horn"
+	val[]: "Ľavý klaksón"
+
+	key[]: "r_horn"
+	val[]: "Pravý klaksón"
 
 	key[]: "f_mirror"
 	val[]: "Predné zrkadlo"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Slot farby" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Uložiť do palety" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Uložiť farbu ako predvolenú" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Použiť paletu" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Uložiť všetky farby ako predvolené" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Aplikovať predvolenú farbu" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Vyberte náklad, o ktorom chcete vedieť podrobnosti trasy." #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Vzdialenosť k nasledujúcemu bodu trasy"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Čas k nasledujúcemu bodu trasy" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Hlasitosť hudby v menu" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Úvodné loga" #+ Slider controlling volume of the intro logos.
+	val[]: "Hlasitosť úvodného loga" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "HLASOVÁ NAVIGÁCIA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Route Advisor predcházajúca strana "
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Režim destinácie v aplikácii Route Advisor"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Obnoviť pozíciu hlavy (snímanie hlavy)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Povoliť snímanie hlavy" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pozastaviť rozšírený pohľad (experimentálne)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Aplikovať 1. predvoľbu rozšíreného pohľadu" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Aplikovať 2. predvoľbu rozšíreného pohľadu" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Aplikovať 3. predvoľbu rozšíreného pohľadu" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rotujúca kamera (Ovládanie myšou) " #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Rozšírený pohľad" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Predvoľba rozšíreného pohľadu" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Zadajte názov predvoľby" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Ste si istý, že chcete vymazať vybranú predvoľbu?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existujúca predvoľba s rovnakým názvom bude prepísaná. Chcete pokračovať?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Nastavenia snímania pohľadu" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Vyhladzovanie hrán (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Ambientná oklúzia generovaná v obraze (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Vysoký dynamický rozsah (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Zrušiť aktuálnu prácu"
 
-
 	key[]: "visit_service"
 	val[]: "Urýchlene navštív servis!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Kompletné informácie o jazde" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informácie o nasledujúcom bode trasy" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4843,7 +4897,7 @@ localization_db : .localization
 	val[]: "Vaše vozidlo nezodpovedá technickému stavu, ktorý predpisuje zákon. Musíte ho opraviť!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Your truck and trailer combination is not legal in this country!" #+ Adviser text
+	val[]: "Kombinácia Vášho ťahača a návesu v tejto krajine nie je legálna!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "V tejto oblasti je komerčná nákladná doprava zakázaná. Musíš sa otočiť a ísť naspäť!" #+ Adviser text
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Klávesou $KEY$ pokračuj na stránku opisu tvojej aktuálnej práce..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Stránka Popis práce zahŕňa to, čo nesiete a kde to nesiete. To vám povie kedy tam máte byť, koľko času vám zostáva a koľko peňazí dostanete, ak prídete včas a bez poškodenia nákladu.<br><br> Môžete tiež zrušiť náklad. Ak to naozaj musíte, zrušíte ho stlačením červeného tlačítka. V takomto prípade budete musieť zaplatiť značnú sumu ako trest."
+	val[]: "Stránka s podrobnosťami o zákazke sumarizuje, čo a kam prepravuješ. Zistíš na nej, kedy si očakávaný v tvojej destinácii, koľko času ti ostáva a koľko peňazí obdržíš, ak dorazíš na čas a bez poškodenia tovaru."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Klávesou $KEY$ pokračuj na stránku diagnostiky..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Farba" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Nalakované predĺžené" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chróm" #+ Chromed mirror, doorhandle or other accessory
@@ -10133,7 +10187,7 @@ localization_db : .localization
 	val[]: "Exkluzívna, nalakovaná" #+ Luxury/Exclusive painted version of the interior or accesory
 
 	key[]: "exclusive_chrom"
-	val[]: "Exclusive Chromed" #+ Luxury/Exclusive painted version of the interior or accesory
+	val[]: "Exkluzívne chrómované" #+ Luxury/Exclusive painted version of the interior or accesory
 	
 	key[]: "exclusive_uk"
 	val[]: "Exkluzívne UK" #+ Luxury/Exclusive UK version of the interior or accesory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Povoliť funkciu vybraných obrázkov?<br><br>Budeš si môcť prezerať ručne obrázky z World of Trucks používané pri načítavaní." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Zistená zmena obsahu hry. Aktualizácia navigačných dát. Prosím počkajte..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

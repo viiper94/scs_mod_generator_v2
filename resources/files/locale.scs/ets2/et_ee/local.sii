@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Kaitseraud"
+
+	key[]: "l_horn"
+	val[]: "Left Horn"
+
+	key[]: "r_horn"
+	val[]: "Right Horn"
 
 	key[]: "f_mirror"
 	val[]: "Esipeegel"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Värvi koht" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Jäta eelseatud värviks" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Salvesta värvid eelsättesse" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Kasuta eelseadistust" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Salvesta kõik värvid eelsättesse" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Kinnita värvi eelsäte" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Vali veos, et näha selle teekonna detaile" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Järgmise punkti kaugus"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Järgmise punkti aeg" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Kasutajaliidese helitugevus" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Alguse logod" #+ Slider controlling volume of the intro logos.
+	val[]: "Alguslogode heli" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "HÄÄLNAVIGATSIOON" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Sõiduplaneerija eelmine kuva"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Sõiduplaneerija navigatsioonirežiim"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Nulli pea (pea järgimine)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Luba pea järgimine" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Pane laiendatud vaade pausile (eksperimentaalne)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Kinnita laiendatud vaate eelsäte 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Kinnita laiendatud vaate eelsäte 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Kinnita laiendatud vaate eelsäte 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Liiguta kaamerat (hiirega)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Laiendatud vaade" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Laiendatud vaate eelsätted" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Sisesta eelsätte nimi" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Oled kindel, et tahad valitud eelsätte kustutada?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Pilgu järgimise sätted" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Sakisilumine (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Ekraani ruumi kaudvari (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Kõrgdünaamiline ulatus (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Loobu praegusest tööst"
 
-
 	key[]: "visit_service"
 	val[]: "Külasta koheselt teenindust!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Täielik sõidu info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Järgmise punkti info" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -4843,7 +4897,7 @@ localization_db : .localization
 	val[]: "Su masin ei ole seadusega nõutud seisukorras. Sa pead masinat remontima!" #+ Adviser text
 
 	key[]: "weigh_illegal_trailer"
-	val[]: "Your truck and trailer combination is not legal in this country!" #+ Adviser text
+	val[]: "Su veoki ja haagise kombinatsioon ei ole siin riigis legaalne!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
 	val[]: "Veoautod on selles alas keelatud. Keera ümber ja sõida tagasi!" #+ Adviser text
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Vali töö kirjelduse leht ($KEY$), et jätkata..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Töö kirjelduse leht võtab kokku selle, mida ja kuhu sa vead. Sa saad teada seda, millal sa pead kohal olema, kui palju aegu on sul jäänud kohale jõudmiseks ja kui palju raha sa saad kui jõuad kohale õigel ajal koormat kahjustamata.<br><br>Sa võid ka loobuda tööst vajutades punast nuppu. Sel juhul pead sa karistusena maksma märkimisväärse summa. "
+	val[]: "Töö kirjelduse leht annab ülevaate mida ja kuhu sa vead. See ütleb mis ajaks kaupa oodatakse, kui palju aega sul järel on ning kui palju raha sa teenid, kui toimetad kauba õigel ajal ja ilma kahjudeta kohale."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Jätkamiseks vali diagnostika lehekülg ($KEY$)..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Värv" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Pikk värvitud" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Kroom" #+ Chromed mirror, doorhandle or other accessory
@@ -10133,7 +10187,7 @@ localization_db : .localization
 	val[]: "Eksklusiivne värvitud" #+ Luxury/Exclusive painted version of the interior or accesory
 
 	key[]: "exclusive_chrom"
-	val[]: "Exclusive Chromed" #+ Luxury/Exclusive painted version of the interior or accesory
+	val[]: "Eksklusiivne kroomitud" #+ Luxury/Exclusive painted version of the interior or accesory
 	
 	key[]: "exclusive_uk"
 	val[]: "Eksklusiivne UK" #+ Luxury/Exclusive UK version of the interior or accesory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Luba esiletoodud esikaanepildid?<br><br>Sa saad näha World of Trucks-ist käsitsi valitud parimaid pilte oma laadimiskuvadel." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Sisumuudatus tuvastatud. Uuendan navigatsiooni andmeid. Palun oota..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

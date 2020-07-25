@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Противоударна решетка"
+
+	key[]: "l_horn"
+	val[]: "Left Horn"
+
+	key[]: "r_horn"
+	val[]: "Right Horn"
 
 	key[]: "f_mirror"
 	val[]: "Предно огледало"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Цветови шаблон" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Запазване като шаблон" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Save colour as preset" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Използване на шаблон" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Save all colours as preset" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Apply colour preset" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Изберете товар, за да видите информация за курса" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Next checkpoint distance"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Next checkpoint time" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Музика в менютата" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro logos" #+ Slider controlling volume of the intro logos.
+	val[]: "Intro logos volume" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "ГЛАСОВА НАВИГАЦИЯ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Пътен съветник - предишна стр."
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor Destination Mode"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Възстановяване положение на главата (проследяващо устройство)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Enable Head Tracking" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Преустановяване на Extended View (експериментална функция)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Apply Extended View Preset 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Apply Extended View Preset 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Apply Extended View Preset 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Завъртане на камерата (чрез мишката)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Разширен изглед" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Extended View Presets" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Enter preset name" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Are you sure you want to delete the selected preset?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Gaze Tracking Settings" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Изглаждане (тип SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Screen space ambient occlusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Висок динамичен диапазон (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4567,16 +4614,16 @@ localization_db : .localization
 	val[]: "Приход" #+ For example "Job income: E6,526"
 
 	key[]: "adviser_tooltip_map_page"
-	val[]: "Navigation" #+ Tooltip for map page in route advisor
+	val[]: "Навигация" #+ Tooltip for map page in route advisor
 
 	key[]: "adviser_tooltip_job_page"
-	val[]: "Current Job" #+ Tooltip for job info page in route advisor
+	val[]: "Текуща доставка" #+ Tooltip for job info page in route advisor
 
 	key[]: "adviser_tooltip_damage_page"
 	val[]: "Diagnostics & Assistance call" #+ Tooltip for route advisor page that displayes truck and trailer damamage and has a button to call service
 
 	key[]: "adviser_tooltip_message_page"
-	val[]: "Short Messages" #+ Tooltip for short messages page in route advisor
+	val[]: "Съобщения" #+ Tooltip for short messages page in route advisor
 
 	key[]: "adviser_tooltip_tutorial"
 	val[]: "Route Advisor Tutorial" #+ Tooltip for the tutorial icon route advisor
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Прекратяване на доставка"
 
-
 	key[]: "visit_service"
 	val[]: "Посетете сервиз незабавно!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Full trip info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Next checkpoint info" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -6373,7 +6427,7 @@ localization_db : .localization
 	val[]: "Компютърни процесори"
 
 	key[]: "cn_concentrate_juices"
-	val[]: "Juice Concentrate"
+	val[]: "Концентриран сок"
 
 	key[]: "cn_corks"
 	val[]: "Тапи"
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Преминете към страницата с описание на работата ($KEY$), за да продължите..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Страницата с описание на работата обобщава информацията за това какво превозвате и за къде. Тя показва още кога клиентът Ви очаква да пристигнете, колко време Ви остава и колко пари ще получите, ако пристигнете навреме и без да сте повредили товара.<br> <br>Можете също така да откажете доставката, ако наистина се налага, чрез натискане на червения бутон. В такъв случай, ще трябва да платите значителна сума, като неустойка."
+	val[]: "The job description page summarizes what you're carrying and where. It tells you when you are expected, how much time you have left and how much money you'll receive if you arrive on time without damaging the cargo."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Преминете към страницата за диагностика, ($KEY$), за да продължите..."
@@ -10403,7 +10457,7 @@ localization_db : .localization
 	val[]: "Side Bar (extra LEDs)" #+ side bar, sideskirt or exhaust (legacy) accessory name, HS Schoch naming
 
 	key[]: "hs_stainless_steel"
-	val[]: "Stainless Steel" #+ doorstep, mask or similar accessory name, HS Schoch naming
+	val[]: "Стомана" #+ doorstep, mask or similar accessory name, HS Schoch naming
 
 	key[]: "hs_sun_visor"
 	val[]: "Сенник" #+ sun shield accessory name, HS Schoch naming
@@ -10412,10 +10466,10 @@ localization_db : .localization
 	val[]: "HS-Schoch шапка" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_mug"
-	val[]: "HS-Schoch Mug" #+ toy accessory name, HS Schoch naming
+	val[]: "Чаша HS Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_paper_mug"
-	val[]: "HS-Schoch Paper Mug" #+ toy accessory name, HS Schoch naming
+	val[]: "Хартиена чаша HS Schoch" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_pennant"
 	val[]: "HS-Schoch знаменце" #+ toy accessory name, HS Schoch naming
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Искате ли да включите функцията за изложение на снимки?<br><br>Ще можете да разгледате поредица от пищни изображения, ръчно избрани от редакторите на World of Trucks за използване в зареждащите екрани." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Content change detected. Updating navigation data. Please wait..." #+ Shown on loading screen
 #@}
 
 
@@ -12292,7 +12349,7 @@ localization_db : .localization
 	val[]: "Платформа / контейнеровоз"
 
 	key[]: "foodtank"
-	val[]: "Food Tank"
+	val[]: "Хранителна цистерна"
 
 	key[]: "insulated"
 	val[]: "Изотермично"
@@ -12304,7 +12361,7 @@ localization_db : .localization
 	val[]: "Хладилно"
 
 	key[]: "liquid"
-	val[]: "Liquid"
+	val[]: "Течности"
 
 #@}
 
@@ -12320,7 +12377,7 @@ localization_db : .localization
 	val[]: "Общи. сухи стоки"
 
 	key[]: "body_cargo_types_foodtank"
-	val[]: "Liquid food goods"
+	val[]: "Течни хранителни продукти"
 
 	key[]: "body_cargo_types_insulated"
 	val[]: "Охладени стоки"
@@ -12611,7 +12668,7 @@ localization_db : .localization
 
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
-	val[]: "Food Tank"
+	val[]: "Хранителна цистерна"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Платформа"
@@ -12906,7 +12963,7 @@ localization_db : .localization
 	val[]: "МОДЕЛ РЕМАРКЕ" #+ The title of the trailer model category.
 
 	key[]: "tr_model"
-	val[]: "Модел на ремарке" #+ The tooltip in browser for trailer model category.
+	val[]: "Модел ремарке" #+ The tooltip in browser for trailer model category.
 
 	key[]: "trailer_browser"
 	val[]: "Преглед на ремаркета"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

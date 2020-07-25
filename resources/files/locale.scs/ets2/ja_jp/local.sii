@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "ブルバー"
+
+	key[]: "l_horn"
+	val[]: "左 ホーン"
+
+	key[]: "r_horn"
+	val[]: "右 ホーン"
 
 	key[]: "f_mirror"
 	val[]: "フロントミラー"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "ペイントスロット" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "プリセットを保存" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "色をプリセットとして保存" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "プリセットを使用" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "すべての色をプリセットとして保存" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "プリセットの色を適用" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "貨物を選択するとルートの詳細が表示されます" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "次のチェックポイントまでの距離"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "次のチェックポイントまでの時間" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -1881,7 +1898,7 @@ localization_db : .localization
 	val[]: "貨物重量"
 
 	key[]: "source_company"
-	val[]: "発送元"
+	val[]: "配送元"
 
 	key[]: "target_company"
 	val[]: "荷受先"
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "UIミュージック音量" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "イントロ ロゴ" #+ Slider controlling volume of the intro logos.
+	val[]: "イントロロゴ ボリューム" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "VOICE NAVIGATION" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "ルートアドバイザー 前のページ"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "ルートアドバイザー目的地モード"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "ヘッドをリセット (ヘッドトラッキング)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "ヘッドトラッキングを有効にする" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "拡張ビューを一時停止 (試験段階)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "拡張ビュー プリセット1を適用" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "拡張ビュー プリセット2を適用" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "拡張ビュー プリセット3を適用" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "視点を回転 (マウスコントロール)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "拡張ビュー" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "拡張ビュー プリセット" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "プリセット名を入力" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "選択されたプリセットを削除してもよろしいですか?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "同名の既存のプリセットは上書きされます. 続行しますか?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "視線トラッキング設定" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "アンチエイリアシング (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "スクリーンスペース・アンビエント・オクルージョン (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "ハイダイナミックレンジ (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "現在の仕事をキャンセル"
 
-
 	key[]: "visit_service"
 	val[]: "直ちにサービスステーションへ向かってください!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "フルトリップ情報" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "次のチェックポイント情報" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "($KEY$) で仕事の詳細ページに切り替えましょう."
 
 	key[]: "tutorial_adviser3"
-	val[]: "仕事の説明ページでは積荷と配送先の内容を要約します. 配送期限や残り時間がどの程度か, また積荷にダメージを与えることなく時間通りに配送した場合の報酬の予想が示されます.<br><br>また必要に応じて赤いボタンを押すことで仕事のキャンセルを行うこともできます. その場合はペナルティとしてそれ相応の料金を支払うことになるでしょう."
+	val[]: "仕事内容のページには何をどこに運ぶのかがまとめられています. 残り時間や荷物にダメージを与えずに時間通りに到着した場合にいくらのお金がもらえるのかなどが書かれています."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "($KEY$) キーで車両診断ページに切り替えましょう."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "イメージ スポットライト機能を有効にしますか?<br><br>World of Trucks の美麗な画像をブラウズしてローディングスクリーンに使用する画像を厳選しましょう." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "内容の変更を検出しました. ナビゲーションデータを更新します. お待ちください..." #+ Shown on loading screen
 #@}
 
 
@@ -11824,19 +11881,19 @@ localization_db : .localization
 	val[]: "マップに表示された緑の旗へ向かってください."
 
 	key[]: "job_load_title"
-	val[]: "トレーラーへ積み込み中"
+	val[]: "トレーラーへの積み込み"
 
 	key[]: "job_load"
 	val[]: "次のキーを押してトレーラーへの貨物の積み込みを開始:"
 
 	key[]: "job_autoload_title"
-	val[]: "トレーラーへ自動で積み込み中"
+	val[]: "トレーラーへの自動積み込み"
 
 	key[]: "job_autoload"
 	val[]: "トレーラーの積み込みをスキップして配送を開始するには,<br>次のキーを押してください:"
 
 	key[]: "job_unload_title"
-	val[]: "トレーラーは荷降ろし中"
+	val[]: "トレーラーからの荷降ろし"
 
 	key[]: "job_unload"
 	val[]: "次のキーを押してトレーラーの荷降ろしを開始:"
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

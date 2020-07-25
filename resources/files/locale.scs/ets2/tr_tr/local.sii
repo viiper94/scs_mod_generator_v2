@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Koruma Demiri"
+
+	key[]: "l_horn"
+	val[]: "Sol Korna"
+
+	key[]: "r_horn"
+	val[]: "Sağ Korna"
 
 	key[]: "f_mirror"
 	val[]: "Ön Ayna"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Boyanacak Yer" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Rengi Kaydet" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Ön ayar olarak kaydet" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Hazır Rengi Kullan" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Tümünü ön ayar olarak kaydet" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Ön ayar renklerini uygula" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Güzergâh detaylarını görmek için yük seçin" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Sonraki Hedef Mesafesi"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Sonraki hedef varış süresi" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2525,7 +2542,7 @@ localization_db : .localization
 	val[]: "İç mekan sesleri seviyesi" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
-	val[]: "Radyonun ses seviyesi" #+ Slider controlling volume of the radio in game.
+	val[]: "Radyo sesi seviyesi" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Sesli navigasyonun ses seviyesi" #+ Slider controlling volume of the voice navigation.
@@ -2534,7 +2551,7 @@ localization_db : .localization
 	val[]: "Dış sesin ses seviyesi" #+ Slider controlling voice over volume.
 
 	key[]: "music_volume"
-	val[]: "Müziğin ses seviyesi" #+ Slider controlling volume of the in-game music.
+	val[]: "Müzik ses seviyesi" #+ Slider controlling volume of the in-game music.
 
 	key[]: "game_ui_volume"
 	val[]: "Oyun sesleri seviyesi" #+ Slider controlling volume of the game sound effects.
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Arayüz müziği seviyesi" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Giriş logoları" #+ Slider controlling volume of the intro logos.
+	val[]: "Giriş Logoları Sesi" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "SESLİ NAVİGASYON" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Yol Planlayıcısı Önceki Sayfa"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Yol Planlayıcısı Hedef Modu"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Sıfırlama (Kafa takibi)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Kafa takibini etkinleştir" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Genişletilmiş Görüşü Duraklatma (deneysel)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "1. genişletilmiş Görüş Ön ayarını uygulayın" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "2. genişletilmiş Görüş Ön ayarını uygulayın" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "3. genişletilmiş Görüş Ön ayarını uygulayın" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Kamerayı Döndür (fare ile)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Genişletilmiş Görüş" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Genişletilmiş Görüş Ön Ayarları" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Ön ayar ismini girin" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Seçili ön ayarları silmek istediğinize emin misiniz?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Aynı ada sahip mevcut bir ön ayarın üzerine yazılacaktır. Devam etmek istiyor musunuz?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Bakış Takibi Ayarları" #+ Header of the gaze settings
 
@@ -3850,7 +3894,7 @@ localization_db : .localization
 	val[]: "Hızın hangi kademeyle arttığını kontrol eder."
 
 	key[]: "eye_gaze_inflection_tooltip"
-	val[]: "İvmenin sabit hâle gelmeye başlayacağı, ekranın merkezine doğru olan mesafe."
+	val[]: "İvmenin sabit hâle gelmeye başlayacağı yer olan ekranın merkezine doğru olan mesafe."
 
 	key[]: "eye_gaze_start_point_tooltip"
 	val[]: "Oyun içi kameranın harekete geçmesi için ekranın merkezinden ne kadar uzakta bakmanız gerektiğidir."
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Ekran uzayı ortam örtmesi (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Yüksek dinamik aralık (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Mevcut işi iptal et"
 
-
 	key[]: "visit_service"
 	val[]: "Acilen servise gidin!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Tüm Seyahat Bilgisi" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Sonraki Hedef Bilgisi" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Devam etmek için iş açıklaması ($KEY$) sayfasına geçin..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "İş açıklaması kısmında yükünüzün ve hedefinizin özeti yer alır. Ayrıca ne zaman varmanız gerektiğini, ne kadar süreniz kaldığını ve yükü hasarsız şekilde ve zamanında teslim ettiğinizde kaç para kazanacağınızı da görebilirsiniz.<br><br>Ayrıca mecbur kalırsanız kırmızı tuşa basarak işi iptal edebilirsiniz. Tabii bu durumda kayda değer bir ceza ödemeniz gerekecek."
+	val[]: "İş açıklaması sayfası, hangi yükü, nereye yüklendiğinizin kısaca gösterir. Yükün en geç ne zaman teslim edileceğini, ne kadar zamanınız kaldığını ve yükü hasarsız ve zamanında teslim ettiğinizde ne kadar para kazanacağınızın bilgisini verir."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Devam etmek için hasar ekranına ($KEY$) geçin..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Foto Vitrin özelliği etkinleştirilsin mi?<br><br>Yükleme ekranlarında kullanılmak maksadıyla World of Trucks'dan özenle seçilmiş birbirinden güzel fotoğraflara göz atabileceksiniz." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "İçerik değişimi algılandı. Navigasyon verisi güncelleniyor. Lütfen bekleyin..." #+ Shown on loading screen
 #@}
 
 
@@ -12100,7 +12157,7 @@ localization_db : .localization
 	val[]: "Belirtilen ülkelerden birinde garaj gerekli:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Bankaya erişmek için mesleğinizde daha da ilerleyin"
+	val[]: "Bankaya erişmek için mesleğinizde daha da ilerleyin."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "Hâlihazırda yeni bir çekici parçası kullanılabilir değil."
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

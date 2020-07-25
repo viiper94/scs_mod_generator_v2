@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Кенгурятник"
+
+	key[]: "l_horn"
+	val[]: "Левый сигнал"
+
+	key[]: "r_horn"
+	val[]: "Правый сигнал"
 
 	key[]: "f_mirror"
 	val[]: "Переднее зеркало"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Цветовой шаблон" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Сохранить как шаблон" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Сохранить цвет как шаблон" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Использовать шаблон" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Сохранить все цвета как шаблон" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Применить шаблон" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Выберите груз, чтобы навигатор мог рассчитать маршрут" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Путь до следующей точки"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Время до следующей точки" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2470,7 +2487,7 @@ localization_db : .localization
 	val[]: "Высоко" #+ The hight quality setting
 
 	key[]: "very_high"
-	val[]: "Максимум" #+ The very hight quality setting
+	val[]: "Очень высоко" #+ The very hight quality setting
 
 	key[]: "ultra"
 	val[]: "Ультра" #+ The ultra quality setting
@@ -2597,10 +2614,10 @@ localization_db : .localization
 	val[]: "Эффект реверберации окружения" #+ Checkbox enabling the reverb effect of the environment.
 
 	key[]: "audio_driver_settings_t"
-	val[]: "ДРАЙВЕР АУДИО" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+	val[]: "ЗВУКОВЫЕ УСТРОЙСТВА" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
 
 	key[]: "default_audio_driver"
-	val[]: "- драйвер по умолчанию -" #+ Text for 'system default driver' option.
+	val[]: "- устройство по умолчанию -" #+ Text for 'system default driver' option.
 #@}
 
 #+ Options/Gameplay
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Route Advisor: предыдущая страница"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Route Advisor: рассчёт времени по точкам"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Сброс положения головы (Отслеживание головы)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Включить отслеживание головы" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Приостановить Extended View (экспериментальная функция)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Применить 1-ю предустановку Extended View" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Применить 2-ю предустановку Extended View" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Применить 3-ю предустановку Extended View" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Вращение камеры (при управлении мышью)" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "Extended View" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "Предустановки Extended View" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Введите название для предустановки" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Вы уверены, что хотите удалить выбранную предустановку?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Предустановка с таким же именем будет перезаписана. Вы хотите продолжить?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "Настройки отслеживания взгляда" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Сглаживание (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Затенение в местах сближения объектов (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Высокий динамический диапазон (HDR)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Отменить текущее задание"
 
-
 	key[]: "visit_service"
 	val[]: "Тягач нуждается в срочном ремонте!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Весь маршрут" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Следующая точка" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9476,7 +9530,7 @@ localization_db : .localization
 	val[]: "Содержимое выбранной страницы"
 
 	key[]: "tutorial_adviser1c"
-	val[]: "При необходимости, Вы можете перейти в меню навигации, информации по текущему заданию, диагностики, или меню SMS-сообщений."
+	val[]: "При необходимости, Вы можете перейти в меню навигации, информации по текущему заданию, диагностики, или меню уведомлений."
 
 	key[]: "tutorial_adviser2"
 	val[]: "Ваша текущая позиция на карте отмечена синим треугольником. Также на карте красным цветом будет обозначен кратчайший маршрут до пункта назначения, если Вы зададите его в навигаторе.<br><br>Внизу страницы показано оставшееся время и расстояние. Вы можете изменять масштаб карты нажатием $KEY$ или с помощью кнопки на экране."
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Для продолжения перейдите к странице описания задания ($KEY$)"
 
 	key[]: "tutorial_adviser3"
-	val[]: "Описание задания показывает, что Вы везёте и куда. Оно показывает сколько денег вы получите за доставку без повреждений и опозданий.<br><br>Вы можете отменить задание, если это действительно необходимо. В таком случае Вам придётся заплатить за неустойку."
+	val[]: "Описание задания показывает, что Вы везёте и куда. Оно показывает, когда ожидается груз, сколько времени осталось, и сколько денег вы получите за доставку без повреждений и опозданий."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Для продолжения перейдите к странице диагностики ($KEY$)"
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Краска" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Удлинённое, краска" #+ Extended leg version of the front truck mirror
+	val[]: "Краска, длинное крепление" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Хром" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Загружать изображения из онлайн-галереи?<br><br>Вы получите доступ к альбому снимков, размещенных на портале World of Trucks, избранных для использования в качестве заставок во время загрузки игры." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Обнаружено изменение контента. Обновляются данные навигации. Пожалуйста, подождите..." #+ Shown on loading screen
 #@}
 
 
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

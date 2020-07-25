@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Μπροστινή μπάρα"
+
+	key[]: "l_horn"
+	val[]: "Αριστερή Κόρνα"
+
+	key[]: "r_horn"
+	val[]: "Δεξιά Κόρνα"
 
 	key[]: "f_mirror"
 	val[]: "Μπροστινός Καθρέφτης"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Θέση Χρώματος" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Διατήρηση Στα Προκαθορισμένα" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Αποθήκευση χρώματος ως προκαθορισμένου" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Χρήση Προκαθορισμένου" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Αποθήκευση όλων των χρωμάτων ως προκαθορισμένων" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Εφαρμογή προκαθορισμένου χρώματος" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Επίλεξε φορτίο για να δεις λεπτομέρειες διαδρομής" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Απόσταση επόμενου σημείου ελέγχου"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Χρόνος επόμενου σημείου ελέγχου" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Ένταση μουσικής μενού" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Λογότυπα εισαγωγής" #+ Slider controlling volume of the intro logos.
+	val[]: "Ένταση λογότυπων εισαγωγής" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "ΦΩΝΗΤΙΚΗ ΠΛΟΗΓΗΣΗ" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2779,7 +2796,7 @@ localization_db : .localization
 #+ Adviser speed limit visualization
 #@{
 	key[]: "adviser_speed_limit"
-	val[]: "Πλοηγός όριο ταχύτητας" #+ Droplist for selection mode of speed limit visualization.
+	val[]: "Πλοηγός: όριο ταχύτητας" #+ Droplist for selection mode of speed limit visualization.
 
 	key[]: "hide"
 	val[]: "Απόκρυψη" #+ Hide speed limit display on the advisor.
@@ -2883,7 +2900,7 @@ localization_db : .localization
 	val[]: "Διάλογος αυτόματου παρκαρίσματος" #+ Checkbox enabling autoparking trigger.
 
 	key[]: "adviser_keep_hidden"
-	val[]: "Διατήρησε τον Πλοηγό κρυμμένο" #+ Checkbox forcing hidden RA to stay hidden (no popups).
+	val[]: "Διατήρηση του Πλοηγό κρυμμένο" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
 	val[]: "Προειδοποιητική οθόνη βαρέος φορτίου" #+ Heavy cargo warning screen pop up upon job selection.
@@ -3268,7 +3285,7 @@ localization_db : .localization
 	val[]: "Εμφάνιση/Απόκρυψη Πλευρικών Καθρεπτών"
 
 	key[]: "o_im_show_hud"
-	val[]: "Πλοηγός Λειτουργίες"
+	val[]: "Πλοηγός: Λειτουργίες"
 
 	key[]: "o_im_nav_map"
 	val[]: "Παγκόσμιος Χάρτης" #+ Opens the world map from game.
@@ -3277,28 +3294,31 @@ localization_db : .localization
 	val[]: "Διαχείριση Γκαράζ" #+ Opens the garage manager from game.
 
 	key[]: "o_im_adviser_cursor"
-	val[]: "Έλεγχος Πλοηγού με το Ποντίκι"
+	val[]: "Πλοηγός: Έλεγχος με το Ποντίκι"
 
 	key[]: "o_im_adjuster"
 	val[]: "Προσαρμογή Φορτηγού"
 
 	key[]: "o_im_adviser_page0"
-	val[]: "Πλοηγός Σελίδα Πλοήγησης"
+	val[]: "Πλοηγός: Σελίδα Πλοήγησης"
 
 	key[]: "o_im_adviser_page1"
-	val[]: "Πλοηγός Πληροφορίες Εργασίας"
+	val[]: "Πλοηγός: Πληροφορίες Δουλειάς"
 
 	key[]: "o_im_adviser_page2"
-	val[]: "Πλοηγός Σελίδα Διαγνωστικών "
+	val[]: "Πλοηγός: Σελίδα Διαγνωστικών"
 
 	key[]: "o_im_adviser_page3"
-	val[]: "Πλοηγός Σελίδα Πληροφοριών"
+	val[]: "Πλοηγός: Σελίδα Πληροφοριών"
 
 	key[]: "o_im_adviser_next"
-	val[]: "Πλοηγός Επόμενη Σελίδα"
+	val[]: "Πλοηγός: Επόμενη Σελίδα"
 
 	key[]: "o_im_adviser_prev"
-	val[]: "Πλοηγός Προηγούμενη Σελίδα"
+	val[]: "Πλοηγός: Προηγούμενη Σελίδα"
+
+	key[]: "o_im_adviser_eta"
+	val[]: "Πλοηγός: Λειτουργία Προορισμού"
 
 #assistant
 
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Επαναφορά Κεφαλιού (Head tracking)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Ενεργοποίηση Ελέγχου Κεφαλής" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Παύση Ευρείας Προβολής (πειραματικό)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Εφαρμογή Εκτεταμένης Προεπιλογής Προβολής 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Εφαρμογή Εκτεταμένης Προεπιλογής Προβολής 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Εφαρμογή Εκτεταμένης Προεπιλογής Προβολής 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Περιστροφή κάμερας (έλεγχος ποντικιού)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,7 +3750,7 @@ localization_db : .localization
 	val[]: "Διάφορα" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Ανάδραση χρώματος" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Ανάδραση χρώματος (Colour feedback)" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Ευρεία Προβολή" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Εκτεταμένες Προεπιλογές Προβολής" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Εισαγωγή ονόματος προεπιλογής" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Είσαι σίγουρος ότι θέλεις να διαγράψεις την επιλεγμένη προεπιλογή;" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Η υπάρχουσα προεπιλογή με το ίδιο όνομα θα αντικατασταθεί. Θέλετε να συνεχίσετε;" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Ρυθμίσεις Ελέγχου Βλέμματος" #+ Header of the gaze settings
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Screen space ambient occlusion (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "HDR (γκάμα υψηλών χρωματικών δυναμικών)" #+ Checkbox enabling the high dynamic range rendering.
@@ -4615,7 +4662,7 @@ localization_db : .localization
 	val[]: "Θέλεις σίγουρα να ακυρώσεις την τρέχουσα δουλειά σου;<br offset=10>Θα πληρώσεις πρόστιμο αξίας $MONEY$"
 
 	key[]: "no_cancel_first_job"
-	val[]: "Δεν μπορείς να ακυρώσεις την πρώτη σου δουλειά. Κανείς δεν θα σε σέβεται μετά απ'αυτό."
+	val[]: "Δεν μπορείς να ακυρώσεις την πρώτη σου δουλειά. Κανείς δεν θα σε σέβεται μετά από αυτό."
 
 	key[]: "view_available_services"
 	val[]: "Διαθέσιμες υπηρεσίες & προσαρμογές" #+ The text shown on button opening assistance window containing various assistance services for player.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Ακύρωση δουλειάς"
 
-
 	key[]: "visit_service"
 	val[]: "Επισκέψου ένα συνεργείο άμεσα!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Πλήρεις πληροφορίες ταξιδίου" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Πληροφορίες επόμενου σημείου ελέγχου" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9331,7 +9385,7 @@ localization_db : .localization
 	val[]: "Ενεργοποίηση καθρεπτών" #+ Shown bellow keys which will toggle side mirrors.
 
 	key[]: "show_hud_hint"
-	val[]: "Περιήγηση λειτουργιών Πλοηγού" #+ Shown bellow keys which will toggle advisor modes.
+	val[]: "Εναλλαγή λειτουργιών Πλοηγού" #+ Shown bellow keys which will toggle advisor modes.
 #@}
 
 #+ Texts shown on the dashboard.
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Επίλεξε την σελίδα περιγραφής εργασίας ($KEY$) για να συνεχίσεις..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Η σελίδα περιγραφής της δουλειάς συνοψίζει τι μεταφέρεις και που. Σου λέει πότε αναμένεσαι να φτάσεις, πόσος χρόνος σου έμεινε και πόσα χρήματα θα λάβεις αν φτάσεις εμπρόθεσμα και χωρίς ζημιά στο φορτίο.<br><br>Μπορείς επίσης και να ακυρώσεις τη δουλειά, αν πραγματικά πρέπει, πατώντας το κόκκινο κουμπί. Σ'αυτήν την περίπτωση θα πρέπει να πληρώσεις ένα σημαντικό ποσό ως πρόστιμο."
+	val[]: "Η σελίδα περιγραφής εργασίας συνοψίζει τι μεταφέρεις και που. Σου λέει πότε αναμένεται να φτάσεις, πόσος χρόνος σου έχει απομείνει και πόσα χρήματα θα λάβεις αν φτάσεις έγκαιρα και χωρίς να ζημιώσεις το φορτίο."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Επίλεξε την σελίδα των διαγνωστικών ($KEY$) για να συνεχίσεις..."
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "Βαφή" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Βαφή Μακρύ" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Χρώμιο" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Ενεργοποίηση του χαρακτηριστικού προβολής Εικόνας Προσκηνίου;<br><br>Θα μπορείς να περιηγηθείς ανάμεσα σε εντυπωσιακές εικόνες επιλεγμένες από το World of Trucks για χρήση στις Οθόνες Φόρτωσης." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Ανιχνεύθηκε αλλαγή περιεχομένου. Ανανέωση δεδομένων πλοήγησης. Παρακαλώ περιμένετε..." #+ Shown on loading screen
 #@}
 
 
@@ -11560,15 +11617,15 @@ localization_db : .localization
 
 	#+ Text on gps advisor which suggest careful behavior because of tight route coming.
 	key[]: "adviser_tight_route"
-	val[]: "Προσοχή τώρα, πραγματικά στενό τμήμα της διαδρομής έρχεται..."
+	val[]: "Προσοχή, έπεται πολύ στενό τμήμα της διαδρομής..."
 
 	#+ Text on gps advisor which suggest careful behavior because of changing the lines.
 	key[]: "adviser_change_maneuver"
-	val[]: "Πλησιάζεις σε αλλαγή λωρίδας. Προσάρμοσε την ταχύτητα σου για να αποφύγεις μία πιθανή σύγκρουση..."
+	val[]: "Πλησιάζεις σε αλλαγή λωρίδας. Προσάρμοσε την ταχύτητα σου για να αποφύγεις πιθανή σύγκρουση..."
 
 	#+ Text on gps advisor which suggest careful behavior because the front escort vehicel is going forward to make a path for player.
 	key[]: "adviser_path_for_you"
-	val[]: "Το μπροστά όχημα συνοδείας θα προειδοποιήσει τους άλλους οδηγούς... <br> Προσάρμοσε την ταχύτητα σου για να αποφύγεις μία πιθανή σύγκρουση..."
+	val[]: "Το μπροστινό όχημα συνοδείας θα προειδοποιήσει τους άλλους οδηγούς... <br> Προσάρμοσε την ταχύτητα σου για να αποφύγεις πιθανή σύγκρουση..."
 
 	#+ Text on gps advisor when player will be moving with a reverse to the rear escort to warn of a possible crash.
 	key[]: "close_to_the_back_escort_big_dist"
@@ -12894,7 +12951,7 @@ localization_db : .localization
 	val[]: "Κανένα" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
-	val[]: "Δεν βρέθηκαν τρέιλερς" #+ Text shown if there are no trailer of given brands found.
+	val[]: "Δε βρέθηκαν τρέιλερ" #+ Text shown if there are no trailer of given brands found.
 
 	key[]: "cargo_model_t"
 	val[]: "ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΦΟΡΤΙΩΝ" #+ The title of the cargo preview modal. Keep it uppercase please.
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

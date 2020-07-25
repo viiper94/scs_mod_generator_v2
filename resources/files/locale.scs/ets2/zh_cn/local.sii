@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "防撞条"
+
+	key[]: "l_horn"
+	val[]: "Left Horn"
+
+	key[]: "r_horn"
+	val[]: "Right Horn"
 
 	key[]: "f_mirror"
 	val[]: "前反光镜"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "漆槽" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "保存为预设" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "将颜色保存为预设" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "使用预设" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "将所有颜色保存为预设" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "应用颜色预设" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "选择货物以查看路线详情" #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "下一个检查点距离"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "下一个检查点时间" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "菜单界面的音乐音量" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "启动画面" #+ Slider controlling volume of the intro logos.
+	val[]: "启动画面音量" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "语音导航" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "行路顾问上一页"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "行路顾问目的地模式"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "重置头部位置 (头部跟踪)"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "启用头部跟踪" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "暂停扩展视角（实验性功能）"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "应用扩展视角预设1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "应用扩展视角预设2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "应用扩展视角预设3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "转动视角（在使用鼠标控制时）" #+ Enables camera look mode when mouse steering is active.
@@ -3753,6 +3785,18 @@ localization_db : .localization
 	key[]: "eye_extended_view_settings"
 	val[]: "扩展视角" #+ Header of the section.
 
+	key[]: "eye_preset"
+	val[]: "扩展视角预设" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "输入预设名称" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "您确定要删除所选的预设吗？" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+
 	key[]: "eye_gaze_settings"
 	val[]: "视线追踪设置" #+ Header of the gaze settings
 
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "抗锯齿（SMAA）" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "屏幕空间环境光遮蔽 (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "高动态范围（HDR）" #+ Checkbox enabling the high dynamic range rendering.
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "取消当前任务"
 
-
 	key[]: "visit_service"
 	val[]: "请立刻访问服务站！"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "完整旅程信息" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "下一个检查点信息" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "切换到任务描述页面［$KEY$］以继续…"
 
 	key[]: "tutorial_adviser3"
-	val[]: "工作描述页总结了你将运输的物品以及位置。它告诉你要求的到达时间，你还剩余多少时间以及当你按时到达后并且没有损坏货物的情况下你会获得多少金钱。<br><br>你也可以取消任务，如果你真必须这么做，按下红色的按钮。这种情况下你将会缴纳巨额的罚款。"
+	val[]: "工作描述页面汇总了您运送的物品和位置。它告诉您预期时间，剩下多少时间以及如果您准时到达而又不损坏货物的话将获得多少钱。"
 
 	key[]: "tutorial_adviser3a"
 	val[]: "切换到车况诊断页面［$KEY$］以继续…"
@@ -10070,7 +10124,7 @@ localization_db : .localization
 	val[]: "喷漆" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "喷漆 长" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "电镀" #+ Chromed mirror, doorhandle or other accessory
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "是否启用“图片精选”功能？<br><br>您可以浏览我们精心挑选的来自World of Trucks的图片，并把它们用作加载界面。" #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "检测到内容更改。更新导航数据中，请稍候..." #+ Shown on loading screen
 #@}
 
 
@@ -11788,7 +11845,7 @@ localization_db : .localization
 	val[]: "活动详情" #+ Title of the event popup.
 
 	key[]: "event_completed"
-	val[]: "Personal Goal Completed!" #+ Text showed when player completes event.
+	val[]: "个人目标完成！" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
 	val[]: "打开活动页面" #+ Button opening event page on WoTr.
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }

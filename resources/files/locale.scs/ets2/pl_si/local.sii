@@ -5,7 +5,7 @@ localization_db : .localization
 {
 
 
-	# Included from "/locale/common.sii"
+	# Included from "/locale/common.sui"
 
 ﻿
 	key[]: "clr_sel"
@@ -47,7 +47,7 @@ localization_db : .localization
 
 	key[]: "icon_call_assistance"
 	val[]: "/material/ui/adviser/ico_assistance.mat left=p5 right=p27 top=p5 bottom=p27"
-	
+
 	key[]: "degree"
 	val[]: "°"
 
@@ -664,7 +664,7 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
-	# End of include "/locale/common.sii"
+	# End of include "/locale/common.sui"
 
 
 # Regional settings
@@ -693,7 +693,7 @@ localization_db : .localization
 	val[]: "€"
 
 
-	# Included from "localization.sii"
+	# Included from "localization.sui"
 
 #+ Name of currently selected language, please do not translate, put your native language name here in your native language.
 
@@ -1113,6 +1113,12 @@ localization_db : .localization
 
 	key[]: "bullbar"
 	val[]: "Przodniŏ ôsłōna"
+
+	key[]: "l_horn"
+	val[]: "Lewa trąba"
+
+	key[]: "r_horn"
+	val[]: "Prawa trąba"
 
 	key[]: "f_mirror"
 	val[]: "Przodnie zdrzadło"
@@ -1716,11 +1722,14 @@ localization_db : .localization
 	key[]: "paint_channel"
 	val[]: "Ôkynko ôd farby" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
-	key[]: "save_color"
-	val[]: "Spamiyntej jako fabryczny" #+ Button which stores currently selected color in selected preset slot.
+	key[]: "tooltip_save_ucolor"
+	val[]: "Zapisz kolor jako gotowy" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
-	key[]: "load_color"
-	val[]: "Użyj fabrycznygo" #+ Button which applies color from currently selected preset slot.
+	key[]: "tooltip_save_preset_ucolor"
+	val[]: "Zapisz wszystkie kolory jako gotowe" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+
+	key[]: "tooltip_apply_ucolor"
+	val[]: "Zastosuj wstępne ustawienie kolorów" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1844,6 +1853,14 @@ localization_db : .localization
 
 	key[]: "no_route"
 	val[]: "Ôbier towar, coby ôbezdrzeć informacyje ô ceście." #+ Text shown centered in the route info box when no job is selected.
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_len"
+	val[]: "Następny punkt kontrolny"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+
+	#+ Char Limit: 25
+	key[]: "checkpoint_time"
+	val[]: "Czas następnego punktu kontrolnego" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
 #@}
 
 
@@ -2543,7 +2560,7 @@ localization_db : .localization
 	val[]: "Głośność muzyki interfejsu" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Głośność loga wprowadzającego" #+ Slider controlling volume of the intro logos.
+	val[]: "Głośność logo wprowadzającego" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "NAWIGACJA GŁOSOWA" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -3300,6 +3317,9 @@ localization_db : .localization
 	key[]: "o_im_adviser_prev"
 	val[]: "Piyrwyjszŏ strōna ôd Cestowygo Doradcy"
 
+	key[]: "o_im_adviser_eta"
+	val[]: "Tryb docelowy doradcy drogowego"
+
 #assistant
 
 	key[]: "o_im_assistent_action1"
@@ -3351,8 +3371,20 @@ localization_db : .localization
 	key[]: "o_im_head_reset"
 	val[]: "Zresetuj śledzenie głowy"
 
+	key[]: "o_im_headtrack_enable"
+	val[]: "Włącz śledzenie (sterowanie kamery)" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+
 	key[]: "o_im_eye_pause"
 	val[]: "Wstrzymaj widok rozszerzony (eksperymentalny)"
+
+	key[]: "o_im_eye_preset_1"
+	val[]: "Zastosuj ustawienie wstępne widoku rozszerzonego 1" #+ Applies extended view eye tracking preset 1
+
+	key[]: "o_im_eye_preset_2"
+	val[]: "Zastosuj ustawienie wstępne widoku rozszerzonego 2" #+ Applies extended view eye tracking preset 2
+
+	key[]: "o_im_eye_preset_3"
+	val[]: "Zastosuj ustawienie wstępne widoku rozszerzonego 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Kryncyniy kamerōm (kōntrola myszōm)" #+ Enables camera look mode when mouse steering is active.
@@ -3718,7 +3750,7 @@ localization_db : .localization
 	val[]: "Różne" #+ Header of the section.
 
 	key[]: "color_feedback"
-	val[]: "Informacja o kolorze" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
+	val[]: "Kolor zwrotny" #+ Checkbox enabling Color feedback effects for supported devices like Razer Chroma etc.
 #@}
 
 #+ Eye tracking configuration
@@ -3752,6 +3784,18 @@ localization_db : .localization
 #@{
 	key[]: "eye_extended_view_settings"
 	val[]: "Widok rozszerzony" #+ Header of the section.
+
+	key[]: "eye_preset"
+	val[]: "Rozszerzone ustawienia wstępne widoku" #+ Label of combo box with list of presets for the extended view
+
+	key[]: "eye_preset_name_hint"
+	val[]: "Wprowadź nazwę ustawienia wstępnego" #+ Hint shown within empty text input box used to enter name of new extended view preset
+
+	key[]: "eye_preset_delete_confirmation"
+	val[]: "Czy na pewno chcesz usunąć wybrane ustawienie wstępne?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+
+	key[]: "eye_preset_overwrite_confirmation"
+	val[]: "Istniejące ustawienia wstępne o tej samej nazwie zostaną zastąpione. Czy chcesz kontynuować?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Ustawienia śledzenia spojrzenia" #+ Header of the gaze settings
@@ -4009,6 +4053,9 @@ localization_db : .localization
 
 	key[]: "aa_mode"
 	val[]: "Antyaliasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
+
+	key[]: "ssao_mode"
+	val[]: "Okluzja otoczenia przestrzeni ekranu (SSAO)" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
 	val[]: "Rynderowaniy HDR" #+ Checkbox enabling the high dynamic range rendering.
@@ -4579,7 +4626,7 @@ localization_db : .localization
 	val[]: "Krótkie wiadomości" #+ Tooltip for short messages page in route advisor
 
 	key[]: "adviser_tooltip_tutorial"
-	val[]: "Samouczek Doradcy Drogowego" #+ Tooltip for the tutorial icon route advisor
+	val[]: "Samouczek doradcy drogowego" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "Pomoc drogowa może Cię zabrać razem z Twoją ciężarówką do miasta $CITY$. To będzie kosztować $MONEY$, a podróż potrwa $TIME$.<br offset=30>Wyrażasz zgodę?"
@@ -4623,9 +4670,16 @@ localization_db : .localization
 	key[]: "cancel_current_job"
 	val[]: "Ôdciep aktualnõ robotã"
 
-
 	key[]: "visit_service"
 	val[]: "Jedź terŏzki do serwisu!"
+
+	key[]: "adviser_eta_waypoint"
+	val[]: "Pełna informacja o podróży" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+
+	key[]: "adviser_eta_target"
+	val[]: "Informacje o następnym punkcie kontrolnym" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+
+
 
 # Adviser info
 
@@ -9458,7 +9512,7 @@ localization_db : .localization
 	val[]: "Podjedź do wrōt, coby dostać przepustkã i wwieźć tŏwŏr do ôkryślōnego miejsca we terminalu dostŏw. Dej pozōr na animowany znak, co pokazuje plac, kaj zastawić lastauto.<br><br>To może być dobry mōmynt, żeby nasztalować skalã mapy we panelu nawigacyje Cestowego Doradcy ($KEY$)."
 
 	key[]: "tut_msg_9"
-	val[]: "Kiedy już wybierzesz w terminalu miejsce zaparkowania, kontynuuj parkowanie naczepy. W niektórych terminalach możesz wybrać łatwiejszą alternatywę (za mniejszą ilość XP w nagrodę). Jeśli znajdziesz się w tarapatach, możesz wybrać opcję parkowania automatycznego.<br><br>Miejsce zaparkowania naczepy będzie oznaczone na gruncie prostokątem oraz będzie zaznaczone w Doradcy Drogowym. W momencie kiedy naczepa będzie znajdować się w poprawnej pozycji, pojawi się wiadomość z prośbą o odczepienie jej."
+	val[]: "Kiedy już wybierzesz w terminalu miejsce zaparkowania, kontynuuj parkowanie naczepy. W niektórych terminalach możesz wybrać łatwiejszą alternatywę (za mniejszą ilość XP w nagrodę). Jeśli znajdziesz się w tarapatach, możesz wybrać opcję parkowania automatycznego.<br><br>Miejsce zaparkowania naczepy będzie oznaczone na gruncie prostokątem oraz będzie zaznaczone w doradcy drogowym. W momencie kiedy naczepa będzie znajdować się w poprawnej pozycji, pojawi się wiadomość z prośbą o odczepienie jej."
 
 	key[]: "tut_msg_10"
 	val[]: "Dobrŏ robota! Na co czekŏsz? Rozladuj i zacznij szpilać sōm!"
@@ -9485,7 +9539,7 @@ localization_db : .localization
 	val[]: "Przejdź do ôpisu roboty ($KEY$), coby kōntynuować..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "Strōna informacyjōw ô robocie pokazuje co wieziesz i kaj. Padŏ ci kej cie ôczekujōm, wielã ôstało ci czasu i wielã piyniyndzy dostaniesz jak przijedziesz z ladunkym bez szkōd.<br><br>Mogesz tyż ciepnōńć robotã - jeźli na isto musisz - bez wciśniyńciy czerwōnygo knefla. We takim przipŏdku bydziesz musioł calować sroge piyniōndze za sztrofã."
+	val[]: "Strona opisu stanowiska podsumowuje to, co przewozisz i gdzie. Informuje, kiedy należy się spodziewać, ile czasu Ci pozostało i ile pieniędzy otrzymasz, jeśli dotrzesz na czas bez uszkadzania ładunku."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Przejdź do strōny diagnostyki ($KEY$), coby kōntynuować..."
@@ -10974,6 +11028,9 @@ localization_db : .localization
 
 	key[]: "allow_loading_screens"
 	val[]: "Włōnczyć galeryjõ ôbrŏzōw?<br><br>Bydziesz mōg przejzdrzeć najpiykniyjsze ôbrŏzy ôbrane ze World of Trucks do użyciŏ przi ladowaniu." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+
+	key[]: "content_change_detected"
+	val[]: "Wykryto zmianę treści. Aktualizacja danych nawigacyjnych. Proszę czekać..." #+ Shown on loading screen
 #@}
 
 
@@ -11319,7 +11376,7 @@ localization_db : .localization
 	val[]: "Gra prziwrōcōnŏ do starszyj wersyje." #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
-	val[]: "<br><br>Zmiana wersji gry może psuć modyfikacje, powodując zawieszanie się gry lub niestabilność; Autorzy modyfikacji są odpowiedzialni za utrzymanie kompatybilności modyfikacji. Upewnij się, że aktywowane modyfikacje są kompatybilne.<br><br>Wskazówka dotycząca rozwiązywania problemów: Jeśli obecne wydanie modyfikacji jest niekompatybilne, spróbuj wyłączyć je w Menedżerze modyfikacji.<br><br>Wersja gry: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
+	val[]: "<br><br>Zmiana wersji gry może psuć modyfikacje, powodując zawieszanie się gry lub niestabilność; autorzy modyfikacji są odpowiedzialni za utrzymanie kompatybilności modyfikacji. Upewnij się, że aktywowane modyfikacje są kompatybilne.<br><br>Wskazówka dotycząca rozwiązywania problemów: Jeśli obecne wydanie modyfikacji jest niekompatybilne, spróbuj wyłączyć je w Menedżerze modyfikacji.<br><br>Wersja gry: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
 #@}
 
 #+ Strings related to accessory filtering feature.
@@ -12100,7 +12157,7 @@ localization_db : .localization
 	val[]: "Wymaga garażu w:" #+ Text shown on trailer offer that is limited to specified countries.
 
 	key[]: "link_locked_msg_bank"
-	val[]: "Postępuj dalej w swojej karierze, aby uzyskać dostęp do banku"
+	val[]: "Postępuj dalej w swojej karierze, aby uzyskać dostęp do banku."
 
 	key[]: "link_locked_msg_truck_upgrades"
 	val[]: "W tej chwili nie są dostępne żadne nowe ulepszenia pojazdów ciężarowych."
@@ -13810,7 +13867,7 @@ localization_db : .localization
 
 #@}
 
-	# End of include "localization.sii"
+	# End of include "localization.sui"
 
 
 }
