@@ -1,0 +1,6 @@
+company_permanent: company.permanent.imp_otel
+{
+	name: "Oţel Impecabil"
+	sort_name: "otel impecabil"
+	trailer_look: imp_otel
+}

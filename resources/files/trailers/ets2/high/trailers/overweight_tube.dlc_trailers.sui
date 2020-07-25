@@ -9,7 +9,7 @@ trailer : trailer.overweight.tube
 
 vehicle_accessory: .overweight.tube.tchassis
 {
-    	data_path: "/def/vehicle/trailer/overweight/chassis_Y.sii"
+    	data_path: "/def/vehicle/trailer/overweight/chassis_y.sii"
 }
 
 vehicle_wheel_accessory: .overweight.tube.trwheel0

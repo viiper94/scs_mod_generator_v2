@@ -1,0 +1,74 @@
+trailer : trailer.car_trans_e1
+{
+	accessories[]: .car_trans_e1.tchassis
+	accessories[]: .car_trans_e1.trwheel0
+	accessories[]: .car_trans_e1.trwheel1
+}
+
+vehicle_accessory: .car_trans_e1.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_blue.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_e1.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_e1.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+
+trailer : trailer.car_trans_e2
+{
+	accessories[]: .car_trans_e2.tchassis
+	accessories[]: .car_trans_e2.trwheel0
+	accessories[]: .car_trans_e2.trwheel1
+}
+
+vehicle_accessory: .car_trans_e2.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis_black.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_e2.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_e2.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+
+trailer : trailer.car_trans_e3
+{
+	accessories[]: .car_trans_e3.tchassis
+	accessories[]: .car_trans_e3.trwheel0
+	accessories[]: .car_trans_e3.trwheel1
+}
+
+vehicle_accessory: .car_trans_e3.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_e3.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+
+vehicle_wheel_accessory: .car_trans_e3.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/cartrans.sii"
+}
+

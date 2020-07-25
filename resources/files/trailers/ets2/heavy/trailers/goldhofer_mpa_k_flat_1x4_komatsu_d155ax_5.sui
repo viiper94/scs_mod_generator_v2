@@ -44,5 +44,5 @@ vehicle_wheel_accessory: .goldhofer.mpa_k_flat14.k_d155ax_5.trwheel4
 
 vehicle_accessory: .goldhofer.mpa_k_flat14.k_d155ax_5.cargo
 {
-    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat_1x4/komatsu_d155ax_5.sii"
+    	data_path: "/def/vehicle/trailer/goldhofer_mpa_k_flat_1x4/crawler_dozer.sii"
 }

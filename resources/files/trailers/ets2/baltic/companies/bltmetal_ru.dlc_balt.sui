@@ -1,0 +1,6 @@
+company_permanent: company.permanent.bltmetal_ru
+{
+	name: "Балтийская Металлургия"
+	sort_name: "baltic metallurgy"
+	trailer_look: bltmetal_ru
+}

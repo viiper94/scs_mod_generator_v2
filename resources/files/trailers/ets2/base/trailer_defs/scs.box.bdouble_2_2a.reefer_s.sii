@@ -17,7 +17,6 @@ trailer_def : trailer_def.scs.box.bdouble_2_2a.reefer_s
 	
 	
 	
-
 	mass_ratio[]: 0.33
 	mass_ratio[]: 0.67
 }

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.acc
+{
+	name: "ACC"
+	sort_name: "acc"
+	trailer_look: acc
+}

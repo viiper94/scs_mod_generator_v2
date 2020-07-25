@@ -17,7 +17,6 @@ trailer_def : trailer_def.scs.flatbed.double_3_1.brick
 	
 	
 	
-
 	mass_ratio[]: 0.67
 	mass_ratio[]: 0.33
 }

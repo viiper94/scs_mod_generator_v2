@@ -1,0 +1,6 @@
+company_permanent: company.permanent.skoda
+{
+	name: "Scout"
+	sort_name: "scout"
+	trailer_look: skoda
+}

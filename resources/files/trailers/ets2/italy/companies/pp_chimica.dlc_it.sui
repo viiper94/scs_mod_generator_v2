@@ -1,0 +1,6 @@
+company_permanent: company.permanent.pp_chimica
+{
+	name: "PP Chimica Italia"
+	sort_name: "pp chimica italia"
+	trailer_look: pp_chimica
+}

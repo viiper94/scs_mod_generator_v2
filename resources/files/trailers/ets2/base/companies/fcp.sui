@@ -1,0 +1,6 @@
+company_permanent: company.permanent.fcp
+{
+	name: "FCP"
+	sort_name: "fcp"
+	trailer_look: fcp
+}

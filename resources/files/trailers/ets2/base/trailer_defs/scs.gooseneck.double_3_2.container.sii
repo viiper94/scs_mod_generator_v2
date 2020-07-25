@@ -3,7 +3,7 @@ SiiNunit
 trailer_def : trailer_def.scs.gooseneck.double_3_2.container
 {
 	gross_trailer_weight_limit: 55000
-	chassis_mass: 8000
+	chassis_mass: 8400
 	body_mass: 0
 	length: 21.9
 	axles: 5
@@ -17,7 +17,6 @@ trailer_def : trailer_def.scs.gooseneck.double_3_2.container
 	
 	
 	
-
 	mass_ratio[]: 0.66
 	mass_ratio[]: 0.34
 }

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.itcc
+{
+	name: "ITCC"
+	sort_name: "itcc"
+	trailer_look: itcc
+}

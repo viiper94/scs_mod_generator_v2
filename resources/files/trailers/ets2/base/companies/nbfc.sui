@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nbfc
+{
+	name: "NBFC"
+	sort_name: "nbfc"
+	trailer_look: nbfc
+}
