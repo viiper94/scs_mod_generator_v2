@@ -118,9 +118,9 @@
         "cn_stumper": "Πρεμνοφάγος",
         "cn_log_loader": "Φορτωτής Κορμών",
         "cn_log_stacker": "Μηχάνημα Στοιβάγματος Κορμών",
-        "cn_forwarder": "Μεταφορέας Ξυλείας",
+        "cn_forwarder": "Λαστιχοφόρος Προωθητής",
         "cn_harvester": "Θεριστική Μηχανή",
-        "cn_log_harvester": "Μηχάνημα Υλοτόμησης",
+        "cn_log_harvester": "Συλλεκτική Μηχανή Υλοτόμησης",
         "cn_aircraft_engine": "Κινητήρας Αεροσκάφους"
     },
     "ets2 trailers": {
@@ -215,7 +215,7 @@
         "tn_lowboy_boat": "Χαμηλό Τρέιλερ Σκάφους",
         "tn_mbt1_barrier": "Τρέιλερ Κινητής Μπαριέρας",
         "tn_home_transporter": "Μεταφορά Κατοικιών",
-        "tn_knuckle_boom": "Γερανός Παπαγαλάκι",
+        "tn_knuckle_boom": "Γερανός Κορμών (Παπαγαλάκι)",
         "tn_tub_grinder": "Θρυμματιστής"
     }
 }
