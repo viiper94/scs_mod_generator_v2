@@ -43,6 +43,9 @@
                                              data-value="{{$chassis->alias}}" data-position="left">
                                             <span class="name">
                                                 {{ $chassis->translate() }}
+                                                @if(\Illuminate\Support\Facades\Auth::check() && $chassis->favoriteTo->contains(\Illuminate\Support\Facades\Auth::user()))
+                                                    <i class="favorite-chassis material-icons notranslate">star</i>
+                                                @endif
                                             </span>
                                             @if($chassis->isDLCContent())
                                                 <span class="right tooltipped hint"

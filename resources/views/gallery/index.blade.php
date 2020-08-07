@@ -40,6 +40,13 @@
                                                 <br>@lang('dlc_list.'.$aliases_collection[0]->dlc->name)
                                             @endif
                                         </h5>
+                                        @if(\Illuminate\Support\Facades\Auth::check())
+                                            @if($aliases_collection[0]->favoriteTo->contains(\Illuminate\Support\Facades\Auth::id()))
+                                                <i class="favorite favorite-active material-icons notranslate text-shadow" data-trailer="{{$alias}}" data-game="ets2" data-token="{{csrf_token()}}">star</i>
+                                            @else
+                                                <i class="favorite material-icons notranslate text-shadow" data-trailer="{{$alias}}" data-game="ets2" data-token="{{csrf_token()}}">star_outline</i>
+                                            @endif
+                                        @endif
                                     </div>
                                     @if($aliases_collection[0]->with_paint_job || $aliases_collection[0]->with_accessory)
                                         <div class="card-content">

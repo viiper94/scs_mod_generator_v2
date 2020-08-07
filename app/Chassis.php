@@ -33,6 +33,10 @@ class Chassis extends Model{
         return $this->belongsTo('App\Dlc');
     }
 
+    public function favoriteTo(){
+        return $this->belongsToMany('App\User', 'favorite_chassis_users', 'chassis_id', 'user_id');
+    }
+
     public function defaultWheels(){
         return $this->belongsTo('App\Wheel', 'wheels_id');
     }

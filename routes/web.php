@@ -22,6 +22,7 @@ Route::group(['middleware' => 'i18n'], function(){
 
     Route::get('/gallery', 'GalleryController@index')->name('gallery');
     Route::post('/gallery', 'GalleryController@getInfo');
+    Route::post('/gallery/favorite', 'GalleryController@favorite');
 
     Route::get('/profile/{id}/mods', 'ProfileController@mods')->name('profile_mods_admin');
     Route::get('/profile/mods', 'ProfileController@mods')->name('profile_mods');

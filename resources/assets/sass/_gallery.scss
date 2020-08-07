@@ -14,3 +14,19 @@
 .ac-list > li:hover{
     background-color: rgba(242, 242, 242, 0.1);
 }
+.card{
+    .card-image{
+        i{
+            &.favorite{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                color: white;
+                cursor: pointer;
+            }
+            &.favorite-active{
+                color: yellow;
+            }
+        }
+    }
+}

@@ -491,6 +491,32 @@ $(document).ready(function(){
         }
     });
 
+    $('i.favorite').click(function(){
+       let $icon = $(this);
+       $.ajax({
+           cache: false,
+           dataType : 'json',
+           type : 'POST',
+           url : 'gallery/favorite',
+           data : {
+               '_token': $icon.data('token'),
+               'chassis': $icon.data('trailer'),
+               'game': $icon.data('game')
+           },
+           success : function(response){
+               if(response.status === 'OK'){
+                    if(response.data.favorite){
+                        $icon.addClass('favorite-active').html('star');
+                        M.toast({html: '<i class="material-icons notranslate left">info</i> ' + response.data.string, displayLength: 6000});
+                    }else{
+                        $icon.removeClass('favorite-active').html('star_outline');
+                        M.toast({html: '<i class="material-icons notranslate left">info</i> ' + response.data.string, displayLength: 6000});
+                    }
+               }
+           }
+       });
+    });
+
 });
 
 function getDLCList(value) {

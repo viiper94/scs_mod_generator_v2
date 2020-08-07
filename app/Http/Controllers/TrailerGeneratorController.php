@@ -18,9 +18,18 @@ class TrailerGeneratorController extends Controller{
 
     public function index($game = 'ets2'){
         if($game !== 'ats' && $game !== 'ets2') abort(404);
+        $chassis_list = Chassis::where(['game' => $game, 'active' => 1])->with('dlc', 'favoriteTo')->orderBy('dlc_id', 'asc')->orderBy('alias_short', 'asc')->get();
+        if(Auth::check()){
+            // moving favorite chassis to top of the collection
+            $chassis_list = $chassis_list->filter(function($value){
+                return $value->favoriteTo->contains(Auth::user());
+            })->merge($chassis_list->reject(function($value){
+                return $value->favoriteTo->contains(Auth::user());
+            }));
+        }
         return view('generator.generator_trailer', [
             'game' => $game,
-            'chassis_list' => Chassis::where(['game' => $game, 'active' => 1])->with('dlc')->orderBy('dlc_id', 'asc')->orderBy('alias_short', 'asc')->get(),
+            'chassis_list' => $chassis_list,
             'wheels' => Wheel::where(['active' => 1, 'game' => $game])->with('dlc')->orderBy('sort', 'desc')->get(),
             'dlc_list' => Dlc::where(['active' => 1, 'game' => $game])->whereIn('type', ['map', 'trailer'])->orderBy('sort', 'asc')->get()->groupBy('type')
         ]);

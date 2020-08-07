@@ -32,6 +32,10 @@ class User extends Authenticatable
         return $this->admin === 1;
     }
 
+    public function favorite(){
+        return $this->belongsToMany('App\Chassis', 'favorite_chassis_users', 'user_id', 'chassis_id');
+    }
+
     public static function linkSteamAccount($info){
         $user = User::find(Auth::id());
         if(!$user->steamid64){

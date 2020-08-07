@@ -62,6 +62,8 @@
         "join_discord": "Visit our Discord server and join discussion: ",
         "check_all": "Check all",
         "with_promods": "Include ProMods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "No results"
     },
     "instructions": {
