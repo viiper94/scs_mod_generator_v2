@@ -41,7 +41,7 @@
         "trailers_gallery": "Галлерея прицепов",
         "advanced": "Дополнительные настройки",
         "image_upload": "Загрузите изображение модификации (макс. 5Мб)",
-        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
+        "image_note": "Внимание, это НЕ картинка для прицепа! Это изображение будет использовано только в Менеджере Модификаций.",
         "current_version": "Текущая версия сервиса",
         "success": "Выполнено успешно!",
         "something_wrong": "Что то пошло не так =(",
@@ -63,8 +63,8 @@
         "join_discord": "Посетите наш Discord сервер и присоединяйтесь к дискуссии: ",
         "check_all": "Выбрать все",
         "with_promods": "Включить ProMods",
-        "added_favorite": "added to favorite list",
-        "removed_favorite": "removed from favorite list",
+        "added_favorite": "добавлен в избранное",
+        "removed_favorite": "удалён из избранного",
         "no_results": "Нет результатов"
     },
     "instructions": {
@@ -193,7 +193,6 @@
         "cn_daf_trucks": "Грузовики DAF",
         "cn_man_trucks": "Грузовики MAN",
         "cover": "Закрытый самосвал",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Большие",
         "small": "Малые",
         "2x4": "2x4м",
@@ -215,7 +214,6 @@
         "yellow": "Жёлтый",
         "red": "Красный",
         "gray": "Серый",
-        "black": "Чёрный",
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Чёрный"
     }
 }

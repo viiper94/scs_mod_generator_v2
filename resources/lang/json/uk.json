@@ -41,7 +41,7 @@
         "trailers_gallery": "Галерея причепів",
         "advanced": "Додаткові налаштування",
         "image_upload": "Завантажте зображення (макс. 5Мб)",
-        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
+        "image_note": "Увага, це НЕ зображення для причіпа! Це зображення використовуватиметься лише в Менеджері Модифікацій.",
         "current_version": "Поточна версія сервісу",
         "success": "Успішно виконано!",
         "something_wrong": "Щось пішло не так =(",
@@ -63,8 +63,8 @@
         "join_discord": "Відвідайте наш Discord сервер та приєднуйтесь до дискусії: ",
         "check_all": "Обрати всі",
         "with_promods": "Включити ProMods",
-        "added_favorite": "added to favorite list",
-        "removed_favorite": "removed from favorite list",
+        "added_favorite": "додано до списку улюбленних",
+        "removed_favorite": "видалено зі списку улюбленних",
         "no_results": "Немає результатів"
     },
     "instructions": {
@@ -193,7 +193,6 @@
         "cn_daf_trucks": "Вантажівки DAF ",
         "cn_man_trucks": "Вантажівки MAN",
         "cover": "Закритий",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Великі",
         "small": "Малі",
         "2x4": "2x4м",
@@ -215,7 +214,6 @@
         "yellow": "Жовтий",
         "red": "Червоний",
         "gray": "Сірий",
-        "black": "Чорний",
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Чорний"
     }
 }

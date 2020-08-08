@@ -198,7 +198,6 @@
         "cn_daf_trucks": "DAF trucks",
         "cn_man_trucks": "MAN trucks",
         "cover": "Cover",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
 
         "large": "Large",
         "small": "Small",
@@ -225,8 +224,6 @@
         "yellow": "Yellow",
         "red": "Red",
         "gray": "Gray",
-        "black": "Black",
-
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Black"
     }
 }
