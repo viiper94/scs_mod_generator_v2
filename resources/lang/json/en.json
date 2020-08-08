@@ -41,6 +41,7 @@
         "trailers_gallery": "Trailers gallery",
         "advanced": "Advanced settings",
         "image_upload": "Upload mod image (max. 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Current service version",
         "success": "Done successfully!",
         "something_wrong": "Something went wrong =(",

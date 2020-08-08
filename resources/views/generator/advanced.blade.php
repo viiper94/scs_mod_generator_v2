@@ -20,6 +20,7 @@
                             <input class="file-path right" type="text" id="image-path" placeholder="@lang('general.upload_image')" readonly>
                         </div>
                     </div>
+                    <span class="image-note">@lang('general.image_note')</span>
                 </div>
 
                 {{--Wheels section--}}
