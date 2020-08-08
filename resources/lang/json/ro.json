@@ -41,6 +41,7 @@
         "trailers_gallery": "Galerii remorci",
         "advanced": "Setari avansate",
         "image_upload": "Incarca poza pentru mod (max. 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Versiunea actuala",
         "success": "Realizat cu succes",
         "something_wrong": "Ceva nu a mers bine!",
@@ -62,6 +63,8 @@
         "join_discord": "Visiteaza-ne pe server-ul de Discord si vezi discutiile: ",
         "check_all": "Verifica tot ",
         "with_promods": "ProMods este inclus.",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "Fara rezultate"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "Tiruri DAF",
         "cn_man_trucks": "Tiruri MAN",
         "cover": "Acoperit",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Mari",
         "small": "Mic",
         "2x4": "2x4 metri",
@@ -211,6 +215,7 @@
         "yellow": "Galben",
         "red": "Rosu\n",
         "gray": "Gri",
-        "black": "Negru"
+        "black": "Negru",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

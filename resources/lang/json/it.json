@@ -41,6 +41,7 @@
         "trailers_gallery": "Galleria rimorchi",
         "advanced": "Impostazioni avanzate",
         "image_upload": "Carica immagine del Mod (max. 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Attuale versione del servizio",
         "success": "Eseguito!",
         "something_wrong": "Qualcosa non ha funzionato =(",
@@ -62,6 +63,8 @@
         "join_discord": "Visita il nostro server Discord e partecipa alla discussione: ",
         "check_all": "Seleziona tutto",
         "with_promods": "Include ProMods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "Nessun risultato"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "Camion DAF",
         "cn_man_trucks": "Camion MAN",
         "cover": "Copertura",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Grande",
         "small": "Piccolo",
         "2x4": "2x4m",
@@ -211,6 +215,7 @@
         "yellow": "Giallo",
         "red": "Rosso",
         "gray": "Grigio",
-        "black": "Nero"
+        "black": "Nero",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

@@ -41,6 +41,7 @@
         "trailers_gallery": "Galerie přívěsů",
         "advanced": "ostatní nastavení",
         "image_upload": "Nahrát obrázek",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Aktualní verze služby",
         "success": "Hotovo úspěšně!",
         "something_wrong": "Něco se pokazilo =(",
@@ -62,6 +63,8 @@
         "join_discord": "Navšivte náš discord server a připojte se:",
         "check_all": "Potvrdit všechno",
         "with_promods": "Zahrnout ProMods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "Žádný výsledek"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "Daf kamión",
         "cn_man_trucks": "MAN kamión",
         "cover": "Pokrýt",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Velký",
         "small": "Malý",
         "2x4": "2x4m",
@@ -211,6 +215,7 @@
         "yellow": "Žlutá",
         "red": "Červená",
         "gray": "Šedá",
-        "black": "Černá"
+        "black": "Černá",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

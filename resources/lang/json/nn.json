@@ -41,6 +41,7 @@
         "trailers_gallery": "Tilhenger galleri",
         "advanced": "Avanserte innstillinger",
         "image_upload": "Last opp mod bilde (max 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Nåværende tjeneste versjon",
         "success": "Gjort ferdig!",
         "something_wrong": "Noe gikk galt =(",
@@ -62,6 +63,8 @@
         "join_discord": "Besøk vår Discord server og diskuter: ",
         "check_all": "Merk alle",
         "with_promods": "Include ProMods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "Ingen resultat"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "DAF trucks",
         "cn_man_trucks": "MAN trucks",
         "cover": "Cover",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Large",
         "small": "Small",
         "2x4": "2x4m",
@@ -211,6 +215,7 @@
         "yellow": "Yellow",
         "red": "Red",
         "gray": "Gray",
-        "black": "Black"
+        "black": "Black",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

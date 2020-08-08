@@ -41,6 +41,7 @@
         "trailers_gallery": "Trailers galerij",
         "advanced": "Geavanceerde instellingen",
         "image_upload": "Upload trailer foto (max. 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Actuele service versie",
         "success": "Met succes gedaan!",
         "something_wrong": "Er is iets mis gegaan =(",
@@ -62,6 +63,8 @@
         "join_discord": "Bezoek onze Discord server en sluit je aan bij discussie:",
         "check_all": "Vink alles aan",
         "with_promods": "Bevat Promods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "Geen resultaten"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "DAF trucks",
         "cn_man_trucks": "MAN trucks",
         "cover": "Hoes",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Grote",
         "small": "Kleine",
         "2x4": "2x4",
@@ -211,6 +215,7 @@
         "yellow": "Geel",
         "red": "Rood",
         "gray": "Grijs",
-        "black": "Zwart"
+        "black": "Zwart",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

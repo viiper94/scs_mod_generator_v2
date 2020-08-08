@@ -41,6 +41,7 @@
         "trailers_gallery": "Treyler galerisi",
         "advanced": "Gelişmiş ayarlar",
         "image_upload": "Mod için resim yükle (maks. 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Mevcut sürüm",
         "success": "Başarıyla tamamlandı!",
         "something_wrong": "Bir şeyler ters gitti. :(",
@@ -62,6 +63,8 @@
         "join_discord": "Discord sunucumuzu ziyaret edin ve tartışmaya katılın:",
         "check_all": "Hepsini seç",
         "with_promods": "ProMods'u dahil et",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "Sonuç yok"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "DAF Çekiciler",
         "cn_man_trucks": "MAN Çekiciler",
         "cover": "Kapak",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Büyük",
         "small": "Küçük",
         "2x4": "2x4m",
@@ -211,6 +215,7 @@
         "yellow": "Sarı",
         "red": "Kırmızı",
         "gray": "Gri",
-        "black": "Siyah"
+        "black": "Siyah",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

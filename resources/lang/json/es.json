@@ -41,6 +41,7 @@
         "trailers_gallery": "Galería de Trailers ",
         "advanced": "Configuración avanzada",
         "image_upload": "Subir imagen del mod (Max. 5Mb)",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "Versión de servicio actual",
         "success": "Efectuado con éxito!",
         "something_wrong": "Algo salió mal =(",
@@ -62,6 +63,8 @@
         "join_discord": "Visita nuestro servidor Discord y únete al debate:\n",
         "check_all": "Comprobar todo",
         "with_promods": "Incluir ProMods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "No hay resultados"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "Camión DAF",
         "cn_man_trucks": "Camión Man",
         "cover": "Cubrir",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Largo",
         "small": "Corto",
         "2x4": "2x4m",
@@ -211,6 +215,7 @@
         "yellow": "Amarillo",
         "red": "Rojo",
         "gray": "Gris",
-        "black": "Negro"
+        "black": "Negro",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

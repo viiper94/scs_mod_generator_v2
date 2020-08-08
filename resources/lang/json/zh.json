@@ -41,6 +41,7 @@
         "trailers_gallery": "挂车图库",
         "advanced": "高级设置",
         "image_upload": "上传MOD图片（最大5mb）",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "目前支持版本",
         "success": "成功完成！",
         "something_wrong": "出错了:(",
@@ -62,6 +63,8 @@
         "join_discord": "访问我们的Discord服务器并加入讨论:",
         "check_all": "查询所有",
         "with_promods": "包括ProMods",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "没有结果"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "是卡车",
         "cn_man_trucks": "人的卡车",
         "cover": "盖住的",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "大型管",
         "small": "小管",
         "2x4": "2 x4m",
@@ -211,6 +215,7 @@
         "yellow": "黄",
         "red": "红",
         "gray": "Gray",
-        "black": "黑"
+        "black": "黑",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }

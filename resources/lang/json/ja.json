@@ -41,6 +41,7 @@
         "trailers_gallery": "トレーラーギャラリー",
         "advanced": "詳細設定",
         "image_upload": "MODをアップロード（最大5MB）",
+        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
         "current_version": "現在のバージョン",
         "success": "成功しました！",
         "something_wrong": "失敗しました",
@@ -62,6 +63,8 @@
         "join_discord": "ディスコードにアクセスし、ディスカッションに参加して下さい：　",
         "check_all": "全て選択",
         "with_promods": "ProModsを含む",
+        "added_favorite": "added to favorite list",
+        "removed_favorite": "removed from favorite list",
         "no_results": "見つかりません"
     },
     "instructions": {
@@ -190,6 +193,7 @@
         "cn_daf_trucks": "DAF trucks",
         "cn_man_trucks": "MAN trucks",
         "cover": "カバー付き",
+        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Large",
         "small": "Small",
         "2x4": "2x4m",
@@ -211,6 +215,7 @@
         "yellow": "黄",
         "red": "赤",
         "gray": "灰",
-        "black": "黒"
+        "black": "黒",
+        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
     }
 }
