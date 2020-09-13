@@ -142,13 +142,9 @@ class Chassis extends Model{
     public static function getAllCompanies($game){
         $companies = Company::where('game', $game)->orderBy('name', 'asc')->get();
         $list[] = [
-            'name' => trans('general.choose_paint'),
-            'value' => '',
-            'selected' => true
-        ];
-        $list[] = [
             'name' => '<span data-with-color="1">'.trans($game.'_companies_paints.default').'</span>',
-            'value' => 'default'];
+            'value' => 'default',
+            'selected' => true];
         foreach($companies as $company){
             $name = '';
             if($company->isDLCContent() && !$company->dlc->mp_support){
