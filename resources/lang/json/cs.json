@@ -193,7 +193,6 @@
         "cn_daf_trucks": "Daf kamión",
         "cn_man_trucks": "MAN kamión",
         "cover": "Pokrýt",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Velký",
         "small": "Malý",
         "2x4": "2x4m",
@@ -215,7 +214,6 @@
         "yellow": "Žlutá",
         "red": "Červená",
         "gray": "Šedá",
-        "black": "Černá",
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Černá"
     }
 }

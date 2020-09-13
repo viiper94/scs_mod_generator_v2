@@ -41,7 +41,7 @@
         "trailers_gallery": "Auflieger Galerie",
         "advanced": "Erweiterte Einstellungen",
         "image_upload": "Mod Bild hochladen (max. 5 MB)",
-        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
+        "image_note": "Achtung! Das ist KEIN trailer skin Bild! Dieses Bild wird nur im Mod Manager verwendet.",
         "current_version": "Aktuelle Version des Dienstes",
         "success": "Erfolgreich beendet!",
         "something_wrong": "Etwas ist schief gelaufen =(",
@@ -63,8 +63,8 @@
         "join_discord": "Besucht unseren Discord Server und tretet der Diskussion bei: ",
         "check_all": "Alles auswählen",
         "with_promods": "ProMods mit einschließen",
-        "added_favorite": "added to favorite list",
-        "removed_favorite": "removed from favorite list",
+        "added_favorite": "wurde zur favoriten Liste hinzugefügt",
+        "removed_favorite": "wurde von der favoriten Liste entfernt",
         "no_results": "Keine Ergebnisse"
     },
     "instructions": {
@@ -193,18 +193,17 @@
         "cn_daf_trucks": "DAF LKWs",
         "cn_man_trucks": "MAN LKWs",
         "cover": "Abdeckung",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Groß",
         "small": "Klein",
         "2x4": "2x4m",
         "3x4": "3x4m"
     },
     "shared": {
-        "double": "Double",
+        "double": "Doppel",
         "bdouble": "B-Doppel",
         "triple": "Dreifach",
-        "open_side": "Open Side",
-        "open_doors": "Open Doors",
+        "open_side": "Schiebegardinen geöffnet",
+        "open_doors": "Anhängertür geöffnet",
         "ext": "Erweiterbar",
         "short": "Kurz",
         "long": "Lang",
@@ -215,7 +214,6 @@
         "yellow": "Gelb",
         "red": "Rot",
         "gray": "Grau",
-        "black": "Schwarz",
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Schwarz"
     }
 }

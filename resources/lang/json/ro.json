@@ -193,7 +193,6 @@
         "cn_daf_trucks": "Tiruri DAF",
         "cn_man_trucks": "Tiruri MAN",
         "cover": "Acoperit",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Mari",
         "small": "Mic",
         "2x4": "2x4 metri",
@@ -215,7 +214,6 @@
         "yellow": "Galben",
         "red": "Rosu\n",
         "gray": "Gri",
-        "black": "Negru",
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Negru"
     }
 }

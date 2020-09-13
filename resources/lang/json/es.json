@@ -41,7 +41,7 @@
         "trailers_gallery": "Galería de Trailers ",
         "advanced": "Configuración avanzada",
         "image_upload": "Subir imagen del mod (Max. 5Mb)",
-        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
+        "image_note": "¡Tenga en cuenta que NO es una imagen de máscara para el tráiler! Esta imagen se utilizará solo en Mod Manager.",
         "current_version": "Versión de servicio actual",
         "success": "Efectuado con éxito!",
         "something_wrong": "Algo salió mal =(",
@@ -59,12 +59,12 @@
         "mp_no_support": "No soportado por MP",
         "include_fix": "Incluir caravana (para el uso de TruckersMP)",
         "search": "Buscar",
-        "static_mods": "Más Mods para MP",
+        "static_mods": "Más Mods para el MP",
         "join_discord": "Visita nuestro servidor Discord y únete al debate:\n",
         "check_all": "Comprobar todo",
         "with_promods": "Incluir ProMods",
-        "added_favorite": "added to favorite list",
-        "removed_favorite": "removed from favorite list",
+        "added_favorite": "agregado a la lista de favoritos",
+        "removed_favorite": "eliminado de la lista de favoritos",
         "no_results": "No hay resultados"
     },
     "instructions": {
@@ -132,7 +132,7 @@
         "broken": "¿Está este mod roto?",
         "working": "¿Funciona este mod?",
         "mark_as_broken": "¿Estás seguro de marcar este mod como roto?",
-        "mark_as_working": "Mark this mod as working?",
+        "mark_as_working": "¿Marcar este mod como funcionando?",
         "mod_required_dlc": "Necesario",
         "tested_on_ver": "Probado en la versión"
     },
@@ -168,7 +168,7 @@
         "3ax": "3 Ejes"
     },
     "companies\/paints": {
-        "default": "Colored",
+        "default": "Coloreado",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller Negro o Rojo."
     },
@@ -193,7 +193,6 @@
         "cn_daf_trucks": "Camión DAF",
         "cn_man_trucks": "Camión Man",
         "cover": "Cubrir",
-        "xmas_gifts": "Xmas gifts - Christmas Grand Giving Event",
         "large": "Largo",
         "small": "Corto",
         "2x4": "2x4m",
@@ -203,8 +202,8 @@
         "double": "Doble",
         "bdouble": "B-Doble",
         "triple": "Triple",
-        "open_side": "Open Side",
-        "open_doors": "Open Doors",
+        "open_side": "Lado abierto",
+        "open_doors": "Puertas abiertas",
         "ext": "Extensible",
         "short": "Corto",
         "long": "Largo",
@@ -215,7 +214,6 @@
         "yellow": "Amarillo",
         "red": "Rojo",
         "gray": "Gris",
-        "black": "Negro",
-        "flat_bed_xmas": "Flat bed Xmas - Christmas Grand Giving Event"
+        "black": "Negro"
     }
 }
