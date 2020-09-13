@@ -131,9 +131,7 @@ class TrailerGeneratorController extends Controller{
             $chassis->wheels = new Wheel();
             $chassis->wheels->def = $request->post('wheels');
 
-            $paint_job = new Paint();
-            $paint_job->look = $request->input('paint');
-            $paint_job->with_color = $request->input('paint') == 'default';
+            $paint_job = Paint::where('def', $request->input('paint'))->first();
             $paint_job->setPaintColor($request->input('color'));
         }
         if($chassis->with_accessory){
