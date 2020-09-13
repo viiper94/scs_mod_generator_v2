@@ -59,24 +59,24 @@
         <li @if(Request::is('gallery'))class="active"@endif>
             <a href="{{route('gallery')}}"><i class="material-icons notranslate">photo_library</i>@lang('general.trailers_gallery')</a>
         </li>
-        <li class="divider"></li>
-        <li>
-            <ul class="collapsible collapsible-accordion">
-                <li @if(Request::is('mods/ets2') || Request::is('mods/ats'))class="active"@endif>
-                    <a class="collapsible-header waves-effect"><i class="material-icons notranslate">build</i>@lang('general.static_mods')</a>
-                    <div class="collapsible-body">
-                        <ul>
-                            <li @if(Request::is('mods/ets2'))class="active"@endif>
-                                <a href="{{route('static_mods', ['game' => 'ets2'])}}">@lang('general.ets2')</a>
-                            </li>
-                            <li @if(Request::is('mods/ats'))class="active"@endif>
-                                <a href="{{route('static_mods', ['game' => 'ats'])}}">@lang('general.ats')</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </li>
+{{--        <li class="divider"></li>--}}
+{{--        <li>--}}
+{{--            <ul class="collapsible collapsible-accordion">--}}
+{{--                <li @if(Request::is('mods/ets2') || Request::is('mods/ats'))class="active"@endif>--}}
+{{--                    <a class="collapsible-header waves-effect"><i class="material-icons notranslate">build</i>@lang('general.static_mods')</a>--}}
+{{--                    <div class="collapsible-body">--}}
+{{--                        <ul>--}}
+{{--                            <li @if(Request::is('mods/ets2'))class="active"@endif>--}}
+{{--                                <a href="{{route('static_mods', ['game' => 'ets2'])}}">@lang('general.ets2')</a>--}}
+{{--                            </li>--}}
+{{--                            <li @if(Request::is('mods/ats'))class="active"@endif>--}}
+{{--                                <a href="{{route('static_mods', ['game' => 'ats'])}}">@lang('general.ats')</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
         @can('admin')
             <li class="divider"></li>
             <li>
