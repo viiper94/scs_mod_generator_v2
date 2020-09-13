@@ -39,7 +39,7 @@ class GalleryController extends Controller{
 
     public function favorite(Request $request){
         $user = User::with('favorite')->findOrFail(Auth::id());
-        $chassis = Chassis::where('alias', $request->post('chassis'))->firstOrFail();
+        $chassis = Chassis::where('alias_short', $request->post('chassis'))->firstOrFail();
         if($user->favorite->contains($chassis->id)){
             $user->favorite()->detach($chassis->id);
             $data = [
