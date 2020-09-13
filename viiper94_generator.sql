@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Лип 25 2020 р., 12:02
+-- Час створення: Вер 13 2020 р., 11:33
 -- Версія сервера: 10.4.11-MariaDB
 -- Версія PHP: 7.4.3
 
@@ -857,7 +857,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (12, '2019_12_25_095516_create_users_table', 1),
 (13, '2019_12_25_095516_create_wheels_table', 1),
 (16, '2020_02_26_125932_add_name_to_chassis', 2),
-(17, '2020_02_26_125932_add_name_to_accessories', 3);
+(17, '2020_02_26_125932_add_name_to_accessories', 3),
+(19, '2020_08_06_140618_create_favorite_chassis_users_table', 4);
 
 -- --------------------------------------------------------
 
@@ -2815,7 +2816,7 @@ ALTER TABLE `languages`
 -- AUTO_INCREMENT для таблиці `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT для таблиці `paints`
