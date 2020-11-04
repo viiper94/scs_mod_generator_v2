@@ -4,6 +4,6 @@ SiiNunit{
 		author: "Mayday"
 		category[]: "trailer"
 		icon: "mod_icon.jpg"
-		compatible_versions[]: "1.38.*"
+		compatible_versions[]: "1.39.*"
 	}
 }
