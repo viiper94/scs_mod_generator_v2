@@ -54,6 +54,9 @@ localization_db : .localization
 	key[]: "pipe_char"
 	val[]: "|" #+ Helper which can be used when passing text which might contain this character as input to UI templates which use it as parameter separator
 
+	key[]: "check_char"
+	val[]:	"✔" #+ WoTr event completion symbol
+
 # DLC names
 
 	key[]: "dlc_name"
@@ -174,7 +177,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_cz@@"
 
 	key[]: "package_eut2_christmas"
-	val[]: "DLC - Christmas Paint Jobs"
+	val[]: "DLC - Christmas Paint Jobs Pack"
 
 	key[]: "onlineid_eu_xmas"
 	val[]: "@@package_eut2_christmas@@"
@@ -413,6 +416,12 @@ localization_db : .localization
 	key[]: "package_eut2_flags_nl"
 	val[]: "DLC - Dutch Paint Jobs"
 
+	key[]: "onlineid_eu_flags_cn"
+	val[]: "@@package_eut2_flags_cn@@"
+
+	key[]: "package_eut2_flags_cn"
+	val[]: "DLC - Chinese Paint Jobs"
+
 	key[]: "package_eut2_space"
 	val[]: "DLC - Space Paint Jobs Pack"
 
@@ -434,20 +443,20 @@ localization_db : .localization
 	key[]: "package_eut2_flags_lv"
 	val[]: "DLC - Latvian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lv"
-	val[]: "@@package_eut2_lv@@"
+	key[]: "onlineid_eu_flags_lv"
+	val[]: "@@package_eut2_flags_lv@@"
 
 	key[]: "package_eut2_flags_lt"
 	val[]: "DLC - Lithuanian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lt"
-	val[]: "@@package_eut2_lt@@"
+	key[]: "onlineid_eu_flags_lt"
+	val[]: "@@package_eut2_flags_lt@@"
 	
 	key[]: "package_eut2_flags_ee"
 	val[]: "DLC - Estonian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_ee"
-	val[]: "@@package_eut2_ee@@"
+	key[]: "onlineid_eu_flags_ee"
+	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
 	val[]: "DLC - Goodyear"
@@ -458,7 +467,7 @@ localization_db : .localization
 	key[]: "package_eut2_actros_tuning"
 	val[]: "DLC - Actros Tuning Pack"
 
-	key[]: "onlineid_eu_actros_tuning"
+	key[]: "onlineid_eu_actro_tun"
 	val[]: "@@package_eut2_actros_tuning@@"
 
 	key[]: "package_eut2_balkane"
@@ -476,8 +485,8 @@ localization_db : .localization
 	key[]: "package_eut2_flags_bg"
 	val[]: "DLC - Bulgarian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_bg"
-	val[]: "@@package_eut2_bg@@"
+	key[]: "onlineid_eu_flags_bg"
+	val[]: "@@package_eut2_flags_bg@@"
 	
 	key[]: "package_eut2_hs_schoch"
 	val[]: "DLC - HS-Schoch Tuning Pack"
@@ -485,11 +494,17 @@ localization_db : .localization
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
 	
-	key[]: "package_eut2_fh_pack"
+	key[]: "package_eut2_fhpack"
 	val[]: "DLC - FH Pack"
 
 	key[]: "onlineid_eu_fhpack"
 	val[]: "@@package_eut2_fhpack@@"
+
+	key[]: "package_eut2_sstrip"
+	val[]: "DLC - Super Stripes Paint Jobs Pack"
+
+	key[]: "onlineid_eu_supstrip"
+	val[]: "@@package_eut2_sstrip@@"
 
 	# Truck brands
 
@@ -634,14 +649,20 @@ localization_db : .localization
 	key[]: "series_scs_container"
 	val[]: "CNT"
 
+	key[]: "series_scs_foodtank"
+	val[]: "FDT"
+
 	key[]: "series_scs_flatbed"
 	val[]: "FLB"
+
+	key[]: "series_scs_lowloader"
+	val[]: "LLD"
 
 	key[]: "series_scs_log"
 	val[]: "LOG"
 
-	key[]: "series_scs_foodtank"
-	val[]: "FDT"
+	key[]: "series_scs_lowbed"
+	val[]: "LWB"
 
 	key[]: "brand_krone"
 	val[]: "Krone"
@@ -1465,37 +1486,37 @@ localization_db : .localization
 
 	key[]: "switch_walking_cam"
 	val[]: "Переключить режим камеры" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Осмотр" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Вращение" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Приближение" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Сдвиг" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "УПРАВЛЕНИЕ В РЕЖИМЕ ХОДЬБЫ:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Идти вперёд" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Назад" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Влево" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Вправо" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Присесть" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Бежать" #+ Tooltip for run.
 #@}
@@ -1505,7 +1526,7 @@ localization_db : .localization
 
 	key[]: "notification_walking_camera"
 	val[]: "Вид от первого лица" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Вид от третьего лица" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -1544,6 +1565,9 @@ localization_db : .localization
 	key[]: "delete"
 	val[]: "Удалить" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Удалить профиль" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Улучшить" #+ Button allowing user to upgrade something.
 
@@ -1572,6 +1596,8 @@ localization_db : .localization
 	key[]: "save_in_progress"
 	val[]: "Сохранение..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Нажмите $KEY$ чтобы пропустить." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1856,11 +1882,11 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Путь до следующей точки"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Путь до следующей точки" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Время до следующей точки" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Время до следующей точки" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -2001,13 +2027,16 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - ВЫБОР ПРОФИЛЯ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "МЕНЕДЖЕР ПРОФИЛЕЙ" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "EURO TRUCK SIMULATOR 2 — МЕНЮ ЗАПУСКА" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "НОВОСТИ" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Профили" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Сменить профиль" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Сменить персонажа." #+ Help message associated with profile selection icon.
@@ -2024,26 +2053,47 @@ localization_db : .localization
 	key[]: "continue_game"
 	val[]: "Продолжить игру" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Использовать выбранный профиль" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Новый профиль" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Статус профиля" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Управление модами профиля" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Управление профилями" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Изменить профиль" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Несовместимый профиль!<br>Попробуйте обновить игру до последней версии." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Приобретено гаражей:" #+ How many garages the player owns
+	val[]: "Гаражей:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "малых: $SMALL$, больших: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Приобретено грузовиков:" #+ how many trucks the player owns
+	val[]: "Грузовиков:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Приобретено прицепов:" #+ how many trailers the player owns
+	val[]: "Прицепов:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Синхронизация с облаком Steam:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Статус онлайн:"
+	val[]: "Профиль World of Trucks:"
+
+	key[]: "mods_in_use"
+	val[]: "Подключённых модов:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Не подключен!"	#+ to the WoTR
@@ -2077,6 +2127,31 @@ localization_db : .localization
 
 	key[]: "no_truck_dlc"
 	val[]: "Модели грузовиков не найдены! Пожалуйста, активируйте хотя бы один DLC с моделями грузовиков и перезапустите игру." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Используется модов: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Моды не используются"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Синхронизация с облаком Steam активна"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Синхронизация с облаком Steam отключена <br><offset vshift=7><color value=@@clr_txt_d@@> нажмите, чтобы включить"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "World of Trucks подключен"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "World of Trucks не подключен <br><offset vshift=7><color value=@@clr_txt_d@@>нажмите, чтобы подключить"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "ДЕТАЛИ ПРОФИЛЯ"
 #@
 #@}
 
@@ -2238,10 +2313,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Доступна<br>новая версия"
+	val[]: "Вы используете старую версию игры.<br><link url=$URL_LINK$ color=@@clr_link@@>Обновите игру до новой версии</link>, чтобы использовать все возможности."
 
 	key[]: "new_version_available_steam"
-	val[]: "Доступна<br>новая версия.<br><br>Если функция автоматического обновления приложений активирована, Steam выполнит обновление автоматически."
+	val[]: "Вы используете старую версию игры.<br>Steam обновит игру, если автоматические обновления не отключены."
 
 	key[]: "allow_news"
 	val[]: "Включить автоматическую проверку обновлений игры и ленты новостей?" #+ Text shown in a message box.
@@ -2519,6 +2594,9 @@ localization_db : .localization
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Громкость выхлопа" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Громкость турбонаддува грузовика" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Громкость эффектов" #+ Slider controlling volume of the truck effects.
@@ -3098,7 +3176,7 @@ localization_db : .localization
 
 	key[]: "walk_mode"
 	val[]: "РЕЖИМ ХОДЬБЫ"
-	
+
 	key[]: "other_controls"
 	val[]: "ДРУГОЕ"
 #@}
@@ -3176,7 +3254,7 @@ localization_db : .localization
 	val[]: "Управление подъёмной осью"
 
 	key[]: "o_im_lift_axle_trailer"
-	val[]: "Управление подъёмной осью прицепа"
+	val[]: "Управление подъёмными осями прицепа"
 
 	key[]: "o_im_diff_lock"
 	val[]: "Блокировка дифференциала "
@@ -3401,22 +3479,22 @@ localization_db : .localization
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Идти вперёд" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Назад" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Влево" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Вправо" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Присесть" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Бежать" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3838,7 +3916,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale"
 	val[]: "Множитель наклона (в кабине)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Множитель поворота (в режиме ходьбы)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3919,7 +3997,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Множитель чувствительности наклона головы вверх и вниз (в кабине)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Множитель чувствительности поворота головы в стороны (в режиме ходьбы)."
 
@@ -4674,12 +4752,10 @@ localization_db : .localization
 	val[]: "Тягач нуждается в срочном ремонте!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Весь маршрут" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Весь маршрут" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Следующая точка" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4783,6 +4859,15 @@ localization_db : .localization
 	key[]: "park_nf"
 	val[]: "Вы находитесь на месте для отдыха,<br>но сейчас не время отдыхать."
 
+	key[]: "viewpoint_title"
+	val[]: "Обзорная точка"
+
+	key[]: "viewpoint_msg"
+	val[]: "Нажмите следующую клавишу для запуска кат-сцены:"
+
+	key[]: "viewpoint_found"
+	val[]: "Вы обнаружили новую обзорную точку!"
+
 	key[]: "gas_station"
 	val[]: "Заправочная станция"
 
@@ -4843,7 +4928,7 @@ localization_db : .localization
 	val[]: "Вы достигли начала платного участка трассы.<br>Пожалуйста, возьмите карту нажатием"
 
 	key[]: "toll_start_automatic"
-	val[]: "В приближаетесь к началу участка платной дороги. Плата за проезд по нему взимается в конце участка."
+	val[]: "Вы приближаетесь к началу участка платной дороги. Плата за проезд по нему взимается в конце участка."
 
 	key[]: "toll_end"
 	val[]: "Вы достигли окончания платного участка трассы, и должны заплатить<br>$MONEY$.<br>Нажмите"
@@ -6067,7 +6152,7 @@ localization_db : .localization
 	val[]: "Йогурт"
 
 	key[]: "cn_helicopter"
-	val[]: "Вертолёт Ring-429"
+	val[]: "Вертолёт 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Бурильщик D-50"
@@ -6076,7 +6161,7 @@ localization_db : .localization
 	val[]: "Каток DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Трактор RS-666"
+	val[]: "Гусеничный трактор"
 
 	key[]: "cn_yacht"
 	val[]: "Яхта"
@@ -6521,7 +6606,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Фрезерная машина Writigen 808"
+	val[]: "Дорожная фреза AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Кабельная катушка"
@@ -6599,6 +6684,12 @@ localization_db : .localization
 	key[]: "tn_s_ki_solid"
 	val[]: "Самосвал"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Раздвижной низкорамный"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Раздвижной трал"
+
 	key[]: "tn_van_transporter"
 	val[]: "Облегчённый грузовой автовоз"
 
@@ -6663,11 +6754,11 @@ localization_db : .localization
 	key[]: "tn_schw_curtain"
 	val[]: "Шторный Schwarzmüller"
 
-	key[]: "tn_schw_overweight"
-	val[]: "Низкорамный Schwarzmuller"
+	key[]: "tn_schw_lowloader"
+	val[]: "Низкорамный трал Schwarzmüller"
 
 	key[]: "tn_schw_reefer"
-	val[]: "Рефрижератор Schwarzmuller"
+	val[]: "Рефрижератор Schwarzmüller"
 
 	key[]: "tn_schw_slidepost"
 	val[]: "Лесовоз Schwarzmüller"
@@ -6675,13 +6766,13 @@ localization_db : .localization
 #goldhofer trailers
 
 	key[]: "tn_goldhofer_mpa_k"
-	val[]: "Раздвижной полу-низкорамный"
+	val[]: "Раздвижной полу-низкорамный трал"
 
 	key[]: "tn_goldhofer_mpa_k_flatbed"
 	val[]: "Раздвижная платформа"
 
 	key[]: "tn_goldhofer_stz_vl"
-	val[]: "Низкорамный с гуськом"
+	val[]: "Низкорамный трал с гуськом"
 
 #@}
 
@@ -7983,6 +8074,15 @@ localization_db : .localization
 
 	key[]: "mapl_train"
 	val[]: "Евротоннель"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Неизвестная точка"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Обзорная точка (посещена)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Обзорная точка (не посещена)"
 
 	key[]: "mapl_gas"
 	val[]: "Заправочная станция"
@@ -10087,6 +10187,9 @@ localization_db : .localization
 	key[]: "duty_paint"
 	val[]: "Усиленный (краска)" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Классика" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Заводской вариант" #+ Stock truck accesory general
 
@@ -10188,7 +10291,7 @@ localization_db : .localization
 
 	key[]: "exclusive_chrom"
 	val[]: "Эксклюзивный хром" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Эксклюзив UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10857,7 +10960,7 @@ localization_db : .localization
 	val[]: "Поиск" #+ Label of field used to search mod by name
 
 	key[]: "mod_manager_btn"
-	val[]: "Модификации" #+ Button opening the mod manager
+	val[]: "Моды" #+ Button opening the mod manager
 
 	key[]: "new_mods_found"
 	val[]: "Обнаружены новые модификации" #+ Label indicating that the game has detected new mods.
@@ -10961,7 +11064,7 @@ localization_db : .localization
 	val[]: "Иконка означает, что модификация активна и будет загружаться вместе с игрой." #+ Description of status icon
 
 	key[]: "active_mods_list"
-	val[]: "Действующие модификации"  #+ Label of section with legend about status icons shown in the active mods panel
+	val[]: "Активные модификации"  #+ Label of section with legend about status icons shown in the active mods panel
 
 	key[]: "mod_manager_help_t"
 	val[]: "СПРАВКА" #+ Label of window with the help for the mod manager
@@ -11041,7 +11144,7 @@ localization_db : .localization
 	val[]: "ПАРКОВКА ПРИЦЕПА"
 
 	key[]: "job_delivery_desc"
-	val[]: "Доставить груз в целости и сохранности, и суметь поставить прицеп на выгрузку, какие бы сложности тому ни препятствовали - вот все что требуется от опытного водителя. Если же Вы не хотите самостоятельно парковать прицеп, либо очень торопитесь, обсудите этот момент с диспетчером заранее."
+	val[]: "Доставить груз в целости и сохранности, и суметь поставить прицеп на выгрузку, какие бы сложности тому ни препятствовали - вот все, что требуется от опытного водителя. Если же Вы не хотите самостоятельно парковать прицеп, либо очень торопитесь, обсудите этот момент с диспетчером заранее."
 
 	key[]: "job_delivery_company"
 	val[]: "Объект:"
@@ -11848,7 +11951,7 @@ localization_db : .localization
 	val[]: "Личная цель достигнута!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Страница события" #+ Button opening event page on WoTr.
+	val[]: "Страница событий" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Прогресс" #+ The label used to indicate progress of the event.
@@ -11856,11 +11959,14 @@ localization_db : .localization
 	key[]: "event_info"
 	val[]: "О СОБЫТИИ" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Событие" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Текущие события" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Уровень" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Нет текущих событий."
 #@}
 
 #+ Trailer ownership
@@ -12357,11 +12463,21 @@ localization_db : .localization
 	key[]: "log"
 	val[]: "Лесовоз"
 
+	key[]: "lowbed"
+	val[]: "Низкорамный трал"
+
+	key[]: "lowboy"
+	val[]: "Низкорамный трал с гуськом"
+
 	key[]: "refrigerated"
 	val[]: "Рефрижератор"
 
-	key[]: "liquid"
-	val[]: "Жидкость"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Цистерна"
 
 #@}
 
@@ -12376,6 +12492,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Общий, сухие товары"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Строительное оборудование и материалы"
+
+	key[]: "body_cargo_types_flatbed_brck"
+	val[]: "Строительное оборудование и материалы"
+
+	key[]: "body_cargo_types_flatbed_cont"
+	val[]: "Стройматериалы и контейнеры"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Пищевые жидкости"
 
@@ -12385,17 +12510,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_log"
 	val[]: "Брёвна, балки, трубы"
 
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Тяжёлая техника и высокие грузы"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Тяжёлая техника и высокие грузы"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Замороженные, охлажденные товары."
 
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Строительное оборудование и материалы"
-
-	key[]: "body_cargo_types_flatbed_brck"
-	val[]: "Строительное оборудование и материалы"
-
-	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Стройматериалы и контейнеры"
 #@}
 
 #+ Trailer chain type names.
@@ -12479,6 +12602,19 @@ localization_db : .localization
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 оси"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 оси"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 оси, раздвижное, длинное"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 оси, раздвижное, короткое"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 ось"
 
@@ -12487,6 +12623,12 @@ localization_db : .localization
 
 	key[]: "tn_single_2axle_20"
 	val[]: "2 оси, 20 футов"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 оси, раздвижное, длинное"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 оси, раздвижное, короткое"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 оси, разнесены"
@@ -12501,19 +12643,28 @@ localization_db : .localization
 	val[]: "3 оси, 40 футов"
 
 	key[]: "tn_single_3axle_ext_20"
-	val[]: "3 оси, раздвижной, 20 футов"
+	val[]: "3 оси, раздвижное, 20 футов"
 
 	key[]: "tn_single_3axle_ext_220"
-	val[]: "3 оси, раздвижной, 2 x 20 футов"
+	val[]: "3 оси, раздвижное, 2 x 20 футов"
 
 	key[]: "tn_single_3axle_ext_40"
-	val[]: "3 оси, раздвижной, 40 футов"
+	val[]: "3 оси, раздвижное, 40 футов"
+
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 оси, раздвижное, длинное"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "3 оси, раздвижное, короткое"
 
 	key[]: "tn_single_3axle_flex_220"
-	val[]: "3 оси, универсальный, 2 x 20 футов"
+	val[]: "3 оси, универсальное, 2 x 20 футов"
 
 	key[]: "tn_single_3axle_flex_40"
-	val[]: "3 оси, универсальный, 40 футов"
+	val[]: "3 оси, универсальное, 40 футов"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 оси, разнесены"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 оси, 2 управляемые"
@@ -12524,8 +12675,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 оси сзади, разнесены, 1 управляемая"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 оси, раздвижное, длинное"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 оси, раздвижное, короткое"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 оси, 2 управляемые"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 осей, раздвижное, длинное"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 осей, раздвижное, короткое"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "B-double, 2+2 оси"
@@ -12654,6 +12817,12 @@ localization_db : .localization
 	key[]: "bs_scs_log_wood"
 	val[]: "Лесовоз, деревянный пол"
 
+	key[]: "bs_scs_lowbed"
+	val[]: "Низкорамный трал"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Низкорамный трал с гуськом"
+
 	key[]: "bs_scs_reefer"
 	val[]: "Рефрижератор"
 
@@ -12669,6 +12838,9 @@ localization_db : .localization
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Пищевая цистерна"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Низкорамный трал с гуськом"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Шторный"
@@ -12706,6 +12878,9 @@ localization_db : .localization
 
 	key[]: "extinguisher"
 	val[]: "Огнетушитель"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Складные аппарели"
 
 	key[]: "front_cage"
 	val[]: "Передняя решётка"
@@ -12763,6 +12938,9 @@ localization_db : .localization
 
 	key[]: "plastic_box"
 	val[]: "Пластиковый ящик"
+
+	key[]: "ramps"
+	val[]: "Аппарели"
 
 	key[]: "skirt_big"
 	val[]: "Боковые отбойники"

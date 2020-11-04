@@ -54,6 +54,9 @@ localization_db : .localization
 	key[]: "pipe_char"
 	val[]: "|" #+ Helper which can be used when passing text which might contain this character as input to UI templates which use it as parameter separator
 
+	key[]: "check_char"
+	val[]:	"✔" #+ WoTr event completion symbol
+
 # DLC names
 
 	key[]: "dlc_name"
@@ -174,7 +177,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_cz@@"
 
 	key[]: "package_eut2_christmas"
-	val[]: "DLC - Christmas Paint Jobs"
+	val[]: "DLC - Christmas Paint Jobs Pack"
 
 	key[]: "onlineid_eu_xmas"
 	val[]: "@@package_eut2_christmas@@"
@@ -413,6 +416,12 @@ localization_db : .localization
 	key[]: "package_eut2_flags_nl"
 	val[]: "DLC - Dutch Paint Jobs"
 
+	key[]: "onlineid_eu_flags_cn"
+	val[]: "@@package_eut2_flags_cn@@"
+
+	key[]: "package_eut2_flags_cn"
+	val[]: "DLC - Chinese Paint Jobs"
+
 	key[]: "package_eut2_space"
 	val[]: "DLC - Space Paint Jobs Pack"
 
@@ -434,20 +443,20 @@ localization_db : .localization
 	key[]: "package_eut2_flags_lv"
 	val[]: "DLC - Latvian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lv"
-	val[]: "@@package_eut2_lv@@"
+	key[]: "onlineid_eu_flags_lv"
+	val[]: "@@package_eut2_flags_lv@@"
 
 	key[]: "package_eut2_flags_lt"
 	val[]: "DLC - Lithuanian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lt"
-	val[]: "@@package_eut2_lt@@"
+	key[]: "onlineid_eu_flags_lt"
+	val[]: "@@package_eut2_flags_lt@@"
 	
 	key[]: "package_eut2_flags_ee"
 	val[]: "DLC - Estonian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_ee"
-	val[]: "@@package_eut2_ee@@"
+	key[]: "onlineid_eu_flags_ee"
+	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
 	val[]: "DLC - Goodyear"
@@ -458,7 +467,7 @@ localization_db : .localization
 	key[]: "package_eut2_actros_tuning"
 	val[]: "DLC - Actros Tuning Pack"
 
-	key[]: "onlineid_eu_actros_tuning"
+	key[]: "onlineid_eu_actro_tun"
 	val[]: "@@package_eut2_actros_tuning@@"
 
 	key[]: "package_eut2_balkane"
@@ -476,8 +485,8 @@ localization_db : .localization
 	key[]: "package_eut2_flags_bg"
 	val[]: "DLC - Bulgarian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_bg"
-	val[]: "@@package_eut2_bg@@"
+	key[]: "onlineid_eu_flags_bg"
+	val[]: "@@package_eut2_flags_bg@@"
 	
 	key[]: "package_eut2_hs_schoch"
 	val[]: "DLC - HS-Schoch Tuning Pack"
@@ -485,11 +494,17 @@ localization_db : .localization
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
 	
-	key[]: "package_eut2_fh_pack"
+	key[]: "package_eut2_fhpack"
 	val[]: "DLC - FH Pack"
 
 	key[]: "onlineid_eu_fhpack"
 	val[]: "@@package_eut2_fhpack@@"
+
+	key[]: "package_eut2_sstrip"
+	val[]: "DLC - Super Stripes Paint Jobs Pack"
+
+	key[]: "onlineid_eu_supstrip"
+	val[]: "@@package_eut2_sstrip@@"
 
 	# Truck brands
 
@@ -634,14 +649,20 @@ localization_db : .localization
 	key[]: "series_scs_container"
 	val[]: "CNT"
 
+	key[]: "series_scs_foodtank"
+	val[]: "FDT"
+
 	key[]: "series_scs_flatbed"
 	val[]: "FLB"
+
+	key[]: "series_scs_lowloader"
+	val[]: "LLD"
 
 	key[]: "series_scs_log"
 	val[]: "LOG"
 
-	key[]: "series_scs_foodtank"
-	val[]: "FDT"
+	key[]: "series_scs_lowbed"
+	val[]: "LWB"
 
 	key[]: "brand_krone"
 	val[]: "Krone"
@@ -701,7 +722,7 @@ localization_db : .localization
 	val[]: "Ελληνικά"
 
 	key[]: "moded_game"
-	val[]: "Το παιχνίδι περιέχει μη αναγνωρισμένες τροποποιήσεις. Δεν παρέχεται υποστήριξη για τροποποιημένο παιχνίδι. Σε περίπτωση εμφάνισης προβλημάτων ή σφαλμάτων, δοκιμάστε να αφαιρέσετε τα mods!"
+	val[]: "Το παιχνίδι περιέχει μη αναγνωρισμένες τροποποιήσεις. Δεν παρέχεται υποστήριξη για τροποποιημένο παιχνίδι. Σε περίπτωση εμφάνισης προβλημάτων ή σφαλμάτων, δοκιμάστε να αφαιρέσετε τα mod!"
 
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
@@ -1465,37 +1486,37 @@ localization_db : .localization
 
 	key[]: "switch_walking_cam"
 	val[]: "Αλλαγή Λειτουργίας Κάμερας" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Κοίταγμα τριγύρω" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Περιστροφή" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Ζουμ" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Οπτικό πεδίο" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "ΧΕΙΡΙΣΤΗΡΙΑ ΛΕΙΤΟΥΡΓΙΑΣ ΠΕΡΠΑΤΗΜΑΤΟΣ:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Εμπρός" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Πίσω" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Αριστερά" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Δεξιά" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Γονάτισε" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Τρέξε" #+ Tooltip for run.
 #@}
@@ -1505,7 +1526,7 @@ localization_db : .localization
 
 	key[]: "notification_walking_camera"
 	val[]: "Κάμερα πρώτου προσώπου ενεργοποιήθηκε" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Εναέρια κάμερα ενεργοποιήθηκε" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -1544,6 +1565,9 @@ localization_db : .localization
 	key[]: "delete"
 	val[]: "Διαγραφή" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Διαγραφή Προφίλ" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Αναβάθμιση" #+ Button allowing user to upgrade something.
 
@@ -1572,6 +1596,8 @@ localization_db : .localization
 	key[]: "save_in_progress"
 	val[]: "Αποθήκευση ... " #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Πάτησε $KEY$ για παράλλειψη κομμένων σκηνών." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1624,22 +1650,22 @@ localization_db : .localization
 	val[]: "<color value=@@clr_red@@>Πρόβλημα φόρτωσης της αποθήκευσης.<color value=@@clr_txt@@><br><br>Η αποθήκευση απέτυχε να φορτωθεί. Προσπάθησε να εντοπίσεις και πιθανόν να φτιάξεις το πρόβλημα χρησιμοποιώντας τις πληροφορίες παρακάτω. Εναλλακτικά,  προσπάθησε να φορτώσεις άλλη αποθήκευση.<br><br>Οι ακόλουθοι λόγοι συχνά προκαλούν αυτό το πρόβλημα:<br><br>1. Η αποθήκευση δεν είναι συμβατή με εγκατεστημένες τροποποιήσεις.<br><br>2. Η αποθήκευση περιέχει πληροφορίες από τροποποιήσεις οι οποίες λείπουν ή είναι απενεργοποιημένες.<br><br>3. Η αποθήκευση έχει καταστραφεί από την χρήση μιας τροποποίησης που δεν δημιουργήθηκε σωστά.<br><br>4. Πρόβλημα του υπολογιστή κατά την διάρκεια ή μετά την διαδικασία αποθήκευσης θα μπορούσε να αλλοιώσει την αποθήκευση."
 
 	key[]: "load_msg_missing_mod"
-	val[]: "<color value=@@clr_sel@@>Δεν εντοπίστηκε MOD.<color value=@@clr_txt@@><br><br>Η τελευταία αποθήκευση περιέχει MOD(s) που δεν υπάρχουν ή είναι απενεργοποιημένα.<br><br>Παρακαλώ ελέγξτε την κατάσταση των MOD(s).<br><br>Αλλιώς προσπαθήστε να φορτώσετε την αποθήκευσή σας όπως και να 'χει. Ωστόσο, ανάλογα με ποιο MOD(s) το προκάλεσε αυτό, είναι πιθανό να αποτύχει η φόρτωση ή να προκληθούν άλλα προβλήματα.<br><br>Εναλλακτικά, προσπαθήστε να φορτώσετε άλλη αποθήκευση, η οποία δεν εξαρτάται από MOD(s)."
+	val[]: "<color value=@@clr_sel@@>Εντοπίστηκε απουσία MOD.<color value=@@clr_txt@@><br><br>Η τελευταία αποθήκευση περιέχει MOD που δεν υπάρχουν ή είναι απενεργοποιημένα.<br><br>Παρακαλώ ελέγξτε την κατάσταση των MOD.<br><br>Αλλιώς προσπαθήστε να φορτώσετε την αποθήκευσή σας ούτως ή άλλως. Ωστόσο, ανάλογα με ποιο/-α MOD το προκάλεσε/-αν αυτό, είναι πιθανό να αποτύχει η φόρτωση ή να προκληθούν άλλα προβλήματα.<br><br>Εναλλακτικά, προσπαθήστε να φορτώσετε άλλη αποθήκευση, η οποία δεν εξαρτάται από MOD."
 
 	key[]: "load_msg_missing_rem_dlc"
-	val[]: "<color value=@@clr_sel@@>Λείπει το προαιρετικό DLC.<color value=@@clr_txt@@><br><br>Η τελευταία αποθήκευση βασίζεται στο DLC που λείπει (επίσημη επέκταση παιχνιδιού).<br><br>Αν δεν το αναμένατε, ελέγξτε την κατάσταση του/των DLC.<br><br>Μπορείτε να φορτώσετε την αποθήκευση, όμως κάποιες λειτουργίες που παρέχονται από το/τα DLC μπορεί να χαθούν.<br><br>Εναλλακτικά, δοκιμάστε να φορτώσετε κάποια άλλη αποθήκευση που δεν βασίζεται στο/στα DLC που δεν υπάρχει."
+	val[]: "<color value=@@clr_sel@@>Εντοπίστηκε απουσία προαιρετικού DLC.<color value=@@clr_txt@@><br><br>Η τελευταία αποθήκευση βασίζεται σε DLC (επίσημη επέκταση παιχνιδιού) το οποίο απουσιάζει.<br><br>Αν δεν αναμένατε κάτι τέτοιο, ελέγξτε την κατάσταση του/των DLC.<br><br>Μπορείτε να φορτώσετε την αποθήκευση, όμως κάποιες λειτουργίες που παρέχονται από το/τα DLC μπορεί να χαθούν.<br><br>Εναλλακτικά, δοκιμάστε να φορτώσετε κάποια άλλη αποθήκευση που δεν βασίζεται στο/στα DLC που απουσιάζει/-ουν."
 
 	key[]: "load_msg_missing_dlc"
-	val[]: "<color value=@@clr_red@@>Δεν εντοπίστηκε DLC.<color value=@@clr_txt@@><br><br>Η τελευταία αποθήκευση εξαρτάται σε DLC (επίσημη επέκταση του παιχνιδιού) που λείπει.<br><br>Για να λειτουργήσει σωστά αυτή η αποθήκευση, αυτό το DLC πρέπει να υπάρχει και να είναι ενεργοποιημένο σε αυτόν τον υπολογιστή.<br><br>Εναλλακτικά, προσπαθήστε να φορτώσετε άλλη αποθήκευση, η οποία δεν εξαρτάται από το DLC που λείπει."
+	val[]: "<color value=@@clr_red@@>Εντοπίστηκε απουσία DLC.<color value=@@clr_txt@@><br><br>Η τελευταία αποθήκευση εξαρτάται σε DLC (επίσημη επέκταση παιχνιδιού) το οποίο απουσιάζει.<br><br>Για να λειτουργήσει σωστά αυτή η αποθήκευση, αυτό το DLC πρέπει να υπάρχει και να είναι ενεργοποιημένο σε αυτόν τον υπολογιστή.<br><br>Εναλλακτικά, προσπαθήστε να φορτώσετε άλλη αποθήκευση, η οποία δεν εξαρτάται από το DLC που απουσιάζει."
 
 	key[]: "load_msg_mod_dlc_dep"
-	val[]: "<color value=@@clr_red@@>To MOD εξαρτάται σε περιεχόμενο DLC.<color value=@@clr_txt@@><br><br>Τουλάχιστον ένα MOD εξαρτάται σε περιεχόμενο DLC (επίσημη επέκταση παιχνιδιού) η οποία δεν είναι εγκατεστημένη προς το παρόν.<br><br>Πρέπει να απενεργοποιήσετε τα MOD(s) ή να εγκαταστήσετε τα DLC(s) όπου τα MOD(s) βασίζονται πάνω τους."
+	val[]: "<color value=@@clr_red@@>To MOD εξαρτάται σε περιεχόμενο DLC.<color value=@@clr_txt@@><br><br>Τουλάχιστον ένα MOD εξαρτάται σε περιεχόμενο DLC (επίσημη επέκταση παιχνιδιού) η οποία δεν είναι εγκατεστημένη προς το παρόν.<br><br>Πρέπει να απενεργοποιήσετε το/τα MOD ή να εγκαταστήσετε το/τα DLC σε κάθε περίπτωση όπου MOD βασίζονται σε αυτό/-ά."
 
 	key[]: "load_msg_crash"
 	val[]: "<color value=@@clr_red@@>Εντοπίστηκε πρόβλημα<color value=@@clr_txt@@><br><br>Φαίνεται ότι το παιχνίδι έχει πρόβλημα και δεν μπορεί να φορτώσει την προηγούμενη φόρτωση.<br><br>Προσπαθήστε να εντοπίσετε και να φτιάξετε το πρόβλημα χρησιμοποιώντας τις πληροφορίες παρακάτω. Διαφορετικά, προσπαθήστε να φορτώσετε άλλη αποθήκευση.<br><br>Οι ακόλουθοι λόγοι συνήθως προκαλούν τα προβλήματα:<br><br>1. Μία ή περισσότερες από τις εγκατεστημένες τροποποιήσεις είναι κατεστραμμένες ή ασύμβατες με την τρέχουσα έκδοση του παιχνιδιού.<br><br>2. Η αποθήκευση περιέχει πληροφορίες από τροποποιήσεις οι οποίες λείπουν ή είναι απενεργοποιημένες.<br><br>3. Η αποθήκευση καταστράφηκε από την χρήση μιας κακοφτιαγμένης τροποποίησης.<br><br>4. Σε ορισμένες περιπτώσεις το πρόβλημα θα μπορούσε να προκληθεί από την δυσλειτουργία των drivers ή του υλικού."
 
 	key[]: "mods_detected_warning"
-	val[]: "Εντοπίστηκε παρουσία MODs. Πρέπει να γνωρίζεις πως παρωχημένα ή ασύμβατα MODs μπορεί να προκαλούν αστάθεια στο παιχνίδι. Παρακαλώ έλεγξε τα ενεργά MODs στη Διαχείριση Mod." #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
+	val[]: "Εντοπίστηκε παρουσία MOD. Πρέπει να γνωρίζεις πως παρωχημένα ή ασύμβατα MOD μπορεί να προκαλούν αστάθεια στο παιχνίδι. Παρακαλώ έλεγξε τα ενεργά MOD στη Διαχείριση Mod." #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
 #@}
 #@}
 
@@ -1856,11 +1882,11 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Απόσταση επόμενου σημείου ελέγχου"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Απόσταση επόμενου σημείου ελέγχου" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Χρόνος επόμενου σημείου ελέγχου" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Χρόνος επόμενου σημείου ελέγχου" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1935,7 +1961,7 @@ localization_db : .localization
 	val[]: "Κοντέινερ & Κουρτίνες"
 
 	key[]: "cargo_type_refrigerated"
-	val[]: "Ψυγεία & Μονωμένα"
+	val[]: "Ψυγεία & Ισοθερμικά"
 
 	key[]: "cargo_type_dryvan"
 	val[]: "Κουρτίνες & Κόφες"
@@ -2001,13 +2027,16 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
+	val[]: "ΔΙΑΧΕΙΡΙΣΗ ΠΡΟΦΙΛ" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
 	val[]: "EURO TRUCK SIMULATOR 2 - ΑΡΧΙΚΗ ΣΕΛΙΔΑ" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "ΔΙΑΔΙΚΤΥΑΚΑ ΝΕΑ" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Προφίλ" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Αλλαγή Προφίλ" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Γίνε άλλος άνθρωπος." #+ Help message associated with profile selection icon.
@@ -2022,28 +2051,49 @@ localization_db : .localization
 	val[]: "Διανυμένη απόσταση:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "Συνέχεια παιχνιδιού" #+ Button which selects profile and continues in game.
+	val[]: "Συνέχεια Παιχνιδιού" #+ Button which selects profile and continues in game.
+
+	key[]: "use_selected_profile"
+	val[]: "Χρήση Επιλεγμένου Προφίλ" #+ Button which selects profile.
 
 	key[]: "new"
 	val[]: "Νέο Προφίλ" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Κατάσταση Προφίλ" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Διαχείριση MOD Προφίλ" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Διαχείριση Προφίλ" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Επεξεργασία Προφίλ" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Ασύμβατο προφίλ!<br>Προσπαθήστε να ενημερώσετε το παιχνίδι σας στην τελευταία διαθέσιμη έκδοση." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Γκαράζ που σου ανήκουν" #+ How many garages the player owns
+	val[]: "Γκαράζ που σου ανήκουν:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "μικρά: $SMALL$, μεγάλα: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Φορτηγά που σου ανήκουν" #+ how many trucks the player owns
+	val[]: "Φορτηγά που σου ανήκουν:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Τρέιλερ που σου Ανήκουν" #+ how many trailers the player owns
+	val[]: "Τρέιλερ που σου ανήκουν:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Συγχρονισμός Steam cloud:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Διαδικτυακή Κατάσταση"
+	val[]: "Προφίλ World of Trucks:"
+
+	key[]: "mods_in_use"
+	val[]: "Mod σε χρήση:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Δεν είναι συνδεδεμένο!"	#+ to the WoTR
@@ -2077,6 +2127,31 @@ localization_db : .localization
 
 	key[]: "no_truck_dlc"
 	val[]: "Δεν βρέθηκαν φορτηγά! Παρακαλώ ξανά ενεργοποιήστε τουλάχιστον ένα DLC με φορτηγά και επανεκκινήστε το παιχνίδι." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "MOD σε χρήση: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Δεν υπάρχουν MOD σε χρήση"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Steam cloud synchronization is active"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Steam cloud synchronization is disabled <br><offset vshift=7><color value=@@clr_txt_d@@>click to enable"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Συνδέθηκε το World of Trucks"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "Το World of Trucks δεν συνδέθηκε <br><offset vshift=7><color value=@@clr_txt_d@@>κάντε κλικ για σύνδεση"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "ΛΕΠΤΟΜΕΡΕΙΕΣ ΠΡΟΦΙΛ"
 #@
 #@}
 
@@ -2238,10 +2313,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Νέα έκδοση<br>διαθέσιμη"
+	val[]: "Χρησιμοποιείτε μία παλιότερη έκδοση του παιχνιδιού.<br><link url=$URL_LINK$ color=@@clr_link@@>Κάντε ενημέρωση σε νεώτερη έκδοση</link> για να λάβετε όλες τις δυνατότητες."
 
 	key[]: "new_version_available_steam"
-	val[]: "Μία νεότερη έκδοση<br>είναι διαθέσιμη.<br><br>Το Steam θα αναβαθμίσει αυτόματα το παιχνίδι εκτός κι αν οι αυτόματες ενημερώσεις είναι απενεργοποιημένες."
+	val[]: "Χρησιμοποιείτε μία παλιότερη έκδοση του παιχνιδιού.<br>Το Steam θα αναβαθμίσει αυτόματα το παιχνίδι εκτός κι αν οι αυτόματες ενημερώσεις είναι απενεργοποιημένες."
 
 	key[]: "allow_news"
 	val[]: "Θέλεις να επιτρέψεις τον αυτόματο έλεγχο για αναβαθμίσεις του παιχνιδιού και νέα;" #+ Text shown in a message box.
@@ -2519,6 +2594,9 @@ localization_db : .localization
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Ένταση εξάτμισης φορτηγού" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Ένταση θορύβου στροβιλοσυμπιεστή" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Ένταση ηχητικών εφέ φορτηγού" #+ Slider controlling volume of the truck effects.
@@ -3073,10 +3151,10 @@ localization_db : .localization
 	val[]: "Ανεκχώρηση" #+ Button for cancelling the existing input assignent.
 
 	key[]: "press_key_to_assign"
-	val[]: "Πίεσε το πλήκτρο που επιθυμείς να αντιστοιχήσεις σε αυτή τη λειτουργία." #+ Key/button assignment hint.
+	val[]: "Πάτησε το πλήκτρο που επιθυμείς να αντιστοιχήσεις σε αυτή τη λειτουργία." #+ Key/button assignment hint.
 
 	key[]: "press_button_to_assign"
-	val[]: "Πίεσε το πλήκτρο που επιθυμείς να αντιστοιχήσεις σε αυτή την λειτουργία."#+ Key/button/axis assignment hint.
+	val[]: "Πάτησε το πλήκτρο που επιθυμείς να αντιστοιχήσεις σε αυτή την λειτουργία."#+ Key/button/axis assignment hint.
 
 	key[]: "select_input_to_unassign"
 	val[]: "Επίλεξε είσοδο για την οποία επιθυμείς να ακυρώσεις την ανάθεση." #+ Hint shown when "unassign" button pressed.
@@ -3098,7 +3176,7 @@ localization_db : .localization
 
 	key[]: "walk_mode"
 	val[]: "ΛΕΙΤΟΥΡΓΙΑ ΠΕΡΠΑΤΗΜΑΤΟΣ"
-	
+
 	key[]: "other_controls"
 	val[]: "ΑΛΛΑ"
 #@}
@@ -3401,22 +3479,22 @@ localization_db : .localization
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Εμπρός" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Πίσω" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Αριστερά" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Δεξιά" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Γονάτισε" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Τρέξε" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3595,10 +3673,10 @@ localization_db : .localization
 
 
 	key[]: "press_button_or_joy_to_assign"
-	val[]: "Πίεσε το πλήκτρο ή κίνησε το μοχλό που επιθυμείς να αντιστοιχίσεις σε αυτή τη ιδιότητα."
+	val[]: "Πάτησε το πλήκτρο ή κίνησε το μοχλό που επιθυμείς να αντιστοιχίσεις σε αυτή τη ιδιότητα."
 
 	key[]: "use_joy_to_assign"
-	val[]: "Πίεσε το πλήκτρο ή κίνησε το μοχλό που επιθυμείς να αντιστοιχίσεις σε αυτή τη ιδιότητα."
+	val[]: "Πάτησε το πλήκτρο ή κίνησε το μοχλό που επιθυμείς να αντιστοιχίσεις σε αυτή τη ιδιότητα."
 
 	key[]: "clutch_range"
 	val[]: "Εύρος συμπλέκτη"
@@ -3838,7 +3916,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale"
 	val[]: "Πολλ/στής περ/φής εγκάρσιου άξονα (στην καμπίνα)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Πολλ/στής περ/φής κατακόρυφου άξονα (λειτουργία περπατήματος)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3919,7 +3997,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Πολλαπλασιάζει την απόκριση όταν κουνάς το κεφάλι σου πάνω κάτω (στην καμπίνα)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Πολλαπλασιάζει την απόκριση όταν περιστρέφεις το κεφάλι σου δεξιά αριστερά (σε λειτουργία περπατήματος)."
 
@@ -4674,12 +4752,10 @@ localization_db : .localization
 	val[]: "Επισκέψου ένα συνεργείο άμεσα!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Πλήρεις πληροφορίες ταξιδίου" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Πλήρεις πληροφορίες ταξιδίου" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Πληροφορίες επόμενου σημείου ελέγχου" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4718,7 +4794,7 @@ localization_db : .localization
 	val[]: "Πάτησε το ακόλουθο κουμπί για να δεις την προσφορά εργασίας:"
 
 	key[]: "garage"
-	val[]: "Πάτησε το ακόλουθο κουμπί για να διαχειριστείς αυτό το γκαράζ: "
+	val[]: "Πάτησε το ακόλουθο κουμπί για να διαχειριστείς αυτό το γκαράζ:"
 
 	key[]: "garage_basic"
 	val[]: "Αυτό είναι το βασικό σου καταφύγιο από την κρύα βροχή και τους δυνατούς ανέμους.<br><br>Σκέψου να το αναβαθμίσεις αργότερα."
@@ -4783,6 +4859,15 @@ localization_db : .localization
 	key[]: "park_nf"
 	val[]: "Αυτός είναι χώρος ανάπαυσης,<br>αλλά δεν είσαι κουρασμένος αυτή τη στιγμή."
 
+	key[]: "viewpoint_title"
+	val[]: "Σημείο Θέασης"
+
+	key[]: "viewpoint_msg"
+	val[]: "Πάτησε το ακόλουθο κουμπί για να ενεργοποίσεις το σημείο με θέα:"
+
+	key[]: "viewpoint_found"
+	val[]: "Ανακαλύφθηκε ένα νέο σημείο με θέα!"
+
 	key[]: "gas_station"
 	val[]: "Πρατήριο καυσίμων"
 
@@ -4805,7 +4890,7 @@ localization_db : .localization
 	val[]: "Πάτησε το ακόλουθο κουμπί για να εμπλέξεις το χειρόφρενο:"
 
 	key[]: "gas_station_hint"
-	val[]: "Πίεσε και κράτα το ακόλουθο κουμπί για να γεμίσεις το ρεζερβουάρ:"
+	val[]: "Πάτησε και κράτα το ακόλουθο κουμπί για να γεμίσεις το ρεζερβουάρ:"
 
 	key[]: "diesel_price"
 	val[]: "Τιμή Πετρελαίου"
@@ -6028,10 +6113,10 @@ localization_db : .localization
 	val[]: "Παιχνίδια"
 
 	key[]: "cn_tractor"
-	val[]: "Τρακτερ"
+	val[]: "Γεωργικός Ελκυστήρας"
 
 	key[]: "cn_tractors"
-	val[]: "Τρακτέρ "
+	val[]: "Γεωργικοί Ελκυστήρες"
 
 	key[]: "cn_trailers"
 	val[]: "Χαμη/πεδα Επικ/μενα"
@@ -6067,7 +6152,7 @@ localization_db : .localization
 	val[]: "Γιαούρτι"
 
 	key[]: "cn_helicopter"
-	val[]: "Ελικόπτερο - Ring-429"
+	val[]: "Ελικόπτερο - 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Γεωτρύπανο - D-50"
@@ -6076,7 +6161,7 @@ localization_db : .localization
 	val[]: "Οδοστρωτήρας - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Τρακτέρ - RS-666"
+	val[]: "Ερπυστριοφόρος Γεωργικός Ελκυστήρας"
 
 	key[]: "cn_yacht"
 	val[]: "Θαλαμηγός "
@@ -6521,7 +6606,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Φρέζα Ασφάλτου - Writigen 808"
+	val[]: "Φρέζα Ασφάλτου - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Βιομηχανικό Καρούλι Καλωδίου"
@@ -6546,19 +6631,19 @@ localization_db : .localization
 #+ Names of individual trailer and trailer chassis types. (for trailer listing screen)
 #@{
 	key[]: "tn_aero_dynamic"
-	val[]: "Τρέιλερ Ψυγείο"
+	val[]: "Ψυγείο Αεροδυναμικό"
 
 	key[]: "tn_brick_trailer"
 	val[]: "Τρέιλερ Τούβλων"
 
 	key[]: "tn_car_transporter"
-	val[]: "Μεταφορά Αυτοκινήτων"
+	val[]: "Αυτοκινητάμαξα"
 
 	key[]: "tn_cement_cistern"
 	val[]: "Τρέιλερ Χύμα Τσιμέντου"
 
 	key[]: "tn_cement_mixer"
-	val[]: "Αναμείκτης Τσιμέντου"
+	val[]: "Μπετονιέρα"
 
 	key[]: "tn_chemical_cistern"
 	val[]: "Βυτιοφόρο Χημικών"
@@ -6567,7 +6652,7 @@ localization_db : .localization
 	val[]: "Πλατφόρμα"
 
 	key[]: "tn_flat_bed"
-	val[]: "Τρέιλερ Πάτωμα"
+	val[]: "Πάτωμα"
 
 	key[]: "tn_food_cistern"
 	val[]: "Βυτιοφόρο"
@@ -6576,10 +6661,10 @@ localization_db : .localization
 	val[]: "Τρέιλερ Δεξαμενής Καυσίμων"
 
 	key[]: "tn_glass_trailer"
-	val[]: "Τρέιλερ Τζαμιών"
+	val[]: "Τζαμάδικο"
 
 	key[]: "tn_fridge"
-	val[]: "Θερμομονωτικό Τρέιλερ"
+	val[]: "Ισοθερμικό Τρέιλερ"
 
 	key[]: "tn_livestock"
 	val[]: "Ζωάμαξα"
@@ -6588,19 +6673,25 @@ localization_db : .localization
 	val[]: "Μεταφορά Φορτηγών"
 
 	key[]: "tn_log_trailer"
-	val[]: "Τρέιλερ Κορμών"
+	val[]: "Τρέιλερ Ξυλείας"
 
 	key[]: "tn_overweight"
-	val[]: "Χαμηλοδάπεδο Επικαθήμενο"
+	val[]: "Χαμηλοδάπεδο Τρέιλερ"
 
 	key[]: "tn_panel_transporter"
-	val[]: "Τρέιλερ μεταφοράς Πάνελ"
+	val[]: "Μεταφοράς Πάνελ"
 
 	key[]: "tn_s_ki_solid"
 	val[]: "Ανατρεπόμενο Τρέιλερ"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Χαμηλοδάπεδο Επεκτεινόμενο Τρέιλερ"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Επεκτεινόμενο Τρέιλερ Χαμηλής Φόρτωσης"
+
 	key[]: "tn_van_transporter"
-	val[]: "Μεταφορά Van"
+	val[]: "Μεταφοράς Van"
 
 	key[]: "tcn_default"
 	val[]: "Απλό"
@@ -6621,22 +6712,22 @@ localization_db : .localization
 	val[]: "Μπλε Σασί"
 
 	key[]: "tcn_yellow"
-	val[]: "Κίτρινο Πλαίσιο"
+	val[]: "Κίτρινο Σασί"
 
 	key[]: "tcn_black"
-	val[]: "Μαύρο Πλαίσιο"
+	val[]: "Μαύρο Σασί"
 
 	key[]: "tcn_white"
-	val[]: "Λευκό Πλαίσιο"
+	val[]: "Λευκό Σασί"
 
 	key[]: "tcn_xmas_gift"
-	val[]: "Σχέδιο 'Σάκος του Αϊ Βασίλη'"
+	val[]: "Σχέδιο «Σάκος του Άι Βασίλη»"
 
 	key[]: "tcn_xmas_night"
-	val[]: "Σχέδιο 'Νύχτα των Θαυμάτων'"
+	val[]: "Σχέδιο «Νύχτα των Θαυμάτων»"
 
 	key[]: "tcn_xmas_decor"
-	val[]: "Σχέδιο 'Πνεύμα των Χριστουγέννων'"
+	val[]: "Σχέδιο «Πνεύμα των Χριστουγέννων»"
 
 #krone trailers (for trailer listing screen)
 
@@ -6661,16 +6752,16 @@ localization_db : .localization
 	val[]: "Βυτίο Τροφίμων Schwarzmüller"
 
 	key[]: "tn_schw_curtain"
-	val[]: "Τρέιλερ Schwarzmüller Tarpaulin Platform (Μουσαμάς)"
+	val[]: "Schwarzmüller Tarpaulin Platform (Μουσαμάς)"
 
-	key[]: "tn_schw_overweight"
-	val[]: "Χαμηλοδάπεδο Schwarzmüller"
+	key[]: "tn_schw_lowloader"
+	val[]: "Μεταφοράς Μηχανημάτων Schwarzmüller"
 
 	key[]: "tn_schw_reefer"
-	val[]: "Τρέιλερ Ψυγείο Schwarzmüller"
+	val[]: "Ψυγείο Schwarzmüller"
 
 	key[]: "tn_schw_slidepost"
-	val[]: "Τρέιλερ Schwarzmüller Slide-Post (Ξυλείας)"
+	val[]: "Schwarzmüller Slide-Post (Ξυλείας)"
 
 #goldhofer trailers
 
@@ -7983,6 +8074,15 @@ localization_db : .localization
 
 	key[]: "mapl_train"
 	val[]: "Σήραγγα της Μάγχης"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Σημείο που δεν έχει ανακαλυφθεί"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Σημείο με θέα (έχεις επισκεφτεί)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Σημείο με θέα (δεν έχεις επισκεφτεί)"
 
 	key[]: "mapl_gas"
 	val[]: "Πρατήριο καυσίμων"
@@ -9485,7 +9585,7 @@ localization_db : .localization
 
 
 	key[]: "tut_msg_1"
-	val[]: "Πίεσε $KEY$ για να ξεκινήσεις την μηχανή."
+	val[]: "Πάτησε $KEY$ για εκκίνηση του κινητήρα."
 
 	key[]: "tut_msg_2a"
 	val[]: "Μπορείς να χρησιμοποιήσεις τα ακόλουθα πλήκτρα για να μετακινηθείς:<br><br>$KEY_TABLE$<br>Οδήγησε μπροστά λίγα μέτρα και μετά σταμάτα."
@@ -9497,13 +9597,13 @@ localization_db : .localization
 	val[]: "Υπάρχουν άλλες κάμερες διαθέσιμες. Δες ποια σε βολεύει περισσότερο.<br><br>$KEY_TABLE$<br>Επίλεξε την ιπτάμενη κάμερα και κοίτα γύρω απ'το φορτηγό."
 
 	key[]: "tut_msg_4"
-	val[]: "$KEY_TABLE$<br>Δοκίμασε διαφορετικές οπτικές και μετά πίεσε $KEY_CONTINUE$ για να συνεχίσεις."
+	val[]: "$KEY_TABLE$<br>Δοκίμασε διαφορετικές οπτικές και μετά πάτησε$KEY_CONTINUE$ για να συνεχίσεις."
 
 	key[]: "tut_msg_5"
-	val[]: "Είναι ώρα να κάνεις μία παράδοση! Χρησιμοποίησε τον Πλοηγό για να δεις που είσαι και που πρέπει να πας. Πάτησε $KEY$ για να κοιτάξεις ποιο κοντά..."
+	val[]: "Είναι ώρα να κάνεις μία παράδοση! Χρησιμοποίησε τον Πλοηγό για να δεις που είσαι και που πρέπει να πας. Πάτησε $KEY$ για να κοιτάξεις από πιο κοντά..."
 
 	key[]: "tut_msg_6"
-	val[]: "Τέλεια! Γνωρίζεις τα βασικά. Τώρα ας βάλουμε λίγη μουσική για να κάνουμε το ταξίδι λίγο πιο ευχάριστο. Πάτησε $KEY$ για να ανοίξεις το ραδιόφωνο.<br>(Μπορείς επίσης να το επισκεφθείς από την μπάρα στο κάτω μέρος της οθόνης.)"
+	val[]: "Τέλεια! Γνωρίζεις τα βασικά. Τώρα ας βάλουμε λίγη μουσική για να κάνουμε το ταξίδι λίγο πιο ευχάριστο. Πάτησε $KEY$ για να ανοίξεις το ραδιόφωνο.<br>(Μπορείς επίσης να το επισκεφθείς από την μπάρα στο κάτω μέρος της επιφάνειας εργασίας.)"
 
 	key[]: "tut_msg_7"
 	val[]: "Όλα κανονισμένα και έτοιμος να φύγεις. Ακολούθησε την πλοήγηση προς τον προορισμό σου."
@@ -9854,10 +9954,10 @@ localization_db : .localization
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "Η πιο απλή μέθοδος οδήγησης σχεδιάστηκε ειδικά (αλλά όχι μόνο) για τα πλήκτρα του πληκτρολογίου. Πάτα το ΜΠΡΟΣΤΑ για να οδηγήσεις προς τα εμπρός και πάτα το ΠΙΣΩ για να φρενάρεις ή να πας πίσω. Το κιβώτιο ταχυτήτων θα τα χειριστεί όλα τα άλλα για σένα: εναλλαγή μεταξύ οδήγησης προς τα εμπρός, φρεναρίσματος, ή όπισθεν, αλλαγή ταχυτήτων στις σωστές ταχύτητες κ.ο.κ."
+	val[]: "Η πιο απλή μέθοδος οδήγησης σχεδιάστηκε ειδικά (αλλά όχι μόνο) για τα πλήκτρα του πληκτρολογίου. Πάτησε το ΜΠΡΟΣΤΑ για να οδηγήσεις προς τα εμπρός και πάτησε το ΠΙΣΩ για να φρενάρεις ή να κάνεις όπισεθν. Το κιβώτιο ταχυτήτων θα τα χειριστεί όλα τα άλλα για σένα: εναλλαγή μεταξύ οδήγησης προς τα εμπρός, φρεναρίσματος, ή όπισθεν, αλλαγή ταχυτήτων στις σωστές ταχύτητες κ.ο.κ."
 
 	key[]: "wiz_gb_automatic"
-	val[]: "Ιδανικό για τιμόνι με πετάλια. Χρησιμοποίησε τα κουμπιά για να αλλάζεις μεταξύ οδήγησης προς τα εμπρός, να στέκεσαι (ουδέτερα), ή να κάνεις όπισθεν. Μετά πάτησε το γκάζι και άφησε το αυτόματο κιβώτιο να αλλάζει τις ταχύτητες."
+	val[]: "Ιδανικό για τιμονιέρα με πετάλια. Χρησιμοποίησε τα κουμπιά για να αλλάζεις μεταξύ οδήγησης προς τα εμπρός, νεκράς (κενής), ή όπισθεν. Μετά πάτησε το γκάζι και άφησε το αυτόματο κιβώτιο να αλλάζει τις ταχύτητες."
 
 	key[]: "wiz_gb_sequential"
 	val[]: "Άλλαξε ταχύτητες χειροκίνητα και επίλεξε μεταξύ ταχύτητες κίνησης, νεκρά και όπισθεν. Είναι λίγο δύσκολο για να το τελειοποιήσεις, αλλά μπορείς να καταφέρεις καλύτερη οδηγική απόδοση και να έχεις πλήρη έλεγχο του οχήματος σε διάφορες καταστάσεις."
@@ -10010,7 +10110,7 @@ localization_db : .localization
 	val[]: "Ρύθμιση αυτόματου κιβωτίου ταχυτήτων"
 
 	key[]: "automatic_gb_setup_desc"
-	val[]: "Με το αυτόματο κιβώτιο ταχυτήτων θα χρειάζεται να αλλάζεις μόνο κατευθύνσεις πηγαίνοντας μπροστά, να σταματάς και να πηγαίνεις πίσω. Θα το πετύχεις αυτό χρησιμοποιώντας τα ακόλουθα κουμπιά και τα πλήκτρα του χειριστηρίου. Για να αλλάξεις τις ρυθμίσεις, κάνε κλικ σε ένα κουμπί και πάτα το κουμπί, ή το πλήκτρο του χειριστηρίου, το οποίο θέλεις να χρησιμοποιείς για αυτήν την ενέργεια."
+	val[]: "Με το αυτόματο κιβώτιο ταχυτήτων θα χρειάζεται να αλλάζεις μόνο κατευθύνσεις μεταξύ μπροστά, νεκρά και να όπισθεν. Θα το πετύχεις αυτό χρησιμοποιώντας τα ακόλουθα κουμπιά και τα πλήκτρα του χειριστηρίου. Για να αλλάξεις τις ρυθμίσεις, κάνε κλικ σε ένα κουμπί και πάτησε το κουμπί ή το πλήκτρο του χειριστηρίου το οποίο θέλεις να χρησιμοποιείς για αυτήν την ενέργεια."
 
 	key[]: "automatic_gb_setup_desc2"
 	val[]: "Εάν έχεις μοχλό ταχυτήτων τύπου H συνδεδεμένο, μπορείς να το χρησιμοποιήσεις για εξομοίωση ενός αληθινού αυτόματου κιβωτίου ταχυτήτων. Ενεργοποίησε αυτήν την επιλογή και θα μπορείς να αντιστοιχείς τις θέσεις του μοχλού ταχυτήτων τύπου H σε λειτουργία οδήγησης προς τα εμπρός και προς τα πίσω. Άλλες θέσεις του μοχλού ταχυτήτων τύπου H μετρούνται ως νεκρές. Αυτές οι ρυθμίσεις δημιουργήθηκαν ειδικά για τον μοχλό ταχυτήτων τύπου H και δεν θα λειτουργήσουν σε κανονικά πλήκτρα ούτε στα πλήκτρα του χειριστηρίου. Για να αλλάξεις την αντιστοιχία, πάτα στο κουμπί και μετά μετακίνησε τον μοχλό ταχυτήτων στην επιθυμητή θέση και μετά πίσω στην νεκρά."
@@ -10022,7 +10122,7 @@ localization_db : .localization
 	val[]: "Ρύθμιση σειριακού κιβωτίου ταχυτήτων"
 
 	key[]: "sequential_gb_setup_desc"
-	val[]: "Το σειριακό κιβώτιο ταχυτήτων κάνει αλλαγές μεταξύ όλων των μπροστά ταχυτήτων, νεκρά και όπισθεν. Εδώ είναι όλα τα πλήκτρα και τα κουμπιά του χειριστηρίου που χρησιμοποιούνται για αλλαγή ταχυτήτων πάνω και κάτω με την προαναφερθείσα σειρά. Για να αλλάξετε την αντιστοιχία, κάντε κλικ στο κουμπί και πιέστε ένα πλήκτρο, ή το πλήκτρο του χειριστηρίου, που θέλετε να χρησιμοποιήσετε για αυτήν την ενέργεια."
+	val[]: "Το σειριακό κιβώτιο ταχυτήτων αλλάζει όλες τις ταχύτητες κίνησης προς τα μπροστά, νεκράς και όπισθεν. Εδώ είναι όλα τα πλήκτρα και τα κουμπιά του χειριστηρίου που χρησιμοποιούνται για ανέβασμα και κατέβασμα ταχυτήτων. Για να αλλάξετε την αντιστοιχία, κάντε κλικ στο κουμπί και πατήστε ένα πλήκτρο ή το πλήκτρο του χειριστηρίου που θέλετε να χρησιμοποιήσετε για αυτήν την ενέργεια."
 #@}
 
 #+ H-Shifter gearbox setup page
@@ -10087,6 +10187,9 @@ localization_db : .localization
 	key[]: "duty_paint"
 	val[]: "Βαφή Βαριάς Χρήσης" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Κλασικό" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Βασικό" #+ Stock truck accesory general
 
@@ -10142,7 +10245,7 @@ localization_db : .localization
 	val[]: "Βαφή & Πλαστικό Γκρι" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Αλουμίνιο" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "Αλουμινίου" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "Μοντέρνο πλαστικό" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -10188,7 +10291,7 @@ localization_db : .localization
 
 	key[]: "exclusive_chrom"
 	val[]: "Μοναδικό Χρώμιο" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Μοναδικό UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10663,7 +10766,7 @@ localization_db : .localization
 #@}
 
 	key[]: "mods_t"
-	val[]: "ΕΝΕΡΓΑ MODS" #+ Mod selection title
+	val[]: "ΕΝΕΡΓΑ MOD" #+ Mod selection title
 
 	key[]: "missing_deps"
 	val[]: "Η αποθήκευση που προσπαθείς να φορτώσεις χρησιμοποιεί επιπλέον λειτουργίες, οι οποίες προς το παρών είναι μη διαθέσιμες. Τα πακέτα περιεχομένων που λείπουν είναι τα εξής:"
@@ -10845,7 +10948,7 @@ localization_db : .localization
 	val[]: "Κατηγορία" #+ Label of field containing mod category filter or list of categories to which the mod belongs
 
 	key[]: "active_mods_t"
-	val[]: "ΕΝΕΡΓΑ MODS" #+ Title of panel with list of enabled mods
+	val[]: "ΕΝΕΡΓΑ MOD" #+ Title of panel with list of enabled mods
 
 	key[]: "move_up"
 	val[]: "Αύξηση προτεραιότητας" #+ Button which increases priority of the mod
@@ -10860,7 +10963,7 @@ localization_db : .localization
 	val[]: "Διαχείριση Mod" #+ Button opening the mod manager
 
 	key[]: "new_mods_found"
-	val[]: "Νέα MODs βρέθηκαν" #+ Label indicating that the game has detected new mods.
+	val[]: "Βρέθηκαν νέα MOD" #+ Label indicating that the game has detected new mods.
 
 	key[]: "name"
 	val[]: "Όνομα" #+ Label of field used to show the name of the mod and also a entry of sorting dropdown indicating sorting according to the name.
@@ -10875,7 +10978,7 @@ localization_db : .localization
 	val[]: "Όνομα πακέτου" #+ Label of field used to show the name of the mod package (i.e. the name of the zip file of folder containing the mod)
 
 	key[]: "view_workshop_page"
-	val[]: "Προβολή mod στο Steam Workshop" #+ Button that allows user to open webbrowser with Steam workshop items page.
+	val[]: "Προβολή mod στο Εργαστήρι Steam" #+ Button that allows user to open webbrowser with Steam workshop items page.
 
 	key[]: "no_mods_found"
 	val[]: "Δεν βρέθηκε κανένα mod." #+ Shown in the UI if there are no mods matching the current filters.
@@ -10890,16 +10993,16 @@ localization_db : .localization
 	val[]: "Είσαι σίγουρος πως θέλεις να απενεργοποιήσεις όλα τα mods;" #+ Confirmation message shown when user selects button to deactivate all mods.
 
 	key[]: "mod_multi_move_right_confirm"
-	val[]: "Είσαι σίγουρος πως θέλεις να ενεργοποιήσεις όλα τα mods;<br><br>Όλα τα mods που είναι απενεργοποιημένα θα προστεθούν στη κορυφή της λίστας των ενεργών mods.<br><br><br>(Ασύμβατα mods δεν θα ενεργοποιηθούν)" #+ Confirmation message shown when user selects button to activate all mods.
+	val[]: "Είσαι σίγουρος πως θέλεις να ενεργοποιήσεις όλα τα mod;<br><br>Όλα τα mod που είναι απενεργοποιημένα θα προστεθούν στη κορυφή της λίστας των ενεργών mod.<br><br><br>(Ασύμβατα mod δεν θα ενεργοποιηθούν)" #+ Confirmation message shown when user selects button to activate all mods.
 
 	key[]: "no_mods_active"
-	val[]: "Δεν υπάρχουν ενεργά mods για εμφάνιση.<br><br>Για να ενεργοποιήσεις ένα mod επίλεξέ το από το αριστερό παράθυρο και κάνε κλικ πάνω στο βέλος." #+ Text shown inside the active mods panel when no mod is currently active
+	val[]: "Δεν υπάρχουν ενεργά mod για εμφάνιση.<br><br>Για να ενεργοποιήσεις ένα mod επίλεξέ το από το αριστερό παράθυρο και κάνε κλικ πάνω στο βέλος." #+ Text shown inside the active mods panel when no mod is currently active
 
 	key[]: "mod_activated"
 	val[]: "Ενεργό" #+ State value indicating that the mod is selected as active one
 
 	key[]: "force_mods_mm_error"
-	val[]: "Αδύνατο το άνοιγμα της διαχείρισης mod επειδή υπάρχει η παράμετρος -force_mods. Όλα τα mods ενεργοποιούνται αυτόματα έτσι δεν μπορείς να τα διαχειριστείς." #+ Error message shown if the user overrides the mods management using -force_mods command line parameter.
+	val[]: "Αδύνατο το άνοιγμα της διαχείρισης mod επειδή υπάρχει η παράμετρος -force_mods. Όλα τα mod ενεργοποιούνται αυτόματα, οπότε δεν μπορείς να τα διαχειριστείς." #+ Error message shown if the user overrides the mods management using -force_mods command line parameter.
 
 	key[]: "version"
 	val[]: "Έκδοση" #+ Label of field used to show the version of the mod
@@ -10932,13 +11035,13 @@ localization_db : .localization
 	val[]: "Επιβεβαίωση Αλλαγών" #+ Button which stores the changes and closes the mod manager.
 
 	key[]: "workshop_download"
-	val[]: "Κατεβάζοντας MOD του Εργαστηρίου του Steam" #+ Label indicating download progress of the Steam workshop mods.
+	val[]: "Κατεβάζοντας MOD του Εργαστηρίου Steam" #+ Label indicating download progress of the Steam workshop mods.
 
 	key[]: "workshop_items_only"
-	val[]: "Προβολή μόνο αντικειμένων Steam Workshop" #+ Show only Steam Workshop items
+	val[]: "Προβολή μόνο αντικειμένων Εργαστηρίου Steam" #+ Show only Steam Workshop items
 
 	key[]: "workshop_mod_load_failed"
-	val[]: "Αδύνατη η φόρτωση του $MOD_NAME$ από το Steam Workshop." #+ Workshop mod failed message
+	val[]: "Αδύνατη η φόρτωση του $MOD_NAME$ από το Εργαστήρι Steam." #+ Workshop mod failed message
 
 	key[]: "unsubscribe"
 	val[]: "Κατάργηση Συνδρομής"
@@ -10961,13 +11064,13 @@ localization_db : .localization
 	val[]: "Mod με αυτό το εικονίδιο είναι ενεργοποιημένο και θα φορτωθεί." #+ Description of status icon
 
 	key[]: "active_mods_list"
-	val[]: "Ενεργά mods"  #+ Label of section with legend about status icons shown in the active mods panel
+	val[]: "Ενεργά mod"  #+ Label of section with legend about status icons shown in the active mods panel
 
 	key[]: "mod_manager_help_t"
 	val[]: "ΒΟΗΘΕΙΑ ΔΙΑΧΕΙΡΙΣΗΣ MOD" #+ Label of window with the help for the mod manager
 
 	key[]: "mod_sorting_desc"
-	val[]: "Παίζει ρόλο η σειρά των mod. Τα mods είναι με σειρά προτεραιότητας από πάνω προς τα κάτω στο παράθυρο με τα Ενεργά Mods - το πρώτο mod στη λίστα και τα αρχεία που περιέχονται σε αυτό έχουν την μεγαλύτερη προτεραιότητα. Εάν αρκετά mods περιέχουν ένα αρχείο με το ίδιο όνομα, μόνο αυτό με τη μεγαλύτερη προτεραιότητα θα χρησιμοποιηθεί στο παιχνίδι."
+	val[]: "Παίζει ρόλο η σειρά των mod. Τα mod είναι με σειρά προτεραιότητας από πάνω προς τα κάτω στο παράθυρο με τα Ενεργά Mod - το πρώτο mod στη λίστα και τα αρχεία που περιέχονται σε αυτό έχουν την μεγαλύτερη προτεραιότητα. Εάν αρκετά mod περιέχουν ένα αρχείο με το ίδιο όνομα, μόνο αυτό με τη μεγαλύτερη προτεραιότητα θα χρησιμοποιηθεί στο παιχνίδι."
 
 	key[]: "other"
 	val[]: "Λοιπά" #+ Label of section with legend about additional icons and buttons
@@ -10981,13 +11084,13 @@ localization_db : .localization
 
 	# We are currently using mm_confirm_leave and mm_confirm_leave_changes this one will be eventually removed in future.
 	key[]: "mod_man_confirm_changes"
-	val[]: "Θέλεις να αποθηκεύσεις τις αλλαγές;<br><br>(Εάν θέλεις να συνεχίσεις να διαχειρίζεσαι τα mods κλείσε αυτό το παράθυρο)" #+ Confirmation message shown when user closes the manager dialog
+	val[]: "Θέλεις να αποθηκεύσεις τις αλλαγές;<br><br>(Εάν θέλεις να συνεχίσεις να διαχειρίζεσαι τα mod κλείσε αυτό το παράθυρο)" #+ Confirmation message shown when user closes the manager dialog
 
 	key[]: "incompat_mods"
-	val[]: "Αυτή η αποθήκευση εξαρτάται σε συγκεκριμένη λίστα από mods που είναι ασύμβατα" #+ Warning shown when loading save which depends on mods which are incompatible
+	val[]: "Αυτή η αποθήκευση εξαρτάται σε συγκεκριμένη λίστα από mod που είναι ασύμβατα" #+ Warning shown when loading save which depends on mods which are incompatible
 
 	key[]: "mods_activation_failed_limit_exceeded"
-	val[]: "Κάποια mods δεν ενεργοποιήθηκαν επειδή έχεις υπερβεί το όριο των μέγιστων ενεργών mod." #+ Message shown when player tries to mount all the mods he has installed however some of them were not mount due to limit being exceeded.
+	val[]: "Κάποια mod δεν ενεργοποιήθηκαν επειδή έχεις υπερβεί το όριο των μέγιστων ενεργών mod." #+ Message shown when player tries to mount all the mods he has installed however some of them were not mount due to limit being exceeded.
 
 	key[]: "and_more"
 	val[]: "και άλλα" #+ Additional text shown if there are more mods that were unable to be mounted.
@@ -11097,7 +11200,7 @@ localization_db : .localization
 	val[]: "Ανανέωση" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Αναζήτηση συμβολαίων" #+ Opens browser on WOTR page to search for a job
+	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Υπέγραψε Τυχαίο Συμβόλαιο" #+ Connects with server and accept random job in proximity of player's current position
@@ -11256,10 +11359,10 @@ localization_db : .localization
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "Το απαιτούμενο DLC (επίσημη επέκταση παιχνιδιού) $DEPENDENCY_NAME$ λείπει. Για να λειτουργήσει σωστά αυτή η αποθήκευση, αυτό το DLC πρέπει να υπάρχει και να είναι ενεργοποιημένο σε αυτόν τον υπολογιστή. Πρέπει να φτιάξεις το πρόβλημα πριν μπορέσεις να φορτώσεις την αποθήκευση." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "Το απαιτούμενο DLC (επίσημη επέκταση παιχνιδιού) $DEPENDENCY_NAME$ απουσιάζει. Για να λειτουργήσει σωστά αυτή η αποθήκευση, αυτό το DLC πρέπει να υπάρχει και να είναι ενεργοποιημένο σε αυτόν τον υπολογιστή. Πρέπει να φτιάξεις το πρόβλημα πριν μπορέσεις να φορτώσεις την αποθήκευση." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
-	val[]: "Το προαιρετικό DLC (επίσημη επέκταση παιχνιδιού) $DEPENDENCY_NAME$ λείπει. Αν δεν το περίμενες αυτό, έλεγξε την κατάσταση του DLC.<br><br>Αλλιώς, προσπάθησε να φορτώσεις την αποθήκευση, ωστόσο μερικές λειτουργίες που προσφέρονται από το DLC θα χαθούν." #+ Information showed when dependency of type optional DLC is missing.
+	val[]: "Το προαιρετικό DLC (επίσημη επέκταση παιχνιδιού) $DEPENDENCY_NAME$ απουσιάζει. Αν δεν το περίμενες αυτό, έλεγξε την κατάσταση του DLC.<br><br>Αλλιώς, προσπάθησε να φορτώσεις την αποθήκευση, ωστόσο μερικές λειτουργίες που προσφέρονται από το DLC θα χαθούν." #+ Information showed when dependency of type optional DLC is missing.
 
 	key[]: "missing_mod"
 	val[]: "Το MOD $DEPENDENCY_NAME$ λείπει ή είναι απενεργοποιημένο. Αν δεν το περίμενες αυτό, έλεγξε την κατάσταση του MOD. Ίσως προσπαθήσεις να φορτώσεις την αποθήκευση. Ωστόσο, εξαρτάται από την λειτουργία του MOD, είναι δυνατόν να αποτύχει η φόρτωση ή να προκαλέσει άλλα προβλήματα." #+ Information displayed when dependency of type mod is missing.
@@ -11274,10 +11377,10 @@ localization_db : .localization
 	val[]: "ΛΕΠΤΟΜΕΡΕΙΕΣ" #+ The missing dependency details dialog title.
 
 	key[]: "open_workshop_page"
-	val[]: "Άνοιγμα σελίδας workshop"  #+ Button text. Open Steam Workshop page of the missing Workshop mod.
+	val[]: "Άνοιγμα σελίδας εργαστηρίου"  #+ Button text. Open Steam Workshop page of the missing Workshop mod.
 
 	key[]: "missing_dependencies_info"
-	val[]: "Αυτή η αποθήκευση εξαρτάται σε DLCs ή MODs που λείπουν. Αναφέρονται παρακάτω. Επιλέγοντας μία εγγραφή στη λίστα μπορείς να λάβεις περισσότερες πληροφορίες σχετικά με κάθε συγκεκριμένο στοιχείο." #+ The info about the missing dependencies dialog.
+	val[]: "Αυτή η αποθήκευση εξαρτάται σε DLC ή MOD που λείπουν. Αναφέρονται παρακάτω. Επιλέγοντας μία εγγραφή στη λίστα μπορείς να λάβεις περισσότερες πληροφορίες σχετικά με κάθε συγκεκριμένο στοιχείο." #+ The info about the missing dependencies dialog.
 
 	key[]: "missing_dependencies_fatal_error"
 	val[]: "Αυτή η αποθήκευση εξαρτάται σε τουλάχιστον ένα απαιτούμενο DLC ή MOD. Πρέπει να φτιάξεις το πρόβλημα πριν φορτώσεις την αποθήκευση." #+ Info shown if the continue operation is blocked because the save depends on some required dlc (e.g. map or vehicle)
@@ -11310,13 +11413,13 @@ localization_db : .localization
 	val[]: "Εργαστήρι Steam" #+ Title of the workshop wait dialog.
 
 	key[]: "workshop_wait_msg"
-	val[]: "Περιμένοντας για το περιεχόμενο από το Steam Workshop να κατέβει..<br><br>Μπορείς να το ακυρώσεις πατώντας το πλήκτρο ακύρωση. Ωστόσο, μέρος του περιεχομένου από το Steam Workshop ίσως να μην λειτουργεί." #+ Message describing why player has to wait here. And consequences of clicking cancel button.
+	val[]: "Περιμένοντας για το περιεχόμενο από το Εργαστήρι Steam να κατέβει..<br><br>Μπορείς να το ακυρώσεις πατώντας το πλήκτρο ακύρωση. Ωστόσο, μέρος του περιεχομένου από το Εργαστήρι Steam ίσως να μην λειτουργεί." #+ Message describing why player has to wait here. And consequences of clicking cancel button.
 
 	key[]: "query_subscribed_items"
 	val[]: "Εμφάνιση συνδρομητικών αντικειμένων" #+ Workshop operation progress that queries subscribed items/mods.
 
 	key[]: "downloading_items"
-	val[]: "Κατεβάζοντας MODs ($MODS_LEFT_COUNT$ απέμειναν)" #+ Workshop operation progress that downloads items/mods.
+	val[]: "Κατεβάζοντας MOD ($MODS_LEFT_COUNT$ απέμειναν)" #+ Workshop operation progress that downloads items/mods.
 #@}
 
 #+ Desktop job widget info
@@ -11361,7 +11464,7 @@ localization_db : .localization
 	val[]: "Εξαρτήσεις" #+ Title of the section in mod details window displaying list of the dependencies the mod has.
 
 	key[]: "missing_mod_dependencies_detected"
-	val[]: "Μερικά DLCs που απαιτούνται απο αυτό το mod λείπουν. Βεβαιωθείτε πως τα έχετε εγκατεστημένα και ενεργοποιημένα." #+ The message showed when user has one of MOD dependencies missing.
+	val[]: "Μερικά DLC που απαιτούνται απο αυτό το mod λείπουν. Βεβαιωθείτε πως τα έχετε εγκατεστημένα και ενεργοποιημένα." #+ The message showed when user has one of MOD dependencies missing.
 #@}
 
 #+ Version change detected message box.
@@ -11848,7 +11951,7 @@ localization_db : .localization
 	val[]: "Προσωπικός Στόχος Επετεύχθη!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Άνοιγμα σελίδας γεγονότων" #+ Button opening event page on WoTr.
+	val[]: "Open Events Page" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Πρόοδος" #+ The label used to indicate progress of the event.
@@ -11856,11 +11959,14 @@ localization_db : .localization
 	key[]: "event_info"
 	val[]: "ΠΛΗΡΟΦΟΡΙΕΣ ΓΕΓΟΝΟΤΩΝ" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Γεγονός" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Live Events" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Επίπεδο" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "There is no active event at the moment."
 #@}
 
 #+ Trailer ownership
@@ -12274,7 +12380,7 @@ localization_db : .localization
 	val[]: "Τύπος αμαξώματος:" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_body_length"
-	val[]: "Μήκος αμαξώματος (εσωτερικό)" #+ Name of the property in the trailer detail tooltip.
+	val[]: "Μήκος αμαξώματος (εσωτερικό):" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_body_width"
 	val[]: "Πλάτος αμαξώματος (εσωτερικό):" #+ Name of the property in the trailer detail tooltip.
@@ -12331,7 +12437,7 @@ localization_db : .localization
 #+ Trailer body type names.
 #@{
 	key[]: "container"
-	val[]: "Μεταφορέας Κοντέινερ"
+	val[]: "Μεταφοράς Κοντέινερ"
 
 	key[]: "curtainside"
 	val[]: "Κουρτίνα"
@@ -12352,16 +12458,26 @@ localization_db : .localization
 	val[]: "Βυτίο Τροφίμων"
 
 	key[]: "insulated"
-	val[]: "Θερμομονωτικό "
+	val[]: "Ισοθερμικό"
 
 	key[]: "log"
-	val[]: "Κορμοί"
+	val[]: "Ξυλείας"
+
+	key[]: "lowbed"
+	val[]: "Χαμηλοδάπεδο"
+
+	key[]: "lowboy"
+	val[]: "Μεταφοράς Μηχανημάτων"
 
 	key[]: "refrigerated"
 	val[]: "Ψυγείο"
 
-	key[]: "liquid"
-	val[]: "Υγρά"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Δεξαμενή"
 
 #@}
 
@@ -12376,6 +12492,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Γενικής χρήσης, ξηρά εμπορεύματα"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Κατασκευαστικός εξοπλισμός και υλικά"
+
+	key[]: "body_cargo_types_flatbed_brck"
+	val[]: "Κατασκευαστικός εξοπλισμός και υλικά"
+
+	key[]: "body_cargo_types_flatbed_cont"
+	val[]: "Κατασκευαστικός εξοπλισμός και Κοντέινερ"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Υγρά τρόφιμα"
 
@@ -12385,17 +12510,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_log"
 	val[]: "Κορμοί, δοκοί και σωλήνες"
 
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Βαριά μηχανήματα και ψηλά φορτία"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Βαριά μηχανήματα και ψηλά φορτία"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Κατεψυγμένα, παγωμένα εμπορεύματα"
 
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Κατασκευαστικός εξοπλισμός και υλικά"
-
-	key[]: "body_cargo_types_flatbed_brck"
-	val[]: "Κατασκευαστικός εξοπλισμός και υλικά"
-
-	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Κατασκευαστικός εξοπλισμός και Κοντέινερ"
 #@}
 
 #+ Trailer chain type names.
@@ -12479,6 +12602,19 @@ localization_db : .localization
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 Άξονες"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 Άξονες"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 Άξονες, Επεκτατό, Μακρύ"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 Άξονες, Επεκτατό, Κοντό"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 Άξονας"
 
@@ -12487,6 +12623,12 @@ localization_db : .localization
 
 	key[]: "tn_single_2axle_20"
 	val[]: "2 Άξονες, 20 πόδια"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 Άξονες, Επεκτατό, Μακρύ"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 Άξονες, Επεκτατό, Κοντό"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 Άξονες, Εν αποστάσει"
@@ -12509,11 +12651,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_ext_40"
 	val[]: "3 Άξονες, Επεκτατό, 40 πόδια"
 
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 Άξονες, Επεκτατό, Μακρύ"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "3 Άξονες, Επεκτατό, Κοντό"
+
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "3 Άξονες, Προσαρμοζόμενο, 2 x 20 πόδια"
 
 	key[]: "tn_single_3axle_flex_40"
 	val[]: "3 Άξονες, Προσαρμοζόμενο, 40 πόδια"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 Άξονες, Εν αποστάσει"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 Άξονες, 2 Κατευθυντήριοι"
@@ -12524,8 +12675,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 Άξονες, Κατευθυντ., Εν αποστάσει, Πίσω"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 Άξονες, Επεκτατό, Μακρύ"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 Άξονες, Επεκτατό, Κοντό"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 Άξονες, Κατευθυντήριος"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 Άξονες, Επεκτατό, Μακρύ"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 Άξονες, Επεκτατό, Κοντό"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "Διπλό Επικαθήμενο, 2+2 Άξονες"
@@ -12619,7 +12782,7 @@ localization_db : .localization
 	val[]: "Κόφα, Κυλιόμενο Δάπεδο"
 
 	key[]: "bs_scs_dryvan_side"
-	val[]: "Κόφα, πλαϊνή πόρτα"
+	val[]: "Κόφα, Πλαϊνή Πόρτα"
 
 	key[]: "bs_scs_flatbed_steel"
 	val[]: "Πάτωμα με Χαλύβδινο Δάπεδο"
@@ -12643,16 +12806,22 @@ localization_db : .localization
 	val[]: "Βυτίο Τροφίμων Χρώμιο"
 
 	key[]: "bs_scs_insulated"
-	val[]: "Θερμομονωτικό "
+	val[]: "Ισοθερμικό"
 
 	key[]: "bs_scs_insulated_side"
-	val[]: "Θερμομονωτικό, Πλαϊνή Πόρτα"
+	val[]: "Ισοθερμικό, Πλαϊνή Πόρτα"
 
 	key[]: "bs_scs_log_steel"
-	val[]: "Μεταφορά Κορμών με Χαλύβδινο Δάπεδο"
+	val[]: "Μεταφοράς Ξυλείας με Χαλύβδινο Δάπεδο"
 
 	key[]: "bs_scs_log_wood"
-	val[]: "Μεταφορά Κορμών με Ξύλινο Δάπεδο"
+	val[]: "Μεταφοράς Ξυλείας με Ξύλινο Δάπεδο"
+
+	key[]: "bs_scs_lowbed"
+	val[]: "Χαμηλοδάπεδο"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Μεταφοράς Μηχανημάτων"
 
 	key[]: "bs_scs_reefer"
 	val[]: "Ψυγείο"
@@ -12669,6 +12838,9 @@ localization_db : .localization
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Βυτίο Τροφίμων"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Μεταφοράς Μηχανημάτων"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Πλατφόρμα"
@@ -12706,6 +12878,9 @@ localization_db : .localization
 
 	key[]: "extinguisher"
 	val[]: "Πυροσβεστήρας"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Αναδιπλούμενες Ράμπες"
 
 	key[]: "front_cage"
 	val[]: "Μπροστινό Προστατευτικό"
@@ -12763,6 +12938,9 @@ localization_db : .localization
 
 	key[]: "plastic_box"
 	val[]: "Πλαστικό Κουτί"
+
+	key[]: "ramps"
+	val[]: "Ράμπες"
 
 	key[]: "skirt_big"
 	val[]: "Πλαϊνή Ποδιά"
@@ -13130,7 +13308,7 @@ localization_db : .localization
 	val[]: "ΑΠΟΥΣΙΑ ΧΕΙΡΙΣΤΗΡΙΩΝ" #+ Title of window containing information about missing controlllers. Please keep in upper case where possible.
 
 	key[]: "missing_controllers"
-	val[]: "Τα χειριστήρια του παιχνιδιού (π.χ. τηλεχειριστήρια, τιμονιέρες) που καταγράφονται από κάτω τα οποία χρησιμοποιούνται από τη διαμόρφωση εισαγωγής σου απουσιάζουν. Σιγούρεψε ότι είναι συνδεδεμένα και δεν είναι απενεργοποιημένα και πάτησε το '@@controllers_detect@@` κουμπί από κάτω." #+ General explanation of the reason for the message.
+	val[]: "Τα χειριστήρια του παιχνιδιού (π.χ. τηλεχειριστήρια, τιμονιέρες) που καταγράφονται από κάτω τα οποία χρησιμοποιούνται από τη διαμόρφωση εισαγωγής σου απουσιάζουν. Επιβεβαίωσε ότι είναι συνδεδεμένα και δεν όχι απενεργοποιημένα και πάτησε το κουμπί '@@controllers_detect@@` από κάτω." #+ General explanation of the reason for the message.
 
 	key[]: "controllers_detect"
 	val[]: "Εντοπισμός" #+ Button which triggers detection of new controllers.

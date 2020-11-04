@@ -768,37 +768,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Kameramód váltása" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Körülnézés" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Elforgatás" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Ráközelítés" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Pásztázás" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "IRÁNYÍTÁS SÉTA MÓDBAN:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Előre" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Hátra" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Balra" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Jobbra" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Guggolás" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Futás" #+ Tooltip for run.
 #@}
@@ -808,7 +808,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Elsőszemélyű kamera bekapcsolva" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Pásztázó kamera bekapcsolva" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -847,6 +847,9 @@
 	key[]: "delete"
 	val[]: "Törlés" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Profil törlése" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Fejlesztés" #+ Button allowing user to upgrade something.
 
@@ -875,6 +878,8 @@
 	key[]: "save_in_progress"
 	val[]: "Mentés..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Átvezető kihagyása: $KEY$." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1159,11 +1164,11 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Következő pont távolsága"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Következő pont távolsága" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Következő ponthoz érkezés ideje" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Következő ponthoz érkezés ideje" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1304,13 +1309,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
+	val[]: "PROFIL KEZELŐ" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
 	val[]: "EURO TRUCK SIMULATOR 2 - INDÍTÓPULT" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "ONLINE HÍREK" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profilok" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Profil váltása" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Váltás a sofőrök között." #+ Help message associated with profile selection icon.
@@ -1327,8 +1335,23 @@
 	key[]: "continue_game"
 	val[]: "Játék folytatása" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Kiválasztott profil használata" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Új profil" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Profil állapota" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Profil modjainak kezelése" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Profilok kezelése" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Profil szerkesztése" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Nem kompatibilis profil!<br>Frissítsd a játékot a legújabb verzióra!" #+ Incompatible profile warning text
@@ -1345,8 +1368,14 @@
 	key[]: "owned_trailers"
 	val[]: "Birtokolt pótkocsik:" #+ how many trailers the player owns
 
+	key[]: "steam_cloud_synchronization"
+	val[]: "Steam Felhő szinkronizálás:" #+ Whether is steam cloud synchronization active.
+
 	key[]: "online_stat"
-	val[]: "Online állapot:"
+	val[]: "World of Trucks profil:"
+
+	key[]: "mods_in_use"
+	val[]: "Használt modok:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Nincs csatlakozva!"	#+ to the WoTR
@@ -1380,6 +1409,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Nem talált a játék kamionokat! Engedélyezz legalább egy kamion DLC-t, és indítsd újra a játékot!" #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Aktív modok: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Nincsenek aktív modok"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Steam Felhő szinkronizálás aktiválva"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "A Steam felhő szinkronizálás ki van kapcsolva. <br><offset vshift=7><color value=@@clr_txt_d@@>Kattints ide az engedélyezéshez!"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Csatlakoztatva a World of Truckshoz"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "A fiók nem csatlakozik a World of Trucks-hoz! <br><offset vshift=7><color value=@@clr_txt_d@@>Kattints ide a csatlakozáshoz!"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "PROFIL RÉSZLETEK"
 #@
 #@}
 
@@ -1541,10 +1595,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Új verzió<br>érhető el!"
+	val[]: "Régi játékverziót használsz!<br><link url=$URL_LINK$ color=@@clr_link@@>Frissíts újabb verzióra</link> az összes játékfunkció eléréséhez!"
 
 	key[]: "new_version_available_steam"
-	val[]: "Új verzió<br>érhető el.<br><br>A Steam automatikusan frissíti a játékot, ha az automatikus frissítések engedélyezve vannak."
+	val[]: "Régi játékverziót használsz!<br>A Steam frissíteni fogja a játékot, hacsak nincsenek letiltva az automatikus frissítések!"
 
 	key[]: "allow_news"
 	val[]: "Engedélyezed, hogy a játék automatikusan frissítéseket és híreket keressen?" #+ Text shown in a message box.
@@ -1822,6 +1876,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Kamion kipufogó hangereje" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Kamion turbo hangereje" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Kamion effektek hangereje" #+ Slider controlling volume of the truck effects.
@@ -2401,7 +2458,7 @@
 
 	key[]: "walk_mode"
 	val[]: "SÉTA MÓD"
-	
+
 	key[]: "other_controls"
 	val[]: "EGYÉB"
 #@}
@@ -2704,22 +2761,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Előre" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Hátra" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Balra" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Jobbra" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Guggolás" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Futás" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3141,7 +3198,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Emelkedés szorzója (vezetőfülkében)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Oldalirányú kitérés szorzója (séta közben)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3222,7 +3279,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "A lefelé és felfelé nézés lekövetésének sebességét szabályozza a szorzómérték beállításával (a kamionban ülve)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "A fejforgatás lekövetésének sebességét szabályozza a szorzómérték beállításával (séta közben)."
 
@@ -3425,7 +3482,7 @@
 	val[]: "A grafikai beállítások megváltoztak.<br>Megtartod az új beállításokat?"
 
 	key[]: "reverting_in"
-	val[]: "Visszaállítás:" #+ Shown in message box if the user applies some complex settings. Followed by number of seconds before the settings are reverted unless the player confirms the message box. For example "Reverting in 18 seconds."
+	val[]: "Visszaállítás" #+ Shown in message box if the user applies some complex settings. Followed by number of seconds before the settings are reverted unless the player confirms the message box. For example "Reverting in 18 seconds."
 
 	key[]: "sec"
 	val[]: "másodperc múlva" #+ Suffix added after number of seconds in "Reverting in 18 seconds."
@@ -3977,12 +4034,10 @@
 	val[]: "Azonnal menj el szervizbe!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Teljes út" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Teljes út" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Következő útvonalpont" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4085,6 +4140,15 @@
 
 	key[]: "park_nf"
 	val[]: "Ez egy pihenőhely,<br>de most épp nem vagy fáradt."
+
+	key[]: "viewpoint_title"
+	val[]: "Kilátóhely"
+
+	key[]: "viewpoint_msg"
+	val[]: "Nyomd le a következő gombot a látnivaló aktiválásához:"
+
+	key[]: "viewpoint_found"
+	val[]: "Felfedeztél egy új látnivalót!"
 
 	key[]: "gas_station"
 	val[]: "Töltőállomás"
@@ -5370,7 +5434,7 @@
 	val[]: "Joghurt"
 
 	key[]: "cn_helicopter"
-	val[]: "Helikopter - Ring-429"
+	val[]: "Helikopter - 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Fúró - D-50"
@@ -5379,7 +5443,7 @@
 	val[]: "Úthenger - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Traktor - RS-666"
+	val[]: "Kotrógép"
 
 	key[]: "cn_yacht"
 	val[]: "Jacht"
@@ -5824,7 +5888,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Aszfaltmarógép - Writigen 808"
+	val[]: "Aszfaltmaró - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Ipari kábelcsévélő"
@@ -5902,6 +5966,12 @@
 	key[]: "tn_s_ki_solid"
 	val[]: "Billenő"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Hosszabbítható mélyágyas pótkocsi"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Hosszabbítható nehézgépszállító"
+
 	key[]: "tn_van_transporter"
 	val[]: "Furgonszállító"
 
@@ -5966,8 +6036,8 @@
 	key[]: "tn_schw_curtain"
 	val[]: "Schwarzmüller ponyvás platform"
 
-	key[]: "tn_schw_overweight"
-	val[]: "Schwarzmüller mélybölcsős"
+	key[]: "tn_schw_lowloader"
+	val[]: "Schwarzmüller nehézgépszállító"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Schwarzmüller mélyhűtött"
@@ -7286,6 +7356,15 @@
 
 	key[]: "mapl_train"
 	val[]: "Csalagút"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Felfedezetlen pont"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Látnivaló (felfedezett)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Látnivaló (felfedezetlen)"
 
 	key[]: "mapl_gas"
 	val[]: "Töltőállomás"
@@ -9390,6 +9469,9 @@
 	key[]: "duty_paint"
 	val[]: "Szolgálati festés" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Klasszikus" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Gyári" #+ Stock truck accesory general
 
@@ -9445,7 +9527,7 @@
 	val[]: "Festett és szürke műanyag" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Alu" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "Alumínium" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "Modern műanyag" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -9491,7 +9573,7 @@
 
 	key[]: "exclusive_chrom"
 	val[]: "Krómozott exkluzív" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Exkluzív UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10400,7 +10482,7 @@
 	val[]: "Frissítés" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Megbízások böngészése" #+ Opens browser on WOTR page to search for a job
+	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Megbízás választása véletlenszerűen" #+ Connects with server and accept random job in proximity of player's current position
@@ -11151,7 +11233,7 @@
 	val[]: "Egyéni cél teljesítve!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Esemény oldalának megnyitása" #+ Button opening event page on WoTr.
+	val[]: "Open Events Page" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Előrehaladás" #+ The label used to indicate progress of the event.
@@ -11159,11 +11241,14 @@
 	key[]: "event_info"
 	val[]: "ESEMÉNY INFORMÁCIÓ" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Esemény" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Live Events" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Fokozat" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "There is no active event at the moment."
 #@}
 
 #+ Trailer ownership
@@ -11660,11 +11745,21 @@
 	key[]: "log"
 	val[]: "Rönk"
 
+	key[]: "lowbed"
+	val[]: "Mélybölcsős"
+
+	key[]: "lowboy"
+	val[]: "Nehézgépszállító"
+
 	key[]: "refrigerated"
 	val[]: "Mélyhűtött"
 
-	key[]: "liquid"
-	val[]: "Folyadék"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Tartály"
 
 #@}
 
@@ -11679,6 +11774,15 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Általános, rövidáru"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Építési anyagok és felszerelés"
+
+	key[]: "body_cargo_types_flatbed_brck"
+	val[]: "Építési anyagok és felszerelés"
+
+	key[]: "body_cargo_types_flatbed_cont"
+	val[]: "Építési anyagok és konténerek"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Folyékony élelmiszerek"
 
@@ -11688,17 +11792,15 @@
 	key[]: "body_cargo_types_log"
 	val[]: "Farönkök, gerendák, vagy csövek"
 
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Nehézgépek és magas rakományok"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Nehézgépek és magas rakományok"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Fagyasztott, hűtött áruk"
 
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Építési anyagok és felszerelés"
-
-	key[]: "body_cargo_types_flatbed_brck"
-	val[]: "Építési anyagok és felszerelés"
-
-	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Építési anyagok és konténerek"
 #@}
 
 #+ Trailer chain type names.
@@ -11782,6 +11884,19 @@
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 tengely"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 tengely"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 tengely, hosszabbítható, hosszú"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 tengely, hosszabbítható, rövid"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 tengelyes"
 
@@ -11790,6 +11905,12 @@
 
 	key[]: "tn_single_2axle_20"
 	val[]: "2 tengely, 20 láb"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 tengely, hosszabbítható, hosszú"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 tengely, hosszabbítható, rövid"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 tengelyes, osztott"
@@ -11812,11 +11933,20 @@
 	key[]: "tn_single_3axle_ext_40"
 	val[]: "3 tengely, hosszabbítható, 40 láb"
 
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 tengely, hosszabbítható, hosszú"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "3 tengely, hosszabbítható, rövid"
+
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "3 tengely, flexibilis, 2 x 20 láb"
 
 	key[]: "tn_single_3axle_flex_40"
 	val[]: "3 tengely, flexibilis, 40 láb"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 tengely, osztott"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 tengely, 2 kormányozható"
@@ -11827,8 +11957,20 @@
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 tengely, kormányozható, osztott, hátsó"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 tengely, hosszabbítható, hosszú"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 tengely, hosszabbítható, rövid"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 tengelyes, kormányozható"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 tengely, hosszabbítható, hosszú"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 tengely, hosszabbítható, rövid"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "B-dupla, 2+2 tengely"
@@ -11957,6 +12099,12 @@
 	key[]: "bs_scs_log_wood"
 	val[]: "Rönkszállító, fapadlós"
 
+	key[]: "bs_scs_lowbed"
+	val[]: "Mélybölcsős"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Nehézgépszállító"
+
 	key[]: "bs_scs_reefer"
 	val[]: "Hűtött"
 
@@ -11972,6 +12120,9 @@
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Élelmiszer tartálykocsi"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Nehézgépszállító"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Platós"
@@ -12009,6 +12160,9 @@
 
 	key[]: "extinguisher"
 	val[]: "Poroltó"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Felhajtórámpa"
 
 	key[]: "front_cage"
 	val[]: "Elülső kalitka"
@@ -12066,6 +12220,9 @@
 
 	key[]: "plastic_box"
 	val[]: "Műanyag doboz"
+
+	key[]: "ramps"
+	val[]: "Rámpák"
 
 	key[]: "skirt_big"
 	val[]: "Oldalvédő"

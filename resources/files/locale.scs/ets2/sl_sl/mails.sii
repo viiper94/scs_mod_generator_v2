@@ -56,13 +56,13 @@ SiiNunit
 	mail_text: mailtext.bank_sellpt {
 		from: "Banka" #+ Message sender
 		subject: "Tvoj osebni tovornjak je bil prodan" #+ Message subject
-		body: "Draga komitent,<br><br>žal Vas moramo obvestiti, da smo morali prodati Vaš osebni tovornjak - $TRUCK_NAME$ - za $MONEY$. Na žalosti ste imeli dolgotrajni dolg in ni bilo drugih sredstev za kritje dolga. Žal ni bilo druge poti, kot izvesti skrajne ukrepe. Predlagamo, da vozite hitre dostave dokler se Vaše finančno stanje ne izboljša.<br><br>S spoštovanjem,<br>Vaš računovodja<br>Bank" #+ Message body
+		body: "Draga komitent(ka),<br><br>žal Vas moramo obvestiti, da smo morali prodati Vaš osebni tovornjak - $TRUCK_NAME$ - za $MONEY$. Na žalosti ste imeli dolgotrajni dolg in ni bilo drugih sredstev za kritje dolga. Žal ni bilo druge poti, kot izvesti skrajne ukrepe. Predlagamo, da izbirate hitra dela dokler se Vaše finančno stanje ne izboljša.<br><br>S spoštovanjem,<br>Vaš računovodja<br>Bank" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellptr {
 		from: "Banka" #+ Message sender
 		subject: "Tvoja osebna prikolica je bila prodana." #+ Message subject
-		body: "Draga komitent,<br><br>žal Vas moramo obvestiti, da smo morali prodati Vašo osebno prikolico - $TRAILER_NAME$ - za $MONEY$. Na žalosti ste imeli dolgotrajni dolg in ni bilo drugih sredstev za kritje dolga. Žal ni bilo druge poti, kot izvesti skrajne ukrepe. Predlagamo, da vozite hitre dostave dokler se Vaše finančno stanje ne izboljša.<br><br>S spoštovanjem,<br>Vaš računovodja<br>Bank" #+ Message body
+		body: "Dragi komitent(ka),<br><br>žal Vas moramo obvestiti, da smo morali prodati Vašo osebno prikolico - $TRAILER_NAME$ - za $MONEY$. Na žalost ste imeli dolgotrajni dolg in ni bilo drugih sredstev za kritje dolga. Žal ni bilo druge poti, kot izvesti skrajne ukrepe. Predlagamo, da izbirate hitra dela dokler se Vaše finančno stanje ne izboljša.<br><br>S spoštovanjem,<br>Vaš računovodja<br>Bank" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellrep {
@@ -88,7 +88,7 @@ SiiNunit
 	mail_text: mailtext.comp_teaser {
 		from: "$COMPANY$, $CITY$" #+ Message sender
 		subject: "Iskani vozniki s svojo opremo" #+ Message subject
-		body: "Kogar zanima,<br><br> iščemo sposobne voznike s svojimi tovornjaki za veliko število dostav. Ponujamo konkurenčne cene tudi do $MONEY$ za eno dostavo. Prosimo, če imate lastno vozilo, zglasite se direktno v sprejemno pisarno v $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+		body: "Kogar zanima,<br><br> iščemo sposobne voznike s svojimi tovornjaki za veliko število dostav. Ponujamo konkurenčne cene tudi do $MONEY$ za eno delo. Prosimo, če imate lastno vozilo, zglasite se direktno v sprejemno pisarno v $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
 	}
 
 /**
@@ -98,13 +98,13 @@ SiiNunit
 	mail_text: mailtext.drv_idle {
 		from: "Voznik/ica $NAME$" #+ Message sender
 		subject: "Jaz potrebujem da tovornjak dela" #+ Message subject
-		body: "Živjo šef,<br><br> ne vem če si opazil ampak jaz sem brez dela v $CITY$ že $DAYS$ dni. Malo me to že živcira saj rabim denar za položnice in tega ne dobim če sedim v garaži brez dela v bljižni prihodnosti. Prosim priskrbi mi tovornjak v naslednih $DAYS2$, da lahko začnem delati, ker drugače bom prisiljen dati odpoved.<br><br>$NAME$" #+ Message body
+		body: "Živjo šef,<br><br> ne vem, če si opazil, ampak jaz sem brez dela v $CITY$ že $DAYS$. Postajam nervozen, saj potrebujem denar za položnice in tega ne dobim, če sedim v garaži brez dela. Prosim priskrbi mi tovornjak v naslednjih $DAYS2$, da lahko začnem delati, ali pa bom prisiljen dati odpoved.<br><br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_idle.female {
 		from: "Voznik/ica $NAME$" #+ Message sender - written by female
 		subject: "Jaz potrebujem da tovornjak dela" #+ Message subject - written by female
-		body: "Živjo šef,<br><br> ne vem če si opazil ampak jaz sem brez dela v $CITY$ že $DAYS$ dni. Malo me to že živcira saj rabim denar za položnice in tega ne dobim če sedim v garaži brez dela v bljižni prihodnosti. Prosim priskrbi mi tovornjak v naslednih $DAYS2$, da lahko začnem delati, ker drugače bom prisiljen dati odpoved.<br><br>$NAME$" #+ Message body - written by female
+		body: "Živjo šef,<br><br> ne vem, če si opazil, ampak jaz sem brez dela v $CITY$ že $DAYS$. Postajam nervozna, saj potrebujem denar za položnice in tega ne dobim, če sedim v garaži brez dela. Prosim priskrbi mi tovornjak v naslednjih $DAYS2$, da lahko začnem delati, ali pa bom prisiljena dati odpoved.<br><br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_quit {

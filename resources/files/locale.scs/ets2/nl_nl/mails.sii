@@ -88,7 +88,7 @@ SiiNunit
 	mail_text: mailtext.comp_teaser {
 		from: "$COMPANY$, $CITY$" #+ Message sender
 		subject: "Chauffeurs met eigen materieel nodig" #+ Message subject
-		body: "Aan wie dit leest,<br><br>We zijn op zoek naar ervaren chauffeurs met een eigen vrachtwagen voor een groot aantal leveringen. We bieden concurerende prijzen tot $MONEY$ voor een opdracht. Als je een eigen vrachtwagen hebt, neem dan alsjeblieft contact met ons op en informeer meteen bij ons dok in $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
+		body: "Aan wie dit leest,<br><br>We zijn op zoek naar ervaren chauffeurs met een eigen vrachtwagen voor een groot aantal leveringen. We bieden concurrerende tarieven tot wel $MONEY$ voor een opdracht. Als je een eigen vrachtwagen hebt, neem dan alsjeblieft contact met ons op bij ons dok in $CITY$.<br><br>$COMPANY$,<br>$CITY$" #+ Message body
 	}
 
 /**

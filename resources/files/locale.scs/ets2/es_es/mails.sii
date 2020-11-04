@@ -50,7 +50,7 @@ SiiNunit
 	mail_text: mailtext.bank_debtr {
 		from: "Banco" #+ Message sender
 		subject: "Descubierto liquidado" #+ Message subject
-		body: "Estimado cliente:<br><br>El descubierto en su cuenta ha sido liquidado. No complacerá volver a ayudarle si en un futuro volviese a necesitar nuestros servicios.<br><br>Que tenga un buen día,<br>Su gestor de cuentas bancario" #+ Message body
+		body: "Estimado cliente:<br><br>El descubierto en su cuenta ha sido liquidado. Nos complacerá volver a ayudarle si en un futuro volviese a necesitar nuestros servicios.<br><br>Que tenga un buen día,<br>Su gestor de cuentas bancario" #+ Message body
 	}
 
 	mail_text: mailtext.bank_sellpt {
@@ -98,13 +98,13 @@ SiiNunit
 	mail_text: mailtext.drv_idle {
 		from: "$NAME$" #+ Message sender
 		subject: "Necesito un camión para trabajar" #+ Message subject
-		body: "Hola, jefe:<br><br>No sé si te habrás percatado, pero llevo $DAYS$ en $CITY$ sin hacer nada. Esto no puede seguir así; necesito dinero para pagar facturas y lo único que estoy haciendo es perder el tiempo por no tener trabajo que hacer. Por favor, consígueme un camión en $DAYS2$ para que pueda realizar entregas o no me dejarás más opción que marcharme.<br><br>$NAME$" #+ Message body
+		body: "Hola, jefe:<br><br>No sé si te habrás percatado, pero llevo $DAYS$ en $CITY$ sin hacer nada. Esto no puede seguir así; necesito dinero para pagar facturas y lo único que estoy haciendo es perder el tiempo al no tener trabajo que hacer. Por favor, consígueme un camión en $DAYS2$ para que pueda realizar entregas o mi única opción será marcharme.<br><br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_idle.female {
 		from: "$NAME$" #+ Message sender - written by female
 		subject: "Necesito un camión para trabajar" #+ Message subject - written by female
-		body: "Hola, jefe:<br><br>No sé si te habrás percatado, pero llevo $DAYS$ en $CITY$ sin hacer nada. Esto no puede seguir así; necesito dinero para pagar facturas y lo único que estoy haciendo es perder el tiempo por no tener trabajo que hacer. Por favor, consígueme un camión en $DAYS2$ para que pueda realizar entregas o no me dejarás más opción que marcharme.<br><br>$NAME$" #+ Message body - written by female
+		body: "Hola, jefe:<br><br>No sé si te habrás percatado, pero llevo $DAYS$ en $CITY$ sin hacer nada. Esto no puede seguir así; necesito dinero para pagar facturas y lo único que estoy haciendo es perder el tiempo al no tener trabajo que hacer. Por favor, consígueme un camión en $DAYS2$ para que pueda realizar entregas o mi única opción será marcharme.<br><br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_quit {
@@ -122,13 +122,13 @@ SiiNunit
 	mail_text: mailtext.drv_sold {
 		from: "$NAME$" #+ Message sender
 		subject: "Me marcho" #+ Message subject
-		body: "Hola, jefe:<br><br>¡Han embargado el garaje de $CITY$! Se han presentado aquí unas personas del banco y me han pedido que me vaya. Parece que a la empresa no le está yendo muy bien, así que he decidido marcharme. De todos modos, no sería útil quedarme aquí sin un camión con el que poder trabajar. Probaré suerte en otro sitio.<br><br>Sin rencores,<br>$NAME$" #+ Message body
+		body: "Hola, jefe:<br><br>¡Han cerrado el garaje de $CITY$! Se han presentado aquí unas personas del banco y han dicho que tenía que irme. Parece que a la empresa no le está yendo muy bien, así que he decidido marcharme. De todos modos, no sería útil quedarme aquí sin un camión con el que poder trabajar. Probaré suerte en otro sitio.<br><br>Sin rencores,<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_sold.female {
 		from: "$NAME$" #+ Message sender - written by female
 		subject: "Me marcho" #+ Message subject - written by female
-		body: "Hola, jefe:<br><br>¡Han embargado el garaje de $CITY$! Se han presentado aquí unas personas del banco y me han pedido que me vaya. Parece que a la empresa no le está yendo muy bien, así que he decidido marcharme. De todos modos, no sería útil quedarme aquí sin un camión con el que poder trabajar. Probaré suerte en otro sitio.<br><br>Sin rencores,<br>$NAME$" #+ Message body - written by female
+		body: "Hola, jefe:<br><br>¡Han cerrado el garaje de $CITY$! Se han presentado aquí unas personas del banco y han dicho que tenía que irme. Parece que a la empresa no le está yendo muy bien, así que he decidido marcharme. De todos modos, no sería útil quedarme aquí sin un camión con el que poder trabajar. Probaré suerte en otro sitio.<br><br>Sin rencores,<br>$NAME$" #+ Message body - written by female
 	}
 	
 /**

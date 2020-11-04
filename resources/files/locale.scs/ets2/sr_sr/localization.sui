@@ -90,7 +90,7 @@
 	val[]: "Фабричка боја" #+ Header of list containing stock colors.
 
 	key[]: "every_paint_job_t"
-	val[]: "ФАРБАРА" #+ Header of list containing all paint jobs.
+	val[]: "ФАРБАЊЕ" #+ Header of list containing all paint jobs.
 
 	key[]: "every_paint_job"
 	val[]: "Фарбање" #+ Header of list containing all paint jobs.
@@ -182,7 +182,7 @@
 	val[]: "Оптимизовано за тешке терете и посебан транспорт" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Способност да ваш камион маневрише у малом простору " #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Способност да ваш камион маневрише у малом простору" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
 	val[]: "Оптимизован погон за лакше савладавање неравног терена" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
@@ -288,7 +288,7 @@
 	val[]: "Конфигурација камиона" #+ Icon allowing player to upgrade the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_config_about"
-	val[]: "Знате, ваља повремено нешто и набуџити на камион, тек да га више заволите." #+ Help message associated with upgrade icon.
+	val[]: "Знате, увек постоји нешто што можете подесити или обојити како бисте се осећали боље у свом камиону." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
 	val[]: "Цена" #+ Label of line with combined price of all new parts in basket.
@@ -297,7 +297,7 @@
 	val[]: "Повраћај новца" #+ Label of line with combine price of all parts sold as part of the upgrade.
 
 	key[]: "select_cat"
-	val[]: "Изаберите категорију опреме из горњег менија." #+ Text shown if user did not select any component category.
+	val[]: "Изаберите категорију надоградње из горњег менија." #+ Text shown if user did not select any component category.
 
 	key[]: "select_pin"
 	val[]: "Изаберите тачку на камиону да видите доступне додатке."
@@ -306,7 +306,7 @@
 	val[]: "Оригинална цена:" #+ Followed by the price of the original configuration of the new truck.
 
 	key[]: "tc_extra_price"
-	val[]: "Доплата:" #+ Followed by difference between the new price with all the modifications and the price of the original configuration.
+	val[]: "Додатна цена:" #+ Followed by difference between the new price with all the modifications and the price of the original configuration.
 
 	key[]: "tc_new_total"
 	val[]: "Нова укупна цена:" #+ Followed by total price of the new truck with all the selected modifications.
@@ -321,7 +321,7 @@
 	val[]: "ДИЈАГНОСТИКА" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "truck_diag"
-	val[]: "Сервис" #+ Icon allowing player to show damage on the truck. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Дијагностика" #+ Icon allowing player to show damage on the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_diag_about"
 	val[]: "Погледајте информације о вашем камиону и његовом тренутном стању."
@@ -448,7 +448,7 @@
 	val[]: "Штитник за сунце"
 
 	key[]: "sunshield"
-	val[]: "Сунцобран"
+	val[]: "Штитник за сунце"
 
 	key[]: "decals"
 	val[]: "Налепница"
@@ -556,10 +556,10 @@
 	val[]: "Конзолни украси" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
-	val[]: "Украси за средину и патос" #+ Interior accessories placed on the floor in the center of the truck cabin
+	val[]: "Украси за средину патоса" #+ Interior accessories placed on the floor in the center of the truck cabin
 
 	key[]: "set_dashbrd"
-	val[]: "Инструмент-табла" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Инструмент табла" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
 	val[]: "Украси за шофершајбну" #+ Large Pin for sets of small pins of the windshield accessories
@@ -604,16 +604,16 @@
 	val[]: "Раткапна" #+ Wheel hubcap / hub cover for rear wheel
 
 	key[]: "f_nuts"
-	val[]: "Шрафови" #+ Wheel nuts for front wheel
+	val[]: "Навртке" #+ Wheel nuts for front wheel
 
 	key[]: "fnuts"
-	val[]: "Шрафови" #+ Wheel nuts for front wheel
+	val[]: "Навртке" #+ Wheel nuts for front wheel
 
 	key[]: "r_nuts"
-	val[]: "Шрафови" #+ Wheel nuts for rear wheel
+	val[]: "Навртке" #+ Wheel nuts for rear wheel
 
 	key[]: "rnuts"
-	val[]: "Шрафови" #+ Wheel nuts for rear wheel
+	val[]: "Навртке" #+ Wheel nuts for rear wheel
 
 	key[]: "filter"
 	val[]: "Филтер ваздуха" #+ Air filter accessoty.
@@ -625,7 +625,7 @@
 	val[]: "Предња доња маска" #+ Plastic radiator mask (grill) in on the truck's front, bottom part
 
 	key[]: "f_badge"
-	val[]: "Предња ознака" #+ Brand badge on front of the truck
+	val[]: "Предња значка" #+ Brand badge on front of the truck
 
 	key[]: "f_logo"
 	val[]: "Предњи лого" #+ Brand logo on front of the truck
@@ -682,10 +682,10 @@
 	val[]: "Доња предња решетка" #+ Front grille net located in spaces on the front truck's mask (bottom part). Serves to cover truck's radiator
 
 	key[]: "f_intake_bar"
-	val[]: "Предња подлога ознакe" #+ The plate under truck logo/badge on the front of the truck
+	val[]: "Предња подлога значкe" #+ The plate under truck logo/badge on the front of the truck
 
 	key[]: "f_intk_b_cab"
-	val[]: "Предња маска Ribs" #+ Bars of plastic radiator mask (grill) in on the truck's front
+	val[]: "Ребра предње маске" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
 	key[]: "f_wnd_frame"
 	val[]: "Оквир ветробрана" #+ The plate under truck windshield (where wipers are installed).
@@ -768,37 +768,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Пребаците режим камере" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Поглед около" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Ротирај" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Увећај" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Панорамски" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "КОНТРОЛЕ РЕЖИМА ХОДАЊА:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Напред" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Назад" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Лево" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Десно" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Чучни" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Трчи" #+ Tooltip for run.
 #@}
@@ -808,7 +808,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Омогућен поглед из првог лица" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Омогућена кружна камера" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -847,6 +847,9 @@
 	key[]: "delete"
 	val[]: "Обриши" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Избриши профил" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Побољшај" #+ Button allowing user to upgrade something.
 
@@ -875,6 +878,8 @@
 	key[]: "save_in_progress"
 	val[]: "Снимање..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Притисните $KEY$ да прескочите сцену." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -973,7 +978,7 @@
 	val[]: "Јесте ли сигурни да желите да обришете изабрано?"
 
 	key[]: "save_input_hint"
-	val[]: "- Унесите име за фајл -" #+ Text shown in the save name edit box until any content is entered.
+	val[]: "- Унесите име новог снимка -" #+ Text shown in the save name edit box until any content is entered.
 
 	key[]: "save"
 	val[]: "Сачувај" #+ Button triggering save.
@@ -1020,7 +1025,7 @@
 	val[]: "Дојадиле су вам обичне боје? Додајте мало живости!" #+ Help message associated with paint shop icon.
 
 	key[]: "paintjob_t"
-	val[]: "ПРЕДЛОШЦИ" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
+	val[]: "ШЕМАТСКИ НАЦРТ" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
 
 	key[]: "paint_channel"
 	val[]: "Место за боју" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
@@ -1159,11 +1164,11 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Следећа удаљеност од контролне тачке"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Следећа удаљеност од контролне тачке" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Следеће време контролне тачке" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Следеће време контролне тачке" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1304,13 +1309,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
+	val[]: "МЕНАЏЕР ПРОФИЛА" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
 	val[]: "EURO TRUCK SIMULATOR 2 - ПОКРЕТАЊЕ" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "ВЕСТИ СА МРЕЖЕ" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Профили" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Промени профил" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Постаните друга особа." #+ Help message associated with profile selection icon.
@@ -1327,26 +1335,47 @@
 	key[]: "continue_game"
 	val[]: "Настави игру" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Користите изабрани профил" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Нови профил" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Статус профила" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Управљање МОД-овима профила" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Управљање профилима" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Измени профил" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Некомпатибилан профил!<br>Покушајте да ажурирате игру на најновију верзију." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Гаража у власништву" #+ How many garages the player owns
+	val[]: "Гараже у власништву:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "малих: $SMALL$, великих: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Власник камиона" #+ how many trucks the player owns
+	val[]: "Камиони у власништву:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Власник приколице" #+ how many trailers the player owns
+	val[]: "Приколице у власништву:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Синхронизација у 'Steam' облаку:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Статус на мрежи"
+	val[]: "Профил Свет Камиона:"
+
+	key[]: "mods_in_use"
+	val[]: "Модови у употреби:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Неповезан!"	#+ to the WoTR
@@ -1380,6 +1409,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Немате камиона! Молимо, омогућите барем један камионски ДЛЦ и покрените игру поново." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "МОД-ви у употреби: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Нема МОД-ова у употреби"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Синхронизација у 'Steam' облаку је активна"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Синхронизација у 'Steam' облаку је искључена <br><offset vshift=7><color value=@@clr_txt_d@@>кликните да укључите"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Свет камиона повезан"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "Свет камиона није повезан <br><offset vshift=7><color value=@@clr_txt_d@@>кликните да повежете"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "ПРОФИЛ ДЕТАЉИ"
 #@
 #@}
 
@@ -1541,10 +1595,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Нова верзија<br>је доступна"
+	val[]: "Користите старију верзију игре.<br><link url=$URL_LINK$ color=@@clr_link@@>Ажурирајте на новију верзију</link>да бисте добили све функције."
 
 	key[]: "new_version_available_steam"
-	val[]: "Новија верзија<br>је доступна.<br><br>'Steam' ће аутоматски унапредити игру осим ако нисте искључили ту опцију."
+	val[]: "Користите старију верзију игре.<br>'Steam' ће аутоматски ажурирати игру ако аутоматска ажурирања нису онемогућена."
 
 	key[]: "allow_news"
 	val[]: "Да ли желите да игра сама проверава има ли новијих верзија и новости?" #+ Text shown in a message box.
@@ -1822,6 +1876,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Јачина издувa камиона" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Јачина турбо каниона" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Јачина камионских ефеката" #+ Slider controlling volume of the truck effects.
@@ -2401,7 +2458,7 @@
 
 	key[]: "walk_mode"
 	val[]: "РЕЖИМ ХОДАЊА"
-	
+
 	key[]: "other_controls"
 	val[]: "ОСТАЛО"
 #@}
@@ -2704,22 +2761,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Напред" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Назад" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Лево" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Десно" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Чучни" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Трчи" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3141,7 +3198,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Висина множилаца (у кабини)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Множилац зевања (у режиму ходања)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3152,34 +3209,34 @@
 	val[]: "Максимални угао погледа" #+ Maximal angle change generated by gaze tracking.
 
 	key[]: "eye_gaze_scale"
-	val[]: "Брзина снимања покрета"
+	val[]: "Брзина праћења погледа"
 
 	key[]: "eye_gaze_exponent"
-	val[]: "Експонент снимања погледа"
+	val[]: "Експонент праћења погледа"
 
 	key[]: "eye_gaze_inflection_point"
-	val[]: "Тачка нагиба снимања погледа"
+	val[]: "Тачка превијања праћења погледа"
 
 	key[]: "eye_gaze_start_point"
-	val[]: "Почетна тачка снимања погледа"
+	val[]: "Полазна тачка за праћење погледа"
 
 	key[]: "eye_gaze_end_point"
-	val[]: "Крајња тачка снимања погледа"
+	val[]: "Крајња тачка за праћење погледа"
 
 	key[]: "eye_head_scale"
 	val[]: "Однос праћења главе"
 
 	key[]: "eye_head_exponent"
-	val[]: "Експонент снимања главе"
+	val[]: "Експонент праћења главе"
 
 	key[]: "eye_head_inflection_point"
-	val[]: "Тачка нагиба снимања главе"
+	val[]: "Тачка прегиба праћења главе"
 
 	key[]: "eye_head_start_point"
-	val[]: "Почетна тачка снимања главе"
+	val[]: "Почетна тачка праћења главе"
 
 	key[]: "eye_head_end_point"
-	val[]: "Крајња тачка снимања главе"
+	val[]: "Крајња тачка за праћење главе"
 
 	key[]: "eye_head_mode_direct_tooltip"
 	val[]: "Ротација главе директно одговара ротацији камере у игри. Препоручује се у нормалним ситуацијама у кокпиту/кабини."
@@ -3222,7 +3279,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Умножава одзивност када окрећете главу горе и доле (у кабини)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Умножава одзивност када ротирате главу окрећући је са стране на страну (у режиму ходања)."
 
@@ -3977,12 +4034,10 @@
 	val[]: "Одмах возите у сервис!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Пуна информација путовања" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Пуна информација путовања" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Информације о следећој контролној тачки" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4085,6 +4140,15 @@
 
 	key[]: "park_nf"
 	val[]: "Ово је иначе место за одмор,<br>али сада нисте уморни."
+
+	key[]: "viewpoint_title"
+	val[]: "Видиковац"
+
+	key[]: "viewpoint_msg"
+	val[]: "Притисните следећи тастер да бисте активирали тачку видиковца:"
+
+	key[]: "viewpoint_found"
+	val[]: "Открили сте нови видиковац!"
 
 	key[]: "gas_station"
 	val[]: "Бензинска станица"
@@ -5370,7 +5434,7 @@
 	val[]: "Јогурт"
 
 	key[]: "cn_helicopter"
-	val[]: "Хеликоптер - Ring-429"
+	val[]: "Хеликоптер - 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Бушач 'D-50'"
@@ -5379,7 +5443,7 @@
 	val[]: "Ваљак 'DYNA CC-2200'"
 
 	key[]: "cn_rstractor"
-	val[]: "Трактор 'RS-666'"
+	val[]: "Трактор гусеничар"
 
 	key[]: "cn_yacht"
 	val[]: "Јахта"
@@ -5824,7 +5888,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Асфалтер 'Writigen 808'"
+	val[]: "Машина за асфалт - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Индустријски кабловски калем"
@@ -5902,6 +5966,12 @@
 	key[]: "tn_s_ki_solid"
 	val[]: "Кипер-приколица"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Low Bed Extendable Trailer"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Low Loader Extendable Trailer"
+
 	key[]: "tn_van_transporter"
 	val[]: "Превоз комбија"
 
@@ -5966,8 +6036,8 @@
 	key[]: "tn_schw_curtain"
 	val[]: "Schwarzmüller платформа за цераде"
 
-	key[]: "tn_schw_overweight"
-	val[]: "Schwarzmuller платформа"
+	key[]: "tn_schw_lowloader"
+	val[]: "'Schwarzmüller' ниски утоваривач"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Schwarzmuller хладњача"
@@ -7286,6 +7356,15 @@
 
 	key[]: "mapl_train"
 	val[]: "Тунел испод Ламанша"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Неоткривена тачка"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Видиковац (посећено)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Видиковац (непосећено)"
 
 	key[]: "mapl_gas"
 	val[]: "Бензинска станица"
@@ -9390,6 +9469,9 @@
 	key[]: "duty_paint"
 	val[]: "Фарба 'за дужност'" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Classic" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Фабрички" #+ Stock truck accesory general
 
@@ -9491,7 +9573,7 @@
 
 	key[]: "exclusive_chrom"
 	val[]: "Ексклузивно хромирана" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Ексклузивна УК" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10400,7 +10482,7 @@
 	val[]: "Освежи" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Излистај уговоре" #+ Opens browser on WOTR page to search for a job
+	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Потпиши насумични уговор" #+ Connects with server and accept random job in proximity of player's current position
@@ -11151,7 +11233,7 @@
 	val[]: "Лични циљ је испуњен!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Отворите страницу догађаја" #+ Button opening event page on WoTr.
+	val[]: "Open Events Page" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Напредак" #+ The label used to indicate progress of the event.
@@ -11159,11 +11241,14 @@
 	key[]: "event_info"
 	val[]: "ИНФОРМАЦИЈЕ О ДОГАЂАЈУ" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Догађај" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Live Events" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Ниво" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "There is no active event at the moment."
 #@}
 
 #+ Trailer ownership
@@ -11660,11 +11745,21 @@
 	key[]: "log"
 	val[]: "Трупци"
 
+	key[]: "lowbed"
+	val[]: "Ниска приколица"
+
+	key[]: "lowboy"
+	val[]: "Ниски утоваривач"
+
 	key[]: "refrigerated"
 	val[]: "Хладњача"
 
-	key[]: "liquid"
-	val[]: "Течност"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Резервоар"
 
 #@}
 
@@ -11679,18 +11774,6 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Општа, сува роба"
 
-	key[]: "body_cargo_types_foodtank"
-	val[]: "Течни прехрамбени производи"
-
-	key[]: "body_cargo_types_insulated"
-	val[]: "Охлађена роба"
-
-	key[]: "body_cargo_types_log"
-	val[]: "Трупци, греде или цеви"
-
-	key[]: "body_cargo_types_refrigerated"
-	val[]: "Смрзнута, расхлађена роба"
-
 	key[]: "body_cargo_types_flatbed"
 	val[]: "Грађевинска опрема и материјали"
 
@@ -11699,6 +11782,25 @@
 
 	key[]: "body_cargo_types_flatbed_cont"
 	val[]: "Грађевински материјали и контејнери"
+
+	key[]: "body_cargo_types_foodtank"
+	val[]: "Течна прехрамбена роба"
+
+	key[]: "body_cargo_types_insulated"
+	val[]: "Охлађена роба"
+
+	key[]: "body_cargo_types_log"
+	val[]: "Трупци, греде или цеви"
+
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Тешка механизација и висок терет"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Тешка механизација и висок терет"
+
+	key[]: "body_cargo_types_refrigerated"
+	val[]: "Смрзнута, расхлађена роба"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11782,6 +11884,19 @@
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 осовине"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 осовине"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 осовине, прошириве, дуге"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 осовине, прошириве, кратке"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 Осовина"
 
@@ -11790,6 +11905,12 @@
 
 	key[]: "tn_single_2axle_20"
 	val[]: "2 Осовине, 20 стопа"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 осовине, прошириве, дуге"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 осовине, прошириве, кратке"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 Осовине, Широка"
@@ -11812,11 +11933,20 @@
 	key[]: "tn_single_3axle_ext_40"
 	val[]: "3 Осовине, Продужена, 40 стопа"
 
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 осовине, прошириве, дуге"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "3 осовине, прошириве, кратке"
+
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "3 Осовине, Флексибилна, 2 х 20 стопа"
 
 	key[]: "tn_single_3axle_flex_40"
 	val[]: "3 Осовине, Флексибилна, 40 стопа"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 осовине, широке"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 Осовине, 2 Пратеће"
@@ -11827,8 +11957,20 @@
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 Осовине, Пратећа, Широка, Задња"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 осовине, прошириве, дуге"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 осовине, прошириве, кратке"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 Осовине, Пратећа"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 осовине, прошириве, дуге"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 осовине, прошириве, кратке"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "B-двострука, 2+2 Осовине"
@@ -11957,6 +12099,12 @@
 	key[]: "bs_scs_log_wood"
 	val[]: "Машина за товарење дрва са дрвеним подом"
 
+	key[]: "bs_scs_lowbed"
+	val[]: "Ниска приколица"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Ниски утоваривач"
+
 	key[]: "bs_scs_reefer"
 	val[]: "Хладњача"
 
@@ -11972,6 +12120,9 @@
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Цистерна за храну"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Ниски утоваривач"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Платформа"
@@ -12009,6 +12160,9 @@
 
 	key[]: "extinguisher"
 	val[]: "П. П. апарат"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Flip Toe Ramps"
 
 	key[]: "front_cage"
 	val[]: "Предњи кавез"
@@ -12066,6 +12220,9 @@
 
 	key[]: "plastic_box"
 	val[]: "Пластична кутија"
+
+	key[]: "ramps"
+	val[]: "Рампе"
 
 	key[]: "skirt_big"
 	val[]: "Бочна сукњица"

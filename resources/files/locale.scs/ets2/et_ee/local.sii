@@ -54,6 +54,9 @@ localization_db : .localization
 	key[]: "pipe_char"
 	val[]: "|" #+ Helper which can be used when passing text which might contain this character as input to UI templates which use it as parameter separator
 
+	key[]: "check_char"
+	val[]:	"✔" #+ WoTr event completion symbol
+
 # DLC names
 
 	key[]: "dlc_name"
@@ -174,7 +177,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_cz@@"
 
 	key[]: "package_eut2_christmas"
-	val[]: "DLC - Christmas Paint Jobs"
+	val[]: "DLC - Christmas Paint Jobs Pack"
 
 	key[]: "onlineid_eu_xmas"
 	val[]: "@@package_eut2_christmas@@"
@@ -413,6 +416,12 @@ localization_db : .localization
 	key[]: "package_eut2_flags_nl"
 	val[]: "DLC - Dutch Paint Jobs"
 
+	key[]: "onlineid_eu_flags_cn"
+	val[]: "@@package_eut2_flags_cn@@"
+
+	key[]: "package_eut2_flags_cn"
+	val[]: "DLC - Chinese Paint Jobs"
+
 	key[]: "package_eut2_space"
 	val[]: "DLC - Space Paint Jobs Pack"
 
@@ -434,20 +443,20 @@ localization_db : .localization
 	key[]: "package_eut2_flags_lv"
 	val[]: "DLC - Latvian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lv"
-	val[]: "@@package_eut2_lv@@"
+	key[]: "onlineid_eu_flags_lv"
+	val[]: "@@package_eut2_flags_lv@@"
 
 	key[]: "package_eut2_flags_lt"
 	val[]: "DLC - Lithuanian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lt"
-	val[]: "@@package_eut2_lt@@"
+	key[]: "onlineid_eu_flags_lt"
+	val[]: "@@package_eut2_flags_lt@@"
 	
 	key[]: "package_eut2_flags_ee"
 	val[]: "DLC - Estonian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_ee"
-	val[]: "@@package_eut2_ee@@"
+	key[]: "onlineid_eu_flags_ee"
+	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
 	val[]: "DLC - Goodyear"
@@ -458,7 +467,7 @@ localization_db : .localization
 	key[]: "package_eut2_actros_tuning"
 	val[]: "DLC - Actros Tuning Pack"
 
-	key[]: "onlineid_eu_actros_tuning"
+	key[]: "onlineid_eu_actro_tun"
 	val[]: "@@package_eut2_actros_tuning@@"
 
 	key[]: "package_eut2_balkane"
@@ -476,8 +485,8 @@ localization_db : .localization
 	key[]: "package_eut2_flags_bg"
 	val[]: "DLC - Bulgarian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_bg"
-	val[]: "@@package_eut2_bg@@"
+	key[]: "onlineid_eu_flags_bg"
+	val[]: "@@package_eut2_flags_bg@@"
 	
 	key[]: "package_eut2_hs_schoch"
 	val[]: "DLC - HS-Schoch Tuning Pack"
@@ -485,11 +494,17 @@ localization_db : .localization
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
 	
-	key[]: "package_eut2_fh_pack"
+	key[]: "package_eut2_fhpack"
 	val[]: "DLC - FH Pack"
 
 	key[]: "onlineid_eu_fhpack"
 	val[]: "@@package_eut2_fhpack@@"
+
+	key[]: "package_eut2_sstrip"
+	val[]: "DLC - Super Stripes Paint Jobs Pack"
+
+	key[]: "onlineid_eu_supstrip"
+	val[]: "@@package_eut2_sstrip@@"
 
 	# Truck brands
 
@@ -634,14 +649,20 @@ localization_db : .localization
 	key[]: "series_scs_container"
 	val[]: "CNT"
 
+	key[]: "series_scs_foodtank"
+	val[]: "FDT"
+
 	key[]: "series_scs_flatbed"
 	val[]: "FLB"
+
+	key[]: "series_scs_lowloader"
+	val[]: "LLD"
 
 	key[]: "series_scs_log"
 	val[]: "LOG"
 
-	key[]: "series_scs_foodtank"
-	val[]: "FDT"
+	key[]: "series_scs_lowbed"
+	val[]: "LWB"
 
 	key[]: "brand_krone"
 	val[]: "Krone"
@@ -1115,10 +1136,10 @@ localization_db : .localization
 	val[]: "Kaitseraud"
 
 	key[]: "l_horn"
-	val[]: "Left Horn"
+	val[]: "Vasak pasun"
 
 	key[]: "r_horn"
-	val[]: "Right Horn"
+	val[]: "Parem pasun"
 
 	key[]: "f_mirror"
 	val[]: "Esipeegel"
@@ -1465,37 +1486,37 @@ localization_db : .localization
 
 	key[]: "switch_walking_cam"
 	val[]: "Vaheta kaamerarežiimi" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Vaata ringi" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Pööra" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Suumi" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Liiguta" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "LIIKUMISREŽIIMI NUPUD:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Edasi" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Tagasi" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Vasakule" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Paremale" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Kükita" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Jookse" #+ Tooltip for run.
 #@}
@@ -1505,7 +1526,7 @@ localization_db : .localization
 
 	key[]: "notification_walking_camera"
 	val[]: "Peakaamera sisselülitatud" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Pöörlev kaamera sisselülitatud" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -1544,6 +1565,9 @@ localization_db : .localization
 	key[]: "delete"
 	val[]: "Kustuta" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Kustuta profiil" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Uuenda" #+ Button allowing user to upgrade something.
 
@@ -1572,6 +1596,8 @@ localization_db : .localization
 	key[]: "save_in_progress"
 	val[]: "Salvestan..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Vajuta $KEY$, et vaheklipp ära jätta." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1856,11 +1882,11 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Järgmise punkti kaugus"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Järgmise punkti kaugus" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Järgmise punkti aeg" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Järgmise punkti aeg" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -2001,13 +2027,16 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
+	val[]: "PROFIILI HALDUS" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
 	val[]: "EURO TRUCK SIMULATOR 2 - ALGUS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "UUDISEID VÕRGUST" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Kasutajad" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Muuda profiili" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Ole keegi teine." #+ Help message associated with profile selection icon.
@@ -2024,26 +2053,47 @@ localization_db : .localization
 	key[]: "continue_game"
 	val[]: "Jätka mängu" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Kasuta valitud profiili" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Uus kasutaja" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Profiili staatus" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Halda profiili mod'e" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Halda profiile" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Muuda profiile" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Mitteühilduv kasutaja!<br>Uuendage mäng uusimale saadaolevale versioonile." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Graažide arv" #+ How many garages the player owns
+	val[]: "Sinu garaažide arv:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "väike: $SMALL$, suur: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Omatavad veokid" #+ how many trucks the player owns
+	val[]: "Sinu veokite arv:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Haagiseid" #+ how many trailers the player owns
+	val[]: "Sinu haagiste arv:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Steam'i pilve sünkronisatsioon:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Võrguolek"
+	val[]: "World of Trucks profiil:"
+
+	key[]: "mods_in_use"
+	val[]: "Kasutuses mod'id:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Ei ole ühendatud!"	#+ to the WoTR
@@ -2077,6 +2127,31 @@ localization_db : .localization
 
 	key[]: "no_truck_dlc"
 	val[]: "Veokeid ei leitud! Palun aktiveeri vähemalt üks veoki DLC ja taaskäivita mäng." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Kasutuses mod'id: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Mod'e pole kasutuses"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Steam'i pilve sünkronisatsioon on aktiivne"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Steam'i pilve sünkronisatsioon on keelatud<br><offset vshift=7><color value=@@clr_txt_d@@>klõpsa, et lubada"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "World of Trucks on ühendatud"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "World of Trucks ei ole ühendatud<br><offset vshift=7><color value=@@clr_txt_d@@>klõpsa, et ühendada"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "PROFIILI DETAILID"
 #@
 #@}
 
@@ -2238,10 +2313,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Uuem versioon<br>on saadaval"
+	val[]: "Sa kasutad mängust vanemat versiooni.<br><link url=$URL_LINK$ color=@@clr_link@@>Uuenda uuemale versioonile</link>, et saada endale uusimaid omadusi."
 
 	key[]: "new_version_available_steam"
-	val[]: "Uuem versioon<br> on saadaval!<br><br>Steam uuendab mängu automaatselt, kui automaatsed uuendused on lubatud."
+	val[]: "Sa kasutad mängust vanemat versiooni.<br>Steam uuendab su mängu automaatselt kui sa pole automaatseid uuendusi ise keelanud."
 
 	key[]: "allow_news"
 	val[]: "Kas sa tahad lubada mängul automaatselt kontrollida uuendusi ja uudiseid võrgust?" #+ Text shown in a message box.
@@ -2519,6 +2594,9 @@ localization_db : .localization
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Veoki väljalaske helitugevus" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Veoauto turbo hääl" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Veoki efektide helitugevus" #+ Slider controlling volume of the truck effects.
@@ -3098,7 +3176,7 @@ localization_db : .localization
 
 	key[]: "walk_mode"
 	val[]: "KÕNDIMISREŽIIM"
-	
+
 	key[]: "other_controls"
 	val[]: "MUU"
 #@}
@@ -3401,22 +3479,22 @@ localization_db : .localization
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Edasi" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Tagasi" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Vasakule" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Paremale" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Kükita" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Jookse" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3795,7 +3873,7 @@ localization_db : .localization
 	val[]: "Oled kindel, et tahad valitud eelsätte kustutada?" #+ Confirmation dialog shown when user requests deletion of extended view preset
 
 	key[]: "eye_preset_overwrite_confirmation"
-	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+	val[]: "Juba olemasolev samanimeline eelsäte kirjutatakse üle. Kas soovid jätkata?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Pilgu järgimise sätted" #+ Header of the gaze settings
@@ -3838,7 +3916,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale"
 	val[]: "Pööramise kordaja (kabiinis)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Kallutamise kordaja (jalutusrežiimis)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3919,7 +3997,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Mitmekordistab reageerimiskiirust kui sa pöörad pead üles-alla (kabiinis)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Mitmekordistab reageerimiskiirust kui sa pöörad oma pead küljelt-küljele (jalutusrežiimis)."
 
@@ -4674,12 +4752,10 @@ localization_db : .localization
 	val[]: "Külasta koheselt teenindust!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Täielik sõidu info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Täielik sõidu info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Järgmise punkti info" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4782,6 +4858,15 @@ localization_db : .localization
 
 	key[]: "park_nf"
 	val[]: "See on puhkamiskoht <br> aga sa ei ole hetkel väsinud."
+
+	key[]: "viewpoint_title"
+	val[]: "Vaatepunkt"
+
+	key[]: "viewpoint_msg"
+	val[]: "Vajuta järgnevat nuppu, et aktiveerida vaatepunkti:"
+
+	key[]: "viewpoint_found"
+	val[]: "Sa avastasid uue vaatepunkti!"
 
 	key[]: "gas_station"
 	val[]: "Tankla"
@@ -6067,7 +6152,7 @@ localization_db : .localization
 	val[]: "Jogurt"
 
 	key[]: "cn_helicopter"
-	val[]: "Helikopter - Ring-429"
+	val[]: "Helikopter - 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Puur - D-50"
@@ -6076,7 +6161,7 @@ localization_db : .localization
 	val[]: "Teerull - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Traktor - RS-666"
+	val[]: "Buldooser"
 
 	key[]: "cn_yacht"
 	val[]: "Jaht"
@@ -6521,7 +6606,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asfaldifrees - Writigen 808"
+	val[]: "Asfaldifrees - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Tööstuslik kaablirull"
@@ -6599,6 +6684,12 @@ localization_db : .localization
 	key[]: "tn_s_ki_solid"
 	val[]: "Kallur"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Madal pikendatav platvormhaagis"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Madal pikendatav haagis"
+
 	key[]: "tn_van_transporter"
 	val[]: "Kaubiku transportija"
 
@@ -6663,7 +6754,7 @@ localization_db : .localization
 	key[]: "tn_schw_curtain"
 	val[]: "Schwarzmüller tendiplatvorm"
 
-	key[]: "tn_schw_overweight"
+	key[]: "tn_schw_lowloader"
 	val[]: "Schwarzmüller madalhaagis"
 
 	key[]: "tn_schw_reefer"
@@ -7983,6 +8074,15 @@ localization_db : .localization
 
 	key[]: "mapl_train"
 	val[]: "Eurotunnel"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Avastamata punkt"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Vaatepunkt (avastatud)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Vaatepunkt (mitteavastatud)"
 
 	key[]: "mapl_gas"
 	val[]: "Tankla"
@@ -10087,6 +10187,9 @@ localization_db : .localization
 	key[]: "duty_paint"
 	val[]: "Töövärv" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Classic" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Tehasepoolne" #+ Stock truck accesory general
 
@@ -10188,7 +10291,7 @@ localization_db : .localization
 
 	key[]: "exclusive_chrom"
 	val[]: "Eksklusiivne kroomitud" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Eksklusiivne UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -11097,7 +11200,7 @@ localization_db : .localization
 	val[]: "Värskenda" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Otsi lepinguid" #+ Opens browser on WOTR page to search for a job
+	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Allkirjasta suvaline leping" #+ Connects with server and accept random job in proximity of player's current position
@@ -11848,7 +11951,7 @@ localization_db : .localization
 	val[]: "Isiklik eesmärk täidetud!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Ava sündmuse leht" #+ Button opening event page on WoTr.
+	val[]: "Open Events Page" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Kulgemine" #+ The label used to indicate progress of the event.
@@ -11856,11 +11959,14 @@ localization_db : .localization
 	key[]: "event_info"
 	val[]: "SÜNDMUSE INFO" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Sündmus" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Live Events" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Tase" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "There is no active event at the moment."
 #@}
 
 #+ Trailer ownership
@@ -12357,11 +12463,21 @@ localization_db : .localization
 	key[]: "log"
 	val[]: "Palk"
 
+	key[]: "lowbed"
+	val[]: "Madal platvorm"
+
+	key[]: "lowboy"
+	val[]: "Madalhaagis"
+
 	key[]: "refrigerated"
 	val[]: "Konditsioneeriga"
 
-	key[]: "liquid"
-	val[]: "Vedelik"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Tsistern"
 
 #@}
 
@@ -12376,6 +12492,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Üldised, kuivtooted"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Ehitusseadmed ja materjalid"
+
+	key[]: "body_cargo_types_flatbed_brck"
+	val[]: "Ehitusseadmed ja materjalid"
+
+	key[]: "body_cargo_types_flatbed_cont"
+	val[]: "Ehitusmaterjalid ja konteinerid"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Vedelad toiduained"
 
@@ -12385,17 +12510,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_log"
 	val[]: "Palgid, torud või talad"
 
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Rasketehnika ning kõrge veos"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Rasketehnika ning kõrge veos"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Külmutatud, jahutatud tooted"
 
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Ehitusseadmed ja materjalid"
-
-	key[]: "body_cargo_types_flatbed_brck"
-	val[]: "Ehitusseadmed ja materjalid"
-
-	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Ehitusmaterjalid ja konteinerid"
 #@}
 
 #+ Trailer chain type names.
@@ -12479,6 +12602,19 @@ localization_db : .localization
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 telge"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 telge"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 telge, pikendatav, pikk"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 telge, pikendatav, lühike"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 telg"
 
@@ -12487,6 +12623,12 @@ localization_db : .localization
 
 	key[]: "tn_single_2axle_20"
 	val[]: "2 telge, 20 jalga"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 telge, pikendatav, pikk"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 telge, pikendatav, lühike"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 telge, hajutatud"
@@ -12509,11 +12651,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_ext_40"
 	val[]: "3 telge, pikendatav, 40 jalga"
 
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 telge, pikendatav, pikk"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "3 telge, pikendatav, lühike"
+
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "3 telge, mitmekülgne, 2x20 jalga"
 
 	key[]: "tn_single_3axle_flex_40"
 	val[]: "3 telge, mitmekülgne, 40 jalga"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 telge, hajutatud"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 telge, 2 juhitavat"
@@ -12524,8 +12675,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 telge, juhitavad, hajutatud, tagumised"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 telge, pikendatav, pikk"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 telge, pikendatav, lühike"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 telge, juhitavad"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 telge, pikendatav, pikk"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 telge, pikendatav, lühike"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "B-double, 2+2 telge"
@@ -12654,6 +12817,12 @@ localization_db : .localization
 	key[]: "bs_scs_log_wood"
 	val[]: "Puitpõrandaga palgihaagis"
 
+	key[]: "bs_scs_lowbed"
+	val[]: "Madal platvorm"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Madalhaagis"
+
 	key[]: "bs_scs_reefer"
 	val[]: "Konditsioneeriga"
 
@@ -12669,6 +12838,9 @@ localization_db : .localization
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Toidutsistern"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Madalhaagis"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Platvorm"
@@ -12706,6 +12878,9 @@ localization_db : .localization
 
 	key[]: "extinguisher"
 	val[]: "Tulekustuti"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Pealesõidurambid"
 
 	key[]: "front_cage"
 	val[]: "Eesmine puur"
@@ -12763,6 +12938,9 @@ localization_db : .localization
 
 	key[]: "plastic_box"
 	val[]: "Plastikkast"
+
+	key[]: "ramps"
+	val[]: "Rambid"
 
 	key[]: "skirt_big"
 	val[]: "Küljekate"

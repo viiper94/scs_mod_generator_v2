@@ -54,6 +54,9 @@ localization_db : .localization
 	key[]: "pipe_char"
 	val[]: "|" #+ Helper which can be used when passing text which might contain this character as input to UI templates which use it as parameter separator
 
+	key[]: "check_char"
+	val[]:	"✔" #+ WoTr event completion symbol
+
 # DLC names
 
 	key[]: "dlc_name"
@@ -174,7 +177,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_cz@@"
 
 	key[]: "package_eut2_christmas"
-	val[]: "DLC - Christmas Paint Jobs"
+	val[]: "DLC - Christmas Paint Jobs Pack"
 
 	key[]: "onlineid_eu_xmas"
 	val[]: "@@package_eut2_christmas@@"
@@ -413,6 +416,12 @@ localization_db : .localization
 	key[]: "package_eut2_flags_nl"
 	val[]: "DLC - Dutch Paint Jobs"
 
+	key[]: "onlineid_eu_flags_cn"
+	val[]: "@@package_eut2_flags_cn@@"
+
+	key[]: "package_eut2_flags_cn"
+	val[]: "DLC - Chinese Paint Jobs"
+
 	key[]: "package_eut2_space"
 	val[]: "DLC - Space Paint Jobs Pack"
 
@@ -434,20 +443,20 @@ localization_db : .localization
 	key[]: "package_eut2_flags_lv"
 	val[]: "DLC - Latvian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lv"
-	val[]: "@@package_eut2_lv@@"
+	key[]: "onlineid_eu_flags_lv"
+	val[]: "@@package_eut2_flags_lv@@"
 
 	key[]: "package_eut2_flags_lt"
 	val[]: "DLC - Lithuanian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_lt"
-	val[]: "@@package_eut2_lt@@"
+	key[]: "onlineid_eu_flags_lt"
+	val[]: "@@package_eut2_flags_lt@@"
 	
 	key[]: "package_eut2_flags_ee"
 	val[]: "DLC - Estonian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_ee"
-	val[]: "@@package_eut2_ee@@"
+	key[]: "onlineid_eu_flags_ee"
+	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
 	val[]: "DLC - Goodyear"
@@ -458,7 +467,7 @@ localization_db : .localization
 	key[]: "package_eut2_actros_tuning"
 	val[]: "DLC - Actros Tuning Pack"
 
-	key[]: "onlineid_eu_actros_tuning"
+	key[]: "onlineid_eu_actro_tun"
 	val[]: "@@package_eut2_actros_tuning@@"
 
 	key[]: "package_eut2_balkane"
@@ -476,8 +485,8 @@ localization_db : .localization
 	key[]: "package_eut2_flags_bg"
 	val[]: "DLC - Bulgarian Paint Jobs Pack"
 
-	key[]: "onlineid_eu_bg"
-	val[]: "@@package_eut2_bg@@"
+	key[]: "onlineid_eu_flags_bg"
+	val[]: "@@package_eut2_flags_bg@@"
 	
 	key[]: "package_eut2_hs_schoch"
 	val[]: "DLC - HS-Schoch Tuning Pack"
@@ -485,11 +494,17 @@ localization_db : .localization
 	key[]: "onlineid_eu_schoch"
 	val[]: "@@package_eut2_schoch@@"
 	
-	key[]: "package_eut2_fh_pack"
+	key[]: "package_eut2_fhpack"
 	val[]: "DLC - FH Pack"
 
 	key[]: "onlineid_eu_fhpack"
 	val[]: "@@package_eut2_fhpack@@"
+
+	key[]: "package_eut2_sstrip"
+	val[]: "DLC - Super Stripes Paint Jobs Pack"
+
+	key[]: "onlineid_eu_supstrip"
+	val[]: "@@package_eut2_sstrip@@"
 
 	# Truck brands
 
@@ -634,14 +649,20 @@ localization_db : .localization
 	key[]: "series_scs_container"
 	val[]: "CNT"
 
+	key[]: "series_scs_foodtank"
+	val[]: "FDT"
+
 	key[]: "series_scs_flatbed"
 	val[]: "FLB"
+
+	key[]: "series_scs_lowloader"
+	val[]: "LLD"
 
 	key[]: "series_scs_log"
 	val[]: "LOG"
 
-	key[]: "series_scs_foodtank"
-	val[]: "FDT"
+	key[]: "series_scs_lowbed"
+	val[]: "LWB"
 
 	key[]: "brand_krone"
 	val[]: "Krone"
@@ -1465,37 +1486,37 @@ localization_db : .localization
 
 	key[]: "switch_walking_cam"
 	val[]: "Skift kameratilstand" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Se omkring" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Roter" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Zoom" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Panorer" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "STYRING AF GANGTILSTAND:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Fremad" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Baglæns" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Venstre" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Højre" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Kryb" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Løb" #+ Tooltip for run.
 #@}
@@ -1505,7 +1526,7 @@ localization_db : .localization
 
 	key[]: "notification_walking_camera"
 	val[]: "Førsteperson-kamera aktiveret" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Svævende kamera aktiveret" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -1544,6 +1565,9 @@ localization_db : .localization
 	key[]: "delete"
 	val[]: "Slet" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Slet profil" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Opgrader" #+ Button allowing user to upgrade something.
 
@@ -1572,6 +1596,8 @@ localization_db : .localization
 	key[]: "save_in_progress"
 	val[]: "Gemmer..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Tryk $KEY$ for at fortsætte." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1856,11 +1882,11 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Næste punkt i km"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Næste punkt i km" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Næste punkt i tid" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Næste punkt i tid" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -2001,13 +2027,16 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
+	val[]: "PROFIL-MANAGER" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
 	val[]: "EURO TRUCK SIMULATOR 2 - STARTSKÆRM" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "NYHEDER ONLINE" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profiler" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Skift profil" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Vælg en anden profil." #+ Help message associated with profile selection icon.
@@ -2024,26 +2053,47 @@ localization_db : .localization
 	key[]: "continue_game"
 	val[]: "Fortsæt spil" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Brug den valgte profil" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Ny Profil" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Profilstatus" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Styr profilens MODs" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Skift profiler" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Ret profil" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Inkompatibel profil!<br>Prøv at opgradere spillet til den seneste tilgængelige version." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Ejede garager" #+ How many garages the player owns
+	val[]: "Antal garager:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "små: $SMALL$, store: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Ejede lastbiler" #+ how many trucks the player owns
+	val[]: "Antal lastbiler:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Ejede trailere" #+ how many trailers the player owns
+	val[]: "Antal trailere:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Synkronisering med Steam cloud:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Onlinestatus"
+	val[]: "World of Trucks-profil:"
+
+	key[]: "mods_in_use"
+	val[]: "Mods i brug:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Ikke Forbundet!"	#+ to the WoTR
@@ -2055,7 +2105,7 @@ localization_db : .localization
 	val[]: "Forbind Profil til World of Trucks"
 
 	key[]: "dlc_info_t"
-	val[]: "DLC-OVERSIGT"
+	val[]: "DLC-oversigt"
 
 	key[]: "summary"
 	val[]: "Statistik for den valgte profil" #+ heading text for Profile info
@@ -2077,6 +2127,31 @@ localization_db : .localization
 
 	key[]: "no_truck_dlc"
 	val[]: "Ingen lastbiler er fundet! Genaktiver mindst én lastbil DLC og genstart spillet." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "MODs i brug: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Ingen MODs i brug"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Steam cloud-synkronisering er i gang"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Steam cloud-synkronisering er slået fra <br><offset vshift=7><color value=@@clr_txt_d@@>klik for at slå til"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Forbundet til World of Trucks"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "Ikke forbundet til World of Trucks <br><offset vshift=7><color value=@@clr_txt_d@@>klik for at forbinde"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "PROFIL-DETALJER"
 #@
 #@}
 
@@ -2238,10 +2313,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "En ny version<br>er tilgængelig"
+	val[]: "Du bruger en ældre version af spillet.<br><link url=$URL_LINK$ color=@@clr_link@@>Opdater til en nyere version</link> for at få alle funktioner."
 
 	key[]: "new_version_available_steam"
-	val[]: "En nyere version<br>er tilgængelig.<br><br>Steam vil automatisk opdatere spillet med mindre automatiske opdateringer er slået fra."
+	val[]: "Du bruger en ældre version af spillet.<br>Steam vil automatisk opdatere spillet, med mindre automatiske opdateringer er slået fra."
 
 	key[]: "allow_news"
 	val[]: "Vil du have spillet til automatisk at kontrollere for opdateringer og nyheder?" #+ Text shown in a message box.
@@ -2256,10 +2331,10 @@ localization_db : .localization
 #+ DLC browser.
 #@{
 	key[]: "dlc_browser_t"
-	val[]: "SE INDHOLD AF HENTET DLC" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "INDHOLD AF HENTET DLC" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_btn"
-	val[]: "DLC-OVERSIGT" #+ Button used to start DLC browser.
+	val[]: "DLC-oversigt" #+ Button used to start DLC browser.
 
 	key[]: "name_of_dlc"
 	val[]: "Navn på DLC" #+ Prefix on the button in format "Name of DLC - Going East!". Please keep it as short as possible.
@@ -2520,6 +2595,9 @@ localization_db : .localization
 	key[]: "truck_exhaust_volume"
 	val[]: "Lydstyrke for udstødning" #+ Slider controlling volume of the truck exhaust.
 
+	key[]: "truck_turbo_volume"
+	val[]: "Lydstyrke for lastbilens turbo" #+ Slider controlling volume of the truck turbo.
+
 	key[]: "truck_effects_volume"
 	val[]: "Lydstyrke for effekter" #+ Slider controlling volume of the truck effects.
 
@@ -2626,7 +2704,7 @@ localization_db : .localization
 #@{
 
 	key[]: "gameplay_t"
-	val[]: "SPIL INDSTILLINGER" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "SPIL-INDSTILLINGER" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "gameplay"
 	val[]: "Spil-<br>indstillinger" #+ Icon opening the gameplay options window. There is limited space allowing for two lines of 7 'W' characters each.
@@ -2647,7 +2725,7 @@ localization_db : .localization
 	val[]: "sek" #+ Abbreviated form of seconds used for the fadeout delay suffix
 
 	key[]: "game_settings"
-	val[]: "SPIL INDSTILLINGER"
+	val[]: "SPIL-INDSTILLINGER"
 
 	key[]: "truck_settings"
 	val[]: "LASTBIL INDSTILLINGER"
@@ -3098,7 +3176,7 @@ localization_db : .localization
 
 	key[]: "walk_mode"
 	val[]: "GANGTILSTAND"
-	
+
 	key[]: "other_controls"
 	val[]: "ANDET"
 #@}
@@ -3401,22 +3479,22 @@ localization_db : .localization
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Fremad" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Baglæns" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Venstre" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Højre" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Kryb" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Løb" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3838,7 +3916,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale"
 	val[]: "Pitch-forstærker (i kabinen)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Yaw-forstærker (i gangtilstand)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3919,7 +3997,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Forstærker følsomheden for, når du nikker (i kabinen)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Forstærker følsomheden for, når du drejer hovedet fra side til side (i gangtilstand)."
 
@@ -4674,12 +4752,10 @@ localization_db : .localization
 	val[]: "Du skal straks køre på værksted!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Komplet tur-info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Komplet tur-info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Info om næste kontrolpunkt" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4757,7 +4833,7 @@ localization_db : .localization
 	val[]: "Gods er klar til aflæsning.<br>Tryk på denne tast for at frakoble traileren:"
 
 	key[]: "unload_load_auto"
-	val[]: "Hvis du vil undlade at bakke traileren på plads men bare levere fragt med det samme,<br>(du går glip af dine bonuspoint)<br>så skal du trykke på:"
+	val[]: "Hvis du vil undlade at bakke traileren på plads<br>men bare levere fragten med det samme,<br>så skal du trykke på:<br>(du går glip af dine bonuspoint)"
 
 	key[]: "disconnecting"
 	val[]: "Frakobler trailer ..."
@@ -4782,6 +4858,15 @@ localization_db : .localization
 
 	key[]: "park_nf"
 	val[]: "Dette er et sted du kan sove,<br>men du er ikke træt lige nu."
+
+	key[]: "viewpoint_title"
+	val[]: "Udsigtspunkt"
+
+	key[]: "viewpoint_msg"
+	val[]: "Tryk følgende tast for at aktivere udsigtspunkt:"
+
+	key[]: "viewpoint_found"
+	val[]: "Du har fundet et nyt udsigtspunkt!"
 
 	key[]: "gas_station"
 	val[]: "Tankstation"
@@ -5025,7 +5110,7 @@ localization_db : .localization
 	val[]: "Du stoppede ikke ved vægtstationen."
 
 	key[]: "offence_illegal_trailer"
-	val[]: "Bøde for brug af ulovlig trailer."
+	val[]: "Bøde for kørsel med ulovlig trailer."
 
 	key[]: "offence_avoid_inspection"
 	val[]: "Du stoppede ikke for inspektion."
@@ -5037,7 +5122,7 @@ localization_db : .localization
 	val[]: "Ulovlig kørsel i nødsporet."
 
 	key[]: "offence_damaged_vehicle_usage"
-	val[]: "Din brug af beskadiget lastbil er ulovlig."
+	val[]: "Kørsel med beskadiget lastbil er ulovlig."
 #@}
 
 #@}
@@ -6067,7 +6152,7 @@ localization_db : .localization
 	val[]: "Yoghurt"
 
 	key[]: "cn_helicopter"
-	val[]: "Helikopter - Ring-429"
+	val[]: "Helicopter - 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Driller D-50"
@@ -6076,7 +6161,7 @@ localization_db : .localization
 	val[]: "Tromle DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Traktor RS-666"
+	val[]: "Crawler-traktor"
 
 	key[]: "cn_yacht"
 	val[]: "Yacht"
@@ -6521,7 +6606,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asfaltfræser - Writigen 808"
+	val[]: "Asphalt Miller - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Industrielle kabeltønder"
@@ -6599,6 +6684,12 @@ localization_db : .localization
 	key[]: "tn_s_ki_solid"
 	val[]: "Tiplad-trailer"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Blokvogn trailer, kan udvides"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Blokvogn trailer, kan udvides"
+
 	key[]: "tn_van_transporter"
 	val[]: "Varevogns-transporter"
 
@@ -6663,8 +6754,8 @@ localization_db : .localization
 	key[]: "tn_schw_curtain"
 	val[]: "Schwarzmüller presenning"
 
-	key[]: "tn_schw_overweight"
-	val[]: "Schwarzmüller blokvogn"
+	key[]: "tn_schw_lowloader"
+	val[]: "Schwarzmüller Low Loader"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Schwarzmüller køletrailer"
@@ -7983,6 +8074,15 @@ localization_db : .localization
 
 	key[]: "mapl_train"
 	val[]: "Eurotunnelen"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Ikke fundet punkt"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Udsigtspunkt (besøgt)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Udsigtspunkt (ikke besøgt)"
 
 	key[]: "mapl_gas"
 	val[]: "Tankstation"
@@ -10087,6 +10187,9 @@ localization_db : .localization
 	key[]: "duty_paint"
 	val[]: "Bred last maling" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Klassisk" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Standard" #+ Stock truck accesory general
 
@@ -10188,7 +10291,7 @@ localization_db : .localization
 
 	key[]: "exclusive_chrom"
 	val[]: "Eksklusivt forkromet" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Eksklusiv UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -11097,7 +11200,7 @@ localization_db : .localization
 	val[]: "Opdater" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Gennemse kontrakter" #+ Opens browser on WOTR page to search for a job
+	val[]: "Gennemse Kontrakter" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Underskriv tilfældig kontrakt" #+ Connects with server and accept random job in proximity of player's current position
@@ -11848,7 +11951,7 @@ localization_db : .localization
 	val[]: "Personligt mål nået!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Åben begivenheder" #+ Button opening event page on WoTr.
+	val[]: "Åben Begivenheder" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Fremskridt" #+ The label used to indicate progress of the event.
@@ -11856,11 +11959,14 @@ localization_db : .localization
 	key[]: "event_info"
 	val[]: "BEGIVENHEDSINFO" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Begivenhed" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Live-begivenheder" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Niveau" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Der er ingen aktive begivenheder lige nu."
 #@}
 
 #+ Trailer ownership
@@ -12357,11 +12463,21 @@ localization_db : .localization
 	key[]: "log"
 	val[]: "Skovtrailer"
 
+	key[]: "lowbed"
+	val[]: "Blokvogn"
+
+	key[]: "lowboy"
+	val[]: "Blokvogn"
+
 	key[]: "refrigerated"
 	val[]: "Køletrailer"
 
-	key[]: "liquid"
-	val[]: "Væske"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Tank"
 
 #@}
 
@@ -12376,6 +12492,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Generelt, tørre varer"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Byggeudstyr og -materialer"
+
+	key[]: "body_cargo_types_flatbed_brck"
+	val[]: "Byggeudstyr og -materialer"
+
+	key[]: "body_cargo_types_flatbed_cont"
+	val[]: "Byggematerialer og containere"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Flydende fødevarer"
 
@@ -12385,17 +12510,15 @@ localization_db : .localization
 	key[]: "body_cargo_types_log"
 	val[]: "Træ, bjælker eller rør"
 
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Tungt maskineri og høj last"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Tungt maskineri og høj last"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Frossent, afkølet gods"
 
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Byggeudstyr og -materialer"
-
-	key[]: "body_cargo_types_flatbed_brck"
-	val[]: "Byggeudstyr og -materialer"
-
-	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Byggematerialer og containere"
 #@}
 
 #+ Trailer chain type names.
@@ -12479,6 +12602,19 @@ localization_db : .localization
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 aksler"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 aksler"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 aksler, kan udvides, lang"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 aksler, kan udvides, kort"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 aksel"
 
@@ -12487,6 +12623,12 @@ localization_db : .localization
 
 	key[]: "tn_single_2axle_20"
 	val[]: "6 m, 2 aksler"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 aksler, kan udvides, lang"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 aksler, kan udvides, kort"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 aksler, spredt"
@@ -12509,11 +12651,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_ext_40"
 	val[]: "12 m, kan udvides, 3 aksler"
 
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 aksler, kan udvides, lang"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "3 aksler, kan udvides, kort"
+
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "2x6 m, fleksibel, 3 aksler"
 
 	key[]: "tn_single_3axle_flex_40"
 	val[]: "12 m, fleksibel, 3 aksler"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 aksler, spredt"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 aksler, 2 styre"
@@ -12524,8 +12675,20 @@ localization_db : .localization
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 aksler, styre, mellemrum, bag"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 aksler, kan udvides, lang"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 aksler, kan udvides, kort"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 aksler, styre"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 aksler, kan udvides, lang"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 aksler, kan udvides, kort"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "Link, 2+2 aksler"
@@ -12654,6 +12817,12 @@ localization_db : .localization
 	key[]: "bs_scs_log_wood"
 	val[]: "Trægulv træ"
 
+	key[]: "bs_scs_lowbed"
+	val[]: "Blokvogn"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Blokvogn"
+
 	key[]: "bs_scs_reefer"
 	val[]: "Køle"
 
@@ -12669,6 +12838,9 @@ localization_db : .localization
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Fødevaretank"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Blokvogn"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Platform"
@@ -12706,6 +12878,9 @@ localization_db : .localization
 
 	key[]: "extinguisher"
 	val[]: "Ildslukker"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Flip Toe-ramper"
 
 	key[]: "front_cage"
 	val[]: "Frontbur"
@@ -12763,6 +12938,9 @@ localization_db : .localization
 
 	key[]: "plastic_box"
 	val[]: "Plastickasse"
+
+	key[]: "ramps"
+	val[]: "Ramper"
 
 	key[]: "skirt_big"
 	val[]: "Sideskørt"

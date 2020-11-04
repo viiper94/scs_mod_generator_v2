@@ -768,37 +768,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Przełącz tryb kamery" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Rozglądanie się" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Obracanie" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Powiększanie" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Przesuwanie" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "KONTROLA CHODU:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Naprzód" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Powrót" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Lewo" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Prawo" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Kucanie" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Bieganie" #+ Tooltip for run.
 #@}
@@ -808,7 +808,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Kamera pierwszoosobowa włączona" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Kamera obrotowa włączona" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -847,6 +847,9 @@
 	key[]: "delete"
 	val[]: "Usuń" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Usuń profil" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Ulepsz" #+ Button allowing user to upgrade something.
 
@@ -875,6 +878,8 @@
 	key[]: "save_in_progress"
 	val[]: "Trwa zapisywanie..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Naciśnij klawisz $KEY$, aby pominąć przerywnik." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1159,11 +1164,11 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Następny punkt kontrolny"#+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Następny pkt kontrolny" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Czas następnego punktu kontrolnego" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Czas nast. pkt. kontrolnego" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1262,7 +1267,7 @@
 	val[]: "Bydło"
 
 	key[]: "cargo_type_liquid"
-	val[]: "Ciecz"
+	val[]: "Cysterna"
 
 	key[]: "cargo_type_fragile"
 	val[]: "Kruche"
@@ -1304,13 +1309,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
+	val[]: "MENEDŻER PROFILI" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
 	val[]: "EURO TRUCK SIMULATOR 2 - PANEL STARTOWY" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "WIEŚCI Z SIECI" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profile" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Zmień profil" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Stań się inną osobą." #+ Help message associated with profile selection icon.
@@ -1327,8 +1335,23 @@
 	key[]: "continue_game"
 	val[]: "Kontynuuj grę" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Użyj wybranego profilu" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Nowy profil" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Status profilu" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Zarządzaj modyfikacjami profilu" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Zarządzaj profilami" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Edytuj profil" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Niekompatybilny profil!<br>Spróbuj zaktualizować grę do najnowszej dostępnej wersji." #+ Incompatible profile warning text
@@ -1345,8 +1368,14 @@
 	key[]: "owned_trailers"
 	val[]: "Posiadane naczepy:" #+ how many trailers the player owns
 
+	key[]: "steam_cloud_synchronization"
+	val[]: "Synchronizacja z chmurą Steam:" #+ Whether is steam cloud synchronization active.
+
 	key[]: "online_stat"
-	val[]: "Status online:"
+	val[]: "Profil World of Trucks:"
+
+	key[]: "mods_in_use"
+	val[]: "Używane modyfikacje:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Nie połączony!"	#+ to the WoTR
@@ -1380,6 +1409,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Nie znaleziono żadnej ciężarówki! Proszę aktywować ponownie co najmniej jedną ciężarówkę DLC i zrestartować grę." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Używane modyfikacje: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Brak używanych modyfikacji"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Synchronizacja z chmurą Steam jest włączona"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Synchronizacja z chmurą Steam jest wyłączona <br><offset vshift=7><color value=@@clr_txt_d@@>kliknij, aby włączyć"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Połączono z World of Trucks"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "Nie połączono z World of Trucks <br><offset vshift=7><color value=@@clr_txt_d@@>kliknij, aby włączyć"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "SZCZEGÓŁY PROFILU"
 #@
 #@}
 
@@ -1474,7 +1528,7 @@
 	val[]: "Zarejestruj się" #+ Button text
 
 	key[]: "login"
-	val[]: "Login" #+ Button text
+	val[]: "Zaloguj" #+ Button text
 
 	key[]: "account_password_not_specified"
 	val[]: "Nie ustawiono hasła dla konta."
@@ -1541,10 +1595,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Dostępna nowsza wersja"
+	val[]: "Używasz starszej wersji gry.<br><link url=$URL_LINK$ color=@@clr_link@@>Zaktualizuj do nowszej wersji</link> aby uzyskać wszystkie funkcje."
 
 	key[]: "new_version_available_steam"
-	val[]: "Dostępna nowsza wersja.<br><br>Steam automatycznie zaktualizuje grę, o ile automatyczne aktualizacje nie zostały wyłączone."
+	val[]: "Używasz starszej wersji gry.<br>Steam automatycznie zaktualizuje grę, chyba że automatyczne aktualizacje są wyłączone."
 
 	key[]: "allow_news"
 	val[]: "Czy chcesz pozwolić grze na automatyczne sprawdzanie aktualizacji i wiadomości?" #+ Text shown in a message box.
@@ -1559,7 +1613,7 @@
 #+ DLC browser.
 #@{
 	key[]: "dlc_browser_t"
-	val[]: "PRZEGLĄDARKA ZAWARTOŚCI POBIERANEJ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PRZEGLĄDARKA ZAWARTOŚCI DO POBRANIA" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_btn"
 	val[]: "Przeglądarka dodatków" #+ Button used to start DLC browser.
@@ -1822,6 +1876,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Głośność wydechu ciężarówki" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Głośność turbiny ciężarówki" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Głośność efektów dźwiękowych ciężarówki" #+ Slider controlling volume of the truck effects.
@@ -2401,7 +2458,7 @@
 
 	key[]: "walk_mode"
 	val[]: "TRYB CHODU"
-	
+
 	key[]: "other_controls"
 	val[]: "INNE"
 #@}
@@ -2704,22 +2761,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Naprzód" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Powrót" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Lewo" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Prawo" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Kucanie" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Bieganie" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3141,7 +3198,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Mnożnik podziałki (w kabinie)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Mnożnik odchylenia (w trybie chodu)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3222,7 +3279,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Mnoży czas reakcji, gdy obracasz głowę w górę i w dół (w kabinie)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Mnoży czas reakcji, gdy obracasz głowę, obracając ją z boku na bok (w trybie chodu)."
 
@@ -3977,12 +4034,10 @@
 	val[]: "Musisz odwiedzić stację kontroli pojazdów!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Pełna informacja o podróży" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Pełna informacja o podróży" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Informacje o następnym punkcie kontrolnym" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
-
-
 
 # Adviser info
 
@@ -4086,6 +4141,15 @@
 	key[]: "park_nf"
 	val[]: "To wolne miejsce parkingowe,<br>ale ty nie wyglądasz na zmęczonego."
 
+	key[]: "viewpoint_title"
+	val[]: "Punkt widokowy"
+
+	key[]: "viewpoint_msg"
+	val[]: "Naciśnij następujący klawisz, aby aktywować punkt widokowy:"
+
+	key[]: "viewpoint_found"
+	val[]: "Odkryłeś nowy punkt widokowy!"
+
 	key[]: "gas_station"
 	val[]: "Stacja benzynowa"
 
@@ -4108,7 +4172,7 @@
 	val[]: "Naciśnij następujący przycisk, aby włączyć hamulec ręczny:"
 
 	key[]: "gas_station_hint"
-	val[]: "Naciśnij i przytrzymaj następujący klawisz, aby wypełnić zbiornik paliwa."
+	val[]: "Naciśnij i przytrzymaj następujący klawisz, aby napełnić zbiornik paliwa:"
 
 	key[]: "diesel_price"
 	val[]: "Cena paliwa"
@@ -4439,7 +4503,7 @@
 	val[]: "Szkolenie ADR"
 
 	key[]: "skill_adr_info"
-	val[]: "Przewóz niebezpiecznych dóbr wymaga świetnie wyszkolonych profesjonalistów. Wykorzystaj swoje ciężko zdobyte doświadczenie, aby otrzymać następujące certyfikaty ADR, które pozwolą ci znacząco zwiększyć swoje zarobki:"
+	val[]: "Przewóz niebezpiecznych dóbr wymaga świetnie wyszkolonych profesjonalistów. Wykorzystaj swoje ciężko zdobyte doświadczenie, aby otrzymać następujące certyfikaty ADR, które pozwolą Ci znacząco zwiększyć swoje zarobki:"
 
 	key[]: "skill_adr_classt1"
 	val[]: "Materiały wybuchowe"
@@ -4569,7 +4633,7 @@
 	val[]: "Delikatny ładunek"
 
 	key[]: "skill_fragile_info"
-	val[]: "Ta umiejętność pozwala ci przewozić delikatny ładunek taki jak szkło, elektronika, czy delikatne maszyny. Zalety są następujące:"
+	val[]: "Ta umiejętność pozwala Ci przewozić delikatny ładunek taki jak szkło, elektronika, czy delikatne maszyny. Zalety są następujące:"
 
 	key[]: "skill_fragile_rank1"
 	val[]: "Odblokowanie przewozu delikatnych dóbr.<br>+ $MONEY1$% wyższego wynagrodzenia za dostawę delikatnego ładunku.<br>+ $XP$% premii doświadczenia za dostawę delikatnego ładunku."
@@ -4597,7 +4661,7 @@
 	val[]: "Umiejętność ekologicznej jazdy"
 
 	key[]: "skill_mechanical_info"
-	val[]: "Ulepszona umiejętność ekonomicznej jazdy pomoże ci zminimalizować zużycie paliwa. W szczególności:"
+	val[]: "Ulepszona umiejętność ekonomicznej jazdy pomoże Ci zminimalizować zużycie paliwa. W szczególności:"
 
 	key[]: "skill_mechanical_rank1"
 	val[]: "Oszczędność nawet do $FUEL_TRAILER1$% paliwa w trakcie jazdy z naczepą.<br>Oszczędność nawet do $FUEL1$% paliwa podczas jazdy bez zlecenia."
@@ -4935,7 +4999,7 @@
 	val[]: "Klocki hamulcowe"
 
 	key[]: "cn_bulldozer"
-	val[]: "Spycharka"
+	val[]: "Buldożer"
 
 	key[]: "cn_calcium"
 	val[]: "Wapń"
@@ -5370,7 +5434,7 @@
 	val[]: "Jogurty"
 
 	key[]: "cn_helicopter"
-	val[]: "Helikopter - Ring-429"
+	val[]: "Helikopter - 1808TX"
 
 	key[]: "cn_driller"
 	val[]: "Wiertło - D-50"
@@ -5379,7 +5443,7 @@
 	val[]: "Walec - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Traktor - RS-666"
+	val[]: "Ciągnik gąsienicowy"
 
 	key[]: "cn_yacht"
 	val[]: "Jacht"
@@ -5824,7 +5888,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Frezarka do asfaltu - Writigen 808"
+	val[]: "Frezarka do asfaltu - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Szpula kabla przemysłowego"
@@ -5902,6 +5966,12 @@
 	key[]: "tn_s_ki_solid"
 	val[]: "Wywrotka"
 
+	key[]: "tn_scs_lowbed"
+	val[]: "Niskopodłogowa rozsuwana naczepa"
+
+	key[]: "tn_scs_lowloader"
+	val[]: "Niskopodwoziowa rozsuwana naczepa"
+
 	key[]: "tn_van_transporter"
 	val[]: "Laweta"
 
@@ -5966,7 +6036,7 @@
 	key[]: "tn_schw_curtain"
 	val[]: "Firanka Schwarzmüller"
 
-	key[]: "tn_schw_overweight"
+	key[]: "tn_schw_lowloader"
 	val[]: "Niskopodwoziowa Schwarzmüller"
 
 	key[]: "tn_schw_reefer"
@@ -6518,10 +6588,10 @@
 	val[]: "Jadące ciężarówki"
 
 	key[]: "truckman_filter_sleeping"
-	val[]: "Odpoczywające ciężarówki"
+	val[]: "Pauzujące ciężarówki"
 
 	key[]: "truckman_filter_returning"
-	val[]: "Powracające ciężarówki"
+	val[]: "Wracające ciężarówki"
 #@}
 
 #+ Headers of table of trucks.
@@ -6741,7 +6811,7 @@
 	val[]: "Odpoczywający kierowcy"
 
 	key[]: "driverman_filter_returning"
-	val[]: "Powracający kierowcy"
+	val[]: "Wracający kierowcy"
 #@}
 
 #+ Headers of table of drivers.
@@ -7152,7 +7222,7 @@
 	val[]: "Następnie wybierz miejsce docelowe:"
 
 	key[]: "td_garsel_new_truck"
-	val[]: "Gdzie powinniśmy DOSTARCZYĆ twoją nową ciężarówkę?"
+	val[]: "Gdzie powinniśmy DOSTARCZYĆ Twoją nową ciężarówkę?"
 
 	key[]: "td_garsel_old_truck"
 	val[]: "Gdzie chcesz WYSŁAĆ swoją obecną ciężarówkę?"
@@ -7286,6 +7356,15 @@
 
 	key[]: "mapl_train"
 	val[]: "Eurotunel"
+
+	key[]: "mapl_undiscovered"
+	val[]: "Nieodkryty punkt"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Punkt widokowy (odwiedzony)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Punkt widokowy (nieodwiedzony)"
 
 	key[]: "mapl_gas"
 	val[]: "Stacja benzynowa"
@@ -7516,7 +7595,7 @@
 	val[]: "Dopasuj światła" #+ Opens the light adjuster.
 
 	key[]: "truck_light_help"
-	val[]: "Skonfiguruj światła zainstalowane w twojej ciężarówce." #+ Help message associated with light adjuster icon.
+	val[]: "Skonfiguruj światła zainstalowane w Twojej ciężarówce." #+ Help message associated with light adjuster icon.
 
 	key[]: "mirrors"
 	val[]: "Regulacja lusterek" #+ Opens the mirror adjuster.
@@ -7533,7 +7612,7 @@
 	# trailer adjuster name string is in assistance section (it could be open from both screens)
 
 	key[]: "trailer_adjust_help"
-	val[]: "Dostosuj naczepę (m. in. jej długość), aby pasowała do ładunku, który zamierzasz wieźć. Wybrane opcje mają wpływ na Rynek Ładunków." #+ Help message associated with trailer adjuster icon.
+	val[]: "Dostosuj naczepę (m. in. jej długość), aby pasowała do ładunku, który zamierzasz wieźć. Wybrane opcje mają wpływ na Rynek ładunków." #+ Help message associated with trailer adjuster icon.
 #@}
 
 #+ Mirrors Adjuster
@@ -8768,7 +8847,7 @@
 	val[]: "Twoja firma przewozowa jest gotowa do akcji, ale niestety nie masz pieniędzy na zakup ciężarówki. Na razie musisz pracować dla innych firm jako najemny kierowca."
 
 	key[]: "intro_4"
-	val[]: "Twoim zadaniem jest bezpieczne dostarczenie ładunku o nazwie $JOB_CARGO$ do doku firmy $JOB_TARGET_COMPANY$ w mieście $JOB_TARGET_CITY$. Twój pracodawca zapewnił ci pojazd i pokryje wszystkie koszty. Nie zawiedź go i dojedź na czas!"
+	val[]: "Twoim zadaniem jest bezpieczne dostarczenie ładunku o nazwie $JOB_CARGO$ do doku firmy $JOB_TARGET_COMPANY$ w mieście $JOB_TARGET_CITY$. Twój pracodawca zapewnił Ci pojazd i pokryje wszystkie koszty. Nie zawiedź go i dojedź na czas!"
 
 
 	key[]: "intro_garage_1"
@@ -8936,7 +9015,7 @@
 #+ The service talks using version of the protocol or does not support this version of the game.
 
 	key[]: "generic_version_mismatch"
-	val[]: "Usługa nie jest kompatybilna z Twoją wersją gry. Sprawdź, czy jest dostępna nowa łatka."
+	val[]: "Usługa nie jest kompatybilna z Twoją wersją gry. Sprawdź, czy jest dostępna nowa aktualizacja."
 
 #+ The services are currently unavailable for some unspecified reason.
 
@@ -9390,6 +9469,9 @@
 	key[]: "duty_paint"
 	val[]: "Podstawowe malowanie" #+ Basic but paintable truck accesory
 
+	key[]: "classic"
+	val[]: "Klasyczny" #+ Classical or vintage truck accesory
+
 	key[]: "stock"
 	val[]: "Domyślny" #+ Stock truck accesory general
 
@@ -9445,7 +9527,7 @@
 	val[]: "Malowane i szary plastik" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Aluminiowe" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "Aluminium" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "Plastikowe nowoczesne" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -9491,7 +9573,7 @@
 
 	key[]: "exclusive_chrom"
 	val[]: "Ekskluzywny chromowany" #+ Luxury/Exclusive painted version of the interior or accesory
-	
+
 	key[]: "exclusive_uk"
 	val[]: "Ekskluzywne UK" #+ Luxury/Exclusive UK version of the interior or accesory
 
@@ -10475,7 +10557,7 @@
 	val[]: "Profil nie jest połączony z World of Trucks!<br><br>Aby móc otrzymywać zlecenia dostawy, edytuj swój profil, podłączając go do World of Trucks."#+ A message on WOTR job screen if profile isn't connected to WOTR
 
 	key[]: "edit_profile"
-	val[]: "Edycja profilu" #+ Button in WOTR jobs screens to begin editing profile if WOTR isn't conneted
+	val[]: "Edytuj profil" #+ Button in WOTR jobs screens to begin editing profile if WOTR isn't conneted
 
 	key[]: "online_jobs_completed_count"
 	val[]: "Ukończone zlecenia z World of Trucks:" #+ number of completed WOTR jobs
@@ -10664,7 +10746,7 @@
 	val[]: "Zależności" #+ Title of the section in mod details window displaying list of the dependencies the mod has.
 
 	key[]: "missing_mod_dependencies_detected"
-	val[]: "Brak niektórych DLC wymaganych przez tą modyfikację. Upewnij się że, wszystkie wymagane DLC są zainstalowane oraz aktywowane." #+ The message showed when user has one of MOD dependencies missing.
+	val[]: "Brak niektórych DLC wymaganych przez tę modyfikację. Upewnij się że, wszystkie wymagane DLC są zainstalowane oraz aktywowane." #+ The message showed when user has one of MOD dependencies missing.
 #@}
 
 #+ Version change detected message box.
@@ -10793,7 +10875,7 @@
 	val[]: "Nie można połączyć zawartości, ponieważ obecne konto Steam jest powiązane z innym kontem World of Trucks. " #+ The message displayed when the current Steam account is connected to any world of trucks account that is not a currently used World of Trucks account.
 
 	key[]: "registration_result_some_failed"
-	val[]: "Nie podłączono niektórych DLC. <br> Najedź kursorem na znak zapytania od każdego DLC aby wyświetlić szczegóły. " #+ The content of the message box shown when not all selected content was successfully connected.
+	val[]: "Niektórym DLC nie udało się połączyć. <br> Najedź myszką na wykrzykniki dla każdego DLC, aby zobaczyć więcej szczegółów." #+ The content of the message box shown when not all selected content was successfully connected.
 
 	key[]: "content_connect_progress"
 	val[]: "Rejestrowanie $CURRENT_CONTENT_NAME$" #+ The text used to display the progress of the online content connecting.
@@ -10802,7 +10884,7 @@
 	val[]: "Obecny profil nie jest połączony z World of Trucks lub gra uruchomiona jest w trybie offline. " #+ An error shown when a user accesses the online options screen while his profile is not an online one or the online layer was not set up properly.
 
 	key[]: "online_connect_content_info"
-	val[]: "<color value=@@clr_sel@@>$CONNECTED_CONTENT$ <color value=@@clr_txt@@>$TOTAL_CONTENT$ kompatybilne DLC połączono. Jeżeli niektóre DLC nie są połączone z World of Trucks, to ominiesz ich zawartość. " #+ The text displayed in online options which displays a summary of how many DLCs are connected to WoTr.
+	val[]: "<color value=@@clr_sel@@>$CONNECTED_CONTENT$ <color value=@@clr_txt@@>/ $TOTAL_CONTENT$ kompatybilne DLC połączono. Jeżeli niektóre DLC nie są połączone z World of Trucks, to ominiesz ich zawartość." #+ The text displayed in online options which displays a summary of how many DLCs are connected to WoTr.
 
 	key[]: "online_connect_content_all_connected"
 	val[]: "<color value=@@clr_sel@@>Gratulacje!<color value=@@clr_txt@@> Cała Twoja zawartość jest połączona z World of Trucks! Możesz teraz z niej korzystać. " #+ The text displayed in online options which confirms that every DLC the user owns is connected.
@@ -11159,11 +11241,14 @@
 	key[]: "event_info"
 	val[]: "INFORMACJE O WYDARZENIU" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Wydarzenie" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Aktywne wydarzenia" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Poziom" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "W tej chwili nie ma aktywnego wydarzenia."
 #@}
 
 #+ Trailer ownership
@@ -11208,7 +11293,7 @@
 	val[]: "Rynek ładunków"
 
 	key[]: "cargo_market_desc"
-	val[]: "Użyj własnej naczepy do transportu szerokiej gamy ładunków do ich celu." #+ The description of an Cargo Planner icon, used to open a window for selecting cargo with owned trailer.
+	val[]: "Użyj własnej naczepy do transportu szerokiej gamy ładunków do ich miejsc docelowych." #+ The description of an Cargo Planner icon, used to open a window for selecting cargo with owned trailer.
 
 	key[]: "trailerman_title"
 	val[]: "MOJE NACZEPY"
@@ -11514,7 +11599,7 @@
 	val[]: "Bezczynne naczepy"
 
 	key[]: "trailerman_filter_on_duty"
-	val[]: "Naczepy na służbie"
+	val[]: "Naczepy w trasie"
 
 	key[]: "trailerman_filter_private"
 	val[]: "Prywatne naczepy"
@@ -11660,11 +11745,21 @@
 	key[]: "log"
 	val[]: "Kłonicowa"
 
+	key[]: "lowbed"
+	val[]: "Niskopodłogowa"
+
+	key[]: "lowboy"
+	val[]: "Niskopodwoziowa"
+
 	key[]: "refrigerated"
 	val[]: "Chłodnia"
 
-	key[]: "liquid"
-	val[]: "Ciecz"
+#@}
+
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Zbiornik"
 
 #@}
 
@@ -11679,6 +11774,15 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Ogólne, towary suche"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Sprzęt oraz materiały budowlane"
+
+	key[]: "body_cargo_types_flatbed_brck"
+	val[]: "Sprzęt oraz materiały budowlane"
+
+	key[]: "body_cargo_types_flatbed_cont"
+	val[]: "Materiały budowlane i kontenery"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Płynne artykuły spożywcze"
 
@@ -11688,17 +11792,15 @@
 	key[]: "body_cargo_types_log"
 	val[]: "Kłody, belki lub rury"
 
+	key[]: "body_cargo_types_lowbed"
+	val[]: "Ciężki sprzęt i duże ładunki"
+
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Ciężki sprzęt i duże ładunki"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Mrożone, schłodzone produkty"
 
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Sprzęt oraz materiały budowlane"
-
-	key[]: "body_cargo_types_flatbed_brck"
-	val[]: "Sprzęt oraz materiały budowlane"
-
-	key[]: "body_cargo_types_flatbed_cont"
-	val[]: "Materiały budowlane i kontenery"
 #@}
 
 #+ Trailer chain type names.
@@ -11782,6 +11884,19 @@
 #+ Trailer chain/chassis configurations
 
 #@{
+
+	key[]: "tn_single_1_3axle"
+	val[]: "1+3 osie"
+
+	key[]: "tn_single_1_4axle"
+	val[]: "1+4 osie"
+
+	key[]: "tn_single_1_4axle_ext_long"
+	val[]: "1+4 osie, Rozsuwana, Długi rozstaw"
+
+	key[]: "tn_single_1_4axle_ext_short"
+	val[]: "1+4 osie, Rozsuwana, Krótki rozstaw"
+
 	key[]: "tn_single_1axle"
 	val[]: "1 oś"
 
@@ -11790,6 +11905,12 @@
 
 	key[]: "tn_single_2axle_20"
 	val[]: "2 osie, 20ft"
+
+	key[]: "tn_single_2axle_ext_long"
+	val[]: "2 osie, Rozsuwana, Długi rozstaw"
+
+	key[]: "tn_single_2axle_ext_short"
+	val[]: "2 osie, Rozsuwana, Krótki rozstaw"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "2 osie, Długi rozstaw"
@@ -11812,11 +11933,20 @@
 	key[]: "tn_single_3axle_ext_40"
 	val[]: "3 osie, Rozsuwana, 40 ft"
 
+	key[]: "tn_single_3axle_ext_long"
+	val[]: "3 osie, Rozsuwana, Długi rozstaw"
+
+	key[]: "tn_single_3axle_ext_short"
+	val[]: "2 osie, Rozsuwana, Krótki rozstaw"
+
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "3 osie, Uniwersalna, 2 x 20ft"
 
 	key[]: "tn_single_3axle_flex_40"
 	val[]: "3 osie, Uniwersalna, 40ft"
+
+	key[]: "tn_single_3axle_spread"
+	val[]: "3 osie, Długi rozstaw"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "3 osie, 2 skrętne"
@@ -11827,8 +11957,20 @@
 	key[]: "tn_single_3axle_steer_spread_rear"
 	val[]: "3 osie, Skrętna, Długi rozstaw, Z tyłu"
 
+	key[]: "tn_single_4axle_ext_long"
+	val[]: "4 osie, Rozsuwana, Długi rozstaw"
+
+	key[]: "tn_single_4axle_ext_short"
+	val[]: "4 osie, Rozsuwana, Krótki rozstaw"
+
 	key[]: "tn_single_4axle_steer"
 	val[]: "4 osie, Skrętna"
+
+	key[]: "tn_single_5axle_ext_long"
+	val[]: "5 osi, Rozsuwana, Długi rozstaw"
+
+	key[]: "tn_single_5axle_ext_short"
+	val[]: "5 osi, Rozsuwana, Krótki rozstaw"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "B-Double, 2+2 osie"
@@ -11900,7 +12042,7 @@
 	val[]: "Dolly, 2 osie, Długi rozstaw"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_dolly_2axle_long"
-	val[]: "Dolly, 2 osie, Długi"	#+ Component chassis name (upgrade screen only)
+	val[]: "Dolly, 2 osie, Długi rozstaw"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tn_dolly_2axle_long_spread"
 	val[]: "Dolly, 2 osie, Długi rozstaw"	#+ Component chassis name (upgrade screen only)
@@ -11957,6 +12099,12 @@
 	key[]: "bs_scs_log_wood"
 	val[]: "Kłonica z drewnianą podłogą"
 
+	key[]: "bs_scs_lowbed"
+	val[]: "Niskopodłogowa"
+
+	key[]: "bs_scs_lowloader"
+	val[]: "Niskopodwoziowa"
+
 	key[]: "bs_scs_reefer"
 	val[]: "Chłodnia"
 
@@ -11972,6 +12120,9 @@
 #@{
 	key[]: "series_schwarzmuller_food_cistern"
 	val[]: "Cysterna spożywcza"
+
+	key[]: "series_schwarzmuller_lowloader"
+	val[]: "Niskopodwoziowa"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Platforma"
@@ -12009,6 +12160,9 @@
 
 	key[]: "extinguisher"
 	val[]: "Gaśnica"
+
+	key[]: "flip_toe_ramps"
+	val[]: "Najazdy typu Flip Toe"
 
 	key[]: "front_cage"
 	val[]: "Przednia klatka"
@@ -12066,6 +12220,9 @@
 
 	key[]: "plastic_box"
 	val[]: "Plastikowe pudełko"
+
+	key[]: "ramps"
+	val[]: "Najazdy"
 
 	key[]: "skirt_big"
 	val[]: "Osłona"
@@ -12170,7 +12327,7 @@
 	val[]: "Naczepa jest bezczynna"
 
 	key[]: "cm_legend_trailer_status_on_job"
-	val[]: "Naczepa na służbie"
+	val[]: "Naczepa w trasie"
 
 	key[]: "cm_legend_trailer_status_private"
 	val[]: "Naczepa jest prywatna"
@@ -12188,7 +12345,7 @@
 	val[]: "Kierowca jedzie"
 
 	key[]: "cm_legend_driver_status_returning"
-	val[]: "Powracający kierowca"
+	val[]: "Wracający kierowca"
 
 	key[]: "cm_legend_driver_player"
 	val[]: "Gracz"
