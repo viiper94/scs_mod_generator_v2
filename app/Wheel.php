@@ -39,13 +39,7 @@ class Wheel extends Model{
             ],
         ],
         1 => [],
-        2 => [
-            'schw_overweight' => [
-                'def' => '/def/vehicle/t_wheel/overweight_f.sii',
-                'offset' => '0',
-                'required' => true
-            ]
-        ],
+        2 => [],
         3 => [],
         4 => [],
         5 => [],
