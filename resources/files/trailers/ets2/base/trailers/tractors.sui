@@ -4,7 +4,7 @@ trailer : trailer.overweight.tractors
 	accessories[]: .overweight.tractors.trwheel0
 	accessories[]: .overweight.tractors.trwheel1
 	accessories[]: .overweight.tractors.trwheel2
-	accessories[]: .overweight.tractors.cargo
+	#accessories[]: .overweight.tractors.cargo
 }
 
 vehicle_accessory: .overweight.tractors.tchassis

@@ -1,0 +1,32 @@
+trailer : trailer.scs_brick_y 
+{
+	trailer_definition: trailer_def.scs.flatbed.single_3.brick
+	
+	accessories[]: .scs_brick_y.chassis
+	accessories[]: .scs_brick_y.rwheel
+	accessories[]: .scs_brick_y.rwheel2
+	accessories[]: .scs_brick_y.rwheel3
+}
+
+vehicle_accessory: .scs_brick_y.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_brick/yellow.sii"
+}
+
+vehicle_wheel_accessory: .scs_brick_y.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .scs_brick_y.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}
+
+vehicle_wheel_accessory: .scs_brick_y.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single_385_55_steel.sii"
+}

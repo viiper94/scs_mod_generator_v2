@@ -1,0 +1,91 @@
+trailer : trailer.scs_lowbed73.silo
+{
+	accessories[]: .scs_lowbed73.silo.chassis
+	accessories[]: .scs_lowbed73.silo.rwheel
+	accessories[]: .scs_lowbed73.silo.rwheel2
+	accessories[]: .scs_lowbed73.silo.rwheel3
+	accessories[]: .scs_lowbed73.silo.rwheel4
+	accessories[]: .scs_lowbed73.silo.rwheel5
+	accessories[]: .scs_lowbed73.silo.rwheel6
+	accessories[]: .scs_lowbed73.silo.rwheel7
+	accessories[]: .scs_lowbed73.silo.rwheel8
+	accessories[]: .scs_lowbed73.silo.rwheel9
+	accessories[]: .scs_lowbed73.silo.rwheel10
+	accessories[]: .scs_lowbed73.silo.paint_job
+	accessories[]: .scs_lowbed73.silo.cargo
+}
+
+vehicle_accessory: .scs_lowbed73.silo.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_lowbed/ch_7_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel4
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel5
+{
+	offset: 8
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel6
+{
+	offset: 10
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel7
+{
+	offset: 12
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel8
+{
+	offset: 14
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel9
+{
+	offset: 16
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.silo.rwheel10
+{
+	offset: 18
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_paint_job_accessory: .scs_lowbed73.silo.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_lowbed/custom_paint_job/red.sii"
+}
+
+vehicle_accessory: .scs_lowbed73.silo.cargo
+{
+    	data_path: "/def/vehicle/trailer_cargo/scs_lowbed/silo.sii"
+}

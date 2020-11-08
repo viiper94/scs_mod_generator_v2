@@ -1,0 +1,31 @@
+trailer : trailer.scs_lowlow2e
+{
+	trailer_definition: trailer_def.scs.lowloader.single_2_ln.long
+
+	accessories[]: .scs_lowlow2e.chassis
+	accessories[]: .scs_lowlow2e.rwheel
+	accessories[]: .scs_lowlow2e.rwheel2
+	accessories[]: .scs_lowlow2e.paint_job
+}
+
+vehicle_accessory: .scs_lowlow2e.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowloader/ch_2_ext.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowlow2e.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowlow2e.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_paint_job_accessory: .scs_lowlow2e.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowbed/custom_paint_job/blue.sii"
+}

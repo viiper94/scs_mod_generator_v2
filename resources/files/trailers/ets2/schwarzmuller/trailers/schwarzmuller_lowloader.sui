@@ -1,0 +1,32 @@
+trailer : trailer.schw_lowl
+{
+	trailer_definition: trailer_def.schwmuller.lowloader.single_3.lowloader
+
+	accessories[]: .schw_lowl.tchassis
+	accessories[]: .schw_lowl.trwheel0
+	accessories[]: .schw_lowl.trwheel1
+	accessories[]: .schw_lowl.trwheel2
+}
+
+vehicle_accessory: .schw_lowl.tchassis
+{
+    	data_path: "/def/vehicle/trailer/schw_lowloader/chassis.sii"
+}
+
+vehicle_wheel_accessory: .schw_lowl.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_lowl.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .schw_lowl.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}

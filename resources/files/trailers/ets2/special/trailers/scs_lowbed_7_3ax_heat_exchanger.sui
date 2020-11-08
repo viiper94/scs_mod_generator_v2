@@ -1,0 +1,91 @@
+trailer : trailer.scs_lowbed73.heat_ex
+{
+	accessories[]: .scs_lowbed73.heat_ex.chassis
+	accessories[]: .scs_lowbed73.heat_ex.rwheel
+	accessories[]: .scs_lowbed73.heat_ex.rwheel2
+	accessories[]: .scs_lowbed73.heat_ex.rwheel3
+	accessories[]: .scs_lowbed73.heat_ex.rwheel4
+	accessories[]: .scs_lowbed73.heat_ex.rwheel5
+	accessories[]: .scs_lowbed73.heat_ex.rwheel6
+	accessories[]: .scs_lowbed73.heat_ex.rwheel7
+	accessories[]: .scs_lowbed73.heat_ex.rwheel8
+	accessories[]: .scs_lowbed73.heat_ex.rwheel9
+	accessories[]: .scs_lowbed73.heat_ex.rwheel10
+	accessories[]: .scs_lowbed73.heat_ex.paint_job
+	accessories[]: .scs_lowbed73.heat_ex.cargo
+}
+
+vehicle_accessory: .scs_lowbed73.heat_ex.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_lowbed/ch_7_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel3
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel4
+{
+	offset: 6
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel5
+{
+	offset: 8
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel6
+{
+	offset: 10
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel7
+{
+	offset: 12
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel8
+{
+	offset: 14
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel9
+{
+	offset: 16
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_wheel_accessory: .scs_lowbed73.heat_ex.rwheel10
+{
+	offset: 18
+    	data_path: "/def/vehicle/t_wheel/overweight.sii"
+}
+
+vehicle_paint_job_accessory: .scs_lowbed73.heat_ex.paint_job
+{
+    	data_path: "/def/vehicle/trailer/scs_lowbed/custom_paint_job/blue.sii"
+}
+
+vehicle_accessory: .scs_lowbed73.heat_ex.cargo
+{
+    	data_path: "/def/vehicle/trailer_cargo/scs_lowbed/heat_exchanger.sii"
+}

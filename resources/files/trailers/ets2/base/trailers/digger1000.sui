@@ -4,7 +4,7 @@ trailer : trailer.overweight.digger1000
 	accessories[]: .overweight.wheel_ldr.trwheel0
 	accessories[]: .overweight.wheel_ldr.trwheel1
 	accessories[]: .overweight.wheel_ldr.trwheel2
-	accessories[]: .overweight.wheel_ldr.cargo
+	#accessories[]: .overweight.wheel_ldr.cargo
 }
 
 vehicle_accessory: .overweight.wheel_ldr.tchassis
