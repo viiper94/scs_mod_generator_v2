@@ -373,7 +373,7 @@ class TrailerGenerator extends ModGenerator{
             for($i = 0; $i < $trailer->axles; $i++){
                 switch(Wheel::getWheelState($i, $this->chassis)){
                     case 2:
-                        foreach(Wheel::$defaultOwnableWheels[$this->game] as $name => $def){
+                        foreach(Wheel::$defaultOwnableWheels[$this->game][$this->chassis->wheels->type] as $name => $def){
                             $output_string .= "vehicle_wheel_accessory: .$key.$name$i\n";
                             $output_string .= "{\n\toffset: ".($i*2)."\n";
                             $output_string .= "\tdata_path: \"$def\"\n}\n\n";

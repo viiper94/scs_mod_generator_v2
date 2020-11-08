@@ -114,18 +114,19 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin wheels">
+                            <label>Колеса*</label>
                             <select name="wheels_id" required>
                                 @foreach($wheels as $wheel)
                                     <option value="{{ $wheel->id }}"
-                                        @if($chassis->wheels_id == $wheel->id) selected @endif>@lang($wheel->game.'_wheels.'.$wheel->alias) (@lang('general.'.$wheel->game))
+                                        @if($chassis->wheels_id == $wheel->id) selected @endif>@lang($wheel->game.'_wheels.'.$wheel->alias) - {{ ucwords($wheel->type) }} (@lang('general.'.$wheel->game))
                                     </option>
                                 @endforeach
                             </select>
-                            <label>Колеса*</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 no-margin wheels">
+                            <label>DLC</label>
                             <select name="dlc_id">
                                 <option value="">Без DLC</option>
                                 @foreach($dlc as $item)
@@ -134,7 +135,6 @@
                                     </option>
                                 @endforeach
                             </select>
-                            <label>DLC</label>
                         </div>
                     </div>
                     <div class="row no-margin" style="margin-left: 1rem;">
