@@ -59,11 +59,11 @@ class AdminPaintsController extends Controller{
             'game' => $paint->game,
             'def' => $paint->def,
             'chassis' => $paint->chassis,
-            'alias' => $paint->alias.'_copy',
-            'look' => $paint->look.'_copy',
+            'alias' => $paint->alias,
+            'look' => $paint->look,
             'dlc_id' => $paint->dlc_id,
             'with_color' => $paint->with_color,
-            'active' => false,
+            'active' => true,
         ]);
 
         return $new_paint->save() ?
