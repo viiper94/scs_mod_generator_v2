@@ -55,6 +55,9 @@ localization_db : .localization
 	key[]: "pipe_char"
 	val[]: "|" #+ Helper which can be used when passing text which might contain this character as input to UI templates which use it as parameter separator
 
+	key[]: "check_char"
+	val[]:	"✔" #+ WoTr event completion symbol
+
 # DLC names
 
 	key[]: "dlc_name"
@@ -161,43 +164,43 @@ localization_db : .localization
 
 	key[]: "onlineid_us_nwmexico"
 	val[]: "@@package_ats_nwmexico@@"
-	
+
 	key[]: "package_ats_oregon"
 	val[]: "DLC - Oregon"
 
 	key[]: "onlineid_us_oregon"
 	val[]: "@@package_ats_oregon@@"
-	
+
 	key[]: "package_ats_stripes"
 	val[]: "DLC - Classic Stripes Paint Jobs Pack"
 
 	key[]: "onlineid_us_stripes"
 	val[]: "@@package_ats_stripes@@"
-	
+
 	key[]: "package_ats_oversize"
 	val[]: "DLC - Special Transport"
 
 	key[]: "onlineid_us_oversize"
 	val[]: "@@package_ats_oversize@@"
-	
+
 	key[]: "package_ats_forest_harvesting"
 	val[]: "DLC - Forest Machinery"
 
 	key[]: "onlineid_us_forest_harvesting"
 	val[]: "@@package_ats_forest_harvesting@@"
-	
+
 	key[]: "package_ats_wa"
 	val[]: "DLC - Washington"
 
 	key[]: "onlineid_us_wa"
 	val[]: "@@package_ats_wa@@"
-	
+
 	key[]: "package_ats_utah"
 	val[]: "DLC - Utah"
 
 	key[]: "onlineid_us_utah"
 	val[]: "@@package_ats_utah@@"
-	
+
 	key[]: "package_ats_space"
 	val[]: "DLC - Space Paint Jobs Pack"
 
@@ -209,7 +212,7 @@ localization_db : .localization
 
 	key[]: "onlineid_us_inter_lone"
 	val[]: "@@package_ats_int_lone@@"
-	
+
 	key[]: "package_at_pribbon"
 	val[]: "DLC - Pink Ribbon"
 
@@ -221,6 +224,18 @@ localization_db : .localization
 
 	key[]: "onlineid_us_idaho"
 	val[]: "@@package_ats_idaho@@"
+
+	key[]: "package_ats_ws_49x"
+	val[]: "DLC - Western Star 49x"
+
+	key[]: "onlineid_us_ws_49x"
+	val[]: "@@package_ats_ws_49x"
+
+	key[]: "package_ats_colorado"
+	val[]: "DLC - Colorado"
+
+	key[]: "onlineid_us_colorado"
+	val[]: "@@package_ats_colorado"
 
 # Truck brands
 
@@ -238,6 +253,9 @@ localization_db : .localization
 
 	key[]: "brand_volvo"
 	val[]: "Volvo"
+
+	key[]: "brand_westernstar"
+	val[]: "Western Star"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -259,6 +277,9 @@ localization_db : .localization
 
 	key[]: "series_volvo_vnl"
 	val[]: "VNL"
+
+	key[]: "series_westernstar_49x"
+	val[]: "49X"
 
 # Brand names for truck browser
 
@@ -282,6 +303,9 @@ localization_db : .localization
 
 	key[]: "truck_browser_brand_volvo_vnl"
 	val[]: "Volvo VNL"
+
+	key[]: "truck_browser_brand_westernstar_49x"
+	val[]: "Western Star 49X"
 
 # Trailer brands
 
@@ -311,6 +335,143 @@ localization_db : .localization
 
 	key[]: "series_scs_log"
 	val[]: "A-KLN-19"
+
+	key[]: "series_scs_lowboy"
+	val[]: "A-SNZ-20"
+
+
+
+	# Included from "/locale/fuel_price_strings.sui"
+
+
+# Fuel prices Arizona
+
+	key[]: "fp_az_regular"
+	val[]: "2.25"
+
+	key[]: "fp_az_plus"
+	val[]: "2.53"
+
+	key[]: "fp_az_premium"
+	val[]: "2.78"
+
+	key[]: "fp_az_diesel"
+	val[]: "2.40"
+
+# Fuel prices California
+
+	key[]: "fp_ca_regular"
+	val[]: "3.19"
+
+	key[]: "fp_ca_plus"
+	val[]: "3.37"
+
+	key[]: "fp_ca_premium"
+	val[]: "3.49"
+
+	key[]: "fp_ca_diesel"
+	val[]: "3.33"
+
+# Fuel prices Colorado
+
+	key[]: "fp_co_regular"
+	val[]: "2.22"
+
+	key[]: "fp_co_plus"
+	val[]: "2.53"
+
+	key[]: "fp_co_premium"
+	val[]: "2.82"
+
+	key[]: "fp_co_diesel"
+	val[]: "2.16"
+
+# Fuel prices Idaho
+
+	key[]: "fp_id_regular"
+	val[]: "2.34"
+
+	key[]: "fp_id_plus"
+	val[]: "2.50"
+
+	key[]: "fp_id_premium"
+	val[]: "2.69"
+
+	key[]: "fp_id_diesel"
+	val[]: "2.33"
+
+# Fuel prices New Mexico
+
+	key[]: "fp_nm_regular"
+	val[]: "1.99"
+
+	key[]: "fp_nm_plus"
+	val[]: "2.30"
+
+	key[]: "fp_nm_premium"
+	val[]: "2.56"
+
+	key[]: "fp_nm_diesel"
+	val[]: "2.27"
+
+# Fuel prices Nevada
+
+	key[]: "fp_nv_regular"
+	val[]: "2.61"
+
+	key[]: "fp_nv_plus"
+	val[]: "2.83"
+
+	key[]: "fp_nv_premium"
+	val[]: "3.01"
+
+	key[]: "fp_nv_diesel"
+	val[]: "2.57"
+
+# Fuel prices Oregon
+
+	key[]: "fp_or_regular"
+	val[]: "2.58"
+
+	key[]: "fp_or_plus"
+	val[]: "2.75"
+
+	key[]: "fp_or_premium"
+	val[]: "2.93"
+
+	key[]: "fp_or_diesel"
+	val[]: "2.56"
+
+# Fuel prices Utah
+
+	key[]: "fp_ut_regular"
+	val[]: "2.37"
+
+	key[]: "fp_ut_plus"
+	val[]: "2.54"
+
+	key[]: "fp_ut_premium"
+	val[]: "2.70"
+
+	key[]: "fp_ut_diesel"
+	val[]: "2.33"
+
+# Fuel prices Washington
+
+	key[]: "fp_wa_regular"
+	val[]: "2.76"
+
+	key[]: "fp_wa_plus"
+	val[]: "2.97"
+
+	key[]: "fp_wa_premium"
+	val[]: "3.14"
+
+	key[]: "fp_wa_diesel"
+	val[]: "2.69"
+
+	# End of include "/locale/fuel_price_strings.sui"
+
 
 	# End of include "/locale/common.sui"
 
@@ -948,6 +1109,12 @@ localization_db : .localization
 	key[]: "f_badge"
 	val[]: "전면 배지" #+ Brand badge on front of the truck
 
+	key[]: "f_fender"
+	val[]: "전방 펜더" #+ Fender of the truck above front wheel
+
+	key[]: "r_fender"
+	val[]: "후방 펜더" #+ Fender of the truck above rear wheel(s)
+
 	key[]: "r_banner"
 	val[]: "후방 배너" #+ Banner on the rear
 
@@ -1020,37 +1187,37 @@ localization_db : .localization
 
 	key[]: "switch_walking_cam"
 	val[]: "카메라 모드 전환" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "주변 둘러보기" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "회전" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "확대" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "시점 이동" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "보행 모드 조작:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "앞으로" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "뒤로" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "왼쪽" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "오른쪽" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "웅크리기" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "달리기" #+ Tooltip for run.
 #@}
@@ -1060,7 +1227,7 @@ localization_db : .localization
 
 	key[]: "notification_walking_camera"
 	val[]: "1인칭 카메라 활성화됨" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "주변 카메라 활성화됨" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -1099,6 +1266,9 @@ localization_db : .localization
 	key[]: "delete"
 	val[]: "삭제" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "프로필 삭제" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "업그레이드" #+ Button allowing user to upgrade something.
 
@@ -1127,6 +1297,8 @@ localization_db : .localization
 	key[]: "save_in_progress"
 	val[]: "저장 중..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "컷신을 건너뛰려면 $KEY$을(를) 누르십시오." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1415,7 +1587,7 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "다음 체크포인트까지 소요 시간" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "다음 체크포인트까지 소요 시간" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1556,13 +1728,16 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - 런치패드" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "프로필 관리자" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - 런치패드" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "온라인 뉴스" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "프로필" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "프로필 변경" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "다른 사람으로 바뀌다." #+ Help message associated with profile selection icon.
@@ -1579,26 +1754,47 @@ localization_db : .localization
 	key[]: "continue_game"
 	val[]: "게임을 진행합니다" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "선택한 프로필 사용" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "새 프로필" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "프로필 상태" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "프로필 MOD 관리" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "프로필 관리" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "프로필 편집" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "호환되지 않는 프로필입니다!<br>게임을 최신 버전으로 업데이트해 보세요." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "소유한 차고" #+ How many garages the player owns
+	val[]: "소유한 차고:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "소형 : $SMALL$, 대형 : $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "소유한 트럭" #+ how many trucks the player owns
+	val[]: "소유한 트럭:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "소유한 트레일러" #+ how many trailers the player owns
+	val[]: "소유한 트레일러:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "스팀 클라우드 동기화:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "온라인 상태"
+	val[]: "World of Trucks 프로필:"
+
+	key[]: "mods_in_use"
+	val[]: "사용 중인 MOD:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "연결되지 않음!"	#+ to the WoTR
@@ -1635,6 +1831,31 @@ localization_db : .localization
 #@
 #@}
 
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "사용 중인 MOD: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "사용 중인 MOD가 없음"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "스팀 클라우드 동기화가 활성화됨"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "스팀 클라우드 동기화가 활성화되지 않음 <br><offset vshift=7><color value=@@clr_txt_d@@>활성화하려면 클릭하십시오"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "World of Trucks에 연결됨"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "World of Trucks에 연결되지 않음 <br><offset vshift=7><color value=@@clr_txt_d@@>연결하려면 클릭하십시오"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "프로필 세부 정보"
+#@
+#@}
+
 #+ Window used to create a new profile.
 #@{
 	key[]: "profile_create_t"
@@ -1656,7 +1877,7 @@ localization_db : .localization
 	val[]: "회사 이름" #+ Label of edit box used to enter name of the company.
 
 	key[]: "profile_map_name"
-	val[]: "재생 Module" #+ Label of edit box used to select game map.
+	val[]: "플레이 Module" #+ Label of edit box used to select game map.
 
 	key[]: "enter_name_default"
 	val[]: "- 이름을 입력하세요 -" #+ Text shown in the profile name edit box if no name is entered.
@@ -1793,10 +2014,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "새로운 게임 버전을<br>사용할 수 있습니다."
+	val[]: "이전 버전의 게임을 사용하고 있습니다.<br><link url=$URL_LINK$ color=@@clr_link@@>새 버전으로 업그레이드</link>하면 모든 기능을 사용할 수 있습니다."
 
 	key[]: "new_version_available_steam"
-	val[]: "새로운 게임 버전을<br>사용할 수 있습니다.<br><br>자동 업데이트를 끄지 않으셨다면 스팀이 자동으로 게임을 업데이트합니다."
+	val[]: "이전 버전의 게임을 사용하고 있습니다.<br>자동 업데이트를 끄지 않으셨다면 스팀이 자동으로 게임을 업데이트합니다."
 
 	key[]: "allow_news"
 	val[]: "게임 업데이트와 뉴스를 자동으로 확인하도록 허용하시겠습니까?" #+ Text shown in a message box.
@@ -2074,6 +2295,9 @@ localization_db : .localization
 
 	key[]: "truck_exhaust_volume"
 	val[]: "트럭 배기 볼륨" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "트럭 터보 볼륨" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "트럭 효과음 볼륨" #+ Slider controlling volume of the truck effects.
@@ -2650,7 +2874,7 @@ localization_db : .localization
 
 	key[]: "walk_mode"
 	val[]: "보행 모드"
-	
+
 	key[]: "other_controls"
 	val[]: "기타"
 #@}
@@ -2953,22 +3177,22 @@ localization_db : .localization
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "앞으로" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "뒤로" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "왼쪽" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "오른쪽" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "웅크리기" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "달리기" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3390,7 +3614,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale"
 	val[]: "상하 회전 증폭 (캐빈)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "좌우 회전 증폭 (보행 모드)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3471,7 +3695,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "고개를 위아래로 끄덕일 때마다 응답 속도가 증가합니다. (캐빈)"
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "고개를 좌우로 돌릴 때마다 응답 속도가 증가합니다. (보행 모드)"
 
@@ -4226,7 +4450,7 @@ localization_db : .localization
 	val[]: "즉시 서비스 센터를 방문하십시오!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "전체 경로 정보" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "전체 경로 정보" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "다음 체크포인트 정보" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -4332,6 +4556,15 @@ localization_db : .localization
 
 	key[]: "park_nf"
 	val[]: "이곳은 휴식 공간이지만,<br>지금은 피곤하지 않습니다."
+
+	key[]: "viewpoint_title"
+	val[]: "뷰포인트"
+
+	key[]: "viewpoint_msg"
+	val[]: "뷰포인트를 활성화하려면 다음 키를 누르십시오:"
+
+	key[]: "viewpoint_found"
+	val[]: "새로운 뷰포인트를 발견했습니다!"
 
 	key[]: "gas_station"
 	val[]: "주유소"
@@ -5511,7 +5744,7 @@ localization_db : .localization
 	val[]: "롤러 - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "트랙터 - RS-666"
+	val[]: "무한궤도 트랙터"
 
 	key[]: "cn_yacht"
 	val[]: "요트"
@@ -5831,7 +6064,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "아스팔트 밀러 - Writigen 808"
+	val[]: "아스팔트 밀러 - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "공업용 케이블 릴"
@@ -7249,8 +7482,14 @@ localization_db : .localization
 	key[]: "mapl_train"
 	val[]: "채널 터널"
 
+	key[]: "mapl_undiscovered"
+	val[]: "방문하지 않은 지점"
+
 	key[]: "mapl_viewpoint"
-	val[]: "뷰포인트"
+	val[]: "뷰포인트 (방문)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "뷰포인트 (미방문)"
 
 	key[]: "mapl_gas"
 	val[]: "주유소"
@@ -8564,6 +8803,14 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+	key[]: "duty"
+	val[]: "Duty" #+ Basic truck accesory general
+
+	key[]: "duty_paint"
+	val[]: "Duty 페인트" #+ Basic but paintable truck accesory
+
+	key[]: "classic"
+	val[]: "클래식" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "순정" #+ Stock truck accesory general
@@ -8589,6 +8836,9 @@ localization_db : .localization
 	key[]: "plastic_gray"
 	val[]: "플라스틱 그레이" #+ Plastic mirror, doorhandle or other accessory
 
+	key[]: "plastic_gray_cover"
+	val[]: "플라스틱 그레이 커버" #+ Simple plastic cover used as small sideskirt or other accessory
+
 	key[]: "plastic_cover"
 	val[]: "플라스틱 커버" #+ Simple plastic cover used as small sideskirt or other accessory
 
@@ -8597,6 +8847,9 @@ localization_db : .localization
 
 	key[]: "paint"
 	val[]: "페인트" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "페인트 롱" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "크롬" #+ Chromed mirror, doorhandle or other accessory
@@ -8614,7 +8867,7 @@ localization_db : .localization
 	val[]: "페인트 & 플라스틱 그레이" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Alu" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "알루미늄" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "플라스틱 모던" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -10035,7 +10288,7 @@ localization_db : .localization
 	val[]: "새로운 이벤트" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "이벤트 정보" #+ Title of the event popup.
+	val[]: "라이브 이벤트" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "개인 목표 달성!" #+ Text showed when player completes event.
@@ -10049,11 +10302,14 @@ localization_db : .localization
 	key[]: "event_info"
 	val[]: "이벤트 정보" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "이벤트" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "라이브 이벤트" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "티어" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "현재 진행 중인 이벤트가 없습니다."
 #@}
 
 #+ Trailer ownership
@@ -10546,9 +10802,12 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "냉장"
+#@}
 
-	key[]: "liquid"
-	val[]: "액체"
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "탱크"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10562,6 +10821,9 @@ localization_db : .localization
 	key[]: "body_cargo_types_dryvan"
 	val[]: "일반, 건조제품"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "건설 장비 및 자재"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "액체 식품"
 
@@ -10571,11 +10833,11 @@ localization_db : .localization
 	key[]: "body_cargo_types_log"
 	val[]: "통나무, 빔 또는 튜브"
 
+	key[]: "body_cargo_types_lowboy"
+	val[]: "중장비 및 높이가 높은 화물"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "냉동, 냉장식품"
-
-	key[]: "body_cargo_types_flatbed"
-	val[]: "건설 장비 및 자재"
 #@}
 
 #+ Trailer chain type names.

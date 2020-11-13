@@ -52,7 +52,7 @@ localization_db : .localization
 	val[]: "წინა სარკეები"
 
 	key[]: "grill"
-	val[]: "გრილი"
+	val[]: "ცხაურა"
 
 	key[]: "headache_r"
 	val[]: "სალონის დამცავი"
@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "ტურბო ფრთა"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero შეღებილი"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "ალუმინის ავზი"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "ქვევით"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "სათამაშო ჯაჭვური ხერხი"
 
 	key[]: "chrom_tank"
-	val[]: "ქრომირებული ავზი" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "ალუმინის ავზი" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "ქრომირებული ავზი"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D-სებრი" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D-სებრი"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "დღისით მოძრაობის ნათურები"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "რჩეული"
+
+	key[]: "fog_lights"
+	val[]: "ნისლსაწინააღმდეგო ფარები"
+
+	key[]: "hvac"
+	val[]: "გათბობა/ვენტილაცია"
 
 #@}
 
@@ -126,11 +154,11 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "ჩაასწორეთ <color value=@@clr_sel@@>live_streams.sii ფაილი <color value=@@clr_txt@@><color value=@@clr_sel@@>American Truck Simulator-ის <color value=@@clr_txt@@>საქაღალდეში <color value=@@clr_sel@@>ჩემი დოკუმენტებში <color value=@@clr_txt@@>და მოუსმინეთ საყვარელ რადიოს თამაშში!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
-	val[]: "მუსიკის დასამატებლად, წაიკითხეთ ფაილი <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@> საქაღალდეში <color value=@@clr_sel@@>Documents\\American Truck Simulator<color value=@@clr_txt@@><color value=@@clr_sel@@><color value=@@clr_txt@@>"
+	val[]: "გთხოვთ, წაიკითხოთ ფაილში <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@>, მისამართზე <color value=@@clr_sel@@>Documents / American Truck Simulator <color value=@@clr_txt@@>, თუ როგორ ხდება საკუთარი მუსიკის ან რადიოსადგურების დამატება."
 #@}
 
 #+ Messages shown as part of the tutorial.
@@ -183,7 +211,7 @@ localization_db : .localization
 	val[]: "საწვავის დაზოგვა"
 
 	key[]: "skill_mechanical_info"
-	val[]: "საწვავის შემცირების უნარის გაუმჯობესება გამოიწვევს საწვავის მოხმარების შემცირებას. კერძოდ:"
+	val[]: "საწვავის დაზოგვის უნარი ათვისება, შეამცირებს საწვავის მოხმარებას. კერძოდ:"
 #@}
 #@}
 
@@ -225,6 +253,9 @@ localization_db : .localization
 
 	key[]: "cn_cable_reel"
 	val[]: "სადენის დასახვევი"
+
+	key[]: "cn_cans"
+	val[]: "ქილები"
 
 	key[]: "cn_colors"
 	val[]: "საღებავი"
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "თივა"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "მძიმე ბულდოზერი"
+
 	key[]: "cn_house_prefabs"
 	val[]: "ანაკრები სახლი"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "საფქვავი დანადგარი"
 
+	key[]: "cn_mix_tank"
+	val[]: "შემრევი ავზი"
+
 	key[]: "cn_mobile_crane"
 	val[]: "ყველა რელიეფის ამწე"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "დასაქუცმაცებელი"
+
+	key[]: "cn_paper"
+	val[]: "ქაღალდი"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "ცხოველის გრანულირებული საკვები"
@@ -370,11 +410,11 @@ localization_db : .localization
 
 	#+ Name of the cargo of hull part for large dozers.
 	key[]: "cn_mutt_hull"
-	val[]: "თვითმცლელის ძარა"
+	val[]: "ვეება თვითმცლელის ძარა"
 
 	#+ Name of the cargo of large dozer.
 	key[]: "cn_mutt"
-	val[]: "თვითმცლელის შასი"
+	val[]: "ვეება თვითმცლელის შასი"
 
 	#+ Name of the cargo of big air condition complex.
 	key[]: "cn_aircondition"
@@ -382,7 +422,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of some construction - need to be properly named after the model is done.
 	key[]: "cn_lattice"
-	val[]: "დიდი კონსტრუქცია"
+	val[]: "მასიური კონსტრუქცია"
 #@}
 
 #+ Names of individual trailer and trailer chassis types.
@@ -400,7 +440,7 @@ localization_db : .localization
 	val[]: "მანქანის გადამზიდი"
 
 	key[]: "tn_cement"
-	val[]: "ცემენტის ცისტერნა"
+	val[]: "ფხვიერი ცემენტის ცისტერნა"
 
 	key[]: "tn_chemical"
 	val[]: "ავზი ქიმიური ნივთიერებებით"
@@ -416,9 +456,6 @@ localization_db : .localization
 
 	key[]: "tn_flatbed"
 	val[]: "ბაქნიანი მისაბმელი"
-
-	key[]: "tn_food_tank"
-	val[]: "საჭმლის ავზი"
 
 	key[]: "tn_frac_tank"
 	val[]: "ცისტერნა-კონტეინერი"
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "ამწე-მანიპულატორი"
 
-	key[]: "tn_log"
-	val[]: "ხეტყის მისაბმელი"
-
-	key[]: "tn_lowboy"
-	val[]: "დაბალჩარჩოიანი მისაბმელი"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "დაბალჩარჩოიანი მისაბმელი ნავისთვის"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "დაბალჩარჩოიანი 55ლ მისაბმელი"
+	key[]: "tn_scs_lowboy"
+	val[]: "დაბალი გასაშლელი მისაბმელი"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "მობილური მისაბმელი"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "საფრთხის დონე 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "საფრთხის დონე 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "საფრთხის დონე 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "საფრთხის დონე 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "საფრთხის დონე 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "საფრთხის დონე 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "საფრთხის დონე 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "ნამდვილი მუშა"
-	
+
 	key[]: "lvl_name3"
 	val[]: "მეწარმე"
-	
+
 	key[]: "lvl_name4"
 	val[]: "პროფესიონალი"
-	
+
 	key[]: "lvl_name6"
 	val[]: "ოსტატობის 18 ბორბალი"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "ავტოსალონი"
-	
+
 	key[]: "weblink_game"
 	val[]: "American Truck Simulator-ის ვებგვერდი" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
-	val[]: "American Truck Simulator-ის ჩართვა არ ხერხდება, რადგან არ მოიძებნა შესაფერისი გრაფიკული მოწყობილობა\nრჩევა:\n\n1. დარწმუნდით, რომ თქვენი კომპიუტერის გრაფიკული მოწყობილობა აკმაყოფილებს თამაშის უმცირეს მოთხოვნებს.\n2. განაახლეთ Microsoft DirectX.\n3. გადმოწერეთ და დააყენთ გრაფიკული მოწყობილობისთვის უახლესი დრაივერი\n4. შეცვალეთ OpenGL-ით გამოსახვა DirectX-ით.\n5. საქაღალდეში 'Documents' - 'American Truck Simulator' წაშალეთ გამართვის ფაილი 'config.cfg'. \n(თამაშის შემდეგი ჩართვისას, ეს ფაილი თავისით შეიქმნება)."
-	
+	val[]: "American Truck Simulator-ის ჩართვა არ ხერხდება, რადგან არ მოიძებნა შესაფერისი გრაფიკული მოწყობილობა\nრჩევა:\n\n1. დარწმუნდით, რომ თქვენი კომპიუტერის გრაფიკული მოწყობილობა აკმაყოფილებს თამაშის აუცილებელ მოთხოვნებს.\n2. განაახლეთ Microsoft DirectX.\n3. გადმოწერეთ და დააყენეთ გრაფიკული მოწყობილობის უახლესი დრაივერი\n4. შეცვალეთ OpenGL-ით გამოსახვა DirectX-ით.\n5. საქაღალდეში 'Documents' - 'American Truck Simulator' წაშალეთ გამართვის ფაილი 'config.cfg'. \n(თამაშის მომდევნო ჩართვისას, ეს ფაილი თავისით შეიქმნება)."
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator-ს შეექმნა პრობლემა და არ ხერხდება ტექსტურების დახატავ (არ მოიძებნა შესაბამისი მოწყობილობა)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "თამაში გააქტიურდა.<br>მადლობას გიხდით American Truck Simulator-ის შეძენისთვის."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator-ის ვებგვერდი"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "პროფილის სამართავი" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "ხეტყის საზიდი"
+
+	key[]: "lowboy"
+	val[]: "დაბალჩარჩოიანი"
 
 	key[]: "refrigerated"
 	val[]: "სამაცივრე"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "ერთიანი"
 
+	key[]: "chain_double"
+	val[]: "ორმაგი"
+
 	key[]: "chain_staa_double"
 	val[]: "ორმაგი STAA"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "ორმაგი STAA"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "ორმაგი მოკლე STAA"
+	key[]: "tr_articulated_3axle"
+	val[]: "შესახსრებული, 3 ღერძი"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "ორმაგი მოკლე STAA, 4 ღერძი"
+	key[]: "tr_articulated_4axle"
+	val[]: "შესახსრებული, 4 ღერძი"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "შესახსრებული, 5 ღერძი"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "შესახსრებული, 6 ღერძი"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "შესახსრებული, 7 ღერძი"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "შესახსრებული, 8 ღერძი"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "შესახსრებული, 9 ღერძი"
 
 	key[]: "tr_b_double"
 	val[]: "გაერთ. ორმაგი"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "გაერთ. ორმაგი, 6 ღერძი"
 
+	key[]: "tr_double_staa"
+	val[]: "ორმაგი STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "ორმაგი მოკლე STAA"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "ორმაგი მოკლე STAA, 4 ღერძი"
+
+	key[]: "tr_jeep"
+	val[]: "წინ ურიკა"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "წინა ურიკა, 3 ღერძი"
+
 	key[]: "tr_rm_double"
 	val[]: "კლდოვანი სამთო ორმაგი"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "კლდოვანი სამთო ორმაგი მოკლე"
-
-	key[]: "tr_tp_double"
-	val[]: "სრული სიგრძის ორმაგი"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "სრული სიგრძის ორმაგი, 6 ღერძი"
 
 	key[]: "tr_single_28"
 	val[]: "28 ფუტი"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53 ფუტი, დაშორებული"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "უკანა ურიკა, 1 ღერძი"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "უკანა ურიკა, 2 ღერძი"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "უკანა ურიკა, 3 ღერძი"
+
+	key[]: "tr_tp_double"
+	val[]: "სრული სიგრძის ორმაგი"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "სრული სიგრძის ორმაგი, 6 ღერძი"
+
 	key[]: "tr_triple"
 	val[]: "სამმაგი"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "ხეტყის საზიდი 6 საყრდენით"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "დაბალჩარჩოიანი ხის"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "დაბალჩარჩოიანი, მთლიანი ხის"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "დაბალჩარჩოიანი ხის, ალუმინით"
 
 	key[]: "bs_reefer"
 	val[]: "სამაცივრე"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "ჩვეულებრივი კარი, ქარამრიდი"
+
+	key[]: "wooden_deck"
+	val[]: "ხის ბაქანი"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "კალიფორნია"
+
+	key[]: "colorado"
+	val[]: "კოლორადო"
 
 	key[]: "idaho"
 	val[]: "აიდაჰო"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "ალამოგორდო"
 
+	key[]: "alamosa"
+	val[]: "ალამოსა"
+
 	key[]: "albuquerque"
 	val[]: "ალბუკერკე"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "ბოისე"
+
+	key[]: "burlington"
+	val[]: "ბარლინგტონი"
 
 	key[]: "burns"
 	val[]: "ბერნსი"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "კორ-დ’ალენი"
 
+	key[]: "colorado_springs"
+	val[]: "კოლორადო-სპრინგზი"
+
 	key[]: "colville"
 	val[]: "კოლვილი"
 
 	key[]: "coos_bay"
 	val[]: "კუს-ბეი"
+
+	key[]: "denver"
+	val[]: "დენვერი"
+
+	key[]: "durango"
+	val[]: "დურანგო"
 
 	key[]: "ehrenberg"
 	val[]: "ერენბერგი"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "ფლაგსტაფი"
 
+	key[]: "fort_collins"
+	val[]: "ფორტ-კოლინსი"
+
 	key[]: "fresno"
 	val[]: "ფრესნო"
 
@@ -1064,13 +1171,16 @@ localization_db : .localization
 	val[]: "გალაპი"
 
 	key[]: "grand_canyon"
-	val[]: "გრან-კანიონი"
+	val[]: "გრანდ-კანიონი"
 
 	key[]: "grand_canyon_village"
-	val[]: "გრან-კანიონ-ვილიჯი"
+	val[]: "გრანდ-კანიონ-ვილიჯი"
 
 	key[]: "grand_coulee"
 	val[]: "გრანდ-კული"
+
+	key[]: "grand_junction"
+	val[]: "გრანდ-ჯანქშენი"
 
 	key[]: "grangeville"
 	val[]: "გრეინჯვილი"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "ლეიკვიუ"
 
+	key[]: "lamar"
+	val[]: "ლამარი"
+
 	key[]: "las_cruces"
 	val[]: "ლას-კრუსიზი"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "მოაბი"
+
+	key[]: "montrose"
+	val[]: "მონტროუზი"
 
 	key[]: "nampa"
 	val[]: "ნამპა"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "პროვო"
+
+	key[]: "pueblo"
+	val[]: "პუებლო"
+
+	key[]: "rangely"
+	val[]: "რეინჯლი"
 
 	key[]: "raton"
 	val[]: "რატონი"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "სენტ-ჯორჯი"
 
+	key[]: "steamboat_springs"
+	val[]: "სტიმბოუტ-სპრინგზი"
+
+	key[]: "sterling"
+	val[]: "სტერლინგი"
+
 	key[]: "stockton"
 	val[]: "სტოკტონი"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "გლენვუდის კანიონი"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "დენვერის აეროპორტი"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "გზატკეცილი „Million Dollar Highway“"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "ძეგლი „ოთხი კუთხე“"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "ხიდი რედ-კლიფი"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "ვულფ-კრიკის უღელტეხილი"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "კოლორადო-სპრინგზი"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "ოქროს მაღარო კრიპლ-კრიკი და ვიქტორი"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "ეიზენჰაუერის გვირაბი"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "გზა კლდოვან მთებში"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "ტვინ-ფოლსის კარტოფილის მეურნეობა"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "მიდვეილ-ჰილის დასასვენებელი ადგილი"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "ბინგემ-კანიონის მაღარო"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "სენტ-ჯორჯი"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "სან-რაფაელის მაღლობი"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "იუტას ნავთობის საბადოები"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "მონუმენტის ხეობა"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "ბონევილის მარილის მინდვრები"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "მღვიმე მოკი"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "ღირსშესანიშნაობა Hole N\" The Rock"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "გლენ-კანიონის კაშხლის ხიდი"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "ჰუვერის მოსასვენებელი არე"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "სენტ-ჰელენზის მთის, ვულკანური ეროვნული ძეგლი"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "სიეტლის ნავსადგური"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "ვაშინგტონის ხეტყის მომპოვებელი მხარე"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "ევერეტის მბრუნავი ხიდი"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "ვანტაჟის ხიდი"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "დესეფშენის სრუტე"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "საავიაციო ქარხანა"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "გრანდ-კულის კაშხალი"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "სიეტლის საქმიანი რაიონი"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "ქარხანა Kenworth"
 #@}
 
 }

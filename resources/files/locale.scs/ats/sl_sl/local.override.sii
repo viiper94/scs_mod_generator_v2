@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Turbo spojler"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Painted"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Aluminijev rezervoar"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Bottom"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Igrača motorne žage"
 
 	key[]: "chrom_tank"
-	val[]: "Kromiran rezervoar" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aluminijev Rezervoar" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Kromiran rezervoar"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D-Oblika" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D-oblika"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "DRL"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elite"
+
+	key[]: "fog_lights"
+	val[]: "Fog Lights"
+
+	key[]: "hvac"
+	val[]: "HVAC"
 
 #@}
 
@@ -125,8 +153,8 @@ localization_db : .localization
 #+ Tooltip shown when hovering over the radio_stream button.
 
 	key[]: "radio_hint"
-	val[]: "Prosimo, preberite <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>v <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mapi, ki se nahaja v <color value=@@clr_sel@@>Dokumentih <color value=@@clr_txt@@>, da boste izvedeli kako dodati svojo glasbo in pretočni radio."
-	
+	val[]: "Uredi <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>v <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>mapi, ki se nahaja v <color value=@@clr_sel@@>Dokumentih <color value=@@clr_txt@@>in poslušaj svoj najljubši internetni pretočni radio kar iz igre!"
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -156,22 +184,22 @@ localization_db : .localization
 #+ Names of individual skills which can be improved.
 #@{
 	key[]: "adr"
-	val[]: "Nevarni Tovor"
+	val[]: "Nevarni tovor"
 
 	key[]: "mechanical"
-	val[]: "Ekonomika Goriva"
+	val[]: "Ekonomika goriva"
 #@}
 
 #+ Cargo types.
 #@{
 	key[]: "cargo_type_adr"
-	val[]: "Navaren"
+	val[]: "Nevaren"
 #@}
 
 #+ Information about individual hazard classes.
 #@{
 	key[]: "skill_adr_title"
-	val[]: "Hazmat Transportno Izobraževanje"
+	val[]: "Hazmat transportno izobraževanje"
 
 	key[]: "skill_adr_info"
 	val[]: "Transportiranje nevarnih snovi zahteva dobro izurjene voznike. Uporabi svoje težko prislužene izkušnje za pridobitev sledečih U.S. DOT HazMat certifikatov in znatno povečaj svoj prihodek:"
@@ -180,7 +208,7 @@ localization_db : .localization
 #+ Information about individual ranks of "Fuel Economy" skill.
 #@{
 	key[]: "skill_mechanical_title"
-	val[]: "Ekonomika Goriva"
+	val[]: "Ekonomika goriva"
 
 	key[]: "skill_mechanical_info"
 	val[]: "Različna izobraževanja ti bodo pomagala zmanjšati porabo goriva. Še posebej:"
@@ -225,6 +253,9 @@ localization_db : .localization
 
 	key[]: "cn_cable_reel"
 	val[]: "Kolut kabla"
+
+	key[]: "cn_cans"
+	val[]: "Konzerve"
 
 	key[]: "cn_colors"
 	val[]: "Barva"
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Seno"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Velik buldožer"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Montažne hiše"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Asfaltna freza"
 
+	key[]: "cn_mix_tank"
+	val[]: "Silos za mešan tovor"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Univerzalni žerjav"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Mulčer"
+
+	key[]: "cn_paper"
+	val[]: "Papir"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Živalska hrana na paletah"
@@ -394,10 +434,10 @@ localization_db : .localization
 	val[]: "Cisterna za kisline (dolga)"
 
 	key[]: "tn_bottom_dump"
-	val[]: "Spodnja Kiper prikolica"
+	val[]: "Kiper prikolica (izpust spodaj)"
 
 	key[]: "tn_car"
-	val[]: "Polprikolica avtotransporter"
+	val[]: "Prevažanje avtomobilov"
 
 	key[]: "tn_cement"
 	val[]: "Cisterna za cement"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Polprikolica s tovorno ploščadjo"
 
-	key[]: "tn_food_tank"
-	val[]: "Cisterna za živila"
-
 	key[]: "tn_frac_tank"
 	val[]: "'Frac' tanker"
 
@@ -436,22 +473,16 @@ localization_db : .localization
 	val[]: "Cisterna za plin (dolga)"
 
 	key[]: "tn_home_transporter"
-	val[]: "Prikolica za prevažanje domov"
+	val[]: "Prevažanje domov"
 
 	key[]: "tn_knuckle_boom"
 	val[]: "Nakladač hlodovine"
 
-	key[]: "tn_log"
-	val[]: "Polprikolica za prevoz hlodov"
-
-	key[]: "tn_lowboy"
-	val[]: "Prikolica nizki priklopnik"
-
 	key[]: "tn_lowboy_boat"
-	val[]: "Nizka prikolica za čolne"
+	val[]: "Nizki priklopnik za čolne"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Nizka polprikolica 55L"
+	key[]: "tn_scs_lowboy"
+	val[]: "Nizki raztegljivi priklopnik"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Prikolica z mobilno zaporo"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Kategorija ogrožanja 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Kategorija ogrožanja 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Kategoriaj ogrožanja 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Kategorija ogrožanja 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Kategorija ogrožanja 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Kategorija ogrožanja 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Kategorija ogrožanja 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
-	val[]: "Delovni Konj"
-	
+	val[]: "Delovni konj"
+
 	key[]: "lvl_name3"
 	val[]: "Podjetnik"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Profesionalec"
-	
+
 	key[]: "lvl_name6"
-	val[]: "18 Koles Izkušenosti"
+	val[]: "18 koles izkušenosti"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Razstavna soba"
-	
+
 	key[]: "weblink_game"
 	val[]: "American Truck Simulator na spletu" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "American Truck Simulator ima težave in ni zmožen izrisovati grafike na tvoj računalnik (ni veljavne grafične kartice).\nPredlagani koraki:\n\n1. Preveri, če računalnik in grafična kartica zadoščata minimalnim zahtevam strojene opreme.\n2. Posodobi tvoj računalnik na najnovejšo verzijo Microsoft DirectX-a.\n3. Prenesi in namesti zadnje grafične gonilnike iz proizvajalčeve spletne strani - po vsej vrjetnosti so gonilniki zastareli.\n4. Poskusi zamenjati metodo izrisovanja iz OpenGL-a na DirectX ali obratno.\n5. Izbriši konfiguracijsko datoteko igre 'config.cfg' v tvoji 'Dokumentih' - 'American Truck Simulator' mapi. Mogoče je datoteka poškodovana. Ta datoteka bo avtomatsko ustvarjena z veljavnimi privzetimi vrednostmi ob naslednjem zagonu igre."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator ima eno težavo in ne more dobiti dovolj grafične podpore na vašem računalniku (ni našel nobene grafične naprave)"
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Aktivacija je bila uspešna.<br>Hvala za nakup kopije American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator!"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - ZAČETNI ZASLON" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "UPRAVITELJ PROFILOV" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -568,13 +599,13 @@ localization_db : .localization
 	val[]: "Prevoznik kontejnerjev"
 
 	key[]: "curtainside"
-	val[]: "Drsna Ponjava"
+	val[]: "Drsna ponjava"
 
 	key[]: "chipvan"
 	val[]: "Prevoz sekancev"
 
 	key[]: "dryvan"
-	val[]: "Zabojnik Suhega Tovora"
+	val[]: "Zabojnik suhega tovora"
 
 	key[]: "flatbed"
 	val[]: "Platforma"
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Hlodovina"
+
+	key[]: "lowboy"
+	val[]: "Nizki priklopnik"
 
 	key[]: "refrigerated"
 	val[]: "Hladilnik"
@@ -607,7 +641,7 @@ localization_db : .localization
 	val[]: "Lahek razsut tovor"
 
 	key[]: "body_cargo_types_hopper"
-	val[]: "Zrnast & razsut tovor"
+	val[]: "Zrnast in razsut tovor"
 #@}
 
 #+ Trailer chain type names (short/preview variant).
@@ -619,13 +653,13 @@ localization_db : .localization
 	val[]: "Dvojček"
 
 	key[]: "bdouble"
-	val[]: "B-Dvojček"
+	val[]: "B-dvojček"
 
 	key[]: "rmdouble"
-	val[]: "'R.M.' Dvojček"
+	val[]: "'R.M.' dvojček"
 
 	key[]: "tpdouble"
-	val[]: "T.P. Dvojček"
+	val[]: "'T.P.' dvojček"
 
 	key[]: "triple"
 	val[]: "Trojček"
@@ -637,17 +671,20 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Enojni"
 
+	key[]: "chain_double"
+	val[]: "Dvojček"
+
 	key[]: "chain_staa_double"
-	val[]: "'STAA' Dvojček"
+	val[]: "'STAA' dvojček"
 
 	key[]: "chain_b_double"
-	val[]: "B-Dvojček"
+	val[]: "B-dvojček"
 
 	key[]: "chain_rm_double"
-	val[]: "'Rocky Mountain' Dvojček"
+	val[]: "'Rocky Mountain' dvojček"
 
 	key[]: "chain_tp_double"
-	val[]: "'Turnpike' Dvojček"
+	val[]: "'Turnpike' dvojček"
 
 	key[]: "chain_triple"
 	val[]: "Trojček"
@@ -656,170 +693,207 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "'STAA' Dvojček"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "'STAA Pup' Dvojček"
+	key[]: "tr_articulated_3axle"
+	val[]: "Pregibni, 3 osi"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "'STAA Pup' Dvojček, 4 Osi"
+	key[]: "tr_articulated_4axle"
+	val[]: "Pregibni, 4 osi"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Pregibni, 5 osi"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Pregibni, 6 osi"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Pregibni, 7 osi"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Pregibni, 8 osi"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Pregibni, 9 osi"
 
 	key[]: "tr_b_double"
-	val[]: "B-Dvojček"
+	val[]: "B-dvojček"
 
 	key[]: "tr_b_double_5axle"
-	val[]: "B-Dvojček, 5 Osi"
+	val[]: "B-dvojček, 5 osi"
 
 	key[]: "tr_b_double_6axle"
-	val[]: "B-Dvojček, 6 Osi"
+	val[]: "B-dvojček, 6 osi"
+
+	key[]: "tr_double_staa"
+	val[]: "'STAA' dvojček"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "'STAA Pup' dvojček"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "'STAA Pup' dvojček, 4 osi"
+
+	key[]: "tr_jeep"
+	val[]: "'Jeep'"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "'Jeep', 3 osi"
 
 	key[]: "tr_rm_double"
-	val[]: "'Rocky Mountain' Dvojček"
+	val[]: "'Rocky Mountain' dvojček"
 
 	key[]: "tr_rm_double_pup"
-	val[]: "'Rocky Mountain Pup' Dvojček"
-
-	key[]: "tr_tp_double"
-	val[]: "'Turnpike' Dvojček"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "'Turnpike' dvojček, 6 Osi"
+	val[]: "'Rocky Mountain Pup' dvojček"
 
 	key[]: "tr_single_28"
 	val[]: "28 čevljev"
 
 	key[]: "tr_single_28_2axle"
-	val[]: "28 čevljev, 2 Osi"
+	val[]: "28 čevljev, 2 osi"
 
 	key[]: "tr_single_32"
 	val[]: "32 čevljev"
 
 	key[]: "tr_single_32_2axle"
-	val[]: "32 čevljev, 2 Osi"
+	val[]: "32 čevljev, 2 osi"
 
 	key[]: "tr_single_32_3axle"
-	val[]: "32 čevljev, 3 Osi"
+	val[]: "32 čevljev, 3 osi"
 
 	key[]: "tr_single_32_ext"
-	val[]: "32 čevljev, Prilagodljivo"
+	val[]: "32 čevljev, prilagodljivo"
 
 	key[]: "tr_single_40"
 	val[]: "40 čevljev"
 
 	key[]: "tr_single_40_3axle"
-	val[]: "40 čevljev, 3 Osi"
+	val[]: "40 čevljev, 3 osi"
 
 	key[]: "tr_single_40_ext"
-	val[]: "40 čevljev, Prilagodljivo"
+	val[]: "40 čevljev, prilagodljivo"
 
 	key[]: "tr_single_40_rear"
-	val[]: "40 čevljev, Zadaj"
+	val[]: "40 čevljev, zadaj"
 
 	key[]: "tr_single_40_spread"
-	val[]: "40 čevljev, Razširjeno"
+	val[]: "40 čevljev, razširjeno"
 
 	key[]: "tr_single_43_rear"
-	val[]: "43 čevljev, Zadaj"
+	val[]: "43 čevljev, zadaj"
 
 	key[]: "tr_single_45"
 	val[]: "45 čevljev"
 
 	key[]: "tr_single_45_3axle"
-	val[]: "45 čevljev, 3 Osi"
+	val[]: "45 čevljev, 3 osi"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 čevljev, 3 Osi, Enojno"
+	val[]: "45 čevljev, 3 osi, enojno"
 
 	key[]: "tr_single_45_3axle_steer"
-	val[]: "45 čevljev, 3 Osi, Vodljivo"
+	val[]: "45 čevljev, 3 osi, vodljivo"
 
 	key[]: "tr_single_45_front"
-	val[]: "45 čevljev, Spredaj"
+	val[]: "45 čevljev, spredaj"
 
 	key[]: "tr_single_45_rear"
-	val[]: "45 čevljev, Zadaj"
+	val[]: "45 čevljev, zadaj"
 
 	key[]: "tr_single_45_slide_front"
-	val[]: "45 čevljev, Drsni Tandem, Spredaj"
+	val[]: "45 čevljev, drsni tandem, spredaj"
 
 	key[]: "tr_single_45_slide_rear"
-	val[]: "45 čevljev, Drsni Tandem, Zadaj"
+	val[]: "45 čevljev, drsni tandem, zadaj"
 
 	key[]: "tr_single_45_spread"
-	val[]: "45 čevljev, Razširjeno"
+	val[]: "45 čevljev, razširjeno"
 
 	key[]: "tr_single_48_3axle"
-	val[]: "48 čevljev, 3 Osi"
+	val[]: "48 čevljev, 3 osi"
 
 	key[]: "tr_single_48_front"
-	val[]: "48 čevljev, Spredaj"
+	val[]: "48 čevljev, spredaj"
 
 	key[]: "tr_single_48_rear"
-	val[]: "48 čevljev, Zadaj"
+	val[]: "48 čevljev, zadaj"
 
 	key[]: "tr_single_48_slide_front"
-	val[]: "48 čevljev, Drsni Tandem, Spredaj"
+	val[]: "48 čevljev, drsni tandem, spredaj"
 
 	key[]: "tr_single_48_slide_rear"
-	val[]: "48 čevljev, Drsni Tandem, Zadaj"
+	val[]: "48 čevljev, drsni tandem, zadaj"
 
 	key[]: "tr_single_48_spread"
-	val[]: "48 čevljev, Razširjeno"
+	val[]: "48 čevljev, razširjeno"
 
 	key[]: "tr_single_50_3axle"
-	val[]: "50 čevljev, 3 Osi"
+	val[]: "50 čevljev, 3 osi"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 čevljev, 3 Osi, Enojno"
+	val[]: "50 čevljev, 3 osi, enojno"
 
 	key[]: "tr_single_50_3axle_steer"
-	val[]: "50 čevljev, 3 Osi, Vodljivo"
+	val[]: "50 čevljev, 3 osi, vodljivo"
 
 	key[]: "tr_single_50_spread"
-	val[]: "50 čevljev, Razširjeno"
+	val[]: "50 čevljev, razširjeno"
 
 	key[]: "tr_single_53_3axle"
-	val[]: "53 čevljev, 3 Osi"
+	val[]: "53 čevljev, 3 osi"
 
 	key[]: "tr_single_53_4axle"
-	val[]: "53 čevljev, 4 Osi"
+	val[]: "53 čevljev, 4 osi"
 
 	key[]: "tr_single_53_4axle_spread"
-	val[]: "53 čevljev, 4 Osi, Razširjeno"
+	val[]: "53 čevljev, 4 osi, razširjeno"
 
 	key[]: "tr_single_53_4axle_steer"
-	val[]: "53 čevljev, 4 Osi, Vodljivo"
+	val[]: "53 čevljev, 4 osi, vodljivo"
 
 	key[]: "tr_single_53_front"
-	val[]: "53 čevljev, Spredaj"
+	val[]: "53 čevljev, spredaj"
 
 	key[]: "tr_single_53_rear"
-	val[]: "53 čevljev, Zadaj"
+	val[]: "53 čevljev, zadaj"
 
 	key[]: "tr_single_53_slide_front"
-	val[]: "53 čevljev, Drsni Tandem, Spredaj"
+	val[]: "53 čevljev, drsni tandem, spredaj"
 
 	key[]: "tr_single_53_slide_rear"
-	val[]: "53 čevljev, Drsni Tandem, Zadaj"
+	val[]: "53 čevljev, drsni tandem, zadaj"
 
 	key[]: "tr_single_53_spread"
-	val[]: "53 čevljev, Razširjeno"
+	val[]: "53 čevljev, razširjeno"
+
+	key[]: "tr_spreader_1axle"
+	val[]: "'Spreader', 1 os"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "'Spreader', 2 osi"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "'Spreader', 3 osi"
+
+	key[]: "tr_tp_double"
+	val[]: "'Turnpike' dvojček"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "'Turnpike' dvojček, 6 osi"
 
 	key[]: "tr_triple"
 	val[]: "Trojček"
 
 	key[]: "tr_triple_pup"
-	val[]: "'Pup'  Trojček"
+	val[]: "'Pup' trojček"
 
 	key[]: "tr_conv_dolly"
-	val[]: "Dolly s Sedlom"	#+ Component chassis name (upgrade screen only)
+	val[]: "'Dolly' s sedlom"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tr_conv_dolly_2"
-	val[]: "Dolly s sedlom, 2 Osi"	#+ Component chassis name (upgrade screen only)
+	val[]: "'Dolly' s sedlom, 2 osi"	#+ Component chassis name (upgrade screen only)
 
 	key[]: "tr_dolly"
-	val[]: "Dolly"		#+ Component chassis name (upgrade screen only)
+	val[]: "'Dolly'"		#+ Component chassis name (upgrade screen only)
 #@}
 
 #+ Trailer body sets
@@ -835,22 +909,22 @@ localization_db : .localization
 	val[]: "Prevoz sekancev"
 
 	key[]: "bs_chipvan_mfloor"
-	val[]: "Prevoz sekancev, Gibljiva tla"
+	val[]: "Prevoz sekancev, gibljiva tla"
 
 	key[]: "bs_container"
 	val[]: "Prevoznik kontejnerjev"
 
 	key[]: "bs_curtain"
-	val[]: "Drsna Ponjava"
+	val[]: "Drsna ponjava"
 
 	key[]: "bs_dryvan"
-	val[]: "Zabojnik Suhega Tovora"
+	val[]: "Zabojnik suhega tovora"
 
 	key[]: "bs_flatbed"
 	val[]: "Platforma"
 
 	key[]: "bs_flatbed_alu"
-	val[]: "Aluminijeva Platforma"
+	val[]: "Aluminijeva platforma"
 
 	key[]: "bs_food_tank"
 	val[]: "Tanker za živila"
@@ -862,7 +936,7 @@ localization_db : .localization
 	val[]: "Telo za zrna s pasom"
 
 	key[]: "bs_insulated"
-	val[]: "Izoliran Zabojnik"
+	val[]: "Izoliran"
 
 	key[]: "bs_log_4"
 	val[]: "4 ročični za prevoz hlodovine"
@@ -870,8 +944,17 @@ localization_db : .localization
 	key[]: "bs_log_6"
 	val[]: "6 ročični za prevoz hlodovine"
 
+	key[]: "bs_wood_lowboy"
+	val[]: "Leseno ležišče"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Polno leseno ležišče"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Leseno-aluminijasto ležišče"
+
 	key[]: "bs_reefer"
-	val[]: "Hladilni"
+	val[]: "Zamrzovalnik"
 #@}
 
 #+ Trailer only accessories
@@ -881,22 +964,22 @@ localization_db : .localization
 	val[]: "Hladilnik"
 
 	key[]: "turbo_cooler"
-	val[]: "'Turbo Cooler'"
+	val[]: "Hladilnik, 'Turbo'"
 
 	key[]: "chrome_cooler"
-	val[]: "Kromiran Hladilnik"
+	val[]: "Hladilnik, kromiran"
 
 	key[]: "paint_wall"
-	val[]: "Barvana Stena"
+	val[]: "Stena, barvana"
 
 	key[]: "chrome_wall"
-	val[]: "Kromirana Stena"
+	val[]: "Stena, kromirano"
 
 	key[]: "alu_wall"
-	val[]: "Aluminijeva Stena"
+	val[]: "Stena, aluminij"
 
 	key[]: "steel_wall"
-	val[]: "Železna Stena"
+	val[]: "Stena, jeklo"
 
 	key[]: "light"
 	val[]: "Luči"
@@ -914,31 +997,34 @@ localization_db : .localization
 	val[]: "Deflektor vetra"
 
 	key[]: "aero_sideskirt"
-	val[]: "Aero Stranska Letev"
+	val[]: "Stranska zaščita, aero"
 
 	key[]: "black_sideskirt"
-	val[]: "Črna Stranska Letev"
+	val[]: "Stranska zaščita, črno"
 
 	key[]: "paint_sideskirt"
-	val[]: "Stanska Letev Barva"
+	val[]: "Stranska zaščita, barvano"
 
 	key[]: "support_frame"
-	val[]: "Nosilci Okvirja"
+	val[]: "Nosilci okvirja"
 
 	key[]: "chrome_door"
-	val[]: "Kromirana Vrata"
+	val[]: "Vrata, kromirano"
 
 	key[]: "rollup_door"
-	val[]: "Rolo Vrata"
+	val[]: "Vrata, rolo"
 
 	key[]: "rollup_door_lift_gate"
-	val[]: "Rolo vrata, Dvižna ploščad"
+	val[]: "Vrata, rolo, dvižna ploščad"
 
 	key[]: "standard_door"
-	val[]: "Dvojna Vrata"
+	val[]: "Vrata, standardno"
 
 	key[]: "standard_door_aero"
-	val[]: "Standardna vrata, Deflektor vetra"
+	val[]: "Vrata standardno, deflektor vetra"
+
+	key[]: "wooden_deck"
+	val[]: "Lesen krov"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Kalifornija"
+
+	key[]: "colorado"
+	val[]: "Kolorado"
 
 	key[]: "idaho"
 	val[]: "Idaho"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Alamogordo"
 
+	key[]: "alamosa"
+	val[]: "Alamosa"
+
 	key[]: "albuquerque"
 	val[]: "Albuquerque"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Boise"
+
+	key[]: "burlington"
+	val[]: "Burlington"
 
 	key[]: "burns"
 	val[]: "Burns"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Coeur d'Alene"
 
+	key[]: "colorado_springs"
+	val[]: "Kolorado Springs"
+
 	key[]: "colville"
 	val[]: "Colville"
 
 	key[]: "coos_bay"
 	val[]: "Coos Bay"
+
+	key[]: "denver"
+	val[]: "Denver"
+
+	key[]: "durango"
+	val[]: "Durango"
 
 	key[]: "ehrenberg"
 	val[]: "Ehrenberg"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Flagstaff"
 
+	key[]: "fort_collins"
+	val[]: "Fort Collins"
+
 	key[]: "fresno"
 	val[]: "Fresno"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
+
+	key[]: "grand_junction"
+	val[]: "Grand Junction"
 
 	key[]: "grangeville"
 	val[]: "Grangeville"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Lakeview"
 
+	key[]: "lamar"
+	val[]: "Lamar"
+
 	key[]: "las_cruces"
 	val[]: "Las Cruces"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "montrose"
+	val[]: "Montrose"
 
 	key[]: "nampa"
 	val[]: "Nampa"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Provo"
+
+	key[]: "pueblo"
+	val[]: "Pueblo"
+
+	key[]: "rangely"
+	val[]: "Rangely"
 
 	key[]: "raton"
 	val[]: "Raton"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "St. George"
 
+	key[]: "steamboat_springs"
+	val[]: "Steamboat Springs"
+
+	key[]: "sterling"
+	val[]: "Sterling"
+
 	key[]: "stockton"
 	val[]: "Stockton"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Glenwood Canyon"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Denver Airport"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Million Dollar Highway"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Four Corners Monument"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Red Cliff Bridge"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Wolf Creek Pass"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Colorado Springs"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Cripple Creek & Victor Gold Mine"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Eisenhower Tunnel"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Rocky Mountain Road"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Twin Falls kmetija s pridelavo krompirja"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill Rest Area"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Rudnik Bingham Canyon"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "Mesto St. George"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "Območje San Rafael Swell"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Naftna polja Utah-a"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "Dolina Monument Valley"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Ravnina Bonneville Salt Flats"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "Jama Moqui"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Znamenitost Hole N\" The Rock"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Most Glen Canyon Dam"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Počivališče Hover"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Spomenik Mount Saint Helens National Volcanic"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Pristanišče Seattle"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Mesto spravila lesa v Washington-u"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Most Everett Swing"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Most Vantage"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Kompleks Deception Pass"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Tovarna letal"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Jez Grand Coulee"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Mesto središče Seattle"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Tovarna Kenworth"
 #@}
 
 }

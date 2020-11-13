@@ -25,7 +25,7 @@ SiiNunit
 
 	mail_text: mailtext.bank_credit {
 		from: "Bank" #+ Message sender
-		subject: "Pomożemy ci rozwinąć skrzydła!" #+ Message subject
+		subject: "Pomożemy Ci rozwinąć skrzydła!" #+ Message subject
 		body: "Szanowni Państwo,<br><br>Zauważyliśmy że Państwa firma świetnie sobie radzi, dlatego chcielibyśmy pomóc w dalszym rozwoju jej potencjałów. Państwa limit kredytowy wzrósł do $MONEY$. Prosimy śmiało pobrać dostępną kwotę w każdej chwili z Państwa <link url=screen.bank color=@@clr_link@@>lokalnej filii banku</link>.<br><br>Z wyrazami szacunku,<br>Dyrektor do spraw sprzedaży<br>Bank" #+ Message body
 	}
 

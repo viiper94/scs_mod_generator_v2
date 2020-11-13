@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Aleró turbo"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero pintat"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Cisterna d'alumini"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Inferior"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Motoserra de joguina"
 
 	key[]: "chrom_tank"
-	val[]: "Dipòsit cromat" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Cisterna d'alumini" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Dipòsit cromat"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "Dipòsit en forma D" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "Dipòsit en forma D"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "Llums de circulació diürna"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elit"
+
+	key[]: "fog_lights"
+	val[]: "Llums antiboira"
+
+	key[]: "hvac"
+	val[]: "Climatització"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Edita l'arxiu <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>a la carpeta <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>a <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>i escolta les teves emissores de ràdio preferides al joc!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "Bobina de cable"
 
+	key[]: "cn_cans"
+	val[]: "Llaunes de conserva"
+
 	key[]: "cn_colors"
 	val[]: "Pintura"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Fenc"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Buldòzer pesant"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Casa prefabricada"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Fresadora"
 
+	key[]: "cn_mix_tank"
+	val[]: "Cisterna combinada"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Grua tot terreny"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Desbrossadora"
+
+	key[]: "cn_paper"
+	val[]: "Paper"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Menjar granulat per a animals"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Remolc de base plana"
 
-	key[]: "tn_food_tank"
-	val[]: "Remolc cisterna alimentària"
-
 	key[]: "tn_frac_tank"
 	val[]: "Tanc de fracking"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Carregador amb ploma articulada"
 
-	key[]: "tn_log"
-	val[]: "Remolc forestal"
-
-	key[]: "tn_lowboy"
-	val[]: "Remolc de planta baixa"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Remolc de planta baixa per barca"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Remolc de planta baixa 55L"
+	key[]: "tn_scs_lowboy"
+	val[]: "Remolc extensible de planta baixa"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Remolc de barrera mòbil"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Perill classe 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Perill classe 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Perill classe 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Perill classe 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Perill classe 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Perill classe 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Perill classe 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Cavall de càrrega"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Emprenedor"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Professional"
-	
+
 	key[]: "lvl_name6"
 	val[]: "18 rodes d'habilitat"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Exposició"
-	
+
 	key[]: "weblink_game"
 	val[]: "Lloc web d'American Truck Simulator" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "American Truck Simulator està tenint un problema i no pot dibuixar gràfics al teu ordinador (no s'ha trobat un dispositiu gràfic vàlid).\nPassos recomanats:\n\n1. Comprova que el teu ordinador i la teva targeta de vídeo compleixen els requisits mínims de hardware.\n2. Actualitza el teu ordinador amb la versió més recent de DirectX de Microsoft.\n3. Descarrega i instal·la els drivers gràfics més recents per a la teva targeta de vídeo des del web del teu proveïdor. Els drivers dels teus dispositius gràfics podrien estar desfasats.\n4. Intenta canviar el mètode de renderització d'OpenGL a DirectX, o viceversa.\n5. Elimina l'arxiu de configuració del joc 'config.cfg' a la carpeta de \"Documents / American Truck Simulator\". Pot ser que s'hagi corromput. Aquest arxiu serà automàticament re-creat amb els valors per defecte quan tornis a obrir el joc."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator està tenint un problema i no pot dibuixar gràfics al teu ordinador (no s'ha trobat cap dispositiu gràfic vàlid)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "L'activació s'ha fet correctament.<br>Gràcies per adquirir una còpia d'American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - LLANÇADOR" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "GESTOR DEL PERFIL" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Forestal"
+
+	key[]: "lowboy"
+	val[]: "Planta baixa"
 
 	key[]: "refrigerated"
 	val[]: "Refrigerat"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Simple"
 
+	key[]: "chain_double"
+	val[]: "Doble"
+
 	key[]: "chain_staa_double"
 	val[]: "Doble STAA"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "Doble STAA"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "Cadell doble STAA"
+	key[]: "tr_articulated_3axle"
+	val[]: "Articulat, 3 eixos"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "Cadell doble STAA, 4 eixos"
+	key[]: "tr_articulated_4axle"
+	val[]: "Articulat, 4 eixos"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Articulat, 5 eixos"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Articulat, 6 eixos"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Articulat, 7 eixos"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Articulat, 8 eixos"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Articulat, 9 eixos"
 
 	key[]: "tr_b_double"
 	val[]: "Doble-B"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "Doble-B, 6 eixos"
 
+	key[]: "tr_double_staa"
+	val[]: "Doble STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Cadell doble STAA"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "Cadell doble STAA, 4 eixos"
+
+	key[]: "tr_jeep"
+	val[]: "Jeep"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Jeep, 3 eixos"
+
 	key[]: "tr_rm_double"
 	val[]: "Doble muntanya rocosa"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Cadell doble muntanya rocosa"
-
-	key[]: "tr_tp_double"
-	val[]: "Doble Turnpike"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Doble Turnpike, 6 eixos"
 
 	key[]: "tr_single_28"
 	val[]: "28 peus"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53 peus, separat"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "Separador, 1 eix"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Separador, 2 eixos"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Separador, 3 eixos"
+
+	key[]: "tr_tp_double"
+	val[]: "Doble Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Doble Turnpike, 6 eixos"
+
 	key[]: "tr_triple"
 	val[]: "Triple"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "Forestal de 6 travessers"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Planta baixa de fusta"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Planta baixa completament de fusta"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Planta baixa de fusta i alumini"
 
 	key[]: "bs_reefer"
 	val[]: "Refrigerat"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Porta estàndard, deflector d'aire"
+
+	key[]: "wooden_deck"
+	val[]: "Coberta de fusta"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Califòrnia"
+
+	key[]: "colorado"
+	val[]: "Colorado"
 
 	key[]: "idaho"
 	val[]: "Idaho"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Alamogordo"
 
+	key[]: "alamosa"
+	val[]: "Alamosa"
+
 	key[]: "albuquerque"
 	val[]: "Albuquerque"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Boise"
+
+	key[]: "burlington"
+	val[]: "Burlington"
 
 	key[]: "burns"
 	val[]: "Burns"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Coeur d'Alene"
 
+	key[]: "colorado_springs"
+	val[]: "Colorado Springs"
+
 	key[]: "colville"
 	val[]: "Colville"
 
 	key[]: "coos_bay"
 	val[]: "Coos Bay"
+
+	key[]: "denver"
+	val[]: "Denver"
+
+	key[]: "durango"
+	val[]: "Durango"
 
 	key[]: "ehrenberg"
 	val[]: "Ehrenberg"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Flagstaff"
 
+	key[]: "fort_collins"
+	val[]: "Fort Collins"
+
 	key[]: "fresno"
 	val[]: "Fresno"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
+
+	key[]: "grand_junction"
+	val[]: "Grand Junction"
 
 	key[]: "grangeville"
 	val[]: "Grangeville"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Lakeview"
 
+	key[]: "lamar"
+	val[]: "Lamar"
+
 	key[]: "las_cruces"
 	val[]: "Las Cruces"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "montrose"
+	val[]: "Montrose"
 
 	key[]: "nampa"
 	val[]: "Nampa"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Provo"
+
+	key[]: "pueblo"
+	val[]: "Pueblo"
+
+	key[]: "rangely"
+	val[]: "Rangely"
 
 	key[]: "raton"
 	val[]: "Raton"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "St. George"
 
+	key[]: "steamboat_springs"
+	val[]: "Steamboat Springs"
+
+	key[]: "sterling"
+	val[]: "Sterling"
+
 	key[]: "stockton"
 	val[]: "Stockton"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Glenwood Canyon"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Aeroport de Denver"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Million Dollar Highway"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Monument dels Quatre Cantons"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Pont de Red Cliff"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Pas de Wolf Creek"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Colorado Springs"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Mina d'or Cripple Creek & Victor"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Túnel d'Eisenhower"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Carretera de les Muntanyes Rocalloses"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Camp de patates de Twin Falls"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Zona de descans de Midvale Hill"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Mina de Bingham Canyon"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "La ciutat de St. George"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "Zona de San Rafael Swell"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Camps petrolífers d'Utah"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "La Monument Valley"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Les salines de Bonneville"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "La cova de Moqui"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Punt d'interès de Hole N' The Rock"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Pont de la presa de Glen Canyon"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Zona de descans de Hoover"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Monument volcànic nacional del mont Saint Helens"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Port de Seattle"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Zona d'extracció de fusta de Washington"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Pont d'Everett Swing"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Pont Vantage"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Deception Pass"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Fàbrica d'avions"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Presa de Grand Coulee"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Centre de Seattle"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Fàbrica de Kenworth"
 #@}
 
 }

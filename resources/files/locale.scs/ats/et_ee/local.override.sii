@@ -52,7 +52,7 @@ localization_db : .localization
 	val[]: "Eesmised peeglid"
 
 	key[]: "grill"
-	val[]: "Võre"
+	val[]: "Grille"
 
 	key[]: "headache_r"
 	val[]: "Nänni kohad"
@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Turbotiivad"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Painted"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Alumiiniumist paak"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Bottom"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Mootorsae nipsasi"
 
 	key[]: "chrom_tank"
-	val[]: "Kroomitud kütusepaak" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Alumiiniumist paak" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Kroomitud kütusepaak"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D-kujuline" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D-kujuline"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "DRL"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elite"
+
+	key[]: "fog_lights"
+	val[]: "Fog Lights"
+
+	key[]: "hvac"
+	val[]: "HVAC"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Muuda faili <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>, mis asub <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>kaustas, <color value=@@clr_sel@@>Minu Dokumentide all, <color value=@@clr_txt@@>ja kuula oma lemmikraadiot üle interneti läbi mängu!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "Kaablirull"
 
+	key[]: "cn_cans"
+	val[]: "Cans"
+
 	key[]: "cn_colors"
 	val[]: "Värv"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Hein"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Heavy Bulldozer"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Majaosad"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Freesmasin"
 
+	key[]: "cn_mix_tank"
+	val[]: "Mix Tank"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Raske maastiku kraana"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Multšija"
+
+	key[]: "cn_paper"
+	val[]: "Paper"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Loomatoidu pelletid"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Platvormhaagis"
 
-	key[]: "tn_food_tank"
-	val[]: "Toidutsistern haagis"
-
 	key[]: "tn_frac_tank"
 	val[]: "Vedelikkonteiner"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Metalliekskavaator"
 
-	key[]: "tn_log"
-	val[]: "Palgitreiler"
-
-	key[]: "tn_lowboy"
-	val[]: "Madal treilerhaagis"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Madal paadihaagis"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Madal 55L treilerhaagis"
+	key[]: "tn_scs_lowboy"
+	val[]: "Lowboy Extendable Trailer"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Mobiilne tõkistehaagis"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Ohtlikkuse Tase 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Ohtlikkuse tase 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Ohtlikkuse tase 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Ohtlikkuse tase 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Ohtlikkuse tase 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Ohtlikkuse tase 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Ohtlikkuse tase 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Tööhobune"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Ettevõtja"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Professionaal"
-	
+
 	key[]: "lvl_name6"
 	val[]: "18 ratast oskusi"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Müügisalong"
-	
+
 	key[]: "weblink_game"
 	val[]: "American Truck Simulator veebileht" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "Mängul tekkis probleem ning ei suuda tekitada graafilist pilti teie arvutil (ei leitud vastavat graafikaseadet).\nSoovitavavad tegevused:\n\n1. Kontrolli, et arvuti ja videokaart vastavad mängu miinimumnõuetele.\n2. Uuenda oma arvutis Microsofti DirectX-i.\n3. Lae alla ja installi uusimad graafikadraiverid teie graafikakaardi looja veebilehelt - sinu kasutatavad draiverid võivad olla aegunud.\n4. Muuda pildi kuvamise režiim OpenGL-ilt DirectX-ile või vastupidi.\n5. Kustuta mängu konfiguratsioon, ehk 'config.cfg' mis asub 'Minu Dokumendid/American Truck Simulator' kaustas. See võib olla vigane. Kui olete ära kustutanud faili, siis ta tekib uuesti mängu käima pannes, aga algseadetega."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "Mängul on probleeme sinu arvutis graafilise pildi loomisega (ühtegi graafikaseadet ei leitud)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Aktiveerimine õnnestus.<br>Täname, et ostsid koopia mängust American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - ALGUS" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PROFIILI HALDUS" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Palk"
+
+	key[]: "lowboy"
+	val[]: "Lowboy"
 
 	key[]: "refrigerated"
 	val[]: "Konditsioneeriga"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Üksik"
 
+	key[]: "chain_double"
+	val[]: "Double"
+
 	key[]: "chain_staa_double"
 	val[]: "STAA topelt"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "STAA topelt"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "STAA topelthaagis"
+	key[]: "tr_articulated_3axle"
+	val[]: "Articulated, 3 Axles"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA topeltkutsikas, 4 telge"
+	key[]: "tr_articulated_4axle"
+	val[]: "Articulated, 4 Axles"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Articulated, 5 Axles"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Articulated, 6 Axles"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Articulated, 7 Axles"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Articulated, 8 Axles"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Articulated, 9 Axles"
 
 	key[]: "tr_b_double"
 	val[]: "B-double"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "B-double, 6 telge"
 
+	key[]: "tr_double_staa"
+	val[]: "STAA topelt"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA topelthaagis"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA topeltkutsikas, 4 telge"
+
+	key[]: "tr_jeep"
+	val[]: "Jeep"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Jeep, 3 Axles"
+
 	key[]: "tr_rm_double"
 	val[]: "Rocky Mountain topelthaagis"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Rocky Mountain kahene kutsikas"
-
-	key[]: "tr_tp_double"
-	val[]: "Turnpike topelthaagis"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Turnpike topelt, 6 telge"
 
 	key[]: "tr_single_28"
 	val[]: "28 jalga"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53 jalga, hajutatud"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "Spreader, 1 Axle"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Spreader, 2 Axles"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Spreader, 3 Axles"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike topelthaagis"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike topelt, 6 telge"
+
 	key[]: "tr_triple"
 	val[]: "Kolmene"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "6 mastiga palgihaagis"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Wooden Lowboy"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Full Wooden Lowboy"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Wooden-Aluminium Lowboy"
 
 	key[]: "bs_reefer"
 	val[]: "Jahuti"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Tavauks, tuulesuunaja"
+
+	key[]: "wooden_deck"
+	val[]: "Wooden Deck"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "California"
+
+	key[]: "colorado"
+	val[]: "Colorado"
 
 	key[]: "idaho"
 	val[]: "Idaho"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Alamogordo"
 
+	key[]: "alamosa"
+	val[]: "Alamosa"
+
 	key[]: "albuquerque"
 	val[]: "Albuquerque"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Boise"
+
+	key[]: "burlington"
+	val[]: "Burlington"
 
 	key[]: "burns"
 	val[]: "Burns"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Coeur d'Alene"
 
+	key[]: "colorado_springs"
+	val[]: "Colorado Springs"
+
 	key[]: "colville"
 	val[]: "Colville"
 
 	key[]: "coos_bay"
 	val[]: "Coos Bay"
+
+	key[]: "denver"
+	val[]: "Denver"
+
+	key[]: "durango"
+	val[]: "Durango"
 
 	key[]: "ehrenberg"
 	val[]: "Ehrenberg"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Flagstaff"
 
+	key[]: "fort_collins"
+	val[]: "Fort Collins"
+
 	key[]: "fresno"
 	val[]: "Fresno"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
+
+	key[]: "grand_junction"
+	val[]: "Grand Junction"
 
 	key[]: "grangeville"
 	val[]: "Grangeville"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Lakeview"
 
+	key[]: "lamar"
+	val[]: "Lamar"
+
 	key[]: "las_cruces"
 	val[]: "Las Cruces"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "montrose"
+	val[]: "Montrose"
 
 	key[]: "nampa"
 	val[]: "Nampa"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Provo"
+
+	key[]: "pueblo"
+	val[]: "Pueblo"
+
+	key[]: "rangely"
+	val[]: "Rangely"
 
 	key[]: "raton"
 	val[]: "Raton"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "St. George"
 
+	key[]: "steamboat_springs"
+	val[]: "Steamboat Springs"
+
+	key[]: "sterling"
+	val[]: "Sterling"
+
 	key[]: "stockton"
 	val[]: "Stockton"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Glenwood Canyon"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Denver Airport"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Million Dollar Highway"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Four Corners Monument"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Red Cliff Bridge"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Wolf Creek Pass"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Colorado Springs"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Cripple Creek & Victor Gold Mine"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Eisenhower Tunnel"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Rocky Mountain Road"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Twin Falls kartulifarm"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill puhkeala"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "The Bingham Canyon Mine"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "The city of St. George"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "The San Rafael Swell area"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Oil Fields of Utah"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "The Monument Valley"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "The Bonneville Salt Flats"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "The Moqui Cave"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "The Hole N\" The Rock landmark"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "The Glen Canyon Dam Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "The Hoover Rest Area"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Mount Saint Helens National Volcanic Monument"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Seattle Port"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Washington Timber Harvest Site"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Everett Swing Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Vantage Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Deception Pass"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Aircraft Factory"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Grand Coulee Dam"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Seattle Downtown"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Kenworth Factory"
 #@}
 
 }

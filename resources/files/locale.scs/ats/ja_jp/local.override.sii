@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "ターボウィング"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Painted"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "アルミニウムタンク"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Bottom"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "チェーンソーのおもちゃ"
 
 	key[]: "chrom_tank"
-	val[]: "クロームタンク" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "アルミニウムタンク" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "クロームタンク"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D型" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D型"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "DRL"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elite"
+
+	key[]: "fog_lights"
+	val[]: "Fog Lights"
+
+	key[]: "hvac"
+	val[]: "HVAC"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "<color value=@@clr_sel@@>Documents<color value=@@clr_txt@@> フォルダの <color value=@@clr_sel@@>American Truck Simulator<color value=@@clr_txt@@> フォルダ内にある <color value=@@clr_sel@@>live_streams.sii<color value=@@clr_txt@@> を編集して, ゲーム内でお気に入りのラジオストリームを聴きましょう!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "ケーブルリール"
 
+	key[]: "cn_cans"
+	val[]: "缶"
+
 	key[]: "cn_colors"
 	val[]: "ペンキ"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "干し草"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "重ブルドーザー"
+
 	key[]: "cn_house_prefabs"
 	val[]: "プレハブ住宅"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "アスファルト切削機"
 
+	key[]: "cn_mix_tank"
+	val[]: "混合タンク"
+
 	key[]: "cn_mobile_crane"
 	val[]: "オールテレーンクレーン"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "マルチャー"
+
+	key[]: "cn_paper"
+	val[]: "紙"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "パレット積みの食肉品"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "フラットベッドトレーラー"
 
-	key[]: "tn_food_tank"
-	val[]: "フードタンクトレーラー"
-
 	key[]: "tn_frac_tank"
 	val[]: "フラックタンク"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "ナックルブームローダー"
 
-	key[]: "tn_log"
-	val[]: "ログトレーラー"
-
-	key[]: "tn_lowboy"
-	val[]: "ローボーイトレーラー"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "ローボーイ ボートトレーラー"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "ローボーイ 55L トレーラー"
+	key[]: "tn_scs_lowboy"
+	val[]: "伸縮式ローボーイトレーラー"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "移動式バリアトレーラー"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Hazard class 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Hazard class 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Hazard class 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Hazard class 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Hazard class 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Hazard class 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Hazard class 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "使役馬"
-	
+
 	key[]: "lvl_name3"
 	val[]: "企業家"
-	
+
 	key[]: "lvl_name4"
 	val[]: "プロフェッショナル"
-	
+
 	key[]: "lvl_name6"
 	val[]: "熟練の18輪使い"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "ショールーム"
-	
+
 	key[]: "weblink_game"
 	val[]: "American Truck Simulator 公式サイト" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "American Truck Simulator のグラフィック描画に問題が発生しました (有効なグラフィックデバイスが見つかりませんでした).\n推奨される手順:\n\n1. コンピューターとビデオカードが最小ハードウェア要件を満たしているか確認します.\n2. Microsoft DirectX を最新バージョンにアップデートします.\n3. グラフィックドライバが古い可能性がありますので, ビデオカードベンダーのウェブサイトから最新のグラフィックドライバをダウンロードしてインストールします.\n4. レンダリング方法を OpenGL から DirectX またはその逆に変更します.\n5. ゲームの設定ファイルが破損している可能性がありますので, 'Documents' - 'American Truck Simulator' フォルダ内にある 'config.cfg' を削除します. このファイルは次回ゲームを起動した際に有効な値を書き出しながら自動的に再作成されます."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator のグラフィック描画に問題が発生しました (有効なグラフィックデバイスが見つかりませんでした)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "アクティベーションに成功しました.<br>American Truck Simulator のご購入ありがとうございます."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PROFILE MANAGER" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -586,7 +617,10 @@ localization_db : .localization
 	val[]: "保冷式"
 
 	key[]: "log"
-	val[]: "丸太"
+	val[]: "丸太運搬"
+
+	key[]: "lowboy"
+	val[]: "ローボーイ"
 
 	key[]: "refrigerated"
 	val[]: "冷蔵/冷凍"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "シングル"
 
+	key[]: "chain_double"
+	val[]: "ダブル"
+
 	key[]: "chain_staa_double"
 	val[]: "STAA ダブル"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "STAA ダブル"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "STAA ダブルパップ"
+	key[]: "tr_articulated_3axle"
+	val[]: "多関節, 3軸"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA ダブルパップ, 4軸"
+	key[]: "tr_articulated_4axle"
+	val[]: "多関節, 4軸"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "多関節, 5軸"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "多関節, 6軸"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "多関節, 7軸"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "多関節, 8軸"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "多関節, 9軸"
 
 	key[]: "tr_b_double"
 	val[]: "Bダブル"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "Bダブル, 6軸"
 
+	key[]: "tr_double_staa"
+	val[]: "STAA ダブル"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA ダブルパップ"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA ダブルパップ, 4軸"
+
+	key[]: "tr_jeep"
+	val[]: "ジープ"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "ジープ, 3軸"
+
 	key[]: "tr_rm_double"
 	val[]: "ロッキーマウンテン ダブル"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "ロッキーマウンテン ダブルパップ"
-
-	key[]: "tr_tp_double"
-	val[]: "ターンパイク ダブル"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "ターンパイク ダブル, 6軸"
 
 	key[]: "tr_single_28"
 	val[]: "28フィート"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53フィート, スプレッド"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "スプレッダー, 1軸"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "スプレッダー, 2軸"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "スプレッダー, 3軸"
+
+	key[]: "tr_tp_double"
+	val[]: "ターンパイク ダブル"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "ターンパイク ダブル, 6軸"
+
 	key[]: "tr_triple"
 	val[]: "トリプル"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "6ボルスターロガー"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "ウッドフロア ローボーイ"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "フルウッドフロア ローボーイ"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "ウッド/アルミフロア ローボーイ"
 
 	key[]: "bs_reefer"
 	val[]: "リーファー"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "スタンダードドア, ウィンドディフレクター"
+
+	key[]: "wooden_deck"
+	val[]: "ウッドデッキ"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "カリフォルニア"
+
+	key[]: "colorado"
+	val[]: "コロラド"
 
 	key[]: "idaho"
 	val[]: "アイダホ"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "アラモゴード"
 
+	key[]: "alamosa"
+	val[]: "アラモサ"
+
 	key[]: "albuquerque"
 	val[]: "アルバカーキ"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "ボイシ"
+
+	key[]: "burlington"
+	val[]: "バーリントン"
 
 	key[]: "burns"
 	val[]: "バーンズ"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "コー・ダリーン"
 
+	key[]: "colorado_springs"
+	val[]: "コロラドスプリングス"
+
 	key[]: "colville"
 	val[]: "コルビル"
 
 	key[]: "coos_bay"
 	val[]: "クーズベイ"
+
+	key[]: "denver"
+	val[]: "デンバー"
+
+	key[]: "durango"
+	val[]: "デュランゴ"
 
 	key[]: "ehrenberg"
 	val[]: "エーレンバーグ"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "フラッグスタッフ"
 
+	key[]: "fort_collins"
+	val[]: "フォート・コリンズ"
+
 	key[]: "fresno"
 	val[]: "フレズノ"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "グランドクーリー"
+
+	key[]: "grand_junction"
+	val[]: "グランドジャンクション"
 
 	key[]: "grangeville"
 	val[]: "グランジビル"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "レイクビュー"
 
+	key[]: "lamar"
+	val[]: "ラマー"
+
 	key[]: "las_cruces"
 	val[]: "ラスクルーセス"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "モアブ"
+
+	key[]: "montrose"
+	val[]: "モントローズ"
 
 	key[]: "nampa"
 	val[]: "ナンパ"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "プロボ"
+
+	key[]: "pueblo"
+	val[]: "プエブロ"
+
+	key[]: "rangely"
+	val[]: "レンジリー"
 
 	key[]: "raton"
 	val[]: "ラトン"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "セントジョージ"
 
+	key[]: "steamboat_springs"
+	val[]: "スティームボートスプリングス"
+
+	key[]: "sterling"
+	val[]: "スターリング"
+
 	key[]: "stockton"
 	val[]: "ストックトン"
 
@@ -1318,9 +1446,54 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "グレンウッド・キャニオン"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "デンバー国際空港"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "ミリオンダラー・ハイウェイ"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "フォー・コーナーズ山"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "レッドクリフ橋"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "ウルフ・クリーク・パス"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "コロラドスプリングス"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "クリップル・クリーク&ビクター金鉱山"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "アイゼンハワー・トンネル"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "ロッキー・マウンテン・ロード"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
-	val[]: "ツインフォールズ ポテト農場"
+	val[]: "ツインフォールズ ジャガイモ農場"
 
 	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
 	key[]: "id_cut_galena"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "ミッドベールヒル レストエリア"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "ビンガムキャニオン鉱山"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "セントジョージ市"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "サンラファエル・スウェル エリア"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "ユタ州 油田地区"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "モニュメント・バレー"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "ボンネビル・ソルトフラッツ"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "モキ洞窟"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "ホール・イン・ザ・ロック ランドマーク"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "グレンキャニオンダム ブリッジ"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "フーバー レストエリア"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "セントヘレンズ山国立火山記念碑"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "シアトル港"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "ワシントン州 木材伐採場"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "エバレット可動橋"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "バンテージ橋"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "デセプションパス"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "航空機工場"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "グランドクーリーダム"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "シアトル ダウンタウン"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Kenworth 自動車工場"
 #@}
 
 }

@@ -167,9 +167,6 @@
         "steer": "Steerable"
     },
     "ats trailers": {
-        "rm_double": "R.M. Double",
-        "tp": "Turnpike Double",
-
         "2ax": "2 axles",
         "3ax": "3 axles"
     },

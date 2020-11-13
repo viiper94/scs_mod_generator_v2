@@ -600,6 +600,12 @@
 	key[]: "f_badge"
 	val[]: "Badge" #+ Brand badge on front of the truck
 
+	key[]: "f_fender"
+	val[]: "Wielkap voor" #+ Fender of the truck above front wheel
+
+	key[]: "r_fender"
+	val[]: "Achterspatbord" #+ Fender of the truck above rear wheel(s)
+
 	key[]: "r_banner"
 	val[]: "Achterkant Banner" #+ Banner on the rear
 
@@ -672,37 +678,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Wissel Cameramodus" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Kijk rond" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Draaien" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Zoom" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Slepen" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "WANDELMODUS-BEDIENING:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Vooruit" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Achteruit" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Links" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Rechts" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Kruipen" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Rennen" #+ Tooltip for run.
 #@}
@@ -712,7 +718,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Wandelcamera actief" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Ronddraaicamera actief" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -751,6 +757,9 @@
 	key[]: "delete"
 	val[]: "Verwijder" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Verwijder Profiel" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Upgrade" #+ Button allowing user to upgrade something.
 
@@ -779,6 +788,8 @@
 	key[]: "save_in_progress"
 	val[]: "Opslaan..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Druk op $KEY$ om de cutscene over te slaan." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1047,7 +1058,7 @@
 	val[]: "Ritafstand" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_time"
-	val[]: "Rit tijd " #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
+	val[]: "Reistijd" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
 
 	key[]: "trip_ferry_len"
 	val[]: "Ferry afstand" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
@@ -1067,7 +1078,7 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Tijd tot volgend checkpunt" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Tijd tot volgend checkpunt" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1208,13 +1219,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PROFIELBEHEER" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "ONLINE NIEUWS" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profielen" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Verander Profiel" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Word een ander persoon." #+ Help message associated with profile selection icon.
@@ -1231,8 +1245,23 @@
 	key[]: "continue_game"
 	val[]: "Doorgaan met het spel" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Gebruik het geselecteerde profiel" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Nieuw Profiel" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Profielstatus" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Beheer de MODs van het profiel" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Beheer Profielen" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Wijzig Profiel" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Incompatible profiel!<br>Probeer het spel te upgraden naar de laatste beschikbare versie!" #+ Incompatible profile warning text
@@ -1247,10 +1276,16 @@
 	val[]: "Vrachtwagens in bezit:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Trailers in bezit" #+ how many trailers the player owns
+	val[]: "Trailers in bezit:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Steam Cloud-synchronisatie:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Online status:"
+	val[]: "World of Trucks-profiel:"
+
+	key[]: "mods_in_use"
+	val[]: "Actieve MODs:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Niet verbonden"	#+ to the WoTR
@@ -1284,6 +1319,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Geen trucks gevonden! Gelieve op z'n minst één truck DLC te activeren, en het spel te herstarten." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Actieve MODs: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Geen actieve MODs"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Steam Cloud-synchronisatie is actief"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Steam Cloud-synchronisatie is uitgeschakeld<br><offset vshift=7><color value=@@clr_txt_d@@>Klik om het te activeren"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "World of Trucks verbonden"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "World of Trucks is niet verbonden <br><offset vshift=7><color value=@@clr_txt_d@@>Klik om te verbinden"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "PROFIELGEGEVENS"
 #@
 #@}
 
@@ -1445,10 +1505,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Een nieuwe versie<br>is beschikbaar"
+	val[]: "Je gebruikt een oudere versie van het spel.<br><link url=$URL_LINK$ color=@@clr_link@@>Update naar een nieuwere versie</link> om alle features te krijgen."
 
 	key[]: "new_version_available_steam"
-	val[]: "Een nieuwe versie<br>is beschikbaar.<br><br>Steam zal het spel automatisch updaten behalve als automatisch updates is uitgeschakeld."
+	val[]: "Je gebruikt een oudere versie van het spel.<br>Steam updatet het spel automatich, tenzij automatische updates uitgeschakeld zijn."
 
 	key[]: "allow_news"
 	val[]: "Wil je automatisch zoeken naar game-updates en nieuws?" #+ Text shown in a message box.
@@ -1726,6 +1786,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Truck uitlaatvolume" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Truck turbovolume" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Truck effectvolume" #+ Slider controlling volume of the truck effects.
@@ -2302,7 +2365,7 @@
 
 	key[]: "walk_mode"
 	val[]: "WANDELMODUS"
-	
+
 	key[]: "other_controls"
 	val[]: "OVERIGE"
 #@}
@@ -2605,22 +2668,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Vooruit" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Achteruit" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Links" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Rechts" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Kruipen" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Rennen" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -2999,7 +3062,7 @@
 	val[]: "Weet je zeker dat je de geselecteerde voorkeuze wilt verwijderen?" #+ Confirmation dialog shown when user requests deletion of extended view preset
 
 	key[]: "eye_preset_overwrite_confirmation"
-	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+	val[]: "De bestaande vooraf opgeslagen instelling met dezelfde naam zal worden overschreven. Wil je doorgaan?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Instellingen Blik Volgen" #+ Header of the gaze settings
@@ -3042,7 +3105,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Rolvermenigvuldigingsfactor (in cabine)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Giervermenigvuldigingsfactor (in loopmodus)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3123,7 +3186,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Vermenigvuldigt de gevoeligheid voor reacties op op-en-neer bewegingen van je hoofd (in cabine)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Vermenigvuldigt de gevoeligheid voor reacties op zijwaartse bewegingen van je hoofd (in loopmodus)."
 
@@ -3878,7 +3941,7 @@
 	val[]: "Bezoek meteen een werkplaats!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Volledige routeinformatie" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Volledige routeinformatie" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Info volgend checkpunt" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -3984,6 +4047,15 @@
 
 	key[]: "park_nf"
 	val[]: "Dit is een rustplaats,<br>maar je bent op dit moment niet moe."
+
+	key[]: "viewpoint_title"
+	val[]: "Uitkijkpunt"
+
+	key[]: "viewpoint_msg"
+	val[]: "Druk op de volgende toets om het uitkijkpunt te activeren:"
+
+	key[]: "viewpoint_found"
+	val[]: "Je hebt een nieuw uitkijkpunt ontdekt!"
 
 	key[]: "gas_station"
 	val[]: "Pompstation"
@@ -5163,7 +5235,7 @@
 	val[]: "Wals - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Tractor - RS-666"
+	val[]: "Rupstractor"
 
 	key[]: "cn_yacht"
 	val[]: "Jacht"
@@ -5483,7 +5555,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asfalt vergruizer - Writigen 808"
+	val[]: "Asphaltfreesmachine - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Industriële kabelhaspel"
@@ -6901,8 +6973,14 @@
 	key[]: "mapl_train"
 	val[]: "Kanaaltunnel"
 
+	key[]: "mapl_undiscovered"
+	val[]: "Onontdekt uitkijkpunt"
+
 	key[]: "mapl_viewpoint"
-	val[]: "Uitkijkpunt"
+	val[]: "Uitkijkpunt (bezocht)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Uitkijkpunt (onontdekt)"
 
 	key[]: "mapl_gas"
 	val[]: "Pompstation"
@@ -7127,7 +7205,7 @@
 	val[]: "VOERTUIGAANPASSINGEN" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "adjust_link_t"
-	val[]: "Voertuigaanpassingen" #+ Icon opening the adjuster. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Voertuig-\naanpassingen" #+ Icon opening the adjuster. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "lights"
 	val[]: "Verstel lichten" #+ Opens the light adjuster.
@@ -8216,6 +8294,14 @@
 
 #+ Upgrade accesories
 #@{
+	key[]: "duty"
+	val[]: "Simpel" #+ Basic truck accesory general
+
+	key[]: "duty_paint"
+	val[]: "Simpel, Lak" #+ Basic but paintable truck accesory
+
+	key[]: "classic"
+	val[]: "Klassiek" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Standaard" #+ Stock truck accesory general
@@ -8241,6 +8327,9 @@
 	key[]: "plastic_gray"
 	val[]: "Grijs Plastic" #+ Plastic mirror, doorhandle or other accessory
 
+	key[]: "plastic_gray_cover"
+	val[]: "Grijze Kunststof Afdekking" #+ Simple plastic cover used as small sideskirt or other accessory
+
 	key[]: "plastic_cover"
 	val[]: "Kunststof Afdekking" #+ Simple plastic cover used as small sideskirt or other accessory
 
@@ -8249,6 +8338,9 @@
 
 	key[]: "paint"
 	val[]: "Gespoten" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "Lang, Gespoten" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chroom" #+ Chromed mirror, doorhandle or other accessory
@@ -8919,7 +9011,7 @@
 	val[]: "TRAILER LEVERING"
 
 	key[]: "job_delivery_desc"
-	val[]: "Een ervaren chauffeur weet hoe hij de trailer moet manoeuvreren in een krappe plaats en hem daar te parkeren. Hou er rekening mee dat het welzijn van de vracht je topprioriteit is! Mocht je de uitdaging liever niet aan gaan, onderhandel dan met de dispatcher voor een makkelijkere plek waar je de trailer kan parkeren. "
+	val[]: "Een ervaren chauffeur weet hoe je op een krappe locatie een trailer moet manoeuvreren om deze daar te parkeren. Houd er rekening mee dat het welzijn van de vracht je topprioriteit is! Mocht je de uitdaging liever niet aan willen gaan, onderhandel dan met de expediteur voor een makkelijkere plek waar je de trailer kan parkeren."
 
 	key[]: "job_delivery_company"
 	val[]: "Bedrijf:"
@@ -8975,7 +9067,7 @@
 	val[]: "Verversen" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Doorzoek de contracten" #+ Opens browser on WOTR page to search for a job
+	val[]: "Doorzoek de Contracten" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Teken willekeurig contract" #+ Connects with server and accept random job in proximity of player's current position
@@ -9687,13 +9779,13 @@
 	val[]: "NIEUW EVENT" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "EVENT INFORMATIE" #+ Title of the event popup.
+	val[]: "ACTIEVE EVENEMENTEN" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Persoonlijk doel bereikt!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open De Event Pagina" #+ Button opening event page on WoTr.
+	val[]: "Open de evenementenpagina" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Voortgang" #+ The label used to indicate progress of the event.
@@ -9701,11 +9793,14 @@
 	key[]: "event_info"
 	val[]: "EVENT INFORMATIE" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Evenement" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Huidige Evenementen" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Rang" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Er zijn op dit moment geen evenementen actief."
 #@}
 
 #+ Trailer ownership
@@ -9939,7 +10034,7 @@
 	val[]: "Garage" #+ Title of the garage trailer column.
 
 	key[]: "trailerman_col_utilization"
-	val[]: "Benutting" #+ Title of the trailer type column.
+	val[]: "Gebruik" #+ Title of the trailer type column.
 
 	key[]: "trailerman_col_status"
 	val[]: "Status" #+ Title of the trailer status column.
@@ -10143,7 +10238,7 @@
 	val[]: "Totale lengte:" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_compatible_cargo_types"
-	val[]: "Typische ladingen:" #+ Name of the property in trailer detail tooltip displaying list of the cargo types that given trailer can carry.
+	val[]: "Ladingsoorten:" #+ Name of the property in trailer detail tooltip displaying list of the cargo types that given trailer can carry.
 #@}
 
 #+ Assistant related texts.
@@ -10161,7 +10256,7 @@
 	val[]: "Dieselhulpdienst"
 
 	key[]: "adjust_trailer"
-	val[]: "Pas de trailer aan"
+	val[]: "Trailerconfiguratie"
 
 	key[]: "park_trailer"
 	val[]: "Trailer Wegdoen"
@@ -10198,9 +10293,12 @@
 
 	key[]: "refrigerated"
 	val[]: "Gekoeld"
+#@}
 
-	key[]: "liquid"
-	val[]: "Vloeibaar"
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Tanker"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10214,6 +10312,9 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Standaard, droge goederen"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Constructie uitrusting en materialen"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Vloeibare levensmiddelen"
 
@@ -10223,11 +10324,11 @@
 	key[]: "body_cargo_types_log"
 	val[]: "Hout, balken of buizen"
 
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Zware machines en hoge lading"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Bevroren, gekoelde goederen"
-
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Constructie uitrusting en materialen"
 #@}
 
 #+ Trailer chain type names.

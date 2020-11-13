@@ -199,7 +199,7 @@
 	val[]: "STATUT PERSONAL" #+ Title of window containing information about the player's avatar. Please keep in upper case where possible.
 
 	key[]: "company_t"
-	val[]: "STATUS COMPANIE" #+ Title of window containing information about player's company. Please keep in upper case where possible.
+	val[]: "STATUT COMPANIE" #+ Title of window containing information about player's company. Please keep in upper case where possible.
 
 	key[]: "truck_t"
 	val[]: "CAMION PROPRIU" #+ Title of window containing information about truck owned by the player. Please keep in upper case where possible.
@@ -600,6 +600,12 @@
 	key[]: "f_badge"
 	val[]: "Siglă Frontală" #+ Brand badge on front of the truck
 
+	key[]: "f_fender"
+	val[]: "Aripă frontală" #+ Fender of the truck above front wheel
+
+	key[]: "r_fender"
+	val[]: "Aripă spate" #+ Fender of the truck above rear wheel(s)
+
 	key[]: "r_banner"
 	val[]: "Banner Spate" #+ Banner on the rear
 
@@ -672,37 +678,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Schimbă Modul Camerei" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Priveşte împrejur" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Rotire" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Mărire" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Rotire panoramică" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "CONTROALE MOD MERS:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Înainte" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Înapoi" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Stânga" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Dreapta" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Ghemuire" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Alergat" #+ Tooltip for run.
 #@}
@@ -712,7 +718,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Cameră persoana întâi activată" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Cameră orbitală activată" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -751,6 +757,9 @@
 	key[]: "delete"
 	val[]: "Ştergere" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Ştergere Profil" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Extindere" #+ Button allowing user to upgrade something.
 
@@ -779,6 +788,8 @@
 	key[]: "save_in_progress"
 	val[]: "Se salvează..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Apăsaţi $KEY$ pentru a închide animaţia." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1067,7 +1078,7 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Timpul până la următorul punct de pe traseu" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Timpul până la următorul punct de pe traseu" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1208,13 +1219,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - SELECŢIE PROFIL" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "MANAGER PROFIL" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - SELECŢIE PROFIL" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "NOUTĂŢI ONLINE" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profiluri" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Schimbare Profil" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Alegeţi un profil diferit." #+ Help message associated with profile selection icon.
@@ -1229,28 +1243,49 @@
 	val[]: "Distanţă condusă:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "Continuare joc" #+ Button which selects profile and continues in game.
+	val[]: "Continuare Joc" #+ Button which selects profile and continues in game.
+
+	key[]: "use_selected_profile"
+	val[]: "Utilizare Profil Selectat" #+ Button which selects profile.
 
 	key[]: "new"
 	val[]: "Profil Nou" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Statut Profil" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Administrare MOD-uri Profil" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Administrare Profiluri" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Editare Profil" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Profil incompatibil!<br>Încercaţi actualizarea jocului la ultima versiune disponibilă." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Garaje deţinute" #+ How many garages the player owns
+	val[]: "Garaje deţinute:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "mici: $SMALL$, mari: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Camioane deţinute" #+ how many trucks the player owns
+	val[]: "Camioane deţinute:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Remorci deţinute" #+ how many trailers the player owns
+	val[]: "Remorci deţinute:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Sincronizare Steam cloud:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Statut Online"
+	val[]: "Profil World of Trucks:"
+
+	key[]: "mods_in_use"
+	val[]: "Mod-uri în folosinţă:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Neconectat!"	#+ to the WoTR
@@ -1284,6 +1319,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Niciun camion disponibil! Trebuie să activaţi cel puţin un DLC şi să reporniţi jocul." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "MOD-uri utilizate: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Niciun MOD utilizat"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Sincronizarea Steam Cloud este activă"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Sincronizarea Steam Cloud nu este activă <br><offset vshift=7><color value=@@clr_txt_d@@>apăsaţi pentru activare"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "World of Trucks conectat"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "World of Trucks nu este conectat <br><offset vshift=7><color value=@@clr_txt_d@@>apăsaţi pentru conectare"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "DETALIILE PROFILULUI"
 #@
 #@}
 
@@ -1445,10 +1505,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Versiune nouă<br>disponibilă"
+	val[]: "Aveţi o versiune mai veche a jocului.<br><link url=$URL_LINK$ color=@@clr_link@@>Actualizaţi la o versiune mai nouă</link> pentru a avea toate noutăţile."
 
 	key[]: "new_version_available_steam"
-	val[]: "O nouă versiune<br> este disponibilă.<br><br>Steam va iniţia actualizarea automată, dacă aceasta nu a fost dezactivată.."
+	val[]: "Aveţi o versiune mai veche a jocului.<br>Steam va actualiza automat jocul, cu excepţia cazului în care actualizările automate sunt dezactivate."
 
 	key[]: "allow_news"
 	val[]: "Permiteţi verificarea automată a disponibilităţii unei versiuni noi a jocului?" #+ Text shown in a message box.
@@ -1726,6 +1786,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Volum evacuare camion" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Volum turbină camion" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Volum efecte camion" #+ Slider controlling volume of the truck effects.
@@ -2302,7 +2365,7 @@
 
 	key[]: "walk_mode"
 	val[]: "MODUL MERS"
-	
+
 	key[]: "other_controls"
 	val[]: "ALTELE"
 #@}
@@ -2605,22 +2668,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Înainte" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Înapoi" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Stânga" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Dreapta" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Ghemuire" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Alergat" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3042,7 +3105,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Coeficient tangaj (în cabină)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Coeficient giraţie (în modul Mers)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3123,7 +3186,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Multiplică sensibilitatea atunci când mişcaţi capul în sus şi în jos (în cabină)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Multiplică sensibilitatea atunci când rotiţi capul dintr-o parte în alta (în modul Mers)."
 
@@ -3878,7 +3941,7 @@
 	val[]: "Vizitaţi un service imediat!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Informaţii despre întreaga călătorie" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Informaţii despre întreaga călătorie" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Informaţii despre următorul punct de pe traseu" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -3984,6 +4047,15 @@
 
 	key[]: "park_nf"
 	val[]: "Acesta este un loc de odihnă,<br>dar nu sunteţi, încă, obosit."
+
+	key[]: "viewpoint_title"
+	val[]: "Punct de observaţie"
+
+	key[]: "viewpoint_msg"
+	val[]: "Apăsaţi următoarea tastă pentru a activa punctul de observaţie:"
+
+	key[]: "viewpoint_found"
+	val[]: "Aţi descoperit un nou punct de observaţie!"
 
 	key[]: "gas_station"
 	val[]: "Staţie de carburanţi"
@@ -5163,7 +5235,7 @@
 	val[]: "Compactor DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Tractor - RS-666"
+	val[]: "Tractor cu Şenile"
 
 	key[]: "cn_yacht"
 	val[]: "Iaht"
@@ -5483,7 +5555,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Concasor Asfalt - Writigen 808"
+	val[]: "Concasor Asfalt - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Role Cablu Industrial"
@@ -6901,8 +6973,14 @@
 	key[]: "mapl_train"
 	val[]: "Tunelul Canalului Mânecii"
 
+	key[]: "mapl_undiscovered"
+	val[]: "Punct nedescoperit"
+
 	key[]: "mapl_viewpoint"
-	val[]: "Punct de observaţie"
+	val[]: "Punct de observaţie (vizitat)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Punct de observaţie (nevizitat)"
 
 	key[]: "mapl_gas"
 	val[]: "Staţie de carburanţi"
@@ -8216,6 +8294,14 @@
 
 #+ Upgrade accesories
 #@{
+	key[]: "duty"
+	val[]: "De uzură" #+ Basic truck accesory general
+
+	key[]: "duty_paint"
+	val[]: "Vopsea de uzură" #+ Basic but paintable truck accesory
+
+	key[]: "classic"
+	val[]: "Clasic" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Original" #+ Stock truck accesory general
@@ -8241,6 +8327,9 @@
 	key[]: "plastic_gray"
 	val[]: "Plastic gri" #+ Plastic mirror, doorhandle or other accessory
 
+	key[]: "plastic_gray_cover"
+	val[]: "Protecţie Plastic Gri" #+ Simple plastic cover used as small sideskirt or other accessory
+
 	key[]: "plastic_cover"
 	val[]: "Protecţie Plastic" #+ Simple plastic cover used as small sideskirt or other accessory
 
@@ -8249,6 +8338,9 @@
 
 	key[]: "paint"
 	val[]: "Vopsea" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "Lungă Vopsită" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Cromat" #+ Chromed mirror, doorhandle or other accessory
@@ -8735,7 +8827,7 @@
 	val[]: "Căutare" #+ Label of field used to search mod by name
 
 	key[]: "mod_manager_btn"
-	val[]: "Administrarea Modurilor" #+ Button opening the mod manager
+	val[]: "Manager Mod-uri" #+ Button opening the mod manager
 
 	key[]: "new_mods_found"
 	val[]: "MOD-uri noi găsite" #+ Label indicating that the game has detected new mods.
@@ -8783,7 +8875,7 @@
 	val[]: "Versiune" #+ Label of field used to show the version of the mod
 
 	key[]: "status"
-	val[]: "Status" #+ Label of field used to show the status of the mod and also a entry of sorting dropdown indicating sorting according to the status.
+	val[]: "Statut" #+ Label of field used to show the status of the mod and also a entry of sorting dropdown indicating sorting according to the status.
 
 	key[]: "mod_details_t"
 	val[]: "DETALII MOD" #+ Label of overlay window which shows information about mod.
@@ -8975,7 +9067,7 @@
 	val[]: "Reîncărcare" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Contracte World of Trucks" #+ Opens browser on WOTR page to search for a job
+	val[]: "Navigare Contracte" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Preluare Contract Aleatoriu" #+ Connects with server and accept random job in proximity of player's current position
@@ -9687,13 +9779,13 @@
 	val[]: "EVENIMENT NOU" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "INFO EVENIMENT" #+ Title of the event popup.
+	val[]: "EVENIMENTE ÎN DESFĂŞURARE" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Obiectiv Personal Îndeplinit!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Deschide Pagina Eveniment" #+ Button opening event page on WoTr.
+	val[]: "Deschidere Pagină Evenimente" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Progres" #+ The label used to indicate progress of the event.
@@ -9701,11 +9793,14 @@
 	key[]: "event_info"
 	val[]: "INFO EVENIMENT" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Eveniment" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Evenimente în Desfăşurare" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Nivel" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Nu este niciun eveniment activ în acest moment."
 #@}
 
 #+ Trailer ownership
@@ -10198,9 +10293,12 @@
 
 	key[]: "refrigerated"
 	val[]: "Refrigerată"
+#@}
 
-	key[]: "liquid"
-	val[]: "Lichid"
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Cisternă"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10214,6 +10312,9 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Utilizare Generală"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Materiale şi echipamente construcţii"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Bunuri alimentare lichide"
 
@@ -10223,11 +10324,11 @@
 	key[]: "body_cargo_types_log"
 	val[]: "Buşteni, grinzi sau ţevi"
 
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Utilaje grele şi încărcături înalte"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Bunuri Congelate"
-
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Materiale şi echipamente construcţii"
 #@}
 
 #+ Trailer chain type names.

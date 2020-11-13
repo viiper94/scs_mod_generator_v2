@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Кровни спојлер"
 
+
+	key[]: "aero"
+	val[]: "Аеро"
+
+	key[]: "aero2"
+	val[]: "Аеро 2"
+
+	key[]: "aero_paint"
+	val[]: "Аеро обојен"
+
+	key[]: "aerox"
+	val[]: "Аеро X"
+
+	key[]: "alu_tank"
+	val[]: "Алуминијумски резервоар"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Доњи"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Моторна тестера играчка"
 
 	key[]: "chrom_tank"
-	val[]: "Хромиран резервоар" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Алуминијумски резервоар" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Хромиран резервоар"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D-Облик" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D-Облик"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "ДРЛ"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Елите"
+
+	key[]: "fog_lights"
+	val[]: "Магленке"
+
+	key[]: "hvac"
+	val[]: "КЛИМА"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Измените <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>у <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>фолдеру у вашим <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>и слушајте ваш омиљени Интернет-радио током игре!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "Kабловски калем"
 
+	key[]: "cn_cans"
+	val[]: "Лименке"
+
 	key[]: "cn_colors"
 	val[]: "Боја"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Сено"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Тешки булдожер"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Модели кућа"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Машина за асфалт"
 
+	key[]: "cn_mix_tank"
+	val[]: "Микс резервоар"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Покретна дизалица"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Косилица"
+
+	key[]: "cn_paper"
+	val[]: "Папир"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Палетирана храна за животиње"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Равна приколица"
 
-	key[]: "tn_food_tank"
-	val[]: "Цистерна за храну"
-
 	key[]: "tn_frac_tank"
 	val[]: "Фрак танк"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Knuckleboom Утоваривач"
 
-	key[]: "tn_log"
-	val[]: "Приколица за балване"
-
-	key[]: "tn_lowboy"
-	val[]: "Ниска приколица"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Приколица за бродове са ниском платформом"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Lowboy 55L приколица"
+	key[]: "tn_scs_lowboy"
+	val[]: "Нисконосећа проширена приколица"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Приколица покретне ограде"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Класа опасности 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Класа опасности 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Класа опасности 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Класа опасности 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Класа опасности 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Класа опасности 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Класа опасности 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Радни коњ"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Надобудан"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Професионалац"
-	
+
 	key[]: "lvl_name6"
 	val[]: "18 точкова вештине"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Изложбени салон"
-	
+
 	key[]: "weblink_game"
 	val[]: "American Truck Simulator вебсајт" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "American Truck Simulator има проблем и није у могућности да нацрта графику на вашем рачунару (није пронађена подржана графичка јединица).\nПрепоручени кораци:\n\n1. Проверите да ли ваш рачунар и видео карта одговарају минимуму гхардверских захтева.\n2. Инсталирајте најновију верзију Микрософтових DirectX драјвера.\n3. Инсталирајте најновију верзију драјвера за вашу графичку карту са произвођачевог сајта.\n4. Пребаците метод рендеровања са OpenGL у DirectX и обрнуто.\n5. Обришите конфигурациони фајл игре 'config.cfg' у вашем 'Documents' - 'American Truck Simulator' фолдеру. Можда је оштећен.\nОвај фајл ће бити аутоматски креиран са исправним почетним вредностима приликом следећег старта игре."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator има проблема да прикаже графику на вашем рачунару (није пронађена одговарајућа графичка карта)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Активација је била успешна.<br>Хвала вам што сте купили American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - ПОКРЕТАЊЕ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "МЕНАЏЕР ПРОФИЛА" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Трупци"
+
+	key[]: "lowboy"
+	val[]: "Нисконосећа"
 
 	key[]: "refrigerated"
 	val[]: "Хладњача"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Сингл"
 
+	key[]: "chain_double"
+	val[]: "Двострука"
+
 	key[]: "chain_staa_double"
 	val[]: "STAA Дупла"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "Дупла STAA"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "Дупла STAA Pup"
+	key[]: "tr_articulated_3axle"
+	val[]: "Зглобна, 3 осовине"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "СТАА Дупла Пуп, 4 Осовине"
+	key[]: "tr_articulated_4axle"
+	val[]: "Зглобна, 4 осовине"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Зглобна, 5 осовине"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Зглобна, 6 осовине"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Зглобна, 7 осовине"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Зглобна, 8 осовине"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Зглобна, 9 осовине"
 
 	key[]: "tr_b_double"
 	val[]: "B-Дупла"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "В-Дупла, 6 Осовина"
 
+	key[]: "tr_double_staa"
+	val[]: "Дупла STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Дупла STAA Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "СТАА Дупла Пуп, 4 Осовине"
+
+	key[]: "tr_jeep"
+	val[]: "Џип"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Џип, 3 осовине"
+
 	key[]: "tr_rm_double"
 	val[]: "Rocky Mountain Дупла"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Дупла Rocky Mountain Pup"
-
-	key[]: "tr_tp_double"
-	val[]: "Turnpike Дупла"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Turnpike Дупла, 6 Осовина"
 
 	key[]: "tr_single_28"
 	val[]: "28 стопа"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53 стопа, Широка"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "Широка, 1 осовина"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Широка, 2 осовине"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Широка, 3 осовине"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike Дупла"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike Дупла, 6 Осовина"
+
 	key[]: "tr_triple"
 	val[]: "Трострука"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "Приколица за трупце са 6 Штице"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Дрвена нисконосећа"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Пуно дрво нисконосећа"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Дрвено-Алуминијумска нисконосећа"
 
 	key[]: "bs_reefer"
 	val[]: "Хладњача"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Обична врата, ветробран"
+
+	key[]: "wooden_deck"
+	val[]: "Дрвена палуба"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Калифорнија"
+
+	key[]: "colorado"
+	val[]: "Колорадо"
 
 	key[]: "idaho"
 	val[]: "Ајдахо"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Аламогордо"
 
+	key[]: "alamosa"
+	val[]: "Аламоса"
+
 	key[]: "albuquerque"
 	val[]: "Албукерки"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Боизи"
+
+	key[]: "burlington"
+	val[]: "Берлингтон"
 
 	key[]: "burns"
 	val[]: "Бернс"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Кор Д'Ален"
 
+	key[]: "colorado_springs"
+	val[]: "Колорадо Спрингс"
+
 	key[]: "colville"
 	val[]: "Колвил"
 
 	key[]: "coos_bay"
 	val[]: "Кус Беј"
+
+	key[]: "denver"
+	val[]: "Денвер"
+
+	key[]: "durango"
+	val[]: "Дуранго"
 
 	key[]: "ehrenberg"
 	val[]: "Еренберг"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Флагстаф"
 
+	key[]: "fort_collins"
+	val[]: "Форт Колинс"
+
 	key[]: "fresno"
 	val[]: "Фрезно"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Гранд Кули"
+
+	key[]: "grand_junction"
+	val[]: "Гранд Џанкшон"
 
 	key[]: "grangeville"
 	val[]: "Грејнџвил"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Лејквју"
 
+	key[]: "lamar"
+	val[]: "Ламар"
+
 	key[]: "las_cruces"
 	val[]: "Лас Крусес"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Моаб"
+
+	key[]: "montrose"
+	val[]: "Монтроуз"
 
 	key[]: "nampa"
 	val[]: "Нампа"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Прово"
+
+	key[]: "pueblo"
+	val[]: "Пуебло"
+
+	key[]: "rangely"
+	val[]: "Рејнџли"
 
 	key[]: "raton"
 	val[]: "Ратон"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "Сент Џорџ"
 
+	key[]: "steamboat_springs"
+	val[]: "Стимбот Спрингс"
+
+	key[]: "sterling"
+	val[]: "Стерлинг"
+
 	key[]: "stockton"
 	val[]: "Стоктон"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Кањон Гленвуд"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Аеродром Денвер"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Аутопут од милион долара"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Споменик четри угла"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Мост Ред Клиф"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Превој Вулф Крик"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Колорадо Спрингс"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Рудник злата Крипл Крик и Виктор"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Ајзенхауеров тунел"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Пут кроз Стеновите планине"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Твин Фолс фарма кромпира"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Одмаралиште Мидвале Хилл"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Рудник кањона Бингхам"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "Град Светог Ђорђа"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "Подручје Сан Рафаел Свелл"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Нафтна поља у Јути"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "Долина споменика"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Слани равни Бонневилле"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "Пећина Мокуи"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Споменик 'Hole N\" The Rock'"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Мост бране Глен кањона"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Одмориште Хоовер"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Национални вулкански споменик Моунт Саинт Хеленс"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Сијетл лука"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Место жетве дрвета у Вашингтону"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Еверет Свинг мост"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Вантаге мост"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Децептион пролаз"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Фабрика авиона"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Брана Гранд Цоуле"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Центар Сијетла"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Кенвортх фабрика"
 #@}
 
 }

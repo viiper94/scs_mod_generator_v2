@@ -600,6 +600,12 @@
 	key[]: "f_badge"
 	val[]: "Huy hiệu trước" #+ Brand badge on front of the truck
 
+	key[]: "f_fender"
+	val[]: "Chắn bùn trước" #+ Fender of the truck above front wheel
+
+	key[]: "r_fender"
+	val[]: "Chắn bùn sau" #+ Fender of the truck above rear wheel(s)
+
 	key[]: "r_banner"
 	val[]: "Bảng hiệu phía sau" #+ Banner on the rear
 
@@ -672,37 +678,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Đổi chế độ camera" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Nhìn xung quanh" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Xoay" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Thu phóng" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Rê" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "ĐIỀU KHIỂN CHẾ ĐỘ ĐI BỘ:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Tiến về trước" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Trở về" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Trái" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Phải" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Cúi" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Chạy" #+ Tooltip for run.
 #@}
@@ -712,7 +718,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Góc nhìn thứ nhất đã kích hoạt" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Góc nhìn có quỹ đạo đã kích hoạt" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -751,6 +757,9 @@
 	key[]: "delete"
 	val[]: "Xóa" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Xóa hồ sơ" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Nâng cấp" #+ Button allowing user to upgrade something.
 
@@ -779,6 +788,8 @@
 	key[]: "save_in_progress"
 	val[]: "Đang lưu..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Nhấn $KEY$ để bỏ qua trích đoạn." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1067,7 +1078,7 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Thời gian đến tiếp điểm kế tiếp" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Thời gian đến tiếp điểm kế tiếp" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1208,13 +1219,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - TRÌNH KHỞI ĐỘNG" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "TRÌNH QUẢN LÝ HỒ SƠ" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - TRÌNH KHỞI ĐỘNG" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "TIN TỨC TRỰC TUYẾN" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Hồ sơ" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Đổi hồ sơ" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Người chơi mới." #+ Help message associated with profile selection icon.
@@ -1229,28 +1243,49 @@
 	val[]: "Khoảng cách đã lái:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "Tiếp tục game" #+ Button which selects profile and continues in game.
+	val[]: "Tiếp tục chơi" #+ Button which selects profile and continues in game.
+
+	key[]: "use_selected_profile"
+	val[]: "Dùng hồ sơ được chọn" #+ Button which selects profile.
 
 	key[]: "new"
 	val[]: "Tạo hồ sơ mới" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Tình trạng hồ sơ" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Quản lý MOD của hồ sơ" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Quản lý hồ sơ" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Sửa hồ sơ" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Hồ sơ không tương thích!<br>Hãy nâng cấp trò chơi đến phiên bản mới nhất." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Garage đã sở hữu" #+ How many garages the player owns
+	val[]: "Ga-ra sở hữu:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "nhỏ: $SMALL$, to: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Xe tải đã sở hữu" #+ how many trucks the player owns
+	val[]: "Xe tải sở hữu:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Thùng hàng đã sở hữu" #+ how many trailers the player owns
+	val[]: "Thùng hàng sở hữu:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Đồng bộ Steam cloud:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Trạng thái Trực tuyến"
+	val[]: "Hồ sơ World of Trucks:"
+
+	key[]: "mods_in_use"
+	val[]: "Mod đang sử dụng:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Đã mất kết nối"	#+ to the WoTR
@@ -1284,6 +1319,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Không có xe tải nào được tìm thấy! Hãy thử kích hoạt lại ít nhất một DLC xe tải rồi khởi động lại game." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Mod đang sử dụng: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Không sử dụng MOD nào"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Đang kích hoạt đồng bộ Steam cloud"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Đang tắt đồng bộ Steam cloud synchronization <br><offset vshift=7><color value=@@clr_txt_d@@>nhấn để bật"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Đã kết nối World of Trucks"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "Chưa kết nối World of Trucks <br><offset vshift=7><color value=@@clr_txt_d@@>nhấn để kết nối"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "CHI TIẾT HỒ SƠ"
 #@
 #@}
 
@@ -1445,10 +1505,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Đã có <br>phiên bản mới"
+	val[]: "Bạn đang sử dụng phiên bản cũ của trò chơi.<br><link url=$URL_LINK$ color=@@clr_link@@>Cập nhật phiên bản mới hơn</link> để có tất cả tính năng."
 
 	key[]: "new_version_available_steam"
-	val[]: "Game đã có phiên bản mới.<br><br><br>Steam sẽ tự động cập nhật trừ khi bạn tất phẩn cập nhật tự động đi."
+	val[]: "Bạn đang sử dụng phiên bản cũ của trò chơi.<br>Steam sẽ tự động cập nhật trò chơi nếu không tắt tự động cập nhật."
 
 	key[]: "allow_news"
 	val[]: "Bạn có muốn bật chế độ tự động tải bản cập nhật và tin tức mới nhất không?" #+ Text shown in a message box.
@@ -1726,6 +1786,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Âm lượng ống khói xe tải" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Âm lượng tăng áp xe tải" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Âm lượng hiệu ứng xe tải" #+ Slider controlling volume of the truck effects.
@@ -2302,7 +2365,7 @@
 
 	key[]: "walk_mode"
 	val[]: "CHẾ ĐỘ ĐI BỘ"
-	
+
 	key[]: "other_controls"
 	val[]: "KHÁC"
 #@}
@@ -2605,22 +2668,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Tiến về trước" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Trở về" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Trái" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Phải" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Cúi" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Chạy" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3042,7 +3105,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Hệ số nâng (trong buồng lái)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Hệ số đảo lái (trong chế độ đi bộ)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3123,7 +3186,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Hệ số phản hồi khi bạn ngẩng đầu lên và cúi đầu xuống (trong buồng lái)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Hệ số phản hồi khi bạn xoay đầu từ bên này sang bên kia (trong chế độ đi bộ)."
 
@@ -3878,7 +3941,7 @@
 	val[]: "Hãy đến trạm sửa xe ngay!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Toàn bộ thông tin hành trình" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Toàn bộ thông tin hành trình" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Thông tin tiếp điểm kế tiếp" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -3984,6 +4047,15 @@
 
 	key[]: "park_nf"
 	val[]: "Đây là nơi bạn có thể nghỉ ngơi,<br>nhưng hiện tại bạn không cảm thấy mệt mỏi."
+
+	key[]: "viewpoint_title"
+	val[]: "Thắng cảnh"
+
+	key[]: "viewpoint_msg"
+	val[]: "Nhấn phím sau để kích hoạt phân cảnh:"
+
+	key[]: "viewpoint_found"
+	val[]: "Bạn đã khám phá phân cảnh mới!"
 
 	key[]: "gas_station"
 	val[]: "Trạm nạp"
@@ -5163,7 +5235,7 @@
 	val[]: "Xe lu - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Máy kéo - RS-666"
+	val[]: "Máy kéo bánh xích"
 
 	key[]: "cn_yacht"
 	val[]: "Du thuyền"
@@ -5483,7 +5555,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Máy cào đường nhựa - Writigen 808"
+	val[]: "Máy đào nhựa đường - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Cuộn cáp công nghiệp"
@@ -6705,7 +6777,7 @@
 	val[]: "Mua trực tuyến" #+ Button to trigger online purchase screen for selected dealer.
 
 	key[]: "tdsel_visit_dealer"
-	val[]: "Đến cửa hàng bán xẽ đã chọn" #+ Button to drive to specified dealer.
+	val[]: "Đến cửa hàng được chọn" #+ Button to drive to specified dealer.
 
 	key[]: "tdsel_mod_content"
 	val[]: "Ghé đại lý mod" #+ Button to trigger the online purchase screen for modded brands.
@@ -6901,8 +6973,14 @@
 	key[]: "mapl_train"
 	val[]: "Đường hầm"
 
+	key[]: "mapl_undiscovered"
+	val[]: "Điểm chưa khám phá"
+
 	key[]: "mapl_viewpoint"
-	val[]: "Thắng cảnh"
+	val[]: "Phân cảnh (đã đến)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Phân cảnh (chưa đến)"
 
 	key[]: "mapl_gas"
 	val[]: "Trạm nạp"
@@ -8216,6 +8294,14 @@
 
 #+ Upgrade accesories
 #@{
+	key[]: "duty"
+	val[]: "Nhiệm vụ" #+ Basic truck accesory general
+
+	key[]: "duty_paint"
+	val[]: "Sơn công việc" #+ Basic but paintable truck accesory
+
+	key[]: "classic"
+	val[]: "Cổ điển" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Gốc" #+ Stock truck accesory general
@@ -8241,6 +8327,9 @@
 	key[]: "plastic_gray"
 	val[]: "Nhựa xám" #+ Plastic mirror, doorhandle or other accessory
 
+	key[]: "plastic_gray_cover"
+	val[]: "Nắp nhựa màu xám" #+ Simple plastic cover used as small sideskirt or other accessory
+
 	key[]: "plastic_cover"
 	val[]: "Nắp che nhựa" #+ Simple plastic cover used as small sideskirt or other accessory
 
@@ -8249,6 +8338,9 @@
 
 	key[]: "paint"
 	val[]: "Sơn" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "Sơn phiên bản dài" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chrome" #+ Chromed mirror, doorhandle or other accessory
@@ -8975,7 +9067,7 @@
 	val[]: "Làm mới" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Xem các chuyến hàng" #+ Opens browser on WOTR page to search for a job
+	val[]: "Xem hợp đồng" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Ký hợp đồng ngẫu nhiên" #+ Connects with server and accept random job in proximity of player's current position
@@ -9687,13 +9779,13 @@
 	val[]: "SỰ KIỆN MỚI" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "THÔNG TIN SỰ KIỆN" #+ Title of the event popup.
+	val[]: "SỰ KIỆN TRỰC TIẾP" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Đạt mục tiêu cá nhân!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Mở trang thông tin sự kiện" #+ Button opening event page on WoTr.
+	val[]: "Mở trang sự kiện" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Quá trình" #+ The label used to indicate progress of the event.
@@ -9701,11 +9793,14 @@
 	key[]: "event_info"
 	val[]: "THÔNG TIN SỰ KIỆN" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Sự kiện" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Sự kiện trực tiếp" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Tầng" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Không có sự kiện tại thời điểm này."
 #@}
 
 #+ Trailer ownership
@@ -10198,9 +10293,12 @@
 
 	key[]: "refrigerated"
 	val[]: "Đông lạnh"
+#@}
 
-	key[]: "liquid"
-	val[]: "Dung dịch"
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Bồn"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10214,6 +10312,9 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Hàng chung, hàng khô"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Trang bị và vật liệu công trường"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Thực phẩm dạng lỏng"
 
@@ -10223,11 +10324,11 @@
 	key[]: "body_cargo_types_log"
 	val[]: "Khung chở gỗ, ống sắt thép"
 
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Máy móc siêu trọng và hàng hóa siêu trường"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Hàng đông, ướp lạnh"
-
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Trang bị và vật liệu công trường"
 #@}
 
 #+ Trailer chain type names.

@@ -88,7 +88,7 @@ SiiNunit
 	mail_text: mailtext.comp_teaser {
 		from: "$COMPANY$, $CITY$" #+ Message sender
 		subject: "機材をお探しのドライバーへ" #+ Message subject
-		body: "関係各位<br><br>当社は多数の配送業務のために, ご自身でトラックを所有している熟練ドライバーを探しております. 当社は $MONEY$ もの高額報酬のお仕事をご用意いたしております. あなたがご自身の車両をお持ちでしたら是非 $CITY$ の荷積場まで直接お問い合わせください.<br><br>$COMPANY$<br>$CITY$" #+ Message body
+		body: "関係各位<br><br>当社は多数の配送業務のために, ご自身でトラックを所有されている熟練ドライバーを探しております. 当社は $MONEY$ もの高額報酬のお仕事をご用意いたしております. あなたがご自身の車両をお持ちでしたら, 是非 $CITY$ の荷積場まで直接お問い合わせください.<br><br>$COMPANY$<br>$CITY$" #+ Message body
 	}
 
 /**
@@ -136,13 +136,13 @@ SiiNunit
  */
 
 	mail_text: mailtext.ovs.new_routes {
-		from: "発信元" #+ Message sender
+		from: "運行管理者" #+ Message sender
 		subject: "特殊配送" #+ Message subject
 		body: "こんにちはボス.<br><br>あなたに特別に言うべき事があるんだ. とある関係先のお陰で, 私たちは本当のチャレンジに挑む機会を得る事ができました. 特別に巨大だったり重かったりする貨物は真のプロフェッショナルによって配送される必要があります. それは簡単ではないし, いくつかのスキルや忍耐, エスコート車両との協力や特別なケアが必要になりますが, あなたはそれらすべてを兼ね備えていますよね? また, 大きなリスクは大きな利益をもたらす事もご存じのはず.<br><br>もしご興味がありましたら次の街へ向かってください: $CITIES$." #+ Message body
 	}
 	
 	mail_text: mailtext.ovs.upd_routes {
-		from: "発信元" #+ Message sender
+		from: "運行管理者" #+ Message sender
 		subject: "新しい特殊配送" #+ Message subject
 		body: "やあボス.<br><br>多くの企業はいくつかの特別な配送のために専門的なスキルを持つ者を雇いたいと考えています. 前にも言った通り, それは簡単ではないし, いくつかのスキルや忍耐, エスコート車両との協力や特別なケアが必要になりますが, あなたはそれらすべてを兼ね備えていますよね? それと忘れないで欲しいのは, それらの貨物は依然として大きな利益をもたらすという事です.<br><br>それで, 今のところ受諾可能な特殊配送は次の都市で請ける事ができます: $OLD_CITIES$ <br><br>また, これら以外にも<color value=@@clr_sel@@>新しい仕事<color value=@@clr_txt@@>を次の都市で請ける事ができるようになりました: <br><br>$CITIES$." #+ Message body
 	}

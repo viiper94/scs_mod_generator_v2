@@ -600,6 +600,12 @@
 	key[]: "f_badge"
 	val[]: "Predné označenie" #+ Brand badge on front of the truck
 
+	key[]: "f_fender"
+	val[]: "Predný blatník " #+ Fender of the truck above front wheel
+
+	key[]: "r_fender"
+	val[]: "Zadný blatník " #+ Fender of the truck above rear wheel(s)
+
 	key[]: "r_banner"
 	val[]: "Zadné označenie" #+ Banner on the rear
 
@@ -672,37 +678,37 @@
 
 	key[]: "switch_walking_cam"
 	val[]: "Prepnúť režim kamery" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Rozhliadať sa" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Otáčanie" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Priblíženie" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Naklonenie" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "OVLÁDANIE REŽIMU CHÔDZE:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Dopredu" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Dozadu" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Doľava" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Doprava" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Čupnúť si" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Beh" #+ Tooltip for run.
 #@}
@@ -712,7 +718,7 @@
 
 	key[]: "notification_walking_camera"
 	val[]: "Zapnutý pohľad z prvej osoby" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Zapnutá obežná kamera" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -751,6 +757,9 @@
 	key[]: "delete"
 	val[]: "Vymazať" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Odstrániť profil" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Vylepšiť" #+ Button allowing user to upgrade something.
 
@@ -779,6 +788,8 @@
 	key[]: "save_in_progress"
 	val[]: "Ukladám..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Stlač $KEY$ pre preskočenie cutscény." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1067,7 +1078,7 @@
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Čas k nasledujúcemu bodu trasy" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Čas k nasledujúcemu bodu trasy" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1208,13 +1219,16 @@
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - MENU" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "SPRÁVCA PROFILOV" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - MENU" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "Online novinky" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profily" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Zmeniť profil" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Stať sa inou osobou." #+ Help message associated with profile selection icon.
@@ -1229,28 +1243,49 @@
 	val[]: "Najazdená vzdialenosť:" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "Pokračovať v hre " #+ Button which selects profile and continues in game.
+	val[]: "Pokračovať v hre" #+ Button which selects profile and continues in game.
+
+	key[]: "use_selected_profile"
+	val[]: "Použiť vybraný profil" #+ Button which selects profile.
 
 	key[]: "new"
 	val[]: "Nový profil" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Stav profilu" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Spravovať profilové modifikácie" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Spravovať profily" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Upraviť profil" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Nekompatibilný profil!<br>Skús svoju hru aktualizovať na najnovšiu dostupnú verziu." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Vlastnené garáže" #+ How many garages the player owns
+	val[]: "Vlastnených garáži:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "malá: $SMALL$, veľká: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Vlastnené Trucky:" #+ how many trucks the player owns
+	val[]: "Vlastnených ťahačov:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Vlastnené návesy" #+ how many trailers the player owns
+	val[]: "Vlastnených návesov:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Synchronizácia so Steam Cloud:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Online stav"
+	val[]: "Profil na World of Trucks:"
+
+	key[]: "mods_in_use"
+	val[]: "Použitých modifikácií:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Nepripojený!"	#+ to the WoTR
@@ -1284,6 +1319,31 @@
 
 	key[]: "no_truck_dlc"
 	val[]: "Žiadny ťahač nebol nájdený! Aktivuj aspoň jedno DLC s ťahačom a reštartuj hru." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Použitých modifikácií: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Žiadne aktívne modifikácie"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Steam Cloud synchronizácia je aktívna"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Steam Cloud synchronizácia je vypnutá <br><offset vshift=7><color value=@@clr_txt_d@@>klikni pre zapnutie"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "Pripojené k World of Trucks"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "Nepripojené k World of Trucks <br><offset vshift=7><color value=@@clr_txt_d@@>klikni pre pripojenie"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "PROFILOVÉ INFORMÁCIE"
 #@
 #@}
 
@@ -1445,10 +1505,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Novšia verzia<br>je k dispozícii"
+	val[]: "Používaš staršiu verziu hry.<br>Pre získanie nových funkcií<link url=$URL_LINK$ color=@@clr_link@@>aktualizuj na novšiu verziu</link>."
 
 	key[]: "new_version_available_steam"
-	val[]: "Nová verzia<br>je k dispozícii.<br><br>Steam automaticky aktualizuje hru, ak automatická aktualizácia nie je vypnutá."
+	val[]: "Používaš staršiu verziu hry.<br>Steam automatický hru aktualizuje, pokiaľ nemáš zakázané automatické aktualizácie."
 
 	key[]: "allow_news"
 	val[]: "Chcete povoliť automatické kontrolovanie aktualizácií a noviniek?" #+ Text shown in a message box.
@@ -1726,6 +1786,9 @@
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Hlasitosť výfuku ťahača" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Hlasitosť turba ťahača" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Hlasitosť efektov ťahača" #+ Slider controlling volume of the truck effects.
@@ -2277,7 +2340,7 @@
 	val[]: "Zrušiť priradenie" #+ Button for cancelling the existing input assignent.
 
 	key[]: "press_key_to_assign"
-	val[]: "Stlač tlačítko, ktoré chceš priradiť k tejto funkcii." #+ Key/button assignment hint.
+	val[]: "Stlač tlačidlo, ktoré chceš priradiť k tejto funkcii." #+ Key/button assignment hint.
 
 	key[]: "press_button_to_assign"
 	val[]: "Stlačte tlačidlo, ktoré chcete priradiť k funkcii."#+ Key/button/axis assignment hint.
@@ -2302,7 +2365,7 @@
 
 	key[]: "walk_mode"
 	val[]: "REŽIM CHÔDZE"
-	
+
 	key[]: "other_controls"
 	val[]: "Ostatné"
 #@}
@@ -2605,22 +2668,22 @@
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Dopredu" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Dozadu" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Doľava" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Doprava" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Čupnúť si" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Beh" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -2799,10 +2862,10 @@
 
 
 	key[]: "press_button_or_joy_to_assign"
-	val[]: "Stlač tlačítko, alebo pohni páčkou, ktorú chceš priradiť k tejto funkcii."
+	val[]: "Stlač tlačidlo, alebo pohni páčkou, ktorú chceš priradiť k tejto funkcii."
 
 	key[]: "use_joy_to_assign"
-	val[]: "Stlač tlačítko, alebo pohni páčkou, ktorú chceš priradiť k tejto funkcii."
+	val[]: "Stlač tlačidlo, alebo pohni páčkou, ktorú chceš priradiť k tejto funkcii."
 
 	key[]: "clutch_range"
 	val[]: "Rozsah spojky"
@@ -3042,7 +3105,7 @@
 
 	key[]: "eye_pitch_scale"
 	val[]: "Činiteľ naklonenia (v kabíne)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Činiteľ otáčania (v režime chôdze)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3123,7 +3186,7 @@
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Násobí reakčný čas kamery pri pohybe hlavou hore a dole (v kabíne)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Násobí reakčný čas kamery pri otáčaní hlavy z jednej strany na druhú (v režime chôdze)."
 
@@ -3878,7 +3941,7 @@
 	val[]: "Urýchlene navštív servis!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Kompletné informácie o jazde" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Kompletné informácie o jazde" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Informácie o nasledujúcom bode trasy" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -3935,13 +3998,13 @@
 	val[]: "Táto garáž je na predaj za $MONEY$<br offset=10>Práve teraz si ju však nemôžeš dovoliť kúpiť."
 
 	key[]: "enter_dealer"
-	val[]: "Stlač nasledujúce tlačítko pre návštevu predajcu ťahačov:"
+	val[]: "Stlač nasledujúce tlačidlo pre návštevu predajcu ťahačov:"
 
 	key[]: "closed_dealer"
 	val[]: "Predajňa ťahačov je zavretá.<br offset=20>Otváracie hodiny:<br>Pondelok - Sobota $START$ - $END$"
 
 	key[]: "enter_recruit"
-	val[]: "Stlač nasledujúce tlačítko pre návštevu personálnej agentúry:"
+	val[]: "Stlač nasledujúce tlačidlo pre návštevu personálnej agentúry:"
 
 	key[]: "closed_recruit"
 	val[]: "Personálna agentúra je zatvorená.<br offset=20>Otváracia doba:<br>Monday - Saturday $START$ - $END$"
@@ -3980,10 +4043,19 @@
 	val[]: "Začínaš byť unavený.<br>Mal by si si nájsť parkovacie miesto na oddýchnutie."
 
 	key[]: "parking"
-	val[]: "Pre oddýchnutie si stlač tlačítko:"
+	val[]: "Pre oddýchnutie si stlač tlačidlo:"
 
 	key[]: "park_nf"
 	val[]: "Toto je odpočívadlo,<br> ale vy nie ste teraz unavený.  "
+
+	key[]: "viewpoint_title"
+	val[]: "Vyhliadka"
+
+	key[]: "viewpoint_msg"
+	val[]: "Pre aktivovanie vyhliadky stlač nasledujúcu klávesu:"
+
+	key[]: "viewpoint_found"
+	val[]: "Objavil si novú vyhliadku!"
 
 	key[]: "gas_station"
 	val[]: "Čerpacia stanica"
@@ -4007,7 +4079,7 @@
 	val[]: "Stlač nasledujúcu klávesu pre zatiahnutie parkovacej brzdy:"
 
 	key[]: "gas_station_hint"
-	val[]: "Pre natankovanie stlač a drž tlačítko:"
+	val[]: "Pre natankovanie stlač a drž tlačidlo:"
 
 	key[]: "diesel_price"
 	val[]: "Cena nafty"
@@ -4081,7 +4153,7 @@
 	val[]: "Cez nasledujúcu cestnú váhu nemusíš prechádzať<br>Prajeme šťastnú cestu! " #+ Adviser text: Weigh station bypass allowed.
 
 	key[]: "stop_at_scale"
-	val[]: "Zastav na váhe a stlač tlačítko pre spustenie kontroly " #+ Adviser text: Text on weighing station for mandatory weighing.
+	val[]: "Zastav na váhe a stlač tlačidlo pre spustenie kontroly." #+ Adviser text: Text on weighing station for mandatory weighing.
 
 	key[]: "weigh_activate"
 	val[]: "Pre úspešné absolvovanie inšpekcie, stlačte:" #+ Adviser text
@@ -5163,7 +5235,7 @@
 	val[]: "Cestný valec - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Traktor RS-666"
+	val[]: "Pásový traktor"
 
 	key[]: "cn_yacht"
 	val[]: "Jachta "
@@ -5483,7 +5555,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asfaltová fréza - Writigen 808 "
+	val[]: "Asfaltová fréza - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Priemyselný káblový navijak"
@@ -6901,8 +6973,14 @@
 	key[]: "mapl_train"
 	val[]: "Eurotunel"
 
+	key[]: "mapl_undiscovered"
+	val[]: "Neobjavené miesto"
+
 	key[]: "mapl_viewpoint"
-	val[]: "Vyhliadka"
+	val[]: "Vyhliadka (navštívené)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Vyhliadka (nenavštívené)"
 
 	key[]: "mapl_gas"
 	val[]: "Čerpacia stanica"
@@ -7940,7 +8018,7 @@
 	val[]: "Jazdenie pomocou klávesnice a rozhliadanie sa okolo s myškou. Najjednoduchší, no najmenej presný spôsob ovládania dostupný všetkým."
 
 	key[]: "wiz_control_mouse"
-	val[]: "Použi myš pre citlivejšie ovládanie ťahača. Ostatné akcie sa stále ovládajú klávesnicou. Myšou sa môžeš rozhliadať len keď podržíš špeciálnu klávesu alebo tlačítko."
+	val[]: "Použi myš pre citlivejšie ovládanie ťahača. Ostatné akcie sa stále ovládajú klávesnicou. Myšou sa môžeš rozhliadať len keď podržíš špeciálnu klávesu alebo tlačidlo."
 
 	key[]: "wiz_control_controller"
 	val[]: "Použi volant, gamepad alebo joystick pre najrealistickejší herný zážitok. Klávesové skratky môžu byť stále použité pre niektoré akcie, rozhliadať sa okolo môžeš myškou."
@@ -8069,7 +8147,7 @@
 	val[]: "Prevodovky s rozsahom sú najľahšou voľbou. Majú dve sady stupňov. Prvá sada obsahuje rýchlosti od 1 do 6 a druhá sada rýchlosti od 7 do 12. Prepínacie tlačidlo prepína medzi týmito dvoma sadami, zatiaľ čo radiaca páka vyberá rýchlosť z danej sady."
 
 	key[]: "wiz_hs_splitter"
-	val[]: "Delená prevodovka je jednoduchou alternatívou. Má dve sady rýchlostí. Prvá sada obsahuje stupne s nepárnymi číslami (1, 3, 5...) a druhá sada stupne s párnymi číslami (2, 4, 6...). Prepínacie tlačítko prepína medzi týmito dvoma sadami, zatiaľ čo riadiaca páka vyberá rýchlosť z danej sady."
+	val[]: "Delená prevodovka je jednoduchou alternatívou. Má dve zostavy rýchlostí. Prvá zostava obsahuje stupne s nepárnymi číslami (1, 3, 5...) a druhá zostava stupne s párnymi číslami (2, 4, 6...). Prepínacie tlačidlo prepína medzi týmito dvoma zostavami, zatiaľ čo riadiaca páka vyberá rýchlosť z danej sady."
 
 	key[]: "wiz_hs_range_splitter"
 	val[]: "Prevodovka s deleným rozsahom je založená na rozložení skutočného radenie ťahačov do H.Prevodové stupne sú rozdelené do skupín po štyroch pre každú pozíciu radenia do H s použitím dvoch prepínačov.Preto sa táto možnosť doporučuje len skúsenejším vodičom."
@@ -8156,7 +8234,7 @@
 	val[]: "Tu si môžeš zvoliť všetky osi."
 
 	key[]: "wiz_setup_axes_desc2"
-	val[]: "Zvoľ si os kliknutím na tlačítko vedľa názvu osi. Potom sa dostaneš do režimu zadávania. Použi ovládač pomocou páčky, volantu či pedálu, ktorý chceš k danej osi priradiť."
+	val[]: "Zvoľ si os kliknutím na tlačidlo vedľa názvu osi. Potom sa dostaneš do režimu zadávania. Použi ovládač pomocou páčky, volantu či pedálu, ktorý chceš k danej osi priradiť."
 
 	key[]: "wiz_setup_axes_desc3"
 	val[]: "Mŕtva zóna je oblasť na osi, ktorá by zámerne nemala poskytovať žiadny vstup. Ak chceš mŕtvu zónu na zvolenej osi upraviť, posuň na danej osi jazdcom. Čím viac doprava jazdca posunieš, tým väčšia mŕtva zóna bude. Táto voľba je obzvlášť užitočná v prípade starších ovládačov. Definovaním väčšej mŕtvej zóny môžeš predísť nepresnosti, alebo nechcenému vstupu kvôli opotrebovaniu ovládacieho zariadenia."
@@ -8187,7 +8265,7 @@
 	val[]: "Nastavenie automatickej prevodovky"
 
 	key[]: "automatic_gb_setup_desc"
-	val[]: "S automatickou prevodovkou budeš radiť iba medzi jazdou dopredu, neutrálom a cúvaním. Môžeš to robiť používaním priradených kláves resp. tlačítok ovládača. Pre zmenu nastavení, klikni na tlačítko a stlač klávesu alebo tlačítko ovládača, ktoré chceš k tejto akcii priradiť."
+	val[]: "S automatickou prevodovkou budeš radiť iba medzi jazdou dopredu, neutrálom a cúvaním. Môžeš to robiť používaním priradených kláves resp. tlačidlo ovládača. Pre zmenu nastavení, klikni na tlačidlo a stlač klávesu alebo tlačidlo ovládača, ktoré chceš k tejto akcii priradiť."
 
 	key[]: "automatic_gb_setup_desc2"
 	val[]: "Ak máš pripojenú hardvérovú radiacu páku, môžeš s ňou simulovať skutočné automatické radenie. Povoľ túto možnosť a môžeš nastaviť pozície páky pre jazdu vpred a cúvanie. Všetky ostatné pozície radiacej páky sú považované za neutrál. Toto nastavenie je vytvorené špeciálne pre radiacu páku, takže nebude fungovať s bežnými klávesmi ani tlačidlami na ovládači. Ak chceš čokoľvek z tohto zmeniť, klikni na tlačidlo a potom pohni pákou na požadovanú pozíciu a potom späť do pozície neutrálu."
@@ -8199,7 +8277,7 @@
 	val[]: "Nastavenie sekvenčnej prevodovky"
 
 	key[]: "sequential_gb_setup_desc"
-	val[]: "Sekvenčná prevodovka preraďuje medzi všetkými rýchlostnými stupňami, neutrálom a aj spiatočkou. Tu sú klávesy a tlačítka na ovládanie prevodu hore a dole. Pre zmenu priradenia klávesy alebo tlačítka klikni na ikonku a stlač klávesu alebo tlačítko ktoré chceš k tejto akcii priradiť."
+	val[]: "Sekvenčná prevodovka preraďuje medzi všetkými rýchlostnými stupňami, neutrálom a aj spiatočkou. Tu sú klávesy a tlačidlo na ovládanie prevodu hore a dole. Pre zmenu priradenia klávesy alebo tlačidlo klikni na ikonku a stlač klávesu alebo tlačidlo ktoré chceš k tejto akcii priradiť."
 #@}
 
 #+ H-Shifter gearbox setup page
@@ -8208,7 +8286,7 @@
 	val[]: "Nastavenie prevodovky s riadiacou pákou"
 
 	key[]: "hshifter_gb_setup_desc"
-	val[]: "Tu si môžeš vybrať hlavné rozloženie radenie riadiacej páky a vyskúšať jej funkcie. Na obrázku môžeš vidieť aktuálnu polohu páky a tiež akú máš práve zaradenú rýchlosť. Vzhľadom k tomu, že prevodovka obsahuje viac rýchlostných stupňov, než má riadiaca páka, musíš použiť prepínacie tlačítko pre prepínanie medzi rôznymi sadami rýchlostných stupňov."
+	val[]: "Tu si môžeš vybrať hlavné rozloženie radenie riadiacej páky a vyskúšať jej funkcie. Na obrázku môžeš vidieť aktuálnu polohu páky a tiež akú máš práve zaradenú rýchlosť. Vzhľadom k tomu, že prevodovka obsahuje viac rýchlostných stupňov, než má riadiaca páka, musíš použiť prepínacie tlačidlo pre prepínanie medzi rôznymi zostavami rýchlostných stupňov."
 
 	key[]: "hshifter_gb_setup_desc2"
 	val[]: "Pozícia radiacej páky aj aktívne prepínače sú vidieť dole pri názve príslušnej funkcie. Ak chceš zmeniť priradenie niektorej z funkcií, klikni na príslušné tlačidlo, potom presuň radiacu páku do požadovanej pozície a potom späť na neutrál."
@@ -8216,6 +8294,14 @@
 
 #+ Upgrade accesories
 #@{
+	key[]: "duty"
+	val[]: "Základné " #+ Basic truck accesory general
+
+	key[]: "duty_paint"
+	val[]: "Základné, nalakované" #+ Basic but paintable truck accesory
+
+	key[]: "classic"
+	val[]: "Klasické" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Továrenské" #+ Stock truck accesory general
@@ -8241,6 +8327,9 @@
 	key[]: "plastic_gray"
 	val[]: "Plastovo šedá " #+ Plastic mirror, doorhandle or other accessory
 
+	key[]: "plastic_gray_cover"
+	val[]: "Plastový sivý kryt" #+ Simple plastic cover used as small sideskirt or other accessory
+
 	key[]: "plastic_cover"
 	val[]: "Plastový kryt " #+ Simple plastic cover used as small sideskirt or other accessory
 
@@ -8249,6 +8338,9 @@
 
 	key[]: "paint"
 	val[]: "Farba" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "Nalakované predĺžené" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chróm" #+ Chromed mirror, doorhandle or other accessory
@@ -8266,7 +8358,7 @@
 	val[]: "Farebné a plastovo šedé " #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Hliníkové " #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "Hliník" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "Moderný plast" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -8468,7 +8560,7 @@
 	val[]: "Umožňuje nahranie vytvorených snímkov obrazovky na portál World of Trucks."
 
 	key[]: "screenshotman_desc"
-	val[]: "Použi režim fotenia alebo stlač tlačítko @@imv_nrm_screenshot@@ pre vytvorenie snímky obrazovky. Tieto snímky obrazovky môžeš následne nahrať na portál World of Trucks. <br> Vyber obrázok, následne zvoľ slot a stlač tlačítko <color value=@@clr_sel@@> Nahrať do vybraného slotu <color value=@@clr_txt@@>." #+ description
+	val[]: "Použi režim fotenia alebo stlač tlačidlo @@imv_nrm_screenshot@@ pre vytvorenie snímky obrazovky. Tieto snímky obrazovky môžeš následne nahrať na portál World of Trucks. <br> Vyber obrázok, následne zvoľ slot a stlač tlačidlo <color value=@@clr_sel@@> Nahrať do vybraného slotu <color value=@@clr_txt@@>." #+ description
 
 	key[]: "screenshotman_slot"
 	val[]: "Sloty pre screenshoty online profilu." #+ Slots title
@@ -8771,7 +8863,7 @@
 	val[]: "Chcete skutočne zapnúť všetky modifikácie?<br><br>Všetky modifikácie, ktoré nie sú zapnuté sa pridajú na začiatok aktívnych modifikácii.<br><br><br>(Nekompatibilné modifikácie nebudú zapnuté)" #+ Confirmation message shown when user selects button to activate all mods.
 
 	key[]: "no_mods_active"
-	val[]: "Žiadne aktívne modifikácie na zobrazenie.<br><br>K zapnutiu modifikácii vyber z ľavého okna a klikni na tlačítko šípky." #+ Text shown inside the active mods panel when no mod is currently active
+	val[]: "Žiadne aktívne modifikácie na zobrazenie.<br><br>K zapnutiu modifikácii vyber z ľavého okna a klikni na tlačidlo šípky." #+ Text shown inside the active mods panel when no mod is currently active
 
 	key[]: "mod_activated"
 	val[]: "Aktívne " #+ State value indicating that the mod is selected as active one
@@ -8975,7 +9067,7 @@
 	val[]: "Obnoviť" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Prehľadávať zákazky" #+ Opens browser on WOTR page to search for a job
+	val[]: "Prehľadávať prepravy" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Podpísať náhodnú zmluvu" #+ Connects with server and accept random job in proximity of player's current position
@@ -9188,7 +9280,7 @@
 	val[]: "Steam Workshop" #+ Title of the workshop wait dialog.
 
 	key[]: "workshop_wait_msg"
-	val[]: "Čaká sa na stiahnutie obsahu zo Steam Workshop.<br><br>Môžeš to zrušiť kliknutím na tlačítko Zrušiť, avšak potom nemusia niektoré modifikácie zo Steam Workshop fungovať." #+ Message describing why player has to wait here. And consequences of clicking cancel button.
+	val[]: "Čaká sa na stiahnutie obsahu zo Steam Workshop.<br><br>Môžeš to zrušiť kliknutím na tlačidlo Zrušiť, avšak potom nemusia niektoré modifikácie zo Steam Workshop fungovať." #+ Message describing why player has to wait here. And consequences of clicking cancel button.
 
 	key[]: "query_subscribed_items"
 	val[]: "Zoraďujem odobrané položky" #+ Workshop operation progress that queries subscribed items/mods.
@@ -9687,13 +9779,13 @@
 	val[]: "NOVÝ EVENT" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "INFORMÁCIE O EVENTE " #+ Title of the event popup.
+	val[]: "PREBIEHAJÚCE EVENTY" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Osobný cieľ dokončený!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Otvoriť stránku eventu " #+ Button opening event page on WoTr.
+	val[]: "Otvoriť stránku eventu" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Postup" #+ The label used to indicate progress of the event.
@@ -9701,11 +9793,14 @@
 	key[]: "event_info"
 	val[]: "INFORMÁCIE O EVENTE " #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "EVENT" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Prebiehajúce eventy" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Úroveň " #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Momentálne neprebieha žiadny event."
 #@}
 
 #+ Trailer ownership
@@ -10198,9 +10293,12 @@
 
 	key[]: "refrigerated"
 	val[]: "Chladiaci náves"
+#@}
 
-	key[]: "liquid"
-	val[]: "Kvapalné"
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Cisternové"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10214,6 +10312,9 @@
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Bežné, suchý tovar"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Stavebné stroje a materiály"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Tekuté potraviny"
 
@@ -10223,11 +10324,11 @@
 	key[]: "body_cargo_types_log"
 	val[]: "Drevo, nosníky alebo rúry"
 
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Ťažké stroje a vysoký náklad"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Mrazený, chladený tovar"
-
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Stavebné stroje a materiály"
 #@}
 
 #+ Trailer chain type names.
@@ -10734,7 +10835,7 @@
 	val[]: "CHÝBAJÚCE OVLÁDAČE" #+ Title of window containing information about missing controlllers. Please keep in upper case where possible.
 
 	key[]: "missing_controllers"
-	val[]: "Herné ovládače (napr. gamepady, volanty), ktoré sú zobrazené nižšie a sú používané ako vstupy, momentálne chýbajú. Prosím, uistí sa, že sú všetky zapnuté a pripojené. Ak je všetko v poriadku, stlač tlačítko '@@controllers_detect@@`, ktoré je uvedené nižšie." #+ General explanation of the reason for the message.
+	val[]: "Herné ovládače (napr. gamepady, volanty), ktoré sú zobrazené nižšie a sú používané ako vstupy, momentálne chýbajú. Prosím, uistí sa, že sú všetky zapnuté a pripojené. Ak je všetko v poriadku, stlač tlačidlo '@@controllers_detect@@`, ktoré je uvedené nižšie." #+ General explanation of the reason for the message.
 
 	key[]: "controllers_detect"
 	val[]: "Detekovať" #+ Button which triggers detection of new controllers.

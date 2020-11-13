@@ -52,7 +52,7 @@ localization_db : .localization
 	val[]: "前反光镜"
 
 	key[]: "grill"
-	val[]: "格栅"
+	val[]: "Grille"
 
 	key[]: "headache_r"
 	val[]: "驾驶室防撞栏板"
@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "涡轮翼"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Painted"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "铝罐"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Bottom"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "玩具电锯"
 
 	key[]: "chrom_tank"
-	val[]: "镀铬罐" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "铝罐" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "镀铬罐"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D形罐" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D形罐"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "DRL"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elite"
+
+	key[]: "fog_lights"
+	val[]: "Fog Lights"
+
+	key[]: "hvac"
+	val[]: "HVAC"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "编辑<color value=@@clr_sel@@>文档<color value=@@clr_txt@@>文件夹下<color value=@@clr_sel@@>American Truck Simulator<color value=@@clr_txt@@>文件夹里面的<color value=@@clr_sel@@>live_streams.sii<color value=@@clr_txt@@>文件，便可以在游戏中收听您喜爱的网络电台！"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "电缆盘"
 
+	key[]: "cn_cans"
+	val[]: "Cans"
+
 	key[]: "cn_colors"
 	val[]: "油漆"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "干草"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Heavy Bulldozer"
+
 	key[]: "cn_house_prefabs"
 	val[]: "房屋预制件"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "铣刨机"
 
+	key[]: "cn_mix_tank"
+	val[]: "Mix Tank"
+
 	key[]: "cn_mobile_crane"
 	val[]: "全地形起重机"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "悬臂割草机"
+
+	key[]: "cn_paper"
+	val[]: "Paper"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "颗粒状动物饲料"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "平板挂车"
 
-	key[]: "tn_food_tank"
-	val[]: "食品罐车"
-
 	key[]: "tn_frac_tank"
 	val[]: "压裂罐车"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "林业设备"
 
-	key[]: "tn_log"
-	val[]: "原木挂车"
-
-	key[]: "tn_lowboy"
-	val[]: "低平板挂车"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "低平板运船挂车"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "55L低平板挂车"
+	key[]: "tn_scs_lowboy"
+	val[]: "Lowboy Extendable Trailer"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "移动屏障挂车"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "危险品等级  1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "危险品等级  2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "危险品等级  3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "危险品等级  4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "危险品等级 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "危险品等级 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "危险品等级 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "驮马"
-	
+
 	key[]: "lvl_name3"
 	val[]: "企业家"
-	
+
 	key[]: "lvl_name4"
 	val[]: "专业"
-	
+
 	key[]: "lvl_name6"
 	val[]: "十八轮技巧"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "展厅"
-	
+
 	key[]: "weblink_game"
 	val[]: "《American Truck Simulator》 网站" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "《American Truck Simulator》遇到了一个问题并无法显示图像（未检测到可用的图形适配器）。\n建议您尝试：\n1、检查您的电脑和显卡是否满足最低配置要求；\n2、将Microsoft DirectX升级至最新版本；\n3、访问显卡制造商的网站，下载并安装最新的显卡驱动——您的显卡驱动可能版本过旧；\n4、尝试更改游戏的渲染模式，改用OpenGL或DirectX；\n5、删除游戏配置文件“\\文档\\American Truck Simulator\\config.cfg”，它可能已经损坏。\n这个文件会在下次启动游戏时自动重建，并恢复有效的默认值。"
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "《American Truck Simulator》遇到了一个问题并无法显示图像（未检测到可用的图形适配器）."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "已成功激活。<br>感谢您购买《American Truck Simulator》。"
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PROFILE MANAGER" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "原木"
+
+	key[]: "lowboy"
+	val[]: "Lowboy"
 
 	key[]: "refrigerated"
 	val[]: "冷藏式"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "半挂"
 
+	key[]: "chain_double"
+	val[]: "Double"
+
 	key[]: "chain_staa_double"
 	val[]: "STAA 双挂"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "STAA 双全挂"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "STAA 双挂"
+	key[]: "tr_articulated_3axle"
+	val[]: "Articulated, 3 Axles"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA 双挂，4轴"
+	key[]: "tr_articulated_4axle"
+	val[]: "Articulated, 4 Axles"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Articulated, 5 Axles"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Articulated, 6 Axles"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Articulated, 7 Axles"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Articulated, 8 Axles"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Articulated, 9 Axles"
 
 	key[]: "tr_b_double"
 	val[]: "B型双挂"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "B型双挂, 6 桥"
 
+	key[]: "tr_double_staa"
+	val[]: "STAA 双全挂"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA 双挂"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA 双挂，4轴"
+
+	key[]: "tr_jeep"
+	val[]: "Jeep"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Jeep, 3 Axles"
+
 	key[]: "tr_rm_double"
 	val[]: "落基山脉双全挂"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "落基山脉双挂"
-
-	key[]: "tr_tp_double"
-	val[]: "高速公路双挂"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "六桥高速公路双挂"
 
 	key[]: "tr_single_28"
 	val[]: "28英尺"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53英尺，分散车轴"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "Spreader, 1 Axle"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Spreader, 2 Axles"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Spreader, 3 Axles"
+
+	key[]: "tr_tp_double"
+	val[]: "高速公路双挂"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "六桥高速公路双挂"
+
 	key[]: "tr_triple"
 	val[]: "三全挂"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "6侧柱原木运输车"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Wooden Lowboy"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Full Wooden Lowboy"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Wooden-Aluminium Lowboy"
 
 	key[]: "bs_reefer"
 	val[]: "冷柜车"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "标准门，导风板"
+
+	key[]: "wooden_deck"
+	val[]: "Wooden Deck"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "加利福尼亚州"
+
+	key[]: "colorado"
+	val[]: "Colorado"
 
 	key[]: "idaho"
 	val[]: "爱达荷州"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "阿拉莫戈多"
 
+	key[]: "alamosa"
+	val[]: "Alamosa"
+
 	key[]: "albuquerque"
 	val[]: "阿尔伯克基"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "博伊西"
+
+	key[]: "burlington"
+	val[]: "Burlington"
 
 	key[]: "burns"
 	val[]: "柏恩斯"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "科达莲"
 
+	key[]: "colorado_springs"
+	val[]: "Colorado Springs"
+
 	key[]: "colville"
 	val[]: "科尔维尔"
 
 	key[]: "coos_bay"
 	val[]: "库斯湾"
+
+	key[]: "denver"
+	val[]: "Denver"
+
+	key[]: "durango"
+	val[]: "Durango"
 
 	key[]: "ehrenberg"
 	val[]: "埃伦伯格"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "弗拉格斯塔夫"
 
+	key[]: "fort_collins"
+	val[]: "Fort Collins"
+
 	key[]: "fresno"
 	val[]: "弗雷斯诺"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "大古力"
+
+	key[]: "grand_junction"
+	val[]: "Grand Junction"
 
 	key[]: "grangeville"
 	val[]: "格兰奇维尔"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "雷克威尔"
 
+	key[]: "lamar"
+	val[]: "Lamar"
+
 	key[]: "las_cruces"
 	val[]: "拉斯克鲁塞斯"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "摩押"
+
+	key[]: "montrose"
+	val[]: "Montrose"
 
 	key[]: "nampa"
 	val[]: "楠帕"
@@ -1201,6 +1317,12 @@ localization_db : .localization
 	key[]: "provo"
 	val[]: "普若佛"
 
+	key[]: "pueblo"
+	val[]: "Pueblo"
+
+	key[]: "rangely"
+	val[]: "Rangely"
+
 	key[]: "raton"
 	val[]: "拉顿"
 
@@ -1241,7 +1363,7 @@ localization_db : .localization
 	val[]: "圣西蒙"
 
 	key[]: "sandpoint"
-	val[]: "沙点"
+	val[]: "桑德波因特"
 
 	key[]: "santa_cruz"
 	val[]: "圣克鲁斯"
@@ -1269,6 +1391,12 @@ localization_db : .localization
 
 	key[]: "st_george"
 	val[]: "圣乔治"
+
+	key[]: "steamboat_springs"
+	val[]: "Steamboat Springs"
+
+	key[]: "sterling"
+	val[]: "Sterling"
 
 	key[]: "stockton"
 	val[]: "斯托克顿"
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Glenwood Canyon"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Denver Airport"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Million Dollar Highway"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Four Corners Monument"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Red Cliff Bridge"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Wolf Creek Pass"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Colorado Springs"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Cripple Creek & Victor Gold Mine"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Eisenhower Tunnel"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Rocky Mountain Road"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "特温福尔斯市土豆农场"
@@ -1340,7 +1513,7 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/DGrGpdvEvBeSvHSc7
 	key[]: "id_cut_sandpoint"
-	val[]: "沙点市"
+	val[]: "桑德波因特"
 
 	#+ Google maps link: no particular location
 	key[]: "id_cut_timber"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "米德韦尔山服务区"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "The Bingham Canyon Mine"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "The city of St. George"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "The San Rafael Swell area"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Oil Fields of Utah"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "The Monument Valley"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "The Bonneville Salt Flats"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "The Moqui Cave"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "The Hole N\" The Rock landmark"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "The Glen Canyon Dam Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "The Hoover Rest Area"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Mount Saint Helens National Volcanic Monument"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Seattle Port"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Washington Timber Harvest Site"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Everett Swing Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Vantage Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Deception Pass"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Aircraft Factory"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Grand Coulee Dam"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Seattle Downtown"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Kenworth Factory"
 #@}
 
 }

@@ -55,6 +55,9 @@ localization_db : .localization
 	key[]: "pipe_char"
 	val[]: "|" #+ Helper which can be used when passing text which might contain this character as input to UI templates which use it as parameter separator
 
+	key[]: "check_char"
+	val[]:	"✔" #+ WoTr event completion symbol
+
 # DLC names
 
 	key[]: "dlc_name"
@@ -161,43 +164,43 @@ localization_db : .localization
 
 	key[]: "onlineid_us_nwmexico"
 	val[]: "@@package_ats_nwmexico@@"
-	
+
 	key[]: "package_ats_oregon"
 	val[]: "DLC - Oregon"
 
 	key[]: "onlineid_us_oregon"
 	val[]: "@@package_ats_oregon@@"
-	
+
 	key[]: "package_ats_stripes"
 	val[]: "DLC - Classic Stripes Paint Jobs Pack"
 
 	key[]: "onlineid_us_stripes"
 	val[]: "@@package_ats_stripes@@"
-	
+
 	key[]: "package_ats_oversize"
 	val[]: "DLC - Special Transport"
 
 	key[]: "onlineid_us_oversize"
 	val[]: "@@package_ats_oversize@@"
-	
+
 	key[]: "package_ats_forest_harvesting"
 	val[]: "DLC - Forest Machinery"
 
 	key[]: "onlineid_us_forest_harvesting"
 	val[]: "@@package_ats_forest_harvesting@@"
-	
+
 	key[]: "package_ats_wa"
 	val[]: "DLC - Washington"
 
 	key[]: "onlineid_us_wa"
 	val[]: "@@package_ats_wa@@"
-	
+
 	key[]: "package_ats_utah"
 	val[]: "DLC - Utah"
 
 	key[]: "onlineid_us_utah"
 	val[]: "@@package_ats_utah@@"
-	
+
 	key[]: "package_ats_space"
 	val[]: "DLC - Space Paint Jobs Pack"
 
@@ -209,7 +212,7 @@ localization_db : .localization
 
 	key[]: "onlineid_us_inter_lone"
 	val[]: "@@package_ats_int_lone@@"
-	
+
 	key[]: "package_at_pribbon"
 	val[]: "DLC - Pink Ribbon"
 
@@ -221,6 +224,18 @@ localization_db : .localization
 
 	key[]: "onlineid_us_idaho"
 	val[]: "@@package_ats_idaho@@"
+
+	key[]: "package_ats_ws_49x"
+	val[]: "DLC - Western Star 49x"
+
+	key[]: "onlineid_us_ws_49x"
+	val[]: "@@package_ats_ws_49x"
+
+	key[]: "package_ats_colorado"
+	val[]: "DLC - Colorado"
+
+	key[]: "onlineid_us_colorado"
+	val[]: "@@package_ats_colorado"
 
 # Truck brands
 
@@ -238,6 +253,9 @@ localization_db : .localization
 
 	key[]: "brand_volvo"
 	val[]: "Volvo"
+
+	key[]: "brand_westernstar"
+	val[]: "Western Star"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -259,6 +277,9 @@ localization_db : .localization
 
 	key[]: "series_volvo_vnl"
 	val[]: "VNL"
+
+	key[]: "series_westernstar_49x"
+	val[]: "49X"
 
 # Brand names for truck browser
 
@@ -282,6 +303,9 @@ localization_db : .localization
 
 	key[]: "truck_browser_brand_volvo_vnl"
 	val[]: "Volvo VNL"
+
+	key[]: "truck_browser_brand_westernstar_49x"
+	val[]: "Western Star 49X"
 
 # Trailer brands
 
@@ -311,6 +335,143 @@ localization_db : .localization
 
 	key[]: "series_scs_log"
 	val[]: "A-KLN-19"
+
+	key[]: "series_scs_lowboy"
+	val[]: "A-SNZ-20"
+
+
+
+	# Included from "/locale/fuel_price_strings.sui"
+
+
+# Fuel prices Arizona
+
+	key[]: "fp_az_regular"
+	val[]: "2.25"
+
+	key[]: "fp_az_plus"
+	val[]: "2.53"
+
+	key[]: "fp_az_premium"
+	val[]: "2.78"
+
+	key[]: "fp_az_diesel"
+	val[]: "2.40"
+
+# Fuel prices California
+
+	key[]: "fp_ca_regular"
+	val[]: "3.19"
+
+	key[]: "fp_ca_plus"
+	val[]: "3.37"
+
+	key[]: "fp_ca_premium"
+	val[]: "3.49"
+
+	key[]: "fp_ca_diesel"
+	val[]: "3.33"
+
+# Fuel prices Colorado
+
+	key[]: "fp_co_regular"
+	val[]: "2.22"
+
+	key[]: "fp_co_plus"
+	val[]: "2.53"
+
+	key[]: "fp_co_premium"
+	val[]: "2.82"
+
+	key[]: "fp_co_diesel"
+	val[]: "2.16"
+
+# Fuel prices Idaho
+
+	key[]: "fp_id_regular"
+	val[]: "2.34"
+
+	key[]: "fp_id_plus"
+	val[]: "2.50"
+
+	key[]: "fp_id_premium"
+	val[]: "2.69"
+
+	key[]: "fp_id_diesel"
+	val[]: "2.33"
+
+# Fuel prices New Mexico
+
+	key[]: "fp_nm_regular"
+	val[]: "1.99"
+
+	key[]: "fp_nm_plus"
+	val[]: "2.30"
+
+	key[]: "fp_nm_premium"
+	val[]: "2.56"
+
+	key[]: "fp_nm_diesel"
+	val[]: "2.27"
+
+# Fuel prices Nevada
+
+	key[]: "fp_nv_regular"
+	val[]: "2.61"
+
+	key[]: "fp_nv_plus"
+	val[]: "2.83"
+
+	key[]: "fp_nv_premium"
+	val[]: "3.01"
+
+	key[]: "fp_nv_diesel"
+	val[]: "2.57"
+
+# Fuel prices Oregon
+
+	key[]: "fp_or_regular"
+	val[]: "2.58"
+
+	key[]: "fp_or_plus"
+	val[]: "2.75"
+
+	key[]: "fp_or_premium"
+	val[]: "2.93"
+
+	key[]: "fp_or_diesel"
+	val[]: "2.56"
+
+# Fuel prices Utah
+
+	key[]: "fp_ut_regular"
+	val[]: "2.37"
+
+	key[]: "fp_ut_plus"
+	val[]: "2.54"
+
+	key[]: "fp_ut_premium"
+	val[]: "2.70"
+
+	key[]: "fp_ut_diesel"
+	val[]: "2.33"
+
+# Fuel prices Washington
+
+	key[]: "fp_wa_regular"
+	val[]: "2.76"
+
+	key[]: "fp_wa_plus"
+	val[]: "2.97"
+
+	key[]: "fp_wa_premium"
+	val[]: "3.14"
+
+	key[]: "fp_wa_diesel"
+	val[]: "2.69"
+
+	# End of include "/locale/fuel_price_strings.sui"
+
 
 	# End of include "/locale/common.sui"
 
@@ -948,6 +1109,12 @@ localization_db : .localization
 	key[]: "f_badge"
 	val[]: "Priekinis ženkliukas" #+ Brand badge on front of the truck
 
+	key[]: "f_fender"
+	val[]: "Priekinis posparnis" #+ Fender of the truck above front wheel
+
+	key[]: "r_fender"
+	val[]: "Galinis posparnis" #+ Fender of the truck above rear wheel(s)
+
 	key[]: "r_banner"
 	val[]: "Vėliava gale" #+ Banner on the rear
 
@@ -1020,37 +1187,37 @@ localization_db : .localization
 
 	key[]: "switch_walking_cam"
 	val[]: "Kameros režimo perjungimas" #+ Tooltip for icon which turns walking camera mode on and off.
-	
+
 	key[]: "tooltip_walk_look_around"
 	val[]: "Apsidairyti" #+ Tooltip for control icon: look around (by walking camera).
-	
+
 	key[]: "tooltip_mouse_rotate"
 	val[]: "Pasukti" #+ Tooltip for control icon: rotate by mouse.
-	
+
 	key[]: "tooltip_mouse_zoom"
 	val[]: "Priartinti" #+ Tooltip for control icon: zoom by mouse.
-	
+
 	key[]: "tooltip_mouse_pan"
 	val[]: "Paversti" #+ Tooltip for control icon: pan by mouse.
-	
+
 	key[]: "tooltip_walk_title"
 	val[]: "VAIKŠČIOJIMO VALDYMAS:" #+ Title of walk mode controls tooltip.
-	
+
 	key[]: "tooltip_walk_forward"
 	val[]: "Pirmyn" #+ Tooltip for walk forward.
-	
+
 	key[]: "tooltip_walk_back"
 	val[]: "Atgal" #+ Tooltip for walk back.
-	
+
 	key[]: "tooltip_walk_left"
 	val[]: "Kairėn" #+ Tooltip for walk left.
-	
+
 	key[]: "tooltip_walk_right"
 	val[]: "Dešinėn" #+ Tooltip for walk right.
-	
+
 	key[]: "tooltip_walk_crouch"
 	val[]: "Pritūpti" #+ Tooltip for crouch.
-	
+
 	key[]: "tooltip_walk_run"
 	val[]: "Bėgti" #+ Tooltip for run.
 #@}
@@ -1060,7 +1227,7 @@ localization_db : .localization
 
 	key[]: "notification_walking_camera"
 	val[]: "Pirmo asmens kamera įjungta" #+ Notifications shown when walking camera is enabled.
-	
+
 	key[]: "notification_orbit_camera"
 	val[]: "Orbitos kamera įjungta" #+ Notifications shown when orbit camera is enabled.
 #@}
@@ -1099,6 +1266,9 @@ localization_db : .localization
 	key[]: "delete"
 	val[]: "Ištrinti" #+ Button used to delete something (profile, saved game).
 
+	key[]: "delete_profile"
+	val[]: "Ištrinti profilį" #+ Button used to delete profile.
+
 	key[]: "upgrade"
 	val[]: "Tobulinti" #+ Button allowing user to upgrade something.
 
@@ -1127,6 +1297,8 @@ localization_db : .localization
 	key[]: "save_in_progress"
 	val[]: "Išsaugau..." #+ Game save indicator message.
 
+	key[]: "cutscene_quit_info"
+	val[]: "Paspauskite klavišą $KEY$, kad praleistumėte filmuką." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1415,7 +1587,7 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Laikas iki kito taško" #+ Shown in the route info box in the time of arrival to the closest checkpoint. 
+	val[]: "Laikas iki kito taško" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1556,13 +1728,16 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - PRADŽIA" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PROFILIŲ VALDYMAS" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "launchpad_t"
+	val[]: "AMERICAN TRUCK SIMULATOR - PRADŽIA" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "NAUJIENOS IŠ INTERNETO" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Profiliai" #+ Icon allowing player to enter profile selection screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Keisti profilį" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
 	val[]: "Tapkite kitu žmogumi." #+ Help message associated with profile selection icon.
@@ -1579,26 +1754,47 @@ localization_db : .localization
 	key[]: "continue_game"
 	val[]: "Tęsti žaidimą" #+ Button which selects profile and continues in game.
 
+	key[]: "use_selected_profile"
+	val[]: "Naudoti pasirinktą profilį" #+ Button which selects profile.
+
 	key[]: "new"
 	val[]: "Naujas profilis" #+ Button which opens new profile creation dialog.
+
+	key[]: "profile_status"
+	val[]: "Profilio būsena" #+ Heading text for Profile info.
+
+	key[]: "manage_profile_mods"
+	val[]: "Valdyti profilio modus" #+ Button which opens mod manager.
+
+	key[]: "manage_profiles_btn"
+	val[]: "Valdyti profilius" #+ Button which opens profile selection screen for managing profiles.
+
+	key[]: "edit_profile_btn"
+	val[]: "Redaguoti profilį" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "Netinkamas profilis!<br>Pabandykite atnaujinti žaidimą iki vėliausios versijos." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Nupirkta garažų:" #+ How many garages the player owns
+	val[]: "Turima garažų:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "mažų: $SMALL$, didelių: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Nupirkta sunkvežimių" #+ how many trucks the player owns
+	val[]: "Turima sunkvežimių:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Nuosavos priekabos" #+ how many trailers the player owns
+	val[]: "Turima priekabų:" #+ how many trailers the player owns
+
+	key[]: "steam_cloud_synchronization"
+	val[]: "Sinchronizavimas su „Steam“ debesimi:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "Būsena"
+	val[]: "„World of Trucks“ profilis:"
+
+	key[]: "mods_in_use"
+	val[]: "Naudojami modai:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Neprisijungęs!"	#+ to the WoTR
@@ -1632,6 +1828,31 @@ localization_db : .localization
 
 	key[]: "no_truck_dlc"
 	val[]: "Neradau jokių sunkvežimių! Įjungti bet vieną sunkvežimių DLC ir paleiskite žaidimą iš naujo." #+ Text shown when there is no truck available.
+#@
+#@}
+
+#+ Launchpad tooltips.
+#@{
+	key[]: "launchpad_tt_mods_used"
+	val[]: "Naudojama modų: $num_mods$"
+
+	key[]: "launchpad_tt_mods_not_used"
+	val[]: "Modai nenaudojami"
+
+	key[]: "launchpad_tt_cloud_active"
+	val[]: "Sinchronizavimas su „Steam“ debesimi aktyvintas"
+
+	key[]: "launchpad_tt_cloud_not_active"
+	val[]: "Sinchronizavimas su „Steam“ debesimi išjungtas <br><offset vshift=7><color value=@@clr_txt_d@@>spustelėkite, kad įjungtumėte"
+
+	key[]: "launchpad_tt_globe_connected"
+	val[]: "„World of Trucks“ susietas"
+
+	key[]: "launchpad_tt_globe_not_connected"
+	val[]: "„World of Trucks“ nesusietas <br><offset vshift=7><color value=@@clr_txt_d@@>spustelėkite, kad susietumėte"
+
+	key[]: "launchpad_tt_profile_details"
+	val[]: "PROFILIO DUOMENYS"
 #@
 #@}
 
@@ -1793,10 +2014,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "Yra naujesnė<br>versija"
+	val[]: "Naudojate senesnę žaidimo versiją.<br><link url=$URL_LINK$ color=@@clr_link@@>Atnaujinkite į naujesnę versiją</link>, kad galėtumėte naudotis visomis funkcijomis."
 
 	key[]: "new_version_available_steam"
-	val[]: "Yra naujesnės<br>versija.<br><br>Steam automatiškai atnaujins žaidimą nebent automatiniai naujinimai išjungti."
+	val[]: "Naudojate senesnę žaidimo versiją.<br>Jei automatiniai atnaujinimai neišjungti, „Steam“ automatiškai atnaujins žaidimą."
 
 	key[]: "allow_news"
 	val[]: "Ar norite leisti žaidimui automatiškai tikrinti dėl atnaujinimų ir kitų naujienų?" #+ Text shown in a message box.
@@ -2074,6 +2295,9 @@ localization_db : .localization
 
 	key[]: "truck_exhaust_volume"
 	val[]: "Sunkvežimio duslintuvo garsumas" #+ Slider controlling volume of the truck exhaust.
+
+	key[]: "truck_turbo_volume"
+	val[]: "Sunkvežimio turbinos garsumas" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Garso efektų garsumas" #+ Slider controlling volume of the truck effects.
@@ -2650,7 +2874,7 @@ localization_db : .localization
 
 	key[]: "walk_mode"
 	val[]: "VAIKŠČIOJIMO REŽIMAS"
-	
+
 	key[]: "other_controls"
 	val[]: "KITA"
 #@}
@@ -2953,22 +3177,22 @@ localization_db : .localization
 #walk mode
 	key[]: "o_im_walk_forward"
 	val[]: "Pirmyn" #+ Walk forward.
-	
+
 	key[]: "o_im_walk_back"
 	val[]: "Atgal" #+ Walk back.
-	
+
 	key[]: "o_im_walk_left"
 	val[]: "Kairėn" #+ Walk left.
-	
+
 	key[]: "o_im_walk_right"
 	val[]: "Dešinėn" #+ Walk right.
-	
+
 	key[]: "o_im_walk_crouch"
 	val[]: "Pritūpti" #+ Activate crouch.
-	
+
 	key[]: "o_im_walk_run"
 	val[]: "Bėgti" #+ Activate run.
-	
+
 #+ Rotates the interior camera to predefined position.
 #@{
 
@@ -3390,7 +3614,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale"
 	val[]: "Nuolydžio daugiklis (kabinoje)" #+ Multiplier applied to resulting pitch value (in cabin)
-	
+
 	key[]: "eye_walk_mode_yaw_scale"
 	val[]: "Pokrypio daugiklis (vaikštant)" #+ Multiplier applied to resulting yaw value (in walk mode)
 
@@ -3471,7 +3695,7 @@ localization_db : .localization
 
 	key[]: "eye_pitch_scale_tooltip"
 	val[]: "Jautrumo daugiklis, kai judinate galvą aukštyn žemyn (kabinoje)."
-	
+
 	key[]: "eye_walk_mode_yaw_scale_tooltip"
 	val[]: "Jautrumo daugiklis, kai sukate galvą iš vieno krašto į kitą (vaikštant)."
 
@@ -4226,7 +4450,7 @@ localization_db : .localization
 	val[]: "Nedelsiant vykite į aptarnavimo stotį!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Visa kelionės info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint 
+	val[]: "Visa kelionės info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "Info apie kitą tašką" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -4332,6 +4556,15 @@ localization_db : .localization
 
 	key[]: "park_nf"
 	val[]: "Tai vieta poilsiui,<br>bet Jūs dar nepavargote."
+
+	key[]: "viewpoint_title"
+	val[]: "Žvilgsnio taškas"
+
+	key[]: "viewpoint_msg"
+	val[]: "Spauskite šį mygtuką, kad aktyvuotumėte stebėjimo tašką:"
+
+	key[]: "viewpoint_found"
+	val[]: "Atradote naują stebėjimo tašką!"
 
 	key[]: "gas_station"
 	val[]: "Degalinė"
@@ -5511,7 +5744,7 @@ localization_db : .localization
 	val[]: "Volas - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Traktorius - RS-666"
+	val[]: "Vikšrinis traktorius"
 
 	key[]: "cn_yacht"
 	val[]: "Jachta"
@@ -5831,7 +6064,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asfalto volas - Writigen 808"
+	val[]: "Asfalto graužikas - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Pramoninė kabelio ritė"
@@ -7249,8 +7482,14 @@ localization_db : .localization
 	key[]: "mapl_train"
 	val[]: "Tunelis po Lamanšu"
 
+	key[]: "mapl_undiscovered"
+	val[]: "Neatrastas taškas"
+
 	key[]: "mapl_viewpoint"
-	val[]: "Žvilgsnio taškas"
+	val[]: "Stebėjimo taškas (aplankytas)"
+
+	key[]: "mapl_viewpoint_unvisited"
+	val[]: "Stebėjimo taškas (neaplankytas)"
 
 	key[]: "mapl_gas"
 	val[]: "Degalinė"
@@ -8564,6 +8803,14 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+	key[]: "duty"
+	val[]: "Paprasta" #+ Basic truck accesory general
+
+	key[]: "duty_paint"
+	val[]: "Paprasti dažai" #+ Basic but paintable truck accesory
+
+	key[]: "classic"
+	val[]: "Klasika" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Įprasta" #+ Stock truck accesory general
@@ -8589,6 +8836,9 @@ localization_db : .localization
 	key[]: "plastic_gray"
 	val[]: "Pilkas plastikas" #+ Plastic mirror, doorhandle or other accessory
 
+	key[]: "plastic_gray_cover"
+	val[]: "Pilko plastiko uždanga" #+ Simple plastic cover used as small sideskirt or other accessory
+
 	key[]: "plastic_cover"
 	val[]: "Plastiko uždanga" #+ Simple plastic cover used as small sideskirt or other accessory
 
@@ -8597,6 +8847,9 @@ localization_db : .localization
 
 	key[]: "paint"
 	val[]: "Dažai" #+ Painted mirror, doorhandle or other accessory
+
+	key[]: "paint_long"
+	val[]: "Nudažytas ilgas" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Chromo" #+ Chromed mirror, doorhandle or other accessory
@@ -8614,7 +8867,7 @@ localization_db : .localization
 	val[]: "Dažai ir plastikas (pilka)" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Aliuminio" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "Aliuminis" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "Plastiko moderno" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -10035,7 +10288,7 @@ localization_db : .localization
 	val[]: "NAUJAS RENGINYS" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "RENGINIO INFO" #+ Title of the event popup.
+	val[]: "VYKSTANTYS RENGINIAI" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Asmeninis tikslas pasiektas!" #+ Text showed when player completes event.
@@ -10049,11 +10302,14 @@ localization_db : .localization
 	key[]: "event_info"
 	val[]: "RENGINIO INFO" #+ Text showed on the button which opens informations about an event.
 
-	key[]: "event"
-	val[]: "Renginys" #+ The label indicating event name.
+	key[]: "live_events"
+	val[]: "Vykstantys renginiai" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Lygis" #+ Event tier.
+
+	key[]: "no_active_events"
+	val[]: "Šiuo metu aktyvių renginių nėra."
 #@}
 
 #+ Trailer ownership
@@ -10546,9 +10802,12 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Šaldoma"
+#@}
 
-	key[]: "liquid"
-	val[]: "Skysčiai"
+#+ Trailer category types (not identical to body type)
+#@{
+	key[]: "tank"
+	val[]: "Cisterna"
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10562,6 +10821,9 @@ localization_db : .localization
 	key[]: "body_cargo_types_dryvan"
 	val[]: "Įprasta, sausi kroviniai"
 
+	key[]: "body_cargo_types_flatbed"
+	val[]: "Statybos įranga ir medžiagos"
+
 	key[]: "body_cargo_types_foodtank"
 	val[]: "Skystų maisto produktų prekės"
 
@@ -10571,11 +10833,11 @@ localization_db : .localization
 	key[]: "body_cargo_types_log"
 	val[]: "Rąstų, sijų ar vamzdžių"
 
+	key[]: "body_cargo_types_lowboy"
+	val[]: "Sunkūs įrengimai iš aukšti kroviniai"
+
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Šaldyti, atvėsinti kroviniai"
-
-	key[]: "body_cargo_types_flatbed"
-	val[]: "Statybos įranga ir medžiagos"
 #@}
 
 #+ Trailer chain type names.

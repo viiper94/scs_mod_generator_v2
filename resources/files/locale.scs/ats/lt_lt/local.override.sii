@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Spoileris"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Painted"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Aliuminio cisterna"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Bottom"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Žaislinis pjūklas"
 
 	key[]: "chrom_tank"
-	val[]: "Chromuotas bakas" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Aliuminio cisterna" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Chromuotas bakas"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D formos" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D formos"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "DRL"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elite"
+
+	key[]: "fog_lights"
+	val[]: "Fog Lights"
+
+	key[]: "hvac"
+	val[]: "HVAC"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Redaguokite <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>direktorijoje <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>prie Jūsų <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>ir žaidime klausykitės Jūsų mėgstamos interneto radijo!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "Kabelio ritė"
 
+	key[]: "cn_cans"
+	val[]: "Skardinės"
+
 	key[]: "cn_colors"
 	val[]: "Dažai"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Šienas"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Sunkusis buldozeris"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Namų ruošiniai"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Gręžimo mašina"
 
+	key[]: "cn_mix_tank"
+	val[]: "Cisterna"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Visureigis kranas"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Smulkintuvas"
+
+	key[]: "cn_paper"
+	val[]: "Popierius"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Granuliuotas gyvūnų maistas"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Priekaba platforma"
 
-	key[]: "tn_food_tank"
-	val[]: "Maisto cisterna"
-
 	key[]: "tn_frac_tank"
 	val[]: "Frekingo cisterna"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Rąstų krovėjas"
 
-	key[]: "tn_log"
-	val[]: "Rąstų priekaba"
-
-	key[]: "tn_lowboy"
-	val[]: "Žema priekaba"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Žemagrindė laivų priekaba"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Žemagrindė 55L puspriekabė"
+	key[]: "tn_scs_lowboy"
+	val[]: "Žemagrindė ištempiama priekaba"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Keičiamo barjero priekaba"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Pavojaus klasė 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Pavojaus klasė 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Pavojaus klasė 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Pavojaus klasė 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Pavojaus klasė 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Pavojaus klasė 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Pavojaus klasė 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Darbinis arklys"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Verslininkas"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Profesionalas"
-	
+
 	key[]: "lvl_name6"
 	val[]: "18 ratų įgūdžių"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Salonas"
-	
+
 	key[]: "weblink_game"
 	val[]: "American Truck Simulator tinklapis" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "American Truck Simulator turi problemą ir negali piešti vaizdo Jūsų kompiuteryje (nerastas tinkamas vaizdo įrenginys).\nSiūlomi sprendimai:\n1. Patikrinkite, ar Jūsų kompiuteris ir vaizdo plokštė atitinka minimalius žaidimo reikalavimus.\n2. Atnaujinkite Jūsų Microsoft's DirectX.\n3. Atsisiųskite ir instaliuokite naujausius Jūsų vaizdo plokštės draiverius iš Jūsų gamintojo tinklapio, gali būti, kad jie pasenę.\n4. Pabandykite pakeisti piešimo metodą iš OpenGL į DirectX arba atvirkščiai.\n5. Ištrinkite failą 'config.cfg' Jūsų  'Documents' - 'American Truck Simulator' direktorijoje. Jis galėjo susigadinti.\nŠis failas bus automatiškai atkurtas su standartiniais nustatymais kitą kartą paleidus žaidimą."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator turi problemą ir negali piešti vaizdo Jūsų kompiuteryje (nerastas jokia vaizdo plokštė)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Aktyvacija pavyko.<br>Dėkojame, kad pirkote American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - PRADŽIA" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "PROFILIŲ VALDYMAS" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Rąstų"
+
+	key[]: "lowboy"
+	val[]: "Žemagrindis"
 
 	key[]: "refrigerated"
 	val[]: "Šaldoma"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Vienguba"
 
+	key[]: "chain_double"
+	val[]: "Dviguba"
+
 	key[]: "chain_staa_double"
 	val[]: "STAA dviguba"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "STAA dviguba"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "STAA dviguba"
+	key[]: "tr_articulated_3axle"
+	val[]: "Puspriekabė, 3 ašys"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA dviguba, 4 ašys"
+	key[]: "tr_articulated_4axle"
+	val[]: "Puspriekabė, 4 ašys"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Puspriekabė, 5 ašys"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Puspriekabė, 6 ašys"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Puspriekabė, 7 ašys"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Puspriekabė, 8 ašys"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Puspriekabė, 9 ašys"
 
 	key[]: "tr_b_double"
 	val[]: "B-dviguba"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "B dviguba, 6 ašys"
 
+	key[]: "tr_double_staa"
+	val[]: "STAA dviguba"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA dviguba"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA dviguba, 4 ašys"
+
+	key[]: "tr_jeep"
+	val[]: "Džipas"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Džipas, 3 ašys"
+
 	key[]: "tr_rm_double"
 	val[]: "Uolinių kalnų dvigubas"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Uolinių kalnų dvigubas"
-
-	key[]: "tr_tp_double"
-	val[]: "Dvi puspriekabės"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Dvi puspriekabės, 6 ašys"
 
 	key[]: "tr_single_28"
 	val[]: "28 pėdos"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53 pėdos, plačiai"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "Ištempiama, 1 ašis"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Ištempiama, 2 ašys"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Ištempiama, 3 ašys"
+
+	key[]: "tr_tp_double"
+	val[]: "Dvi puspriekabės"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Dvi puspriekabės, 6 ašys"
+
 	key[]: "tr_triple"
 	val[]: "Triguba"
 
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "Rąstų priekaba, 6 sustiprinimai"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Medinė žemagrindė"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Visiškai medinė žemagrindė"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Medžio-aliuminio žemagrindė"
 
 	key[]: "bs_reefer"
 	val[]: "Šaldytuvas"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Standartinės durys, vėjo deflektorius"
+
+	key[]: "wooden_deck"
+	val[]: "Medinės grindys"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Kalifornija"
+
+	key[]: "colorado"
+	val[]: "Koloradas"
 
 	key[]: "idaho"
 	val[]: "Aidahas"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Alamogordo"
 
+	key[]: "alamosa"
+	val[]: "Alamosa"
+
 	key[]: "albuquerque"
 	val[]: "Albuquerque"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Boisis"
+
+	key[]: "burlington"
+	val[]: "Berlingtonas"
 
 	key[]: "burns"
 	val[]: "Burns"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Ker d'Alenas"
 
+	key[]: "colorado_springs"
+	val[]: "Kolorado Springsas"
+
 	key[]: "colville"
 	val[]: "Colville"
 
 	key[]: "coos_bay"
 	val[]: "Coos Bay"
+
+	key[]: "denver"
+	val[]: "Denveris"
+
+	key[]: "durango"
+	val[]: "Durangas"
 
 	key[]: "ehrenberg"
 	val[]: "Ehrenberg"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Flagstaff"
 
+	key[]: "fort_collins"
+	val[]: "Fort Kolinsas"
+
 	key[]: "fresno"
 	val[]: "Fresno"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
+
+	key[]: "grand_junction"
+	val[]: "Grand Džankšenas"
 
 	key[]: "grangeville"
 	val[]: "Greindžvilis"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Lakeview"
 
+	key[]: "lamar"
+	val[]: "Lamaras"
+
 	key[]: "las_cruces"
 	val[]: "Las Cruces"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moabas"
+
+	key[]: "montrose"
+	val[]: "Montrosas"
 
 	key[]: "nampa"
 	val[]: "Nampa"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Provo"
+
+	key[]: "pueblo"
+	val[]: "Pueblas"
+
+	key[]: "rangely"
+	val[]: "Reindžlis"
 
 	key[]: "raton"
 	val[]: "Raton"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "St. Džordžas"
 
+	key[]: "steamboat_springs"
+	val[]: "Stimbout Springsas"
+
+	key[]: "sterling"
+	val[]: "Sterlingas"
+
 	key[]: "stockton"
 	val[]: "Stockton"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Glenvudo Kanjonas"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Denverio oro uostas"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Milijono dolerių greitkelis"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Keturių kampų monumentas"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Raudonos olos tiltas"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Vilko upelio perėja"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Kolorado Springsas"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Kripl upelis ir Viktoro aukso kasykla"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Eizenhauerio tunelis"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Uolinių kalnų kelias"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Tvin Folso bulvių ūkis"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midveilio kalvos poilsio aikštelė"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Bingamo kanjono kasyklos"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "Šv. Džordžo miestas"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "San Rafaelio sandūros regionas"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Jutos naftos laukai"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "Monumento slėnis"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Bonevilio druskos lygumos"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "Moki ola"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Įžymi vieta „Hole N\" The Rock“"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Gleno kanjono užtvankos tiltas"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Huverio poilsiavietė"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Šv. Helenos kalno nacionalinio vulkano monumentas"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Sietlo uostas"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Vašingtono medkirčių regionas"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Evereto pakabinamas tiltas"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Vantažo tiltas"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Apgaulės perėja"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Lėktuvų gamykla"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Grand Kulio užtvanka"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Sietlo centras"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Kenvorto gamykla"
 #@}
 
 }

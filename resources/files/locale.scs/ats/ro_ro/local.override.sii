@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Aripă Turbo"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Painted"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Rezervor de Aluminiu"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Bottom"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Drujbă de Jucărie"
 
 	key[]: "chrom_tank"
-	val[]: "Rezervor Cromat" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Rezervor de Aluminiu" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Rezervor Cromat"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "În Formă de D" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "În Formă de D"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "DRL"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Elite"
+
+	key[]: "fog_lights"
+	val[]: "Fog Lights"
+
+	key[]: "hvac"
+	val[]: "HVAC"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Editaţi <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>în directorul <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>din <color value=@@clr_sel@@>My Documents <color value=@@clr_txt@@>pentru a asculta stream-urile radio preferate, în timp ce jucaţi!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "Rolă Cablu"
 
+	key[]: "cn_cans"
+	val[]: "Conserve"
+
 	key[]: "cn_colors"
 	val[]: "Vopsea"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Fân"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Buldozer Masiv"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Prefabricate locuinţă"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Utilaj Decopertare"
 
+	key[]: "cn_mix_tank"
+	val[]: "Tanc de Mixare"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Macara Off-Road"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Mulcer"
+
+	key[]: "cn_paper"
+	val[]: "Hârtie"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Mâncare Peletizată pentru Animale"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Remorcă tip Platformă"
 
-	key[]: "tn_food_tank"
-	val[]: "Cisternă Produse Alimentare"
-
 	key[]: "tn_frac_tank"
 	val[]: "Rezervor pentru Fracturare"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Încărcător cu Braţ Articulat"
 
-	key[]: "tn_log"
-	val[]: "Remorcă forestieră"
-
-	key[]: "tn_lowboy"
-	val[]: "Remorcă Joasă"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Remorcă Joasă pentru Ambarcaţiuni"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Remorcă Joasă 55L"
+	key[]: "tn_scs_lowboy"
+	val[]: "Remorcă tip Platformă Joasă Extensibilă"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Remorcă pentru Bariera Mobilă"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Clasa 1 Hazard"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Clasa 2 Hazard"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Clasa 3 Hazard"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Clasa 4 Hazard"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Clasa 5 Hazard"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Clasa 6 Hazard"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Clasa 8 Hazard"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Dedicat"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Întreprinzător"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Profesionist"
-	
+
 	key[]: "lvl_name6"
 	val[]: "18 Wheels of Skill"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Showroom"
-	
+
 	key[]: "weblink_game"
 	val[]: "Site-ul American Truck Simulator" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "American Truck Simulator nu este capabil să afişeze grafica pe acest computer (accelerator grafic compatibil inexistent).\nPaşi sugeraţi:\n\n1. Verificaţi satisfacerea cerinţelor tehnice minime pentru sistem şi placă video.\n2. Actualizaţi sistemul cu ultima versiune DirectX, furnizată de Microsoft.\n3. Descărcaţi de pe site-ul producătorului plăcii video şi instalaţi cele mai noi drivere - probabil cele curente sunt depăşite.\n4. Încercaţi metode diferite de afişare a graficii, din OpenGL în DirectX sau viceversa.\n5. Ştergeţi fişierul de configurare al jocului \\'config.cfg\\', din directorul \\'Documents\\' - \\'American Truck Simulator\\', acesta putând fi corupt.\n Acest fişier va fi recreeat automat, cu valori implicite valide, la următoarea pornire a jocului."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "American Truck Simulator a întâlnit o problemă şi nu poate afişa imagini pe acest calculator (accelerator grafic incompatibil)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Activarea s-a finalizat cu succes.<br>Vă mulţumim pentru achiziţionarea acestei copii a American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - SELECŢIE PROFIL" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "MANAGER PROFIL" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Buştean"
+
+	key[]: "lowboy"
+	val[]: "Platformă Joasă"
 
 	key[]: "refrigerated"
 	val[]: "Refrigerată"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Simplă"
 
+	key[]: "chain_double"
+	val[]: "Dublă"
+
 	key[]: "chain_staa_double"
 	val[]: "STAA Dublă"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "STAA Dublă"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "STAA Dublă 'Pup'"
+	key[]: "tr_articulated_3axle"
+	val[]: "Articulată, 3 Axe"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "STAA Double Pup, 4 Axe"
+	key[]: "tr_articulated_4axle"
+	val[]: "Articulată, 4 Axe"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Articulată, 5 Axe"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Articulată, 6 Axe"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Articulată, 7 Axe"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Articulată, 8 Axe"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Articulată, 9 Axe"
 
 	key[]: "tr_b_double"
 	val[]: "Dublă tip B"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "Dublă tip B, 6 Axe"
 
+	key[]: "tr_double_staa"
+	val[]: "STAA Dublă"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA Dublă 'Pup'"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 Axe"
+
+	key[]: "tr_jeep"
+	val[]: "Jeep"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Jeep, 3 Axe"
+
 	key[]: "tr_rm_double"
 	val[]: "Dublă tip Rocky Mountain"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Dublă tip Rocky Mountain"
-
-	key[]: "tr_tp_double"
-	val[]: "Remorcă dublă de tip Turnpike"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Remorcă Dublă tip Turnpike, 6 Axe"
 
 	key[]: "tr_single_28"
 	val[]: "28 ft"
@@ -717,7 +776,7 @@ localization_db : .localization
 	val[]: "40 ft, spate"
 
 	key[]: "tr_single_40_spread"
-	val[]: "40 ft, extinsă"
+	val[]: "40 picioare, Extinsă"
 
 	key[]: "tr_single_43_rear"
 	val[]: "43 picioare, Spate"
@@ -747,7 +806,7 @@ localization_db : .localization
 	val[]: "45 picioare, Tandem Culisant, Spate"
 
 	key[]: "tr_single_45_spread"
-	val[]: "48 ft, extinsă"
+	val[]: "45 picioare, Extinsă"
 
 	key[]: "tr_single_48_3axle"
 	val[]: "48 ft, 3 Axe"
@@ -765,7 +824,7 @@ localization_db : .localization
 	val[]: "48 picioare, Tandem Culisant, Spate"
 
 	key[]: "tr_single_48_spread"
-	val[]: "48 ft, extinsă"
+	val[]: "48 picioare, Extinsă"
 
 	key[]: "tr_single_50_3axle"
 	val[]: "50 picioare, 3 Axe"
@@ -804,7 +863,22 @@ localization_db : .localization
 	val[]: "53 picioare, Tandem Culisant, Spate"
 
 	key[]: "tr_single_53_spread"
-	val[]: "53 ft, extinsă"
+	val[]: "53 picioare, Extinsă"
+
+	key[]: "tr_spreader_1axle"
+	val[]: "Distributor, 1 Axă"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Distributor, 2 Axe"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Distributor, 3 Axe"
+
+	key[]: "tr_tp_double"
+	val[]: "Remorcă dublă de tip Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Remorcă Dublă tip Turnpike, 6 Axe"
 
 	key[]: "tr_triple"
 	val[]: "Triplă"
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "Remorcă forestieră, 6 Răcoanţe"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Platformă Joasă din Lemn"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Platformă Joasă completă din Lemn"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Platformă Joasă din Lemn-Aluminiu"
 
 	key[]: "bs_reefer"
 	val[]: "Refrigerată"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Uşă Standard, Deflector de Vânt"
+
+	key[]: "wooden_deck"
+	val[]: "Platformă din Lemn"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "California"
+
+	key[]: "colorado"
+	val[]: "Colorado"
 
 	key[]: "idaho"
 	val[]: "Idaho"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Alamogordo"
 
+	key[]: "alamosa"
+	val[]: "Alamosa"
+
 	key[]: "albuquerque"
 	val[]: "Albuquerque"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Boise"
+
+	key[]: "burlington"
+	val[]: "Burlington"
 
 	key[]: "burns"
 	val[]: "Burns"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Coeur d'Alene"
 
+	key[]: "colorado_springs"
+	val[]: "Colorado Springs"
+
 	key[]: "colville"
 	val[]: "Colville"
 
 	key[]: "coos_bay"
 	val[]: "Coos Bay"
+
+	key[]: "denver"
+	val[]: "Denver"
+
+	key[]: "durango"
+	val[]: "Durango"
 
 	key[]: "ehrenberg"
 	val[]: "Ehrenberg"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Flagstaff"
 
+	key[]: "fort_collins"
+	val[]: "Fort Collins"
+
 	key[]: "fresno"
 	val[]: "Fresno"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Grand Coulee"
+
+	key[]: "grand_junction"
+	val[]: "Grand Junction"
 
 	key[]: "grangeville"
 	val[]: "Grangeville"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Lakeview"
 
+	key[]: "lamar"
+	val[]: "Lamar"
+
 	key[]: "las_cruces"
 	val[]: "Las Cruces"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Moab"
+
+	key[]: "montrose"
+	val[]: "Montrose"
 
 	key[]: "nampa"
 	val[]: "Nampa"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Provo"
+
+	key[]: "pueblo"
+	val[]: "Pueblo"
+
+	key[]: "rangely"
+	val[]: "Rangely"
 
 	key[]: "raton"
 	val[]: "Raton"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "St. George"
 
+	key[]: "steamboat_springs"
+	val[]: "Steamboat Springs"
+
+	key[]: "sterling"
+	val[]: "Sterling"
+
 	key[]: "stockton"
 	val[]: "Stockton"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Canionul Glenwood"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Aeroportul Denver"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Autostrada Milionului de Dolari"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Monumentul Four Corners"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Podul Red Cliff"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Trecătoarea Wolf Creek"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Colorado Springs"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Cripple Creek & Mina de Aur Victor"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Tunelul Eisenhower"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Drum Montan Stâncos"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Ferma de cartofi Twin Falls"
@@ -1356,7 +1529,91 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
-	val[]: "Zona de odihnă Midvale Hill"
+	val[]: "Zona de Odihnă Midvale Hill"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Mina Bingham Canyon"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "Oraşul St. George"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "Zona cu Înălţături din San Rafael"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Câmpurile Petrolifere din Utah"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "Valea Monumentelor"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Câmpiile Sărate din Bonneville"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "Peştera Moqui"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Punctul de Atracţie Hole N' The Rock"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Podul Barajului Glen Canyon"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Zona de Odihnă Hoover"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Monumentul Vulcanic Naţional Muntele Sfânta Elena"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Portul Seattle"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Locul de Recoltare a Cherestelei din Washington"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Podul Rotativ din Everett"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Podul Vantage"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Deception Pass"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Uzină de Aeronave"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Barajul Grand Coulee"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Centrul din Seattle"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Fabrica Kenworth"
 #@}
 
 }

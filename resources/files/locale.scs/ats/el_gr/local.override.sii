@@ -52,7 +52,7 @@ localization_db : .localization
 	val[]: "Μπροστινοί Καθρέφτες"
 
 	key[]: "grill"
-	val[]: "Σχάρα"
+	val[]: "Γρίλια"
 
 	key[]: "headache_r"
 	val[]: "Μπάρες Προστασίας Πίσω Παρμπρίζ"
@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Πτερύγια Υπερσυμπιεστή"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero Βαφή"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Δεξαμενή Αλουμινίου"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Κάτω"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Παιχνίδι Αλυσοπρίονο"
 
 	key[]: "chrom_tank"
-	val[]: "Δεξαμενή Χρώμιο" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Δεξαμενή Αλουμινίου" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Δεξαμενή Χρώμιο"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "Σχήμα-D" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "Σχήμα-D"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "Φώτα Συνεχούς Λειτουργίας"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Ελίτ"
+
+	key[]: "fog_lights"
+	val[]: "Προβολείς Ομίχλης"
+
+	key[]: "hvac"
+	val[]: "Μονάδα Κλιματισμού"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Τροποποίησε το αρχείο <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>μέσα στον φάκελο <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>που βρίσκεται στον φάκελο <color value=@@clr_sel@@>Έγγραφα <color value=@@clr_txt@@>και άκουσε τον αγαπημένο σου διαδικτυακό ραδιοφωνικό σταθμό μέσα στο παιχνίδι!"
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -209,7 +237,7 @@ localization_db : .localization
 	val[]: "Κινητήρας Αεροσκάφους"
 
 	key[]: "cn_articulated_tractor"
-	val[]: "Ερπυστριοφόρος Ελκυστήρας "
+	val[]: "Ερπυστριοφόρος Γεωργικός Ελκυστήρας"
 
 	key[]: "cn_boat"
 	val[]: "Σκάφος"
@@ -225,6 +253,9 @@ localization_db : .localization
 
 	key[]: "cn_cable_reel"
 	val[]: "Καρούλι Καλωδίου"
+
+	key[]: "cn_cans"
+	val[]: "Κονσέρβες"
 
 	key[]: "cn_colors"
 	val[]: "Βαφή"
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Σανό"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Βαριά Μπουλντόζα"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Προκατασκευασμένα Σπίτια"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Μηχάνημα απόξεσης"
 
+	key[]: "cn_mix_tank"
+	val[]: "Τρέιλερ Μίξης"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Γερανός Παντός Εδάφους"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Ισοπεδωτής"
+
+	key[]: "cn_paper"
+	val[]: "Χαρτί"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Ζωοτροφή σε Πέλλετ"
@@ -388,16 +428,16 @@ localization_db : .localization
 #+ Names of individual trailer and trailer chassis types.
 #@{
 	key[]: "tn_acid"
-	val[]: "Τρέιλερ Δεξαμενής Οξέος"
+	val[]: "Δεξαμενή Οξέος"
 
 	key[]: "tn_acid_long"
-	val[]: "Μακρύ Τρέιλερ Δεξαμενής Οξέος"
+	val[]: "Μακρυά Δεξαμενή Οξέος"
 
 	key[]: "tn_bottom_dump"
 	val[]: "Ανοιγόμενο από κάτω Τρέιλερ"
 
 	key[]: "tn_car"
-	val[]: "Μεταφορά Αυτοκινήτων"
+	val[]: "Αυτοκινητάμαξα"
 
 	key[]: "tn_cement"
 	val[]: "Τρέιλερ Χύμα Τσιμέντου"
@@ -409,31 +449,28 @@ localization_db : .localization
 	val[]: "Μακρύ Βυτιοφόρο Χημικών"
 
 	key[]: "tn_dry_bulk"
-	val[]: "Σιλοφόρο Τρέιλερ"
+	val[]: "Σιλοφόρο"
 
 	key[]: "tn_dump"
-	val[]: "Ανατρεπόμενο τρέιλερ"
+	val[]: "Ανατρεπόμενο"
 
 	key[]: "tn_flatbed"
-	val[]: "Τρέιλερ Πλατφόρμα"
-
-	key[]: "tn_food_tank"
-	val[]: "Τρέιλερ Δεξαμενής Τροφίμων"
+	val[]: "Πλατφόρμα"
 
 	key[]: "tn_frac_tank"
 	val[]: "Κοντέινερ Φορητής Αποθ/σης"
 
 	key[]: "tn_fuel"
-	val[]: "Τρέιλερ Δεξαμενής Καυσίμων"
+	val[]: "Βυτιοφόρο Καυσίμων"
 
 	key[]: "tn_fuel_long"
-	val[]: "Μακρύ Τρέιλερ Καυσίμων"
+	val[]: "Μακρύ Βυτιοφόρο Καυσίμων"
 
 	key[]: "tn_gas"
-	val[]: "Τρέιλερ Δεξαμενής Αερίου"
+	val[]: "Βυτιοφόρο Αερίων"
 
 	key[]: "tn_gas_long"
-	val[]: "Μακρύ Τρέιλερ Δεξαμενής Αερίου"
+	val[]: "Μακρύ Βυτιοφόρο Αερίων"
 
 	key[]: "tn_home_transporter"
 	val[]: "Μεταφορά Κατοικιών"
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Γερανός Κορμών (Παπαγαλάκι)"
 
-	key[]: "tn_log"
-	val[]: "Τρέιλερ Κορμών"
-
-	key[]: "tn_lowboy"
-	val[]: "Χαμηλό Τρέιλερ"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Χαμηλό Τρέιλερ Σκάφους"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Χαμηλό Τρέιλερ 55L"
+	key[]: "tn_scs_lowboy"
+	val[]: "Χαμηλοδάπεδο Επεκτεινόμενο Τρέιλερ"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Τρέιλερ Κινητής Μπαριέρας"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Κλάση κινδύνου 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Κλάση κινδύνου 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Κλάση κινδύνου 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Κλάση κινδύνου 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Κλάση κινδύνου 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Κλάση κινδύνου 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Κλάση κινδύνου 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Θηρίο"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Επιχειρηματίας"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Επαγγελματίας"
-	
+
 	key[]: "lvl_name6"
 	val[]: "18 Ρόδες Ικανότητας"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Έκθεση"
-	
+
 	key[]: "weblink_game"
 	val[]: "Σελίδα American Truck Simulator" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "To American Truck Simulator έχει ένα πρόβλημα και είναι αδύνατον να επιστήσει τα γραφικά στον υπολογιστή σας (καμία έγκυρη συσκευή γραφικών δεν βρέθηκε).\nΠροτεινόμενα Βήματα:\n\n1. Ελέγξτε αν ο υπολογιστής σας και η κάρτα γραφικών συναντάει τις ελάχιστες απαιτήσεις υλικού.\n2. Ανανεώστε τον υπολογιστή σας στην τελευταία έκδοση του Microsoft DirectX.\n3. Κατεβάστε και εγκαταστήστε τους τελευταίους drivers για την κάρτα γραφικών σας από την ιστοσελίδα της εταιρίας - οι drivers πιθανώς έχουν λήξει.\n4. Προσπαθήστε να αλλάξετε την μέθοδο απόδοσης από το OpenGL στο DirectX ή αντίστροφα.\n5. Διαγράψτε το αρχείο για τις ρυθμίσεις του παιχνιδιού 'config.cfg' που βρίσκεται στα 'Έγγραφα' - 'American Truck Simulator'.Αυτό ίσως καταστράφηκε.\nΑυτό το αρχείο θα ξαναχτιστεί αυτόματα με τις σωστές προκαθορισμένες τιμές στην επόμενη έναρξη του παιχνιδιού."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "Το American Truck Simulator έχει ένα πρόβλημα και είναι αδύνατον να επιστήσει τα γραφικά στον υπολογιστή σας (καμία έγκυρη συσκευή γραφικών δεν βρέθηκε)."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Η ενεργοποίηση είναι επιτυχής.<br>Ευχαριστούμε που αγοράσατε ένα αντίτυπο του American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - ΑΡΧΙΚΗ ΣΕΛΙΔΑ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "ΔΙΑΧΕΙΡΙΣΗ ΠΡΟΦΙΛ" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -565,7 +596,7 @@ localization_db : .localization
 	val[]: "Σιλοφόρο"
 
 	key[]: "container"
-	val[]: "Μεταφορέας Κοντέινερ"
+	val[]: "Μεταφοράς Κοντέινερ"
 
 	key[]: "curtainside"
 	val[]: "Συρόμενος Μουσαμάς"
@@ -583,10 +614,13 @@ localization_db : .localization
 	val[]: "Σιλοφόρο με Χοάνη"
 
 	key[]: "insulated"
-	val[]: "Θερμομονωτικό "
+	val[]: "Ισοθερμικό"
 
 	key[]: "log"
-	val[]: "Κορμοί"
+	val[]: "Ξυλείας"
+
+	key[]: "lowboy"
+	val[]: "Χαμηλοδάπεδο"
 
 	key[]: "refrigerated"
 	val[]: "Ψυγείο"
@@ -604,7 +638,7 @@ localization_db : .localization
 	val[]: "Χύμα υλικό"
 
 	key[]: "body_cargo_types_chipvan"
-	val[]: "Ελαφρύ χύμα υλικό"
+	val[]: "Ελαφριά χύμα υλικά"
 
 	key[]: "body_cargo_types_hopper"
 	val[]: "Χύμα υλικά & Σιτηρά"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Μονό"
 
+	key[]: "chain_double"
+	val[]: "Διπλό"
+
 	key[]: "chain_staa_double"
 	val[]: "Διπλό STAA"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "Διπλό STAA"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "Διπλό STAA Pup"
+	key[]: "tr_articulated_3axle"
+	val[]: "Αρθρωτό, 3 Άξονες"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "Διπλό STAA Pup, 4 Άξονες"
+	key[]: "tr_articulated_4axle"
+	val[]: "Αρθρωτό, 4 Άξονες"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Αρθρωτό, 5 Άξονες"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Αρθρωτό, 6 Άξονες"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Αρθρωτό, 7 Άξονες"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Αρθρωτό, 8 Άξονες"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Αρθρωτό, 9 Άξονες"
 
 	key[]: "tr_b_double"
 	val[]: "Διπλό Επικαθήμενο"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "Διπλό Επικαθήμενο, 6 Άξονες"
 
+	key[]: "tr_double_staa"
+	val[]: "Διπλό STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Διπλό STAA Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "Διπλό STAA Pup, 4 Άξονες"
+
+	key[]: "tr_jeep"
+	val[]: "Ντόλι"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Ντόλι, 3 Άξονες"
+
 	key[]: "tr_rm_double"
 	val[]: "Διπλό Rocky Mountain"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Διπλό Rocky Mountain - pup"
-
-	key[]: "tr_tp_double"
-	val[]: "Διπλό Turnpike"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Διπλό Turnpike, 6 Άξονες"
 
 	key[]: "tr_single_28"
 	val[]: "28 πόδια"
@@ -806,6 +865,21 @@ localization_db : .localization
 	key[]: "tr_single_53_spread"
 	val[]: "53 πόδια, Εν αποστάσει"
 
+	key[]: "tr_spreader_1axle"
+	val[]: "Αναδιπλούμενος, 1 Άξονας"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Αναδιπλούμενοι, 2 Άξονες"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Αναδιπλούμενοι, 3 Άξονες"
+
+	key[]: "tr_tp_double"
+	val[]: "Διπλό Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Διπλό Turnpike, 6 Άξονες"
+
 	key[]: "tr_triple"
 	val[]: "Τριπλό"
 
@@ -838,7 +912,7 @@ localization_db : .localization
 	val[]: "Chip Van, Κινούμενο Δάπεδο"
 
 	key[]: "bs_container"
-	val[]: "Μεταφορέας Κοντέινερ"
+	val[]: "Μεταφοράς Κοντέινερ"
 
 	key[]: "bs_curtain"
 	val[]: "Συρόμενος Μουσαμάς"
@@ -862,13 +936,22 @@ localization_db : .localization
 	val[]: "Σιλοφόρο με Χοάνη Σιτηρών - Κυλ. Δάπεδο"
 
 	key[]: "bs_insulated"
-	val[]: "Θερμομονωτικό "
+	val[]: "Ισοθερμικό"
 
 	key[]: "bs_log_4"
 	val[]: "Τρέιλερ Μεταφοράς Ξυλείας, 4 στηρίγματα"
 
 	key[]: "bs_log_6"
-	val[]: "Τρέιλερ Μεταφοράς Ξυλείας, 6 στηρίγματα"
+	val[]: "Μεταφοράς Ξυλείας, 6 στηρίγματα"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Ξύλινο Χαμηλοδάπεδο"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Πλήρως Ξύλινο Χαμηλοδάπεδο"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Ξύλινο-Αλουμινένιο Χαμηλοδάπεδο"
 
 	key[]: "bs_reefer"
 	val[]: "Ψυγείο"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Κανονική Πόρτα, Ανεμοθραύστης"
+
+	key[]: "wooden_deck"
+	val[]: "Ξύλινο Κατάστρωμα"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Καλιφόρνια"
+
+	key[]: "colorado"
+	val[]: "Κολοράντο"
 
 	key[]: "idaho"
 	val[]: "Άινταχο"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Αλαμογκόρντο"
 
+	key[]: "alamosa"
+	val[]: "Αλαμόσα"
+
 	key[]: "albuquerque"
 	val[]: "Αλμπουκέρκη"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Μπόιζ"
+
+	key[]: "burlington"
+	val[]: "Μπέρλινγκτον"
 
 	key[]: "burns"
 	val[]: "Μπερνς"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Κερ ντ' Αλέν"
 
+	key[]: "colorado_springs"
+	val[]: "Κολοράντο Σπρίνγκς"
+
 	key[]: "colville"
 	val[]: "Κόλβιλ"
 
 	key[]: "coos_bay"
 	val[]: "Κους Μπέι"
+
+	key[]: "denver"
+	val[]: "Ντένβερ"
+
+	key[]: "durango"
+	val[]: "Ντουράνγκο"
 
 	key[]: "ehrenberg"
 	val[]: "Έρενμπεργκ"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Φλάγκσταφ"
 
+	key[]: "fort_collins"
+	val[]: "Φορτ Κόλλινς"
+
 	key[]: "fresno"
 	val[]: "Φρέσνο"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Γκραντ Κούλη"
+
+	key[]: "grand_junction"
+	val[]: "Γκραντ Τζάνκσιον"
 
 	key[]: "grangeville"
 	val[]: "Γκρέιντζβιλ"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Λέικβιου"
 
+	key[]: "lamar"
+	val[]: "Λαμάρ"
+
 	key[]: "las_cruces"
 	val[]: "Λας Κρούσες"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Μόαμπ"
+
+	key[]: "montrose"
+	val[]: "Μοντρόζ"
 
 	key[]: "nampa"
 	val[]: "Νάμπα"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Πρόβο"
+
+	key[]: "pueblo"
+	val[]: "Πουέμπλο"
+
+	key[]: "rangely"
+	val[]: "Ρέιντζλυ"
 
 	key[]: "raton"
 	val[]: "Ρατόουν"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "Σαιντ Τζόρτζ"
 
+	key[]: "steamboat_springs"
+	val[]: "Στίμποτ Σπρίνγκς"
+
+	key[]: "sterling"
+	val[]: "Στέρλινγκ"
+
 	key[]: "stockton"
 	val[]: "Στόκτον"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Φαράγγι Γκλένγουντ"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Αεροδρόμιο Ντένβερ"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Αυτοκινητόδρομος Εκατομμυρίου Δολαρίων"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Μνημείο Τεσσάρων Γωνιών"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Γέφυρα Ρεντ Κλιφ"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Πέρασμα Γούλφ Κρικ"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Πηγές Κολοράντο"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Κριπλ Κρικ & Χρυσορυχείο Βίκτορ"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Τούνελ Άιζενχάουερ"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Δρόμος στα Βραχώδη Όρη"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Αγρόκτημα πατάτας του Τουίν Φόλς"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Σ.Ε.Α. «Midvale Hill Rest Area»"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Το Ορυχείο του Μπίνγκχαμ Κάνυον"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "Η πόλη Σεντ Τζόρτζ"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "Η περιοχή των Πετρωμάτων Σαν Ράφαελ"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Πετρελαιοπηγές της Γιούτα"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "Η Κοιλάδα Των Μνημείων"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Τα Πεδία Άλατος Μπόνβιλ"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "Το Σπήλαιο Μόκι"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Το ορόσημο Τρύπα Στον Βράχο"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Η Γέφυρα του Φράγματος Γκλεν Κάνυον"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Ο Χώρος Ανάπαυσης Χούβερ"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Εθνικό Ηφαιστειακό Μνημείο του Όρους Σέντ Έλενς"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Λιμάνι Σιάτλ"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Εργοτάξιο Υλοτομίας Ουάσιγκτον"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Περιστρεφόμενη Γέφυρα Έβερεττ"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Γέφυρα Βάντατζ"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Πέρασμα Ντεσέπσιον"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Εργοστάσιο Αεροσκαφών"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Φράγμα Γκραντ Κούλη"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Κέντρο Σιάτλ"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Εργοστάσιο Kenworth"
 #@}
 
 }

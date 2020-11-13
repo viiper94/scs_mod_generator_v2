@@ -52,7 +52,7 @@ localization_db : .localization
 	val[]: "Передние зеркала"
 
 	key[]: "grill"
-	val[]: "Решетка"
+	val[]: "Решётка"
 
 	key[]: "headache_r"
 	val[]: "Защита кабины"
@@ -96,17 +96,45 @@ localization_db : .localization
 	key[]: "wing"
 	val[]: "Антикрыло"
 
+
+	key[]: "aero"
+	val[]: "Aero"
+
+	key[]: "aero2"
+	val[]: "Aero II"
+
+	key[]: "aero_paint"
+	val[]: "Aero, краска"
+
+	key[]: "aerox"
+	val[]: "AeroX"
+
+	key[]: "alu_tank"
+	val[]: "Алюминиевый бак"	#+ Aluminium tank accessory (water, fuel, etc)
+
+	key[]: "bottom"
+	val[]: "Снизу"		#+ Exhaust accessory
+
 	key[]: "chainsaw_toy"
 	val[]: "Игрушечная бензопила"
 
 	key[]: "chrom_tank"
-	val[]: "Хромированный бак" #+ Chromed tank accessory (water, fuel, etc)
-
-	key[]: "alu_tank"
-	val[]: "Алюминиевый бак" #+ Aluminium tank accessory (water, fuel, etc)
+	val[]: "Хромированный бак"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
-	val[]: "D-образный" #+ D-shaped tank accessory (water, fuel, etc)
+	val[]: "D-образный"	#+ D-shaped tank accessory (water, fuel, etc)
+
+	key[]: "drl"
+	val[]: "ДХО"		#+ Daylight running lamps
+
+	key[]: "elite"
+	val[]: "Элитный"
+
+	key[]: "fog_lights"
+	val[]: "Противотуманные огни"
+
+	key[]: "hvac"
+	val[]: "Автономный отопитель"
 
 #@}
 
@@ -126,7 +154,7 @@ localization_db : .localization
 
 	key[]: "radio_hint"
 	val[]: "Добавьте в файл <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>Ваши любимые онлайн-радиостанции и слушайте их в игре! Файл <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>находится в папке <color value=@@clr_sel@@>Документы / American Truck Simulator<color value=@@clr_txt@@>."
-	
+
 #+ Hint shown if no online radio streams are defined.
 
 	key[]: "empty_radio_hint"
@@ -226,6 +254,9 @@ localization_db : .localization
 	key[]: "cn_cable_reel"
 	val[]: "Кабельная катушка"
 
+	key[]: "cn_cans"
+	val[]: "Банки"
+
 	key[]: "cn_colors"
 	val[]: "Краска"
 
@@ -271,6 +302,9 @@ localization_db : .localization
 	key[]: "cn_hay"
 	val[]: "Сено"
 
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Тяжёлый бульдозер"
+
 	key[]: "cn_house_prefabs"
 	val[]: "Сборный дом"
 
@@ -307,6 +341,9 @@ localization_db : .localization
 	key[]: "cn_milling_machine"
 	val[]: "Фрезерная машина"
 
+	key[]: "cn_mix_tank"
+	val[]: "Смеситель"
+
 	key[]: "cn_mobile_crane"
 	val[]: "Внедорожный кран"
 
@@ -318,6 +355,9 @@ localization_db : .localization
 
 	key[]: "cn_mulcher"
 	val[]: "Мульчер"
+
+	key[]: "cn_paper"
+	val[]: "Бумага"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Гранулированный корм для животных"
@@ -417,9 +457,6 @@ localization_db : .localization
 	key[]: "tn_flatbed"
 	val[]: "Платформа"
 
-	key[]: "tn_food_tank"
-	val[]: "Пищевая цистерна"
-
 	key[]: "tn_frac_tank"
 	val[]: "Цистерна-контейнер"
 
@@ -441,17 +478,11 @@ localization_db : .localization
 	key[]: "tn_knuckle_boom"
 	val[]: "Кран-манипулятор"
 
-	key[]: "tn_log"
-	val[]: "Лесовоз"
-
-	key[]: "tn_lowboy"
-	val[]: "Низкорамный трал"
-
 	key[]: "tn_lowboy_boat"
 	val[]: "Низкорамный трал для лодок"
 
-	key[]: "tn_magnitude_55l"
-	val[]: "Низкорамный трал 55L"
+	key[]: "tn_scs_lowboy"
+	val[]: "Раздвижной трал"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Полуприцеп - мобильный барьер"
@@ -464,50 +495,50 @@ localization_db : .localization
 
 #+ Tooltip texts for job offer icons
 #@{
-	
+
 	key[]: "tt_ico_adr_1"
 	val[]: "Класс 1"
-	
+
 	key[]: "tt_ico_adr_2"
 	val[]: "Класс 2"
-	
+
 	key[]: "tt_ico_adr_3"
 	val[]: "Класс 3"
-	
+
 	key[]: "tt_ico_adr_4"
 	val[]: "Класс 4"
-	
+
 	key[]: "tt_ico_adr_5"
 	val[]: "Класс 5"
-	
+
 	key[]: "tt_ico_adr_6"
 	val[]: "Класс 6"
-	
+
 	key[]: "tt_ico_adr_8"
 	val[]: "Класс 8"
 #@}
-	
+
 #+ Names of individual experience tiers of the driver.
 #@{
-	
+
 	key[]: "lvl_name2"
 	val[]: "Рабочая лошадка"
-	
+
 	key[]: "lvl_name3"
 	val[]: "Предприниматель"
-	
+
 	key[]: "lvl_name4"
 	val[]: "Профессионал"
-	
+
 	key[]: "lvl_name6"
 	val[]: "Мастер восемнадцати колёс"
 #@}
-	
+
 #+ Map legend
 
 	key[]: "tdsel_dealer_big"
 	val[]: "Выставочный зал"
-	
+
 	key[]: "weblink_game"
 	val[]: "Сайт American Truck Simulator" #+ weblink description
 
@@ -516,10 +547,10 @@ localization_db : .localization
 
 #+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
 #@{
-	
+
 	key[]: "sys_no_graphics"
 	val[]: "Обнаружена ошибка: совместимый видеоадаптер не найден.\nВозможные пути решения проблемы:\n\n1. Убедитесь, что Ваш компьютер удовлетворяет программным и аппаратным требованиям.\n2. Установите последнюю версию Microsoft DirectX.\n3. Загрузите и установите последнюю версию драйверов для Вашей видеокарты - вполне вероятно, что текущие драйверы устарели.\n4. Попробуйте изменить метод рендеринга с OpenGL на DirectX, или наоборот.\n5. Удалите файл конфигурации игры 'config.cfg', находящийся в папке 'Документы' - 'American Truck Simulator' . Он может быть поврежден.\nЭтот файл будет создан автоматически при следующем запуске игры, настройки примут стандартные значения."
-	
+
 	key[]: "sys_no_graphics_simple"
 	val[]: "Обнаружена ошибка: совместимый видеоадаптер не найден."
 #@}
@@ -531,10 +562,10 @@ localization_db : .localization
 
 #+ Activation screen
 #@{
-	
+
 	key[]: "activated"
 	val[]: "Активация успешно завершена.<br>Благодарим Вас за приобретение копии American Truck Simulator."
-	
+
 	key[]: "www_link_game"
 	val[]: "American Truck Simulator"
 
@@ -545,9 +576,9 @@ localization_db : .localization
 #+ Profile selection.
 #@{
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
-	
+
 	key[]: "profile_sel_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - ВЫБОР ПРОФИЛЯ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "МЕНЕДЖЕР ПРОФИЛЕЙ" #+ Title of the screen. Please keep in upper case where possible.
 #@}
 
 #@}
@@ -587,6 +618,9 @@ localization_db : .localization
 
 	key[]: "log"
 	val[]: "Лесовоз"
+
+	key[]: "lowboy"
+	val[]: "Трал"
 
 	key[]: "refrigerated"
 	val[]: "Рефрижератор"
@@ -637,6 +671,9 @@ localization_db : .localization
 	key[]: "chain_single"
 	val[]: "Одиночный прицеп"
 
+	key[]: "chain_double"
+	val[]: "Двойная сцепка"
+
 	key[]: "chain_staa_double"
 	val[]: "Сцепка STAA"
 
@@ -656,14 +693,27 @@ localization_db : .localization
 #+ Trailer configurations
 
 #@{
-	key[]: "tr_double_staa"
-	val[]: "Прицеп STAA"
 
-	key[]: "tr_double_staa_pup"
-	val[]: "Сцепка STAA, тип 2"
+	key[]: "tr_articulated_3axle"
+	val[]: "Сочленённый, 3 оси"
 
-	key[]: "tr_double_staa_pup_4axle"
-	val[]: "Сцепка STAA, тип 2, 4 оси"
+	key[]: "tr_articulated_4axle"
+	val[]: "Сочленённый, 4 оси"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Сочленённый, 5 осей"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Сочленённый, 6 осей"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Сочленённый, 7 осей"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Сочленённый, 8 осей"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Сочленённый, 9 осей"
 
 	key[]: "tr_b_double"
 	val[]: "Сцепка B-Double"
@@ -674,17 +724,26 @@ localization_db : .localization
 	key[]: "tr_b_double_6axle"
 	val[]: "B-Double, 6 осей"
 
+	key[]: "tr_double_staa"
+	val[]: "Прицеп STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "Сцепка STAA, тип 2"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "Сцепка STAA, тип 2, 4 оси"
+
+	key[]: "tr_jeep"
+	val[]: "Передняя тележка"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Передняя тележка, 3 оси"
+
 	key[]: "tr_rm_double"
 	val[]: "Прицеп Rocky Mountain Double"
 
 	key[]: "tr_rm_double_pup"
 	val[]: "Сцепка Rocky Mountain Double, тип 2"
-
-	key[]: "tr_tp_double"
-	val[]: "Сцепка Turnpike"
-
-	key[]: "tr_tp_double_6axle"
-	val[]: "Сцепка Turnpike, 6 осей"
 
 	key[]: "tr_single_28"
 	val[]: "28 футов"
@@ -729,7 +788,7 @@ localization_db : .localization
 	val[]: "45 футов, 3 оси"
 
 	key[]: "tr_single_45_3axle_single"
-	val[]: "45 футов, 3 оси, 3-я одинарная"
+	val[]: "45 футов, 3 оси, 3-я односкатная"
 
 	key[]: "tr_single_45_3axle_steer"
 	val[]: "45 футов, 3 оси, 3-я управляемая"
@@ -771,7 +830,7 @@ localization_db : .localization
 	val[]: "50 футов, 3 оси"
 
 	key[]: "tr_single_50_3axle_single"
-	val[]: "50 футов, 3 оси, 3-я одинарная"
+	val[]: "50 футов, 3 оси, 3-я односкатная"
 
 	key[]: "tr_single_50_3axle_steer"
 	val[]: "50 футов, 3 оси, 3-я управляемая"
@@ -805,6 +864,21 @@ localization_db : .localization
 
 	key[]: "tr_single_53_spread"
 	val[]: "53 фута, оси разнесены"
+
+	key[]: "tr_spreader_1axle"
+	val[]: "Задняя тележка, 1 ось"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Задняя тележка, 2 оси"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Задняя тележка, 3 оси"
+
+	key[]: "tr_tp_double"
+	val[]: "Сцепка Turnpike"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Сцепка Turnpike, 6 осей"
 
 	key[]: "tr_triple"
 	val[]: "Тройная сцепка"
@@ -869,6 +943,15 @@ localization_db : .localization
 
 	key[]: "bs_log_6"
 	val[]: "Лесовоз: 6 коников"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Трал, деревянный настил"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Трал, цельнодеревянный настил"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Трал, деревянно-алюминиевый настил"
 
 	key[]: "bs_reefer"
 	val[]: "Рефрижератор"
@@ -939,6 +1022,9 @@ localization_db : .localization
 
 	key[]: "standard_door_aero"
 	val[]: "Стандартная дверь, дефлектор"
+
+	key[]: "wooden_deck"
+	val[]: "Деревянный настил"
 #@}
 
 #+ Names of countries/states
@@ -948,6 +1034,9 @@ localization_db : .localization
 
 	key[]: "california"
 	val[]: "Калифорния"
+
+	key[]: "colorado"
+	val[]: "Колорадо"
 
 	key[]: "idaho"
 	val[]: "Айдахо"
@@ -976,6 +1065,9 @@ localization_db : .localization
 	key[]: "alamogordo"
 	val[]: "Аламогордо"
 
+	key[]: "alamosa"
+	val[]: "Аламоса"
+
 	key[]: "albuquerque"
 	val[]: "Альбукерке"
 
@@ -999,6 +1091,9 @@ localization_db : .localization
 
 	key[]: "boise"
 	val[]: "Бойсе"
+
+	key[]: "burlington"
+	val[]: "Берлингтон"
 
 	key[]: "burns"
 	val[]: "Бёрнс"
@@ -1024,11 +1119,20 @@ localization_db : .localization
 	key[]: "coeur_dalene"
 	val[]: "Кер-д’Ален"
 
+	key[]: "colorado_springs"
+	val[]: "Колорадо-Спрингс"
+
 	key[]: "colville"
 	val[]: "Колвилл"
 
 	key[]: "coos_bay"
 	val[]: "Кус Бей"
+
+	key[]: "denver"
+	val[]: "Денвер"
+
+	key[]: "durango"
+	val[]: "Дуранго"
 
 	key[]: "ehrenberg"
 	val[]: "Эренберг"
@@ -1057,6 +1161,9 @@ localization_db : .localization
 	key[]: "flagstaff"
 	val[]: "Флагстафф"
 
+	key[]: "fort_collins"
+	val[]: "Форт-Коллинс"
+
 	key[]: "fresno"
 	val[]: "Фресно"
 
@@ -1071,6 +1178,9 @@ localization_db : .localization
 
 	key[]: "grand_coulee"
 	val[]: "Гранд-Кули"
+
+	key[]: "grand_junction"
+	val[]: "Гранд-Джанкшен"
 
 	key[]: "grangeville"
 	val[]: "Грейнджвилл"
@@ -1111,6 +1221,9 @@ localization_db : .localization
 	key[]: "lakeview"
 	val[]: "Лейквью"
 
+	key[]: "lamar"
+	val[]: "Ламар"
+
 	key[]: "las_cruces"
 	val[]: "Лас-Крусес"
 
@@ -1134,6 +1247,9 @@ localization_db : .localization
 
 	key[]: "moab"
 	val[]: "Моаб"
+
+	key[]: "montrose"
+	val[]: "Монтроз"
 
 	key[]: "nampa"
 	val[]: "Нампа"
@@ -1200,6 +1316,12 @@ localization_db : .localization
 
 	key[]: "provo"
 	val[]: "Прово"
+
+	key[]: "pueblo"
+	val[]: "Пуэбло"
+
+	key[]: "rangely"
+	val[]: "Рейнджели"
 
 	key[]: "raton"
 	val[]: "Ратон"
@@ -1270,6 +1392,12 @@ localization_db : .localization
 	key[]: "st_george"
 	val[]: "Сент-Джордж"
 
+	key[]: "steamboat_springs"
+	val[]: "Стимбот-Спрингс"
+
+	key[]: "sterling"
+	val[]: "Стерлинг"
+
 	key[]: "stockton"
 	val[]: "Стоктон"
 
@@ -1318,6 +1446,51 @@ localization_db : .localization
 
 #+ Names of point of interest cutscenes.
 #@{
+
+	# Colorado
+
+	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
+	key[]: "co_cut_glenwood"
+	val[]: "Каньон Гленвуд"
+
+	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
+	key[]: "co_cut_airport"
+	val[]: "Аэропорт Денвер"
+
+	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
+	key[]: "co_cut_mil"
+	val[]: "Шоссе «Million Dollar Highway»"
+
+	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
+	key[]: "co_cut_four"
+	val[]: "Памятник «Четыре угла»"
+
+	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
+	key[]: "co_cut_red"
+	val[]: "Мост Рэд Клифф"
+
+	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
+	key[]: "co_cut_wolf"
+	val[]: "Перевал Вулф Крик"
+
+	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
+	key[]: "co_cut_springs"
+	val[]: "Колорадо-Спрингс"
+
+	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
+	key[]: "co_cut_gold"
+	val[]: "Золотой карьер Крипл Крик и Виктор"
+
+	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
+	key[]: "co_cut_eisen"
+	val[]: "Туннель Эйзенхауэра"
+
+	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
+	key[]: "co_cut_rocky"
+	val[]: "Дорога через Скалистые Горы"
+
+	# Idaho
+
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
 	val[]: "Картофельная ферма Туин-Фолс"
@@ -1357,6 +1530,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Зона отдыха Мидвейл-Хилл"
+
+	# Utah
+
+	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
+	key[]: "id_cut_kennecott"
+	val[]: "Карьер Бингам Каньон"
+
+	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
+	key[]: "ut_cut_george"
+	val[]: "г. Сент-Джордж"
+
+	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
+	key[]: "ut_cut_swell"
+	val[]: "Силл Сан-Рафаэль"
+
+	#+ Google maps link: no particular location
+	key[]: "ut_cut_oil"
+	val[]: "Нефтяные месторождения Юты"
+
+	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
+	key[]: "ut_cut_monument"
+	val[]: "Долина монументов"
+
+	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
+	key[]: "ut_cut_salt"
+	val[]: "Бонненвилль"
+
+	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
+	key[]: "ut_cut_moqui"
+	val[]: "Пещера Моки"
+
+	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
+	key[]: "ut_cut_hole"
+	val[]: "Hole N\" The Rock"
+
+	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
+	key[]: "ut_cut_glen"
+	val[]: "Мост Глен-Каньон"
+
+	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
+	key[]: "ut_cut_hoover"
+	val[]: "Зона отдыха Хувер"
+
+	# Washington
+
+	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
+	key[]: "wa_cut_helen"
+	val[]: "Национальный памятник вулкан Сент-Хеленс"
+
+	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
+	key[]: "wa_cut_seaport"
+	val[]: "Порт Сиэттла"
+
+	#+ Google maps link:  NONE, just a generic timber harvest site
+	key[]: "wa_cut_forest"
+	val[]: "Лесопилка, шт. Вашингтон"
+
+	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
+	key[]: "wa_cut_everett"
+	val[]: "Поворотный мост, г. Эверетт"
+
+	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
+	key[]: "wa_cut_vantage"
+	val[]: "Мост Вантадж"
+
+	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
+	key[]: "wa_cut_deception"
+	val[]: "Пролив Десепшен"
+
+	#+ Google maps link: Generic Aircraft (plane) factory
+	key[]: "wa_cut_darwing"
+	val[]: "Авиастроительный завод"
+
+	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
+	key[]: "wa_cut_coulee"
+	val[]: "Плотина Гранд-Кули"
+
+	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
+	key[]: "wa_cut_downtown"
+	val[]: "Деловой центр Сиэттла"
+
+	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
+	key[]: "wa_cut_kenworth"
+	val[]: "Завод Kenworth"
 #@}
 
 }
