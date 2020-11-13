@@ -3,5 +3,5 @@ company_permanent: company.permanent.iav
 {
 	name: "ÍAV"
 	sort_name: "iav"
-	trailer_look: quarry
+	trailer_look: iav
 }

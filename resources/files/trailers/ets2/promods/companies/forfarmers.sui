@@ -1,0 +1,6 @@
+company_permanent: company.permanent.forfarmers
+{
+	name: "ForFarmers"
+	sort_name: "forfarmers"
+	trailer_look: default
+}

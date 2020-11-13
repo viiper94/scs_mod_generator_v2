@@ -1,0 +1,6 @@
+company_permanent: company.permanent.eliassons
+{
+	name: "W Eliassons Partiaffär AB"
+	sort_name: "eliassons"
+	trailer_look: default
+}

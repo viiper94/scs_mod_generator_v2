@@ -1,0 +1,6 @@
+company_permanent: company.permanent.kroschu
+{
+	name: "Kromberg & Schubert"
+	sort_name: "kromberg"
+	trailer_look: default
+}

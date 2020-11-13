@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.fca
+{
+	name: "Fiat Chrysler Automobiles"
+	sort_name: "fca"
+	trailer_look: default
+}

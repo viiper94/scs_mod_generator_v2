@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.nordural
+{
+	name: "Norðurál"
+	sort_name: "nordural"
+	trailer_look: nordural
+}

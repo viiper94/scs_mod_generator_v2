@@ -1,0 +1,6 @@
+company_permanent: company.permanent.gallia_f_in
+{
+	name: "Gallia Ferries"
+	sort_name: "gallia ferries"
+	trailer_look: gallia_ferry
+}

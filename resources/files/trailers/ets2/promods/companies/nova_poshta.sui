@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nova_poshta
+{
+	name: "Нова пошта"
+	sort_name: "novaposhta"
+	trailer_look: default
+}

@@ -1,0 +1,6 @@
+company_permanent: company.permanent.biedronka_in
+{
+	name: "Biedronka"
+	sort_name: "biedronka"
+	trailer_look: biedronka
+}

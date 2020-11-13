@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.aluprof
+{
+	name: "Aluprof SA"
+	sort_name: "aluprof"
+	trailer_look: default
+}

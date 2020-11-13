@@ -1,0 +1,6 @@
+company_permanent: company.permanent.lubartbeer
+{
+	name: "Lubartbeer"
+	sort_name: "lubart"
+	trailer_look: default
+}

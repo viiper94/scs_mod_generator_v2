@@ -12,7 +12,6 @@ trailer_def : trailer_def.scs.box.hu_dbl_3_1.insulated
 	chain_type: double
 
 	
-
 	mass_ratio[]: 0.67
 #	min_cog_mass[]: 0
 #	min_cog[]: (0,0,0)

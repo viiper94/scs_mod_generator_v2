@@ -1,0 +1,6 @@
+company_permanent: company.permanent.brw
+{
+	name: "Black Red White"
+	sort_name: "brw"
+	trailer_look: default
+}

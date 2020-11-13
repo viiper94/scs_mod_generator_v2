@@ -1,7 +1,6 @@
-
 company_permanent: company.permanent.unilevr_dist
 {
-	name: "Unilever N.V."
+	name: "Unilever"
 	sort_name: "unilever"
 	trailer_look: default
 }

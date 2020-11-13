@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.mannvit
+{
+	name: "Mannvit Engineering"
+	sort_name: "mannvit"
+	trailer_look: mannvit
+}

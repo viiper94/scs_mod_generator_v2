@@ -1,0 +1,6 @@
+company_permanent: company.permanent.istros_av
+{
+	name: "Įstros aviaparkas"
+	sort_name: "istros"
+	trailer_look: default
+}

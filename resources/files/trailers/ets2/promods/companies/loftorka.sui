@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.loftorka
+{
+	name: "LOFTORKA ehf"
+	sort_name: "loftorka"
+	trailer_look: loftorka
+}

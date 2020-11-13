@@ -1,0 +1,6 @@
+company_permanent: company.permanent.nash_kraj
+{
+	name: "Наш Край"
+	sort_name: "nashkraj"
+	trailer_look: default
+}

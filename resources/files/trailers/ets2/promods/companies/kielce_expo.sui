@@ -1,0 +1,6 @@
+company_permanent: company.permanent.kielce_expo
+{
+	name: "Targi Kielce S.A."
+	sort_name: "kielceexpo"
+	trailer_look: default
+}

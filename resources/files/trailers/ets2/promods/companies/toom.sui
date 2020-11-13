@@ -1,0 +1,6 @@
+company_permanent: company.permanent.toom
+{
+	name: "toom"
+	sort_name: "toom"
+	trailer_look: default
+}

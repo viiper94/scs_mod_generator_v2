@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.radisson
+{
+	name: "Radisson Blu Resort Bukovel"
+	sort_name: "radisson"
+	trailer_look: default
+}

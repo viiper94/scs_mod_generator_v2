@@ -1,0 +1,7 @@
+
+company_permanent: company.permanent.anklam_flug
+{
+	name: "Anklamer Flugplatz GmbH"
+	sort_name: "anklamer flugplatz"
+	trailer_look: default
+}

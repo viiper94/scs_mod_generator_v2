@@ -1,0 +1,6 @@
+company_permanent: company.permanent.kronospan
+{
+	name: "Kronospan"
+	sort_name: "kronospan"
+	trailer_look: default
+}
