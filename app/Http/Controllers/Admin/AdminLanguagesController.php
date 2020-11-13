@@ -89,6 +89,7 @@ class AdminLanguagesController extends Controller{
             'fr' => 'fr_fr',
             'it' => 'it_it',
             'hr' => 'hr_hr',
+            'hu' => 'hu_hu',
             'ja' => 'ja_jp',
             'ka' => 'ka_ge',
             'ko' => 'ko_kr',
