@@ -6,7 +6,9 @@ trailer : trailer.lowboy_boat.cargo_boat
 	accessories[]: .lowboy_boat.rwheel3
 	accessories[]: .lowboy_boat.cargo
 	accessories[]: .lowboy_boat.flag_r_r
-    accessories[]: .lowboy_boat.flag_r_l
+	accessories[]: .lowboy_boat.flag_r_l
+
+	oversize: true
 }
 
 vehicle_accessory: .lowboy_boat.chassis
@@ -39,10 +41,10 @@ vehicle_accessory: .lowboy_boat.cargo
 
 vehicle_addon_accessory: .lowboy_boat.flag_r_r
 {
-    	data_path: "/def/vehicle/trailer/lowboy_boat/accessory/flag_r_r/warning.sii"
+	data_path: "/def/vehicle/trailer/lowboy_boat/accessory/flag_r_r/warning.sii"
 }
 
 vehicle_addon_accessory: .lowboy_boat.flag_r_l
 {
-    	data_path: "/def/vehicle/trailer/lowboy_boat/accessory/flag_r_l/warning.sii"
+	data_path: "/def/vehicle/trailer/lowboy_boat/accessory/flag_r_l/warning.sii"
 }

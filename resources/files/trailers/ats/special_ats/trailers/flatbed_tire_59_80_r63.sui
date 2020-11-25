@@ -42,7 +42,7 @@ vehicle_wheel_accessory: .flatbed.m_59_80_r63.rwheel4
 
 vehicle_accessory: .flatbed.m_59_80_r63.cargo
 {
-	data_path: "/def/vehicle/trailer/flatbed/cargo_tire.sii"
+	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/cargo_tire.sii"
 }
 
 vehicle_addon_accessory: .flatbed.m_59_80_r63.flag_r_r

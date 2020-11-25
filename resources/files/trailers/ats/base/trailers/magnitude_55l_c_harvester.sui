@@ -7,7 +7,7 @@ trailer : trailer.mag_55l_t3.c_harvester
 	accessories[]: .mag_55l_t3.c_harvester.flag_r_r
 	accessories[]: .mag_55l_t3.c_harvester.flag_r_l
 
-	accessories[]: .mag_55l_t3.c_harvester.cargo
+	#accessories[]: .mag_55l_t3.c_harvester.cargo
 }
 
 vehicle_accessory: .mag_55l_t3.c_harvester.chassis

@@ -1,0 +1,37 @@
+trailer : trailer.scs_lboy_3
+{
+	trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+
+	accessories[]: .scs_lboy_3.chassis
+	accessories[]: .scs_lboy_3.rwheel
+	accessories[]: .scs_lboy_3.rwheel2
+	accessories[]: .scs_lboy_3.rwheel3
+	accessories[]: .scs_lboy_3.paint_job
+}
+
+vehicle_accessory: .scs_lboy_3.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lboy_3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lboy_3.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lboy_3.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_lboy_3.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
+}

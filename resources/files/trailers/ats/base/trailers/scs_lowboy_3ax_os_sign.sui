@@ -1,0 +1,56 @@
+trailer : trailer.scs_lboy_3os
+{
+	trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+	oversize: true
+
+	accessories[]: .scs_lboy_3os.chassis
+	accessories[]: .scs_lboy_3os.rwheel
+	accessories[]: .scs_lboy_3os.rwheel2
+	accessories[]: .scs_lboy_3os.rwheel3
+	accessories[]: .scs_lboy_3os.paint_job
+	accessories[]: .scs_lboy_3os.os_sign
+	accessories[]: .scs_lboy_3os.flag_r_r
+	accessories[]: .scs_lboy_3os.flag_r_l
+}
+
+vehicle_accessory: .scs_lboy_3os.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lboy_3os.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lboy_3os.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lboy_3os.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_lboy_3os.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
+}
+
+vehicle_addon_accessory: .scs_lboy_3os.os_sign
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/oversize_sign.sii"
+}
+
+vehicle_addon_accessory: .scs_lboy_3os.flag_r_r
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/flag_r_r.sii"
+}
+
+vehicle_addon_accessory: .scs_lboy_3os.flag_r_l
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/flag_r_l.sii"
+}

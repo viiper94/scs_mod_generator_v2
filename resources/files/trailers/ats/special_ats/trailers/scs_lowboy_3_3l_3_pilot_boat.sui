@@ -1,0 +1,154 @@
+trailer : trailer.scs_lb_333_s.pilot_boat	#jeep 3 axle
+{
+
+	accessories[]: .scs_lb_333_s.pilot_boat.chassis
+	accessories[]: .scs_lb_333_s.pilot_boat.rwheel
+	accessories[]: .scs_lb_333_s.pilot_boat.rwheel2
+	accessories[]: .scs_lb_333_s.pilot_boat.rwheel3
+	accessories[]: .scs_lb_333_s.pilot_boat.paint_job
+	accessories[]: .scs_lb_333_s.pilot_boat.trlr_cables
+	
+	slave_trailer: .trailer.scs_lb_333_t.pilot_boat
+}
+
+vehicle_accessory: .scs_lb_333_s.pilot_boat.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/jeep_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_s.pilot_boat.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_s.pilot_boat.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_s.pilot_boat.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_lb_333_s.pilot_boat.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_s.pilot_boat.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_jeep.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .trailer.scs_lb_333_t.pilot_boat		#chassis 3 axle
+{
+
+	accessories[]: .scs_lb_333_t.pilot_boat.chassis
+	accessories[]: .scs_lb_333_t.pilot_boat.rwheel
+	accessories[]: .scs_lb_333_t.pilot_boat.rwheel2
+	accessories[]: .scs_lb_333_t.pilot_boat.rwheel3
+	accessories[]: .scs_lb_333_t.pilot_boat.paint_job
+	accessories[]: .scs_lb_333_t.pilot_boat.cargo
+	accessories[]: .scs_lb_333_t.pilot_boat.trlr_cables
+	
+	slave_trailer: .trailer.scs_lb_333_j.pilot_boat	
+}
+
+vehicle_accessory: .scs_lb_333_t.pilot_boat.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3_fn_hook_long.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_t.pilot_boat.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_t.pilot_boat.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_t.pilot_boat.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_lb_333_t.pilot_boat.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii"
+}
+
+vehicle_accessory: .scs_lb_333_t.pilot_boat.cargo
+{
+    	data_path: "/def/vehicle/trailer_cargo/scs_lowboy/pilot_boat.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_t.pilot_boat.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_trailer.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .trailer.scs_lb_333_j.pilot_boat		# 3 axle
+{
+
+	accessories[]: .scs_lb_333_j.pilot_boat.chassis
+	accessories[]: .scs_lb_333_j.pilot_boat.rwheel
+	accessories[]: .scs_lb_333_j.pilot_boat.rwheel2
+	accessories[]: .scs_lb_333_j.pilot_boat.rwheel3
+	accessories[]: .scs_lb_333_j.pilot_boat.paint_job
+	accessories[]: .scs_lb_333_j.pilot_boat.os_sign
+	accessories[]: .scs_lb_333_j.pilot_boat.flag_r_r
+	accessories[]: .scs_lb_333_j.pilot_boat.flag_r_l
+}
+
+vehicle_accessory: .scs_lb_333_j.pilot_boat.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/spreader_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_j.pilot_boat.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_j.pilot_boat.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_j.pilot_boat.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_lb_333_j.pilot_boat.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_j.pilot_boat.os_sign
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/oversize_sign.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_j.pilot_boat.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/flag_r_r.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_j.pilot_boat.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/flag_r_l.sii"
+}

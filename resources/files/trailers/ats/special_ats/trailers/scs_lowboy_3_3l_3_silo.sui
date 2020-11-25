@@ -1,0 +1,154 @@
+trailer : trailer.scs_lb_333_s.silo	#jeep 3 axle
+{
+
+	accessories[]: .scs_lb_333_s.silo.chassis
+	accessories[]: .scs_lb_333_s.silo.rwheel
+	accessories[]: .scs_lb_333_s.silo.rwheel2
+	accessories[]: .scs_lb_333_s.silo.rwheel3
+	accessories[]: .scs_lb_333_s.silo.paint_job
+	accessories[]: .scs_lb_333_s.silo.trlr_cables
+	
+	slave_trailer: .trailer.scs_lb_333_t.silo
+}
+
+vehicle_accessory: .scs_lb_333_s.silo.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/jeep_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_s.silo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_s.silo.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_s.silo.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_lb_333_s.silo.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_s.silo.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_jeep.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .trailer.scs_lb_333_t.silo		#chassis 3 axle
+{
+
+	accessories[]: .scs_lb_333_t.silo.chassis
+	accessories[]: .scs_lb_333_t.silo.rwheel
+	accessories[]: .scs_lb_333_t.silo.rwheel2
+	accessories[]: .scs_lb_333_t.silo.rwheel3
+	accessories[]: .scs_lb_333_t.silo.paint_job
+	accessories[]: .scs_lb_333_t.silo.cargo
+	accessories[]: .scs_lb_333_t.silo.trlr_cables
+	
+	slave_trailer: .trailer.scs_lb_333_j.silo	
+}
+
+vehicle_accessory: .scs_lb_333_t.silo.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3_fn_hook_long.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_t.silo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_t.silo.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_t.silo.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_lb_333_t.silo.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .scs_lb_333_t.silo.cargo
+{
+    	data_path: "/def/vehicle/trailer_cargo/scs_lowboy/silo.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_t.silo.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_trailer.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : .trailer.scs_lb_333_j.silo		# 3 axle
+{
+
+	accessories[]: .scs_lb_333_j.silo.chassis
+	accessories[]: .scs_lb_333_j.silo.rwheel
+	accessories[]: .scs_lb_333_j.silo.rwheel2
+	accessories[]: .scs_lb_333_j.silo.rwheel3
+	accessories[]: .scs_lb_333_j.silo.paint_job
+	accessories[]: .scs_lb_333_j.silo.os_sign
+	accessories[]: .scs_lb_333_j.silo.flag_r_r
+	accessories[]: .scs_lb_333_j.silo.flag_r_l
+}
+
+vehicle_accessory: .scs_lb_333_j.silo.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/spreader_3.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_j.silo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_j.silo.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_lb_333_j.silo.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .scs_lb_333_j.silo.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_j.silo.os_sign
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/oversize_sign.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_j.silo.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/flag_r_r.sii"
+}
+
+vehicle_addon_accessory: .scs_lb_333_j.silo.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/flag_r_l.sii"
+}

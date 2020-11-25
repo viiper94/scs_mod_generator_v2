@@ -1,0 +1,28 @@
+traffic_trailer : trailer.mbt_event
+{
+	accessories[]: .mbt_event.tchassis
+	accessories[]: .mbt_event.trwheel1
+	accessories[]: .mbt_event.trwheel2
+
+}
+
+vehicle_accessory: .mbt_event.tchassis
+{
+    	data_path: "/def/vehicle/trailer/mbt1_barrier/chassis_event.sii"
+}
+
+
+vehicle_wheel_accessory: .mbt_event.trwheel1
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_wheel_accessory: .mbt_event.trwheel2
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+
+
+
