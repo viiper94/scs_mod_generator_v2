@@ -123,6 +123,7 @@
         "cargo_harvester": "cn_harvester",
         "cn_log_harvester": "cn_log_harvester",
         "cn_mix_tank": "cn_mix_tank",
+        "truck_browser_brand_westernstar_49x": "truck_browser_brand_westernstar_49x",
         "aircraft_engine": "cn_aircraft_engine"
     },
     "ets2 trailers": {
@@ -213,6 +214,8 @@
         "frac_tank_blue": "tn_frac_tank",
         "grainhopper_28": "bs_grain_hopper",
         "ats_truck_transporter": "tn_truck_transporter",
+        "cn_kenworth_t680": "cn_kenworth_t680",
+        "truck_browser_brand_westernstar_49x": "truck_browser_brand_westernstar_49x",
         "ats_gooseneck53_f": "bs_container",
         "dry_28": "bs_dryvan",
         "ins_28": "bs_insulated",
