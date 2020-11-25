@@ -14,8 +14,8 @@ class AdminAccessoriesController extends Controller{
     public function index(Request $request){
         $accessories = Accessory::with('chassisObj');
         if($request->input('q')) $accessories->where('def', 'like', '%'.$request->input('q').'%')
-            ->orWhere('alias', 'like', $request->input('q').'%')
-            ->orWhere('chassis', 'like', $request->input('q').'%');
+            ->orWhere('alias', 'like', '%'.$request->input('q').'%')
+            ->orWhere('chassis', 'like', '%'.$request->input('q').'%');
         return view('admin.accessories.index', [
             'accessories' => $accessories->orderBy('id', 'desc')->paginate(20)
         ]);
