@@ -122,6 +122,7 @@
         "cn_harvester": "Skurtreske",
         "cn_log_harvester": "Tømmerhøster",
         "cn_mix_tank": "Blandet tank",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Flymotor"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Frac tank",
         "bs_grain_hopper": "Kornhopper",
         "tn_truck_transporter": "Lastebilhenger",
+        "cn_kenworth_t680": "Kenworth-lastebiler",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Containerhenger",
         "bs_dryvan": "Skap",
         "bs_insulated": "Isolert",

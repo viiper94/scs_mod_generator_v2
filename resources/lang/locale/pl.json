@@ -122,6 +122,7 @@
         "cn_harvester": "Kombajn zbożowy",
         "cn_log_harvester": "Kombajn zrębowy",
         "cn_mix_tank": "Zbiornik uniwersalny",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Gondola turbiny wiatrowej"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Zbiorniko-naczepa",
         "bs_grain_hopper": "Zbożowa",
         "tn_truck_transporter": "Do przewozu ciężarówek",
+        "cn_kenworth_t680": "Ciężarówki Kenworth",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Podkontenerowa",
         "bs_dryvan": "Zabudowana",
         "bs_insulated": "Izoterma",

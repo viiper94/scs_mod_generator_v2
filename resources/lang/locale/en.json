@@ -122,6 +122,7 @@
         "cn_harvester": "Harvester",
         "cn_log_harvester": "Log Harvester",
         "cn_mix_tank": "Mix Tank",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Aircraft Engine"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Frac Tank",
         "bs_grain_hopper": "Grain Hopper",
         "tn_truck_transporter": "Truck Transporter",
+        "cn_kenworth_t680": "Kenworth Trucks",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Container Carrier",
         "bs_dryvan": "Dry Van",
         "bs_insulated": "Insulated",

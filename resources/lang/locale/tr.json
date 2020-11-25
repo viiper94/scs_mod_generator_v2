@@ -122,6 +122,7 @@
         "cn_harvester": "Biçerdöver",
         "cn_log_harvester": "Kütük Kesici",
         "cn_mix_tank": "Karıştırma Tankı",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Uçak Motoru"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Büyük Konteyner",
         "bs_grain_hopper": "Tahıl Silobası",
         "tn_truck_transporter": "Çekici Taşıyıcısı",
+        "cn_kenworth_t680": "Kenworth Çekicileri",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Konteyner Taşıyıcısı",
         "bs_dryvan": "Kuru Yük",
         "bs_insulated": "Yalıtımlı",

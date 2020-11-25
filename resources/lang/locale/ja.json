@@ -122,6 +122,7 @@
         "cn_harvester": "ハーベスター",
         "cn_log_harvester": "ログハーベスター",
         "cn_mix_tank": "混合タンク",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "航空機用エンジン"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "フラックタンク",
         "bs_grain_hopper": "グレーンホッパー",
         "tn_truck_transporter": "トラックトランスポーター",
+        "cn_kenworth_t680": "Kenworth トラック",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "コンテナキャリア",
         "bs_dryvan": "ドライバン",
         "bs_insulated": "保冷式",

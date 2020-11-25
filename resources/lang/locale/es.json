@@ -122,6 +122,7 @@
         "cn_harvester": "Cosechadora",
         "cn_log_harvester": "Cosechadora forestal",
         "cn_mix_tank": "Depósito de mezclado",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Motor de aeronave"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Tanque para fracking",
         "bs_grain_hopper": "Tolva",
         "tn_truck_transporter": "Portacamiones",
+        "cn_kenworth_t680": "Camiones Kenworth",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Portacontenedores",
         "bs_dryvan": "Contenedor de cargas en seco",
         "bs_insulated": "Aislado",

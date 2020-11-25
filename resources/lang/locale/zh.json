@@ -122,6 +122,7 @@
         "cn_harvester": "联合收割机",
         "cn_log_harvester": "伐木机",
         "cn_mix_tank": "Mix Tank",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "飞机引擎"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "压裂罐车",
         "bs_grain_hopper": "粮食料斗",
         "tn_truck_transporter": "卡车运输车",
+        "cn_kenworth_t680": "肯沃斯卡车",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "集装箱运输车",
         "bs_dryvan": "厢式",
         "bs_insulated": "保温车",

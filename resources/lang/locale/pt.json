@@ -122,6 +122,7 @@
         "cn_harvester": "Máquina de Ceifar",
         "cn_log_harvester": "Harvester de Troncos",
         "cn_mix_tank": "Tanque Misto",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Motor de Avião"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Tanque",
         "bs_grain_hopper": "Reboque de Tremonha",
         "tn_truck_transporter": "Transporte de Camiões",
+        "cn_kenworth_t680": "Camiões Kenworth",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Porta-Contentores",
         "bs_dryvan": "Mercadoria Não Refrigerada",
         "bs_insulated": "Isolado",

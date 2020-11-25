@@ -122,6 +122,7 @@
         "cn_harvester": "Kombájn",
         "cn_log_harvester": "Erdészeti betakarítógép",
         "cn_mix_tank": "Keverőtartály",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Repülőgép hajtómű"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "Frac Tank",
         "bs_grain_hopper": "Gabonaszállító",
         "tn_truck_transporter": "Kamionszállító",
+        "cn_kenworth_t680": "Kenworth kamionok",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "Konténerszállító",
         "bs_dryvan": "Darabáru",
         "bs_insulated": "Szigetelt",

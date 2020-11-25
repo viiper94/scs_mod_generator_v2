@@ -122,6 +122,7 @@
         "cn_harvester": "კომბაინი",
         "cn_log_harvester": "მორების კომბაინი",
         "cn_mix_tank": "შემრევი ავზი",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "ავიაძრავა"
     },
     "ets2 trailers": {
@@ -205,6 +206,8 @@
         "tn_frac_tank": "ცისტერნა-კონტეინერი",
         "bs_grain_hopper": "მარცვალსაზიდი",
         "tn_truck_transporter": "სატვირთოს გადამზიდი",
+        "cn_kenworth_t680": "სატვირთოები Kenworth",
+        "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "bs_container": "კონტეინერმზიდი",
         "bs_dryvan": "ფურგონი",
         "bs_insulated": "იზოთერმული",
