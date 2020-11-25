@@ -121,6 +121,7 @@
         "cn_forwarder": "Porteur",
         "cn_harvester": "Moissonneuse",
         "cn_log_harvester": "Abatteuse",
+        "cn_mix_tank": "Cuve de mélange",
         "cn_aircraft_engine": "Moteur d'avion"
     },
     "ets2 trailers": {

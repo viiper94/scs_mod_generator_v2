@@ -121,6 +121,7 @@
         "cn_forwarder": "Forwarder",
         "cn_harvester": "Maaidorser",
         "cn_log_harvester": "Velmachine",
+        "cn_mix_tank": "Mix Tank",
         "cn_aircraft_engine": "Vliegtuigmotor"
     },
     "ets2 trailers": {

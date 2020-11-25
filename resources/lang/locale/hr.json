@@ -121,6 +121,7 @@
         "cn_forwarder": "Forwarder",
         "cn_harvester": "Harvester",
         "cn_log_harvester": "Log Harvester",
+        "cn_mix_tank": "Mix Tank",
         "cn_aircraft_engine": "Zrakoplovni motor"
     },
     "ets2 trailers": {

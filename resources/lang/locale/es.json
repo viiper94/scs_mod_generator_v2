@@ -121,6 +121,7 @@
         "cn_forwarder": "Transportador forestal",
         "cn_harvester": "Cosechadora",
         "cn_log_harvester": "Cosechadora forestal",
+        "cn_mix_tank": "Depósito de mezclado",
         "cn_aircraft_engine": "Motor de aeronave"
     },
     "ets2 trailers": {

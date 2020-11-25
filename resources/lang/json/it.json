@@ -158,6 +158,9 @@
         }
     },
     "ets2 trailers": {
+        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
+        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
+        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
         "aero": "Aerodinamico",
         "steer": "Sterzabile"
     },
@@ -184,6 +187,7 @@
         "cars_magnum": "Dodge",
         "cars_mustang": "Ford",
         "cars_tesla": "Tesla",
+        "log_grab": "Log Grab",
         "v1": "var. 1",
         "v2": "var. 2",
         "v3": "var. 3",
@@ -214,6 +218,7 @@
         "yellow": "Giallo",
         "red": "Rosso",
         "gray": "Grigio",
+        "orange": "Orange",
         "black": "Nero"
     }
 }

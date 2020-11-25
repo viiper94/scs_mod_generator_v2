@@ -1,4 +1,57 @@
 {
+    "ets2 trailers": {
+        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
+        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
+        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
+        "aero": "Aerodynamisch",
+        "steer": "Lenkbar"
+    },
+    "accessories": {
+        "log_grab": "Log Grab",
+        "cars_balt1": "Mercedes-Benz",
+        "cars_balt2": "Hyundai",
+        "cars_it": "Fiat, Alfa",
+        "cars_dacia": "Dacia",
+        "cars_fr": "Peugeot, Citroen",
+        "cars_octavia": "Škoda",
+        "cars_smax": "Ford",
+        "cars_volvo": "Volvo",
+        "cars_magnum": "Dodge",
+        "cars_mustang": "Ford",
+        "cars_tesla": "Tesla",
+        "v1": "Škoda variante 1",
+        "v2": "Škoda variante 2",
+        "v3": "Škoda variante 3",
+        "cn_container": "Container",
+        "cn_container_40r": "40' Container",
+        "cn_nextgen_scania_trucks": "Nächste Generation Scania LKWs",
+        "cn_daf_trucks": "DAF LKWs",
+        "cn_man_trucks": "MAN LKWs",
+        "cover": "Abdeckung",
+        "large": "Groß",
+        "small": "Klein",
+        "2x4": "2x4m",
+        "3x4": "3x4m"
+    },
+    "shared": {
+        "orange": "Orange",
+        "double": "Doppel",
+        "bdouble": "B-Doppel",
+        "triple": "Dreifach",
+        "open_side": "Schiebegardinen geöffnet",
+        "open_doors": "Anhängertür geöffnet",
+        "ext": "Erweiterbar",
+        "short": "Kurz",
+        "long": "Lang",
+        "blue": "Blau",
+        "green": "Grün",
+        "silver": "Silber",
+        "white": "Weiß",
+        "yellow": "Gelb",
+        "red": "Rot",
+        "gray": "Grau",
+        "black": "Schwarz"
+    },
     "general": {
         "choose_language": "Wähle eine Sprache",
         "help_translate": "Du kannst uns helfen, die Webseite in eine andere Sprache zu übersetzen.",
@@ -157,10 +210,6 @@
             "dimensions": "Maximale Bildauflösung 3000x3000px"
         }
     },
-    "ets2 trailers": {
-        "aero": "Aerodynamisch",
-        "steer": "Lenkbar"
-    },
     "ats trailers": {
         "rm_double": "R.M. Doppel",
         "tp": "Turnpike Doppel",
@@ -171,49 +220,5 @@
         "default": "Farbig",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller Schwarz und Rot"
-    },
-    "accessories": {
-        "cars_balt1": "Mercedes-Benz",
-        "cars_balt2": "Hyundai",
-        "cars_it": "Fiat, Alfa",
-        "cars_dacia": "Dacia",
-        "cars_fr": "Peugeot, Citroen",
-        "cars_octavia": "Škoda",
-        "cars_smax": "Ford",
-        "cars_volvo": "Volvo",
-        "cars_magnum": "Dodge",
-        "cars_mustang": "Ford",
-        "cars_tesla": "Tesla",
-        "v1": "Škoda variante 1",
-        "v2": "Škoda variante 2",
-        "v3": "Škoda variante 3",
-        "cn_container": "Container",
-        "cn_container_40r": "40' Container",
-        "cn_nextgen_scania_trucks": "Nächste Generation Scania LKWs",
-        "cn_daf_trucks": "DAF LKWs",
-        "cn_man_trucks": "MAN LKWs",
-        "cover": "Abdeckung",
-        "large": "Groß",
-        "small": "Klein",
-        "2x4": "2x4m",
-        "3x4": "3x4m"
-    },
-    "shared": {
-        "double": "Doppel",
-        "bdouble": "B-Doppel",
-        "triple": "Dreifach",
-        "open_side": "Schiebegardinen geöffnet",
-        "open_doors": "Anhängertür geöffnet",
-        "ext": "Erweiterbar",
-        "short": "Kurz",
-        "long": "Lang",
-        "blue": "Blau",
-        "green": "Grün",
-        "silver": "Silber",
-        "white": "Weiß",
-        "yellow": "Gelb",
-        "red": "Rot",
-        "gray": "Grau",
-        "black": "Schwarz"
     }
 }

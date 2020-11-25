@@ -121,6 +121,7 @@
         "cn_forwarder": "Transporter",
         "cn_harvester": "Mejetærsker",
         "cn_log_harvester": "Træhøster",
+        "cn_mix_tank": "Blandet tank",
         "cn_aircraft_engine": "Flymotor"
     },
     "ets2 trailers": {
