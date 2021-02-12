@@ -2,9 +2,9 @@
 
 namespace Illuminate\Database\Console\Migrations;
 
-use Illuminate\Support\Str;
-use Illuminate\Support\Composer;
 use Illuminate\Database\Migrations\MigrationCreator;
+use Illuminate\Support\Composer;
+use Illuminate\Support\Str;
 
 class MigrateMakeCommand extends BaseCommand
 {
@@ -101,7 +101,7 @@ class MigrateMakeCommand extends BaseCommand
      *
      * @param  string  $name
      * @param  string  $table
-     * @param  bool    $create
+     * @param  bool  $create
      * @return string
      */
     protected function writeMigration($name, $table, $create)
@@ -131,15 +131,5 @@ class MigrateMakeCommand extends BaseCommand
         }
 
         return parent::getMigrationPath();
-    }
-
-    /**
-     * Determine if the given path(s) are pre-resolved "real" paths.
-     *
-     * @return bool
-     */
-    protected function usingRealPath()
-    {
-        return $this->input->hasOption('realpath') && $this->option('realpath');
     }
 }

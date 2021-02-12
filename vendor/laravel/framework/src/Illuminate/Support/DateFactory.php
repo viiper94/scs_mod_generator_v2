@@ -115,6 +115,7 @@ class DateFactory
      * Use the given handler when generating dates (class name, callable, or factory).
      *
      * @param  mixed  $handler
+     * @return mixed
      *
      * @throws \InvalidArgumentException
      */
@@ -216,7 +217,7 @@ class DateFactory
             return $dateClass::$method(...$parameters);
         }
 
-        // If that fails, create the date with the default class..
+        // If that fails, create the date with the default class...
         $date = $defaultClassName::$method(...$parameters);
 
         // If the configured class has an "instance" method, we'll try to pass our date into there...

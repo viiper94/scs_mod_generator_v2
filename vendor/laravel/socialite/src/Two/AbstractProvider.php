@@ -3,11 +3,10 @@
 namespace Laravel\Socialite\Two;
 
 use GuzzleHttp\Client;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Illuminate\Http\Request;
-use GuzzleHttp\ClientInterface;
-use Illuminate\Http\RedirectResponse;
 use Laravel\Socialite\Contracts\Provider as ProviderContract;
 
 abstract class AbstractProvider implements ProviderContract
@@ -90,6 +89,13 @@ abstract class AbstractProvider implements ProviderContract
     protected $guzzle = [];
 
     /**
+     * The cached user instance.
+     *
+     * @var \Laravel\Socialite\Two\User|null
+     */
+    protected $user;
+
+    /**
      * Create a new provider instance.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -156,7 +162,7 @@ abstract class AbstractProvider implements ProviderContract
     }
 
     /**
-     * Get the authentication URL for the provider.
+     * Build the authentication URL for the provider from the given base URL.
      *
      * @param  string  $url
      * @param  string  $state
@@ -206,17 +212,21 @@ abstract class AbstractProvider implements ProviderContract
      */
     public function user()
     {
+        if ($this->user) {
+            return $this->user;
+        }
+
         if ($this->hasInvalidState()) {
             throw new InvalidStateException;
         }
 
         $response = $this->getAccessTokenResponse($this->getCode());
 
-        $user = $this->mapUserToObject($this->getUserByToken(
+        $this->user = $this->mapUserToObject($this->getUserByToken(
             $token = Arr::get($response, 'access_token')
         ));
 
-        return $user->setToken($token)
+        return $this->user->setToken($token)
                     ->setRefreshToken(Arr::get($response, 'refresh_token'))
                     ->setExpiresIn(Arr::get($response, 'expires_in'));
     }
@@ -258,11 +268,9 @@ abstract class AbstractProvider implements ProviderContract
      */
     public function getAccessTokenResponse($code)
     {
-        $postKey = (version_compare(ClientInterface::VERSION, '6') === 1) ? 'form_params' : 'body';
-
         $response = $this->getHttpClient()->post($this->getTokenUrl(), [
             'headers' => ['Accept' => 'application/json'],
-            $postKey => $this->getTokenFields($code),
+            'form_params' => $this->getTokenFields($code),
         ]);
 
         return json_decode($response->getBody(), true);
@@ -277,6 +285,7 @@ abstract class AbstractProvider implements ProviderContract
     protected function getTokenFields($code)
     {
         return [
+            'grant_type' => 'authorization_code',
             'client_id' => $this->clientId,
             'client_secret' => $this->clientSecret,
             'code' => $code,

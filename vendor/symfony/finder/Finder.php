@@ -38,9 +38,9 @@ use Symfony\Component\Finder\Iterator\SortableIterator;
  */
 class Finder implements \IteratorAggregate, \Countable
 {
-    const IGNORE_VCS_FILES = 1;
-    const IGNORE_DOT_FILES = 2;
-    const IGNORE_VCS_IGNORED_FILES = 4;
+    public const IGNORE_VCS_FILES = 1;
+    public const IGNORE_DOT_FILES = 2;
+    public const IGNORE_VCS_IGNORED_FILES = 4;
 
     private $mode = 0;
     private $names = [];
@@ -336,13 +336,11 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This option is enabled by default.
      *
-     * @param bool $ignoreDotFiles Whether to exclude "hidden" files or not
-     *
      * @return $this
      *
      * @see ExcludeDirectoryFilterIterator
      */
-    public function ignoreDotFiles($ignoreDotFiles)
+    public function ignoreDotFiles(bool $ignoreDotFiles)
     {
         if ($ignoreDotFiles) {
             $this->ignore |= static::IGNORE_DOT_FILES;
@@ -358,13 +356,11 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This option is enabled by default.
      *
-     * @param bool $ignoreVCS Whether to exclude VCS files or not
-     *
      * @return $this
      *
      * @see ExcludeDirectoryFilterIterator
      */
-    public function ignoreVCS($ignoreVCS)
+    public function ignoreVCS(bool $ignoreVCS)
     {
         if ($ignoreVCS) {
             $this->ignore |= static::IGNORE_VCS_FILES;
@@ -432,19 +428,12 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This can be slow as all the matching files and directories must be retrieved for comparison.
      *
-     * @param bool $useNaturalSort Whether to use natural sort or not, disabled by default
-     *
      * @return $this
      *
      * @see SortableIterator
      */
-    public function sortByName(/* bool $useNaturalSort = false */)
+    public function sortByName(bool $useNaturalSort = false)
     {
-        if (\func_num_args() < 1 && __CLASS__ !== static::class && __CLASS__ !== (new \ReflectionMethod($this, __FUNCTION__))->getDeclaringClass()->getName() && !$this instanceof \PHPUnit\Framework\MockObject\MockObject && !$this instanceof \Prophecy\Prophecy\ProphecySubjectInterface && !$this instanceof \Mockery\MockInterface) {
-            @trigger_error(sprintf('The "%s()" method will have a new "bool $useNaturalSort = false" argument in version 5.0, not defining it is deprecated since Symfony 4.2.', __METHOD__), \E_USER_DEPRECATED);
-        }
-        $useNaturalSort = 0 < \func_num_args() && func_get_arg(0);
-
         $this->sort = $useNaturalSort ? Iterator\SortableIterator::SORT_BY_NAME_NATURAL : Iterator\SortableIterator::SORT_BY_NAME;
 
         return $this;
@@ -568,13 +557,11 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * By default, scanning unreadable directories content throws an AccessDeniedException.
      *
-     * @param bool $ignore
-     *
      * @return $this
      */
-    public function ignoreUnreadableDirs($ignore = true)
+    public function ignoreUnreadableDirs(bool $ignore = true)
     {
-        $this->ignoreUnreadableDirs = (bool) $ignore;
+        $this->ignoreUnreadableDirs = $ignore;
 
         return $this;
     }
@@ -624,7 +611,13 @@ class Finder implements \IteratorAggregate, \Countable
         }
 
         if (1 === \count($this->dirs) && 0 === \count($this->iterators)) {
-            return $this->searchInDirectory($this->dirs[0]);
+            $iterator = $this->searchInDirectory($this->dirs[0]);
+
+            if ($this->sort || $this->reverseSorting) {
+                $iterator = (new Iterator\SortableIterator($iterator, $this->sort, $this->reverseSorting))->getIterator();
+            }
+
+            return $iterator;
         }
 
         $iterator = new \AppendIterator();
@@ -636,6 +629,10 @@ class Finder implements \IteratorAggregate, \Countable
             $iterator->append($it);
         }
 
+        if ($this->sort || $this->reverseSorting) {
+            $iterator = (new Iterator\SortableIterator($iterator, $this->sort, $this->reverseSorting))->getIterator();
+        }
+
         return $iterator;
     }
 
@@ -644,13 +641,11 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * The set can be another Finder, an Iterator, an IteratorAggregate, or even a plain array.
      *
-     * @param iterable $iterator
-     *
      * @return $this
      *
      * @throws \InvalidArgumentException when the given argument is not iterable
      */
-    public function append($iterator)
+    public function append(iterable $iterator)
     {
         if ($iterator instanceof \IteratorAggregate) {
             $this->iterators[] = $iterator->getIterator();
@@ -659,7 +654,8 @@ class Finder implements \IteratorAggregate, \Countable
         } elseif ($iterator instanceof \Traversable || \is_array($iterator)) {
             $it = new \ArrayIterator();
             foreach ($iterator as $file) {
-                $it->append($file instanceof \SplFileInfo ? $file : new \SplFileInfo($file));
+                $file = $file instanceof \SplFileInfo ? $file : new \SplFileInfo($file);
+                $it[$file->getPathname()] = $file;
             }
             $this->iterators[] = $it;
         } else {
@@ -670,7 +666,7 @@ class Finder implements \IteratorAggregate, \Countable
     }
 
     /**
-     * Check if the any results were found.
+     * Check if any results were found.
      *
      * @return bool
      */
@@ -780,11 +776,6 @@ class Finder implements \IteratorAggregate, \Countable
 
         if ($this->paths || $notPaths) {
             $iterator = new Iterator\PathFilterIterator($iterator, $this->paths, $notPaths);
-        }
-
-        if ($this->sort || $this->reverseSorting) {
-            $iteratorAggregate = new Iterator\SortableIterator($iterator, $this->sort, $this->reverseSorting);
-            $iterator = $iteratorAggregate->getIterator();
         }
 
         return $iterator;

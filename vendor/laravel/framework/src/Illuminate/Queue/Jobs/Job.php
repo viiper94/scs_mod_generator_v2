@@ -2,10 +2,10 @@
 
 namespace Illuminate\Queue\Jobs;
 
-use Illuminate\Queue\Events\JobFailed;
-use Illuminate\Support\InteractsWithTime;
 use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Queue\ManuallyFailedException;
+use Illuminate\Support\InteractsWithTime;
 
 abstract class Job
 {
@@ -75,6 +75,16 @@ abstract class Job
     abstract public function getRawBody();
 
     /**
+     * Get the UUID of the job.
+     *
+     * @return string|null
+     */
+    public function uuid()
+    {
+        return $this->payload()['uuid'] ?? null;
+    }
+
+    /**
      * Fire the job.
      *
      * @return void
@@ -111,7 +121,7 @@ abstract class Job
     /**
      * Release the job back into the queue.
      *
-     * @param  int   $delay
+     * @param  int  $delay
      * @return void
      */
     public function release($delay = 0)
@@ -162,7 +172,7 @@ abstract class Job
     /**
      * Delete the job, call the "failed" method, and raise the failed job event.
      *
-     * @param  \Throwable|null $e
+     * @param  \Throwable|null  $e
      * @return void
      */
     public function fail($e = null)
@@ -190,7 +200,7 @@ abstract class Job
     /**
      * Process an exception that caused the job to fail.
      *
-     * @param  \Throwable|null $e
+     * @param  \Throwable|null  $e
      * @return void
      */
     protected function failed($e)
@@ -200,7 +210,7 @@ abstract class Job
         [$class, $method] = JobName::parse($payload['job']);
 
         if (method_exists($this->instance = $this->resolve($class), 'failed')) {
-            $this->instance->failed($payload['data'], $e);
+            $this->instance->failed($payload['data'], $e, $payload['uuid']);
         }
     }
 
@@ -213,6 +223,16 @@ abstract class Job
     protected function resolve($class)
     {
         return $this->container->make($class);
+    }
+
+    /**
+     * Get the resolved job handler instance.
+     *
+     * @return mixed
+     */
+    public function getResolvedJob()
+    {
+        return $this->instance;
     }
 
     /**
@@ -236,13 +256,23 @@ abstract class Job
     }
 
     /**
-     * Get the number of seconds to delay a failed job before retrying it.
+     * Get the number of times to attempt a job after an exception.
      *
      * @return int|null
      */
-    public function delaySeconds()
+    public function maxExceptions()
     {
-        return $this->payload()['delay'] ?? null;
+        return $this->payload()['maxExceptions'] ?? null;
+    }
+
+    /**
+     * The number of seconds to wait before retrying a job that encountered an uncaught exception.
+     *
+     * @return int|null
+     */
+    public function backoff()
+    {
+        return $this->payload()['backoff'] ?? $this->payload()['delay'] ?? null;
     }
 
     /**
@@ -260,9 +290,9 @@ abstract class Job
      *
      * @return int|null
      */
-    public function timeoutAt()
+    public function retryUntil()
     {
-        return $this->payload()['timeoutAt'] ?? null;
+        return $this->payload()['retryUntil'] ?? $this->payload()['timeoutAt'] ?? null;
     }
 
     /**

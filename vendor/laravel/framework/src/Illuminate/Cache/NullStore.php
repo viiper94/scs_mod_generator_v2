@@ -2,16 +2,11 @@
 
 namespace Illuminate\Cache;
 
-class NullStore extends TaggableStore
+use Illuminate\Contracts\Cache\LockProvider;
+
+class NullStore extends TaggableStore implements LockProvider
 {
     use RetrievesMultipleKeys;
-
-    /**
-     * The array of stored values.
-     *
-     * @var array
-     */
-    protected $storage = [];
 
     /**
      * Retrieve an item from the cache by key.
@@ -21,13 +16,14 @@ class NullStore extends TaggableStore
      */
     public function get($key)
     {
+        //
     }
 
     /**
      * Store an item in the cache for a given number of seconds.
      *
      * @param  string  $key
-     * @param  mixed   $value
+     * @param  mixed  $value
      * @param  int  $seconds
      * @return bool
      */
@@ -40,7 +36,7 @@ class NullStore extends TaggableStore
      * Increment the value of an item in the cache.
      *
      * @param  string  $key
-     * @param  mixed   $value
+     * @param  mixed  $value
      * @return int|bool
      */
     public function increment($key, $value = 1)
@@ -52,7 +48,7 @@ class NullStore extends TaggableStore
      * Decrement the value of an item in the cache.
      *
      * @param  string  $key
-     * @param  mixed   $value
+     * @param  mixed  $value
      * @return int|bool
      */
     public function decrement($key, $value = 1)
@@ -64,12 +60,37 @@ class NullStore extends TaggableStore
      * Store an item in the cache indefinitely.
      *
      * @param  string  $key
-     * @param  mixed   $value
+     * @param  mixed  $value
      * @return bool
      */
     public function forever($key, $value)
     {
         return false;
+    }
+
+    /**
+     * Get a lock instance.
+     *
+     * @param  string  $name
+     * @param  int  $seconds
+     * @param  string|null  $owner
+     * @return \Illuminate\Contracts\Cache\Lock
+     */
+    public function lock($name, $seconds = 0, $owner = null)
+    {
+        return new NoLock($name, $seconds, $owner);
+    }
+
+    /**
+     * Restore a lock instance using the owner identifier.
+     *
+     * @param  string  $name
+     * @param  string  $owner
+     * @return \Illuminate\Contracts\Cache\Lock
+     */
+    public function restoreLock($name, $owner)
+    {
+        return $this->lock($name, 0, $owner);
     }
 
     /**

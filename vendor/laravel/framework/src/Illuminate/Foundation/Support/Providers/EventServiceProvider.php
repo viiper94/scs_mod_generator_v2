@@ -2,9 +2,9 @@
 
 namespace Illuminate\Foundation\Support\Providers;
 
+use Illuminate\Foundation\Events\DiscoverEvents;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\Events\DiscoverEvents;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -27,19 +27,31 @@ class EventServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    public function register()
+    {
+        $this->booting(function () {
+            $events = $this->getEvents();
+
+            foreach ($events as $event => $listeners) {
+                foreach (array_unique($listeners) as $listener) {
+                    Event::listen($event, $listener);
+                }
+            }
+
+            foreach ($this->subscribe as $subscriber) {
+                Event::subscribe($subscriber);
+            }
+        });
+    }
+
+    /**
+     * Boot any application services.
+     *
+     * @return void
+     */
     public function boot()
     {
-        $events = $this->getEvents();
-
-        foreach ($events as $event => $listeners) {
-            foreach (array_unique($listeners) as $listener) {
-                Event::listen($event, $listener);
-            }
-        }
-
-        foreach ($this->subscribe as $subscriber) {
-            Event::subscribe($subscriber);
-        }
+        //
     }
 
     /**

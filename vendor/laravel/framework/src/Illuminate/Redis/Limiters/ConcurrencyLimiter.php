@@ -2,9 +2,9 @@
 
 namespace Illuminate\Redis\Limiters;
 
-use Exception;
-use Illuminate\Support\Str;
 use Illuminate\Contracts\Redis\LimiterTimeoutException;
+use Illuminate\Support\Str;
+use Throwable;
 
 class ConcurrencyLimiter
 {
@@ -61,7 +61,7 @@ class ConcurrencyLimiter
      * @return bool
      *
      * @throws \Illuminate\Contracts\Redis\LimiterTimeoutException
-     * @throws \Exception
+     * @throws \Throwable
      */
     public function block($timeout, $callback = null)
     {
@@ -82,7 +82,7 @@ class ConcurrencyLimiter
                 return tap($callback(), function () use ($slot, $id) {
                     $this->release($slot, $id);
                 });
-            } catch (Exception $exception) {
+            } catch (Throwable $exception) {
                 $this->release($slot, $id);
 
                 throw $exception;
@@ -95,8 +95,7 @@ class ConcurrencyLimiter
     /**
      * Attempt to acquire the lock.
      *
-     * @param string $id A unique identifier for this lock
-     *
+     * @param  string  $id  A unique identifier for this lock
      * @return mixed
      */
     protected function acquire($id)
@@ -126,7 +125,7 @@ class ConcurrencyLimiter
         return <<<'LUA'
 for index, value in pairs(redis.call('mget', unpack(KEYS))) do
     if not value then
-        redis.call('set', ARGV[1]..index, ARGV[3], "EX", ARGV[2])
+        redis.call('set', KEYS[index], ARGV[3], "EX", ARGV[2])
         return ARGV[1]..index
     end
 end
@@ -136,8 +135,8 @@ LUA;
     /**
      * Release the lock.
      *
-     * @param  string $key
-     * @param  string $id
+     * @param  string  $key
+     * @param  string  $id
      * @return void
      */
     protected function release($key, $id)

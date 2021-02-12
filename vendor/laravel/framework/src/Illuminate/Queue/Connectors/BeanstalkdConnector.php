@@ -2,9 +2,9 @@
 
 namespace Illuminate\Queue\Connectors;
 
+use Illuminate\Queue\BeanstalkdQueue;
 use Pheanstalk\Connection;
 use Pheanstalk\Pheanstalk;
-use Illuminate\Queue\BeanstalkdQueue;
 
 class BeanstalkdConnector implements ConnectorInterface
 {
@@ -20,7 +20,8 @@ class BeanstalkdConnector implements ConnectorInterface
             $this->pheanstalk($config),
             $config['queue'],
             $config['retry_after'] ?? Pheanstalk::DEFAULT_TTR,
-            $config['block_for'] ?? 0
+            $config['block_for'] ?? 0,
+            $config['after_commit'] ?? null
         );
     }
 

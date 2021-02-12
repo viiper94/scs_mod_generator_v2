@@ -2,16 +2,16 @@
 
 namespace Illuminate\Foundation\Providers;
 
-use Illuminate\Support\AggregateServiceProvider;
-use Illuminate\Database\MigrationServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Database\MigrationServiceProvider;
+use Illuminate\Support\AggregateServiceProvider;
 
 class ConsoleSupportServiceProvider extends AggregateServiceProvider implements DeferrableProvider
 {
     /**
      * The provider class names.
      *
-     * @var array
+     * @var string[]
      */
     protected $providers = [
         ArtisanServiceProvider::class,

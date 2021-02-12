@@ -3,7 +3,6 @@
 namespace Illuminate\Database\Eloquent\Relations;
 
 use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Builder;
 
 class MorphPivot extends Pivot
 {
@@ -31,11 +30,24 @@ class MorphPivot extends Pivot
      * @param  \Illuminate\Database\Eloquent\Builder  $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function setKeysForSaveQuery(Builder $query)
+    protected function setKeysForSaveQuery($query)
     {
         $query->where($this->morphType, $this->morphClass);
 
         return parent::setKeysForSaveQuery($query);
+    }
+
+    /**
+     * Set the keys for a select query.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    protected function setKeysForSelectQuery($query)
+    {
+        $query->where($this->morphType, $this->morphClass);
+
+        return parent::setKeysForSelectQuery($query);
     }
 
     /**
@@ -45,11 +57,21 @@ class MorphPivot extends Pivot
      */
     public function delete()
     {
+        if (isset($this->attributes[$this->getKeyName()])) {
+            return (int) parent::delete();
+        }
+
+        if ($this->fireModelEvent('deleting') === false) {
+            return 0;
+        }
+
         $query = $this->getDeleteQuery();
 
         $query->where($this->morphType, $this->morphClass);
 
-        return $query->delete();
+        return tap($query->delete(), function () {
+            $this->fireModelEvent('deleted', false);
+        });
     }
 
     /**
@@ -129,6 +151,8 @@ class MorphPivot extends Pivot
      */
     protected function newQueryForCollectionRestoration(array $ids)
     {
+        $ids = array_values($ids);
+
         if (! Str::contains($ids[0], ':')) {
             return parent::newQueryForRestoration($ids);
         }
