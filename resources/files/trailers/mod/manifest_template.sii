@@ -5,5 +5,6 @@ SiiNunit{
 		category[]: "trailer"
 		icon: "mod_icon.jpg"
 		compatible_versions[]: "1.39.*"
+		compatible_versions[]: "1.40.*"
 	}
 }
