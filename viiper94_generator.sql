@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Лис 25 2020 р., 19:37
--- Версія сервера: 10.4.11-MariaDB
--- Версія PHP: 7.4.3
+-- Час створення: Лют 13 2021 р., 10:59
+-- Версія сервера: 10.4.17-MariaDB
+-- Версія PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -584,11 +583,11 @@ INSERT INTO `chassis` (`id`, `parent_trailer`, `chain_type_size`, `trailers`, `a
 (466675, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_2_ext.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_2_ext', 'bs_scs_lowloader__%(__tn_single_2axle_ext_long__%)', 'scs_lowloader_2_ext', 'scs_lowloader_long', 'scs_lowloader_2_ext', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowloader/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 07:48:06', '2020-11-08 12:48:49'),
 (466676, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_4.sii\",\"body\":null,\"axles\":\"4\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_4', 'bs_scs_lowloader__%(__tn_single_4axle_ext_short__%)', 'scs_lowloader_4', 'scs_lowloader', 'scs_lowloader_4', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowloader/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 07:49:57', '2020-11-08 12:50:18'),
 (466677, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_4_2.sii\",\"body\":null,\"axles\":\"6\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_4_2', 'bs_scs_lowloader__%(__2+4axle_ext_short__%)', 'scs_lowloader_4_2', 'scs_lowloader_4_2', 'scs_lowloader_4_2', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowbed/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 07:51:45', '2020-11-08 12:50:27'),
-(466678, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_4_2_ext.sii\",\"body\":null,\"axles\":\"6\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_4_2_ext', 'bs_scs_lowloader__%(__2+4axle_ext_long__%)', 'scs_lowloader_4_2_ext', 'scs_lowloader_4_2_long', 'scs_lowloader_4_2_ext', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowloader/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 07:59:38', '2020-11-08 12:49:58'),
+(466678, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_4_2_ext.sii\",\"body\":null,\"axles\":\"6\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_4_2_ext', 'bs_scs_lowloader__%(__2+4axle_ext_long__%)', 'scs_lowloader_4_2_ext', 'scs_lowloader_4_2_long', 'scs_lowloader_4_2_ext', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowloader/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 0, NULL, 1, '2020-11-08 07:59:38', '2021-01-03 10:53:20'),
 (466679, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_4_ext.sii\",\"body\":null,\"axles\":\"4\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_4_ext', 'bs_scs_lowloader__%(__tn_single_4axle_ext_long__%)', 'scs_lowloader_4_ext', 'scs_lowloader_long', 'scs_lowloader_4_ext', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowbed/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 08:00:28', '2020-11-08 12:50:11'),
 (466680, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowbed\\/ch_4.sii\",\"body\":null,\"axles\":\"4\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowbed_4', 'bs_scs_lowbed__%(__tn_single_4axle_ext_short__%)', 'scs_lowbed_4', 'scs_lowbed', 'scs_lowbed_4', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowbed/custom_paint_job/red.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 13:22:50', '2020-11-08 13:23:40'),
 (466681, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowbed\\/ch_4_1.sii\",\"body\":null,\"axles\":\"5\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowbed_4_1', 'bs_scs_lowbed__%(__tn_single_1_4axle__%)', 'scs_lowbed_4_1', 'scs_lowbed_long', 'scs_lowbed_4_1', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowbed/custom_paint_job/red.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 13:23:48', '2020-11-08 13:24:28'),
-(466682, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowbed\\/ch_7_3.sii\",\"body\":null,\"axles\":\"10\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowbed_7_3', 'bs_scs_lowbed__%(__3+7axle_ext_long__%)', 'scs_lowbed_7_3', 'scs_lowbed_7_3', 'scs_lowbed_7_3', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowbed/custom_paint_job/red.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 13:24:39', '2020-11-08 13:25:21'),
+(466682, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowbed\\/ch_7_3.sii\",\"body\":null,\"axles\":\"10\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowbed_7_3', 'bs_scs_lowbed__%(__3+7axle_ext_long__%)', 'scs_lowbed_7_3', 'scs_lowbed_7_3', 'scs_lowbed_7_3', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowbed/custom_paint_job/red.sii', 1, 0, 0, 'ets2', 0, NULL, 1, '2020-11-08 13:24:39', '2021-01-03 10:52:58'),
 (466683, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/ch_3.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'lowboy_3', 'lowboy__%(__3ax__%)', 'lowboy_3', 'lowboy_3', 'lowboy', 13, 'r', 1, 0, 1, 1, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii', 1, 0, 0, 'ats', 1, NULL, 1, '2020-11-13 06:46:25', '2020-11-13 06:59:42'),
 (466684, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/ch_3_wood.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'lowboy_3_wood', 'bs_wood_lowboy', 'lowboy_3', 'lowboy_3', 'lowboy', 13, 'r', 1, 0, 1, 1, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii', 1, 0, 0, 'ats', 1, NULL, 1, '2020-11-13 06:50:53', '2020-11-13 06:59:19'),
 (466685, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/jeep_3.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":{\"1\":{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/accessory\\/cables_jeep.sii\"}}},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/ch_3_fn_hook_long.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"trlr_cables\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/accessory\\/cables_trailer.sii\"}]},{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/spreader_3.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\",\"accessories\":[{\"name\":\"flag_r_r\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/accessory\\/flag_r_r.sii\"},{\"name\":\"flag_r_l\",\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/accessory\\/flag_r_l.sii\"}]}]', 'lowboy_triple_3_long', 'triple__lowboy__%(__long__%)', 'lowboy_triple_3', 'lowboy_3_long', 'lowboy_3_long', 13, 'r', 1, 1, 1, 1, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii', 1, 0, 0, 'ats', 1, NULL, 1, '2020-11-13 07:12:53', '2020-11-13 07:15:18'),
@@ -2704,7 +2703,20 @@ INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`,
 (6197, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii', 'red', 'red', 'lowboy', 'ats', NULL, 0, 1, 0, '2020-11-25 15:50:30', '2020-11-25 15:50:41'),
 (6198, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii', 'blue', 'blue', 'lowboy', 'ats', NULL, 0, 1, 0, '2020-11-25 15:51:06', '2020-11-25 15:51:15'),
 (6199, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii', 'red', 'red', 'lowboy_3_long', 'ats', NULL, 0, 1, 0, '2020-11-25 15:51:23', '2020-11-25 15:52:09'),
-(6200, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii', 'blue', 'blue', 'lowboy_3_long', 'ats', NULL, 0, 1, 0, '2020-11-25 15:52:19', '2020-11-25 15:52:28');
+(6200, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii', 'blue', 'blue', 'lowboy_3_long', 'ats', NULL, 0, 1, 0, '2020-11-25 15:52:19', '2020-11-25 15:52:28'),
+(6201, '/def/vehicle/trailer_owned/scs.log/paint_job/color_metallic.sii', 'metallic', 'metallic', 'log_trailer', 'ets2', NULL, 1, 1, 1, '2021-02-12 06:42:13', '2021-02-12 06:42:22'),
+(6202, '/def/vehicle/trailer_owned/scs.box/paint_job/color_metallic.sii', 'metallic', 'metallic', 'dry_van', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:36:40', '2021-02-13 06:38:20'),
+(6203, '/def/vehicle/trailer_owned/scs.box/paint_job/color_metallic.sii', 'metallic', 'metallic', 'insulated', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:38:26', '2021-02-13 06:38:45'),
+(6204, '/def/vehicle/trailer_owned/scs.box/paint_job/color_metallic.sii', 'metallic', 'metallic', 'moving_floor', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:38:51', '2021-02-13 06:39:00'),
+(6205, '/def/vehicle/trailer_owned/scs.box/paint_job/color_metallic.sii', 'metallic', 'metallic', 'curtain_sider', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:39:07', '2021-02-13 06:39:28'),
+(6206, '/def/vehicle/trailer_owned/scs.box/paint_job/color_metallic.sii', 'metallic', 'metallic', 'refrigerated', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:39:49', '2021-02-13 06:40:07'),
+(6207, '/def/vehicle/trailer_owned/scs.flatbed/paint_job/color_metallic.sii', 'metallic', 'metallic', 'flat_bed', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:42:37', '2021-02-13 06:42:57'),
+(6208, '/def/vehicle/trailer_owned/scs.gooseneck/paint_job/color_metallic.sii', 'metallic', 'metallic', 'container', 'ets2', NULL, 1, 1, 1, '2021-02-13 06:43:29', '2021-02-13 06:43:57'),
+(6209, '/def/vehicle/trailer_owned/krone.profiliner/paint_job/color_metallic.sii', 'metallic', 'metallic', 'krone_profiliner', 'ets2', 12, 1, 1, 1, '2021-02-13 06:45:21', '2021-02-13 06:47:08'),
+(6210, '/def/vehicle/trailer_owned/krone.dryliner/paint_job/color_metallic.sii', 'metallic', 'metallic', 'krone_dryliner', 'ets2', 12, 1, 1, 1, '2021-02-13 06:46:14', '2021-02-13 06:47:00'),
+(6211, '/def/vehicle/trailer_owned/krone.coolliner/paint_job/color_metallic.sii', 'metallic', 'metallic', 'krone_coolliner', 'ets2', 12, 1, 1, 1, '2021-02-13 06:47:12', '2021-02-13 06:47:22'),
+(6212, '/def/vehicle/trailer_owned/schwmuller.curtain/paint_job/color_metallic.sii', 'metallic', 'metallic', 'schw_curtain', 'ets2', 4, 1, 1, 1, '2021-02-13 06:48:11', '2021-02-13 06:49:02'),
+(6213, '/def/vehicle/trailer_owned/schwmuller.reefer/paint_job/color_metallic.sii', 'metallic', 'metallic', 'schw_reefer', 'ets2', 4, 1, 1, 1, '2021-02-13 06:49:06', '2021-02-13 06:49:21');
 
 -- --------------------------------------------------------
 
@@ -2917,7 +2929,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `paints`
 --
 ALTER TABLE `paints`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6201;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6214;
 
 --
 -- AUTO_INCREMENT для таблиці `settings`
