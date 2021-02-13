@@ -113,11 +113,13 @@ class AdminLanguagesController extends Controller{
             $aliases = json_decode(file_get_contents(resource_path('files/alias_to_cn.json')), true);
             $result = array();
             foreach($aliases as $type => $cn_arr){
-                foreach($cn_arr as $cn){
+                foreach($cn_arr as $target => $cn){
                     $pattern = '%key\[\]:\s"'.$cn.'"\n\tval\[\]:\s"([^"]+)"\s.{0,}\n%';
                     preg_match($pattern, $content, $matches);
                     if(!isset($matches[1])) dd('"'.$cn.'" not found @ '.$locale.'!');
-                    $result[$type][$cn] = trim($matches[1]);
+                    // if key starts with % it will be used as key for the final array
+                    if(stripos($target, '%') !== false) $result[$type][str_replace('%', '', $target)] = trim($matches[1]);
+                    else $result[$type][$cn] = trim($matches[1]);
                 }
             }
 
