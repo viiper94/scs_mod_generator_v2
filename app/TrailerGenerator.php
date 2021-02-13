@@ -280,6 +280,8 @@ class TrailerGenerator extends ModGenerator{
                     $output_string .= "\nvehicle_paint_job_accessory: .$trailer_name.paint_job\n{\n";
                     if($this->paintJob->with_color){
                         $output_string .= "\tbase_color: (".$this->paintJob->color.")\n";
+                        $output_string .= "\tflip_color: (".$this->paintJob->color.")\n";
+                        $output_string .= "\tflake_color: (".$this->paintJob->color.")\n";
                     }
                     $output_string .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n";
                 }
@@ -408,10 +410,10 @@ class TrailerGenerator extends ModGenerator{
                 $output_string .= "vehicle_paint_job_accessory: .$key.paint_job\n{\n";
                 if($this->paintJob->with_color){
                     $output_string .= "\tbase_color: (".$this->paintJob->color.")\n";
-                    $output_string .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n\n";
-                }else{
-                    $output_string .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n\n";
+                    $output_string .= "\tflip_color: (".$this->paintJob->color.")\n";
+                    $output_string .= "\tflake_color: (".$this->paintJob->color.")\n";
                 }
+                $output_string .= "\tdata_path: \"".$this->paintJob->def."\"\n}\n\n";
             }elseif($this->chassis->supports_wheels && !$this->chassis->custemWheels){
                 $output_string .= "vehicle_paint_job_accessory: .$key.paint_job\n{\n";
                 $output_string .= "\tdata_path: \"".Paint::$defaultOwnablePaintJob[$this->game]."\"\n}\n";
