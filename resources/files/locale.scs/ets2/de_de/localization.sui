@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "Vorhänge" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Klimaanlagen-Deko" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Bett-Deko" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Hängendes Zubehör" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "Zubehör Bodenmitte" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Kissen"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Cockpit-Sets" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3429,6 +3438,9 @@
 	key[]: "color_enhancement"
 	val[]: "Farbkorrektur" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflexionsskalierung" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Spiegelungsdetails" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Hinweis: Aktivierte Differentialsperre während normaler Fahrt kann Schäden verursachen.<br>Taste zur Deaktivierung:"
 
+	key[]: "tow_hint"
+	val[]: "Wenn du deinen Lkw von alleine nicht mehr bewegen kannst, solltest du den Abschleppdienst rufen. Drücke:"
+
 	key[]: "ferry_msg"
 	val[]: "Um mögliche Fahrtziele anzuzeigen, drücken Sie:"
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "Kontaminiertes Material"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19-Impfstoff"
 
 	key[]: "cn_cyanide"
 	val[]: "Zyanid"
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WESZ" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "Bastia"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Bergen"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Mütze" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Becher" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Beige Decke"
+
+	key[]: "blanket_square"
+	val[]: "Quadrat-Decke"
+
+	key[]: "book"
+	val[]: "Buch"
+
+	key[]: "bottle_sixpack"
+	val[]: "Flaschen-Sechserpack"
+
+	key[]: "breakfast_cereals"
+	val[]: "Müsli"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog-Wackelkopffigur"
+
+	key[]: "cap"
+	val[]: "Mütze"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Handy"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua-Wackelkopffigur"
+
+	key[]: "dashboard"
+	val[]: "Armaturenbrett"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Lieferungs-Bericht"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrische Kühlbox"
+
+	key[]: "endless_nourishment"
+	val[]: "Endlos-Nahrung"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2-Spielehülle"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2-Vesperdose"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2-Lkw-Tasche"
+
+	key[]: "festive_mug"
+	val[]: "Festliche Tasse"
+
+	key[]: "fire_extinguisher"
+	val[]: "Feuerlöscher"
+
+	key[]: "hand_bag"
+	val[]: "Handtasche"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Leder-Geldbeutel"
+
+	key[]: "hula_doll"
+	val[]: "Hula-Puppe"
+
+	key[]: "instant_lunch"
+	val[]: "Fertigmahlzeit"
+
+	key[]: "instant_lunch_box"
+	val[]: "Fertigmahlzeiten-Pack"
+
+	key[]: "magazines"
+	val[]: "Magazine"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magneto-induktiver Kompass"
+
+	key[]: "map"
+	val[]: "Karte"
+
+	key[]: "notebook"
+	val[]: "Laptop"
+
+	key[]: "paper_towels"
+	val[]: "Papier-Tücher"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilotenbrille"
+
+	key[]: "plush_bear"
+	val[]: "Teddy-Bär"
+
+	key[]: "portable_navigator"
+	val[]: "Navigationsgerät"
+
+	key[]: "rugged_style_cap"
+	val[]: "Kappe"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS-Kaffeetasse"
+
+	key[]: "sleeping_bag"
+	val[]: "Schlafsack"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Decke \"Snow Chill\""
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Kleine Reisetasche"
+
+	key[]: "winter_bauble"
+	val[]: "Winterkugel"
+
+	key[]: "winter_blast_gift"
+	val[]: "Wintergeschenk"
+
+	key[]: "wise_owl_offering"
+	val[]: "Angebot der Weisen Eule"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2-Kissen"
+
+	key[]: "flame_pillow"
+	val[]: "Flammen-Kissen"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear-Kissen"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Sweet-Home-Kissen"
+
+	key[]: "skull_pillow"
+	val[]: "Totenkopf-Kissen"
+
+	key[]: "status_pillow"
+	val[]: "Status-Kissen"
+
+	key[]: "track_pillow"
+	val[]: "Track-Kissen"
+
+	key[]: "trucker_pillow"
+	val[]: "Trucker-Kissen"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavs Kissen"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Kissen \"Weises Herz\""
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ-Kissen"
+
+
+	key[]: "air_freshener"
+	val[]: "Luftauffrischer"
+
+	key[]: "detective_head"
+	val[]: "Detektiv-Kopf"
+
+	key[]: "vampire_head"
+	val[]: "Vampir-Kopf"
+
+	key[]: "viking_head"
+	val[]: "Wikinger-Kopf"
+
+	key[]: "smelling_sack"
+	val[]: "Duftsäckchen"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Apfel-Luftauffrischer"
+
+	key[]: "basketball_ball"
+	val[]: "Basketball"
+
+	key[]: "black_plush_cube"
+	val[]: "Schwarzer Plüsch-Würfel"
+
+	key[]: "chromed_skull"
+	val[]: "Verchromter Schädel"
+
+	key[]: "disco_ball"
+	val[]: "Diskokugel"
+
+	key[]: "eight_ball"
+	val[]: "Achter-Ball"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2-Luftauffrischer"
+
+	key[]: "football_ball"
+	val[]: "Fußball"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker-Abzeichen"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Hope Trucker-Abzeichen"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS-Luftauffrischer"
+
+	key[]: "tennis_ball"
+	val[]: "Tennisball"
+
+	key[]: "trophy_skull"
+	val[]: "Schädeltrophäe"
+
+	key[]: "white_plush_cube"
+	val[]: "Weißer Plüsch-Würfel"
+
 
 	key[]: "black_style_mug"
 	val[]: "Schwarzer Becher" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "Große Ablage 'Schwarz'" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "Standard" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "Chrom" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Lackiert mit Chrom" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "Standard UK 2013" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exklusiv" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "Reflektor, weiß"
 
-	key[]: "basic_chrome"
-	val[]: "Standard, verchromt" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Basic" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Standard, verchromt" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Standard, lackiert" #+ type of sideskirts, painted
+	val[]: "Standard, lackiert" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Vollschutz, zwei verchromte Schutzrohre" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -10482,7 +10731,7 @@
 	val[]: "Aktualisieren" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "Aufträge suchen" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Zufälligen Auftrag annehmen" #+ Connects with server and accept random job in proximity of player's current position
@@ -11233,7 +11482,7 @@
 	val[]: "Persönliches Ziel erreicht!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Event-Seite öffnen" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Fortschritt" #+ The label used to indicate progress of the event.
@@ -11242,13 +11491,13 @@
 	val[]: "INFOS ZUR AKTION" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Aktuelle Events" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Stufe" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "Momentan findet kein Event statt."
 #@}
 
 #+ Trailer ownership
@@ -11714,6 +11963,22 @@
 
 	key[]: "trailer_park_blocked_on_job"
 	val[]: "Auflieger kann im Einsatz nicht zurückgeschickt werden." #+ Message shown when player tries to dimiss trailer while being on a job.
+#@}
+
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "FAHRZEUG-EINSTELLUNGEN"
+
+	key[]: "adj_mirrors"
+	val[]: "Spiegel einstellen"
+
+	key[]: "adj_lights"
+	val[]: "Licht einstellen"
+
+	key[]: "adj_seats"
+	val[]: "Sitz einstellen"
+
 #@}
 
 #+ Trailer body type names.
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Stadtfortschritt wird abgerufen..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Aufträge bis zum nächsten Stern:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Alle Sterne erreicht."
+	key[]: "xmas_delivery_progress"
+	val[]: "Fortschritt Geschenke-Lieferung"
 
 	key[]: "xmas19_map_description"
 	val[]: "Bewege den Mauszeiger über Städte, um den Fortschritt des Weihnachts-Events zu sehen. Besuche $WOTR_URL$, um die vollständige Fortschrittsübersicht anzuzeigen."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Diese Stadt hat ihren Beitrag zum Community-Ziel schon geleistet!<br><br>Warum hilfst du nicht in anderen Städten aus?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Das Community-Ziel ist für diese Städte schon erreicht!<br><br>Willst du nicht nach einer Stadt suchen, in die/von der du Geschenke liefern kannst?"
 
 	key[]: "xmas19_back"
 	val[]: "Zurück"

@@ -459,7 +459,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
-	val[]: "DLC - Goodyear"
+	val[]: "DLC - Goodyear Tyres Pack"
 
 	key[]: "onlineid_eu_goodyear"
 	val[]: "@@package_eut2_goodyear@@"
@@ -505,6 +505,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_supstrip"
 	val[]: "@@package_eut2_sstrip@@"
+	
+	key[]: "package_eut2_ln_year"
+	val[]: "DLC - Lunar New Year Pack"
+
+	key[]: "onlineid_eu_ln_year"
+	val[]: "@@package_eut2_ln_year@@"
 
 	# Truck brands
 
@@ -684,6 +690,258 @@ localization_db : .localization
 
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
+
+
+
+	# Included from "/locale/fuel_price_strings.sui"
+
+
+# Fuel prices Austria
+
+	key[]: "fp_at_natural95"
+	val[]: "1.09"
+
+	key[]: "fp_at_diesel"
+	val[]: "1.07"
+
+# Fuel prices Belgium
+
+	key[]: "fp_be_natural95"
+	val[]: "1.32"
+
+	key[]: "fp_be_diesel"
+	val[]: "1.32"
+
+# Fuel prices Bulgaria
+
+	key[]: "fp_bg_natural95"
+	val[]: "1.76"
+
+	key[]: "fp_bg_natural98"
+	val[]: "1.94"
+
+	key[]: "fp_bg_diesel"
+	val[]: "1.74"
+
+# Fuel prices Czech
+
+	key[]: "fp_cz_natural95"
+	val[]: "27.74"
+
+	key[]: "fp_cz_diesel"
+	val[]: "27.22"
+
+# Fuel prices Denmark
+
+	key[]: "fp_dk_natural92"
+	val[]: "10.53"
+
+	key[]: "fp_dk_natural95"
+	val[]: "11.08"
+
+	key[]: "fp_dk_diesel"
+	val[]: "9.60"
+
+# Fuel prices Estonia
+
+	key[]: "fp_ee_natural95"
+	val[]: "1.23"
+
+	key[]: "fp_ee_natural98"
+	val[]: "1.35"
+
+	key[]: "fp_ee_diesel"
+	val[]: "1.06"
+
+# Fuel prices Finland
+
+	key[]: "fp_fi_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_fi_natural98"
+	val[]: "1.54"
+
+	key[]: "fp_fi_diesel"
+	val[]: "1.34"
+
+# Fuel prices France
+
+	key[]: "fp_fr_natural95"
+	val[]: "1.40"
+
+	key[]: "fp_fr_natural98"
+	val[]: "1.45"
+
+	key[]: "fp_fr_diesel"
+	val[]: "1.31"
+
+# Fuel prices Germany
+
+	key[]: "fp_de_natural95"
+	val[]: "1.33"
+
+	key[]: "fp_de_diesel"
+	val[]: "1.22"
+
+# Fuel prices Hungary
+
+	key[]: "fp_hu_natural95"
+	val[]: "374.82"
+
+	key[]: "fp_hu_diesel"
+	val[]: "392.84"
+
+# Fuel prices Italy
+
+	key[]: "fp_it_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_it_diesel"
+	val[]: "1.33"
+
+	key[]: "fp_it_diesel_plus"
+	val[]: "1.40"
+
+# Fuel prices Latvia
+
+	key[]: "fp_lv_natural95"
+	val[]: "1.18"
+
+	key[]: "fp_lv_natural98"
+	val[]: "1.24"
+
+	key[]: "fp_lv_diesel"
+	val[]: "1.06"
+
+# Fuel prices Lithuania
+
+	key[]: "fp_lt_natural95"
+	val[]: "1.09"
+
+	key[]: "fp_lt_natural98"
+	val[]: "1.18"
+
+	key[]: "fp_lt_diesel"
+	val[]: "1.00"
+
+# Fuel prices Luxemburg
+
+	key[]: "fp_lu_natural95"
+	val[]: "1.16"
+
+	key[]: "fp_lu_diesel"
+	val[]: "1.05"
+
+# Fuel prices Netherlands
+
+	key[]: "fp_nl_natural95"
+	val[]: "1.58"
+
+	key[]: "fp_nl_diesel"
+	val[]: "1.26"
+
+# Fuel prices Norway
+
+	key[]: "fp_no_natural95"
+	val[]: "16.22"
+
+	key[]: "fp_no_diesel"
+	val[]: "14.57"
+
+# Fuel prices Poland
+
+	key[]: "fp_pl_natural95"
+	val[]: "4.53"
+
+	key[]: "fp_pl_diesel"
+	val[]: "4.48"
+
+# Fuel prices Portugal
+
+	key[]: "fp_pt_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_pt_diesel"
+	val[]: "1.29"
+
+# Fuel prices Romania
+
+	key[]: "fp_ro_natural95"
+	val[]: "4.78"
+
+	key[]: "fp_ro_natural98"
+	val[]: "4.90"
+
+	key[]: "fp_ro_diesel"
+	val[]: "4.87"
+
+# Fuel prices Russia
+
+	key[]: "fp_ru_natural92"
+	val[]: "44.14"
+
+	key[]: "fp_ru_natural95"
+	val[]: "46.65"
+
+	key[]: "fp_ru_diesel"
+	val[]: "46.65"
+
+# Fuel prices Slovakia
+
+	key[]: "fp_sk_natural95"
+	val[]: "1.21"
+
+	key[]: "fp_sk_diesel"
+	val[]: "1.07"
+
+# Fuel prices Spain
+
+	key[]: "fp_es_natural95"
+	val[]: "1.20"
+
+	key[]: "fp_es_diesel"
+	val[]: "1.09"
+
+# Fuel prices Sweden
+
+	key[]: "fp_se_e85"
+	val[]: "12.04"
+
+	key[]: "fp_se_natural95"
+	val[]: "14.59"
+
+	key[]: "fp_se_diesel"
+	val[]: "15.09"
+
+# Fuel prices Switzerland
+
+	key[]: "fp_ch_natural95"
+	val[]: "1.39"
+
+	key[]: "fp_ch_diesel"
+	val[]: "1.46"
+
+# Fuel prices Turkey
+
+	key[]: "fp_tr_natural95"
+	val[]: "7.33"
+
+	key[]: "fp_tr_natural98"
+	val[]: "7.62"
+
+	key[]: "fp_tr_diesel"
+	val[]: "6.69"
+
+# Fuel prices UK
+
+	key[]: "fp_gb_natural95"
+	val[]: "1.166"
+
+	key[]: "fp_gb_diesel"
+	val[]: "1.201"
+
+	# End of include "/locale/fuel_price_strings.sui"
+
 
 	# End of include "/locale/common.sui"
 
@@ -1006,7 +1264,7 @@ localization_db : .localization
 	val[]: "Ajustar camión" #+ Icon allowing player to upgrade the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_config_about"
-	val[]: "Siempre hay algo que puedes ajustar o mejorar para sentirte más a gusto con tu camión." #+ Help message associated with upgrade icon.
+	val[]: "Siempre habrá algo que puedes ajustar o decorar para sentirte mejor con tu camión." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
 	val[]: "Importe" #+ Label of line with combined price of all new parts in basket.
@@ -1199,10 +1457,10 @@ localization_db : .localization
 	val[]: "Estribos de cabina"
 
 	key[]: "drv_plate"
-	val[]: "Matrícula de conductor"
+	val[]: "Placa de conductor"
 
 	key[]: "codrv_plate"
-	val[]: "Matrícula de pasajero"
+	val[]: "Placa de pasajero"
 
 	key[]: "paint_cat"
 	val[]: "Pintura"
@@ -1229,7 +1487,7 @@ localization_db : .localization
 	val[]: "Sin faros"
 
 	key[]: "plate_std"
-	val[]: "Matrícula estándar"
+	val[]: "Matrícula"
 
 	key[]: "slot_"
 	val[]: "Espacio de accesorio"
@@ -1264,17 +1522,26 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Cortinas" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Artículos adicionales" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Artículos adicionales" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
-	val[]: "Objetos colgantes" #+ Interior hanging accesories
+	val[]: "Artículos colgantes" #+ Interior hanging accesories
 
 	key[]: "toyseat"
-	val[]: "Objetos de acompañamiento" #+ Interior accessories placed in the passenger seat
+	val[]: "Artículos de acompañamiento" #+ Interior accessories placed in the passenger seat
 
 	key[]: "toystand"
-	val[]: "Objetos adicionales" #+ Interior accessories placed on stands or center console available in the truck
+	val[]: "Artículos adicionales" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
-	val[]: "Objetos de viaje" #+ Interior accessories placed on the floor in the center of the truck cabin
+	val[]: "Artículos de viaje" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Artículos adicionales"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Objetos de salpicadero" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -1367,7 +1634,7 @@ localization_db : .localization
 	val[]: "Superior de guardabarros traseros" #+ Fender top part of the truck above rear wheel(s)
 
 	key[]: "r_banner"
-	val[]: "Pancarta trasera" #+ Banner on the rear
+	val[]: "Señalización trasera" #+ Banner on the rear
 
 	key[]: "r_bumper"
 	val[]: "Parachoques trasero" #+ Whole rear bumper
@@ -1591,7 +1858,7 @@ localization_db : .localization
 	val[]: "Guardar y Cargar" #+ Icon allowing player to save and load the game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_reset"
-	val[]: "¡Se han detectado cambios importantes en el juego! Para evitar problemas al guardar la partida debido a un cambio en el mapa del mundo, todas las entregas pendientes han sido canceladas sin penalización alguna.<br offset=15>Si fuera necesario, tu camión será trasladado a un lugar seguro." #+ Game state reset info message
+	val[]: "Se han detectado cambios en el contenido. Para evitar problemas de compatibilidad con las partidas guardadas tras una alteración en el mapa del mundo, todas las entregas pendientes han sido canceladas sin penalización alguna.<br offset=15>Si fuera necesario, tu camión será trasladado a una ubicación segura." #+ Game state reset info message
 
 	key[]: "save_in_progress"
 	val[]: "Guardando..." #+ Game save indicator message.
@@ -1644,7 +1911,7 @@ localization_db : .localization
 #+ Notification shown in the side panel when the load slot selection window appears automatically
 #@{
 	key[]: "attention_t"
-	val[]: "¡ATENCIÓN" #+ Panel title. Please keep in upper case where possible.
+	val[]: "ATENCIÓN" #+ Panel title. Please keep in upper case where possible.
 
 	key[]: "load_msg_load_error"
 	val[]: "<color value=@@clr_red@@>Se ha producido un error con la partida guardada.<color value=@@clr_txt@@><br><br>No se ha podido cargar la partida.<br><br>Puedes tratar de identificar el problema e intentar solucionarlo usando la siguiente información. No obstante, puedes probar a cargar otra partida guardada.<br><br>Este problema puede ser común por los siguientes motivos:<br><br>1. La partida no es compatible con alguno de los mods instalados.<br><br>2. La partida contiene datos de mods ausentes o desactivados.<br><br>3. La partida se ha corrompido tras usar un mod defectuoso.<br><br>4. Apagar el equipo durante el proceso de guardado puede corromper el archivo."
@@ -1811,7 +2078,7 @@ localization_db : .localization
 	val[]: "La oferta expira en" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
 
 	key[]: "expected_on"
-	val[]: "Prevista" #+ For example "Expected Sat 12:53 - Sat 19:33"
+	val[]: "Prevista:" #+ For example "Expected Sat 12:53 - Sat 19:33"
 #@}
 
 #+ Quick job selection screen
@@ -1882,11 +2149,11 @@ localization_db : .localization
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "Distancia al próximo punto en ruta" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "Distancia al próximo punto" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "Tiempo al próximo punto en ruta" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
+	val[]: "Tiempo al próximo punto" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
@@ -1903,13 +2170,13 @@ localization_db : .localization
 	val[]: "Expiración"
 
 	key[]: "cargo_name"
-	val[]: "Mercancía"
+	val[]: "Mercancía:"
 
 	key[]: "origin"
 	val[]: "Origen"
 
 	key[]: "dest"
-	val[]: "Destino"
+	val[]: "Destino:"
 
 	key[]: "route_length"
 	val[]: "Distancia de la ruta"
@@ -2120,10 +2387,10 @@ localization_db : .localization
 	val[]: "ÚLTIMOS DLCS" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "enable_news"
-	val[]: "Activar noticias" #+ Text on button that enables online news.
+	val[]: "Activar novedades" #+ Text on button that enables online news.
 
 	key[]: "news_disabled"
-	val[]: "Las noticias están desactivadas en este momento." #+ Text shown in online news section when news disabled.
+	val[]: "Las novedades están actualmente desactivadas." #+ Text shown in online news section when news disabled.
 
 	key[]: "no_truck_dlc"
 	val[]: "¡No se ha encontrado ningún camión! Por favor, reactiva al menos un DLC con camiones y reinicia el juego." #+ Text shown when there is no truck available.
@@ -2179,10 +2446,10 @@ localization_db : .localization
 	val[]: "Archivo de mapas" #+ Label of edit box used to select game map.
 
 	key[]: "enter_name_default"
-	val[]: "- Por favor, introduce tu nombre -" #+ Text shown in the profile name edit box if no name is entered.
+	val[]: "- Introduce tu nombre -" #+ Text shown in the profile name edit box if no name is entered.
 
 	key[]: "enter_comp_name_default"
-	val[]: "- Por favor, introduce el nombre de tu empresa -" #+ Text shown in the company name edit box if no name is entered.
+	val[]: "- Introduce el nombre de tu empresa -" #+ Text shown in the company name edit box if no name is entered.
 
 	key[]: "create"
 	val[]: "Crear" #+ Button which completes creation of the profile.
@@ -2200,7 +2467,7 @@ localization_db : .localization
 	val[]: "¡Debes elegir tu avatar!"
 
 	key[]: "select_design"
-	val[]: "¡Debes elegir tu diseño de camión!"
+	val[]: "¡Debes elegir tu diseño de camión preferido!"
 
 	key[]: "select_logo"
 	val[]: "¡Debes elegir un logo para tu empresa!"
@@ -2319,7 +2586,7 @@ localization_db : .localization
 	val[]: "Estás usando una versión más antigua del juego.<br>Steam actualizará el juego automáticamente, excepto si las actualizaciones automáticas están desactivadas."
 
 	key[]: "allow_news"
-	val[]: "¿Quieres que se compruebe automáticamente si hay actualizaciones del juego y noticias nuevas?" #+ Text shown in a message box.
+	val[]: "¿Quieres que el juego compruebe de forma automática si hay actualizaciones y novedades?" #+ Text shown in a message box.
 
 	key[]: "allow"
 	val[]: "Permitir" #+ Button allowing news and update check.
@@ -2337,7 +2604,7 @@ localization_db : .localization
 	val[]: "Explorador de DLCs" #+ Button used to start DLC browser.
 
 	key[]: "name_of_dlc"
-	val[]: "Nombre del DLC" #+ Prefix on the button in format "Name of DLC - Going East!". Please keep it as short as possible.
+	val[]: "DLC" #+ Prefix on the button in format "Name of DLC - Going East!". Please keep it as short as possible.
 
 	key[]: "sort_by_release_date"
 	val[]: "Fecha de lanzamiento" #+ Button in sort by droplist. Please keep it as short as possible.
@@ -2364,13 +2631,13 @@ localization_db : .localization
 	val[]: "Instalado" #+ Button title. Please keep it as short as possible.
 
 	key[]: "dlc_browser_confirm"
-	val[]: "¿Quieres que se compruebe automáticamente si hay información sobre DLCs nuevos?"
+	val[]: "¿Quieres que el juego compruebe de forma automática si hay detalles sobre DLCs?"
 
 	key[]: "dlc_browser_wait_t"
 	val[]: "DESCARGA DE DATOS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_wait_message"
-	val[]: "Descargando la información del DLC... Espera, por favor."
+	val[]: "Descargando los detalles del DLC... Espera, por favor."
 #@}
 
 #+ Activation screen
@@ -2415,7 +2682,7 @@ localization_db : .localization
 
 
 	key[]: "activated"
-	val[]: "El proceso de activación se ha completado con éxito.<br>Gracias por comprar una copia de Euro Truck Simulator 2."
+	val[]: "El proceso de activación se ha completado con éxito.<br>Gracias por comprar Euro Truck Simulator 2."
 
 	key[]: "www_link_game"
 	val[]: "Euro Truck Simulator 2"
@@ -2433,13 +2700,13 @@ localization_db : .localization
 	val[]: "Verificando el número de serie... Espera, por favor." #+ Shown in message box while the verification operation is in progress.
 
 	key[]: "verification_required"
-	val[]: "El juego necesita verificar el número de serie usando tu conexión a Internet.<br><br>Si el equipo no está conectado a Internet, puedes utilizar el modo de activación sin conexión, tal y como se detalla en <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>."
+	val[]: "El juego necesita verificar el número de serie usando tu conexión a Internet.<br><br>Si el equipo no está conectado, puedes utilizar el modo de activación sin conexión tal y como se detalla en <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>."
 
 	key[]: "unable_to_verify"
-	val[]: "El juego no ha podido verificar el número de serie. Por ahora, puedes continuar.<br><br>Se intentará verificar de nuevo la próxima vez que ejecutes el juego. Si el problema persiste, por favor, comprueba que estás conectado a Internet o usa el modo de activación sin conexión, tal y como se detalla en <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>."
+	val[]: "El juego no ha podido verificar el número de serie. Puedes continuar por ahora.<br><br>Se reintentará realizar la verificación la próxima vez que ejecutes el juego. Si el problema persiste, por favor, comprueba que estás conectado a Internet o usa el modo de activación sin conexión tal y como se detalla en <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>."
 
 	key[]: "unable_to_verify_version"
-	val[]: "El juego no ha podido verificar el número de serie. Se recomienda actualizar el juego. Por ahora, puedes continuar.<br><br>Se intentará verificar de nuevo la próxima vez que ejecutes el juego. Si el problema persiste, por favor, comprueba que estás conectado a Internet o usa el modo de activación sin conexión, tal y como se detalla en <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>."
+	val[]: "El juego no ha podido verificar el número de serie. Se recomienda actualizar el juego. Puedes continuar por ahora.<br><br>Se reintentará realizar la verificación la próxima vez que ejecutes el juego. Si el problema persiste, por favor, comprueba que estás conectado a Internet o usa el modo de activación sin conexión tal y como se detalla en <LINK URL=@@offline_activation_url@@ COLOR=@@clr_link@@>@@offline_activation_url@@</LINK>."
 
 # Currently only used with otherwise Steam-only DLCs provided to testers as part of
 # special retail builds so no translation nor offline activation support is necessary.
@@ -2498,10 +2765,10 @@ localization_db : .localization
 	val[]: "DEMO FINALIZADA" #+ Title of a message box. Please keep in upper case where possible.
 
 	key[]: "demo_complete"
-	val[]: "La demo del juego ha finalizado. Para continuar con tu viaje debes activar el juego."
+	val[]: "La demo del juego ha finalizado. Debes activar el juego para poder proseguir tu viaje."
 
 	key[]: "standalone_demo_complete"
-	val[]: "La demo del juego ha finalizado. Para continuar con tu viaje debes comprar el juego." #+ Used for standalone demo
+	val[]: "La demo del juego ha finalizado. Debes comprar el juego para poder proseguir tu viaje." #+ Used for standalone demo
 
 	key[]: "go_to_store_page"
 	val[]: "Ir a la página de la tienda" #+ Button opening store page used to purchase the game at end of the standalone demo
@@ -2517,13 +2784,13 @@ localization_db : .localization
 	val[]: "¿La música está muy alta? Baja su volumen o ajusta cualquier otro aspecto del sonido en los ajustes de audio."
 
 	key[]: "help_gameplay"
-	val[]: "Estas son las preferencias del juego. Configura todos los pequeños detalles para perfeccionar tu experiencia a la hora de jugar."
+	val[]: "Estas son las preferencias del juego. Configura hasta el más mínimo detalle para perfeccionar tu experiencia a la hora de jugar."
 
 	key[]: "help_keyboard"
 	val[]: "Asigna a tu elección teclas o botones a las acciones del juego."
 
 	key[]: "help_controller"
-	val[]: "¿Estás usando un controlador adicional? ¿Un mando, joystick o volante quizás? Comprueba que lo has instalado o configurado correctamente."
+	val[]: "¿Estás usando un controlador adicional como un mando, joystick o volante? Comprueba si está configurado correctamente."
 #@}
 
 #+ Options
@@ -2532,7 +2799,7 @@ localization_db : .localization
 #@{
 
 	key[]: "options_o_t"
-	val[]: "VISTA PREVIA DE OPCIONES" #+ Title of the window.
+	val[]: "OPCIONES" #+ Title of the window.
 
 	key[]: "options"
 	val[]: "Opciones" #+ Icon opening the options window.
@@ -2620,7 +2887,7 @@ localization_db : .localization
 	val[]: "Volumen de los controles de la cabina" #+ Slider controlling volume of interior sounds (like sticks, buttons).
 
 	key[]: "radio_volume"
-	val[]: "Volumen del reproductor y de la radio" #+ Slider controlling volume of the radio in game.
+	val[]: "Volumen de la autorradio" #+ Slider controlling volume of the radio in game.
 
 	key[]: "voice_navigation_volume"
 	val[]: "Volumen de la navegación por voz" #+ Slider controlling volume of the voice navigation.
@@ -2776,7 +3043,7 @@ localization_db : .localization
 #@{
 
 	key[]: "clock_notation"
-	val[]: "Reloj de 24 horas" #+ Checkbox enabling 24 hour notation in clock display.
+	val[]: "Formato del reloj" #+ Checkbox enabling 24 hour notation in clock display.
 
 	key[]: "12_hour"
 	val[]: "12 Horas" #+ Indication of 12 hour clock notation
@@ -2975,7 +3242,7 @@ localization_db : .localization
 	val[]: "Infracciones de tráfico" #+ Checkbox enabling receiving offence penalty.
 
 	key[]: "adviser_autopark"
-	val[]: "Ventana de estacionamiento automático" #+ Checkbox enabling autoparking trigger.
+	val[]: "Ventana de estacionamiento automática" #+ Checkbox enabling autoparking trigger.
 
 	key[]: "adviser_keep_hidden"
 	val[]: "Mantener Route Advisor oculto" #+ Checkbox forcing hidden RA to stay hidden (no popups).
@@ -3035,7 +3302,7 @@ localization_db : .localization
 	val[]: "Freno motor automático" #+ Checkbox for automatic exhaust/engine brake usage.
 
 	key[]: "auto_engine_start"
-	val[]: "Arranque eléctrico y del motor automático" #+ Checkbox for automatic engine/electricity start by throttle.
+	val[]: "Arranque de electrónica y del motor automático" #+ Checkbox for automatic engine/electricity start by throttle.
 
 	key[]: "auto_park_brake"
 	val[]: "Freno de estacionamiento automático" #+ Checkbox for automatic parking brake.
@@ -3157,7 +3424,7 @@ localization_db : .localization
 	val[]: "Pulsa el botón que quieras asignar a esta función."#+ Key/button/axis assignment hint.
 
 	key[]: "select_input_to_unassign"
-	val[]: "Selecciona la entrada a la que quieres cancelar la asignación." #+ Hint shown when "unassign" button pressed.
+	val[]: "Selecciona la entrada cuya asignación quieras cancelar." #+ Hint shown when "unassign" button pressed.
 
 	key[]: "lost_function_binding"
 	val[]: "Asignación perdida:" #+ Shown when key was rebound to a different function.
@@ -3212,10 +3479,10 @@ localization_db : .localization
 	val[]: "Cambiar a Neutral" #+ Shifts to neutral gear for automatic or sequential transmission
 
 	key[]: "o_im_gear_up_hint"
-	val[]: "Sugerir el subir de marcha automática" #+ Shift hint for automatic transmission
+	val[]: "Indicar el subir de marcha en automática" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_gear_down_hint"
-	val[]: "Sugerir el bajar de marcha automática" #+ Shift hint for automatic transmission
+	val[]: "Indicar el bajar de marcha en automática" #+ Shift hint for automatic transmission
 
 	key[]: "o_im_trans_semi_switch"
 	val[]: "Alternar caja de cambios automática o secuencial" #+ Switch between real automatic and sequential transmissions
@@ -3224,7 +3491,7 @@ localization_db : .localization
 	val[]: "Prender/Parar el Motor"
 
 	key[]: "o_im_engine_electricity"
-	val[]: "Encender o apagar la electrónica del motor"
+	val[]: "Encender o apagar la electrónica"
 
 	key[]: "o_im_parkingbrake"
 	val[]: "Freno de estacionamiento"
@@ -3278,7 +3545,7 @@ localization_db : .localization
 	val[]: "Luces de largo alcance"
 
 	key[]: "o_im_beacon"
-	val[]: "Rotativo"
+	val[]: "Estroboscópicos"
 
 	key[]: "o_im_light_horn"
 	val[]: "Ráfagas"
@@ -3317,22 +3584,22 @@ localization_db : .localization
 	val[]: "Reproductor de Musical."
 
 	key[]: "o_im_radio_next"
-	val[]: "Favorito siguiente en el reproductor de audio y la radio"
+	val[]: "Favorito siguiente en la autorradio"
 
 	key[]: "o_im_radio_prev"
-	val[]: "Favorito anterior en el reproductor de audio y la radio"
+	val[]: "Favorito anterior en la autorradio"
 
 	key[]: "o_im_radio_vol_up"
-	val[]: "Subir volumen en el reproductor de audio y la radio"
+	val[]: "Subir volumen en la autorradio"
 
 	key[]: "o_im_radio_vol_down"
-	val[]: "Bajar volumen en el reproductor de audio y la radio"
+	val[]: "Bajar volumen en la autorradio"
 
 	key[]: "o_im_display"
-	val[]: "Modos del salpicadero"
+	val[]: "Modos del cuadro de instrumentos"
 
 	key[]: "o_im_trip_reset"
-	val[]: "Restablecer información de viaje del salpicadero"
+	val[]: "Reiniciar detalles de viaje del cuadro de instrumentos"
 
 	key[]: "o_im_dashboard_map"
 	val[]: "Modos del navegador"
@@ -3749,7 +4016,7 @@ localization_db : .localization
 	val[]: "Nunca"
 
 	key[]: "hshift_split_clutch"
-	val[]: "Presión del embrague"
+	val[]: "Presionar el embrague"
 
 	key[]: "hshift_split_throttle"
 	val[]: "Liberar el acelerador"
@@ -4095,7 +4362,7 @@ localization_db : .localization
 	val[]: "Frecuencia de actualización" #+ Combo box for selection of the refresh rate.
 
 	key[]: "default_refresh"
-	val[]: "Refresco predeterminado" #+ Value in the refresh rate combo box corresponding to default refresh rate as configured in the system.
+	val[]: "Predeterminado" #+ Value in the refresh rate combo box corresponding to default refresh rate as configured in the system.
 
 	key[]: "hz"
 	val[]: "Hz" #+ Suffix appended to each value in the refresh rate combo box. For example "60 Hz".
@@ -4146,6 +4413,9 @@ localization_db : .localization
 
 	key[]: "color_enhancement"
 	val[]: "Corrección de color" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Calidad de los reflejos" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Detalle de los reflejos" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -4536,16 +4806,16 @@ localization_db : .localization
 #@}
 
 	key[]: "joy"
-	val[]: "Controlador" #+ Shortcut for joystick
+	val[]: "Controlador:" #+ Shortcut for joystick
 
 #+ Music/radio player
 #@{
 
 	key[]: "radio_player_t"
-	val[]: "REPRODUCTOR DE AUDIO Y RADIO" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "AUTORRADIO" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "radio"
-	val[]: "Radio" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Autorradio" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "music_player"
 	val[]: "Reproductor de música" #+ Button for selecting music player.
@@ -4581,12 +4851,12 @@ localization_db : .localization
 #+ Music player columns.
 
 	key[]: "music_player_name"
-	val[]: "Emisora"
+	val[]: "Canción"
 
 #+ Radio streams columns.
 
 	key[]: "radio_stream_name"
-	val[]: "Nombre"
+	val[]: "Emisora"
 
 	key[]: "radio_stream_genre"
 	val[]: "Género"
@@ -4660,7 +4930,7 @@ localization_db : .localization
 	val[]: "Básculas TR"
 
 	key[]: "job_delivery_title"
-	val[]: "Trabajo de entrega"
+	val[]: "Entrega de mercancía"
 #@}
 
 	key[]: "weigh_device_title"
@@ -4689,7 +4959,7 @@ localization_db : .localization
 	val[]: "Llegada:" #+ For example "ETA: Sat 14:20 CEST"
 
 	key[]: "job_income"
-	val[]: "Ingresos" #+ For example "Job income: E6,526"
+	val[]: "Ingresos:" #+ For example "Job income: E6,526"
 
 	key[]: "adviser_tooltip_map_page"
 	val[]: "Navegación" #+ Tooltip for map page in route advisor
@@ -4821,7 +5091,7 @@ localization_db : .localization
 	val[]: "La agencia de contratación esta cerrada.<br offset=20>Horario de apertura:<br>Lunes a sábado de $START$ a $END$"
 
 	key[]: "found_recruit"
-	val[]: "¡Has encontrado una agencia de contratación!<br><br>Aquí encontrarás conductores que podrían trabajar para ti."
+	val[]: "¡Has encontrado una agencia de contratación!<br><br>Aquí puedes contratar conductores<br>que trabajen para ti."
 
 	key[]: "attach_load"
 	val[]: "Pulsa el siguiente comando<br>para acoplar el remolque:"
@@ -4851,13 +5121,13 @@ localization_db : .localization
 	val[]: "¡Estás agotado!<br>Deberías buscar un área de descanso."
 
 	key[]: "you_are_getting_tired"
-	val[]: "¡Te estás empezando a fatigar!<br>Deberías buscar un área de descanso."
+	val[]: "¡La sensación de cansancio comienza a ser considerable!<br>Deberías buscar un área de descanso."
 
 	key[]: "parking"
 	val[]: "Pulsa el siguiente comando para descansar:"
 
 	key[]: "park_nf"
-	val[]: "Te encuentras en un área de descanso,<br>pero en estos momentos no te sientes fatigado."
+	val[]: "Te encuentras en un área de descanso,<br>pero ahora mismo no sientes la necesidad de echarte un sueño."
 
 	key[]: "viewpoint_title"
 	val[]: "Mirador"
@@ -5017,6 +5287,9 @@ localization_db : .localization
 	key[]: "diff_unlock_warning"
 	val[]: "Deberías desbloquear el diferencial durante la conducción normal o te arriesgas a dañarlo.<br>Usa el siguiente comando para desactivarlo:"
 
+	key[]: "tow_hint"
+	val[]: "Pulsa el siguiente comando para salir de cualquier situación complicada usando el servicio de remolque:"
+
 	key[]: "ferry_msg"
 	val[]: "Pulsa el siguiente comando para ver los posibles destinos:"
 
@@ -5113,7 +5386,7 @@ localization_db : .localization
 	val[]: "Infracción por usar un remolque no autorizado."
 
 	key[]: "offence_avoid_inspection"
-	val[]: "No te has detenido a realizar la inspección."
+	val[]: "Infracción por no parar para realizar la inspección."
 
 	key[]: "offence_illegal_border"
 	val[]: "Infracción por cruzar un puesto fronterizo sin autorización."
@@ -5786,7 +6059,7 @@ localization_db : .localization
 	val[]: "Ordenadores"
 
 	key[]: "cn_concr_beams"
-	val[]: "Vigas de hormigón"
+	val[]: "Viga de hormigón"
 
 	key[]: "cn_concr_centering"
 	val[]: "Centrado de hormigón"
@@ -5799,6 +6072,9 @@ localization_db : .localization
 
 	key[]: "cn_contamin"
 	val[]: "Materiales contaminados"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vacuna para la COVID-19"
 
 	key[]: "cn_cyanide"
 	val[]: "Cianuro"
@@ -5909,7 +6185,7 @@ localization_db : .localization
 	val[]: "Queroseno"
 
 	key[]: "cn_largetubes"
-	val[]: "Conductos de gran longitud"
+	val[]: "Conductos de gran diámetro"
 
 	key[]: "cn_lead"
 	val[]: "Plomo"
@@ -5936,10 +6212,10 @@ localization_db : .localization
 	val[]: "Magnesio"
 
 	key[]: "cn_marble_block"
-	val[]: "Bloques de mármol"
+	val[]: "Mármol sin tratar"
 
 	key[]: "cn_marble_slab"
-	val[]: "Plancha de mármol"
+	val[]: "Planchas de mármol"
 
 	key[]: "cn_med_equipment"
 	val[]: "Equipamiento médico"
@@ -6116,16 +6392,16 @@ localization_db : .localization
 	val[]: "Tractor"
 
 	key[]: "cn_tractors"
-	val[]: "Tractores"
+	val[]: "Maquinaria agrícola"
 
 	key[]: "cn_trailers"
 	val[]: "Semirremolques de cama baja"
 
 	key[]: "cn_train_parts"
-	val[]: "Ejes de tren"
+	val[]: "Ejes de ferrocarril"
 
 	key[]: "cn_train_part2"
-	val[]: "Bojes de tren"
+	val[]: "Bogies de ferrocarril"
 
 	key[]: "cn_tv"
 	val[]: "Televisores"
@@ -6161,13 +6437,13 @@ localization_db : .localization
 	val[]: "Apisonadora DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Tractor de oruga"
+	val[]: "Tractor de orugas"
 
 	key[]: "cn_yacht"
 	val[]: "Yate Sloop 36"
 
 	key[]: "cn_aircond"
-	val[]: "Equipos de aire acondicionado"
+	val[]: "Equipo de aire acondicionado"
 
 	key[]: "cn_tracks"
 	val[]: "Oruga"
@@ -6744,7 +7020,7 @@ localization_db : .localization
 	val[]: "Krone Profi Liner"
 
 	key[]: "tn_krone_profiliner_hd"
-	val[]: "Plataforma Krone Profi Liner HD"
+	val[]: "Krone Profi Liner HD"
 
 #schwarzmuller trailers (for trailer listing screen)
 
@@ -6752,7 +7028,7 @@ localization_db : .localization
 	val[]: "Cisterna alimentaria Schwarzmüller"
 
 	key[]: "tn_schw_curtain"
-	val[]: "Plataforma con lona Schwarzmüller"
+	val[]: "Plataforma Schwarzmüller"
 
 	key[]: "tn_schw_lowloader"
 	val[]: "Plataforma baja Schwarzmüller"
@@ -6761,7 +7037,7 @@ localization_db : .localization
 	val[]: "Refrigerado Schwarzmüller"
 
 	key[]: "tn_schw_slidepost"
-	val[]: "Forestal deslizante Schwarzmüller"
+	val[]: "Barras deslizantes Schwarzmüller"
 
 #goldhofer trailers
 
@@ -7017,7 +7293,7 @@ localization_db : .localization
 	val[]: "No tienes correo sin leer." #+ Shown in message preview panel if no message is selected and no unread message exists.
 
 	key[]: "mail_new_mail"
-	val[]: "Tienes correo sin leer ($COUNT$)\n" #+ Shown in message preview panel if there are unread messages. The $COUNT$ is replaced with number of messages. For example "You have 1 unread message(s)"
+	val[]: "Tienes correo sin leer ($COUNT$).\n" #+ Shown in message preview panel if there are unread messages. The $COUNT$ is replaced with number of messages. For example "You have 1 unread message(s)"
 #@}
 
 
@@ -7068,7 +7344,7 @@ localization_db : .localization
 	val[]: "Garajes adquiridos:"
 
 	key[]: "compman_summary_gslots"
-	val[]: "Espacios disponibles en el garaje: "
+	val[]: "Espacios disponibles en los garajes:"
 
 	key[]: "compman_summary_gupsmall"
 	val[]: "Coste de ampliación a garaje pequeño:"
@@ -7077,7 +7353,7 @@ localization_db : .localization
 	val[]: "Coste de ampliación a garaje grande:"
 
 	key[]: "compman_summary_gavgprod"
-	val[]: "Productividad del garaje:"
+	val[]: "Productividad de los garajes:"
 
 	key[]: "compman_summary_glastprofit"
 	val[]: "Beneficio de la última semana:"
@@ -7267,10 +7543,10 @@ localization_db : .localization
 #@{
 
 	key[]: "garageman_hint_1"
-	val[]: "Selecciona uno de los garajes para ver sus detalles:"
+	val[]: "Selecciona uno de los garajes para ver sus detalles."
 
 	key[]: "garageman_hint_2"
-	val[]: "Selecciona un espacio disponible en el garaje:"
+	val[]: "Selecciona un espacio disponible en el garaje."
 
 	key[]: "garageman_hint_3"
 	val[]: "Haz clic sobre el icono del camión o del conductor para ver sus detalles."
@@ -7511,7 +7787,7 @@ localization_db : .localization
 	val[]: "Gestiona tus conductores. Puedes contratarlos, reubicarlos o despedirlos como creas conveniente." #+ Help message associated with the driver management icon.
 
 	key[]: "driverman_summary_hint"
-	val[]: "Selecciona un conductor en la lista para ver sus detalles"
+	val[]: "Selecciona un conductor en la lista para ver sus detalles."
 
 #+ Driver map filters
 #@{
@@ -7916,7 +8192,7 @@ localization_db : .localization
 	val[]: "¡Todavía no has descubierto ningún concesionario!"
 
 	key[]: "tdsel_online_locked"
-	val[]: "Esta característica solo está disponible para clientes de confianza. Necesitas haber adquirido al menos $COUNT$ camiones antes de poder comprar en línea."
+	val[]: "Esta característica solo está disponible para nuestros clientes de confianza. Debes haber adquirido al menos $COUNT$ camiones antes de poder realizar una compra en línea."
 #@}
 #@}
 #@}
@@ -7976,7 +8252,7 @@ localization_db : .localization
 	val[]: "¿Necesitas conductores? Este es el lugar idóneo donde buscar." #+ Help message associated the recruitment agency icon.
 
 	key[]: "recruit_info"
-	val[]: "¡Te damos la bienvenida a nuestra agencia de contratación!<br>Ofrecemos una gran selección de conductores profesionales actualizada a diario.<br>Por usar nuestros servicios, cobramos una modesta comisión de $MONEY$ por cada conductor que contrates."
+	val[]: "Te damos la bienvenida a nuestra agencia de contratación.<br>Disponemos de una gran selección de conductores experimentados que se actualiza a diario.<br>Recuerda que cobramos una modesta comisión de $MONEY$ por cada conductor que contrates al usar nuestros servicios."
 
 	key[]: "hire"
 	val[]: "Contratar conductor" #+ Button which will hire selected driver.
@@ -8016,10 +8292,10 @@ localization_db : .localization
 	val[]: "¿Quieres pagar $MONEY$ para contratar a $NAME$?"
 
 	key[]: "driver_autoworks"
-	val[]: "Tu nuevo conductor está de camino al garaje y empezará a trabajar tras instalarse, siempre y cuando tenga un camión para ello."
+	val[]: "Tu nuevo conductor está de camino al garaje y empezará a trabajar tras instalarse, siempre y cuando disponga de un camión para ello."
 
 	key[]: "recruit_no_space"
-	val[]: "¡No disponibles de espacio para un nuevo conductor!<br><br>Por favor, mejora uno de los garajes o adquiere uno nuevo."
+	val[]: "¡No dispones de espacio para un nuevo conductor!<br><br>Por favor, mejora uno de los garajes o adquiere uno nuevo."
 #@}
 #@}
 
@@ -8296,6 +8572,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8381,7 +8659,7 @@ localization_db : .localization
 	val[]: "Luces altas" #+ Checkbox enabling the high beam lights
 
 	key[]: "beacon"
-	val[]: "Rotativo"  #+ Checkbox enabling the beacon
+	val[]: "Estroboscópico"  #+ Checkbox enabling the beacon
 
 	key[]: "high_beam_set"
 	val[]: "ILUMINACIÓN ADICIONAL" #+ Header of section for auxilliary ilumination
@@ -8393,7 +8671,7 @@ localization_db : .localization
 	val[]: "Techo auxiliar" #+ Checkbox enabling lights on additional roof accessories.
 
 	key[]: "dash_backlight"
-	val[]: "Intensidad del salpicadero" #+ Label of slider controlling intensity of dashboard backlight.
+	val[]: "Intensidad del cuadro de instrumentos" #+ Label of slider controlling intensity of dashboard backlight.
 #@}
 
 
@@ -8476,7 +8754,7 @@ localization_db : .localization
 	val[]: "Caja de cambios de 12 velocidades" #+ Name of transmission accessory.
 
 	key[]: "available_at"
-	val[]: "Disponible en" #+ Appended with translation of "level" and index of level the player needs to have before he can buy specified stuff. For example "Available from Level 16"
+	val[]: "Disponible desde:" #+ Appended with translation of "level" and index of level the player needs to have before he can buy specified stuff. For example "Available from Level 16"
 
 	key[]: "hookup_lost"
 	val[]: "La pieza que intentas reemplazar tiene otros accesorios instalados en ella. Si continúas, también serán eliminados. ¿Quieres proceder?"
@@ -8711,6 +8989,9 @@ localization_db : .localization
 
 	key[]: "bastia"
 	val[]: "Bastia"
+
+	key[]: "bayonne"
+	val[]: "Bayonne"
 
 	key[]: "bergen"
 	val[]: "Bergen"
@@ -9014,6 +9295,9 @@ localization_db : .localization
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9457,7 +9741,7 @@ localization_db : .localization
 	val[]: "Tiempo jugado:"
 
 	key[]: "stats_time_game"
-	val[]: "Tiempo transcurrido:"
+	val[]: "Tiempo de juego transcurrido:"
 
 	key[]: "stats_roads_explored"
 	val[]: "Carreteras exploradas:"
@@ -9609,16 +9893,16 @@ localization_db : .localization
 	val[]: "Todo preparado y listo para partir. Sigue la ruta hacia tu destino."
 
 	key[]: "tut_msg_8"
-	val[]: "Acércate a la puerta de entrada para obtener la autorización necesaria y así poder entregar la mercancía en una zona determinada del muelle de carga y descarga. Busca una baliza animada que te indicará donde y como tendrás que estacionar el camión.<br><br>Este puede ser un buen momento de ajustar la escala del mapa en la pantalla de navegación de Route Advisor pulsando $KEY$."
+	val[]: "Acércate a la puerta de entrada para obtener la autorización necesaria y poder así entregar la mercancía en una zona determinada del muelle de carga y descarga. Busca una baliza animada que te indicará dónde y cómo tendrás que estacionar el camión.<br><br>Este puede ser un buen momento de ajustar la escala del mapa en la pantalla de navegación de Route Advisor pulsando $KEY$."
 
 	key[]: "tut_msg_9"
-	val[]: "Una vez hayas seleccionado el lugar de estacionamiento deseado, procede a colocar el remolque. En ciertos muelles de carga y descarga, puedes elegir un lugar alternativo que te sea más fácil de estacionar (por menos puntos de experiencia). Si te encuentras en problemas, también puedes completar la entrega automáticamente.<br><br>Una baliza rectangular y Route Advisor te indicarán el lugar donde estacionar el remolque. Cuando su posición sea la correcta, aparecerá un mensaje pidiéndote que lo desacoples."
+	val[]: "Una vez hayas seleccionado el lugar de estacionamiento deseado, procede a colocar el remolque. Hay ciertos muelles de carga y descarga en los que puedes elegir un lugar alternativo en el que te sea más fácil dejar el remolque (por menos puntos de experiencia). Si tienes problemas, también puedes completar la entrega de forma automática.<br><br>Una baliza rectangular y Route Advisor te indicarán el lugar donde estacionar el remolque. Cuando su posición sea la correcta, se mostrará un mensaje pidiéndote que lo desacoples."
 
 	key[]: "tut_msg_10"
 	val[]: "¡Buen trabajo! ¿A qué esperas? ¡Descarga y empieza a conducir por tu cuenta!"
 
 	key[]: "tutorial_adviser0"
-	val[]: "Cuando pausas el juego, puedes controlar Route Advisor con el ratón.<br><br>Route Advisor es un navegador por satélite disponible en todo momento y que muestra tu estado actual, además de ofrecerte información sobre tu entrega actual y los puntos a los que ir."
+	val[]: "Al pausar el juego podrás controlar Route Advisor con el ratón.<br><br>Route Advisor es un navegador por satélite, disponible en todo momento, que muestra tu estado actual y te ofrece detalles acerca de la entrega actual y los puntos a los que ir."
 
 	key[]: "tutorial_adviser1"
 	val[]: "También hay atajos de teclado asignados a las funciones más utilizadas, las cuales puedes usar al instante mientras conduces. Las teclas disponibles son sugeridas directamente por Route Advisor."
@@ -9639,7 +9923,7 @@ localization_db : .localization
 	val[]: "Pulsa $KEY$ para continuar hasta la página de entrega actual."
 
 	key[]: "tutorial_adviser3"
-	val[]: "La página de entrega actual detalla lo que llevas y a dónde. Te muestra cuándo se te espera, cuánto tiempo te queda y cuánto dinero recibirás si llegas a tiempo sin dañar la mercancía."
+	val[]: "La página de entrega actual detalla lo que llevas y a dónde lo haces. Te muestra cuándo se te espera, cuánto tiempo te queda y cuánto dinero recibirás si llegas a tiempo sin dañar la mercancía."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Pulsa $KEY$ para continuar hasta la página de asistencia."
@@ -9860,13 +10144,13 @@ localization_db : .localization
 #@{
 
 	key[]: "wiz_control_keyboard"
-	val[]: "Conduce con el teclado y mira a tu alrededor con el ratón. Es la forma más sencilla, pero menos precisa, de controlar un camión destinada a cualquier jugador."
+	val[]: "Conduce con el teclado y usa el ratón para mirar a tu alrededor. Esta la forma más sencilla, pero menos precisa, de controlar un camión destinada a cualquier jugador."
 
 	key[]: "wiz_control_mouse"
-	val[]: "Usa el ratón para girar de manera más precisa. Otras acciones todavía pueden realizarse con el teclado. Puedes usar el ratón para mirar a tu alrededor si pulsas simultáneamente un comando específico para ello."
+	val[]: "Usa el ratón para girar con más precisión y realiza otras acciones usando el teclado. Podrás usar el ratón para mirar a tu alrededor si pulsas simultáneamente un comando que haya sido designado para ello."
 
 	key[]: "wiz_control_controller"
-	val[]: "Usa un volante, mando o joystick para hacer que la experiencia de juego sea mas realista. Aún podrás usar las teclas para acceder a la mayoría de las funciones y el ratón para mirar alrededor."
+	val[]: "Usa un volante, mando o joystick para hacer que la experiencia de juego sea mas realista. Además, podrás usar el teclado para acceder a la mayoría de las funciones y el ratón para mirar a tu alrededor."
 #@}
 
 #+ Shown besides the controllers text when no controller is connected to the computer.
@@ -9974,7 +10258,7 @@ localization_db : .localization
 #+ Shown when the game did not found a known H-shifter compatible controller (G27, G25, Bodnar).
 
 	key[]: "no_hw_hshifter"
-	val[]: "No se ha encontrado ningún controlador con caja de cambios en H. Esta característica puede ser inutilizable."
+	val[]: "No se ha detectado ningún controlador con caja de cambios en H. Esta característica puede ser inutilizable."
 
 #@}
 
@@ -9989,13 +10273,13 @@ localization_db : .localization
 #@{
 
 	key[]: "wiz_hs_range"
-	val[]: "La transmisión por rango es la elección más sencilla. Se compone de dos grupos de marchas: El primero contiene de la 1 a la 6 y el segundo de la 7 a la 12. Un botón de alternancia cambia entre los dos grupos mientras que la palanca de cambios selecciona una marcha específica del grupo."
+	val[]: "La transmisión por rango es la elección más sencilla. Se compone de dos grupos de marchas: el primero contiene de la 1 a la 6 y el segundo de la 7 a la 12. Un botón de alternancia cambia entre los dos grupos mientras que la palanca de cambios selecciona una marcha específica del grupo."
 
 	key[]: "wiz_hs_splitter"
 	val[]: "La transmisión por divisor es una alternativa sencilla. Se compone de dos grupos de marchas: el primero contiene las impares (1, 3, 5...) y el segundo las pares (2, 4, 6...). Un comando de alternancia cambia entre los dos grupos mientras que la palanca de cambios selecciona una marcha específica del grupo."
 
 	key[]: "wiz_hs_range_splitter"
-	val[]: "La transmisión por rango y divisor se basa en la configuración de las transmisiones reales. Las marchas se agrupan en cuatro por cada posición de la palanca de cambios en H y utilizan dos alternaciones. Esta opción solo se recomienda a conductores avanzados."
+	val[]: "La transmisión por rango y divisor se basa en la configuración de las transmisiones reales. Las marchas se agrupan en cuatro por cada posición de la palanca de cambios en H y utilizan dos alternaciones. Esta opción solo está recomendada a conductores avanzados."
 #@}
 
 #@}
@@ -10082,13 +10366,13 @@ localization_db : .localization
 	val[]: "Selecciona un eje haciendo clic en el botón que hay al lado del nombre del mismo. Tras esto, pasarás al modo de entrada. Usa tu controlador moviendo el stick, volante o pedal que quieras asignar al eje seleccionado."
 
 	key[]: "wiz_setup_axes_desc3"
-	val[]: "La zona muerta de un eje es aquella que, intencionadamente, no proporciona una entrada. Si quieres cambiar este ajuste, mueve el deslizante del eje que quieras modificar. Cuanto más lo muevas hacia la derecha, mayor será la zona muerta. Esta opción viene muy bien si usas un controlador antiguo."
+	val[]: "La zona muerta de un eje es aquella que, intencionadamente, no proporciona una entrada. Si quieres cambiar este ajuste, mueve el deslizador del eje que quieras modificar. Cuanto más lo muevas hacia la derecha, mayor será la zona muerta. Esta opción viene muy bien si usas un controlador antiguo."
 
 	key[]: "wiz_setup_axes_desc4"
 	val[]: "El modo de un eje determina como ese eje es interpretado por el juego. Por ejemplo, un eje invertido cambia su dirección, es decir, al girar hacia la derecha irás a la izquierda, mientras que un eje centrado se posicionará en medio de su recorrido. Esta opción sería la última que habría que comprobar si un eje no es detectado correctamente."
 
 	key[]: "wiz_setup_axes_desc5"
-	val[]: "Puedes comprobar la respuesta de los ejes seleccionados visualmente. Usa el controlador y observa los deslizadores para observar el comportamiento de cada eje, como los límites, el centrado, o la orientación."
+	val[]: "Puedes comprobar la respuesta de los ejes seleccionados visualmente. Usa el controlador y observa los deslizadores para observar el comportamiento de cada eje, como los límites, el centrado o la orientación."
 
 
 	key[]: "normal"
@@ -10110,7 +10394,7 @@ localization_db : .localization
 	val[]: "Configurar caja de cambios automática"
 
 	key[]: "automatic_gb_setup_desc"
-	val[]: "Con la caja de cambios automática, solo necesitas cambiar para ir hacia delante, marcha atrás y poner punto muerto. Para hacerlo, usa las siguientes teclas o botones. Para cambiar los ajustes, pulsa sobre uno de los botones y presiona la tecla o el botón que quieras usar."
+	val[]: "Con la caja de cambios automática solo necesitas cambiar para ir hacia delante, marcha atrás y poner punto muerto. Para hacerlo, usa las siguientes teclas o botones. Para cambiar los ajustes, pulsa sobre uno de los botones y presiona la tecla o el botón que quieras usar."
 
 	key[]: "automatic_gb_setup_desc2"
 	val[]: "Si tienes una palanca de cambios en H conectada, puedes usarla para simular una transmisión automática real. Activa esta opción y podrás asignar las posiciones a las diferentes marchas: desde la primera hasta la marcha atrás. El resto de posiciones se establecerán como punto muerto. Este ajuste esta únicamente diseñado para palancas de cambios en H, por lo que no tendrá ningún efecto al pulsar teclas o botones de un controlador estándar. Para cambiar la asignación, haz clic en un botón, mueve la palanca de cambios a la posición deseada y, después, vuelve a colocarla en punto muerto."
@@ -10139,11 +10423,223 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Gorra" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Taza" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Manta de tonos beige"
+
+	key[]: "blanket_square"
+	val[]: "Manta con diseño cuadriculado"
+
+	key[]: "book"
+	val[]: "Libro"
+
+	key[]: "bottle_sixpack"
+	val[]: "Lote de botellas"
+
+	key[]: "breakfast_cereals"
+	val[]: "Paquete de cereales"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Muñeco de bulldog"
+
+	key[]: "cap"
+	val[]: "Gorra"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Teléfono móvil"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Muñeco de chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Salpicadero"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Informe de entrega"
+
+	key[]: "electric_cooling_box"
+	val[]: "Nevera portátil eléctrica"
+
+	key[]: "endless_nourishment"
+	val[]: "Emparedado"
+
+	key[]: "ets2_game_box"
+	val[]: "Juego de ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Fiambrera de ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Bolsa de diseño de ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Taza de diseño festivo"
+
+	key[]: "fire_extinguisher"
+	val[]: "Extintor"
+
+	key[]: "hand_bag"
+	val[]: "Equipaje de mano"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Billetera de cuero"
+
+	key[]: "hula_doll"
+	val[]: "Figurilla hawaiana"
+
+	key[]: "instant_lunch"
+	val[]: "Comida instantánea"
+
+	key[]: "instant_lunch_box"
+	val[]: "Paquete de comida instantánea"
+
+	key[]: "magazines"
+	val[]: "Revistas"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Brújula magnetoinductiva"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Ordenador portátil"
+
+	key[]: "paper_towels"
+	val[]: "Rollo de papel"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Gafas de estilo aviador"
+
+	key[]: "plush_bear"
+	val[]: "Osito de peluche"
+
+	key[]: "portable_navigator"
+	val[]: "Navegador portátil"
+
+	key[]: "rugged_style_cap"
+	val[]: "Gorra de estilo resistente"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Taza de café de SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Saco de dormir"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Manta con diseño invernal"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Bolsa de viaje"
+
+	key[]: "winter_bauble"
+	val[]: "Adorno navideño"
+
+	key[]: "winter_blast_gift"
+	val[]: "Obsequio navideño"
+
+	key[]: "wise_owl_offering"
+	val[]: "Ofrenda de búho sabio"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Cojín de estilo ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Cojín de estilo llamarada"
+
+	key[]: "goodyear_pillow"
+	val[]: "Cojín de estilo Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Cojín de estilo hogareño"
+
+	key[]: "skull_pillow"
+	val[]: "Cojín de estilo calavera"
+
+	key[]: "status_pillow"
+	val[]: "Cojín de estilo selector"
+
+	key[]: "track_pillow"
+	val[]: "Cojín de estilo trazada"
+
+	key[]: "trucker_pillow"
+	val[]: "Cojín de estilo camionero"
+
+	key[]: "vaclav_pillow"
+	val[]: "Cojín de estilo Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Cojín de estilo corazón sabio"
+
+	key[]: "zzz_pillow"
+	val[]: "Cojín de estilo descanso"
+
+
+	key[]: "air_freshener"
+	val[]: "Ambientador"
+
+	key[]: "detective_head"
+	val[]: "Cabeza de detective"
+
+	key[]: "vampire_head"
+	val[]: "Cabeza de vampiro"
+
+	key[]: "viking_head"
+	val[]: "Cabeza de vikingo"
+
+	key[]: "smelling_sack"
+	val[]: "Bolsita aromática"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Fragancia con diseño de manzana"
+
+	key[]: "basketball_ball"
+	val[]: "Pelota de baloncesto"
+
+	key[]: "black_plush_cube"
+	val[]: "Cubo de felpa negro"
+
+	key[]: "chromed_skull"
+	val[]: "Calavera cromada"
+
+	key[]: "disco_ball"
+	val[]: "Bola de discoteca"
+
+	key[]: "eight_ball"
+	val[]: "Bola ocho"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Fragancia con diseño de ETS2"
+
+	key[]: "football_ball"
+	val[]: "Pelota de fútbol"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insignia de Camionero Hogareño"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insignia de Camionero de la Esperanza"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Fragancia con diseño de SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Pelota de tenis"
+
+	key[]: "trophy_skull"
+	val[]: "Calavera de plástico"
+
+	key[]: "white_plush_cube"
+	val[]: "Cubo de felpa blanco"
+
 
 	key[]: "black_style_mug"
 	val[]: "Taza negra" #+ specific color scheme of a mug in cabin
@@ -10155,7 +10651,7 @@ localization_db : .localization
 	val[]: "Taza naranja y negra" #+ specific color scheme of a mug in cabin
 
 	key[]: "plush_toy"
-	val[]: "Peluche" #+ a plush toy in cabin of a truck
+	val[]: "de peluche" #+ a plush toy in cabin of a truck
 
 	key[]: "leather_wallet"
 	val[]: "Cartera de cuero" #+ A leather wallet
@@ -10164,22 +10660,24 @@ localization_db : .localization
 	val[]: "Salpicadero" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
 
 	key[]: "center_table_exclusive"
-	val[]: "Mesilla corta exclusiva" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla corta de metal" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "center_table_mahogany"
 	val[]: "Mesilla corta de caoba" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "center_table_black"
-	val[]: "Mesilla corta oscura" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla corta de plástico" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "long_table_exclusive"
-	val[]: "Mesilla larga exclusiva" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla larga de metal" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "long_table_mahogany"
 	val[]: "Mesilla larga de caoba" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
 
 	key[]: "long_table_black"
-	val[]: "Mesilla larga oscura" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+	val[]: "Mesilla larga de plástico" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "De serie" #+ Basic truck accesory general
@@ -10232,6 +10730,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Cromado II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Pintado y cromado" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -10270,6 +10771,9 @@ localization_db : .localization
 
 	key[]: "standard_2013_uk"
 	val[]: "Estándar 2013 británico" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusivo" #+ Luxury/Exclusive version of the interior or accesory
@@ -10311,40 +10815,40 @@ localization_db : .localization
 	val[]: "Cromado claro" #+ Small accesory lights for bottom truck grills
 
 	key[]: "badge_380"
-	val[]: "Insignia clara 380" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 380 clara" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_430"
-	val[]: "Insignia clara 430" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 430 clara" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_440"
-	val[]: "Insignia clara 440" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 440 clara" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_460"
-	val[]: "Insignia clara 460" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 460 clara" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_480"
-	val[]: "Insignia clara 480" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 480 clara" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_520"
-	val[]: "Insignia clara 520" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 520 clara" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_black_380"
-	val[]: "Insignia oscura 380" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 380 oscura" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_black_430"
-	val[]: "Insignia oscura 430" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 430 oscura" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_black_440"
-	val[]: "Insignia oscura 440" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 440 oscura" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_black_460"
-	val[]: "Insignia oscura 460" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 460 oscura" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_black_480"
-	val[]: "Insignia oscura 480" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 480 oscura" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "badge_black_520"
-	val[]: "Insignia oscura 520" #+ Badge accessory (eg Renault T engine badge)
+	val[]: "Insignia 520 oscura" #+ Badge accessory (eg Renault T engine badge)
 
 	key[]: "stock_plates"
 	val[]: "Faldón lateral de protección" #+ Large, expensive sideskirts on the side of the truck
@@ -10385,11 +10889,14 @@ localization_db : .localization
 	key[]: "white_reflector"
 	val[]: "Reflector blanco"
 
-	key[]: "basic_chrome"
-	val[]: "Faldón básico cromado" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Básico" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Faldón básico cromado" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Faldón básico pintado" #+ type of sideskirts, painted
+	val[]: "Faldón básico pintado" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Barra doble de protección" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -10410,7 +10917,7 @@ localization_db : .localization
 	val[]: "Portaherramientas individual pintado" #+ Very expensive, painted sideskirts, with one toolboxes inside it.
 
 	key[]: "glow"
-	val[]: "Brillante" #+ Glowing front badge with manufacturers logo, works when you turn on the lights.
+	val[]: "Luminoso" #+ Glowing front badge with manufacturers logo, works when you turn on the lights.
 
 	key[]: "winning_dice"
 	val[]: "Dado ganador" #+ Accessory name, DLC Pink Ribbon.
@@ -10428,7 +10935,7 @@ localization_db : .localization
 	val[]: "Krone Special" #+ Krone-branded exclusive generic accessory name.
 
 	key[]: "schwarzmuller_special"
-	val[]: "Especial Schwarzmüller" #+ Schwarzmuller-branded exclusive generic accessory name.
+	val[]: "Schwarzmüller Special" #+ Schwarzmuller-branded exclusive generic accessory name.
 
 	key[]: "christmas_sock"
 	val[]: "Calcetín navideño" #+ Hanging interior accessory
@@ -10608,7 +11115,7 @@ localization_db : .localization
 	val[]: "CONTROLES DE CÁMARA" #+ window title
 
 	key[]: "photomode_pan"
-	val[]: "Horizontalidad con cámara"
+	val[]: "Barrido con cámara"
 
 	key[]: "photomode_up"
 	val[]: "Subir"
@@ -10650,7 +11157,7 @@ localization_db : .localization
 	val[]: "Fuerza del difuminado"
 
 	key[]: "photomode_dof_depth"
-	val[]: "Enfoque de la posición del plano"
+	val[]: "Posición del plano de enfoque"
 
 	key[]: "photomode_dof_distance"
 	val[]: "Profundidad de la transición del difuminado"
@@ -10696,13 +11203,13 @@ localization_db : .localization
 	val[]: "Usa el Modo foto o @@imv_nrm_screenshot@@ para tomar una capturar de pantalla, las cuales puedes subir al portal World of Trucks.<br>Selecciona la captura de pantalla deseada, un espacio y pulsa el botón <color value=@@clr_sel@@>Subir al espacio seleccionado<color value=@@clr_txt@@>." #+ description
 
 	key[]: "screenshotman_slot"
-	val[]: "Espacios para capturas de pantalla del perfil en línea." #+ Slots title
+	val[]: "Espacios para capturas de pantalla del perfil en línea:" #+ Slots title
 
 	key[]: "screenshotman_empty"
 	val[]: "Realiza una captura de pantalla para verla aquí." #+ Empty screenshot position
 
 	key[]: "screenshotman_offline"
-	val[]: "¡El perfil no está conectado!<br><br>Para subir una captura de pantalla a tu perfil, debes estar conectado a la cuenta en línea.<br><br>¿Quieres editar tu perfil ahora?" #+ Offline profile warning
+	val[]: "¡El perfil no está conectado!<br><br>Para subir una captura de pantalla a tu perfil debes estar conectado a la cuenta en línea.<br><br>¿Quieres editar tu perfil ahora?" #+ Offline profile warning
 
 	key[]: "sm_empty_slot"
 	val[]: "Espacio vacío" #+ Empty screenshot slot
@@ -10737,7 +11244,7 @@ localization_db : .localization
 	val[]: "El archivo de la captura de pantalla es demasiado grande. Por favor, prueba a reducir la resolución de pantalla." #+ Error message shown if the size of the image file exceeds upload limits and the automatic resize is unable to meet the requirements.
 
 	key[]: "imgup_unsupported"
-	val[]: "El archivo de la captura de pantalla está corrupto o no está soportado." #+ Error message shown if the screenshot file is corrupted or has format which is not supported by the service.
+	val[]: "El archivo de la captura de pantalla está corrupto o no es soportado." #+ Error message shown if the screenshot file is corrupted or has format which is not supported by the service.
 
 	key[]: "imgup_too_big_resolution"
 	val[]: "La resolución de la captura de pantalla es demasiado grande. Por favor, prueba a reducir la resolución de pantalla." #+ Error message shown if at least one dimension of the image exceeds upload limits and the automatic resize is unable to meet the requirements.
@@ -10792,7 +11299,7 @@ localization_db : .localization
 	val[]: "Al menos un DLC no es compatible con la versión actual del juego y será desactivado. Debes instalar la <LINK URL=http://www.eurotrucksimulator2.com/update.php$VERSION_INFO$ COLOR=@@clr_link@@>última actualización</LINK> para restaurar su compatibilidad.<br><br>El contenido afectado es el siguiente:"
 
 	key[]: "incompatible_dlc_steam"
-	val[]: "Al menos un Dlc no es compatible con la versión actual del juego y será desactivado. Por favor, comprueba la integridad de la caché del juego en Steam.<br><br>El contenido afectado es el siguiente:"
+	val[]: "Al menos un DLC no es compatible con la versión actual del juego y será desactivado. Por favor, comprueba la integridad de la caché del juego en Steam.<br><br>El contenido afectado es el siguiente:"
 #@}
 
 #+ Message shown when the save depends on DLC which is currently unavailable.
@@ -10912,7 +11419,7 @@ localization_db : .localization
 	val[]: "Interfaz"
 
 	key[]: "mod_category_weather_setup"
-	val[]: "Clima"
+	val[]: "Climatología"
 
 	key[]: "mod_category_physics"
 	val[]: "Físicas"
@@ -10993,10 +11500,10 @@ localization_db : .localization
 	val[]: "¿Seguro que quieres desactivar todos los mods?" #+ Confirmation message shown when user selects button to deactivate all mods.
 
 	key[]: "mod_multi_move_right_confirm"
-	val[]: "¿Seguro que quieres activar todos los mods?<br><br>Aquellos que no estén activos se añadirán en la parte superior la lista.<br><br><br>(Los mods no compatibles no serán activados)." #+ Confirmation message shown when user selects button to activate all mods.
+	val[]: "¿Seguro que quieres activar todos los mods?<br><br>Aquellos que no estén activos se añadirán en la parte superior la lista.<br><br><br>(Los mods que no sean compatibles no serán activados)." #+ Confirmation message shown when user selects button to activate all mods.
 
 	key[]: "no_mods_active"
-	val[]: "No se ha encontrado ningún mod activo.<br><br>Para activar un mod, selecciónalo de la ventana de la izquierda y haz clic el botón de la flecha." #+ Text shown inside the active mods panel when no mod is currently active
+	val[]: "No se ha encontrado ningún mod activo.<br><br>Para activar un mod, selecciónalo de la ventana de la izquierda y haz clic en el botón de la flecha." #+ Text shown inside the active mods panel when no mod is currently active
 
 	key[]: "mod_activated"
 	val[]: "Activo" #+ State value indicating that the mod is selected as active one
@@ -11020,7 +11527,7 @@ localization_db : .localization
 	val[]: "Ninguna descripción aportada." #+ Text shown inside the description field if the mod has no description.
 
 	key[]: "mod_already_active"
-	val[]: "El mod ya está activo. No puedes volver a activarlo." #+ Text shown inside the info dialog when mod is already active
+	val[]: "El mod ya está activo. No es posible volver a activarlo." #+ Text shown inside the info dialog when mod is already active
 
 	key[]: "mod_incompatible"
 	val[]: "El mod es incompatible con la versión actual del juego. No es posible activarlo." #+ Text shown if mod is not compatible with currently game version, and user tries to activate it.
@@ -11108,7 +11615,7 @@ localization_db : .localization
 	val[]: "Sin imágenes que mostrar" #+ Showed when there are no loading screens to show in the browser
 
 	key[]: "lscr_browser_no_online"
-	val[]: "No se ha podido mostrar ninguna imagen destacada. El juego se encuentra sin conexión." #+ Showed when game is running in offline mode
+	val[]: "No se ha podido mostrar ninguna imagen destacada. El juego se encuentra en modo sin conexión." #+ Showed when game is running in offline mode
 
 	key[]: "lscr_browser_disabled"
 	val[]: "No se ha podido mostrar ninguna imagen destacada. Esta característica está actualmente desactivada." #+ Showed when the user disabled the online loading screens in options
@@ -11133,7 +11640,7 @@ localization_db : .localization
 	val[]: "¿Quieres activar la característica de imágenes destacadas?<br><br>Podrás navegar a través de una selección de espectaculares imágenes seleccionadas desde World of Trucks para usarlas en las pantallas de carga." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
 
 	key[]: "content_change_detected"
-	val[]: "Cambios en el contenido detectados. Actualizando los datos de navegación. Espera, por favor..." #+ Shown on loading screen
+	val[]: "Se han detectado cambios en el contenido. Actualizando los datos de navegación. Espera, por favor..." #+ Shown on loading screen
 #@}
 
 
@@ -11179,31 +11686,31 @@ localization_db : .localization
 	val[]: "Contratos WoT" #+ name of WOTR Jobs icon on desktop
 
 	key[]: "online_job_desc"
-	val[]: "Completa contratos World of Trucks utilizando tu propio equipamiento. El registro de estas entregas se almacena en tu perfil World of Trucks." #+ description of the WOTR Jobs icon on desktop
+	val[]: "Completa entregas World of Trucks usando tu propio camión. El registro de estas entregas se almacena en tu perfil World of Trucks." #+ description of the WOTR Jobs icon on desktop
 
 	key[]: "external_market"
-	val[]: "Mercado externo"
+	val[]: "Mercado WoT"
 
 	key[]: "external_market_desc"
-	val[]: "Completa contratos World of Trucks utilizando tu propio remolque. El registro de estas entregas se almacena en tu perfil World of Trucks."
+	val[]: "Completa entregas World of Trucks usando tu propio remolque. El registro de estas entregas se almacena en tu perfil World of Trucks."
 
 	key[]: "external_market_t"
-	val[]: "MERCADO EXTERNO"
+	val[]: "MERCADO WORLD OF TRUCKS"
 
 	key[]: "game_time"
 	val[]: "Día y hora" #+ Time inside the game world
 
 	key[]: "no_online_job_message"
-	val[]: "No tienes ningún contrato World of Trucks actualmente." #+ Message shown when player does't have any online job taken
+	val[]: "Ahora mismo no hay ninguna entrega World of Trucks disponible." #+ Message shown when player does't have any online job taken
 
 	key[]: "refresh_jobs"
 	val[]: "Actualizar" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "Explorar contratos" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
-	val[]: "Acceder a un contrato aleatorio" #+ Connects with server and accept random job in proximity of player's current position
+	val[]: "Acceder a una entrega aleatoria" #+ Connects with server and accept random job in proximity of player's current position
 
 	key[]: "synchronizing_wotr_t"
 	val[]: "SINCRONIZACIÓN" #+ Name of the window pop-up during WOTR synchronization
@@ -11212,10 +11719,10 @@ localization_db : .localization
 	val[]: "Sincronizando tu progreso con<br>World of Trucks...\n" #+ Message inside window pop-up during WOTR synchronization
 
 	key[]: "confirm_random_job"
-	val[]: "World of Trucks seleccionará automáticamente un contrato disponible en las cercanías de tu posición actual.<br><br>¡Nunca sabrás que es lo que te deparará el destino!<br><br>¿Quieres continuar?" #+ pop-up message to accept taking random job from WOTR
+	val[]: "World of Trucks seleccionará automáticamente una entrega aleatoria disponible cerca de tu posición actual.<br><br>¡Vete a saber que es lo que te deparará el destino!<br><br>¿Quieres continuar?" #+ pop-up message to accept taking random job from WOTR
 
 	key[]: "online_job_not_started"
-	val[]: "Tienes nuevos contratos World of Trucks pendientes." #+ Icons with this text appears on the desktop when online job is taken from web yet not started
+	val[]: "Tienes nuevas entregas World of Trucks pendientes." #+ Icons with this text appears on the desktop when online job is taken from web yet not started
 
 	key[]: "connect"
 	val[]: "Conectar" #+ Button to connect to WOTR service
@@ -11227,34 +11734,34 @@ localization_db : .localization
 	val[]: "Abandonar" #+ Button to cancel WOTR job with
 
 	key[]: "cancel_online_job"
-	val[]: "¿Seguro que quieres abandonar el contrato World of Trucks actual?" #+ A pop-up warning notification on attempt to Cancel WOTR job
+	val[]: "¿Seguro que quieres abandonar la entrega World of Trucks actual?" #+ A pop-up warning notification on attempt to Cancel WOTR job
 
 	key[]: "online_job_resumed"
-	val[]: "Contrato World of Trucks en progreso." #+ Icons with this text appears on the desktop when online job in progress
+	val[]: "Trabajo World of Trucks en progreso." #+ Icons with this text appears on the desktop when online job in progress
 
 	key[]: "suspend_job"
-	val[]: "Suspender" #+ Button to suspend / pause WOTR job
+	val[]: "Suspender entrega" #+ Button to suspend / pause WOTR job
 
 	key[]: "resume_job"
-	val[]: "Reanudar contrato" #+ Button to resume WOTR job
+	val[]: "Reanudar entrega" #+ Button to resume WOTR job
 
 	key[]: "online_job_suspended"
-	val[]: "El contrato World of Trucks está suspendido." #+ Icons with this text appears on the desktop when online job in suspended / paused
+	val[]: "El trabajo World of Trucks está suspendido." #+ Icons with this text appears on the desktop when online job in suspended / paused
 
 	key[]: "economy_sync_failed"
-	val[]: "Se ha perdido la conexión con World of Trucks.<br>No se ha podido guardar tu progreso." #+ Advisor message when game unable establish server connection to save the progress
+	val[]: "Se ha perdido la conexión con World of Trucks.<br>No ha sido posible guardar tu progreso." #+ Advisor message when game unable establish server connection to save the progress
 
 	key[]: "suspend_online_job"
-	val[]: "Para poder aceptar otro trabajo es necesario suspender el contrato World of Trucks.<br><br>Podrás continuar con él tras completar el nuevo encargo.<br><br>¿Quieres comenzar otra entrega ahora?" #+ Warning message to inform that player about to suspend online job in order to take offline one.
+	val[]: "Para poder aceptar otro trabajo es necesario suspender la entrega World of Trucks actual.<br><br>Podrás proseguir con ella tras completar el nuevo encargo.<br><br>¿Quieres comenzar otra entrega ahora?" #+ Warning message to inform that player about to suspend online job in order to take offline one.
 
 	key[]: "connection_error_message"
-	val[]: "No se ha podido conectar con World of Trucks.<br><br>Establece una conexión y pulsa el botón Conectar para obtener los detalles del contrato." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found.
+	val[]: "No se ha podido conectar con World of Trucks.<br><br>Establece una conexión y pulsa el botón Conectar para obtener los detalles de la entrega." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found.
 
 	key[]: "error_resuming_online_job"
-	val[]: "No se ha podido conectar con World of Trucks.<br><br>Establece una conexión y pulsa el botón Conectar para obtener los detalles del contrato y continuar con tu progreso." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to resume job.
+	val[]: "No se ha podido conectar con World of Trucks.<br><br>Establece una conexión y pulsa el botón Conectar para obtener los detalles de la entrega y reanudar tu progreso." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to resume job.
 
 	key[]: "error_aborting_online_job"
-	val[]: "No se ha podido conectar con World of Trucks.<br><br>Establece una conexión y pulsa el botón Conectar para obtener los detalles del contrato y continuar con su cancelación." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to cancel the job.
+	val[]: "No se ha podido conectar con World of Trucks.<br><br>Establece una conexión y pulsa el botón Conectar para obtener los detalles de la entrega y proceder con su cancelación." #+ Message shows instead of the cargo in WOTR jobs screen if no internet connection found after attempt to cancel the job.
 
 	key[]: "wotr_not_connected"
 	val[]: "Se ha perdido la conexión con World of Trucks." #+ Icons with this text appears on the desktop when online job lost its connection with WOTR
@@ -11269,10 +11776,10 @@ localization_db : .localization
 	val[]: "Restaurando la última posición conocida de World of Trucks..." #+ message during restoring player's position
 
 	key[]: "confirm_get_job_page"
-	val[]: "¿Quieres abrir el explorador y echar un vistazo a los contratos World of Trucks?" #+ pop-up message to inform about opening WOTR jobs page in web browser
+	val[]: "¿Quieres abrir el navegador web y echar un vistazo a las entregas World of Trucks?" #+ pop-up message to inform about opening WOTR jobs page in web browser
 
 	key[]: "offline_profile_message"
-	val[]: "¡El perfil no está conectado a World of Trucks!<br><br>Edita tu perfil para conectarlo y así poder recibir contratos."#+ A message on WOTR job screen if profile isn't connected to WOTR
+	val[]: "¡El perfil no está conectado a World of Trucks!<br><br>Edita tu perfil para conectarlo y así poder recibir trabajos."#+ A message on WOTR job screen if profile isn't connected to WOTR
 
 	key[]: "edit_profile"
 	val[]: "Editar perfil" #+ Button in WOTR jobs screens to begin editing profile if WOTR isn't conneted
@@ -11284,58 +11791,58 @@ localization_db : .localization
 	val[]: "CONTRATO NO VÁLIDO"
 
 	key[]: "error_report_progress_online_job"
-	val[]: "El contrato World of Trucks en el que trabajas actualmente ya no es válido."
+	val[]: "La entrega World of Trucks en la que trabajas actualmente ya no es válida."
 
 	key[]: "sync_suspending_job"
-	val[]: "Suspendiendo el contrato..."
+	val[]: "Suspendiendo la entrega..."
 
 	key[]: "error_resuming_online_job_invalid_position"
-	val[]: "El camión o remolque es demasiado largo para colocarlo en la posición inicial del contrato World of Trucks. Por favor, selecciona otro camión o remolque y reanuda el contrato."
+	val[]: "El camión o remolque modificado es demasiado largo para poder colocarlo en la posición inicial de la entrega World of Trucks. Por favor, selecciona otro camión o remolque y reanuda el trabajo."
 
 	key[]: "job_detail_t"
-	val[]: "CONTRATO ACTUAL" #+ name of job detail screen
+	val[]: "TRABAJO ACTUAL" #+ name of job detail screen
 
 	key[]: "no_online_jobs_message"
-	val[]: "No se ha encontrado ningún contrato en las cercanías de tu posición actual.<br><br>Acércate a una ciudad o empresa de logística y prueba de nuevo." #+ message shown when there are no online jobs around player's position
+	val[]: "No hay ninguna entrega disponible cerca de tu posición actual.<br><br>Acércate a una ciudad o empresa y prueba de nuevo." #+ message shown when there are no online jobs around player's position
 
 	key[]: "no_company_online_jobs_message"
-	val[]: "No se ha encontrado ningún contrato en esta empresa." #+ message shown when there are no online jobs at company activation point
+	val[]: "No hay ninguna entrega disponible en esta empresa." #+ message shown when there are no online jobs at company activation point
 
 	key[]: "show_nearest_online_jobs"
-	val[]: "Mostrar más cercanos" #+ Button to show online jobs in radius instead of jobs at company activation point
+	val[]: "Mostrar más cercanas" #+ Button to show online jobs in radius instead of jobs at company activation point
 
 	key[]: "error_taking_online_job"
-	val[]: "No se ha podido acceder al contrato." #+ message shown when taking of online job fails
+	val[]: "No ha sido posible acceder a la entrega." #+ message shown when taking of online job fails
 
 	key[]: "error_fetching_online_jobs"
-	val[]: "No se ha podido obtener el listado de contratos del servidor." #+ message shown when listing of online jobs fails
+	val[]: "No ha sido posible obtener el listado de entregas del servidor." #+ message shown when listing of online jobs fails
 
 	key[]: "error_taking_online_job_expired"
-	val[]: "El contrato ha expirado. Por favor, selecciona otro." #+  message shown when taking online job that is already expired – it happens when job list screen is opened for a long time
+	val[]: "Esta entrega ha expirado. Por favor, selecciona otra diferente." #+  message shown when taking online job that is already expired – it happens when job list screen is opened for a long time
 
 	key[]: "error_job_missing_dlc"
-	val[]: "El contrato actual requiere los siguientes DLCs:<br><br>" #+ messages shown when resuming online job that requires some unmounted DLCs, it is followed by new line separated names of DLCs
+	val[]: "La entrega actual requiere los siguientes DLCs:<br><br>" #+ messages shown when resuming online job that requires some unmounted DLCs, it is followed by new line separated names of DLCs
 
 	key[]: "error_unknown_trailer"
-	val[]: "No se puede mostrar la vista previa con los detalles del contrato. Se mostrarán tras continuar tu contrato actual." #+ Message is shown if an error occured during server synchronization.
+	val[]: "No es posible mostrar los detalles de la entrega. Podrás consultarlos tras reanudar tu trabajo actual." #+ Message is shown if an error occured during server synchronization.
 
 	key[]: "error_no_own_trailer_attached"
-	val[]: "El trabajo requiere un remolque propio, pero no tienes ninguno acoplado." #+ Message shown when player tries to continue external market job however they have no compatible trailer attached.
+	val[]: "La entrega requiere un remolque propio, pero no tienes ninguno acoplado." #+ Message shown when player tries to continue external market job however they have no compatible trailer attached.
 
 	key[]: "error_no_compatible_trailer_owned"
-	val[]: "No tienes ningún remolque que sea adecuado para este trabajo." #+ Message shown if player does not own any trailer that would be compatible with the job but there is at least one available in trailer dealer.
+	val[]: "No tienes ningún remolque que sea adecuado para poder realizar este trabajo." #+ Message shown if player does not own any trailer that would be compatible with the job but there is at least one available in trailer dealer.
 
 	key[]: "required_trailer_external_header"
 	val[]: "Requisitos del remolque:" #+ Header of the section describing what trailer is needed to finish the job.
 
 	key[]: "error_no_compatible_trailer_available"
-	val[]: "No hay ningún remolque adecuado disponible en el juego. Es posible que la causa sea haber eliminado algún mod o DLC. Reinstala el contenido ausente o abandona el trabajo." #+ Message shown if player does not own any trailer that would be compatible with the job and there is no compatible trailer available in game, probably due to removal od MOD or DLC.
+	val[]: "No hay ningún remolque adecuado disponible en el juego. Es probable que esto ocurra tras haber eliminado algún mod o DLC. Reinstala el contenido ausente o abandona el trabajo." #+ Message shown if player does not own any trailer that would be compatible with the job and there is no compatible trailer available in game, probably due to removal od MOD or DLC.
 
 	key[]: "error_incompatible_trailer_in_use"
-	val[]: "El remolque acoplado no es adecuado para el trabajo." #+ Message shown if player tries to resume external market job however currently attached trailer is not compatible with the job.
+	val[]: "El remolque acoplado no es adecuado para realizar el trabajo." #+ Message shown if player tries to resume external market job however currently attached trailer is not compatible with the job.
 
 	key[]: "error_you_own_compatible_trailers"
-	val[]: "Dispones de remolques adecuados para el trabajo en tus garajes." #+ Message shown if player owns at least one trailer compatible with the current external market.
+	val[]: "Dispones de remolques adecuados para realizar el trabajo en tus garajes." #+ Message shown if player owns at least one trailer compatible with the current external market.
 
 	key[]: "browse_compatible_trailers"
 	val[]: "Explorar remolques adecuados" #+ Button opening compatible trailers browser where user can select trailer to continue delivering external market job from his own trailers.
@@ -11359,16 +11866,16 @@ localization_db : .localization
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "El DLC $DEPENDENCY_NAME$ necesario se encuentra actualmente ausente. Para que la partida funcione correctamente, dicho DLC debe estar instalado y activado en el equipo. Es necesario solucionar el problema antes de cargar la partida." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "El DLC $DEPENDENCY_NAME$ requerido se encuentra actualmente ausente. Para que la partida funcione correctamente, dicho DLC debe estar instalado y activo. Es necesario solucionar el problema antes de continuar con el proceso de carga." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
-	val[]: "El DLC $DEPENDENCY_NAME$ opcional se encuentra actualmente ausente. Si esto es algo que no esperabas, por favor, comprueba el estado del DLC.<br><br>No obstante, puedes cargar la partida igualmente, pero las características incluidas por dicho DLC se perderán.$DEPENDENCY_NAME$" #+ Information showed when dependency of type optional DLC is missing.
+	val[]: "El DLC $DEPENDENCY_NAME$ opcional se encuentra actualmente ausente. Si esto es algo que no esperabas, por favor, comprueba el estado del DLC.<br><br>Ten en cuenta que puedes cargar la partida de todos modos, aunque las características incluidas por dicho DLC se perderán." #+ Information showed when dependency of type optional DLC is missing.
 
 	key[]: "missing_mod"
-	val[]: "El mod $DEPENDENCY_NAME$ se encuentra actualmente ausente o ha sido desactivado. Si esto es algo que no esperabas, por favor, comprueba el estado del mod.<br><br>No obstante, puedes cargar la partida igualmente, pero las características incluidas por dicho mod se perderán." #+ Information displayed when dependency of type mod is missing.
+	val[]: "El mod $DEPENDENCY_NAME$ se encuentra actualmente ausente o ha sido desactivado. Si esto es algo que no esperabas, por favor, comprueba el estado del mod.<br><br>Ten en cuenta que puedes cargar la partida de todos modos, aunque las características incluidas por dicho mod se perderán." #+ Information displayed when dependency of type mod is missing.
 
 	key[]: "incompatible_mod"
-	val[]: "El mod $DEPENDENCY_NAME$ es incompatible con la versión actual del juego. Esto significa que el autor ha establecido que su mod sea compatible para ciertas versiones y la actual no está entre ellas.<br><br>Sugerencias:<br>1. Prueba a buscar una versión actualizada del mod que funcione con la versión actual.<br>2. Actualiza el juego o vuelve a una versión compatible con el mod.<br><br>No obstante, puedes cargar la partida igualmente, pero dependiendo de las características del mod, puede que el proceso de carga falle o se presenten otros problemas." #+ Information displayed when dependency of type mod is incompatible with the version of the game currently used by player.
+	val[]: "El mod $DEPENDENCY_NAME$ es incompatible con la versión actual del juego. Esto significa que el autor ha establecido que dicho mod sea compatible en ciertas versiones, y la actual no se encuentra entre ellas.<br><br>Sugerencias:<br>1. Prueba a buscar una versión actualizada del mod que funcione en la versión actual.<br>2. Actualiza el juego o regresa a una versión compatible con el mod.<br><br>Ten en cuenta que puedes cargar la partida de todos modos, aunque es posible que, dependiendo de las características del mod, el proceso de carga falle o aparezcan otros problemas." #+ Information displayed when dependency of type mod is incompatible with the version of the game currently used by player.
 
 	key[]: "missing_dependencies_t"
 	val[]: "DEPENDENCIAS AUSENTES" #+ The missing dependencies dialog title.
@@ -11380,10 +11887,10 @@ localization_db : .localization
 	val[]: "Abrir Steam Workshop"  #+ Button text. Open Steam Workshop page of the missing Workshop mod.
 
 	key[]: "missing_dependencies_info"
-	val[]: "La partida guardada depende de DLCs o mods que se encuentran actualmente ausentes, los cuales se muestran más abajo. Al seleccionar una entrada en la lista, puedes obtener más información sobre cada elemento específico." #+ The info about the missing dependencies dialog.
+	val[]: "La partida guardada depende de DLCs o mods que se encuentran actualmente ausentes, los cuales se muestran más abajo. Al seleccionar una de las entradas de la lista, podrás obtener más detalles sobre cada elemento." #+ The info about the missing dependencies dialog.
 
 	key[]: "missing_dependencies_fatal_error"
-	val[]: "La partida guardada depende de al menos un DLC o mod. Es necesario solucionar el problema antes de continuar cargando la partida." #+ Info shown if the continue operation is blocked because the save depends on some required dlc (e.g. map or vehicle)
+	val[]: "La partida guardada depende de al menos un DLC o mod. Es necesario solucionar el problema antes de continuar con el proceso de carga." #+ Info shown if the continue operation is blocked because the save depends on some required dlc (e.g. map or vehicle)
 
 	key[]: "abort_loading"
 	val[]: "Cancelar" #+ Abort loading button.
@@ -11401,10 +11908,10 @@ localization_db : .localization
 	val[]: "Mod de Steam Workshop" #+ Steam Workshop mod.
 
 	key[]: "removable_dlc"
-	val[]: "DLC Opcional" #+ DLC that can be removed or disabled.
+	val[]: "DLC opcional" #+ DLC that can be removed or disabled.
 
 	key[]: "required_dlc"
-	val[]: "DLC necesario" #+ DLC that is required to load save that is depending on it.
+	val[]: "DLC requerido" #+ DLC that is required to load save that is depending on it.
 #@}
 
 #+ Steam Workshop wait dialogs.
@@ -11413,7 +11920,7 @@ localization_db : .localization
 	val[]: "Steam Workshop" #+ Title of the workshop wait dialog.
 
 	key[]: "workshop_wait_msg"
-	val[]: "Aguardando a que se descargue el contenido de Steam Workshop...<br><br>Puedes abortar el proceso haciendo clic en el botón Cancelar, aunque es probable que el contenido no funcione." #+ Message describing why player has to wait here. And consequences of clicking cancel button.
+	val[]: "Aguardando a que se complete la descarga del contenido de Steam Workshop...<br><br>Puedes abortar el proceso haciendo clic en el botón Cancelar, aunque lo más probable que el contenido no llegue a funcionar." #+ Message describing why player has to wait here. And consequences of clicking cancel button.
 
 	key[]: "query_subscribed_items"
 	val[]: "Consultando elementos suscritos..." #+ Workshop operation progress that queries subscribed items/mods.
@@ -11426,16 +11933,16 @@ localization_db : .localization
 #@{
 
 	key[]: "job_from"
-	val[]: "De"
+	val[]: "De:"
 
 	key[]: "job_to"
-	val[]: "A"
+	val[]: "A:"
 
 	key[]: "job_time_remain"
-	val[]: "Tiempo restante"
+	val[]: "Tiempo restante:"
 
 	key[]: "cargo_mass"
-	val[]: "Peso de la mercancía"
+	val[]: "Peso de la mercancía:"
 
 	key[]: "quick_job_resumed"
 	val[]: "Trabajo rápido en progreso."
@@ -11464,7 +11971,7 @@ localization_db : .localization
 	val[]: "Dependencias" #+ Title of the section in mod details window displaying list of the dependencies the mod has.
 
 	key[]: "missing_mod_dependencies_detected"
-	val[]: "Al menos un DLC necesario para usar este mod se encuentra actualmente ausente. Comprueba que estén todos instalados y activos." #+ The message showed when user has one of MOD dependencies missing.
+	val[]: "Hay al menos un DLC necesario para poder usar este mod que se encuentra actualmente ausente. Comprueba que estén todos instalados y activos." #+ The message showed when user has one of MOD dependencies missing.
 #@}
 
 #+ Version change detected message box.
@@ -11473,13 +11980,13 @@ localization_db : .localization
 	val[]: "NUEVA VERSIÓN DETECTADA" #+ Title of the infomational message box when version change has been detected.
 
 	key[]: "version_upgrade_detected"
-	val[]: "El juego se ha actualizado a una nueva versión." #+ The message showed when upgrade of the game to the newer version has been detected.
+	val[]: "El juego se ha actualizado." #+ The message showed when upgrade of the game to the newer version has been detected.
 
 	key[]: "version_downgrade_detected"
 	val[]: "El juego ha regresado a una versión anterior." #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
-	val[]: "<br><br>Una nueva versión del juego puede desestabilizar los mods, dando como resultado cierres inesperados o inestabilidades durante la partida. Los autores son los responsables de mantener esta compatibilidad, así que comprueba si los mods activos actualmente son compatibles.<br><br>Sugerencia: Si la versión actual del mod es incompatible, prueba a desactivarlo desde el Gestor de mods.<br><br>Versión del juego actual: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
+	val[]: "<br><br>Las actualizaciones pueden llegar a desestabilizar el funcionamiento de los mods, ocasionando cierres inesperados o problemas durante la partida. Los autores de estos mods son los únicos responsables de mantener la compatibilidad con las versiones más recientes, así que comprueba si los mods actualmente activos lo son.<br><br>Sugerencia: Si la versión actual del mod es incompatible, prueba a desactivarlo desde el Gestor de mods.<br><br>Versión del juego actual: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
 #@}
 
 #+ Strings related to accessory filtering feature.
@@ -11539,7 +12046,7 @@ localization_db : .localization
 	val[]: "Conectar" #+ The button which triggers connection of the selected content.
 
 	key[]: "connect_content_help"
-	val[]: "World of Trucks ha detectado nuevo contenido añadido. Conéctate a los servicios en línea de World of Trucks para acceder a él." #+ The help text for the connect content dialog. Shows when the user opens the connect content dialog from the online options.
+	val[]: "World of Trucks ha detectado nuevo contenido añadido. Conéctate a los servicios en línea de World of Trucks para poder acceder a él." #+ The help text for the connect content dialog. Shows when the user opens the connect content dialog from the online options.
 
 	key[]: "online_options"
 	val[]: "En línea" #+ Name of the options category.
@@ -11578,7 +12085,7 @@ localization_db : .localization
 	val[]: "COMPLETADO" #+ Title of the success message box.
 
 	key[]: "info_t"
-	val[]: "INFORMACIÓN" #+ The title of the message box displayed when not all of the packages were registered.
+	val[]: "DETALLES" #+ The title of the message box displayed when not all of the packages were registered.
 
 	key[]: "online_options_t"
 	val[]: "EN LÍNEA" #+ Title of the online options screen.
@@ -11593,7 +12100,7 @@ localization_db : .localization
 	val[]: "No se ha podido conectar el contenido porque la cuenta Steam actual está asociada a una cuenta World of Trucks diferente." #+ The message displayed when the current Steam account is connected to any world of trucks account that is not a currently used World of Trucks account.
 
 	key[]: "registration_result_some_failed"
-	val[]: "La conexión de algunos DLCs ha fallado.<br>Pasa el ratón por encima de cada DLC marcado con una exclamación para más información." #+ The content of the message box shown when not all selected content was successfully connected.
+	val[]: "La conexión de algunos DLCs ha fallado.<br>Pasa el ratón por encima de cada DLC marcado con una exclamación para obtener más detalles." #+ The content of the message box shown when not all selected content was successfully connected.
 
 	key[]: "content_connect_progress"
 	val[]: "Registrando el siguiente contenido: $CURRENT_CONTENT_NAME$..." #+ The text used to display the progress of the online content connecting.
@@ -11629,7 +12136,7 @@ localization_db : .localization
 	val[]: "Más tarde" #+ The button postponing DLC registration for the later time.
 
 	key[]: "dlc_registration_blocked_no_permanent_ownership"
-	val[]: "No se ha podido registrar el DLC. No se ha encontrado una licencia permanente, probablemente debido a Steam Family Sharing." #+ The error displayed when DLC registration is blocked because the package is not permanently owned by player (for example due to family sharing).
+	val[]: "No se ha podido registrar el DLC. No se ha encontrado una licencia permanente, probablemente debido a la función de préstamo familiar de Steam." #+ The error displayed when DLC registration is blocked because the package is not permanently owned by player (for example due to family sharing).
 
 	key[]: "dlc_no_permanent_ownership"
 	val[]: "Contenido sin licencia permanente" #+ The state of the content that cannot be connected due to invalid license.
@@ -11660,27 +12167,27 @@ localization_db : .localization
 
 	#+ Text showed when player lead the escort vehicle to crash with another traffic ai.
 	key[]: "oversize_escort_crash_ai_failure_dialog_text"
-	val[]: "El vehículo piloto ha colisionado contra el tráfico por conducir incorrectamente.<br>Puedes cargar un punto de control guardado o cancelar la entrega con una penalización de $MONEY$."
+	val[]: "Has hecho que vehículo piloto haya colisionado contra el tráfico por conducir de forma incorrecta.<br>Puedes cargar un punto de control guardado o cancelar la entrega con una penalización de $MONEY$."
 
 	#+ Text showed when player will drive off the route and Special Transport is over because of that.
 	key[]: "oversize_off_route_failure_dialog_text"
-	val[]: "Se supone que debes seguir la ruta fijada.<br>Puedes cargar un punto de control guardado o cancelar la entrega con una penalización de $MONEY$.\n"
+	val[]: "Has abandonado la ruta fijada que se supone que debes seguir.<br>Puedes cargar un punto de control guardado o cancelar la entrega con una penalización de $MONEY$."
 
 	#+ Text showed when player will drive away from the escort vehicles and Special Transport is over because of that.
 	key[]: "oversize_not_following_failure_dialog_text"
-	val[]: "Se supone que debes mantenerte junto a los vehículos piloto.<br>Puedes cargar un punto de control guardado o cancelar la entrega con una penalización de $MONEY$."
+	val[]: "No te has mantenido junto a los vehículos piloto tal y como se supone que debes hacer.<br>Puedes cargar un punto de control guardado o cancelar la entrega con una penalización de $MONEY$."
 
 	#+ Text showed when fading after player will drive away from escort vehicles and the Special Transport is over.
 	key[]: "oversize_not_following_failure_fade_text"
-	val[]: "¡Te has alejado de los vehículos piloto!"
+	val[]: "¡Te has alejado demasiado de los vehículos piloto!"
 
 	#+ Text showed when fading after player will crash the escort vehicles and the Special Transport is over.
 	key[]: "oversize_escort_crash_player_failure_fade_text"
-	val[]: "¡Has dañado el vehículo piloto!"
+	val[]: "¡Has dañado uno de los vehículos piloto!"
 
 	#+ Text showed when fading after player will lead the escort vehicles into crash with another ai and hence the Special Transport job is over.
 	key[]: "oversize_escort_crash_ai_failure_fade_text"
-	val[]: "¡El vehículo piloto ha sufrido un accidente!"
+	val[]: "¡Uno de los vehículos piloto ha sufrido un accidente!"
 
 	#+ Text showed when fading after player will leave the route and hence the Special Transport job is over.
 	key[]: "oversize_off_route_failure_fade_text"
@@ -11771,7 +12278,7 @@ localization_db : .localization
 
 	#+ Oversize tutorial outro text.
 	key[]: "oversize_tutorial_outro"
-	val[]: "¡Si no sigues las normas, podrías fallar el trabajo de transporte especial!"
+	val[]: "¡Si no sigues las normas el trabajo de transporte especial podría fracasar!"
 
 	#+ First changle lane maneuver popup text.
 	key[]: "oversize_tutorial_popup_1"
@@ -11783,7 +12290,7 @@ localization_db : .localization
 
 	#+ Third changle lane maneuver popup text.
 	key[]: "oversize_tutorial_popup_3"
-	val[]: "Solo entonces, será seguro para <color value=@@clr_sel@@>ti<color value=@@clr_txt@@> desplazarte al carril designado."
+	val[]: "Solo entonces será seguro para <color value=@@clr_sel@@>ti<color value=@@clr_txt@@> desplazarte al carril designado."
 
 	#+ Message for fade_in screen when taking OVS mission with your own truck.
 	key[]: "oversize_preparing_cargo"
@@ -11802,7 +12309,7 @@ localization_db : .localization
 
 	#+ Name of the cargo of mystery cylinder.
 	key[]: "cn_mystery_cyl"
-	val[]: "Equipo de alta tecnología"
+	val[]: "Equipo de tecnología avanzada"
 
 	#+ Name of the cargo of mystery box.
 	key[]: "cn_mystery_box"
@@ -11848,10 +12355,10 @@ localization_db : .localization
 #+ Strings related to Steam inventory feature.
 #@{
 	key[]: "inventory_loading_failed_content"
-	val[]: "Se ha producido un error al cargar el contenido del inventario Steam. <br><br>$ERROR$<br><br>Pulsa el botón Continuar para mantener dicho contenido activo. El juego lo buscará periódicamente.<br><br>Puedes desactivar el contenido temporalmente para que dejen de aparecer mensajes como este. El juego volverá a activar el contenido automáticamente la próxima vez que lo inicies." #+ The error message showed in truck configurator screen when Steam inventory content is not present due to loading error. The $ERROR$ must be keeped untranslated.
+	val[]: "Se ha producido un error al cargar el contenido del inventario Steam. <br><br>$ERROR$<br><br>Pulsa el botón Continuar para mantener dicho contenido activo y el juego se encargará de buscarlo periódicamente.<br><br>Puedes optar por desactivarlo temporalmente para que dejen de aparecer mensajes como este. El juego volverá a activar el contenido automáticamente la próxima vez que lo inicies." #+ The error message showed in truck configurator screen when Steam inventory content is not present due to loading error. The $ERROR$ must be keeped untranslated.
 
 	key[]: "inventory_loading_request_failed_content"
-	val[]: "No se han podido descargar elementos del inventario Steam." #+ The error message showed in truck configurator screen when game fails to send Steam inventory request.
+	val[]: "No ha sido posible descargar los elementos del inventario Steam." #+ The error message showed in truck configurator screen when game fails to send Steam inventory request.
 
 	key[]: "inventory_wait_t"
 	val[]: "INVENTARIO STEAM" #+ Title of the inventory wait dialog.
@@ -11887,7 +12394,7 @@ localization_db : .localization
 	val[]: "INVENTARIO STEAM" #+ The title of the dialog showed when user sells or trades some inventory item.
 
 	key[]: "inventory_items_sold_text"
-	val[]: "Se han eliminado algunos elementos del inventario Steam. Ya no podrás comprarlos en un taller.<br><br>Esto no afecta a elementos instalados actualmente." #+ The text showed in the dialog displayed when user sells or trades some inventory item.
+	val[]: "Ciertos elementos del inventario Steam han sido eliminados, por lo que no será posible adquirirlos en un taller.<br><br>Esto no afecta a elementos instalados actualmente." #+ The text showed in the dialog displayed when user sells or trades some inventory item.
 #@}
 
 
@@ -11900,7 +12407,7 @@ localization_db : .localization
 	val[]: "Éxito" #+ Success result message.
 
 	key[]: "steam_result_serviceunavailable"
-	val[]: "No se ha podido conectar con Steam. Por favor, comprueba que tu conexión a Internet funciona correctamente. Si todo está correcto, inténtalo de nuevo más tarde." #+ The message showed when game fails to connect to Steam servers.
+	val[]: "No ha sido posible conectar con Steam. Por favor, comprueba si tu conexión a Internet funciona correctamente. Si todo está bien, entonces inténtalo de nuevo más tarde." #+ The message showed when game fails to connect to Steam servers.
 
 	key[]: "steam_result_timeout"
 	val[]: "La conexión entre el juego y Steam ha expirado. Por favor, inténtalo de nuevo." #+ The message showed when connection between game and Steam services times out.
@@ -11951,22 +12458,22 @@ localization_db : .localization
 	val[]: "¡Objetivo personal completado!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Abrir página de eventos" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Progreso" #+ The label used to indicate progress of the event.
 
 	key[]: "event_info"
-	val[]: "INFORMACIÓN DEL EVENTO" #+ Text showed on the button which opens informations about an event.
+	val[]: "DETALLES DEL EVENTO" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Eventos en directo" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Nivel" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "No hay ningún evento activo en este momento."
 #@}
 
 #+ Trailer ownership
@@ -11996,7 +12503,7 @@ localization_db : .localization
 	val[]: "Autocargar remolque"
 
 	key[]: "job_autoload"
-	val[]: "Pulsa el siguiente comando<br>para saltar la carga del remolque y comenzar la entrega:"
+	val[]: "Pulsa el siguiente comando<br>para saltar la carga del remolque y comenzar con la entrega:"
 
 	key[]: "job_unload_title"
 	val[]: "Descargar remolque"
@@ -12011,7 +12518,7 @@ localization_db : .localization
 	val[]: "Mercado de mercancías"
 
 	key[]: "cargo_market_desc"
-	val[]: "Usa tu propio remolque para llevar una gran variedad de mercancías hasta sus destinos." #+ The description of an Cargo Planner icon, used to open a window for selecting cargo with owned trailer.
+	val[]: "Usa tu propio remolque para llevar una gran variedad de mercancías hasta sus destinatarios." #+ The description of an Cargo Planner icon, used to open a window for selecting cargo with owned trailer.
 
 	key[]: "trailerman_title"
 	val[]: "MIS REMOLQUES"
@@ -12062,7 +12569,7 @@ localization_db : .localization
 	val[]: "Viajar" #+ Garage manager operation for teleporting player to the selected garage.
 
 	key[]: "trailerman_msg_operationfail_onjob"
-	val[]: "No puedes realizar la operación solicitada. Debes finalizar la entrega primero." #+ The message shown when user cannot do the operation because he is on job.
+	val[]: "No puedes realizar la operación solicitada. Antes debes finalizar la entrega actual." #+ The message shown when user cannot do the operation because he is on job.
 
 	key[]: "trailerman_msg_takefail_notruck"
 	val[]: "No puedes usar el remolque seleccionado porque no estás conduciendo un camión." #+ The message shown when user cannot take trailer because he is currently not driving any truck.
@@ -12098,7 +12605,7 @@ localization_db : .localization
 	val[]: "Has llegado al almacén con un remolque, así que será necesario trasladarlo al garaje de $CITY$ para comenzar el trabajo.<br><br>¿Quieres descartar el remolque actual y aceptar la entrega?" #+ Alert showed when player tries to take company job (with company trailer) while having own trailer attached.
 
 	key[]: "online_job_own_trailer_warning"
-	val[]: "Antes de aceptar un contrato World of Trucks tu remolque debe ser trasladado al garaje de $CITY$.<br><br>¿Quieres descartar el remolque actual y aceptar el contrato?" #+ Alert showed when player tries to take online job (with company trailer) while having own trailer attached.
+	val[]: "Antes de aceptar una entrega World of Trucks tu remolque debe ser trasladado al garaje de $CITY$.<br><br>¿Quieres descartar el remolque actual y aceptar el contrato?" #+ Alert showed when player tries to take online job (with company trailer) while having own trailer attached.
 
 	key[]: "no_cargo_available"
 	val[]: "Ahora mismo no hay mercancías disponibles para tu remolque.<br><br>Asegúrate de que tienes todas las habilidades necesarias para llevar mercancías con él y de que esté permitido en la zona." #+ Message showed when there are no available cargoes compatible with current trailer.
@@ -12116,7 +12623,7 @@ localization_db : .localization
 	val[]: "¿Seguro que quieres comprar el remolque seleccionado por $PRICE$ y almacenarlo en el garaje de $CITY$?" #+ Confirmation shown when player want's to buy new trailer.
 
 	key[]: "trailerdealer_buy_confirm_no_truck"
-	val[]: "Actualmente no has adquirido ningún camión y, por tanto, no podrás usar el remolque. ¿Seguro que quieres comprar el remolque seleccionado?" #+ Confirmation shown when player tries to buy trailer but he has no truck.
+	val[]: "Actualmente no cuentas con ningún camión, así que no podrás usar el remolque. ¿Seguro que quieres comprar el remolque seleccionado?" #+ Confirmation shown when player tries to buy trailer but he has no truck.
 
 	key[]: "garageman_current_productivity"
 	val[]: "Productividad actual"
@@ -12206,7 +12713,7 @@ localization_db : .localization
 	val[]: "Estado" #+ Title of the trailer status column.
 
 	key[]: "trailerman_confirm_operation_delay"
-	val[]: "(Tomará $TIME$ porque el remolque seleccionado está siendo usado actualmente para una entrega)."
+	val[]: "(Tomará $TIME$ porque el remolque seleccionado está siendo usado actualmente para realizar una entrega)."
 
 	key[]: "garage_stats_t"
 	val[]: "REGISTRO ECONÓMICO" #+ Garage statistics popup title.
@@ -12215,13 +12722,13 @@ localization_db : .localization
 	val[]: "Selecciona un espacio para ver sus detalles." #+ Hint shown in garage management screen.
 
 	key[]: "garage_quicktravel_locked_tooltip"
-	val[]: "No puedes hacer un viaje rápido al garaje en el que te encuentras actualmente." #+ Tooltip shown when player hovers over disabled quick travel button.
+	val[]: "No puedes hacer un viaje rápido al garaje en el que ya te encuentras actualmente." #+ Tooltip shown when player hovers over disabled quick travel button.
 
 	key[]: "garage_quicktravel_locked_trailer_tooltip"
 	val[]: "No puedes hacer un viaje rápido al garaje seleccionado porque el remolque actual no está permitido en ese país." #+ Tooltip shown when player hovers over quick travel button that is disabled because their's currently assigned is not allowed in the garage's country.
 
 	key[]: "garage_sell_locked_tooltip"
-	val[]: "No puedes vender un garaje que tenga conductores, camiones y/o remolques." #+ Tooltip shown when player hovers over disabled garage sell button.
+	val[]: "No puedes vender un garaje que contenga conductores, camiones y/o remolques." #+ Tooltip shown when player hovers over disabled garage sell button.
 
 	key[]: "garage_upgrade_locked_tooltip"
 	val[]: "El garaje ha sido mejorado al completo." #+ Tooltip shown when player hovers over upgrade button.
@@ -12278,34 +12785,34 @@ localization_db : .localization
 	val[]: "Todavía no has descubierto ningún concesionario."
 
 	key[]: "link_locked_msg_trailer_dealer"
-	val[]: "Sigue avanzando para adquirir tus propios remolques."
+	val[]: "Sigue avanzando para poder adquirir tus propios remolques."
 
 	key[]: "link_locked_msg_cabin_adjust"
 	val[]: "No puedes acceder a los ajustes de cabina porque no estás conduciendo ningún camión."
 
 	key[]: "link_locked_msg_skills"
-	val[]: "Ahora mismo no tienes habilidades disponibles. Sube de nivel para desbloquear esta ventana."
+	val[]: "Ahora mismo no tienes habilidades disponibles. Sube de nivel para poder desbloquear esta ventana."
 
 	key[]: "link_locked_company_overview"
-	val[]: "Tienes que adquirir un camión para poder acceder al Gestor de la empresa."
+	val[]: "Tienes que adquirir un camión para poder acceder al gestor de la empresa."
 
 	key[]: "link_locked_msg_truck_manager"
-	val[]: "Tienes que adquirir un camión para poder acceder al gestor de camiones."
+	val[]: "Tienes que adquirir un camión para poder acceder al Gestor de camiones."
 
 	key[]: "link_locked_msg_trailer_manager"
-	val[]: "Tienes que adquirir un remolque para poder acceder al gestor de remolques."
+	val[]: "Tienes que adquirir un remolque para poder acceder al Gestor de remolques."
 
 	key[]: "link_locked_msg_garage_manager"
-	val[]: "Tienes que adquirir un camión para poder acceder al gestor de garajes."
+	val[]: "Tienes que adquirir un camión para poder acceder al Gestor de garajes."
 
 	key[]: "link_locked_msg_driver_manager"
-	val[]: "Tienes que adquirir un camión para poder acceder al gestor de conductores."
+	val[]: "Tienes que adquirir un camión para poder acceder al Gestor de conductores."
 
 	key[]: "link_locked_msg_recruit_map"
 	val[]: "Tienes que adquirir un camión para poder acceder a las agencias de contratación."
 
 	key[]: "link_locked_msg_real_estate"
-	val[]: "Adquiere más garajes para acceder al mercado de propiedades."
+	val[]: "Adquiere más garajes para poder acceder al mercado de propiedades."
 #@}
 
 #+ Trailer map filters
@@ -12332,7 +12839,7 @@ localization_db : .localization
 	val[]: "¿Seguro que quieres vender el remolque seleccionado por $MONEY$?"
 
 	key[]: "trailerman_msg_nosell"
-	val[]: "¡No puedes vender el remolque que estás usando actualmente! Finaliza la entrega primero y prueba de nuevo."
+	val[]: "¡No puedes vender el remolque que estás usando actualmente! Finaliza antes la entrega y prueba de nuevo."
 #@}
 
 #+ Message box shown to confirm take of selected trailer.
@@ -12432,6 +12939,22 @@ localization_db : .localization
 
 	key[]: "trailer_park_blocked_on_job"
 	val[]: "No puedes descartar un remolque durante una entrega." #+ Message shown when player tries to dimiss trailer while being on a job.
+#@}
+
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "AJUSTES DE CABINA"
+
+	key[]: "adj_mirrors"
+	val[]: "Ajustes de retrovisores"
+
+	key[]: "adj_lights"
+	val[]: "Ajustes de luces"
+
+	key[]: "adj_seats"
+	val[]: "Ajustes de confort"
+
 #@}
 
 #+ Trailer body type names.
@@ -12859,13 +13382,13 @@ localization_db : .localization
 	val[]: "Caja de aluminio"
 
 	key[]: "chrome_box"
-	val[]: "Caja cromada"
+	val[]: "Cajón cromado"
 
 	key[]: "cool_master"
-	val[]: "Refrigerador Master"
+	val[]: "Refrigerador Cool Master"
 
 	key[]: "cool_master_paint"
-	val[]: "Refrigerador Master pintado"
+	val[]: "Refrigerador Cool Master pintado"
 
 	key[]: "cooler_victor"
 	val[]: "Refrigerador Víctor"
@@ -12877,10 +13400,10 @@ localization_db : .localization
 	val[]: "Refrigerador Thermo Box"
 
 	key[]: "extinguisher"
-	val[]: "Extintor"
+	val[]: "Extinción"
 
 	key[]: "flip_toe_ramps"
-	val[]: "Rampas elevables"
+	val[]: "Rampas de punta plegable"
 
 	key[]: "front_cage"
 	val[]: "Jaula frontal"
@@ -12913,7 +13436,7 @@ localization_db : .localization
 	val[]: "Vehículo largo"
 
 	key[]: "long_vehicle_dog"
-	val[]: "Vehículo largo salchicha"
+	val[]: "Vehículo largo estilo salchicha"
 
 	key[]: "long_vehicle_dutch"
 	val[]: "Vehículo largo"
@@ -12955,22 +13478,22 @@ localization_db : .localization
 	val[]: "Faldón lateral sencillo pintado"
 
 	key[]: "spare_tire"
-	val[]: "Rueda de repuesto"
+	val[]: "Rueda"
 
 	key[]: "steps"
 	val[]: "Estribos"
 
 	key[]: "store_box"
-	val[]: "Cofre de almacenaje"
+	val[]: "Cofre"
 
 	key[]: "stow_box"
-	val[]: "Cajón de almacenaje"
+	val[]: "Cajón"
 
 	key[]: "strobe"
 	val[]: "Estroboscópico"
 
 	key[]: "tire_rack"
-	val[]: "Soporte para neumáticos"
+	val[]: "Portarueda"
 
 	key[]: "toolbox"
 	val[]: "Portaherramientas"
@@ -13288,7 +13811,7 @@ localization_db : .localization
 	val[]: "¿Seguro que quieres comprar y mejorar este garaje por $TOTAL_PRICE$?"
 
 	key[]: "re_after_purchase_msg"
-	val[]: "Gracias por tu compra. Ahora puedes gestionar tu nuevo garaje desde el gestor de garajes."
+	val[]: "Gracias por tu compra. Ahora puedes gestionar tu nuevo garaje desde el Gestor de garajes."
 
 	key[]: "re_instruction"
 	val[]: "Selecciona un garaje:"
@@ -13689,16 +14212,16 @@ localization_db : .localization
 #+ Individual bindable actions
 #@{
 	key[]: "sctrl_action_mouse_look"
-	val[]: "Vista con ratón"
+	val[]: "Vista con el ratón"
 
 	key[]: "sctrl_action_mouse_rel_position"
-	val[]: "Movimiento con ratón"
+	val[]: "Movimiento con el ratón"
 
 	key[]: "sctrl_action_mouse_button_left"
-	val[]: "Ratón izquierda"
+	val[]: "Ratón a la izquierda"
 
 	key[]: "sctrl_action_mouse_button_right"
-	val[]: "Ratón derecha"
+	val[]: "Ratón a la derecha"
 
 	key[]: "sctrl_action_pause"
 	val[]: "Pausa"
@@ -14019,7 +14542,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Accediendo al progreso de la ciudad...."
@@ -14027,17 +14550,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Entregas hasta la siguiente estrella:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Todas las estrellas conseguidas."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progreso de entrega de regalos"
 
 	key[]: "xmas19_map_description"
 	val[]: "Pasa el ratón sobre las ciudades para ver el progreso del evento navideño. Visita $WOTR_URL$ para ver un resumen completo."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "La aportación para lograr el objetivo de la comunidad en esta ciudad se ha completado.<br><br><br>¿Qué tal si ayudas a otra ciudad a entregar sus regalos?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "La aportación de este trabajo en estas ciudades para lograr el objetivo de la comunidad se ha completado.<br><br>¿Por qué no buscas otras ciudades desde o hacía las que enviar regalos?"
 
 	key[]: "xmas19_back"
 	val[]: "Volver"

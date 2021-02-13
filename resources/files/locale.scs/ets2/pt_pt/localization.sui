@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "Cortinas" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Acessórios de Ar Condicionado" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Acessórios da cama" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Items suspensos" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "Itens da Consola Central" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Acessórios da Almofada"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Conjunto do Quadrante" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -2864,19 +2873,19 @@
 	val[]: "Rigidez da força de resposta" #+ Slider controlling strength of the FF stiffness.
 
 	key[]: "feedback_center"
-	val[]: "Centrar força de resposta" #+ Slider controlling strength of the FF centering spring.
+	val[]: "Centralização da força de resposta" #+ Slider controlling strength of the FF centering spring.
 
 	key[]: "feedback_engine"
-	val[]: "Motor da força de resposta" #+ Slider controlling strength of the FF engine resonance effects.
+	val[]: "Força de resposta do motor" #+ Slider controlling strength of the FF engine resonance effects.
 
 	key[]: "feedback_terrain"
-	val[]: "Ajustar força de resposta" #+ Slider controlling strength of the FF terrain effects.
+	val[]: "Força de resposta do terreno" #+ Slider controlling strength of the FF terrain effects.
 
 	key[]: "feedback_dampers"
-	val[]: "Amortecedores da força de resposta" #+ Slider controlling strength of the FF damper collision effects.
+	val[]: "Força de resposta dos amortecedores" #+ Slider controlling strength of the FF damper collision effects.
 
 	key[]: "feedback_collisions"
-	val[]: "Colisão da força de resposta" #+ Slider controlling strength of the FF collision effects.
+	val[]: "Força de resposta de colisões" #+ Slider controlling strength of the FF collision effects.
 #@}
 
 #+ Mapping of individual controller axes to steering, pedals and looking functionality.
@@ -3428,6 +3437,9 @@
 
 	key[]: "color_enhancement"
 	val[]: "Correcção da cor" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Escala de Reflexão" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Detalhe dos reflexos" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Deves desactivar o diferencial numa condução normal ou corres o risco de o danificar.<br>Usa a seguinte tecla para desactivar:"
 
+	key[]: "tow_hint"
+	val[]: "Se não consegues sair de uma situação difícil, usa o serviço de reboque. Pressiona:"
+
 	key[]: "ferry_msg"
 	val[]: "Para ver possíveis destinos pressione: "
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "Material Contaminado"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vacinas COVID-19"
 
 	key[]: "cn_cyanide"
 	val[]: "Cianeto"
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "OESTE" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "Bastia"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Bergen"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Boné" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Caneca" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Manta Bege"
+
+	key[]: "blanket_square"
+	val[]: "Manta aos Quadrados"
+
+	key[]: "book"
+	val[]: "Livro"
+
+	key[]: "bottle_sixpack"
+	val[]: "Pack de Garrafas"
+
+	key[]: "breakfast_cereals"
+	val[]: "Cereais"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog Bobblehead"
+
+	key[]: "cap"
+	val[]: "Boné"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Telemóvel"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Bobblehead"
+
+	key[]: "dashboard"
+	val[]: "Painel de Controlo"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Relatório de Entrega"
+
+	key[]: "electric_cooling_box"
+	val[]: "Refrigerador Eléctrico"
+
+	key[]: "endless_nourishment"
+	val[]: "Sandes"
+
+	key[]: "ets2_game_box"
+	val[]: "Jogo ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Lancheira ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Bolsa ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Caneca Festiva"
+
+	key[]: "fire_extinguisher"
+	val[]: "Extintor"
+
+	key[]: "hand_bag"
+	val[]: "Bolsa de mão"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Carteira em Pele Feita à Mão"
+
+	key[]: "hula_doll"
+	val[]: "Boneca Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Almoço Instantâneo"
+
+	key[]: "instant_lunch_box"
+	val[]: "Pack de Almoços Instantâneos"
+
+	key[]: "magazines"
+	val[]: "Revistas"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Bússola Magnética"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Portátil"
+
+	key[]: "paper_towels"
+	val[]: "Toalhas de Papel"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Óculos de Sol"
+
+	key[]: "plush_bear"
+	val[]: "Urso de Peluche"
+
+	key[]: "portable_navigator"
+	val[]: "GPS Portátil"
+
+	key[]: "rugged_style_cap"
+	val[]: "Boné"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Caneca da SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Saco-cama"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Manta Polar"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Mala de viagem"
+
+	key[]: "winter_bauble"
+	val[]: "Bugiganga de Inverno"
+
+	key[]: "winter_blast_gift"
+	val[]: "Presente de Inverno"
+
+	key[]: "wise_owl_offering"
+	val[]: "Oferta da Coruja Sábia"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Almofada ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Almofada com Chamas"
+
+	key[]: "goodyear_pillow"
+	val[]: "Almofada da Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Almofada Doce Lar"
+
+	key[]: "skull_pillow"
+	val[]: "Almofada com Caveira"
+
+	key[]: "status_pillow"
+	val[]: "Almofada"
+
+	key[]: "track_pillow"
+	val[]: "Almofada de Pista"
+
+	key[]: "trucker_pillow"
+	val[]: "Almofada de Camionista"
+
+	key[]: "vaclav_pillow"
+	val[]: "Almofada do Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Almofada do Coração Sábio"
+
+	key[]: "zzz_pillow"
+	val[]: "Almofada ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Ambientador"
+
+	key[]: "detective_head"
+	val[]: "Cabeça de Detective"
+
+	key[]: "vampire_head"
+	val[]: "Cabeça de Vampiro"
+
+	key[]: "viking_head"
+	val[]: "Cabeça de Viking"
+
+	key[]: "smelling_sack"
+	val[]: "Saco Sujo"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Ambientador de Maçã"
+
+	key[]: "basketball_ball"
+	val[]: "Bola de Basquetebol"
+
+	key[]: "black_plush_cube"
+	val[]: "Cubo Preto de Peluche"
+
+	key[]: "chromed_skull"
+	val[]: "Caveira Cromada"
+
+	key[]: "disco_ball"
+	val[]: "Bola de Discoteca"
+
+	key[]: "eight_ball"
+	val[]: "Bola de Bilhar"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Ambientador ETS2"
+
+	key[]: "football_ball"
+	val[]: "Bola de Futebol"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insígnia de Camionista da Esperança"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insígnia de Camionista da Esperança"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Ambientador SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Bola de Ténis"
+
+	key[]: "trophy_skull"
+	val[]: "Caveira Troféu"
+
+	key[]: "white_plush_cube"
+	val[]: "Cubo Branco de Peluche"
+
 
 	key[]: "black_style_mug"
 	val[]: "Caneca Preta" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "Mesa Longa Preta" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "Industrial" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Cromado II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Pintado & Cromado" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "Standard 2013 UK" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Topo de Gama" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusivo" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "Reflector Branco"
 
-	key[]: "basic_chrome"
-	val[]: "Cromado Báscio" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Básico" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Cromado Báscio" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Pintura Básica" #+ type of sideskirts, painted
+	val[]: "Pintura Básica" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Barras com Protecção Total" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -11716,6 +11965,22 @@
 	val[]: "Não é possível dispensar o reboque enquanto estiveres em trabalho." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "AJUSTES DO VEÍCULO"
+
+	key[]: "adj_mirrors"
+	val[]: "Ajustar espelhos"
+
+	key[]: "adj_lights"
+	val[]: "Ajustar luzes"
+
+	key[]: "adj_seats"
+	val[]: "Ajustar bancos"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "A verificar progresso da cidade..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Entregas à próxima estrela:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Todas as estrelas obtidas."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progresso da entrega de Presentes"
 
 	key[]: "xmas19_map_description"
 	val[]: "Passa com o rato por cima das cidades para ver o progresso do evento de Natal. Visita $WOTR_URL$ para veres o sumário de todo o progresso."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "O contributo desta cidade para o objectivo comunitário está concluído!<br><br>Porque não ajudar outra cidade a entregar os seus presentes?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "A contribuição destas cidades para este trabalho para o objectivo da Comunidade, está concluída!<br><br>Porque não escolher entregar Presentes de/para outras cidades?"
 
 	key[]: "xmas19_back"
 	val[]: "Voltar atrás"

@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Užuolaidos" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Oro kondicionieriai" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Lovos aksesuarai" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Kabantys aksesuarai" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "Aksesuarai grindų viduryje" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Pagalvės"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Prietaisų skydeliai" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Spalvų korekcija" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Atspindžių detalės" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Įprastai važiuojant reiktų atrakinti diferencialą, nes kitaip jis gali būti pažeistas.<br>Atrakinimui spauskite:"
+
+	key[]: "tow_hint"
+	val[]: "Jei negalite išsisukti iš sudėtingos situacijos, pasinaudokite tempimo paslauga. Spauskite:"
 
 	key[]: "ferry_msg"
 	val[]: "Kad pamatytumėte galimus kelionės tikslus spauskite:"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Vištiena"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID19 vakcina"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Varškės sūris"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Rusvai gelsvas apklotas"
+
+	key[]: "blanket_square"
+	val[]: "Kvadratinis apklotas"
+
+	key[]: "book"
+	val[]: "Knyga"
+
+	key[]: "bottle_sixpack"
+	val[]: "Butelių pakuotė"
+
+	key[]: "breakfast_cereals"
+	val[]: "Sausi pusryčiai"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Buldogas linguojančia galva"
+
+	key[]: "cap"
+	val[]: "Kepurėlė"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Telefonas"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Čihuahua linguojančia galva"
+
+	key[]: "dashboard"
+	val[]: "Panelė"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Pristatymo ataskaita"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrinis šaldytuvas"
+
+	key[]: "endless_nourishment"
+	val[]: "Begalinis užkandis"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 žaidimo dėžutė"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 pietų dėžutė"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 sunkvežimio krepšys"
+
+	key[]: "festive_mug"
+	val[]: "Šventinis puodelis"
+
+	key[]: "fire_extinguisher"
+	val[]: "Gesintuvas"
+
+	key[]: "hand_bag"
+	val[]: "Rankinis krepšys"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Rankų darbo odinė piniginė"
+
+	key[]: "hula_doll"
+	val[]: "Hula lėlė"
+
+	key[]: "instant_lunch"
+	val[]: "Greiti pietūs"
+
+	key[]: "instant_lunch_box"
+	val[]: "Greitų pietų pakuotė"
+
+	key[]: "magazines"
+	val[]: "Žurnalai"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magnetinis kompasas"
+
+	key[]: "map"
+	val[]: "Žemėlapis"
+
+	key[]: "notebook"
+	val[]: "Kompiuteris"
+
+	key[]: "paper_towels"
+	val[]: "Popieriniai rankšluosčiai"
+
+	key[]: "pilot_sunglasses"
+	val[]: "\"Piloto\" akiniai"
+
+	key[]: "plush_bear"
+	val[]: "Pliušinis meškiukas"
+
+	key[]: "portable_navigator"
+	val[]: "Nešiojamas navigatorius"
+
+	key[]: "rugged_style_cap"
+	val[]: "Grubaus stiliaus kepurė"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS kavos puodelis"
+
+	key[]: "sleeping_bag"
+	val[]: "Miegmaišis"
+
+	key[]: "tablet"
+	val[]: "Planšetė"
+
+	key[]: "weekend_bag"
+	val[]: "Savaitgalio krepšys"
+
+	key[]: "winter_bauble"
+	val[]: "Žieminis žaisliukas"
+
+	key[]: "winter_blast_gift"
+	val[]: "Žieminė dovana"
+
+	key[]: "wise_owl_offering"
+	val[]: "Išmintingos pelėdos auka"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 pagalvė"
+
+	key[]: "flame_pillow"
+	val[]: "Ugninė pagalvė"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear pagalvė"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Mielų namų pagalvė"
+
+	key[]: "skull_pillow"
+	val[]: "Kaukolės pagalvė"
+
+	key[]: "status_pillow"
+	val[]: "Statuso pagalvė"
+
+	key[]: "track_pillow"
+	val[]: "Padangų žymės pagalvė"
+
+	key[]: "trucker_pillow"
+	val[]: "Vairuotojo pagalvė"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavo pagalvė"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Išmintingos širdies pagalvė"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ pagalvė"
+
+
+	key[]: "air_freshener"
+	val[]: "Oro gaiviklis"
+
+	key[]: "smelling_sack"
+	val[]: "Kvapų maišelis"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Obuolių oro gaiviklis"
+
+	key[]: "basketball_ball"
+	val[]: "Krepšinio kamuolys"
+
+	key[]: "black_plush_cube"
+	val[]: "Juodo pliušo kubas"
+
+	key[]: "chromed_skull"
+	val[]: "Chromo kaukolė"
+
+	key[]: "disco_ball"
+	val[]: "Disko kamuolys"
+
+	key[]: "eight_ball"
+	val[]: "Aštuntas kamuolys"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 oro gaiviklis"
+
+	key[]: "football_ball"
+	val[]: "Futbolo kamuolys"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Namų vežėjo ženklelis"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Vilties vežėjo ženklelis"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS oro gaiviklis"
+
+	key[]: "tennis_ball"
+	val[]: "Teniso kamuoliukas"
+
+	key[]: "trophy_skull"
+	val[]: "Trofėjinė kaukolė"
+
+	key[]: "white_plush_cube"
+	val[]: "Balto plušo kubas"
+
+
+	key[]: "black_style_mug"
+	val[]: "Juodas puodelis" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Baltai oranžinis puodelis" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Juodai oranžinis puodelis" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Pliušinis žaisliukas" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Odinė piniginė" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Prietaisų skydelis" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Staliukas centre, prabangus" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Staliukas centre, raudonmedis" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Staliukas centre, juodas" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Ilgas staliukas, prabangus" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Ilgas staliukas, raudonmedis" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Ilgas staliukas, juodas" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Paprasta" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Chromo" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chromas II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Dažų ir chromo" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Įprasta dviguba" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Prabangus" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Sava metalizuota spalva" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Paprasti" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Bazinė chromuota" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Įprasti dažai" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Pergalingas kauliukas" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Didžioji žvaigždė" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "Nepavyko atsisakyti priekabos nebaigus darbo." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "SUNKVEŽIMIO REGULIAVIMAS"
+
+	key[]: "adj_mirrors"
+	val[]: "Reguliuoti veidrodžius"
+
+	key[]: "adj_lights"
+	val[]: "Reguliuoti šviesas"
+
+	key[]: "adj_seats"
+	val[]: "Reguliuoti sėdynę"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Šaldoma"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Cisterna"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Šaldyti, atvėsinti kroviniai"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Tikrinu miesto progresą..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Pristatymų iki kitos žvaigždės:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Visos žvaigždės pasiektos."
+	key[]: "xmas_delivery_progress"
+	val[]: "Dovanų pristatymo eiga"
 
 	key[]: "xmas19_map_description"
 	val[]: "Užvesk pelę ant miesto kad pamatytum Kalėdų renginio progresą. Pilną statistiką galite rasti $WOTR_URL$."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Šio miesto indėlis į bendruomenės tikslą įvykdytas!<br><br>Kodėl nepadėjus kitam miestui pristatyti dovanas?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Šių miestų indėlis į šį darbą, siekiant bendruomenės tikslo, įvykdytas!<br><br>Paieškokite kitų miestų, iš kurių arba į kuriuos galima pristatyti dovanas."
 
 	key[]: "xmas19_back"
 	val[]: "Atgal"

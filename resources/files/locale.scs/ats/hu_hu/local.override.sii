@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Hátpaneli elemek"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Fülkevilágítás"
 
 	key[]: "cabdefl"
 	val[]: "Légterelők"
+
+	key[]: "cup_holder"
+	val[]: "Italtartó"
 
 	key[]: "deflector"
 	val[]: "Bogárvédő"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Fülke hátulja"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Szekrény készletek" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Italtartó készletek" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Karosszérialemezek"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Tetőtéri helyzetjelző lámpák"
 
+	key[]: "toyback"
+	val[]: "Hálófülkés padlóelemek" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Padlóelemek" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Műszerfali tárolóelemek" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Heverő elemek" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Asztali elemek" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Légterelő"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Festett Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Alumínium tartály"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Alsó"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Játék láncfűrész"
+	key[]: "cabinet"
+	val[]: "Szekrény"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Krómozott tartály"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-karabiner"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elit"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Ködlámpák"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Italtartó (nyitott)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Italtartó (bal oldalt nyitva)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Italtartó (jobb oldalt nyitva)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Italtartó (lezárva)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Amerikai focilabda"
+
+	key[]: "ats_bag"
+	val[]: "ATS-es táska"
+
+	key[]: "ats_cap"
+	val[]: "ATS-es sapi"
+
+	key[]: "ats_game_box"
+	val[]: "Dobozos ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS-es uzsidoboz"
+
+	key[]: "ats_mug"
+	val[]: "ATS-es bögre"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS-es kamionos táska"
+
+	key[]: "baseball_ball"
+	val[]: "Baseball labda"
+
+	key[]: "baseball_bat"
+	val[]: "Bézbózütő"
+
+	key[]: "bee"
+	val[]: "Méhecske"
+
+	key[]: "black_ats_mug"
+	val[]: "Fekete ATS-es bögre"
+
+	key[]: "blanket_stars"
+	val[]: "Csillagos takaró"
+
+	key[]: "bottle"
+	val[]: "Szomjoltó"
+
+	key[]: "burger"
+	val[]: "Hambi"
+
+	key[]: "can"
+	val[]: "Dobozos szomjoltó"
+
+	key[]: "can_pack"
+	val[]: "Több doboz szomjoltó"
+
+	key[]: "can_sixpack"
+	val[]: "Dobozos szomjoltó (hatos csomag)"
+
+	key[]: "cans"
+	val[]: "Dobozok"
+
+	key[]: "car_perfume"
+	val[]: "Illatosító"
+
+	key[]: "cardbox"
+	val[]: "Kartondoboz"
+
+	key[]: "carrier"
+	val[]: "Rekesz"
+
+	key[]: "chainsaw_toy"
+	val[]: "Játék láncfűrész"
+
+	key[]: "chewing_gums"
+	val[]: "Rágógumi"
+
+	key[]: "coffee_cup"
+	val[]: "Kávésbögre"
+
+	key[]: "costs_list"
+	val[]: "Fogyasztási napló"
+
+	key[]: "dreamcatcher"
+	val[]: "Álomfogó"
+
+	key[]: "emergency_triangles"
+	val[]: "Elakadásjelző háromszögek"
+
+	key[]: "expenses_list"
+	val[]: "Költségelszámolás"
+
+	key[]: "fishing_bag"
+	val[]: "Horgásztáska"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Hokis kapusmaszk"
+
+	key[]: "guitar"
+	val[]: "Gitár"
+
+	key[]: "guitar_case"
+	val[]: "Gitártok"
+
+	key[]: "hat"
+	val[]: "Kalap"
+
+	key[]: "hockey_stick"
+	val[]: "Hokiütő"
+
+	key[]: "holy_field_blanket"
+	val[]: "Megszentelt mező takaró"
+
+	key[]: "honey_bee"
+	val[]: "Méhecske"
+
+	key[]: "laundry_box"
+	val[]: "Szennyestartó"
+
+	key[]: "peppermints"
+	val[]: "Mentacukorka"
+
+	key[]: "plush_donut"
+	val[]: "Plüssfánk"
+
+	key[]: "plush_lion"
+	val[]: "Plüssoroszlán"
+
+	key[]: "power_inverter"
+	val[]: "Áraminverter"
+
+	key[]: "propeller"
+	val[]: "Propeller"
+
+	key[]: "shoes"
+	val[]: "Cipő"
+
+	key[]: "spearmints"
+	val[]: "Fodormenta"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sport napszemcsi"
+
+	key[]: "stack_of_burgers"
+	val[]: "Hambihalom"
+
+	key[]: "usa_cap"
+	val[]: "Amcsi sapi"
+
+	key[]: "usa_flag"
+	val[]: "Amerikai zászló"
+
+	key[]: "usa_flag_cap"
+	val[]: "Amerikai zászlós sapi"
+
+	key[]: "ventilator"
+	val[]: "Ventilátor"
+
+	key[]: "wotr_cap"
+	val[]: "WoTR sapi"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS-es párna"
+
+	key[]: "heart_pillow"
+	val[]: "Szívecskés párna"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Csókos párna"
+
+	key[]: "protector_pillow"
+	val[]: "Védelmező párna"
+
+	key[]: "star_pillow"
+	val[]: "Csillag párna"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "\"Truck Yeah!\" párna"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Amcsi zászlós párna"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Amcsi pajzsos párna"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS-es légfrissítő"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Kaktusz légfrissítő"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Citrom légfrissítő"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Juharlevél légfrissítő"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Narancs légfrissítő"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Amcsi légfrissítő"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Kék plüsskocka"
+
+	key[]: "red_plush_cube"
+	val[]: "Vörös plüsskocka"
+
+	key[]: "double_plush_cube"
+	val[]: "Dupla plüsskocka"
+
+
+	key[]: "alien_head"
+	val[]: "Idegen kobak"
+
+	key[]: "cowboy_head"
+	val[]: "Cowboy kobak"
+
+	key[]: "pirate_head"
+	val[]: "Kalóz kobak"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Sas matrica"
+
+	key[]: "guitar_sticker"
+	val[]: "Gitár matrica"
+
+	key[]: "hat_sticker"
+	val[]: "Kalap matrica"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Juharszirup matrica"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Kormány matrica"
+
+	key[]: "taco_sticker"
+	val[]: "Taco matrica"
+
+	key[]: "truck_sticker"
+	val[]: "Kamion matrica"
+
+	key[]: "usa_country_sticker"
+	val[]: "Amcsi matrica"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Amcsi zászló matrica"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Zöldség"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star kamionok"
 
 #@}
 
@@ -1451,27 +1750,27 @@ localization_db : .localization
 
 	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
 	key[]: "co_cut_glenwood"
-	val[]: "Glenwood Canyon"
+	val[]: "Glenwood kanyon"
 
 	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
 	key[]: "co_cut_airport"
-	val[]: "Denver Airport"
+	val[]: "A denveri repülőtér"
 
 	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
 	key[]: "co_cut_mil"
-	val[]: "Million Dollar Highway"
+	val[]: "A millió dolláros sztráda"
 
 	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
 	key[]: "co_cut_four"
-	val[]: "Four Corners Monument"
+	val[]: "A Négyeshatár emlékmű"
 
 	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
 	key[]: "co_cut_red"
-	val[]: "Red Cliff Bridge"
+	val[]: "A Red Cliff-híd"
 
 	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
 	key[]: "co_cut_wolf"
-	val[]: "Wolf Creek Pass"
+	val[]: "A Wolf Creek hágó"
 
 	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
 	key[]: "co_cut_springs"
@@ -1479,15 +1778,15 @@ localization_db : .localization
 
 	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
 	key[]: "co_cut_gold"
-	val[]: "Cripple Creek & Victor Gold Mine"
+	val[]: "Cripple Creek & Victor aranybánya"
 
 	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
 	key[]: "co_cut_eisen"
-	val[]: "Eisenhower Tunnel"
+	val[]: "Az Eisenhower-alagút"
 
 	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
 	key[]: "co_cut_rocky"
-	val[]: "Rocky Mountain Road"
+	val[]: "Út a Sziklás-hegységben"
 
 	# Idaho
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill pihenőhely"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Az Albuquerque-i csomópont"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Roswell városa"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Santa Fe városa"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Pihenőhely a US-86-on"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w pihenőhely"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "Pihenőhely a US-82-n"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Pihenő az Arizonai Üdvözlőközpontnál"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Pihenőhely a US-64-en"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Lincoln történelmi emlékhely"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Vaughn városa"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Head világítótorony"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor kútja"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astoria-Megler híd"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Yaquina Bay-híd, Newport"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles városa"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Sequoia óriáserdő, US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregoni papírgyár"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Látkép a US-395 mentén"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "A Biggs-csomópont"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "A portlandi hajógyár"
 
 	# Utah
 

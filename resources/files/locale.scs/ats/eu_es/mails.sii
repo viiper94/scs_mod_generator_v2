@@ -153,7 +153,7 @@ SiiNunit
  	mail_text: mailtext.real_estate {
 		from: "Higiezinen agentzia" #+ Message sender
 		subject: "Zure enpresa handitu nahi duzu?" #+ Message subject
-		body: "Dear Sir/Madam,<br><br>We would like to congratulate you on the progress of your company. We are impressed by the success of your business and we would like to offer you a new way to help your company expand further. From now on, you can use our services to purchase additional properties almost instantly! For more information, please <link url=screen.real_estate color=@@clr_link@@>visit our Real Estate page</link>.<br><br>Sincerely,<br>Relations Manager<br>Real Estate Agency" #+ Message body
+		body: "Jaun/Andre agurgarria,<br><br>Zorionak eman nahi dizkizugu zure enpresaren aurrerapenagatik. Harrituta gaude zure negozioaren arrakastarekin, eta zure enpresari are gehiago handitzen laguntzeko beste modu bat eskaini nahi dizugu. Hemendik aurrera, gure zerbitzuak erabil ditzakezu berehala propietate gehigarriak erosteko! Informazio gehiago nahi izanez gero, <link url=screen.real_estate color=@@clr_link@@>bisitatu gure ondasun higiezinen orria.</link><br><br>Adeitasunez,<br>Harreman publikoak<br>Higiezinen agentzia" #+ Message body
 	}
 	
 #@}

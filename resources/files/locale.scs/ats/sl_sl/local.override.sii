@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Predmeti na zadnji steni"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Luči kabine"
 
 	key[]: "cabdefl"
 	val[]: "Deflektor na kabini"
+
+	key[]: "cup_holder"
+	val[]: "Nosilec skodelic"
 
 	key[]: "deflector"
 	val[]: "Deflektor mrčesa"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Kabina zadaj"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Set v kabinetu" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Set v držalu za skodelice" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Plošče kabine"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Luči spalne strehe"
 
+	key[]: "toyback"
+	val[]: "Predmeti na dnu spalnika" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Predmeti na tleh" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Predmeti na armaturi" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Predmeti na kavču" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Predmeti na mizici" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Turbo spojler"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aerodinamično"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aerodinamično II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aerodinamično, barvano"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Aluminijev rezervoar"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Spodaj"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Igrača motorne žage"
+	key[]: "cabinet"
+	val[]: "Kabinet"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Kromiran rezervoar"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-oblika"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elitno"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Meglenke"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Klima"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Držalo skodelic (odprto)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Držalo skodelic (levi odprt)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Držalo skodelic (desni odprt)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Držalo skodelic (zaprt)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Žoga ameriškega nogometa"
+
+	key[]: "ats_bag"
+	val[]: "Torba ATS"
+
+	key[]: "ats_cap"
+	val[]: "Kapa ATS"
+
+	key[]: "ats_game_box"
+	val[]: "Škatla igre ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "Posoda za kosilo ATS"
+
+	key[]: "ats_mug"
+	val[]: "Skodelica ATS"
+
+	key[]: "ats_truck_bag"
+	val[]: "Potovalka ATS"
+
+	key[]: "baseball_ball"
+	val[]: "Bejzbol žoga"
+
+	key[]: "baseball_bat"
+	val[]: "Bejzbol kij"
+
+	key[]: "bee"
+	val[]: "Čebela"
+
+	key[]: "black_ats_mug"
+	val[]: "Črna skodelica ATS"
+
+	key[]: "blanket_stars"
+	val[]: "Odeja z zvezdami"
+
+	key[]: "bottle"
+	val[]: "Plastenka"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Pločevinka"
+
+	key[]: "can_pack"
+	val[]: "Paket pločevink"
+
+	key[]: "can_sixpack"
+	val[]: "Šesterček pločevink"
+
+	key[]: "cans"
+	val[]: "Pločevinke"
+
+	key[]: "car_perfume"
+	val[]: "Avto parfum"
+
+	key[]: "cardbox"
+	val[]: "Kartonasta škatla"
+
+	key[]: "carrier"
+	val[]: "Zaboj steklenic"
+
+	key[]: "chainsaw_toy"
+	val[]: "Igrača motorne žage"
+
+	key[]: "chewing_gums"
+	val[]: "Žvečilke"
+
+	key[]: "coffee_cup"
+	val[]: "Skodelica za kavo"
+
+	key[]: "costs_list"
+	val[]: "Poročilo o porabi goriva"
+
+	key[]: "dreamcatcher"
+	val[]: "Lovilec sanj"
+
+	key[]: "emergency_triangles"
+	val[]: "Varnostni trikotniki"
+
+	key[]: "expenses_list"
+	val[]: "Poročilo stroškov"
+
+	key[]: "fishing_bag"
+	val[]: "Vreča za ribolov"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Vratarjeva maska"
+
+	key[]: "guitar"
+	val[]: "Kitara"
+
+	key[]: "guitar_case"
+	val[]: "Kovček za kitaro"
+
+	key[]: "hat"
+	val[]: "Klobuk"
+
+	key[]: "hockey_stick"
+	val[]: "Hokejska palica"
+
+	key[]: "holy_field_blanket"
+	val[]: "Odeja sveto polje"
+
+	key[]: "honey_bee"
+	val[]: "Čebela"
+
+	key[]: "laundry_box"
+	val[]: "Posoda za perilo"
+
+	key[]: "peppermints"
+	val[]: "Pepperminti"
+
+	key[]: "plush_donut"
+	val[]: "Plišasti krof"
+
+	key[]: "plush_lion"
+	val[]: "Plišasti lev"
+
+	key[]: "power_inverter"
+	val[]: "Pretvornik elektrike"
+
+	key[]: "propeller"
+	val[]: "Propeler"
+
+	key[]: "shoes"
+	val[]: "Čevlji"
+
+	key[]: "spearmints"
+	val[]: "Spearminti"
+
+	key[]: "sport_sunglasses"
+	val[]: "Športna sončna očala"
+
+	key[]: "stack_of_burgers"
+	val[]: "Sveženj burgerjev"
+
+	key[]: "usa_cap"
+	val[]: "Kapa ZDA"
+
+	key[]: "usa_flag"
+	val[]: "Zastava ZDA"
+
+	key[]: "usa_flag_cap"
+	val[]: "Kapa ZDA zastava"
+
+	key[]: "ventilator"
+	val[]: "Ventilator"
+
+	key[]: "wotr_cap"
+	val[]: "Kapa WoTr"
+
+
+	key[]: "ats_pillow"
+	val[]: "Vzglavnik ATS"
+
+	key[]: "heart_pillow"
+	val[]: "Vzglavnik srce"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Vzglavnik poljubi me"
+
+	key[]: "protector_pillow"
+	val[]: "Vzglavnik zaščitnik"
+
+	key[]: "star_pillow"
+	val[]: "Vzglavnik zvezda"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Vzglavnik Tovornjak ja"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Vzglavnik z ameriško zastavo"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Vzglavnik z ameriškim oklepom"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Osvežilec zraka ATS"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Osvežilec zraka kaktus"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Osvežilec zraka limona"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Osvežilec zraka javorjev list"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Osvežilec zraka pomaranča"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Osvežilec zraka ZDA"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Modra plišasta kocka"
+
+	key[]: "red_plush_cube"
+	val[]: "Rdeča plišasta kocka"
+
+	key[]: "double_plush_cube"
+	val[]: "Dvojna plišasta kocka"
+
+
+	key[]: "alien_head"
+	val[]: "Glava vesoljca"
+
+	key[]: "cowboy_head"
+	val[]: "Glava kavboja"
+
+	key[]: "pirate_head"
+	val[]: "Glava pirata"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Nalepka orel"
+
+	key[]: "guitar_sticker"
+	val[]: "Nalepka kitara"
+
+	key[]: "hat_sticker"
+	val[]: "Nalepka klobuk"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Nalepka javorjev sirup"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Nalepka volan"
+
+	key[]: "taco_sticker"
+	val[]: "Nalepka taco"
+
+	key[]: "truck_sticker"
+	val[]: "Nalepka tovornjakar"
+
+	key[]: "usa_country_sticker"
+	val[]: "Nalepka ZDA država"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Nalepka ZDA zastava"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Zelenjava"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star tovornjaki"
 
 #@}
 
@@ -1451,43 +1750,43 @@ localization_db : .localization
 
 	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
 	key[]: "co_cut_glenwood"
-	val[]: "Glenwood Canyon"
+	val[]: "Kanjon Glenwood"
 
 	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
 	key[]: "co_cut_airport"
-	val[]: "Denver Airport"
+	val[]: "Letališče Denver Airport"
 
 	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
 	key[]: "co_cut_mil"
-	val[]: "Million Dollar Highway"
+	val[]: "Avtocesta za milijon dolarjev"
 
 	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
 	key[]: "co_cut_four"
-	val[]: "Four Corners Monument"
+	val[]: "Spomenik Four Corners"
 
 	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
 	key[]: "co_cut_red"
-	val[]: "Red Cliff Bridge"
+	val[]: "Most Red Cliff"
 
 	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
 	key[]: "co_cut_wolf"
-	val[]: "Wolf Creek Pass"
+	val[]: "Prelaz Wolf Creek"
 
 	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
 	key[]: "co_cut_springs"
-	val[]: "Colorado Springs"
+	val[]: "Kolorado Springs"
 
 	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
 	key[]: "co_cut_gold"
-	val[]: "Cripple Creek & Victor Gold Mine"
+	val[]: "Potok Cripple in kamnolom zlata Victor"
 
 	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
 	key[]: "co_cut_eisen"
-	val[]: "Eisenhower Tunnel"
+	val[]: "Tunel Eisenhower"
 
 	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
 	key[]: "co_cut_rocky"
-	val[]: "Rocky Mountain Road"
+	val[]: "Cesta Rocky Mountain"
 
 	# Idaho
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill Rest Area"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Križišče Albuquerque"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Mesto Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Mesto Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Počivališče US-86"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Počivališče Route 66w"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " Počivališče US-82"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Počivališče Arizona Welcome Center"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Počivališče US-64"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Spomenik Historic Monument of Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Mesto Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Svetilnik Yaquina Head"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor-ov vodnjak"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Most Astorie-Megler"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Most Newport Yaquina Bay"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Mesto Dalles"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Sekvojin gozd US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Tovarna papirja v Oregonu"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Razgledna točka US-395"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Križišče Biggs"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portland ladjedelnica"
 
 	# Utah
 

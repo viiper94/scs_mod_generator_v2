@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Gardiner" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Delar till luftkonditionerare" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Saker till sängen" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Hängande föremål" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "Golvföremål, mitten" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Saker till kudden"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Saker till instrumentpanelen" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -720,7 +729,7 @@
 	val[]: "Första-personkamera aktiverad" #+ Notifications shown when walking camera is enabled.
 
 	key[]: "notification_orbit_camera"
-	val[]: "Orbit camera enabled" #+ Notifications shown when orbit camera is enabled.
+	val[]: "Orbit-kamera aktiverad" #+ Notifications shown when orbit camera is enabled.
 #@}
 
 	key[]: "quit_game_t"
@@ -758,7 +767,7 @@
 	val[]: "Radera" #+ Button used to delete something (profile, saved game).
 
 	key[]: "delete_profile"
-	val[]: "Delete Profile" #+ Button used to delete profile.
+	val[]: "Ta bort profil" #+ Button used to delete profile.
 
 	key[]: "upgrade"
 	val[]: "Uppgradera" #+ Button allowing user to upgrade something.
@@ -1222,7 +1231,7 @@
 	val[]: "PROFILHANTERARE" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "launchpad_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "AMERICAN TRUCK SIMULATOR - STARTSKÄRM" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "ONLINENYHETER" #+ Title of the window used to display online news. Please keep in upper case where possible.
@@ -1267,25 +1276,25 @@
 	val[]: "Inkompatibel profil!<br>Försök att uppgradera spelet till den senaste tillgängliga versionen." #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Garages owned:" #+ How many garages the player owns
+	val[]: "Ägda garage:" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "små: $SMALL$, stora: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Trucks owned:" #+ how many trucks the player owns
+	val[]: "Ägda lastbilar:" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Trailers owned:" #+ how many trailers the player owns
+	val[]: "Ägda släp:" #+ how many trailers the player owns
 
 	key[]: "steam_cloud_synchronization"
-	val[]: "Steam cloud synchronization:" #+ Whether is steam cloud synchronization active.
+	val[]: "Synkronisering med Steam Cloud:" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "World of Trucks profile:"
+	val[]: "Profil på Långtradarvärlden:"
 
 	key[]: "mods_in_use"
-	val[]: "Mods in use:" #+ how many mods the player has active
+	val[]: "Moddar som används:" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "Ej ansluten!"	#+ to the WoTR
@@ -1340,10 +1349,10 @@
 	val[]: "World of Trucks kopplad"
 
 	key[]: "launchpad_tt_globe_not_connected"
-	val[]: "World of Trucks not connected <br><offset vshift=7><color value=@@clr_txt_d@@>click to connect"
+	val[]: "Långtradarvärlden är inte ansluten <br><offset vshift=7><color value=@@clr_txt_d@@>klicka för att ansluta"
 
 	key[]: "launchpad_tt_profile_details"
-	val[]: "PROFILE DETAILS"
+	val[]: "PROFILDETALJER"
 #@
 #@}
 
@@ -1505,10 +1514,10 @@
 #@{
 
 	key[]: "new_version_available"
-	val[]: "You are using an older version of the game.<br><link url=$URL_LINK$ color=@@clr_link@@>Update to a newer version</link> to get all of the features."
+	val[]: "Du använder en äldre version av spelet.<br><link url=$URL_LINK$ color=@@clr_link@@>Uppdatera till en nyare version</link> för att få alla funktioner."
 
 	key[]: "new_version_available_steam"
-	val[]: "You are using an older version of the game.<br>Steam will automatically update the game unless automatic updates are disabled."
+	val[]: "Du använder en äldre version av spelet.<br>Steam kommer att uppdatera det automatiskt om du inte avaktiverat automatiska uppdateringar."
 
 	key[]: "allow_news"
 	val[]: "Vill du att spelet automatiskt letar efter nya uppdateringar och nyheter?" #+ Text shown in a message box.
@@ -1788,7 +1797,7 @@
 	val[]: "Ljudvolym för lastbilens avgassystem" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_turbo_volume"
-	val[]: "Truck turbo volume" #+ Slider controlling volume of the truck turbo.
+	val[]: "Volym på lastbilsturbo" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "Ljudnivå för lastbilseffekter" #+ Slider controlling volume of the truck effects.
@@ -1830,7 +1839,7 @@
 	val[]: "Ljudnivå UI musik" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Intro logos volume" #+ Slider controlling volume of the intro logos.
+	val[]: "Volym på introduktionsloggorna" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "RÖSTNAVIGERING" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2585,7 +2594,7 @@
 	val[]: "GPS, föregående sida"
 
 	key[]: "o_im_adviser_eta"
-	val[]: "Route Advisor Destination Mode"
+	val[]: "GPS-läge"
 
 #assistant
 
@@ -2639,19 +2648,19 @@
 	val[]: "Nollställ huvud (huvudspårning)"
 
 	key[]: "o_im_headtrack_enable"
-	val[]: "Enable Head Tracking" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
+	val[]: "Aktivera huvudspårning" #+ Enables and disables use of headtracking data (TrackIR, Tobii, HMD)
 
 	key[]: "o_im_eye_pause"
 	val[]: "Pausa Utökad Vy (experimentell)"
 
 	key[]: "o_im_eye_preset_1"
-	val[]: "Apply Extended View Preset 1" #+ Applies extended view eye tracking preset 1
+	val[]: "Aktivera Utökad vy, förinställning 1" #+ Applies extended view eye tracking preset 1
 
 	key[]: "o_im_eye_preset_2"
-	val[]: "Apply Extended View Preset 2" #+ Applies extended view eye tracking preset 2
+	val[]: "Aktivera Utökad vy, förinställning 2" #+ Applies extended view eye tracking preset 2
 
 	key[]: "o_im_eye_preset_3"
-	val[]: "Apply Extended View Preset 3" #+ Applies extended view eye tracking preset 3
+	val[]: "Aktivera Utökad vy, förinställning 3" #+ Applies extended view eye tracking preset 3
 
 	key[]: "o_im_cam_rotate"
 	val[]: "Rotera kamera (med muskontroll)" #+ Enables camera look mode when mouse steering is active.
@@ -3053,16 +3062,16 @@
 	val[]: "Utökad Vy" #+ Header of the section.
 
 	key[]: "eye_preset"
-	val[]: "Extended View Presets" #+ Label of combo box with list of presets for the extended view
+	val[]: "Förinställningar för utökad vy" #+ Label of combo box with list of presets for the extended view
 
 	key[]: "eye_preset_name_hint"
-	val[]: "Enter preset name" #+ Hint shown within empty text input box used to enter name of new extended view preset
+	val[]: "Namnge förinställning" #+ Hint shown within empty text input box used to enter name of new extended view preset
 
 	key[]: "eye_preset_delete_confirmation"
-	val[]: "Are you sure you want to delete the selected preset?" #+ Confirmation dialog shown when user requests deletion of extended view preset
+	val[]: "Är du säker på att du vill ta bort den valda förinställningen?" #+ Confirmation dialog shown when user requests deletion of extended view preset
 
 	key[]: "eye_preset_overwrite_confirmation"
-	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+	val[]: "Nuvarande förinställning med samma namn kommer att skrivas över. Vill du fortsätta?" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "Inställningar för ögonrörelser" #+ Header of the gaze settings
@@ -3335,6 +3344,9 @@
 
 	key[]: "color_enhancement"
 	val[]: "Färgkorrigering" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Detaljer på reflektioner" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -3893,7 +3905,7 @@
 	val[]: "Snabba meddelanden" #+ Tooltip for short messages page in route advisor
 
 	key[]: "adviser_tooltip_tutorial"
-	val[]: "Route Advisor Tutorial" #+ Tooltip for the tutorial icon route advisor
+	val[]: "Genomgång av GPS:en" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
 	val[]: "Bärgningstjänsten kan ta dig och din lastbil till $CITY$. Det kommer att kosta $MONEY$ och resan kommer att ta $TIME$. <br offset=30>Godkänner du detta?"
@@ -3941,10 +3953,10 @@
 	val[]: "Besök service genast!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "Full trip info" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
+	val[]: "Full ruttinformation" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
-	val[]: "Next checkpoint info" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
+	val[]: "Information om nästa checkpoint" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
 
 # Adviser info
 
@@ -4049,13 +4061,13 @@
 	val[]: "Detta är en rastplats,<br>men du är inte trött just nu."
 
 	key[]: "viewpoint_title"
-	val[]: "Viewpoint"
+	val[]: "Utsiktsplats"
 
 	key[]: "viewpoint_msg"
-	val[]: "Press the following key to activate viewpoint:"
+	val[]: "Tryck på följande tangent för att aktivera utsiktsplatsen:"
 
 	key[]: "viewpoint_found"
-	val[]: "You have discovered a new viewpoint!"
+	val[]: "Du har hittat en ny utsiktsplats!"
 
 	key[]: "gas_station"
 	val[]: "Bensinstation"
@@ -4144,7 +4156,7 @@
 	val[]: "Allt är som det ska.<br>Ha en trevlig resa."
 
 	key[]: "stop_viewpoint"
-	val[]: "Please, stop and turn off your engine to activate the viewpoint."
+	val[]: "Var vänlig stanna och stäng av motorn för att aktivera den här utsiktsplatsen."
 
 	key[]: "stop_to_weigh"
 	val[]: "Var god sväng av till närmaste vägningsstation för fordonsinspektion." #+ Adviser text: Weigh station visit required.
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Du bör låsa upp differentialspärren vid vanlig körning för att inte skada denna.<br>Använd följande tangent för att låsa upp:"
+
+	key[]: "tow_hint"
+	val[]: "Om du inte kan ta dig ur en knivig situation så får du ringa bärgare. Tryck:"
 
 	key[]: "ferry_msg"
 	val[]: "För att se möjliga destinationer, tryck på:"
@@ -5235,7 +5250,7 @@
 	val[]: "Vägvält - DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Crawler Tractor"
+	val[]: "Bandtraktor"
 
 	key[]: "cn_yacht"
 	val[]: "Yacht"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Kycklingkött"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19 Vaccine"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Keso"
@@ -5555,7 +5573,7 @@
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asphalt Miller - AM 0880"
+	val[]: "Asfaltsfräs - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "Industriell kabelrulle"
@@ -6974,13 +6992,13 @@
 	val[]: "Kanaltunnel"
 
 	key[]: "mapl_undiscovered"
-	val[]: "Undiscovered point"
+	val[]: "Ej upptäckt plats"
 
 	key[]: "mapl_viewpoint"
-	val[]: "Viewpoint (visited)"
+	val[]: "Utsiktsplats (besökt)"
 
 	key[]: "mapl_viewpoint_unvisited"
-	val[]: "Viewpoint (unvisited)"
+	val[]: "Utsiktsplats (ej besökt)"
 
 	key[]: "mapl_gas"
 	val[]: "Bensinstation"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "VÄST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7794,7 +7814,7 @@
 	val[]: "Byt till sidan för jobbeskrivning ($KEY$) för att fortsätta..."
 
 	key[]: "tutorial_adviser3"
-	val[]: "The job description page summarizes what you're carrying and where. It tells you when you are expected, how much time you have left and how much money you'll receive if you arrive on time without damaging the cargo."
+	val[]: "Sidan med jobbeskrivningen sammanfattar vad du har för lass, och var det ska. Där står när du förväntas vara på plats, hur mycket tid du har kvar och hur mycket pengar du får om du kommer i tid utan att skada godset."
 
 	key[]: "tutorial_adviser3a"
 	val[]: "Växla till diagnostiksidan ($KEY$) för att fortsätta..."
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Beige filt"
+
+	key[]: "blanket_square"
+	val[]: "Fyrkantig filt"
+
+	key[]: "book"
+	val[]: "Bok"
+
+	key[]: "bottle_sixpack"
+	val[]: "Sexpack flaskor"
+
+	key[]: "breakfast_cereals"
+	val[]: "Frukostflingor"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bubbeldocka, bulldog"
+
+	key[]: "cap"
+	val[]: "Skärmmössa"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobiltelefon"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Bubbeldocka, chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Instrumentbräda"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Leveransrapport"
+
+	key[]: "electric_cooling_box"
+	val[]: "Eldriven kylväska"
+
+	key[]: "endless_nourishment"
+	val[]: "Evig näring"
+
+	key[]: "ets2_game_box"
+	val[]: "Spellåda för ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Lunchlåda för ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Lastbilsväska för ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Festlig mugg"
+
+	key[]: "fire_extinguisher"
+	val[]: "Brandsläckare"
+
+	key[]: "hand_bag"
+	val[]: "Handväska"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Handgjord läderplånbok"
+
+	key[]: "hula_doll"
+	val[]: "Hula-hula-docka"
+
+	key[]: "instant_lunch"
+	val[]: "Snabbmåltid"
+
+	key[]: "instant_lunch_box"
+	val[]: "Flera snabbmåltider"
+
+	key[]: "magazines"
+	val[]: "Tidningar"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Kompass"
+
+	key[]: "map"
+	val[]: "Karta"
+
+	key[]: "notebook"
+	val[]: "Bärbar dator"
+
+	key[]: "paper_towels"
+	val[]: "Pappershanddukar"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilotglasögon"
+
+	key[]: "plush_bear"
+	val[]: "Nallebjörn"
+
+	key[]: "portable_navigator"
+	val[]: "Bärbar GPS"
+
+	key[]: "rugged_style_cap"
+	val[]: "Robust keps"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Kaffemugg från SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Sovsäck"
+
+	key[]: "tablet"
+	val[]: "Surfplatta"
+
+	key[]: "weekend_bag"
+	val[]: "Helgväska"
+
+	key[]: "winter_bauble"
+	val[]: "Julgranskula"
+
+	key[]: "winter_blast_gift"
+	val[]: "Winter Blast-gåva"
+
+	key[]: "wise_owl_offering"
+	val[]: "Present från en klok uggla"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2-kudde"
+
+	key[]: "flame_pillow"
+	val[]: "Kudde med flammor"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear-kudde"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Kudde, hem ljuva hem"
+
+	key[]: "skull_pillow"
+	val[]: "Kudde med skalle"
+
+	key[]: "status_pillow"
+	val[]: "Statuskudde"
+
+	key[]: "track_pillow"
+	val[]: "Kudde med spår"
+
+	key[]: "trucker_pillow"
+	val[]: "Truckerkudde"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavs kudde"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Kudde med hjärta"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ-kudde"
+
+
+	key[]: "air_freshener"
+	val[]: "Doftgran"
+
+	key[]: "smelling_sack"
+	val[]: "Doftpåse"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Doftgran, äpple"
+
+	key[]: "basketball_ball"
+	val[]: "Basketboll"
+
+	key[]: "black_plush_cube"
+	val[]: "Svart plyschkub"
+
+	key[]: "chromed_skull"
+	val[]: "Förkromad skalle"
+
+	key[]: "disco_ball"
+	val[]: "Diskokula"
+
+	key[]: "eight_ball"
+	val[]: "Biljardboll"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Doftgran, ETS2"
+
+	key[]: "football_ball"
+	val[]: "Fotboll"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Hemma-körande Insignia"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Hope Trucker Insignia"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Doftgran, SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Tennisboll"
+
+	key[]: "trophy_skull"
+	val[]: "Troféskalle"
+
+	key[]: "white_plush_cube"
+	val[]: "Vit plyschkub"
+
+
+	key[]: "black_style_mug"
+	val[]: "Svart stil på mugg" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Vit-orange mugg" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Svart-orange mugg" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Mjukdjur" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Plånbok i läder" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Panel" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Exklusivt centralbord" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Centralbord i mahogny" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Svart centralbord" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Exklusivt långt bord" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Långt mahognybord" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Långt svart bord" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Standard" #+ Basic truck accesory general
 
@@ -8301,7 +8565,7 @@
 	val[]: "Standardfärg" #+ Basic but paintable truck accesory
 
 	key[]: "classic"
-	val[]: "Classic" #+ Classical or vintage truck accesory
+	val[]: "Klassisk" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Orginal" #+ Stock truck accesory general
@@ -8340,10 +8604,13 @@
 	val[]: "Färg" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Paint Long" #+ Extended leg version of the front truck mirror
+	val[]: "Färg, lång" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Krom" #+ Chromed mirror, doorhandle or other accessory
+
+	key[]: "chrom2"
+	val[]: "Krom II" #+ Chromed mirror, doorhandle or other accessory
 
 	key[]: "paint_chrom"
 	val[]: "Färg och krom" #+ Painted and chromed mirror, doorhandle or other accessory
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Standard, dubbel" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exklusiv" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Skräddarsydd metallicfärg" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Standard" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Enkel kromad" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Enkel, målad" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Vinnartärning" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Stor stjärna" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -9000,7 +9280,7 @@
 	val[]: "Aktivera Utvalda bilder?<br><br>Du kommer att kunna bläddra igenom fantastiska bilder som handplockats från Långtradarvärlden (World of Trucks) och visa dessa när spelet laddas." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
 
 	key[]: "content_change_detected"
-	val[]: "Content change detected. Updating navigation data. Please wait..." #+ Shown on loading screen
+	val[]: "En innehållsändring har upptäckts. Laddar om navigationsdata. Vänligen vänta..." #+ Shown on loading screen
 #@}
 
 
@@ -9067,7 +9347,7 @@
 	val[]: "Uppdatera" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "Bläddra bland kontrakt" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Teckna Slumpmässiga Avtal" #+ Connects with server and accept random job in proximity of player's current position
@@ -9779,13 +10059,13 @@
 	val[]: "NYTT EVENT" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "LIVE EVENTS" #+ Title of the event popup.
+	val[]: "LIVEHÄNDELSER" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Personligt mål uppnått!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Öppna evenemangssidan" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Utveckling" #+ The label used to indicate progress of the event.
@@ -9794,13 +10074,13 @@
 	val[]: "EVENTINFO" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Livehändelser" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Nivå" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "Det finns inget aktivt event just nu."
 #@}
 
 #+ Trailer ownership
@@ -10268,6 +10548,22 @@
 	val[]: "Kan ej sända iväg släpet under pågående jobb." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "FORDONSJUSTERINGAR"
+
+	key[]: "adj_mirrors"
+	val[]: "Justera speglar"
+
+	key[]: "adj_lights"
+	val[]: "Justera lysen"
+
+	key[]: "adj_seats"
+	val[]: "Justera sätet"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Kyld"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
-	val[]: "Tank"
+	val[]: "Tankar"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10325,10 +10623,11 @@
 	val[]: "Trästockar, bjälkar eller rör"
 
 	key[]: "body_cargo_types_lowboy"
-	val[]: "Heavy machinery and high cargo"
+	val[]: "Tunga maskiner och hög last"
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Frys, kylvaror"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Hämtar framgångar för staden..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Leveranser till nästa stjärna:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Alla stjärnor uppnådda."
+	key[]: "xmas_delivery_progress"
+	val[]: "Framgång med att leverera paket"
 
 	key[]: "xmas19_map_description"
 	val[]: "För muspekaren över städerna för att se hur långt juleventet kommit. Besök $WOTR_URL$ för att se en fullständig sammanställning."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Den här staden har redan fått fullt antal leveranser!<br><br>Kanske borde du hjälpa en annan stad att leverera gåvor?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Samarbetet för att nå gemensamma mål för det här jobbet, iden här staden, är klart!<br><br>Kanske kan du hitta en annan stad att leverera paket till eller från?"
 
 	key[]: "xmas19_back"
 	val[]: "Gå tillbaka"

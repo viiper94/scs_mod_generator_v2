@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "Rèm " #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Phụ kiện gắn điều hòa" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Phụ kiện giường ngủ" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Vật phẩm đang treo" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "Đồ để trên sàn" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Phụ kiện gối"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Bộ táp lô" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3429,6 +3438,9 @@
 	key[]: "color_enhancement"
 	val[]: "Điều chỉnh màu sắc" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Tỉ lệ phản chiếu" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Phản ánh chi tiết" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Bạn nên bỏ khóa vi sai trong quá trình lái thông thường để tránh làm hỏng bộ truyền động.<br>Sử dụng nút sau để bỏ kích hoạt:"
 
+	key[]: "tow_hint"
+	val[]: "Nếu bạn bị kẹt ở tình huống khó bạn có thể sử dụng dịch vụ kéo. Nhấn:"
+
 	key[]: "ferry_msg"
 	val[]: "Để biết cái tàu / phà này sẽ đi đến đâu, hãy bấm : "
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "Vật Liệu Bị Ô Nhiễm"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vắc-xin COVID-19"
 
 	key[]: "cn_cyanide"
 	val[]: "Chất Si-A-Nia"
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "Giờ Mountain Daylight Time" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "Bastia"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Bergen"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Mũ lưỡi trai" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Cốc" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Mền lông cừu"
+
+	key[]: "blanket_square"
+	val[]: "Mền hình vuông"
+
+	key[]: "book"
+	val[]: "Sách"
+
+	key[]: "bottle_sixpack"
+	val[]: "Hộp chứa 6 lon"
+
+	key[]: "breakfast_cereals"
+	val[]: "Ngũ cốc điểm tâm"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Mô hình chó bun"
+
+	key[]: "cap"
+	val[]: "Mũ lưỡi trai"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Di động"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Mô hình chó Chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Táp-lô"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Báo cáo vận chuyển"
+
+	key[]: "electric_cooling_box"
+	val[]: "Hộp làm mát chạy bằng điện"
+
+	key[]: "endless_nourishment"
+	val[]: "Bánh sandwich"
+
+	key[]: "ets2_game_box"
+	val[]: "Hộp trò chơi ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Hộp cơm trưa ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Túi xe tải ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Ly lễ hội"
+
+	key[]: "fire_extinguisher"
+	val[]: "Bình chữa cháy"
+
+	key[]: "hand_bag"
+	val[]: "Túi xách"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Ví da thủ công"
+
+	key[]: "hula_doll"
+	val[]: "Búp bê Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Mì ly"
+
+	key[]: "instant_lunch_box"
+	val[]: "Set mì ly"
+
+	key[]: "magazines"
+	val[]: "Tạp chí"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "La bàn"
+
+	key[]: "map"
+	val[]: "Bản đồ"
+
+	key[]: "notebook"
+	val[]: "Máy tính xách tay"
+
+	key[]: "paper_towels"
+	val[]: "Khăn giấy"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Kính râm phi công"
+
+	key[]: "plush_bear"
+	val[]: "Gấu nhồi bông"
+
+	key[]: "portable_navigator"
+	val[]: "Máy định vị nhỏ gọn"
+
+	key[]: "rugged_style_cap"
+	val[]: "Mũ phong cách bụi"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Ly cà phê SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Túi ngủ"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Mền tuyết"
+
+	key[]: "tablet"
+	val[]: "Máy tính bảng"
+
+	key[]: "weekend_bag"
+	val[]: "Túi du lịch"
+
+	key[]: "winter_bauble"
+	val[]: "Trang sức mùa đông"
+
+	key[]: "winter_blast_gift"
+	val[]: "Quà tặng mùa đông"
+
+	key[]: "wise_owl_offering"
+	val[]: "Hộp quà cú mèo tinh ranh"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Gối ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Gối hình ngọn lửa"
+
+	key[]: "goodyear_pillow"
+	val[]: "Gối Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Gối ngôi nhà ngọt ngào"
+
+	key[]: "skull_pillow"
+	val[]: "Gối hình đầu lâu"
+
+	key[]: "status_pillow"
+	val[]: "Gối trạng thái"
+
+	key[]: "track_pillow"
+	val[]: "Gối có hình đường chạy"
+
+	key[]: "trucker_pillow"
+	val[]: "Gối của trucker"
+
+	key[]: "vaclav_pillow"
+	val[]: "Gối Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Gối trái tim khôn ngoan"
+
+	key[]: "zzz_pillow"
+	val[]: "Gối ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Bình xịt khử mùi"
+
+	key[]: "detective_head"
+	val[]: "Mũ thám tử"
+
+	key[]: "vampire_head"
+	val[]: "Đầu ma cà rồng"
+
+	key[]: "viking_head"
+	val[]: "Mũ Viking"
+
+	key[]: "smelling_sack"
+	val[]: "Túi thơm"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Bình xịt khử mùi hương táo"
+
+	key[]: "basketball_ball"
+	val[]: "Banh bóng chày"
+
+	key[]: "black_plush_cube"
+	val[]: "Khối nhồi bông màu đen"
+
+	key[]: "chromed_skull"
+	val[]: "Đầu lâu mạ chrome"
+
+	key[]: "disco_ball"
+	val[]: "Bóng disco"
+
+	key[]: "eight_ball"
+	val[]: "Bi số tám"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Bình xịt khử mùi ETS2"
+
+	key[]: "football_ball"
+	val[]: "Quả bóng"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Phù hiệu Tài xế về nhà"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Phù kiệu Tài xế hy vọng"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Bình xịt khử mùi SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Bóng tennis"
+
+	key[]: "trophy_skull"
+	val[]: "Cúp đầu lâu"
+
+	key[]: "white_plush_cube"
+	val[]: "Khối nhồi bông màu đen"
+
 
 	key[]: "black_style_mug"
 	val[]: "Cốc đen" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "Bàn đen dài" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "Nhiệm vụ" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "Chrome" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Sơn và Chrome" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "Tiêu chuẩn 2013 UK" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Cao cấp" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Độc quyền" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "Phản quang màu trắng"
 
-	key[]: "basic_chrome"
-	val[]: "Chrome cơ bản" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Cơ bản" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Chrome cơ bản" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Màu cơ bản" #+ type of sideskirts, painted
+	val[]: "Màu cơ bản" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Bảo vệ toàn bộ thanh đôi" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -10482,7 +10731,7 @@
 	val[]: "Làm mới" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "Xem hợp đồng" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Ký hợp đồng ngẫu nhiên" #+ Connects with server and accept random job in proximity of player's current position
@@ -11233,7 +11482,7 @@
 	val[]: "Đạt mục tiêu cá nhân!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Mở trang sự kiện" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Quá trình" #+ The label used to indicate progress of the event.
@@ -11242,13 +11491,13 @@
 	val[]: "THÔNG TIN SỰ KIỆN" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Sự kiện trực tiếp" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Tầng" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "Không có sự kiện tại thời điểm này."
 #@}
 
 #+ Trailer ownership
@@ -11714,6 +11963,22 @@
 
 	key[]: "trailer_park_blocked_on_job"
 	val[]: "Bạn không thể hủy trailer khi vẫn đang vận chuyển hàng hóa." #+ Message shown when player tries to dimiss trailer while being on a job.
+#@}
+
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "ĐIỀU CHỈNH PHƯƠNG TIỆN"
+
+	key[]: "adj_mirrors"
+	val[]: "Điều chỉnh kính"
+
+	key[]: "adj_lights"
+	val[]: "Điều chỉnh đèn"
+
+	key[]: "adj_seats"
+	val[]: "Điều chỉnh ghế"
+
 #@}
 
 #+ Trailer body type names.
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Đang lấy tiến độ của thành phố..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Chuyến hàng đến ngôi sao tiếp theo:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Đã nhận được tất cả ngôi sao."
+	key[]: "xmas_delivery_progress"
+	val[]: "Tiến độ giao quà"
 
 	key[]: "xmas19_map_description"
 	val[]: "Đưa chuột ngang qua các thành phố để xem tiến độ sự kiện Giáng sinh. Đến $WOTR_URL$ để xem báo cáo đầy đủ."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Đóng góp của thành phố này cho mục tiêu cộng đồng đã đạt được!<br><br>Sao không phụ các thành phố khác giao quà?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Đóng góp của các thành phố đối với công việc này so với mục tiêu cộng đồng đã hoàn thành!<br><br>Tại sao không tìm thành phố khác để giao quà tiếp?"
 
 	key[]: "xmas19_back"
 	val[]: "Trở về"

@@ -459,7 +459,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
-	val[]: "DLC - Goodyear"
+	val[]: "DLC - Goodyear Tyres Pack"
 
 	key[]: "onlineid_eu_goodyear"
 	val[]: "@@package_eut2_goodyear@@"
@@ -505,6 +505,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_supstrip"
 	val[]: "@@package_eut2_sstrip@@"
+	
+	key[]: "package_eut2_ln_year"
+	val[]: "DLC - Lunar New Year Pack"
+
+	key[]: "onlineid_eu_ln_year"
+	val[]: "@@package_eut2_ln_year@@"
 
 	# Truck brands
 
@@ -685,6 +691,258 @@ localization_db : .localization
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
 
+
+
+	# Included from "/locale/fuel_price_strings.sui"
+
+
+# Fuel prices Austria
+
+	key[]: "fp_at_natural95"
+	val[]: "1.09"
+
+	key[]: "fp_at_diesel"
+	val[]: "1.07"
+
+# Fuel prices Belgium
+
+	key[]: "fp_be_natural95"
+	val[]: "1.32"
+
+	key[]: "fp_be_diesel"
+	val[]: "1.32"
+
+# Fuel prices Bulgaria
+
+	key[]: "fp_bg_natural95"
+	val[]: "1.76"
+
+	key[]: "fp_bg_natural98"
+	val[]: "1.94"
+
+	key[]: "fp_bg_diesel"
+	val[]: "1.74"
+
+# Fuel prices Czech
+
+	key[]: "fp_cz_natural95"
+	val[]: "27.74"
+
+	key[]: "fp_cz_diesel"
+	val[]: "27.22"
+
+# Fuel prices Denmark
+
+	key[]: "fp_dk_natural92"
+	val[]: "10.53"
+
+	key[]: "fp_dk_natural95"
+	val[]: "11.08"
+
+	key[]: "fp_dk_diesel"
+	val[]: "9.60"
+
+# Fuel prices Estonia
+
+	key[]: "fp_ee_natural95"
+	val[]: "1.23"
+
+	key[]: "fp_ee_natural98"
+	val[]: "1.35"
+
+	key[]: "fp_ee_diesel"
+	val[]: "1.06"
+
+# Fuel prices Finland
+
+	key[]: "fp_fi_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_fi_natural98"
+	val[]: "1.54"
+
+	key[]: "fp_fi_diesel"
+	val[]: "1.34"
+
+# Fuel prices France
+
+	key[]: "fp_fr_natural95"
+	val[]: "1.40"
+
+	key[]: "fp_fr_natural98"
+	val[]: "1.45"
+
+	key[]: "fp_fr_diesel"
+	val[]: "1.31"
+
+# Fuel prices Germany
+
+	key[]: "fp_de_natural95"
+	val[]: "1.33"
+
+	key[]: "fp_de_diesel"
+	val[]: "1.22"
+
+# Fuel prices Hungary
+
+	key[]: "fp_hu_natural95"
+	val[]: "374.82"
+
+	key[]: "fp_hu_diesel"
+	val[]: "392.84"
+
+# Fuel prices Italy
+
+	key[]: "fp_it_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_it_diesel"
+	val[]: "1.33"
+
+	key[]: "fp_it_diesel_plus"
+	val[]: "1.40"
+
+# Fuel prices Latvia
+
+	key[]: "fp_lv_natural95"
+	val[]: "1.18"
+
+	key[]: "fp_lv_natural98"
+	val[]: "1.24"
+
+	key[]: "fp_lv_diesel"
+	val[]: "1.06"
+
+# Fuel prices Lithuania
+
+	key[]: "fp_lt_natural95"
+	val[]: "1.09"
+
+	key[]: "fp_lt_natural98"
+	val[]: "1.18"
+
+	key[]: "fp_lt_diesel"
+	val[]: "1.00"
+
+# Fuel prices Luxemburg
+
+	key[]: "fp_lu_natural95"
+	val[]: "1.16"
+
+	key[]: "fp_lu_diesel"
+	val[]: "1.05"
+
+# Fuel prices Netherlands
+
+	key[]: "fp_nl_natural95"
+	val[]: "1.58"
+
+	key[]: "fp_nl_diesel"
+	val[]: "1.26"
+
+# Fuel prices Norway
+
+	key[]: "fp_no_natural95"
+	val[]: "16.22"
+
+	key[]: "fp_no_diesel"
+	val[]: "14.57"
+
+# Fuel prices Poland
+
+	key[]: "fp_pl_natural95"
+	val[]: "4.53"
+
+	key[]: "fp_pl_diesel"
+	val[]: "4.48"
+
+# Fuel prices Portugal
+
+	key[]: "fp_pt_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_pt_diesel"
+	val[]: "1.29"
+
+# Fuel prices Romania
+
+	key[]: "fp_ro_natural95"
+	val[]: "4.78"
+
+	key[]: "fp_ro_natural98"
+	val[]: "4.90"
+
+	key[]: "fp_ro_diesel"
+	val[]: "4.87"
+
+# Fuel prices Russia
+
+	key[]: "fp_ru_natural92"
+	val[]: "44.14"
+
+	key[]: "fp_ru_natural95"
+	val[]: "46.65"
+
+	key[]: "fp_ru_diesel"
+	val[]: "46.65"
+
+# Fuel prices Slovakia
+
+	key[]: "fp_sk_natural95"
+	val[]: "1.21"
+
+	key[]: "fp_sk_diesel"
+	val[]: "1.07"
+
+# Fuel prices Spain
+
+	key[]: "fp_es_natural95"
+	val[]: "1.20"
+
+	key[]: "fp_es_diesel"
+	val[]: "1.09"
+
+# Fuel prices Sweden
+
+	key[]: "fp_se_e85"
+	val[]: "12.04"
+
+	key[]: "fp_se_natural95"
+	val[]: "14.59"
+
+	key[]: "fp_se_diesel"
+	val[]: "15.09"
+
+# Fuel prices Switzerland
+
+	key[]: "fp_ch_natural95"
+	val[]: "1.39"
+
+	key[]: "fp_ch_diesel"
+	val[]: "1.46"
+
+# Fuel prices Turkey
+
+	key[]: "fp_tr_natural95"
+	val[]: "7.33"
+
+	key[]: "fp_tr_natural98"
+	val[]: "7.62"
+
+	key[]: "fp_tr_diesel"
+	val[]: "6.69"
+
+# Fuel prices UK
+
+	key[]: "fp_gb_natural95"
+	val[]: "1.166"
+
+	key[]: "fp_gb_diesel"
+	val[]: "1.201"
+
+	# End of include "/locale/fuel_price_strings.sui"
+
+
 	# End of include "/locale/common.sui"
 
 
@@ -805,7 +1063,7 @@ localization_db : .localization
 	val[]: "STANDART RENK" #+ Header of list containing stock colors.
 
 	key[]: "paint_job"
-	val[]: "Standart renkler" #+ Header of list containing stock colors.
+	val[]: "Standart renk" #+ Header of list containing stock colors.
 
 	key[]: "every_paint_job_t"
 	val[]: "BOYA" #+ Header of list containing all paint jobs.
@@ -903,7 +1161,7 @@ localization_db : .localization
 	val[]: "Çekicinizin dar alanda manevra kabiliyeti" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Daha düzgün tırmanış ve iniş için optimize edilmiş güç aktarma organları" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Daha pürüzsüz tırmanış ve iniş için optimize edilmiş güç aktarma sistemleri" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Engebeli ve sert zeminlerin üstesinden gelme kabiliyeti" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -1264,20 +1522,29 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Perdeler" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Havalandırma Izgarası Araçları" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Yatak Eşyaları" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
-	val[]: "Sarkan Aksesuarlar" #+ Interior hanging accesories
+	val[]: "Sarkan Eşyalar" #+ Interior hanging accesories
 
 	key[]: "toyseat"
-	val[]: "Koltuk Aksesuarları" #+ Interior accessories placed in the passenger seat
+	val[]: "Koltuk Eşyaları" #+ Interior accessories placed in the passenger seat
 
 	key[]: "toystand"
-	val[]: "Konsol Aksesuarları" #+ Interior accessories placed on stands or center console available in the truck
+	val[]: "Konsol Eşyaları" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
 	val[]: "Orta Döşeme Aksesuarları" #+ Interior accessories placed on the floor in the center of the truck cabin
 
+	key[]: "l_pillow"
+	val[]: "Yastık Eşyaları"	#+ Interior accessories placed on pillow place in back of the truck cabin
+
 	key[]: "set_dashbrd"
-	val[]: "Konsol Setleri" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Gösterge Paneli Setleri" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
 	val[]: "Ön Cam Setleri" #+ Large Pin for sets of small pins of the windshield accessories
@@ -1436,7 +1703,7 @@ localization_db : .localization
 	val[]: "Şasi Koruması" #+ Metall protective cover for whole chassis of the truck
 
 	key[]: "frntglss_mid"
-	val[]: "Ön Cam Merkezi" #+ Pin that is placed on the bottom of the windshield center to accomodate various decarative elements
+	val[]: "Ön Cam Ortası" #+ Pin that is placed on the bottom of the windshield center to accomodate various decarative elements
 
 	key[]: "steering_w"
 	val[]: "Direksiyon" #+ Steering wheel
@@ -3144,7 +3411,7 @@ localization_db : .localization
 	val[]: "İkincil" #+ Header of column containing a secondary key/button.
 
 	key[]: "na"
-	val[]: "Boş" #+ Shown if no key is configured to this slot.
+	val[]: "mevcut değil" #+ Shown if no key is configured to this slot.
 
 
 	key[]: "unassign"
@@ -4147,6 +4414,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "Renk düzeltme" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Yansıma ölçeklemesi" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Yansımanın detayı" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -5017,6 +5287,9 @@ localization_db : .localization
 	key[]: "diff_unlock_warning"
 	val[]: "Hasara neden olmamak için normal sürüş esnasında diferansiyel kilidini devre dışı bırakın<br>Devre dışı bırakmak için belirtilen tuşu kullanın:"
 
+	key[]: "tow_hint"
+	val[]: "Herhangi bir zor durumdan kurtulamıyorsanız çekici hizmetini kullanabilirsiniz. Belirtilen tuşa basın:"
+
 	key[]: "ferry_msg"
 	val[]: "Muhtemel hedefleri görmek için belirtilen tuşa basın:"
 
@@ -5799,6 +6072,9 @@ localization_db : .localization
 
 	key[]: "cn_contamin"
 	val[]: "Kontamine Madde"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19 Aşısı"
 
 	key[]: "cn_cyanide"
 	val[]: "Siyanür"
@@ -7043,7 +7319,7 @@ localization_db : .localization
 	val[]: "Özet" #+ Header of the block containing summary informations about player's company.
 
 	key[]: "compman_na"
-	val[]: "Boş" #+ Shown if no data/asset is available in company management screens.
+	val[]: "mevcut değil" #+ Shown if no data/asset is available in company management screens.
 
 #+ Quick travel message boxes.
 #@{
@@ -7457,7 +7733,7 @@ localization_db : .localization
 	val[]: "$TRUCK_SRC$ çekicinizi $CITY_DST$ şehrine gönderip $TRUCK_DST$ çekicisini sürmek istediğinizden emin misiniz?"
 
 	key[]: "truckman_conf_drive2"
-	val[]: "<br>(Değişim $TIME$ zaman alacak çünkü çekici şu anda işte.)"
+	val[]: "<br>(Değişim $TIME$ sürecek çünkü çekici şu anda bir işte.)"
 
 	key[]: "truckman_conf_drive_own_trailer"
 	val[]: "(Mevcut dorsenizi bırakacaksınız.)" #+ Information shown when player wants to use the truck.
@@ -8296,6 +8572,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "BATI" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8712,6 +8990,9 @@ localization_db : .localization
 	key[]: "bastia"
 	val[]: "Bastia"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Bergen"
 
@@ -9014,6 +9295,9 @@ localization_db : .localization
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9708,7 +9992,7 @@ localization_db : .localization
 #+ This happens if the online service were not initialized for some reason or -noonline parameter was used.
 
 	key[]: "generic_networking_unavailable"
-	val[]: "Ağ katmanı mevcut değil. Lütfen ağ yapılandırmanızı kontrol edin."
+	val[]: "Ağ katmanı kullanılabilir değil. Lütfen istemci yapılandırmasının doğru olduğundan emin olun."
 
 #+ Unable to establish connection with the service.
 
@@ -10139,11 +10423,223 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Şapka" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Kupa" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Bej Battaniye"
+
+	key[]: "blanket_square"
+	val[]: "Kareli Battaniye"
+
+	key[]: "book"
+	val[]: "Kitap"
+
+	key[]: "bottle_sixpack"
+	val[]: "Altılı Şişe"
+
+	key[]: "breakfast_cereals"
+	val[]: "Kahvaltılık Gevrek"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Sallabaş Köpek"
+
+	key[]: "cap"
+	val[]: "Şapka"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Cep Telefonu"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Sallabaş Chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Gösterge Paneli"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Teslimat Raporu"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrikli Soğutma Kutusu"
+
+	key[]: "endless_nourishment"
+	val[]: "Sandviç"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 Oyun Kutusu"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 Yemek Kutusu"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 Kamyon Çantası"
+
+	key[]: "festive_mug"
+	val[]: "Şenlikli Kupa"
+
+	key[]: "fire_extinguisher"
+	val[]: "Yangın Söndürücüsü"
+
+	key[]: "hand_bag"
+	val[]: "El Çantası"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "El Yapımı Deri Cüzdan"
+
+	key[]: "hula_doll"
+	val[]: "Hula Bebeği"
+
+	key[]: "instant_lunch"
+	val[]: "Hazır Yemek"
+
+	key[]: "instant_lunch_box"
+	val[]: "Çoklu Hazır Yemek Kutusu"
+
+	key[]: "magazines"
+	val[]: "Dergiler"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Manyetoindüktif Pusula"
+
+	key[]: "map"
+	val[]: "Harita"
+
+	key[]: "notebook"
+	val[]: "Dizüstü Bilgisayar"
+
+	key[]: "paper_towels"
+	val[]: "Kağıt Havlular"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilot Güneş Gözlükleri"
+
+	key[]: "plush_bear"
+	val[]: "Peluş Ayı"
+
+	key[]: "portable_navigator"
+	val[]: "Taşınabilir Navigasyon"
+
+	key[]: "rugged_style_cap"
+	val[]: "Kırışmış Şapka"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS Kahve Kupası"
+
+	key[]: "sleeping_bag"
+	val[]: "Uyku Tulumu"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Kış Battaniyesi"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Seyahat Çantası"
+
+	key[]: "winter_bauble"
+	val[]: "Kış Süsü"
+
+	key[]: "winter_blast_gift"
+	val[]: "Kış Fırtınası Hediyesi"
+
+	key[]: "wise_owl_offering"
+	val[]: "Bilge Baykuş Hediyesi"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 Yastığı"
+
+	key[]: "flame_pillow"
+	val[]: "Alevli Yastık"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear Yastığı"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Evim Güzel Evim Yastığı"
+
+	key[]: "skull_pillow"
+	val[]: "Kafataslı Yastık"
+
+	key[]: "status_pillow"
+	val[]: "Durum Yastığı"
+
+	key[]: "track_pillow"
+	val[]: "Lastik İzli Yastık"
+
+	key[]: "trucker_pillow"
+	val[]: "Tırcı Yastığı"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclav Yastığı"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Bilge Kalp Yastığı"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ Yastığı"
+
+
+	key[]: "air_freshener"
+	val[]: "Araç Kokusu"
+
+	key[]: "detective_head"
+	val[]: "Dedektif"
+
+	key[]: "vampire_head"
+	val[]: "Vampir Kafası"
+
+	key[]: "viking_head"
+	val[]: "Viking Kafası"
+
+	key[]: "smelling_sack"
+	val[]: "Koku Torbası"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Elmalı Araç Kokusu"
+
+	key[]: "basketball_ball"
+	val[]: "Basketbol Topu"
+
+	key[]: "black_plush_cube"
+	val[]: "Siyah Peluş Küp"
+
+	key[]: "chromed_skull"
+	val[]: "Krom Kafatası"
+
+	key[]: "disco_ball"
+	val[]: "Disko Topu"
+
+	key[]: "eight_ball"
+	val[]: "Bilardo Topu"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 Araç Kokusu"
+
+	key[]: "football_ball"
+	val[]: "Futbol Topu"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Sembol - Home Trucker"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Sembol - Umut Taşıyan"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS Araç Kokusu"
+
+	key[]: "tennis_ball"
+	val[]: "Tenis Topu"
+
+	key[]: "trophy_skull"
+	val[]: "Yadigar Kafatası"
+
+	key[]: "white_plush_cube"
+	val[]: "Beyaz Peluş Küp"
+
 
 	key[]: "black_style_mug"
 	val[]: "Siyah Tarzda Kupa" #+ specific color scheme of a mug in cabin
@@ -10180,6 +10676,8 @@ localization_db : .localization
 
 	key[]: "long_table_black"
 	val[]: "Siyah Uzun Tabla" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "İş" #+ Basic truck accesory general
@@ -10227,10 +10725,13 @@ localization_db : .localization
 	val[]: "Boyalı" #+ Painted mirror, doorhandle or other accessory
 
 	key[]: "paint_long"
-	val[]: "Boyalı Uzun" #+ Extended leg version of the front truck mirror
+	val[]: "Boyalı ve Uzun" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
 	val[]: "Krom Kaplamalı" #+ Chromed mirror, doorhandle or other accessory
+
+	key[]: "chrom2"
+	val[]: "Krom Kaplamalı II" #+ Chromed mirror, doorhandle or other accessory
 
 	key[]: "paint_chrom"
 	val[]: "Boyalı ve Krom Kaplamalı" #+ Painted and chromed mirror, doorhandle or other accessory
@@ -10248,7 +10749,7 @@ localization_db : .localization
 	val[]: "Alüminyum" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
-	val[]: "Modern ve Plastik" #+ Modernized plastic mirror, doorhandle or other accessory
+	val[]: "Modern Plastik" #+ Modernized plastic mirror, doorhandle or other accessory
 
 	key[]: "paint_modern"
 	val[]: "Modern ve Boyalı" #+ Modernized painted mirror, doorhandle or other accessory
@@ -10270,6 +10771,9 @@ localization_db : .localization
 
 	key[]: "standard_2013_uk"
 	val[]: "Standart 2013, Birleşik Krallık" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Özel" #+ Luxury/Exclusive version of the interior or accesory
@@ -10385,11 +10889,14 @@ localization_db : .localization
 	key[]: "white_reflector"
 	val[]: "Beyaz Reflektör"
 
-	key[]: "basic_chrome"
-	val[]: "Basit ve Krom Kaplamalı" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Temel" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Basit ve Krom Kaplamalı" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Basit ve Boyalı" #+ type of sideskirts, painted
+	val[]: "Basit ve Boyalı" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Tam Korumalı Çift Çubuk" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -10566,16 +11073,16 @@ localization_db : .localization
 	val[]: "Güneş Siperi" #+ sun shield accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_cap"
-	val[]: "HS-Schoch Şapkası" #+ toy accessory name, HS Schoch naming
+	val[]: "HS-Schoch Şapka" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_mug"
-	val[]: "HS-Schoch Kupası" #+ toy accessory name, HS Schoch naming
+	val[]: "HS-Schoch Kupa" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_paper_mug"
-	val[]: "HS-Schoch Kağıt Bardağı" #+ toy accessory name, HS Schoch naming
+	val[]: "HS-Schoch Karton Bardak" #+ toy accessory name, HS Schoch naming
 
 	key[]: "hs_schoch_pennant"
-	val[]: "HS-Schoch Flaması" #+ toy accessory name, HS Schoch naming
+	val[]: "HS-Schoch Flama" #+ toy accessory name, HS Schoch naming
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -11359,16 +11866,16 @@ localization_db : .localization
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "Gerekli $DEPENDENCY_NAME$ DLC'si (resmi oyun genişlemesi) eksik. Bu kaydın düzgün çalışabilmesi için bu DLC'nin bu bilgisayarda mevcut ve etkinleştirilmiş olması lazım. Bu kaydı yüklemeden önce bu sorunu gidermeniz gerekiyor." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "Gerekli $DEPENDENCY_NAME$ DLC'si (resmî oyun genişlemesi) eksik. Bu kaydın düzgün çalışabilmesi için bu DLC'nin bu bilgisayarda mevcut ve etkinleştirilmiş olması lazım. Bu kaydı yüklemeden önce bu sorunu gidermeniz gerekir." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "İsteğe bağlı $DEPENDENCY_NAME$ DLC'si (resmî oyun genişlemesi) eksik. Bu beklemediğiniz bir şeyse lütfen DLC'nin durumunu kontrol edin.<br><br>Aksi takdirde kaydı yine de yükleyebilirsiniz, fakat DLC tarafından sağlanan bazı işlevler kaybolabilir." #+ Information showed when dependency of type optional DLC is missing.
 
 	key[]: "missing_mod"
-	val[]: "$DEPENDENCY_NAME$ adlı MOD eksik veya devre dışı. Bu beklemediğiniz bir şeyse lütfen MOD'un durumunu kontrol edin. Kaydı yine de yüklemeye çalışabilirsiniz. Fakat MOD'un yaptığı şeye bağlı olarak yüklenmeyebilir veya başka sorunlara sebep olabilir." #+ Information displayed when dependency of type mod is missing.
+	val[]: "$DEPENDENCY_NAME$ adlı MOD eksik veya devre dışı. Bu beklemediğiniz bir şeyse lütfen MOD'un durumunu kontrol edin. Kaydı yine de yüklemeye çalışabilirsiniz, fakat MOD'un yaptığı şeye bağlı olarak yüklenmeyebilir veya başka sorunlara sebep olabilir." #+ Information displayed when dependency of type mod is missing.
 
 	key[]: "incompatible_mod"
-	val[]: "$DEPENDENCY_NAME$ adlı MOD oyununuzun versiyonu ile uyumlu değil. Yani bu modun sahibi modu oyunun sadece belirli versiyonları ile uyumlu olarak işaretledi ve oyunun mevcut versiyonu bunların arasında değil.<br><br>Çözümler:<br>- MOD'un, oyunun mevcut versiyonu ile çalışmak üzere tasarlanmış güncel bir versiyonunu bulmaya çalışın<br>- Oyununuzu güncelleyin veya mod ile uyumlu bir versiyona düşürün.<br><br>Kaydı yine de yüklemeye çalışabilirsiniz. Fakat mod yüklenmeyecektir, ve MOD'un yaptığı şeye bağlı olarak kaydın yüklenmeme veya başka sorunlara sebebiyet verme ihtimali vardır." #+ Information displayed when dependency of type mod is incompatible with the version of the game currently used by player.
+	val[]: "$DEPENDENCY_NAME$ adlı MOD oyununuzun versiyonu ile uyumlu değil, yani bu modun sahibi modu oyunun sadece belirli versiyonları ile uyumlu olacak şekilde işaretledi ve oyunun mevcut versiyonu bu aralığın arasında değil.<br><br>Çözümler:<br>- MOD'un, oyunun mevcut versiyonu ile çalışmak üzere tasarlanmış güncel bir versiyonunu bulmaya çalışın.<br>- Oyununuzu güncelleyin veya mod ile uyumlu bir versiyona düşürün.<br><br>Kaydı yine de yüklemeye çalışabilirsiniz, fakat mod yüklenmeyecektir ve MOD'un yaptığı işlemlere bağlı olarak kaydın yüklenmeme veya başka sorunlara sebebiyet verme ihtimali vardır." #+ Information displayed when dependency of type mod is incompatible with the version of the game currently used by player.
 
 	key[]: "missing_dependencies_t"
 	val[]: "EKSİK GEREKLİ DOSYALAR" #+ The missing dependencies dialog title.
@@ -11380,10 +11887,10 @@ localization_db : .localization
 	val[]: "Atölye sayfasını aç"  #+ Button text. Open Steam Workshop page of the missing Workshop mod.
 
 	key[]: "missing_dependencies_info"
-	val[]: "Bu kayıt hâlihazırda eksik olan DLC veya MOD'lara ihtiyaç duyuyor. Bunlar aşağıda listelenmiştir. Listedeki bir maddeyi seçerek her öğe hakkında daha fazla bilgi alabilirsiniz." #+ The info about the missing dependencies dialog.
+	val[]: "Bu kayıt hâlihazırda eksik olan DLC veya MOD'lara ihtiyaç duyar. Bunlar aşağıda listelenmiştir. Listedeki bir maddeyi seçerek her öğe hakkında daha fazla bilgi alabilirsiniz." #+ The info about the missing dependencies dialog.
 
 	key[]: "missing_dependencies_fatal_error"
-	val[]: "Bu kayıt en azından bir tane gerekli DLC veya MOD gerektiriyor. Bu kaydı yüklemeden önce bu sorunu gidermeniz gerekiyor." #+ Info shown if the continue operation is blocked because the save depends on some required dlc (e.g. map or vehicle)
+	val[]: "Bu kayıt en azından bir tane gerekli DLC veya MOD'a ihtiyaç duyar. Bu kaydı yüklemeden önce bu sorunu gidermeniz gerekir." #+ Info shown if the continue operation is blocked because the save depends on some required dlc (e.g. map or vehicle)
 
 	key[]: "abort_loading"
 	val[]: "Yüklemeyi iptal et" #+ Abort loading button.
@@ -12432,6 +12939,22 @@ localization_db : .localization
 
 	key[]: "trailer_park_blocked_on_job"
 	val[]: "Teslimatınızı tamamlamadan dorseyi gönderemezsiniz." #+ Message shown when player tries to dimiss trailer while being on a job.
+#@}
+
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "ARAÇ AYARLARI"
+
+	key[]: "adj_mirrors"
+	val[]: "Ayna ayarı"
+
+	key[]: "adj_lights"
+	val[]: "Far ayarı"
+
+	key[]: "adj_seats"
+	val[]: "Koltuk ayarı"
+
 #@}
 
 #+ Trailer body type names.
@@ -14019,7 +14542,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Şehir ilerlemesi alınıyor..."
@@ -14027,17 +14550,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Bir sonraki yıldız için teslimatlar:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Bütün yıldızlar başarımları tamamlandı."
+	key[]: "xmas_delivery_progress"
+	val[]: "Hediye teslimatı ilerlemesi"
 
 	key[]: "xmas19_map_description"
 	val[]: "Kentlerin üstüne fareyle gelip, ilerleme durumlarını kontrol edebilirsiniz. Tüm ilerleme sonucu için $WOTR_URL$ adresine gidin."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Topluluk Hedefi için bu kentin katkısı tamamlandı.<br><br>Neden başka bir kentin hediye dağıtımına yardım etmiyorsunuz?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Bu şehirlerin bu işe, yani Topluluk Hedefine olan katkısı tamamlandı!<br><br>Neden hediyeleri teslim edeceğiniz veya alacağınız başka şehirleri bulmuyorsunuz?"
 
 	key[]: "xmas19_back"
 	val[]: "Geri"

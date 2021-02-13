@@ -227,5 +227,9 @@
         "tn_home_transporter": "Hustransport",
         "tn_knuckle_boom": "Knuckleboom-laster",
         "tn_tub_grinder": "Tubekvern"
+    },
+    "companies\/paints": {
+        "default": "Tilpasset farge",
+        "metallic": "Tilpasset metallfarge"
     }
 }

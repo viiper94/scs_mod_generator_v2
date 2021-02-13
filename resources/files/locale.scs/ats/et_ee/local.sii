@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,6 +1055,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Kardinad" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Õhukonditsioneeri esemed" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Voodi esemed" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Rippuvad lisad" #+ Interior hanging accesories
 
@@ -1045,6 +1072,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "Keskel maas lisad" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Padja esemed"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Armatuuri dekoratsioonid" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -1731,7 +1761,7 @@ localization_db : .localization
 	val[]: "PROFIILI HALDUS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "launchpad_t"
-	val[]: "AMERICAN TRUCK SIMULATOR - LAUNCHPAD" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "AMERICAN TRUCK SIMULATOR - ALGUS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "UUDISEID VÕRGUST" #+ Title of the window used to display online news. Please keep in upper case where possible.
@@ -3845,6 +3875,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "Värvide korrastus" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Peegelduste detailsus" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Soovitatav on tavasõiduks diferentsiaalid lahti teha või riskid nende kahjustamisega.<br>Kasuta järgnevat nuppu lahtitegemiseks:"
+
+	key[]: "tow_hint"
+	val[]: "Kui sa ei saa keerulisest olukorrast välja, võid sa kasutada puksiiriteenust. Vajuta:"
 
 	key[]: "ferry_msg"
 	val[]: "Reisisihtpunktide nägemiseks vajutage:"
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Kanaliha"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Covid-19 vaktsiin"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Kodujuust"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Beež tekk"
+
+	key[]: "blanket_square"
+	val[]: "Ruuduline tekk"
+
+	key[]: "book"
+	val[]: "Raamat"
+
+	key[]: "bottle_sixpack"
+	val[]: "Kuuspakk"
+
+	key[]: "breakfast_cereals"
+	val[]: "Hommikusöögihelbed"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Noogutav buldog"
+
+	key[]: "cap"
+	val[]: "Müts"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobiil"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Noogutav chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Kellade plokk"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Veose raport"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektriline külmik"
+
+	key[]: "endless_nourishment"
+	val[]: "Lõputu toit"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 mängu karp"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 lõunakarp"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 kott"
+
+	key[]: "festive_mug"
+	val[]: "Pühadekruus"
+
+	key[]: "fire_extinguisher"
+	val[]: "Tulekustuti"
+
+	key[]: "hand_bag"
+	val[]: "Käekott"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Käsitöö-rahakott"
+
+	key[]: "hula_doll"
+	val[]: "Hulanukk"
+
+	key[]: "instant_lunch"
+	val[]: "Turbonuudlid"
+
+	key[]: "instant_lunch_box"
+	val[]: "Turbonuudlite pakid"
+
+	key[]: "magazines"
+	val[]: "Ajakirjad"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magneetiline kompass"
+
+	key[]: "map"
+	val[]: "Kaart"
+
+	key[]: "notebook"
+	val[]: "Sülearvuti"
+
+	key[]: "paper_towels"
+	val[]: "Kätepaberid"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Aviaatorid"
+
+	key[]: "plush_bear"
+	val[]: "Kaisukas"
+
+	key[]: "portable_navigator"
+	val[]: "Navigaator"
+
+	key[]: "rugged_style_cap"
+	val[]: "Müts"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS kohvikruus"
+
+	key[]: "sleeping_bag"
+	val[]: "Magamiskott"
+
+	key[]: "tablet"
+	val[]: "Tahvelarvuti"
+
+	key[]: "weekend_bag"
+	val[]: "Kott"
+
+	key[]: "winter_bauble"
+	val[]: "Talvekera"
+
+	key[]: "winter_blast_gift"
+	val[]: "Talvekink"
+
+	key[]: "wise_owl_offering"
+	val[]: "Öökullikink"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 padi"
+
+	key[]: "flame_pillow"
+	val[]: "Leekidega padi"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear padi"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Kalli kodu padi"
+
+	key[]: "skull_pillow"
+	val[]: "Pealuu padi"
+
+	key[]: "status_pillow"
+	val[]: "Staatuse padi"
+
+	key[]: "track_pillow"
+	val[]: "Jälje padi"
+
+	key[]: "trucker_pillow"
+	val[]: "Veokimehe padi"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavi padi"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Südamepadi"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ padi"
+
+
+	key[]: "air_freshener"
+	val[]: "Õhuvärskendaja"
+
+	key[]: "smelling_sack"
+	val[]: "Õhuvärskendi kott"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Õuna lõhnakuusk"
+
+	key[]: "basketball_ball"
+	val[]: "Korvpallikott"
+
+	key[]: "black_plush_cube"
+	val[]: "Mustad täringud"
+
+	key[]: "chromed_skull"
+	val[]: "Kroomitud pealuu"
+
+	key[]: "disco_ball"
+	val[]: "Diskopall"
+
+	key[]: "eight_ball"
+	val[]: "8 pall"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 lõhnakuusk"
+
+	key[]: "football_ball"
+	val[]: "Jalgpall"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Rekkajuhi märk"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Rekkajuhi märk"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS lõhnakuusk"
+
+	key[]: "tennis_ball"
+	val[]: "Tennisepall"
+
+	key[]: "trophy_skull"
+	val[]: "Trofee pealuu"
+
+	key[]: "white_plush_cube"
+	val[]: "Valged täringud"
+
+
+	key[]: "black_style_mug"
+	val[]: "Must kruus" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Valge-oranž kruus" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Must-oranž kruus" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Pehmed mänguasjad" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Nahast rahakott" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Armatuurlaud" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Armatuurlaua lisalaud" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Mahagonist kesklaud" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Must kesklaud" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Pikk eksklusiivne laud" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Mahagonist pikk laud" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Pikk must laud" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Tagaots" #+ Basic truck accesory general
 
@@ -8810,7 +9095,7 @@ localization_db : .localization
 	val[]: "Töövärv" #+ Basic but paintable truck accesory
 
 	key[]: "classic"
-	val[]: "Classic" #+ Classical or vintage truck accesory
+	val[]: "Klassikaline" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "Tehasepoolne" #+ Stock truck accesory general
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Kroom" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Kroom II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Värv & kroom" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Tavaline topelt" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Eksklusiivne" #+ Luxury/Exclusive version of the interior or accesory
@@ -8916,6 +9207,15 @@ localization_db : .localization
 
 	key[]: "custom_metallic"
 	val[]: "Kohandatud metallikvärv" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Põhiline" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Tavaline kroomitud" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Tavaline värvitud" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Võidutäring" #+ Accessory name, DLC Pink Ribbon.
@@ -8952,6 +9252,7 @@ localization_db : .localization
 
 	key[]: "grand_star"
 	val[]: "Suur täht" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -9576,7 +9877,7 @@ localization_db : .localization
 	val[]: "Värskenda" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "Otsi lepinguid" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Allkirjasta suvaline leping" #+ Connects with server and accept random job in proximity of player's current position
@@ -10288,13 +10589,13 @@ localization_db : .localization
 	val[]: "UUS SÜNDMUS" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "LIVE EVENTS" #+ Title of the event popup.
+	val[]: "PRAEGU TOIMUVAD SÜNDMUSED" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Isiklik eesmärk täidetud!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Ava sündmuste leht" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Kulgemine" #+ The label used to indicate progress of the event.
@@ -10303,13 +10604,13 @@ localization_db : .localization
 	val[]: "SÜNDMUSE INFO" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Praegu toimuvad sündmused" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Tase" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "Praegu ei ole ühtegi aktiivset sündmus."
 #@}
 
 #+ Trailer ownership
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Haagist ei saa töö ajal vabastada." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "MASINA SEADISTUSED"
+
+	key[]: "adj_mirrors"
+	val[]: "Seadista peegleid"
+
+	key[]: "adj_lights"
+	val[]: "Seadista tulesid"
+
+	key[]: "adj_seats"
+	val[]: "Seadista istmeid"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Konditsioneeriga"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tsistern"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Külmutatud, jahutatud tooted"
+
 #@}
 
 #+ Trailer chain type names.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Laadin linna progressi..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Kaubavedusid järgmise täheni:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Kõik tähed saadud."
+	key[]: "xmas_delivery_progress"
+	val[]: "Kinkide ülekandmise progress"
 
 	key[]: "xmas19_map_description"
 	val[]: "Liigu hiirega linnade peale, et näha Jõulusündmuse progressi. Külasta $WOTR_URL$, et näha kogu infot."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Selle linna panus ühisesse eesmärki on täidetud!<br><br>Äkki aitad ka teistel linnadel kinke vedada?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Nende linnade panus ühisesse kogukonnaeesmärki on täidetud!<br><br>Ehk leida veel linnu kuhu ja kust kinke vedada?"
 
 	key[]: "xmas19_back"
 	val[]: "Tagasi"

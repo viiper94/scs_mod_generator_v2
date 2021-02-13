@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Аксессуары задней стенки"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Освещение кабины"
 
 	key[]: "cabdefl"
 	val[]: "Боковые дефлекторы"
+
+	key[]: "cup_holder"
+	val[]: "Подстаканник"
 
 	key[]: "deflector"
 	val[]: "Дефлектор"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Зад кабины"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Шкафчик" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Подстаканники" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Декоративные панели"
 
@@ -93,21 +111,36 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Освещение спальника"
 
+	key[]: "toyback"
+	val[]: "Пол спальника" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Пол кабины" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Консоль" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Спальник" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Столик" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Антикрыло"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero, краска"
+	val[]: "Aero, краска"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Алюминиевый бак"	#+ Aluminium tank accessory (water, fuel, etc)
@@ -115,8 +148,8 @@ localization_db : .localization
 	key[]: "bottom"
 	val[]: "Снизу"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Игрушечная бензопила"
+	key[]: "cabinet"
+	val[]: "Шкафчик"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Хромированный бак"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-образный"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "ДХО"		#+ Daylight running lamps
+	val[]: "ДХО"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Элитный"
+	val[]: "Элитный"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "Противотуманные огни"
 
 	key[]: "hvac"
-	val[]: "Автономный отопитель"
+	val[]: "Автономный кондиционер"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Подстаканник (открыт)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Подстаканник (открыт слева)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Подстаканник (открыт справа)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Подстаканник (закрыт)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Мяч для американского футбола"
+
+	key[]: "ats_bag"
+	val[]: "Сумка «ATS»"
+
+	key[]: "ats_cap"
+	val[]: "Кепка «ATS»"
+
+	key[]: "ats_game_box"
+	val[]: "Диск «ATS»"
+
+	key[]: "ats_lunch_box"
+	val[]: "Ланчбокс «ATS»"
+
+	key[]: "ats_mug"
+	val[]: "Кружка «ATS»"
+
+	key[]: "ats_truck_bag"
+	val[]: "Сумка-грузовик «ATS»"
+
+	key[]: "baseball_ball"
+	val[]: "Бейсбольный мяч"
+
+	key[]: "baseball_bat"
+	val[]: "Бейсбольная бита"
+
+	key[]: "bee"
+	val[]: "Пчела"
+
+	key[]: "black_ats_mug"
+	val[]: "Чёрная кружка ATS"
+
+	key[]: "blanket_stars"
+	val[]: "Одеяло со звёздами"
+
+	key[]: "bottle"
+	val[]: "Бутылка"
+
+	key[]: "burger"
+	val[]: "Бургер"
+
+	key[]: "can"
+	val[]: "Банка"
+
+	key[]: "can_pack"
+	val[]: "Упаковка банок"
+
+	key[]: "can_sixpack"
+	val[]: "Ящик банок"
+
+	key[]: "cans"
+	val[]: "Банки"
+
+	key[]: "car_perfume"
+	val[]: "Освежитель воздуха"
+
+	key[]: "cardbox"
+	val[]: "Картонная коробка"
+
+	key[]: "carrier"
+	val[]: "Переноска с бутылками"
+
+	key[]: "chainsaw_toy"
+	val[]: "Игрушечная бензопила"
+
+	key[]: "chewing_gums"
+	val[]: "Жевательная резинка"
+
+	key[]: "coffee_cup"
+	val[]: "Стакан кофе"
+
+	key[]: "costs_list"
+	val[]: "Журнал расхода топлива"
+
+	key[]: "dreamcatcher"
+	val[]: "Ловец снов"
+
+	key[]: "emergency_triangles"
+	val[]: "Знаки аварийной остановки"
+
+	key[]: "expenses_list"
+	val[]: "Отчёт о расходах"
+
+	key[]: "fishing_bag"
+	val[]: "Сумка для рыбалки"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Маска вратаря"
+
+	key[]: "guitar"
+	val[]: "Гитара"
+
+	key[]: "guitar_case"
+	val[]: "Чехол для гитары"
+
+	key[]: "hat"
+	val[]: "Шляпа"
+
+	key[]: "hockey_stick"
+	val[]: "Хоккейная клюшка"
+
+	key[]: "holy_field_blanket"
+	val[]: "Одеяло «Омела»"
+
+	key[]: "honey_bee"
+	val[]: "Пчела"
+
+	key[]: "laundry_box"
+	val[]: "Корзина для одежды"
+
+	key[]: "peppermints"
+	val[]: "Мятные леденцы"
+
+	key[]: "plush_donut"
+	val[]: "Плюшевая игрушка-пончик"
+
+	key[]: "plush_lion"
+	val[]: "Плюшевый лев"
+
+	key[]: "power_inverter"
+	val[]: "Инвертор"
+
+	key[]: "propeller"
+	val[]: "Пропеллер"
+
+	key[]: "shoes"
+	val[]: "Обувь"
+
+	key[]: "spearmints"
+	val[]: "Мятные конфеты"
+
+	key[]: "sport_sunglasses"
+	val[]: "Спортивные очки"
+
+	key[]: "stack_of_burgers"
+	val[]: "Стопка бургеров"
+
+	key[]: "usa_cap"
+	val[]: "Кепка «США»"
+
+	key[]: "usa_flag"
+	val[]: "Флаг США"
+
+	key[]: "usa_flag_cap"
+	val[]: "Кепка с флагом США"
+
+	key[]: "ventilator"
+	val[]: "Вентилятор"
+
+	key[]: "wotr_cap"
+	val[]: "Кепка «World of Trucks»"
+
+
+	key[]: "ats_pillow"
+	val[]: "Подушка «ATS»"
+
+	key[]: "heart_pillow"
+	val[]: "Подушка «Сердце»"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Подушка «Поцелуй»"
+
+	key[]: "protector_pillow"
+	val[]: "Подушка «Защитник»"
+
+	key[]: "star_pillow"
+	val[]: "Подушка-звезда"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Подушка «Truck Yeah»"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Подушка «Флаг США»"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Подушка «Щит США»"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Ароматизатор «ATS»"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Ароматизатор «Кактус»"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Ароматизатор «Лимон»"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Ароматизатор «Кленовый лист»"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Ароматизатор «Апельсин»"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Ароматизатор «США»"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Синий плюшевый кубик"
+
+	key[]: "red_plush_cube"
+	val[]: "Красный плюшевый кубик"
+
+	key[]: "double_plush_cube"
+	val[]: "Два плюшевых кубика"
+
+
+	key[]: "alien_head"
+	val[]: "Голова пришельца"
+
+	key[]: "cowboy_head"
+	val[]: "Голова ковбоя"
+
+	key[]: "pirate_head"
+	val[]: "Голова пирата"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Наклейка «Орёл»"
+
+	key[]: "guitar_sticker"
+	val[]: "Наклейка «Гитара»"
+
+	key[]: "hat_sticker"
+	val[]: "Наклейка «Шляпа»"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Наклейка «Кленовый сироп»"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Наклейка «Руль»"
+
+	key[]: "taco_sticker"
+	val[]: "Наклейка «Тако»"
+
+	key[]: "truck_sticker"
+	val[]: "Наклейка «Грузовик»"
+
+	key[]: "usa_country_sticker"
+	val[]: "Наклейка «Карта США»"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Наклейка «Флаг США»"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Овощи"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Грузовики Western Star"
 
 #@}
 
@@ -1531,11 +1830,95 @@ localization_db : .localization
 	key[]: "id_cut_midvale"
 	val[]: "Зона отдыха Мидвейл-Хилл"
 
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Развязка Альбукерке"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "г. Розуэлл"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "г. Санта-Фе"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Зона отдыха, шоссе US-86"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Зона отдыха, шоссе 66w"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " Зона отдыха, шоссе US-82"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Зона отдыха \"Arizona Welcome Center\""
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Зона отдыха, шоссе US-64"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Мемориал Линкольна"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "г. Вон"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Маяк Якина"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Колодец Тора"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Мост Астория — Меглер"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Мост через залив Якуина"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "г. Даллес"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Лес секвойи, шоссе US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Целлюлозно-бумажный комбинат, шт. Орегон"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Панорама, шоссе US-395"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Биггс-Джанкшен"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Верфи Портленда"
+
 	# Utah
 
 	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
 	key[]: "id_cut_kennecott"
-	val[]: "Карьер Бингам Каньон"
+	val[]: "Карьер Бингам-Каньон"
 
 	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
 	key[]: "ut_cut_george"

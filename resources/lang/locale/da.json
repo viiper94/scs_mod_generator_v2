@@ -227,5 +227,9 @@
         "tn_home_transporter": "Hus-transporter",
         "tn_knuckle_boom": "Knuckleboom-læsser",
         "tn_tub_grinder": "Barkrydder"
+    },
+    "companies\/paints": {
+        "default": "Specialfarve",
+        "metallic": "Brugerdefineret metallicfarve"
     }
 }

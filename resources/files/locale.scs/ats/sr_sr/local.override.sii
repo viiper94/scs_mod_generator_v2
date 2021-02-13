@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Ставке на задњој плочи"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Кабинска светла"
 
 	key[]: "cabdefl"
 	val[]: "Кабински одбојници"
+
+	key[]: "cup_holder"
+	val[]: "Држач чаше"
 
 	key[]: "deflector"
 	val[]: "Штитник од инсеката"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Задњи део кабине"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Cabinet Sets" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Сетови држача чаша" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Кабински панели"
 
@@ -93,21 +111,36 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Кровна украсна светла"
 
+	key[]: "toyback"
+	val[]: "Предмети на поду шлепера" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Предмети пода" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Предмети на контролној табли" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Патоснице" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Предмети из таблу" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Кровни спојлер"
 
 
 	key[]: "aero"
-	val[]: "Аеро"
+	val[]: "Аеро"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Аеро 2"
+	val[]: "Аеро 2"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Аеро обојен"
+	val[]: "Аеро обојен"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "Аеро X"
+	val[]: "Аеро X"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Алуминијумски резервоар"	#+ Aluminium tank accessory (water, fuel, etc)
@@ -115,8 +148,8 @@ localization_db : .localization
 	key[]: "bottom"
 	val[]: "Доњи"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Моторна тестера играчка"
+	key[]: "cabinet"
+	val[]: "Кабинет"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Хромиран резервоар"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-Облик"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "ДРЛ"		#+ Daylight running lamps
+	val[]: "ДРЛ"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Елите"
+	val[]: "Елите"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "Магленке"
 
 	key[]: "hvac"
-	val[]: "КЛИМА"
+	val[]: "КЛИМА"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Држач за чаше (отворен)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Држач за чаше (лево отворен)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Држач за чаше (десно отворен)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Држач чаше (затворен)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Америчка фудбалска лопта"
+
+	key[]: "ats_bag"
+	val[]: "'ATS' торба"
+
+	key[]: "ats_cap"
+	val[]: "'ATS' капа"
+
+	key[]: "ats_game_box"
+	val[]: "'ATS' кутија игре"
+
+	key[]: "ats_lunch_box"
+	val[]: "'ATS' ланч пакет"
+
+	key[]: "ats_mug"
+	val[]: "'ATS' шоља"
+
+	key[]: "ats_truck_bag"
+	val[]: "'ATS' торба камион"
+
+	key[]: "baseball_ball"
+	val[]: "Лопта за бејзбол"
+
+	key[]: "baseball_bat"
+	val[]: "Штап за бејзбол"
+
+	key[]: "bee"
+	val[]: "Пчела"
+
+	key[]: "black_ats_mug"
+	val[]: "Црна 'ATS' шоља"
+
+	key[]: "blanket_stars"
+	val[]: "Ћебе са звездама"
+
+	key[]: "bottle"
+	val[]: "Флаша"
+
+	key[]: "burger"
+	val[]: "Бургер"
+
+	key[]: "can"
+	val[]: "Лименка"
+
+	key[]: "can_pack"
+	val[]: "Паковање лименки"
+
+	key[]: "can_sixpack"
+	val[]: "Паковање 6 лименки"
+
+	key[]: "cans"
+	val[]: "Лименке"
+
+	key[]: "car_perfume"
+	val[]: "Мирис за ауто"
+
+	key[]: "cardbox"
+	val[]: "Кутија картица"
+
+	key[]: "carrier"
+	val[]: "Носач за флаше"
+
+	key[]: "chainsaw_toy"
+	val[]: "Моторна тестера играчка"
+
+	key[]: "chewing_gums"
+	val[]: "Жвакаће гума"
+
+	key[]: "coffee_cup"
+	val[]: "Шоља за кафу"
+
+	key[]: "costs_list"
+	val[]: "Извештај потрошње горива"
+
+	key[]: "dreamcatcher"
+	val[]: "Хватач снова"
+
+	key[]: "emergency_triangles"
+	val[]: "Сигурносни троугао"
+
+	key[]: "expenses_list"
+	val[]: "Извештај трошкова"
+
+	key[]: "fishing_bag"
+	val[]: "Торба за риболов"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Голманова маска"
+
+	key[]: "guitar"
+	val[]: "Гитара"
+
+	key[]: "guitar_case"
+	val[]: "Кофер за гитару"
+
+	key[]: "hat"
+	val[]: "Шешир"
+
+	key[]: "hockey_stick"
+	val[]: "Штап за хокеј"
+
+	key[]: "holy_field_blanket"
+	val[]: "Ћебе свето поље"
+
+	key[]: "honey_bee"
+	val[]: "Пчела"
+
+	key[]: "laundry_box"
+	val[]: "Вешкорпа"
+
+	key[]: "peppermints"
+	val[]: "Пеперминт бомбоне"
+
+	key[]: "plush_donut"
+	val[]: "Плишана крофна"
+
+	key[]: "plush_lion"
+	val[]: "Плишани лав"
+
+	key[]: "power_inverter"
+	val[]: "Претварач напајања"
+
+	key[]: "propeller"
+	val[]: "Пропелер"
+
+	key[]: "shoes"
+	val[]: "Ципеле"
+
+	key[]: "spearmints"
+	val[]: "Ментол бомбоне"
+
+	key[]: "sport_sunglasses"
+	val[]: "Спортске наочаре за сунце"
+
+	key[]: "stack_of_burgers"
+	val[]: "Хамбургери"
+
+	key[]: "usa_cap"
+	val[]: "Капа САД"
+
+	key[]: "usa_flag"
+	val[]: "Застава САД"
+
+	key[]: "usa_flag_cap"
+	val[]: "Капа са заставом САД"
+
+	key[]: "ventilator"
+	val[]: "Вентилатор"
+
+	key[]: "wotr_cap"
+	val[]: "'WoTR' капа"
+
+
+	key[]: "ats_pillow"
+	val[]: "'ATS' јастук"
+
+	key[]: "heart_pillow"
+	val[]: "Јастук са срцима"
+
+	key[]: "kiss_me_pillow"
+	val[]: "\"Пољуби ме\" јастук"
+
+	key[]: "protector_pillow"
+	val[]: "Јастук заштитник"
+
+	key[]: "star_pillow"
+	val[]: "Јастук звезда"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "'Truck Yeah' јастук"
+
+	key[]: "usa_flag_pillow"
+	val[]: "'USA' застава јастук"
+
+	key[]: "usa_shield_pillow"
+	val[]: "'USA' штит јастук"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "'ATS' освеживач ваздуха"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Кактус освеживач ваздуха"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Лимун освеживач ваздуха"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Јаворов лист освеживач ваздуха"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Поморанџа освеживач ваздуха"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "'USA' освеживач ваздуха"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Плава плишана коцка"
+
+	key[]: "red_plush_cube"
+	val[]: "Црвена плишана коцка"
+
+	key[]: "double_plush_cube"
+	val[]: "Дупла плишана коцка"
+
+
+	key[]: "alien_head"
+	val[]: "Глава ванземаљца"
+
+	key[]: "cowboy_head"
+	val[]: "Глава каубоја"
+
+	key[]: "pirate_head"
+	val[]: "Глава пирата"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Налепница орао"
+
+	key[]: "guitar_sticker"
+	val[]: "Налепница гитара"
+
+	key[]: "hat_sticker"
+	val[]: "Налепница шешир"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Налепница јаворов сируп"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Налепница волан"
+
+	key[]: "taco_sticker"
+	val[]: "Налепница Тако"
+
+	key[]: "truck_sticker"
+	val[]: "Налепница камион"
+
+	key[]: "usa_country_sticker"
+	val[]: "Налепница државе 'USA'"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Налепница заставе 'USA'"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Поврће"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "'Western Star' камиони"
 
 #@}
 
@@ -930,10 +1229,10 @@ localization_db : .localization
 	val[]: "Цистерна за храну"
 
 	key[]: "bs_grain_hopper"
-	val[]: "Grain Hopper"
+	val[]: "Резервоар за зрно"
 
 	key[]: "bs_grain_hopper_belt"
-	val[]: "Grain Hopper Belt"
+	val[]: "Појас резервоара за зрно"
 
 	key[]: "bs_insulated"
 	val[]: "Изолована"
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Одмаралиште Мидвале Хилл"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Раскрсница Албукерки"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Град Розвел"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Град Санта Фе"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Одмориште US-86"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Одмориште руте 66w"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " Одмориште US-82"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Одмориште „Arizona Welcome Center”"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Одмориште US-64"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Историјски споменик Линколна"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Град Ваугхан"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Светионик на рту Јакина"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Торов бунар"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Мост Асторија-Меглер"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Мост преко залива Јакина у Њупорту"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Град Далес"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Шума секвоја на US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Фабрика папира у Орегону"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Видик US-395"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Раскрсница у Бигсу"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Бродоградилиште Портланд"
 
 	# Utah
 

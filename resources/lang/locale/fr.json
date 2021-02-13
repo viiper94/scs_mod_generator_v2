@@ -227,5 +227,9 @@
         "tn_home_transporter": "Remorque de transport de maison",
         "tn_knuckle_boom": "Pelle à flèche articulée",
         "tn_tub_grinder": "Broyeur à tambour rotatif"
+    },
+    "companies\/paints": {
+        "default": "Couleur personnalisée",
+        "metallic": "Couleur métallisée personnalisée"
     }
 }

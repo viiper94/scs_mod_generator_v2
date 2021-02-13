@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Dele til bagpanel"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Førerhus lys"
 
 	key[]: "cabdefl"
 	val[]: "Kabine-deflektor"
+
+	key[]: "cup_holder"
+	val[]: "Kopholder"
 
 	key[]: "deflector"
 	val[]: "Insekt-deflektor"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Kabine Bagpå"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Skabs-sæt" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Kopholder-sæt" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Førerhuspaneler"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Taglys"
 
+	key[]: "toyback"
+	val[]: "Dele til Sleeper-gulv" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Dele til gulv" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Dele til instrumentbræts-opbevaring" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Dele til sofa" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Dele til bord" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Turbovinge"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero Malet"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Aluminiumtank"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Bund"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Motorsav"
+	key[]: "cabinet"
+	val[]: "Skab"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Krom Tank"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-Form"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Tågelys"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Kopholder (åben)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Kopholder (åben, venstre)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Kopholder (åben, højre)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Kopholder (lukket)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Amerikansk fodbold"
+
+	key[]: "ats_bag"
+	val[]: "ATS taske"
+
+	key[]: "ats_cap"
+	val[]: "ATS kasket"
+
+	key[]: "ats_game_box"
+	val[]: "ATS spilæske"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS madkasse"
+
+	key[]: "ats_mug"
+	val[]: "ATS krus"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS lastbiltaske"
+
+	key[]: "baseball_ball"
+	val[]: "Baseball"
+
+	key[]: "baseball_bat"
+	val[]: "Baseballbat"
+
+	key[]: "bee"
+	val[]: "Bi"
+
+	key[]: "black_ats_mug"
+	val[]: "Sort ATS krus"
+
+	key[]: "blanket_stars"
+	val[]: "Stjernetæppe"
+
+	key[]: "bottle"
+	val[]: "Flaske"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Dåse"
+
+	key[]: "can_pack"
+	val[]: "Dåsepakke"
+
+	key[]: "can_sixpack"
+	val[]: "Dåse-sixpack"
+
+	key[]: "cans"
+	val[]: "Dåser"
+
+	key[]: "car_perfume"
+	val[]: "Bilparfume"
+
+	key[]: "cardbox"
+	val[]: "Papkasse"
+
+	key[]: "carrier"
+	val[]: "Flaskeholder"
+
+	key[]: "chainsaw_toy"
+	val[]: "Motorsav"
+
+	key[]: "chewing_gums"
+	val[]: "Tyggegummi"
+
+	key[]: "coffee_cup"
+	val[]: "Kaffekop"
+
+	key[]: "costs_list"
+	val[]: "Brændstofsforbrug-logbog"
+
+	key[]: "dreamcatcher"
+	val[]: "Drømmefanger"
+
+	key[]: "emergency_triangles"
+	val[]: "Advarselstrekanter"
+
+	key[]: "expenses_list"
+	val[]: "Udgiftsrapport"
+
+	key[]: "fishing_bag"
+	val[]: "Fisketaske"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Målmandsmaske"
+
+	key[]: "guitar"
+	val[]: "Guitar"
+
+	key[]: "guitar_case"
+	val[]: "Guitarkasse"
+
+	key[]: "hat"
+	val[]: "Hat"
+
+	key[]: "hockey_stick"
+	val[]: "Hockeystav"
+
+	key[]: "holy_field_blanket"
+	val[]: "Kristtorn mark-tæppe"
+
+	key[]: "honey_bee"
+	val[]: "Honningbi"
+
+	key[]: "laundry_box"
+	val[]: "Vasketøjskurv"
+
+	key[]: "peppermints"
+	val[]: "Peppermints"
+
+	key[]: "plush_donut"
+	val[]: "Plysdonut"
+
+	key[]: "plush_lion"
+	val[]: "Plysløve"
+
+	key[]: "power_inverter"
+	val[]: "Strømvender"
+
+	key[]: "propeller"
+	val[]: "Propel"
+
+	key[]: "shoes"
+	val[]: "Sko"
+
+	key[]: "spearmints"
+	val[]: "Spearmints"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sport-solbriller"
+
+	key[]: "stack_of_burgers"
+	val[]: "Burger-bunke"
+
+	key[]: "usa_cap"
+	val[]: "USA-kasket"
+
+	key[]: "usa_flag"
+	val[]: "USA-flag"
+
+	key[]: "usa_flag_cap"
+	val[]: "USA-flagkasket"
+
+	key[]: "ventilator"
+	val[]: "Ventilator"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr-kasket"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS-pude"
+
+	key[]: "heart_pillow"
+	val[]: "Hjertepude"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Kiss Me-pude"
+
+	key[]: "protector_pillow"
+	val[]: "Beskytterpude"
+
+	key[]: "star_pillow"
+	val[]: "Stjernepude"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah-pude"
+
+	key[]: "usa_flag_pillow"
+	val[]: "USA flag-pude"
+
+	key[]: "usa_shield_pillow"
+	val[]: "USA skjold-pude"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Luftfrisker"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Luftfrisker, kaktus"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Luftfrisker, citron"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Luftfrisker, ahornblad"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Luftfrisker, appelsin"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "USA luftfrisker"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Blå plysterning"
+
+	key[]: "red_plush_cube"
+	val[]: "Rød plysterning"
+
+	key[]: "double_plush_cube"
+	val[]: "Dobbelt plysterning"
+
+
+	key[]: "alien_head"
+	val[]: "Runvæsen-hoved"
+
+	key[]: "cowboy_head"
+	val[]: "Cowboy-hoved"
+
+	key[]: "pirate_head"
+	val[]: "Pirat-hoved"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Ørne-klistermærke"
+
+	key[]: "guitar_sticker"
+	val[]: "Guitar-klistermærke"
+
+	key[]: "hat_sticker"
+	val[]: "Hatte-klistermærke"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Ahornsirup-klistermærke"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Rat-klistermærke"
+
+	key[]: "taco_sticker"
+	val[]: "Taco-klistermærke"
+
+	key[]: "truck_sticker"
+	val[]: "Lastbil-klistermærke"
+
+	key[]: "usa_country_sticker"
+	val[]: "USA land-klistermærke"
+
+	key[]: "usa_flag_sticker"
+	val[]: "USA flag-klistermærke"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Grøntsager"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star Trucks"
 
 #@}
 
@@ -1455,7 +1754,7 @@ localization_db : .localization
 
 	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
 	key[]: "co_cut_airport"
-	val[]: "Denver Airport"
+	val[]: "Denver Lufthavn"
 
 	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
 	key[]: "co_cut_mil"
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill rasteplads"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Albuquerque Knudepunkt"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Byen Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Byen Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 rasteplads"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w rasteplads"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " US-82 rasteplads"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Arizona Welcome Center rasteplads"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 rasteplads"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Lincolns historiske monument"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Byen Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Head Fyrtårn"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor's brønd"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astorie-Megler broen"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport Yaquina Bay broen"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles city"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 Sequoia skov"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregon Paper Mill"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 Vista"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "The Biggs Junction"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portland skibsværft"
 
 	# Utah
 

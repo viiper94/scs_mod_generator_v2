@@ -227,5 +227,9 @@
         "tn_home_transporter": "홈 트랜스포터",
         "tn_knuckle_boom": "너클붐 로더",
         "tn_tub_grinder": "목재 파쇄기"
+    },
+    "companies\/paints": {
+        "default": "커스텀 색상",
+        "metallic": "커스텀 메탈릭 색상"
     }
 }

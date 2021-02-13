@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Cabinewandaccessoires"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Cabineverlichting "
 
 	key[]: "cabdefl"
 	val[]: "Cabine deflectors"
+
+	key[]: "cup_holder"
+	val[]: "Bekerhouder"
 
 	key[]: "deflector"
 	val[]: "Insectenscherm"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Cabine Achterkant"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Kastaccessoires" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Bekerhouders" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Cabinepanelen"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Slaapcabine lichten"
 
+	key[]: "toyback"
+	val[]: "Slaapcabinevloeraccessoires" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Vloeraccessoires" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Dashboardopslag" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Bankaccessoires" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Tafelaccessoires" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Turbo Vleugel"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero Gespoten"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Aluminium Tank"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Onderkant"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Speelgoedkettingzaag"
+	key[]: "cabinet"
+	val[]: "Kast"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Chromen Dieseltank"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-Vorm"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Mistlampen"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Airconditioning"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Bekerhouder (open)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Bekerhouder (links, open)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Bekerhouder (rechts, open)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Bekerhouder (gesloten)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "American Football"
+
+	key[]: "ats_bag"
+	val[]: "ATS Tas"
+
+	key[]: "ats_cap"
+	val[]: "ATS Pet"
+
+	key[]: "ats_game_box"
+	val[]: "ATS Spelverpakking"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS-Lunchbox"
+
+	key[]: "ats_mug"
+	val[]: "ATS Mok"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS Vrachtwagenzak"
+
+	key[]: "baseball_ball"
+	val[]: "Honkbal"
+
+	key[]: "baseball_bat"
+	val[]: "Honkbalknuppel"
+
+	key[]: "bee"
+	val[]: "Bij"
+
+	key[]: "black_ats_mug"
+	val[]: "Zwarte ATS Mok"
+
+	key[]: "blanket_stars"
+	val[]: "Deken met Sterren"
+
+	key[]: "bottle"
+	val[]: "Fles"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Blikje"
+
+	key[]: "can_pack"
+	val[]: "Blikjesverpakking"
+
+	key[]: "can_sixpack"
+	val[]: "Sixpack"
+
+	key[]: "cans"
+	val[]: "Conservenblikken"
+
+	key[]: "car_perfume"
+	val[]: "Autoparfum"
+
+	key[]: "cardbox"
+	val[]: "Kartonnen Doos"
+
+	key[]: "carrier"
+	val[]: "Flessendrager"
+
+	key[]: "chainsaw_toy"
+	val[]: "Speelgoedkettingzaag"
+
+	key[]: "chewing_gums"
+	val[]: "Kauwgom"
+
+	key[]: "coffee_cup"
+	val[]: "Koffiemok"
+
+	key[]: "costs_list"
+	val[]: "Brandstofverbruikslijst"
+
+	key[]: "dreamcatcher"
+	val[]: "Dromenvanger"
+
+	key[]: "emergency_triangles"
+	val[]: "Gevarendriehoeken"
+
+	key[]: "expenses_list"
+	val[]: "Uitgavenoverzicht"
+
+	key[]: "fishing_bag"
+	val[]: "Vistas"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Doelmansmasker"
+
+	key[]: "guitar"
+	val[]: "Gitaar"
+
+	key[]: "guitar_case"
+	val[]: "Gitaarkoffer"
+
+	key[]: "hat"
+	val[]: "Hoed"
+
+	key[]: "hockey_stick"
+	val[]: "Hockeystick"
+
+	key[]: "holy_field_blanket"
+	val[]: "Deken van Hulst"
+
+	key[]: "honey_bee"
+	val[]: "Honingbij"
+
+	key[]: "laundry_box"
+	val[]: "Wasmand"
+
+	key[]: "peppermints"
+	val[]: "Pepermunt"
+
+	key[]: "plush_donut"
+	val[]: "Pluchen Donut"
+
+	key[]: "plush_lion"
+	val[]: "Pluchen Leeuw"
+
+	key[]: "power_inverter"
+	val[]: "Spanningsomvormer"
+
+	key[]: "propeller"
+	val[]: "Propeller"
+
+	key[]: "shoes"
+	val[]: "Schoenen"
+
+	key[]: "spearmints"
+	val[]: "Groene Munt"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sportzonnebril"
+
+	key[]: "stack_of_burgers"
+	val[]: "Stapel Hamburgers"
+
+	key[]: "usa_cap"
+	val[]: "VS Pet"
+
+	key[]: "usa_flag"
+	val[]: "Amerikaanse Vlag"
+
+	key[]: "usa_flag_cap"
+	val[]: "VS Vlaggenpet"
+
+	key[]: "ventilator"
+	val[]: "Ventilator"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr Pet"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS Kussen"
+
+	key[]: "heart_pillow"
+	val[]: "Kussen met Harten"
+
+	key[]: "kiss_me_pillow"
+	val[]: "'Kiss Me' Kussen"
+
+	key[]: "protector_pillow"
+	val[]: "Protector Kussen"
+
+	key[]: "star_pillow"
+	val[]: "Ster Kussen"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "\"Truck Yeah\" Kussen"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Kussen met Amerikaanse Vlag"
+
+	key[]: "usa_shield_pillow"
+	val[]: "VS Schild Kussen"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS Luchtverfrisser"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Cactus Luchtverfrisser"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Citroen Luchtverfrisser"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Esdoorn Luchtverfrisser"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Sinaasappel Luchtverfrisser"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "VS Luchtverfrisser"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Blauw Pluchen Kussen"
+
+	key[]: "red_plush_cube"
+	val[]: "Rood Pluchen Kussen"
+
+	key[]: "double_plush_cube"
+	val[]: "Twee Pluchen Kubussen"
+
+
+	key[]: "alien_head"
+	val[]: "Alienhoofd"
+
+	key[]: "cowboy_head"
+	val[]: "Cowboyhoofd"
+
+	key[]: "pirate_head"
+	val[]: "Piratenhoofd"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Adelaar Sticker"
+
+	key[]: "guitar_sticker"
+	val[]: "Gitaar Sticker"
+
+	key[]: "hat_sticker"
+	val[]: "Hoeden Sticker"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Esdoornsiroop Sticker"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Stuur Sticker"
+
+	key[]: "taco_sticker"
+	val[]: "Taco Sticker"
+
+	key[]: "truck_sticker"
+	val[]: "Truck Sticker"
+
+	key[]: "usa_country_sticker"
+	val[]: "VS Landsticker"
+
+	key[]: "usa_flag_sticker"
+	val[]: "VS Vlagsticker"
+
+#@}
 
 #@}
 
@@ -255,7 +551,7 @@ localization_db : .localization
 	val[]: "Kabelhaspel"
 
 	key[]: "cn_cans"
-	val[]: "Cans"
+	val[]: "Blikjes"
 
 	key[]: "cn_colors"
 	val[]: "Verf"
@@ -342,7 +638,7 @@ localization_db : .localization
 	val[]: "Freesmachine"
 
 	key[]: "cn_mix_tank"
-	val[]: "Mix Tank"
+	val[]: "Mixtank"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Mobiele Hijskraan"
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Groenten"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star-trucks"
 
 #@}
 
@@ -1024,7 +1323,7 @@ localization_db : .localization
 	val[]: "Standaard deur, Windgeleider"
 
 	key[]: "wooden_deck"
-	val[]: "Wooden Deck"
+	val[]: "Houten Laadvloer"
 #@}
 
 #+ Names of countries/states
@@ -1285,7 +1584,7 @@ localization_db : .localization
 	val[]: "Page"
 
 	key[]: "pajarito_rest_area"
-	val[]: "Pajarito rust plaats"
+	val[]: "Pajarito Verzorgingsplaats"
 
 	key[]: "pedro_travel_center"
 	val[]: "Pedro Travel Center"
@@ -1531,6 +1830,90 @@ localization_db : .localization
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill-verzorgingsplaats"
 
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Het Albuquerque Knooppunt"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "De stad van Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "De stad Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 verzorgingsplaats"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w Rustpunt"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "US-82 verzorgingsplaats"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Verzorgingsplaats van het Arizona Ontvangstcentrum"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 verzorgingsplaats"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Het historische monument van Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "De stad van Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Head Vuurtoren"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor's Well"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astorie-Megler Brug"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport Yaquina Bay Brug"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles stad"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 Sequoia Bos"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregon Papiermolen"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 Vista"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "The Biggs Knooppunt"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portland Scheepswerf"
+
 	# Utah
 
 	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
@@ -1551,33 +1934,33 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
 	key[]: "ut_cut_monument"
-	val[]: "The Monument Valley"
+	val[]: "De Monumentenvallei"
 
 	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
 	key[]: "ut_cut_salt"
-	val[]: "The Bonneville Salt Flats"
+	val[]: "De Bonneville-zoutvlakten"
 
 	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
 	key[]: "ut_cut_moqui"
-	val[]: "The Moqui Cave"
+	val[]: "De Moqui-grot"
 
 	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
 	key[]: "ut_cut_hole"
-	val[]: "The Hole N\" The Rock landmark"
+	val[]: "The Hole N\" The Rock"
 
 	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
 	key[]: "ut_cut_glen"
-	val[]: "The Glen Canyon Dam Bridge"
+	val[]: "De Glen Canyondam Brug"
 
 	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
 	key[]: "ut_cut_hoover"
-	val[]: "The Hoover Rest Area"
+	val[]: "De Hooververzorgingsplaats"
 
 	# Washington
 
 	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
 	key[]: "wa_cut_helen"
-	val[]: "Mount Saint Helens National Volcanic Monument"
+	val[]: "Mount Saint Helens Nationaal Vulkanisch Monument"
 
 	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
 	key[]: "wa_cut_seaport"
@@ -1585,15 +1968,15 @@ localization_db : .localization
 
 	#+ Google maps link:  NONE, just a generic timber harvest site
 	key[]: "wa_cut_forest"
-	val[]: "Washington Timber Harvest Site"
+	val[]: "Bosbouwgebied in Washington"
 
 	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
 	key[]: "wa_cut_everett"
-	val[]: "Everett Swing Bridge"
+	val[]: "Draaibrug van Everett"
 
 	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
 	key[]: "wa_cut_vantage"
-	val[]: "Vantage Bridge"
+	val[]: "Vantagebrug"
 
 	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
 	key[]: "wa_cut_deception"
@@ -1605,7 +1988,7 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
 	key[]: "wa_cut_coulee"
-	val[]: "Grand Coulee Dam"
+	val[]: "Grand Couleedam"
 
 	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
 	key[]: "wa_cut_downtown"

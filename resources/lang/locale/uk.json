@@ -227,5 +227,9 @@
         "tn_home_transporter": "Для перевезення будинків",
         "tn_knuckle_boom": "Кран-маніпулятор",
         "tn_tub_grinder": "Дробарка"
+    },
+    "companies\/paints": {
+        "default": "Власний колір",
+        "metallic": "Колір-металік"
     }
 }

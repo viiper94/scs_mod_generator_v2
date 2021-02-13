@@ -227,5 +227,9 @@
         "tn_home_transporter": "Transporte de Casas",
         "tn_knuckle_boom": "Carregador de Troncos",
         "tn_tub_grinder": "Cortador de Troncos"
+    },
+    "companies\/paints": {
+        "default": "Cor personalizada",
+        "metallic": "Cor Metálica Personalizada"
     }
 }

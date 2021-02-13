@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Tagapaneeli esemed"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Kabiinituled"
 
 	key[]: "cabdefl"
 	val[]: "Kabiini tuulesuunajad"
+
+	key[]: "cup_holder"
+	val[]: "Topsihoidja"
 
 	key[]: "deflector"
 	val[]: "Putukasuunaja"
@@ -52,7 +61,7 @@ localization_db : .localization
 	val[]: "Eesmised peeglid"
 
 	key[]: "grill"
-	val[]: "Grille"
+	val[]: "Võre"
 
 	key[]: "headache_r"
 	val[]: "Nänni kohad"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Kabiini tagaosa"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Kapikeste esemed" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Topsihoidja esemed" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Kabiini küljepaneelid"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Katusetuled"
 
+	key[]: "toyback"
+	val[]: "Magamiskoha esemed" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Põranda esemed" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Armatuurlaua esemed" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Diivani esemed" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Laua esemed" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Turbotiivad"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero värvitud"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "Aero X"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Alumiiniumist paak"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Alumine"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Mootorsae nipsasi"
+	key[]: "cabinet"
+	val[]: "Kapike"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Kroomitud kütusepaak"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-kujuline"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "Päevatuled"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Eliit"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Udutuled"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Küte, vent ja kont"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Topsihoidja (avatud)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Topsihoidja (vasak avatud)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Topsihoidja (parem avatud)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Topsihoidja (suletud)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Ameerika jalgpalli pall"
+
+	key[]: "ats_bag"
+	val[]: "ATS kott"
+
+	key[]: "ats_cap"
+	val[]: "ATS nokats"
+
+	key[]: "ats_game_box"
+	val[]: "ATS mängu karp"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS lõunakarp"
+
+	key[]: "ats_mug"
+	val[]: "ATS kruus"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS kott"
+
+	key[]: "baseball_ball"
+	val[]: "Pesapall"
+
+	key[]: "baseball_bat"
+	val[]: "Pesapalli kurikas"
+
+	key[]: "bee"
+	val[]: "Mesilane"
+
+	key[]: "black_ats_mug"
+	val[]: "Must ATS kruus"
+
+	key[]: "blanket_stars"
+	val[]: "Tähtedega tekk"
+
+	key[]: "bottle"
+	val[]: "Pudel"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Purk"
+
+	key[]: "can_pack"
+	val[]: "Purgid"
+
+	key[]: "can_sixpack"
+	val[]: "Kuuspakk"
+
+	key[]: "cans"
+	val[]: "Purgid"
+
+	key[]: "car_perfume"
+	val[]: "Autoparfüüm"
+
+	key[]: "cardbox"
+	val[]: "Pappkast"
+
+	key[]: "carrier"
+	val[]: "Pudelikast"
+
+	key[]: "chainsaw_toy"
+	val[]: "Mootorsae nipsasi"
+
+	key[]: "chewing_gums"
+	val[]: "Näts"
+
+	key[]: "coffee_cup"
+	val[]: "Kohvikruus"
+
+	key[]: "costs_list"
+	val[]: "Kütusekulu logi"
+
+	key[]: "dreamcatcher"
+	val[]: "Unenäopüüdja"
+
+	key[]: "emergency_triangles"
+	val[]: "Ohukolmnurgad"
+
+	key[]: "expenses_list"
+	val[]: "Kulude raport"
+
+	key[]: "fishing_bag"
+	val[]: "Kalastuskott"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Väravavahi mask"
+
+	key[]: "guitar"
+	val[]: "Kitarr"
+
+	key[]: "guitar_case"
+	val[]: "Kitarrikohver"
+
+	key[]: "hat"
+	val[]: "Müts"
+
+	key[]: "hockey_stick"
+	val[]: "Hokikepp"
+
+	key[]: "holy_field_blanket"
+	val[]: "Pühadetekk"
+
+	key[]: "honey_bee"
+	val[]: "Mesimumm"
+
+	key[]: "laundry_box"
+	val[]: "Pesukorv"
+
+	key[]: "peppermints"
+	val[]: "Nätsud"
+
+	key[]: "plush_donut"
+	val[]: "Pehme sõõrik"
+
+	key[]: "plush_lion"
+	val[]: "Pehme lõvi"
+
+	key[]: "power_inverter"
+	val[]: "Voolumuundur"
+
+	key[]: "propeller"
+	val[]: "Propeller"
+
+	key[]: "shoes"
+	val[]: "Jalatsid"
+
+	key[]: "spearmints"
+	val[]: "Nätsud"
+
+	key[]: "sport_sunglasses"
+	val[]: "Päikeseprillid"
+
+	key[]: "stack_of_burgers"
+	val[]: "Burgerid"
+
+	key[]: "usa_cap"
+	val[]: "USA nokats"
+
+	key[]: "usa_flag"
+	val[]: "USA lipp"
+
+	key[]: "usa_flag_cap"
+	val[]: "USA lipuga nokats"
+
+	key[]: "ventilator"
+	val[]: "Ventilaator"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr nokats"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS padi"
+
+	key[]: "heart_pillow"
+	val[]: "Südamepadi"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Musipadi"
+
+	key[]: "protector_pillow"
+	val[]: "Kaitsja padi"
+
+	key[]: "star_pillow"
+	val[]: "Tähepadi"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Veokipadi"
+
+	key[]: "usa_flag_pillow"
+	val[]: "USA lipu padi"
+
+	key[]: "usa_shield_pillow"
+	val[]: "USA kilbi padi"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS lõhnakuusk"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Kaktuse lõhnakuusk"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Sidruni lõhnakuusk"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Vahtralehe lõhnakuusk"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Apelsini lõhnakuusk"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "USA lõhnakuusk"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Väike sinine täring"
+
+	key[]: "red_plush_cube"
+	val[]: "Punane täring"
+
+	key[]: "double_plush_cube"
+	val[]: "Topelt täringud"
+
+
+	key[]: "alien_head"
+	val[]: "Tulnuka pea"
+
+	key[]: "cowboy_head"
+	val[]: "Kauboi pea"
+
+	key[]: "pirate_head"
+	val[]: "Piraadi pea"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Kotka kleeps"
+
+	key[]: "guitar_sticker"
+	val[]: "Kitarri kleeps"
+
+	key[]: "hat_sticker"
+	val[]: "Mütsi kleeps"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Vahtrasiirupi kleeps"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Roolikleeps"
+
+	key[]: "taco_sticker"
+	val[]: "Taco kleeps"
+
+	key[]: "truck_sticker"
+	val[]: "Veoki kleeps"
+
+	key[]: "usa_country_sticker"
+	val[]: "USA kaardi kleeps"
+
+	key[]: "usa_flag_sticker"
+	val[]: "USA lipu kleeps"
+
+#@}
 
 #@}
 
@@ -255,7 +551,7 @@ localization_db : .localization
 	val[]: "Kaablirull"
 
 	key[]: "cn_cans"
-	val[]: "Cans"
+	val[]: "Konservid"
 
 	key[]: "cn_colors"
 	val[]: "Värv"
@@ -303,7 +599,7 @@ localization_db : .localization
 	val[]: "Hein"
 
 	key[]: "cn_heavy_bulldozer"
-	val[]: "Heavy Bulldozer"
+	val[]: "Raskebuldooser"
 
 	key[]: "cn_house_prefabs"
 	val[]: "Majaosad"
@@ -342,7 +638,7 @@ localization_db : .localization
 	val[]: "Freesmasin"
 
 	key[]: "cn_mix_tank"
-	val[]: "Mix Tank"
+	val[]: "Segamistsistern"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Raske maastiku kraana"
@@ -357,7 +653,7 @@ localization_db : .localization
 	val[]: "Multšija"
 
 	key[]: "cn_paper"
-	val[]: "Paper"
+	val[]: "Paber"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Loomatoidu pelletid"
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Juurviljad"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Lääne tähe kleeps"
 
 #@}
 
@@ -482,7 +781,7 @@ localization_db : .localization
 	val[]: "Madal paadihaagis"
 
 	key[]: "tn_scs_lowboy"
-	val[]: "Lowboy Extendable Trailer"
+	val[]: "Madal pikendatav platvormhaagis"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Mobiilne tõkistehaagis"
@@ -620,7 +919,7 @@ localization_db : .localization
 	val[]: "Palk"
 
 	key[]: "lowboy"
-	val[]: "Lowboy"
+	val[]: "Madal haagis"
 
 	key[]: "refrigerated"
 	val[]: "Konditsioneeriga"
@@ -672,7 +971,7 @@ localization_db : .localization
 	val[]: "Üksik"
 
 	key[]: "chain_double"
-	val[]: "Double"
+	val[]: "Topelt"
 
 	key[]: "chain_staa_double"
 	val[]: "STAA topelt"
@@ -695,25 +994,25 @@ localization_db : .localization
 #@{
 
 	key[]: "tr_articulated_3axle"
-	val[]: "Articulated, 3 Axles"
+	val[]: "Liigendhaagis, 3 telge"
 
 	key[]: "tr_articulated_4axle"
-	val[]: "Articulated, 4 Axles"
+	val[]: "Liigendhaagis, 4 telge"
 
 	key[]: "tr_articulated_5axle"
-	val[]: "Articulated, 5 Axles"
+	val[]: "Liigendhaagis, 5 telge"
 
 	key[]: "tr_articulated_6axle"
-	val[]: "Articulated, 6 Axles"
+	val[]: "Liigendhaagis, 6 telge"
 
 	key[]: "tr_articulated_7axle"
-	val[]: "Articulated, 7 Axles"
+	val[]: "Liigendhaagis, 7 telge"
 
 	key[]: "tr_articulated_8axle"
-	val[]: "Articulated, 8 Axles"
+	val[]: "Liigendhaagis, 8 telge"
 
 	key[]: "tr_articulated_9axle"
-	val[]: "Articulated, 9 Axles"
+	val[]: "Liigendhaagis, 9 telge"
 
 	key[]: "tr_b_double"
 	val[]: "B-double"
@@ -737,7 +1036,7 @@ localization_db : .localization
 	val[]: "Jeep"
 
 	key[]: "tr_jeep_3axle"
-	val[]: "Jeep, 3 Axles"
+	val[]: "Jeep, 3 telge"
 
 	key[]: "tr_rm_double"
 	val[]: "Rocky Mountain topelthaagis"
@@ -866,13 +1165,13 @@ localization_db : .localization
 	val[]: "53 jalga, hajutatud"
 
 	key[]: "tr_spreader_1axle"
-	val[]: "Spreader, 1 Axle"
+	val[]: "Laiendav, 1 telg"
 
 	key[]: "tr_spreader_2axle"
-	val[]: "Spreader, 2 Axles"
+	val[]: "Laiendav, 2 telge"
 
 	key[]: "tr_spreader_3axle"
-	val[]: "Spreader, 3 Axles"
+	val[]: "Laiendav, 3 telge"
 
 	key[]: "tr_tp_double"
 	val[]: "Turnpike topelthaagis"
@@ -945,13 +1244,13 @@ localization_db : .localization
 	val[]: "6 mastiga palgihaagis"
 
 	key[]: "bs_wood_lowboy"
-	val[]: "Wooden Lowboy"
+	val[]: "Puidust madal haagis"
 
 	key[]: "bs_wood_full_lowboy"
-	val[]: "Full Wooden Lowboy"
+	val[]: "Puidust täismadal haagis"
 
 	key[]: "bs_wood_alu_lowboy"
-	val[]: "Wooden-Aluminium Lowboy"
+	val[]: "Puit-alumiinium madalhaagis"
 
 	key[]: "bs_reefer"
 	val[]: "Jahuti"
@@ -1024,7 +1323,7 @@ localization_db : .localization
 	val[]: "Tavauks, tuulesuunaja"
 
 	key[]: "wooden_deck"
-	val[]: "Wooden Deck"
+	val[]: "Puidust platvorm"
 #@}
 
 #+ Names of countries/states
@@ -1455,15 +1754,15 @@ localization_db : .localization
 
 	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
 	key[]: "co_cut_airport"
-	val[]: "Denver Airport"
+	val[]: "Denver'i lennujaam"
 
 	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
 	key[]: "co_cut_mil"
-	val[]: "Million Dollar Highway"
+	val[]: "Miljoni dollari maantee"
 
 	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
 	key[]: "co_cut_four"
-	val[]: "Four Corners Monument"
+	val[]: "Nelja nurga monument"
 
 	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
 	key[]: "co_cut_red"
@@ -1483,11 +1782,11 @@ localization_db : .localization
 
 	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
 	key[]: "co_cut_eisen"
-	val[]: "Eisenhower Tunnel"
+	val[]: "Eisenhower'i tunnel"
 
 	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
 	key[]: "co_cut_rocky"
-	val[]: "Rocky Mountain Road"
+	val[]: "Rocky Mountain tee"
 
 	# Idaho
 
@@ -1531,69 +1830,153 @@ localization_db : .localization
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill puhkeala"
 
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Albuquerque risttee"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Roswelli linn"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Santa Fe linn"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 puhkeala"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w puhkepeatus"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "US-82 puhkeala"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Arizona tervituskeskuse puhkeala"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 puhkeala"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Ajalooline Lincolni monument"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Vaughn'i linn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Head majakas"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thori kaev"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astoria-Megler sild"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport Yaquina lahe sild"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Dalles'i linn"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 sekvoiamets"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregoni paberitehas"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-396 vaatepunkt"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Biggs risttee"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portlandi laevatehas"
+
 	# Utah
 
 	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
 	key[]: "id_cut_kennecott"
-	val[]: "The Bingham Canyon Mine"
+	val[]: "Bingham Canyon kaevandus"
 
 	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
 	key[]: "ut_cut_george"
-	val[]: "The city of St. George"
+	val[]: "St. George linn"
 
 	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
 	key[]: "ut_cut_swell"
-	val[]: "The San Rafael Swell area"
+	val[]: "San Rafael Swell area"
 
 	#+ Google maps link: no particular location
 	key[]: "ut_cut_oil"
-	val[]: "Oil Fields of Utah"
+	val[]: "Utah naftamaardlad"
 
 	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
 	key[]: "ut_cut_monument"
-	val[]: "The Monument Valley"
+	val[]: "Monumentideorg"
 
 	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
 	key[]: "ut_cut_salt"
-	val[]: "The Bonneville Salt Flats"
+	val[]: "Bonneville soolakõrb"
 
 	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
 	key[]: "ut_cut_moqui"
-	val[]: "The Moqui Cave"
+	val[]: "Moqui koobas"
 
 	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
 	key[]: "ut_cut_hole"
-	val[]: "The Hole N\" The Rock landmark"
+	val[]: "Hole N\" The Rock"
 
 	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
 	key[]: "ut_cut_glen"
-	val[]: "The Glen Canyon Dam Bridge"
+	val[]: "Glen Canyon tammi sild"
 
 	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
 	key[]: "ut_cut_hoover"
-	val[]: "The Hoover Rest Area"
+	val[]: "Hoover'i puhkeala"
 
 	# Washington
 
 	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
 	key[]: "wa_cut_helen"
-	val[]: "Mount Saint Helens National Volcanic Monument"
+	val[]: "Mount Saint Helens'i rahvuslik vulkaanimonument"
 
 	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
 	key[]: "wa_cut_seaport"
-	val[]: "Seattle Port"
+	val[]: "Seattle sadam"
 
 	#+ Google maps link:  NONE, just a generic timber harvest site
 	key[]: "wa_cut_forest"
-	val[]: "Washington Timber Harvest Site"
+	val[]: "Washington'i puiduraieplats"
 
 	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
 	key[]: "wa_cut_everett"
-	val[]: "Everett Swing Bridge"
+	val[]: "Everett Swing sild"
 
 	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
 	key[]: "wa_cut_vantage"
-	val[]: "Vantage Bridge"
+	val[]: "Vantage sild"
 
 	#+ Google maps link: https://goo.gl/maps/5DXnrSGbj9T5NEYWA
 	key[]: "wa_cut_deception"
@@ -1601,19 +1984,19 @@ localization_db : .localization
 
 	#+ Google maps link: Generic Aircraft (plane) factory
 	key[]: "wa_cut_darwing"
-	val[]: "Aircraft Factory"
+	val[]: "Lennukitehas"
 
 	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
 	key[]: "wa_cut_coulee"
-	val[]: "Grand Coulee Dam"
+	val[]: "Grand Coulee tamm"
 
 	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
 	key[]: "wa_cut_downtown"
-	val[]: "Seattle Downtown"
+	val[]: "Seattle südalinn"
 
 	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
 	key[]: "wa_cut_kenworth"
-	val[]: "Kenworth Factory"
+	val[]: "Kenworth tehas"
 #@}
 
 }

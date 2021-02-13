@@ -121,7 +121,7 @@
         "cn_forwarder": "Forwarder",
         "cn_harvester": "Maaidorser",
         "cn_log_harvester": "Velmachine",
-        "cn_mix_tank": "Mix Tank",
+        "cn_mix_tank": "Mixtank",
         "truck_browser_brand_westernstar_49x": "Western Star 49X",
         "cn_aircraft_engine": "Vliegtuigmotor"
     },
@@ -227,5 +227,9 @@
         "tn_home_transporter": "Huistransporter",
         "tn_knuckle_boom": "Houtkraan",
         "tn_tub_grinder": "Houtversnipperaar"
+    },
+    "companies\/paints": {
+        "default": "Aangepaste kleur",
+        "metallic": "Aangepaste Metallic kleur"
     }
 }

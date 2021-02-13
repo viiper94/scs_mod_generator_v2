@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "უკანა კედლის ნივთები"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "კაბინის განათება"
 
 	key[]: "cabdefl"
 	val[]: "კაბინის ამრეკლები"
+
+	key[]: "cup_holder"
+	val[]: "ჭიქის სადგამი"
 
 	key[]: "deflector"
 	val[]: "მწერებისგან დამცავი"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "კაბინის უკანა არე"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "კარადის სამაგრები" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "ჭიქის სადგამის სამაგრები" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "კაბინის პანელები"
 
@@ -93,21 +111,36 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "ძილის სახურავის შუქები"
 
+	key[]: "toyback"
+	val[]: "ძირზე საძილე არეში" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "ძირზე" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "ნივთების შესანახი" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "ნივთები დივანზე" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "ნივთები მაგიდაზე" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "ტურბო ფრთა"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero შეღებილი"
+	val[]: "Aero შეღებილი"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "ალუმინის ავზი"	#+ Aluminium tank accessory (water, fuel, etc)
@@ -115,8 +148,8 @@ localization_db : .localization
 	key[]: "bottom"
 	val[]: "ქვევით"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "სათამაშო ჯაჭვური ხერხი"
+	key[]: "cabinet"
+	val[]: "კარადა"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "ქრომირებული ავზი"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-სებრი"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "დღისით მოძრაობის ნათურები"		#+ Daylight running lamps
+	val[]: "დღისით მოძრაობის ნათურები"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "რჩეული"
+	val[]: "რჩეული"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "ნისლსაწინააღმდეგო ფარები"
 
 	key[]: "hvac"
-	val[]: "გათბობა/ვენტილაცია"
+	val[]: "გათბობა/ვენტილაცია"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "ჭიქის სადგამი (ღია)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "ჭიქის სადგამი (მარცხენა ღია)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "ჭიქის სადგამი (მარჯვენა ღია)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "ჭიქის სადგამი (დახურული)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "ამერიკული ფეხბურთის ბურთი"
+
+	key[]: "ats_bag"
+	val[]: "ჩანთა ATS"
+
+	key[]: "ats_cap"
+	val[]: "კეპი ATS"
+
+	key[]: "ats_game_box"
+	val[]: "ATS თამაშის დისკი"
+
+	key[]: "ats_lunch_box"
+	val[]: "საჭმლის ყუთი ATS"
+
+	key[]: "ats_mug"
+	val[]: "ჭიქა ATS"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS სატვირთოს ჩანთა"
+
+	key[]: "baseball_ball"
+	val[]: "კეტბურთის ბურთი"
+
+	key[]: "baseball_bat"
+	val[]: "კეტბურთის კეტი"
+
+	key[]: "bee"
+	val[]: "ფუტკარი"
+
+	key[]: "black_ats_mug"
+	val[]: "შავი ჭიქა ATS"
+
+	key[]: "blanket_stars"
+	val[]: "ვარსკვლავიანი გადასაფარებელი"
+
+	key[]: "bottle"
+	val[]: "ბოთლი"
+
+	key[]: "burger"
+	val[]: "ბურგერი"
+
+	key[]: "can"
+	val[]: "ქილა"
+
+	key[]: "can_pack"
+	val[]: "ქილების შეკვრა"
+
+	key[]: "can_sixpack"
+	val[]: "ქილების ნაკრები"
+
+	key[]: "cans"
+	val[]: "ქილები"
+
+	key[]: "car_perfume"
+	val[]: "მანქანის სუნამო"
+
+	key[]: "cardbox"
+	val[]: "კარტის კოლოფი"
+
+	key[]: "carrier"
+	val[]: "ბოთლის სატარებელი"
+
+	key[]: "chainsaw_toy"
+	val[]: "სათამაშო ჯაჭვური ხერხი"
+
+	key[]: "chewing_gums"
+	val[]: "საღეჭი რეზინი"
+
+	key[]: "coffee_cup"
+	val[]: "ყავის ჭიქა"
+
+	key[]: "costs_list"
+	val[]: "საწვავის ხარჯთაღრიცხვა"
+
+	key[]: "dreamcatcher"
+	val[]: "სიზმრის მჭერი"
+
+	key[]: "emergency_triangles"
+	val[]: "ამრეკლი სამკუთხედები"
+
+	key[]: "expenses_list"
+	val[]: "ხარჯების ანგარიში"
+
+	key[]: "fishing_bag"
+	val[]: "თევზების ჩანთა"
+
+	key[]: "goalkeeper_mask"
+	val[]: "ჰოკეის ნიღაბი"
+
+	key[]: "guitar"
+	val[]: "გიტარა"
+
+	key[]: "guitar_case"
+	val[]: "გიტარის ჩასადები"
+
+	key[]: "hat"
+	val[]: "ქუდი"
+
+	key[]: "hockey_stick"
+	val[]: "ჰოკიჯოხი"
+
+	key[]: "holy_field_blanket"
+	val[]: "საშობაო გადასაფარებელი"
+
+	key[]: "honey_bee"
+	val[]: "მეთაფლია ფუტკარი"
+
+	key[]: "laundry_box"
+	val[]: "სარეცხის კალათა"
+
+	key[]: "peppermints"
+	val[]: "პიტნის შაქარყინულები"
+
+	key[]: "plush_donut"
+	val[]: "ფუმფულა ბლითი"
+
+	key[]: "plush_lion"
+	val[]: "ფუმფულა ლომი"
+
+	key[]: "power_inverter"
+	val[]: "ძაბვის გადამყვანი"
+
+	key[]: "propeller"
+	val[]: "პროპელერი"
+
+	key[]: "shoes"
+	val[]: "ფეხსაცმელები"
+
+	key[]: "spearmints"
+	val[]: "პიტნის კანფეტები"
+
+	key[]: "sport_sunglasses"
+	val[]: "სპორტული სათვალეები"
+
+	key[]: "stack_of_burgers"
+	val[]: "ბურგერების წყება"
+
+	key[]: "usa_cap"
+	val[]: "კეპი USA"
+
+	key[]: "usa_flag"
+	val[]: "აშშ დროშა"
+
+	key[]: "usa_flag_cap"
+	val[]: "კეპი აშშ დროშით"
+
+	key[]: "ventilator"
+	val[]: "სანიავებელი"
+
+	key[]: "wotr_cap"
+	val[]: "კეპი WoTr"
+
+
+	key[]: "ats_pillow"
+	val[]: "ბალიში ATS"
+
+	key[]: "heart_pillow"
+	val[]: "ბალიში გულით"
+
+	key[]: "kiss_me_pillow"
+	val[]: "ბალიში ტუჩებით"
+
+	key[]: "protector_pillow"
+	val[]: "დამცავი ბალიში"
+
+	key[]: "star_pillow"
+	val[]: "ბალიში ვარსკვლავი"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "ბალიში Truck Yeah"
+
+	key[]: "usa_flag_pillow"
+	val[]: "ბალიში აშშ დროშით"
+
+	key[]: "usa_shield_pillow"
+	val[]: "ბალიში აშშ ფარით"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი ATS"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი კაქტუსი"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი ლიმონი"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი ნეკერჩხლის სიროფი"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი ფორთოხალი"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი USA"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "ლურჯი ფუმფულა კუბი"
+
+	key[]: "red_plush_cube"
+	val[]: "წითელი ფუმფულა კუბი"
+
+	key[]: "double_plush_cube"
+	val[]: "ორმაგი ფუმფულა კუბი"
+
+
+	key[]: "alien_head"
+	val[]: "უცხოპლანეტელი"
+
+	key[]: "cowboy_head"
+	val[]: "მწყემსი"
+
+	key[]: "pirate_head"
+	val[]: "მეკობრე"
+
+
+	key[]: "eagle_sticker"
+	val[]: "მისაკრობი არწივი"
+
+	key[]: "guitar_sticker"
+	val[]: "მისაკრობი გიტარა"
+
+	key[]: "hat_sticker"
+	val[]: "მისაკრობი ქუდი"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "მისაკრობი ნეკერჩხლის სიროფი"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "მისაკრობი საჭე"
+
+	key[]: "taco_sticker"
+	val[]: "მისაკრობი Taco"
+
+	key[]: "truck_sticker"
+	val[]: "მისაკრობი სატვირთო"
+
+	key[]: "usa_country_sticker"
+	val[]: "მისაკრობი USA"
+
+	key[]: "usa_flag_sticker"
+	val[]: "მისაკრობი აშშ დროშა"
+
+#@}
 
 #@}
 
@@ -392,6 +688,9 @@ localization_db : .localization
 	key[]: "cn_vegetable"
 	val[]: "ბოსტნეული"
 
+	key[]: "cn_westernstar_49x"
+	val[]: "სატვირთო Western Star"
+
 #@}
 
 #+ Special transport cargo names
@@ -428,13 +727,13 @@ localization_db : .localization
 #+ Names of individual trailer and trailer chassis types.
 #@{
 	key[]: "tn_acid"
-	val[]: "მჟავის ავზიანი მისაბმელი"
+	val[]: "მჟავის ცისტერნიანი"
 
 	key[]: "tn_acid_long"
-	val[]: "მჟავის ავზიანი გრძელი მისაბმელი"
+	val[]: "მჟავის ცისტერნიანი გრძელი"
 
 	key[]: "tn_bottom_dump"
-	val[]: "ფსკერული განტვირთვის მისაბმელი"
+	val[]: "ფსკერული განტვირთვის"
 
 	key[]: "tn_car"
 	val[]: "მანქანის გადამზიდი"
@@ -443,49 +742,49 @@ localization_db : .localization
 	val[]: "ფხვიერი ცემენტის ცისტერნა"
 
 	key[]: "tn_chemical"
-	val[]: "ავზი ქიმიური ნივთიერებებით"
+	val[]: "ქიმიური ნივთიერებების ცისტერნა"
 
 	key[]: "tn_chemical_long"
-	val[]: "ქიმიურ ავზიანი გრძელი მისაბმელი"
+	val[]: "ქიმიური ნივთიერებების ცისტერნა გრძელი"
 
 	key[]: "tn_dry_bulk"
-	val[]: "მისაბმელი ნაყარი მასალებისთვის"
+	val[]: "ნაყარი მასალებისთვის"
 
 	key[]: "tn_dump"
 	val[]: "საყირავი მისაბმელი"
 
 	key[]: "tn_flatbed"
-	val[]: "ბაქნიანი მისაბმელი"
+	val[]: "სწორზედაპირიანი"
 
 	key[]: "tn_frac_tank"
 	val[]: "ცისტერნა-კონტეინერი"
 
 	key[]: "tn_fuel"
-	val[]: "საწვავის ავზიანი მისაბმელი"
+	val[]: "საწვავის ავზიანი"
 
 	key[]: "tn_fuel_long"
-	val[]: "საწვავის ავზიანი გრძელი მისაბმელი"
+	val[]: "საწვავის ავზიანი გრძელი"
 
 	key[]: "tn_gas"
-	val[]: "საწვავის ავზიანი მისაბმელი"
+	val[]: "საწვავის ავზიანი"
 
 	key[]: "tn_gas_long"
-	val[]: "საწვავის ავზიანი გრძელი მისაბმელი"
+	val[]: "საწვავის ავზიანი გრძელი"
 
 	key[]: "tn_home_transporter"
 	val[]: "სახლის გადამზიდი"
 
 	key[]: "tn_knuckle_boom"
-	val[]: "ამწე-მანიპულატორი"
+	val[]: "სახსრებიანი ამწე"
 
 	key[]: "tn_lowboy_boat"
-	val[]: "დაბალჩარჩოიანი მისაბმელი ნავისთვის"
+	val[]: "ნავის დაბალჩარჩოიანი"
 
 	key[]: "tn_scs_lowboy"
-	val[]: "დაბალი გასაშლელი მისაბმელი"
+	val[]: "დაბალი გასაშლელი"
 
 	key[]: "tn_mbt1_barrier"
-	val[]: "მობილური მისაბმელი"
+	val[]: "გადასატანი ზღუდე"
 
 	key[]: "tn_tub_grinder"
 	val[]: "საღერღი მანქანა"
@@ -552,7 +851,7 @@ localization_db : .localization
 	val[]: "American Truck Simulator-ის ჩართვა არ ხერხდება, რადგან არ მოიძებნა შესაფერისი გრაფიკული მოწყობილობა\nრჩევა:\n\n1. დარწმუნდით, რომ თქვენი კომპიუტერის გრაფიკული მოწყობილობა აკმაყოფილებს თამაშის აუცილებელ მოთხოვნებს.\n2. განაახლეთ Microsoft DirectX.\n3. გადმოწერეთ და დააყენეთ გრაფიკული მოწყობილობის უახლესი დრაივერი\n4. შეცვალეთ OpenGL-ით გამოსახვა DirectX-ით.\n5. საქაღალდეში 'Documents' - 'American Truck Simulator' წაშალეთ გამართვის ფაილი 'config.cfg'. \n(თამაშის მომდევნო ჩართვისას, ეს ფაილი თავისით შეიქმნება)."
 
 	key[]: "sys_no_graphics_simple"
-	val[]: "American Truck Simulator-ს შეექმნა პრობლემა და არ ხერხდება ტექსტურების დახატავ (არ მოიძებნა შესაბამისი მოწყობილობა)."
+	val[]: "American Truck Simulator ხარვეზს გადააწყდა და ვერ ახერხებს ტექსტურების გამოსახვას (არ მოიძებნა გრაფიკის შესაბამისი მოწყობილობა)."
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "მიდვეილ-ჰილის დასასვენებელი ადგილი"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "ალბრუკე-ჯანქშენი"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "ქალაქი როსუელი"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "ქალაქი სანტაფე"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 გზის მოსასვენებელი"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "66w გზატკეცილის მოსასვენებელი"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " US-82 გზის მოსასვენებელი"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "მოსასვენებელი არიზონას შემოსასვლელში"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 გზის მოსასვენებელი"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "ლინკოლნის ისტორიული ძეგლი"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "ქალაქი ვონი"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "იაკინას შუქურა"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "თორის ჭა"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "ხიდი ასტორია-მეგლერი"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "ნიუპორტის ხიდი იაკინას ყურეზე"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "ქალაქი დალასი"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 გზის სეკვოიის ხეივანი"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "ორეგონის ცელულოზა-ქაღალდის საწარმო"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 გზის ხედი"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "ბიგს-ჯანქშენი"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "პორტლენდის ნავსაშენი"
 
 	# Utah
 

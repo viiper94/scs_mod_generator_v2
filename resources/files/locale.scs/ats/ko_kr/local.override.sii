@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "백 패널 아이템"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "캐빈 라이트"
 
 	key[]: "cabdefl"
 	val[]: "캐빈 디플렉터"
+
+	key[]: "cup_holder"
+	val[]: "컵 홀더"
 
 	key[]: "deflector"
 	val[]: "버그 디플렉터"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "캐빈 후방"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "캐비닛 세트" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "컵 홀더 세트" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "캡 패널"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "루프 슬리퍼 라이트"
 
+	key[]: "toyback"
+	val[]: "슬리퍼 플로어 아이템" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "플로어 아이템" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "대시보드 스토리지 아이템" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "소파 아이템" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "테이블 아이템" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "터보 윙"
 
 
 	key[]: "aero"
-	val[]: "에어로"
+	val[]: "에어로"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "에어로 II"
+	val[]: "에어로 II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "에어로 페인트"
+	val[]: "에어로 페인트"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "에어로 X"
+	val[]: "에어로 X"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "알루미늄 탱크"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "하단"		#+ Exhaust accessory
+	val[]: "하부"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "전기톱 장난감"
+	key[]: "cabinet"
+	val[]: "캐비닛"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "크롬 탱크"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-쉐이프"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "주간주행등"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "엘리트"
+	val[]: "엘리트"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "안개등"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "컵 홀더 (열림)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "컵 홀더 (왼쪽 열림)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "컵 홀더 (오른쪽 열림)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "컵 홀더 (닫힘)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "미식축구공"
+
+	key[]: "ats_bag"
+	val[]: "ATS 가방"
+
+	key[]: "ats_cap"
+	val[]: "ATS 모자"
+
+	key[]: "ats_game_box"
+	val[]: "ATS 게임박스"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS 도시락"
+
+	key[]: "ats_mug"
+	val[]: "ATS 머그잔"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS 트럭 가방"
+
+	key[]: "baseball_ball"
+	val[]: "야구공"
+
+	key[]: "baseball_bat"
+	val[]: "야구방망이"
+
+	key[]: "bee"
+	val[]: "꿀벌"
+
+	key[]: "black_ats_mug"
+	val[]: "검은색 ATS 머그잔"
+
+	key[]: "blanket_stars"
+	val[]: "별 무늬 담요"
+
+	key[]: "bottle"
+	val[]: "생수"
+
+	key[]: "burger"
+	val[]: "버거"
+
+	key[]: "can"
+	val[]: "캔"
+
+	key[]: "can_pack"
+	val[]: "캔 팩"
+
+	key[]: "can_sixpack"
+	val[]: "캔 식스팩"
+
+	key[]: "cans"
+	val[]: "캔"
+
+	key[]: "car_perfume"
+	val[]: "차량용 방향제"
+
+	key[]: "cardbox"
+	val[]: "택배 상자"
+
+	key[]: "carrier"
+	val[]: "음료수 캐리어"
+
+	key[]: "chainsaw_toy"
+	val[]: "전기톱 장난감"
+
+	key[]: "chewing_gums"
+	val[]: "껌"
+
+	key[]: "coffee_cup"
+	val[]: "커피 컵"
+
+	key[]: "costs_list"
+	val[]: "연료 사용 기록"
+
+	key[]: "dreamcatcher"
+	val[]: "드림캐처"
+
+	key[]: "emergency_triangles"
+	val[]: "비상 삼각대"
+
+	key[]: "expenses_list"
+	val[]: "지출품의서"
+
+	key[]: "fishing_bag"
+	val[]: "낚시 가방"
+
+	key[]: "goalkeeper_mask"
+	val[]: "골키퍼 마스크"
+
+	key[]: "guitar"
+	val[]: "기타"
+
+	key[]: "guitar_case"
+	val[]: "기타 케이스"
+
+	key[]: "hat"
+	val[]: "모자"
+
+	key[]: "hockey_stick"
+	val[]: "하키 스틱"
+
+	key[]: "holy_field_blanket"
+	val[]: "홀리 필드 담요"
+
+	key[]: "honey_bee"
+	val[]: "꿀벌"
+
+	key[]: "laundry_box"
+	val[]: "빨래 바구니"
+
+	key[]: "peppermints"
+	val[]: "페퍼민트"
+
+	key[]: "plush_donut"
+	val[]: "봉제 도넛"
+
+	key[]: "plush_lion"
+	val[]: "봉제 사자"
+
+	key[]: "power_inverter"
+	val[]: "파워 인버터"
+
+	key[]: "propeller"
+	val[]: "프로펠러"
+
+	key[]: "shoes"
+	val[]: "신발"
+
+	key[]: "spearmints"
+	val[]: "스피어민트"
+
+	key[]: "sport_sunglasses"
+	val[]: "스포츠 선글라스"
+
+	key[]: "stack_of_burgers"
+	val[]: "버거 세트"
+
+	key[]: "usa_cap"
+	val[]: "USA 모자"
+
+	key[]: "usa_flag"
+	val[]: "USA 국기"
+
+	key[]: "usa_flag_cap"
+	val[]: "USA 국기 모자"
+
+	key[]: "ventilator"
+	val[]: "선풍기"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr 모자"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS 베개"
+
+	key[]: "heart_pillow"
+	val[]: "하트 무늬 베개"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Kiss Me 베개"
+
+	key[]: "protector_pillow"
+	val[]: "프로텍터 베개"
+
+	key[]: "star_pillow"
+	val[]: "별 모양 베개"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah 베개"
+
+	key[]: "usa_flag_pillow"
+	val[]: "USA 국기 베개"
+
+	key[]: "usa_shield_pillow"
+	val[]: "USA 방패 베개"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS 방향제"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "선인장 방향제"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "레몬 방향제"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "단풍잎 방향제"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "오렌지 방향제"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "USA 방향제"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "파란색 봉제 주사위"
+
+	key[]: "red_plush_cube"
+	val[]: "빨간색 봉제 주사위"
+
+	key[]: "double_plush_cube"
+	val[]: "더블 봉제 주사위"
+
+
+	key[]: "alien_head"
+	val[]: "에일리언 헤드"
+
+	key[]: "cowboy_head"
+	val[]: "카우보이 헤드"
+
+	key[]: "pirate_head"
+	val[]: "파이럿 헤드"
+
+
+	key[]: "eagle_sticker"
+	val[]: "독수리 스티커"
+
+	key[]: "guitar_sticker"
+	val[]: "기타 스티커"
+
+	key[]: "hat_sticker"
+	val[]: "모자 스티커"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "메이플 시럽 스티커"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "스티어링 휠 스티커"
+
+	key[]: "taco_sticker"
+	val[]: "타코 스티커"
+
+	key[]: "truck_sticker"
+	val[]: "트럭 스티커"
+
+	key[]: "usa_country_sticker"
+	val[]: "USA 컨트리 스티커"
+
+	key[]: "usa_flag_sticker"
+	val[]: "USA 국기 스티커"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "야채"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star 트럭"
 
 #@}
 
@@ -681,7 +980,7 @@ localization_db : .localization
 	val[]: "B-더블"
 
 	key[]: "chain_rm_double"
-	val[]: "록키 마운틴 더블"
+	val[]: "로키 마운틴 더블"
 
 	key[]: "chain_tp_double"
 	val[]: "턴 파이크 더블"
@@ -740,10 +1039,10 @@ localization_db : .localization
 	val[]: "지프, 3액슬"
 
 	key[]: "tr_rm_double"
-	val[]: "록키 마운틴 더블"
+	val[]: "로키 마운틴 더블"
 
 	key[]: "tr_rm_double_pup"
-	val[]: "록키 마운틴 더블 펍"
+	val[]: "로키 마운틴 더블 펍"
 
 	key[]: "tr_single_28"
 	val[]: "28ft"
@@ -1487,7 +1786,7 @@ localization_db : .localization
 
 	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
 	key[]: "co_cut_rocky"
-	val[]: "록키 마운틴 로드"
+	val[]: "로키 마운틴 로드"
 
 	# Idaho
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "미드베일 힐 휴게소"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "앨버커키 분기점"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "로즈웰"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "산타페"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 휴게소"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "루트 66w 휴게소"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "US-82 휴게소"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "애리조나 웰컴 센터 휴게소"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 휴게소"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "링컨의 역사적 기념물"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "본 (Vaughn)"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "야퀴나 등대"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "토르의 우물"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "애스토리아-메글러 브리지"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "뉴포트 야퀴나 베이 브리지"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "더 댈러스"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 세쿼이아 숲"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "오리건 제지 공장"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 경치 좋은 곳"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "빅스 정션"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "포틀랜드 조선소"
 
 	# Utah
 

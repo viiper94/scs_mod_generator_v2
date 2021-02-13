@@ -18,14 +18,23 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Saker för bakvägg"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Hyttbelysning"
 
 	key[]: "cabdefl"
 	val[]: "Vindavvisare"
 
+	key[]: "cup_holder"
+	val[]: "Mugghållare"
+
 	key[]: "deflector"
-	val[]: "Insektsskärm"
+	val[]: "Insektsavvisare"
 
 	key[]: "filters"
 	val[]: "Luftfilter"
@@ -52,7 +61,7 @@ localization_db : .localization
 	val[]: "Sidospeglar"
 
 	key[]: "grill"
-	val[]: "Grille"
+	val[]: "Grill"
 
 	key[]: "headache_r"
 	val[]: "Skyddsräcke"
@@ -76,7 +85,16 @@ localization_db : .localization
 	val[]: "Stänkskärmar"
 
 	key[]: "rear_cab"
-	val[]: "Bakre hytt"
+	val[]: "Hytt, bakre del"
+
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Set med lådor" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Set med mugghållare" #+ Large Pin for sets of small pins of the cup holder accessories
 
 	key[]: "sideflares"
 	val[]: "Hyttpaneler"
@@ -85,7 +103,7 @@ localization_db : .localization
 	val[]: "Sidokjolsskydd"
 
 	key[]: "slp_hndl"
-	val[]: "Door Handles"
+	val[]: "Dörrhandtag"
 
 	key[]: "slp_vent"
 	val[]: "Vindavisare"
@@ -93,48 +111,326 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Nattbelysning i tak"
 
+	key[]: "toyback"
+	val[]: "Saker till sovdelens golv" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Saker till golv" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Förvaring, instrumentbräda" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Saker för soffor" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Saker för bord" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Turbovinge"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero målad"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Aluminiumtank"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Längst ned"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Leksaksmotorsåg"
+	key[]: "cabinet"
+	val[]: "Låda"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
-	val[]: "Kromtank"	#+ Chromed tank accessory (water, fuel, etc)
+	val[]: "Kromad tank"	#+ Chromed tank accessory (water, fuel, etc)
 
 	key[]: "d_shape"
 	val[]: "D-form"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elit"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Dimljus"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Mugghållare (öppen)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Mugghållare (vänster, öppen)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Mugghållare (höger, öppen)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Mugghållare (stängd)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Amerikansk fotboll"
+
+	key[]: "ats_bag"
+	val[]: "ATS-väska"
+
+	key[]: "ats_cap"
+	val[]: "ATS-keps"
+
+	key[]: "ats_game_box"
+	val[]: "Spellåda, ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "Lunchlåda, ATS"
+
+	key[]: "ats_mug"
+	val[]: "ATS-mugg"
+
+	key[]: "ats_truck_bag"
+	val[]: "Lastbilsväska, ATS"
+
+	key[]: "baseball_ball"
+	val[]: "Baseboll"
+
+	key[]: "baseball_bat"
+	val[]: "Basebollträ"
+
+	key[]: "bee"
+	val[]: "Bi"
+
+	key[]: "black_ats_mug"
+	val[]: "Svart ATS-mugg"
+
+	key[]: "blanket_stars"
+	val[]: "Filt med stjärnor"
+
+	key[]: "bottle"
+	val[]: "Flaska"
+
+	key[]: "burger"
+	val[]: "Hamburgare"
+
+	key[]: "can"
+	val[]: "Läskburk"
+
+	key[]: "can_pack"
+	val[]: "Flera läskburkar"
+
+	key[]: "can_sixpack"
+	val[]: "Sexpack läskburkar"
+
+	key[]: "cans"
+	val[]: "Läskburkar"
+
+	key[]: "car_perfume"
+	val[]: "Bilparfym"
+
+	key[]: "cardbox"
+	val[]: "Låda i kartong"
+
+	key[]: "carrier"
+	val[]: "Flaskhållare"
+
+	key[]: "chainsaw_toy"
+	val[]: "Leksaksmotorsåg"
+
+	key[]: "chewing_gums"
+	val[]: "Tuggummi"
+
+	key[]: "coffee_cup"
+	val[]: "Kaffemugg"
+
+	key[]: "costs_list"
+	val[]: "Logg över bränsleförbrukning"
+
+	key[]: "dreamcatcher"
+	val[]: "Drömfångare"
+
+	key[]: "emergency_triangles"
+	val[]: "Varningstrianglar"
+
+	key[]: "expenses_list"
+	val[]: "Reseräkning"
+
+	key[]: "fishing_bag"
+	val[]: "Fiskeväska"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Ansiktsmask, målvakt"
+
+	key[]: "guitar"
+	val[]: "Gitarr"
+
+	key[]: "guitar_case"
+	val[]: "Gitarrfodral"
+
+	key[]: "hat"
+	val[]: "Hatt"
+
+	key[]: "hockey_stick"
+	val[]: "Hockeyklubba"
+
+	key[]: "holy_field_blanket"
+	val[]: "Pläd"
+
+	key[]: "honey_bee"
+	val[]: "Honungs bi"
+
+	key[]: "laundry_box"
+	val[]: "Tvättkorg"
+
+	key[]: "peppermints"
+	val[]: "Minttabletter"
+
+	key[]: "plush_donut"
+	val[]: "Munk i plysch"
+
+	key[]: "plush_lion"
+	val[]: "Lejon, mjukdjur"
+
+	key[]: "power_inverter"
+	val[]: "Växelriktning"
+
+	key[]: "propeller"
+	val[]: "Propeller"
+
+	key[]: "shoes"
+	val[]: "Skor"
+
+	key[]: "spearmints"
+	val[]: "Spearmint-tabletter"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sportiga solglasögon"
+
+	key[]: "stack_of_burgers"
+	val[]: "Hög med burgare"
+
+	key[]: "usa_cap"
+	val[]: "USA-keps"
+
+	key[]: "usa_flag"
+	val[]: "USA:s flagga"
+
+	key[]: "usa_flag_cap"
+	val[]: "Keps med USA:s flagga"
+
+	key[]: "ventilator"
+	val[]: "Fläkt"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr-keps"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS-kudde"
+
+	key[]: "heart_pillow"
+	val[]: "Hjärtkudde"
+
+	key[]: "kiss_me_pillow"
+	val[]: "\"Kyss mig\"-kudde"
+
+	key[]: "protector_pillow"
+	val[]: "Skyddskudde"
+
+	key[]: "star_pillow"
+	val[]: "Stjärnkudde"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah-kudde"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Kudde mer USA:s flagga"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Skyddskudde, USA"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS doftgran"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Doftgran, kaktus"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Doftgran, citron"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Doftgran, lönnlöv"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Doftgran, apelsin"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Doftgran, USA"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Blå plyschkub"
+
+	key[]: "red_plush_cube"
+	val[]: "Röd plyschkub"
+
+	key[]: "double_plush_cube"
+	val[]: "Dubbel plyschkub"
+
+
+	key[]: "alien_head"
+	val[]: "Alien-huvud"
+
+	key[]: "cowboy_head"
+	val[]: "Cowboyhuvud"
+
+	key[]: "pirate_head"
+	val[]: "Pirathuvud"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Örnklistermärke"
+
+	key[]: "guitar_sticker"
+	val[]: "Gitarrklistermärke"
+
+	key[]: "hat_sticker"
+	val[]: "Klistermärke med hatt"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Klistermärke, lönnsirap"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Klistermärke, ratt"
+
+	key[]: "taco_sticker"
+	val[]: "Tacoklistermärke"
+
+	key[]: "truck_sticker"
+	val[]: "Lastbilsklistermärke"
+
+	key[]: "usa_country_sticker"
+	val[]: "Klistermärke med USA"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Klistermärke med USA:s flagga"
+
+#@}
 
 #@}
 
@@ -173,7 +469,7 @@ localization_db : .localization
 #+ Messages shown in the route adviser.
 #@{
 	key[]: "weigh_illegal_trailer"
-	val[]: "Your truck and trailer combination is not legal in this state!" #+ Adviser text
+	val[]: "Din fordonskombination är inte laglig i den här staten!" #+ Adviser text
 #@}
 
 #+ Skills screen
@@ -255,7 +551,7 @@ localization_db : .localization
 	val[]: "Kabelrulle"
 
 	key[]: "cn_cans"
-	val[]: "Cans"
+	val[]: "Burkar"
 
 	key[]: "cn_colors"
 	val[]: "Färg"
@@ -303,7 +599,7 @@ localization_db : .localization
 	val[]: "Hö"
 
 	key[]: "cn_heavy_bulldozer"
-	val[]: "Heavy Bulldozer"
+	val[]: "Tung bulldozer"
 
 	key[]: "cn_house_prefabs"
 	val[]: "Monteringsfärdigt hus"
@@ -342,7 +638,7 @@ localization_db : .localization
 	val[]: "Fräsmaskin"
 
 	key[]: "cn_mix_tank"
-	val[]: "Mix Tank"
+	val[]: "Blandningstank"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Terränggående lyftkran"
@@ -357,7 +653,7 @@ localization_db : .localization
 	val[]: "Fräs"
 
 	key[]: "cn_paper"
-	val[]: "Paper"
+	val[]: "Papper"
 
 	key[]: "cn_pelleted_animal_food"
 	val[]: "Pelleterad djurmat"
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Grönsaker"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star-lastbilar"
 
 #@}
 
@@ -482,7 +781,7 @@ localization_db : .localization
 	val[]: "Båttrailer"
 
 	key[]: "tn_scs_lowboy"
-	val[]: "Lowboy Extendable Trailer"
+	val[]: "Utdragbart släp med låg bädd"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Släp för mobil barriär"
@@ -620,7 +919,7 @@ localization_db : .localization
 	val[]: "Stock"
 
 	key[]: "lowboy"
-	val[]: "Lowboy"
+	val[]: "Lågt släp"
 
 	key[]: "refrigerated"
 	val[]: "Kyld"
@@ -672,7 +971,7 @@ localization_db : .localization
 	val[]: "Enkel"
 
 	key[]: "chain_double"
-	val[]: "Double"
+	val[]: "Dubbel"
 
 	key[]: "chain_staa_double"
 	val[]: "STAA dubbel"
@@ -695,25 +994,25 @@ localization_db : .localization
 #@{
 
 	key[]: "tr_articulated_3axle"
-	val[]: "Articulated, 3 Axles"
+	val[]: "Ledad, 3 axlar"
 
 	key[]: "tr_articulated_4axle"
-	val[]: "Articulated, 4 Axles"
+	val[]: "Ledad, 4 axlar"
 
 	key[]: "tr_articulated_5axle"
-	val[]: "Articulated, 5 Axles"
+	val[]: "Ledad, 5 axlar"
 
 	key[]: "tr_articulated_6axle"
-	val[]: "Articulated, 6 Axles"
+	val[]: "Ledad, 6 axlar"
 
 	key[]: "tr_articulated_7axle"
-	val[]: "Articulated, 7 Axles"
+	val[]: "Ledad, 7 axlar"
 
 	key[]: "tr_articulated_8axle"
-	val[]: "Articulated, 8 Axles"
+	val[]: "Ledad, 8 axlar"
 
 	key[]: "tr_articulated_9axle"
-	val[]: "Articulated, 9 Axles"
+	val[]: "Ledad, 9 axlar"
 
 	key[]: "tr_b_double"
 	val[]: "B-dubbel"
@@ -737,7 +1036,7 @@ localization_db : .localization
 	val[]: "Jeep"
 
 	key[]: "tr_jeep_3axle"
-	val[]: "Jeep, 3 Axles"
+	val[]: "Jeep, 3 axlar"
 
 	key[]: "tr_rm_double"
 	val[]: "Rocky Mountain dubbel"
@@ -866,13 +1165,13 @@ localization_db : .localization
 	val[]: "53 fot, mellanrum"
 
 	key[]: "tr_spreader_1axle"
-	val[]: "Spreader, 1 Axle"
+	val[]: "Spridare, 1 axel"
 
 	key[]: "tr_spreader_2axle"
-	val[]: "Spreader, 2 Axles"
+	val[]: "Spridare, 2 axlar"
 
 	key[]: "tr_spreader_3axle"
-	val[]: "Spreader, 3 Axles"
+	val[]: "Spridare, 3 axlar"
 
 	key[]: "tr_tp_double"
 	val[]: "Turnpike dubbel"
@@ -945,13 +1244,13 @@ localization_db : .localization
 	val[]: "Timmersläp, 6 sektioner"
 
 	key[]: "bs_wood_lowboy"
-	val[]: "Wooden Lowboy"
+	val[]: "Lågt släp i trä"
 
 	key[]: "bs_wood_full_lowboy"
-	val[]: "Full Wooden Lowboy"
+	val[]: "Stort, lågt släp i trä"
 
 	key[]: "bs_wood_alu_lowboy"
-	val[]: "Wooden-Aluminium Lowboy"
+	val[]: "Lågt släp med aluminium och trä"
 
 	key[]: "bs_reefer"
 	val[]: "Kylvaror"
@@ -1024,7 +1323,7 @@ localization_db : .localization
 	val[]: "Standarddörr, vindavvisare"
 
 	key[]: "wooden_deck"
-	val[]: "Wooden Deck"
+	val[]: "Trädäck"
 #@}
 
 #+ Names of countries/states
@@ -1493,7 +1792,7 @@ localization_db : .localization
 
 	#+ Google maps link: no particular location
 	key[]: "id_cut_potato"
-	val[]: "Twin Falls potato farm"
+	val[]: "Twin Falls potatisodling"
 
 	#+ Google maps link: https://goo.gl/maps/s4ocBX6bfTNK3x2Z9
 	key[]: "id_cut_galena"
@@ -1501,7 +1800,7 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/1TfbzeECbAWCNQBN8
 	key[]: "id_cut_perrine"
-	val[]: "Perrine Memorial Bridge"
+	val[]: "Perrine Memorial-bron"
 
 	#+ Google maps link: https://goo.gl/maps/ExnPD7TCi676PKeU9
 	key[]: "id_cut_craters"
@@ -1517,7 +1816,7 @@ localization_db : .localization
 
 	#+ Google maps link: no particular location
 	key[]: "id_cut_timber"
-	val[]: "Timber harvest site"
+	val[]: "Plats för skogsbruk"
 
 	#+ Google maps link: https://goo.gl/maps/j71oQTfbmJvCGhyr8
 	key[]: "id_cut_mccall"
@@ -1529,25 +1828,109 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
-	val[]: "Midvale Hill Rest Area"
+	val[]: "Midvale Hills rastplats"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Albuquerque-korsningen"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Staden Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Staden Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 Rastplats"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w rastplats"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " US-82 Rastplats"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "The Arizona Welcome Center Rest Area"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 Rest Area"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "The Historic Monument of Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "The city of Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Head Lighthouse"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor's Well"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astoria-Megler Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport Yaquina Bay Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles city"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 Sequoia Forest"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregon Paper Mill"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 Vista"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "The Biggs Junction"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portland Shipyard"
 
 	# Utah
 
 	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
 	key[]: "id_cut_kennecott"
-	val[]: "The Bingham Canyon Mine"
+	val[]: "Bingham Canyon-gruvan"
 
 	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
 	key[]: "ut_cut_george"
-	val[]: "The city of St. George"
+	val[]: "Staden St. George"
 
 	#+ Google maps link: https://goo.gl/maps/x8udSVWKNd3vadZ17
 	key[]: "ut_cut_swell"
-	val[]: "The San Rafael Swell area"
+	val[]: "San Rafael Swell-området"
 
 	#+ Google maps link: no particular location
 	key[]: "ut_cut_oil"
-	val[]: "Oil Fields of Utah"
+	val[]: "Utahs oljefält"
 
 	#+ Google maps link: https://goo.gl/maps/hCtx3MB1mn9JZP1c7
 	key[]: "ut_cut_monument"
@@ -1555,41 +1938,41 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/r2fZXJLvo31u1vYM8
 	key[]: "ut_cut_salt"
-	val[]: "The Bonneville Salt Flats"
+	val[]: "Bonnevilles saltöken"
 
 	#+ Google maps link: https://goo.gl/maps/GtgCV3X4ttcwztdr8
 	key[]: "ut_cut_moqui"
-	val[]: "The Moqui Cave"
+	val[]: "Moqui-grottan"
 
 	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
 	key[]: "ut_cut_hole"
-	val[]: "The Hole N\" The Rock landmark"
+	val[]: "Utkiksplatsen Hole in The Rock"
 
 	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
 	key[]: "ut_cut_glen"
-	val[]: "The Glen Canyon Dam Bridge"
+	val[]: "Bron över Glen Canyon-dammen"
 
 	#+ Google maps link: https://goo.gl/maps/de7sXmFAENJz3FB98
 	key[]: "ut_cut_hoover"
-	val[]: "The Hoover Rest Area"
+	val[]: "Hoovers rastplats"
 
 	# Washington
 
 	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
 	key[]: "wa_cut_helen"
-	val[]: "Mount Saint Helens National Volcanic Monument"
+	val[]: "Mount Saint Helens Nationella Vulkaniska Monument"
 
 	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
 	key[]: "wa_cut_seaport"
-	val[]: "Seattle Port"
+	val[]: "Seattles hamn"
 
 	#+ Google maps link:  NONE, just a generic timber harvest site
 	key[]: "wa_cut_forest"
-	val[]: "Washington Timber Harvest Site"
+	val[]: "Plats för skogsbruk, Washington"
 
 	#+ Google maps link:  https://goo.gl/maps/eW4foikPpXken3Ua7
 	key[]: "wa_cut_everett"
-	val[]: "Everett Swing Bridge"
+	val[]: "Everetts svängbro"
 
 	#+ Google maps link: https://goo.gl/maps/Wwxpir1hJesPJUCK8
 	key[]: "wa_cut_vantage"
@@ -1601,19 +1984,19 @@ localization_db : .localization
 
 	#+ Google maps link: Generic Aircraft (plane) factory
 	key[]: "wa_cut_darwing"
-	val[]: "Aircraft Factory"
+	val[]: "Flygplansfabrik"
 
 	#+ Google maps link: https://goo.gl/maps/6YbLCPAcwhavedpN8
 	key[]: "wa_cut_coulee"
-	val[]: "Grand Coulee Dam"
+	val[]: "Grand Coulee-dammen"
 
 	#+ Google maps link: https://goo.gl/maps/HG4CvJsZRb32accT8
 	key[]: "wa_cut_downtown"
-	val[]: "Seattle Downtown"
+	val[]: "Seattles innerstad"
 
 	#+ Google maps link: https://goo.gl/maps/MLYkR5ms3KwxoAxD7
 	key[]: "wa_cut_kenworth"
-	val[]: "Kenworth Factory"
+	val[]: "Kenworth-fabrik"
 #@}
 
 }

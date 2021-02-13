@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Gardiner" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Klimaanlægs-dele" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Sengeudstyr" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Hængene Udstyr" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "Gulvudstyr" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Pudeudstyr"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Instrumentsæt" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Farvekorrektion" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Refleksioners detaljegrad" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4177,7 +4189,7 @@
 	val[]: "Din lastbil- og trailerkombination er ikke lovlig i dette land!" #+ Adviser text
 
 	key[]: "trucking_prohibited"
-	val[]: "Kommercielle lastbiltrafik er forbudt i dette område. Du skal vende og køre tilbage!" #+ Adviser text
+	val[]: "Kommercielle lastbiltrafik er forbudt i dette område. Du skal vende om og køre tilbage!" #+ Adviser text
 
 	key[]: "parking_brake_on1"
 	val[]: "Håndbremsen er aktiveret!"
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Du bør slå differentialspærren fra under almindelig kørsel, ellers risikerer du at skade den.<br>Brug følgende tast for at slå den fra:"
+
+	key[]: "tow_hint"
+	val[]: "Hvis du ikke kan komme ud af en vanskelig situation, kan du bruge bugseringstjeneste. Tryk:"
 
 	key[]: "ferry_msg"
 	val[]: "For at se mulige destinationer, tast:"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Kyllingekød"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vaccine mod covid-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Hytteost"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "VEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Beige tæppe"
+
+	key[]: "blanket_square"
+	val[]: "Kvadratisk tæppe"
+
+	key[]: "book"
+	val[]: "Bog"
+
+	key[]: "bottle_sixpack"
+	val[]: "Flaske-sixpack"
+
+	key[]: "breakfast_cereals"
+	val[]: "Morgenmad"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog Bobblehead"
+
+	key[]: "cap"
+	val[]: "Kasket"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobiltelefon"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Bobblehead"
+
+	key[]: "dashboard"
+	val[]: "Instrumentbræt"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Leveringsrapport"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrisk køleboks"
+
+	key[]: "endless_nourishment"
+	val[]: "Uendelig næring"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 spilboks"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 madkasse"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 lastbiltaske"
+
+	key[]: "festive_mug"
+	val[]: "Julekrus"
+
+	key[]: "fire_extinguisher"
+	val[]: "Brandslukker"
+
+	key[]: "hand_bag"
+	val[]: "Håndtaske"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Håndlavet læderpung"
+
+	key[]: "hula_doll"
+	val[]: "Hula-dukke"
+
+	key[]: "instant_lunch"
+	val[]: "Straks-frokost"
+
+	key[]: "instant_lunch_box"
+	val[]: "Straks-frokost multipack"
+
+	key[]: "magazines"
+	val[]: "Blade"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magnet-kompas"
+
+	key[]: "map"
+	val[]: "Kort"
+
+	key[]: "notebook"
+	val[]: "Notesbog"
+
+	key[]: "paper_towels"
+	val[]: "Køkkenruller"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilot-solbriller"
+
+	key[]: "plush_bear"
+	val[]: "Plysbamse"
+
+	key[]: "portable_navigator"
+	val[]: "Transportabel navigator"
+
+	key[]: "rugged_style_cap"
+	val[]: "Robust kasket"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS kaffekrus"
+
+	key[]: "sleeping_bag"
+	val[]: "Sovepose"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Weekendpose"
+
+	key[]: "winter_bauble"
+	val[]: "Vinterkugle"
+
+	key[]: "winter_blast_gift"
+	val[]: "Vintergave"
+
+	key[]: "wise_owl_offering"
+	val[]: "Klog Ugle-tilbud"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 pude"
+
+	key[]: "flame_pillow"
+	val[]: "Flammepude"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear-pude"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Sweet Home-pude"
+
+	key[]: "skull_pillow"
+	val[]: "Kraniepude"
+
+	key[]: "status_pillow"
+	val[]: "Statuspude"
+
+	key[]: "track_pillow"
+	val[]: "Sporpude"
+
+	key[]: "trucker_pillow"
+	val[]: "Trucker-pude"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavs pude"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Klogt Hjerte-pude"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ-pude"
+
+
+	key[]: "air_freshener"
+	val[]: "Luftfrisker"
+
+	key[]: "smelling_sack"
+	val[]: "Duftpose"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Luftfrisker, æble"
+
+	key[]: "basketball_ball"
+	val[]: "Basketball"
+
+	key[]: "black_plush_cube"
+	val[]: "Sort plysterning"
+
+	key[]: "chromed_skull"
+	val[]: "Forkromet kranie"
+
+	key[]: "disco_ball"
+	val[]: "Diskokugle"
+
+	key[]: "eight_ball"
+	val[]: "Eight Ball"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 luftfrisker"
+
+	key[]: "football_ball"
+	val[]: "Fodbold"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker Insignia"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Hope Trucker Insignia"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS luftfrisker"
+
+	key[]: "tennis_ball"
+	val[]: "Tennisbold"
+
+	key[]: "trophy_skull"
+	val[]: "Kranietrofæ"
+
+	key[]: "white_plush_cube"
+	val[]: "Hvid plysterning"
+
+
+	key[]: "black_style_mug"
+	val[]: "Sort krus" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Hvid-orange krus" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Sort-orange krus" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Plys-legetøj" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Læderpung" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Bord" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Eksklusivt centerbord" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Centerbord i mahogni" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Centerbord i sort" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Eksklusivt langt bord" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Langt bord i mahogni" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Langt bord i sort" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Bred last" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Krom" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Krom II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Maling & krom" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Standard dobbelt" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Eksklusiv" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Brugerdefineret metallicfarve" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Basic" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Basis krom" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Basis farvet" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Terninger" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Stor stjerne" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "Kan ikke sende traileren bort under et job." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "KØRETØJS-JUSTERINGER"
+
+	key[]: "adj_mirrors"
+	val[]: "Juster spejle"
+
+	key[]: "adj_lights"
+	val[]: "Juster lys"
+
+	key[]: "adj_seats"
+	val[]: "Juster sæder"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Køletrailer"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tank"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Frossent, afkølet gods"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Henter byfremskridt..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Leverancer til næste stjerne:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Alle stjerner opnået."
+	key[]: "xmas_delivery_progress"
+	val[]: "Gaveleverings-status"
 
 	key[]: "xmas19_map_description"
 	val[]: "Før musen henover byer for at se fremskridtet for julebegivenheden.<br>Besøg $WOTR_URL$ for at se en oversigt over det samlede fremskridt."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Denne bys bidrag til det fælles mål er opnået!<br><br>Hvorfor ikke hjælpe en anden by med at bringe dens gaver ud?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Disse byers bidrag til Fællesskabsmålet er fuldført!<br><br>Hvis du vil, kan du finde andre byer, du kan levere gaver til eller fra."
 
 	key[]: "xmas19_back"
 	val[]: "Tilbage"

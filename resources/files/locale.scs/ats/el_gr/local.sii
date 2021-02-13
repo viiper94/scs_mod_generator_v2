@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,6 +1055,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Κουρτίνες" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Αντικείμενα Ακροφυσίου Αέρα" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Αντικείμενα Κρεβατιού" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Κρεμαστά Αντικείμενα" #+ Interior hanging accesories
 
@@ -1045,6 +1072,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "Αντικείμενα Κεντρικού Πατώματος" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Αντικείμενα Μαξιλαριού"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Σετ Ταμπλό" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -1298,7 +1328,7 @@ localization_db : .localization
 	val[]: "Αποθήκευση ... " #+ Game save indicator message.
 
 	key[]: "cutscene_quit_info"
-	val[]: "Πάτησε $KEY$ για παράλλειψη κομμένων σκηνών." #+ Shown when any key was pressed during viewpoint cutscene.
+	val[]: "Πάτησε $KEY$ για παράλειψη κομμένων σκηνών." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1840,10 +1870,10 @@ localization_db : .localization
 	val[]: "Δεν υπάρχουν MOD σε χρήση"
 
 	key[]: "launchpad_tt_cloud_active"
-	val[]: "Steam cloud synchronization is active"
+	val[]: "Ο συγχρονισμός με το Steam cloud είναι ενεργός"
 
 	key[]: "launchpad_tt_cloud_not_active"
-	val[]: "Steam cloud synchronization is disabled <br><offset vshift=7><color value=@@clr_txt_d@@>click to enable"
+	val[]: "Ο συγχρονισμός με το Steam cloud είναι απενεργοποιημένος <br><offset vshift=7><color value=@@clr_txt_d@@>κλικ για ενεργοποίηση"
 
 	key[]: "launchpad_tt_globe_connected"
 	val[]: "Συνδέθηκε το World of Trucks"
@@ -3845,6 +3875,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "Διόρθωση χρώματος" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Λεπτομέρεια αντανάκλασης" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Πρέπει να ξεκλειδώσεις το διαφορικό κατά τη διάρκεια της οδήγησης ή υπάρχει κίνδυνος βλάβης του.<br>Πάτα το ακόλουθο κουμπί για να απενεργοποιήσεις:"
+
+	key[]: "tow_hint"
+	val[]: "If you can't get out of any difficult situation you may use towing service. Press:"
 
 	key[]: "ferry_msg"
 	val[]: "Για να δεις τους δυνατούς προορισμούς φορτίων πάτησε:"
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Κρέας Κοτόπουλου"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Εμβόλιο COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Τυρί Κότατζ"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "ΔΥΤΙΚΗ" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Μπεζ Κουβέρτα"
+
+	key[]: "blanket_square"
+	val[]: "Τετράγωνη Κουβέρτα"
+
+	key[]: "book"
+	val[]: "Βιβλίο"
+
+	key[]: "bottle_sixpack"
+	val[]: "Εξάδα Μπουκαλιών"
+
+	key[]: "breakfast_cereals"
+	val[]: "Δημητριακά Πρωινού"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Διακοσμητικό Κουνιστό Μπουλντόγκ"
+
+	key[]: "cap"
+	val[]: "Καπέλο"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Κινητό Τηλέφωνο"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Διακοσμητικό Κουνιστό Τσιουάουα"
+
+	key[]: "dashboard"
+	val[]: "Ταμπλό"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Αναφορά Παράδοσης"
+
+	key[]: "electric_cooling_box"
+	val[]: "Φορητό Ηλεκτρικό Ψυγείο"
+
+	key[]: "endless_nourishment"
+	val[]: "Ατελείωτη Θρέψη"
+
+	key[]: "ets2_game_box"
+	val[]: "Κουτί Παιχνιδιού ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Φαγητοδοχείο ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Τσάντα Φορτηγού ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Γιορτινή Κούπα"
+
+	key[]: "fire_extinguisher"
+	val[]: "Πυροσβεστήρας"
+
+	key[]: "hand_bag"
+	val[]: "Τσάντα Χειρός"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Χειροποίητο Δερμάτινο Πορτοφόλι"
+
+	key[]: "hula_doll"
+	val[]: "Χαβανέζικη Κούκλα"
+
+	key[]: "instant_lunch"
+	val[]: "Φαγητό Στιγμής"
+
+	key[]: "instant_lunch_box"
+	val[]: "Πολυσυσκευασία Φαγητού Στιγμής"
+
+	key[]: "magazines"
+	val[]: "Περιοδικά"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Μαγνητική Πυξίδα"
+
+	key[]: "map"
+	val[]: "Χάρτης"
+
+	key[]: "notebook"
+	val[]: "Φορητός Υπολογιστής"
+
+	key[]: "paper_towels"
+	val[]: "Χαρτί Κουζίνας"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Γυαλιά Ηλίου Πιλότου"
+
+	key[]: "plush_bear"
+	val[]: "Λούτρινη Αρκούδα"
+
+	key[]: "portable_navigator"
+	val[]: "Φορητός Πλοηγός"
+
+	key[]: "rugged_style_cap"
+	val[]: "Στιβαρό Καπέλο"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Κούπα Καφέ SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Υπνόσακος"
+
+	key[]: "tablet"
+	val[]: "Τάμπλετ"
+
+	key[]: "weekend_bag"
+	val[]: "Τσάντα Ταξιδίου"
+
+	key[]: "winter_bauble"
+	val[]: "Winter Bauble"
+
+	key[]: "winter_blast_gift"
+	val[]: "Winter Blast Gift"
+
+	key[]: "wise_owl_offering"
+	val[]: "Wise Owl Offering"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Μαξιλάρι ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Μαξιλάρι Φλόγες"
+
+	key[]: "goodyear_pillow"
+	val[]: "Μαξιλάρι Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Μαξιλάρι Σπίτι Μου"
+
+	key[]: "skull_pillow"
+	val[]: "Μαξιλάρι Νεκροκεφαλή"
+
+	key[]: "status_pillow"
+	val[]: "Μαξιλάρι Στάτους"
+
+	key[]: "track_pillow"
+	val[]: "Μαξιλάρι Μονοπάτι"
+
+	key[]: "trucker_pillow"
+	val[]: "Μαξιλάρι Trucker"
+
+	key[]: "vaclav_pillow"
+	val[]: "Μαξιλάρι Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Wise Heart Pillow"
+
+	key[]: "zzz_pillow"
+	val[]: "Μαξιλάρι ΖΖΖ"
+
+
+	key[]: "air_freshener"
+	val[]: "Αρωματικό"
+
+	key[]: "smelling_sack"
+	val[]: "Αρωματικό Σακουλάκι"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Αρωματικό Μήλο"
+
+	key[]: "basketball_ball"
+	val[]: "Μπάλα Μπάσκετ"
+
+	key[]: "black_plush_cube"
+	val[]: "Μαύρος Βελούδινος Κύβος"
+
+	key[]: "chromed_skull"
+	val[]: "Χρωμιομένο Κρανίο"
+
+	key[]: "disco_ball"
+	val[]: "Ντισκομπάλα"
+
+	key[]: "eight_ball"
+	val[]: "Μπάλα Μπιλιάρδου Νο 8"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Αρωματικό ETS2"
+
+	key[]: "football_ball"
+	val[]: "Μπάλα Ποδοσφαίρου"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Διακριτικό Home Trucker"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Διακριτικό Hope Trucker"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Αρωματικό SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Μπάλα Τένις"
+
+	key[]: "trophy_skull"
+	val[]: "Τρόπαιο Κρανίο"
+
+	key[]: "white_plush_cube"
+	val[]: "Λευκός Βελούδινος Κύβος"
+
+
+	key[]: "black_style_mug"
+	val[]: "Κούπα Μαύρου Στυλ" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Λευκή-Πορτοκαλί Κούπα" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Μαύρη-Πορτοκαλί Κούπα" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Βελούδινο παιχνίδι" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Δερμάτινο πορτοφόλι" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Ταμπλό" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Κεντρικό Τραπέζι Μοναδικό" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Κεντρικό Τραπέζι Μαόνι" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Κεντρικό Τραπέζι Μαύρο" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Μακρύ Τραπέζι Μοναδικό" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Μακρύ Τραπέζι Μαόνι" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Μακρύ Τραπέζι Μαύρο" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Βαριά Χρήση" #+ Basic truck accesory general
 
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Χρώμιο" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Χρώμιο ΙΙ" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Βαφή & Χρώμιο" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Απλό Διπλό" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Μοναδικό" #+ Luxury/Exclusive version of the interior or accesory
@@ -8916,6 +9207,15 @@ localization_db : .localization
 
 	key[]: "custom_metallic"
 	val[]: "Προσαρμοσμένο Μεταλλικό Χρώμα" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Βασικό" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Βασικές Χρώμιο" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Βασικές Βαφή" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Ζάρια" #+ Accessory name, DLC Pink Ribbon.
@@ -8952,6 +9252,7 @@ localization_db : .localization
 
 	key[]: "grand_star"
 	val[]: "Μεγαλοπρεπές Αστέρι" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -9600,7 +9901,7 @@ localization_db : .localization
 	val[]: "Ξεκίνησε την παράδοση" #+ Button to begin WOTR job with
 
 	key[]: "abort_job"
-	val[]: "Εγκατάληψη" #+ Button to cancel WOTR job with
+	val[]: "Εγκατάλειψη" #+ Button to cancel WOTR job with
 
 	key[]: "cancel_online_job"
 	val[]: "Θέλεις σίγουρα να εγκαταλείψεις το παρόν συμβόλαιο;" #+ A pop-up warning notification on attempt to Cancel WOTR job
@@ -10288,13 +10589,13 @@ localization_db : .localization
 	val[]: "ΝΕΟ ΓΕΓΟΝΟΣ" #+ Title of the event popup when showed first time for currently runing event.
 
 	key[]: "event_t"
-	val[]: "LIVE EVENTS" #+ Title of the event popup.
+	val[]: "ΖΩΝΤΑΝΑ ΓΕΓΟΝΟΤΑ" #+ Title of the event popup.
 
 	key[]: "event_completed"
 	val[]: "Προσωπικός Στόχος Επετεύχθη!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Άνοιγμα Σελίδας Γεγονότων" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Πρόοδος" #+ The label used to indicate progress of the event.
@@ -10303,13 +10604,13 @@ localization_db : .localization
 	val[]: "ΠΛΗΡΟΦΟΡΙΕΣ ΓΕΓΟΝΟΤΩΝ" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Ζωντανά Γεγονότα" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Επίπεδο" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "Δεν υπάρχει ενεργό γεγονός αυτή τη στιγμή."
 #@}
 
 #+ Trailer ownership
@@ -10741,7 +11042,7 @@ localization_db : .localization
 	val[]: "Αναρτώμενοι άξονες:" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_steer_axles"
-	val[]: "Κατευθυντήριοι άξονες:" #+ Name of the property in the trailer detail tooltip.
+	val[]: "Διευθυντήριοι άξονες:" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_total_len"
 	val[]: "Συνολικό μήκος:" #+ Name of the property in the trailer detail tooltip.
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Αδύνατη η αποδέσμευση του τρέιλερ κατά τη διάρκεια δουλειάς." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "ΠΡΟΣΑΡΜΟΓΕΣ ΟΧΗΜΑΤΟΣ"
+
+	key[]: "adj_mirrors"
+	val[]: "Ρύθμιση καθρεφτών"
+
+	key[]: "adj_lights"
+	val[]: "Ρύθμιση φώτων"
+
+	key[]: "adj_seats"
+	val[]: "Ρύθμιση θέσεων"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Ψυγείο"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Δεξαμενή"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Κατεψυγμένα, παγωμένα εμπορεύματα"
+
 #@}
 
 #+ Trailer chain type names.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Λήψη της προόδου πόλης..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Παραδόσεις στο επόμενο αστέρι:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Όλα τα αστέρια επιτεύχθηκαν."
+	key[]: "xmas_delivery_progress"
+	val[]: "Πρόοδος παράδοσης δώρων"
 
 	key[]: "xmas19_map_description"
 	val[]: "Πέρνα πάνω από πόλεις για να δεις την πρόοδο της Χριστουγεννιάτικης εκδήλωσης. Επισκέψου το $WOTR_URL$ για να δεις την πλήρη περιγραφή της προόδου."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Η συνεισφορά της πόλης για τον στόχο της κοινότητας ολοκληρώθηκε!<br><br>Γιατί να μη βοηθήσεις μία άλλη πόλη να παραδώσει τα δώρα της;"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Η συμβολή αυτών των πόλεων για αυτή τη δουλειά, προς τον Κοινοτικό Στόχο, είναι ολοκληρωμένη!<br><br>Γιατί να μη βρεις άλλες πόλεις για να παραδόσεις Δώρα από/προς;"
 
 	key[]: "xmas19_back"
 	val[]: "Πήγαινε πίσω"

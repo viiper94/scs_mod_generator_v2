@@ -72,10 +72,10 @@
 	val[]: "თვლები"
 
 	key[]: "interior_t"
-	val[]: "ინტერიერი"
+	val[]: "სალონი"
 
 	key[]: "interior"
-	val[]: "ინტერიერი"
+	val[]: "სალონი"
 
 	key[]: "accessory_t"
 	val[]: "აქსესუარები"
@@ -134,7 +134,7 @@
 	val[]: "უსწორმასწორო რელიეფი" #+  name of the bar for truck's performance to take up on broken / uneven terrain / grassy terrain
 
 	key[]: "engine_torque"
-	val[]: "მაბრუნებელი მომენტი:" #+  truck's engine torque value in Nm / newton-meters
+	val[]: "მაბრუნი მომენტი" #+  truck's engine torque value in Nm / newton-meters
 
 	key[]: "first_gear_ratio"
 	val[]: "პირველი გადაცემის რიცხვი" #+  First Gear Ratio of the gearbox
@@ -176,16 +176,16 @@
 	val[]: "გამართეთ თქვენი სატვირთო ისე რომ არ დააღვიოთ უსაფრთხოების ნორმები და ამავდროულად არ გაგიჭირდეთ ტვირთის გადაზიდვა. " #+  General tooltip description of Truck Analysis feature
 
 	key[]: "normal_cargo_tooltip"
-	val[]: "განკუთვნილია მსუბუქ და საშუალო სიმძიმის ტვირთის გადასაზიდად" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
+	val[]: "მსუბუქი და საშუალო სიმძიმის ტვირთის გადაზიდვის უნარი" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
 
 	key[]: "heavy_cargo_tooltip"
-	val[]: "განკუთვნილია მძიმე და საგანგებო ტვირთისთვის" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
+	val[]: "მძიმე და საგანგებო ტვირთის გადაზიდვის უნარი" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
 	val[]: "სატვირთოს მანევრირება ვიწრო ადგილში." #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "გადაცემათა კოლოფის მზადყოფნა აღმართზე ასვლისთვის და მთიდან დაშვებისთვის" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "აღმართზე დაუბრკოლებლად ასვლისა და დაშვების უნარი" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "უსწორმასწორო ზედაპირების გადალახვის უნარი" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "ფარდები" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "ჰაერის გამწმენდები" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "საწოლის ნივთები" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "საკიდი ნივთები" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "ძირზე" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "ბალიშები"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "მართვის დაფის სამაგრები" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -816,7 +825,7 @@
 	val[]: "შენახული თამაშის ჩატვირთვა. მიმდინარე ცვლილებები დაიკარგება!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
-	val[]: "ნამდვილად გსურთ სხვა თამაშის ჩატვირთვა?<br><br>თქვენი მიმდინარე წინსვლა დაიკარგება."
+	val[]: "ნამდვილად გსურთ სხვა წერტილიდან ჩატვირთვა?<br><br>თქვენი მიმდინარე წინსვლა დაიკარგება."
 
 	key[]: "autosave"
 	val[]: "- თვითშენახვა -" #+ Name used inside slot corresponding to automatically saved game.
@@ -839,7 +848,7 @@
 	val[]: "ყურადღება!" #+ Panel title. Please keep in upper case where possible.
 
 	key[]: "load_msg_load_error"
-	val[]: "<color value=@@clr_red@@>შეცდომა ჩატვირთვისას.<color value=@@clr_txt@@><br><br>თქვენ შეგიძლიათ სცადოთ ამ შეცდომის გამოსწორება ქვემოთ მოცემული ინსტრუქციით ან დაიწყოთ სხვა წერტილიდან.<br><br>პრობლემა შეიძლება გამოეწვია შემდეგს:<br><br>1. თამაში შეუთავსებელია ზოგიერთ დამატებასთან.<br><br>2. შენახვის დროს გამოყენებულია დამატება, რომელიც ახლა არ მოიძებნა ან გათიშულია.<br><br>3. შენახვის წერტილი დაზიანდა ცუდი დამატების გამო.<br><br>4. კომპიუტერი გაითიშა შენახვის პროცესის ან შენახვის პროცესის შემდეგ მცირე დროის გასვლისას."
+	val[]: "<color value=@@clr_red@@>შეცდომა ჩატვირთვისას.<color value=@@clr_txt@@><br><br>შეგიძლიათ სცადოთ გამოსწორება ქვემოთ მოცემული მითითებებით ან დაიწყოთ სხვა წერტილიდან.<br><br>ხარვეზი შეიძლება გამოეწვია შემდეგს:<br><br>1. შენახვისას გამოყენებული დამატება დაზიანებული ან შეუთავსებელია თამაშის ამ ვერსიასთან.<br><br>2. შენახვისას გამოყენებული დამატება წაშლილი ან გათიშულია.<br><br>3. არასწორად შექმნილმა დამატებამ დააზიანა შენახვის წერტილი.<br><br>4. შენახვისას უეცარმა გათიშვამ დააზიანა შენახვის წერტილი."
 
 	key[]: "load_msg_missing_mod"
 	val[]: "<color value=@@clr_sel@@>დამატება არ მოიძებნა.<color value=@@clr_txt@@><br><br>ბოლო შენახვის წერტილი შეიცავს დამატებას, რომელიც წაშლილი ან გათიშულია.<br><br>გადაამოწმეთ დამატებების მდგომარეობა.<br><br>შეგიძლიათ მაინც განაგრძოთ შენახვის წერტილიდან. თუმცა, შესაძლოა შეცდომები წარმოიშვას და არ ჩაიტვირთოს, გააჩნია რომელ დამატებას იყენებდით.<br><br>გარდა ამისა, შეგიძლიათ იმ წერტილიდან განაგრძოთ, სადაც ეს დამატება არ გამოიყენება."
@@ -904,7 +913,7 @@
 	val[]: "შეცდომა" #+ Title of message box reporting some error. Please keep in upper case where possible.
 
 	key[]: "confirmation_t"
-	val[]: "დამოწმება" #+ Title of message box asking for confirmation of some action. Please keep in upper case where possible.
+	val[]: "დასტური" #+ Title of message box asking for confirmation of some action. Please keep in upper case where possible.
 
 	key[]: "upload_t"
 	val[]: "ატვირთვა" # + Title of message box shown while upload is in progress. Please keep in upper case where possible.
@@ -1055,10 +1064,10 @@
 #@{
 
 	key[]: "trip_len"
-	val[]: "გასავლელი მანძილი" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "გასავლელი გზა" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_time"
-	val[]: "მგზავრობის დრო" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
+	val[]: "გზის დრო" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
 
 	key[]: "trip_ferry_len"
 	val[]: "მანძილი ზღვაზე" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
@@ -1070,11 +1079,11 @@
 	val[]: "მანძილი ხმელეთზე" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "მარშრუტის სანახავად აირჩიეთ ტვირთი" #+ Text shown centered in the route info box when no job is selected.
+	val[]: "აირჩიეთ ტვირთი, მიმართულების სანახავად" #+ Text shown centered in the route info box when no job is selected.
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "შემდეგ წერტილამდე მანძილი" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "შემდეგ წერტილამდე" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
@@ -1101,16 +1110,16 @@
 	val[]: "საიდან"
 
 	key[]: "dest"
-	val[]: "მისამართი"
+	val[]: "საით"
 
 	key[]: "route_length"
-	val[]: "გზის სიგრძით"
+	val[]: "მანძილი"
 
 	key[]: "cargo"
 	val[]: "ტვირთის სახეობა"
 
 	key[]: "price_km"
-	val[]: "ფასი / მანძილით"
+	val[]: "ფასი / მანძილი"
 
 	key[]: "cargo_weight"
 	val[]: "ტვირთის წონა"
@@ -1129,7 +1138,7 @@
 	val[]: "სამუშაოების სანახავად მიუთითეთ ქალაქი"
 
 	key[]: "jobf_hint_2"
-	val[]: "ხელსაყრელი სამუშაოების სანახავად გამოიყენეთ 'დახარისხება'"
+	val[]: "ხელსაყრელი სამუშაოების სანახავად გამოიყენეთ „დახარისხება“"
 
 	key[]: "jobf_hint_3"
 	val[]: "აირჩიეთ სამუშაო"
@@ -1681,7 +1690,7 @@
 #@}
 
 	key[]: "sdk_warning"
-	val[]: "მოთხოვნილია SDK-ს დამატებითი ფუნქციების გამოყენება.<br><br>გაითვალისწინეთ, რომ SDK-ს ფუნქციები ვრცელდება 'როგორც არის' და ჩვენ არ გაძლევთ არანაირ გარანტიას მისი ფუნქციონალობასა და წარმადობაზე. თამაში ლიცენზირებული არ არის მართვის შესასწავლად, მძღოლის გამოსაცდელად ან ინტერნეტ-კაფეებში გამოსაყენებლად." #+ Message shown when SDK is used.
+	val[]: "მოთხოვნილია დამატებითი SDK-შესაძლებლობები.<br><br>გაითვალისწინეთ, რომ SDK-შესაძლებლობები მოგეწოდებათ ისე „როგორც არის“ და პასუხს ვერ ვაგებთ გამართულ მუშაობასა და წარმადობაზე. ამასთან, თამაში არაა განკუთვნილი მართვის პროფესიონალური შესწავლისთვის, მძღოლების გადასამზადებლად ან ინტერნეტკაფეებში საჯარო გამოყენებისთვის." #+ Message shown when SDK is used.
 
 #+ Message box shown when the demo ends.
 #@{
@@ -1762,7 +1771,7 @@
 
 
 	key[]: "reset_defaults"
-	val[]: "სტანდარტულზე დაბრუნება" #+ Button which applies the default configuration to the state controlled by screen.
+	val[]: "საწყისზე დაბრუნება" #+ Button which applies the default configuration to the state controlled by screen.
 
 #+ Options/Audio
 #+
@@ -2245,7 +2254,7 @@
 	val[]: "ავტოპილოტის ბიჯი" #+ Size of grid for cruise control increment/decrement step.
 
 	key[]: "smart_cruise_control"
-	val[]: "ჭკვიანი კრუიზ-კონტროლი" #+ Smart cruise control setting.
+	val[]: "ჭკვიანი ავტოპილოტი" #+ Smart cruise control setting.
 
 	key[]: "tolerance"
 	val[]: "გადახრა" #+ Speed tolerance for smart cruise control.
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "ფერის კორექცია" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "ანარეკლის ხარისხი" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -3872,7 +3884,7 @@
 
 
 	key[]: "routing"
-	val[]: "დგინდება მარშრუტი..." #+ Shown temporarily when navigation route is being recalculated.
+	val[]: "გზის დაგეგმვა..." #+ Shown temporarily when navigation route is being recalculated.
 
 	key[]: "adviser_eta"
 	val[]: "დაახლ:" #+ For example "ETA: Sat 14:20 CEST"
@@ -3941,7 +3953,7 @@
 	val[]: "სასწრაფოდ ეწვიეთ სახელოსნოს!"
 
 	key[]: "adviser_eta_waypoint"
-	val[]: "სრული მარშრუტის მონაცემები" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
+	val[]: "სრული გზის მონაცემები" #+ Tooltip for advisor route info toggle, that shows the full trip info - the info to the very last checkpoint
 
 	key[]: "adviser_eta_target"
 	val[]: "შემდეგი წერტილის მონაცემები" #+ Tooltip for advisor route info toggle, that shows the route info to next checkpoint
@@ -4138,10 +4150,10 @@
 	val[]: "სასაზღვრო შემოწმების გასავლელად, დააჭირეთ:"
 
 	key[]: "border_wait"
-	val[]: "მოწმდება თქვენი საბუთები, გთხოვთ მოითმინოთ..."
+	val[]: "მოწმდება თქვენი საბუთები, მოითმინეთ..."
 
 	key[]: "border_open"
-	val[]: "ყველაფერი წესრიგშია.<br> კეთილ მგზავრობას გისურვებთ."
+	val[]: "ყველაფერი წესრიგშია.<br> კეთილი მგზავრობა."
 
 	key[]: "stop_viewpoint"
 	val[]: "გთხოვთ, გაჩერდეთ და გამორთოთ ძრავა, ხედის სანახავად."
@@ -4201,13 +4213,16 @@
 	val[]: "ღერძი არ აიწია.<br>მისაბმელი ძალიან მძიმეა."
 
 	key[]: "diff_lock_fail"
-	val[]: "დიფერენციალი ვერ ჩაიკეტა. შეანელეთ და სცადეთ ხელახლა."
+	val[]: "დიფერენციალი ვერ ჩაიკეტა.<br>შეანელეთ და სცადეთ ხელახლა."
 
 	key[]: "diff_lock_hint"
-	val[]: "თუ ვერ იწყებთ მოძრაობას, სცადეთ დიფერენციალის ჩაკეტვა.<br> დააჭირეთ ღილაკს:"
+	val[]: "თუ ვერ იწყებთ მოძრაობას,<br> სცადეთ დიფერენციალის ჩაკეტვა.<br>დააჭირეთ ღილაკს:"
 
 	key[]: "diff_unlock_warning"
-	val[]: "ჩვეულებრივ სიარულისას საჭიროა დიფერენციალის მოხსნა.<br>დააჭირეთ ღილაკს:"
+	val[]: "ჩვეულებრივ სასიარულოდ საჭიროა დიფერენციალის გახსნა.<br>დააჭირეთ ღილაკს:"
+
+	key[]: "tow_hint"
+	val[]: "რთულ მდგომარეობას თავს თუ ვერ აღწევთ, საბუქსირო გამოგადგებათ. დააჭირეთ:"
 
 	key[]: "ferry_msg"
 	val[]: "შესაძლო მიმართულებების სანახავად დააჭირეთ:"
@@ -4295,7 +4310,7 @@
 	val[]: "მატარებლის სადგური" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "ferry_intro"
-	val[]: "მიუთითეთ მარშრუტი"
+	val[]: "აირჩიეთ მიმართულება:"
 
 	key[]: "ferry_src"
 	val[]: "გამგზავრება" #+ Header of column containing the departing locations.
@@ -5202,7 +5217,7 @@
 	val[]: "ტრაქტორები"
 
 	key[]: "cn_trailers"
-	val[]: "დაბალი ნახევარმისაბმელი"
+	val[]: "ნახევარმისაბმელი დაბალი"
 
 	key[]: "cn_tv"
 	val[]: "ტელევიზორები"
@@ -5282,6 +5297,9 @@
 	key[]: "cn_chicken_meat"
 	val[]: "ქათმის ხორცი"
 
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19 ვაქცინა"
+
 	key[]: "cn_cottage_cheese"
 	val[]: "ხაჭო"
 
@@ -5295,7 +5313,7 @@
 	val[]: "ცარიელი კასრები"
 
 	key[]: "cn_empty_palettes"
-	val[]: "ცარიელი სადგამები"
+	val[]: "ცარიელი ქვესადგამები"
 
 	key[]: "cn_fish_chips"
 	val[]: "სათევზაო მოწყობილობები"
@@ -5583,7 +5601,7 @@
 	val[]: "მაცივარი"
 
 	key[]: "tn_brick_trailer"
-	val[]: "ბორტიანი მისაბმელი"
+	val[]: "ბორტიანი"
 
 	key[]: "tn_car_transporter"
 	val[]: "მანქანის გადამზიდი"
@@ -5595,19 +5613,19 @@
 	val[]: "ცემენტის შემრევი"
 
 	key[]: "tn_chemical_cistern"
-	val[]: "ავზი ქიმიური ნივთიერებებით"
+	val[]: "ქიმიური ნივთიერებების ცისტერნა"
 
 	key[]: "tn_universal"
 	val[]: "ბაქნიანი სატვირთო"
 
 	key[]: "tn_flat_bed"
-	val[]: "ბაქნიანი მისაბმელი"
+	val[]: "უბორტო"
 
 	key[]: "tn_food_cistern"
-	val[]: "ავზიანი მისაბმელი"
+	val[]: "ცისტერნიანი"
 
 	key[]: "tn_fuel_cistern"
-	val[]: "საწვავის ავზიანი მისაბმელი"
+	val[]: "საწვავის ცისტერნიანი"
 
 	key[]: "tn_glass_trailer"
 	val[]: "შუშების საზიდი"
@@ -5625,7 +5643,7 @@
 	val[]: "ხისმზიდი"
 
 	key[]: "tn_overweight"
-	val[]: "დაბალჩარჩოიანი მისაბმელი"
+	val[]: "დაბალჩარჩოიანი"
 
 	key[]: "tn_panel_transporter"
 	val[]: "ფილების საზიდი"
@@ -5664,13 +5682,13 @@
 	val[]: "თეთრი ჩარჩო"
 
 	key[]: "tcn_xmas_gift"
-	val[]: "სანტას ჩანთის სტილი"
+	val[]: "სანტას ჩანთის გაფორმება"
 
 	key[]: "tcn_xmas_night"
-	val[]: "სასწაულების ღამის სტილი"
+	val[]: "საოცრებათა ღამის გაფორმება"
 
 	key[]: "tcn_xmas_decor"
-	val[]: "საშობაო სულის სტილი"
+	val[]: "საშობაო განწყობის გაფორმება"
 
 #@}
 
@@ -6285,7 +6303,7 @@
 #@{
 
 	key[]: "truckman_op_relocate"
-	val[]: "გადაყვანა" #+ Moves truck to another garage.
+	val[]: "გადატანა" #+ Moves truck to another garage.
 
 	key[]: "truckman_op_sell"
 	val[]: "გაყიდვა" #+ Sels the truck.
@@ -6694,7 +6712,7 @@
 	val[]: "ავზი:" #+ Capacity of the fuel tank. For example "Fueltank:&nbsp;&nbsp;&nbsp;&nbsp; 600+400l"
 
 	key[]: "td_info_edition"
-	val[]: "ვერსია:" #+ Name of a special edition if any, for example "Edition: Route 66"
+	val[]: "გამოშვება:" #+ Name of a special edition if any, for example "Edition: Route 66"
 
 	key[]: "td_info_paint"
 	val[]: "მოხატვა: " #+ Vehicle paint specification, for example "Paint: Navy Blue"
@@ -6705,10 +6723,10 @@
 	val[]: "გაცვლის ფასი:" #+ Label of line with value of player's current truck for trade in purposes.
 
 	key[]: "td_tradein_total"
-	val[]: "თქვენ გადაიხდით:" #+ Label of line with amount the player will need to pay during the trade in. Shown if the new truck costs more than the existing one.
+	val[]: "დასამატებელი:" #+ Label of line with amount the player will need to pay during the trade in. Shown if the new truck costs more than the existing one.
 
 	key[]: "td_tradein_total_back"
-	val[]: "თქვენ მიიღებთ: " #+ Label of line with amount the player will receive during the trade in. Shown if the new truck costs less than the existing one.
+	val[]: "დაგიბრუნდებათ:" #+ Label of line with amount the player will receive during the trade in. Shown if the new truck costs less than the existing one.
 
 #+ Message boxes
 #@{
@@ -6937,7 +6955,7 @@
 	val[]: "გზამკვლევის ჩამოყრა" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
 
 	key[]: "append_new_pins"
-	val[]: "ახალი წერტილი მხოლოდ ბოლოში" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
+	val[]: "ახალი წერტილის მხოლოდ ბოლოში დამატება" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
 
 	key[]: "append_new_avoid_pins"
 	val[]: "ასაქცევის დამატება" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
@@ -7152,7 +7170,7 @@
 	val[]: "ფუნტი" #+ Pounds
 
 	key[]: "unit_t"
-	val[]: "ტ." #+ Tons
+	val[]: "ტ" #+ Tons
 
 	key[]: "nm"
 	val[]: "ნმ" #+ Newton metre
@@ -7161,7 +7179,7 @@
 	val[]: "კვ" #+ Kilowatt
 
 	key[]: "lb_ft"
-	val[]: "ფუნტი-ფუტი" #+ pound-foot
+	val[]: "ფნტ-ფტ" #+ pound-foot
 
 	key[]: "volt"
 	val[]: "ვ" #+ Volt
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7959,7 +7979,7 @@
 	val[]: "Euro Truck Simulator 2-ის ჩართვა არ ხერხდება, რადგან არ მოიძებნა შესაფერისი გრაფიკული მოწყობილობა\nრჩევა:\n\n1. დარწმუნდით, რომ თქვენი კომპიუტერის გრაფიკული მოწყობილობა აკმაყოფილებს თამაშის აუცილებელ მოთხოვნებს.\n2. განაახლეთ Microsoft DirectX.\n3. გადმოწერეთ და დააყენეთ გრაფიკული მოწყობილობის უახლესი დრაივერი\n4. შეცვალეთ OpenGL-ით გამოსახვა DirectX-ით.\n5. საქაღალდეში 'Documents' - 'Euro Truck Simulator 2' წაშალეთ გამართვის ფაილი 'config.cfg'. \n(თამაშის მომდევნო ჩართვისას, ეს ფაილი თავისით შეიქმნება)."
 
 	key[]: "sys_no_graphics_simple"
-	val[]: "Euro Truck Simulator 2-ს შეექმნა პრობლემა და არ ხერხდება ტექსტურების დახატავ (არ მოიძებნა შესაბამისი მოწყობილობა)."
+	val[]: "Euro Truck Simulator 2 ხარვეზს გადააწყდა და ვერ ახერხებს ტექსტურების გამოსახვას (არ მოიძებნა გრაფიკის შესაბამისი მოწყობილობა)."
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
@@ -8021,7 +8041,7 @@
 	val[]: "საჭის მეტი მოქნილობისთვის გამოიყენეთ თაგვი. ყველა სხვა მოქმედებას ისევ კლავიატურით შეასრულებთ. თაგვით მიმოხედვისთვის, უნდა გეჭიროთ რომელიმე, საგანგებოდ არჩეულ ღილაკზე."
 
 	key[]: "wiz_control_controller"
-	val[]: "გამოიყენეთ ჯოისტიკი ან საჭე თამაშის სრულად შესაგრძნობად. ამასთან, კვლავ შეგეძლებათ კლავიატურის ღილაკებით სხვადასხვა მოქმედების შესრულება და თაგვით გარშემო თავისუფლად მიმოხედვა."
+	val[]: "გამოიყენეთ ჯოისტიკი ან საჭე თამაშის სრულად შესაგრძნობად. ამასთან, კვლავ შეგეძლებათ კლავიატურის ღილაკებით სხვადასხვა მოქმედების შესრულება და თაგვით ირგვლივ თავისუფლად მიმოხედვა."
 #@}
 
 #+ Shown besides the controllers text when no controller is connected to the computer.
@@ -8294,11 +8314,255 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "ჩალისფერი გადასაფარებელი"
+
+	key[]: "blanket_square"
+	val[]: "კუბოკრული გადასაფარებელი"
+
+	key[]: "book"
+	val[]: "წიგნი"
+
+	key[]: "bottle_sixpack"
+	val[]: "ბოთლების შეკვრა"
+
+	key[]: "breakfast_cereals"
+	val[]: "შვრიის ფანტელი საუზმისთვის"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "თავქანქარა ბულდოგი"
+
+	key[]: "cap"
+	val[]: "კეპი"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "მობილური"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "თავქანქარა ჩიუაუა"
+
+	key[]: "dashboard"
+	val[]: "მაჩვენებლების დაფა"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "მიწოდების მოხსენება"
+
+	key[]: "electric_cooling_box"
+	val[]: "ელექტრომაცივარი ყუთი"
+
+	key[]: "endless_nourishment"
+	val[]: "ულევი საჭმელი"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 თამაშის დისკი"
+
+	key[]: "ets2_lunch_box"
+	val[]: "საჭმლის ყუთი ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 სატვირთოს ჩანთა"
+
+	key[]: "festive_mug"
+	val[]: "სადღესასწაულო ჭიქა"
+
+	key[]: "fire_extinguisher"
+	val[]: "ცეცხლსაქრობი"
+
+	key[]: "hand_bag"
+	val[]: "ხელჩანთა"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "ხელნაკეთი ტყავის საფულე"
+
+	key[]: "hula_doll"
+	val[]: "თოჯინა ჰულა"
+
+	key[]: "instant_lunch"
+	val[]: "სწრაფი მომზადების საკვები"
+
+	key[]: "instant_lunch_box"
+	val[]: "სწრაფი მომზადების საკვების შეკვრა"
+
+	key[]: "magazines"
+	val[]: "ჟურნალები"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "მაგნიტური კომპასი"
+
+	key[]: "map"
+	val[]: "რუკა"
+
+	key[]: "notebook"
+	val[]: "ლეპტოპი"
+
+	key[]: "paper_towels"
+	val[]: "ქაღალდის ხელსაწმენდი"
+
+	key[]: "pilot_sunglasses"
+	val[]: "მფრინავის სათვალეები"
+
+	key[]: "plush_bear"
+	val[]: "ფუმფულა დათვი"
+
+	key[]: "portable_navigator"
+	val[]: "გადასატანი გზამკვლევი"
+
+	key[]: "rugged_style_cap"
+	val[]: "უხეში სტილის კეპი"
+
+	key[]: "scs_coffee_mug"
+	val[]: "ყავის ჭიქა SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "საძილე ტომარა"
+
+	key[]: "tablet"
+	val[]: "პლანშეტი"
+
+	key[]: "weekend_bag"
+	val[]: "უქმეების ჩანთა"
+
+	key[]: "winter_bauble"
+	val[]: "ნაძვის ხის მოსართავი"
+
+	key[]: "winter_blast_gift"
+	val[]: "საჩუქარი „ზამთრის ქარიშხალი“"
+
+	key[]: "wise_owl_offering"
+	val[]: "საჩუქარი „ბრძენი ბუ“"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ბალიში ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "ბალიში ცეცხლით"
+
+	key[]: "goodyear_pillow"
+	val[]: "ბალიში Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "ბალიში „ტკბილი სახლი“"
+
+	key[]: "skull_pillow"
+	val[]: "ბალიში თავის ქალათი"
+
+	key[]: "status_pillow"
+	val[]: "ბალიში „მდგომარეობა“"
+
+	key[]: "track_pillow"
+	val[]: "ბალიში „ნაკვალევი“"
+
+	key[]: "trucker_pillow"
+	val[]: "ბალიში „შოფერი“"
+
+	key[]: "vaclav_pillow"
+	val[]: "ვაცლავის ბალიში"
+
+	key[]: "wise_heart_pillow"
+	val[]: "ბალიში „ბრძენი გულით“"
+
+	key[]: "zzz_pillow"
+	val[]: "ბალიში „ხრრ“"
+
+
+	key[]: "air_freshener"
+	val[]: "ჰაერის გამწმენდი"
+
+	key[]: "smelling_sack"
+	val[]: "სურნელოვანი ტომსიკა"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი ვაშლი"
+
+	key[]: "basketball_ball"
+	val[]: "კალათბურთის ბურთი"
+
+	key[]: "black_plush_cube"
+	val[]: "შავი ფუმფულა კუბი"
+
+	key[]: "chromed_skull"
+	val[]: "ქრომირებული ქალა"
+
+	key[]: "disco_ball"
+	val[]: "დისკო-ბურთი"
+
+	key[]: "eight_ball"
+	val[]: "რვიანი ბურთი"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი ETS2"
+
+	key[]: "football_ball"
+	val[]: "ფეხბურთის ბურთი"
+
+	key[]: "home_trucker_insignia"
+	val[]: "ორდენი „სახლის გადამზიდი“"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "ორდენი „იმედის გადამზიდი“"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "ჰაერის გამწმენდი SCS"
+
+	key[]: "tennis_ball"
+	val[]: "ჩოგბურთის ბურთი"
+
+	key[]: "trophy_skull"
+	val[]: "დასაკიდი „ქალა“"
+
+	key[]: "white_plush_cube"
+	val[]: "თეთრი ფუმფულა კუბი"
+
+
+	key[]: "black_style_mug"
+	val[]: "შავი ჭიქა" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "თეთრი-ფორთოხლისფერი ჭიქა" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "შავი-ფორთოხლისფერი ჭიქა" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "ფუმფულა სათამაშო" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "ტყავის საფულე" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "დაფა" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "შუა თარო (ექსკლუზივი)" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "შუა თარო (წითელი ხე)" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "შუა თარო (შავი)" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "გრძელი თარო (რჩეული)" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "გრძელი თარო (წითელი ხე)" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "გრძელი თარო (შავი)" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
-	val[]: "ზემძლავრი" #+ Basic truck accesory general
+	val[]: "ჩვეულებრივი" #+ Basic truck accesory general
 
 	key[]: "duty_paint"
-	val[]: "ზემძლავრი (მოხატულობა)" #+ Basic but paintable truck accesory
+	val[]: "ჩვეულებრივი შეღებილი" #+ Basic but paintable truck accesory
 
 	key[]: "classic"
 	val[]: "ძველებური" #+ Classical or vintage truck accesory
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "ქრომირებული" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "ქრომირებული II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "შეღებილი და ქრომირებული" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "ჩვეულებრივი ორმაგი" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "რჩეული" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "მორგებული ფერი" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "ჩვეულებრივი" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "ჩვეულებრივი ქრომირებული" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "ჩვეულებრივი მოხატული" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "კამათლები" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "დიადი ვარსკვლავი" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -8529,7 +8809,7 @@
 	val[]: "გამოსვლა"
 
 	key[]: "photomode_reset"
-	val[]: "განულება"
+	val[]: "ჩამოყრა"
 
 	key[]: "photomode_sm"
 	val[]: "სურათების სამართავი"
@@ -8755,7 +9035,7 @@
 	val[]: "მისაბმელები"
 
 	key[]: "mod_category_interior"
-	val[]: "ინტერიერი"
+	val[]: "სალონი"
 
 	key[]: "mod_category_tuning_parts"
 	val[]: "ავტონაწილები"
@@ -9226,16 +9506,16 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "საჭირო კრებული (თამაშის ოფიციალური გაფართოება) $DEPENDENCY_NAME$ ადგილზე არაა. ამ შენახული თამაშის სწორად სამუშაოდ, საჭიროა ამ კრებულის დაყენება და გააქტიურება. მოაგვარეთ ეს პრობლემა და შემდეგ ჩატვირთეთ თამაში." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "საჭირო კრებული (თამაშის ოფიციალური გაფართოება) $DEPENDENCY_NAME$ ადგილზე არაა. შენახული თამაშის სათანადოდ მუშაობისთვის, საჭიროა ამ კრებულის დაყენება და ამოქმედება. მოაგვარეთ აღნიშნული და შემდეგ ჩატვირთეთ თამაში." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
-	val[]: "არასავალდებულო კრებული (თამაშის გაფართოება) $DEPENDENCY_NAME$ არ მოიძებნა. შეამოწმეთ კრებულების მდგომარეობა.<br><br>თამაში ჩაიტვირთება, მაგრამ ზოგიერთი ფუნქცია შეიძლება მიუწვდომელი იყოს." #+ Information showed when dependency of type optional DLC is missing.
+	val[]: "არააუცილებელი კრებული (თამაშის გაფართოება) $DEPENDENCY_NAME$ არ მოიძებნა. შეამოწმეთ კრებულების მდგომარეობა.<br><br>თამაში მაინც ჩაიტვირთება, მაგრამ ზოგიერთი ფუნქცია მიუწვდომელი იქნება." #+ Information showed when dependency of type optional DLC is missing.
 
 	key[]: "missing_mod"
-	val[]: "$DEPENDENCY_NAME$ არ მოიძებნა ან გათიშულია. გადაამოწმეთ ჩართულია თუ არა დამატება, თამაში შეიძლება ჩაიტვირთოს, მაგრამ დამატების არარსებობამ შეიძლება გამოიწვიოს პრობლემები." #+ Information displayed when dependency of type mod is missing.
+	val[]: "$DEPENDENCY_NAME$ არ მოიძებნა ან გათიშულია. გადაამოწმეთ ჩართულია თუ არა ეს დამატება. შეგიძლიათ მაინც სცადოთ ჩატვირთვა. გამომდინარე დამატების დანიშნულებიდან, შეიძლება თამაში ვერც ჩაიტვირთოს ან სხვა ხარვეზები გააჩნდეს." #+ Information displayed when dependency of type mod is missing.
 
 	key[]: "incompatible_mod"
-	val[]: "$DEPENDENCY_NAME$ შეუთავსებელია თამაშის ვერსიასთან, ეს ნიშნავს, რომ დამატება თავსებადია თამაშის გარკვეულ ვერსიებთან.<br><br>პრობლემის მოგვარება:<br>- სცადეთ იპოვოთ დამატების განახლებული ვერსია.<br>- განაახლეთ ან ჩამოაქვეითეთ თამაშის ვერსია.<br><br>შეგიძლიათ ჩატვირთოთ თამაში, მაგრამ დამატება არ იქნება გაშვებული და შეიძლება პრობლემებიც კი შეგიქმნათ თამაშის ჩატვირთვისას." #+ Information displayed when dependency of type mod is incompatible with the version of the game currently used by player.
+	val[]: "$DEPENDENCY_NAME$ შეუთავსებელია თამაშის ამ ვერსიასთან, ანუ დამატება თავსებადია თამაშის მხოლოდ ზოგიერთ ვერსიასთან.<br><br>გადაწყვეტები:<br>- სცადეთ იპოვოთ განახლებული დამატება, ამ ვერსიასთან თავსებადი.<br>- თავად თამაში განაახლეთ ან წინა ვერსიაზე გადაიყვანეთ.<br><br>შეგიძლიათ მაინც სცადოთ ჩატვირთვა. გამომდინარე დამატების დანიშნულებიდან, შეიძლება თამაში ვერც ჩაიტვირთოს ან სხვა ხარვეზები გააჩნდეს." #+ Information displayed when dependency of type mod is incompatible with the version of the game currently used by player.
 
 	key[]: "missing_dependencies_t"
 	val[]: "ნაკლული დამოკიდებულებები" #+ The missing dependencies dialog title.
@@ -9268,7 +9548,7 @@
 	val[]: "სახელოსნოს დამატება" #+ Steam Workshop mod.
 
 	key[]: "removable_dlc"
-	val[]: "არასავალდებულო კრებული" #+ DLC that can be removed or disabled.
+	val[]: "არააუცილებელი კრებული" #+ DLC that can be removed or disabled.
 
 	key[]: "required_dlc"
 	val[]: "აუცილებელი კრებული" #+ DLC that is required to load save that is depending on it.
@@ -9433,7 +9713,7 @@
 	val[]: "ამ დამატებითი კრებულის დასარეგისტრებლად გამოყენებული Steam-ის ანგარიში უკვე მიბმულია World of Trucks-ის სხვა ანგარიშზე. იმისთვის რომ დაარეგისტროთ კრებული, საჭიროა გამოიყენოთ ისეთი ანგარიში რომელიც მიბმული არაა WOT-ის ანგარიშზე." #+ The error shown to the user when the connect content operation fails because the current Steam account is connected to a different WoTr account.
 
 	key[]: "registration_result_token_expired"
-	val[]: "პრობლემა Steam-ზე. სცადეთ მოგვიანებით." #+ The message displayed when the connect content operation fails because the Steam token has expired.
+	val[]: "Steam ხარვეზს წააწყდა. სცადეთ მოგვიანებით." #+ The message displayed when the connect content operation fails because the Steam token has expired.
 
 	key[]: "registration_result_serial_invalid"
 	val[]: "დამატებითი კრებულის გასააქტიურებელი გასაღები არასწორია. დაგვიკავშირდით მისამართზე support@scssoft.com" #+ The message displayed when the connect content operation failed because the serial key is invalid.
@@ -9625,7 +9905,7 @@
 	val[]: "აირიდეთ სახიფათო ვითარება გამყოლ მანქანებთან მოძრაობისას და შეინარჩუნეთ მანძილი მათ შორის."
 
 	key[]: "oversize_tutorial_warning_offroad"
-	val[]: "არ გადაუხვიოთ დაგეგმილი მარშრუტიდან, არც ბენზინგასამართ სადგურებზე, არც მოსასვენებელ ადგილებზე და ა. შ."
+	val[]: "არ გადაუხვიოთ დაგეგმილი გზიდან, არც ბენზინგასამართ სადგურებზე, არც მოსასვენებელ ადგილებზე და ა. შ."
 
 	key[]: "oversize_tutorial_warnings_speed"
 	val[]: "დაემორჩილეთ სიჩქარის შეზღუდვას რომელსაც წინა გამყოლი მანქანა დააწესებს."
@@ -9654,7 +9934,7 @@
 
 	#+ Message for fade_in screen when taking OVS mission with your own truck.
 	key[]: "oversize_preparing_cargo"
-	val[]: "სატვირთოს ავზები შეივსება და მგზავრობის საათები აღდგება."
+	val[]: "სატვირთოს ავზები შევსებულია და მგზავრობის საათები აღდგენილია."
 
 	#+ Warning when player want to use assistance call during oversize mission.
 	key[]: "oversize_assistance_reason"
@@ -9920,7 +10200,7 @@
 	val[]: "შერჩეული მისაბმელი წარმატებით გადაყვანილია ახალ ფარეხში, ქალაქი $CITY$." #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_confirm_relocate"
-	val[]: "ნამდვილად გსურთ, $TRAILER$ განთავსდეს ფარეხში, ქალაქი $CITY$?" #+ Message shown after trailer relocation.
+	val[]: "ნამდვილად გსურთ, $TRAILER$ მისაბმელი განთავსდეს ფარეხში, ქალაქი $CITY$?" #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_swap_blocked"
 	val[]: "გადასაცვლელად, ეწვიეთ მისაბმელის ფარეხს" #+ Tooltip message shown when player is not able to swap his currently attached trailer with the currently previewed trailer in trailer manager because he is not in the garage where previewed trailer is stored at.
@@ -9947,7 +10227,7 @@
 	val[]: "ნამდვილად გსურთ, დატოვოთ მისაბმელების შეძენის არე?"
 
 	key[]: "trailerdealer_buy_confirm"
-	val[]: "ნამდვილად გსურთ შეიძინოთ $TRAILER$ ღირებულებით $PRICE$ და განათავსოთ ფარეხში, ქალაქი $CITY$?" #+ Confirmation shown when player want's to buy new trailer.
+	val[]: "ნამდვილად გსურთ შეიძინოთ $TRAILER$ მისაბმელი ღირებულებით $PRICE$ და განათავსოთ ფარეხში, ქალაქი $CITY$?" #+ Confirmation shown when player want's to buy new trailer.
 
 	key[]: "trailerdealer_buy_confirm_no_truck"
 	val[]: "თქვენ ჯერ გყავთ საკუთარი სატვირთო, შესაბამისად ვერ გამოიყენებთ თქვენს მისაბმელს. ნამდვილად გსურთ შერჩეული მისაბმელის შეძენა?" #+ Confirmation shown when player tries to buy trailer but he has no truck.
@@ -9974,7 +10254,7 @@
 	val[]: "გადაცვლა" #+ The button swapping selected trailer with currently attached trailler.
 
 	key[]: "trailerman_op_store"
-	val[]: "მოცილება" #+ The button parking current trailer.
+	val[]: "ჩახსნა" #+ The button parking current trailer.
 
 	key[]: "trailerman_op_make_private"
 	val[]: "გახდეს პირადი" #+ Make the current trailer private (this trailer will not be taken by AI drivers).
@@ -10163,7 +10443,7 @@
 	val[]: "მისაბმელის გაყიდვა" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_msg_reallysell"
-	val[]: "ნამდვილად გსურთ გაყიდოთ $TRAILER$ ღირებულებით $MONEY$?"
+	val[]: "ნამდვილად გსურთ გაყიდოთ $TRAILER$ მისაბმელი ღირებულებით $MONEY$?"
 
 	key[]: "trailerman_msg_nosell"
 	val[]: "მისაბმელს ვერ გაყიდით სანამ მისით სარგებლობთ! დაასრულეთ მიწოდება და შემდეგ სცადეთ."
@@ -10172,10 +10452,10 @@
 #+ Message box shown to confirm take of selected trailer.
 #@{
 	key[]: "trailerman_confirm_take"
-	val[]: "ნამდვილად გსურთ, გამოიყენოთ მისაბმელი $TRAILER$?<br><br>იგი დაგხვდებათ თქვენს ფარეხში, ქალაქი $CITY$."
+	val[]: "ნამდვილად გსურთ, გამოიყენოთ $TRAILER$ მისაბმელი?<br><br>იგი დაგხვდებათ თქვენს ფარეხში, ქალაქი $CITY$."
 
 	key[]: "trailerman_confirm_take_from_garage"
-	val[]: "ნამდვილად გსურთ წაიყვანოთ მისაბმელი $TRAILER$?"
+	val[]: "ნამდვილად გსურთ წაიყვანოთ $TRAILER$ მისაბმელი?"
 #@}
 
 #+ Message box shown to confirm store of selected trailer.
@@ -10187,7 +10467,7 @@
 #+ Message box shown to confirm swap of selected trailer with the currently attached owned trailer.
 #@{
 	key[]: "trailerman_confirm_swap"
-	val[]: "ნამდვილად გსურთ, ამჟამად ჩაბმული მისაბმელის ნაცვლად გამოიყენოთ $TRAILER$?"
+	val[]: "ნამდვილად გსურთ, ჩაბმული მისაბმელის ნაცვლად გამოიყენოთ $TRAILER$ მისაბმელი?"
 #@}
 
 #+ Message box shown when user requests to use a broken source trailer in copy configuration.
@@ -10268,6 +10548,22 @@
 	val[]: "მისაბმელზე უარის თქმა სამუშაოს შესრულებისას შეუძლებელია." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "მანქანის მორგება"
+
+	key[]: "adj_mirrors"
+	val[]: "სარკეების მორგება"
+
+	key[]: "adj_lights"
+	val[]: "განათების მორგება"
+
+	key[]: "adj_seats"
+	val[]: "სავარძლის მორგება"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "სამაცივრე"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "ცისტერნა"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "გაყინული, გაცივებული საქონელი"
+
 #@}
 
 #+ Trailer chain type names.
@@ -10605,7 +10904,7 @@
 	val[]: "გზის ასაქცევები"
 
 	key[]: "detour_gps_warning"
-	val[]: "გზამკვლევის შეცდომა გზის გადაკეტვის გამო. მონახეთ შემოვლითი მარშრუტი ან დაამატეთ ასარიდებელი გზა მსოფლიო რუკაზე."
+	val[]: "გზამკვლევის შეცდომა გზის გადაკეტვის გამო. მონახეთ შემოვლითი გზები ან დაამატეთ ასარიდებელი წერტილები მსოფლიო რუკაზე."
 #@}
 
 #+ Steam cloud.
@@ -11546,25 +11845,22 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
-	val[]: "ქალაქის წინსვლის ნახვა..."
+	val[]: "ქალაქის წინსვლის დადგენა..."
 
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "გადაზიდვები მომდევნო ვარსკვლავამდე:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "ყველა ვარსკვლავი მოპოვებულია."
+	key[]: "xmas_delivery_progress"
+	val[]: "წინსვლა საჩუქრების მიწოდებაში"
 
 	key[]: "xmas19_map_description"
-	val[]: "გადაატარეთ მაჩვენებელი ქალაქს, შობის ღონისძიებაში წინსვლის შესამოწმებლად. იხილეთ $WOTR_URL$ წინსვლის სრული შეჯამებისთვის."
+	val[]: "გადაატარეთ მაჩვენებელი ქალაქს, შობის ღონისძიებაში წინსვლის სანახავად. შეჯამებისთვის ეწვიეთ $WOTR_URL$."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "ქალაქის შესატანი წვლილი, ერთობის მიზნის მიღწევაში, შესრულებულია!<br><br>არ გსურთ სხვა ქალაქსაც დაეხმაროთ საჩუქრების მიწოდებაში?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "ამ ქალაქების წვლილი, ერთობის მიზნის მიღწევაში, შესრულებულია!<br><br>არ გსურთ სხვა ქალაქებსაც დაეხმაროთ საჩუქრების მიწოდებაში?"
 
 	key[]: "xmas19_back"
 	val[]: "უკან დაბრუნება"

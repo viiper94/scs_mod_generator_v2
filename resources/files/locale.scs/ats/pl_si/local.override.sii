@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Elementy tylnej ścianki sleepera"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Światła do kabiny"
 
 	key[]: "cabdefl"
 	val[]: "Dachowe spoilery"
+
+	key[]: "cup_holder"
+	val[]: "Uchwyty na kubki"
 
 	key[]: "deflector"
 	val[]: "Grill"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Tył kabiny"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Elementy szafki" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Uchwyty na kubki" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Progi"
 
@@ -93,21 +111,36 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Dachowe światła"
 
+	key[]: "toyback"
+	val[]: "Elementy podłogowe sleepera" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Elementy podłogowe" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Półka pod deską rozdzielczą" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Elementy sofy" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Elementy stolika" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Spoiler"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Areo malowane"
+	val[]: "Areo malowane"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Zbiornik aluminiowy"	#+ Aluminium tank accessory (water, fuel, etc)
@@ -115,8 +148,8 @@ localization_db : .localization
 	key[]: "bottom"
 	val[]: "Dolny"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Piła łańcuchowa"
+	key[]: "cabinet"
+	val[]: "Szafka"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Chromowany zbiornik"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "Zbiornik"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "Światła do jazdy dziennej"		#+ Daylight running lamps
+	val[]: "Światła do jazdy dziennej"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "Światła przeciwmgielne"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Uchwyty na kubki (otwarte)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Uchwyty na kubki (lewy otwarty)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Uchwyty na kubki (prawy otwarty)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Uchwyty na kubki (zamknięte)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Piłka do futbolu amerykańskiego"
+
+	key[]: "ats_bag"
+	val[]: "Torba z logiem ATS"
+
+	key[]: "ats_cap"
+	val[]: "Czapka ATS"
+
+	key[]: "ats_game_box"
+	val[]: "Pudełko z grą ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "Pudełko na lunch z logiem ATS"
+
+	key[]: "ats_mug"
+	val[]: "Kubek z logiem ATS"
+
+	key[]: "ats_truck_bag"
+	val[]: "Torba w kształcie ciężarówki ATS"
+
+	key[]: "baseball_ball"
+	val[]: "Piłka baseballowa"
+
+	key[]: "baseball_bat"
+	val[]: "Kij baseballowy"
+
+	key[]: "bee"
+	val[]: "Pszczoła"
+
+	key[]: "black_ats_mug"
+	val[]: "Czarny kubek z logiem ATS"
+
+	key[]: "blanket_stars"
+	val[]: "Koc w gwiazdki"
+
+	key[]: "bottle"
+	val[]: "Butelka"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Puszka"
+
+	key[]: "can_pack"
+	val[]: "Karton z puszkami"
+
+	key[]: "can_sixpack"
+	val[]: "Sześciopak puszek"
+
+	key[]: "cans"
+	val[]: "Konserwy"
+
+	key[]: "car_perfume"
+	val[]: "Zapach samochodowy"
+
+	key[]: "cardbox"
+	val[]: "Pudełko kartonowe"
+
+	key[]: "carrier"
+	val[]: "Pojemnik na butelki"
+
+	key[]: "chainsaw_toy"
+	val[]: "Piła łańcuchowa"
+
+	key[]: "chewing_gums"
+	val[]: "Guma do żucia"
+
+	key[]: "coffee_cup"
+	val[]: "Kubek do kawy"
+
+	key[]: "costs_list"
+	val[]: "Dziennik zużycia paliwa"
+
+	key[]: "dreamcatcher"
+	val[]: "Łapacz snów"
+
+	key[]: "emergency_triangles"
+	val[]: "Trójkąty ostrzegawcze"
+
+	key[]: "expenses_list"
+	val[]: "Raport z wydatków"
+
+	key[]: "fishing_bag"
+	val[]: "Torba wędkarska"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Maska bramkarza"
+
+	key[]: "guitar"
+	val[]: "Gitara"
+
+	key[]: "guitar_case"
+	val[]: "Pokrowiec na gitarę"
+
+	key[]: "hat"
+	val[]: "Kapelusz"
+
+	key[]: "hockey_stick"
+	val[]: "Kij hokejowy"
+
+	key[]: "holy_field_blanket"
+	val[]: "Świąteczny koc"
+
+	key[]: "honey_bee"
+	val[]: "Pszczółka"
+
+	key[]: "laundry_box"
+	val[]: "Kosz na pranie"
+
+	key[]: "peppermints"
+	val[]: "Landrynki miętowe"
+
+	key[]: "plush_donut"
+	val[]: "Pluszowy donut"
+
+	key[]: "plush_lion"
+	val[]: "Pluszowy lew"
+
+	key[]: "power_inverter"
+	val[]: "Przetwornica napięcia"
+
+	key[]: "propeller"
+	val[]: "Wiatraczek"
+
+	key[]: "shoes"
+	val[]: "Buty"
+
+	key[]: "spearmints"
+	val[]: "Miętówki"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sportowe okulary przeciwsłoneczne"
+
+	key[]: "stack_of_burgers"
+	val[]: "Stos burgerów"
+
+	key[]: "usa_cap"
+	val[]: "Czapka USA"
+
+	key[]: "usa_flag"
+	val[]: "Flaga USA"
+
+	key[]: "usa_flag_cap"
+	val[]: "Czapka z flagą USA"
+
+	key[]: "ventilator"
+	val[]: "Wentylator"
+
+	key[]: "wotr_cap"
+	val[]: "Czapka WoTr"
+
+
+	key[]: "ats_pillow"
+	val[]: "Poduszka z logiem ATS"
+
+	key[]: "heart_pillow"
+	val[]: "Poduszka z sercem"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Poduszka z napisem \"Kiss Me\""
+
+	key[]: "protector_pillow"
+	val[]: "Poduszka z napisem \"Genuine Protector\""
+
+	key[]: "star_pillow"
+	val[]: "Poduszka w kształcie gwiazdy"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Poduszka z napisem \"Truck Yeah\""
+
+	key[]: "usa_flag_pillow"
+	val[]: "Poduszka z flagą USA"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Poduszka z tarczą USA"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Odświeżacz powietrza z logiem ATS"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Kaktusowy odświeżacz powietrza"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Cytrynowy odświeżacz powietrza"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Klonowy odświeżacz powietrza"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Pomarańczowy odświeżacz powietrza"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Odświeżacz powietrza w kształcie flagi USA"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Niebieska pluszowa kostka"
+
+	key[]: "red_plush_cube"
+	val[]: "Czerwona pluszowa kostka"
+
+	key[]: "double_plush_cube"
+	val[]: "Podwójna pluszowa kostka"
+
+
+	key[]: "alien_head"
+	val[]: "Głowa ufoludka"
+
+	key[]: "cowboy_head"
+	val[]: "Głowa kowboja"
+
+	key[]: "pirate_head"
+	val[]: "Głowa pirata"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Naklejka z orłem"
+
+	key[]: "guitar_sticker"
+	val[]: "Naklejka z gitarą"
+
+	key[]: "hat_sticker"
+	val[]: "Naklejka z kapeluszem"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Naklejka z syropem klonowym"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Naklejka z kierownicą"
+
+	key[]: "taco_sticker"
+	val[]: "Naklejka z Taco"
+
+	key[]: "truck_sticker"
+	val[]: "Naklejka z ciężarówką"
+
+	key[]: "usa_country_sticker"
+	val[]: "Naklejka z mapą USA"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Naklejka z flagą USA"
+
+#@}
 
 #@}
 
@@ -392,6 +688,9 @@ localization_db : .localization
 	key[]: "cn_vegetable"
 	val[]: "Gymizy"
 
+	key[]: "cn_westernstar_49x"
+	val[]: "Ciężarówki Western Star"
+
 #@}
 
 #+ Special transport cargo names
@@ -599,7 +898,7 @@ localization_db : .localization
 	val[]: "Podkontenerowa"
 
 	key[]: "curtainside"
-	val[]: "Przesuwna plandeka"
+	val[]: "Plandeka przesuwna"
 
 	key[]: "chipvan"
 	val[]: "Wiórowa"
@@ -866,13 +1165,13 @@ localization_db : .localization
 	val[]: "53ft, Długi rozstaw"
 
 	key[]: "tr_spreader_1axle"
-	val[]: "Spreader, 1 Axle"
+	val[]: "Wydłużona, 1 oś"
 
 	key[]: "tr_spreader_2axle"
-	val[]: "Spreader, 2 Axles"
+	val[]: "Wydłużona, 2 osie"
 
 	key[]: "tr_spreader_3axle"
-	val[]: "Spreader, 3 Axles"
+	val[]: "Wydłużona, 3 osie"
 
 	key[]: "tr_tp_double"
 	val[]: "Turnpike Double"
@@ -915,7 +1214,7 @@ localization_db : .localization
 	val[]: "Podkontenerowa"
 
 	key[]: "bs_curtain"
-	val[]: "Przesuwna plandeka"
+	val[]: "Plandeka przesuwna"
 
 	key[]: "bs_dryvan"
 	val[]: "Zabudowana"
@@ -924,7 +1223,7 @@ localization_db : .localization
 	val[]: "Platforma"
 
 	key[]: "bs_flatbed_alu"
-	val[]: "Aluminiowa platforma"
+	val[]: "Platforma aluminiowa"
 
 	key[]: "bs_food_tank"
 	val[]: "Cysterna spożywcza"
@@ -945,13 +1244,13 @@ localization_db : .localization
 	val[]: "Sześciokłonicowa"
 
 	key[]: "bs_wood_lowboy"
-	val[]: "Drewniana podłoga"
+	val[]: "Niskopod. z drewnianą podłogą"
 
 	key[]: "bs_wood_full_lowboy"
-	val[]: "Zabudowana drewniana podłoga"
+	val[]: "Niskopod. z pełną drewnianą podłogą"
 
 	key[]: "bs_wood_alu_lowboy"
-	val[]: "Drewniano-aluminiowa podłoga"
+	val[]: "Niskopod. z drewniano-aluminiową podłogą"
 
 	key[]: "bs_reefer"
 	val[]: "Chłodnia"
@@ -1024,7 +1323,7 @@ localization_db : .localization
 	val[]: "Standardowe drzwi, Owiewka"
 
 	key[]: "wooden_deck"
-	val[]: "Drewniany pokład"
+	val[]: "Drewniana podłoga"
 #@}
 
 #+ Names of countries/states
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Miejsce odpoczynku Midvale Hill"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Węzeł Albuquerque"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Miasto Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Miasto Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 rest area"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "The Route 66w Rest Stop"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "US-82 rest area"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "The Arizona Welcome Center Rest Area"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 Rest Area"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "The Historic Monument of Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Miasto Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Latarnia morska Yaquina Head"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Studnia Thora"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astoria-Megler Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport Yaquina Bay Bridge"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles city"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 Sequoia Forest"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregon Paper Mill"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 Vista"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "The Biggs Junction"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Stocznia w Portland"
 
 	# Utah
 

@@ -4,7 +4,7 @@
 	val[]: "Nederlands"
 
 	key[]: "moded_game"
-	val[]: "Doordat je mods hebt geïnstalleerd, is er geen ondersteuning beschikbaar. Mocht je problemen ondervinden tijdens het spelen, probeer dan eerst de mods uit te schakelen!"
+	val[]: "Het spel bevat niet-goedgekeurde wijzigingen. Er is geen ondersteuning beschikbaar voor aangepaste spellen. Probeer modificaties te verwijderen als je problemen of crashes ervaart!"
 
 # Usefull urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
@@ -167,7 +167,7 @@
 	val[]: "Aantal versnellingen" #+  amount of gears in trucks's transmission
 
 	key[]: "power"
-	val[]: "Vermogen" #+  truck's engine power
+	val[]: "Motorvermogen" #+  truck's engine power
 
 	key[]: "truck_analysis_heavy_introduction"
 	val[]: "Je staat op het punt om een zwaar transport vracht aan te nemen. Herzie jouw vrachtwagen om te kijken of hij deze taak aankan." #+  Description in the truck analysis pop-up window when taking heavy cargo job
@@ -525,23 +525,32 @@
 	key[]: "curtain_f"
 	val[]: "Gordijnen" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Airconditioneraccessoires" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Bedaccessoires" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
-	val[]: "Hangende  extra's" #+ Interior hanging accesories
+	val[]: "Hangaccessoires" #+ Interior hanging accesories
 
 	key[]: "toyseat"
-	val[]: "Stoel extra's" #+ Interior accessories placed in the passenger seat
+	val[]: "Stoelaccessoires" #+ Interior accessories placed in the passenger seat
 
 	key[]: "toystand"
-	val[]: "Console extra's" #+ Interior accessories placed on stands or center console available in the truck
+	val[]: "Console-accessoires" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
 	val[]: "Motortunnel extra's" #+ Interior accessories placed on the floor in the center of the truck cabin
 
+	key[]: "l_pillow"
+	val[]: "Kussenaccessoires"	#+ Interior accessories placed on pillow place in back of the truck cabin
+
 	key[]: "set_dashbrd"
-	val[]: "Dashboard Extra's" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Dashboardaccessoires" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
-	val[]: "Voorruit extra's" #+ Large Pin for sets of small pins of the windshield accessories
+	val[]: "Voorruitaccessoires" #+ Large Pin for sets of small pins of the windshield accessories
 
 	key[]: "set_lglass"
 	val[]: "Voorruit extra's" #+ Large Pin for sets of small pins of the corner of windshield
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Kleurcorrectie" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Reflectiedetail" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4209,6 +4221,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Je moet je differentieel ontgrendelen of er zal schade ontstaan. <br>Druk op de volgende toets om je differentieel te ontgrendelen:"
 
+	key[]: "tow_hint"
+	val[]: "Als je niet meer uit een lastige situatie kunt komen, is het mogelijk om de sleepdienst te gebruiken. Druk op:"
+
 	key[]: "ferry_msg"
 	val[]: "Bekijk mogelijke reisbestemmingen door te drukken op:"
 
@@ -4268,7 +4283,7 @@
 	val[]: "Niet gestopt bij het weegstation."
 
 	key[]: "offence_illegal_trailer"
-	val[]: "Deze trailer is hier verboden"
+	val[]: "Boete voor illegale vrachtwagencombinatie."
 
 	key[]: "offence_avoid_inspection"
 	val[]: "Verplichte inspectie overgeslagen."
@@ -5282,6 +5297,9 @@
 	key[]: "cn_chicken_meat"
 	val[]: "Kippenvlees"
 
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19-Vaccin"
+
 	key[]: "cn_cottage_cheese"
 	val[]: "Kwark"
 
@@ -5412,7 +5430,7 @@
 	val[]: "Transmissies"
 
 	key[]: "cn_truck_battery"
-	val[]: "Vrachtwagens Accu's"
+	val[]: "Vrachtwagenaccu's"
 
 	key[]: "cn_truck_rims"
 	val[]: "Vrachtwagenvelgen"
@@ -6667,7 +6685,7 @@
 	val[]: "Midlift-as" #+ Type of lifted axle - middle"
 
 	key[]: "taglift"
-	val[]: "Taglift-as" #+ Type of lifted axle - rear"
+	val[]: "Hefbare Sleepas" #+ Type of lifted axle - rear"
 
 	key[]: "td_info_cab"
 	val[]: "Cabine:" #+ Type of cabin. For example "Cabin:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privilege"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7288,7 +7308,7 @@
 	val[]: "Extra lichten voorkant" #+ Checkbox enabling lights on additional front accessories.
 
 	key[]: "roof_aux"
-	val[]: "Dak extra's" #+ Checkbox enabling lights on additional roof accessories.
+	val[]: "Dakaccessoires" #+ Checkbox enabling lights on additional roof accessories.
 
 	key[]: "dash_backlight"
 	val[]: "Dashboardverlichting" #+ Label of slider controlling intensity of dashboard backlight.
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Beige Deken"
+
+	key[]: "blanket_square"
+	val[]: "Deken met Vierkantjes"
+
+	key[]: "book"
+	val[]: "Boek"
+
+	key[]: "bottle_sixpack"
+	val[]: "Sixpack Flessen"
+
+	key[]: "breakfast_cereals"
+	val[]: "Ontbijtgranen"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Buldog Wiebelhoofd"
+
+	key[]: "cap"
+	val[]: "Pet"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobiele Telefoon"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Wiebelhoofd"
+
+	key[]: "dashboard"
+	val[]: "Dashboard"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Leveringsoverzicht"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrische Koelbox"
+
+	key[]: "endless_nourishment"
+	val[]: "Eindeloze Voeding"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 Spelverpakking"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2-Lunchbox"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 Vrachtwagenzak"
+
+	key[]: "festive_mug"
+	val[]: "Kerstmok"
+
+	key[]: "fire_extinguisher"
+	val[]: "Brandblusser"
+
+	key[]: "hand_bag"
+	val[]: "Handtas"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Handgemaakte Lederen Portemonnee"
+
+	key[]: "hula_doll"
+	val[]: "Hula Pop"
+
+	key[]: "instant_lunch"
+	val[]: "Kant-en-klaar Maaltijd"
+
+	key[]: "instant_lunch_box"
+	val[]: "Kant-en-klare Maaltijden"
+
+	key[]: "magazines"
+	val[]: "Tijdschriften"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magneto-inductief Kompas"
+
+	key[]: "map"
+	val[]: "Kaart"
+
+	key[]: "notebook"
+	val[]: "Laptop"
+
+	key[]: "paper_towels"
+	val[]: "Keukenpapier"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Piloten Zonnebril"
+
+	key[]: "plush_bear"
+	val[]: "Pluchen Beer"
+
+	key[]: "portable_navigator"
+	val[]: "Navigatie"
+
+	key[]: "rugged_style_cap"
+	val[]: "Stoere Pet"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS Koffiemok"
+
+	key[]: "sleeping_bag"
+	val[]: "Slaapzak"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Weekendtas"
+
+	key[]: "winter_bauble"
+	val[]: "Winterbal"
+
+	key[]: "winter_blast_gift"
+	val[]: "Winter Geschenk"
+
+	key[]: "wise_owl_offering"
+	val[]: "Winter Uil Geschenk"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 Kussen"
+
+	key[]: "flame_pillow"
+	val[]: "Vlammen Kussen"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyearkussen"
+
+	key[]: "sweet_home_pillow"
+	val[]: "'Sweet Home' Kussen"
+
+	key[]: "skull_pillow"
+	val[]: "Schedel Kussen"
+
+	key[]: "status_pillow"
+	val[]: "Relatiestatus Kussen"
+
+	key[]: "track_pillow"
+	val[]: "Bandenspoor Kussen"
+
+	key[]: "trucker_pillow"
+	val[]: "Trucker Kussen"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavs Kussen"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Kussen met Harten"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ Kussen"
+
+
+	key[]: "air_freshener"
+	val[]: "Luchtverfrisser"
+
+	key[]: "smelling_sack"
+	val[]: "Geurzak"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Appel Luchtverfrisser"
+
+	key[]: "basketball_ball"
+	val[]: "Basketbal"
+
+	key[]: "black_plush_cube"
+	val[]: "Zwarte Pluchen Kubus"
+
+	key[]: "chromed_skull"
+	val[]: "Verchroomde Schedel"
+
+	key[]: "disco_ball"
+	val[]: "Discobal"
+
+	key[]: "eight_ball"
+	val[]: "8-Bal"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 Luchtverfrisser"
+
+	key[]: "football_ball"
+	val[]: "Voetbal"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker Insigne"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Hope Trucker Insigne"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS Luchtverfrisser"
+
+	key[]: "tennis_ball"
+	val[]: "Tennisbal"
+
+	key[]: "trophy_skull"
+	val[]: "Schedeltrofee"
+
+	key[]: "white_plush_cube"
+	val[]: "Witte Pluchen Kubus"
+
+
+	key[]: "black_style_mug"
+	val[]: "Zwarte Mok" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Wit met Oranje Mok" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Zwart met Oranje Mok" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Pluchen Speelgoed" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Lederen portemonnee" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Dashboard" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Exclusieve Midden Tafel" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Mahonie Houten Tafel" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Zwarte Tafel" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Lange Exclusieve Tafel" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Lange Mahonie Houten Tafel" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Lange Zwarte Tafel" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Simpel" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Chroom" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Lak & Chroom" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Standaard Double" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusief" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Aangepaste Metallic kleur" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Basis" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Standaard verchroomd" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Standaard gespoten" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Winnende Dobbelsteen" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Grote Ster" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -9709,7 +9989,7 @@
 	val[]: "Voertuig accessoire" #+ Name of the inventory items category.
 
 	key[]: "cabin_accessory"
-	val[]: "Cabineaccessoires" #+ Name of the inventory items category.
+	val[]: "Cabine-accessoire" #+ Name of the inventory items category.
 
 	key[]: "desktop_background"
 	val[]: "Bureaublad achtergrond" #+ Name of the inventory items category.
@@ -9785,7 +10065,7 @@
 	val[]: "Persoonlijk doel bereikt!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open de evenementenpagina" #+ Button opening event page on WoTr.
+	val[]: "Open Eventpagina" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Voortgang" #+ The label used to indicate progress of the event.
@@ -10268,6 +10548,22 @@
 	val[]: "Je kan niet je trailer wegdoen tijdens een opdracht." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "VOERTUIGAANPASSINGEN"
+
+	key[]: "adj_mirrors"
+	val[]: "Spiegels Afstellen"
+
+	key[]: "adj_lights"
+	val[]: "Lichten Afstellen"
+
+	key[]: "adj_seats"
+	val[]: "Stoel Afstellen"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Gekoeld"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tanker"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Bevroren, gekoelde goederen"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Ophalen voortgang van steden..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Leveringen tot de volgende ster:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Alle sterren behaald."
+	key[]: "xmas_delivery_progress"
+	val[]: "Leveringsvoortgang van de Cadeaus"
 
 	key[]: "xmas19_map_description"
 	val[]: "Houd je muis boven de steden om je voortgang van het Kerstevent te zien. Bezoek $WOTR_URL$ om het complete voortgangsoverzicht te bekijken."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "De bijdrage aan het communitydoel van deze stad is voltooid!<br><br>Is het niet een idee om andere steden te helpen?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "De bijdrage van deze steden voor deze opdracht, richting het gemeenschappelijke doel, is voltooid!<br><br>Waarom ga je niet op zoek naar andere steden om Giften te halen/brengen?"
 
 	key[]: "xmas19_back"
 	val[]: "Ga terug"

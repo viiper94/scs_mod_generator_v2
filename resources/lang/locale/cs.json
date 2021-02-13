@@ -227,5 +227,9 @@
         "tn_home_transporter": "Přepravník domů",
         "tn_knuckle_boom": "Kloubový jeřáb",
         "tn_tub_grinder": "Štěpkovač"
+    },
+    "companies\/paints": {
+        "default": "Vlastní barva",
+        "metallic": "Vlastní metalická barva"
     }
 }

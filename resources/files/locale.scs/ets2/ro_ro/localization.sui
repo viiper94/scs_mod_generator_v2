@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "Draperii" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Accesorii Aer Condiţionat" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Articole Pat" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Elemente Atârnate" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "Elemente Centru" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Articole tip Pernă"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Seturi Bord" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3429,6 +3438,9 @@
 	key[]: "color_enhancement"
 	val[]: "Corecţie culoare" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Intensitate Reflexii" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Calitate reflecţie" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "În timpul deplasării în condiţii normale de drum, este recomandat să dezactivaţi diferenţialul, pentru a evita avarierea acestuia. <<br> Utilizaţi tasta:"
 
+	key[]: "tow_hint"
+	val[]: "Dacă nu puteţi ieşi dintr-o situaţie dificilă, puteţi folosi serviciul de tractare. Apăsaţi:"
+
 	key[]: "ferry_msg"
 	val[]: "Pentru lista posibilelor destinaţii, apăsaţi:"
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "Materiale Contaminate"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vaccinul COVID-19"
 
 	key[]: "cn_cyanide"
 	val[]: "Cianuri"
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "Bastia"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Bergen"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Şapcă" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Cană" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Pătură Bej"
+
+	key[]: "blanket_square"
+	val[]: "Pătură cu Pătrăţele"
+
+	key[]: "book"
+	val[]: "Carte"
+
+	key[]: "bottle_sixpack"
+	val[]: "Pachet 6 Sticle de Bere"
+
+	key[]: "breakfast_cereals"
+	val[]: "Cereale pentru Micul Dejun"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog Bobblehead"
+
+	key[]: "cap"
+	val[]: "Şapcă"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Celular"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Bobblehead"
+
+	key[]: "dashboard"
+	val[]: "Bord"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Raport Livrare"
+
+	key[]: "electric_cooling_box"
+	val[]: "Ladă de Răcire Electrică"
+
+	key[]: "endless_nourishment"
+	val[]: "Mâncare Interminabilă"
+
+	key[]: "ets2_game_box"
+	val[]: "Cutie de Joc ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Cutie pentru Prânz ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Geantă Camion ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Cană Festivă"
+
+	key[]: "fire_extinguisher"
+	val[]: "Stingător"
+
+	key[]: "hand_bag"
+	val[]: "Geantă de Mână"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Portofel din Piele Lucrat Manual"
+
+	key[]: "hula_doll"
+	val[]: "Păpuşă Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Prânz Instant"
+
+	key[]: "instant_lunch_box"
+	val[]: "Pachete Prânz Instant"
+
+	key[]: "magazines"
+	val[]: "Reviste"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Busolă Magneto-Inductivă"
+
+	key[]: "map"
+	val[]: "Hartă"
+
+	key[]: "notebook"
+	val[]: "Laptop"
+
+	key[]: "paper_towels"
+	val[]: "Prosoape de Hârtie"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Ochelari de Soare \"Pilot\""
+
+	key[]: "plush_bear"
+	val[]: "Urs de Pluş"
+
+	key[]: "portable_navigator"
+	val[]: "Sistem de Navigaţie Portabil"
+
+	key[]: "rugged_style_cap"
+	val[]: "Şapcă în Stil Uzat"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Cană Cafea SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Sac de Dormit"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Pătura Răcoarea Zăpezii"
+
+	key[]: "tablet"
+	val[]: "Tabletă"
+
+	key[]: "weekend_bag"
+	val[]: "Geantă de Weekend"
+
+	key[]: "winter_bauble"
+	val[]: "Ornament de Iarnă"
+
+	key[]: "winter_blast_gift"
+	val[]: "Cadoul Suflarea Iernii"
+
+	key[]: "wise_owl_offering"
+	val[]: "Ofranda Bufniţă Înţeleaptă"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Pernă ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Pernă Model Flăcări"
+
+	key[]: "goodyear_pillow"
+	val[]: "Pernă Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Pernă \"Dulce Casă\""
+
+	key[]: "skull_pillow"
+	val[]: "Pernă Model Craniu"
+
+	key[]: "status_pillow"
+	val[]: "Pernă \"Status Relaţie\""
+
+	key[]: "track_pillow"
+	val[]: "Pernă cu Motiv de Camion"
+
+	key[]: "trucker_pillow"
+	val[]: "Pernă Camionagiu"
+
+	key[]: "vaclav_pillow"
+	val[]: "Pernă Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Perna Inimă Înţeleaptă"
+
+	key[]: "zzz_pillow"
+	val[]: "Pernă Model \"ZZZ\""
+
+
+	key[]: "air_freshener"
+	val[]: "Odorizant Auto"
+
+	key[]: "detective_head"
+	val[]: "Cap de Detectiv"
+
+	key[]: "vampire_head"
+	val[]: "Cap de Vampir"
+
+	key[]: "viking_head"
+	val[]: "Cap de Viking"
+
+	key[]: "smelling_sack"
+	val[]: "Săculeţ Potpourri"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Odorizant Auto Măr"
+
+	key[]: "basketball_ball"
+	val[]: "Minge de Baschet"
+
+	key[]: "black_plush_cube"
+	val[]: "Cub Negru din Pluş"
+
+	key[]: "chromed_skull"
+	val[]: "Craniu Cromat"
+
+	key[]: "disco_ball"
+	val[]: "Bilă Disco"
+
+	key[]: "eight_ball"
+	val[]: "Bila Magică Nr. 8"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Odorizant Auto ETS2"
+
+	key[]: "football_ball"
+	val[]: "Minge de Fotbal"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insigna Şoferul de Acasă"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insigna Şoferul Speranţei"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Odorizant Auto SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Minge de Tenis"
+
+	key[]: "trophy_skull"
+	val[]: "Trofeu Craniu"
+
+	key[]: "white_plush_cube"
+	val[]: "Cub Alb din Pluş"
+
 
 	key[]: "black_style_mug"
 	val[]: "Cană Stil Neagră" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "Măsuţă Lungă Negru" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "De uzură" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "Cromat" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Crom II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Crom & Vopsea" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "Standard 2013 MB" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusiv" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "Reflector Alb"
 
-	key[]: "basic_chrome"
-	val[]: "Panou Simplu Cromat" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Simplu" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Panou Simplu Cromat" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Panou Simplu Vopsit" #+ type of sideskirts, painted
+	val[]: "Panou Simplu Vopsit" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Panou Protecţie cu Bară Dublă" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -10482,7 +10731,7 @@
 	val[]: "Reîncărcare" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "Navigare Contracte" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "Preluare Contract Aleatoriu" #+ Connects with server and accept random job in proximity of player's current position
@@ -11233,7 +11482,7 @@
 	val[]: "Obiectiv Personal Îndeplinit!" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "Deschidere Pagină Evenimente" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "Progres" #+ The label used to indicate progress of the event.
@@ -11242,13 +11491,13 @@
 	val[]: "INFO EVENIMENT" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "Evenimente în Desfăşurare" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "Nivel" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "Nu este niciun eveniment activ în acest moment."
 #@}
 
 #+ Trailer ownership
@@ -11714,6 +11963,22 @@
 
 	key[]: "trailer_park_blocked_on_job"
 	val[]: "Nu puteţi renunţa la remorcă în timpul unei livrări." #+ Message shown when player tries to dimiss trailer while being on a job.
+#@}
+
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "REGLĂRI ALE VEHICULULUI"
+
+	key[]: "adj_mirrors"
+	val[]: "Ajustare oglinzi"
+
+	key[]: "adj_lights"
+	val[]: "Ajustare lumini"
+
+	key[]: "adj_seats"
+	val[]: "Ajustare Scaun"
+
 #@}
 
 #+ Trailer body type names.
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Se preia evoluţia oraşului..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Livrări până la următoarea stea:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Toate stelele au fost obţinute."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progresul livrării cadourilor"
 
 	key[]: "xmas19_map_description"
 	val[]: "Selectaţi oraşele pentru a vedea evoluţia evenimentului de Crăciun. Vizitaţi $WOTR_URL$ pentru a vedea rezumatul complet al evoluţiei."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Contribuţia acestui oraş către obiectivul comunităţii este completă!<br><br>De ce nu ajutaţi alt oraş să îşi livreze cadourile?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Contribuţia acestor oraşe pentru acest eveniment, către Obiectivul Comunităţii, este completă!<br><br>De ce nu căutaţi alte oraşe pentru a livra Cadouri de la/către ele?"
 
 	key[]: "xmas19_back"
 	val[]: "Du-te înapoi"

@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "커튼" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "공기 조화 아이템" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "침대 아이템" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "걸이 아이템" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "센터 플로어 아이템" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "베개 아이템"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "대시보드 세트" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3429,6 +3438,9 @@
 	key[]: "color_enhancement"
 	val[]: "색 보정" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "반사 스케일링" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "반사 디테일" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "일반 주행 시 차동장치를 해제하지 않으면 심각한 손상을 입을 수 있습니다.<br>다음 키를 사용하여 해제하십시오:"
 
+	key[]: "tow_hint"
+	val[]: "어려운 상황에서 벗어날 수 없다면 견인 서비스를 이용할 수 있습니다. 다음 키를 누르십시오:"
+
 	key[]: "ferry_msg"
 	val[]: "여행 가능한 목적지를 보려면 다음 키를 누르십시오:"
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "오염 물질"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "코로나19 백신"
 
 	key[]: "cn_cyanide"
 	val[]: "사이안화물"
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "바스티아"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "베르겐"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "쿤다"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "라티"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "모자" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "머그잔" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "베이지색 담요"
+
+	key[]: "blanket_square"
+	val[]: "체크 무늬 담요"
+
+	key[]: "book"
+	val[]: "책"
+
+	key[]: "bottle_sixpack"
+	val[]: "생수 식스팩"
+
+	key[]: "breakfast_cereals"
+	val[]: "아침 식사용 시리얼"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "불도그 보블 헤드"
+
+	key[]: "cap"
+	val[]: "모자"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "휴대전화"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "치와와 보블 헤드"
+
+	key[]: "dashboard"
+	val[]: "대시보드"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "운송 보고서"
+
+	key[]: "electric_cooling_box"
+	val[]: "전기 아이스박스"
+
+	key[]: "endless_nourishment"
+	val[]: "무제한 먹거리"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 게임박스"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 도시락"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 트럭 가방"
+
+	key[]: "festive_mug"
+	val[]: "페스티브 머그잔"
+
+	key[]: "fire_extinguisher"
+	val[]: "소화기"
+
+	key[]: "hand_bag"
+	val[]: "핸드백"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "핸드메이드 가죽 지갑"
+
+	key[]: "hula_doll"
+	val[]: "훌라 인형"
+
+	key[]: "instant_lunch"
+	val[]: "인스턴트 런치"
+
+	key[]: "instant_lunch_box"
+	val[]: "인스턴트 런치 멀티팩"
+
+	key[]: "magazines"
+	val[]: "잡지"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "자기 유도식 나침반"
+
+	key[]: "map"
+	val[]: "지도"
+
+	key[]: "notebook"
+	val[]: "노트북"
+
+	key[]: "paper_towels"
+	val[]: "페이퍼 타월"
+
+	key[]: "pilot_sunglasses"
+	val[]: "파일럿 선글라스"
+
+	key[]: "plush_bear"
+	val[]: "봉제 곰"
+
+	key[]: "portable_navigator"
+	val[]: "휴대용 내비게이터"
+
+	key[]: "rugged_style_cap"
+	val[]: "러기드 스타일 모자"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS 커피 머그잔"
+
+	key[]: "sleeping_bag"
+	val[]: "침낭"
+
+	key[]: "snow_chill_blanket"
+	val[]: "눈의 냉기 담요"
+
+	key[]: "tablet"
+	val[]: "태블릿"
+
+	key[]: "weekend_bag"
+	val[]: "위켄드 백"
+
+	key[]: "winter_bauble"
+	val[]: "윈터 버블"
+
+	key[]: "winter_blast_gift"
+	val[]: "윈터 블래스트 선물"
+
+	key[]: "wise_owl_offering"
+	val[]: "현명한 올빼미 예물"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 베개"
+
+	key[]: "flame_pillow"
+	val[]: "불꽃 무늬 베개"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear 베개"
+
+	key[]: "sweet_home_pillow"
+	val[]: "스위트 홈 베개"
+
+	key[]: "skull_pillow"
+	val[]: "해골 무늬 베개"
+
+	key[]: "status_pillow"
+	val[]: "스테이터스 베개"
+
+	key[]: "track_pillow"
+	val[]: "트럭 무늬 베개"
+
+	key[]: "trucker_pillow"
+	val[]: "트럭커 베개"
+
+	key[]: "vaclav_pillow"
+	val[]: "바클라브의 베개"
+
+	key[]: "wise_heart_pillow"
+	val[]: "현명한 마음 베개"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ 베개"
+
+
+	key[]: "air_freshener"
+	val[]: "방향제"
+
+	key[]: "detective_head"
+	val[]: "수사관 헤드"
+
+	key[]: "vampire_head"
+	val[]: "뱀파이어 헤드"
+
+	key[]: "viking_head"
+	val[]: "바이킹 헤드"
+
+	key[]: "smelling_sack"
+	val[]: "향 주머니"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "사과 방향제"
+
+	key[]: "basketball_ball"
+	val[]: "농구공"
+
+	key[]: "black_plush_cube"
+	val[]: "검은색 봉제 주사위"
+
+	key[]: "chromed_skull"
+	val[]: "크롬 해골"
+
+	key[]: "disco_ball"
+	val[]: "디스코 볼"
+
+	key[]: "eight_ball"
+	val[]: "에잇 볼"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 방향제"
+
+	key[]: "football_ball"
+	val[]: "축구공"
+
+	key[]: "home_trucker_insignia"
+	val[]: "홈 트럭커 휘장"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "희망의 트럭커 휘장"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS 방향제"
+
+	key[]: "tennis_ball"
+	val[]: "테니스공"
+
+	key[]: "trophy_skull"
+	val[]: "전리품 해골"
+
+	key[]: "white_plush_cube"
+	val[]: "하얀색 봉제 주사위"
+
 
 	key[]: "black_style_mug"
 	val[]: "블랙 스타일 머그잔" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "검은색 긴 테이블" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "Duty" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "크롬" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "크롬 II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "페인트 & 크롬" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "일반형 2013 UK" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "프리미엄" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "고급형" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "화이트 리플렉터"
 
-	key[]: "basic_chrome"
-	val[]: "베이직 크롬" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "베이직" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "베이직 크롬" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "베이직 페인트" #+ type of sideskirts, painted
+	val[]: "베이직 페인트" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "풀 프로텍션 더블 바" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -11716,6 +11965,22 @@
 	val[]: "운송 중에는 트레일러를 분리할 수 없습니다." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "차량 조정"
+
+	key[]: "adj_mirrors"
+	val[]: "미러 조정"
+
+	key[]: "adj_lights"
+	val[]: "라이트 조정"
+
+	key[]: "adj_seats"
+	val[]: "시트 조정"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "도시 상태 불러오는 중..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "다음 별 배달:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "모든 별을 획득했습니다."
+	key[]: "xmas_delivery_progress"
+	val[]: "선물 배송 진행도"
 
 	key[]: "xmas19_map_description"
-	val[]: "도시 위에 마우스를 올려 크리스마트 이벤트 상태를 확인하세요. $WOTR_URL$에 방문하면 전체 진행 상황을 확인할 수 있습니다."
+	val[]: "도시 위에 마우스를 올려 크리스마스 이벤트 상태를 확인하세요. $WOTR_URL$에 방문하면 전체 진행 상황을 확인할 수 있습니다."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "이 도시의 커뮤니티 목표는 완료됐습니다!<br><br>다른 도시에 선물을 주는 건 어떨까요?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "배송 작업에 이바지한 결과 이 도시의 커뮤니티 목표가 달성되었습니다!<br><br>선물을 전달할 다른 도시를 찾아보지 않으시겠습니까?"
 
 	key[]: "xmas19_back"
 	val[]: "돌아가기"

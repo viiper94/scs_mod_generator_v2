@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Galinės sienos daiktai"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Kabinos šviesos"
 
 	key[]: "cabdefl"
 	val[]: "Kabinos deflektoriai"
+
+	key[]: "cup_holder"
+	val[]: "Puodelių laikiklis"
 
 	key[]: "deflector"
 	val[]: "Vabzdžių deflektorius"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Kabinos galas"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Spintelės" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Puodelių laikiklių rinkinys" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Kabinos panelės"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Apšvietimas ant stogo"
 
+	key[]: "toyback"
+	val[]: "Miegamojo grindų daiktai" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Grindų daiktai" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Panelės dėžių daiktai" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Sofos daiktai" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Stalo daiktai" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Spoileris"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero Dažytas"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Aliuminio cisterna"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Apačia"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Žaislinis pjūklas"
+	key[]: "cabinet"
+	val[]: "Spintelė"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Chromuotas bakas"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D formos"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "Dienos šviesos"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Priešrūkinės lempos"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Šildymas/ventiliacija"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Puodelių laikiklis (atidarytas)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Puodelių laikiklis (atidarytas kairėje)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Puodelių laikiklis (atidarytas dešinėje)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Puodelių laikiklis (uždarytas)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Amerikietiško futbolo kamuolys"
+
+	key[]: "ats_bag"
+	val[]: "ATS krepšys"
+
+	key[]: "ats_cap"
+	val[]: "ATS kepurė"
+
+	key[]: "ats_game_box"
+	val[]: "ATS žaidimo dėžutė"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS pietų dėžutė"
+
+	key[]: "ats_mug"
+	val[]: "ATS puodelis"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS sunkvežimio krepšys"
+
+	key[]: "baseball_ball"
+	val[]: "Beisbolo kamuoliukas"
+
+	key[]: "baseball_bat"
+	val[]: "Beisbolo lazda"
+
+	key[]: "bee"
+	val[]: "Bitė"
+
+	key[]: "black_ats_mug"
+	val[]: "Juodas ATS puodelis"
+
+	key[]: "blanket_stars"
+	val[]: "Žvaigždžių apklotas"
+
+	key[]: "bottle"
+	val[]: "Butelis"
+
+	key[]: "burger"
+	val[]: "Burgeris"
+
+	key[]: "can"
+	val[]: "Skardinė"
+
+	key[]: "can_pack"
+	val[]: "Skardinių pakuotė"
+
+	key[]: "can_sixpack"
+	val[]: "Skardinių pakuotė"
+
+	key[]: "cans"
+	val[]: "Skardinės"
+
+	key[]: "car_perfume"
+	val[]: "Automobilio kvepalai"
+
+	key[]: "cardbox"
+	val[]: "Kartono dėžė"
+
+	key[]: "carrier"
+	val[]: "Butelių nešioklė"
+
+	key[]: "chainsaw_toy"
+	val[]: "Žaislinis pjūklas"
+
+	key[]: "chewing_gums"
+	val[]: "Kramtoma guma"
+
+	key[]: "coffee_cup"
+	val[]: "Kavos puodelis"
+
+	key[]: "costs_list"
+	val[]: "Kuro suvartojimo žurnalas"
+
+	key[]: "dreamcatcher"
+	val[]: "Sapnų gaudyklė"
+
+	key[]: "emergency_triangles"
+	val[]: "Įspėjimo trikampiai"
+
+	key[]: "expenses_list"
+	val[]: "Išlaidų ataskaita"
+
+	key[]: "fishing_bag"
+	val[]: "Žvejo krepšys"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Vartininko kaukė"
+
+	key[]: "guitar"
+	val[]: "Gitara"
+
+	key[]: "guitar_case"
+	val[]: "Gitaros dėklas"
+
+	key[]: "hat"
+	val[]: "Kepurė"
+
+	key[]: "hockey_stick"
+	val[]: "Ledo ritulio lazda"
+
+	key[]: "holy_field_blanket"
+	val[]: "Holly Field antklodė"
+
+	key[]: "honey_bee"
+	val[]: "Bitutė"
+
+	key[]: "laundry_box"
+	val[]: "Skalbinių krepšys"
+
+	key[]: "peppermints"
+	val[]: "Mėtiniai saldainiai"
+
+	key[]: "plush_donut"
+	val[]: "Plušo spurga"
+
+	key[]: "plush_lion"
+	val[]: "Pliušo liūtas"
+
+	key[]: "power_inverter"
+	val[]: "Elektros inverteris"
+
+	key[]: "propeller"
+	val[]: "Propeleris"
+
+	key[]: "shoes"
+	val[]: "Batai"
+
+	key[]: "spearmints"
+	val[]: "Mėtinukai"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sportiniai akiniai"
+
+	key[]: "stack_of_burgers"
+	val[]: "Burgerių krūva"
+
+	key[]: "usa_cap"
+	val[]: "JAV kepuraitė"
+
+	key[]: "usa_flag"
+	val[]: "JAV vėliava"
+
+	key[]: "usa_flag_cap"
+	val[]: "JAV vėliavos kepuraitė"
+
+	key[]: "ventilator"
+	val[]: "Ventiliatorius"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr kepurė"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS pagalvė"
+
+	key[]: "heart_pillow"
+	val[]: "Širdies pagalvė"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Bučinio pagalvė"
+
+	key[]: "protector_pillow"
+	val[]: "Saugotojo pagalvė"
+
+	key[]: "star_pillow"
+	val[]: "Žvaigždės pagalvė"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah pagalvė"
+
+	key[]: "usa_flag_pillow"
+	val[]: "JAV vėliavos raštų pagalvė"
+
+	key[]: "usa_shield_pillow"
+	val[]: "JAV skydo raštų pagalvė"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS oro gaiviklis"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Kaktusų oro gaiviklis"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Citrinų oro gaiviklis"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Klevo lapo oro gaiviklis"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Apelsinų oro gaiviklis"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "JAV oro gaiviklis"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Mėlyno pliušo kubas"
+
+	key[]: "red_plush_cube"
+	val[]: "Raudono pliušo kubas"
+
+	key[]: "double_plush_cube"
+	val[]: "Dvigubo pliušo kubas"
+
+
+	key[]: "alien_head"
+	val[]: "Ateivio galva"
+
+	key[]: "cowboy_head"
+	val[]: "Kaubojaus galva"
+
+	key[]: "pirate_head"
+	val[]: "Pirato galva"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Erelio lipdukas"
+
+	key[]: "guitar_sticker"
+	val[]: "Gitaros lipdukas"
+
+	key[]: "hat_sticker"
+	val[]: "Kepurės lipdukas"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Klevų sirupo lipdukas"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Vairo lipdukas"
+
+	key[]: "taco_sticker"
+	val[]: "Taco lipdukas"
+
+	key[]: "truck_sticker"
+	val[]: "Sunkvežimio lipdukas"
+
+	key[]: "usa_country_sticker"
+	val[]: "JAV valstybės lipdukas"
+
+	key[]: "usa_flag_sticker"
+	val[]: "JAV vėliavos lipdukas"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Daržovės"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star sunkvežimiai"
 
 #@}
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midveilio kalvos poilsio aikštelė"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Albukerkio Sankryža"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Rozvelo miestas"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Santa Fe miestas"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 poilsio aikštelė"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "66 vakarų kelio poilsio aikštelė"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " US-82 poilsio aikštelė"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Arizonos Įvažiavimo poilsio aikštelė"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 poilsio aikštelė"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Linkolno istorinis monumentas"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Vono miestas"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Jakinos galvos švyturys"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Toro šulinys"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astorijos-Meglerio tiltas"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Niuporto Jakinos įlankos tiltas"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Dalio miestas"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 sekvojų miškas"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregono popieriaus fabrikas"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 apžvalgos vieta"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Bigso sankryža"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portlando laivų statykla"
 
 	# Utah
 

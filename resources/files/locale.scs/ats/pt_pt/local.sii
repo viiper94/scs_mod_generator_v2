@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,6 +1055,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Cortinas" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Acessórios de Ar Condicionado" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Acessórios da cama" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Items suspensos" #+ Interior hanging accesories
 
@@ -1045,6 +1072,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "Itens da Consola Central" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Acessórios da Almofada"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Conjunto do Quadrante" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3283,16 +3313,16 @@ localization_db : .localization
 	val[]: "Centrar força de resposta" #+ Slider controlling strength of the FF centering spring.
 
 	key[]: "feedback_engine"
-	val[]: "Motor da força de resposta" #+ Slider controlling strength of the FF engine resonance effects.
+	val[]: "Força de resposta do motor" #+ Slider controlling strength of the FF engine resonance effects.
 
 	key[]: "feedback_terrain"
-	val[]: "Ajustar força de resposta" #+ Slider controlling strength of the FF terrain effects.
+	val[]: "Força de resposta do terreno" #+ Slider controlling strength of the FF terrain effects.
 
 	key[]: "feedback_dampers"
-	val[]: "Amortecedores da força de resposta" #+ Slider controlling strength of the FF damper collision effects.
+	val[]: "Força de resposta dos amortecedores" #+ Slider controlling strength of the FF damper collision effects.
 
 	key[]: "feedback_collisions"
-	val[]: "Colisão da força de resposta" #+ Slider controlling strength of the FF collision effects.
+	val[]: "Força de resposta de colisões" #+ Slider controlling strength of the FF collision effects.
 #@}
 
 #+ Mapping of individual controller axes to steering, pedals and looking functionality.
@@ -3844,6 +3874,9 @@ localization_db : .localization
 
 	key[]: "color_enhancement"
 	val[]: "Correcção da cor" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Detalhe dos reflexos" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Deves desactivar o diferencial numa condução normal ou corres o risco de o danificar.<br>Usa a seguinte tecla para desactivar:"
+
+	key[]: "tow_hint"
+	val[]: "Se não consegues sair de uma situação difícil, usa o serviço de reboque. Pressiona:"
 
 	key[]: "ferry_msg"
 	val[]: "Para ver possíveis destinos pressione: "
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Carne de Galinha"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vacinas COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Requeijão"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "OESTE" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Manta Bege"
+
+	key[]: "blanket_square"
+	val[]: "Manta aos Quadrados"
+
+	key[]: "book"
+	val[]: "Livro"
+
+	key[]: "bottle_sixpack"
+	val[]: "Pack de Garrafas"
+
+	key[]: "breakfast_cereals"
+	val[]: "Cereais"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog Bobblehead"
+
+	key[]: "cap"
+	val[]: "Boné"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Telemóvel"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Bobblehead"
+
+	key[]: "dashboard"
+	val[]: "Painel de Controlo"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Relatório de Entrega"
+
+	key[]: "electric_cooling_box"
+	val[]: "Refrigerador Eléctrico"
+
+	key[]: "endless_nourishment"
+	val[]: "Sandes"
+
+	key[]: "ets2_game_box"
+	val[]: "Jogo ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Lancheira ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Bolsa ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Caneca Festiva"
+
+	key[]: "fire_extinguisher"
+	val[]: "Extintor"
+
+	key[]: "hand_bag"
+	val[]: "Bolsa de mão"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Carteira em Pele Feita à Mão"
+
+	key[]: "hula_doll"
+	val[]: "Boneca Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Almoço Instantâneo"
+
+	key[]: "instant_lunch_box"
+	val[]: "Pack de Almoços Instantâneos"
+
+	key[]: "magazines"
+	val[]: "Revistas"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Bússola Magnética"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Portátil"
+
+	key[]: "paper_towels"
+	val[]: "Toalhas de Papel"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Óculos de Sol"
+
+	key[]: "plush_bear"
+	val[]: "Urso de Peluche"
+
+	key[]: "portable_navigator"
+	val[]: "GPS Portátil"
+
+	key[]: "rugged_style_cap"
+	val[]: "Boné"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Caneca da SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Saco-cama"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Mala de viagem"
+
+	key[]: "winter_bauble"
+	val[]: "Bugiganga de Inverno"
+
+	key[]: "winter_blast_gift"
+	val[]: "Presente de Inverno"
+
+	key[]: "wise_owl_offering"
+	val[]: "Oferta da Coruja Sábia"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Almofada ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Almofada com Chamas"
+
+	key[]: "goodyear_pillow"
+	val[]: "Almofada da Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Almofada Doce Lar"
+
+	key[]: "skull_pillow"
+	val[]: "Almofada com Caveira"
+
+	key[]: "status_pillow"
+	val[]: "Almofada"
+
+	key[]: "track_pillow"
+	val[]: "Almofada de Pista"
+
+	key[]: "trucker_pillow"
+	val[]: "Almofada de Camionista"
+
+	key[]: "vaclav_pillow"
+	val[]: "Almofada do Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Almofada do Coração Sábio"
+
+	key[]: "zzz_pillow"
+	val[]: "Almofada ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Ambientador"
+
+	key[]: "smelling_sack"
+	val[]: "Saco Sujo"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Ambientador de Maçã"
+
+	key[]: "basketball_ball"
+	val[]: "Bola de Basquetebol"
+
+	key[]: "black_plush_cube"
+	val[]: "Cubo Preto de Peluche"
+
+	key[]: "chromed_skull"
+	val[]: "Caveira Cromada"
+
+	key[]: "disco_ball"
+	val[]: "Bola de Discoteca"
+
+	key[]: "eight_ball"
+	val[]: "Bola de Bilhar"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Ambientador ETS2"
+
+	key[]: "football_ball"
+	val[]: "Bola de Futebol"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insígnia de Camionista da Esperança"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insígnia de Camionista da Esperança"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Ambientador SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Bola de Ténis"
+
+	key[]: "trophy_skull"
+	val[]: "Caveira Troféu"
+
+	key[]: "white_plush_cube"
+	val[]: "Cubo Branco de Peluche"
+
+
+	key[]: "black_style_mug"
+	val[]: "Caneca Preta" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Caneca Branca-Laranja" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Caneca Preta-Laranja" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Brinquedo de peluche" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Carteira de pele" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Tablier" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Mesa Central Exclusiva" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Mesa Central em Mogno" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Mesa Central Preta" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Mesa Longa Exclusiva" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Mesa Longa em Mogno" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Mesa Longa Preta" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Industrial" #+ Basic truck accesory general
 
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Cromado II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Pintado & Cromado" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Duplo Normal" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusivo" #+ Luxury/Exclusive version of the interior or accesory
@@ -8916,6 +9207,15 @@ localization_db : .localization
 
 	key[]: "custom_metallic"
 	val[]: "Cor Metálica Personalizada" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Básico" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Cromado Báscio" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Pintura Básica" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Dados" #+ Accessory name, DLC Pink Ribbon.
@@ -8952,6 +9252,7 @@ localization_db : .localization
 
 	key[]: "grand_star"
 	val[]: "Estrela Grande" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Não é possível dispensar o reboque enquanto estiveres em trabalho." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "AJUSTES DO VEÍCULO"
+
+	key[]: "adj_mirrors"
+	val[]: "Ajustar espelhos"
+
+	key[]: "adj_lights"
+	val[]: "Ajustar luzes"
+
+	key[]: "adj_seats"
+	val[]: "Ajustar bancos"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Refrigerado"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tanque"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Produtos Congelados, Refrigerados"
+
 #@}
 
 #+ Trailer chain type names.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "A verificar progresso da cidade..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Entregas à próxima estrela:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Todas as estrelas obtidas."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progresso da entrega de Presentes"
 
 	key[]: "xmas19_map_description"
 	val[]: "Passa com o rato por cima das cidades para ver o progresso do evento de Natal. Visita $WOTR_URL$ para veres o sumário de todo o progresso."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "O contributo desta cidade para o objectivo comunitário está concluído!<br><br>Porque não ajudar outra cidade a entregar os seus presentes?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "A contribuição destas cidades para este trabalho para o objectivo da Comunidade, está concluída!<br><br>Porque não escolher entregar Presentes de/para outras cidades?"
 
 	key[]: "xmas19_back"
 	val[]: "Voltar atrás"

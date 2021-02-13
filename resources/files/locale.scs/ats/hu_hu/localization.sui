@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Függönyök" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Légkondira rakható elemek" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Ágyra rakható elemek" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Akasztható elemek" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "Padlóközepi elemek" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Párnák"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Műszerfali készletek" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Színjavítás" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Tükröződés minősége" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Kapcsold ki a differenciálzárat normál vezetés közben, különben megsérülhet!<br>Használd a következő gombot a kikapcsoláshoz:"
+
+	key[]: "tow_hint"
+	val[]: "Ha nehéz helyzetbe kerültél, hívj egy vontatót! Ehhez nyomd le a következő gombot:"
 
 	key[]: "ferry_msg"
 	val[]: "Az elérhető célállomások megtekintéséhez nyomd meg a következő gombot:"
@@ -5282,6 +5297,9 @@
 	key[]: "cn_chicken_meat"
 	val[]: "Csirkehús"
 
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19 oltóanyag"
+
 	key[]: "cn_cottage_cheese"
 	val[]: "Túró"
 
@@ -5906,7 +5924,7 @@
 	val[]: "Tárgy:" #+ Name prefixed to the subject of the selected message. For example "Subject: Need money? We can help!"
 
 	key[]: "mail_from"
-	val[]: "Honnan:" #+ Header of the column containing senders of the messages.
+	val[]: "Küldő" #+ Header of the column containing senders of the messages.
 
 	key[]: "mail_no_mail"
 	val[]: "Nincs új üzeneted." #+ Shown in message preview panel if no message exists.
@@ -6511,10 +6529,10 @@
 	val[]: "Jelenlegi rakomány:"
 
 	key[]: "driverman_stats_from"
-	val[]: "Honnan:"
+	val[]: "Innen:"
 
 	key[]: "driverman_stats_to"
-	val[]: "Hová:"
+	val[]: "Ide:"
 
 	key[]: "driverman_stats_finish"
 	val[]: "Végez:"
@@ -6538,10 +6556,10 @@
 	val[]: "Rakomány" #+ Table column header, cargo name. Please keep as short as possible.
 
 	key[]: "driverman_log_from"
-	val[]: "Honnan" #+ Table column header, source city. Please keep as short as possible.
+	val[]: "Innen" #+ Table column header, source city. Please keep as short as possible.
 
 	key[]: "driverman_log_to"
-	val[]: "Hová" #+ Table column header, destination city. Please keep as short as possible.
+	val[]: "Ide" #+ Table column header, destination city. Please keep as short as possible.
 
 	key[]: "driverman_log_distance"
 	val[]: "Távolság" #+ Table column header, job/roam length. Please keep as short as possible.
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Bézs takaró"
+
+	key[]: "blanket_square"
+	val[]: "Kockás takaró"
+
+	key[]: "book"
+	val[]: "Könyv"
+
+	key[]: "bottle_sixpack"
+	val[]: "Üveges szomjoltó (hatos csomag)"
+
+	key[]: "breakfast_cereals"
+	val[]: "Gabonapehely"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bólogató pitbull"
+
+	key[]: "cap"
+	val[]: "Baseball sapka"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobiltelefon"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Bólogató csivava"
+
+	key[]: "dashboard"
+	val[]: "Műszerfal"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Fuvarlevél"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektromos hűtőláda"
+
+	key[]: "endless_nourishment"
+	val[]: "Aranyárú szendvics"
+
+	key[]: "ets2_game_box"
+	val[]: "Dobozos ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2-es uzsidoboz"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2-es kamionos táska"
+
+	key[]: "festive_mug"
+	val[]: "Ünnepi bögre"
+
+	key[]: "fire_extinguisher"
+	val[]: "Poroltó"
+
+	key[]: "hand_bag"
+	val[]: "Kézitáska"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Kézműves bőr pénztárca"
+
+	key[]: "hula_doll"
+	val[]: "Hula baba"
+
+	key[]: "instant_lunch"
+	val[]: "Instant kaja"
+
+	key[]: "instant_lunch_box"
+	val[]: "Gyorsételes doboz"
+
+	key[]: "magazines"
+	val[]: "Magazinok"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magneto-induktív iránytű"
+
+	key[]: "map"
+	val[]: "Térkép"
+
+	key[]: "notebook"
+	val[]: "Notebook"
+
+	key[]: "paper_towels"
+	val[]: "Papírtörlő"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilótaszemcsi"
+
+	key[]: "plush_bear"
+	val[]: "Plüssmaci"
+
+	key[]: "portable_navigator"
+	val[]: "Hordozható GPS"
+
+	key[]: "rugged_style_cap"
+	val[]: "Melós sapi"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS-es kávésbögre"
+
+	key[]: "sleeping_bag"
+	val[]: "Hálózsák"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Utazótáska"
+
+	key[]: "winter_bauble"
+	val[]: "Téli gömbdísz"
+
+	key[]: "winter_blast_gift"
+	val[]: "Téli ajándék"
+
+	key[]: "wise_owl_offering"
+	val[]: "A bölcs bagoly ajándéka"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2-es párna"
+
+	key[]: "flame_pillow"
+	val[]: "Lángmintás párna"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear párna"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Édes otthon párna"
+
+	key[]: "skull_pillow"
+	val[]: "Koponyás párna"
+
+	key[]: "status_pillow"
+	val[]: "Státusz párna"
+
+	key[]: "track_pillow"
+	val[]: "Nyommintás párna"
+
+	key[]: "trucker_pillow"
+	val[]: "Kamionos párna"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclav párnája"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Bölcs szívecskés párna"
+
+	key[]: "zzz_pillow"
+	val[]: "Szundi párna"
+
+
+	key[]: "air_freshener"
+	val[]: "Légfrissítő"
+
+	key[]: "smelling_sack"
+	val[]: "Szagtalanító"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Alma légfrissítő"
+
+	key[]: "basketball_ball"
+	val[]: "Kosárlabda"
+
+	key[]: "black_plush_cube"
+	val[]: "Fekete plüsskocka"
+
+	key[]: "chromed_skull"
+	val[]: "Króm koponya"
+
+	key[]: "disco_ball"
+	val[]: "Diszkógömb"
+
+	key[]: "eight_ball"
+	val[]: "Fekete nyolcas"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2-es légfrissítő"
+
+	key[]: "football_ball"
+	val[]: "Focilabda"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker jelvény"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Hope Trucker jelvény"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS-es légfrissítő"
+
+	key[]: "tennis_ball"
+	val[]: "Teniszlabda"
+
+	key[]: "trophy_skull"
+	val[]: "Trófea koponya"
+
+	key[]: "white_plush_cube"
+	val[]: "Fehér plüsskocka"
+
+
+	key[]: "black_style_mug"
+	val[]: "Fekete bögre" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Fehér-narancs bögre" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Fekete-narancs bögre" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Plüssjáték" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Bőr pénztárca" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Műszerfal" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Exkluzív asztal" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Mahagóni asztal" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Fekete asztal" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Exkluzív hosszú asztal" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Hosszú mahagóni asztal" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Hosszú fekete asztal" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Teherbíró" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Krómozott" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Króm II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Festett és krómozott" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Normál dupla" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Különleges" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Egyéni metálfényezés" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Alap" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Alap krómozott" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Festett alap" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Dobókocka" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Óriás csillag" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -9293,10 +9573,10 @@
 #@{
 
 	key[]: "job_from"
-	val[]: "Honnan"
+	val[]: "Innen"
 
 	key[]: "job_to"
-	val[]: "Hová"
+	val[]: "Ide"
 
 	key[]: "job_time_remain"
 	val[]: "Hátralévő idő"
@@ -10268,6 +10548,22 @@
 	val[]: "Nem szállíttathatod el a pótkocsidat fuvar közben!" #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "JÁRMŰ BEÁLLÍTÁSA"
+
+	key[]: "adj_mirrors"
+	val[]: "Tükrök beállítása"
+
+	key[]: "adj_lights"
+	val[]: "Izzók beállítása"
+
+	key[]: "adj_seats"
+	val[]: "Ülés beállítása"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Mélyhűtött"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tartály"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Fagyasztott, hűtött áruk"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "A város statisztikáinak lekérdezése..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Fuvarok a következő csillagig:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Az összes csillag kioldásra került!"
+	key[]: "xmas_delivery_progress"
+	val[]: "Ajándékszállítási fuvarszám"
 
 	key[]: "xmas19_map_description"
 	val[]: "Mozgasd az egeret egy város fölé, hogy ellenőrizd az ünnepi esemény helyi állapotát! A teljes esemény-összefoglaló megtekintéséhez látogasd meg a World of Trucks oldalt: $WOTR_URL$."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Ez a város már teljesítette a közösségi kvótáját!<br><br>Segíts be egy másik városnak az ajándékszállításban!"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Ennél a városnál már teljesült a közösségi cél eléréséhez szükséges fuvarszám!<br><br>Javasoljuk, hogy keress másik várost!"
 
 	key[]: "xmas19_back"
 	val[]: "Vissza"

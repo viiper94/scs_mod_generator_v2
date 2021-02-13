@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "バックパネル アイテム"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "キャビンライト"
 
 	key[]: "cabdefl"
 	val[]: "キャビンディフレクター"
+
+	key[]: "cup_holder"
+	val[]: "カップホルダー"
 
 	key[]: "deflector"
 	val[]: "バグディフレクター"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "キャビンリア"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "キャビネットセット" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "カップホルダーセット" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "キャブパネル"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "ルーフスリーパーライト"
 
+	key[]: "toyback"
+	val[]: "スリーパーフロア アイテム" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "フロア アイテム" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "ダッシュボートストレージ アイテム" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "ソファ アイテム" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "テーブル アイテム" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "ターボウィング"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "エアロ"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "エアロ II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "エアロ ペイント"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "エアロ X"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "アルミニウムタンク"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "ボトム"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "チェーンソーのおもちゃ"
+	key[]: "cabinet"
+	val[]: "キャビネット"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "クロームタンク"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D型"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL (デイタイム・ランニング・ランプ)"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "エリート"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "フォグライト"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC (空調・温度管理システム)"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "カップホルダー (オープン)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "カップホルダー (左オープン)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "カップホルダー (右オープン)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "カップホルダー (クローズ)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "アメリカンフットボールのボール"
+
+	key[]: "ats_bag"
+	val[]: "ATS バッグ"
+
+	key[]: "ats_cap"
+	val[]: "ATS キャップ"
+
+	key[]: "ats_game_box"
+	val[]: "ATS ゲームボックス"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS ランチボックス"
+
+	key[]: "ats_mug"
+	val[]: "ATS マグカップ"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS トラックバッグ"
+
+	key[]: "baseball_ball"
+	val[]: "ベースボールのボール"
+
+	key[]: "baseball_bat"
+	val[]: "ベースボールバット"
+
+	key[]: "bee"
+	val[]: "ミツバチ"
+
+	key[]: "black_ats_mug"
+	val[]: "ATS マグカップ (黒)"
+
+	key[]: "blanket_stars"
+	val[]: "ブランケット (星模様)"
+
+	key[]: "bottle"
+	val[]: "ボトル"
+
+	key[]: "burger"
+	val[]: "ハンバーガー"
+
+	key[]: "can"
+	val[]: "缶"
+
+	key[]: "can_pack"
+	val[]: "缶 パック"
+
+	key[]: "can_sixpack"
+	val[]: "缶 6缶パック"
+
+	key[]: "cans"
+	val[]: "缶"
+
+	key[]: "car_perfume"
+	val[]: "車用芳香剤"
+
+	key[]: "cardbox"
+	val[]: "段ボール箱"
+
+	key[]: "carrier"
+	val[]: "ボトルキャリア"
+
+	key[]: "chainsaw_toy"
+	val[]: "チェーンソーのおもちゃ"
+
+	key[]: "chewing_gums"
+	val[]: "チューイングガム"
+
+	key[]: "coffee_cup"
+	val[]: "コーヒーカップ"
+
+	key[]: "costs_list"
+	val[]: "燃費ログノート"
+
+	key[]: "dreamcatcher"
+	val[]: "ドリームキャッチャー (お守り)"
+
+	key[]: "emergency_triangles"
+	val[]: "三角表示板"
+
+	key[]: "expenses_list"
+	val[]: "経費報告書"
+
+	key[]: "fishing_bag"
+	val[]: "フィッシングバッグ"
+
+	key[]: "goalkeeper_mask"
+	val[]: "ゴールキーパーマスク"
+
+	key[]: "guitar"
+	val[]: "ギター"
+
+	key[]: "guitar_case"
+	val[]: "ギターケース"
+
+	key[]: "hat"
+	val[]: "帽子"
+
+	key[]: "hockey_stick"
+	val[]: "ホッケースティック"
+
+	key[]: "holy_field_blanket"
+	val[]: "ホリーフィールド ブランケット"
+
+	key[]: "honey_bee"
+	val[]: "ミツバチ"
+
+	key[]: "laundry_box"
+	val[]: "洗濯かご"
+
+	key[]: "peppermints"
+	val[]: "ペパーミント"
+
+	key[]: "plush_donut"
+	val[]: "ドーナツのぬいぐるみ"
+
+	key[]: "plush_lion"
+	val[]: "ライオンのぬいぐるみ"
+
+	key[]: "power_inverter"
+	val[]: "パワーインバーター"
+
+	key[]: "propeller"
+	val[]: "プロペラ"
+
+	key[]: "shoes"
+	val[]: "シューズ"
+
+	key[]: "spearmints"
+	val[]: "スペアミント"
+
+	key[]: "sport_sunglasses"
+	val[]: "スポーツサングラス"
+
+	key[]: "stack_of_burgers"
+	val[]: "ハンバーガーの山"
+
+	key[]: "usa_cap"
+	val[]: "USA キャップ"
+
+	key[]: "usa_flag"
+	val[]: "USA フラッグ"
+
+	key[]: "usa_flag_cap"
+	val[]: "USA フラッグキャップ"
+
+	key[]: "ventilator"
+	val[]: "扇風機"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr キャップ"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS 枕"
+
+	key[]: "heart_pillow"
+	val[]: "ハート 枕"
+
+	key[]: "kiss_me_pillow"
+	val[]: "キスミー 枕"
+
+	key[]: "protector_pillow"
+	val[]: "プロテクター 枕"
+
+	key[]: "star_pillow"
+	val[]: "星型枕"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah 枕"
+
+	key[]: "usa_flag_pillow"
+	val[]: "USA フラッグ枕"
+
+	key[]: "usa_shield_pillow"
+	val[]: "USA シールド枕"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS エアーフレッシュナー"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "サボテン エアーフレッシュナー"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "レモン エアーフレッシュナー"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "メープルリーフ エアーフレッシュナー"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "オレンジ エアーフレッシュナー"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "USA エアーフレッシュナー"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "キューブのぬいぐるみ (青)"
+
+	key[]: "red_plush_cube"
+	val[]: "キューブのぬいぐるみ (赤)"
+
+	key[]: "double_plush_cube"
+	val[]: "キューブのぬいぐるみ (ダブル)"
+
+
+	key[]: "alien_head"
+	val[]: "エイリアン・ヘッド"
+
+	key[]: "cowboy_head"
+	val[]: "カウボーイ・ヘッド"
+
+	key[]: "pirate_head"
+	val[]: "パイレーツ・ヘッド"
+
+
+	key[]: "eagle_sticker"
+	val[]: "ワシのステッカー"
+
+	key[]: "guitar_sticker"
+	val[]: "ギターのステッカー"
+
+	key[]: "hat_sticker"
+	val[]: "帽子のステッカー"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "メープルシロップのステッカー"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "ステアリングホイールのステッカー"
+
+	key[]: "taco_sticker"
+	val[]: "タコスのステッカー"
+
+	key[]: "truck_sticker"
+	val[]: "トラックのステッカー"
+
+	key[]: "usa_country_sticker"
+	val[]: "USA カントリーステッカー"
+
+	key[]: "usa_flag_sticker"
+	val[]: "USA フラッグステッカー"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "野菜"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star トラック"
 
 #@}
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "ミッドベールヒル レストエリア"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "アルバカーキ・ジャンクション"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "ロズウェル市"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "サンタフェ市"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 レストエリア"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w レストストップ"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "US-82 レストエリア"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "アリゾナウェルカムセンター レストエリア"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 レストエリア"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "リンカーン記念堂"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "ボーン市"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "ヤキーナヘッド灯台"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "トールの井戸"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "アストリア・メグラー橋"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "ニューポート ヤーキーナベイブリッジ"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "ザ・ダレス市"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 セコイアの森"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "オレゴン州 製紙工場"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 並木道"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "ビグス・ジャンクション"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "ポートランド 造船所"
 
 	# Utah
 

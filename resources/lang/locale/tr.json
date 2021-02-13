@@ -227,5 +227,9 @@
         "tn_home_transporter": "Ev Taşıyıcısı",
         "tn_knuckle_boom": "Mafsallı Yükleyici",
         "tn_tub_grinder": "Öğütücü"
+    },
+    "companies\/paints": {
+        "default": "Özel Renk",
+        "metallic": "Özel Metalik Renk"
     }
 }

@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,6 +1055,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Záclonky" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Předměty na klimatizaci" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Předměty na postel" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Zavěšené předměty" #+ Interior hanging accesories
 
@@ -1045,6 +1072,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "Předměty na podlaze uprostřed" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Polštářové předměty"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Sady pro palubní desku" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -2224,7 +2254,7 @@ localization_db : .localization
 	val[]: "Přiřaď ke klávesám a tlačítkům jednotlivé funkce dle svého výběru."
 
 	key[]: "help_controller"
-	val[]: "Používáš ke hře přídavný ovladač? Např. gamepad, joystick, nebo volant? Pak se ujisti, zda-li jsi jej správně nastavil."
+	val[]: "Používáš ke hře přídavný ovladač? Např. gamepad, joystick nebo volant? Pak se ujisti, zdali jsi jej správně nastavil."
 #@}
 
 #+ Options
@@ -3845,6 +3875,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "Korekce barev" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Detaily odlesků" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Během běžné jízdy bys měl diferenciál odemknout, jinak hrozí jeho poškození.<br>Pro deaktivování použij následující klávesu:"
+
+	key[]: "tow_hint"
+	val[]: "If you can't get out of any difficult situation you may use towing service. Press:"
 
 	key[]: "ferry_msg"
 	val[]: "Pro zobrazení možných destinací stiskni klávesu:"
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Kuřecí maso"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vakcína proti COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Tvarohový sýr"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Deka - béžová"
+
+	key[]: "blanket_square"
+	val[]: "Deka - kostkovaná"
+
+	key[]: "book"
+	val[]: "Kniha"
+
+	key[]: "bottle_sixpack"
+	val[]: "Balení PET lahví"
+
+	key[]: "breakfast_cereals"
+	val[]: "Snídaňové cereálie"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bobblehead (buldok)"
+
+	key[]: "cap"
+	val[]: "Kšiltovka"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobil"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Bobblehead (čivava)"
+
+	key[]: "dashboard"
+	val[]: "Palubní deska"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Záznam o zakázce"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrický chladicí box"
+
+	key[]: "endless_nourishment"
+	val[]: "Nekonečná výživa"
+
+	key[]: "ets2_game_box"
+	val[]: "Obal hry ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Obědová krabička ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Cestovní taška ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Sváteční hrnek"
+
+	key[]: "fire_extinguisher"
+	val[]: "Hasicí přístroj"
+
+	key[]: "hand_bag"
+	val[]: "Příruční taška"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Kožená peněženka (ručně vyráběná)"
+
+	key[]: "hula_doll"
+	val[]: "Hula panenka"
+
+	key[]: "instant_lunch"
+	val[]: "Instantní oběd"
+
+	key[]: "instant_lunch_box"
+	val[]: "Balení instantního oběda"
+
+	key[]: "magazines"
+	val[]: "Časopisy"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Indukční magnetický kompas"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Notebook"
+
+	key[]: "paper_towels"
+	val[]: "Papírové utěrky"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilotní sluneční brýle"
+
+	key[]: "plush_bear"
+	val[]: "Plyšový medvídek"
+
+	key[]: "portable_navigator"
+	val[]: "Přenosná navigace"
+
+	key[]: "rugged_style_cap"
+	val[]: "Odolná kšiltovka"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Hrnek na kávu SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Spacák"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Víkendová taška"
+
+	key[]: "winter_bauble"
+	val[]: "Zimní ozdoba"
+
+	key[]: "winter_blast_gift"
+	val[]: "Zimní dárek"
+
+	key[]: "wise_owl_offering"
+	val[]: "Dárek moudré sovy"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Polštářek - ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Polštářek - plamen"
+
+	key[]: "goodyear_pillow"
+	val[]: "Polštářek - Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Polštářek - Sweet Home"
+
+	key[]: "skull_pillow"
+	val[]: "Polštářek - lebka"
+
+	key[]: "status_pillow"
+	val[]: "Polštářek - status"
+
+	key[]: "track_pillow"
+	val[]: "Polštářek - stopa"
+
+	key[]: "trucker_pillow"
+	val[]: "Polštářek - trucker"
+
+	key[]: "vaclav_pillow"
+	val[]: "Polštářek - Václav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Polštářek - moudré srdce"
+
+	key[]: "zzz_pillow"
+	val[]: "Polštářek - ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Osvěžovač vzduchu"
+
+	key[]: "smelling_sack"
+	val[]: "Vonný sáček"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Osvěžovač vzduchu (jablko)"
+
+	key[]: "basketball_ball"
+	val[]: "Baseballový míč"
+
+	key[]: "black_plush_cube"
+	val[]: "Černá plyšová kostka"
+
+	key[]: "chromed_skull"
+	val[]: "Chromovaná lebka"
+
+	key[]: "disco_ball"
+	val[]: "Diskokoule"
+
+	key[]: "eight_ball"
+	val[]: "Kulečníková koule"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Osvěžovač vzduchu (ETS2)"
+
+	key[]: "football_ball"
+	val[]: "Fotbalový míč"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker Insignia"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Odznak - Hope Trucker"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Osvěžovač vzduchu (SCS)"
+
+	key[]: "tennis_ball"
+	val[]: "Tenisový míček"
+
+	key[]: "trophy_skull"
+	val[]: "Trofej lebky"
+
+	key[]: "white_plush_cube"
+	val[]: "Bílá plyšová kostka"
+
+
+	key[]: "black_style_mug"
+	val[]: "Černý hrnek" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Bílo-oranžový hrnek" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Černo-oranžový hrnek" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Plyšová hračka" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Kožená peněženka" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Palubní deska" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Středový stoleček, exkluzivní" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Středový stoleček, mahagonový" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Středový stoleček, černý" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Dlouhý stoleček, exkluzivní" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Dlouhý stoleček, mahagonový" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Dlouhý stoleček, černý" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Základní" #+ Basic truck accesory general
 
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Chromované" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Nalakované a chromované" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Standardní double" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exkluzivní" #+ Luxury/Exclusive version of the interior or accesory
@@ -8916,6 +9207,15 @@ localization_db : .localization
 
 	key[]: "custom_metallic"
 	val[]: "Vlastní metalická barva" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Basic" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Základní, chromované" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Základní, nalakované" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Výherní kostky" #+ Accessory name, DLC Pink Ribbon.
@@ -8952,6 +9252,7 @@ localization_db : .localization
 
 	key[]: "grand_star"
 	val[]: "Hlavní hvězda" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -8963,7 +9264,7 @@ localization_db : .localization
 	val[]: "FOTOGRAFICKÉ STUDIO" #+ window title
 
 	key[]: "screenshots_menu_link"
-	val[]: "Foto studio" #+ link button title
+	val[]: "Fotostudio" #+ link button title
 
 	key[]: "photo_mode"
 	val[]: "Režim focení" #+ window title
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Nemůžeš odevzdat návěs během probíhající zakázky." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "ÚPRAVA VOZIDLA"
+
+	key[]: "adj_mirrors"
+	val[]: "Přizpůsobit zrcátka"
+
+	key[]: "adj_lights"
+	val[]: "Přizpůsobit světla"
+
+	key[]: "adj_seats"
+	val[]: "Přizpůsobit sedadlo"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Chladicí"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Cisternové"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Mražené, chlazené zboží"
+
 #@}
 
 #+ Trailer chain type names.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Načítání stavu města..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Zakázek pro další hvězdu:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Všechny hvězdy získány."
+	key[]: "xmas_delivery_progress"
+	val[]: "Průběh doručování dárků"
 
 	key[]: "xmas19_map_description"
 	val[]: "Pro zobrazení postupu vánočním eventem přejeď kurzorem nad městem. Pro zobrazení kompletního shrnutí postupu navštiv $WOTR_URL$."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Postup tohoto města k dosažení komunitního cíle je úplný!<br><br>Nebude lepší pomoci jinému městu s doručením dárků?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Města z této zakázky již mají dokončen postup pro komunitní cíl!<br><br>Nechceš zkusit najít jiná města, odkud nebo kam doručovat dárky?"
 
 	key[]: "xmas19_back"
 	val[]: "Zpět"

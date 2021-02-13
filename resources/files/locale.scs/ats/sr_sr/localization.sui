@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Завесе" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Додаци за клима уређај" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Ствари за кревет" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Висуљци" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "Украси за средину и патос" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Ствари за јастук"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Инструмент табла" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -634,7 +643,7 @@
 	val[]: "Оквир прозора" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
 
 	key[]: "steering_w"
-	val[]: "Волан" #+ Steering wheel
+	val[]: "Управљачки волан" #+ Steering wheel
 
 #@}
 
@@ -2762,28 +2771,28 @@
 #@{
 
 	key[]: "force_feedback"
-	val[]: "'Force feedback'" #+ Checkbox enabling force feedback.
+	val[]: "Повратна сила" #+ Checkbox enabling force feedback.
 
 	key[]: "feedback_gain"
-	val[]: "Јачина 'Force feedback'-а" #+ Slider controlling strength of the force feedback.
+	val[]: "Јачина повратне силе" #+ Slider controlling strength of the force feedback.
 
 	key[]: "feedback_stiffness"
-	val[]: "'Force feedback' тврдоћа" #+ Slider controlling strength of the FF stiffness.
+	val[]: "Тврдоћа повратне силе" #+ Slider controlling strength of the FF stiffness.
 
 	key[]: "feedback_center"
 	val[]: "Центрирање 'Force feedback'-а" #+ Slider controlling strength of the FF centering spring.
 
 	key[]: "feedback_engine"
-	val[]: "'Force feedback' јачина" #+ Slider controlling strength of the FF engine resonance effects.
+	val[]: "Моторска повратна сила" #+ Slider controlling strength of the FF engine resonance effects.
 
 	key[]: "feedback_terrain"
-	val[]: "'Force feedback' на терену" #+ Slider controlling strength of the FF terrain effects.
+	val[]: "Теренска повратна сила" #+ Slider controlling strength of the FF terrain effects.
 
 	key[]: "feedback_dampers"
-	val[]: "Умекшавање 'Force feedback'-а" #+ Slider controlling strength of the FF damper collision effects.
+	val[]: "Умекшати повратне силе" #+ Slider controlling strength of the FF damper collision effects.
 
 	key[]: "feedback_collisions"
-	val[]: "'Force feedback' приликом судара" #+ Slider controlling strength of the FF collision effects.
+	val[]: "Сударна повратна сила" #+ Slider controlling strength of the FF collision effects.
 #@}
 
 #+ Mapping of individual controller axes to steering, pedals and looking functionality.
@@ -2805,7 +2814,7 @@
 	val[]: "Мртва зона осе убрзања"
 
 	key[]: "acc_axis_mode"
-	val[]: "Начин осе убрзања"
+	val[]: "Мод осе убрзања"
 
 	key[]: "brake_axis"
 	val[]: "Оса кочнице"
@@ -2814,16 +2823,16 @@
 	val[]: "Мртва зона осе кочнице"
 
 	key[]: "brake_axis_mode"
-	val[]: "Начин осе кочнице"
+	val[]: "Мод осе кочнице"
 
 	key[]: "clutch_axis"
-	val[]: "Осовина квачила"
+	val[]: "Оса квачила"
 
 	key[]: "clutch_axis_dz"
 	val[]: "Мртва зона осе квачила"
 
 	key[]: "clutch_axis_mode"
-	val[]: "Начин осовине квачила"
+	val[]: "Мод осе квачила"
 
 	key[]: "look_updown_axis"
 	val[]: "Оса погледа горе-доле"
@@ -2832,7 +2841,7 @@
 	val[]: "Мртва зона осе погледа горе-доле"
 
 	key[]: "look_updown_axis_mode"
-	val[]: "Начин осе погледа горе-доле"
+	val[]: "Мод осе погледа горе-доле"
 
 	key[]: "look_leftright_axis"
 	val[]: "Оса погледа лево-десно"
@@ -2841,7 +2850,7 @@
 	val[]: "Мртва зона осе погледа лево-десно"
 
 	key[]: "look_leftright_axis_mode"
-	val[]: "Начин осе погледа лево-десно"
+	val[]: "Мод осе погледа лево-десно"
 #@}
 
 #+ Possible values for the axis mode dropdown.
@@ -3335,6 +3344,9 @@
 
 	key[]: "color_enhancement"
 	val[]: "Поправка боја" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Детаљи одбљесака" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Откључајте диференцијал да га не оштетите током вожње.<br>Користите следећи тастер:"
+
+	key[]: "tow_hint"
+	val[]: "Ако не можете да се извучете из било какве тешке ситуације, можете користити вучну службу. Притисните:"
 
 	key[]: "ferry_msg"
 	val[]: "Да видите могућа одредишта одавде, притисните:"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Пилеће месо"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Ковид-19 вакцина"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Сеоски сир"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "ЗАПАД" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8079,7 +8099,7 @@
 #+ Button in the input wizard used to indicate that the controller is wheel-like.
 
 	key[]: "driving_wheel"
-	val[]: "Волан"
+	val[]: "Управљачки волан"
 
 #+ Button in the input wizard used to indicate that the controller is gamepad-like.
 
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Беж ћебе"
+
+	key[]: "blanket_square"
+	val[]: "Ћебе са квадратима"
+
+	key[]: "book"
+	val[]: "Књига"
+
+	key[]: "bottle_sixpack"
+	val[]: "Паковање флаша"
+
+	key[]: "breakfast_cereals"
+	val[]: "Доручак са житарицама"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Играчка булдог"
+
+	key[]: "cap"
+	val[]: "Капа"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Мобилни телефон"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Играчка чивава"
+
+	key[]: "dashboard"
+	val[]: "Командна табла"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Извештај испоруке"
+
+	key[]: "electric_cooling_box"
+	val[]: "Електрични фрижидер"
+
+	key[]: "endless_nourishment"
+	val[]: "Бескрајна исхрана"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 кутија игре"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 ланч пакет"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 торба за камион"
+
+	key[]: "festive_mug"
+	val[]: "Празнична шоља"
+
+	key[]: "fire_extinguisher"
+	val[]: "Противпожарни апарат"
+
+	key[]: "hand_bag"
+	val[]: "Торбица"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Ручно рађени кожни новчаник"
+
+	key[]: "hula_doll"
+	val[]: "Хула лутка"
+
+	key[]: "instant_lunch"
+	val[]: "Инстант ручак"
+
+	key[]: "instant_lunch_box"
+	val[]: "Мултипаковање инстант ручка"
+
+	key[]: "magazines"
+	val[]: "Часописи"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Магнетно индуктивни компас"
+
+	key[]: "map"
+	val[]: "Мапа"
+
+	key[]: "notebook"
+	val[]: "Лаптоп"
+
+	key[]: "paper_towels"
+	val[]: "Папирни убрус"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Пилотске наочаре за сунце"
+
+	key[]: "plush_bear"
+	val[]: "Плишани меда"
+
+	key[]: "portable_navigator"
+	val[]: "Преносни навигатор"
+
+	key[]: "rugged_style_cap"
+	val[]: "Качкет"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS шоља за кафу"
+
+	key[]: "sleeping_bag"
+	val[]: "Врећа за спавање"
+
+	key[]: "tablet"
+	val[]: "Таблет"
+
+	key[]: "weekend_bag"
+	val[]: "Путна торба"
+
+	key[]: "winter_bauble"
+	val[]: "Зимски украс"
+
+	key[]: "winter_blast_gift"
+	val[]: "Поклон зимска мећава"
+
+	key[]: "wise_owl_offering"
+	val[]: "Дар мудре сове"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 јастук"
+
+	key[]: "flame_pillow"
+	val[]: "Јастук са пламеном"
+
+	key[]: "goodyear_pillow"
+	val[]: "'Goodyear' јастук"
+
+	key[]: "sweet_home_pillow"
+	val[]: "\"Доме слатки\" јастук"
+
+	key[]: "skull_pillow"
+	val[]: "Јастук с лобањом"
+
+	key[]: "status_pillow"
+	val[]: "'Status' јастук"
+
+	key[]: "track_pillow"
+	val[]: "Тркачки јастук"
+
+	key[]: "trucker_pillow"
+	val[]: "Јастук камионџије"
+
+	key[]: "vaclav_pillow"
+	val[]: "Вацлављев јастук"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Јастук мудро срце"
+
+	key[]: "zzz_pillow"
+	val[]: "ЗЗЗ јастук"
+
+
+	key[]: "air_freshener"
+	val[]: "Освеживач ваздуха"
+
+	key[]: "smelling_sack"
+	val[]: "Мирисна врећица"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Јабука освеживач ваздуха"
+
+	key[]: "basketball_ball"
+	val[]: "Кошаркашка лопта"
+
+	key[]: "black_plush_cube"
+	val[]: "Црна плишана коцка"
+
+	key[]: "chromed_skull"
+	val[]: "Хромирана лобања"
+
+	key[]: "disco_ball"
+	val[]: "Диско кугла"
+
+	key[]: "eight_ball"
+	val[]: "Билијарска лопта 8"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "'ETS2' освеживач ваздуха"
+
+	key[]: "football_ball"
+	val[]: "Фудбалска лопта"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Значка \"Home Trucker\""
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Значка \"Hope Trucker\""
+
+	key[]: "scs_fragrance_tag"
+	val[]: "'SCS' освеживач ваздуха"
+
+	key[]: "tennis_ball"
+	val[]: "Тениска лопта"
+
+	key[]: "trophy_skull"
+	val[]: "Трофејна лобања"
+
+	key[]: "white_plush_cube"
+	val[]: "Бела плишана коцка"
+
+
+	key[]: "black_style_mug"
+	val[]: "Црна стилска шољица" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Бело-наранџаста шоља" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Црно-наранџаста шоља" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Плишана играчка" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Кожни новчаник" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Командна табла" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Ексклузивна централна табла" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Централна табла од махагонија" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Централна табла црна" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Ексклузивна дуга табла" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Дуга табла од махагонија" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Дуга табла црна" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Дужност" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Хром" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Хром 2" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Боја и хром" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Стандардна дупла" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Луксузно" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Ваша металик боја" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Основни" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Основни хром" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Основно офарбано" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Победничка коцка" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Величанствена звезда" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "Не можете отказати приколицу док сте на послу." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "ПОДЕШАВАЊА ВОЗИЛА"
+
+	key[]: "adj_mirrors"
+	val[]: "Подесите огледала"
+
+	key[]: "adj_lights"
+	val[]: "Подесите светла"
+
+	key[]: "adj_seats"
+	val[]: "Подесите седишта"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Хладњача"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Резервоар"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Смрзнута, расхлађена роба"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Добивање напретка града..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Испоруке до следеће звезде:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Све звезде постигнуте."
+	key[]: "xmas_delivery_progress"
+	val[]: "Напредак у испоруци поклона"
 
 	key[]: "xmas19_map_description"
 	val[]: "Крените показивачем изнад градова да бисте видели како напредује божићни догађај. Посетите $WOTR_URL$ да бисте видели цео резиме напредовања."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Допринос овог града циљу заједнице је потпун!<br><br>Зашто не помогнете другом граду да уручи поклоне?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Допринос ових градова за овај посао према циљу заједнице је потпун!<br><br>Зашто не бисте пронашли друге градове за испоруку поклона из/у?"
 
 	key[]: "xmas19_back"
 	val[]: "Вратити се"

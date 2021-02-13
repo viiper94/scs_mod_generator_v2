@@ -227,5 +227,9 @@
         "tn_home_transporter": "Μεταφορά Κατοικιών",
         "tn_knuckle_boom": "Γερανός Κορμών (Παπαγαλάκι)",
         "tn_tub_grinder": "Θρυμματιστής"
+    },
+    "companies\/paints": {
+        "default": "Προσαρμοσμένο χρώμα",
+        "metallic": "Προσαρμοσμένο Μεταλλικό Χρώμα"
     }
 }

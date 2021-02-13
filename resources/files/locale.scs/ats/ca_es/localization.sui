@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Cortines" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Articles de l'aire condicionat" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Articles del llit" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Articles penjants" #+ Interior hanging accesories
 
@@ -537,8 +543,11 @@
 	key[]: "toybig"
 	val[]: "Articles del centre del terra" #+ Interior accessories placed on the floor in the center of the truck cabin
 
+	key[]: "l_pillow"
+	val[]: "Articles del coixí"	#+ Interior accessories placed on pillow place in back of the truck cabin
+
 	key[]: "set_dashbrd"
-	val[]: "Conjunts del taulell" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Conjunts del tauler" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
 	val[]: "Conjunts del parabrises" #+ Large Pin for sets of small pins of the windshield accessories
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Correcció de color" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Detall de la reflexió" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Has de desbloquejar el diferencial durant la conducció normal o es podria malmetre.<br>Utilitza la següent tecla per desactivar-lo:"
+
+	key[]: "tow_hint"
+	val[]: "Si no pots sortir de qualsevol situació complicada, pots utilitzar el servei de grua. Prem:"
 
 	key[]: "ferry_msg"
 	val[]: "Per a veure possibles destinacions de viatge prem:"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Carn de pollastre"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vaccí de la COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Formatge fresc"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Manta beix"
+
+	key[]: "blanket_square"
+	val[]: "Manta de quadres"
+
+	key[]: "book"
+	val[]: "Llibre"
+
+	key[]: "bottle_sixpack"
+	val[]: "Pack de sis ampolles"
+
+	key[]: "breakfast_cereals"
+	val[]: "Cereals per l'esmorzar"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Figureta de buldog"
+
+	key[]: "cap"
+	val[]: "Gorra"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Telèfon mòbil"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Figureta de chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Quadre d'instruments"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Informe de lliurament"
+
+	key[]: "electric_cooling_box"
+	val[]: "Nevera portàtil elèctrica"
+
+	key[]: "endless_nourishment"
+	val[]: "Entrepà"
+
+	key[]: "ets2_game_box"
+	val[]: "Joc d'ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Carmanyola d'ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Bossa de camió d'ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Tassa festiva"
+
+	key[]: "fire_extinguisher"
+	val[]: "Extintor"
+
+	key[]: "hand_bag"
+	val[]: "Bossa de mà"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Cartera de pell feta a mà"
+
+	key[]: "hula_doll"
+	val[]: "Figureta Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Menjar instantani"
+
+	key[]: "instant_lunch_box"
+	val[]: "Pack de menjar instantani"
+
+	key[]: "magazines"
+	val[]: "Revistes"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Brúixola magneto-inductiva"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Ordinador portàtil"
+
+	key[]: "paper_towels"
+	val[]: "Tovallons de paper"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Ulleres de sol d'aviador"
+
+	key[]: "plush_bear"
+	val[]: "Osset de peluix"
+
+	key[]: "portable_navigator"
+	val[]: "Navegador portàtil"
+
+	key[]: "rugged_style_cap"
+	val[]: "Gorra d'estil robust"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Tassa de cafè de SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Sac de dormir"
+
+	key[]: "tablet"
+	val[]: "Tauleta"
+
+	key[]: "weekend_bag"
+	val[]: "Bossa de viatge"
+
+	key[]: "winter_bauble"
+	val[]: "Bola de Nadal"
+
+	key[]: "winter_blast_gift"
+	val[]: "Regal de Nadal"
+
+	key[]: "wise_owl_offering"
+	val[]: "Oferta del mussol savi"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Coixí d'ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Coixí de flames"
+
+	key[]: "goodyear_pillow"
+	val[]: "Coixí de Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Coixí dolça llar"
+
+	key[]: "skull_pillow"
+	val[]: "Coixí de calavera"
+
+	key[]: "status_pillow"
+	val[]: "Coixí d'estat de la relació"
+
+	key[]: "track_pillow"
+	val[]: "Coixí de rodera"
+
+	key[]: "trucker_pillow"
+	val[]: "Coixí de camioner"
+
+	key[]: "vaclav_pillow"
+	val[]: "Coixí de Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Coixí del cor savi"
+
+	key[]: "zzz_pillow"
+	val[]: "Coixí ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Ambientador"
+
+	key[]: "smelling_sack"
+	val[]: "Bosseta perfumada"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Ambientador de poma"
+
+	key[]: "basketball_ball"
+	val[]: "Pilota de bàsquet"
+
+	key[]: "black_plush_cube"
+	val[]: "Cub de peluix negre"
+
+	key[]: "chromed_skull"
+	val[]: "Calavera cromada"
+
+	key[]: "disco_ball"
+	val[]: "Bola de discoteca"
+
+	key[]: "eight_ball"
+	val[]: "Bola vuit"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Ambientador d'ETS2"
+
+	key[]: "football_ball"
+	val[]: "Pilota de futbol"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insígnia Home Trucker"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insígnia Hope Trucker"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Ambientador de SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Pilota de tennis"
+
+	key[]: "trophy_skull"
+	val[]: "Trofeu de calavera"
+
+	key[]: "white_plush_cube"
+	val[]: "Cub de peluix blanc"
+
+
+	key[]: "black_style_mug"
+	val[]: "Tassa d'estil negre" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Tassa taronja i blanca" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Tassa taronja i negra" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Peluix" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Moneder de cuir" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Quadre d'instruments" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Taulell central exclusiu" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Taulell central caoba" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Taulell central negre" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Taulell llarg exclusiu" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Taulell llarg caoba" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Taulell llarg negre" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "De sèrie" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Cromat" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Cromat II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Pintura i cromat" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Estàndard doble" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusiu" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Color metàl·lic personalitzat" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Bàsic" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Cromat bàsic" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Pintat bàsic" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Daus guanyadors" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Gran estrella" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "No es pot aparcar el remolc mentre estàs treballant." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "AJUSTOS DEL VEHICLE"
+
+	key[]: "adj_mirrors"
+	val[]: "Ajustar miralls"
+
+	key[]: "adj_lights"
+	val[]: "Ajustar llums"
+
+	key[]: "adj_seats"
+	val[]: "Ajustar seients"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Refrigerat"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Cisterna"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Congelats, mercaderia refrigerada"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Obtenint el progrés de la ciutat..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Entregues fins a l'estrella següent:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Totes les estrelles aconseguides."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progrés d'entrega dels regals"
 
 	key[]: "xmas19_map_description"
 	val[]: "Passa el cursor per sobre de les ciutats per veure el progrés de l'esdeveniment de Nadal. Vés a $WOTR_URL$ per a veure'n un resum complet."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "La contribució d'aquesta ciutat a l'objectiu de la comunitat s'ha completat!<br><br>Per què no ajudes a una altra ciutat a lliurar els seus regals?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "La contribució d'aquestes ciutats per aquesta feina a l'objectiu de la comunitat s'ha completat!<br><br>Per què no busques altres ciutats per entregar o recollir regals?"
 
 	key[]: "xmas19_back"
 	val[]: "Tornar enrere"

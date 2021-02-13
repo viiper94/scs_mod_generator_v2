@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "Занавески" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Аксессуары в воздуховод" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Аксессуары для кровати" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Висячие предметы" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "На полу" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Подушка"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "На приборной панели" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -935,13 +944,13 @@
 	val[]: "<color value=@@clr_sel@@>Отсутствует необходимые модификации игры.<color value=@@clr_txt@@><br><br>В последней сохранённой игре используется отсутствующая или отключенная в данный момент модификация.<br><br>Если это непредвиденная ошибка, то проверьте, пожалуйста, настройки сторонних модификаций в профиле.<br><br>Либо вы можете загрузить сохранённую игру, игнорируя данную ошибку. В этом случае, корректная работы игры не гарантируется.<br><br>Также вы можете попробовать загрузить другую сохранённую игру, в которой не будет зависимости от отсутствующих модификаций."
 
 	key[]: "load_msg_missing_rem_dlc"
-	val[]: "<color value=@@clr_sel@@>Одно из игровых дополнений отсутствует.<color value=@@clr_txt@@><br><br>Этот файл сохранения содержит данные, относящиеся к отсутствующему дополнению (DLC).<br><br>Пожалуйста, проверьте состояние установленных дополнений.<br><br>Вы можете продолжить загрузку сохраненной игры, но в этом случае функции, относящиеся к отсутствующему дополнения будут недоступны.<br><br>Также, вы можете загрузить другой, более ранний файл сохранения, созданный за некоторое время до установки этого DLC."
+	val[]: "<color value=@@clr_sel@@>Одно из игровых дополнений (DLC) отсутствует.<color value=@@clr_txt@@><br><br>Это сохранение содержит данные, относящиеся к отсутствующему дополнению (DLC).<br><br>Пожалуйста, проверьте состояние установленных дополнений (DLC).<br><br>Вы можете продолжить загрузку сохраненной игры, но в этом случае функции, относящиеся к отсутствующему дополнению, будут недоступны.<br><br>Также, Вы можете загрузить другой, более ранний файл сохранения, созданный за некоторое время до установки этого дополнения (DLC)."
 
 	key[]: "load_msg_missing_dlc"
-	val[]: "<color value=@@clr_red@@>Отсутствует требуемый DLC.<color value=@@clr_txt@@><br><br>В последней сохранённой игре используется отсутствующий или отключенный в данный момент DLC (официальное дополнение для игры).<br><br>Для корректной работы данного сохранения игры, этот DLC должен быть установлен и активирован на этом компьютере.<br><br>Также Вы можете попробовать загрузить другую сохранённую игру, в которой не будет зависимости от отсутствующего DLC."
+	val[]: "<color value=@@clr_red@@>Отсутствует требуемое дополнение (DLC).<color value=@@clr_txt@@><br><br>В последней сохранённой игре используется отсутствующее или отключенное в данный момент дополнение (DLC).<br><br>Для корректной работы данного сохранения игры, это дополнение (DLC) должно быть установлено и активировано на этом компьютере.<br><br>Также Вы можете попробовать загрузить другую сохранённую игру, в которой не будет зависимости от отсутствующего дополнения (DLC)."
 
 	key[]: "load_msg_mod_dlc_dep"
-	val[]: "<color value=@@clr_red@@>Внимание!<color value=@@clr_txt@@><br><br>Обнаружена модификация игрового клиента, зависящая от DLC (официального дополнения), которое в данный момент недоступно.<br><br>Во избежание возможных ошибок, требуется отключить соответствующие модификации либо установить необходимые DLC."
+	val[]: "<color value=@@clr_red@@>Внимание!<color value=@@clr_txt@@><br><br>Обнаружена модификация игрового клиента, зависящая от дополнения (DLC), которое в данный момент недоступно.<br><br>Во избежание возможных ошибок, требуется отключить соответствующие модификации либо установить необходимые дополнения (DLC)."
 
 	key[]: "load_msg_crash"
 	val[]: "<color value=@@clr_red@@>Обнаружено аварийное завершение игры<color value=@@clr_txt@@><br><br>Похоже, что в прошлый раз игра была аварийно завершена.<br><br>Вы можете попробовать найти и устранить причину с помощью информации, указанной ниже. Также вы можете попробовать загрузить другое сохранение.<br><br>Наиболее часто аварийное завершение происходит по следующим причинам:<br><br>1. Одна или несколько сторонних модификаций игры не работают, либо несовместимы с данной версией игры.<br><br>2. Сохранённая игра содержит информацию или элементы модификаций, отсутствующих, либо отключенных в данный момент.<br><br>3. Файл сохранения игры был поврежден некорректно работающей модификацией игры.<br><br>4. В некоторых случаях аварийное завершение игры может быть вызвано ошибками в работе драйверов или аппаратного обеспечения компьютера."
@@ -1616,7 +1625,7 @@
 	val[]: "ПРОСМОТР ДОПОЛНЕНИЙ" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_btn"
-	val[]: "Дополнения" #+ Button used to start DLC browser.
+	val[]: "Дополнения (DLC)" #+ Button used to start DLC browser.
 
 	key[]: "name_of_dlc"
 	val[]: "Название DLC" #+ Prefix on the button in format "Name of DLC - Going East!". Please keep it as short as possible.
@@ -3429,6 +3438,9 @@
 	key[]: "color_enhancement"
 	val[]: "Цветовая коррекция" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Масштаб отражений" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Качество отражений" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Блокировку дифференциала рекомендуется отключать при обычном движении во избежание его повреждения.<br>Для отключения блокировки нажмите:"
 
+	key[]: "tow_hint"
+	val[]: "Если вы не можете выбраться из тяжёлой ситуации, вы можете воспользоваться вызовом буксира. Нажмите"
+
 	key[]: "ferry_msg"
 	val[]: "Чтобы просмотреть возможные пункты назначения, нажмите"
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "Инфицированное сырье"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Вакцина от COVID-19"
 
 	key[]: "cn_cyanide"
 	val[]: "Цианиды"
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "Бастия"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Берген"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "Кунда"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Лахти"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Кепка" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Кружка" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Бежевое одеяло"
+
+	key[]: "blanket_square"
+	val[]: "Клетчатое одеяло"
+
+	key[]: "book"
+	val[]: "Книга"
+
+	key[]: "bottle_sixpack"
+	val[]: "Спайка бутылок"
+
+	key[]: "breakfast_cereals"
+	val[]: "Сухой завтрак"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Игрушка «Бульдог»"
+
+	key[]: "cap"
+	val[]: "Кепка"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Телефон"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Игрушка «Чихуахуа»"
+
+	key[]: "dashboard"
+	val[]: "Приборная панель"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Информация о доставке"
+
+	key[]: "electric_cooling_box"
+	val[]: "Электрический холодильник"
+
+	key[]: "endless_nourishment"
+	val[]: "Бутерброд"
+
+	key[]: "ets2_game_box"
+	val[]: "Диск «ETS2»"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Ланчбокс «ETS2»"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Сумка-грузовик «ETS2»"
+
+	key[]: "festive_mug"
+	val[]: "Праздничная кружка"
+
+	key[]: "fire_extinguisher"
+	val[]: "Огнетушитель"
+
+	key[]: "hand_bag"
+	val[]: "Сумочка"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Кожаный кошелёк ручной работы"
+
+	key[]: "hula_doll"
+	val[]: "Кукла Хула"
+
+	key[]: "instant_lunch"
+	val[]: "Обед быстрого приготовления"
+
+	key[]: "instant_lunch_box"
+	val[]: "Упаковка обедов быстрого приготовления"
+
+	key[]: "magazines"
+	val[]: "Журналы"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Магнитно-индуктивный компас"
+
+	key[]: "map"
+	val[]: "Карта"
+
+	key[]: "notebook"
+	val[]: "Ноутбук"
+
+	key[]: "paper_towels"
+	val[]: "Бумажные полотенца"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Солнцезащитные очки-«авиаторы»"
+
+	key[]: "plush_bear"
+	val[]: "Плюшевый медведь"
+
+	key[]: "portable_navigator"
+	val[]: "Портативный навигатор"
+
+	key[]: "rugged_style_cap"
+	val[]: "Кепка грубого стиля"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Кофейная кружка «SCS»"
+
+	key[]: "sleeping_bag"
+	val[]: "Спальный мешок"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Снежное одеяло"
+
+	key[]: "tablet"
+	val[]: "Планшет"
+
+	key[]: "weekend_bag"
+	val[]: "Сумка выходного дня"
+
+	key[]: "winter_bauble"
+	val[]: "Зимний ёлочный шарик"
+
+	key[]: "winter_blast_gift"
+	val[]: "Подарок «Зимний заряд»"
+
+	key[]: "wise_owl_offering"
+	val[]: "Мудрая сова с подарком"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Подушка «ETS2»"
+
+	key[]: "flame_pillow"
+	val[]: "Подушка «Пламя»"
+
+	key[]: "goodyear_pillow"
+	val[]: "Подушка «Goodyear»"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Подушка «Милый дом»"
+
+	key[]: "skull_pillow"
+	val[]: "Подушка «Череп»"
+
+	key[]: "status_pillow"
+	val[]: "Подушка «Статус отношений»"
+
+	key[]: "track_pillow"
+	val[]: "Подушка «След»"
+
+	key[]: "trucker_pillow"
+	val[]: "Подушка «Дальнобойщик»"
+
+	key[]: "vaclav_pillow"
+	val[]: "Подушка Вацлава"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Подушка «Мудрое сердце»"
+
+	key[]: "zzz_pillow"
+	val[]: "Подушка «Храп»"
+
+
+	key[]: "air_freshener"
+	val[]: "Освежитель воздуха"
+
+	key[]: "detective_head"
+	val[]: "Голова детектива"
+
+	key[]: "vampire_head"
+	val[]: "Голова вампира"
+
+	key[]: "viking_head"
+	val[]: "Голова викинга"
+
+	key[]: "smelling_sack"
+	val[]: "Мешочек с благовониями"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Ароматизатор «Яблоко»"
+
+	key[]: "basketball_ball"
+	val[]: "Баскетбольный мяч"
+
+	key[]: "black_plush_cube"
+	val[]: "Чёрный плюшевый кубик"
+
+	key[]: "chromed_skull"
+	val[]: "Хромированный череп"
+
+	key[]: "disco_ball"
+	val[]: "Диско-шар"
+
+	key[]: "eight_ball"
+	val[]: "Бильярдный шар-восьмёрка"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Ароматизатор «ETS2»"
+
+	key[]: "football_ball"
+	val[]: "Футбольный мяч"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Значок «Дальнобойщик на дому»"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Значок «Дальнобойщик Надежды»"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Ароматизатор «SCS»"
+
+	key[]: "tennis_ball"
+	val[]: "Теннисный мяч"
+
+	key[]: "trophy_skull"
+	val[]: "Трофей «Череп»"
+
+	key[]: "white_plush_cube"
+	val[]: "Белый плюшевый кубик"
+
 
 	key[]: "black_style_mug"
 	val[]: "Чёрная кружка" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "Длинная полка (Чёрная)" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "Усиленный" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "Хром" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Хром II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Краска и хром" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "Стандарт 2013 UK" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Премиум" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Эксклюзив" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "Белый отражатель"
 
-	key[]: "basic_chrome"
-	val[]: "Базовые (Хром)" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Базовые" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Базовые (Хром)" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Базовые (Краска)" #+ type of sideskirts, painted
+	val[]: "Базовые (Краска)" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Полноразмерные боковые юбки с двумя дугами" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -11716,6 +11965,22 @@
 	val[]: "Невозможно отказаться от прицепа во время выполнения заказа" #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "НАСТРОЙКИ ТРАНСПОРТА"
+
+	key[]: "adj_mirrors"
+	val[]: "Настройка зеркал"
+
+	key[]: "adj_lights"
+	val[]: "Настройка фар"
+
+	key[]: "adj_seats"
+	val[]: "Настройка сидения"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Получение статистики города..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Заказов до следующей звезды:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Получены все звёзды."
+	key[]: "xmas_delivery_progress"
+	val[]: "Прогресс доставки подарков"
 
 	key[]: "xmas19_map_description"
 	val[]: "Наведите курсор мыши на город, чтобы увидеть его вклад. Откройте $WOTR_URL$, чтобы увидеть общий прогресс."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Вклад этого города в достижение цели сообщества завершён!<br><br>Почему бы не помочь другим городам с доставкой подарков?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Эти города уже внесли свой вклад в цель сообщества по этому заданию!<br><br>Почему бы не помочь другим городам?"
 
 	key[]: "xmas19_back"
 	val[]: "Назад"

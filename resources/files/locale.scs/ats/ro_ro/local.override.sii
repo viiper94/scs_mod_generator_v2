@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Obiecte Panou Posterior"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Lumini Cabină"
 
 	key[]: "cabdefl"
 	val[]: "Spoilere Cabină"
+
+	key[]: "cup_holder"
+	val[]: "Suport Pahar"
 
 	key[]: "deflector"
 	val[]: "Spoiler Insecte"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Spate Cabină"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Seturi pentru Dulap" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Seturi pentru Suport Pahar" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Lumini Praguri"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Lumini Acoperiş"
 
+	key[]: "toyback"
+	val[]: "Obiecte de Podea pentru Sleeper" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Obiecte de Podea" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Obiecte pentru Stocare în Bord" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Obiecte pentru Canapea" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Obiecte pentru Masă" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Aripă Turbo"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero Vopsit"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Rezervor de Aluminiu"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Inferior"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Drujbă de Jucărie"
+	key[]: "cabinet"
+	val[]: "Dulap"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Rezervor Cromat"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "În Formă de D"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "DRL"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Lămpi de Ceaţă"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "IVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Suport Pahar (deschis)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Suport Pahar (de stânga deschis)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Suport Pahar (de dreapta deschis)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Suport Pahar (închis)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Minge de Fotbal American"
+
+	key[]: "ats_bag"
+	val[]: "Geantă ATS"
+
+	key[]: "ats_cap"
+	val[]: "Şapcă ATS"
+
+	key[]: "ats_game_box"
+	val[]: "Cutie de Joc ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "Cutie pentru Prânz ATS"
+
+	key[]: "ats_mug"
+	val[]: "Cană ATS"
+
+	key[]: "ats_truck_bag"
+	val[]: "Geantă Camion ATS"
+
+	key[]: "baseball_ball"
+	val[]: "Minge de Baseball"
+
+	key[]: "baseball_bat"
+	val[]: "Bâtă de Baseball"
+
+	key[]: "bee"
+	val[]: "Albină"
+
+	key[]: "black_ats_mug"
+	val[]: "Cană Neagră ATS"
+
+	key[]: "blanket_stars"
+	val[]: "Pătură model Stele"
+
+	key[]: "bottle"
+	val[]: "Sticlă"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Doză"
+
+	key[]: "can_pack"
+	val[]: "Pachet de Doze"
+
+	key[]: "can_sixpack"
+	val[]: "Pachet de 6 Doze"
+
+	key[]: "cans"
+	val[]: "Doze"
+
+	key[]: "car_perfume"
+	val[]: "Parfum Auto"
+
+	key[]: "cardbox"
+	val[]: "Cutie de Carton"
+
+	key[]: "carrier"
+	val[]: "Suport Transport Sticle"
+
+	key[]: "chainsaw_toy"
+	val[]: "Drujbă de Jucărie"
+
+	key[]: "chewing_gums"
+	val[]: "Gumă de Mestecat"
+
+	key[]: "coffee_cup"
+	val[]: "Ceaşcă de Cafea"
+
+	key[]: "costs_list"
+	val[]: "Jurnal Consum Carburant"
+
+	key[]: "dreamcatcher"
+	val[]: "Prinzător de Vise"
+
+	key[]: "emergency_triangles"
+	val[]: "Triunghiuri de Avertizare"
+
+	key[]: "expenses_list"
+	val[]: "Raport de Cheltuieli"
+
+	key[]: "fishing_bag"
+	val[]: "Geantă Pescuit"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Mască Portar"
+
+	key[]: "guitar"
+	val[]: "Chitară"
+
+	key[]: "guitar_case"
+	val[]: "Cutie Chitară"
+
+	key[]: "hat"
+	val[]: "Pălărie"
+
+	key[]: "hockey_stick"
+	val[]: "Crosă de Hochei"
+
+	key[]: "holy_field_blanket"
+	val[]: "Pătura Sfânta Reuniune"
+
+	key[]: "honey_bee"
+	val[]: "Albină"
+
+	key[]: "laundry_box"
+	val[]: "Coş de Rufe"
+
+	key[]: "peppermints"
+	val[]: "Mentosane"
+
+	key[]: "plush_donut"
+	val[]: "Gogoaşă de Pluş"
+
+	key[]: "plush_lion"
+	val[]: "Leu de Pluş"
+
+	key[]: "power_inverter"
+	val[]: "Invertor de Putere"
+
+	key[]: "propeller"
+	val[]: "Elice"
+
+	key[]: "shoes"
+	val[]: "Încălţăminte"
+
+	key[]: "spearmints"
+	val[]: "Bomboane de Mentă"
+
+	key[]: "sport_sunglasses"
+	val[]: "Ochelari Sport de Soare"
+
+	key[]: "stack_of_burgers"
+	val[]: "Stivă de Burgeri"
+
+	key[]: "usa_cap"
+	val[]: "Şapcă SUA"
+
+	key[]: "usa_flag"
+	val[]: "Steag SUA"
+
+	key[]: "usa_flag_cap"
+	val[]: "Şapcă cu Steag SUA"
+
+	key[]: "ventilator"
+	val[]: "Ventilator"
+
+	key[]: "wotr_cap"
+	val[]: "Şapcă WoTr"
+
+
+	key[]: "ats_pillow"
+	val[]: "Pernă ATS"
+
+	key[]: "heart_pillow"
+	val[]: "Pernă Inimioară"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Pernă \"Sărută-mă\""
+
+	key[]: "protector_pillow"
+	val[]: "Pernă \"Protector\""
+
+	key[]: "star_pillow"
+	val[]: "Pernă Stea"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Pernă \"Daaa, Camion\""
+
+	key[]: "usa_flag_pillow"
+	val[]: "Pernă Steag SUA"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Pernă Emblemă SUA"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Odorizant Auto ATS"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Odorizant Auto Cactus"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Odorizant Auto Lămâie"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Odorizant Auto Frunză de Arţar"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Odorizant Auto Portocală"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Odorizant Auto USA"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Cub Albastru din Pluş"
+
+	key[]: "red_plush_cube"
+	val[]: "Cub Roşu din Pluş"
+
+	key[]: "double_plush_cube"
+	val[]: "Cub Dublu din Pluş"
+
+
+	key[]: "alien_head"
+	val[]: "Cap de Extraterestru"
+
+	key[]: "cowboy_head"
+	val[]: "Cap de Cowboy"
+
+	key[]: "pirate_head"
+	val[]: "Cap de Pirat"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Autocolant în formă de Vultur"
+
+	key[]: "guitar_sticker"
+	val[]: "Autocolant în formă de Chitară"
+
+	key[]: "hat_sticker"
+	val[]: "Autocolant în formă de Şapcă"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Autocolant \"Sirop de Arţar\""
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Autocolant în formă de Volan"
+
+	key[]: "taco_sticker"
+	val[]: "Autocolant în formă de Taco"
+
+	key[]: "truck_sticker"
+	val[]: "Autocolant în formă de Camion"
+
+	key[]: "usa_country_sticker"
+	val[]: "Autocolant Hartă SUA"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Autocolant Steag SUA"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Legume"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Camioane Western Star"
 
 #@}
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Zona de Odihnă Midvale Hill"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Intersecţia Albuquerque"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Oraşul Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Oraşul Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Zona de Odihnă de pe US-86"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Popasul de pe Ruta 66w"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "Zona de Odihnă de pe US-82"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Zona de Odihnă Arizona Welcome Center"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Zona de Odihnă de pe US-64"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Monumentul Istoric al lui Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Oraşul Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Farul Capului Yaquina"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Fântâna lui Thor"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Podul Astorie-Megler"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport - Podul din Golful Yaquina"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Oraşul Dalles"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Pădurea de Sequoia de pe US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Fabrica de Hârtie din Oregon"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Panoramă asupra US-395"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Intersecţia Biggs"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Şantierul Naval Portland"
 
 	# Utah
 

@@ -9,7 +9,7 @@ SiiNunit
 
 	mail_text: mailtext.test1 {
 		from: "Система" #+ Message sender
-		subject: "Тествовое сообщение" #+ Message subject
+		subject: "Тестовое сообщение" #+ Message subject
 		body: "Привет! <br><br>Это тестовое сообщение от вашего администратора ;-)<br><br>Будьте здоровы" #+ Message body
 	}
 

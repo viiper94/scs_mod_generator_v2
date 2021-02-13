@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Штори" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Аксесуари в повітрязабірник" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Аксесуари для ліжка" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Підвісні предмети" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "На підлозі" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Подушка"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "На панелі приборів" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Корекція кольору" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Деталізація відображення" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Розблокуйте диференціал під час звичайної їзди, інакше можете його пошкодити.<br>Щоб вимкнути, натисніть: "
+
+	key[]: "tow_hint"
+	val[]: "If you can't get out of any difficult situation you may use towing service. Press:"
 
 	key[]: "ferry_msg"
 	val[]: "Щоб переглянути можливі пункти призначення, натисніть:"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Куряче м'ясо "
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Вакцина від COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Кисломолочний сир"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Бежева ковдра"
+
+	key[]: "blanket_square"
+	val[]: "Ковдра в клітинку"
+
+	key[]: "book"
+	val[]: "Книга"
+
+	key[]: "bottle_sixpack"
+	val[]: "Ящик бутилок"
+
+	key[]: "breakfast_cereals"
+	val[]: "Сухий сніданок"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Играшка «Бульдог»"
+
+	key[]: "cap"
+	val[]: "Кепка "	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Телефон"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Играшка «Чіхуахуа»"
+
+	key[]: "dashboard"
+	val[]: "Панель приладів"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Інформація про доставку"
+
+	key[]: "electric_cooling_box"
+	val[]: "Електричний холодильник"
+
+	key[]: "endless_nourishment"
+	val[]: "Бутерброд"
+
+	key[]: "ets2_game_box"
+	val[]: "Диск «ETS2»"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Ланчбокс «ETS2»"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Сумка-грузовик «ETS2»"
+
+	key[]: "festive_mug"
+	val[]: "Святкова чашка"
+
+	key[]: "fire_extinguisher"
+	val[]: "Вогнегасник"
+
+	key[]: "hand_bag"
+	val[]: "Сумочка"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Шкіряний гаманець ручної роботи"
+
+	key[]: "hula_doll"
+	val[]: "Кукла Хула"
+
+	key[]: "instant_lunch"
+	val[]: "Обід швидкого приготування"
+
+	key[]: "instant_lunch_box"
+	val[]: "Упаковка ланчів швдкого приготування"
+
+	key[]: "magazines"
+	val[]: "Журнали"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Магнітно-індуктивний компас"
+
+	key[]: "map"
+	val[]: "Карта"
+
+	key[]: "notebook"
+	val[]: "Ноутбук"
+
+	key[]: "paper_towels"
+	val[]: "Бумажні рушники"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Сонцезахисні очки-«авіатори»"
+
+	key[]: "plush_bear"
+	val[]: "Плюшевий ведмідь"
+
+	key[]: "portable_navigator"
+	val[]: "Портативний навігатор"
+
+	key[]: "rugged_style_cap"
+	val[]: "Кепка грубого стилю"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Кавова чашка «SCS»"
+
+	key[]: "sleeping_bag"
+	val[]: "Спальний мішок"
+
+	key[]: "tablet"
+	val[]: "Планшет"
+
+	key[]: "weekend_bag"
+	val[]: "Сумка вихідного дня"
+
+	key[]: "winter_bauble"
+	val[]: "Зимовий ялинковий шарик"
+
+	key[]: "winter_blast_gift"
+	val[]: "Подарок «Зимовий заряд»"
+
+	key[]: "wise_owl_offering"
+	val[]: "Мудра сова з подарунком"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Подушка «ETS2»"
+
+	key[]: "flame_pillow"
+	val[]: "Подушка «Вогонь»"
+
+	key[]: "goodyear_pillow"
+	val[]: "Подушка «Goodyear»"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Подушка «Милий дім»"
+
+	key[]: "skull_pillow"
+	val[]: "Подушка «Череп»"
+
+	key[]: "status_pillow"
+	val[]: "Подушка «Статус відносин»"
+
+	key[]: "track_pillow"
+	val[]: "Подушка «Слід»"
+
+	key[]: "trucker_pillow"
+	val[]: "Подушка «Дальнобійник»"
+
+	key[]: "vaclav_pillow"
+	val[]: "Подушка Вацлава"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Подушка «Мудре серце»"
+
+	key[]: "zzz_pillow"
+	val[]: "Подушка «Храп»"
+
+
+	key[]: "air_freshener"
+	val[]: "Ароматизатор"
+
+	key[]: "smelling_sack"
+	val[]: "Мішечок з пахощами"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Ароматизатор «Яблуко»"
+
+	key[]: "basketball_ball"
+	val[]: "Баскетбольний М'яч"
+
+	key[]: "black_plush_cube"
+	val[]: "Чорний плюшевий кубик"
+
+	key[]: "chromed_skull"
+	val[]: "Хромований череп"
+
+	key[]: "disco_ball"
+	val[]: "Диско-шар"
+
+	key[]: "eight_ball"
+	val[]: "Більярдний шар-вісімка"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Ароматизатор «ETS2»"
+
+	key[]: "football_ball"
+	val[]: "Футбольний М'яч"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker Insignia"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Значок «Далекобійник Надії»"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Ароматизатор «SCS»"
+
+	key[]: "tennis_ball"
+	val[]: "Тенісний М'яч"
+
+	key[]: "trophy_skull"
+	val[]: "Трофей «Череп»"
+
+	key[]: "white_plush_cube"
+	val[]: "Білий плюшевий кубик"
+
+
+	key[]: "black_style_mug"
+	val[]: "Чорна чашка " #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Біло-помаранчева чашка " #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Чорно-помаранчева чашка " #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Плюшева іграшка" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Шкіряний гаманець" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Панель" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Ексклюзивна полиця " #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Полиця (червоне дерево) " #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Полиця (чорна) " #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Ексклюзивна довга полиця" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Довга полиця (червоне дерево)" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Довга полиця (чорна) " #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Посилений" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Хром" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Фарба і хром" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Стандартні подвійні" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Ексклюзив " #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Колір-металік" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Basic" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Прості хромовані" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Прості фарбовані" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Гральна кістка" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Урочиста зірка" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "Неможливо від’єднати причіп під час виконання завдання." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "НАЛАШТУВАННЯ ТРАНСПОРТУ"
+
+	key[]: "adj_mirrors"
+	val[]: "Регулювання дзеркал"
+
+	key[]: "adj_lights"
+	val[]: "Регулювання фар"
+
+	key[]: "adj_seats"
+	val[]: "Налаштування сидіння"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Рефрижератор"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Цистерна"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Заморожені, охолодженні товари"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Завантаження ходу виконання для міста..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Доставок до наступної зірки:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Ви отримали всі зірки."
+	key[]: "xmas_delivery_progress"
+	val[]: "Прогрес доставки подарунків"
 
 	key[]: "xmas19_map_description"
 	val[]: "Наводьте на міста, щоб побачити хід виконання різдвяної події. Щоб переглянути повну статистику ходу виконання, перейдіть на $WOTR_URL$."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Внесок цього міста до завдання спільноти завершено!<br><br>Чому б не допомогти іншим містам доставити їх подарунки?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Ці міста вже внесли свій вклад в ціль спільноти по цьому завданню!<br><br>Чому би не допомогти іншим містам доставити подарунки?"
 
 	key[]: "xmas19_back"
 	val[]: "Повернутися"

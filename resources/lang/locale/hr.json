@@ -227,5 +227,9 @@
         "tn_home_transporter": "Home Transporter",
         "tn_knuckle_boom": "Knuckleboom Loader",
         "tn_tub_grinder": "Tub Grinder"
+    },
+    "companies\/paints": {
+        "default": "Prilagođena boja",
+        "metallic": "Prilagođena metalik boja"
     }
 }

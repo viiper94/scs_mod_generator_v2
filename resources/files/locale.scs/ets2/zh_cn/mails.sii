@@ -20,19 +20,19 @@ SiiNunit
 	mail_text: mailtext.bank_start {
 		from: "银行" #+ Message sender
 		subject: "需要资金吗？我们可以提供帮助！" #+ Message subject
-		body: "尊敬的先生 / 女士，<br><br>我们认为您可能想知道我们为新生的企业提供贷款支持. 您的企业现在需要运作资金吗？我们可以提供帮助！请 <link url=screen.bank color=@@clr_link@@> 访问您你当地的银行 </link> 来了解更多信息。<br><br>商祺，<br>销售经理<br>银行" #+ Message body
+		body: "尊敬的先生 / 女士，<br><br>我们认为您可能想知道我们为新生的企业提供贷款支持。您的企业现在需要运作资金吗？我们可以提供帮助！请 <link url=screen.bank color=@@clr_link@@> 访问您你当地的银行 </link> 来了解更多信息。<br><br>商祺，<br>销售经理<br>银行" #+ Message body
 	}
 
 	mail_text: mailtext.bank_credit {
 		from: "银行" #+ Message sender
 		subject: "我们可以帮助您壮大" #+ Message subject
-		body: "亲爱的 先生/女士,<br><br>不得不提醒您保持收入的稳定与长久发展. 您的账户金额减少至 $MONEY$.  <link url=screen.bank color=@@clr_link@@>当地的银行业务中心</link>.<br><br>致敬,<br>销售经理<br>银行" #+ Message body
+		body: "亲爱的 先生/女士,<br><br>不得不提醒您保持收入的稳定与长久发展。您的账户金额减少至 $MONEY$。 <link url=screen.bank color=@@clr_link@@>当地的银行业务中心</link>。<br><br>致敬,<br>销售经理<br>银行" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debt0 {
 		from: "银行" #+ Message sender
 		subject: "您的账户已透支" #+ Message subject
-		body: "亲爱的客户，<br><br>您的账户已经透支. 在接下来的几天，我们会为您提供免息的短期贷款，希望可以解决燃眉之急. 请尽快偿还您的欠款.<br><br>此致敬礼，<br>您的账户经理<br>银行" #+ Message body
+		body: "亲爱的客户，<br><br>您的账户已经透支. 在接下来的几天，我们会为您提供免息的短期贷款，希望可以解决燃眉之急. 请尽快偿还您的欠款。<br><br>此致敬礼，<br>您的账户经理<br>银行" #+ Message body
 	}
 
 	mail_text: mailtext.bank_debtx {
@@ -78,7 +78,7 @@ SiiNunit
 	mail_text: mailtext.td_visit {
 		from: "卡车销售商－ $CITY$" #+ Message sender
 		subject: "全新 $BRAND$ 卡车正在热销！" #+ Message subject
-		body: "亲爱的先生 / 女士：<br><br>我们是 $BRAND$ 卡车的授权销售商. 我们提供多种不同配置以供选择，并且我们可以定制您的卡车以满足各种特殊需求. 请 <link url=truck.dealer_map color=@@clr_link@@>参观我们位于 $CITY$ 的展厅</link>. 您梦寐以求的卡车也许就在眼前.<br><br>此致，<br> $BRAND$ 销售商" #+ Message body
+		body: "亲爱的先生 / 女士：<br><br>我们是 $BRAND$ 卡车的授权销售商. 我们提供多种不同配置以供选择，并且我们可以定制您的卡车以满足各种特殊需求。请 <link url=truck.dealer_map color=@@clr_link@@>参观我们位于 $CITY$ 的展厅</link>。 您梦寐以求的卡车也许就在眼前。<br><br>此致，<br> $BRAND$ 销售商" #+ Message body
 	}
 
 /**
@@ -88,7 +88,7 @@ SiiNunit
 	mail_text: mailtext.comp_teaser {
 		from: "$COMPANY$，$CITY$" #+ Message sender
 		subject: "需要自带卡车的驾驶员" #+ Message subject
-		body: "致启者：<br><br>我们正在寻找技术娴熟，自己拥有卡车且准备大干一票的卡车驾驶员. 我们能给出很有吸引力的报酬，每份工作最多可得 $MONEY$. 如果您拥有自己的卡车且愿意参与，请直接到我们在$CITY$的货场接受任务.<br><br>$COMPANY$，<br>$CITY$" #+ Message body
+		body: "致启者：<br><br>我们正在寻找技术娴熟，自己拥有卡车且准备大干一票的卡车驾驶员。 我们能给出很有吸引力的报酬，每份工作最多可得 $MONEY$. 如果您拥有自己的卡车且愿意参与，请直接到我们在$CITY$的货场接受任务。<br><br>$COMPANY$，<br>$CITY$" #+ Message body
 	}
 
 /**
@@ -98,37 +98,37 @@ SiiNunit
 	mail_text: mailtext.drv_idle {
 		from: "驾驶员 $NAME$" #+ Message sender
 		subject: "我需要一辆卡车来工作" #+ Message subject
-		body: "嗨老板，<br><br>我不知道您是否发觉，但是我已经呆在 $CITY$ $DAYS$ 天没有工作了. 我感到很懊恼，因为我需要钱来支付我的帐单，如果我呆在这里没有事干就赚不到一分钱. 请您在接下来 $DAYS2$ 天内给我一辆卡车让我可以开始工作，否则除了离开您我别无选择.<br><br>$NAME$" #+ Message body
+		body: "嗨老板，<br><br>我不知道您是否发觉，但是我已经呆在 $CITY$ $DAYS$ 天没有工作了。 我感到很懊恼，因为我需要钱来支付我的帐单，如果我呆在这里没有事干就赚不到一分钱。请您在接下来 $DAYS2$ 天内给我一辆卡车让我可以开始工作，否则除了离开您我别无选择。<br><br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_idle.female {
 		from: "驾驶员 $NAME$" #+ Message sender - written by female
 		subject: "我需要一辆卡车来工作" #+ Message subject - written by female
-		body: "嗨老板，<br><br>我不知道您是否发觉，但是我已经呆在 $CITY$ $DAYS$ 天没有工作了. 我感到很懊恼，因为我需要钱来支付我的帐单，如果我呆在这里没有事干就赚不到一分钱. 请您在接下来 $DAYS2$ 天内给我一辆卡车让我可以开始工作，否则除了离开您我别无选择.<br><br>$NAME$" #+ Message body - written by female
+		body: "嗨老板，<br><br>我不知道您是否发觉，但是我已经呆在 $CITY$ $DAYS$ 天没有工作了。 我感到很懊恼，因为我需要钱来支付我的帐单，如果我呆在这里没有事干就赚不到一分钱。 请您在接下来 $DAYS2$ 天内给我安排一辆卡车让我可以工作，否则除了离开您我别无选择。<br><br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_quit {
 		from: "驾驶员 $NAME$" #+ Message sender
 		subject: "再见" #+ Message subject
-		body: "嗨，<br><br>我不能继续浪费时间了. 我不能没有卡车工作，我不想再等了. 我错过了好机会，所以我打算离开你的公司到别处碰碰运气. 你可以去我之前位于 $CITY$ 的车库找任何有问题的设备.<br><br>再见，<br>$NAME$" #+ Message body
+		body: "嗨，<br><br>我不能继续浪费时间了。 我不能没有卡车工作，我不想再等了。 我错过了好机会，所以我打算离开你的公司到别处碰碰运气。你可以去我之前位于 $CITY$ 的车库找任何有问题的设备。<br><br>再见，<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_quit.female {
 		from: "驾驶员 $NAME$" #+ Message sender - written by female
 		subject: "再见" #+ Message subject - written by female
-		body: "嗨,<br><br>我不能继续浪费我的时间了。我不能工作，没有车，我不想再等。我错过了好机会，所以我要离开你的公司去其他地方碰碰运气. 你可以在$CITY$找到我.<br><br>再见,<br>$NAME$" #+ Message body - written by female
+		body: "嗨,<br><br>我不能继续浪费我的时间了。我不能工作，没有车，我不想再等。我错过了好机会，所以我要离开你的公司去其他地方碰碰运气。 你可以在$CITY$找到我。<br><br>再见,<br>$NAME$" #+ Message body - written by female
 	}
 
 	mail_text: mailtext.drv_sold {
 		from: "驾驶员 $NAME$" #+ Message sender
 		subject: "我要离开了" #+ Message subject
-		body: "老板你好，<br><br>位于 $CITY$ 的车库正在被关闭，那是我曾经工作的地方. 一些银行的人过来说我必须得搬出去. 看起来最近公司的状况不是很好. 所以，我不得不选择了离开. 反正我呆在这里也没什么好处 ， 没有卡车也就没有一切. 我会去别的地方碰碰运气. <br><br>就这样吧，<br>$NAME$" #+ Message body
+		body: "老板你好，<br><br>位于 $CITY$ 的车库正在被关闭，那是我曾经工作的地方。一些银行的人过来说我必须得搬出去。看起来最近公司的状况不是很好。所以，我不得不选择离开。 反正我呆在这里也没什么好处 ， 没有卡车也就没有一切。我会去别的地方碰碰运气。<br><br>就这样吧，<br>$NAME$" #+ Message body
 	}
 
 	mail_text: mailtext.drv_sold.female {
 		from: "驾驶员 $NAME$" #+ Message sender - written by female
 		subject: "我要离开了" #+ Message subject - written by female
-		body: "老板你好，<br><br>位于 $CITY$ 的车库正在被关闭，那是我曾经工作的地方. 一些银行的人过来说我必须得搬出去. 看起来最近公司的状况不是很好. 所以，我不得不选择了离开. 反正我呆在这里也没什么好处 ， 没有卡车也就没有一切. 我会去别的地方碰碰运气. <br><br>就这样吧，<br>$NAME$" #+ Message body - written by female
+		body: "老板你好，<br><br>位于 $CITY$ 的车库正在被关闭，那是我曾经工作的地方。一些银行的人过来说我必须得搬出去. 看起来最近公司的状况不是很好。所以，我不得不选择了离开。 反正我呆在这里也没什么好处 ， 没有卡车也就没有一切。我会去别的地方碰碰运气。<br><br>就这样吧，<br>$NAME$" #+ Message body - written by female
 	}
 	
 /**
@@ -144,7 +144,7 @@ SiiNunit
 	mail_text: mailtext.ovs.upd_routes {
 		from: "调度员" #+ Message sender
 		subject: "全新特种运输" #+ Message subject
-		body: "老板好！<br><br>更多的公司希望为一些特种运输任务聘请您的专业驾驶技能。就像上次一样，这并不容易，需要一些技巧、耐心、与护送车辆的合作和额外的小心，但我想你还是拥有一切，对吧？别忘了，这些货物还有更大的利润。<br><br>所以，除了目前在$OLD_CITIES$ <br><br>的特殊运输工作，你现在也可以接受<color value=@@clr_sel@@>新的工作<color value=@@clr_txt@@>在：<br><br>$CITIES$." #+ Message body
+		body: "老板好！<br><br>更多的公司希望为一些特种运输任务聘请您的专业驾驶技能。就像上次一样，这并不容易，需要一些技巧、耐心、与护送车辆的合作和额外的小心，但我想你还是拥有一切，对吧？别忘了，这些货物还有更大的利润。<br><br>所以，除了目前在$OLD_CITIES$ <br><br>的特殊运输工作，你现在也可以接受<color value=@@clr_sel@@>新的工作<color value=@@clr_txt@@>在：<br><br>$CITIES$。" #+ Message body
 	}
 
 /**

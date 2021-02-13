@@ -227,5 +227,9 @@
         "tn_home_transporter": "ホームトランスポーター",
         "tn_knuckle_boom": "ナックルブームローダー",
         "tn_tub_grinder": "タブグラインダー"
+    },
+    "companies\/paints": {
+        "default": "カスタムカラー",
+        "metallic": "カスタム メタリックカラー"
     }
 }

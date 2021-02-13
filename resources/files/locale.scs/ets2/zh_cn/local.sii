@@ -459,7 +459,7 @@ localization_db : .localization
 	val[]: "@@package_eut2_flags_ee@@"
 
 	key[]: "package_eut2_goodyear"
-	val[]: "DLC - Goodyear"
+	val[]: "DLC - Goodyear Tyres Pack"
 
 	key[]: "onlineid_eu_goodyear"
 	val[]: "@@package_eut2_goodyear@@"
@@ -505,6 +505,12 @@ localization_db : .localization
 
 	key[]: "onlineid_eu_supstrip"
 	val[]: "@@package_eut2_sstrip@@"
+	
+	key[]: "package_eut2_ln_year"
+	val[]: "DLC - Lunar New Year Pack"
+
+	key[]: "onlineid_eu_ln_year"
+	val[]: "@@package_eut2_ln_year@@"
 
 	# Truck brands
 
@@ -684,6 +690,258 @@ localization_db : .localization
 
 	key[]: "brand_schwmuller"	# Constructed key, brand name must fit 12-char token (schwmuller)
 	val[]: "Schwarzmüller"
+
+
+
+	# Included from "/locale/fuel_price_strings.sui"
+
+
+# Fuel prices Austria
+
+	key[]: "fp_at_natural95"
+	val[]: "1.09"
+
+	key[]: "fp_at_diesel"
+	val[]: "1.07"
+
+# Fuel prices Belgium
+
+	key[]: "fp_be_natural95"
+	val[]: "1.32"
+
+	key[]: "fp_be_diesel"
+	val[]: "1.32"
+
+# Fuel prices Bulgaria
+
+	key[]: "fp_bg_natural95"
+	val[]: "1.76"
+
+	key[]: "fp_bg_natural98"
+	val[]: "1.94"
+
+	key[]: "fp_bg_diesel"
+	val[]: "1.74"
+
+# Fuel prices Czech
+
+	key[]: "fp_cz_natural95"
+	val[]: "27.74"
+
+	key[]: "fp_cz_diesel"
+	val[]: "27.22"
+
+# Fuel prices Denmark
+
+	key[]: "fp_dk_natural92"
+	val[]: "10.53"
+
+	key[]: "fp_dk_natural95"
+	val[]: "11.08"
+
+	key[]: "fp_dk_diesel"
+	val[]: "9.60"
+
+# Fuel prices Estonia
+
+	key[]: "fp_ee_natural95"
+	val[]: "1.23"
+
+	key[]: "fp_ee_natural98"
+	val[]: "1.35"
+
+	key[]: "fp_ee_diesel"
+	val[]: "1.06"
+
+# Fuel prices Finland
+
+	key[]: "fp_fi_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_fi_natural98"
+	val[]: "1.54"
+
+	key[]: "fp_fi_diesel"
+	val[]: "1.34"
+
+# Fuel prices France
+
+	key[]: "fp_fr_natural95"
+	val[]: "1.40"
+
+	key[]: "fp_fr_natural98"
+	val[]: "1.45"
+
+	key[]: "fp_fr_diesel"
+	val[]: "1.31"
+
+# Fuel prices Germany
+
+	key[]: "fp_de_natural95"
+	val[]: "1.33"
+
+	key[]: "fp_de_diesel"
+	val[]: "1.22"
+
+# Fuel prices Hungary
+
+	key[]: "fp_hu_natural95"
+	val[]: "374.82"
+
+	key[]: "fp_hu_diesel"
+	val[]: "392.84"
+
+# Fuel prices Italy
+
+	key[]: "fp_it_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_it_diesel"
+	val[]: "1.33"
+
+	key[]: "fp_it_diesel_plus"
+	val[]: "1.40"
+
+# Fuel prices Latvia
+
+	key[]: "fp_lv_natural95"
+	val[]: "1.18"
+
+	key[]: "fp_lv_natural98"
+	val[]: "1.24"
+
+	key[]: "fp_lv_diesel"
+	val[]: "1.06"
+
+# Fuel prices Lithuania
+
+	key[]: "fp_lt_natural95"
+	val[]: "1.09"
+
+	key[]: "fp_lt_natural98"
+	val[]: "1.18"
+
+	key[]: "fp_lt_diesel"
+	val[]: "1.00"
+
+# Fuel prices Luxemburg
+
+	key[]: "fp_lu_natural95"
+	val[]: "1.16"
+
+	key[]: "fp_lu_diesel"
+	val[]: "1.05"
+
+# Fuel prices Netherlands
+
+	key[]: "fp_nl_natural95"
+	val[]: "1.58"
+
+	key[]: "fp_nl_diesel"
+	val[]: "1.26"
+
+# Fuel prices Norway
+
+	key[]: "fp_no_natural95"
+	val[]: "16.22"
+
+	key[]: "fp_no_diesel"
+	val[]: "14.57"
+
+# Fuel prices Poland
+
+	key[]: "fp_pl_natural95"
+	val[]: "4.53"
+
+	key[]: "fp_pl_diesel"
+	val[]: "4.48"
+
+# Fuel prices Portugal
+
+	key[]: "fp_pt_natural95"
+	val[]: "1.45"
+
+	key[]: "fp_pt_diesel"
+	val[]: "1.29"
+
+# Fuel prices Romania
+
+	key[]: "fp_ro_natural95"
+	val[]: "4.78"
+
+	key[]: "fp_ro_natural98"
+	val[]: "4.90"
+
+	key[]: "fp_ro_diesel"
+	val[]: "4.87"
+
+# Fuel prices Russia
+
+	key[]: "fp_ru_natural92"
+	val[]: "44.14"
+
+	key[]: "fp_ru_natural95"
+	val[]: "46.65"
+
+	key[]: "fp_ru_diesel"
+	val[]: "46.65"
+
+# Fuel prices Slovakia
+
+	key[]: "fp_sk_natural95"
+	val[]: "1.21"
+
+	key[]: "fp_sk_diesel"
+	val[]: "1.07"
+
+# Fuel prices Spain
+
+	key[]: "fp_es_natural95"
+	val[]: "1.20"
+
+	key[]: "fp_es_diesel"
+	val[]: "1.09"
+
+# Fuel prices Sweden
+
+	key[]: "fp_se_e85"
+	val[]: "12.04"
+
+	key[]: "fp_se_natural95"
+	val[]: "14.59"
+
+	key[]: "fp_se_diesel"
+	val[]: "15.09"
+
+# Fuel prices Switzerland
+
+	key[]: "fp_ch_natural95"
+	val[]: "1.39"
+
+	key[]: "fp_ch_diesel"
+	val[]: "1.46"
+
+# Fuel prices Turkey
+
+	key[]: "fp_tr_natural95"
+	val[]: "7.33"
+
+	key[]: "fp_tr_natural98"
+	val[]: "7.62"
+
+	key[]: "fp_tr_diesel"
+	val[]: "6.69"
+
+# Fuel prices UK
+
+	key[]: "fp_gb_natural95"
+	val[]: "1.166"
+
+	key[]: "fp_gb_diesel"
+	val[]: "1.201"
+
+	# End of include "/locale/fuel_price_strings.sui"
+
 
 	# End of include "/locale/common.sui"
 
@@ -945,7 +1203,7 @@ localization_db : .localization
 	val[]: "挂车升级" #+ The name of the screen containing trailer upgrades. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "new_upgrades_about"
-	val[]: "看看有什么新升级可用." #+ Help message associated with new upgrades icon.
+	val[]: "看看有什么新升级可用。" #+ Help message associated with new upgrades icon.
 
 	key[]: "upgrades_new_items"
 	val[]: "新物品可用" #+ Header line of the list of new upgrades.
@@ -957,7 +1215,7 @@ localization_db : .localization
 	val[]: "新升级可用！" #+ Shown as icon in corner of screen when new upgrades are available.
 
 	key[]: "change_gps_to_service"
-	val[]: "您的卫星导航设置了另一个目的地.<br><br>您是否想改变您的目的地并驾驶到最近的改装厂？"
+	val[]: "您的卫星导航设置了另一个目的地。<br><br>您是否想改变您的目的地并驾驶到最近的改装厂?"
 #@}
 
 
@@ -976,7 +1234,7 @@ localization_db : .localization
 	val[]: "服务" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_service_about"
-	val[]: "卡车需要保养及维修，一名优秀的驾驶员总是让他的卡车保持最佳状态." #+ Help message associated with service icon.
+	val[]: "卡车需要保养及维修，一名优秀的驾驶员总是让他的卡车保持最佳状态。" #+ Help message associated with service icon.
 
 	key[]: "damage_t"
 	val[]: "车损报告" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
@@ -1042,7 +1300,7 @@ localization_db : .localization
 	val[]: "车况诊断" #+ Icon allowing player to show damage on the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_diag_about"
-	val[]: "查看您的卡车信息和其目前的状况."
+	val[]: "查看您的卡车信息和其目前的状况。"
 
 	key[]: "truck_diag_warning"
 	val[]: "卡车损坏严重！请尽快访问服务站！"
@@ -1050,7 +1308,7 @@ localization_db : .localization
 
 
 	key[]: "truck_repair_quick"
-	val[]: "维修费用由您的雇主承担." #+ Shown in repair screens when the player is driving a quick job truck.
+	val[]: "维修费用由您的雇主承担。" #+ Shown in repair screens when the player is driving a quick job truck.
 
 
 	key[]: "your_money"
@@ -1082,7 +1340,7 @@ localization_db : .localization
 	val[]: "配件‘$NEW_ACC$’与‘$ACC$’ 不兼容。需要移除‘$ACC$'才能安装它。"
 
 	key[]: "remove_confl"
-	val[]: "配件“$NEW_ACC$”与“$ACC$”不兼容。<br>需要移除“$ACC$”才能安装它.<br><br><br>您是否想移除这个配件？"
+	val[]: "配件“$NEW_ACC$”与“$ACC$”不兼容。<br>需要移除“$ACC$”才能安装它。<br><br><br>您是否想移除这个配件？"
 
 	key[]: "empty_cart"
 	val[]: "您确定想取消所有新的改装项吗？" #+ Shown as message box when basket clearing icon is pressed.
@@ -1091,7 +1349,7 @@ localization_db : .localization
 	val[]: "您已将一些物品加入了您的订单！<br><br>您确定要取消所有新的改装项吗？" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
 	key[]: "borrowed_truck_refusal"
-	val[]: "如果您改装雇主的卡车，他会不高兴的。" #+ Shown if user attempts to upgrade a quick job truck.
+	val[]: "如果您改装雇主的卡车，他会生气的。" #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
 	val[]: "您不能在任务中更改挂车的类型、车身或底盘。请完成运输后再试." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -1264,6 +1522,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "窗帘" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "空调组件" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "睡床组件" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "可悬挂组件" #+ Interior hanging accesories
 
@@ -1275,6 +1539,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "地板中心物品" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "枕头组件"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "仪表盘套件" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -1566,7 +1833,7 @@ localization_db : .localization
 	val[]: "删除" #+ Button used to delete something (profile, saved game).
 
 	key[]: "delete_profile"
-	val[]: "Delete Profile" #+ Button used to delete profile.
+	val[]: "删除档案" #+ Button used to delete profile.
 
 	key[]: "upgrade"
 	val[]: "升级" #+ Button allowing user to upgrade something.
@@ -1597,7 +1864,7 @@ localization_db : .localization
 	val[]: "正在保存…" #+ Game save indicator message.
 
 	key[]: "cutscene_quit_info"
-	val[]: "Press $KEY$ to skip cutscene." #+ Shown when any key was pressed during viewpoint cutscene.
+	val[]: "按 $KEY$ 跳过动画。" #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -1653,19 +1920,19 @@ localization_db : .localization
 	val[]: "<color value=@@clr_sel@@> 检测到MOD缺失. <color value=@@clr_txt@@><br><br> 最近一次的存档所依赖的某些MOD缺失或已被禁用.<br><br> 如果这是意外情况，请检查MOD状态.<br><br> 您也可以尝试继续读取这个存档，但取决于这个MOD的功能，存档加载可能失败，并导致其它问题.<br><br> 或者，您可以加载其它不依赖这些缺失MOD的存档."
 
 	key[]: "load_msg_missing_rem_dlc"
-	val[]: "<color value=@@clr_sel@@> 检测到可选DLC缺失. <color value=@@clr_txt@@><br><br> 最近一次的存档所依赖的某些DLC（官方游戏扩展）缺失.<br><br> 如果这是意外情况，请检查DLC状态.<br><br> 您也可以尝试继续读取这个存档，但是这个DLC所提供的某些功能可能会丢失.<br><br> 或者，您可以加载其它不依赖这些缺失DLC的存档."
+	val[]: "<color value=@@clr_sel@@> 检测到可选DLC缺失。 <color value=@@clr_txt@@><br><br> 最近一次的存档所依赖的某些DLC（官方游戏扩展）缺失。<br><br> 如果这是意外情况，请检查DLC状态。<br><br> 您也可以尝试继续读取这个存档，但是这个DLC所提供的某些功能可能会丢失。<br><br> 或者，您可以加载其它不依赖这些缺失DLC的存档。"
 
 	key[]: "load_msg_missing_dlc"
-	val[]: "<color value=@@clr_red@@>检测到DLC缺失. <color value=@@clr_txt@@><br><br> 最近一次的存档所依赖的DLC（官方游戏扩展）缺失.<br><br> 缺失DLC必须在这台计算机上安装并激活，这个存档才能正常工作.<br><br> 或者，您可以加载其它不依赖这些缺失DLC的存档."
+	val[]: "<color value=@@clr_red@@>检测到DLC缺失。 <color value=@@clr_txt@@><br><br> 最近一次的存档所依赖的DLC（官方游戏扩展）缺失。<br><br> 缺失DLC必须在这台计算机上安装并激活，这个存档才能正常工作。<br><br> 或者，您可以加载其它不依赖这些缺失DLC的存档。"
 
 	key[]: "load_msg_mod_dlc_dep"
 	val[]: "<color value=@@clr_red@@>MOD需要DLC内容支持.<color value=@@clr_txt@@><br><br>至少一个MOD依赖于当前未安装的DLC（官方游戏扩展）.<br><br>您需要禁用这些MOD或者安装所需DLC."
 
 	key[]: "load_msg_crash"
-	val[]: "<color value=@@clr_red@@>检测到崩溃<color value=@@clr_txt@@><br><br>游戏可能在前一次加载过程中崩溃.<br><br>您可以利用下面的信息尝试查找并解决这个问题，或者也可以加载另一个存档.<br><br>以下原因通常会造成该问题：<br><br>1. 一个或多个已安装的MOD已损坏，或与游戏当前版本不兼容.<br><br>2. 存档中包含有某些MOD的信息已丢失或者被禁用.<br><br>3. 该存档被有缺陷的MOD损坏.<br><br>4. 在某些情况下，硬件或驱动程序的故障可能会导致游戏崩溃."
+	val[]: "<color value=@@clr_red@@>检测到崩溃<color value=@@clr_txt@@><br><br>游戏可能在前一次加载过程中崩溃。<br><br>您可以利用下面的信息尝试发现并解决这个问题，或者也可以加载另一个存档。<br><br>以下原因通常会造成该问题：<br><br>1，一个或多个已安装的MOD已损坏，或与游戏当前版本不兼容；<br><br>2，存档中包含有某些MOD的信息已丢失或者被禁用；<br><br>3，该存档被有缺陷的MOD损坏；<br><br>4，在某些情况下，硬件或驱动程序的故障可能会导致游戏崩溃。"
 
 	key[]: "mods_detected_warning"
-	val[]: "检测到游戏MOD. 请注意损坏、版本过旧或不兼容的MOD可能导致游戏不稳定. 请在MOD管理器里检查您启用的MOD." #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
+	val[]: "检测到游戏MOD。请注意损坏、过时或不兼容的MOD可能导致游戏不稳定。请在MOD管理器里审阅您启用的MOD。" #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
 #@}
 #@}
 
@@ -1681,7 +1948,7 @@ localization_db : .localization
 	val[]: "保存游戏" #+ Icon allowing player to save game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_desc"
-	val[]: "保存当前游戏进度."  #+ Help message associated with save game icon.
+	val[]: "保存当前游戏进度。"  #+ Help message associated with save game icon.
 
 	key[]: "new_save_game"
 	val[]: "- 新存档 -" #+ Name of save slot which create a new save file.
@@ -1776,7 +2043,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cargo_waiting1"
-	val[]: "你的挂车已就绪，请驶入挂载区域."
+	val[]: "您的拖车已准备好，请驶入挂载区域。"
 
 	key[]: "cargo_waiting2"
 	val[]: "前往地图上绿旗标示的位置。"
@@ -1894,7 +2161,7 @@ localization_db : .localization
 	val[]: "排序按" #+ Combo box with job sorting options."
 
 	key[]: "calculating_route"
-	val[]: "正在规划路径…" #+ Shown temporarily on map screens when navigation route is being calculated
+	val[]: "路线规划中…" #+ Shown temporarily on map screens when navigation route is being calculated
 
 #+ Job sorting options (Sort by:X)
 #@{
@@ -1937,7 +2204,7 @@ localization_db : .localization
 	val[]: "在地图上选择一个已探索的城市，查看从那里出发的可用任务"
 
 	key[]: "jobf_hint_2"
-	val[]: "使用排序功能，将您偏好的工作排在最前面"
+	val[]: "使用排序功能，将您喜欢的工作排在最前面"
 
 	key[]: "jobf_hint_3"
 	val[]: "选择一个任务"
@@ -1961,7 +2228,7 @@ localization_db : .localization
 	val[]: "集装箱/侧帘挂车"
 
 	key[]: "cargo_type_refrigerated"
-	val[]: "冷藏与隔热"
+	val[]: "冷链运输"
 
 	key[]: "cargo_type_dryvan"
 	val[]: "侧帘挂车/干货挂车"
@@ -1976,7 +2243,7 @@ localization_db : .localization
 	val[]: "平板挂车"
 
 	key[]: "cargo_type_lowbed"
-	val[]: "低平板式"
+	val[]: "低平板挂车"
 
 	key[]: "cargo_type_inloader"
 	val[]: "内装载式"
@@ -1988,7 +2255,7 @@ localization_db : .localization
 	val[]: "液体"
 
 	key[]: "cargo_type_fragile"
-	val[]: "易碎"
+	val[]: "易碎品"
 
 	key[]: "cargo_type_construction"
 	val[]: "建筑材料"
@@ -2012,10 +2279,10 @@ localization_db : .localization
 	val[]: "标准运输"
 
 	key[]: "cargo_type_important"
-	val[]: "重要运输"
+	val[]: "普快运输"
 
 	key[]: "cargo_type_urgent"
-	val[]: "紧急运输"
+	val[]: "特快运输"
 #@}
 
 #@}
@@ -2027,7 +2294,7 @@ localization_db : .localization
 #profile_t: 		"PROFILE" - Seems to be not used anymore.
 
 	key[]: "profile_sel_t"
-	val[]: "PROFILE MANAGER" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "档案管理" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "launchpad_t"
 	val[]: "欧洲卡车模拟2－启动台" #+ Title of the screen. Please keep in upper case where possible.
@@ -2036,10 +2303,10 @@ localization_db : .localization
 	val[]: "在线新闻" #+ Title of the window used to display online news. Please keep in upper case where possible.
 
 	key[]: "profile_sel_link"
-	val[]: "Change Profile" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "更换档案" #+ Icon allowing player to enter launcher screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "profile_sel_help"
-	val[]: "变成另一个人." #+ Help message associated with profile selection icon.
+	val[]: "变成另一个人。" #+ Help message associated with profile selection icon.
 
 	key[]: "wanna_remove_profile"
 	val[]: "您确定要删除此档案吗？"
@@ -2051,49 +2318,49 @@ localization_db : .localization
 	val[]: "行驶里程：" #+ Suffixed with distance in miles or km to indicate total distance driven by the profile. For example "Distance driven: 10 mi"
 
 	key[]: "continue_game"
-	val[]: "Continue Game" #+ Button which selects profile and continues in game.
+	val[]: "继续游戏" #+ Button which selects profile and continues in game.
 
 	key[]: "use_selected_profile"
-	val[]: "Use Selected Profile" #+ Button which selects profile.
+	val[]: "使用已选的档案" #+ Button which selects profile.
 
 	key[]: "new"
 	val[]: "新建档案" #+ Button which opens new profile creation dialog.
 
 	key[]: "profile_status"
-	val[]: "Profile Status" #+ Heading text for Profile info.
+	val[]: "档案状态" #+ Heading text for Profile info.
 
 	key[]: "manage_profile_mods"
-	val[]: "Manage Profile's MODs" #+ Button which opens mod manager.
+	val[]: "管理档案MOD" #+ Button which opens mod manager.
 
 	key[]: "manage_profiles_btn"
-	val[]: "Manage Profiles" #+ Button which opens profile selection screen for managing profiles.
+	val[]: "档案管理" #+ Button which opens profile selection screen for managing profiles.
 
 	key[]: "edit_profile_btn"
-	val[]: "Edit Profile" #+ Button which opens edit profile screen.
+	val[]: "编辑档案" #+ Button which opens edit profile screen.
 
 	key[]: "incompatible_profile_upgrade"
 	val[]: "档案不兼容！<br>请尝试将游戏升级到可用的最新版本。" #+ Incompatible profile warning text
 
 	key[]: "owned_garages"
-	val[]: "Garages owned:" #+ How many garages the player owns
+	val[]: "已拥有的车库：" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
 	val[]: "小型：$SMALL$，大型：$LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
-	val[]: "Trucks owned:" #+ how many trucks the player owns
+	val[]: "已拥有的卡车：" #+ how many trucks the player owns
 
 	key[]: "owned_trailers"
-	val[]: "Trailers owned:" #+ how many trailers the player owns
+	val[]: "已拥有的挂车：" #+ how many trailers the player owns
 
 	key[]: "steam_cloud_synchronization"
-	val[]: "Steam cloud synchronization:" #+ Whether is steam cloud synchronization active.
+	val[]: "Steam云档同步：" #+ Whether is steam cloud synchronization active.
 
 	key[]: "online_stat"
-	val[]: "World of Trucks profile:"
+	val[]: "卡车世界档案："
 
 	key[]: "mods_in_use"
-	val[]: "Mods in use:" #+ how many mods the player has active
+	val[]: "使用MOD数：" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "未连接！"	#+ to the WoTR
@@ -2133,25 +2400,25 @@ localization_db : .localization
 #+ Launchpad tooltips.
 #@{
 	key[]: "launchpad_tt_mods_used"
-	val[]: "MODs in use: $num_mods$"
+	val[]: "使用MOD数：$num_mods$"
 
 	key[]: "launchpad_tt_mods_not_used"
-	val[]: "No MODs in use"
+	val[]: "没有正在使用的MOD"
 
 	key[]: "launchpad_tt_cloud_active"
-	val[]: "Steam cloud synchronization is active"
+	val[]: "Steam云档同步已启用"
 
 	key[]: "launchpad_tt_cloud_not_active"
-	val[]: "Steam cloud synchronization is disabled <br><offset vshift=7><color value=@@clr_txt_d@@>click to enable"
+	val[]: "Steam云档同步没启用<br><offset vshift=7><color value=@@clr_txt_d@@>点击以启用"
 
 	key[]: "launchpad_tt_globe_connected"
-	val[]: "World of Trucks connected"
+	val[]: "卡车世界已连接"
 
 	key[]: "launchpad_tt_globe_not_connected"
-	val[]: "World of Trucks not connected <br><offset vshift=7><color value=@@clr_txt_d@@>click to connect"
+	val[]: "卡车世界未连接<br><offset vshift=7><color value=@@clr_txt_d@@>点击以连接"
 
 	key[]: "launchpad_tt_profile_details"
-	val[]: "PROFILE DETAILS"
+	val[]: "档案详情"
 #@
 #@}
 
@@ -2313,10 +2580,10 @@ localization_db : .localization
 #@{
 
 	key[]: "new_version_available"
-	val[]: "You are using an older version of the game.<br><link url=$URL_LINK$ color=@@clr_link@@>Update to a newer version</link> to get all of the features."
+	val[]: "你正在使用旧版的游戏。<br><link url=$URL_LINK$ color=@@clr_link@@>更新至较新的版本</link>以获取所有的功能。"
 
 	key[]: "new_version_available_steam"
-	val[]: "You are using an older version of the game.<br>Steam will automatically update the game unless automatic updates are disabled."
+	val[]: "新版本可用。<br>如果没有禁用Steam自动更新功能，游戏将会自动更新。"
 
 	key[]: "allow_news"
 	val[]: "您想允许自动检查游戏更新和新闻吗？" #+ Text shown in a message box.
@@ -2514,7 +2781,7 @@ localization_db : .localization
 	val[]: "调整图像设置，使游戏看起来更漂亮，或者调低一些为您的电脑减轻负担。"
 
 	key[]: "help_audio"
-	val[]: "音乐是不是太吵了？您可以在音频设置里调低音量或者调整其它声音相关的选项。"
+	val[]: "音乐太吵？您可以在音频设置里调低音量或者调整其它声音相关的选项。"
 
 	key[]: "help_gameplay"
 	val[]: "游戏偏好设置。调整各种小细节，以使您的游戏体验更加完美。"
@@ -2596,7 +2863,7 @@ localization_db : .localization
 	val[]: "车头排气音量" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_turbo_volume"
-	val[]: "Truck turbo volume" #+ Slider controlling volume of the truck turbo.
+	val[]: "卡车涡轮音量" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
 	val[]: "车头效果音音量" #+ Slider controlling volume of the truck effects.
@@ -2901,7 +3168,7 @@ localization_db : .localization
 	val[]: "锁定北方" #+ Map aligned to north intially but then locked, so no further panning.
 
 	key[]: "align_always_north"
-	val[]: "总是向北方" #+ Map aligned to north always.
+	val[]: "总是指向北方" #+ Map aligned to north always.
 #@}
 
 #+ Navigation display mode
@@ -3151,7 +3418,7 @@ localization_db : .localization
 	val[]: "取消分配" #+ Button for cancelling the existing input assignent.
 
 	key[]: "press_key_to_assign"
-	val[]: "请按下您想为此功能分配的按键." #+ Key/button assignment hint.
+	val[]: "请按下您想为此功能分配的按键。" #+ Key/button assignment hint.
 
 	key[]: "press_button_to_assign"
 	val[]: "请按下您想为此功能分配的按钮。"#+ Key/button/axis assignment hint.
@@ -3873,7 +4140,7 @@ localization_db : .localization
 	val[]: "您确定要删除所选的预设吗？" #+ Confirmation dialog shown when user requests deletion of extended view preset
 
 	key[]: "eye_preset_overwrite_confirmation"
-	val[]: "Existing preset with the same name will be overwritten. Do you want to continue?" #+ Confirmation dialog shown when user tries to create preset with already existing names
+	val[]: "现有同名的预设会被覆写。确定要继续吗？" #+ Confirmation dialog shown when user tries to create preset with already existing names
 
 	key[]: "eye_gaze_settings"
 	val[]: "视线追踪设置" #+ Header of the gaze settings
@@ -4147,6 +4414,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "色彩校正" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "反射比例" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "反射细节" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4197,7 +4467,7 @@ localization_db : .localization
 
 
 	key[]: "gfx_changed"
-	val[]: "显示设置已更改. <br>是否保留这些设置？"
+	val[]: "显示设置已更改。 <br>是否保留这些设置？"
 
 	key[]: "reverting_in"
 	val[]: "还原倒计时" #+ Shown in message box if the user applies some complex settings. Followed by number of seconds before the settings are reverted unless the player confirms the message box. For example "Reverting in 18 seconds."
@@ -4707,10 +4977,10 @@ localization_db : .localization
 	val[]: "导航教程" #+ Tooltip for the tutorial icon route advisor
 
 	key[]: "wanna_assistance"
-	val[]: "救援服务可以把您和您的卡车带到 $CITY$. 将花费 $MONEY$ 并耗时 $TIME$。<br offset=30> 您同意吗？"
+	val[]: "救援服务可以把您和您的卡车带到 $CITY$。将花费 $MONEY$ 并耗时 $TIME$。<br offset=30> 您同意吗？"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "救援服务可以将您和您的卡车带到 $CITY$. 旅途需要花费 $MONEY$ 并耗时 $TIME$。<br>（费用将由您的雇主承担。）<br offset=30>您同意吗？"
+	val[]: "救援服务可以将您和您的卡车带到 $CITY$。 旅途需要花费 $MONEY$ 并耗时 $TIME$。<br>(费用将由您的雇主承担。)<br offset=30>您同意吗？"
 
 	key[]: "wanna_assistance_online"
 	val[]: "救援服务可以把您和您的卡车带到$CITY$。将花费 $MONEY$ 并耗时 $TIME$。<br offset=30> 您目前的运输将被取消。<br offset=30> 您同意吗？"
@@ -4737,10 +5007,10 @@ localization_db : .localization
 	val[]: "您当前没有运输任务。"
 
 	key[]: "cancel_cur_job"
-	val[]: "您确定要取消当前的任务吗？<br offset=10>您将支付 $MONEY$ 的违约金."
+	val[]: "您确定要取消当前的任务吗？<br offset=10>您将支付 $MONEY$ 的违约金。"
 
 	key[]: "no_cancel_first_job"
-	val[]: "您不能取消您的第一个任务，否则今后没人会尊重您."
+	val[]: "您不能取消您的第一个任务，否则今后没人会尊重您。"
 
 	key[]: "view_available_services"
 	val[]: "查看服务和调整" #+ The text shown on button opening assistance window containing various assistance services for player.
@@ -4851,7 +5121,7 @@ localization_db : .localization
 	val[]: "您已经累了！<br>请您寻找一个停车位休息！"
 
 	key[]: "you_are_getting_tired"
-	val[]: "您累了.<br>您应该寻找一个停车位休息."
+	val[]: "您累了。<br>您应该寻找一个停车位休息."
 
 	key[]: "parking"
 	val[]: "按如下按键休息："
@@ -4863,10 +5133,10 @@ localization_db : .localization
 	val[]: "观光点"
 
 	key[]: "viewpoint_msg"
-	val[]: "Press the following key to activate viewpoint:"
+	val[]: "按如下按键启用观光点："
 
 	key[]: "viewpoint_found"
-	val[]: "You have discovered a new viewpoint!"
+	val[]: "你发现了新的观光点！"
 
 	key[]: "gas_station"
 	val[]: "加油站"
@@ -4905,7 +5175,7 @@ localization_db : .localization
 	val[]: "加仑" #+ Gallons of fuel.
 
 	key[]: "msg_finish_delivery_empl"
-	val[]: "在为 $COMPANY$ 工作开始前，请先完成您当前的运输任务."
+	val[]: "在为 $COMPANY$ 工作开始前，请先完成您当前的运输任务。"
 
 	key[]: "msg_finish_delivery_ind"
 	val[]: "在您单干之前，请先完成您当前的运输任务。"
@@ -4937,10 +5207,10 @@ localization_db : .localization
 	val[]: "收费路段结束。您的雇主将支付<br>$MONEY$。<br>请按如下按键："
 
 	key[]: "toll_end_calc"
-	val[]: "收费路段结束.<br>（计算费用中，请稍候…）"
+	val[]: "收费路段结束。<br>(计算费用中，请稍候…)"
 
 	key[]: "paid_toll"
-	val[]: "高速费 $MONEY$ 已支付."
+	val[]: "通行费 $MONEY$ 已支付。"
 
 	key[]: "paid_toll_quick"
 	val[]: "高速费 $MONEY$ 已由您的雇主支付。"
@@ -5017,6 +5287,9 @@ localization_db : .localization
 	key[]: "diff_unlock_warning"
 	val[]: "您在正常驾驶时应该解除差速锁，否则会有损坏它的风险。<br>使用如下键关闭："
 
+	key[]: "tow_hint"
+	val[]: "如果你无法解脱任何困境，你可以试用汽车牵引服务。按："
+
 	key[]: "ferry_msg"
 	val[]: "查看可能的旅程目的地请按："
 
@@ -5092,7 +5365,7 @@ localization_db : .localization
 	val[]: "肇事。"
 
 	key[]: "offence_sleeping"
-	val[]: "疲劳驾驶." #+ Driver does not respect the required pauses.
+	val[]: "疲劳驾驶。" #+ Driver does not respect the required pauses.
 
 	key[]: "offence_wrong_way"
 	val[]: "逆行驾驶。"
@@ -5110,7 +5383,7 @@ localization_db : .localization
 	val[]: "未在称重站停车。"
 
 	key[]: "offence_illegal_trailer"
-	val[]: "使用非法挂车处罚."
+	val[]: "使用非法挂车。"
 
 	key[]: "offence_avoid_inspection"
 	val[]: "未在检查站停车。"
@@ -5173,7 +5446,7 @@ localization_db : .localization
 	val[]: "您确定要这样分配技能点吗？" #+ Message shown if the user closes the skill screen without pressing the apply button.
 
 	key[]: "skills_help"
-	val[]: "用您来之不易的技能点来吸引更好的工作. 技能等级越高，意味着找到的工作越好." #+ Help text associated with the Skills icon
+	val[]: "用您来之不易的技能点来找到更好的工作。 技能等级越高，意味着找到的工作越好。" #+ Help text associated with the Skills icon
 
 	key[]: "una_skill_pts"
 	val[]: "未分配技能点：" #+ Followed by number indicating number of points which need to be assigned.
@@ -5185,23 +5458,23 @@ localization_db : .localization
 	val[]: "危险品"
 
 	key[]: "long_dist"
-	val[]: "长途运输"
+	val[]: "长程运输"
 
 	key[]: "heavy"
 	val[]: "贵重货物"
 
 	key[]: "fragile"
-	val[]: "易碎货物"
+	val[]: "易碎品运输许可"
 
 	key[]: "urgent"
-	val[]: "及时运输"
+	val[]: "加急运输"
 
 	key[]: "mechanical"
 	val[]: "节油驾驶"
 #@}
 
 	key[]: "rank"
-	val[]: "排行" #+ Header of section describing advantages the driver gets when has selected skill at specified rank.
+	val[]: "等级" #+ Header of section describing advantages the driver gets when has selected skill at specified rank.
 
 	key[]: "class"
 	val[]: "类别" #+ Header of section describing cargoes belonging to specified ADR class.
@@ -5209,7 +5482,7 @@ localization_db : .localization
 #+ Generic text shown in info panel when no skill is selected.
 
 	key[]: "skills_info"
-	val[]: "随着工作的进行，您可以获得宝贵的经验. 您行驶的里程越长，获得的经验越多. 您可以在这里分配所得的技能点数来增强您的卡车驾驶技能.<br><br>更好的技能可以解锁新的工作选项，因为物流公司对您的技术越来越有信心. 当然，随着好工作而来的还有更多的酬劳."
+	val[]: "随着工作的进行，您可以获得宝贵的经验。 您行驶的里程越长，获得的经验越多。 您可以在这里分配所得的技能点数来增强您的卡车驾驶技能。<br><br>更高的技能可以解锁更好的工作选项，因为物流公司对您的技术越来越有信心。当然，随着好工作而来的还有更多的酬劳。"
 
 # Following text contains dummy values and appears to be not used anymore.
 # adr_info:	"<color value=@@clr_sel@@>ADR skill<br><br><color value=@@clr_txt@@>Blah, blah blah...<br><br><align hstyle=center><color value=@@clr_white@@>Class 1 - Gases<br><color value=@@clr_txt@@><img src=/material/ui/icon/adr_1.mat><img src=/material/ui/icon/adr_1.mat><img src=/material/ui/icon/adr_1.mat></align><br>Example loads<br><br><align hstyle=center><color value=@@clr_white@@>Class 1 - Gases<br><color value=@@clr_txt@@><img src=/material/ui/icon/adr_1.mat></align><br>Example loads"
@@ -5218,7 +5491,7 @@ localization_db : .localization
 #@{
 
 	key[]: "skill_adr_title"
-	val[]: "危险品运输训练"
+	val[]: "危险品运输许可"
 
 	key[]: "skill_adr_info"
 	val[]: "危险货物运输需求训练有素的专业人员。使用您来之不易的经验获得危险品运输牌照（ADR）以大大增加你的收入："
@@ -5233,19 +5506,19 @@ localization_db : .localization
 	val[]: "气体"
 
 	key[]: "skill_adr_2"
-	val[]: "第2.1类：易燃气体，例如乙炔和氢.<br>第2.2类：非易燃气体，包括低温气体和液体，例如氮和氖.<br>第2.3类：有毒气体，如果吸入可能造成死亡或严重损害，例如氟，氯，氰化氢."
+	val[]: "第2.1类：易燃气体，例如乙炔和氢。<br>第2.2类：非易燃气体，包括低温气体和液体，例如氮和氖。<br>第2.3类：有毒气体，如果吸入可能造成死亡或严重损害，例如氟，氯，氰化氢。"
 
 	key[]: "skill_adr_classt3"
 	val[]: "易燃液体"
 
 	key[]: "skill_adr_3"
-	val[]: "包括很常见但也很危险的燃油，如汽油，柴油，煤油."
+	val[]: "包括很常见但也很危险的燃油，如汽油，柴油，煤油。"
 
 	key[]: "skill_adr_classt4"
 	val[]: "易燃固体"
 
 	key[]: "skill_adr_4"
-	val[]: "第4.1类：易燃固体，例如易燃的硝化棉，镁和安全火柴等.<br>第4.2类：自燃烷基铝和白磷.<br>第4.3类：潮湿时危险品，例如钠，钙，钾等."
+	val[]: "第4.1类：易燃固体，例如易燃的硝化棉，镁和安全火柴等.<br>第4.2类：自燃烷基铝和白磷。<br>第4.3类：潮湿时危险品，例如钠，钙，钾等。"
 
 	key[]: "skill_adr_classt6"
 	val[]: "毒性和传染性物质"
@@ -5264,19 +5537,19 @@ localization_db : .localization
 #@{
 
 	key[]: "skill_distance_title"
-	val[]: "长途运输"
+	val[]: "长程运输"
 
 	key[]: "skill_distance_info"
-	val[]: "您的长途运输技能决定您运输里程的最大值. 最初，您的任务里程不会长于 $KM0$. 随着等级的提升您将能够："
+	val[]: "您的长程运输技能决定您运输的最长里程。最初，您的任务里程不会长于 $KM0$。 随着等级的提升您将能够："
 
 	key[]: "skill_distance_rank1"
-	val[]: "运输里程上限增加至 $KM1$.<br>里程大于 $KM0$ 的运输任务获得报酬增加 $MONEY1$%.<br>里程大于 $KM0$ 的运输任务获得经验值增加 $XP$%."
+	val[]: "运输里程上限增加至 $KM1$。<br>里程大于 $KM0$ 的运输任务获得报酬增加 $MONEY1$%。<br>里程大于 $KM0$ 的运输任务获得经验值增加 $XP$%。"
 
 	key[]: "skill_distance_rank2"
-	val[]: "运输里程上限增加至 $KM2$。<br>里程大于 $KM1$ 的运输任务获得报酬增加 $MONEY2$% 。"
+	val[]: "运输里程上限增加至 $KM2$。<br>里程大于 $KM1$ 的运输任务获得报酬增加 $MONEY2$%。"
 
 	key[]: "skill_distance_rank3"
-	val[]: "运输里程上限增加至 $KM3$.<br>里程大于 $KM2$ 的运输任务获得报酬增加 $MONEY3$%."
+	val[]: "运输里程上限增加至 $KM3$。<br>里程大于 $KM2$ 的运输任务获得报酬增加 $MONEY3$%。"
 
 	key[]: "skill_distance_rank4"
 	val[]: "运输里程上限增加至 $KM4$。<br>里程大于 $KM3$ 的运输任务获得报酬增加 $MONEY4$% 。"
@@ -5285,119 +5558,119 @@ localization_db : .localization
 	val[]: "运输里程上限增加至 $KM5$。<br>里程大于 $KM4$ 的运输任务获得报酬增加 $MONEY5$% 。"
 
 	key[]: "skill_distance_rank6"
-	val[]: "运输到任何角落。<br>里程大于 $KM5$ 的运输任务获得报酬增加 $MONEY6$%。"
+	val[]: "运输到世界的任何角落。<br>里程大于 $KM5$ 的运输任务获得报酬增加 $MONEY6$%。"
 #@}
 
 #+ Informations about individual ranks of High Value Cargo skill.
 #@{
 
 	key[]: "skill_heavy_title"
-	val[]: "贵重货物"
+	val[]: "贵重货物运输许可"
 
 	key[]: "skill_heavy_info"
-	val[]: "所有的货物都很有价值，但是一些比其他的更加贵重。公司只信任久经考验的专家来运输这些货物。作为回报你将获得："
+	val[]: "所有的货物都有价值，但是其中一些更加贵重。公司只信任久经考验的专家来运输这些货物。作为回报你将获得："
 
 	key[]: "skill_heavy_rank1"
-	val[]: "贵重货物任务已解锁。<br>贵重货物运输报酬+ $MONEY1$% <br>贵重货物经验+ $XP$%。"
+	val[]: "贵重货运输已解锁。<br>贵重货物运输报酬 + $MONEY1$% <br>贵重货物运输经验 + $XP$%。"
 
 	key[]: "skill_heavy_rank2"
-	val[]: "贵重货物运输报酬+ $MONEY2$% ($MONEY_INC2$% 递增) 。"
+	val[]: "贵重货物运输报酬 + $MONEY2$%($MONEY_INC2$% 递增)。"
 
 	key[]: "skill_heavy_rank3"
-	val[]: "贵重货物运输报酬 + $MONEY3$%（$MONEY_INC3$% 递增）."
+	val[]: "贵重货物运输报酬 + $MONEY3$%($MONEY_INC3$% 递增)。"
 
 	key[]: "skill_heavy_rank4"
-	val[]: "贵重货物运输报酬+ $MONEY4$% ($MONEY_INC4$% 递增) 。"
+	val[]: "贵重货物运输报酬 + $MONEY4$%($MONEY_INC4$% 递增)。"
 
 	key[]: "skill_heavy_rank5"
-	val[]: "贵重货物运输报酬+ $MONEY5$% ($MONEY_INC5$% 递增) 。"
+	val[]: "贵重货物运输报酬 + $MONEY5$%($MONEY_INC5$% 递增) 。"
 
 	key[]: "skill_heavy_rank6"
-	val[]: "贵重货物运输报酬+ $MONEY6$% ($MONEY_INC6$% 递增) 。"
+	val[]: "贵重货物运输报酬 + $MONEY6$%($MONEY_INC6$% 递增) 。"
 #@}
 
 #+ Informations about individual ranks of Just-In-Time Delivery skill.
 #@{
 
 	key[]: "skill_jit_title"
-	val[]: "及时运输"
+	val[]: "加急运输"
 
 	key[]: "skill_jit_info"
-	val[]: "有时候公司需要快速运送一些重要的货物，这时它们会呼叫及时运输。这类任务会给驾驶员带来更大的压力，交货窗口时间更紧迫，但获得的收益足以弥补您的付出。升级该技能将会带来："
+	val[]: "有时候公司需要快速运送一些重要的货物，叫做加急运输。这类任务会给驾驶员带来更大的压力，交货时间更紧迫，但获得的收益足以弥补您的付出。升级该技能将会带来："
 
 	key[]: "skill_jit_rank1"
-	val[]: "重要货物运输已解锁。<br>重要货物运输报酬+ $MONEY_IMP1$%。<br>重要货物运输经验值+ $XP_IMP$% 。"
+	val[]: "普快运输已解锁。<br>普快运输报酬 + $MONEY_IMP1$%。<br>普快运输经验值 + $XP_IMP$%。"
 
 	key[]: "skill_jit_rank2"
-	val[]: "紧急运输已解锁。<br>重要货物运输报酬+ $MONEY_IMP2$%（$MONEY_IMP_INC2$%递增）。<br>紧急货物运输报酬+$MONEY_URGENT2$% 。<br>紧急运输经验值+ $XP_URGENT$%。"
+	val[]: "特快运输已解锁。<br>普快运输报酬 + $MONEY_IMP2$% ($MONEY_IMP_INC2$%递增) 。<br>特快运输报酬 +$MONEY_URGENT2$% 。<br>特快运输经验值 + $XP_URGENT$%。"
 
 	key[]: "skill_jit_rank3"
-	val[]: "重要货物运输报酬+ $MONEY_IMP3$%（$MONEY_IMP_INC3$% 递增）<br>紧急货物运输报酬+ $MONEY_URGENT3$%（$MONEY_URGENT_INC3$% 递增）。"
+	val[]: "普快运输报酬 + $MONEY_IMP3$%($MONEY_IMP_INC3$%递增)。<br>特快运输报酬 + $MONEY_URGENT3$%($MONEY_URGENT_INC3$% 递增)。"
 
 	key[]: "skill_jit_rank4"
-	val[]: "重要货物运输报酬+ $MONEY_IMP4$%（$MONEY_IMP_INC4$% 递增）。<br>加急货物运输报酬+ $MONEY_URGENT4$%（$MONEY_URGENT_INC4$% 递增）。"
+	val[]: "普快运输报酬 + $MONEY_IMP4$%($MONEY_IMP_INC4$%递增)。<br>特快运输报酬 + $MONEY_URGENT4$%($MONEY_URGENT_INC4$%递增)。"
 
 	key[]: "skill_jit_rank5"
-	val[]: "重要货物运输报酬+ $MONEY_IMP5$%（$MONEY_IMP_INC5$%递增）。<br> 紧急货物运输报酬+$MONEY_URGENT5$%（$MONEY_URGENT_INC5$%递增）。"
+	val[]: "普快运输报酬 + $MONEY_IMP5$%($MONEY_IMP_INC5$%递增)。<br>特快运输报酬 + $MONEY_URGENT5$%($MONEY_URGENT_INC5$%递增)。"
 
 	key[]: "skill_jit_rank6"
-	val[]: "贵重货物运输报酬+ $MONEY_IMP6$%（$MONEY_IMP_INC6$% 递增）<br>紧急货物运输报酬+ $MONEY_URGENT6$% （$MONEY_URGENT_INC6$% 递增）."
+	val[]: "普快运输报酬 + $MONEY_IMP6$%($MONEY_IMP_INC6$%递增)。<br>特快运输报酬 + $MONEY_URGENT6$%($MONEY_URGENT_INC6$%递增)。"
 #@}
 
 #+ Informations about individual ranks of Fragile Cargo skill.
 #@{
 
 	key[]: "skill_fragile_title"
-	val[]: "易碎货物"
+	val[]: "易碎品运输许可"
 
 	key[]: "skill_fragile_info"
-	val[]: "这个技能允许您运输易碎货物，比如说玻璃，电子元件或者高精密仪器，收益如下："
+	val[]: "这个技能允许您运输易碎品，比如说玻璃，电子元件或者精密仪器，收益如下："
 
 	key[]: "skill_fragile_rank1"
-	val[]: "易碎货物运输已解锁。<br>易碎货物运输报酬+ $MONEY1$% 。<br>易碎品运输经验+ $XP$% 。"
+	val[]: "易碎品运输已解锁。<br>易碎品运输报酬+ $MONEY1$% 。<br>易碎品运输经验+ $XP$% 。"
 
 	key[]: "skill_fragile_rank2"
-	val[]: "易碎货物运输报酬+ $MONEY_SO_FAR2$% （$MONEY2$% 递增）。"
+	val[]: "易碎品运输报酬 + $MONEY_SO_FAR2$% ($MONEY2$% 递增)。"
 
 	key[]: "skill_fragile_rank3"
-	val[]: "易碎货物运输报酬+ $MONEY_SO_FAR3$%（$MONEY3$% 递增）."
+	val[]: "易碎品运输报酬 + $MONEY_SO_FAR3$% ($MONEY3$% 递增)。"
 
 	key[]: "skill_fragile_rank4"
-	val[]: "易碎货物运输报酬+ $MONEY_SO_FAR4$% （$MONEY4$% 递增）。"
+	val[]: "易碎品运输报酬 + $MONEY_SO_FAR4$% ($MONEY4$% 递增)。"
 
 	key[]: "skill_fragile_rank5"
-	val[]: "易碎品运输报酬 + $MONEY_SO_FAR5$%（$MONEY5$% 递增）"
+	val[]: "易碎品运输报酬 + $MONEY_SO_FAR5$% ($MONEY5$% 递增)。"
 
 	key[]: "skill_fragile_rank6"
-	val[]: "易碎货物运输报酬+ $MONEY_SO_FAR6$% （$MONEY6$% 递增）。"
+	val[]: "易碎品运输报酬 + $MONEY_SO_FAR6$% ($MONEY6$% 递增)。"
 #@}
 
 #+ Informations about individual ranks of Ecodriving skill.
 #@{
 
 	key[]: "skill_mechanical_title"
-	val[]: "“环保驾驶”技能"
+	val[]: "节油驾驶技能"
 
 	key[]: "skill_mechanical_info"
-	val[]: "提高“环保驾驶”技能可以帮助你使燃油消耗最小化. 特别是："
+	val[]: "提高节油驾驶技能可以帮助你节省燃油。效果如下："
 
 	key[]: "skill_mechanical_rank1"
-	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER1$%.<br>空载行驶时燃油最多节省$FUEL1$%."
+	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER1$%。<br>空载行驶时燃油最多节省$FUEL1$%。"
 
 	key[]: "skill_mechanical_rank2"
-	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER2$%.<br>空载行驶时燃油最多节省$FUEL2$%."
+	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER2$%。<br>空载行驶时燃油最多节省$FUEL2$%。"
 
 	key[]: "skill_mechanical_rank3"
-	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER3$%.<br>空载行驶时燃油最多节省$FUEL3$%."
+	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER3$%。<br>空载行驶时燃油最多节省$FUEL3$%。"
 
 	key[]: "skill_mechanical_rank4"
-	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER4$%.<br>空载行驶时燃油最多节省$FUEL4$%."
+	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER4$%。<br>空载行驶时燃油最多节省$FUEL4$%。"
 
 	key[]: "skill_mechanical_rank5"
-	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER5$%.<br>空载行驶时燃油最多节省$FUEL5$%."
+	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER5$%。<br>空载行驶时燃油最多节省$FUEL5$%。"
 
 	key[]: "skill_mechanical_rank6"
-	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER6$%.<br>空载行驶时燃油最多节省$FUEL6$%."
+	val[]: "带挂车行驶时燃油最多节省$FUEL_TRAILER6$%。<br>空载行驶时燃油最多节省$FUEL6$%。"
 #@}
 #@}
 
@@ -5578,7 +5851,7 @@ localization_db : .localization
 #@{
 
 	key[]: "excelent_t"
-	val[]: "非常棒"
+	val[]: "完美"
 
 	key[]: "good_work_t"
 	val[]: "干得不错"
@@ -5604,7 +5877,7 @@ localization_db : .localization
 
 
 	key[]: "job_done_desc"
-	val[]: "已将 $CARGO$ 从 $ORIGIN$ 运输到 $DESTINATION$."
+	val[]: "已将 $CARGO$ 从 $ORIGIN$ 运输到 $DESTINATION$。"
 
 	key[]: "time_taken"
 	val[]: "花费时间："
@@ -5640,16 +5913,16 @@ localization_db : .localization
 	val[]: "等级报酬"
 
 	key[]: "long_dist_bonus"
-	val[]: "长途运输奖励"
+	val[]: "长程运输奖励"
 
 	key[]: "heavy_bonus"
 	val[]: "贵重货物运输报酬"
 
 	key[]: "fragile_bonus"
-	val[]: "易碎货物奖励"
+	val[]: "易碎品运输奖励"
 
 	key[]: "urgent_bonus"
-	val[]: "紧急运输报酬"
+	val[]: "特快运输报酬"
 
 	key[]: "adr_bonus"
 	val[]: "危险品运输酬金"
@@ -5800,6 +6073,9 @@ localization_db : .localization
 	key[]: "cn_contamin"
 	val[]: "污染的材料"
 
+	key[]: "cn_covid_vaccine"
+	val[]: "2019冠状病毒病疫苗"
+
 	key[]: "cn_cyanide"
 	val[]: "氰化物"
 
@@ -5897,7 +6173,7 @@ localization_db : .localization
 	val[]: "盐酸"
 
 	key[]: "cn_hydrogen"
-	val[]: "氢"
+	val[]: "液态氢"
 
 	key[]: "cn_icecream"
 	val[]: "冰淇淋"
@@ -5975,7 +6251,7 @@ localization_db : .localization
 	val[]: "硝化棉"
 
 	key[]: "cn_nitrogen"
-	val[]: "氮"
+	val[]: "液态氮"
 
 	key[]: "cn_nuts"
 	val[]: "坚果"
@@ -6152,7 +6428,7 @@ localization_db : .localization
 	val[]: "酸奶"
 
 	key[]: "cn_helicopter"
-	val[]: "Helicopter - 1808TX"
+	val[]: "直升机 - 1080TX"
 
 	key[]: "cn_driller"
 	val[]: "钻孔机 — D-50"
@@ -6161,7 +6437,7 @@ localization_db : .localization
 	val[]: "压路机 — DYNA CC-2200"
 
 	key[]: "cn_rstractor"
-	val[]: "Crawler Tractor"
+	val[]: "履带拖拉机"
 
 	key[]: "cn_yacht"
 	val[]: "游艇"
@@ -6257,7 +6533,7 @@ localization_db : .localization
 	val[]: "金属罐"
 
 	key[]: "cn_milk"
-	val[]: "奶"
+	val[]: "鲜奶"
 
 	key[]: "cn_motor_oil"
 	val[]: "机油"
@@ -6606,7 +6882,7 @@ localization_db : .localization
 #@{
 
 	key[]: "cn_asph_miller"
-	val[]: "Asphalt Miller - AM 0880"
+	val[]: "磨路机 - AM 0880"
 
 	key[]: "cn_cable_reel"
 	val[]: "工业电缆盘"
@@ -6685,10 +6961,10 @@ localization_db : .localization
 	val[]: "自卸挂车"
 
 	key[]: "tn_scs_lowbed"
-	val[]: "Low Bed Extendable Trailer"
+	val[]: "低平板可加长半挂"
 
 	key[]: "tn_scs_lowloader"
-	val[]: "Low Loader Extendable Trailer"
+	val[]: "低平板可加长半挂"
 
 	key[]: "tn_van_transporter"
 	val[]: "货车运输车"
@@ -6755,7 +7031,7 @@ localization_db : .localization
 	val[]: "Schwarzmüller 篷布挂车"
 
 	key[]: "tn_schw_lowloader"
-	val[]: "Schwarzmüller Low Loader"
+	val[]: "Schwarzmüller 低平板挂车"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Schwarzmüller 冷藏挂车"
@@ -6783,16 +7059,16 @@ localization_db : .localization
 	val[]: "贵重货物"
 
 	key[]: "tt_ico_fragile"
-	val[]: "易碎货物"
+	val[]: "易碎品"
 
 	key[]: "tt_ico_easy"
 	val[]: "标准运输"
 
 	key[]: "tt_ico_normal"
-	val[]: "重要运输"
+	val[]: "普快运输"
 
 	key[]: "tt_ico_hard"
-	val[]: "紧急运输"
+	val[]: "特快运输"
 
 	key[]: "tt_ico_adr_1"
 	val[]: "危险品类别 1"
@@ -6955,7 +7231,7 @@ localization_db : .localization
 	val[]: "分期付款总计 $MONEY$ 已支付。"
 
 	key[]: "bank_msg_ptsold"
-	val[]: "您的卡车已经以 $MONEY$ 的价格出售，用来偿还您的债务。"
+	val[]: "您的卡车被以 $MONEY$ 的价格出售，用来偿还您的债务。"
 
 	key[]: "bank_msg_ptrsold"
 	val[]: "你拥有的的挂车已经以$MONEY$的价格出售，以偿还你的债务。"
@@ -6970,7 +7246,7 @@ localization_db : .localization
 	val[]: "很不幸，由于您长期负债，您的卡车已被变卖。详情请见邮件。"
 
 	key[]: "bank_ptrailer_sold"
-	val[]: "非常遗憾，由于您长期负债累累，您的挂车已被出售。更多信息详见电子邮件。"
+	val[]: "非常遗憾，由于您长期负债，您的挂车已被出售。更多信息详见电子邮件。"
 
 	key[]: "bank_ptruck_confiscate"
 	val[]: "您的卡车被没收了…"
@@ -7134,7 +7410,7 @@ localization_db : .localization
 	val[]: "车库管理" #+ Icon opening the garage management screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "garageman_help"
-	val[]: "关注您车库的工作进展，提升它们的工作效率，使它们更加完美." #+ Help message associated with the garage management icon.
+	val[]: "关注您车库的工作进展，提升它们的工作效率，使它们更加完美。" #+ Help message associated with the garage management icon.
 
 #+ Headers of table of garages.
 #@{
@@ -7241,7 +7517,7 @@ localization_db : .localization
 	val[]: "升级车库" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "garageman_upgrade_conf"
-	val[]: "您是否想支付 $MONEY$ 来升级您的车库？<br><br>升级车库会增加两个额外的车位."
+	val[]: "您是否想支付 $MONEY$ 来升级您的车库?<br><br>升级车库会增加两个额外的车位。"
 
 	key[]: "garageman_no_upgrade"
 	val[]: "没有足够的资金升级您的车库，升级最少需要 $MONEY$。"
@@ -7457,10 +7733,10 @@ localization_db : .localization
 	val[]: "您确定要将您的 $TRUCK_SRC$ 重新分配到 $CITY_DST$ 并驾驶 $TRUCK_DST$ 吗？"
 
 	key[]: "truckman_conf_drive2"
-	val[]: "<br>（该车正在工作中，交换卡车需用时 $TIME$.）"
+	val[]: "<br>(该车正在工作中，交换卡车需用时 $TIME$。)"
 
 	key[]: "truckman_conf_drive_own_trailer"
-	val[]: "（您当前的挂车将会被停用）" #+ Information shown when player wants to use the truck.
+	val[]: "(您当前的挂车将会被停用。)" #+ Information shown when player wants to use the truck.
 #@}
 
 #+ Message box shown when user requests to change color/paint job on truck he is driving.
@@ -7819,7 +8095,7 @@ localization_db : .localization
 	val[]: "感谢您从我们这里购买了您第一辆卡车！欢迎再来！"
 
 	key[]: "td_msg_first_and_busy"
-	val[]: "感谢您从我们这里购买了您的第一辆卡车！<br><br>我们会将它运送到您的总部，您可以在完成当前任务后验收."
+	val[]: "感谢您从我们这里购买了您的第一辆卡车！<br><br>我们会将它运送到您的总部，您可以在完成当前任务后验收。"
 
 	key[]: "td_msg_bought_assigned"
 	val[]: "感谢购买，享受您的新卡车吧！<br><br>我们随后会将您的旧卡车运送到您位于$CITY$ 的车库。"
@@ -7910,7 +8186,7 @@ localization_db : .localization
 	val[]: "您是否确定前往 $CITY$ 并访问 $BRAND$ 卡车销售商吗？"
 
 	key[]: "tdsel_novisit_msg"
-	val[]: "抱歉，您不能在工作时快速旅行！请首先完成您的运输任务."
+	val[]: "抱歉，您不能在工作时快速旅行！请首先完成您的运输任务。"
 
 	key[]: "tdsel_locked"
 	val[]: "您还没有发现任何卡车销售商！"
@@ -7928,10 +8204,10 @@ localization_db : .localization
 	val[]: "选择车库" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "td_garsel_nogarage"
-	val[]: "请选择一个车库来继续."
+	val[]: "请选择一个车库来继续。"
 
 	key[]: "td_garsel_noslot"
-	val[]: "请选择一个可用的车位以继续."
+	val[]: "请选择一个可用的车位以继续。"
 
 	key[]: "td_garsel_pickgarage"
 	val[]: "首先请选择目标车库："
@@ -7973,7 +8249,7 @@ localization_db : .localization
 	val[]: "司机介绍所" #+ Icon opening the recruitment agency. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "recruit_help"
-	val[]: "您需要驾驶员吗？这里正是寻找他们的地方." #+ Help message associated the recruitment agency icon.
+	val[]: "您需要驾驶员吗？这里正是寻找他们的地方。" #+ Help message associated the recruitment agency icon.
 
 	key[]: "recruit_info"
 	val[]: "欢迎来到司机介绍所！<br>我们为您提供大量高度专业的驾驶员供您雇佣，并且每天都有新面孔。<br>您每雇佣一名司机我们仅收取 $MONEY$。"
@@ -8010,7 +8286,7 @@ localization_db : .localization
 	val[]: "雇佣驾驶员"
 
 	key[]: "hire_msg_locked"
-	val[]: "在您能够在网上雇佣驾驶员之前，您需要发现一个司机介绍所."
+	val[]: "在您能够在网上雇佣驾驶员之前，您需要发现一个司机介绍所。"
 
 	key[]: "ra_confirm"
 	val[]: "您愿意支付 $MONEY$ 雇佣驾驶员 $NAME$ 吗?"
@@ -8076,13 +8352,13 @@ localization_db : .localization
 	val[]: "海峡隧道"
 
 	key[]: "mapl_undiscovered"
-	val[]: "Undiscovered point"
+	val[]: "未发现的地点"
 
 	key[]: "mapl_viewpoint"
-	val[]: "Viewpoint (visited)"
+	val[]: "观光点（以参观）"
 
 	key[]: "mapl_viewpoint_unvisited"
-	val[]: "Viewpoint (unvisited)"
+	val[]: "观光点（未参观）"
 
 	key[]: "mapl_gas"
 	val[]: "加油站"
@@ -8296,6 +8572,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "山地夏令时" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "欧洲西部夏令时间" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8319,7 +8597,7 @@ localization_db : .localization
 	val[]: "调整反光镜" #+ Opens the mirror adjuster.
 
 	key[]: "truck_mirror_help"
-	val[]: "调节后视镜以便更好地观察周围情况." #+ Help message associated with mirror adjuster icon.
+	val[]: "调节后视镜以便更好地观察周围情况。" #+ Help message associated with mirror adjuster icon.
 
 	key[]: "seat"
 	val[]: "调整座椅"  #+ Opens the seat adjuster.
@@ -8479,7 +8757,7 @@ localization_db : .localization
 	val[]: "可用自" #+ Appended with translation of "level" and index of level the player needs to have before he can buy specified stuff. For example "Available from Level 16"
 
 	key[]: "hookup_lost"
-	val[]: "您试图替换的零件上已经装有其它配件了，如果您继续的话，它们会被移除. 是否继续？"
+	val[]: "您试图替换的零件上已经装有其它配件了，如果您继续的话，它们会被移除。 是否继续？"
 
 	key[]: "acc_lost"
 	val[]: "您正在替换的部件要求安装其它部件，如果您继续，其它部件也将被替换，是否继续？"
@@ -8711,6 +8989,9 @@ localization_db : .localization
 
 	key[]: "bastia"
 	val[]: "巴斯蒂亚"
+
+	key[]: "bayonne"
+	val[]: "Bayonne"
 
 	key[]: "bergen"
 	val[]: "卑尔根"
@@ -9014,6 +9295,9 @@ localization_db : .localization
 
 	key[]: "kunda"
 	val[]: "昆达"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "拉赫蒂"
@@ -9432,7 +9716,7 @@ localization_db : .localization
 	val[]: "升级历程" #+ Icon opening the progress history. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "job_log_desc"
-	val[]: "关注您在游戏过程中的进展. 记录您完成的运输任务和所获得的报酬." #+ Help message associated the progress history icon.
+	val[]: "关注您在游戏过程中的进展。 记录您完成的运输任务和所获得的报酬。" #+ Help message associated the progress history icon.
 
 
 	key[]: "stats_t"
@@ -9562,51 +9846,51 @@ localization_db : .localization
 	val[]: "现在，您终于有机会体验您梦想中的工作了—驾驶卡车！"
 
 	key[]: "intro_3"
-	val[]: "你自己的运输公司现在开张了，但遗憾的是，你缺少资金来购买卡车. 因此，现在你必须作为一名受雇驾驶员为其他公司工作."
+	val[]: "你自己的运输公司现在开张了，但遗憾的是，你缺少资金来购买卡车。 因此，现在你必须作为一名受雇驾驶员为其他公司工作。"
 
 	key[]: "intro_4"
-	val[]: "您的任务是将 $JOB_CARGO$ 安全运送到位于 $JOB_TARGET_CITY$ $JOB_TARGET_COMPANY$ 公司的停泊处. 您的雇主已经为您提供了一辆卡车，并会支付一切费用. 不要让任何人失望，按时抵达."
+	val[]: "您的任务是将 $JOB_CARGO$ 安全运送到位于 $JOB_TARGET_CITY$ $JOB_TARGET_COMPANY$ 公司的停泊处。您的雇主已经为您提供了一辆卡车，并会支付一切费用。不要让任何人失望，按时抵达。"
 
 
 	key[]: "intro_garage_1"
-	val[]: "这是您公司的总部."
+	val[]: "这是您公司的总部。"
 
 	key[]: "intro_garage_2"
-	val[]: "这个车库非常基础. 虽然不怎么样，但这只是个开始."
+	val[]: "这个车库非常基础。虽然不怎么样，但这只是个开始。"
 
 	key[]: "intro_garage_3"
 	val[]: "不幸的是，您还没有任何可以停放在这儿的卡车，所以这里空空如也。"
 
 	key[]: "intro_garage_4"
-	val[]: "当您赚到足够的钱并且购买了一辆卡车，您将可以在游戏世界内自由穿行并且从这里开展您自己的事业."
+	val[]: "当您赚到足够的钱并且购买了一辆卡车，您将可以在游戏世界内自由穿行并且从这里开展您自己的事业。"
 
 	key[]: "intro_garage_5"
 	val[]: "祝你好运！"
 
 
 	key[]: "tut_msg_1"
-	val[]: "按 $KEY$ 来启动发动机."
+	val[]: "按 $KEY$ 来启动发动机。"
 
 	key[]: "tut_msg_2a"
-	val[]: "您可以使用如下按键移动卡车：<br><br>$KEY_TABLE$<br>向前行驶一段距离，然后停下."
+	val[]: "您可以使用如下按键移动卡车：<br><br>$KEY_TABLE$<br>向前行驶一段距离，然后停下。"
 
 	key[]: "tut_msg_2b"
-	val[]: "使用额外的控制器来移动您的卡车.<br><br>尝试向前开几米然后停下."
+	val[]: "使用额外的控制器来移动您的卡车。<br><br>尝试向前开几米然后停下。"
 
 	key[]: "tut_msg_3"
-	val[]: "还有其它可用的镜头视角，看看哪个最适合您.<br><br>$KEY_TABLE$<br>切换到追踪视角来巡视卡车周围."
+	val[]: "还有其它可用的镜头视角，看看哪个最适合您。<br><br>$KEY_TABLE$<br>切换到追踪视角来巡视卡车周围。"
 
 	key[]: "tut_msg_4"
-	val[]: "$KEY_TABLE$<br> 从不同角度查看然后按 $KEY_CONTINUE$ 来继续."
+	val[]: "$KEY_TABLE$<br> 从不同角度查看然后按 $KEY_CONTINUE$ 来继续。"
 
 	key[]: "tut_msg_5"
-	val[]: "现在是时候去运货了！使用行路顾问来查看您的位置和要去的地方. 按 $KEY$ 放大查看…"
+	val[]: "现在是时候去运货了！使用行路顾问来查看您的位置和要去的地方。按 $KEY$ 放大查看…"
 
 	key[]: "tut_msg_6"
-	val[]: "太棒了！你已经掌握了基本技能. 让我们放些音乐使这次旅程更加有趣. 按 $KEY$ 打开收音机。<br>（您也可以从桌面的低栏进入.）"
+	val[]: "太棒了！你已经掌握了基本技能。让我们放些音乐使这次旅程更加有趣. 按 $KEY$ 打开收音机。<br>（您也可以从桌面的低栏进入。）"
 
 	key[]: "tut_msg_7"
-	val[]: "一切准备就绪. 跟随导航的指示向目的地出发."
+	val[]: "一切就绪。跟随导航的指示向目的地出发。"
 
 	key[]: "tut_msg_8"
 	val[]: "进入运抵目的地的大门，你会看到一个指定的卸货地点。注意会有一个动画标灯标示出卡车的停靠位置。<br><br>现在可以调整行路顾问导航面板上的地图缩放比例［$KEY$］。"
@@ -9627,10 +9911,10 @@ localization_db : .localization
 	val[]: "您的当前状态：当前时速，档位，损坏程度，燃油，疲劳度，邮件指示器，时间以及您的金钱。"
 
 	key[]: "tutorial_adviser1b"
-	val[]: "当前选定页面的内容."
+	val[]: "当前选定页面的内容。"
 
 	key[]: "tutorial_adviser1c"
-	val[]: "页面切换. 在导航，当前任务描述，车况诊断和消息之间切换."
+	val[]: "页面切换。在导航，当前任务描述，车况诊断和消息之间切换。"
 
 	key[]: "tutorial_adviser2"
 	val[]: "您的当前位置在导航地图中以蓝色箭头标记。当你进行任务时，它还会以红色指示出到达目的地的最短路径。<br><br>屏幕底部是剩余时间和里程的估算值。您可以按 $KEY$ 或屏幕上的按钮在不同缩放显示比例间循环切换。"
@@ -9648,7 +9932,7 @@ localization_db : .localization
 	val[]: "您可以在“车况诊断”页面查看您卡车、拖车和货物的损坏程度。卡车及拖车可以在任何城市的服务站进行维修，但货物的损坏是永久的，所以要格外小心。<br><br>如果被困在路上，您还可以按黄色按钮呼叫道路救援。他们会有偿将您带到最近的城市，并帮助您重返工作。"
 
 	key[]: "tutorial_adviser5"
-	val[]: "这些便是您所有需要了解的关于行路顾问的信息.<br><br>您可以在任何时候按“帮助”按钮再次运行该新手教程.<br><br>请按 $KEY$ 继续游戏."
+	val[]: "这些便是您所有需要了解的关于行路顾问的信息。<br><br>您可以在任何时候按“帮助”按钮再次运行该新手教程。<br><br>请按 $KEY$ 继续游戏。"
 
 	key[]: "close_tutorial"
 	val[]: "关闭新手教程"
@@ -9664,7 +9948,7 @@ localization_db : .localization
 	val[]: "在这里您可以看到您的进度。"
 
 	key[]: "desktop_tut_company"
-	val[]: "在这里实时跟踪您的车库，雇佣新驾驶员，并管理您的公司."
+	val[]: "在这里实时跟踪您的车库，雇佣新驾驶员，并管理您的公司。"
 
 	key[]: "desktop_tut_trailers"
 	val[]: "从现在开始，你可以购买属于自己的挂车了，你还可以给它们升级或喷漆以搭配你的卡车。<br><br>你的挂车可以存放到所选的车库中；你的驾驶员可以用它们增加收益。你可以使用“挂车管理器”来管理挂车。"
@@ -9708,32 +9992,32 @@ localization_db : .localization
 #+ This happens if the online service were not initialized for some reason or -noonline parameter was used.
 
 	key[]: "generic_networking_unavailable"
-	val[]: "网络不可用，请检查客户端设置是否正确."
+	val[]: "网络不可用，请检查客户端设置是否正确。"
 
 #+ Unable to establish connection with the service.
 
 	key[]: "generic_unable_to_connect"
-	val[]: "无法连接到在线服务器，请检查您的网络连接是否正常."
+	val[]: "无法连接到在线服务器，请检查您的网络连接是否正常。"
 
 #+ Error during socket read/write.
 
 	key[]: "generic_network_error"
-	val[]: "与在线服务器通信时出错，请稍后重试."
+	val[]: "与在线服务器通信时出错，请稍后重试。"
 
 #+ Problem while parsing the HTTP transport protocol.
 
 	key[]: "generic_protocol_error"
-	val[]: "在线服务器返回数据错误. 如果您正在使用HTTP代理，请检查其配置。您也可以稍后重试."
+	val[]: "在线服务器返回数据错误。如果您正在使用HTTP代理，请检查其配置。您也可以稍后重试。"
 
 #+ Reply was returned however its content was not correct (incorrect number or content of lines)
 
 	key[]: "generic_service_protocol_error"
-	val[]: "在线服务器返回数据错误，请稍后重试."
+	val[]: "在线服务器返回数据错误，请稍后重试。"
 
 #+ The service talks using version of the protocol or does not support this version of the game.
 
 	key[]: "generic_version_mismatch"
-	val[]: "此服务与当前版本的游戏不兼容. 请检查游戏是否有可用的更新补丁."
+	val[]: "此服务与当前版本的游戏不兼容。请检查游戏是否有可用的更新补丁。"
 
 #+ The services are currently unavailable for some unspecified reason.
 
@@ -9743,7 +10027,7 @@ localization_db : .localization
 #+ The services are currently unavailable for maintenance or overload.
 
 	key[]: "generic_service_temporarily_unavailable"
-	val[]: "该服务由于维护或过载已下线，请稍后重试."
+	val[]: "该服务由于维护或过载已下线，请稍后重试。"
 
 #+ The authentication provided by the client was incorrect.
 
@@ -9787,13 +10071,13 @@ localization_db : .localization
 #+ The required object (e.g. replay) is not available.
 
 	key[]: "generic_object_unavailable"
-	val[]: "请求的对象当前不可用，请在几分钟后重试."
+	val[]: "请求的对象当前不可用，请在几分钟后重试。"
 
 #+ Problem not covered by anything above. Currently it means that we generated incorrect URI or that the http client returned error code which
 #+ is not handled by http_online_link_t::complete.
 
 	key[]: "generic_internal_error"
-	val[]: "内部错误. 查看 net.log 文件获取更多信息."
+	val[]: "内部错误。 查看 net.log 文件获取更多信息。"
 
 #@}
 
@@ -9804,13 +10088,13 @@ localization_db : .localization
 	val[]: "《欧洲卡车模拟2》遇到了一个问题并无法显示图像（未检测到可用的图形适配器）。\n建议您尝试：\n1、检查您的电脑和显卡是否满足最低配置要求；\n2、将Microsoft DirectX升级至最新版本；\n3、访问显卡制造商的网站，下载并安装最新的显卡驱动——您的显卡驱动可能版本过旧；\n4、尝试更改游戏的渲染模式，改用OpenGL或DirectX；\n5、删除游戏配置文件“\\文档\\Euro Truck Simulator 2\\config.cfg”，它可能已经损坏。\n这个文件会在下次启动游戏时自动重建，并恢复有效的默认值。"
 
 	key[]: "sys_no_graphics_simple"
-	val[]: "《欧洲卡车模拟2》遇到了一个问题并无法显示图像（未检测到可用的图形适配器）."
+	val[]: "《欧洲卡车模拟2》遇到了一个问题并无法显示图像（未检测到可用的图形适配器）。"
 #@}
 
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "欧洲卡车模拟2不能访问STEAM客户端.建议步骤:\n1.确定Steam客户端是否在运行.\n2.确定你的Steam客户端以更新到最新版本.\n3.确定游戏自动更新已打开并更新游戏至最新版本."
+	val[]: "欧洲卡车模拟2不能访问STEAM客户端。建议步骤:\n1. 确定Steam客户端是否在运行；\n2. 确定你的Steam客户端以更新到最新版本；\n3. 确定游戏自动更新已打开并更新游戏至最新版本。"
 
 #+ Input wizard
 #@{
@@ -10139,11 +10423,223 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "帽子" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "马克杯" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "米色毛毯"
+
+	key[]: "blanket_square"
+	val[]: "方形图案毛毯"
+
+	key[]: "book"
+	val[]: "书本"
+
+	key[]: "bottle_sixpack"
+	val[]: "六瓶装"
+
+	key[]: "breakfast_cereals"
+	val[]: "早餐谷物"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "斗牛犬摇头车饰摆件"
+
+	key[]: "cap"
+	val[]: "帽子"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "手提电话"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "吉娃娃摇头车饰摆件"
+
+	key[]: "dashboard"
+	val[]: "仪表板"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "送货报告"
+
+	key[]: "electric_cooling_box"
+	val[]: "电动冷藏箱"
+
+	key[]: "endless_nourishment"
+	val[]: "无尽的营养"
+
+	key[]: "ets2_game_box"
+	val[]: "欧卡2游戏盒"
+
+	key[]: "ets2_lunch_box"
+	val[]: "欧卡2便当盒"
+
+	key[]: "ets2_truck_bag"
+	val[]: "欧卡2卡车袋"
+
+	key[]: "festive_mug"
+	val[]: "佳节杯子"
+
+	key[]: "fire_extinguisher"
+	val[]: "灭火器"
+
+	key[]: "hand_bag"
+	val[]: "手袋"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "手工皮夹"
+
+	key[]: "hula_doll"
+	val[]: "草裙舞玩偶"
+
+	key[]: "instant_lunch"
+	val[]: "方便餐"
+
+	key[]: "instant_lunch_box"
+	val[]: "方便面6盒装"
+
+	key[]: "magazines"
+	val[]: "杂志"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "指南针"
+
+	key[]: "map"
+	val[]: "地图"
+
+	key[]: "notebook"
+	val[]: "笔记本电脑"
+
+	key[]: "paper_towels"
+	val[]: "纸巾"
+
+	key[]: "pilot_sunglasses"
+	val[]: "飞行员太阳镜"
+
+	key[]: "plush_bear"
+	val[]: "毛绒熊"
+
+	key[]: "portable_navigator"
+	val[]: "便携式导航仪"
+
+	key[]: "rugged_style_cap"
+	val[]: "崎岖风格帽子"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS 咖啡杯"
+
+	key[]: "sleeping_bag"
+	val[]: "睡袋"
+
+	key[]: "snow_chill_blanket"
+	val[]: "雪寒毯子"
+
+	key[]: "tablet"
+	val[]: "平板"
+
+	key[]: "weekend_bag"
+	val[]: "周末袋子"
+
+	key[]: "winter_bauble"
+	val[]: "冬季摆设"
+
+	key[]: "winter_blast_gift"
+	val[]: "冬季礼物"
+
+	key[]: "wise_owl_offering"
+	val[]: "明智猫头鹰供神"
+
+
+	key[]: "ets2_pillow"
+	val[]: "欧卡2枕头"
+
+	key[]: "flame_pillow"
+	val[]: "火焰枕头"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear 枕头"
+
+	key[]: "sweet_home_pillow"
+	val[]: "家，甜蜜的家枕头"
+
+	key[]: "skull_pillow"
+	val[]: "头骨枕头"
+
+	key[]: "status_pillow"
+	val[]: "关系状态枕头"
+
+	key[]: "track_pillow"
+	val[]: "轮胎痕迹枕头"
+
+	key[]: "trucker_pillow"
+	val[]: "卡车司机枕头"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclav的枕头"
+
+	key[]: "wise_heart_pillow"
+	val[]: "明智之心图形枕头"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ 枕头"
+
+
+	key[]: "air_freshener"
+	val[]: "汽车香氛"
+
+	key[]: "detective_head"
+	val[]: "侦探小头"
+
+	key[]: "vampire_head"
+	val[]: "吸血鬼小头"
+
+	key[]: "viking_head"
+	val[]: "维京人小头"
+
+	key[]: "smelling_sack"
+	val[]: "汽车香包"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "苹果形汽车香氛"
+
+	key[]: "basketball_ball"
+	val[]: "篮球"
+
+	key[]: "black_plush_cube"
+	val[]: "黑色毛绒骰子"
+
+	key[]: "chromed_skull"
+	val[]: "镀铬头骨"
+
+	key[]: "disco_ball"
+	val[]: "迪斯科球"
+
+	key[]: "eight_ball"
+	val[]: "八号球"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "欧卡2标志汽车香氛"
+
+	key[]: "football_ball"
+	val[]: "足球"
+
+	key[]: "home_trucker_insignia"
+	val[]: "居家货运徽章"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "希望传递者徽章"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS标志汽车香氛"
+
+	key[]: "tennis_ball"
+	val[]: "网球"
+
+	key[]: "trophy_skull"
+	val[]: "头骨"
+
+	key[]: "white_plush_cube"
+	val[]: "白色毛绒骰子"
+
 
 	key[]: "black_style_mug"
 	val[]: "黑色风格马克杯" #+ specific color scheme of a mug in cabin
@@ -10181,6 +10677,8 @@ localization_db : .localization
 	key[]: "long_table_black"
 	val[]: "黑色长桌" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
 
+#@}
+
 	key[]: "duty"
 	val[]: "防腐" #+ Basic truck accesory general
 
@@ -10188,7 +10686,7 @@ localization_db : .localization
 	val[]: "防腐漆" #+ Basic but paintable truck accesory
 
 	key[]: "classic"
-	val[]: "Classic" #+ Classical or vintage truck accesory
+	val[]: "经典" #+ Classical or vintage truck accesory
 
 	key[]: "stock"
 	val[]: "原厂" #+ Stock truck accesory general
@@ -10230,13 +10728,16 @@ localization_db : .localization
 	val[]: "喷漆 长" #+ Extended leg version of the front truck mirror
 
 	key[]: "chrom"
-	val[]: "电镀" #+ Chromed mirror, doorhandle or other accessory
+	val[]: "镀铬" #+ Chromed mirror, doorhandle or other accessory
+
+	key[]: "chrom2"
+	val[]: "镀铬 2" #+ Chromed mirror, doorhandle or other accessory
 
 	key[]: "paint_chrom"
-	val[]: "电镀喷漆" #+ Painted and chromed mirror, doorhandle or other accessory
+	val[]: "喷漆镀铬" #+ Painted and chromed mirror, doorhandle or other accessory
 
 	key[]: "plastic_chrom"
-	val[]: "塑料电镀" #+ Plastic mixed with chromed mirror, doorhandle or other accessory
+	val[]: "塑料镀铬" #+ Plastic mixed with chromed mirror, doorhandle or other accessory
 
 	key[]: "plastic_paint"
 	val[]: "塑料喷漆" #+ Plastic mixed with painted mirror, doorhandle or other accessory
@@ -10245,7 +10746,7 @@ localization_db : .localization
 	val[]: "灰色塑料喷漆" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Aluminium" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "铝" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "现代塑料" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -10254,7 +10755,7 @@ localization_db : .localization
 	val[]: "现代喷漆" #+ Modernized painted mirror, doorhandle or other accessory
 
 	key[]: "chrom_modern"
-	val[]: "现代电镀" #+ Modernized chromed mirror, doorhandle or other accessory
+	val[]: "现代镀铬" #+ Modernized chromed mirror, doorhandle or other accessory
 
 	key[]: "standard"
 	val[]: "标准" #+ Standard version of the interior or accesory
@@ -10270,6 +10771,9 @@ localization_db : .localization
 
 	key[]: "standard_2013_uk"
 	val[]: "UK 标准 2013" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "高级" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "豪华" #+ Luxury/Exclusive version of the interior or accesory
@@ -10308,7 +10812,7 @@ localization_db : .localization
 	val[]: "高顶卧铺" #+ High Sleeper version of the cabin or other accesory
 
 	key[]: "light_chrome"
-	val[]: "铬灯" #+ Small accesory lights for bottom truck grills
+	val[]: "镀铬灯" #+ Small accesory lights for bottom truck grills
 
 	key[]: "badge_380"
 	val[]: "徽章 380" #+ Badge accessory (eg Renault T engine badge)
@@ -10385,11 +10889,14 @@ localization_db : .localization
 	key[]: "white_reflector"
 	val[]: "白色导流板"
 
-	key[]: "basic_chrome"
-	val[]: "基本电镀" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "基本" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "基本镀铬" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "基本喷漆" #+ type of sideskirts, painted
+	val[]: "基本喷漆" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "双杠全保护" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -10398,10 +10905,10 @@ localization_db : .localization
 	val[]: "单杠全保护" #+ Very expensive sideskirts with chromed bar on top.
 
 	key[]: "single_toolbox_chrome"
-	val[]: "单一电镀工具箱" #+ Very expensive, chromed sideskirts with one toolbox inside it.
+	val[]: "单一镀铬工具箱" #+ Very expensive, chromed sideskirts with one toolbox inside it.
 
 	key[]: "double_toolbox_chrome"
-	val[]: "双工具箱电镀" #+ Very expensive, chromed sideskirts, with two toolboxes inside it.
+	val[]: "双镀铬工具箱" #+ Very expensive, chromed sideskirts, with two toolboxes inside it.
 
 	key[]: "double_toolbox_paint"
 	val[]: "双工具箱喷漆" #+ Very expensive, painted sideskirts, with two toolboxes inside it.
@@ -10419,7 +10926,7 @@ localization_db : .localization
 	val[]: "拳击手套" #+ Accessory name, DLC Pink Ribbon.
 
 	key[]: "chrome_ribbon"
-	val[]: "电镀带子" #+ Accessory name, DLC Pink Ribbon.
+	val[]: "镀铬带子" #+ Accessory name, DLC Pink Ribbon.
 
 	key[]: "krone_profi"
 	val[]: "克劳耐专家系列挂车" #+ Krone-branded exclusive generic accessory name.
@@ -11179,13 +11686,13 @@ localization_db : .localization
 	val[]: "外部任务" #+ name of WOTR Jobs icon on desktop
 
 	key[]: "online_job_desc"
-	val[]: "使用您自己的卡车完成 World of Trucks 运输任务。任务记录会存储在您 World of Trucks 的档案里." #+ description of the WOTR Jobs icon on desktop
+	val[]: "使用您自己的卡车完成 World of Trucks 运输任务。任务记录会存储在您 World of Trucks 的档案里。" #+ description of the WOTR Jobs icon on desktop
 
 	key[]: "external_market"
 	val[]: "外部市场"
 
 	key[]: "external_market_desc"
-	val[]: "使用您自己的挂车完成 World of Trucks 运输任务。任务记录会存储在您 World of Trucks 的档案里."
+	val[]: "使用您自己的挂车完成 World of Trucks 运输任务。任务记录会存储在您 World of Trucks 的档案里。"
 
 	key[]: "external_market_t"
 	val[]: "外部市场"
@@ -11200,7 +11707,7 @@ localization_db : .localization
 	val[]: "刷新" #+ Connects with server and fetches WOTR job into the game
 
 	key[]: "get_new_job"
-	val[]: "Browse Contracts" #+ Opens browser on WOTR page to search for a job
+	val[]: "任务总览" #+ Opens browser on WOTR page to search for a job
 
 	key[]: "get_random_job"
 	val[]: "接受随机任务" #+ Connects with server and accept random job in proximity of player's current position
@@ -11470,13 +11977,13 @@ localization_db : .localization
 #+ Version change detected message box.
 #@{
 	key[]: "version_change_detected_t"
-	val[]: "发现新游戏版本." #+ Title of the infomational message box when version change has been detected.
+	val[]: "版本变更" #+ Title of the infomational message box when version change has been detected.
 
 	key[]: "version_upgrade_detected"
 	val[]: "游戏已更新至新版本。" #+ The message showed when upgrade of the game to the newer version has been detected.
 
 	key[]: "version_downgrade_detected"
-	val[]: "游戏回返至上一版本." #+ The message showed when downgrade of the game to the older version has been detected.
+	val[]: "游戏回返至上一版本。" #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
 	val[]: "<br><br>游戏版本的变化可能会破坏游戏模组，导致游戏崩溃或不稳定；模组作者负责维护模组的兼容性。确保你使用的模组的兼容的。<br><br>故障排除提示：如果当前的模组版本不兼容，请尝试在模组管理器中禁用它。<br><br>游戏版本：$GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
@@ -11545,7 +12052,7 @@ localization_db : .localization
 	val[]: "在线" #+ Name of the options category.
 
 	key[]: "help_online_options"
-	val[]: "在线游戏偏好设置. 调整所有与World of Trucks相关的设置." #+ The help text shown next to the button which opens the online options screen, describing what the user can find inside.
+	val[]: "在线游戏偏好设置。调整所有与World of Trucks相关的设置。" #+ The help text shown next to the button which opens the online options screen, describing what the user can find inside.
 
 	key[]: "connect_content_leave_confirmation"
 	val[]: "您确定要推迟注册吗？<br><br>您以后可以通过位于桌面的「在线」选项打开「在线内容连接」对话框。" #+ The text displayed in the connect content screen exit confirmation. This is only available when the connect content was displayed automatically when new DLC was detected and has to contain information where to find the screen again later.
@@ -11728,7 +12235,7 @@ localization_db : .localization
 
 	#+ Text on gps advisor which suggest careful behavior because the front escort vehicel is going forward to make a path for player.
 	key[]: "adviser_path_for_you"
-	val[]: "前方的护送车将会去警告其他驾驶员... <br>适应速度来避免任何的冲突。"
+	val[]: "前方的护送车将会去警告其他驾驶员... <br>调整速度来避免任何碰撞。"
 
 	#+ Text on gps advisor when player will be moving with a reverse to the rear escort to warn of a possible crash.
 	key[]: "close_to_the_back_escort_big_dist"
@@ -11951,7 +12458,7 @@ localization_db : .localization
 	val[]: "个人目标完成！" #+ Text showed when player completes event.
 
 	key[]: "open_event_page"
-	val[]: "Open Events Page" #+ Button opening event page on WoTr.
+	val[]: "打开活动页面" #+ Button opening event page on WoTr.
 
 	key[]: "event_progress"
 	val[]: "进展" #+ The label used to indicate progress of the event.
@@ -11960,13 +12467,13 @@ localization_db : .localization
 	val[]: "活动详情" #+ Text showed on the button which opens informations about an event.
 
 	key[]: "live_events"
-	val[]: "Live Events" #+ The label indicating event name.
+	val[]: "正在进行中的活动" #+ The label indicating event name.
 
 	key[]: "tier"
 	val[]: "层次" #+ Event tier.
 
 	key[]: "no_active_events"
-	val[]: "There is no active event at the moment."
+	val[]: "目前没有任何活动。"
 #@}
 
 #+ Trailer ownership
@@ -12011,7 +12518,7 @@ localization_db : .localization
 	val[]: "货物市场"
 
 	key[]: "cargo_market_desc"
-	val[]: "用自己的挂车将各种各样的货物运送到目的地." #+ The description of an Cargo Planner icon, used to open a window for selecting cargo with owned trailer.
+	val[]: "用自己的挂车将各种各样的货物运送到目的地。" #+ The description of an Cargo Planner icon, used to open a window for selecting cargo with owned trailer.
 
 	key[]: "trailerman_title"
 	val[]: "我的挂车"
@@ -12272,7 +12779,7 @@ localization_db : .localization
 	val[]: "目前没有新的挂车升级可用。"
 
 	key[]: "link_locked_msg_truck_diag"
-	val[]: "你当前没有驾驶任何卡车，所以不能进入车况诊断界面."
+	val[]: "你当前没有驾驶任何卡车，所以不能进入车况诊断界面。"
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "您还没有发现任何卡车销售商！"
@@ -12302,7 +12809,7 @@ localization_db : .localization
 	val[]: "您先要购买您第一辆卡车，才能访问驾驶员管理器。"
 
 	key[]: "link_locked_msg_recruit_map"
-	val[]: "您先要购买一辆卡车，才能访问招聘机构."
+	val[]: "您先要购买一辆卡车，才能访问招聘机构。"
 
 	key[]: "link_locked_msg_real_estate"
 	val[]: "购买更多的车库以探访快速车库购买的页面。"
@@ -12338,7 +12845,7 @@ localization_db : .localization
 #+ Message box shown to confirm take of selected trailer.
 #@{
 	key[]: "trailerman_confirm_take"
-	val[]: "您确定要使用$TRAILER$挂车吗？<br><br>它将会在您位于$CITY$的车库出现."
+	val[]: "您确定要使用$TRAILER$挂车吗？<br><br>它将会在您位于$CITY$的车库出现。"
 
 	key[]: "trailerman_confirm_take_from_garage"
 	val[]: "您是否确认使用$TRAILER$挂车？"
@@ -12434,6 +12941,22 @@ localization_db : .localization
 	val[]: "执行任务时无法弃用挂车。" #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "车辆调整"
+
+	key[]: "adj_mirrors"
+	val[]: "调整反光镜"
+
+	key[]: "adj_lights"
+	val[]: "调整灯光"
+
+	key[]: "adj_seats"
+	val[]: "调整座椅"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -12464,10 +12987,10 @@ localization_db : .localization
 	val[]: "原木"
 
 	key[]: "lowbed"
-	val[]: "Low Bed"
+	val[]: "低平板"
 
 	key[]: "lowboy"
-	val[]: "Low Loader"
+	val[]: "低平板"
 
 	key[]: "refrigerated"
 	val[]: "冷藏式"
@@ -12477,7 +13000,7 @@ localization_db : .localization
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
-	val[]: "Tank"
+	val[]: "罐车"
 
 #@}
 
@@ -12511,10 +13034,10 @@ localization_db : .localization
 	val[]: "原木，梁，管材"
 
 	key[]: "body_cargo_types_lowbed"
-	val[]: "Heavy machinery and high cargo"
+	val[]: "重型机械和高大货物"
 
 	key[]: "body_cargo_types_lowboy"
-	val[]: "Heavy machinery and high cargo"
+	val[]: "重型机械和高大货物"
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "冷冻，冷藏货物"
@@ -12604,16 +13127,16 @@ localization_db : .localization
 #@{
 
 	key[]: "tn_single_1_3axle"
-	val[]: "1+3 Axles"
+	val[]: "1+3轴"
 
 	key[]: "tn_single_1_4axle"
-	val[]: "1+4 Axles"
+	val[]: "1+4轴"
 
 	key[]: "tn_single_1_4axle_ext_long"
-	val[]: "1+4 Axles, Extendable, Long"
+	val[]: "1+4轴，可加长，长"
 
 	key[]: "tn_single_1_4axle_ext_short"
-	val[]: "1+4 Axles, Extendable, Short"
+	val[]: "1+4轴，可加长，短"
 
 	key[]: "tn_single_1axle"
 	val[]: "1轴"
@@ -12625,10 +13148,10 @@ localization_db : .localization
 	val[]: "双桥，20 英尺"
 
 	key[]: "tn_single_2axle_ext_long"
-	val[]: "2 Axles, Extendable, Long"
+	val[]: "2轴，可加长，长"
 
 	key[]: "tn_single_2axle_ext_short"
-	val[]: "2 Axles, Extendable, Short"
+	val[]: "2轴，可加长，短"
 
 	key[]: "tn_single_2axle_spread"
 	val[]: "分散式双桥"
@@ -12652,10 +13175,10 @@ localization_db : .localization
 	val[]: "40英尺可延长三桥"
 
 	key[]: "tn_single_3axle_ext_long"
-	val[]: "3 Axles, Extendable, Long"
+	val[]: "3轴，可加长，长"
 
 	key[]: "tn_single_3axle_ext_short"
-	val[]: "3 Axles, Extendable, Short"
+	val[]: "3轴，可加长，短"
 
 	key[]: "tn_single_3axle_flex_220"
 	val[]: "2 x 20英尺弹性连接三桥"
@@ -12664,7 +13187,7 @@ localization_db : .localization
 	val[]: "40英尺弹性连接三桥"
 
 	key[]: "tn_single_3axle_spread"
-	val[]: "3 Axles, Spread"
+	val[]: "3轴，展开"
 
 	key[]: "tn_single_3axle_steer2"
 	val[]: "双转向桥三桥"
@@ -12676,19 +13199,19 @@ localization_db : .localization
 	val[]: "分散式可转向后三桥"
 
 	key[]: "tn_single_4axle_ext_long"
-	val[]: "4 Axles, Extendable, Long"
+	val[]: "4轴，可加长，长"
 
 	key[]: "tn_single_4axle_ext_short"
-	val[]: "4 Axles, Extendable, Short"
+	val[]: "4轴，可加长，短"
 
 	key[]: "tn_single_4axle_steer"
 	val[]: "可转向四桥"
 
 	key[]: "tn_single_5axle_ext_long"
-	val[]: "5 Axles, Extendable, Long"
+	val[]: "5轴，可加长，长"
 
 	key[]: "tn_single_5axle_ext_short"
-	val[]: "5 Axles, Extendable, Short"
+	val[]: "5轴，可加长，短"
 
 	key[]: "tn_bdouble_2_2"
 	val[]: "2+2桥B型双挂"
@@ -12818,10 +13341,10 @@ localization_db : .localization
 	val[]: "木底板原木车"
 
 	key[]: "bs_scs_lowbed"
-	val[]: "Low Bed"
+	val[]: "低平板"
 
 	key[]: "bs_scs_lowloader"
-	val[]: "Low Loader"
+	val[]: "低平板"
 
 	key[]: "bs_scs_reefer"
 	val[]: "冷藏车"
@@ -12840,7 +13363,7 @@ localization_db : .localization
 	val[]: "食品罐"
 
 	key[]: "series_schwarzmuller_lowloader"
-	val[]: "Low Loader"
+	val[]: "低平板"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "平板"
@@ -12859,7 +13382,7 @@ localization_db : .localization
 	val[]: "铝箱"
 
 	key[]: "chrome_box"
-	val[]: "电镀箱子"
+	val[]: "镀铬箱子"
 
 	key[]: "cool_master"
 	val[]: "冷却大师"
@@ -12880,7 +13403,7 @@ localization_db : .localization
 	val[]: "灭火器"
 
 	key[]: "flip_toe_ramps"
-	val[]: "Flip Toe Ramps"
+	val[]: "翻转脚趾坡道"
 
 	key[]: "front_cage"
 	val[]: "前护栏"
@@ -12940,7 +13463,7 @@ localization_db : .localization
 	val[]: "塑料箱"
 
 	key[]: "ramps"
-	val[]: "Ramps"
+	val[]: "坡道"
 
 	key[]: "skirt_big"
 	val[]: "车裙边"
@@ -14019,7 +14542,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "正在取得城市进度..."
@@ -14027,17 +14550,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "运输到下一个星星："
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "所有的星星都达成了。"
+	key[]: "xmas_delivery_progress"
+	val[]: "礼物输送进度"
 
 	key[]: "xmas19_map_description"
 	val[]: "将鼠标悬停在城市上方，即可查看圣诞节活动的进展情况。访问$WOTR_URL$以查看完整的进度摘要。"
 
-	key[]: "xmas19_max_city_message"
-	val[]: "这个城市对应的社区目标贡献已经完成！<br><br>为什么不帮助另一个城市送出礼物呢？"
+	key[]: "xmas_max_contribution_message"
+	val[]: "这些城市对应的任务和社区目标贡献已经完成！<br><br>为什么不找找别的城市以送出或来回送礼物呢？"
 
 	key[]: "xmas19_back"
 	val[]: "返回"

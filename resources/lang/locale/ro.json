@@ -227,5 +227,9 @@
         "tn_home_transporter": "Remorcă transportare casă",
         "tn_knuckle_boom": "Încărcător cu Braţ Articulat",
         "tn_tub_grinder": "Tocător cu Tub"
+    },
+    "companies\/paints": {
+        "default": "Culoare Personalizată",
+        "metallic": "Culoare Metalizată"
     }
 }

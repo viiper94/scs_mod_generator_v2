@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Back Panel Items"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Kabinaren argiak"
 
 	key[]: "cabdefl"
 	val[]: "Kabinaren deflektoreak"
+
+	key[]: "cup_holder"
+	val[]: "Cup Holder"
 
 	key[]: "deflector"
 	val[]: "Aurreko deflektorea"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Kabinaren atzealdea"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Cabinet Sets" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Cup Holder Sets" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Kabinaren panelak"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Sleeper Argiak"
 
+	key[]: "toyback"
+	val[]: "Sleeper Floor Items" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Floor Items" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Dashboard Storage Items" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Sofa Items" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Table Items" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Turbo aleroia"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero margotua"
+	val[]: "Aero margotua"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Aluminiozko depositua"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Behekoa"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Jostailuko motozerra"
+	key[]: "cabinet"
+	val[]: "Cabinet"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Depositu kromatua"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-itxurakoa"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "Eguneko zirkulazioaren argiak"		#+ Daylight running lamps
+	val[]: "Eguneko zirkulazioaren argiak"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elitea"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "Laino-argiak"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Klimatizazioa"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Cup Holder (open)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Cup Holder (left open)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Cup Holder (right open)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Cup Holder (closed)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "American Football Ball"
+
+	key[]: "ats_bag"
+	val[]: "ATS Bag"
+
+	key[]: "ats_cap"
+	val[]: "ATS bisera"
+
+	key[]: "ats_game_box"
+	val[]: "ATS Game Box"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS Lunch Box"
+
+	key[]: "ats_mug"
+	val[]: "ATS Mug"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS Truck Bag"
+
+	key[]: "baseball_ball"
+	val[]: "Beisboleko pilota"
+
+	key[]: "baseball_bat"
+	val[]: "Beisboleko batea"
+
+	key[]: "bee"
+	val[]: "Erlea"
+
+	key[]: "black_ats_mug"
+	val[]: "Black ATS Mug"
+
+	key[]: "blanket_stars"
+	val[]: "Stars Blanket"
+
+	key[]: "bottle"
+	val[]: "Botila"
+
+	key[]: "burger"
+	val[]: "Hanburgesa"
+
+	key[]: "can"
+	val[]: "Lata"
+
+	key[]: "can_pack"
+	val[]: "Can Pack"
+
+	key[]: "can_sixpack"
+	val[]: "Can Sixpack"
+
+	key[]: "cans"
+	val[]: "Latak"
+
+	key[]: "car_perfume"
+	val[]: "Car Perfume"
+
+	key[]: "cardbox"
+	val[]: "Kartoizko kutxa"
+
+	key[]: "carrier"
+	val[]: "Bottle Carrier"
+
+	key[]: "chainsaw_toy"
+	val[]: "Jostailuko motozerra"
+
+	key[]: "chewing_gums"
+	val[]: "Txikleak"
+
+	key[]: "coffee_cup"
+	val[]: "Coffee Cup"
+
+	key[]: "costs_list"
+	val[]: "Erregai-kontsumoaren erregistroa"
+
+	key[]: "dreamcatcher"
+	val[]: "Dreamcatcher"
+
+	key[]: "emergency_triangles"
+	val[]: "Larrialdietako triangeluak"
+
+	key[]: "expenses_list"
+	val[]: "Gastuen txostena"
+
+	key[]: "fishing_bag"
+	val[]: "Fishing Bag"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Goalkeeper Mask"
+
+	key[]: "guitar"
+	val[]: "Gitarra"
+
+	key[]: "guitar_case"
+	val[]: "Guitar Case"
+
+	key[]: "hat"
+	val[]: "Kapela"
+
+	key[]: "hockey_stick"
+	val[]: "Hockey Stick"
+
+	key[]: "holy_field_blanket"
+	val[]: "Holly Field Blanket"
+
+	key[]: "honey_bee"
+	val[]: "Erlea"
+
+	key[]: "laundry_box"
+	val[]: "Laundry Basket"
+
+	key[]: "peppermints"
+	val[]: "Peppermints"
+
+	key[]: "plush_donut"
+	val[]: "Plush Donut"
+
+	key[]: "plush_lion"
+	val[]: "Plush Lion"
+
+	key[]: "power_inverter"
+	val[]: "Power Inverter"
+
+	key[]: "propeller"
+	val[]: "Helizea"
+
+	key[]: "shoes"
+	val[]: "Zapatak"
+
+	key[]: "spearmints"
+	val[]: "Spearmints"
+
+	key[]: "sport_sunglasses"
+	val[]: "Sport Sunglasses"
+
+	key[]: "stack_of_burgers"
+	val[]: "Stack of Burgers"
+
+	key[]: "usa_cap"
+	val[]: "AEB bisera"
+
+	key[]: "usa_flag"
+	val[]: "AEBko bandera"
+
+	key[]: "usa_flag_cap"
+	val[]: "USA Flag Cap"
+
+	key[]: "ventilator"
+	val[]: "Haizagailua"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr bisera"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS kuxina"
+
+	key[]: "heart_pillow"
+	val[]: "Heart Pillow"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Kiss Me Pillow"
+
+	key[]: "protector_pillow"
+	val[]: "Protector Pillow"
+
+	key[]: "star_pillow"
+	val[]: "Izar-itxurako kuxina"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah kuxina"
+
+	key[]: "usa_flag_pillow"
+	val[]: "USA Flag Pillow"
+
+	key[]: "usa_shield_pillow"
+	val[]: "USA Shield Pillow"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS aire-freskagarria"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Kaktuseko aire-freskagarria"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Limoiko aire-freskagarria"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Astigar-hostoko aire-freskagarria"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Laranjako aire-freskagarria"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "AEB aire-freskagarria"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Blue Plush Cube"
+
+	key[]: "red_plush_cube"
+	val[]: "Red Plush Cube"
+
+	key[]: "double_plush_cube"
+	val[]: "Double Plush Cube"
+
+
+	key[]: "alien_head"
+	val[]: "Estralurtar-burua"
+
+	key[]: "cowboy_head"
+	val[]: "Cowboy-burua"
+
+	key[]: "pirate_head"
+	val[]: "Pirata-burua"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Arrano eranskailua"
+
+	key[]: "guitar_sticker"
+	val[]: "Gitarra eranskailua"
+
+	key[]: "hat_sticker"
+	val[]: "Kapela eranskailua"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Maple Syrup Sticker"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Bolante eranskailua"
+
+	key[]: "taco_sticker"
+	val[]: "Tako eranskailua"
+
+	key[]: "truck_sticker"
+	val[]: "Kamioi eranskailua"
+
+	key[]: "usa_country_sticker"
+	val[]: "AEBko nazioaren eranskailua"
+
+	key[]: "usa_flag_sticker"
+	val[]: "AEBko banderaren eranskailua"
+
+#@}
 
 #@}
 
@@ -211,7 +507,7 @@ localization_db : .localization
 	val[]: "Erregai-kontsumoa"
 
 	key[]: "skill_mechanical_info"
-	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai kontsumoa gutxituko du. Bereziki:"
+	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai-kontsumoa gutxituko du. Bereziki:"
 #@}
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Barazkiak"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star kamioiak"
 
 #@}
 
@@ -1479,7 +1778,7 @@ localization_db : .localization
 
 	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
 	key[]: "co_cut_gold"
-	val[]: "Cripple Creek & Victor Gold Mine"
+	val[]: "Cripple Creek & Victor urre-meatzea"
 
 	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
 	key[]: "co_cut_eisen"
@@ -1531,11 +1830,95 @@ localization_db : .localization
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill atsedenlekua"
 
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Albuquerqueko lotunea"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Roswell hiria"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Santa Fe hiria"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86ko atsedenlekua"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w atsedenlekua"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: "US-82ko atsedenlekua"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Arizona Welcome Center atsedenlekua"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64ko atsedenlekua"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Lincolneko monumentu historikoa"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Vaughn hiria"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Head itsasargia"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor-en putzua"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astoria-Megler zubia"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Yaquinako badiako zubia"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles hiria"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199ko sekuoia-basoa"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregoneko paper-fabrika"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395eko bistak"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Biggs Junction"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portlandeko ontziola"
+
 	# Utah
 
 	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
 	key[]: "id_cut_kennecott"
-	val[]: "Bingham Canyon meategia"
+	val[]: "Bingham Canyon meatzea"
 
 	#+ Google maps link: https://goo.gl/maps/gDe2Fm9ngHFAQezv5
 	key[]: "ut_cut_george"

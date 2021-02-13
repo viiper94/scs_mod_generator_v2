@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Artigos do panel traseiro"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
-	val[]: "Luces de cabina"
+	val[]: "Luces da cabina"
 
 	key[]: "cabdefl"
-	val[]: "Deflectores de cabina"
+	val[]: "Deflectores da cabina"
+
+	key[]: "cup_holder"
+	val[]: "Portavasos"
 
 	key[]: "deflector"
 	val[]: "Deflector de insectos"
@@ -78,8 +87,17 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Traseira da cabina"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Conxuntos da cabina" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Conxuntos de portavasos" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
-	val[]: "Paneis de cabina"
+	val[]: "Paneis da cabina"
 
 	key[]: "sideskrt_bar"
 	val[]: "Barras do faldrón lateral"
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Luces do teito do dormitorio"
 
+	key[]: "toyback"
+	val[]: "Artigos do chan da cama" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Artigos do chan" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Artigos de almacenamento" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Artigos do sofá" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Artigos da mesa" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Alerón Turbo"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero pintado"
+	val[]: "Aero pintado"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Tanque de aluminio"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Inferior"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Motoserra de xoguete"
+	key[]: "cabinet"
+	val[]: "Cabina"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Tanque cromado"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "Forma tipo D"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "Luces de circulación diúrnas"		#+ Daylight running lamps
+	val[]: "Luces de circulación diúrnas"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "Faros antinéboa"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Climatización"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Portavasos abierto"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Portavasos aberto á esquerda"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Portavasos aberto á dereita"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Portavasos pechado"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Balón de fútbol americano"
+
+	key[]: "ats_bag"
+	val[]: "Bolsa de ATS"
+
+	key[]: "ats_cap"
+	val[]: "Gorra de ATS"
+
+	key[]: "ats_game_box"
+	val[]: "Xogo de ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "Friameira de ATS"
+
+	key[]: "ats_mug"
+	val[]: "Caneca de ATS"
+
+	key[]: "ats_truck_bag"
+	val[]: "Bolsa de camión de ATS"
+
+	key[]: "baseball_ball"
+	val[]: "Bóla de béisbol"
+
+	key[]: "baseball_bat"
+	val[]: "Bate de béisbol"
+
+	key[]: "bee"
+	val[]: "Abella"
+
+	key[]: "black_ats_mug"
+	val[]: "Caneca de ATS negra"
+
+	key[]: "blanket_stars"
+	val[]: "Manta de estrelas"
+
+	key[]: "bottle"
+	val[]: "Botella"
+
+	key[]: "burger"
+	val[]: "Hamburguesa"
+
+	key[]: "can"
+	val[]: "Lata"
+
+	key[]: "can_pack"
+	val[]: "Pack de latas"
+
+	key[]: "can_sixpack"
+	val[]: "Pack de seis de latas"
+
+	key[]: "cans"
+	val[]: "Latas"
+
+	key[]: "car_perfume"
+	val[]: "Ambientador de coche"
+
+	key[]: "cardbox"
+	val[]: "Caixa de cartón"
+
+	key[]: "carrier"
+	val[]: "Portabotellas"
+
+	key[]: "chainsaw_toy"
+	val[]: "Motoserra de xoguete"
+
+	key[]: "chewing_gums"
+	val[]: "Chicle"
+
+	key[]: "coffee_cup"
+	val[]: "Caneca de café"
+
+	key[]: "costs_list"
+	val[]: "Rexistro do consumo de combustíbel"
+
+	key[]: "dreamcatcher"
+	val[]: "Atrapasoños"
+
+	key[]: "emergency_triangles"
+	val[]: "Triángulos de emerxencia"
+
+	key[]: "expenses_list"
+	val[]: "Informe de gastos"
+
+	key[]: "fishing_bag"
+	val[]: "Bolsa de pesca"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Máscara de porteiro"
+
+	key[]: "guitar"
+	val[]: "Guitarra"
+
+	key[]: "guitar_case"
+	val[]: "Estoxo de guitarra"
+
+	key[]: "hat"
+	val[]: "Sombreiro"
+
+	key[]: "hockey_stick"
+	val[]: "Pau de hóckey"
+
+	key[]: "holy_field_blanket"
+	val[]: "Manta con patrón"
+
+	key[]: "honey_bee"
+	val[]: "Abella"
+
+	key[]: "laundry_box"
+	val[]: "Cesto da coada"
+
+	key[]: "peppermints"
+	val[]: "Caramelos de menta"
+
+	key[]: "plush_donut"
+	val[]: "Rosquilla de peluche"
+
+	key[]: "plush_lion"
+	val[]: "León de peluche"
+
+	key[]: "power_inverter"
+	val[]: "Inversor de potencia"
+
+	key[]: "propeller"
+	val[]: "Hélice"
+
+	key[]: "shoes"
+	val[]: "Zapatos"
+
+	key[]: "spearmints"
+	val[]: "Caramelos de hortelá"
+
+	key[]: "sport_sunglasses"
+	val[]: "Anteollos de sol deportivos"
+
+	key[]: "stack_of_burgers"
+	val[]: "Hamburguesas"
+
+	key[]: "usa_cap"
+	val[]: "Gorra dos EEUU"
+
+	key[]: "usa_flag"
+	val[]: "Bandeira dos EEUU"
+
+	key[]: "usa_flag_cap"
+	val[]: "Gorra con bandeira dos EEUU"
+
+	key[]: "ventilator"
+	val[]: "Ventilador"
+
+	key[]: "wotr_cap"
+	val[]: "Gorra WoTr"
+
+
+	key[]: "ats_pillow"
+	val[]: "Coxín de ATS"
+
+	key[]: "heart_pillow"
+	val[]: "Coxín con corazón"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Coxín bícame"
+
+	key[]: "protector_pillow"
+	val[]: "Coxín protector"
+
+	key[]: "star_pillow"
+	val[]: "Coxín con forma de estrela"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Coxín Truck Yeah"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Coxín coa bandeira dos EEUU"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Coxín con escudo dos EEUU"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Ambientador de ATS"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Ambientador de cacto"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Ambientador de limón"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Ambientador de folla de pradairo"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Ambientador de laranxa"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Ambientador de EEUU"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Cubo de felpa azul"
+
+	key[]: "red_plush_cube"
+	val[]: "Cubo de felpa vermello"
+
+	key[]: "double_plush_cube"
+	val[]: "Cubos de felpa"
+
+
+	key[]: "alien_head"
+	val[]: "Cabeza de alieníxena"
+
+	key[]: "cowboy_head"
+	val[]: "Cabeza de vaqueiro"
+
+	key[]: "pirate_head"
+	val[]: "Cabeza de pirata"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Adhesivo de aguia"
+
+	key[]: "guitar_sticker"
+	val[]: "Adhesivo de guitarra"
+
+	key[]: "hat_sticker"
+	val[]: "Adhesivo de sombreiro"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Adhesivo de xarope de pradairo"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Adhesivo de volante"
+
+	key[]: "taco_sticker"
+	val[]: "Adhesivo de taco"
+
+	key[]: "truck_sticker"
+	val[]: "Adhesivo de camión"
+
+	key[]: "usa_country_sticker"
+	val[]: "Adhesivo do país dos EEUU"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Adhesivo da bandeira dos EEUU"
+
+#@}
 
 #@}
 
@@ -249,10 +545,10 @@ localization_db : .localization
 	val[]: "Manteiga"
 
 	key[]: "cn_cable"
-	val[]: "Cabos"
+	val[]: "Cables"
 
 	key[]: "cn_cable_reel"
-	val[]: "Rolos de cabo"
+	val[]: "Rolos de cable"
 
 	key[]: "cn_cans"
 	val[]: "Latas"
@@ -342,7 +638,7 @@ localization_db : .localization
 	val[]: "Fresadora"
 
 	key[]: "cn_mix_tank"
-	val[]: "Mix Tank"
+	val[]: "Tanque mesturador"
 
 	key[]: "cn_mobile_crane"
 	val[]: "Guindastre todo terreo"
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Vexetais"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Camións Western Star"
 
 #@}
 
@@ -482,7 +781,7 @@ localization_db : .localization
 	val[]: "Remolque de leito baixo para barcos"
 
 	key[]: "tn_scs_lowboy"
-	val[]: "Lowboy Extendable Trailer"
+	val[]: "Remolque extensíbel de plataforma baixa"
 
 	key[]: "tn_mbt1_barrier"
 	val[]: "Remolque barreira móbil"
@@ -620,7 +919,7 @@ localization_db : .localization
 	val[]: "Troncos"
 
 	key[]: "lowboy"
-	val[]: "Lowboy"
+	val[]: "Plataforma baixa"
 
 	key[]: "refrigerated"
 	val[]: "Refrixerado"
@@ -737,7 +1036,7 @@ localization_db : .localization
 	val[]: "Jeep"
 
 	key[]: "tr_jeep_3axle"
-	val[]: "Jeep, 3 Axles"
+	val[]: "Jeep, 3 eixos"
 
 	key[]: "tr_rm_double"
 	val[]: "Duplo das Montañas Rochosas"
@@ -866,13 +1165,13 @@ localization_db : .localization
 	val[]: "53 pés, separados"
 
 	key[]: "tr_spreader_1axle"
-	val[]: "Spreader, 1 Axle"
+	val[]: "Separador, 1 eixo"
 
 	key[]: "tr_spreader_2axle"
-	val[]: "Spreader, 2 Axles"
+	val[]: "Separador, 2 eixos"
 
 	key[]: "tr_spreader_3axle"
-	val[]: "Spreader, 3 Axles"
+	val[]: "Separador, 3 eixos"
 
 	key[]: "tr_tp_double"
 	val[]: "Duplo Turnpike"
@@ -945,13 +1244,13 @@ localization_db : .localization
 	val[]: "Madeireiro con 6 apoios"
 
 	key[]: "bs_wood_lowboy"
-	val[]: "Wooden Lowboy"
+	val[]: "Plataforma baixa de madeira"
 
 	key[]: "bs_wood_full_lowboy"
-	val[]: "Full Wooden Lowboy"
+	val[]: "Plataforma baixa completamente de madeira"
 
 	key[]: "bs_wood_alu_lowboy"
-	val[]: "Wooden-Aluminium Lowboy"
+	val[]: "Plataforma baixa de madeira e aluminio"
 
 	key[]: "bs_reefer"
 	val[]: "Refrixerado"
@@ -1024,7 +1323,7 @@ localization_db : .localization
 	val[]: "Porta estándar, deflector de aire"
 
 	key[]: "wooden_deck"
-	val[]: "Wooden Deck"
+	val[]: "Cuberta de madeira"
 #@}
 
 #+ Names of countries/states
@@ -1467,11 +1766,11 @@ localization_db : .localization
 
 	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
 	key[]: "co_cut_red"
-	val[]: "Red Cliff Bridge"
+	val[]: "Ponte de Red Cliff"
 
 	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
 	key[]: "co_cut_wolf"
-	val[]: "Wolf Creek Pass"
+	val[]: "Pasaxe de Wolf Creek"
 
 	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
 	key[]: "co_cut_springs"
@@ -1531,6 +1830,90 @@ localization_db : .localization
 	key[]: "id_cut_midvale"
 	val[]: "Área de descanso de Midvale Hill"
 
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Cruzamento de Albuquerque"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Cidade de Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Cidade de Santa Fé"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Área de descanso da US-86"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Área de descanso da Route 66w"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " Área de descanso da US-82"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Área de descanso do Arizona Welcome Center"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Área de descanso da US-64"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "O histórico monumento de Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Cidade de Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Faro de Yaquina Head"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "O pozo de Thor"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Ponte de Astoria-Megler"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Ponte de Newport Yaquina Bay"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Cidade de The Dalles"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Bosque de sequoia da US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Fábrica de papel de Oregón"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Vista da US-395"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Cruzamento de The Biggs"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Estaleiro de Portland"
+
 	# Utah
 
 	#+ Google maps link: https://goo.gl/maps/wciQxFZtbDSjd7W69
@@ -1563,7 +1946,7 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/rpLTo8onfzwnUgec6
 	key[]: "ut_cut_hole"
-	val[]: "The Hole N\" The Rock landmark"
+	val[]: "Punto de interese de The Hole N\" The Rock"
 
 	#+ Google maps link: https://goo.gl/maps/ST6mPA95UUzBz2tW6
 	key[]: "ut_cut_glen"
@@ -1577,7 +1960,7 @@ localization_db : .localization
 
 	#+ Google maps link: https://goo.gl/maps/QruR8ghXve47cccJ7
 	key[]: "wa_cut_helen"
-	val[]: "Mount Saint Helens National Volcanic Monument"
+	val[]: "Monumento volcánico nacional de Mount Saint Helens"
 
 	#+ Google maps link:  https://goo.gl/maps/6GnotadyU4od8k958
 	key[]: "wa_cut_seaport"

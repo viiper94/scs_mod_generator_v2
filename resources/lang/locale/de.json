@@ -227,5 +227,9 @@
         "tn_home_transporter": "Haustransporter",
         "tn_knuckle_boom": "Kran mit Knickarmkonstruktion",
         "tn_tub_grinder": "Forsthäcksler"
+    },
+    "companies\/paints": {
+        "default": "Benutzerdefinierte Farbe",
+        "metallic": "Benutzerdef. Metallic-Farbe"
     }
 }

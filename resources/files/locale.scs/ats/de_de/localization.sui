@@ -525,6 +525,12 @@
 	key[]: "curtain_f"
 	val[]: "Vorhänge" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Klimaanlagen-Deko" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Bett-Deko" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Hängendes Zubehör" #+ Interior hanging accesories
 
@@ -536,6 +542,9 @@
 
 	key[]: "toybig"
 	val[]: "Zubehör Bodenmitte" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Kissen"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Cockpit-Sets" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Farbkorrektur" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Spiegelungsdetails" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4208,6 +4220,9 @@
 
 	key[]: "diff_unlock_warning"
 	val[]: "Hinweis: Aktivierte Differentialsperre während normaler Fahrt kann Schäden verursachen.<br>Taste zur Deaktivierung:"
+
+	key[]: "tow_hint"
+	val[]: "Wenn du deinen Lkw von alleine nicht mehr bewegen kannst, solltest du den Abschleppdienst rufen. Drücke:"
 
 	key[]: "ferry_msg"
 	val[]: "Um mögliche Fahrtziele anzuzeigen, drücken Sie:"
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Hühnerfleisch"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19-Impfstoff"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Hüttenkäse"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WESZ" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Beige Decke"
+
+	key[]: "blanket_square"
+	val[]: "Quadrat-Decke"
+
+	key[]: "book"
+	val[]: "Buch"
+
+	key[]: "bottle_sixpack"
+	val[]: "Flaschen-Sechserpack"
+
+	key[]: "breakfast_cereals"
+	val[]: "Müsli"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog-Wackelkopffigur"
+
+	key[]: "cap"
+	val[]: "Mütze"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Handy"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua-Wackelkopffigur"
+
+	key[]: "dashboard"
+	val[]: "Armaturenbrett"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Lieferungs-Bericht"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrische Kühlbox"
+
+	key[]: "endless_nourishment"
+	val[]: "Endlos-Nahrung"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2-Spielehülle"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2-Vesperdose"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2-Lkw-Tasche"
+
+	key[]: "festive_mug"
+	val[]: "Festliche Tasse"
+
+	key[]: "fire_extinguisher"
+	val[]: "Feuerlöscher"
+
+	key[]: "hand_bag"
+	val[]: "Handtasche"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Leder-Geldbeutel"
+
+	key[]: "hula_doll"
+	val[]: "Hula-Puppe"
+
+	key[]: "instant_lunch"
+	val[]: "Fertigmahlzeit"
+
+	key[]: "instant_lunch_box"
+	val[]: "Fertigmahlzeiten-Pack"
+
+	key[]: "magazines"
+	val[]: "Magazine"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magneto-induktiver Kompass"
+
+	key[]: "map"
+	val[]: "Karte"
+
+	key[]: "notebook"
+	val[]: "Laptop"
+
+	key[]: "paper_towels"
+	val[]: "Papier-Tücher"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilotenbrille"
+
+	key[]: "plush_bear"
+	val[]: "Teddy-Bär"
+
+	key[]: "portable_navigator"
+	val[]: "Navigationsgerät"
+
+	key[]: "rugged_style_cap"
+	val[]: "Kappe"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS-Kaffeetasse"
+
+	key[]: "sleeping_bag"
+	val[]: "Schlafsack"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Kleine Reisetasche"
+
+	key[]: "winter_bauble"
+	val[]: "Winterkugel"
+
+	key[]: "winter_blast_gift"
+	val[]: "Wintergeschenk"
+
+	key[]: "wise_owl_offering"
+	val[]: "Angebot der Weisen Eule"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2-Kissen"
+
+	key[]: "flame_pillow"
+	val[]: "Flammen-Kissen"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear-Kissen"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Sweet-Home-Kissen"
+
+	key[]: "skull_pillow"
+	val[]: "Totenkopf-Kissen"
+
+	key[]: "status_pillow"
+	val[]: "Status-Kissen"
+
+	key[]: "track_pillow"
+	val[]: "Track-Kissen"
+
+	key[]: "trucker_pillow"
+	val[]: "Trucker-Kissen"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclavs Kissen"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Kissen \"Weises Herz\""
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ-Kissen"
+
+
+	key[]: "air_freshener"
+	val[]: "Luftauffrischer"
+
+	key[]: "smelling_sack"
+	val[]: "Duftsäckchen"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Apfel-Luftauffrischer"
+
+	key[]: "basketball_ball"
+	val[]: "Basketball"
+
+	key[]: "black_plush_cube"
+	val[]: "Schwarzer Plüsch-Würfel"
+
+	key[]: "chromed_skull"
+	val[]: "Verchromter Schädel"
+
+	key[]: "disco_ball"
+	val[]: "Diskokugel"
+
+	key[]: "eight_ball"
+	val[]: "Achter-Ball"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2-Luftauffrischer"
+
+	key[]: "football_ball"
+	val[]: "Fußball"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Home Trucker-Abzeichen"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Hope Trucker-Abzeichen"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS-Luftauffrischer"
+
+	key[]: "tennis_ball"
+	val[]: "Tennisball"
+
+	key[]: "trophy_skull"
+	val[]: "Schädeltrophäe"
+
+	key[]: "white_plush_cube"
+	val[]: "Weißer Plüsch-Würfel"
+
+
+	key[]: "black_style_mug"
+	val[]: "Schwarzer Becher" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Weiß-orangefarbener Becher" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Schwarz-orangefarbener Becher" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Plüsch-Spielzeug" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Lederportemonnaie" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Abstellfläche" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Kleine Ablage 'Exklusiv', mittig" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Kleine Ablage 'Mahagoni', mittig" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Kleine Ablage 'Schwarz', mittig" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Große Ablage 'Exclusive'" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Große Ablage 'Mahagoni'" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Große Ablage 'Schwarz'" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Standard" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Chrom" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Lackiert mit Chrom" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Standard, doppelt" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exklusiv" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Benutzerdef. Metallic-Farbe" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Basic" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Standard, verchromt" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Standard, lackiert" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Rosa-Schleifen-Würfel" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Großer Stern" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "Auflieger kann im Einsatz nicht zurückgeschickt werden." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "FAHRZEUG-EINSTELLUNGEN"
+
+	key[]: "adj_mirrors"
+	val[]: "Spiegel einstellen"
+
+	key[]: "adj_lights"
+	val[]: "Licht einstellen"
+
+	key[]: "adj_seats"
+	val[]: "Sitz einstellen"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Gekühlt"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tank"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "(Tief-)kühlgut"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Stadtfortschritt wird abgerufen..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Aufträge bis zum nächsten Stern:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Alle Sterne erreicht."
+	key[]: "xmas_delivery_progress"
+	val[]: "Fortschritt Geschenke-Lieferung"
 
 	key[]: "xmas19_map_description"
 	val[]: "Bewege den Mauszeiger über Städte, um den Fortschritt des Weihnachts-Events zu sehen. Besuche $WOTR_URL$, um die vollständige Fortschrittsübersicht anzuzeigen."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Diese Stadt hat ihren Beitrag zum Community-Ziel schon geleistet!<br><br>Warum hilfst du nicht in anderen Städten aus?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Das Community-Ziel ist für diese Städte schon erreicht!<br><br>Willst du nicht nach einer Stadt suchen, in die/von der du Geschenke liefern kannst?"
 
 	key[]: "xmas19_back"
 	val[]: "Zurück"

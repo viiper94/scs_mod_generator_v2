@@ -546,6 +546,12 @@
 	key[]: "curtain_f"
 	val[]: "Cortinas" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Itens para o Ar Condicionado" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Itens da Cama" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Itens Pendurados" #+ Interior hanging accesories
 
@@ -557,6 +563,9 @@
 
 	key[]: "toybig"
 	val[]: "Itens do Piso Central" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Itens para a Almofada"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Conjuntos do Painel" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -879,7 +888,7 @@
 	val[]: "Salvando..." #+ Game save indicator message.
 
 	key[]: "cutscene_quit_info"
-	val[]: "Pressione $KEY$ para pular cinemática." #+ Shown when any key was pressed during viewpoint cutscene.
+	val[]: "Pressione $KEY$ para pular a cena." #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
@@ -888,7 +897,7 @@
 	val[]: "SEM CAMINHÃO" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "no_drive"
-	val[]: "Você não pode andar livremente pelo mapa porque você não tem um caminhão para dirigir! Você pode comprar um ou pegar um da sua frota<br><br>Gostaria de pegar uma carga rápida agora?"
+	val[]: "Você não pode andar livremente pelo mapa porque você não tem um caminhão para dirigir! Você pode comprar um ou pegar um da sua frota.<br><br>Gostaria de pegar uma carga rápida agora?"
 #@}
 
 #+ Game load window
@@ -1025,10 +1034,10 @@
 	val[]: "Entediado com uma pintura chata? Adicione um pouco de cor!" #+ Help message associated with paint shop icon.
 
 	key[]: "paintjob_t"
-	val[]: "MODELOS DE PINTURA" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
+	val[]: "ESQUEMAS" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
 
 	key[]: "paint_channel"
-	val[]: "Tipo de Tinta" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
+	val[]: "Slot de Cor" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
 	key[]: "tooltip_save_ucolor"
 	val[]: "Salvar cor como predefinição" #+ Tooltip for a button which stores currently selected color in selected preset slot.
@@ -1312,7 +1321,7 @@
 	val[]: "GERENTE DE PERFIS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "launchpad_t"
-	val[]: "EURO TRUCK SIMULATOR 2 - GERENCIADOR DE PERFIS" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "EURO TRUCK SIMULATOR 2 - MENU INICIAL" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "online_news_t"
 	val[]: "NOTÍCIAS ONLINE" #+ Title of the window used to display online news. Please keep in upper case where possible.
@@ -1345,7 +1354,7 @@
 	val[]: "Status do Perfil" #+ Heading text for Profile info.
 
 	key[]: "manage_profile_mods"
-	val[]: "Gerenciar Perfis com MODs" #+ Button which opens mod manager.
+	val[]: "Gerenciar MODs do Perfil" #+ Button which opens mod manager.
 
 	key[]: "manage_profiles_btn"
 	val[]: "Gerenciar Perfis" #+ Button which opens profile selection screen for managing profiles.
@@ -1418,7 +1427,7 @@
 	val[]: "MODs em uso: $num_mods$"
 
 	key[]: "launchpad_tt_mods_not_used"
-	val[]: "Nenhum MODs em uso"
+	val[]: "Nenhum MOD em uso"
 
 	key[]: "launchpad_tt_cloud_active"
 	val[]: "Sincronização com a nuvem Steam está ativa"
@@ -3098,7 +3107,7 @@
 	val[]: "Seleção do Controle" #+ Label of line containing the button which resets current selection of controllers for mouse emulation.
 
 	key[]: "reset_selection"
-	val[]: "Redefinir" #+ Button which resets the current selection of controllers used for mouse emulation.
+	val[]: "Resetar" #+ Button which resets the current selection of controllers used for mouse emulation.
 
 	key[]: "cursor_speed"
 	val[]: "Velocidade do Cursor" #+ Slider controlling speed of movement of the virtual cursor.
@@ -3215,7 +3224,7 @@
 	val[]: "Expoente do rastreamento ocular"
 
 	key[]: "eye_gaze_inflection_point"
-	val[]: "Ponto de inflexão do rastreamento da ocular"
+	val[]: "Ponto de inflexão do rastreamento ocular"
 
 	key[]: "eye_gaze_start_point"
 	val[]: "Ponto de início do rastreamento ocular"
@@ -3227,13 +3236,13 @@
 	val[]: "Multiplicador do rastreamento de cabeça"
 
 	key[]: "eye_head_exponent"
-	val[]: "Expoente de rastreamento da cabeça"
+	val[]: "Expoente do rastreamento da cabeça"
 
 	key[]: "eye_head_inflection_point"
 	val[]: "Ponto de inflexão do rastreamento da cabeça"
 
 	key[]: "eye_head_start_point"
-	val[]: "Ponto de início do rastreamento de cabeça"
+	val[]: "Ponto inicial do rastreamento de cabeça"
 
 	key[]: "eye_head_end_point"
 	val[]: "Ponto final do rastreamento de cabeça"
@@ -3409,7 +3418,7 @@
 
 
 	key[]: "scaling"
-	val[]: "Dimensionamento" #+ Combo box selecting the scale with which is the game image rendered. Selecting value bigger than 100% creates anti-aliasing, selecting value lower than 100% increases performance.
+	val[]: "Escala de Renderização" #+ Combo box selecting the scale with which is the game image rendered. Selecting value bigger than 100% creates anti-aliasing, selecting value lower than 100% increases performance.
 
 	key[]: "aa_mode"
 	val[]: "Antialiasing (SMAA)" #+ Combo box selecting the SMAA anti-aliasing quality.
@@ -3428,6 +3437,9 @@
 
 	key[]: "color_enhancement"
 	val[]: "Correção de cores" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Escala de Renderização dos Reflexos" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Detalhe dos reflexos" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -4299,6 +4311,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Você deve desbloquear o diferencial durante a direção normal ou corre o risco de causar danos. <br> Use a seguinte tecla para desativar:"
 
+	key[]: "tow_hint"
+	val[]: "Para sair de qualquer situação difícil, você pode usar o serviço de reboque. Pressione:"
+
 	key[]: "ferry_msg"
 	val[]: "Para visualizar possíveis destinos de viagens pressione:"
 
@@ -5081,6 +5096,9 @@
 
 	key[]: "cn_contamin"
 	val[]: "Material Contaminado"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vacinas para COVID-19"
 
 	key[]: "cn_cyanide"
 	val[]: "Cianeto"
@@ -5967,10 +5985,10 @@
 	val[]: "Reboque Basculante"
 
 	key[]: "tn_scs_lowbed"
-	val[]: "Low Bed Extendable Trailer"
+	val[]: "Reboque Prancha Baixa Extensível"
 
 	key[]: "tn_scs_lowloader"
-	val[]: "Low Loader Extendable Trailer"
+	val[]: "Reboque Prancha Rebaixada Extensível"
 
 	key[]: "tn_van_transporter"
 	val[]: "Transportador de Vans"
@@ -6037,7 +6055,7 @@
 	val[]: "Reboque Lona Sider Schwarzmüller"
 
 	key[]: "tn_schw_lowloader"
-	val[]: "Prancha Baixa Schwarzmüller"
+	val[]: "Prancha Rebaixada Schwarzmüller"
 
 	key[]: "tn_schw_reefer"
 	val[]: "Baú Refrigerado Schwarzmüller"
@@ -6054,7 +6072,7 @@
 	val[]: "Prancha Extensível"
 
 	key[]: "tn_goldhofer_stz_vl"
-	val[]: "Prancha Baixa com Piso Rebaixado "
+	val[]: "Prancha Rebaixada com Degrau"
 
 #@}
 
@@ -7318,7 +7336,7 @@
 	val[]: "Explorado:" #+ Label shown before value indicating how many percents of the world are explored.
 
 	key[]: "reset_gps_pins"
-	val[]: "Restaurar navegação" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
+	val[]: "Resetar navegação" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
 
 	key[]: "append_new_pins"
 	val[]: "Adicionar novos checkpoints somente ao final" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
@@ -7578,6 +7596,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -7994,6 +8014,9 @@
 	key[]: "bastia"
 	val[]: "Bastia"
 
+	key[]: "bayonne"
+	val[]: "Bayonne"
+
 	key[]: "bergen"
 	val[]: "Bergen"
 
@@ -8296,6 +8319,9 @@
 
 	key[]: "kunda"
 	val[]: "Kunda"
+
+	key[]: "lacq"
+	val[]: "Lacq"
 
 	key[]: "lahti"
 	val[]: "Lahti"
@@ -9421,11 +9447,223 @@
 
 #+ Upgrade accesories
 #@{
-	key[]: "cap"
-	val[]: "Boné" #+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
 
-	key[]: "mug"
-	val[]: "Caneca" #+ "name" + "mug" name in accessory of a truck
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Cobertor Bege"
+
+	key[]: "blanket_square"
+	val[]: "Cobertor Xadrez"
+
+	key[]: "book"
+	val[]: "Livro"
+
+	key[]: "bottle_sixpack"
+	val[]: "Pack de Seis Garrafas"
+
+	key[]: "breakfast_cereals"
+	val[]: "Cereal Matinal"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Buldogue Bobblehead"
+
+	key[]: "cap"
+	val[]: "Boné"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Celular"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Bobblehead"
+
+	key[]: "dashboard"
+	val[]: "Painel"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Relatório de Entrega"
+
+	key[]: "electric_cooling_box"
+	val[]: "Caixa Térmica Elétrica"
+
+	key[]: "endless_nourishment"
+	val[]: "Sanduíche Eterno"
+
+	key[]: "ets2_game_box"
+	val[]: "Jogo ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Pote de Marmita ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Bolsa ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Caneca Festiva"
+
+	key[]: "fire_extinguisher"
+	val[]: "Extintor de Incêndio"
+
+	key[]: "hand_bag"
+	val[]: "Bolsa de Mão"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Carteira de Couro Artesanal"
+
+	key[]: "hula_doll"
+	val[]: "Boneca Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Almoço Instantâneo"
+
+	key[]: "instant_lunch_box"
+	val[]: "Pack de Almoço Instantâneo"
+
+	key[]: "magazines"
+	val[]: "Revistas"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Bússola Magnética"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Notebook"
+
+	key[]: "paper_towels"
+	val[]: "Papel Toalha"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Óculos de Sol de Piloto"
+
+	key[]: "plush_bear"
+	val[]: "Urso de Pelúcia"
+
+	key[]: "portable_navigator"
+	val[]: "GPS"
+
+	key[]: "rugged_style_cap"
+	val[]: "Boné Rústico"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Caneca de Café SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Saco de Dormir"
+
+	key[]: "snow_chill_blanket"
+	val[]: "Cobertor de Neve"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Bolsa de Viagem"
+
+	key[]: "winter_bauble"
+	val[]: "Bola de Natal"
+
+	key[]: "winter_blast_gift"
+	val[]: "Presente de Inverno"
+
+	key[]: "wise_owl_offering"
+	val[]: "Oferenda da Coruja"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Almofada ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Almofada de Chamas"
+
+	key[]: "goodyear_pillow"
+	val[]: "Almofada Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Almofada Lar Doce Lar"
+
+	key[]: "skull_pillow"
+	val[]: "Almofada de Caveira"
+
+	key[]: "status_pillow"
+	val[]: "Almofada Relacionamento"
+
+	key[]: "track_pillow"
+	val[]: "Almofada de Rastros"
+
+	key[]: "trucker_pillow"
+	val[]: "Almofada do Caminhoneiro"
+
+	key[]: "vaclav_pillow"
+	val[]: "Almofada Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Almofada Coração Sábio"
+
+	key[]: "zzz_pillow"
+	val[]: "Almofada ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Odorizador de Ambiente"
+
+	key[]: "detective_head"
+	val[]: "Cabeça de Detetive"
+
+	key[]: "vampire_head"
+	val[]: "Cabeça de Vampiro"
+
+	key[]: "viking_head"
+	val[]: "Cabeça de Viking"
+
+	key[]: "smelling_sack"
+	val[]: "Saco Aromático"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Odorizador de Ambiente - Maçã"
+
+	key[]: "basketball_ball"
+	val[]: "Bola de Basquetebol"
+
+	key[]: "black_plush_cube"
+	val[]: "Dado de Pelúcia Preto"
+
+	key[]: "chromed_skull"
+	val[]: "Caveira Cromada"
+
+	key[]: "disco_ball"
+	val[]: "Globo de Discoteca"
+
+	key[]: "eight_ball"
+	val[]: "Bola Oito"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Odorizador de Ambiente - ETS2"
+
+	key[]: "football_ball"
+	val[]: "Bola de Futebol"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insígnia Home Trucker"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insígnia Hope Trucker"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Odorizador de Ambiente - SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Bola de Tênis"
+
+	key[]: "trophy_skull"
+	val[]: "Troféu Caveira"
+
+	key[]: "white_plush_cube"
+	val[]: "Dado de Pelúcia Branco"
+
 
 	key[]: "black_style_mug"
 	val[]: "Caneca Estilo Preta" #+ specific color scheme of a mug in cabin
@@ -9462,6 +9700,8 @@
 
 	key[]: "long_table_black"
 	val[]: "Mesa Longa Preta" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
 
 	key[]: "duty"
 	val[]: "Básico" #+ Basic truck accesory general
@@ -9514,6 +9754,9 @@
 	key[]: "chrom"
 	val[]: "Cromado" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Cromado II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Pintura & Cromado" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -9527,7 +9770,7 @@
 	val[]: "Pintura & Plástico Cinza" #+ Plastic mixed with painted mirror, doorhandle or other accessory
 
 	key[]: "alu"
-	val[]: "Cromado" #+ Aluminium mirror, doorhandle or other accessory
+	val[]: "Alumínio" #+ Aluminium mirror, doorhandle or other accessory
 
 	key[]: "plastic_modern"
 	val[]: "Plástico Moderno" #+ Modernized plastic mirror, doorhandle or other accessory
@@ -9552,6 +9795,9 @@
 
 	key[]: "standard_2013_uk"
 	val[]: "Padrão 2013 UK" #+ Standard UK version of the interior or accesory (model year 2013)
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusivo" #+ Luxury/Exclusive version of the interior or accesory
@@ -9667,11 +9913,14 @@
 	key[]: "white_reflector"
 	val[]: "Refletivo Branco"
 
-	key[]: "basic_chrome"
-	val[]: "Cromada Básica" #+ type of sideskirts, chromed
+	key[]: "basic"
+	val[]: "Básica" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Cromada Básica" #+ type of sideskirts (or other accessory), chromed
 
 	key[]: "basic_paint"
-	val[]: "Básica Pintada" #+ type of sideskirts, painted
+	val[]: "Básica Pintada" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "full_protection_double_bar"
 	val[]: "Proteção Total Barra Dupla" #+ Very expensive sideskirts with chromed bar both on top and on the bottom.
@@ -9944,7 +10193,7 @@
 	val[]: "Sair"
 
 	key[]: "photomode_reset"
-	val[]: "Restaurar"
+	val[]: "Resetar"
 
 	key[]: "photomode_sm"
 	val[]: "Gerente de Fotos"
@@ -11716,6 +11965,22 @@
 	val[]: "Não é possível dispensar o reboque enquanto estiver em um trabalho." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "AJUSTES DO VEÍCULO"
+
+	key[]: "adj_mirrors"
+	val[]: "Ajustar retrovisores"
+
+	key[]: "adj_lights"
+	val[]: "Ajustar luzes"
+
+	key[]: "adj_seats"
+	val[]: "Ajustar assentos"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -11746,10 +12011,10 @@
 	val[]: "Tronco"
 
 	key[]: "lowbed"
-	val[]: "Prancha Rebaixada"
+	val[]: "Prancha Baixa"
 
 	key[]: "lowboy"
-	val[]: "Low Loader"
+	val[]: "Piso Rebaixado"
 
 	key[]: "refrigerated"
 	val[]: "Refrigerado"
@@ -11875,7 +12140,7 @@
 	val[]: "CARROCERIA" #+ Title of the window screen. Please keep in upper case where possible.
 
 	key[]: "default_view"
-	val[]: "Resetar Camera" #+ Tooltip for an icon for resetting configurator camera to default position
+	val[]: "Resetar Câmera" #+ Tooltip for an icon for resetting configurator camera to default position
 
 	key[]: "show_vehicles"
 	val[]: "Mostrar Todo Conjunto" #+ Tooltip for an icon to display truck and trailer together in configurator
@@ -12100,10 +12365,10 @@
 	val[]: "Madeireiro Piso de Madeira"
 
 	key[]: "bs_scs_lowbed"
-	val[]: "Prancha Rebaixada"
+	val[]: "Prancha Baixa"
 
 	key[]: "bs_scs_lowloader"
-	val[]: "Low Loader"
+	val[]: "Piso Rebaixado"
 
 	key[]: "bs_scs_reefer"
 	val[]: "Refrigerado"
@@ -12122,7 +12387,7 @@
 	val[]: "Tanque de Alimento"
 
 	key[]: "series_schwarzmuller_lowloader"
-	val[]: "Low Loader"
+	val[]: "Piso Rebaixado"
 
 	key[]: "series_schwarzmuller_platform"
 	val[]: "Plataforma"
@@ -13301,7 +13566,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Buscando o progresso da cidade..."
@@ -13309,17 +13574,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Entregas para a próxima estrela:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Todas as estrelas obtidas."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progresso da entrega de presentes"
 
 	key[]: "xmas19_map_description"
 	val[]: "Passe o mouse em cima das cidades para ver o progresso do evento de Natal. Visite $WOTR_URL$ para ver o relatório completo do progresso."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "A contribuição desta cidade para a meta da comunidade foi concluída!<br><br>Que tal ajudar outra cidade a entregar seus presentes?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "A contribuição destas cidades para a meta global foi concluída!<br><br>Que tal encontrar outras cidades para entregar/receber presentes?"
 
 	key[]: "xmas19_back"
 	val[]: "Voltar"

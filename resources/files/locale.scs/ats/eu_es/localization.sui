@@ -525,17 +525,26 @@
 	key[]: "curtain_f"
 	val[]: "Errezelak" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Aire girotuko objektuak" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Bed Items" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Zintzilikariak" #+ Interior hanging accesories
 
 	key[]: "toyseat"
-	val[]: "Eserleku Objektuak" #+ Interior accessories placed in the passenger seat
+	val[]: "Eserleku-objektuak" #+ Interior accessories placed in the passenger seat
 
 	key[]: "toystand"
 	val[]: "Konsola Objektuak" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
 	val[]: "Erdiko Lurzoru Objektuak" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Pillow Items"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Aginte-panelerako sorta" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -1957,7 +1966,7 @@
 	val[]: "Profil lokalak"
 
 	key[]: "usa"
-	val[]: "EB"
+	val[]: "AEB"
 
 	key[]: "europe"
 	val[]: "Europa Kontinentala"
@@ -2239,7 +2248,7 @@
 	val[]: "Aire balaztaren simulazioa" #+ Checkbox for enabling of air brake safeguard (emergency brake is active if there is insufficient pressure in the air brakes).
 
 	key[]: "fuel_consumption_simulation"
-	val[]: "Erregai kontsumo errealista" #+ Checkbox for enabling of realistic fuel consumption.
+	val[]: "Erregai-kontsumo errealista" #+ Checkbox for enabling of realistic fuel consumption.
 
 	key[]: "cruise_control_grid"
 	val[]: "Abiadura kontrolaren aldaketa" #+ Size of grid for cruise control increment/decrement step.
@@ -3336,6 +3345,9 @@
 	key[]: "color_enhancement"
 	val[]: "Kolore zuzenketak" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Erreflexuen kalitatea" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4209,6 +4221,9 @@
 	key[]: "diff_unlock_warning"
 	val[]: "Diferentziala desblokeatu beharko zenuke gidatze normalean edo hura hondatzea arriskatzen duzu.<br>Erabili ondorengo tekla blokeoa desaktibatzeko:"
 
+	key[]: "tow_hint"
+	val[]: "Egoera zailetatik ezin bazara atera, atoi-zerbitzua erabil dezakezu. Sakatu:"
+
 	key[]: "ferry_msg"
 	val[]: "Helmuga ezberdinak ikusteko sakatu:"
 
@@ -4537,7 +4552,7 @@
 	val[]: "Gidatze Ekonomikoa"
 
 	key[]: "skill_mechanical_info"
-	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai kontsumoa gutxituko du. Bereziki:"
+	val[]: "Gidatze ekonomikoan trebetasuna irabaziz zure erregai-kontsumoa gutxituko du. Bereziki:"
 
 	key[]: "skill_mechanical_rank1"
 	val[]: "$FUEL_TRAILER1$% erregaia aurreztua erremolkearekin gidatuz gero.<br>$FUEL1$% erregaia aurreztua bakarrik gidatuz gero."
@@ -5281,6 +5296,9 @@
 
 	key[]: "cn_chicken_meat"
 	val[]: "Oilasko haragia"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19aren aurkako txertoa"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Gaztanbera"
@@ -7194,6 +7212,8 @@
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8294,6 +8314,250 @@
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Burusi beixa"
+
+	key[]: "blanket_square"
+	val[]: "Square Blanket"
+
+	key[]: "book"
+	val[]: "Liburua"
+
+	key[]: "bottle_sixpack"
+	val[]: "Bottle Sixpack"
+
+	key[]: "breakfast_cereals"
+	val[]: "Breakfast Cereals"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog Bobblehead"
+
+	key[]: "cap"
+	val[]: "Bisera"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mugikorra"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua Bobblehead"
+
+	key[]: "dashboard"
+	val[]: "Aginte-panela"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Entregen txostena"
+
+	key[]: "electric_cooling_box"
+	val[]: "Hozkailu eramangarri elektrikoa"
+
+	key[]: "endless_nourishment"
+	val[]: "Endless Nourishment"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 Game Box"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 Lunch Box"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 Truck Bag"
+
+	key[]: "festive_mug"
+	val[]: "Festive Mug"
+
+	key[]: "fire_extinguisher"
+	val[]: "Su-itzalgailua"
+
+	key[]: "hand_bag"
+	val[]: "Hand Bag"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Handmade Leather Wallet"
+
+	key[]: "hula_doll"
+	val[]: "Hula Doll"
+
+	key[]: "instant_lunch"
+	val[]: "Instant Lunch"
+
+	key[]: "instant_lunch_box"
+	val[]: "Instant Lunch Multipack"
+
+	key[]: "magazines"
+	val[]: "Aldizkariak"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magneto-Inductive Compass"
+
+	key[]: "map"
+	val[]: "Mapa"
+
+	key[]: "notebook"
+	val[]: "Ordenagailu eramangarria"
+
+	key[]: "paper_towels"
+	val[]: "Paper-biribilkia"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilot Sunglasses"
+
+	key[]: "plush_bear"
+	val[]: "Plush Bear"
+
+	key[]: "portable_navigator"
+	val[]: "Nabigatzaile eramangarria"
+
+	key[]: "rugged_style_cap"
+	val[]: "Rugged Style Cap"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS Coffee Mug"
+
+	key[]: "sleeping_bag"
+	val[]: "Lo-zakua"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Weekend Bag"
+
+	key[]: "winter_bauble"
+	val[]: "Winter Bauble"
+
+	key[]: "winter_blast_gift"
+	val[]: "Winter Blast Gift"
+
+	key[]: "wise_owl_offering"
+	val[]: "Wise Owl Offering"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 Pillow"
+
+	key[]: "flame_pillow"
+	val[]: "Flame Pillow"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear Pillow"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Sweet Home Pillow"
+
+	key[]: "skull_pillow"
+	val[]: "Skull Pillow"
+
+	key[]: "status_pillow"
+	val[]: "Status Pillow"
+
+	key[]: "track_pillow"
+	val[]: "Track Pillow"
+
+	key[]: "trucker_pillow"
+	val[]: "Trucker Pillow"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclav's Pillow"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Wise Heart Pillow"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ Pillow"
+
+
+	key[]: "air_freshener"
+	val[]: "Aire-freskagarria"
+
+	key[]: "smelling_sack"
+	val[]: "Smelling Sack"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Sagarrako aire-freskagarria"
+
+	key[]: "basketball_ball"
+	val[]: "Saskibaloiko baloia"
+
+	key[]: "black_plush_cube"
+	val[]: "Black Plush Cube"
+
+	key[]: "chromed_skull"
+	val[]: "Garezur kromatua"
+
+	key[]: "disco_ball"
+	val[]: "Disco Ball"
+
+	key[]: "eight_ball"
+	val[]: "Eight Ball"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 aire-freskagarria"
+
+	key[]: "football_ball"
+	val[]: "Futboleko baloia"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Etxeko kamioilariaren intsignia"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Itxaropenaren kamioilariaren intsignia"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS aire-freskagarria"
+
+	key[]: "tennis_ball"
+	val[]: "Tenis-pilota"
+
+	key[]: "trophy_skull"
+	val[]: "Trophy Skull"
+
+	key[]: "white_plush_cube"
+	val[]: "White Plush Cube"
+
+
+	key[]: "black_style_mug"
+	val[]: "Black Style Mug" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Zuri-Laranjadun Jarra" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Black-Orange Mug" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Peluxea" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Larruzko diru-zorroa" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Aginte-panela" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Centre Table Exclusive" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Centre Table Mahogany" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Centre Table Black" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Long Table Exclusive" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Long Table Mahogany" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Long Table Black" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Oinarrizkoa" #+ Basic truck accesory general
 
@@ -8345,6 +8609,9 @@
 	key[]: "chrom"
 	val[]: "Kromatua" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Kromatua II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Pintura eta kromatua" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8374,6 +8641,9 @@
 
 	key[]: "standard_double"
 	val[]: "Ohikoa bikoitza" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Esklusiboa" #+ Luxury/Exclusive version of the interior or accesory
@@ -8407,6 +8677,15 @@
 
 	key[]: "custom_metallic"
 	val[]: "Kolore metalizatu pertsonala" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Oinarrizkoa" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Basic Chromed" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Basic Painted" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Dado irabazlea" #+ Accessory name, DLC Pink Ribbon.
@@ -8443,6 +8722,7 @@
 
 	key[]: "grand_star"
 	val[]: "Grand Star" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10268,6 +10548,22 @@
 	val[]: "Unable to dismiss the trailer while on a job." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "IBILGAILU-DOIKUNTZAK"
+
+	key[]: "adj_mirrors"
+	val[]: "Ispiluak doitu"
+
+	key[]: "adj_lights"
+	val[]: "Argiak doitu"
+
+	key[]: "adj_seats"
+	val[]: "Eserlekuak doitu"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10293,12 +10589,14 @@
 
 	key[]: "refrigerated"
 	val[]: "Hoztuta"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Zisterna"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10329,6 +10627,7 @@
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Salgai izoztu eta hoztuak"
+
 #@}
 
 #+ Trailer chain type names.
@@ -10821,7 +11120,7 @@
 	val[]: "Aukeratu garaje bat"
 
 	key[]: "re_available"
-	val[]: "Available garages"
+	val[]: "Garaje eskuragaiak"
 
 	key[]: "re_owned"
 	val[]: "Edukitako garajeak"
@@ -11546,7 +11845,7 @@
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Fetching city progress..."
@@ -11554,17 +11853,14 @@
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Deliveries to the next star:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "All stars achieved."
+	key[]: "xmas_delivery_progress"
+	val[]: "Opariak emateko aurrerapena"
 
 	key[]: "xmas19_map_description"
 	val[]: "Hover over cities to see the Christmas event progress. Visit $WOTR_URL$ to see the full progress summary."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "This city's contribution towards the community goal is complete!<br><br>Why not help another city deliver its gifts?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "The contribution of these cities for this job, towards the Community Goal, is complete!<br><br>Why not find other cities to deliver Gifts from/to?"
 
 	key[]: "xmas19_back"
 	val[]: "Go back"

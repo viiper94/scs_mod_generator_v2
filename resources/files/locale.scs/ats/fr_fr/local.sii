@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,23 +1055,32 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Rideaux" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Éléments de la grille d'aération" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Éléments de la couchette" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Objets suspendus" #+ Interior hanging accesories
 
 	key[]: "toyseat"
-	val[]: "Objets du siège" #+ Interior accessories placed in the passenger seat
+	val[]: "Éléments du siège" #+ Interior accessories placed in the passenger seat
 
 	key[]: "toystand"
-	val[]: "Objets du tableau de bord" #+ Interior accessories placed on stands or center console available in the truck
+	val[]: "Éléments du tableau de bord" #+ Interior accessories placed on stands or center console available in the truck
 
 	key[]: "toybig"
 	val[]: "Objets du plancher" #+ Interior accessories placed on the floor in the center of the truck cabin
 
+	key[]: "l_pillow"
+	val[]: "Coussins"	#+ Interior accessories placed on pillow place in back of the truck cabin
+
 	key[]: "set_dashbrd"
-	val[]: "Eléments du tableau de bord" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "Éléments du tableau de bord" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
-	val[]: "Eléments du pare-brise" #+ Large Pin for sets of small pins of the windshield accessories
+	val[]: "Éléments du pare-brise" #+ Large Pin for sets of small pins of the windshield accessories
 
 	key[]: "set_lglass"
 	val[]: "Angles du pare-brise" #+ Large Pin for sets of small pins of the corner of windshield
@@ -1255,13 +1285,13 @@ localization_db : .localization
 	val[]: "Oui" #+ Button in a message box asking yes/no choice.
 
 	key[]: "close"
-	val[]: "Ok" #+ Button in a informational message box
+	val[]: "OK" #+ Button in a informational message box
 
 	key[]: "no"
 	val[]: "Non" #+ Button in a message box asking yes/no choice.
 
 	key[]: "ok"
-	val[]: "Ok" #+ Button in a informational message box
+	val[]: "OK" #+ Button in a informational message box
 
 	key[]: "delete"
 	val[]: "Supprimer" #+ Button used to delete something (profile, saved game).
@@ -1292,7 +1322,7 @@ localization_db : .localization
 	val[]: "Sauver & Charger" #+ Icon allowing player to save and load the game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_reset"
-	val[]: "Changements dans le jeu détecté ! Pour éviter des problèmes de compatibilité des sauvegardes dues aux changements dans l'environnement du jeu, les livraisons inachevées ont été annulées sans pénalité pour vous.<br offset=15>Si nécessaire, votre camion a été garé en lieu sûr." #+ Game state reset info message
+	val[]: "Changements dans le jeu détectés ! Pour éviter des problèmes de compatibilité des sauvegardes liées aux modifications dans l'environnement du jeu, les livraisons inachevées ont été annulées sans pénalité pour vous.<br offset=15>Si nécessaire, votre camion a été garé en lieu sûr." #+ Game state reset info message
 
 	key[]: "save_in_progress"
 	val[]: "Sauvegarde..." #+ Game save indicator message.
@@ -1407,7 +1437,7 @@ localization_db : .localization
 #@{
 
 	key[]: "warning"
-	val[]: "ATTENTION " #+ Title of message box containing some warning. Please keep in upper case where possible.
+	val[]: "ATTENTION" #+ Title of message box containing some warning. Please keep in upper case where possible.
 
 	key[]: "error"
 	val[]: "ERREUR" #+ Title of message box reporting some error. Please keep in upper case where possible.
@@ -1592,7 +1622,7 @@ localization_db : .localization
 
 
 	key[]: "sort_by"
-	val[]: "Trier par" #+ Combo box with job sorting options."
+	val[]: "Trier par " #+ Combo box with job sorting options."
 
 	key[]: "calculating_route"
 	val[]: "Calcul de l'itinéraire..." #+ Shown temporarily on map screens when navigation route is being calculated
@@ -1743,7 +1773,7 @@ localization_db : .localization
 	val[]: "Devenir une personne différente." #+ Help message associated with profile selection icon.
 
 	key[]: "wanna_remove_profile"
-	val[]: "Etes-vous sûr de vouloir supprimer ce profil ?"
+	val[]: "Êtes-vous sûr de vouloir supprimer ce profil ?"
 
 	key[]: "profile_level"
 	val[]: "Niveau" #+ Suffixed with number to indicate experience level of the profile. For example "Level 1".
@@ -1764,7 +1794,7 @@ localization_db : .localization
 	val[]: "Statut du profil" #+ Heading text for Profile info.
 
 	key[]: "manage_profile_mods"
-	val[]: "Gérer les MOD du profil" #+ Button which opens mod manager.
+	val[]: "Gérer les mods du profil" #+ Button which opens mod manager.
 
 	key[]: "manage_profiles_btn"
 	val[]: "Gestionnaire de profils" #+ Button which opens profile selection screen for managing profiles.
@@ -1880,10 +1910,10 @@ localization_db : .localization
 	val[]: "Carte" #+ Label of edit box used to select game map.
 
 	key[]: "enter_name_default"
-	val[]: "- Veuillez entrer votre nom -" #+ Text shown in the profile name edit box if no name is entered.
+	val[]: "- Veuillez saisir votre nom -" #+ Text shown in the profile name edit box if no name is entered.
 
 	key[]: "enter_comp_name_default"
-	val[]: "- Veuillez entrer le nom de votre entreprise -" #+ Text shown in the company name edit box if no name is entered.
+	val[]: "- Veuillez saisir le nom de votre entreprise -" #+ Text shown in the company name edit box if no name is entered.
 
 	key[]: "create"
 	val[]: "Créer" #+ Button which completes creation of the profile.
@@ -1895,7 +1925,7 @@ localization_db : .localization
 #@{
 
 	key[]: "enter_name"
-	val[]: "Vous devez entrer votre nom !"
+	val[]: "Vous devez saisir votre nom !"
 
 	key[]: "select_face"
 	val[]: "Sélectionnez votre photo !"
@@ -1953,7 +1983,7 @@ localization_db : .localization
 	val[]: "Le mot de passe n'a pas été spécifié."
 
 	key[]: "use_online_avatar"
-	val[]: "Utiliser l'avatar WOTR" #+ Checkbox in edit profile screen to choose if WoTr avatar will be used as game avatar.
+	val[]: "Utiliser l'avatar WoTr" #+ Checkbox in edit profile screen to choose if WoTr avatar will be used as game avatar.
 #@}
 
 
@@ -2032,7 +2062,7 @@ localization_db : .localization
 #+ DLC browser.
 #@{
 	key[]: "dlc_browser_t"
-	val[]: "LISTE DU CONTENU TELECHARGEABLE" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "LISTE DU CONTENU TÉLÉCHARGEABLE" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_btn"
 	val[]: "Liste des DLC" #+ Button used to start DLC browser.
@@ -2251,7 +2281,7 @@ localization_db : .localization
 	val[]: "Désactivé" #+ Feature is disabled
 
 	key[]: "custom"
-	val[]: "Personnalisée" #+ The player manually configured the parameter to value which is not one from the predefined ones.
+	val[]: "Personnalisé" #+ The player manually configured the parameter to value which is not one from the predefined ones.
 
 	key[]: "low"
 	val[]: "Faible" #+ The low quality setting
@@ -2260,7 +2290,7 @@ localization_db : .localization
 	val[]: "Moyen" #+ The medium quality setting
 
 	key[]: "high"
-	val[]: "Elevé" #+ The hight quality setting
+	val[]: "Élevé" #+ The hight quality setting
 
 	key[]: "very_high"
 	val[]: "Très élevé" #+ The very hight quality setting
@@ -2303,7 +2333,7 @@ localization_db : .localization
 	val[]: "Volume des effets de camion" #+ Slider controlling volume of the truck effects.
 
 	key[]: "truck_noise_volume"
-	val[]: "Volume des bruits de camion" #+ Slider controlling volume of the truck noises.
+	val[]: "Volume des bruits du camion" #+ Slider controlling volume of the truck noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Volume des bruits de remorque" #+ Slider controlling volume of the trailer noises.
@@ -2339,7 +2369,7 @@ localization_db : .localization
 	val[]: "Volume de la musique de l'interface utilisateur" #+ Slider controlling volume of the ui (menu) music.
 
 	key[]: "intro_volume"
-	val[]: "Volume des logos d'intro" #+ Slider controlling volume of the intro logos.
+	val[]: "Volume des logos de l'intro" #+ Slider controlling volume of the intro logos.
 
 	key[]: "voice_navigation_t"
 	val[]: "GUIDAGE VOCAL" #+ Title of the 'Voice Navigation' section. Please keep in upper case where possible.
@@ -2354,10 +2384,10 @@ localization_db : .localization
 	val[]: "- non sélectionné -" #+ The list item for the "not selected" voice navigation pack. .
 
 	key[]: "voice_navigation_preview"
-	val[]: "Ecouter la voix" #+ Label for the button to preview message of the voice navigation pack..
+	val[]: "Écouter la voix" #+ Label for the button to preview message of the voice navigation pack..
 
 	key[]: "voice_preview"
-	val[]: "Ecouter" #+ The button to preview message of the voice navigation pack..
+	val[]: "Écouter" #+ The button to preview message of the voice navigation pack..
 
 	key[]: "voice_speed_warning"
 	val[]: "Alerte de vitesse" #+ Droplist for selection of the speed warning type.
@@ -2372,7 +2402,7 @@ localization_db : .localization
 	val[]: "Voix" #+ The voice report is used as speed warning.
 
 	key[]: "advanced_audio_t"
-	val[]: "AUTRES REGLAGES AUDIO" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
+	val[]: "AUTRES RÉGLAGES AUDIO" #+ Title of the 'Other Audio Settings' section. Please keep in upper case where possible.
 
 	key[]: "sound_of_reverse"
 	val[]: "Signal de recul" #+ Checkbox enabling the beeping sound when reverse gear is engaged.
@@ -2393,7 +2423,7 @@ localization_db : .localization
 	val[]: "Effet de réverbération de l'environnement" #+ Checkbox enabling the reverb effect of the environment.
 
 	key[]: "audio_driver_settings_t"
-	val[]: "PERIPHERIQUE AUDIO" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
+	val[]: "PÉRIPHÉRIQUE AUDIO" #+ Title of the 'Audio driver' section. Please keep in upper case where possible.
 
 	key[]: "default_audio_driver"
 	val[]: "- Périphérique système par défaut -" #+ Text for 'system default driver' option.
@@ -2405,13 +2435,13 @@ localization_db : .localization
 #@{
 
 	key[]: "gameplay_t"
-	val[]: "JOUABILITE" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "JOUABILITÉ" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "gameplay"
 	val[]: "Jouabilité" #+ Icon opening the gameplay options window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "bcg_theme"
-	val[]: "THEME DU BUREAU"
+	val[]: "THÈME DU BUREAU"
 
 	key[]: "bcg_rnd"
 	val[]: "Thème du bureau aléatoire"
@@ -2426,16 +2456,16 @@ localization_db : .localization
 	val[]: "sec" #+ Abbreviated form of seconds used for the fadeout delay suffix
 
 	key[]: "game_settings"
-	val[]: "REGLAGES DU JEU"
+	val[]: "RÉGLAGES DU JEU"
 
 	key[]: "truck_settings"
-	val[]: "REGLAGES DU CAMION"
+	val[]: "RÉGLAGES DU CAMION"
 
  	key[]: "camera_settings"
-	val[]: "REGLAGES DE LA CAMERA"
+	val[]: "RÉGLAGES DE LA CAMERA"
 
 	key[]: "regional_settings"
-	val[]: "PARAMETRES REGIONAUX"
+	val[]: "PARAMÈTRES RÉGIONAUX"
 
 	key[]: "language"
 	val[]: "Langue" #+ Language selection combo box.
@@ -2477,7 +2507,7 @@ localization_db : .localization
 #@{
 
 	key[]: "clock_notation"
-	val[]: "Affichage de l'heure sur 24h" #+ Checkbox enabling 24 hour notation in clock display.
+	val[]: "Affichage de l'heure sur 24 heures" #+ Checkbox enabling 24 hour notation in clock display.
 
 	key[]: "12_hour"
 	val[]: "12 Heures" #+ Indication of 12 hour clock notation
@@ -2496,7 +2526,7 @@ localization_db : .localization
 #@{
 
 	key[]: "length_units"
-	val[]: "Unité de distance" #+ Selector enabling imperial display of values in imperial units (miles, yards).
+	val[]: "Unités de distance" #+ Selector enabling imperial display of values in imperial units (miles, yards).
 
 	key[]: "kilometers"
 	val[]: "Kilomètres" #+ Indication of metrical units (kilometers, meters)
@@ -2509,7 +2539,7 @@ localization_db : .localization
 #@{
 
 	key[]: "weight_units"
-	val[]: "Unité de masse" #+ Selector enabling imperial display of values in imperial units (miles, yards).
+	val[]: "Unités de masse" #+ Selector enabling imperial display of values in imperial units (miles, yards).
 
 	key[]: "kg_setting"
 	val[]: "Kilogrammes et Tonnes" #+ Indication of metric units (kilograms, tonnes)
@@ -2528,7 +2558,7 @@ localization_db : .localization
 #@{
 
 	key[]: "temperature_units"
-	val[]: "Unité de température" #+ Selector enabling different temperature units for display.
+	val[]: "Unités de température" #+ Selector enabling different temperature units for display.
 
 	key[]: "c_setting"
 	val[]: "Celsius" #+ Degrees on Celsius scale
@@ -2541,7 +2571,7 @@ localization_db : .localization
 #@{
 
 	key[]: "volume_units"
-	val[]: "Unité de volume" #+ Selector enabling different volume units for display (litres, gallons).
+	val[]: "Unités de volume" #+ Selector enabling different volume units for display (litres, gallons).
 
 	key[]: "litre_setting"
 	val[]: "Litres"
@@ -2575,7 +2605,7 @@ localization_db : .localization
 #+ Adviser speed limit visualization
 #@{
 	key[]: "adviser_speed_limit"
-	val[]: "Limitations de vitesse sur le GPS " #+ Droplist for selection mode of speed limit visualization.
+	val[]: "Limitations de vitesse sur le GPS" #+ Droplist for selection mode of speed limit visualization.
 
 	key[]: "hide"
 	val[]: "Masquer" #+ Hide speed limit display on the advisor.
@@ -2626,7 +2656,7 @@ localization_db : .localization
 #+ Navigation routing mode
 #@{
 	key[]: "navigation_mode"
-	val[]: "Mode navigation" #+ Droplist for selection mode of GPS navigation routing.
+	val[]: "Mode de navigation" #+ Droplist for selection mode of GPS navigation routing.
 
 	key[]: "navi_best"
 	val[]: "Le plus rapide" #+ Best: fastest and/or most comfortable route.
@@ -2635,7 +2665,7 @@ localization_db : .localization
 	val[]: "Le plus court" #+ Shortest route.
 
 	key[]: "navi_small_roads"
-	val[]: "Eviter les autoroutes" #+ Small roads preference route.
+	val[]: "Éviter les autoroutes" #+ Small roads preference route.
 #@}
 
 #+ Time zones and their display mode
@@ -2679,10 +2709,10 @@ localization_db : .localization
 	val[]: "Boîte de dialogue du stationnement automatique" #+ Checkbox enabling autoparking trigger.
 
 	key[]: "adviser_keep_hidden"
-	val[]: "Conserver le GPS masqué lors d'une notification" #+ Checkbox forcing hidden RA to stay hidden (no popups).
+	val[]: "Conserver le Route Advisor masqué lors d'une notification" #+ Checkbox forcing hidden RA to stay hidden (no popups).
 
 	key[]: "heavy_cargo_warning"
-	val[]: "Fenêtre d'avertissement pour marchandises exceptionnelles" #+ Heavy cargo warning screen pop up upon job selection.
+	val[]: "Fenêtre d'avertissement pour les marchandises exceptionnelles" #+ Heavy cargo warning screen pop up upon job selection.
 
 
 # route_adviser: "Route Advisor always on"- Seems to be not used anymore.
@@ -2720,7 +2750,7 @@ localization_db : .localization
 	val[]: "Remorques du joueur" #+ Name of the mode with physical cables between player truck and all connected trailers.
 
 	key[]: "trailer_cables_mode_player_all_first_ai"
-	val[]: "Remorques du joueurs et première remorque du trafic" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables for first traffic trailers.
+	val[]: "Remorques du joueur & première remorque du trafic" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables for first traffic trailers.
 
 	key[]: "trailer_cables_mode_all"
 	val[]: "Remorques du joueur et du trafic" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
@@ -2736,7 +2766,7 @@ localization_db : .localization
 	val[]: "Contact et démarrage automatique du moteur" #+ Checkbox for automatic engine/electricity start by throttle.
 
 	key[]: "auto_park_brake"
-	val[]: "Activation automatique du frein de parking " #+ Checkbox for automatic parking brake.
+	val[]: "Activation automatique du frein de parking" #+ Checkbox for automatic parking brake.
 
 	key[]: "auto_drop_axles"
 	val[]: "Abaissement automatique des essieux relevables" #+ Checkbox for automatic axle dropping of liftable axles.
@@ -2763,7 +2793,7 @@ localization_db : .localization
 	val[]: "Retour automatique du commodo de clignotant" #+ Checkbox for enabling of automatic blinker turning off.
 
 	key[]: "road_events"
-	val[]: "Evénements routiers aléatoires" #+ Slider for player modification of road event probability and placement.
+	val[]: "Événements routiers aléatoires" #+ Slider for player modification of road event probability and placement.
 
 	key[]: "rain_factor"
 	val[]: "Probabilité de pluie" #+ Slider for player modification of rain probability and duration.
@@ -2793,10 +2823,10 @@ localization_db : .localization
 	val[]: "Rotation de la caméra avec les clignotants" #+ Checkbox enabling camera rotation based on blinker activation.
 
 	key[]: "phys_cam_move"
-	val[]: "Mouvement physique de la caméra" #+ Checkbox enabling camera movement based on driver physics.
+	val[]: "Mouvements physiques de la caméra" #+ Checkbox enabling camera movement based on driver physics.
 
 	key[]: "phys_cam_move_factor"
-	val[]: "Facteur du mouvement physique de la caméra" #+ Slider for physics based camera movement multiplier.
+	val[]: "Facteur des mouvements physiques de la caméra" #+ Slider for physics based camera movement multiplier.
 
 	key[]: "toy_phys_move"
 	val[]: "Mouvements des accessoires de cabine" #+ Checkbox enabling cabin toys movement.
@@ -2830,7 +2860,7 @@ localization_db : .localization
 	val[]: "CLAVIER & BOUTONS"  #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "keyboard_ico"
-	val[]: "Clavier Boutons" #+ Icon opening the keyboard options window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Clavier & Boutons" #+ Icon opening the keyboard options window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "action"
 	val[]: "Fonctions" #+ Header of column containing name of the function (Throttle, Activate)
@@ -2864,16 +2894,16 @@ localization_db : .localization
 #@{
 
 	key[]: "truck_controls"
-	val[]: "CONTROLES DU CAMION"
+	val[]: "CONTRÔLES DU CAMION"
 
 	key[]: "camera_controls"
-	val[]: "CONTROLES DE LA CAMERA"
+	val[]: "CONTRÔLES DE LA CAMÉRA"
 
 	key[]: "hud_controls"
-	val[]: "CONTROLES HUD"
+	val[]: "CONTRÔLES HUD"
 
 	key[]: "walk_mode"
-	val[]: "MODE PIETON"
+	val[]: "MODE PIÉTON"
 
 	key[]: "other_controls"
 	val[]: "AUTRES"
@@ -3061,40 +3091,40 @@ localization_db : .localization
 	val[]: "Afficher / Masquer les rétroviseurs virtuels"
 
 	key[]: "o_im_show_hud"
-	val[]: "Modes GPS"
+	val[]: "Modes du Route Advisor"
 
 	key[]: "o_im_nav_map"
 	val[]: "Carte du monde" #+ Opens the world map from game.
 
 	key[]: "o_im_comp_man"
-	val[]: "Gestion garages" #+ Opens the garage manager from game.
+	val[]: "Gestion des garages" #+ Opens the garage manager from game.
 
 	key[]: "o_im_adviser_cursor"
-	val[]: "Réglage de la souris pour le GPS"
+	val[]: "Réglage de la souris pour le Route Advisor"
 
 	key[]: "o_im_adjuster"
 	val[]: "Réglages du camion"
 
 	key[]: "o_im_adviser_page0"
-	val[]: "Page de navigation du GPS"
+	val[]: "Page de navigation du Route Advisor"
 
 	key[]: "o_im_adviser_page1"
-	val[]: "Page info de mission du GPS"
+	val[]: "Page info de mission du Route Advisor"
 
 	key[]: "o_im_adviser_page2"
-	val[]: "Page de diagnostics du GPS"
+	val[]: "Page de diagnostics du Route Advisor"
 
 	key[]: "o_im_adviser_page3"
-	val[]: "Page d'informations du GPS"
+	val[]: "Page d'informations du Route Advisor"
 
 	key[]: "o_im_adviser_next"
-	val[]: "Page suivante du GPS"
+	val[]: "Page suivante du Route Advisor"
 
 	key[]: "o_im_adviser_prev"
-	val[]: "Page précédente du GPS"
+	val[]: "Page précédente du Route Advisor"
 
 	key[]: "o_im_adviser_eta"
-	val[]: "Mode de destination du GPS"
+	val[]: "Mode de destination du Route Advisor"
 
 #assistant
 
@@ -3197,22 +3227,22 @@ localization_db : .localization
 #@{
 
 	key[]: "o_im_look_preset_1"
-	val[]: "Regarder devant (vue intérieure)"
+	val[]: "Regarder devant en vue intérieure"
 
 	key[]: "o_im_look_preset_2"
-	val[]: "Regarder rétroviseur droit (vue intérieure)"
+	val[]: "Regarder le rétroviseur droit en vue intérieure"
 
 	key[]: "o_im_look_preset_3"
-	val[]: "Regarder rétroviseur gauche (vue intérieure)"
+	val[]: "Regarder le rétroviseur gauche en vue intérieure"
 
 	key[]: "o_im_look_preset_4"
-	val[]: "Regarder rétroviseur d'accostage (vue intérieure)"
+	val[]: "Regarder le rétroviseur d'accostage en vue intérieure"
 
 	key[]: "o_im_look_preset_5"
-	val[]: "Regarder à gauche (vue intérieure)"
+	val[]: "Regarder à gauche en vue intérieure"
 
 	key[]: "o_im_look_preset_6"
-	val[]: "Regarder antéviseur (vue intérieure)"
+	val[]: "Regarder l'antéviseur en vue intérieure"
 #@}
 #@}
 #@}
@@ -3803,18 +3833,18 @@ localization_db : .localization
 	val[]: "Synchronisation verticale" #+ Combo box for selection of the vsync enable state.
 
 	key[]: "eco_friendly"
-	val[]: "Economique (économie d'énergie pour les portables)" #+ Special value in the vsync combo box corresponding to limiting the game to half of the refresh rate.
+	val[]: "Éco (économie d'énergie pour les portables)" #+ Special value in the vsync combo box corresponding to limiting the game to half of the refresh rate.
 
 
 	key[]: "simple_graphical_settings_t"
-	val[]: "REGLAGES GRAPHIQUES SIMPLIFIES" #+ Header of section containing a simple selection between Low/Medium/High/Ultra quality preset.
+	val[]: "RÉGLAGES GRAPHIQUES SIMPLIFIÉS" #+ Header of section containing a simple selection between Low/Medium/High/Ultra quality preset.
 
 	key[]: "custom_settings_applied_t"
-	val[]: "REGLAGES PERSONNALISES APPLIQUES" #+ Shown if the simple settings section if the current configuration does not correspond to any known preset.
+	val[]: "RÉGLAGES PERSONNALISÉS APPLIQUÉS" #+ Shown if the simple settings section if the current configuration does not correspond to any known preset.
 
 
 	key[]: "adv_graphical_settings_t"
-	val[]: "REGLAGES GRAPHIQUES AVANCES" #+ Header of section containing all configuration options.
+	val[]: "RÉGLAGES GRAPHIQUES AVANCÉS" #+ Header of section containing all configuration options.
 
 
 	key[]: "simple_settings"
@@ -3834,7 +3864,7 @@ localization_db : .localization
 	val[]: "SSAO" #+ Combo box selecting the screen space ambient occlusion quality.
 
 	key[]: "hdr"
-	val[]: "Haut rendu dynamique (HDR) " #+ Checkbox enabling the high dynamic range rendering.
+	val[]: "Haut rendu dynamique (HDR)" #+ Checkbox enabling the high dynamic range rendering.
 
 	key[]: "dof"
 	val[]: "Profondeur de champ (DOF)" #+ Checkbox enabling the depth of field effect.
@@ -3844,6 +3874,9 @@ localization_db : .localization
 
 	key[]: "color_enhancement"
 	val[]: "Correction des couleurs" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
+
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
 	key[]: "refl_detail"
 	val[]: "Détails du reflet" #+ Combo box selecting quality of reflections on metal surfaces and water.
@@ -3876,7 +3909,7 @@ localization_db : .localization
 	val[]: "Qualité des textures" #+ Combo box selecting quality of textures.
 
 	key[]: "anisotrop"
-	val[]: "Filtre anisotropique" #+ Slider controlling quality of anisotropic filtering applied to textures.
+	val[]: "Filtrage anisotrope" #+ Slider controlling quality of anisotropic filtering applied to textures.
 
 	key[]: "normal_maps"
 	val[]: "Carte de normales" #+ Slider enabling usage of normal maps on models.
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Vous devez débloquer le différentiel pendant une conduite normale sous peine de l'endommager.<br>Utilisez la commande suivante pour le désactiver :"
+
+	key[]: "tow_hint"
+	val[]: "Si vous ne pouvez pas vous sortir d'une situation délicate, vous pouvez recourir au service de remorquage. Appuyez sur : "
 
 	key[]: "ferry_msg"
 	val[]: "Pour visualiser les destinations disponibles, appuyez sur :"
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Viande de poulet"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Vaccins COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Fromage cottage"
@@ -7399,7 +7438,7 @@ localization_db : .localization
 	val[]: "AGENCES DE RECRUTEMENT DECOUVERTES"
 
 	key[]: "recruit_map_info"
-	val[]: "Votre réseau de recrutement : découvrez davantages d'agences afin d'avoir une plus large sélection de chauffeurs à embaucher"
+	val[]: "Votre réseau de recrutement : découvrez davantage d'agences afin d'avoir une plus large sélection de chauffeurs à embaucher"
 
 	key[]: "recruit_map_unlocked"
 	val[]: "Agences de recrutement découvertes"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "WEST" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8149,7 +8190,7 @@ localization_db : .localization
 	val[]: "Permuter les rétroviseurs latéraux" #+ Shown bellow keys which will toggle side mirrors.
 
 	key[]: "show_hud_hint"
-	val[]: "Basculer les modes GPS" #+ Shown bellow keys which will toggle advisor modes.
+	val[]: "Basculer les modes du Route Advisor" #+ Shown bellow keys which will toggle advisor modes.
 #@}
 
 #+ Texts shown on the dashboard.
@@ -8480,7 +8521,7 @@ localization_db : .localization
 #@{
 
 	key[]: "input_wizard_t"
-	val[]: "ASSISTANT DU CONTROLEUR" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "ASSISTANT DU CONTRÔLEUR" #+ Title of the screen. Please keep in upper case where possible.
 
 #+ Button switching to the next page.
 
@@ -8524,7 +8565,7 @@ localization_db : .localization
 #@{
 
 	key[]: "wiz_control_keyboard"
-	val[]: "Conduire en utilisant le clavier pour contrôler et voir l'environnement avec la souris. La plus simple et la moins précise des méthodes de contrôle mais disponible pour tout le monde."
+	val[]: "Conduisez en utilisant le clavier pour contrôler et voir l'environnement avec la souris. La plus simple et la moins précise des méthodes de contrôle mais disponible pour tout le monde."
 
 	key[]: "wiz_control_mouse"
 	val[]: "Utilisez la souris pour tourner avec une grande précision. Le clavier est tout de même utilisé pour les autres fonctions. La souris est utilisée pour regarder autour de vous seulement si vous maintenez simultanément la touche de contrôle de la caméra enfoncée."
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Couverture beige"
+
+	key[]: "blanket_square"
+	val[]: "Couverture en tartan"
+
+	key[]: "book"
+	val[]: "Livre"
+
+	key[]: "bottle_sixpack"
+	val[]: "Pack de six bouteilles"
+
+	key[]: "breakfast_cereals"
+	val[]: "Céréales"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Bulldog pendulaire"
+
+	key[]: "cap"
+	val[]: "Casquette"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Smartphone"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Chihuahua pendulaire"
+
+	key[]: "dashboard"
+	val[]: "Tableau de bord"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Bon de livraison"
+
+	key[]: "electric_cooling_box"
+	val[]: "Glacière électrique"
+
+	key[]: "endless_nourishment"
+	val[]: "Sandwich"
+
+	key[]: "ets2_game_box"
+	val[]: "Boîte de jeu ETS 2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Boîte à repas ETS 2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Sac ETS 2 en forme de camion"
+
+	key[]: "festive_mug"
+	val[]: "Mug festif"
+
+	key[]: "fire_extinguisher"
+	val[]: "Extincteur"
+
+	key[]: "hand_bag"
+	val[]: "Sac à main"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Portefeuille"
+
+	key[]: "hula_doll"
+	val[]: "Poupée Hula"
+
+	key[]: "instant_lunch"
+	val[]: "Plat cuisiné"
+
+	key[]: "instant_lunch_box"
+	val[]: "Lot de plats cuisinés"
+
+	key[]: "magazines"
+	val[]: "Magazines"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Boussole"
+
+	key[]: "map"
+	val[]: "Atlas routier"
+
+	key[]: "notebook"
+	val[]: "Ordinateur portable"
+
+	key[]: "paper_towels"
+	val[]: "Rouleau d'essuie-tout"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Lunettes de soleil aviateur"
+
+	key[]: "plush_bear"
+	val[]: "Ours en peluche"
+
+	key[]: "portable_navigator"
+	val[]: "GPS"
+
+	key[]: "rugged_style_cap"
+	val[]: "Casquette de style rustique"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Mug SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Sac de couchage"
+
+	key[]: "tablet"
+	val[]: "Tablette"
+
+	key[]: "weekend_bag"
+	val[]: "Sac de voyage"
+
+	key[]: "winter_bauble"
+	val[]: "Boule de Noël"
+
+	key[]: "winter_blast_gift"
+	val[]: "Cadeau d'hiver"
+
+	key[]: "wise_owl_offering"
+	val[]: "Présent du hibou sage"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Coussin ETS 2"
+
+	key[]: "flame_pillow"
+	val[]: "Coussin flammes"
+
+	key[]: "goodyear_pillow"
+	val[]: "Coussin Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Coussin \"Sweet Home\""
+
+	key[]: "skull_pillow"
+	val[]: "Coussin tête de mort"
+
+	key[]: "status_pillow"
+	val[]: "Coussin situation"
+
+	key[]: "track_pillow"
+	val[]: "Coussin trace de pneu"
+
+	key[]: "trucker_pillow"
+	val[]: "Coussin \"Trucker\""
+
+	key[]: "vaclav_pillow"
+	val[]: "Coussin de Vaclav"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Coussin \"Wise Heart\""
+
+	key[]: "zzz_pillow"
+	val[]: "Coussin ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Désodorisant"
+
+	key[]: "smelling_sack"
+	val[]: "Pot pourri"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Désodorisant pomme"
+
+	key[]: "basketball_ball"
+	val[]: "Ballon de basketball"
+
+	key[]: "black_plush_cube"
+	val[]: "Dé décoratif noir"
+
+	key[]: "chromed_skull"
+	val[]: "Crâne chromé"
+
+	key[]: "disco_ball"
+	val[]: "Boule disco"
+
+	key[]: "eight_ball"
+	val[]: "Boule huit"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Désodorisant ETS 2"
+
+	key[]: "football_ball"
+	val[]: "Ballon de football"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Insigne \"Home Trucker\""
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Insigne \"Hope Trucker\""
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Désodorisant SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Balle de tennis"
+
+	key[]: "trophy_skull"
+	val[]: "Tête de squelette"
+
+	key[]: "white_plush_cube"
+	val[]: "Dé décoratif blanc"
+
+
+	key[]: "black_style_mug"
+	val[]: "Mug de style noir" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Mug blanc-orange" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Mug noir-orange" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Jouet en peluche" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Porte-feuille en cuir" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Tableau de bord" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Tablette centrale exclusive" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Tablette centrale acajou" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Tablette centrale noire" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Tablette longue exclusive" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Tablette longue acajou" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Tablette longue noire" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "Pièce d'origine" #+ Basic truck accesory general
 
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Chrome" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Chrome II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Peinture & Chrome" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Standard double" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Exclusif" #+ Luxury/Exclusive version of the interior or accesory
@@ -8917,8 +9208,17 @@ localization_db : .localization
 	key[]: "custom_metallic"
 	val[]: "Couleur métallisée personnalisée" #+ Custom metallic color of the truck
 
+	key[]: "basic"
+	val[]: "Basique" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Carénages basiques chromés" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Carénages basiques peints" #+ type of sideskirts (or other accessory), painted
+
 	key[]: "winning_dice"
-	val[]: "Dés vainqueurs" #+ Accessory name, DLC Pink Ribbon.
+	val[]: "Dés décoratifs vainqueurs" #+ Accessory name, DLC Pink Ribbon.
 
 	key[]: "boxing_gloves"
 	val[]: "Gants de boxe" #+ Accessory name, DLC Pink Ribbon.
@@ -8930,28 +9230,29 @@ localization_db : .localization
 	val[]: "Chaussette de Noël" #+ Hanging interior accessory
 
 	key[]: "autumn_star"
-	val[]: "Etoile d'automne" #+ Hanging interior accessory
+	val[]: "Étoile d'automne" #+ Hanging interior accessory
 
 	key[]: "twinkle_star"
-	val[]: "Etoile scintillante" #+ Hanging interior accessory
+	val[]: "Étoile scintillante" #+ Hanging interior accessory
 
 	key[]: "frosty_star"
-	val[]: "Etoile givrée" #+ Hanging interior accessory
+	val[]: "Étoile givrée" #+ Hanging interior accessory
 
 	key[]: "winter_star"
-	val[]: "Etoile d'hiver" #+ Hanging interior accessory
+	val[]: "Étoile d'hiver" #+ Hanging interior accessory
 
 	key[]: "christmas_star"
-	val[]: "Etoile de Noël" #+ Hanging interior accessory
+	val[]: "Étoile de Noël" #+ Hanging interior accessory
 
 	key[]: "wishing_star"
-	val[]: "Etoile filante" #+ Hanging interior accessory
+	val[]: "Étoile filante" #+ Hanging interior accessory
 
 	key[]: "diamond_star"
-	val[]: "Etoile de diamant" #+ Hanging interior accessory
+	val[]: "Étoile de diamant" #+ Hanging interior accessory
 
 	key[]: "grand_star"
 	val[]: "Grande étoile" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -9270,7 +9571,7 @@ localization_db : .localization
 	val[]: "Accessoires"
 
 	key[]: "mod_category_ai_traffic"
-	val[]: "Trafic AI"
+	val[]: "Trafic IA"
 
 	key[]: "mod_category_sound"
 	val[]: "Sons"
@@ -9303,7 +9604,7 @@ localization_db : .localization
 	val[]: "Objets animés"
 
 	key[]: "mod_category_walkers"
-	val[]: "Promeneurs"
+	val[]: "Passants"
 
 	key[]: "mod_category_prefabs"
 	val[]: "Préfabriqués"
@@ -9321,7 +9622,7 @@ localization_db : .localization
 	val[]: "Uniquement les favoris" #+ Label of checkbox which shows only mods marked as favorites
 
 	key[]: "category"
-	val[]: "Catégorie" #+ Label of field containing mod category filter or list of categories to which the mod belongs
+	val[]: "Catégorie " #+ Label of field containing mod category filter or list of categories to which the mod belongs
 
 	key[]: "active_mods_t"
 	val[]: "MODS ACTIFS" #+ Title of panel with list of enabled mods
@@ -9333,7 +9634,7 @@ localization_db : .localization
 	val[]: "Diminuer la priorité" #+ Button which decreases priority of the mod
 
 	key[]: "search"
-	val[]: "Recherche" #+ Label of field used to search mod by name
+	val[]: "Recherche " #+ Label of field used to search mod by name
 
 	key[]: "mod_manager_btn"
 	val[]: "Gestionnaire de mods" #+ Button opening the mod manager
@@ -9425,7 +9726,7 @@ localization_db : .localization
 #+ Mod manager help screen
 #@{
 	key[]: "mod_browser"
-	val[]: "Liste des mods" #+ Label of section with legend about status icons shown in the mod browser panel
+	val[]: "Liste des mods " #+ Label of section with legend about status icons shown in the mod browser panel
 
 	key[]: "mod_incompat_desc"
 	val[]: "Un mod présentant cette icône est incompatible ou a été supprimé du disque dur." #+ Description of status icon
@@ -9440,19 +9741,19 @@ localization_db : .localization
 	val[]: "Un mod présentant cette icône est activé et sera chargé." #+ Description of status icon
 
 	key[]: "active_mods_list"
-	val[]: "Mods actifs"  #+ Label of section with legend about status icons shown in the active mods panel
+	val[]: "Mods actifs "  #+ Label of section with legend about status icons shown in the active mods panel
 
 	key[]: "mod_manager_help_t"
 	val[]: "AIDE DU GESTIONNAIRE DE MODS" #+ Label of window with the help for the mod manager
 
 	key[]: "mod_sorting_desc"
-	val[]: "Importance de la priorité des mods. L'ordre de priorité des mods va du haut vers le bas dans la fenêtre 'Mods actifs' : le premier mod listé et les fichiers qu'il contient ont la plus haute priorité. Si plusieurs mods contiennent un fichier avec le même nom, seul le fichier du mod le plus prioritaire sera utilisé par le jeu."
+	val[]: "Importance de la priorité des mods. L'ordre de priorité des mods va du haut vers le bas dans la fenêtre \"Mods actifs\" : le premier mod listé et les fichiers qu'il contient ont la plus haute priorité. Si plusieurs mods contiennent un fichier avec le même nom, seul le fichier du mod le plus prioritaire sera utilisé par le jeu."
 
 	key[]: "other"
-	val[]: "Autre" #+ Label of section with legend about additional icons and buttons
+	val[]: "Autre " #+ Label of section with legend about additional icons and buttons
 
 	key[]: "help_mm_btn_desc"
-	val[]: "Ouvrir cette aide." #+ Description of help icon.
+	val[]: "Ouvrir cette boîte d'aide." #+ Description of help icon.
 
 	key[]: "welcome_mod_manager"
 	val[]: "BIENVENUE DANS LE GESTIONNAIRE DE MODS" #+ Label of window with the help for the mod manager which appears the first time the user launches the manager
@@ -10264,7 +10565,7 @@ localization_db : .localization
 	val[]: "Nuit d'orage"
 
 	key[]: "tunnel_scene"
-	val[]: "A travers la montagne"
+	val[]: "À travers la montagne"
 
 	key[]: "garage_scene"
 	val[]: "Enfin à la maison"
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Impossible de parquer la remorque pendant une mission." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "RÉGLAGES DU VÉHICULE"
+
+	key[]: "adj_mirrors"
+	val[]: "Régler les rétroviseurs"
+
+	key[]: "adj_lights"
+	val[]: "Régler les feux"
+
+	key[]: "adj_seats"
+	val[]: "Régler les sièges"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Frigorifique"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Réservoir"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Produits surgelés, réfrigérés"
+
 #@}
 
 #+ Trailer chain type names.
@@ -11171,7 +11491,7 @@ localization_db : .localization
 	val[]: "PREVISUALISATION DE LA CARGAISON" #+ The title of the cargo preview modal. Keep it uppercase please.
 
 	key[]: "trailer_browser_t"
-	val[]: "LISTE DES REMORQUES" #+ The title of the trailer browser screen. Keep it uppercase please.
+	val[]: "INDEX DES REMORQUES" #+ The title of the trailer browser screen. Keep it uppercase please.
 
 	key[]: "tr_model_t"
 	val[]: "Modèle de remorque" #+ The title of the trailer model category.
@@ -11180,7 +11500,7 @@ localization_db : .localization
 	val[]: "Modèle de remorque" #+ The tooltip in browser for trailer model category.
 
 	key[]: "trailer_browser"
-	val[]: "Liste des remorques"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Index des remorques"  #+ Icon title. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "trailer_browser_help"
 	val[]: "Expérimentez les différentes configurations de remorques."  #+ Description for the Trailer Browser icon.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Récupération de la ville en cours..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Livraisons jusqu'à la prochaine étoile :"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Toutes les étoiles ont été atteintes."
+	key[]: "xmas_delivery_progress"
+	val[]: "Progression de la livraison des cadeaux"
 
 	key[]: "xmas19_map_description"
 	val[]: "Survolez les villes pour consulter la progression de l'événement de Noël. Visitez $WOTR_URL$ pour voir le résumé complet de la progression."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "La contribution de cette ville pour l'objectif communautaire est atteinte !<br><br>Pourquoi ne pas aider une autre ville à livrer ses cadeaux ?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "La contribution de ces villes pour ce travail, dans le cadre de l'objectif communautaire, est complète !<br><br>Pourquoi ne pas trouver d'autres villes pour livrer des cadeaux en provenance / à destination ?"
 
 	key[]: "xmas19_back"
 	val[]: "Retour"

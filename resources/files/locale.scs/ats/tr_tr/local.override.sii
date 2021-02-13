@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Arka Panel Eşyaları"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Kabin Işıkları"
 
 	key[]: "cabdefl"
 	val[]: "Kabin Deflektörleri"
+
+	key[]: "cup_holder"
+	val[]: "Bardaklık"
 
 	key[]: "deflector"
 	val[]: "Sineklik"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Kabin Arkası"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Dolap Setleri" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Bardaklık Setleri" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Kabin Panelleri"
 
@@ -93,21 +111,36 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Tavan Işıklandırmaları"
 
+	key[]: "toyback"
+	val[]: "Yataklı Kabin Zemini Eşyaları" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Zemin Eşyaları" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Gösterge Paneli Saklama Eşyaları" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Koltuk Eşyaları" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Masa Eşyaları" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Spoyler"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero, Boyalı"
+	val[]: "Aero, Boyalı"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Alüminyum Tank"	#+ Aluminium tank accessory (water, fuel, etc)
@@ -115,8 +148,8 @@ localization_db : .localization
 	key[]: "bottom"
 	val[]: "Alt"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Motorlu Testere Oyuncağı"
+	key[]: "cabinet"
+	val[]: "Dolap"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Krom Tank"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "D-tip Tank"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "Gündüz Farları"		#+ Daylight running lamps
+	val[]: "Gündüz Farları"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
 	val[]: "Sis Farları"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Bardaklık (açık)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Bardaklık (sol taraf açık)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Bardaklık (sağ taraf açık)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Bardaklık (kapalı)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Amerikan Futbolu Topu"
+
+	key[]: "ats_bag"
+	val[]: "ATS Çantası"
+
+	key[]: "ats_cap"
+	val[]: "ATS Şapkası"
+
+	key[]: "ats_game_box"
+	val[]: "ATS Oyun Kutusu"
+
+	key[]: "ats_lunch_box"
+	val[]: "ATS Yemek Kabı"
+
+	key[]: "ats_mug"
+	val[]: "ATS Kupası"
+
+	key[]: "ats_truck_bag"
+	val[]: "ATS Kamyon Çantası"
+
+	key[]: "baseball_ball"
+	val[]: "Beyzbol Topu"
+
+	key[]: "baseball_bat"
+	val[]: "Beyzbol Sopası"
+
+	key[]: "bee"
+	val[]: "Bal Arısı"
+
+	key[]: "black_ats_mug"
+	val[]: "Siyah ATS Kupası"
+
+	key[]: "blanket_stars"
+	val[]: "Yıldızlı Battaniye"
+
+	key[]: "bottle"
+	val[]: "Şişe"
+
+	key[]: "burger"
+	val[]: "Burger"
+
+	key[]: "can"
+	val[]: "Teneke Kutu"
+
+	key[]: "can_pack"
+	val[]: "Teneke Kutu Paketi"
+
+	key[]: "can_sixpack"
+	val[]: "Altılı Teneke Kutu"
+
+	key[]: "cans"
+	val[]: "Teneke Kutular"
+
+	key[]: "car_perfume"
+	val[]: "Araba Parfümü"
+
+	key[]: "cardbox"
+	val[]: "Karton Kutu"
+
+	key[]: "carrier"
+	val[]: "Şişe Taşıyıcısı"
+
+	key[]: "chainsaw_toy"
+	val[]: "Motorlu Testere Oyuncağı"
+
+	key[]: "chewing_gums"
+	val[]: "Sakız"
+
+	key[]: "coffee_cup"
+	val[]: "Kahve Fincanı"
+
+	key[]: "costs_list"
+	val[]: "Yakıt Sarfiyatı Kaydı"
+
+	key[]: "dreamcatcher"
+	val[]: "Düş Kapanı"
+
+	key[]: "emergency_triangles"
+	val[]: "Uyarı Üçgenleri"
+
+	key[]: "expenses_list"
+	val[]: "Masraf Raporu"
+
+	key[]: "fishing_bag"
+	val[]: "Balıkçı Çantası"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Kaleci Maskesi"
+
+	key[]: "guitar"
+	val[]: "Gitar"
+
+	key[]: "guitar_case"
+	val[]: "Gitar Kutusu"
+
+	key[]: "hat"
+	val[]: "Şapka"
+
+	key[]: "hockey_stick"
+	val[]: "Hokey Sopası"
+
+	key[]: "holy_field_blanket"
+	val[]: "Çobanpüskülü Taşınabilir Battaniye"
+
+	key[]: "honey_bee"
+	val[]: "Bal Arısı"
+
+	key[]: "laundry_box"
+	val[]: "Çamaşır Sepeti"
+
+	key[]: "peppermints"
+	val[]: "Nane Şekerleri"
+
+	key[]: "plush_donut"
+	val[]: "Peluş Çörek"
+
+	key[]: "plush_lion"
+	val[]: "Peluş Aslan"
+
+	key[]: "power_inverter"
+	val[]: "Güç İnvertörü"
+
+	key[]: "propeller"
+	val[]: "Pervane"
+
+	key[]: "shoes"
+	val[]: "Ayakkabılar"
+
+	key[]: "spearmints"
+	val[]: "Mızraklı Naneler"
+
+	key[]: "sport_sunglasses"
+	val[]: "Spor Güneş Gözlükleri"
+
+	key[]: "stack_of_burgers"
+	val[]: "Burger İstifi"
+
+	key[]: "usa_cap"
+	val[]: "ABD Şapkası"
+
+	key[]: "usa_flag"
+	val[]: "ABD Bayrağı"
+
+	key[]: "usa_flag_cap"
+	val[]: "ABD Bayrağı Şapkası"
+
+	key[]: "ventilator"
+	val[]: "Vantilatör"
+
+	key[]: "wotr_cap"
+	val[]: "WoTr Şapkası"
+
+
+	key[]: "ats_pillow"
+	val[]: "ATS Yastığı"
+
+	key[]: "heart_pillow"
+	val[]: "Kalpli Yastık"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Kiss Me Yastığı"
+
+	key[]: "protector_pillow"
+	val[]: "Koruyucu Yastık"
+
+	key[]: "star_pillow"
+	val[]: "Yıldız Yastık"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Truck Yeah Yastığı"
+
+	key[]: "usa_flag_pillow"
+	val[]: "ABD Bayrağı Yastığı"
+
+	key[]: "usa_shield_pillow"
+	val[]: "ABD Kalkanı Yastığı"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "ATS Araç Spreyi"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Kaktüs Araç Kokusu"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Limonlu Araç Kokusu"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Akçaağaç Yaprağı Araç Kokusu"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Portakallı Araç Kokusu"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "ABD Araç Kokusu"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Mavi Peluş Küp"
+
+	key[]: "red_plush_cube"
+	val[]: "Kırmızı Peluş Küp"
+
+	key[]: "double_plush_cube"
+	val[]: "Çift Peluş Küp"
+
+
+	key[]: "alien_head"
+	val[]: "Uzaylı Kafası"
+
+	key[]: "cowboy_head"
+	val[]: "Kovboy Kafası"
+
+	key[]: "pirate_head"
+	val[]: "Korsan Kafası"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Kartal Çıkartması"
+
+	key[]: "guitar_sticker"
+	val[]: "Gitar Çıkartması"
+
+	key[]: "hat_sticker"
+	val[]: "Şapka Çıkartması"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Akçaağaç Şurubu Çıkartması"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Direksiyon Çıkartması"
+
+	key[]: "taco_sticker"
+	val[]: "Taco Çıkartması"
+
+	key[]: "truck_sticker"
+	val[]: "Çekici Çıkartması"
+
+	key[]: "usa_country_sticker"
+	val[]: "ABD Ülkesi Çıkartması"
+
+	key[]: "usa_flag_sticker"
+	val[]: "ABD Bayrağı Çıkartması"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Sebzeler"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star Çekicileri"
 
 #@}
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Midvale Hill Dinlenme Tesisi"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Albuquerque Kavşağı"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Roswell Şehri"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Santa Fe Şehri"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "US-86 Dinlenme Tesisi"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Route 66w Dinlenme Tesisi"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " US-82 Dinlenme Tesisi"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Arizona Welcome Center Dinlenme Tesisi"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "US-64 Dinlenme Tesisi"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Tarihi Lincoln Anıtı"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Vaughn Şehri"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Yaquina Deniz Feneri"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Thor'un Kuyusu"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Astorie-Megler Köprüsü"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Newport Yaquina Bay Köprüsü"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "The Dalles Şehri"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "US-199 Sekoya Ormanı"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Oregon Kağıt Fabrikası"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "US-395 Manzarası"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Biggs Kavşağı"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Portland Tersanesi"
 
 	# Utah
 

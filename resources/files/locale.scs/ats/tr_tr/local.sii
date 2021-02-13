@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,6 +1055,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Perdeler" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Havalandırma Izgarası Araçları" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Yatak Eşyaları" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Sarkan Aksesuarlar" #+ Interior hanging accesories
 
@@ -1045,6 +1072,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "Orta Döşeme Aksesuarları" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Yastık Eşyaları"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Konsol Setleri" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3845,6 +3875,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "Renk düzeltme" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Yansımanın detayı" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Hasara neden olmamak için normal sürüş esnasında diferansiyel kilidini devre dışı bırakın<br>Devre dışı bırakmak için belirtilen tuşu kullanın:"
+
+	key[]: "tow_hint"
+	val[]: "Herhangi bir zor durumdan kurtulamıyorsanız çekici hizmetini kullanabilirsiniz. Belirtilen tuşa basın:"
 
 	key[]: "ferry_msg"
 	val[]: "Muhtemel hedefleri görmek için belirtilen tuşa basın:"
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Tavuk Eti"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "COVID-19 Aşısı"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Lor Peyniri"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "BATI" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Bej Battaniye"
+
+	key[]: "blanket_square"
+	val[]: "Kareli Battaniye"
+
+	key[]: "book"
+	val[]: "Kitap"
+
+	key[]: "bottle_sixpack"
+	val[]: "Altılı Şişe"
+
+	key[]: "breakfast_cereals"
+	val[]: "Kahvaltılık Gevrek"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Sallabaş Köpek"
+
+	key[]: "cap"
+	val[]: "Şapka"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Cep Telefonu"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Sallabaş Chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Gösterge Paneli"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Teslimat Raporu"
+
+	key[]: "electric_cooling_box"
+	val[]: "Elektrikli Soğutma Kutusu"
+
+	key[]: "endless_nourishment"
+	val[]: "Sandviç"
+
+	key[]: "ets2_game_box"
+	val[]: "ETS2 Oyun Kutusu"
+
+	key[]: "ets2_lunch_box"
+	val[]: "ETS2 Yemek Kutusu"
+
+	key[]: "ets2_truck_bag"
+	val[]: "ETS2 Kamyon Çantası"
+
+	key[]: "festive_mug"
+	val[]: "Şenlikli Kupa"
+
+	key[]: "fire_extinguisher"
+	val[]: "Yangın Söndürücüsü"
+
+	key[]: "hand_bag"
+	val[]: "El Çantası"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "El Yapımı Deri Cüzdan"
+
+	key[]: "hula_doll"
+	val[]: "Hula Bebeği"
+
+	key[]: "instant_lunch"
+	val[]: "Hazır Yemek"
+
+	key[]: "instant_lunch_box"
+	val[]: "Çoklu Hazır Yemek Kutusu"
+
+	key[]: "magazines"
+	val[]: "Dergiler"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Manyetoindüktif Pusula"
+
+	key[]: "map"
+	val[]: "Harita"
+
+	key[]: "notebook"
+	val[]: "Dizüstü Bilgisayar"
+
+	key[]: "paper_towels"
+	val[]: "Kağıt Havlular"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Pilot Güneş Gözlükleri"
+
+	key[]: "plush_bear"
+	val[]: "Peluş Ayı"
+
+	key[]: "portable_navigator"
+	val[]: "Taşınabilir Navigasyon"
+
+	key[]: "rugged_style_cap"
+	val[]: "Kırışmış Şapka"
+
+	key[]: "scs_coffee_mug"
+	val[]: "SCS Kahve Kupası"
+
+	key[]: "sleeping_bag"
+	val[]: "Uyku Tulumu"
+
+	key[]: "tablet"
+	val[]: "Tablet"
+
+	key[]: "weekend_bag"
+	val[]: "Seyahat Çantası"
+
+	key[]: "winter_bauble"
+	val[]: "Kış Süsü"
+
+	key[]: "winter_blast_gift"
+	val[]: "Kış Fırtınası Hediyesi"
+
+	key[]: "wise_owl_offering"
+	val[]: "Bilge Baykuş Hediyesi"
+
+
+	key[]: "ets2_pillow"
+	val[]: "ETS2 Yastığı"
+
+	key[]: "flame_pillow"
+	val[]: "Alevli Yastık"
+
+	key[]: "goodyear_pillow"
+	val[]: "Goodyear Yastığı"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Evim Güzel Evim Yastığı"
+
+	key[]: "skull_pillow"
+	val[]: "Kafataslı Yastık"
+
+	key[]: "status_pillow"
+	val[]: "Durum Yastığı"
+
+	key[]: "track_pillow"
+	val[]: "Lastik İzli Yastık"
+
+	key[]: "trucker_pillow"
+	val[]: "Tırcı Yastığı"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaclav Yastığı"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Bilge Kalp Yastığı"
+
+	key[]: "zzz_pillow"
+	val[]: "ZZZ Yastığı"
+
+
+	key[]: "air_freshener"
+	val[]: "Araç Kokusu"
+
+	key[]: "smelling_sack"
+	val[]: "Koku Torbası"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Elmalı Araç Kokusu"
+
+	key[]: "basketball_ball"
+	val[]: "Basketbol Topu"
+
+	key[]: "black_plush_cube"
+	val[]: "Siyah Peluş Küp"
+
+	key[]: "chromed_skull"
+	val[]: "Krom Kafatası"
+
+	key[]: "disco_ball"
+	val[]: "Disko Topu"
+
+	key[]: "eight_ball"
+	val[]: "Bilardo Topu"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "ETS2 Araç Kokusu"
+
+	key[]: "football_ball"
+	val[]: "Futbol Topu"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Sembol - Home Trucker"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Nişan - Umut Taşıyan"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "SCS Araç Kokusu"
+
+	key[]: "tennis_ball"
+	val[]: "Tenis Topu"
+
+	key[]: "trophy_skull"
+	val[]: "Yadigar Kafatası"
+
+	key[]: "white_plush_cube"
+	val[]: "Beyaz Peluş Küp"
+
+
+	key[]: "black_style_mug"
+	val[]: "Siyah Tarzda Kupa" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Beyaz-Turuncu Kupa" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Siyah-Turuncu Kupa" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Peluş Oyuncak" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Deri cüzdan" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Panel" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Özel Orta Tabla" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Maun Orta Tabla" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Siyah Orta Tabla" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Özel Uzun Tabla" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Maun Uzun Tabla" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Siyah Uzun Tabla" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "İş" #+ Basic truck accesory general
 
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Krom Kaplamalı" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Krom II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Boyalı ve Krom Kaplamalı" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Standart ve Çift" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Özel" #+ Luxury/Exclusive version of the interior or accesory
@@ -8916,6 +9207,15 @@ localization_db : .localization
 
 	key[]: "custom_metallic"
 	val[]: "Özel Metalik Renk" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Temel" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Basit ve Krom Kaplamalı" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Basit ve Boyalı" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Galibiyet Zarı" #+ Accessory name, DLC Pink Ribbon.
@@ -8952,6 +9252,7 @@ localization_db : .localization
 
 	key[]: "grand_star"
 	val[]: "Büyük Yıldız" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Teslimatınızı tamamlamadan dorseyi gönderemezsiniz." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "ARAÇ AYARLARI"
+
+	key[]: "adj_mirrors"
+	val[]: "Ayna ayarı"
+
+	key[]: "adj_lights"
+	val[]: "Far ayarı"
+
+	key[]: "adj_seats"
+	val[]: "Koltuk ayarı"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Frigorifik"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Tank"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Dondurulmuş ve soğuk mamuller"
+
 #@}
 
 #+ Trailer chain type names.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Şehir ilerlemesi alınıyor..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Bir sonraki yıldız için teslimatlar:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Bütün yıldızlar başarımları tamamlandı."
+	key[]: "xmas_delivery_progress"
+	val[]: "Hediye teslimatı ilerlemesi"
 
 	key[]: "xmas19_map_description"
 	val[]: "Kentlerin üstüne fareyle gelip, ilerleme durumlarını kontrol edebilirsiniz. Tüm ilerleme sonucu için $WOTR_URL$ adresine gidin."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Topluluk Hedefi için bu kentin katkısı tamamlandı.<br><br>Neden başka bir kentin hediye dağıtımına yardım etmiyorsunuz?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Bu şehirlerin bu işe, yani Topluluk Hedefine olan katkısı tamamlandı!<br><br>Neden hediyeleri teslim edeceğiniz veya alacağınız başka şehirleri bulmuyorsunuz?"
 
 	key[]: "xmas19_back"
 	val[]: "Geri"

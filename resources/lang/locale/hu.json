@@ -81,7 +81,7 @@
         "cn_helicopter": "Helikopter - 1808TX",
         "cn_roller": "Úthenger - DYNA CC-2200",
         "cn_tracks": "Lánctalp",
-        "cn_rstractor": "Kotrógép",
+        "cn_rstractor": "Gumitalpas traktor",
         "cn_tractors": "Traktorok",
         "cn_tube": "Gázvezeték alkatrészek",
         "cn_windmill_tube": "Szélerőmű torony",
@@ -227,5 +227,9 @@
         "tn_home_transporter": "Otthonszállító",
         "tn_knuckle_boom": "Erdészeti átrakógép",
         "tn_tub_grinder": "Aprítógép-szállító"
+    },
+    "companies\/paints": {
+        "default": "Egyéni szín",
+        "metallic": "Egyéni metálfényezés"
     }
 }

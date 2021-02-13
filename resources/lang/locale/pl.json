@@ -38,7 +38,7 @@
         "cn_silo": "Ogromny silos",
         "cn_condensator": "Kondensator przemysłowy",
         "cn_mystery_cyl": "Urządzenie wysokiej technologii",
-        "cn_dozer": "Spychacz gąsienicowy - Crawl Z35K",
+        "cn_dozer": "Spychacz - Crawl Z35K",
         "cn_mobile_crane": "Dźwig samojezdny - Rex-Tex 45",
         "cn_locomotive": "Lokomotywa - Vossloh G6",
         "cn_asph_miller": "Frezarka do asfaltu - AM 0880",
@@ -84,9 +84,9 @@
         "cn_rstractor": "Ciągnik gąsienicowy",
         "cn_tractors": "Ciągniki rolnicze",
         "cn_tube": "Element gazociągu",
-        "cn_windmill_tube": "Maszt wiatraka",
+        "cn_windmill_tube": "Wieża wiatraka",
         "cn_loaders": "Koparki",
-        "cn_windmill_engine": "Silnik wiatraka",
+        "cn_windmill_engine": "Gondola turbiny wiatrowej",
         "cn_yacht": "Jacht",
         "cn_scania_trucks": "Ciągniki siodłowe - Scania",
         "cn_volvo_trucks": "Ciągniki siodłowe - Volvo",
@@ -201,7 +201,7 @@
         "tn_chemical": "Cysterna z chemikaliami",
         "tn_chemical_long": "Długa cysterna z chemikaliami",
         "bs_chipvan": "Wiórowa",
-        "bs_curtain": "Przesuwna plandeka",
+        "bs_curtain": "Plandeka przesuwna",
         "bs_flatbed": "Platforma",
         "tn_frac_tank": "Zbiorniko-naczepa",
         "bs_grain_hopper": "Zbożowa",
@@ -221,11 +221,15 @@
         "tn_gas_long": "Długa cysterna gazowa",
         "tn_log_trailer": "Kłonicowa",
         "lowboy": "Niskopodwoziowa",
-        "bs_wood_lowboy": "Drewniana podłoga",
+        "bs_wood_lowboy": "Niskopod. z drewnianą podłogą",
         "tn_lowboy_boat": "Naczepa podłodziowa",
         "tn_mbt1_barrier": "Naczepa z przenośną barierą",
         "tn_home_transporter": "Do przewozu domu",
         "tn_knuckle_boom": "Ładowarka typu Knuckleboom",
         "tn_tub_grinder": "Rębak"
+    },
+    "companies\/paints": {
+        "default": "Własny kolor",
+        "metallic": "Własny kolor metalic"
     }
 }

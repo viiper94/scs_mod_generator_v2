@@ -106,7 +106,7 @@ localization_db : .localization
 	val[]: "@@package_ats_steampunk@@"
 
 	key[]: "package_ats_rims"
-	val[]: "DLC - Wheels Tuning Pack"
+	val[]: "DLC - Wheel Tuning Pack"
 
 	key[]: "onlineid_us_rims"
 	val[]: "@@package_ats_rims@@"
@@ -210,7 +210,7 @@ localization_db : .localization
 	key[]: "package_ats_int_lone"
 	val[]: "DLC - International LoneStar"
 
-	key[]: "onlineid_us_inter_lone"
+	key[]: "onlineid_us_int_lone"
 	val[]: "@@package_ats_int_lone@@"
 
 	key[]: "package_at_pribbon"
@@ -226,18 +226,33 @@ localization_db : .localization
 	val[]: "@@package_ats_idaho@@"
 
 	key[]: "package_ats_ws_49x"
-	val[]: "DLC - Western Star 49x"
+	val[]: "DLC - Western Star 49X"
 
 	key[]: "onlineid_us_ws_49x"
-	val[]: "@@package_ats_ws_49x"
+	val[]: "@@package_ats_ws_49x@@"
 
 	key[]: "package_ats_colorado"
 	val[]: "DLC - Colorado"
 
 	key[]: "onlineid_us_colorado"
-	val[]: "@@package_ats_colorado"
+	val[]: "@@package_ats_colorado@@"
+	
+	key[]: "package_ats_toys"
+	val[]: "DLC - Cabin Accessories"
+
+	key[]: "onlineid_us_toys"
+	val[]: "@@package_ats_toys@@"
+	
+	key[]: "package_ats_fr_c19"
+	val[]: "DLC - Freightliner Cascadia"
+
+	key[]: "onlineid_us_fr_c19"
+	val[]: "@@package_ats_fr_c19@@"
 
 # Truck brands
+
+	key[]: "brand_freightliner"
+	val[]: "Freightliner"
 
 	key[]: "brand_intnational"	# not a typo, key is constructed from brand token
 	val[]: "International"
@@ -256,6 +271,9 @@ localization_db : .localization
 
 	key[]: "brand_westernstar"
 	val[]: "Western Star"
+
+	key[]: "series_freightliner_cascadia2019"
+	val[]: "Cascadia"
 
 	key[]: "series_international_lonestar"
 	val[]: "LoneStar"
@@ -282,6 +300,9 @@ localization_db : .localization
 	val[]: "49X"
 
 # Brand names for truck browser
+
+	key[]: "truck_browser_brand_freightliner_cascadia2019"
+	val[]: "Freightliner Cascadia"
 
 	key[]: "truck_browser_brand_intnational_lonestar"
 	val[]: "International LoneStar"
@@ -1034,6 +1055,12 @@ localization_db : .localization
 	key[]: "curtain_f"
 	val[]: "Zavese" #+ Interior curtains for the front glass of the truck
 
+	key[]: "toyac"
+	val[]: "Predmeti na ventilaciji" #+ Interior item put onto AC output
+
+	key[]: "toybed"
+	val[]: "Predmeti na postelji" #+ Interior accessories placed on the bed in the truck cabin
+
 	key[]: "toyhang"
 	val[]: "Viseči elementi" #+ Interior hanging accesories
 
@@ -1045,6 +1072,9 @@ localization_db : .localization
 
 	key[]: "toybig"
 	val[]: "Stvari na sredini na tleh" #+ Interior accessories placed on the floor in the center of the truck cabin
+
+	key[]: "l_pillow"
+	val[]: "Vzglavniki"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "set_dashbrd"
 	val[]: "Seti na armaturi" #+ Large Pin for sets of small pins of the dashboard accessories
@@ -3845,6 +3875,9 @@ localization_db : .localization
 	key[]: "color_enhancement"
 	val[]: "Barvna korekcija" #+ Checkbox enabling color enhancement features (saturation and color balance changes)
 
+	key[]: "reflection_scaling"
+	val[]: "Reflection scaling" #+ Combo box selecting quality of reflections on metal surfaces and water.
+
 	key[]: "refl_detail"
 	val[]: "Podrobnoosti reflekcije" #+ Combo box selecting quality of reflections on metal surfaces and water.
 
@@ -4717,6 +4750,9 @@ localization_db : .localization
 
 	key[]: "diff_unlock_warning"
 	val[]: "Priporočeno je izklopiti zaporo diferenciala med normalno vožnjo, ker s lahko poškoduje.<br>Za izključitev pritisni:"
+
+	key[]: "tow_hint"
+	val[]: "Če ne moreš iz težavne pozicije, je morda čas, da pokličeš vlečno službo. Pritisni:"
 
 	key[]: "ferry_msg"
 	val[]: "Za pregled možnih destinacij pritisni:"
@@ -5790,6 +5826,9 @@ localization_db : .localization
 
 	key[]: "cn_chicken_meat"
 	val[]: "Piščančje meso"
+
+	key[]: "cn_covid_vaccine"
+	val[]: "Cepivo COVID-19"
 
 	key[]: "cn_cottage_cheese"
 	val[]: "Skuta"
@@ -7703,6 +7742,8 @@ localization_db : .localization
 	key[]: "tz_mdt"
 	val[]: "MDT" #Mountain Daylight Time
 
+	key[]: "tz_west"
+	val[]: "Zahodno evropski letni čas" #Western Summer Time
 #@}
 
 #+ Cabin adjuster
@@ -8803,6 +8844,250 @@ localization_db : .localization
 
 #+ Upgrade accesories
 #@{
+
+#+ Toys and toy sets
+#@{
+
+	key[]: "blanket_beige"
+	val[]: "Odeja bež"
+
+	key[]: "blanket_square"
+	val[]: "Odeja s kvadrati"
+
+	key[]: "book"
+	val[]: "Knjiga"
+
+	key[]: "bottle_sixpack"
+	val[]: "Vezje plastenk"
+
+	key[]: "breakfast_cereals"
+	val[]: "Kosmiči"
+
+	key[]: "bulldog_bobblehead"
+	val[]: "Gugajoči bulldog"
+
+	key[]: "cap"
+	val[]: "Kapa"	#+ Cap that you can wear on your head, what is called trucker hat or mesh cap.
+
+	key[]: "cellphone"
+	val[]: "Mobilnik"
+
+	key[]: "chihuahua_bobblehead"
+	val[]: "Gugajoča chihuahua"
+
+	key[]: "dashboard"
+	val[]: "Armatura"	#+ Default dashboard pins set name
+
+	key[]: "delivery_info"
+	val[]: "Poročilo o dostavi"
+
+	key[]: "electric_cooling_box"
+	val[]: "Električna hladilna torba"
+
+	key[]: "endless_nourishment"
+	val[]: "Neskončna prehrana"
+
+	key[]: "ets2_game_box"
+	val[]: "Škatla igre ETS2"
+
+	key[]: "ets2_lunch_box"
+	val[]: "Posoda za kosilo ETS2"
+
+	key[]: "ets2_truck_bag"
+	val[]: "Potovalka ETS2"
+
+	key[]: "festive_mug"
+	val[]: "Praznična skodelica"
+
+	key[]: "fire_extinguisher"
+	val[]: "Gasilni aparat"
+
+	key[]: "hand_bag"
+	val[]: "Torbica"
+
+	key[]: "handmade_leather_wallet"
+	val[]: "Ročno izdelana usnjena denarnica"
+
+	key[]: "hula_doll"
+	val[]: "Hula lutka"
+
+	key[]: "instant_lunch"
+	val[]: "Instantni obrok"
+
+	key[]: "instant_lunch_box"
+	val[]: "Paket instantnih obrokov"
+
+	key[]: "magazines"
+	val[]: "Revije"
+
+	key[]: "magneto_inductive_compass"
+	val[]: "Magnetno-induktivni kompas"
+
+	key[]: "map"
+	val[]: "Zemljevid"
+
+	key[]: "notebook"
+	val[]: "Prenosnik"
+
+	key[]: "paper_towels"
+	val[]: "Papirnate brisače"
+
+	key[]: "pilot_sunglasses"
+	val[]: "Sončna očala pilotov"
+
+	key[]: "plush_bear"
+	val[]: "Plišasti medvedek"
+
+	key[]: "portable_navigator"
+	val[]: "Prenosna navigacija"
+
+	key[]: "rugged_style_cap"
+	val[]: "Robustna kapa"
+
+	key[]: "scs_coffee_mug"
+	val[]: "Skolica za kavo SCS"
+
+	key[]: "sleeping_bag"
+	val[]: "Spalna vreča"
+
+	key[]: "tablet"
+	val[]: "Tablica"
+
+	key[]: "weekend_bag"
+	val[]: "Potovalka"
+
+	key[]: "winter_bauble"
+	val[]: "Okrasek zima"
+
+	key[]: "winter_blast_gift"
+	val[]: "Darilo zimski vihar"
+
+	key[]: "wise_owl_offering"
+	val[]: "Ponudba modre sove"
+
+
+	key[]: "ets2_pillow"
+	val[]: "Vzglavnik ETS2"
+
+	key[]: "flame_pillow"
+	val[]: "Vzglavnik s plameni"
+
+	key[]: "goodyear_pillow"
+	val[]: "Vzglavnik Goodyear"
+
+	key[]: "sweet_home_pillow"
+	val[]: "Vzglavnik ljubi dom"
+
+	key[]: "skull_pillow"
+	val[]: "Vzglavnik okostnjak"
+
+	key[]: "status_pillow"
+	val[]: "Vzglavnik zakonskega stana"
+
+	key[]: "track_pillow"
+	val[]: "Vzglavnik sled gume"
+
+	key[]: "trucker_pillow"
+	val[]: "Vzglavnik tovornjak"
+
+	key[]: "vaclav_pillow"
+	val[]: "Vaškov vzglavnik"
+
+	key[]: "wise_heart_pillow"
+	val[]: "Vzglavnik modrega srca"
+
+	key[]: "zzz_pillow"
+	val[]: "Vzglavnik ZZZ"
+
+
+	key[]: "air_freshener"
+	val[]: "Osvežilec zraka"
+
+	key[]: "smelling_sack"
+	val[]: "Dišeča vrečka"
+
+
+	key[]: "apple_fragrance_tag"
+	val[]: "Osvežilec zraka jabolko"
+
+	key[]: "basketball_ball"
+	val[]: "Košarkarska žoga"
+
+	key[]: "black_plush_cube"
+	val[]: "Črna plišasta kocka"
+
+	key[]: "chromed_skull"
+	val[]: "Krom lobanja"
+
+	key[]: "disco_ball"
+	val[]: "Disko krogla"
+
+	key[]: "eight_ball"
+	val[]: "Osmica"
+
+	key[]: "ets2_fragrance_tag"
+	val[]: "Osvežilec zraka ETS2"
+
+	key[]: "football_ball"
+	val[]: "Nogometna žoga"
+
+	key[]: "home_trucker_insignia"
+	val[]: "Značka upanje tovornjakarja"
+
+	key[]: "hope_trucker_insignia"
+	val[]: "Značka upanje tovornjakarja"
+
+	key[]: "scs_fragrance_tag"
+	val[]: "Osvežilec zraka SCS"
+
+	key[]: "tennis_ball"
+	val[]: "Teniška žogica"
+
+	key[]: "trophy_skull"
+	val[]: "Trofeja lobanja"
+
+	key[]: "white_plush_cube"
+	val[]: "Bela plišasta kocka"
+
+
+	key[]: "black_style_mug"
+	val[]: "Stilizirana črna skodelica" #+ specific color scheme of a mug in cabin
+
+	key[]: "white_orange_mug"
+	val[]: "Belo-oranžna skodelica" #+ specific color scheme of a mug in cabin
+
+	key[]: "black_orange_mug"
+	val[]: "Črno-oranžna skodelica" #+ specific color scheme of a mug in cabin
+
+	key[]: "plush_toy"
+	val[]: "Plišasta igrača" #+ a plush toy in cabin of a truck
+
+	key[]: "leather_wallet"
+	val[]: "Usnjena denarnica" #+ A leather wallet
+
+	key[]: "dash"
+	val[]: "Armatura" #+ Empty dashboard space for player to place multiple items on it (mug,toys,etc).
+
+	key[]: "center_table_exclusive"
+	val[]: "Sredinska miza, ekskluzivna" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_mahogany"
+	val[]: "Sredinska miza, mahagoni" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "center_table_black"
+	val[]: "Sredinska miza, črna" #+ Kind of table that can be placed on the center of a dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_exclusive"
+	val[]: "Dolga miza, ekskluzivna" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_mahogany"
+	val[]: "Dolga miza, mahagoni" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+	key[]: "long_table_black"
+	val[]: "Dolga miza, črna" #+ Long version of table that can be placed on dashboard to enable player to place multiple items on it(mug,toys,etc)
+
+#@}
+
 	key[]: "duty"
 	val[]: "'Duty'" #+ Basic truck accesory general
 
@@ -8854,6 +9139,9 @@ localization_db : .localization
 	key[]: "chrom"
 	val[]: "Krom" #+ Chromed mirror, doorhandle or other accessory
 
+	key[]: "chrom2"
+	val[]: "Krom II" #+ Chromed mirror, doorhandle or other accessory
+
 	key[]: "paint_chrom"
 	val[]: "Barva in krom" #+ Painted and chromed mirror, doorhandle or other accessory
 
@@ -8883,6 +9171,9 @@ localization_db : .localization
 
 	key[]: "standard_double"
 	val[]: "Standardno, dvojno" #+ Standard version (double variant) of the interior or accesory
+
+	key[]: "premium"
+	val[]: "Premium" #+ Premium version of the interior or accesory
 
 	key[]: "exclusive"
 	val[]: "Ekskluzivno" #+ Luxury/Exclusive version of the interior or accesory
@@ -8916,6 +9207,15 @@ localization_db : .localization
 
 	key[]: "custom_metallic"
 	val[]: "Metalik barva po meri" #+ Custom metallic color of the truck
+
+	key[]: "basic"
+	val[]: "Osnovno" #+ type of sideskirts (or other accessory)
+
+	key[]: "basic_chrom"
+	val[]: "Osnovno, krom" #+ type of sideskirts (or other accessory), chromed
+
+	key[]: "basic_paint"
+	val[]: "Osnovno, barvano" #+ type of sideskirts (or other accessory), painted
 
 	key[]: "winning_dice"
 	val[]: "Zmagovalna kocka" #+ Accessory name, DLC Pink Ribbon.
@@ -8952,6 +9252,7 @@ localization_db : .localization
 
 	key[]: "grand_star"
 	val[]: "Mogočna zvezda" #+ Hanging interior accessory
+
 #@}
 
 # Should be before this section however the comments on GetLoc are already incorrect.
@@ -10777,6 +11078,22 @@ localization_db : .localization
 	val[]: "Ni mogoče odpustiti prikolice med delom." #+ Message shown when player tries to dimiss trailer while being on a job.
 #@}
 
+#+ Vehicle adjustments related texts
+#@{
+	key[]: "vehicle_adjustments_t"
+	val[]: "PRILAGODITVE VOZILA"
+
+	key[]: "adj_mirrors"
+	val[]: "Nastavi ogledala"
+
+	key[]: "adj_lights"
+	val[]: "Nastavi luči"
+
+	key[]: "adj_seats"
+	val[]: "Nastavi sedeže"
+
+#@}
+
 #+ Trailer body type names.
 #@{
 	key[]: "container"
@@ -10802,12 +11119,14 @@ localization_db : .localization
 
 	key[]: "refrigerated"
 	val[]: "Hladilnik"
+
 #@}
 
 #+ Trailer category types (not identical to body type)
 #@{
 	key[]: "tank"
 	val[]: "Cisterna"
+
 #@}
 
 #+ Trailer body types usage in tooltips
@@ -10838,6 +11157,7 @@ localization_db : .localization
 
 	key[]: "body_cargo_types_refrigerated"
 	val[]: "Zamrznjen, ohlajen tovor"
+
 #@}
 
 #+ Trailer chain type names.
@@ -12055,7 +12375,7 @@ localization_db : .localization
 #!}
 #@}
 
-#+ X-mas event 2019
+#+ X-mas event
 #@{
 	key[]: "xmas19_fetching"
 	val[]: "Pridobivam stanje mesta..."
@@ -12063,17 +12383,14 @@ localization_db : .localization
 	key[]: "xmas19_star"
 	val[]: "★"
 
-	key[]: "xmas19_more_deliveries"
-	val[]: "Dostave do naslednje zvezde:"
-
-	key[]: "xmas19_fully_achieved"
-	val[]: "Vse zvezde dosežene."
+	key[]: "xmas_delivery_progress"
+	val[]: "Napredek dostav daril"
 
 	key[]: "xmas19_map_description"
 	val[]: "Prečkaj mesta za sledenje napredku božičnega dogodka. Obišči $WOTR_URL$, za pregled povzetka celotnega napredka."
 
-	key[]: "xmas19_max_city_message"
-	val[]: "Prispevek tega mesta k skupnemu cilju je dosežen!<br><br>Zakaj nebi pomagal še ostalim mestom z dostavo daril?"
+	key[]: "xmas_max_contribution_message"
+	val[]: "Prispevek teh mest k cilju skupnosti je dosežen!<br><br>Zakaj nebi našel še ostala mesta s/do katerih je potrebna dostava daril?"
 
 	key[]: "xmas19_back"
 	val[]: "Pojdi nazaj"

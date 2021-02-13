@@ -18,11 +18,20 @@ localization_db : .localization
 
 #+ Various accessory slots or accessory names.
 #@{
+	key[]: "b_mudflap"
+	val[]: "Bumper Mudflaps"
+
+	key[]: "bckpanel"
+	val[]: "Đồ để sau thành xe"	#+ Interior accessories placed on the back panel of the truck cabin
+
 	key[]: "cabflares"
 	val[]: "Đèn khoang lái"
 
 	key[]: "cabdefl"
 	val[]: "Tấm chắn nắng"
+
+	key[]: "cup_holder"
+	val[]: "Kệ giữ cốc"
 
 	key[]: "deflector"
 	val[]: "Chắn côn trùng"
@@ -78,6 +87,15 @@ localization_db : .localization
 	key[]: "rear_cab"
 	val[]: "Ốp sau buồng lái"
 
+	key[]: "rear2_cab"
+	val[]: "Cabin Rear"
+
+	key[]: "set_cabinet"
+	val[]: "Bộ ghim trên cabinet" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "set_cuphold"
+	val[]: "Bộ kệ giữ cốc" #+ Large Pin for sets of small pins of the cup holder accessories
+
 	key[]: "sideflares"
 	val[]: "Tấm che khoang lái"
 
@@ -93,30 +111,45 @@ localization_db : .localization
 	key[]: "topflares"
 	val[]: "Đèn ngủ"
 
+	key[]: "toyback"
+	val[]: "Đồ để trên sàn phòng ngủ" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Đồ để trên sàn" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Đồ để trong khay táp-lô" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Đồ để trên ghế sofa" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Đồ để trên bàn" #+ Interior accessories placed on the table in back of the truck cabin
+
 	key[]: "wing"
 	val[]: "Cánh gió"
 
 
 	key[]: "aero"
-	val[]: "Aero"
+	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero2"
-	val[]: "Aero II"
+	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aero_paint"
-	val[]: "Aero Painted"
+	val[]: "Aero theo màu sơn"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "aerox"
-	val[]: "AeroX"
+	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "alu_tank"
 	val[]: "Bồn nhôm"	#+ Aluminium tank accessory (water, fuel, etc)
 
 	key[]: "bottom"
-	val[]: "Bottom"		#+ Exhaust accessory
+	val[]: "Mặt dưới ống xả"		#+ Exhaust accessory
 
-	key[]: "chainsaw_toy"
-	val[]: "Máy cưa đồ chơi"
+	key[]: "cabinet"
+	val[]: "Buồng"	#+ Default cabinet pins set name
 
 	key[]: "chrom_tank"
 	val[]: "Bồn chrome"	#+ Chromed tank accessory (water, fuel, etc)
@@ -125,16 +158,279 @@ localization_db : .localization
 	val[]: "Hình chữ D"	#+ D-shaped tank accessory (water, fuel, etc)
 
 	key[]: "drl"
-	val[]: "DRL"		#+ Daylight running lamps
+	val[]: "Đèn chạy ban ngày"		#+ Daytime running lights
 
 	key[]: "elite"
-	val[]: "Elite"
+	val[]: "Cao cấp"	#+ Specific accesory name (eg. Freightliner Cascadia)
 
 	key[]: "fog_lights"
-	val[]: "Fog Lights"
+	val[]: "Đèn sương mù"
 
 	key[]: "hvac"
-	val[]: "HVAC"
+	val[]: "Hệ thống HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+	key[]: "cup_holder_open"
+	val[]: "Kệ giữ cốc (mở)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_left"
+	val[]: "Kệ giữ cốc (mở bên trái)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_open_right"
+	val[]: "Kệ giữ cốc (mở bên phải)"	#+ Cup holder pin set name
+
+	key[]: "cup_holder_closed"
+	val[]: "Kệ giữ cốc (đóng)"	#+ Cup holder pin set name
+
+
+	key[]: "american_football_ball"
+	val[]: "Quả bóng Mỹ"
+
+	key[]: "ats_bag"
+	val[]: "Túi ATS"
+
+	key[]: "ats_cap"
+	val[]: "Mũ ATS"
+
+	key[]: "ats_game_box"
+	val[]: "Hộp trò chơi ATS"
+
+	key[]: "ats_lunch_box"
+	val[]: "Hộp cơm trưa ATS"
+
+	key[]: "ats_mug"
+	val[]: "Cốc ATS"
+
+	key[]: "ats_truck_bag"
+	val[]: "Túi xe tải ATS"
+
+	key[]: "baseball_ball"
+	val[]: "Banh bóng chày"
+
+	key[]: "baseball_bat"
+	val[]: "Gậy bóng chày"
+
+	key[]: "bee"
+	val[]: "Ong"
+
+	key[]: "black_ats_mug"
+	val[]: "Cốc ATS màu đen"
+
+	key[]: "blanket_stars"
+	val[]: "Mền hình ngôi sao"
+
+	key[]: "bottle"
+	val[]: "Chai"
+
+	key[]: "burger"
+	val[]: "Bánh mì kẹp thịt"
+
+	key[]: "can"
+	val[]: "Lon"
+
+	key[]: "can_pack"
+	val[]: "Bộ lon"
+
+	key[]: "can_sixpack"
+	val[]: "Bộ 6 lon"
+
+	key[]: "cans"
+	val[]: "Lon"
+
+	key[]: "car_perfume"
+	val[]: "Nước hoa xe"
+
+	key[]: "cardbox"
+	val[]: "Hộp trò chơi thẻ bài"
+
+	key[]: "carrier"
+	val[]: "Kẹp giữ chai"
+
+	key[]: "chainsaw_toy"
+	val[]: "Máy cưa đồ chơi"
+
+	key[]: "chewing_gums"
+	val[]: "Kẹo cao su"
+
+	key[]: "coffee_cup"
+	val[]: "Cốc cà phê"
+
+	key[]: "costs_list"
+	val[]: "Nhật ký tiêu thụ nhiên liệu"
+
+	key[]: "dreamcatcher"
+	val[]: "Vòng bắt giấc mơ"
+
+	key[]: "emergency_triangles"
+	val[]: "Tam giác nguy hiểm"
+
+	key[]: "expenses_list"
+	val[]: "Báo cáo chi tiêu"
+
+	key[]: "fishing_bag"
+	val[]: "Túi câu cá"
+
+	key[]: "goalkeeper_mask"
+	val[]: "Mặt nạ thủ môn"
+
+	key[]: "guitar"
+	val[]: "Ghi-ta"
+
+	key[]: "guitar_case"
+	val[]: "Bao đàn ghi-ta"
+
+	key[]: "hat"
+	val[]: "Mũ"
+
+	key[]: "hockey_stick"
+	val[]: "Gậy khúc côn cầu"
+
+	key[]: "holy_field_blanket"
+	val[]: "Mền Holly Field"
+
+	key[]: "honey_bee"
+	val[]: "Mật Ong"
+
+	key[]: "laundry_box"
+	val[]: "Giỏ giặt đồ"
+
+	key[]: "peppermints"
+	val[]: "Kẹo bạc hà"
+
+	key[]: "plush_donut"
+	val[]: "Gối nhồi bông hình bánh vòng"
+
+	key[]: "plush_lion"
+	val[]: "Sư tử nhồi bông"
+
+	key[]: "power_inverter"
+	val[]: "Máy biến tần"
+
+	key[]: "propeller"
+	val[]: "Cánh quạt"
+
+	key[]: "shoes"
+	val[]: "Giày"
+
+	key[]: "spearmints"
+	val[]: "Bạc hà Á"
+
+	key[]: "sport_sunglasses"
+	val[]: "Kính râm thể thao"
+
+	key[]: "stack_of_burgers"
+	val[]: "Chồng bánh mì kẹp thịt"
+
+	key[]: "usa_cap"
+	val[]: "Mũ Hoa Kỳ"
+
+	key[]: "usa_flag"
+	val[]: "Cờ Hoa Kỳ"
+
+	key[]: "usa_flag_cap"
+	val[]: "Mũ cờ Hoa Kỳ"
+
+	key[]: "ventilator"
+	val[]: "Quạt"
+
+	key[]: "wotr_cap"
+	val[]: "Mũ WoTr"
+
+
+	key[]: "ats_pillow"
+	val[]: "Gối ATS"
+
+	key[]: "heart_pillow"
+	val[]: "Gối trái tim"
+
+	key[]: "kiss_me_pillow"
+	val[]: "Gối hãy hôn tôi đi"
+
+	key[]: "protector_pillow"
+	val[]: "Gối vệ sĩ"
+
+	key[]: "star_pillow"
+	val[]: "Gối hình ngôi sao"
+
+	key[]: "truck_yeah_pillow"
+	val[]: "Gối hoan hô xe tải"
+
+	key[]: "usa_flag_pillow"
+	val[]: "Gối cờ Hoa Kỳ"
+
+	key[]: "usa_shield_pillow"
+	val[]: "Gối hình khiên Hoa Kỳ"
+
+
+	key[]: "ats_fragrance_tag"
+	val[]: "Bình xịt khử mùi ATS"
+
+	key[]: "cactus_fragrance_tag"
+	val[]: "Bình xịt hương xương rồng"
+
+	key[]: "lemon_fragrance_tag"
+	val[]: "Bình xịt khử mùi hương chanh"
+
+	key[]: "maple_leaf_fragrance_tag"
+	val[]: "Bình xịt khử mùi hương lá phong"
+
+	key[]: "orange_fragrance_tag"
+	val[]: "Bình xịt khử mùi hương cam"
+
+	key[]: "usa_fragrance_tag"
+	val[]: "Bình xịt khử mùi Hoa Kỳ"
+
+
+	key[]: "blue_plush_cube"
+	val[]: "Khối nhồi bông màu đen"
+
+	key[]: "red_plush_cube"
+	val[]: "Khối nhồi bông màu đỏ"
+
+	key[]: "double_plush_cube"
+	val[]: "Cặp khối nhồi bông"
+
+
+	key[]: "alien_head"
+	val[]: "Đầu người ngoài hành tinh"
+
+	key[]: "cowboy_head"
+	val[]: "Mũ cao bồi"
+
+	key[]: "pirate_head"
+	val[]: "Mũ cướp biển"
+
+
+	key[]: "eagle_sticker"
+	val[]: "Hình dán đại bàng"
+
+	key[]: "guitar_sticker"
+	val[]: "Hình dán ghi-ta"
+
+	key[]: "hat_sticker"
+	val[]: "Hình dán mũ"
+
+	key[]: "maple_sirup_sticker"
+	val[]: "Hình dán si-rô cây phong"
+
+	key[]: "steering_wheel_sticker"
+	val[]: "Hình dán vô lăng"
+
+	key[]: "taco_sticker"
+	val[]: "Hình dán bánh thịt chiên dòn"
+
+	key[]: "truck_sticker"
+	val[]: "Hình dán xe tải"
+
+	key[]: "usa_country_sticker"
+	val[]: "Hình dán bản đồ Hoa Kỳ"
+
+	key[]: "usa_flag_sticker"
+	val[]: "Hình dán cờ Hoa Kỳ"
+
+#@}
 
 #@}
 
@@ -391,6 +687,9 @@ localization_db : .localization
 
 	key[]: "cn_vegetable"
 	val[]: "Rau củ quả"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Xe tải Western Star"
 
 #@}
 
@@ -1451,27 +1750,27 @@ localization_db : .localization
 
 	#+ Link: https://en.wikipedia.org/wiki/Glenwood_Canyon
 	key[]: "co_cut_glenwood"
-	val[]: "Glenwood Canyon"
+	val[]: "Hẻm núi Glenwood"
 
 	#+ Link: https://en.wikipedia.org/wiki/Denver_International_Airport
 	key[]: "co_cut_airport"
-	val[]: "Denver Airport"
+	val[]: "Sân bay Denver"
 
 	#+ Link: https://www.dangerousroads.org/north-america/usa/635-million-dollar-highway-usa.html
 	key[]: "co_cut_mil"
-	val[]: "Million Dollar Highway"
+	val[]: "Cao tốc triệu đô"
 
 	#+ Link: https://goo.gl/maps/pghFey9ux77ApZjWA
 	key[]: "co_cut_four"
-	val[]: "Four Corners Monument"
+	val[]: "Đài tưởng niệm Four Corners"
 
 	#+ Link: https://goo.gl/maps/oaRJyWrKKADkpT4F7
 	key[]: "co_cut_red"
-	val[]: "Red Cliff Bridge"
+	val[]: "Cầu Red Cliff"
 
 	#+ Link: https://goo.gl/maps/Ggz3gPfCpTZTxDh1A
 	key[]: "co_cut_wolf"
-	val[]: "Wolf Creek Pass"
+	val[]: "Đèo Wolf Creek"
 
 	#+ Link: https://goo.gl/maps/TKJeySvDknD39xjp7
 	key[]: "co_cut_springs"
@@ -1479,15 +1778,15 @@ localization_db : .localization
 
 	#+ Link: https://goo.gl/maps/rd7zT5UcSrGvo1q17
 	key[]: "co_cut_gold"
-	val[]: "Cripple Creek & Victor Gold Mine"
+	val[]: "Nhánh sông Cripple & Mỏ vàng Victor"
 
 	#+ Link: https://goo.gl/maps/ADXVtfCiaKVsb4JFA
 	key[]: "co_cut_eisen"
-	val[]: "Eisenhower Tunnel"
+	val[]: "Hầm Eisenhower"
 
 	#+ Link: https://goo.gl/maps/hAK3RLsRrJb7aghg9 - Please use literal translation in this case, such as "Skalnatá horská silnice".
 	key[]: "co_cut_rocky"
-	val[]: "Rocky Mountain Road"
+	val[]: "Đường núi đá"
 
 	# Idaho
 
@@ -1530,6 +1829,90 @@ localization_db : .localization
 	#+ Google maps link: https://goo.gl/maps/DQnij98FGpb97hmv5
 	key[]: "id_cut_midvale"
 	val[]: "Trạm dừng chân đồi Midvale"
+
+	# New Mexico
+
+	#+ Google maps link: https://goo.gl/maps/T2yvB9SCw1QjSsVQ6
+	key[]: "nm_cut_albuq"
+	val[]: "Giao Lộ Albuquerque"
+
+	#+ Google maps link: https://goo.gl/maps/39thaiXgmijZVNvj9
+	key[]: "nm_cut_roswell"
+	val[]: "Thành phố Roswell"
+
+	#+ Google maps link: https://goo.gl/maps/ShVpydaByCnbLzUr6
+	key[]: "nm_cut_santa"
+	val[]: "Thành phố Santa Fe"
+
+	#+ Google maps link: Unavailable
+	key[]: "nm_cut_us84l"
+	val[]: "Trạm dừng cao tốc 86"
+
+	#+ Google maps link: https://goo.gl/maps/5s5spQWHApfJfNnV6
+	key[]: "nm_cut_66w"
+	val[]: "Trạm dừng xa lộ 66 hướng tây"
+
+	#+ Google maps link:  Unavailable
+	key[]: "nm_cut_us82"
+	val[]: " Trạm dừng cao tốc 82"
+
+	#+ Google maps link: https://goo.gl/maps/x1KEZXtQjgJf92cx9
+	key[]: "nm_cut_welcome"
+	val[]: "Chào mừng đến với trạm dừng chân Arizona"
+
+	#+ Google maps link:  https://goo.gl/maps/jPyB1GERR9JHpt9Y6
+	key[]: "nm_cut_64rest"
+	val[]: "Trạm dừng cao tốc 64"
+
+	#+ Google maps link:  https://goo.gl/maps/PDAyCt5fcVLYW4zo7
+	key[]: "nm_cut_lincoln"
+	val[]: "Đài Tưởng Niệm Lincoln"
+
+	#+ Google maps link: https://goo.gl/maps/3E4ef9TEyXvsu88Y7
+	key[]: "nm_cut_vaughn"
+	val[]: "Thành phố Vaughn"
+
+	# Oregon
+
+	#+ Google maps link: https://goo.gl/maps/8TGLF18rCrL29NCCA
+	key[]: "or_cut_lighthouse"
+	val[]: "Hải Đăng Mũi Yaquina"
+
+	#+ Google maps link: https://goo.gl/maps/JRg9vRFMsfcTmgsr5
+	key[]: "or_cut_thor"
+	val[]: "Địa Danh Giếng Thor"
+
+	#+ Google maps link: https://goo.gl/maps/4Xqq6yBZyWK7jzjJ8
+	key[]: "or_cut_astoria"
+	val[]: "Cầu Astorie-Megler"
+
+	#+ Google maps link: https://goo.gl/maps/Lw8PvYFbwVMmquEP8
+	key[]: "or_cut_newport"
+	val[]: "Cầu Cảng Newport Yaquina"
+
+	#+ Google maps link: https://goo.gl/maps/b7Kkkcpnaxs7yfMg6
+	key[]: "or_cut_dalles"
+	val[]: "Thành phố Dalles"
+
+	#+ Google maps link: https://goo.gl/maps/bsaJH1aRntVPRnaC8
+	key[]: "or_cut_sequoia"
+	val[]: "Rừng cây củ tùng US-199"
+
+	#+ Google maps link: https://goo.gl/maps/aVeNDYy3sT9VEGPZ8
+	key[]: "or_cut_paper"
+	val[]: "Nhà máy giấy Oregon"
+
+	#+ Google maps link: https://goo.gl/maps/xfa1MfwJAtu6D8is7
+	key[]: "or_cut_395"
+	val[]: "Đường xuyên rừng US-395"
+
+	#+ Google maps link: https://goo.gl/maps/dcc6azVNwY3twwd68
+	key[]: "or_cut_biggs"
+	val[]: "Nút giao Biggs"
+
+	#+ Google maps link: https://goo.gl/maps/6oqp572bdG3C5Ern7
+	key[]: "or_cut_port"
+	val[]: "Xưởng đóng tàu Portland"
 
 	# Utah
 

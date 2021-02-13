@@ -227,5 +227,9 @@
         "tn_home_transporter": "Прицеп для перевозки домов",
         "tn_knuckle_boom": "Кран-манипулятор",
         "tn_tub_grinder": "Дробилка"
+    },
+    "companies\/paints": {
+        "default": "Пользовательский цвет",
+        "metallic": "Пользовательский цвет - металлик"
     }
 }
