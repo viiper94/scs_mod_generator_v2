@@ -158,9 +158,9 @@
         }
     },
     "ets2 trailers": {
-        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
-        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
-        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
+        "2+4axle_ext_short": "2+4 Akslı, Uzatılabilir, Kısa",
+        "2+4axle_ext_long": "2+4 Akslı, Uzatılabilir, Uzun",
+        "3+7axle_ext_long": "7+3 Akslı, Uzatılabilir, Uzun",
         "aero": "Aerodinamik",
         "steer": "Yönlendirilebilir"
     },
@@ -171,7 +171,6 @@
         "3ax": "3 Aks"
     },
     "companies\/paints": {
-        "default": "Renkli",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller Siyah ve Kırmızı"
     },
@@ -187,7 +186,7 @@
         "cars_magnum": "Dodge",
         "cars_mustang": "Ford",
         "cars_tesla": "Tesla",
-        "log_grab": "Log Grab",
+        "log_grab": "Tomruk Tutucu",
         "v1": "çeşit 1",
         "v2": "çeşit 2",
         "v3": "çeşit 3",
@@ -218,7 +217,7 @@
         "yellow": "Sarı",
         "red": "Kırmızı",
         "gray": "Gri",
-        "orange": "Orange",
+        "orange": "Turuncu",
         "black": "Siyah"
     }
 }

@@ -1,11 +1,4 @@
 {
-    "ets2 trailers": {
-        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
-        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
-        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
-        "aero": "Aerodynamika",
-        "steer": "Řiditelný"
-    },
     "general": {
         "choose_language": "Vybrat jazyk",
         "help_translate": "Můžete pomoci překládat web do vašeho jazyka",
@@ -164,6 +157,13 @@
             "dimensions": "Maximální rozměry obrázku 3000x3000px"
         }
     },
+    "ets2 trailers": {
+        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
+        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
+        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
+        "aero": "Aerodynamika",
+        "steer": "Řiditelný"
+    },
     "ats trailers": {
         "rm_double": "R.M. Dvojnásobek",
         "tp": "dvě mýta",
@@ -171,7 +171,6 @@
         "3ax": "3 nápravy"
     },
     "companies\/paints": {
-        "default": "Barevný",
         "schw_logo": "Schwarzmüller Logo",
         "schw_black_red": "Schwarzmüller černá a červená"
     },
@@ -187,6 +186,7 @@
         "cars_magnum": "Dodge",
         "cars_mustang": "Ford",
         "cars_tesla": "Tesla",
+        "log_grab": "Log Grab",
         "v1": "var. 1",
         "v2": "var. 2",
         "v3": "var. 3",
@@ -217,6 +217,7 @@
         "yellow": "Žlutá",
         "red": "Červená",
         "gray": "Šedá",
+        "orange": "Orange",
         "black": "Černá"
     }
 }
