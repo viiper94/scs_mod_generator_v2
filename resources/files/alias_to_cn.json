@@ -235,5 +235,9 @@
         "home_transporter": "tn_home_transporter",
         "kb_loader": "tn_knuckle_boom",
         "tub_grinder": "tn_tub_grinder"
+    },
+    "companies\/paints": {
+        "%default": "custom_color",
+        "%metallic": "custom_metallic"
     }
 }
