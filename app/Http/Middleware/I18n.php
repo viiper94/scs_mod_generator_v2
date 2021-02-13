@@ -60,7 +60,7 @@ class I18n{
     }
 
     public function getUserAcceptLanguage(){
-        $user_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+        $user_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? 'en');
         $user_langs = array_filter($user_langs, function($v){
             return stripos($v, ';') || strlen($v) === 2;
         });
