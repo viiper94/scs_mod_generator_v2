@@ -40,6 +40,7 @@ return [
 
         'single' => [
             'driver' => 'single',
+            'tap' => [App\Logger::class],
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
         ],
