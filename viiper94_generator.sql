@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Лют 13 2021 р., 10:59
+-- Час створення: Квт 13 2021 р., 10:45
 -- Версія сервера: 10.4.17-MariaDB
--- Версія PHP: 8.0.0
+-- Версія PHP: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База даних: `viiper94_generator`
+-- База даних: `viiper94_renamer`
 --
 
 -- --------------------------------------------------------
@@ -374,7 +374,9 @@ INSERT INTO `accessories` (`id`, `def`, `suffixes`, `alias`, `name`, `chassis`, 
 (1108, '/def/vehicle/trailer_cargo/scs_lowboy/mixtank.sii', NULL, 'mixtank', 'cn_mix_tank', 'lowboy', 'ats', NULL, 1, '2020-11-24 18:18:22', '2020-11-24 18:21:03'),
 (1109, '/def/vehicle/trailer_cargo/scs_lowboy/mixtank_red.sii', NULL, 'mixtank_red', 'cn_mix_tank__%(__red__%)', 'lowboy', 'ats', NULL, 1, '2020-11-24 18:18:48', '2020-11-24 18:20:58'),
 (1110, '/def/vehicle/trailer_cargo/scs_lowboy/mixtank_silver.sii', NULL, 'mixtank_red', 'cn_mix_tank__%(__silver__%)', 'lowboy', 'ats', NULL, 1, '2020-11-24 18:19:13', '2020-11-24 18:20:51'),
-(1111, '/def/vehicle/trailer_cargo/truck_transporter/49x_red1.sii', '^1,^2,^3', 't680_red', 'truck_browser_brand_westernstar_49x__%(__red__%)', 'ats_truck_transporter_westernstar_49x', 'ats', NULL, 1, '2020-11-25 17:21:03', '2020-11-25 17:21:50');
+(1111, '/def/vehicle/trailer_cargo/truck_transporter/49x_red1.sii', '^1,^2,^3', 't680_red', 'truck_browser_brand_westernstar_49x__%(__red__%)', 'ats_truck_transporter_westernstar_49x', 'ats', NULL, 1, '2020-11-25 17:21:03', '2020-11-25 17:21:50'),
+(1112, '/def/vehicle/trailer/car_transporter/cargo_cars_ortiz_combi.sii', NULL, 'cargo_cars_ortiz_combi', 'cn_cars__%(__cars_ortiz_combi__%)', 'car_transporter', 'ets2', '26', 1, '2021-04-13 04:28:22', '2021-04-13 04:49:34'),
+(1113, '/def/vehicle/trailer_cargo/scs_brick/olive_13.sii', '8,%13,13c', 'olive', 'cn_olive', 'brick_blue', 'ets2', '26', 1, '2021-04-13 04:50:25', '2021-04-13 04:50:58');
 
 -- --------------------------------------------------------
 
@@ -577,7 +579,7 @@ INSERT INTO `chassis` (`id`, `parent_trailer`, `chain_type_size`, `trailers`, `a
 (235, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/frac_tank\\/ch_40_yellow.sii\",\"body\":null,\"axles\":\"1\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"off\"}]', 'frac_tank_yellow', 'tn_frac_tank__%(__tcn_yellow__%)', 'frac_tank_blue', NULL, 'frac_tank_blue', 13, 'r', 1, 0, 0, 0, NULL, 0, 0, 1, 'ats', 1, NULL, 1, '2019-11-21 10:54:41', '2020-02-27 17:38:37'),
 (466668, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowboy\\/ch_2.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'lowboy_2', 'lowboy__%(__2ax__%)', 'lowboy_2', NULL, 'lowboy', 13, 'r', 1, 0, 1, 1, '/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii', 1, 0, 0, 'ats', 1, NULL, 1, '2020-02-28 11:52:20', '2020-11-25 16:47:08'),
 (466671, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_foodtank\\/ch_43.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'food_tank_43_r', 'tn_food_cistern', 'food_tank_43_r', NULL, 'food_tank_', 13, 'r', 1, 0, 0, 1, '/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii', 0, 1, 1, 'ats', 1, NULL, 1, '2020-04-25 05:14:38', '2020-11-13 07:18:29'),
-(466672, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_foodtank\\/chassis.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'foodtank', 'foodtank', 'foodtank', NULL, 'foodtank', 7, 'r', 1, 0, 0, 1, '/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii', 0, 1, 1, 'ets2', 1, NULL, 1, '2020-05-05 06:28:47', '2020-05-05 07:10:09'),
+(466672, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_foodtank\\/chassis.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'scs_foodtank', 'foodtank', 'scs_foodtank', NULL, 'scs_foodtank', 7, 'r', 1, 0, 0, 1, '/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii', 0, 1, 1, 'ets2', 1, NULL, 1, '2020-05-05 06:28:47', '2021-04-13 05:19:03'),
 (466673, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/curtain_sider\\/chassis_open.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'curtain_sider_open', 'bs_scs_curtain__%(__open_doors__%)', 'curtain_sider_open', NULL, 'curtain_sider', 7, 'r', 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 1, 1, 'ets2', 1, NULL, 1, '2020-07-03 04:25:10', '2020-07-05 05:40:20'),
 (466674, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_box\\/curtain_sider\\/chassis_open_side.sii\",\"body\":null,\"axles\":\"3\",\"suitable_suffix\":null,\"with_accessory\":\"off\",\"with_paint_job\":\"on\"}]', 'curtain_sider_open_side', 'bs_scs_curtain__%(__open_side__%)', 'curtain_sider_open_side', NULL, 'curtain_sider', 7, 'r', 1, 0, 0, 1, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/default.sii', 0, 1, 1, 'ets2', 1, NULL, 1, '2020-07-03 04:26:31', '2020-07-05 05:40:14'),
 (466675, NULL, NULL, '[{\"def\":\"\\/def\\/vehicle\\/trailer\\/scs_lowloader\\/ch_2_ext.sii\",\"body\":null,\"axles\":\"2\",\"suitable_suffix\":null,\"with_accessory\":\"on\",\"with_paint_job\":\"on\"}]', 'scs_lowloader_2_ext', 'bs_scs_lowloader__%(__tn_single_2axle_ext_long__%)', 'scs_lowloader_2_ext', 'scs_lowloader_long', 'scs_lowloader_2_ext', 5, 'r', 0, 0, 1, 1, '/def/vehicle/trailer/scs_lowloader/custom_paint_job/blue.sii', 1, 0, 0, 'ets2', 1, NULL, 1, '2020-11-08 07:48:06', '2020-11-08 12:48:49'),
@@ -821,7 +823,8 @@ INSERT INTO `dlc` (`id`, `name`, `short_name`, `game`, `mp_support`, `type`, `ac
 (14, 'baltic', 'B', 'ets2', 1, 'map', 1, 4, '2018-11-26 18:22:12', '2018-11-28 18:15:15'),
 (15, 'forest_harvesting', 'FM', 'ats', 1, 'trailer', 1, 33, '2019-06-16 04:27:12', '2019-06-16 04:27:12'),
 (16, 'promods', 'PM', 'ets2', 1, 'addon', 1, 51, '2019-10-27 22:00:00', '2019-10-27 22:00:00'),
-(22, 'balkan_e', 'RTBS', 'ets2', 1, 'map', 1, 5, '2019-12-05 16:29:34', '2019-12-05 16:29:34');
+(22, 'balkan_e', 'RTBS', 'ets2', 1, 'map', 1, 5, '2019-12-05 16:29:34', '2019-12-05 16:29:34'),
+(26, 'iberia', 'IB', 'ets2', 0, 'map', 1, 0, '2021-04-13 04:40:08', '2021-04-13 04:40:08');
 
 -- --------------------------------------------------------
 
@@ -2716,7 +2719,148 @@ INSERT INTO `paints` (`id`, `def`, `alias`, `look`, `chassis`, `game`, `dlc_id`,
 (6210, '/def/vehicle/trailer_owned/krone.dryliner/paint_job/color_metallic.sii', 'metallic', 'metallic', 'krone_dryliner', 'ets2', 12, 1, 1, 1, '2021-02-13 06:46:14', '2021-02-13 06:47:00'),
 (6211, '/def/vehicle/trailer_owned/krone.coolliner/paint_job/color_metallic.sii', 'metallic', 'metallic', 'krone_coolliner', 'ets2', 12, 1, 1, 1, '2021-02-13 06:47:12', '2021-02-13 06:47:22'),
 (6212, '/def/vehicle/trailer_owned/schwmuller.curtain/paint_job/color_metallic.sii', 'metallic', 'metallic', 'schw_curtain', 'ets2', 4, 1, 1, 1, '2021-02-13 06:48:11', '2021-02-13 06:49:02'),
-(6213, '/def/vehicle/trailer_owned/schwmuller.reefer/paint_job/color_metallic.sii', 'metallic', 'metallic', 'schw_reefer', 'ets2', 4, 1, 1, 1, '2021-02-13 06:49:06', '2021-02-13 06:49:21');
+(6213, '/def/vehicle/trailer_owned/schwmuller.reefer/paint_job/color_metallic.sii', 'metallic', 'metallic', 'schw_reefer', 'ets2', 4, 1, 1, 1, '2021-02-13 06:49:06', '2021-02-13 06:49:21'),
+(6214, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/agregados.sii', 'agregados', 'agregados', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:03', '2021-04-13 05:06:03'),
+(6215, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/app.sii', 'app', 'app', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:03', '2021-04-13 05:06:03'),
+(6216, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/cantera.sii', 'cantera', 'cantera', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:03', '2021-04-13 05:06:03'),
+(6217, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/canteras_ds.sii', 'canteras_ds', 'canteras_ds', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:03', '2021-04-13 05:06:03'),
+(6218, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6219, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/cesta_sl.sii', 'cesta_sl', 'cesta_sl', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6220, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/cortica.sii', 'cortica', 'cortica', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6221, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/elcano.sii', 'elcano', 'elcano', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6222, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/engeron.sii', 'engeron', 'engeron', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6223, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/eppa.sii', 'eppa', 'eppa', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6224, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/huerta.sii', 'huerta', 'huerta', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6225, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/iberatomica.sii', 'iberatomica', 'iberatomica', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6226, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6227, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6228, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6229, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/supercesta.sii', 'supercesta', 'supercesta', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6230, '/def/vehicle/trailer/scs_box/curtain_sider/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'curtain_sider', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6231, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/agregados.sii', 'agregados', 'agregados', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6232, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/app.sii', 'app', 'app', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6233, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/cantera.sii', 'cantera', 'cantera', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6234, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/canteras_ds.sii', 'canteras_ds', 'canteras_ds', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6235, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6236, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/cesta_sl.sii', 'cesta_sl', 'cesta_sl', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6237, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/cortica.sii', 'cortica', 'cortica', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6238, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/elcano.sii', 'elcano', 'elcano', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6239, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/engeron.sii', 'engeron', 'engeron', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6240, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/eppa.sii', 'eppa', 'eppa', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6241, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/huerta.sii', 'huerta', 'huerta', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6242, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/iberatomica.sii', 'iberatomica', 'iberatomica', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6243, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6244, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:04', '2021-04-13 05:06:04'),
+(6245, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6246, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/supercesta.sii', 'supercesta', 'supercesta', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6247, '/def/vehicle/trailer/scs_box/dry_van/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'dry_van', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6248, '/def/vehicle/trailer/fuel_cistern/company_paint_job/app.sii', 'app', 'app', 'fuel_cistern', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6249, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/app.sii', 'app', 'app', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6250, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6251, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/cortica.sii', 'cortica', 'cortica', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6252, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/eppa.sii', 'eppa', 'eppa', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6253, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/huerta.sii', 'huerta', 'huerta', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6254, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6255, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6256, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6257, '/def/vehicle/trailer/scs_box/insulated/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'insulated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6258, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/agregados.sii', 'agregados', 'agregados', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6259, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/app.sii', 'app', 'app', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6260, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/cantera.sii', 'cantera', 'cantera', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6261, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/canteras_ds.sii', 'canteras_ds', 'canteras_ds', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6262, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6263, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/cesta_sl.sii', 'cesta_sl', 'cesta_sl', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6264, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/cortica.sii', 'cortica', 'cortica', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6265, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/elcano.sii', 'elcano', 'elcano', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6266, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/engeron.sii', 'engeron', 'engeron', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:05', '2021-04-13 05:06:05'),
+(6267, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/eppa.sii', 'eppa', 'eppa', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6268, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/huerta.sii', 'huerta', 'huerta', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6269, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/iberatomica.sii', 'iberatomica', 'iberatomica', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6270, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6271, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6272, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6273, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/supercesta.sii', 'supercesta', 'supercesta', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6274, '/def/vehicle/trailer/scs_box/moving_floor/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'moving_floor', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6275, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/app.sii', 'app', 'app', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6276, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6277, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/cortica.sii', 'cortica', 'cortica', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6278, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/eppa.sii', 'eppa', 'eppa', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6279, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/huerta.sii', 'huerta', 'huerta', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6280, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6281, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6282, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6283, '/def/vehicle/trailer/scs_box/reefer/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'refrigerated', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6284, '/def/vehicle/trailer/scs_foodtank/company_paint_job/app.sii', 'app', 'app', 'scs_foodtank', 'ets2', NULL, 0, 1, 0, '2021-04-13 05:06:06', '2021-04-13 05:06:06'),
+(6285, '/def/vehicle/trailer/krone/coolliner/company_paint_job/app.sii', 'app', 'app', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6286, '/def/vehicle/trailer/krone/coolliner/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6287, '/def/vehicle/trailer/krone/coolliner/company_paint_job/cortica.sii', 'cortica', 'cortica', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6288, '/def/vehicle/trailer/krone/coolliner/company_paint_job/eppa.sii', 'eppa', 'eppa', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6289, '/def/vehicle/trailer/krone/coolliner/company_paint_job/huerta.sii', 'huerta', 'huerta', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6290, '/def/vehicle/trailer/krone/coolliner/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6291, '/def/vehicle/trailer/krone/coolliner/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6292, '/def/vehicle/trailer/krone/coolliner/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6293, '/def/vehicle/trailer/krone/coolliner/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'krone_coolliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6294, '/def/vehicle/trailer/krone/dryliner/company_paint_job/agregados.sii', 'agregados', 'agregados', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6295, '/def/vehicle/trailer/krone/dryliner/company_paint_job/app.sii', 'app', 'app', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6296, '/def/vehicle/trailer/krone/dryliner/company_paint_job/cantera.sii', 'cantera', 'cantera', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6297, '/def/vehicle/trailer/krone/dryliner/company_paint_job/canteras_ds.sii', 'canteras_ds', 'canteras_ds', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6298, '/def/vehicle/trailer/krone/dryliner/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6299, '/def/vehicle/trailer/krone/dryliner/company_paint_job/cesta_sl.sii', 'cesta_sl', 'cesta_sl', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6300, '/def/vehicle/trailer/krone/dryliner/company_paint_job/cortica.sii', 'cortica', 'cortica', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:02', '2021-04-13 05:10:02'),
+(6301, '/def/vehicle/trailer/krone/dryliner/company_paint_job/elcano.sii', 'elcano', 'elcano', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6302, '/def/vehicle/trailer/krone/dryliner/company_paint_job/engeron.sii', 'engeron', 'engeron', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6303, '/def/vehicle/trailer/krone/dryliner/company_paint_job/eppa.sii', 'eppa', 'eppa', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6304, '/def/vehicle/trailer/krone/dryliner/company_paint_job/huerta.sii', 'huerta', 'huerta', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6305, '/def/vehicle/trailer/krone/dryliner/company_paint_job/iberatomica.sii', 'iberatomica', 'iberatomica', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6306, '/def/vehicle/trailer/krone/dryliner/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6307, '/def/vehicle/trailer/krone/dryliner/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6308, '/def/vehicle/trailer/krone/dryliner/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6309, '/def/vehicle/trailer/krone/dryliner/company_paint_job/supercesta.sii', 'supercesta', 'supercesta', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6310, '/def/vehicle/trailer/krone/dryliner/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'krone_dryliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6311, '/def/vehicle/trailer/krone/profiliner/company_paint_job/agregados.sii', 'agregados', 'agregados', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6312, '/def/vehicle/trailer/krone/profiliner/company_paint_job/app.sii', 'app', 'app', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6313, '/def/vehicle/trailer/krone/profiliner/company_paint_job/cantera.sii', 'cantera', 'cantera', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6314, '/def/vehicle/trailer/krone/profiliner/company_paint_job/canteras_ds.sii', 'canteras_ds', 'canteras_ds', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6315, '/def/vehicle/trailer/krone/profiliner/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6316, '/def/vehicle/trailer/krone/profiliner/company_paint_job/cesta_sl.sii', 'cesta_sl', 'cesta_sl', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6317, '/def/vehicle/trailer/krone/profiliner/company_paint_job/cortica.sii', 'cortica', 'cortica', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6318, '/def/vehicle/trailer/krone/profiliner/company_paint_job/elcano.sii', 'elcano', 'elcano', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6319, '/def/vehicle/trailer/krone/profiliner/company_paint_job/engeron.sii', 'engeron', 'engeron', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6320, '/def/vehicle/trailer/krone/profiliner/company_paint_job/eppa.sii', 'eppa', 'eppa', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6321, '/def/vehicle/trailer/krone/profiliner/company_paint_job/huerta.sii', 'huerta', 'huerta', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6322, '/def/vehicle/trailer/krone/profiliner/company_paint_job/iberatomica.sii', 'iberatomica', 'iberatomica', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:03', '2021-04-13 05:10:03'),
+(6323, '/def/vehicle/trailer/krone/profiliner/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6324, '/def/vehicle/trailer/krone/profiliner/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6325, '/def/vehicle/trailer/krone/profiliner/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6326, '/def/vehicle/trailer/krone/profiliner/company_paint_job/supercesta.sii', 'supercesta', 'supercesta', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6327, '/def/vehicle/trailer/krone/profiliner/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'krone_profiliner', 'ets2', 12, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6328, '/def/vehicle/trailer/schw_curtain/company_paint_job/agregados.sii', 'agregados', 'agregados', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6329, '/def/vehicle/trailer/schw_curtain/company_paint_job/app.sii', 'app', 'app', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6330, '/def/vehicle/trailer/schw_curtain/company_paint_job/cantera.sii', 'cantera', 'cantera', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6331, '/def/vehicle/trailer/schw_curtain/company_paint_job/canteras_ds.sii', 'canteras_ds', 'canteras_ds', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6332, '/def/vehicle/trailer/schw_curtain/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6333, '/def/vehicle/trailer/schw_curtain/company_paint_job/cesta_sl.sii', 'cesta_sl', 'cesta_sl', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6334, '/def/vehicle/trailer/schw_curtain/company_paint_job/cortica.sii', 'cortica', 'cortica', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6335, '/def/vehicle/trailer/schw_curtain/company_paint_job/elcano.sii', 'elcano', 'elcano', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6336, '/def/vehicle/trailer/schw_curtain/company_paint_job/engeron.sii', 'engeron', 'engeron', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6337, '/def/vehicle/trailer/schw_curtain/company_paint_job/eppa.sii', 'eppa', 'eppa', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6338, '/def/vehicle/trailer/schw_curtain/company_paint_job/huerta.sii', 'huerta', 'huerta', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6339, '/def/vehicle/trailer/schw_curtain/company_paint_job/iberatomica.sii', 'iberatomica', 'iberatomica', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6340, '/def/vehicle/trailer/schw_curtain/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6341, '/def/vehicle/trailer/schw_curtain/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6342, '/def/vehicle/trailer/schw_curtain/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:04', '2021-04-13 05:10:04'),
+(6343, '/def/vehicle/trailer/schw_curtain/company_paint_job/supercesta.sii', 'supercesta', 'supercesta', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6344, '/def/vehicle/trailer/schw_curtain/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'schw_curtain', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6345, '/def/vehicle/trailer/schw_cistern_food/company_paint_job/app.sii', 'app', 'app', 'schw_food_cistern', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6346, '/def/vehicle/trailer/schw_reefer/company_paint_job/app.sii', 'app', 'app', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6347, '/def/vehicle/trailer/schw_reefer/company_paint_job/casa_olivera.sii', 'casa_olivera', 'casa_olivera', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6348, '/def/vehicle/trailer/schw_reefer/company_paint_job/cortica.sii', 'cortica', 'cortica', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6349, '/def/vehicle/trailer/schw_reefer/company_paint_job/eppa.sii', 'eppa', 'eppa', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6350, '/def/vehicle/trailer/schw_reefer/company_paint_job/huerta.sii', 'huerta', 'huerta', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6351, '/def/vehicle/trailer/schw_reefer/company_paint_job/lavish_food.sii', 'lavish_food', 'lavish_food', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6352, '/def/vehicle/trailer/schw_reefer/company_paint_job/log_atlan.sii', 'log_atlan', 'log_atlan', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6353, '/def/vehicle/trailer/schw_reefer/company_paint_job/rt_log.sii', 'rt_log', 'rt_log', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05'),
+(6354, '/def/vehicle/trailer/schw_reefer/company_paint_job/trans_cab.sii', 'trans_cab', 'trans_cab', 'schw_reefer', 'ets2', 4, 0, 1, 0, '2021-04-13 05:10:05', '2021-04-13 05:10:05');
 
 -- --------------------------------------------------------
 
@@ -2887,7 +3031,7 @@ ALTER TABLE `wheels`
 -- AUTO_INCREMENT для таблиці `accessories`
 --
 ALTER TABLE `accessories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1112;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1114;
 
 --
 -- AUTO_INCREMENT для таблиці `chassis`
@@ -2905,7 +3049,7 @@ ALTER TABLE `companies`
 -- AUTO_INCREMENT для таблиці `dlc`
 --
 ALTER TABLE `dlc`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT для таблиці `error_codes`
@@ -2929,7 +3073,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `paints`
 --
 ALTER TABLE `paints`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6214;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6355;
 
 --
 -- AUTO_INCREMENT для таблиці `settings`
