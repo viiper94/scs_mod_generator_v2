@@ -148,7 +148,7 @@ class TrailerGeneratorController extends Controller{
             }
         }
         if($chassis->with_paint_job && $request->input('paint') !== 'all'){
-            $paint_job = Paint::where('def', $request->input('paint'))->first();
+            $paint_job = Paint::where('def', $request->input('paint') ?? $chassis->default_paint_job)->first();
             $paint_job->setPaintColor($request->input('color'));
         }
         if($request->input('paint') === 'all'){
