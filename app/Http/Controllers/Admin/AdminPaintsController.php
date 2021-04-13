@@ -170,10 +170,14 @@ class AdminPaintsController extends Controller{
                             foreach($multi[$chassis] as $type_chassis){
                                 foreach(scandir($chassis_paint_jobs_path) as $paint_job){
                                     if($paint_job !== '.' && $paint_job !== '..'){
+                                        $def = '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job;
+                                        if($exist = Paint::where('def', $def)->first()){
+                                            continue;
+                                        }
                                         $paint = new Paint();
                                         $paint->fill([
-                                            'game' => $dlc_params['game'] ?? 'ats',
-                                            'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
+                                            'game' => $dlc_params['game'] ?? 'ets2',
+                                            'def' => $def,
                                             'alias' => str_replace('.sii', '', $paint_job),
                                             'look' => str_replace('.sii', '', $paint_job),
                                             'chassis' => $type_chassis,
@@ -191,11 +195,15 @@ class AdminPaintsController extends Controller{
                         }else{
                             foreach(scandir($chassis_paint_jobs_path) as $paint_job){
                                 if($paint_job !== '.' && $paint_job !== '..'){
+                                    $def = '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job;
+                                    if($exist = Paint::where('def', $def)->first()){
+                                        continue;
+                                    }
                                     $paint = new Paint();
                                     $paint->fill([
                                         // CHECK GAME BEFORE IMPORT
-                                        'game' => $dlc_params['game'] ?? 'ats',
-                                        'def' => '/def/vehicle/trailer/'.(key_exists($chassis, $asoc_names) ? $asoc_names[$chassis] : $chassis).'/company_paint_job/'.$paint_job,
+                                        'game' => $dlc_params['game'] ?? 'ets2',
+                                        'def' => $def,
                                         'alias' => str_replace('.sii', '', $paint_job),
                                         'look' => str_replace('.sii', '', $paint_job),
                                         'chassis' => $chassis,
