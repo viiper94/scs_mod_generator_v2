@@ -15,7 +15,7 @@
         "paint_job": "Verniciatura",
         "color": "Colore",
         "wheels": "Ruote",
-        "pick_chassis": "Scagli un telaio per rimorchio dall'elenco seguente (necessario)",
+        "pick_chassis": "Scegli un telaio per il rimorchio dall'elenco seguente (necessario)",
         "choose_chassis": "Scegli telaio",
         "paintable_chassis": "Tutti i telai verniciabili",
         "pick_accessory": "Scegli un accessorio dall'elenco seguente",
@@ -41,7 +41,7 @@
         "trailers_gallery": "Galleria rimorchi",
         "advanced": "Impostazioni avanzate",
         "image_upload": "Carica immagine del Mod (max. 5Mb)",
-        "image_note": "Note, that is NOT a trailer skin image! This image will be used in Mod Manager only.",
+        "image_note": "Attenzione, questa NON è la livrea del rimorchio. Questa immagine sarà usata solo nel Mod Manager.",
         "current_version": "Attuale versione del servizio",
         "success": "Eseguito!",
         "something_wrong": "Qualcosa non ha funzionato =(",
@@ -63,8 +63,8 @@
         "join_discord": "Visita il nostro server Discord e partecipa alla discussione: ",
         "check_all": "Seleziona tutto",
         "with_promods": "Include ProMods",
-        "added_favorite": "added to favorite list",
-        "removed_favorite": "removed from favorite list",
+        "added_favorite": "aggiunta alla lista dei preferiti",
+        "removed_favorite": "rimossa dalla lista dei preferiti",
         "no_results": "Nessun risultato"
     },
     "instructions": {
@@ -158,9 +158,9 @@
         }
     },
     "ets2 trailers": {
-        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
-        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
-        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
+        "2+4axle_ext_short": "2+4 Assi, Estendibile, Corto",
+        "2+4axle_ext_long": "2+4 Assi, Estendibile, Lungo",
+        "3+7axle_ext_long": "7+3 Assi, Estendibile, Lungo",
         "aero": "Aerodinamico",
         "steer": "Sterzabile"
     },
@@ -205,8 +205,8 @@
         "double": "Doppio",
         "bdouble": "B-Doppio",
         "triple": "Triplo",
-        "open_side": "Open Side",
-        "open_doors": "Open Doors",
+        "open_side": "Telone laterale aperto",
+        "open_doors": "Portellone Aperto",
         "ext": "Estensibile",
         "short": "Corto",
         "long": "Lungo",
@@ -217,7 +217,7 @@
         "yellow": "Giallo",
         "red": "Rosso",
         "gray": "Grigio",
-        "orange": "Orange",
+        "orange": "Arancione",
         "black": "Nero"
     }
 }

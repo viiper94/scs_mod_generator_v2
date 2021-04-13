@@ -156,7 +156,7 @@
         "bs_scs_reefer": "Frigorifik",
         "bs_scs_insulated": "Yalıtımlı",
         "bs_scs_dryvan": "Kuru Yük",
-        "bs_scs_dryvan_mfloor": "Kuru Yük, Hareketli Taban",
+        "bs_scs_dryvan_mfloor": "Kuru Yük, Kayar Tabanlı",
         "tn_livestock": "Canlı Çiftlik Hayvanı Taşıyıcısı",
         "tn_log_trailer": "Tomruk Dorsesi",
         "bs_scs_container": "Konteyner Taşıyıcısı",

@@ -158,9 +158,9 @@
         }
     },
     "ets2 trailers": {
-        "2+4axle_ext_short": "2+4 Axles, Extendable, Short",
-        "2+4axle_ext_long": "2+4 Axles, Extendable, Long",
-        "3+7axle_ext_long": "7+3 Axles, Extendable, Long",
+        "2+4axle_ext_short": "2+4 осі, Розсувний, Короткий",
+        "2+4axle_ext_long": "2+4 осі, Розсувний, Довгий",
+        "3+7axle_ext_long": "7+3 осі, Розсувний, Довгий",
         "aero": "Аеродинамічний",
         "steer": "Підрулюючий"
     },
@@ -186,7 +186,7 @@
         "cars_magnum": "Dodge",
         "cars_mustang": "Ford",
         "cars_tesla": "Tesla",
-        "log_grab": "Log Grab",
+        "log_grab": "Грейфер",
         "v1": "вар. 1",
         "v2": "вар. 2",
         "v3": "вар. 3",
@@ -217,7 +217,7 @@
         "yellow": "Жовтий",
         "red": "Червоний",
         "gray": "Сірий",
-        "orange": "Orange",
+        "orange": "Помаранчевий",
         "black": "Чорний"
     }
 }
