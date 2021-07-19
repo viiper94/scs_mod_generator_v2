@@ -11,7 +11,6 @@
                 <h5>@lang('general.links')</h5>
                 <ul>
                     <li><a href="https://forum.truckersmp.com/index.php?/topic/59888-trailer-mod-web-generator" target="_blank">@lang('general.forums_topic')</a></li>
-                    <li><a href="{{ env('DISCORD_INVITE') }}" target="_blank">@lang('general.discord')</a></li>
                     <li><a href="https://truckersmp.com" target="_blank">@lang('general.truckersmp')</a></li>
                     <li><a href="http://blog.scssoft.com" target="_blank">@lang('general.scs_blog')</a></li>
                 </ul>

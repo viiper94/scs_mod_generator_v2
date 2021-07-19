@@ -121,9 +121,6 @@
         @if(!$hasUserAcceptLanguage && !(isset($_COOKIE['translate']) && $_COOKIE['translate'] == '0'))
             @include('layout.translate')
         @endif
-        @if(!(isset($_COOKIE['discord']) && $_COOKIE['discord'] == '0'))
-            @include('layout.discord')
-        @endif
     </div>
     <div class="fixed-action-btn">
         <a class="mdc-fab modal-trigger tooltipped" data-tooltip="@lang('general.how_to')" href="#how" id="how-to">
